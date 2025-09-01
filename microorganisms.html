@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microorganisms: Friend and Foe</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .match-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .match-item {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 6px;
+        }
+        
+        .match-number {
+            background: #3498db;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .match-arrow {
+            margin: 0 10px;
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 20px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 30px;
+            }
+            
+            h3 {
+                font-size: 26px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 22px;
+            }
+            
+            h1 {
+                font-size: 42px;
+            }
+            
+            h2 {
+                font-size: 36px;
+            }
+            
+            .content, .answer {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MICROORGANISMS: FRIEND AND FOE</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by StudyScript</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="content">Fill in the blanks.</p>
+                    <div class="answer">
+                        <p>(a) Microorganisms can be seen with the help of a <span class="highlight">microscope</span>.</p>
+                        <p>(b) Blue green algae fix <span class="highlight">nitrogen</span> directly from air and enhance fertility of soil.</p>
+                        <p>(c) <span class="highlight">Alcohol</span> is produced with the help of yeast.</p>
+                        <p>(d) Cholera is caused by <span class="highlight">bacteria</span>.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="content">Tick the correct answer.</p>
+                    <div class="answer">
+                        <p>(a) Yeast is used in the production of: <span class="highlight">alcohol</span></p>
+                        <p>(b) The following is an antibiotic: <span class="highlight">Streptomycin</span></p>
+                        <p>(c) Carrier of malaria-causing protozoan is: <span class="highlight">female Anopheles mosquito</span></p>
+                        <p>(d) The most common carrier of communicable diseases is: <span class="highlight">housefly</span></p>
+                        <p>(e) The bread or idli dough rises because of: <span class="highlight">growth of yeast cells</span></p>
+                        <p>(f) The process of conversion of sugar into alcohol is called: <span class="highlight">fermentation</span></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="content">Match the organisms in Column A with their action in Column B.</p>
+                    <div class="match-container">
+                        <div class="match-item">
+                            <span class="match-number">i</span> Bacteria
+                            <span class="match-arrow">→</span>
+                            <span>(e) Causing cholera</span>
+                        </div>
+                        <div class="match-item">
+                            <span class="match-number">ii</span> Rhizobium
+                            <span class="match-arrow">→</span>
+                            <span>(a) Fixing nitrogen</span>
+                        </div>
+                        <div class="match-item">
+                            <span class="match-number">iii</span> Lactobacillus
+                            <span class="match-arrow">→</span>
+                            <span>(b) Setting of curd</span>
+                        </div>
+                        <div class="match-item">
+                            <span class="match-number">iv</span> Yeast
+                            <span class="match-arrow">→</span>
+                            <span>(c) Baking of bread</span>
+                        </div>
+                        <div class="match-item">
+                            <span class="match-number">v</span> A protozoan
+                            <span class="match-arrow">→</span>
+                            <span>(d) Causing malaria</span>
+                        </div>
+                        <div class="match-item">
+                            <span class="match-number">vi</span> A virus
+                            <span class="match-arrow">→</span>
+                            <span>(f) Causing AIDS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">Can microorganisms be seen with the naked eye? If not, how can they be seen?</p>
+                    <div class="answer">
+                        <p>No, microorganisms cannot be seen with the unaided eye because they are so small. Some, like the fungus that grows on bread, can be seen with a magnifying glass. Others require a microscope to be seen.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">What are the major groups of microorganisms?</p>
+                    <div class="answer">
+                        <p>The four major groups of microorganisms are bacteria, fungi, protozoa, and some algae. Viruses are also microscopic but are considered different from other microorganisms.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">Name the microorganisms which can fix atmospheric nitrogen in the soil.</p>
+                    <div class="answer">
+                        <p>Some bacteria and blue-green algae can fix atmospheric nitrogen in the soil. These are commonly called biological nitrogen fixers. The bacterium Rhizobium is specifically mentioned as being involved in nitrogen fixation in leguminous plants.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">Write 10 lines on the usefulness of microorganisms in our lives.</p>
+                    <div class="answer">
+                        <p>1. Microorganisms are used in making curd, bread, and cake.</p>
+                        <p>2. The bacterium Lactobacillus helps turn milk into curd.</p>
+                        <p>3. Yeast is used in the baking industry to make breads, pastries, and cakes because it produces carbon dioxide, which makes the dough rise.</p>
+                        <p>4. They have been used for a long time to produce alcohol.</p>
+                        <p>5. They are used for the large-scale commercial production of alcohol, wine, and acetic acid (vinegar).</p>
+                        <p>6. Bacteria break down organic waste, cleaning up the environment.</p>
+                        <p>7. They are a source for medicines called antibiotics, which kill or stop the growth of disease-causing microorganisms.</p>
+                        <p>8. Some bacteria and blue-green algae fix atmospheric nitrogen to enrich the soil and increase its fertility.</p>
+                        <p>9. Vaccines, which protect us from diseases like cholera, smallpox, and hepatitis, are made from microorganisms on a large scale.</p>
+                        <p>10. They are also used to make cheese, pickles, and other food items.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Write a short paragraph on the harmful effects of microorganisms.</p>
+                    <div class="answer">
+                        <p>Microorganisms are harmful in many ways. Some cause diseases in humans, plants, and animals; these are called pathogens. Pathogens can enter our bodies through the air we breathe, the water we drink, or the food we eat. For example, viruses cause common ailments like colds, flu, polio, and chickenpox. Bacteria cause diseases like typhoid and tuberculosis, while protozoa cause dysentery and malaria. Microorganisms also spoil food, clothing, and leather. The consumption of food spoiled by microbes can lead to food poisoning, which can cause serious illness and even death, as some microbes produce toxic substances in food.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 9</div>
+                    <p class="question">What are antibiotics? What precautions must be taken while taking antibiotics?</p>
+                    <div class="answer">
+                        <p>Antibiotics are medicines that kill or stop the growth of disease-causing microorganisms. They are produced from bacteria and fungi.</p>
+                        <p>When taking antibiotics, you must follow these precautions:</p>
+                        <p>• Only take antibiotics on the advice of a qualified doctor.</p>
+                        <p>• You must complete the full course prescribed by the doctor.</p>
+                        <p>• Taking antibiotics when not needed or in incorrect doses can make the medicine less effective in the future.</p>
+                        <p>• Taking them unnecessarily can also kill the beneficial bacteria in your body.</p>
+                        <p>• Antibiotics are not effective against diseases like colds and flu because these are caused by viruses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+  </html>
