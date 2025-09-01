@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Production and Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 36px;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 32px;
+            color: #3498db;
+            margin: 20px 0 15px;
+        }
+        
+        .subtitle {
+            font-size: 28px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin: -25px -25px 25px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+        
+        .answer {
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 5px solid #3498db;
+            border-radius: 0 8px 8px 0;
+            margin: 15px 0;
+            font-size: 30px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 12px;
+            font-size: 28px;
+        }
+        
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .two-column {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 32px;
+            }
+            
+            .content, .answer {
+                font-size: 26px;
+            }
+        }
+        
+        .flow-chart {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .flow-step {
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .step-number {
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 28px;
+        }
+        
+        .puzzle {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .puzzle-item {
+            padding: 20px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CROP PRODUCTION AND DEVELOPMENT</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by StudyScript</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="content">Select the correct word from the following list and fill in the blanks.</p>
+                    <div class="answer">
+                        <p>(a) The same kind of plants grown and cultivated on a large scale at a place is called <span class="highlight">crop</span>.</p>
+                        <p>(b) The first step before growing crops is <span class="highlight">preparation of the soil</span>.</p>
+                        <p>(c) Damaged seeds would <span class="highlight">float</span> on top of water.</p>
+                        <p>(d) For growing a crop, sufficient <span class="highlight">sunlight</span> and <span class="highlight">nutrients</span> and <span class="highlight">water</span> from the soil are essential.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="content">Match items in column A with those in column B:</p>
+                    <div class="two-column">
+                        <div>
+                            <h3>Column A</h3>
+                            <p class="content">(i) Kharif crops</p>
+                            <p class="content">(ii) Rabi crops</p>
+                            <p class="content">(iii) Chemical fertilisers</p>
+                            <p class="content">(iv) Organic manure</p>
+                        </div>
+                        <div>
+                            <h3>Column B</h3>
+                            <p class="content">(e) Paddy and maize</p>
+                            <p class="content">(d) Wheat, gram, pea</p>
+                            <p class="content">(b) Urea and super phosphate</p>
+                            <p class="content">(c) Animal excreta, cow dung urine and plant waste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="content">Give two examples of each:</p>
+                    <div class="answer">
+                        <p>(a) Kharif crop: <span class="highlight">Paddy, Maize</span></p>
+                        <p>(b) Rabi crop: <span class="highlight">Wheat, Gram</span></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="content">Write a paragraph in your own words on each of the following:</p>
+                    <div class="answer">
+                        <p class="question">(a) Preparation of soil:</p>
+                        <p>The preparation of soil is crucial for crop growth. It involves tilling and leveling the soil to create a conducive environment for seed germination. Loosening the soil allows roots to penetrate deep and access nutrients and water.</p>
+                        
+                        <p class="question">(b) Sowing:</p>
+                        <p>Sowing is the process of planting seeds in the prepared soil. It is important to use healthy seeds and sow them at the right depth and distance to avoid overcrowding.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="content">Explain how fertilisers are different from manure?</p>
+                    <div class="answer">
+                        <p>Fertilisers are man-made inorganic substances rich in specific nutrients, while manure is a natural organic substance derived from the decomposition of plant and animal waste. Fertilisers provide concentrated nutrients but do not add humus to the soil, whereas manure enhances soil structure, increases water retention, and promotes microbial activity.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="content">What is irrigation? Describe two methods of irrigation which conserve water.</p>
+                    <div class="answer">
+                        <p>Irrigation is the supply of water to crops at regular intervals to ensure their growth. Two methods of irrigation that conserve water include:</p>
+                        <p>1. <span class="highlight">Drip irrigation</span>, which delivers water directly to the roots of the plants, minimizing wastage.</p>
+                        <p>2. <span class="highlight">Sprinkler irrigation</span>, where water is sprayed over the crops like rain, which is effective for uneven land.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="content">Arrange the following boxes in proper order to make a flow chart of sugarcane crop production.</p>
+                    <div class="flow-chart">
+                        <div class="flow-step"><span class="step-number">1</span> Preparation of soil</div>
+                        <div class="flow-step"><span class="step-number">2</span> Ploughing the field</div>
+                        <div class="flow-step"><span class="step-number">3</span> Manuring</div>
+                        <div class="flow-step"><span class="step-number">4</span> Sowing</div>
+                        <div class="flow-step"><span class="step-number">5</span> Irrigation</div>
+                        <div class="flow-step"><span class="step-number">6</span> Harvesting</div>
+                        <div class="flow-step"><span class="step-number">7</span> Sending crop to sugar factory</div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 11</div>
+                    <p class="content">Complete the following word puzzle with the help of clues given below.</p>
+                    <div class="puzzle">
+                        <div class="puzzle-item">Irrigation</div>
+                        <div class="puzzle-item">Storage</div>
+                        <div class="puzzle-item">Crop</div>
+                        <div class="puzzle-item">Harvester</div>
+                        <div class="puzzle-item">Gram</div>
+                        <div class="puzzle-item">Threshing</div>
+                    </div>
+                    <div class="two-column" style="margin-top: 20px;">
+                        <div>
+                            <h3>Down:</h3>
+                            <p>1. Irrigation</p>
+                            <p>2. Storage</p>
+                            <p>5. Crop</p>
+                        </div>
+                        <div>
+                            <h3>Across:</h3>
+                            <p>3. Harvester</p>
+                            <p>4. Gram</p>
+                            <p>6. Threshing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Previous Years Q&A</h2>
+            <h3>MP Board (2022-25)</h3>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">Define Agriculture.</p>
+                    <div class="answer">
+                        <p>Agriculture is the practice of cultivating soil, growing crops, and rearing animals to provide food and other products useful to humans.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">What is soil? Name its constituents.</p>
+                    <div class="answer">
+                        <p>Soil is the uppermost weathered layer of the earth's crust that supports plant growth.</p>
+                        <p>Constituents of soil: Minerals, water, air, organic matter (humus), and microorganisms.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">Distinguish between Fertilisers and Manure.</p>
+                    <div class="answer">
+                        <p><span class="highlight">Fertilisers</span> are man-made chemicals, rich in nutrients like NPK, prepared in factories, and give immediate results but reduce soil fertility on overuse.</p>
+                        <p><span class="highlight">Manure</span> is natural (from plant/animal waste), less nutrient-rich, but improves soil texture, adds humus, and is eco-friendly.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">What is irrigation? Name two modern methods which save water.</p>
+                    <div class="answer">
+                        <p>Irrigation is the supply of water to crops at regular intervals.</p>
+                        <p>Modern methods conserving water:</p>
+                        <p>1. <span class="highlight">Sprinkler system</span> – Sprays water like rainfall, suitable for uneven lands.</p>
+                        <p>2. <span class="highlight">Drip system</span> – Supplies water drop by drop near roots; no wastage of water.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+</html>
