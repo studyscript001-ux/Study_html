@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 1: Rational Numbers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fdf6e3; /* Softer, cream background */
+            color: #586e75; /* Solarized dark cyan text color */
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Main container for the content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fefcf5;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+            border: 1px solid #eee;
+        }
+
+        /* Header section styling */
+        .header {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, #2aa198, #268bd2); /* Solarized theme gradient */
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #cb4b16; /* Solarized orange */
+            border-bottom: 3px solid #b58900; /* Solarized yellow */
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        /* Styling for each question card */
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #268bd2; /* Solarized blue */
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Styling for the question text */
+        .question {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #073642; /* Solarized base02 */
+            margin-bottom: 15px;
+        }
+        
+        .sub-question {
+            font-weight: 600;
+            color: #586e75;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the solution steps */
+        .solution-step {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+            background-color: #f9f9f9;
+            padding: 8px 8px 8px 25px;
+            border-radius: 5px;
+        }
+
+        .solution-step::before {
+            content: '→';
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #2aa198; /* Solarized cyan */
+            font-weight: bold;
+        }
+
+        /* Styling for the final answer */
+        .answer {
+            font-weight: 700;
+            color: #d33682; /* Solarized magenta */
+            background-color: #fdf6e3;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        /* Explanation section styling */
+        .explanation-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fffaf0;
+            border-radius: 10px;
+            border: 1px solid #fde4c5;
+        }
+        
+        .explanation-card {
+             background-color: #ffffff;
+            border-left: 5px solid #d33682;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        
+        .explanation-card p {
+            margin-bottom: 8px;
+        }
+
+        /* Using code tags for variables and equations for clarity */
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #eee8d5; /* Solarized base2 */
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+            color: #657b83; /* Solarized base00 */
+        }
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Rational Numbers</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 1.1 -->
+        <h2>Exercise 1.1</h2>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <p class="question">1. Name the property under multiplication used in each of the following.</p>
+            
+            <p class="sub-question">(i) <code>-4/5 × 1 = 1 × -4/5 = -4/5</code></p>
+            <div class="solution-step">Here, the rational number <code>-4/5</code> is multiplied by 1, and the result is the number itself.</div>
+            <p class="answer">Property: 1 is the multiplicative identity.</p>
+
+            <p class="sub-question">(ii) <code>-13/17 × -2/7 = -2/7 × -13/17</code></p>
+            <div class="solution-step">The order of the rational numbers being multiplied is changed, but the result remains the same. This is in the form <code>a × b = b × a</code>.</div>
+            <p class="answer">Property: Commutativity of multiplication.</p>
+
+            <p class="sub-question">(iii) <code>-19/29 × 29/-19 = 1</code></p>
+            <div class="solution-step">One number is the reciprocal of the other, and their product is 1. This is in the form <code>a × (1/a) = 1</code>.</div>
+            <p class="answer">Property: Multiplicative inverse.</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <p class="question">2. Tell what property allows you to compute <code>1/3 × (6 × 4/3)</code> as <code>(1/3 × 6) × 4/3</code>.</p>
+            <div class="solution-step">The grouping of the three rational numbers being multiplied is changed.</div>
+            <div class="solution-step">This computation is in the form <code>a × (b × c) = (a × b) × c</code>.</div>
+            <p class="answer">Property: Associativity of multiplication.</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card">
+            <p class="question">3. The product of two rational numbers is always a ___.</p>
+            <div class="solution-step">As we learned in the chapter, rational numbers are closed under multiplication.</div>
+            <div class="solution-step">This means that when you multiply any two rational numbers, the result will also be a rational number.</div>
+            <p class="answer">Answer: Rational number.</p>
+        </div>
+        
+        <!-- Additional Questions based on chapter examples -->
+        <h2>Problems from Chapter Examples</h2>
+
+        <!-- Example 1 from the PDF -->
+        <div class="question-card">
+            <p class="question">Find: <code>-2/3 × 3/5 + 5/2 - 3/5 × 1/6</code></p>
+            <div class="solution-step">First, identify the terms. We have three terms here: <code>-2/3 × 3/5</code>, <code>5/2</code>, and <code>-3/5 × 1/6</code>.</div>
+            <div class="solution-step">Rearrange the terms using the Commutative Property to group similar fractions: <code>-2/3 × 3/5 - 3/5 × 1/6 + 5/2</code></div>
+            <div class="solution-step">Now, use the Distributive Property (<code>a × b + a × c = a × (b+c)</code>). Take <code>-3/5</code> as a common factor from the first two terms.</div>
+            <div class="solution-step"><code>-3/5 × (2/3 + 1/6) + 5/2</code></div>
+            <div class="solution-step">Solve the bracket first. The LCM of 3 and 6 is 6. So, <code>(4/6 + 1/6) = 5/6</code>.</div>
+            <div class="solution-step">The expression becomes: <code>-3/5 × 5/6 + 5/2</code></div>
+            <div class="solution-step">Now, multiply: <code>-3/5 × 5/6 = -15/30</code>, which simplifies to <code>-1/2</code>.</div>
+            <div class="solution-step">The final expression is: <code>-1/2 + 5/2</code></div>
+            <div class="solution-step">Add the fractions: <code>(-1 + 5) / 2 = 4/2</code>.</div>
+            <p class="answer">Answer: 2</p>
+        </div>
+
+        <!-- Hinglish Explanation Section -->
+        <div class="explanation-section">
+            <h2>Explanation in Hinglish</h2>
+            <p>Yahan sabhi questions ke solution ko aasan Hinglish bhasha me samjhaya gaya hai.</p>
+
+            <!-- Explanation for Q1 -->
+            <div class="explanation-card">
+                <p class="question">Question 1: Properties Pehchane</p>
+                <p><strong>(i) <code>-4/5 × 1 = -4/5</code>:</strong> Jab hum kisi bhi number ko <code>1</code> se multiply karte hain, toh wahi number wapas milta hai. Isliye, <code>1</code> ko <strong>multiplicative identity</strong> kehte hain.</p>
+                <p><strong>(ii) <code>-13/17 × -2/7 = -2/7 × -13/17</code>:</strong> Yahan par, humne numbers ki jagah (order) badal di hai, lekin unka product same rahega. Is property ko <strong>Commutativity</strong> kehte hain. Jaise <code>2×3</code> aur <code>3×2</code> dono 6 hote hain.</p>
+                <p><strong>(iii) <code>-19/29 × 29/-19 = 1</code>:</strong> Ek number dusre ka ulta (reciprocal) hai. Jab hum kisi number ko uske reciprocal se multiply karte hain, toh answer hamesha <code>1</code> aata hai. Is property ko <strong>Multiplicative Inverse</strong> kehte hain.</p>
+            </div>
+
+            <!-- Explanation for Q2 -->
+            <div class="explanation-card">
+                <p class="question">Question 2: Kaunsi Property use hui?</p>
+                <p>Is question mein, teen numbers multiply ho rahe hain: <code>1/3</code>, <code>6</code>, aur <code>4/3</code>. Humne sirf unki grouping change ki hai - pehle last ke do ko multiply kiya, fir pehle do ko. Answer dono tarah se same rehta hai. Is grouping waali property ko <strong>Associativity</strong> kehte hain.</p>
+            </div>
+
+            <!-- Explanation for Q3 -->
+            <div class="explanation-card">
+                <p class="question">Question 3: Khali jagah bharein</p>
+                <p>Jab bhi aap do rational numbers (jaise <code>1/2</code> aur <code>3/4</code>) ko multiply karte hain, toh jo answer aata hai, woh bhi hamesha ek <strong>rational number</strong> hi hota hai. Ise 'closure property' bhi kehte hain.</p>
+            </div>
+            
+            <!-- Explanation for Example Problem -->
+            <div class="explanation-card">
+                <p class="question">Example Problem ko kaise solve karein?</p>
+                <p><strong>Step 1:</strong> Sabse pehle, humne <code>3/5</code> waale terms ko ek saath likha (Rearrange kiya). Ise 'Commutative property' kehte hain. Aisa karne se calculation aasan ho jaati hai.</p>
+                <p><code>-2/3 × 3/5 - 3/5 × 1/6 + 5/2</code></p>
+                <p><strong>Step 2:</strong> Ab, dono terms mein <code>-3/5</code> common hai, toh humne use bahar nikal liya (common le liya). Ise 'Distributive property' kehte hain.</p>
+                <p><code>-3/5 × (2/3 + 1/6) + 5/2</code></p>
+                <p><strong>Step 3:</strong> Fir humne bracket ke andar waale fractions (<code>2/3 + 1/6</code>) ko LCM lekar solve kiya, jiska answer <code>5/6</code> aaya.</p>
+                <p><strong>Step 4:</strong> Ab equation ban gayi: <code>-3/5 × 5/6 + 5/2</code>. Pehle multiply solve kiya toh <code>-1/2</code> aaya.</p>
+                <p><strong>Step 5:</strong> Aakhir mein <code>-1/2 + 5/2</code> ko solve kiya aur final answer <code>2</code> aa gaya.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
