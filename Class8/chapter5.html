@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservation of Plants and Animals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 16px; /* Slightly smaller font size */
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px; /* Slightly smaller */
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px; /* Slightly smaller */
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px; /* Slightly smaller */
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px; /* Slightly smaller */
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 16px; /* Slightly smaller */
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 18px; /* Slightly smaller */
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 17px; /* Slightly smaller */
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 16px; /* Slightly smaller */
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 14px; /* Slightly smaller */
+        }
+        
+        .comparison-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .comparison-row {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        
+        .comparison-header {
+            font-weight: bold;
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .comparison-cell {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .puzzle {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .puzzle-item {
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 18px; /* Slightly smaller */
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 32px; /* Slightly smaller */
+            }
+            
+            h2 {
+                font-size: 26px; /* Slightly smaller */
+            }
+            
+            h3 {
+                font-size: 24px; /* Slightly smaller */
+            }
+            
+            .content, .answer {
+                font-size: 18px; /* Slightly smaller */
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+            
+            .puzzle {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 20px; /* Slightly smaller */
+            }
+            
+            h1 {
+                font-size: 38px; /* Slightly smaller */
+            }
+            
+            h2 {
+                font-size: 32px; /* Slightly smaller */
+            }
+            
+            .content, .answer {
+                font-size: 20px; /* Slightly smaller */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CONSERVATION OF PLANTS AND ANIMALS</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by studyscript.netlify.app</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">Fill in the blanks.</p>
+                    <div class="answer">
+                        <p>(a) A place where animals are protected in their natural habitat is called a <span class="highlight">sanctuary</span>.</p>
+                        <p>(b) Species found only in a particular area is known as <span class="highlight">endemic species</span>.</p>
+                        <p>(c) Migratory birds fly to far away places because of <span class="highlight">climatic changes</span>.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Differentiate between the following.</p>
+                    <div class="answer">
+                        <p><strong>(a) Wildlife Sanctuary and Biosphere Reserve</strong></p>
+                        <p><strong>Wildlife Sanctuary:</strong> This is a protected area where animals are protected from any disturbance to them and their habitat. Certain activities like grazing and collecting medicinal plants are sometimes allowed.</p>
+                        <p><strong>Biosphere Reserve:</strong> This is a larger protected area for the conservation of wildlife, plant and animal resources, and the traditional life of the tribals living in the area. A biosphere reserve may also contain other protected areas like national parks and sanctuaries within it.</p>
+                        
+                        <p><strong>(b) Zoo and Wildlife Sanctuary</strong></p>
+                        <p><strong>Zoo:</strong> This is a place where animals are kept in an artificial setting for protection and display to the public. They are not in their natural habitat.</p>
+                        <p><strong>Wildlife Sanctuary:</strong> This is an area where animals are protected in their natural habitat.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 2 (Continued)</div>
+                    <div class="answer">
+                        <p><strong>(c) Endangered and Extinct Species</strong></p>
+                        <p><strong>Endangered Species:</strong> These are species whose numbers are diminishing to a level that they might face extinction.</p>
+                        <p><strong>Extinct Species:</strong> These are species which have completely vanished from the Earth, such as the dinosaurs.</p>
+                        
+                        <p><strong>(d) Flora and Fauna</strong></p>
+                        <p><strong>Flora:</strong> This term refers to all the plant life found in a particular area. Examples include sal, teak, mango, and silver ferns.</p>
+                        <p><strong>Fauna:</strong> This term refers to all the animal life found in a particular area. Examples include chinkara, cheetal, and leopard.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Discuss the effects of deforestation on the following.</p>
+                    <div class="answer">
+                        <p><strong>(a) Wild animals:</strong> Deforestation leads to the destruction of the natural habitat for wild animals. It threatens their existence and makes their survival difficult, leading them to become endangered or extinct.</p>
+                        <p><strong>(b) Environment:</strong> Deforestation increases the temperature and pollution level on Earth. It also increases the amount of carbon dioxide in the atmosphere, leading to global warming. It can also reduce rainfall and cause soil erosion and desertification.</p>
+                        <p><strong>(c) Villages (Rural areas):</strong> Cutting down trees can lead to a decrease in rainfall and an increase in the chances of natural calamities like floods and droughts. It also affects the livelihood of tribals and others who depend on forests.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3 (Continued)</div>
+                    <div class="answer">
+                        <p><strong>(d) Cities (Urban areas):</strong> Deforestation in surrounding areas can lead to air pollution and can disturb the water cycle, affecting the climate in cities.</p>
+                        <p><strong>(e) Earth:</strong> Deforestation disturbs the balance of nature. It leads to an increase in global warming and desertification. It also leads to a decrease in the water-holding capacity of the soil and an increased risk of floods and droughts.</p>
+                        <p><strong>(f) The next generation:</strong> If we continue to cut trees, the next generation will face a shortage of forest products. They will also have to live in a world with higher temperatures, more pollution, and more natural calamities.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">What will happen if...</p>
+                    <div class="answer">
+                        <p><strong>(a) We go on cutting trees:</strong> If we continue cutting trees, the temperature and pollution on Earth will increase, and the level of carbon dioxide in the atmosphere will rise, leading to global warming. Rainfall and the fertility of the soil will decrease.</p>
+                        <p><strong>(b) The habitat of an animal is disturbed:</strong> If an animal's habitat is disturbed, it can lead to their survival becoming difficult, potentially making them endangered or extinct.</p>
+                        <p><strong>(c) The top layer of soil is exposed:</strong> When the top layer of soil is exposed due to deforestation, it leads to soil erosion. The soil loses its humus and becomes less fertile. Gradually, the fertile land gets converted into a desert.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">Answer in brief.</p>
+                    <div class="answer">
+                        <p><strong>(a) Why should we conserve biodiversity?</strong> We should conserve biodiversity because a great variety of plants and animals exist on Earth and are essential for the well-being and survival of mankind.</p>
+                        <p><strong>(b) Protected forests are also not completely safe for wild animals. Why?</strong> Protected forests are not completely safe because people living in the neighborhood sometimes encroach upon them and destroy them.</p>
+                        <p><strong>(c) Some tribals depend on the jungle. How?</strong> Tribals depend on the jungle for their traditional life and basic needs, such as firewood and medicinal plants.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 5 (Continued)</div>
+                    <div class="answer">
+                        <p><strong>(d) What are the causes and consequences of deforestation?</strong></p>
+                        <p><strong>Causes:</strong> The main causes of deforestation are human-made, such as procuring land for cultivation, building houses and factories, and using wood for furniture or fuel. Natural causes include forest fires and severe droughts.</p>
+                        <p><strong>Consequences:</strong> Deforestation leads to increased temperature and pollution, global warming, desertification, reduced rainfall, floods, droughts, and a threat to the existence of animals.</p>
+                        <p><strong>(e) What is the Red Data Book?</strong> The Red Data Book is a sourcebook that keeps a record of all endangered animals and plants.</p>
+                        <p><strong>(f) What do you understand by the term migration?</strong> Migration is the phenomenon of certain species moving from their own habitat to another for a particular period each year because of climatic changes. They often migrate to lay eggs when the weather in their natural habitat becomes too cold.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">In order to meet the ever-increasing demand in factories and for shelter, trees are being continually cut. Is it justified to cut trees for such projects? Discuss and prepare a brief report.</p>
+                    <div class="answer">
+                        <p>Cutting trees for these projects is not justified. Forests are essential natural resources that provide a great variety of plants and animals crucial for the well-being and survival of mankind. Deforestation has severe consequences, including increased pollution, global warming, desertification, and a loss of biodiversity.</p>
+                        <p>While we need land for cultivation, houses, and factories, we must balance development with environmental protection. The destruction of forests disturbs the natural balance and can lead to more floods and droughts. Therefore, alternatives like reforestation should be considered, and we should plant at least as many trees as we cut to retain our green wealth for future generations.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">How can you contribute to the maintenance of the green wealth of your locality? Make a list of actions to be taken by you.</p>
+                    <div class="answer">
+                        <p>Here is a list of actions to help maintain the green wealth of your locality:</p>
+                        <p>• Plant more trees: You can plant and take care of trees in your locality to help with reforestation.</p>
+                        <p>• Save paper: Saving, reusing, and recycling paper can save many trees, as it takes 17 full-grown trees to make one tonne of paper.</p>
+                        <p>• Discourage deforestation: You can raise awareness among your friends and family about the harmful effects of deforestation.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Explain how deforestation leads to reduced rainfall.</p>
+                    <div class="answer">
+                        <p>Plants need carbon dioxide for photosynthesis. When trees are cut down, less carbon dioxide is used up, leading to an increased amount in the atmosphere. This excess carbon dioxide traps the sun's heat rays, causing a rise in the Earth's temperature, a phenomenon called global warming. The increase in temperature disturbs the water cycle, which can reduce rainfall and cause droughts.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="question">Why should paper be saved? Prepare a list of ways by which you can save paper.</p>
+                    <div class="answer">
+                        <p>Paper should be saved to protect trees. It takes 17 full-grown trees to make one tonne of paper. Saving paper also helps to save the energy and water needed for manufacturing it and reduces the amount of harmful chemicals used in the process.</p>
+                        <p><strong>Ways to save paper:</strong></p>
+                        <p>• Use both sides of the paper for writing.</p>
+                        <p>• Reuse old notebooks and other paper products.</p>
+   
