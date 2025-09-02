@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal and Petroleum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .true-false-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .true-false-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 6px;
+        }
+        
+        .tf-indicator {
+            background: #3498db;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .true {
+            background: #2ecc71;
+        }
+        
+        .false {
+            background: #e74c3c;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 20px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 30px;
+            }
+            
+            h3 {
+                font-size: 26px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 22px;
+            }
+            
+            h1 {
+                font-size: 42px;
+            }
+            
+            h2 {
+                font-size: 36px;
+            }
+            
+            .content, .answer {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>COAL AND PETROLEUM</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by StudyScript</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">What are the advantages of using CNG and LPG as fuels?</p>
+                    <div class="answer">
+                        <p>Using CNG (Compressed Natural Gas) and LPG (Liquefied Petroleum Gas) as fuels has several advantages:</p>
+                        <p>• They are less polluting than other fossil fuels like petrol and diesel.</p>
+                        <p>• They are cleaner fuels.</p>
+                        <p>• CNG can be supplied directly to homes and factories through a network of pipes, making it convenient to use.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Name the petroleum product used for surfacing of roads.</p>
+                    <div class="answer">
+                        <p>Bitumen is the petroleum product used for surfacing roads. It is also used in paints.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Describe how coal is formed from dead vegetation. What is this process called?</p>
+                    <div class="answer">
+                        <p><strong>How coal is formed:</strong> About 300 million years ago, Earth had dense forests in low-lying wetland areas. These forests were buried under the soil due to natural processes like flooding. As more soil piled up, they were compressed and the temperature also increased as they sank deeper. Under high pressure and high temperature, the dead plants slowly turned into coal.</p>
+                        <p><strong>The process name:</strong> Since coal is mainly composed of carbon, this slow process of converting dead vegetation into coal is called carbonisation.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">Fill in the blanks.</p>
+                    <div class="answer">
+                        <p>(a) Fossil fuels are <span class="highlight">coal, petroleum, and natural gas</span>.</p>
+                        <p>(b) The process of separating different constituents from petroleum is called <span class="highlight">refining</span>.</p>
+                        <p>(c) The least polluting fuel for vehicles is <span class="highlight">CNG (Compressed Natural Gas)</span>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">Tick True/False against the following statements.</p>
+                    <div class="true-false-container">
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(a) Fossil fuels can be made in the laboratory.</strong> (False)</p>
+                                <p>The formation of fossil fuels is a very slow process that requires specific conditions (high pressure, high temperature, and absence of air) which cannot be recreated in a laboratory.</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(b) CNG is a more polluting fuel than petrol.</strong> (False)</p>
+                                <p>CNG is a cleaner and less polluting fuel than petrol.</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(c) Coke is an almost pure form of carbon.</strong> (True)</p>
+                                <p>Coke is a tough, porous, and black substance that is an almost pure form of carbon.</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(d) Coal tar is a mixture of various substances.</strong> (True)</p>
+                                <p>Coal tar is a black, thick liquid that is a mixture of about 200 substances.</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(e) Kerosene is not a fossil fuel.</strong> (False)</p>
+                                <p>Kerosene is a constituent of petroleum, which is a fossil fuel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">Explain why fossil fuels are exhaustible natural resources.</p>
+                    <div class="answer">
+                        <p>Fossil fuels are considered exhaustible natural resources because their amount in nature is limited and they can be depleted by human activities. They were formed over millions of years from the remains of dead organisms, and their known reserves are only expected to last for a few hundred years. Since they are finite and take a very long time to form, they cannot be replaced once they are used up.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">Describe characteristics and uses of coke.</p>
+                    <div class="answer">
+                        <p><strong>Characteristics:</strong> Coke is a tough, porous, and black substance. It is an almost pure form of carbon.</p>
+                        <p><strong>Uses:</strong> Coke is used in the manufacturing of steel and in the extraction of many metals.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Explain the process of formation of petroleum.</p>
+                    <div class="answer">
+                        <p>Petroleum was formed from organisms that lived in the sea. When these organisms died, their bodies sank to the bottom of the sea and were covered by layers of sand and clay. Over millions of years, the absence of air, along with high temperature and high pressure, transformed these dead organisms into petroleum and natural gas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+  </html>
