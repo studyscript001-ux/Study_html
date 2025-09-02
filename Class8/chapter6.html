@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduction in Animals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 16px;
+            position: relative;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(52, 152, 219, 0.1);
+            pointer-events: none;
+            z-index: -1;
+            white-space: nowrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .comparison-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .comparison-row {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        
+        .comparison-header {
+            font-weight: bold;
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .comparison-cell {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .true-false-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .true-false-item {
+            display: flex;
+            align-items: flex-start;
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 6px;
+        }
+        
+        .tf-indicator {
+            background: #3498db;
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+        
+        .true {
+            background: #2ecc71;
+        }
+        
+        .false {
+            background: #e74c3c;
+        }
+        
+        .puzzle {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 15px 0;
+        }
+        
+        .puzzle-item {
+            padding: 12px;
+            background: #e3f2fd;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 18px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 26px;
+            }
+            
+            h3 {
+                font-size: 24px;
+            }
+            
+            .content, .answer {
+                font-size: 18px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+            
+            .puzzle {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 20px;
+            }
+            
+            h1 {
+                font-size: 38px;
+            }
+            
+            h2 {
+                font-size: 32px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark"></div>
+    
+    <div class="container">
+        <header>
+            <h1>REPRODUCTION IN ANIMALS</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by studyscript.netlify.app</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">Explain the importance of reproduction in organisms.</p>
+                    <div class="answer">
+                        <p>Reproduction is essential for the continuation of a species. It ensures that similar kinds of individuals continue to exist, generation after generation. Without reproduction, organisms would not be able to survive as a species.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Describe the process of fertilisation in human beings.</p>
+                    <div class="answer">
+                        <p>Fertilisation in human beings is the fusion of a sperm and an ovum (egg). In this process, when sperms come into contact with an egg, one of the sperms may fuse with the egg. The nuclei of the sperm and the egg fuse to form a single nucleus, which results in the formation of a fertilised egg or zygote. This process is known as internal fertilisation because it takes place inside the female body. The zygote then develops into a new individual, inheriting characteristics from both the mother and the father.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Choose the most appropriate answer.</p>
+                    <div class="answer">
+                        <p>(a) Internal fertilisation occurs: <span class="highlight">(i) in female body</span></p>
+                        <p>(b) A tadpole develops into an adult frog by the process of: <span class="highlight">(ii) metamorphosis</span></p>
+                        <p>(c) The number of nuclei present in a zygote is: <span class="highlight">(ii) one</span></p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">Indicate whether the following statements are True (T) or False (F).</p>
+                    <div class="true-false-container">
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(a) Oviparous animals give birth to young ones.</strong> (False)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(b) Each sperm is a single cell.</strong> (True)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(c) External fertilisation takes place in frog.</strong> (True)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(d) A new human individual develops from a cell called gamete.</strong> (False)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(e) Egg laid after fertilisation is made up of a single cell.</strong> (False)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 4 (Continued)</div>
+                    <div class="true-false-container">
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(f) Amoeba reproduces by budding.</strong> (False)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(g) Fertilisation is necessary even in asexual reproduction.</strong> (False)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(h) Binary fission is a method of asexual reproduction.</strong> (True)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator true">T</div>
+                            <div>
+                                <p><strong>(i) A zygote is formed as a result of fertilisation.</strong> (True)</p>
+                            </div>
+                        </div>
+                        <div class="true-false-item">
+                            <div class="tf-indicator false">F</div>
+                            <div>
+                                <p><strong>(j) An embryo is made up of a single cell.</strong> (False)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">Give two differences between a zygote and a foetus.</p>
+                    <div class="answer">
+                        <p><strong>Zygote:</strong> A zygote is a single cell formed by the fusion of a male gamete (sperm) and a female gamete (ovum). It is the very first stage of development of a new individual.</p>
+                        <p><strong>Foetus:</strong> A foetus is a later stage of the embryo in which all the major body parts, such as hands, legs, head, and eyes, can be identified. It develops from the repeatedly dividing zygote.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">Define asexual reproduction. Describe two methods of asexual reproduction in animals.</p>
+                    <div class="answer">
+                        <p><strong>Asexual reproduction</strong> is a type of reproduction that involves only a single parent.</p>
+                        <p>Two methods of asexual reproduction in animals are:</p>
+                        <p><strong>Budding:</strong> In this method, new individuals develop as outgrowths, or "buds," from a single parent. This is seen in organisms like hydra.</p>
+                        <p><strong>Binary fission:</strong> In this method, a single-celled organism, like an amoeba, begins the process of reproduction by its nucleus dividing into two. This is followed by the division of its body into two parts, with each part receiving a nucleus. Finally, two new individuals are produced from one parent amoeba.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">In which female reproductive organ does the embryo get embedded?</p>
+                    <div class="answer">
+                        <p>The embryo gets embedded in the uterus wall for further development.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">What is metamorphosis? Give examples.</p>
+                    <div class="answer">
+                        <p>Metamorphosis is the transformation of a larva into an adult through drastic changes. An example of this is the life cycle of a frog, where a tadpole (larva) undergoes significant changes to become an adult frog.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 9</div>
+                    <p class="question">Differentiate between internal fertilisation and external fertilisation.</p>
+                    <div class="comparison-container">
+                        <div class="comparison-row comparison-header">
+                            <div class="comparison-cell">Internal Fertilisation</div>
+                            <div class="comparison-cell">External Fertilisation</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">Takes place inside the female body.</div>
+                            <div class="comparison-cell">Takes place outside the female body, often in water.</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">Common in animals such as humans, cows, dogs, and hens.</div>
+                            <div class="comparison-cell">Common in aquatic animals like frogs, fish, and starfish.</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">The male deposits sperms inside the female's body.</div>
+                            <div class="comparison-cell">The male deposits sperms over the eggs in water.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="question">Complete the crossword puzzle using the hints given below.</p>
+                    <div class="answer">
+                        <p><strong>Across</strong></p>
+                        <p>1. <span class="highlight">FERTILISATION</span>: The process of the fusion of the gametes.</p>
+                        <p>2. <span class="highlight">INTERNAL</span>: The type of fertilisation in hen.</p>
+                        <p>3. <span class="highlight">BUDS</span>: The term used for bulges observed on the sides of the body of hydra.</p>
+                        <p>4. <span class="highlight">OVARIES</span>: Eggs are produced here.</p>
+                        
+                        <p><strong>Down</strong></p>
+                        <p>2. <span class="highlight">TESTES</span>: Sperms are produced in these male reproductive organs.</p>
+                        <p>3. <span class="highlight">IVF</span>: Another term for in vitro fertilisation.</p>
+                        <p>4. <span class="highlight">OVIPAROUS</span>: These animals lay eggs.</p>
+                      <p>5. <span class="highlight">BINARY</span>: A type of fission in aboeba.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <footer>
+        <p>Download StudyScript App From Google Search: studyscript.netlify.app</p>
+      </footer>
+    </div>
+</body>
+</html> 
