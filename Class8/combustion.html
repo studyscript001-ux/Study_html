@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combustion and Flame</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 19px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 18px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .comparison-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .comparison-row {
+            display: flex;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        
+        .comparison-header {
+            font-weight: bold;
+            background: #e3f2fd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .comparison-cell {
+            flex: 1;
+            padding: 10px;
+        }
+        
+        .calculation {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: monospace;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 20px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 36px;
+            }
+            
+            h2 {
+                font-size: 30px;
+            }
+            
+            h3 {
+                font-size: 26px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+            
+            .comparison-container {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 22px;
+            }
+            
+            h1 {
+                font-size: 42px;
+            }
+            
+            h2 {
+                font-size: 36px;
+            }
+            
+            .content, .answer {
+                font-size: 22px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>COMBUSTION AND FLAME</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by studyscript.netlify.app</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">List conditions under which combustion can take place.</p>
+                    <div class="answer">
+                        <p>For combustion to take place, the following conditions are necessary:</p>
+                        <p>• A fuel (combustible substance) must be present.</p>
+                        <p>• Air (to supply oxygen) is required.</p>
+                        <p>• Heat is needed to raise the temperature of the fuel above its ignition temperature.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Fill in the blanks.</p>
+                    <div class="answer">
+                        <p>(a) Burning of wood and coal causes <span class="highlight">pollution of air</span>.</p>
+                        <p>(b) A liquid fuel, used in homes is <span class="highlight">kerosene oil</span>.</p>
+                        <p>(c) Fuel must be heated to its <span class="highlight">ignition temperature</span> before it starts burning.</p>
+                        <p>(d) Fire produced by oil cannot be controlled by <span class="highlight">water</span>.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Explain how the use of CNG in automobiles has reduced pollution in our cities.</p>
+                    <div class="answer">
+                        <p>The use of Compressed Natural Gas (CNG) in automobiles has significantly reduced pollution in our cities because it is a cleaner fuel. CNG produces very small amounts of harmful products like sulphur dioxide, oxides of nitrogen, and carbon monoxide compared to petrol and diesel.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">Compare LPG and wood as fuels.</p>
+                    <div class="comparison-container">
+                        <div class="comparison-row comparison-header">
+                            <div class="comparison-cell">LPG (Liquefied Petroleum Gas)</div>
+                            <div class="comparison-cell">Wood</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">It is a clean fuel that does not produce smoke or other harmful residues.</div>
+                            <div class="comparison-cell">It produces a lot of smoke that is harmful to human health and causes respiratory problems.</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">Readily available in cylinders.</div>
+                            <div class="comparison-cell">Its availability is decreasing due to deforestation.</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">It has a high calorific value of 55,000 kJ/kg.</div>
+                            <div class="comparison-cell">Its calorific value is much lower, ranging from 17,000 to 22,000 kJ/kg.</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell">It leaves no solid residue after burning.</div>
+                            <div class="comparison-cell">It leaves behind ash and other undesirable substances.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">Give reasons.</p>
+                    <div class="answer">
+                        <p><strong>(a) Water is not used to control fires involving electrical equipment.</strong></p>
+                        <p>Water is a good conductor of electricity. If it is used on electrical fires, it can conduct electricity and harm the people trying to extinguish the fire.</p>
+                        
+                        <p><strong>(b) LPG is a better domestic fuel than wood.</strong></p>
+                        <p>LPG is a better fuel because it is readily available and burns easily. It produces a large amount of heat, has a high calorific value, and does not produce gases or residues that pollute the environment.</p>
+                        
+                        <p><strong>(c) Paper by itself catches fire easily whereas a piece of paper wrapped around an aluminium pipe does not.</strong></p>
+                        <p>Paper has a very low ignition temperature and catches fire easily. When it is wrapped around an aluminium pipe, the aluminium absorbs the heat. This prevents the paper from reaching its ignition temperature, so it does not burn.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">Name the unit in which the calorific value of a fuel is expressed.</p>
+                    <div class="answer">
+                        <p>The calorific value of a fuel is expressed in kilojoule per kg (kJ/kg).</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Explain how CO2 is able to control fires.</p>
+                    <div class="answer">
+                        <p>Carbon dioxide (CO2) is an excellent fire extinguisher because it is heavier than oxygen. It covers the fire like a blanket, cutting off the contact between the fuel and oxygen, which is essential for combustion. Additionally, when released from a cylinder, it expands and cools down, which helps to bring down the temperature of the fuel.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 9</div>
+                    <p class="question">It is difficult to burn a heap of green leaves but dry leaves catch fire easily. Explain.</p>
+                    <div class="answer">
+                        <p>It is difficult to burn green leaves because they contain water, which raises their ignition temperature. The water needs to evaporate before the leaves can reach the temperature required to burn. Dry leaves, on the other hand, have no water content, so they can easily reach their ignition temperature and catch fire.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="question">Which zone of a flame does a goldsmith use for melting gold and silver and why?</p>
+                    <div class="answer">
+                        <p>A goldsmith uses the outermost zone of the flame to melt gold and silver. This is because the outermost zone is the hottest part of the flame due to complete combustion.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 11</div>
+                    <p class="question">In an experiment 4.5 kg of a fuel was completely burnt. The heat produced was measured to be 1,80,000 kJ. Calculate the calorific value of the fuel.</p>
+                    <div class="answer">
+                        <p>The calorific value is calculated by dividing the total heat produced by the mass of the fuel.</p>
+                        <div class="calculation">
+                            <p>Calorific Value = (Total Heat Produced) / (Mass of Fuel)</p>
+                            <p>Calorific Value = 1,80,000 kJ / 4.5 kg</p>
+                            <p>Calorific Value = 40,000 kJ/kg</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 12</div>
+                    <p class="question">Can the process of rusting be called combustion? Discuss.</p>
+                    <div class="answer">
+                        <p>The process of rusting can be called slow combustion. Both rusting and combustion are chemical processes where a substance reacts with oxygen. However, in combustion, heat and light are produced rapidly, whereas rusting is a very slow process where the heat produced is barely noticeable.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 13</div>
+                    <p class="question">Abida and Ramesh were doing an experiment in which water was to be heated in a beaker. Abida kept the beaker near the wick in the yellow part of the candle flame. Ramesh kept the beaker in the outermost part of the flame. Whose water will get heated in a shorter time?</p>
+                    <div class="answer">
+                        <p>Ramesh's water will get heated in a shorter time. The outermost zone of the candle flame where Ramesh placed his beaker is the hottest part of the flame because of complete combustion. The yellow part of the flame where Abida placed her beaker is the middle zone, which is only moderately hot due to partial combustion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+  </html>
