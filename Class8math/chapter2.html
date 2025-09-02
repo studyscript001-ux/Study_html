@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 2: Linear Equations in One Variable</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* Main container for the content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Header section styling */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #2193b0;
+            border-bottom: 3px solid #6dd5ed;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        /* Styling for each question card */
+        .question-card {
+            background-color: #f9f9f9;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #2193b0;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Styling for the question text */
+        .question {
+            font-weight: 700;
+            font-size: 1.2em;
+            color: #005a70;
+            margin-bottom: 15px;
+        }
+
+        /* Styling for the solution steps */
+        .solution-step {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        /* Styling for the final answer */
+        .answer {
+            font-weight: 700;
+            color: #d9534f;
+            background-color: #fcf8e3;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fbeed5;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* Using code tags for variables and equations for clarity */
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #eef;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 1.1em;
+        }
+        
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Linear Equations in One Variable</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 2.1 -->
+        <h2>Exercise 2.1</h2>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <p class="question">1. Solve: <code>3x = 2x + 18</code></p>
+            <div class="solution-step">Transpose <code>2x</code> from the right side (RHS) to the left side (LHS). It becomes <code>-2x</code>.</div>
+            <div class="solution-step"><code>3x - 2x = 18</code></div>
+            <div class="solution-step">Simplify the expression on the LHS.</div>
+            <div class="solution-step"><code>x = 18</code></div>
+            <p class="answer">Answer: x = 18</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <p class="question">2. Solve: <code>5t - 3 = 3t - 5</code></p>
+            <div class="solution-step">Transpose <code>3t</code> from RHS to LHS (becomes <code>-3t</code>) and <code>-3</code> from LHS to RHS (becomes <code>+3</code>).</div>
+            <div class="solution-step"><code>5t - 3t = -5 + 3</code></div>
+            <div class="solution-step">Simplify both sides.</div>
+            <div class="solution-step"><code>2t = -2</code></div>
+            <div class="solution-step">Divide both sides by 2.</div>
+            <div class="solution-step"><code>t = -2 / 2</code></div>
+            <p class="answer">Answer: t = -1</p>
+        </div>
+        
+        <!-- Question 3 (NEWLY ADDED) -->
+        <div class="question-card">
+            <p class="question">3. Solve: <code>5x + 9 = 5 + 3x</code></p>
+            <div class="solution-step">Transpose <code>3x</code> from RHS to LHS (becomes <code>-3x</code>) and <code>9</code> from LHS to RHS (becomes <code>-9</code>).</div>
+            <div class="solution-step"><code>5x - 3x = 5 - 9</code></div>
+            <div class="solution-step">Simplify both sides.</div>
+            <div class="solution-step"><code>2x = -4</code></div>
+            <div class="solution-step">Divide both sides by 2.</div>
+            <div class="solution-step"><code>x = -4 / 2</code></div>
+            <p class="answer">Answer: x = -2</p>
+        </div>
+        
+        <!-- Question 4 -->
+        <div class="question-card">
+            <p class="question">4. Solve: <code>4z + 3 = 6 + 2z</code></p>
+            <div class="solution-step">Transpose <code>2z</code> from RHS to LHS and <code>3</code> from LHS to RHS.</div>
+            <div class="solution-step"><code>4z - 2z = 6 - 3</code></div>
+            <div class="solution-step">Simplify both sides.</div>
+            <div class="solution-step"><code>2z = 3</code></div>
+            <div class="solution-step">Divide both sides by 2.</div>
+            <p class="answer">Answer: z = 3/2</p>
+        </div>
+        
+        <!-- Question 5 -->
+        <div class="question-card">
+            <p class="question">5. Solve: <code>2x - 1 = 14 - x</code></p>
+            <div class="solution-step">Transpose <code>-x</code> from RHS to LHS (becomes <code>+x</code>) and <code>-1</code> from LHS to RHS (becomes <code>+1</code>).</div>
+            <div class="solution-step"><code>2x + x = 14 + 1</code></div>
+            <div class="solution-step">Simplify both sides.</div>
+            <div class="solution-step"><code>3x = 15</code></div>
+            <div class="solution-step">Divide both sides by 3.</div>
+            <p class="answer">Answer: x = 5</p>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question-card">
+            <p class="question">6. Solve: <code>8x + 4 = 3(x - 1) + 7</code></p>
+            <div class="solution-step">First, open the bracket on the RHS: <code>3 * x - 3 * 1 = 3x - 3</code>.</div>
+            <div class="solution-step">The equation becomes: <code>8x + 4 = 3x - 3 + 7</code></div>
+            <div class="solution-step">Combine the constant terms on the RHS: <code>-3 + 7 = 4</code>.</div>
+            <div class="solution-step">Equation is now: <code>8x + 4 = 3x + 4</code></div>
+            <div class="solution-step">Transpose <code>3x</code> to LHS and <code>4</code> to RHS.</div>
+            <div class="solution-step"><code>8x - 3x = 4 - 4</code></div>
+            <div class="solution-step"><code>5x = 0</code></div>
+            <div class="solution-step">Divide by 5.</div>
+            <p class="answer">Answer: x = 0</p>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question-card">
+            <p class="question">7. Solve: <code>x = 4/5 (x + 10)</code></p>
+            <div class="solution-step">Multiply both sides by 5 to remove the denominator.</div>
+            <div class="solution-step"><code>5 * x = 5 * [4/5 (x + 10)]</code></div>
+            <div class="solution-step"><code>5x = 4(x + 10)</code></div>
+            <div class="solution-step">Open the bracket: <code>4 * x + 4 * 10</code>.</div>
+            <div class="solution-step"><code>5x = 4x + 40</code></div>
+            <div class="solution-step">Transpose <code>4x</code> to the LHS.</div>
+            <div class="solution-step"><code>5x - 4x = 40</code></div>
+            <p class="answer">Answer: x = 40</p>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question-card">
+            <p class="question">8. Solve: <code>2x/3 + 1 = 7x/15 + 3</code></p>
+            <div class="solution-step">Transpose <code>7x/15</code> to LHS and <code>1</code> to RHS.</div>
+            <div class="solution-step"><code>2x/3 - 7x/15 = 3 - 1</code></div>
+            <div class="solution-step">The LCM of denominators 3 and 15 is 15.</div>
+            <div class="solution-step"><code>(5 * 2x - 1 * 7x) / 15 = 2</code></div>
+            <div class="solution-step"><code>(10x - 7x) / 15 = 2</code></div>
+            <div class="solution-step"><code>3x / 15 = 2</code></div>
+            <div class="solution-step">Multiply both sides by 15.</div>
+            <div class="solution-step"><code>3x = 30</code></div>
+            <div class="solution-step">Divide by 3.</div>
+            <p class="answer">Answer: x = 10</p>
+        </div>
+        
+        <!-- Question 9 -->
+        <div class="question-card">
+            <p class="question">9. Solve: <code>2y + 5/3 = 26/3 - y</code></p>
+            <div class="solution-step">Transpose <code>-y</code> to LHS and <code>5/3</code> to RHS.</div>
+            <div class="solution-step"><code>2y + y = 26/3 - 5/3</code></div>
+            <div class="solution-step">Simplify both sides. The denominators on the RHS are the same.</div>
+            <div class="solution-step"><code>3y = (26 - 5) / 3</code></div>
+            <div class="solution-step"><code>3y = 21 / 3</code></div>
+            <div class="solution-step"><code>3y = 7</code></div>
+            <div class="solution-step">Divide by 3.</div>
+            <p class="answer">Answer: y = 7/3</p>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question-card">
+            <p class="question">10. Solve: <code>3m = 5m - 8/5</code></p>
+            <div class="solution-step">Transpose <code>5m</code> to LHS.</div>
+            <div class="solution-step"><code>3m - 5m = -8/5</code></div>
+            <div class="solution-step"><code>-2m = -8/5</code></div>
+            <div class="solution-step">The negative signs on both sides cancel out.</div>
+            <div class="solution-step"><code>2m = 8/5</code></div>
+            <div class="solution-step">Divide both sides by 2.</div>
+            <div class="solution-step"><code>m = (8/5) / 2 = 8 / (5 * 2) = 8 / 10</code></div>
+            <div class="solution-step">Simplify the fraction.</div>
+            <p class="answer">Answer: m = 4/5</p>
+        </div>
+
+        <!-- Solutions for Exercise 2.2 -->
+        <h2>Exercise 2.2</h2>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <p class="question">1. Solve: <code>x/2 - 1/5 = x/3 + 1/4</code></p>
+            <div class="solution-step">Group the variable terms on LHS and constant terms on RHS.</div>
+            <div class="solution-step"><code>x/2 - x/3 = 1/4 + 1/5</code></div>
+            <div class="solution-step">On LHS, LCM of 2 and 3 is 6. On RHS, LCM of 4 and 5 is 20.</div>
+            <div class="solution-step"><code>(3x - 2x)/6 = (5 + 4)/20</code></div>
+            <div class="solution-step"><code>x/6 = 9/20</code></div>
+            <div class="solution-step">Multiply both sides by 6.</div>
+            <div class="solution-step"><code>x = (9 * 6) / 20 = 54 / 20</code></div>
+            <div class="solution-step">Simplify the fraction by dividing numerator and denominator by 2.</div>
+            <p class="answer">Answer: x = 27/10</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <p class="question">2. Solve: <code>n/2 - 3n/4 + 5n/6 = 21</code></p>
+            <div class="solution-step">The variable terms are already on the LHS.</div>
+            <div class="solution-step">Find the LCM of the denominators 2, 4, and 6. The LCM is 12.</div>
+            <div class="solution-step"><code>(6*n - 3*3n + 2*5n) / 12 = 21</code></div>
+            <div class="solution-step"><code>(6n - 9n + 10n) / 12 = 21</code></div>
+            <div class="solution-step">Simplify the numerator: <code>(16n - 9n) / 12 = 21</code></div>
+            <div class="solution-step"><code>7n / 12 = 21</code></div>
+            <div class="solution-step">Multiply both sides by 12.</div>
+            <div class="solution-step"><code>7n = 21 * 12</code></div>
+            <div class="solution-step"><code>7n = 252</code></div>
+            <div class="solution-step">Divide both sides by 7.</div>
+            <p class="answer">Answer: n = 36</p>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question-card">
+            <p class="question">3. Solve: <code>x + 7 - 8x/3 = 17/6 - 5x/2</code></p>
+            <div class="solution-step">Group variable terms on LHS and constants on RHS.</div>
+            <div class="solution-step"><code>x - 8x/3 + 5x/2 = 17/6 - 7</code></div>
+            <div class="solution-step">On LHS, LCM of 1, 3, 2 is 6. On RHS, LCM of 6, 1 is 6.</div>
+            <div class="solution-step"><code>(6x - 2*8x + 3*5x)/6 = (17 - 6*7)/6</code></div>
+            <div class="solution-step"><code>(6x - 16x + 15x)/6 = (17 - 42)/6</code></div>
+            <div class="solution-step"><code>(21x - 16x)/6 = -25/6</code></div>
+            <div class="solution-step"><code>5x/6 = -25/6</code></div>
+            <div class="solution-step">Multiply both sides by 6 to cancel denominators.</div>
+            <div class="solution-step"><code>5x = -25</code></div>
+            <div class="solution-step">Divide by 5.</div>
+            <p class="answer">Answer: x = -5</p>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card">
+            <p class="question">4. Solve: <code>(x - 5)/3 = (x - 3)/5</code></p>
+            <div class="solution-step">Cross-multiply the terms.</div>
+            <div class="solution-step"><code>5 * (x - 5) = 3 * (x - 3)</code></div>
+            <div class="solution-step">Open the brackets on both sides.</div>
+            <div class="solution-step"><code>5x - 25 = 3x - 9</code></div>
+            <div class="solution-step">Transpose <code>3x</code> to LHS and <code>-25</code> to RHS.</div>
+            <div class="solution-step"><code>5x - 3x = -9 + 25</code></div>
+            <div class="solution-step"><code>2x = 16</code></div>
+            <div class="solution-step">Divide by 2.</div>
+            <p class="answer">Answer: x = 8</p>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question-card">
+            <p class="question">5. Solve: <code>(3t - 2)/4 - (2t + 3)/3 = 2/3 - t</code></p>
+            <div class="solution-step">Move <code>-t</code> to LHS. It becomes <code>+t</code>.</div>
+            <div class="solution-step"><code>(3t - 2)/4 - (2t + 3)/3 + t = 2/3</code></div>
+            <div class="solution-step">LCM of 4 and 3 on the LHS is 12.</div>
+            <div class="solution-step"><code>[3(3t - 2) - 4(2t + 3) + 12t] / 12 = 2/3</code></div>
+            <div class="solution-step"><code>(9t - 6 - 8t - 12 + 12t) / 12 = 2/3</code></div>
+            <div class="solution-step">Combine like terms in the numerator: <code>(13t - 18) / 12 = 2/3</code></div>
+            <div class="solution-step">Multiply both sides by 12.</div>
+            <div class="solution-step"><code>13t - 18 = (2/3) * 12 = 8</code></div>
+            <div class="solution-step"><code>13t = 8 + 18</code></div>
+            <div class="solution-step"><code>13t = 26</code></div>
+            <div class="solution-step">Divide by 13.</div>
+            <p class="answer">Answer: t = 2</p>
+        </div>
+        
+        <!-- Question 6 -->
+        <div class="question-card">
+            <p class="question">6. Solve: <code>m - (m - 1)/2 = 1 - (m - 2)/3</code></p>
+            <div class="solution-step">Group variable terms on LHS.</div>
+            <div class="solution-step"><code>m - (m - 1)/2 + (m - 2)/3 = 1</code></div>
+            <div class="solution-step">LCM of 2 and 3 is 6.</div>
+            <div class="solution-step"><code>[6m - 3(m - 1) + 2(m - 2)] / 6 = 1</code></div>
+            <div class="solution-step"><code>(6m - 3m + 3 + 2m - 4) / 6 = 1</code></div>
+            <div class="solution-step">Combine like terms in numerator: <code>(5m - 1) / 6 = 1</code></div>
+            <div class="solution-step">Multiply both sides by 6.</div>
+            <div class="solution-step"><code>5m - 1 = 6</code></div>
+            <div class="solution-step"><code>5m = 7</code></div>
+            <p class="answer">Answer: m = 7/5</p>
+        </div>
+        
+        <!-- Question 7 -->
+        <div class="question-card">
+            <p class="question">7. Simplify and solve: <code>3(t - 3) = 5(2t + 1)</code></p>
+            <div class="solution-step">Open brackets on both sides.</div>
+            <div class="solution-step"><code>3t - 9 = 10t + 5</code></div>
+            <div class="solution-step">Transpose <code>10t</code> to LHS and <code>-9</code> to RHS.</div>
+            <div class="solution-step"><code>3t - 10t = 5 + 9</code></div>
+            <div class="solution-step"><code>-7t = 14</code></div>
+            <div class="solution-step">Divide by -7.</div>
+            <p class="answer">Answer: t = -2</p>
+        </div>
+        
+        <!-- Question 8 -->
+        <div class="question-card">
+            <p class="question">8. Simplify and solve: <code>15(y - 4) - 2(y - 9) + 5(y + 6) = 0</code></p>
+            <div class="solution-step">Open all the brackets.</div>
+            <div class="solution-step"><code>15y - 60 - 2y + 18 + 5y + 30 = 0</code></div>
+            <div class="solution-step">Combine 'y' terms: <code>15y - 2y + 5y = 18y</code>.</div>
+            <div class="solution-step">Combine constant terms: <code>-60 + 18 + 30 = -12</code>.</div>
+            <div class="solution-step">The equation becomes: <code>18y - 12 = 0</code></div>
+            <div class="solution-step"><code>18y = 12</code></div>
+            <div class="solution-step"><code>y = 12 / 18</code></div>
+            <div class="solution-step">Simplify the fraction by dividing by 6.</div>
+            <p class="answer">Answer: y = 2/3</p>
+        </div>
+        
+        <!-- Question 9 -->
+        <div class="question-card">
+            <p class="question">9. Simplify and solve: <code>3(5z - 7) - 2(9z - 11) = 4(8z - 13) - 17</code></p>
+            <div class="solution-step">Simplify LHS: <code>15z - 21 - 18z + 22</code> which is <code>-3z + 1</code>.</div>
+            <div class="solution-step">Simplify RHS: <code>32z - 52 - 17</code> which is <code>32z - 69</code>.</div>
+            <div class="solution-step">The equation is now: <code>-3z + 1 = 32z - 69</code></div>
+            <div class="solution-step">Transpose <code>32z</code> to LHS and <code>1</code> to RHS.</div>
+            <div class="solution-step"><code>-3z - 32z = -69 - 1</code></div>
+            <div class="solution-step"><code>-35z = -70</code></div>
+            <div class="solution-step">Divide by -35.</div>
+            <p class="answer">Answer: z = 2</p>
+        </div>
+        
+        <!-- Question 10 -->
+        <div class="question-card">
+            <p class="question">10. Simplify and solve: <code>0.25(4f - 3) = 0.05(10f - 9)</code></p>
+            <div class="solution-step">Open the brackets on both sides.</div>
+            <div class="solution-step"><code>1f - 0.75 = 0.5f - 0.45</code></div>
+            <div class="solution-step">Transpose <code>0.5f</code> to LHS and <code>-0.75</code> to RHS.</div>
+            <div class="solution-step"><code>f - 0.5f = -0.45 + 0.75</code></div>
+            <div class="solution-step"><code>0.5f = 0.30</code></div>
+            <div class="solution-step">Divide by 0.5.</div>
+            <div class="solution-step"><code>f = 0.30 / 0.5</code></div>
+            <p class="answer">Answer: f = 0.6</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
