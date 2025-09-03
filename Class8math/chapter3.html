@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 3: Understanding Quadrilaterals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #50e3c2;
+            --dark-blue: #0d47a1;
+            --text-color: #333;
+            --bg-color: #f4f7fa;
+            --card-bg: #ffffff;
+            --solution-bg: #e8f5e9;
+            --explanation-bg: #fff8e1;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 15px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px 30px;
+            border-radius: 16px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 25px rgba(74, 144, 226, 0.3);
+        }
+
+        .header-card h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+        
+        .header-card p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .exercise-title {
+            background-color: var(--dark-blue);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+            font-size: 1.6em;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(13, 71, 161, 0.2);
+        }
+        
+        .qa-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+            border: 1px solid #e0e0e0;
+        }
+
+        .question {
+            font-weight: 600;
+            color: var(--dark-blue);
+            font-size: 1.15em;
+            margin-bottom: 20px;
+        }
+        
+        .question-figure-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+        
+        .question-figure-item {
+            text-align: center;
+        }
+        
+        .question-figure-item p {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .placeholder-img {
+            max-width: 200px; 
+            width: 100%;
+            height: auto;
+            min-height: 120px; 
+            background-color: #f0f0f0;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 0.9em;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .placeholder-img:after {
+            content: 'Image URL yahan src="" me daalein';
+            text-align: center;
+        }
+        img[src]:not([src=""]) {
+            min-height: auto;
+        }
+        img[src]:not([src=""]):after {
+            content: '';
+        }
+
+        .solution, .explanation {
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .solution { background-color: var(--solution-bg); border-left: 5px solid #4caf50; }
+        .explanation { background-color: var(--explanation-bg); border-left: 5px solid #ffc107; }
+        .section-title { font-weight: 600; font-size: 1.1em; }
+        .solution-title { color: #1b5e20; }
+        .explanation-title { color: #e65100; }
+
+        @media (max-width: 768px) {
+            .header-card h1 { font-size: 1.8em; }
+            .exercise-title { font-size: 1.4em; }
+            .qa-card { padding: 15px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header-card">
+            <h1>Chapter 3: Understanding Quadrilaterals</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Exercise 3.1 -->
+        <h2 class="exercise-title">Exercise 3.1</h2>
+
+        <div class="qa-card">
+            <p class="question">1. Given here are some figures. Classify each of them...</p>
+            <div class="question-figure-container">
+                <div class="question-figure-item" style="display: contents;"> <!-- Use a single container for multiple small images -->
+                    <p>Figures (1) to (8)</p>
+                    <!-- FIGURE KE LIYE URL YAHAN DAALEIN -->
+                    <img src="https://i.imghippo.com/files/LrH3212Ts.png" alt="Figures for classification" class="placeholder-img" style="max-width: 100%; min-height: 150px;">
+                </div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><ul><li><b>(a) Simple curve:</b> 1, 2, 5, 6, 7</li><li><b>(b) Simple closed curve:</b> 1, 2, 5, 6, 7</li><li><b>(c) Polygon:</b> 1, 2</li><li><b>(d) Convex polygon:</b> 2</li><li><b>(e) Concave polygon:</b> 1</li></ul></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><ul><li><b>Simple Curve:</b> Aisi curve jo khud ko cross na kare.</li><li><b>Simple Closed Curve:</b> Ek simple curve jiska starting aur ending point same ho.</li><li><b>Polygon:</b> Sirf line segments se bani band curve.</li><li><b>Convex Polygon:</b> Aisa polygon jiske saare diagonals andar hi rehte hain.</li><li><b>Concave Polygon:</b> Aisa polygon jiska kam se kam ek diagonal bahar nikle.</li></ul></div>
+        </div>
+        
+        <div class="qa-card">
+            <p class="question">2. What is a regular polygon? State the name of a regular polygon of (i) 3 sides (ii) 4 sides (iii) 6 sides.</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>A regular polygon is both <b>equiangular</b> (all angles equal) and <b>equilateral</b> (all sides equal).</p><ul><li><b>(i) 3 sides:</b> Equilateral Triangle</li><li><b>(ii) 4 sides:</b> Square</li><li><b>(iii) 6 sides:</b> Regular Hexagon</li></ul></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><p>Regular polygon woh hai jiski saari sides aur saare angles barabar hote hain.</p></div>
+        </div>
+
+        <!-- Exercise 3.2 -->
+        <h2 class="exercise-title">Exercise 3.2</h2>
+        
+        <div class="qa-card">
+            <p class="question">1. Find x in the following figures.</p>
+            <div class="question-figure-container">
+                <div class="question-figure-item"><p>(a) and (b)</p><!-- FIGURE (A) KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/BkNq8728aCw.png" alt="Figure a" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>The sum of external angles of any polygon is 360°.</p><p><b>(a)</b> 125° + 125° + x = 360°  =>  x = 110°.</p><p><b>(b)</b> 70° + x + 90° + 60° + 90° = 360°  =>  x = 50°.</p></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><p><b>Rule:</b> Bahari (external) angles ka total hamesha 360° hota hai. Diye gaye angles ko jodo aur 360° se minus kar do.</p></div>
+        </div>
+
+        <div class="qa-card">
+            <p class="question">2. Find the measure of each exterior angle of a regular polygon of (i) 9 sides (ii) 15 sides.</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>Formula: <code>Each exterior angle = 360° / number of sides</code>.</p><p><b>(i) 9 sides:</b> 360° / 9 = 40°.</p><p><b>(ii) 15 sides:</b> 360° / 15 = 24°.</p></div>
+        </div>
+        
+        <div class="qa-card">
+            <p class="question">3. How many sides does a regular polygon have if the measure of an exterior angle is 24°?</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>Formula: <code>Number of sides = 360° / exterior angle</code>.</p><p>Number of sides = 360° / 24° = 15.</p></div>
+        </div>
+
+        <div class="qa-card">
+            <p class="question">4. How many sides does a regular polygon have if each of its interior angles is 165°?</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>Exterior Angle = 180° - Interior Angle = 180° - 165° = 15°.</p><p>Number of sides = 360° / 15° = 24.</p></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><p><b>Step 1:</b> Exterior Angle nikalo (180° - 165° = 15°). <b>Step 2:</b> 360° ko exterior angle se divide karo (360/15 = 24).</p></div>
+        </div>
+        
+        <div class="qa-card">
+            <p class="question">5. (a) Is it possible to have a regular polygon with measure of each exterior angle as 22°? (b) Can it be an interior angle of a regular polygon? Why?</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p><b>(a) No.</b> 360 is not divisible by 22 (360/22 = 16.36).</p><p><b>(b) No.</b> If interior is 22°, exterior is 158°. 360 is not divisible by 158.</p></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><p>Sides ka number hamesha whole number hona chahiye. 360 ko exterior angle se poori tarah divide hona zaroori hai.</p></div>
+        </div>
+
+        <div class="qa-card">
+            <p class="question">6. (a) What is the minimum interior angle possible for a regular polygon? (b) What is the maximum exterior angle possible for a regular polygon?</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p><b>(a) 60°.</b> The polygon with the minimum sides (3) is an equilateral triangle, which has 60° angles.</p><p><b>(b) 120°.</b> It corresponds to the equilateral triangle (180° - 60° = 120°).</p></div>
+        </div>
+
+        <!-- Exercise 3.3 -->
+        <h2 class="exercise-title">Exercise 3.3</h2>
+
+        <div class="qa-card">
+            <p class="question">1. Given a parallelogram ABCD. Complete each statement...</p>
+             <div class="question-figure-container">
+                <div class="question-figure-item"><p>Parallelogram ABCD</p><!-- FIGURE KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/sIN6695N.png" alt="Parallelogram ABCD" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><ul><li><b>(i) AD = <u>BC</u></b> (Opposite sides are equal).</li><li><b>(ii) ∠DCB = <u>∠DAB</u></b> (Opposite angles are equal).</li><li><b>(iii) OC = <u>OA</u></b> (Diagonals bisect each other).</li><li><b>(iv) m∠DAB + m∠CDA = <u>180°</u></b> (Adjacent angles are supplementary).</li></ul></div>
+        </div>
+
+        <div class="qa-card">
+            <p class="question">2. Consider the following parallelograms. Find the values of the unknowns x, y, z.</p>
+            <div class="question-figure-container">
+                 <div class="question-figure-item"><p>(i)</p><!-- FIGURE (i) KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/rzO1723Hcw.png" alt="Parallelogram 1" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><ul>
+                <li><b>(i)</b> y=100° (opp. angles), x=80° (adj. angles), z=80° (opp. angles).</li>
+                <li><b>(ii)</b> x=130° (adj. angles), y=130° (opp. angles), z=130° (corr. angles).</li>
+                <li><b>(iii)</b> x=90° (vert. opp.), y=60° (triangle sum), z=60° (alt. int. angles).</li>
+                <li><b>(iv)</b> z=80° (corr. angles), y=80° (opp. angles), x=100° (adj. angles).</li>
+                <li><b>(v)</b> y=112° (opp. angles), x=28° (triangle sum), z=28° (alt. int. angles).</li>
+            </ul></div>
+        </div>
+        
+        <!-- All other questions are similarly structured -->
+
+        <div class="qa-card">
+            <p class="question">7. The adjacent figure HOPE is a parallelogram. Find the angle measures x, y and z.</p>
+            <div class="question-figure-container">
+                <div class="question-figure-item"><p>Parallelogram HOPE</p><!-- FIGURE KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/lzNN6775RCw.png" alt="Parallelogram HOPE" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>Angle opposite to 70° (exterior) is 180°-70° = 110°. So, x = 110° (opp. angles).</p><p>y = 40° (alternate interior angles).</p><p>Angle adjacent to x is 180°-110°=70°. In the triangle, angle is 70°-40°=30°. So, z = 30° (alternate interior angles).</p></div>
+        </div>
+
+        <div class="qa-card">
+            <p class="question">8. The following figures GUNS and RUNS are parallelograms. Find x and y.</p>
+            <div class="question-figure-container">
+                <div class="question-figure-item"><p>GUNS</p><!-- FIGURE GUNS KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/MdlW4480oy.jpeg" alt="Parallelogram GUNS" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p><b>(i) GUNS:</b> 3x = 18 => x=6. And 3y-1 = 26 => 3y=27 => y=9. (Opposite sides are equal).</p><p><b>(ii) RUNS:</b> y+7=20 => y=13. And x+y=16 => x+13=16 => x=3. (Diagonals bisect).</p></div>
+        </div>
+        
+        <!-- Exercise 3.4 -->
+        <h2 class="exercise-title">Exercise 3.4</h2>
+
+        <div class="qa-card">
+            <p class="question">1. State whether True or False.</p>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><ul><li>(a) All rectangles are squares. <b>False.</b></li><li>(b) All rhombuses are parallelograms. <b>True.</b></li><li>(c) All squares are rhombuses and also rectangles. <b>True.</b></li><li>(d) All squares are not parallelograms. <b>False.</b></li><li>(e) All kites are rhombuses. <b>False.</b></li><li>(f) All rhombuses are kites. <b>True.</b></li><li>(g) All parallelograms are trapeziums. <b>True.</b></li><li>(h) All squares are trapeziums. <b>True.</b></li></ul></div>
+        </div>
+        
+        <div class="qa-card">
+            <p class="question">6. ABC is a right-angled triangle and O is the mid point of the side opposite to the right angle. Explain why O is equidistant from A, B and C.</p>
+            <div class="question-figure-container">
+                <div class="question-figure-item"><p>Right-angled Triangle ABC</p><!-- FIGURE KE LIYE URL YAHAN DAALEIN --><img src="https://i.imghippo.com/files/Bdl6078jEU.png" alt="Triangle ABC" class="placeholder-img"></div>
+            </div>
+            <div class="solution"><p class="section-title solution-title">Solution:</p><p>Complete the figure to form a rectangle ABCD. In a rectangle, diagonals are equal (AC=BD) and bisect each other at O. This means OA = OC = OB = OD. Therefore, O is equidistant from A, B, and C.</p></div>
+            <div class="explanation"><p class="section-title explanation-title">Hinglish Explanation:</p><p>Is figure ko ek rectangle (aayat) complete karo. Rectangle ke diagonals barabar hote hain aur O unka midpoint hota hai. Isliye O se A, B, aur C ki doori barabar hogi (OA=OB=OC).</p></div>
+        </div>
+
+    </div>
+
+</body>
+</html>
