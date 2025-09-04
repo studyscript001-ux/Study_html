@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 7: Comparing Quantities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f4f8;
+            --container-bg: #ffffff;
+            --header-grad-1: #4a90e2;
+            --header-grad-2: #50e3c2;
+            --heading-color: #d0021b;
+            --border-color: #4a90e2;
+            --card-border: #50e3c2;
+            --text-color: #4a4a4a;
+            --code-bg: #f5f5f5;
+            --code-text: #333;
+            --answer-color: #b8860b;
+            --explanation-bg: #e3f2fd;
+            --explanation-border: #90caf9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.3em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.9em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid var(--card-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: #000;
+            margin-bottom: 15px;
+        }
+        
+        .solution-step {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '»';
+            position: absolute;
+            left: 0;
+            color: var(--header-grad-1);
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #fff8e1;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 4px solid var(--answer-color);
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: var(--explanation-bg);
+            border: 1px solid var(--explanation-border);
+            border-radius: 8px;
+        }
+
+        .explanation p {
+            margin: 0;
+        }
+
+        .explanation .hinglish-heading {
+            font-weight: 600;
+            color: #1e88e5;
+            margin-bottom: 8px;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 15px; }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Comparing Quantities</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 7.1 -->
+        <h2>Exercise 7.1</h2>
+
+        <div class="question-card">
+            <p class="question">1. Find the ratio of the following.</p>
+            <div class="solution-step"><b>(a) Speed of a cycle 15 km per hour to the speed of scooter 30 km per hour.</b><br>Ratio = 15:30. Simplifying this by dividing both sides by 15, we get 1:2.</div>
+            <div class="solution-step"><b>(b) 5 m to 10 km.</b><br>First, convert both quantities to the same unit. 10 km = 10 * 1000 m = 10000 m. <br>Ratio = 5:10000. Simplifying by dividing both sides by 5, we get 1:2000.</div>
+            <div class="solution-step"><b>(c) 50 paise to ₹ 5.</b><br>Convert to the same unit. ₹ 5 = 5 * 100 paise = 500 paise.<br>Ratio = 50:500. Simplifying by dividing both sides by 50, we get 1:10.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ratio nikalne ke liye, dono quantities ka unit same hona chahiye. (a) me unit pehle se same hai (km/hr), to seedhe 15/30 = 1/2. (b) me km ko meter me badla (10km = 10000m). (c) me Rupee ko paise me badla (₹5 = 500p). Fir simplify kiya.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Convert the following ratios to percentages.</p>
+            <div class="solution-step"><b>(a) 3:4</b><br>Percentage = (3/4) * 100 = 75%.</div>
+            <div class="solution-step"><b>(b) 2:3</b><br>Percentage = (2/3) * 100 = 66.66...% or 66 2/3 %.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ratio ko percentage me badalne ke liye, use fraction me likho (jaise 3:4 ko 3/4) aur fir 100 se multiply kar do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. 72% of 25 students are interested in mathematics. How many are not interested in mathematics?</p>
+            <div class="solution-step">Percentage of students not interested = 100% - 72% = 28%.</div>
+            <div class="solution-step">Number of students not interested = 28% of 25 = (28/100) * 25 = 7 students.</div>
+            <div class="explanation">
+                 <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Total students hamesha 100% hote hain. Agar 72% interested hain, to 100 - 72 = 28% interested nahi hain. Ab 25 ka 28% nikal lo, jo ki 7 hai.(Class 8th-12th Notes ke liye Google par search kare "studyscript.netlify.app" aur App Install kare)</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">4. A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?</p>
+            <div class="solution-step">Let the total number of matches played be 'x'.</div>
+            <div class="solution-step">According to the question, 40% of x = 10.</div>
+            <div class="solution-step">(40/100) * x = 10.</div>
+            <div class="solution-step">x = (10 * 100) / 40 = 25.</div>
+            <p class="answer">They played 25 matches in all.</p>
+            <div class="explanation">
+                 <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Maan lo ki team ne total 'x' matches khele. Question ke hisab se, in total matches ka 40% jeeta gaya, jo ki 10 matches ke barabar hai. To, <code>(40/100) * x = 10</code>. Is equation ko solve karke 'x' ki value 25 aati hai.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">5. If Chameli had ₹ 600 left after spending 75% of her money, how much did she have in the beginning?</p>
+            <div class="solution-step">Percentage of money spent = 75%.</div>
+            <div class="solution-step">Percentage of money left = 100% - 75% = 25%.</div>
+            <div class="solution-step">Let the money she had in the beginning be 'x'.</div>
+            <div class="solution-step">So, 25% of x = ₹ 600.</div>
+            <div class="solution-step">(25/100) * x = 600.</div>
+            <div class="solution-step">x = (600 * 100) / 25 = ₹ 2400.</div>
+             <p class="answer">She had ₹ 2400 in the beginning.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Chameli ne 75% paise kharch kar diye, iska matlab uske paas 25% paise bache. Ye bache hue 25% hi ₹ 600 hain. Agar shuru me uske paas 'x' rupees the, to <code>x ka 25% = 600</code>. Isse x ki value ₹ 2400 aa jayegi.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">6. If 60% people in a city like cricket, 30% like football and the remaining like other games, then what per cent of the people like other games? If the total number of people is 50 lakh, find the exact number who like each type of game.</p>
+             <div class="solution-step">Percentage of people who like other games = 100% - (60% + 30%) = 100% - 90% = 10%.</div>
+             <div class="solution-step">Number who like cricket = 60% of 50 lakh = (60/100) * 50 = 30 lakh.</div>
+             <div class="solution-step">Number who like football = 30% of 50 lakh = (30/100) * 50 = 15 lakh.</div>
+             <div class="solution-step">Number who like other games = 10% of 50 lakh = (10/100) * 50 = 5 lakh.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Total log 100% hain. Cricket (60%) aur football (30%) milakar 90% ho gaye. To bache hue 10% log dusre games pasand karte hain. Ab 50 lakh ka 60%, 30% aur 10% nikal lo to teeno groups ke logon ka number mil jayega.</p>
+            </div>
+        </div>
+
+        <!-- Solutions for Exercise 7.2 -->
+        <h2>Exercise 7.2</h2>
+
+        <div class="question-card">
+            <p class="question">1. During a sale, a shop offered a discount of 10% on the marked prices of all the items. What would a customer have to pay for a pair of jeans marked at ₹ 1450 and two shirts marked at ₹ 850 each?</p>
+            <div class="solution-step">Marked Price (MP) of jeans = ₹ 1450. MP of two shirts = 2 * 850 = ₹ 1700.</div>
+            <div class="solution-step">Total MP = 1450 + 1700 = ₹ 3150.</div>
+            <div class="solution-step">Discount = 10% of 3150 = (10/100) * 3150 = ₹ 315.</div>
+            <div class="solution-step">Selling Price (SP) = MP - Discount = 3150 - 315 = ₹ 2835.</div>
+            <p class="answer">The customer would have to pay ₹ 2835.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle sabhi items ka total Marked Price (MP) nikalo (Jeans + 2 Shirts). Fir us total amount par 10% discount calculate karo. Aakhir me, Total MP me se discount minus kar do to final payment amount mil jayega.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. The price of a TV is ₹ 13,000. The sales tax charged on it is at the rate of 12%. Find the amount that Vinod will have to pay if he buys it.</p>
+            <div class="solution-step">Price of TV = ₹ 13,000.</div>
+            <div class="solution-step">Sales Tax = 12% of ₹ 13,000 = (12/100) * 13000 = ₹ 1560.</div>
+            <div class="solution-step">Final Amount = Price + Sales Tax = 13000 + 1560 = ₹ 14,560.</div>
+            <p class="answer">Vinod will have to pay ₹ 14,560.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Sales tax hamesha item ke price par add hota hai. Pehle TV ke price (₹13,000) ka 12% tax nikalo. Jo tax amount (₹1560) aayega, use TV ke price me jod do. Yahi final payment amount hai.(Class 8th-12th Notes ke liye Google par search kare "studyscript.netlify.app" aur App Install kare)</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Arun bought a pair of skates at a sale where the discount given was 20%. If the amount he pays is ₹ 1,600, find the marked price.</p>
+            <div class="solution-step">Arun paid ₹ 1600 after a 20% discount. This means he paid 100% - 20% = 80% of the marked price.</div>
+            <div class="solution-step">Let the Marked Price (MP) be x. So, 80% of x = 1600.</div>
+            <div class="solution-step">(80/100) * x = 1600.</div>
+            <div class="solution-step">x = (1600 * 100) / 80 = ₹ 2000.</div>
+            <p class="answer">The marked price was ₹ 2000.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>20% discount ke baad usne ₹1600 diye, iska matlab usne Marked Price (MP) ka 80% pay kiya. Agar 80% = ₹1600 hai, to 100% (poora MP) kitna hoga? Unitary method se solve karo: (1600 / 80) * 100 = ₹2000.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">4. I purchased a hair-dryer for ₹ 5,400 including 8% VAT. Find the price before VAT was added.</p>
+            <div class="solution-step">The price ₹ 5,400 includes the original price (100%) and VAT (8%). So, ₹ 5,400 is 108% of the original price.</div>
+            <div class="solution-step">Let the original price be 'x'.</div>
+            <div class="solution-step">108% of x = 5400.</div>
+            <div class="solution-step">(108/100) * x = 5400.</div>
+            <div class="solution-step">x = (5400 * 100) / 108 = ₹ 5000.</div>
+            <p class="answer">The price before VAT was ₹ 5000.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>₹ 5400 me 8% VAT (Value Added Tax) juda hua hai. Matlab ye original price ka 108% hai. Agar 108% = 5400 hai, to 100% (original price) kya hoga? Calculation: (5400 / 108) * 100 = ₹ 5000.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">5. An article was purchased for ₹ 1239 including GST of 18%. Find the price of the article before GST was added?</p>
+            <div class="solution-step">The price ₹ 1239 includes the original price (100%) and GST (18%). So, ₹ 1239 is 118% of the original price.</div>
+            <div class="solution-step">Let the original price be 'x'.</div>
+            <div class="solution-step">118% of x = 1239.</div>
+            <div class="solution-step">(118/100) * x = 1239.</div>
+            <div class="solution-step">x = (1239 * 100) / 118 = ₹ 1050.</div>
+            <p class="answer">The price before GST was ₹ 1050.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Bilkul pichle question jaisa hai. ₹ 1239 me 18% GST juda hai, matlab ye original price ka 118% hai. Agar 118% = 1239 hai, to 100% (original price) kya hoga? (1239 / 118) * 100 = ₹ 1050.</p>
+            </div>
+        </div>
+        
+        <!-- Solutions for Exercise 7.3 -->
+        <h2>Exercise 7.3</h2>
+
+        <div class="question-card">
+            <p class="question">1. The population of a place increased to 54,000 in 2003 at a rate of 5% per annum.</p>
+            <p class="sub-question">(i) find the population in 2001.</p>
+            <div class="solution-step">This is like finding the Principal when the Amount is given (reverse calculation). Let population in 2001 be P. <br>Population in 2003 (A) = P * (1 + R/100)^n</div>
+            <div class="solution-step">54000 = P * (1 + 5/100)² = P * (21/20)²</div>
+            <div class="solution-step">P = 54000 * (20/21)² = 54000 * (400/441) ≈ 48979.59. So, population was approx 48,980.</div>
+            <p class="sub-question">(ii) what would be its population in 2005?</p>
+            <div class="solution-step">Here, the base population is 54,000 (from 2003) and we need to find for 2005 (2 years later).<br>Population in 2005 = 54000 * (1 + 5/100)²</div>
+            <div class="solution-step">= 54000 * (21/20)² = 54000 * (441/400) = 59,535.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p><b>(i) 2001 ki population:</b> Yeh compound interest ka ulta सवाल hai. Humein 2003 ki population (Amount) pata hai aur 2001 ki (Principal) nikalni hai. Formula me values daal kar P ke liye solve karo.
+                <br><b>(ii) 2005 ki population:</b> Yeh seedha सवाल hai. 2003 ki population ko Principal maano aur 2 saal (2005 tak) ka 5% rate se Amount (final population) nikal lo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. In a Laboratory, the count of bacteria in a certain experiment was increasing at the rate of 2.5% per hour. Find the bacteria at the end of 2 hours if the count was initially 5,06,000.</p>
+            <div class="solution-step">Initial count (P) = 5,06,000. Rate of increase (R) = 2.5% per hour. Time (n) = 2 hours.</div>
+            <div class="solution-step">Using the compound interest formula: A = P * (1 + R/100)^n</div>
+            <div class="solution-step">A = 506000 * (1 + 2.5/100)² = 506000 * (1 + 1/40)²</div>
+            <div class="solution-step">A = 506000 * (41/40)² = 506000 * (1681/1600) = 531616.25</div>
+            <p class="answer">The count of bacteria after 2 hours will be approximately 5,31,616.</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Yeh bilkul compound interest jaisa hai, jahan Principal (P) shuru ke bacteria hain, Rate (R) unke badhne ka rate hai, aur Time (n) 2 ghante hai. Formula <code>A = P(1 + R/100)^n</code> me saari values daal kar final Amount (A) nikal lo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. A scooter was bought at ₹ 42,000. Its value depreciated at the rate of 8% per annum. Find its value after one year.</p>
+            <div class="solution-step">Depreciation means the value decreases. We use the formula A = P * (1 - R/100)^n.</div>
+            <div class="solution-step">P = 42000, R = 8%, n = 1 year.</div>
+            <div class="solution-step">Value after 1 year = 42000 * (1 - 8/100)¹ = 42000 * (92/100) = ₹ 38,640.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Depreciation ka matlab hai value ka kam hona. Isliye compound interest ke formula me plus (+) ki jagah minus (-) lagayenge. P = 42000, R = 8, n = 1 daal kar solve karo.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
