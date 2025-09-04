@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 6: Cubes and Cube Roots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdf6e3;
+            --container-bg: #fefcf5;
+            --header-grad-1: #2aa198;
+            --header-grad-2: #268bd2;
+            --heading-color: #cb4b16;
+            --border-color: #b58900;
+            --card-border: #268bd2;
+            --text-color: #586e75;
+            --code-bg: #eee8d5;
+            --code-text: #657b83;
+            --answer-color: #d33682;
+            --footer-bg: #073642;
+            --footer-text: #fdf6e3;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.3em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.9em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid var(--card-border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: #073642;
+            margin-bottom: 15px;
+        }
+        
+        .sub-question {
+            font-weight: 600;
+            color: #586e75;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .solution-step {
+            margin-bottom: 12px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--header-grad-1);
+            font-weight: bold;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #fdf6e3;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation-section {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #fffaf0;
+            border-radius: 10px;
+            border: 1px solid #fde4c5;
+        }
+        
+        .explanation-card {
+            background-color: #ffffff;
+            border-left: 5px solid var(--answer-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+
+        footer {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .footer-card {
+            background: var(--footer-bg);
+            color: var(--footer-text);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .footer-card:hover {
+            background: #002b36;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Cubes and Cube Roots</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 6.1 -->
+        <h2>Exercise 6.1</h2>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <p class="question">1. Which of the following numbers are not perfect cubes?</p>
+            <div class="solution-step">(i) <b>216</b>: Prime factorization is <code>2 × 2 × 2 × 3 × 3 × 3</code> = <code>2³ × 3³</code>. All factors are in triplets. So, it is a perfect cube.</div>
+            <div class="solution-step">(ii) <b>128</b>: Prime factorization is <code>2 × 2 × 2 × 2 × 2 × 2 × 2</code> = <code>2³ × 2³ × 2</code>. One '2' is left over. So, it is not a perfect cube.</div>
+            <div class="solution-step">(iii) <b>1000</b>: Prime factorization is <code>2 × 2 × 2 × 5 × 5 × 5</code> = <code>2³ × 5³</code>. All factors are in triplets. So, it is a perfect cube.</div>
+            <div class="solution-step">(iv) <b>100</b>: Prime factorization is <code>2 × 2 × 5 × 5</code>. No factors are in triplets. So, it is not a perfect cube.</div>
+            <div class="solution-step">(v) <b>46656</b>: Prime factorization is <code>2³ × 2³ × 3³ × 3³</code>. All factors are in triplets. So, it is a perfect cube.</div>
+            <p class="answer">Not perfect cubes: 128, 100.</p>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <p class="question">2. Find the smallest number by which each of the following numbers must be multiplied to obtain a perfect cube.</p>
+            <div class="solution-step">(i) <b>243</b>: <code>243 = 3 × 3 × 3 × 3 × 3</code>. We need one more '3' to make a triplet. So, multiply by 3.</div>
+            <div class="solution-step">(ii) <b>256</b>: <code>256 = 2³ × 2³ × 2 × 2</code>. We need one more '2' to make a triplet. So, multiply by 2.</div>
+            <div class="solution-step">(iii) <b>72</b>: <code>72 = 2 × 2 × 2 × 3 × 3</code>. We need one more '3'. So, multiply by 3.</div>
+            <div class="solution-step">(iv) <b>675</b>: <code>675 = 3 × 3 × 3 × 5 × 5</code>. We need one more '5'. So, multiply by 5.</div>
+            <div class="solution-step">(v) <b>100</b>: <code>100 = 2 × 2 × 5 × 5</code>. We need one '2' and one '5'. So, multiply by <code>2 × 5 = 10</code>.</div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="question-card">
+             <p class="question">3. Find the smallest number by which each of the following numbers must be divided to obtain a perfect cube.</p>
+            <div class="solution-step">(i) <b>81</b>: <code>81 = 3 × 3 × 3 × 3</code>. The extra factor is '3'. So, divide by 3.</div>
+            <div class="solution-step">(ii) <b>128</b>: <code>128 = 2³ × 2³ × 2</code>. The extra factor is '2'. So, divide by 2.</div>
+            <div class="solution-step">(iii) <b>135</b>: <code>135 = 3 × 3 × 3 × 5</code>. The extra factor is '5'. So, divide by 5.</div>
+            <div class="solution-step">(iv) <b>192</b>: <code>192 = 2³ × 2³ × 3</code>. The extra factor is '3'. So, divide by 3.</div>
+            <div class="solution-step">(v) <b>704</b>: <code>704 = 2³ × 2³ × 11</code>. The extra factor is '11'. So, divide by 11.</div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question-card">
+            <p class="question">4. Parikshit makes a cuboid of plasticine of sides 5 cm, 2 cm, 5 cm. How many such cuboids will he need to form a cube?</p>
+            <div class="solution-step">Volume of the cuboid = <code>5 × 2 × 5</code>.</div>
+            <div class="solution-step">To make a cube, all factors in the volume's prime factorization must be in triplets.</div>
+            <div class="solution-step">The factors are <code>5 × 5 × 2</code>. We are missing one '5' and two '2's to make complete triplets.</div>
+            <div class="solution-step">So, we need to multiply by <code>5 × 2 × 2 = 20</code>.</div>
+             <p class="answer">He will need 20 such cuboids.</p>
+        </div>
+
+        <!-- Solutions for Exercise 6.2 -->
+        <h2>Exercise 6.2</h2>
+
+        <!-- Question 1 -->
+        <div class="question-card">
+            <p class="question">1. Find the cube root of each of the following numbers by prime factorisation method.</p>
+            <div class="solution-step">(i) <b>64</b>: <code>64 = 2³ × 2³</code>. Cube root = <code>2 × 2 = 4</code>.</div>
+            <div class="solution-step">(ii) <b>512</b>: <code>512 = 2³ × 2³ × 2³</code>. Cube root = <code>2 × 2 × 2 = 8</code>.</div>
+            <div class="solution-step">(iii) <b>10648</b>: <code>10648 = 2³ × 11³</code>. Cube root = <code>2 × 11 = 22</code>.</div>
+            <div class="solution-step">(iv) <b>27000</b>: <code>27000 = 2³ × 3³ × 5³</code>. Cube root = <code>2 × 3 × 5 = 30</code>.</div>
+            <div class="solution-step">(v) <b>15625</b>: <code>15625 = 5³ × 5³</code>. Cube root = <code>5 × 5 = 25</code>.</div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question-card">
+            <p class="question">2. State true or false.</p>
+            <div class="solution-step">(i) Cube of any odd number is even. <b>False</b> (e.g., 3³ = 27, which is odd).</div>
+            <div class="solution-step">(ii) A perfect cube does not end with two zeros. <b>True</b> (It ends with three, six, nine... zeros).</div>
+            <div class="solution-step">(iii) If square of a number ends with 5, then its cube ends with 25. <b>False</b> (e.g., 5²=25, 5³=125. 15²=225, 15³=3375).</div>
+            <div class="solution-step">(iv) There is no perfect cube which ends with 8. <b>False</b> (e.g., 2³ = 8).</div>
+            <div class="solution-step">(v) The cube of a two digit number may be a three digit number. <b>False</b> (The smallest two-digit number is 10, and 10³ = 1000, which has four digits).</div>
+            <div class="solution-step">(vi) The cube of a two digit number may have seven or more digits. <b>False</b> (The largest two-digit number is 99, and 99³ = 970299, which has six digits).</div>
+            <div class="solution-step">(vii) The cube of a single digit number may be a single digit number. <b>True</b> (e.g., 1³ = 1, 2³ = 8).</div>
+        </div>
+
+        <!-- Hinglish Explanation Section -->
+        <div class="explanation-section">
+            <h2>Explanation in Hinglish</h2>
+            <p>Yahan sabhi questions ke solution ko aasan Hinglish bhasha me samjhaya gaya hai yadi aapko kisi bhi question me doubt hai toh aap apne school teacher se confirm kar sakte hai.</p>
+
+            <div class="explanation-card">
+                <p class="question">Exercise 6.1 ka Explanation</p>
+                <p><strong>Q1: Perfect Cube hai ya nahi?</strong><br>Perfect cube check karne ke liye, number ke prime factors nikalte hain. Agar sabhi factors 3-3 ke group (triplets) me ban jaate hain, toh woh perfect cube hai. Agar koi factor bach jaata hai, toh nahi hai.</p>
+                <p><strong>Q2: Kis se Multiply karein?</strong><br>Pehle prime factors nikalo. Fir dekho ki 3-3 ke group banane ke liye kaunse factor kam pad rahe hain. Jitne factors kam hain, unko multiply karke wahi number answer hoga.</p>
+                <p><strong>Q3: Kis se Divide karein?</strong><br>Isme bhi prime factors nikalo. 3-3 ke group banane ke baad jo bhi factor extra bach jaate hain, unhi ko multiply karke jo number aayega, usse divide karna hai.</p>
+                 <p><strong>Q4: Kitne Cuboids chahiye?</strong><br>Cuboid ka volume nikalo (5 × 2 × 5). Iske factors hain <code>5, 5, 2</code>. Ek perfect cube banane ke liye sabhi factors 3-3 ke group me hone chahiye. Yahan ek '5' aur do '2' kam hain. Toh hume <code>5 × 2 × 2 = 20</code> cuboids chahiye.</p>
+            </div>
+            
+            <div class="explanation-card">
+                <p class="question">Exercise 6.2 ka Explanation</p>
+                <p><strong>Q1: Cube Root kaise nikalein?</strong><br>Number ke prime factors nikalo. Fir 3-3 ke same factors ke group (triplets) banao. Har group me se ek factor bahar le lo aur un sabko aapas me multiply kar do. Wahi cube root hai. Jaise <code>64 = (2×2×2) × (2×2×2)</code>. Ek group se ek '2' aur dusre se ek '2' liya. <code>2 × 2 = 4</code> answer hai.</p>
+                <p><strong>Q2: Sahi ya Galat?</strong><br>Yeh questions cubes ki properties par based hain. Jaise, odd number ka cube hamesha odd hota hai, aur even ka cube even hota hai. Smallest 2-digit number (10) ka cube (1000) 4-digit ka hota hai, isliye 3-digit ka nahi ho sakta.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-card">
+            Download StudyScript App
+        </div>
+    </footer>
+
+</body>
+</html>
