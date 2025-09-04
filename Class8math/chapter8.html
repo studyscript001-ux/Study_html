@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 10: Exponents and Powers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fdf6e3;
+            --container-bg: #fefcf5;
+            --header-grad-1: #d33682;
+            --header-grad-2: #cb4b16;
+            --heading-color: #859900;
+            --border-color: #b58900;
+            --card-border: #268bd2;
+            --text-color: #586e75;
+            --code-bg: #eee8d5;
+            --code-text: #073642;
+            --answer-color: #2aa198;
+            --explanation-bg: #fdf6e3;
+            --explanation-border: #eee8d5;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 45px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 6px solid var(--card-border);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #073642;
+            margin-bottom: 18px;
+        }
+        
+        .solution-step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--answer-color);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #f0fff0;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--answer-color);
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: var(--explanation-bg);
+            border: 1px solid var(--explanation-border);
+            border-radius: 8px;
+        }
+        
+        .explanation .hinglish-heading {
+            font-weight: 600;
+            color: #b58900;
+            margin-bottom: 10px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Exponents and Powers</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 10.1 -->
+        <h2>Exercise 10.1</h2>
+
+        <div class="question-card">
+            <p class="question">1. Evaluate.</p>
+            <div class="solution-step"><b>(i) 3⁻²</b> = 1 / 3² = 1/9</div>
+            <div class="solution-step"><b>(ii) (-4)⁻²</b> = 1 / (-4)² = 1/16</div>
+            <div class="solution-step"><b>(iii) (1/2)⁻⁵</b> = (2/1)⁵ = 2⁵ = 32</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Rule: Agar power negative hai (jaise <code>a⁻ⁿ</code>), to use positive banane ke liye number ka reciprocal (ulta) kar do (<code>1/aⁿ</code>). Agar fraction ki power negative hai (jaise <code>(a/b)⁻ⁿ</code>), to fraction ko ulta kar do aur power positive ho jayegi (<code>(b/a)ⁿ</code>).</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Simplify and express the result in power notation with positive exponent.</p>
+            <div class="solution-step"><b>(i) (-4)⁵ ÷ (-4)⁸</b> = (-4)⁵⁻⁸ = (-4)⁻³ = 1/(-4)³</div>
+            <div class="solution-step"><b>(ii) (1/2³) ²</b> = 1² / (2³)² = 1 / 2⁶</div>
+            <div class="solution-step"><b>(iii) (-3)⁴ × (5/3)⁴</b> = (-1 × 3)⁴ × (5⁴/3⁴) = (-1)⁴ × 3⁴ × 5⁴ / 3⁴ = 1 × 5⁴ = 5⁴</div>
+            <div class="solution-step"><b>(iv) (3⁻⁷ ÷ 3⁻¹⁰) × 3⁻⁵</b> = (3⁻⁷⁻⁽⁻¹⁰⁾) × 3⁻⁵ = 3³ × 3⁻⁵ = 3³⁻⁵ = 3⁻² = 1/3²</div>
+            <div class="solution-step"><b>(v) 2⁻³ × (-7)⁻³</b> = (2 × -7)⁻³ = (-14)⁻³ = 1/(-14)³</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Yahan laws of exponents use honge:
+                <b>Divide (i, iv):</b> Base same ho to powers subtract hoti hain.
+                <b>Power of power (ii):</b> Bracket ke andar aur bahar ki power multiply hoti hain.
+                <b>Power same (iii, v):</b> Base alag ho par power same ho to bases ko multiply karke common power laga do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Find the value of.</p>
+            <div class="solution-step"><b>(i) (3⁰ + 4⁻¹) × 2²</b> = (1 + 1/4) × 4 = (5/4) × 4 = 5</div>
+            <div class="solution-step"><b>(ii) (2⁻¹ × 4⁻¹) ÷ 2⁻²</b> = (1/2 × 1/4) ÷ (1/2²) = (1/8) ÷ (1/4) = 1/8 × 4/1 = 1/2</div>
+            <div class="solution-step"><b>(iii) (1/2)⁻² + (1/3)⁻² + (1/4)⁻²</b> = 2² + 3² + 4² = 4 + 9 + 16 = 29</div>
+            <div class="solution-step"><b>(iv) (3⁻¹ + 4⁻¹ + 5⁻¹)⁰</b> = 1 (Kisi bhi non-zero number ki power 0 hamesha 1 hoti hai)</div>
+            <div class="solution-step"><b>(v) {(-2/3)⁻²}²</b> = (-2/3)⁻⁴ = (-3/2)⁴ = 81/16</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle brackets ke andar simplify karo. Negative powers ko positive banao, fractions ko solve karo. Yaad rakho <code>a⁰ = 1</code>. Fir final calculation karo.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">4. Evaluate.</p>
+            <div class="solution-step"><b>(i) (8⁻¹ × 5³) / 2⁻⁴</b> = ( (2³)⁻¹ × 5³ ) / 2⁻⁴ = ( 2⁻³ × 5³ ) / 2⁻⁴ = 2⁻³⁻⁽⁻⁴⁾ × 5³ = 2¹ × 5³ = 2 × 125 = 250</div>
+            <div class="solution-step"><b>(ii) (5⁻¹ × 2⁻¹) × 6⁻¹</b> = ( (5 × 2)⁻¹ ) × 6⁻¹ = 10⁻¹ × 6⁻¹ = (10 × 6)⁻¹ = 60⁻¹ = 1/60</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p><b>(i):</b> 8 ko 2³ likho. Fir power rules apply karke base '2' ki powers ko solve karo.
+                <b>(ii):</b> 5⁻¹ aur 2⁻¹ ko combine karke 10⁻¹ likh sakte hain, fir use 6⁻¹ ke saath combine karo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">5. Find the value of m for which 5ᵐ ÷ 5⁻³ = 5⁵.</p>
+            <div class="solution-step">Using the law aᵐ ÷ aⁿ = aᵐ⁻ⁿ, we get: 5ᵐ⁻⁽⁻³⁾ = 5⁵</div>
+            <div class="solution-step">5ᵐ⁺³ = 5⁵</div>
+            <div class="solution-step">Since the bases are equal, the exponents must be equal. So, m + 3 = 5.</div>
+            <div class="solution-step">m = 5 - 3 = 2.</div>
+            <p class="answer">m = 2</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Jab equation ke dono taraf base same ho (yahan 5 hai), to hum unki powers ko equal kar sakte hain. Divide rule se <code>m - (-3) = m+3</code> ho gaya. To <code>m+3 = 5</code>, jisse <code>m=2</code> milta hai.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">6. Evaluate.</p>
+            <div class="solution-step"><b>(i) {(1/3)⁻¹ - (1/4)⁻¹}⁻¹</b> = {3 - 4}⁻¹ = (-1)⁻¹ = 1/(-1) = -1</div>
+            <div class="solution-step"><b>(ii) (5/8)⁻⁷ × (8/5)⁻⁴</b> = (5/8)⁻⁷ × (5/8)⁴ = (5/8)⁻⁷⁺⁴ = (5/8)⁻³ = (8/5)³ = 512/125</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p><b>(i):</b> Pehle bracket ke andar negative powers ko solve karo (reciprocal leke). Fir subtract karke jo answer aaye, uski power -1 solve karo.
+                <b>(ii):</b> (8/5)⁻⁴ ko (5/8)⁴ likh sakte hain taaki base same ho jaye. Fir powers ko add kar do.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">7. Simplify.</p>
+            <div class="solution-step"><b>(i) (25 × t⁻⁴) / (5⁻³ × 10 × t⁻⁸)</b><br>= (5² × t⁻⁴) / (5⁻³ × 2 × 5¹ × t⁻⁸)<br>= (5² × t⁻⁴) / (5⁻² × 2 × t⁻⁸)<br>= (5²⁻⁽⁻²⁾ × t⁻⁴⁻⁽⁻⁸⁾) / 2 = (5⁴ × t⁴) / 2 = 625t⁴/2</div>
+            <div class="solution-step"><b>(ii) (3⁻⁵ × 10⁻⁵ × 125) / (5⁻⁷ × 6⁻⁵)</b><br>= (3⁻⁵ × (2×5)⁻⁵ × 5³) / (5⁻⁷ × (2×3)⁻⁵)<br>= (3⁻⁵ × 2⁻⁵ × 5⁻⁵ × 5³) / (5⁻⁷ × 2⁻⁵ × 3⁻⁵)<br>= 3⁻⁵⁻⁽⁻⁵⁾ × 2⁻⁵⁻⁽⁻⁵⁾ × 5⁻²⁻⁽⁻⁷⁾ = 3⁰ × 2⁰ × 5⁵ = 1 × 1 × 5⁵ = 3125</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Sabhi numbers ko unke prime factors (jaise 25=5², 10=2×5) me break kar lo. Fir same base waali powers ko division (subtract) aur multiplication (add) ke rules se solve karo.</p>
+            </div>
+        </div>
+        
+        <!-- Solutions for Exercise 10.2 -->
+        <h2>Exercise 10.2</h2>
+
+        <div class="question-card">
+            <p class="question">1. Express the following numbers in standard form.</p>
+            <div class="solution-step"><b>(i) 0.0000000000085</b> = 8.5 × 10⁻¹²</div>
+            <div class="solution-step"><b>(ii) 0.00000000000942</b> = 9.42 × 10⁻¹²</div>
+            <div class="solution-step"><b>(iii) 6020000000000000</b> = 6.02 × 10¹⁵</div>
+            <div class="solution-step"><b>(iv) 0.00000000837</b> = 8.37 × 10⁻⁹</div>
+            <div class="solution-step"><b>(v) 31860000000</b> = 3.186 × 10¹⁰</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Standard form me likhne ke liye, decimal point ko pehli non-zero digit ke baad lagao.
+                <b>Small numbers (0.00...):</b> Jitne places decimal ko right me move kiya, 10 ki power utni hi negative ho jayegi.
+                <b>Large numbers:</b> Jitne places decimal ko left me move kiya, 10 ki power utni hi positive ho jayegi.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">2. Express the following numbers in usual form.</p>
+            <div class="solution-step"><b>(i) 3.02 × 10⁻⁶</b> = 0.00000302</div>
+            <div class="solution-step"><b>(ii) 4.5 × 10⁴</b> = 45000</div>
+            <div class="solution-step"><b>(iii) 3 × 10⁻⁸</b> = 0.00000003</div>
+            <div class="solution-step"><b>(iv) 1.0001 × 10⁹</b> = 1000100000</div>
+            <div class="solution-step"><b>(v) 5.8 × 10¹²</b> = 5800000000000</div>
+            <div class="solution-step"><b>(vi) 3.61492 × 10⁶</b> = 3614920</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p><b>Negative Power (10⁻ⁿ):</b> Decimal point ko left me 'n' places move karo.
+                <b>Positive Power (10ⁿ):</b> Decimal point ko right me 'n' places move karo. Zaroorat padne par extra zeros lagao.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Express the number appearing in the following statements in standard form.</p>
+            <div class="solution-step"><b>(i) 1 micron is equal to 1/1000000 m</b> = 1/10⁶ m = 1 × 10⁻⁶ m.</div>
+            <div class="solution-step"><b>(ii) Charge of an electron is 0.000,000,000,000,000,000,16 coulomb</b> = 1.6 × 10⁻¹⁹ C.</div>
+            <div class="solution-step"><b>(iii) Size of a bacteria is 0.0000005 m</b> = 5 × 10⁻⁷ m.</div>
+            <div class="solution-step"><b>(iv) Size of a plant cell is 0.00001275 m</b> = 1.275 × 10⁻⁵ m.</div>
+            <div class="solution-step"><b>(v) Thickness of a thick paper is 0.07 mm</b> = 7 × 10⁻² mm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Bilkul Question 1 ki tarah, in sabhi numbers ko standard form me convert karna hai. Decimal point ko pehli non-zero digit ke baad shift karo aur count karo kitne places shift kiya. Yahan sabhi numbers chhote hain, isliye power negative aayegi.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">4. In a stack there are 5 books each of thickness 20mm and 5 paper sheets each of thickness 0.016 mm. What is the total thickness of the stack.</p>
+            <div class="solution-step">Thickness of 5 books = 5 × 20 mm = 100 mm.</div>
+            <div class="solution-step">Thickness of 5 paper sheets = 5 × 0.016 mm = 0.080 mm.</div>
+            <div class="solution-step">Total thickness = 100 mm + 0.080 mm = 100.08 mm.</div>
+            <div class="solution-step">In standard form: 100.08 = 1.0008 × 10² mm.</div>
+            <p class="answer">Total thickness = 1.0008 × 10² mm</p>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle 5 books ki total motai (thickness) nikalo (5 × 20 = 100). Fir 5 papers ki total motai nikalo (5 × 0.016 = 0.08). Dono ko add kar do (100 + 0.08 = 100.08). Fir is final answer ko standard form me likh do.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
