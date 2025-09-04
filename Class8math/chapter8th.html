@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 8: Algebraic Expressions and Identities</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f7f6;
+            --container-bg: #ffffff;
+            --header-grad-1: #6a11cb;
+            --header-grad-2: #2575fc;
+            --heading-color: #c0392b;
+            --border-color: #2980b9;
+            --card-border: #8e44ad;
+            --text-color: #34495e;
+            --code-bg: #ecf0f1;
+            --code-text: #2c3e50;
+            --answer-color: #27ae60;
+            --explanation-bg: #e8f6f3;
+            --explanation-border: #1abc9c;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 45px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 6px solid var(--card-border);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 18px;
+        }
+        
+        .solution-step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--answer-color);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #e9f7ef;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--answer-color);
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: var(--explanation-bg);
+            border: 1px solid var(--explanation-border);
+            border-radius: 8px;
+        }
+        
+        .explanation .hinglish-heading {
+            font-weight: 600;
+            color: #16a085;
+            margin-bottom: 10px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+        
+        /* This is the new style for the scrollable table container */
+        .table-container {
+            overflow-x: auto; /* Enables horizontal scrolling */
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+            padding-bottom: 10px; /* Adds some space for the scrollbar */
+        }
+        
+        table {
+            width: 100%;
+            min-width: 600px; /* Ensures table has a minimum width, forcing scroll on small screens */
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        th, td {
+            border: 1px solid #bdc3c7;
+            padding: 10px;
+            text-align: center;
+            white-space: nowrap; /* Prevents text from wrapping to new lines */
+        }
+
+        th {
+            background-color: var(--code-bg);
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Algebraic Expressions and Identities</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <h2>Exercise 8.1</h2>
+
+        <div class="question-card">
+            <p class="question">1. Add the following.</p>
+            <div class="solution-step"><b>(i) ab-bc, bc-ca, ca-ab</b><br> (ab-bc) + (bc-ca) + (ca-ab) = ab-ab-bc+bc-ca+ca = 0.</div>
+            <div class="solution-step"><b>(ii) a-b+ab, b-c+bc, c-a+ac</b><br>(a-b+ab) + (b-c+bc) + (c-a+ac) = a-a-b+b-c+c+ab+bc+ac = ab+bc+ac.</div>
+            <div class="solution-step"><b>(iii) 2p²q²-3pq+4, 5+7pq-3p²q²</b><br>(2p²q²-3pq+4) + (5+7pq-3p²q²) = (2-3)p²q² + (-3+7)pq + (4+5) = -p²q²+4pq+9.</div>
+            <div class="solution-step"><b>(iv) l²+m², m²+n², n²+l², 2lm+2mn+2nl</b><br>(l²+m²) + (m²+n²) + (n²+l²) + (2lm+2mn+2nl) = 2l²+2m²+2n²+2lm+2mn+2nl = 2(l²+m²+n²+lm+mn+nl).</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Add karne ke liye 'like terms' (jaise <code>ab</code> aur <code>-ab</code>) ko ek saath group karo. Same variable aur same power waale terms hi 'like terms' hote hain. Unke coefficients (numbers) ko add ya subtract karo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Subtract...</p>
+            <div class="solution-step"><b>(a) Subtract 4a-7ab+3b+12 from 12a-9ab+5b-3</b><br>(12a-9ab+5b-3) - (4a-7ab+3b+12)<br>= 12a-9ab+5b-3 - 4a+7ab-3b-12 = 8a-2ab+2b-15.</div>
+            <div class="solution-step"><b>(b) Subtract 3xy+5yz-7zx from 5xy-2yz-2zx+10xyz</b><br>(5xy-2yz-2zx+10xyz) - (3xy+5yz-7zx)<br>= 2xy-7yz+5zx+10xyz.</div>
+            <div class="solution-step"><b>(c) Subtract 4p²q-3pq+5pq²-8p+7q-10 from 18-3p-11q+5pq-2pq²+5p²q</b><br>(18-3p-11q+5pq-2pq²+5p²q) - (4p²q-3pq+5pq²-8p+7q-10)<br>= p²q - 7pq² + 8pq + 5p - 18q + 28.</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Subtract karte waqt, jisko subtract karna hai (second expression), uske har term ka sign (+ ka -, - ka +) badal do aur fir 'like terms' ke saath add kar do.</p>
+            </div>
+        </div>
+        
+        <h2>Exercise 8.2</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Find the product of the following pairs of monomials.</p>
+            <div class="solution-step"><b>(i) 4, 7p</b> → 4 × 7p = 28p</div>
+            <div class="solution-step"><b>(ii) -4p, 7p</b> → -4p × 7p = -28p²</div>
+            <div class="solution-step"><b>(iii) -4p, 7pq</b> → -4p × 7pq = -28p²q</div>
+            <div class="solution-step"><b>(iv) 4p³, -3p</b> → 4p³ × -3p = -12p⁴</div>
+            <div class="solution-step"><b>(v) 4p, 0</b> → 4p × 0 = 0</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Monomials ko multiply karne ke liye, numbers (coefficients) ko aapas me multiply karo aur variables ko aapas me. Jab same variable multiply hote hain to unki powers add ho jaati hain (jaise <code>p³ × p = p⁴</code>).</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Find the areas of rectangles with the following pairs of monomials as their lengths and breadths respectively.</p>
+            <div class="solution-step"><b>(p, q)</b> → Area = p × q = pq</div>
+            <div class="solution-step"><b>(10m, 5n)</b> → Area = 10m × 5n = 50mn</div>
+            <div class="solution-step"><b>(20x², 5y²)</b> → Area = 20x² × 5y² = 100x²y²</div>
+            <div class="solution-step"><b>(4x, 3x²)</b> → Area = 4x × 3x² = 12x³</div>
+            <div class="solution-step"><b>(3mn, 4np)</b> → Area = 3mn × 4np = 12mn²p</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Rectangle ka area <code>length × breadth</code> hota hai. Har pair me diye gaye do monomials ko aapas me multiply kar do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Complete the table of products.</p>
+            <div class="table-container">
+                <table>
+                  <tr>
+                    <th>First →<br>Second ↓</th><th>2x</th><th>-5y</th><th>3x²</th><th>-4xy</th><th>7x²y</th><th>-9x²y²</th>
+                  </tr>
+                  <tr>
+                    <th>2x</th><td>4x²</td><td>-10xy</td><td>6x³</td><td>-8x²y</td><td>14x³y</td><td>-18x³y²</td>
+                  </tr>
+                  <tr>
+                    <th>-5y</th><td>-10xy</td><td>25y²</td><td>-15x²y</td><td>20xy²</td><td>-35x²y²</td><td>45x²y³</td>
+                  </tr>
+                  <tr>
+                    <th>3x²</th><td>6x³</td><td>-15x²y</td><td>9x⁴</td><td>-12x³y</td><td>21x⁴y</td><td>-27x⁴y²</td>
+                  </tr>
+                  <tr>
+                    <th>-4xy</th><td>-8x²y</td><td>20xy²</td><td>-12x³y</td><td>16x²y²</td><td>-28x³y²</td><td>36x³y³</td>
+                  </tr>
+                  <tr>
+                    <th>7x²y</th><td>14x³y</td><td>-35x²y²</td><td>21x⁴y</td><td>-28x³y²</td><td>49x⁴y²</td><td>-63x⁴y³</td>
+                  </tr>
+                  <tr>
+                    <th>-9x²y²</th><td>-18x³y²</td><td>45x²y³</td><td>-27x⁴y²</td><td>36x³y³</td><td>-63x⁴y³</td><td>81x⁴y⁴</td>
+                  </tr>
+                </table>
+            </div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Table complete karne ke liye, har row ke monomial ko har column ke monomial se multiply karke unke intersection waale box me likhna hai. (Note: On small screens, you can scroll the table horizontally to see all values.)</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">4. Obtain the volume of rectangular boxes with the following length, breadth and height respectively.</p>
+            <div class="solution-step"><b>(i) 5a, 3a², 7a⁴</b> → Volume = 5a × 3a² × 7a⁴ = 105a⁷</div>
+            <div class="solution-step"><b>(ii) 2p, 4q, 8r</b> → Volume = 2p × 4q × 8r = 64pqr</div>
+            <div class="solution-step"><b>(iii) xy, 2x²y, 2xy²</b> → Volume = xy × 2x²y × 2xy² = 4x⁴y⁴</div>
+            <div class="solution-step"><b>(iv) a, 2b, 3c</b> → Volume = a × 2b × 3c = 6abc</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Rectangular box ka volume <code>length × breadth × height</code> hota hai. Har group me diye gaye teeno monomials ko aapas me multiply kar do.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">5. Obtain the product of:</p>
+            <div class="solution-step"><b>(i) xy, yz, zx</b> → xy × yz × zx = x²y²z²</div>
+            <div class="solution-step"><b>(ii) a, -a², a³</b> → a × (-a²) × a³ = -a⁶</div>
+            <div class="solution-step"><b>(iii) 2, 4y, 8y², 16y³</b> → 2 × 4y × 8y² × 16y³ = 1024y⁶</div>
+            <div class="solution-step"><b>(iv) a, 2b, 3c, 6abc</b> → a × 2b × 3c × 6abc = 36a²b²c²</div>
+            <div class="solution-step"><b>(v) m, -mn, mnp</b> → m × (-mn) × mnp = -m³n²p</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Bilkul Question 1 jaisa hi hai. Sabhi numbers ko ek saath multiply karo aur sabhi same variables ki powers ko ek saath add kar do. Sign ka dhyan rakho (- × - = +).</p>
+            </div>
+        </div>
+
+        <h2>Exercise 8.3</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Carry out the multiplication of the expressions in each of the following pairs.</p>
+            <div class="solution-step"><b>(i) 4p, q+r</b> → 4p × (q+r) = 4pq + 4pr</div>
+            <div class="solution-step"><b>(ii) ab, a-b</b> → ab × (a-b) = a²b - ab²</div>
+            <div class="solution-step"><b>(iii) a+b, 7a²b²</b> → (a+b) × 7a²b² = 7a³b² + 7a²b³</div>
+            <div class="solution-step"><b>(iv) a²-9, 4a</b> → (a²-9) × 4a = 4a³ - 36a</div>
+            <div class="solution-step"><b>(v) pq+qr+rp, 0</b> → (pq+qr+rp) × 0 = 0</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ise Distributive Law kehte hain. Bahar waale monomial ko bracket ke andar har term se ek-ek karke multiply karo. Jaise <code>4p × (q+r)</code> me <code>4p</code> ko pehle <code>q</code> se, fir <code>r</code> se multiply kiya.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Complete the table.</p>
+            <div class="solution-step"><b>(i) a × (b+c+d)</b> = ab + ac + ad</div>
+            <div class="solution-step"><b>(ii) (x+y-5) × 5xy</b> = 5x²y + 5xy² - 25xy</div>
+            <div class="solution-step"><b>(iii) p × (6p²-7p+5)</b> = 6p³ - 7p² + 5p</div>
+            <div class="solution-step"><b>(iv) 4p²q² × (p²-q²)</b> = 4p⁴q² - 4p²q⁴</div>
+            <div class="solution-step"><b>(v) (a+b+c) × abc</b> = a²bc + ab²c + abc²</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>First expression ko second expression ke har term se multiply karna hai (distributive property). Sign ka dhyan rakhein aur variables ki power ko add karein.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">3. Find the product.</p>
+            <div class="solution-step"><b>(i) (a²) × (2a²²) × (4a²⁶)</b> → (1×2×4) × a⁽²⁺²²⁺²⁶⁾ = 8a⁵⁰</div>
+            <div class="solution-step"><b>(ii) (2/3 xy) × (-9/10 x²y²)</b> → (2/3 × -9/10) × (x·x²) × (y·y²) = -3/5 x³y³</div>
+            <div class="solution-step"><b>(iii) (-10/3 pq³) × (6/5 p³q)</b> → (-10/3 × 6/5) × (p·p³) × (q³·q) = -4p⁴q⁴</div>
+            <div class="solution-step"><b>(iv) x × x² × x³ × x⁴</b> → x⁽¹⁺²⁺³⁺⁴⁾ = x¹⁰</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Monomials ke product ka rule: Saare coefficients (numbers/fractions) ko multiply karo. Saare same variables ki powers ko add kar do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">4. (a) Simplify 3x(4x-5)+3 and find its values for (i) x=3 (ii) x=1/2.</p>
+            <div class="solution-step"><b>Simplification:</b> 3x(4x-5)+3 = 12x² - 15x + 3</div>
+            <div class="solution-step"><b>(i) For x=3:</b> 12(3)² - 15(3) + 3 = 12(9) - 45 + 3 = 108 - 45 + 3 = 66.</div>
+            <div class="solution-step"><b>(ii) For x=1/2:</b> 12(1/2)² - 15(1/2) + 3 = 12(1/4) - 15/2 + 3 = 3 - 15/2 + 3 = 6 - 15/2 = (12-15)/2 = -3/2.</div>
+            <p class="question">(b) Simplify a(a²+a+1)+5 and find its value for (i) a=0, (ii) a=1, (iii) a=-1.</p>
+            <div class="solution-step"><b>Simplification:</b> a(a²+a+1)+5 = a³ + a² + a + 5</div>
+            <div class="solution-step"><b>(i) For a=0:</b> (0)³ + (0)² + 0 + 5 = 5.</div>
+            <div class="solution-step"><b>(ii) For a=1:</b> (1)³ + (1)² + 1 + 5 = 1 + 1 + 1 + 5 = 8.</div>
+            <div class="solution-step"><b>(iii) For a=-1:</b> (-1)³ + (-1)² + (-1) + 5 = -1 + 1 - 1 + 5 = 4.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle expression ko simplify karo (brackets open karke). Fir jo simplified expression aaye, usme x ya a ki di hui value daal kar final answer nikalo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">5. (a) Add: p(p-q), q(q-r) and r(r-p)</p>
+            <div class="solution-step">(p²-pq) + (q²-qr) + (r²-rp) = p²+q²+r²-pq-qr-rp</div>
+            <p class="question">(b) Add: 2x(z-x-y) and 2y(z-y-x)</p>
+            <div class="solution-step">(2xz-2x²-2xy) + (2yz-2y²-2xy) = 2xz-2x²-4xy+2yz-2y²</div>
+            <p class="question">(c) Subtract: 3l(l-4m+5n) from 4l(10n-3m+2l)</p>
+            <div class="solution-step">(40ln-12lm+8l²) - (3l²-12lm+15ln) = 40ln-12lm+8l²-3l²+12lm-15ln = 5l²+25ln</div>
+            <p class="question">(d) Subtract: 3a(a+b+c)-2b(a-b+c) from 4c(-a+b+c)</p>
+            <div class="solution-step">First simplify both expressions:
+            <br>From: 4c(-a+b+c) = -4ac+4bc+4c²
+            <br>Subtract: (3a²+3ab+3ac) - (2ab-2b²+2bc) = 3a²+ab+3ac+2b²-2bc
+            <br>Now subtract: (-4ac+4bc+4c²) - (3a²+ab+3ac+2b²-2bc) = -3a²-2b²+4c²-ab+6bc-7ac</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle brackets ko multiply karke open karo. Fir 'Add' me like terms ko combine karo. 'Subtract' me, 'from' ke baad wale expression me se pehle wala expression minus karo (sign badal kar).</p>
+            </div>
+        </div>
+
+        <h2>Exercise 8.4</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Multiply the binomials.</p>
+            <div class="solution-step"><b>(i) (2x+5) and (4x-3)</b> → 2x(4x-3) + 5(4x-3) = 8x²-6x+20x-15 = 8x²+14x-15</div>
+            <div class="solution-step"><b>(ii) (y-8) and (3y-4)</b> → y(3y-4) - 8(3y-4) = 3y²-4y-24y+32 = 3y²-28y+32</div>
+            <div class="solution-step"><b>(iii) (2.5l-0.5m) and (2.5l+0.5m)</b> → (2.5l)² - (0.5m)² = 6.25l² - 0.25m²</div>
+            <div class="solution-step"><b>(iv) (a+3b) and (x+5)</b> → a(x+5) + 3b(x+5) = ax+5a+3bx+15b</div>
+            <div class="solution-step"><b>(v) (2pq+3q²) and (3pq-2q²)</b> → 2pq(3pq-2q²)+3q²(3pq-2q²) = 6p²q²-4pq³+9pq³-6q⁴ = 6p²q²+5pq³-6q⁴</div>
+            <div class="solution-step"><b>(vi) (3/4 a² + 3b²) and 4(a² - 2/3 b²)</b> → (3/4 a² + 3b²) × (4a² - 8/3 b²) = 3a⁴-2a²b²+12a²b²-8b⁴ = 3a⁴+10a²b²-8b⁴</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Do binomials ko multiply karne ke liye, pehle binomial ke har term ko doosre poore binomial se multiply karo. Jaise <code>(a+b)(c+d) = a(c+d) + b(c+d)</code>. Fir simplify karke like terms ko combine kar lo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Find the product.</p>
+            <div class="solution-step"><b>(i) (5-2x)(3+x)</b> = 5(3+x) - 2x(3+x) = 15+5x-6x-2x² = 15-x-2x²</div>
+            <div class="solution-step"><b>(ii) (x+7y)(7x-y)</b> = x(7x-y) + 7y(7x-y) = 7x²-xy+49xy-7y² = 7x²+48xy-7y²</div>
+            <div class="solution-step"><b>(iii) (a²+b)(a+b²)</b> = a²(a+b²) + b(a+b²) = a³+a²b²+ab+b³</div>
+            <div class="solution-step"><b>(iv) (p²-q²)(2p+q)</b> = p²(2p+q) - q²(2p+q) = 2p³+p²q-2pq²-q³</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Yeh bhi binomial multiplication hai. Pehle bracket ke first term ko doosre poore bracket se multiply karo, fir pehle bracket ke second term ko doosre poore bracket se multiply karo aur simplify karo.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">3. Simplify.</p>
+            <div class="solution-step"><b>(i) (x²-5)(x+5)+25</b><br>= x³+5x²-5x-25+25 = x³+5x²-5x</div>
+            <div class="solution-step"><b>(ii) (a²+5)(b³+3)+5</b><br>= a²b³+3a²+5b³+15+5 = a²b³+3a²+5b³+20</div>
+            <div class="solution-step"><b>(iii) (t+s²)(t²-s)</b><br>= t(t²-s) + s²(t²-s) = t³-ts+s²t²-s³</div>
+            <div class="solution-step"><b>(iv) (a+b)(c-d)+(a-b)(c+d)+2(ac+bd)</b><br>= (ac-ad+bc-bd) + (ac+ad-bc-bd) + 2ac+2bd = 4ac</div>
+            <div class="solution-step"><b>(v) (x+y)(2x+y)+(x+2y)(x-y)</b><br>= (2x²+xy+2xy+y²) + (x²-xy+2xy-2y²) = (2x²+3xy+y²) + (x²+xy-2y²) = 3x²+4xy-y²</div>
+            <div class="solution-step"><b>(vi) (x+y)(x²-xy+y²)</b><br>= x(x²-xy+y²) + y(x²-xy+y²) = x³-x²y+xy²+x²y-xy²+y³ = x³+y³</div>
+            <div class="solution-step"><b>(vii) (1.5x-4y)(1.5x+4y+3)-4.5x+12y</b><br>= 1.5x(1.5x+4y+3) - 4y(1.5x+4y+3) -4.5x+12y<br>= (2.25x²+6xy+4.5x) - (6xy+16y²+12y) -4.5x+12y<br>= 2.25x²-16y²</div>
+            <div class="solution-step"><b>(viii) (a+b+c)(a+b-c)</b><br>= a(a+b-c) + b(a+b-c) + c(a+b-c)<br>= a²+ab-ac + ab+b²-bc + ac+bc-c² = a²+b²+2ab-c²</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Simplify karne ka matlab hai pehle brackets ko multiply karke open karo, uske baad sabhi 'like terms' ko ek saath group karke add ya subtract kar do taaki expression chhota ho jaye.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
