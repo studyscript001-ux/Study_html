@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 9: Mensuration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f8ff;
+            --container-bg: #ffffff;
+            --header-grad-1: #ff6f61;
+            --header-grad-2: #ff9a8b;
+            --heading-color: #3498db;
+            --border-color: #f39c12;
+            --card-border: #9b59b6;
+            --text-color: #34495e;
+            --code-bg: #f9f9f9;
+            --code-text: #2c3e50;
+            --answer-color: #2ecc71;
+            --explanation-bg: #fdf2e9;
+            --explanation-border: #fadbd8;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 45px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 6px solid var(--card-border);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 18px;
+        }
+        
+        .solution-step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--heading-color);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #e9f7ef;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--answer-color);
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: var(--explanation-bg);
+            border: 1px solid var(--explanation-border);
+            border-radius: 8px;
+        }
+        
+        .explanation .hinglish-heading {
+            font-weight: 600;
+            color: #c0392b;
+            margin-bottom: 10px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Mensuration</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <h2>Exercise 9.1</h2>
+
+        <div class="question-card">
+            <p class="question">1. The shape of the top surface of a table is a trapezium. Find its area if its parallel sides are 1 m and 1.2 m and perpendicular distance between them is 0.8 m.</p>
+            <div class="solution-step">Parallel sides are a = 1 m and b = 1.2 m. Height h = 0.8 m.</div>
+            <div class="solution-step">Area of Trapezium = 1/2 × (a+b) × h</div>
+            <div class="solution-step">= 1/2 × (1 + 1.2) × 0.8 = 1/2 × 2.2 × 0.8 = 0.88 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Trapezium ke area ka formula hai: <code>1/2 × (parallel sides ka sum) × height</code>. Yahan parallel sides 1m aur 1.2m hain, aur height 0.8m hai. Bas values formula me daalkar calculate karna hai.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">2. The area of a trapezium is 34 cm² and the length of one of the parallel sides is 10 cm and its height is 4 cm. Find the length of the other parallel side.</p>
+            <div class="solution-step">Area = 34 cm², a = 10 cm, h = 4 cm. Let the other side be b.</div>
+            <div class="solution-step">Area = 1/2 × (a + b) × h ⟹ 34 = 1/2 × (10 + b) × 4</div>
+            <div class="solution-step">34 = 2 × (10 + b) ⟹ 17 = 10 + b ⟹ b = 7 cm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Is baar area pehle se diya hai. Area ke formula me saari di hui values (Area, ek side, height) daalo. Sirf doosri parallel side (b) bachegi, jiske liye equation solve kar lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">3. Length of the fence of a trapezium shaped field ABCD is 120 m. If BC = 48 m, CD = 17 m and AD = 40 m, find the area of this field. Side AB is perpendicular to the parallel sides AD and BC.</p>
+            <div class="solution-step">Perimeter = AB + BC + CD + AD = 120 m.</div>
+            <div class="solution-step">AB + 48 + 17 + 40 = 120 ⟹ AB = 120 - 105 = 15 m.</div>
+            <div class="solution-step">Since AB is perpendicular, it is the height (h). Parallel sides are AD=40m and BC=48m.</div>
+            <div class="solution-step">Area = 1/2 × (AD + BC) × AB = 1/2 × (40 + 48) × 15 = 1/2 × 88 × 15 = 660 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Fence ki length matlab perimeter. Perimeter me se 3 sides (BC, CD, AD) ki length minus karke 4th side (AB) nikal lo. Kyunki AB perpendicular hai, yahi height hogi. Ab area ke formula me values daal do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">4. The diagonal of a quadrilateral shaped field is 24 m and the perpendiculars dropped on it from the remaining opposite vertices are 8 m and 13 m. Find the area of the field.</p>
+            <div class="solution-step">Area of Quadrilateral = 1/2 × diagonal × (sum of perpendiculars)</div>
+            <div class="solution-step">= 1/2 × 24 × (13 + 8) = 12 × 21 = 252 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ek quadrilateral jisme ek diagonal aur uspar perpendiculars diye ho, uska area <code>1/2 × diagonal × (perpendiculars ka sum)</code> hota hai. Yahan diagonal 24m hai aur perpendiculars 13m aur 8m hain.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">5. The diagonals of a rhombus are 7.5 cm and 12 cm. Find its area.</p>
+            <div class="solution-step">Area of Rhombus = 1/2 × d₁ × d₂</div>
+            <div class="solution-step">= 1/2 × 7.5 × 12 = 45 cm².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Rhombus ke area ka seedha formula hai: <code>1/2 × (pehla diagonal) × (doosra diagonal)</code>.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">6. Find the area of a rhombus whose side is 5 cm and whose altitude is 4.8 cm. If one of its diagonals is 8 cm long, find the length of the other diagonal.</p>
+            <div class="solution-step">A rhombus is a parallelogram. Area = base × altitude = 5 cm × 4.8 cm = 24 cm².</div>
+            <div class="solution-step">Also, Area = 1/2 × d₁ × d₂.</div>
+            <div class="solution-step">24 = 1/2 × 8 × d₂ ⟹ 24 = 4 × d₂ ⟹ d₂ = 6 cm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle, rhombus ko ek parallelogram maan kar area nikalo (<code>base × height</code>). Fir is area ko rhombus ke diagonal wale formula ke equal rakho (<code>Area = 1/2 × d₁ × d₂</code>) aur doosra diagonal nikal lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">7. The floor of a building consists of 3000 tiles which are rhombus shaped and each of its diagonals are 45 cm and 30 cm in length. Find the total cost of polishing the floor, if the cost per m² is ₹ 4.</p>
+            <div class="solution-step">Area of 1 tile = 1/2 × 45 × 30 = 675 cm².</div>
+            <div class="solution-step">Area of 3000 tiles = 3000 × 675 = 2025000 cm².</div>
+            <div class="solution-step">Convert cm² to m²: Area in m² = 2025000 / 10000 = 202.5 m².</div>
+            <div class="solution-step">Total cost = Total Area × Rate = 202.5 × 4 = ₹ 810.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle ek tile ka area nikalo (cm² me). Fir use 3000 se multiply karke total area nikalo. Is total area ko m² me convert karo (1m² = 10000 cm²). Aakhir me, total area ko rate (₹4) se multiply kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">8. Mohan wants to buy a trapezium shaped field. Its side along the river is parallel to and twice the side along the road. If the area of this field is 10500 m² and the perpendicular distance between the two parallel sides is 100 m, find the length of the side along the river.</p>
+            <div class="solution-step">Let the side along the road be x m. Then the side along the river is 2x m. Height h = 100 m. Area = 10500 m².</div>
+            <div class="solution-step">Area = 1/2 × (x + 2x) × 100 ⟹ 10500 = 50 × (3x).</div>
+            <div class="solution-step">10500 = 150x ⟹ x = 10500 / 150 = 70 m.</div>
+            <div class="solution-step">Side along the river = 2x = 2 × 70 = 140 m.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Maan lo road waali side 'x' hai, to river waali side '2x' hogi. Ab trapezium ke area formula me in values ko daalo aur 'x' ke liye solve karo. River waali side '2x' hai, to final answer 2*x hoga.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">9. Top surface of a raised platform is in the shape of a regular octagon. Find the area of the octagonal surface.</p>
+            <div class="solution-step">The octagon can be divided into three parts: two trapeziums and one rectangle.</div>
+            <div class="solution-step">Area of Rectangle = 11 m × 5 m = 55 m².</div>
+            <div class="solution-step">Area of two Trapeziums = 2 × [ 1/2 × (11 + 5) × 4 ] = 16 × 4 = 64 m².</div>
+            <div class="solution-step">Total Area = 55 + 64 = 119 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Octagon ko ek rectangle (beech me) aur do same size ke trapeziums (upar aur neeche) me todo. Teeno shapes ka area alag-alag nikalkar add kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">10. There is a pentagonal shaped park. Find its area using both Jyoti's and Kavita's ways.</p>
+            <div class="solution-step"><b>Jyoti's method:</b> Two trapeziums. Area = 2 × [ 1/2 × (15+30) × 7.5 ] = 337.5 m².</div>
+            <div class="solution-step"><b>Kavita's method:</b> A square and a triangle. Area = (15×15) + (1/2×15×15) = 225 + 112.5 = 337.5 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p><b>Jyoti ka tarika:</b> Park do barabar trapezium me banta hai. Ek ka area nikal kar 2 se multiply kar do.<br><b>Kavita ka tarika:</b> Park ek square aur ek triangle me banta hai. Dono ka area alag-alag nikal kar add kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">11. Diagram of the adjacent picture frame has outer dimensions 24cm × 28cm and inner dimensions 16cm × 20cm. Find the area of each section of the frame.</p>
+            <div class="solution-step">Width of frame = (24-16)/2 = 4 cm and (28-20)/2 = 4 cm.</div>
+            <div class="solution-step">Area of top/bottom sections (trapeziums): 1/2 × (16+24) × 4 = 80 cm² each.</div>
+            <div class="solution-step">Area of left/right sections (trapeziums): 1/2 × (20+28) × 4 = 96 cm² each.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Frame ke chaar sections hain, aur sab trapeziums hain. Upar-neeche wale sections same size ke hain aur left-right wale same size ke. Har trapezium ki parallel sides aur height figure se nikal kar area calculate karo.</p>
+            </div>
+        </div>
+
+        <h2>Exercise 9.2</h2>
+        
+        <div class="question-card">
+            <p class="question">1. There are two cuboidal boxes. Which box requires the lesser amount of material to make?</p>
+            <div class="solution-step"><b>Box (a):</b> TSA = 2(60×40 + 40×50 + 50×60) = 14800 cm².</div>
+            <div class="solution-step"><b>Box (b):</b> TSA = 6 × 50² = 15000 cm².</div>
+            <div class="answer">Box (a) requires lesser material.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Material ki zaroorat matlab Total Surface Area (TSA). Dono boxes ka TSA nikalo. Cuboid ke liye <code>2(lb+bh+hl)</code> aur cube ke liye <code>6l²</code>. Jiska TSA kam hai, usme kam material lagega.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">2. A suitcase with measures 80cm × 48cm × 24cm is to be covered with a tarpaulin cloth. How many metres of tarpaulin of width 96 cm is required to cover 100 such suitcases?</p>
+            <div class="solution-step">TSA of 1 suitcase = 2(80×48 + 48×24 + 24×80) = 13824 cm².</div>
+            <div class="solution-step">Area of cloth for 100 suitcases = 100 × 13824 = 1382400 cm².</div>
+            <div class="solution-step">Length of tarpaulin = Total Area / Width = 1382400 / 96 = 14400 cm = 144 m.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle ek suitcase ka TSA nikalo. Use 100 se multiply karke total kapde ka area nikal lo. Kapde ka area <code>length × width</code> hota hai. Isse length nikal lo. Answer cm me aayega, use m me convert kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">3. Find the side of a cube whose surface area is 600 cm².</p>
+            <div class="solution-step">6l² = 600 ⟹ l² = 100 ⟹ l = 10 cm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Cube ke surface area (6l²) ko 600 ke barabar rakho aur 'l' (side) ke liye solve kar lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">4. Rukhsar painted the outside of the cabinet of measure 1m × 2m × 1.5m. How much surface area did she cover if she painted all except the bottom?</p>
+            <div class="solution-step">Area painted = LSA + Area of Top = 2h(l+b) + lb</div>
+            <div class="solution-step">= 2×1.5(2+1) + (2×1) = 3(3) + 2 = 9 + 2 = 11 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Usne neeche (bottom) paint nahi kiya. To total painted area hoga = chaar deewaron ka area (LSA) + chhat ka area (Top). Dono ko nikal kar add kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">5. Daniel is painting the walls and ceiling of a cuboidal hall. From each can of paint 100 m² of area is painted. How many cans will he need?</p>
+            <div class="solution-step">Area to be painted = Area of 4 walls + Area of ceiling = 2h(l+b) + lb.</div>
+            <div class="solution-step">l=15, b=10, h=7. Area = 2×7(15+10) + 15×10 = 14(25) + 150 = 350 + 150 = 500 m².</div>
+            <div class="solution-step">Number of cans = Total Area / 100 = 500 / 100 = 5 cans.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Bilkul pichle question jaisa hai. Pehle total paint karne wala area nikalo (LSA + Top Area). Fir total area ko ek can se paint hone wale area (100 m²) se divide kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">6. Describe how the two figures are alike and how they are different. Which box has larger lateral surface area?</p>
+            <div class="solution-step"><b>Alike:</b> Both have the same height. <b>Different:</b> One is a cylinder, one is a cube.</div>
+            <div class="solution-step">LSA of Cylinder = 2πrh = 2 × (22/7) × 3.5 × 7 = 154 cm².</div>
+            <div class="solution-step">LSA of Cube = 4l² = 4 × 7² = 4 × 49 = 196 cm².</div>
+            <div class="answer">The cube has a larger lateral surface area.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Similarity (Alike) hai ki dono ki height same hai. Difference hai ki ek cylinder hai aur doosra cube. Dono ka Lateral Surface Area (LSA) nikalo aur compare karo. Cube ka LSA <code>4l²</code> aur Cylinder ka <code>2πrh</code> hota hai.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">7. A closed cylindrical tank of radius 7 m and height 3 m is made from a sheet of metal. How much sheet of metal is required?</p>
+            <div class="solution-step">Metal sheet required = TSA = 2πr(r+h) = 2 × (22/7) × 7 × (7+3) = 440 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Closed tank ke liye poora Total Surface Area (TSA) cover karna padega. Cylinder ke TSA ka formula <code>2πr(r+h)</code> use karke area nikal lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">8. The lateral surface area of a hollow cylinder is 4224 cm². It is cut along its height and formed a rectangular sheet of width 33 cm. Find the perimeter of the rectangular sheet.</p>
+            <div class="solution-step">Area of rectangular sheet = LSA of cylinder = 4224 cm².</div>
+            <div class="solution-step">Length × Width = 4224 ⟹ Length × 33 = 4224 ⟹ Length = 128 cm.</div>
+            <div class="solution-step">Perimeter = 2(Length + Width) = 2(128 + 33) = 2(161) = 322 cm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Jab cylinder ko kaat kar सीधा karte hain to ek rectangle banta hai. Is rectangle ka area cylinder ke LSA ke barabar hota hai. Width di hai, to area se length nikal lo. Fir rectangle ka perimeter (<code>2(l+b)</code>) nikal lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">9. A road roller takes 750 revolutions to level a road. Find the area of the road if the diameter is 84 cm and length is 1 m.</p>
+            <div class="solution-step">Radius r = 42 cm = 0.42 m. Height h = 1 m.</div>
+            <div class="solution-step">Area in 1 revolution = CSA = 2πrh = 2 × (22/7) × 0.42 × 1 = 2.64 m².</div>
+            <div class="solution-step">Area of road = 2.64 × 750 = 1980 m².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ek revolution me roller apne Curved Surface Area (CSA) ke barabar area cover karta hai. Pehle roller ka CSA nikalo (dhyan se units m me convert kar lo). Fir use 750 se multiply karke road ka area nikal lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">10. A company packages its milk powder in a cylindrical container. If the label is placed 2 cm from top and bottom, what is the area of the label?</p>
+            <div class="solution-step">Diameter = 14cm, so r = 7cm. Height of container = 20cm.</div>
+            <div class="solution-step">Height of label h = 20 - 2 - 2 = 16 cm.</div>
+            <div class="solution-step">Area of label = CSA of label = 2πrh = 2 × (22/7) × 7 × 16 = 704 cm².</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Label cylinder ke curved part par laga hai. Label ki height nikalne ke liye total height me se upar aur neeche ka 2-2 cm minus kar do. Fir is nayi height se label ka CSA nikal lo.</p>
+            </div>
+        </div>
+
+        <h2>Exercise 9.3</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Given a cylindrical tank, in which situation will you find surface area and in which situation volume.</p>
+            <div class="solution-step">(a) To find how much it can hold → <b>Volume</b>.</div>
+            <div class="solution-step">(b) Number of cement bags to plaster it → <b>Surface Area</b>.</div>
+            <div class="solution-step">(c) Number of smaller tanks that can be filled from it → <b>Volume</b>.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Jab capacity (kitna samaan aayega) pata karni ho, to <b>Volume</b>. Jab cover karna, paint karna ya plaster karna ho, to <b>Surface Area</b>.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">2. Diameter of cylinder A is 7 cm, height 14 cm. Diameter of B is 14 cm, height 7 cm. Whose volume is greater? Check if cylinder with greater volume also has greater surface area.</p>
+            <div class="solution-step"><b>Cylinder A:</b> r=3.5, h=14. Volume = π(3.5)²(14) = 539 cm³. TSA = 2π(3.5)(3.5+14) = 385 cm².</div>
+            <div class="solution-step"><b>Cylinder B:</b> r=7, h=7. Volume = π(7)²(7) = 1078 cm³. TSA = 2π(7)(7+7) = 616 cm².</div>
+            <div class="answer">Volume of B is greater. Yes, cylinder with greater volume also has greater surface area here.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Dono cylinders ka Volume (<code>πr²h</code>) aur Total Surface Area (<code>2πr(r+h)</code>) nikalo. Fir unke values ko compare karo. Is case me jiska volume zyada hai, uska surface area bhi zyada hai.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">3. Find the height of a cuboid whose base area is 180 cm² and volume is 900 cm³.</p>
+            <div class="solution-step">Volume = Base Area × Height.</div>
+            <div class="solution-step">900 = 180 × Height ⟹ Height = 900 / 180 = 5 cm.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Cuboid ke volume ka ek aur formula hota hai: <code>Base Area × Height</code>. Is formula me values daal kar height nikal lo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">4. A cuboid is of dimensions 60cm × 54cm × 30cm. How many small cubes with side 6 cm can be placed in it?</p>
+            <div class="solution-step">Number of cubes = Volume of Cuboid / Volume of 1 cube</div>
+            <div class="solution-step">= (60 × 54 × 30) / (6 × 6 × 6) = 10 × 9 × 5 = 450 cubes.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Number of small cubes nikalne ke liye, hamesha bade object (cuboid) ke volume ko chhote object (cube) ke volume se divide kar do.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">5. Find the height of the cylinder whose volume is 1.54 m³ and diameter of the base is 140 cm.</p>
+            <div class="solution-step">Volume = 1.54 m³. Diameter = 140 cm = 1.4 m, so radius r = 0.7 m.</div>
+            <div class="solution-step">Volume = πr²h ⟹ 1.54 = (22/7) × (0.7)² × h</div>
+            <div class="solution-step">1.54 = (22/7) × 0.49 × h ⟹ 1.54 = 22 × 0.07 × h ⟹ 1.54 = 1.54 × h</div>
+            <div class="solution-step">h = 1 m.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle sabhi units ko same (meter me) kar lo. Fir cylinder ke volume formula (<code>πr²h</code>) me di hui values daalo aur 'h' ke liye solve karo.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">6. A milk tank is a cylinder with radius 1.5 m and length 7 m. Find the quantity of milk in litres.</p>
+            <div class="solution-step">Volume = πr²h = (22/7) × (1.5)² × 7 = 49.5 m³.</div>
+            <div class="solution-step">1 m³ = 1000 litres. So, 49.5 m³ = 49.5 × 1000 = 49500 litres.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle tank ka volume m³ me nikalo. Fir use litres me convert kar do (1 m³ = 1000 litres).</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">7. If each edge of a cube is doubled,</p>
+            <div class="solution-step"><b>(i) how many times will its surface area increase?</b> New Area = 6(2l)² = 4 × (6l²). It will increase <b>4 times</b>.</div>
+            <div class="solution-step"><b>(ii) how many times will its volume increase?</b> New Volume = (2l)³ = 8l³. It will increase <b>8 times</b>.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Agar side double hoti hai to Area (jisme side²) 2²=4 guna ho jata hai. Volume (jisme side³) 2³=8 guna ho jata hai.</p>
+            </div>
+        </div>
+        <div class="question-card">
+            <p class="question">8. Water is pouring into a cuboidal reservoir at 60 litres per minute. If the volume is 108 m³, find the hours it will take to fill it.</p>
+            <div class="solution-step">Volume = 108 m³ = 108 × 1000 = 108000 litres.</div>
+            <div class="solution-step">Time in minutes = Total Volume / Rate = 108000 / 60 = 1800 minutes.</div>
+            <div class="solution-step">Time in hours = 1800 / 60 = 30 hours.</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle reservoir ke volume ko m³ se litres me badlo. Fir total volume ko paani girne ki speed (rate) se divide karo to time minutes me milega. Aakhir me minutes ko hours me convert kar lo.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
