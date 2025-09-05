@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 12: Factorisation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #eef5f9;
+            --container-bg: #ffffff;
+            --header-grad-1: #1e3c72;
+            --header-grad-2: #2a5298;
+            --heading-color: #d35400;
+            --border-color: #2980b9;
+            --card-border: #8e44ad;
+            --text-color: #34495e;
+            --code-bg: #ecf0f1;
+            --code-text: #2c3e50;
+            --answer-color: #27ae60;
+            --explanation-bg: #eaf2f8;
+            --explanation-border: #aed6f1;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background-color: var(--container-bg);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px;
+            background: linear-gradient(135deg, var(--header-grad-1), var(--header-grad-2));
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 35px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--border-color);
+            padding-bottom: 12px;
+            margin-top: 45px;
+        }
+        
+        .question-card {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-left: 6px solid var(--card-border);
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-bottom: 18px;
+        }
+        
+        .solution-step {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        .solution-step::before {
+            content: '»';
+            position: absolute;
+            left: 0;
+            color: var(--border-color);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .answer {
+            font-weight: 700;
+            color: var(--answer-color);
+            background-color: #e9f7ef;
+            padding: 12px 15px;
+            border-radius: 6px;
+            border-left: 5px solid var(--answer-color);
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .explanation {
+            margin-top: 20px;
+            padding: 18px;
+            background-color: var(--explanation-bg);
+            border: 1px solid var(--explanation-border);
+            border-radius: 8px;
+        }
+        
+        .explanation .hinglish-heading {
+            font-weight: 600;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+
+        code {
+            font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+            background-color: var(--code-bg);
+            padding: 4px 7px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            color: var(--code-text);
+        }
+        
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 20px; }
+            h1 { font-size: 2em; }
+            h2 { font-size: 1.6em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h1>Factorisation</h1>
+            <p>Class 8th Mathematics | Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- Solutions for Exercise 12.1 -->
+        <h2>Exercise 12.1</h2>
+
+        <div class="question-card">
+            <p class="question">1. Find the common factors of the given terms.</p>
+            <div class="solution-step"><b>(i) 12x, 36</b> → Common Factor: 12</div>
+            <div class="solution-step"><b>(ii) 2y, 22xy</b> → Common Factors: 2, y. Highest Common Factor: 2y</div>
+            <div class="solution-step"><b>(iii) 14pq, 28p²q²</b> → Common Factors: 14, p, q. HCF: 14pq</div>
+            <div class="solution-step"><b>(iv) 2x, 3x², 4</b> → Common Factor: 1</div>
+            <div class="solution-step"><b>(v) 6abc, 24ab², 12a²b</b> → Common Factors: 6, a, b. HCF: 6ab</div>
+            <div class="solution-step"><b>(vi) 16x³, -4x², 32x</b> → Common Factors: 4, x. HCF: 4x</div>
+            <div class="solution-step"><b>(vii) 10pq, 20qr, 30rp</b> → Common Factor: 10</div>
+            <div class="solution-step"><b>(viii) 3x²y³, 10x³y², 6x²y²z</b> → Common Factors: x², y². HCF: x²y²</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Common factor nikalne ke liye, har term ke prime factors likho. Fir dekho ki kaunse numbers aur variables sabhi terms me मौजूद hain. Unhi ko multiply karke HCF milta hai.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">2. Factorise the following expressions.</p>
+            <div class="solution-step"><b>(i) 7x - 42</b> = 7(x - 6)</div>
+            <div class="solution-step"><b>(ii) 6p - 12q</b> = 6(p - 2q)</div>
+            <div class="solution-step"><b>(iii) 7a² + 14a</b> = 7a(a + 2)</div>
+            <div class="solution-step"><b>(iv) -16z + 20z³</b> = 4z(-4 + 5z²)</div>
+            <div class="solution-step"><b>(v) 20l²m + 30alm</b> = 10lm(2l + 3a)</div>
+            <div class="solution-step"><b>(vi) 5x²y - 15xy²</b> = 5xy(x - 3y)</div>
+            <div class="solution-step"><b>(vii) 10a² - 15b² + 20c²</b> = 5(2a² - 3b² + 4c²)</div>
+            <div class="solution-step"><b>(viii) -4a² + 4ab - 4ca</b> = 4a(-a + b - c)</div>
+            <div class="solution-step"><b>(ix) x²yz + xy²z + xyz²</b> = xyz(x + y + z)</div>
+            <div class="solution-step"><b>(x) ax²y + bxy² + cxyz</b> = xy(ax + by + cz)</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Factorise karne ka matlab hai common factors ko bahar nikalna. Har expression me se sabse bada common factor (HCF) bahar nikalo aur bache hue terms ko bracket ke andar likh do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Factorise.</p>
+            <div class="solution-step"><b>(i) x² + xy + 8x + 8y</b> = x(x+y) + 8(x+y) = (x+y)(x+8)</div>
+            <div class="solution-step"><b>(ii) 15xy - 6x + 5y - 2</b> = 3x(5y-2) + 1(5y-2) = (5y-2)(3x+1)</div>
+            <div class="solution-step"><b>(iii) ax + bx - ay - by</b> = x(a+b) - y(a+b) = (a+b)(x-y)</div>
+            <div class="solution-step"><b>(iv) 15pq + 15 + 9q + 25p</b> = 15pq + 25p + 9q + 15 = 5p(3q+5) + 3(3q+5) = (3q+5)(5p+3)</div>
+            <div class="solution-step"><b>(v) z - 7 + 7xy - xyz</b> = z - xyz - 7 + 7xy = z(1-xy) - 7(1-xy) = (1-xy)(z-7)</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ise 'factorisation by regrouping' kehte hain. Jab sabhi terms me kuch common na ho, to 2-2 terms ke group banao. Har group se common nikalo. Iske baad, aapko ek common bracket milega jise aap fir se common nikal sakte ho.(Download kare StudyScript App aur paaye dher saare courses)</p>
+            </div>
+        </div>
+
+        <!-- Solutions for Exercise 12.2 -->
+        <h2>Exercise 12.2</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Factorise the following expressions.</p>
+            <div class="solution-step"><b>(i) a² + 8a + 16</b> = (a)² + 2(a)(4) + (4)² = (a+4)²</div>
+            <div class="solution-step"><b>(ii) p² - 10p + 25</b> = (p)² - 2(p)(5) + (5)² = (p-5)²</div>
+            <div class="solution-step"><b>(iii) 25m² + 30m + 9</b> = (5m)² + 2(5m)(3) + (3)² = (5m+3)²</div>
+            <div class="solution-step"><b>(iv) 49y² + 84yz + 36z²</b> = (7y)² + 2(7y)(6z) + (6z)² = (7y+6z)²</div>
+            <div class="solution-step"><b>(v) 4x² - 8x + 4</b> = 4(x² - 2x + 1) = 4(x-1)²</div>
+            <div class="solution-step"><b>(vi) 121b² - 88bc + 16c²</b> = (11b)² - 2(11b)(4c) + (4c)² = (11b-4c)²</div>
+            <div class="solution-step"><b>(vii) (l+m)² - 4lm</b> = l²+2lm+m² - 4lm = l²-2lm+m² = (l-m)²</div>
+            <div class="solution-step"><b>(viii) a⁴ + 2a²b² + b⁴</b> = (a²)² + 2(a²)(b²) + (b²)² = (a²+b²)²</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ye saare expressions identities par based hain: <code>(a+b)² = a²+2ab+b²</code> aur <code>(a-b)² = a²-2ab+b²</code>. Expression ko pehchano ki wo kounsi identity se match karta hai aur uske hisab se factors likho.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Factorise.</p>
+            <div class="solution-step"><b>(i) 4p² - 9q²</b> = (2p)² - (3q)² = (2p-3q)(2p+3q)</div>
+            <div class="solution-step"><b>(ii) 63a² - 112b²</b> = 7(9a² - 16b²) = 7((3a)² - (4b)²) = 7(3a-4b)(3a+4b)</div>
+            <div class="solution-step"><b>(iii) 49x² - 36</b> = (7x)² - (6)² = (7x-6)(7x+6)</div>
+            <div class="solution-step"><b>(iv) 16x⁵ - 144x³</b> = 16x³(x² - 9) = 16x³(x-3)(x+3)</div>
+            <div class="solution-step"><b>(v) (l+m)² - (l-m)²</b> = [(l+m)-(l-m)][(l+m)+(l-m)] = (2m)(2l) = 4lm</div>
+            <div class="solution-step"><b>(vi) 9x²y² - 16</b> = (3xy)² - 4² = (3xy-4)(3xy+4)</div>
+            <div class="solution-step"><b>(vii) (x² - 2xy + y²) - z²</b> = (x-y)² - z² = (x-y-z)(x-y+z)</div>
+            <div class="solution-step"><b>(viii) 25a² - 4b² + 28bc - 49c²</b> = 25a² - (4b² - 28bc + 49c²) = (5a)² - (2b-7c)² = (5a-(2b-7c))(5a+(2b-7c)) = (5a-2b+7c)(5a+2b-7c)</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ye questions <code>a²-b² = (a-b)(a+b)</code> identity par based hain. Expression ko do perfect squares ke difference ke form me likho aur fir identity apply karke factors banao. Kabhi kabhi pehle kuch common nikalna padta hai (jaise Q2(ii)).</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Factorise the expressions.</p>
+            <div class="solution-step"><b>(i) ax² + bx</b> = x(ax+b)</div>
+            <div class="solution-step"><b>(ii) 7p² + 21q²</b> = 7(p²+3q²)</div>
+            <div class="solution-step"><b>(iii) 2x³ + 2xy² + 2xz²</b> = 2x(x²+y²+z²)</div>
+            <div class="solution-step"><b>(iv) am² + bm² + bn² + an²</b> = m²(a+b) + n²(b+a) = (a+b)(m²+n²)</div>
+            <div class="solution-step"><b>(v) (lm+l)+m+1</b> = l(m+1) + 1(m+1) = (m+1)(l+1)</div>
+            <div class="solution-step"><b>(vi) y(y+z)+9(y+z)</b> = (y+z)(y+9)</div>
+            <div class="solution-step"><b>(vii) 5y² - 20y - 8z + 2yz</b> = 5y(y-4) + 2z(y-4) = (y-4)(5y+2z)</div>
+            <div class="solution-step"><b>(viii) 10ab + 4a + 5b + 2</b> = 2a(5b+2) + 1(5b+2) = (5b+2)(2a+1)</div>
+            <div class="solution-step"><b>(ix) 6xy - 4y + 6 - 9x</b> = 2y(3x-2) - 3(3x-2) = (3x-2)(2y-3)</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ye questions common factor method aur regrouping method ka mix hain. Pehle dekho ki sabhi terms me se kuch common nikal raha hai. Agar nahi, to regrouping try karo(Download kare StudyScript App aur paaye free Notes).</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">4. Factorise.</p>
+            <div class="solution-step"><b>(i) a⁴ - b⁴</b> = (a²)² - (b²)² = (a²-b²)(a²+b²) = (a-b)(a+b)(a²+b²)</div>
+            <div class="solution-step"><b>(ii) p⁴ - 81</b> = (p²)² - 9² = (p²-9)(p²+9) = (p-3)(p+3)(p²+9)</div>
+            <div class="solution-step"><b>(iii) x⁴ - (y+z)⁴</b> = (x²)² - ((y+z)²)² = (x²-(y+z)²)(x²+(y+z)²) = [x-(y+z)][x+(y+z)](x²+(y+z)²) = (x-y-z)(x+y+z)(x²+y²+z²+2yz)</div>
+            <div class="solution-step"><b>(iv) x⁴ - (x-z)⁴</b> = (x²)² - ((x-z)²)² = (x²-(x-z)²)(x²+(x-z)²) = [x-(x-z)][x+(x-z)](x²+x²-2xz+z²) = (z)(2x-z)(2x²-2xz+z²)</div>
+            <div class="solution-step"><b>(v) a⁴ - 2a²b² + b⁴</b> = (a²)² - 2a²b² + (b²)² = (a²-b²)² = [(a-b)(a+b)]² = (a-b)²(a+b)²</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>In questions me a²-b² identity ko do baar use karna pad sakta hai. Power 4 ko (power 2)² ke form me likho aur identity apply karo. Q(v) me pehle (a-b)² waali identity lagegi.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">5. Factorise the following expressions.</p>
+            <div class="solution-step"><b>(i) p² + 6p + 8</b> = p²+4p+2p+8 = p(p+4)+2(p+4) = (p+4)(p+2)</div>
+            <div class="solution-step"><b>(ii) q² - 10q + 21</b> = q²-7q-3q+21 = q(q-7)-3(q-7) = (q-7)(q-3)</div>
+            <div class="solution-step"><b>(iii) p² + 6p - 16</b> = p²+8p-2p-16 = p(p+8)-2(p+8) = (p+8)(p-2)</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Ise 'splitting the middle term' method kehte hain. Middle term (jaise 6p) ko aise do parts me todo jinka sum middle term ke barabar ho aur product first aur last term ke product ke barabar ho. Jaise Q(i) me, 8 ke factors 4 aur 2 hain, aur 4+2=6 hota hai.</p>
+            </div>
+        </div>
+
+        <!-- Solutions for Exercise 12.3 -->
+        <h2>Exercise 12.3</h2>
+        
+        <div class="question-card">
+            <p class="question">1. Carry out the following divisions.</p>
+            <div class="solution-step"><b>(i) 28x⁴ ÷ 56x</b> = (28/56) * (x⁴/x) = (1/2)x³</div>
+            <div class="solution-step"><b>(ii) -36y³ ÷ 9y²</b> = (-36/9) * (y³/y²) = -4y</div>
+            <div class="solution-step"><b>(iii) 66pq²r³ ÷ 11qr²</b> = (66/11) * p * (q²/q) * (r³/r²) = 6pqr</div>
+            <div class="solution-step"><b>(iv) 34x³y³z³ ÷ 51xy²z³</b> = (34/51) * (x³/x) * (y³/y²) * (z³/z³) = (2/3)x²y</div>
+            <div class="solution-step"><b>(v) 12a⁸b⁸ ÷ (-6a⁶b⁴)</b> = (12/-6) * (a⁸/a⁶) * (b⁸/b⁴) = -2a²b⁴</div>
+            <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Monomial ko monomial se divide karne ke liye, numbers ko numbers se divide karo aur same variables ki powers ko subtract karo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">2. Divide the given polynomial by the given monomial.</p>
+            <div class="solution-step"><b>(i) (5x² - 6x) ÷ 3x</b> = 5x²/3x - 6x/3x = (5/3)x - 2</div>
+            <div class="solution-step"><b>(ii) (3y⁸ - 4y⁶ + 5y⁴) ÷ y⁴</b> = 3y⁸/y⁴ - 4y⁶/y⁴ + 5y⁴/y⁴ = 3y⁴ - 4y² + 5</div>
+            <div class="solution-step"><b>(iii) 8(x³y²z² + x²y³z² + x²y²z³) ÷ 4x²y²z²</b> = 2(x+y+z)</div>
+            <div class="solution-step"><b>(iv) (x³ + 2x² + 3x) ÷ 2x</b> = x³/2x + 2x²/2x + 3x/2x = (1/2)x² + x + 3/2</div>
+            <div class="solution-step"><b>(v) (p³q⁶ - p⁶q³) ÷ p³q³</b> = p³q⁶/p³q³ - p⁶q³/p³q³ = q³ - p³</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Polynomial ke har term ko monomial se alag-alag divide karo. Fir har division ko pichle question ki tarah solve karo.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">3. Work out the following divisions.</p>
+            <div class="solution-step"><b>(i) (10x - 25) ÷ 5</b> = 5(2x-5) ÷ 5 = 2x-5</div>
+            <div class="solution-step"><b>(ii) (10x - 25) ÷ (2x - 5)</b> = 5(2x-5) ÷ (2x-5) = 5</div>
+            <div class="solution-step"><b>(iii) 10y(6y + 21) ÷ 5(2y + 7)</b> = 10y * 3(2y+7) ÷ 5(2y+7) = 30y(2y+7) ÷ 5(2y+7) = 6y</div>
+            <div class="solution-step"><b>(iv) 9x²y²(3z - 24) ÷ 27xy(z - 8)</b> = 9x²y² * 3(z-8) ÷ 27xy(z-8) = 27x²y²(z-8) ÷ 27xy(z-8) = xy</div>
+            <div class="solution-step"><b>(v) 96abc(3a - 12)(5b - 30) ÷ 144(a - 4)(b - 6)</b> = 96abc * 3(a-4) * 5(b-6) ÷ 144(a-4)(b-6) = (96*15)abc(a-4)(b-6) ÷ 144(a-4)(b-6) = 10abc</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Numerator (jise divide karna hai) ko factorise karo. Common factors ko bahar nikalo. Fir dekho ki numerator aur denominator me kya common hai aur use cancel kar do.</p>
+            </div>
+        </div>
+
+        <div class="question-card">
+            <p class="question">4. Divide as directed.</p>
+            <div class="solution-step"><b>(i) 5(2x + 1)(3x + 5) ÷ (2x + 1)</b> = 5(3x+5)</div>
+            <div class="solution-step"><b>(ii) 26xy(x + 5)(y - 4) ÷ 13x(y - 4)</b> = 2y(x+5)</div>
+            <div class="solution-step"><b>(iii) 52pqr(p + q)(q + r)(r + p) ÷ 104pq(q + r)(r + p)</b> = (1/2)r(p+q)</div>
+            <div class="solution-step"><b>(iv) 20(y + 4)(y² + 5y + 3) ÷ 5(y + 4)</b> = 4(y²+5y+3)</div>
+            <div class="solution-step"><b>(v) x(x + 1)(x + 2)(x + 3) ÷ x(x + 1)</b> = (x+2)(x+3)</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Yahan expressions pehle se hi factorised form me hain. Sirf numerator aur denominator me common factors (jaise numbers, variables, brackets) ko identify karke cancel karna hai.</p>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <p class="question">5. Factorise the expressions and divide them as directed.</p>
+            <div class="solution-step"><b>(i) (y² + 7y + 10) ÷ (y + 5)</b> = (y+5)(y+2) ÷ (y+5) = y+2</div>
+            <div class="solution-step"><b>(ii) (m² - 14m - 32) ÷ (m + 2)</b> = (m-16)(m+2) ÷ (m+2) = m-16</div>
+            <div class="solution-step"><b>(iii) (5p² - 25p + 20) ÷ (p - 1)</b> = 5(p²-5p+4) ÷ (p-1) = 5(p-1)(p-4) ÷ (p-1) = 5(p-4)</div>
+            <div class="solution-step"><b>(iv) 4yz(z² + 6z - 16) ÷ 2y(z + 8)</b> = 4yz(z+8)(z-2) ÷ 2y(z+8) = 2z(z-2)</div>
+            <div class="solution-step"><b>(v) 5pq(p² - q²) ÷ 2p(p + q)</b> = 5pq(p-q)(p+q) ÷ 2p(p+q) = (5/2)q(p-q)</div>
+            <div class="solution-step"><b>(vi) 12xy(9x² - 16y²) ÷ 4xy(3x + 4y)</b> = 12xy(3x-4y)(3x+4y) ÷ 4xy(3x+4y) = 3(3x-4y)</div>
+            <div class="solution-step"><b>(vii) 39y³(50y² - 98) ÷ 26y²(5y + 7)</b> = 39y³ * 2(25y²-49) ÷ 26y²(5y+7) = 78y³(5y-7)(5y+7) ÷ 26y²(5y+7) = 3y(5y-7)</div>
+             <div class="explanation">
+                <p class="hinglish-heading">Hinglish Explanation:</p>
+                <p>Pehle numerator ko factorise karo. Isme common factor, middle term splitting, ya a²-b² jaisi identities use ho sakti hain. Jab numerator factorise ho jaye, to denominator se common factors cancel kar do.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
