@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2: From Trade to Territory - Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f7ff; /* Lighter blue background */
+            --header-gradient-start: #4a90e2;
+            --header-gradient-end: #5078f2;
+            --card-bg: #ffffff;
+            --text-color: #34495e; /* Dark blue-grey text */
+            --header-text: #ffffff;
+            --recall-bg: #eaf5ff;
+            --recall-border: #a0c4ff;
+            --discuss-bg: #eaf5ff;
+            --discuss-border: #a0c4ff;
+            --do-bg: #e3f2fd;
+            --do-border: #90caf9;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+            color: var(--header-text);
+            padding: 25px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+        
+        .recall-title { color: #bf360c; border-bottom: 3px solid #bf360c; }
+        .discuss-title { color: #2e7d32; border-bottom: 3px solid #2e7d32; }
+        .do-title { color: #0d47a1; border-bottom: 3px solid #0d47a1; }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .recall-card { background-color: var(--recall-bg); border-left: 5px solid var(--recall-border); }
+        .discuss-card { background-color: var(--discuss-bg); border-left: 5px solid var(--discuss-border); }
+        .do-card { background-color: var(--do-bg); border-left: 5px solid var(--do-border); }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1c3d5a;
+        }
+
+        .answer p, .answer li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            list-style-type: '👉 ';
+        }
+
+         .answer ul ul {
+            list-style-type: '✔ ';
+         }
+
+        .answer strong {
+            font-weight: 600;
+        }
+        
+        .true-false-section {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .true-false {
+            font-weight: bold;
+        }
+        .true { color: #16a34a; }
+        .false { color: #dc2626; }
+
+        .table-container {
+            overflow-x: auto; /* Enables horizontal scrolling for the table on small screens */
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 400px; /* Prevents table from becoming too narrow */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #d35400;
+            color: white;
+            font-weight: 600;
+        }
+        td {
+            background-color: #fff;
+        }
+        tr:nth-child(even) td {
+            background-color: #fdfaf6;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 5px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Social Science - Our Pasts III</h1>
+            <p>Chapter 2: From Trade to Territory</p>
+        </header>
+
+        <!-- Let's Recall Section -->
+        <section class="section">
+            <h2 class="section-title recall-title">Let's Recall</h2>
+            
+            <div class="card recall-card">
+                <div class="question">1. Match the following:</div>
+                <div class="answer table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Term</th>
+                                <th>Correct Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>Diwani</strong></td><td>Right to collect land revenue</td></tr>
+                            <tr><td><strong>“Tiger of Mysore”</strong></td><td>Tipu Sultan</td></tr>
+                            <tr><td><strong>faujdari adalat</strong></td><td>Criminal court</td></tr>
+                            <tr><td><strong>Rani Channamma</strong></td><td>Led an anti-British movement in Kitoor</td></tr>
+                            <tr><td><strong>sipahi</strong></td><td>Sepoy</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card recall-card">
+                <div class="question">2. Fill in the blanks:</div>
+                <div class="answer">
+                    <ul>
+                        <li>(a) The British conquest of Bengal began with the Battle of <strong>Plassey</strong>.</li>
+                        <li>(b) Haidar Ali and Tipu Sultan were the rulers of <strong>Mysore</strong>.</li>
+                        <li>(c) Dalhousie implemented the Doctrine of <strong>Lapse</strong>.</li>
+                        <li>(d) Maratha kingdoms were located mainly in the <strong>south-western</strong> part of India.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card recall-card">
+                <div class="question">3. State whether true or false:</div>
+                <div class="answer">
+                    <ul class="true-false-section">
+                        <li>
+                            <p>(a) The Mughal empire became stronger in the eighteenth century.</p>
+                            <p><span class="false true-false">False.</span> The chapter starts by explaining that after Aurangzeb's death in 1707, the Mughal empire weakened, and regional kingdoms emerged.</p>
+                        </li>
+                        <li>
+                            <p>(b) The English East India Company was the only European company that traded with India.</p>
+                            <p><span class="false true-false">False.</span> The chapter clearly mentions other European powers like the Portuguese, Dutch, and French who were also trading in India.</p>
+                        </li>
+                        <li>
+                            <p>(c) Maharaja Ranjit Singh was the ruler of Punjab.</p>
+                            <p><span class="true true-false">True.</span> The text states that the British fought wars with the Sikh kingdom after the death of Maharaja Ranjit Singh, who was the ruler of Punjab.</p>
+                        </li>
+                        <li>
+                            <p>(d) The British did not introduce administrative changes in the territories they conquered.</p>
+                            <p><span class="false true-false">False.</span> The British introduced several administrative reforms. The chapter details the new system of justice with civil (diwani adalat) and criminal (faujdari adalat) courts, and the new role of the Collector.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Discuss Section -->
+        <section class="section">
+            <h2 class="section-title discuss-title">Let's Discuss</h2>
+            
+            <div class="card discuss-card">
+                <div class="question">4. What attracted European trading companies to India?</div>
+                <div class="answer">
+                    <p>European trading companies were attracted to India for several trade-related reasons, primarily the opportunity to make huge profits:</p>
+                    <ul>
+                        <li><strong>High-Quality Goods:</strong> There was a big market in Europe for the fine qualities of cotton and silk produced in India.</li>
+                        <li><strong>Demand for Spices:</strong> Indian spices like pepper, cloves, cardamom, and cinnamon were in great demand in Europe.</li>
+                        <li><strong>Profit Margin:</strong> The companies could buy these goods at a cheap price in India and sell them at very high prices in Europe, which led to enormous profits. The goal was to "buy cheap and sell dear."</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">5. What were the areas of conflict between the Bengal nawabs and the East India Company?</div>
+                <div class="answer">
+                    <p>The conflict between the Bengal nawabs and the East India Company grew in the early eighteenth century due to several issues:</p>
+                    <ul>
+                        <li><strong>Nawabs' Perspective:</strong>
+                           <ul>
+                               <li>The Nawabs, like Murshid Quli Khan and Sirajuddaulah, accused the Company of deceit.</li>
+                               <li>They claimed the Company was depriving Bengal of huge amounts of revenue by refusing to pay taxes on its private trade.</li>
+                               <li>They said the Company was undermining their authority by writing disrespectful letters and extending fortifications without permission.</li>
+                           </ul>
+                        </li>
+                        <li><strong>Company's Perspective:</strong>
+                           <ul>
+                                <li>The Company declared that the "unjust demands" of the nawabs were ruining its trade.</li>
+                                <li>It believed trade could only flourish if duties were removed.</li>
+                                <li>To expand its trade, the Company felt it needed to enlarge its settlements, buy villages, and rebuild its forts.</li>
+                           </ul>
+                        </li>
+                    </ul>
+                    <p>These escalating conflicts eventually led to the Battle of Plassey.</p>
+                </div>
+            </div>
+
+             <div class="card discuss-card">
+                <div class="question">6. How did the assumption of Diwani benefit the East India Company?</div>
+                <div class="answer">
+                    <p>When the Mughal emperor appointed the Company as the Diwan of Bengal in 1765, it was a major turning point that benefited the Company immensely:</p>
+                    <ul>
+                        <li><strong>Access to Vast Revenues:</strong> The Diwani allowed the Company to use the vast revenue resources of Bengal.</li>
+                        <li><strong>Financing Expenses:</strong> The Company could now use Indian revenues to finance all its expenses. This included purchasing cotton and silk textiles in India, maintaining its troops, and paying for the construction of forts and offices.</li>
+                        <li><strong>End of Gold and Silver Import:</strong> Before the Diwani, the Company had to import gold and silver from Britain to buy goods in India. After 1765, this outflow of treasure from Britain completely stopped, as the Company could use Bengal's revenue for all its purchases.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">7. Explain the system of “subsidiary alliance”.</div>
+                <div class="answer">
+                    <p>The "subsidiary alliance" was a political method used by the British to extend their influence over Indian kingdoms without direct military attack. The key terms of this alliance were:</p>
+                    <ul>
+                        <li><strong>No Independent Army:</strong> Indian rulers were not allowed to have their own independent armed forces.</li>
+                        <li><strong>British Protection:</strong> They were to be "protected" by the Company's forces, known as "subsidiary forces".</li>
+                        <li><strong>Payment for Protection:</strong> The Indian rulers had to pay for these subsidiary forces.</li>
+                        <li><strong>Penalty for Non-payment:</strong> If an Indian ruler failed to make the payment, a part of their territory was taken away as a penalty. For example, the Nawab of Awadh had to give up half of his territory in 1801 for failing to pay.</li>
+                    </ul>
+                    <p>This system effectively made Indian states dependent on the Company and led to a loss of their sovereignty.</p>
+                </div>
+            </div>
+            
+            <div class="card discuss-card">
+                <div class="question">8. In what way was the administration of the Company different from that of Indian rulers?</div>
+                <div class="answer">
+                    <p>The administration of the Company was different from that of Indian rulers in several significant ways:</p>
+                     <ul>
+                        <li><strong>Administrative Units:</strong> The British divided their territories into administrative units called Presidencies (Bengal, Madras, and Bombay), each ruled by a Governor. The supreme head was the Governor-General. Indian kingdoms were typically divided into provinces or subas under local governors or zamindars.</li>
+                        <li><strong>System of Justice:</strong> The British established a new, uniform system of justice from 1772. Each district had a criminal court (faujdari adalat) and a civil court (diwani adalat). They also compiled codes of Hindu and Muslim laws to bring about uniformity.</li>
+                        <li><strong>The Collector:</strong> The principal figure in a district became the Collector, whose main job was to collect revenue and maintain law and order. This single post replaced the previous, more varied holders of authority in Indian states.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card discuss-card">
+                <div class="question">9. Describe the changes that occurred in the composition of the Company’s army.</div>
+                <div class="answer">
+                    <p>The composition of the Company's army, known as the sepoy army, underwent significant changes over time:</p>
+                     <ul>
+                        <li><strong>Shift from Cavalry to Infantry:</strong> The Mughal army was dominated by cavalry (sawars or soldiers on horseback). The Company initially adopted this but later shifted its focus. As warfare technology changed in the 1820s (with the introduction of muskets and matchlocks), the need for cavalry declined and infantry regiments became more important.</li>
+                        <li><strong>Professional Training:</strong> Unlike the Mughal army, which often used armed peasants supplied by zamindars, the Company recruited peasants and trained them as professional soldiers.</li>
+                        <li><strong>Uniform Military Culture:</strong> In the early nineteenth century, the British introduced a uniform military culture. Soldiers were subjected to European-style training, drill, and discipline. This sometimes created problems because it ignored the caste and community feelings of the sepoys.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Let's Do Section -->
+        <section class="section">
+            <h2 class="section-title do-title">Let's Do</h2>
+
+            <div class="card do-card">
+                <div class="question">10 & 11. (Activity-Based Questions)</div>
+                <div class="answer">
+                    <p>Questions 10 and 11 are activity-based and require you to do some research on your own. Here are some hints to get you started:</p>
+                    <ul>
+                        <li><strong>For Question 10:</strong> To find out about life in Calcutta during the colonial period, you can search online or in a library for topics like "colonial architecture in Kolkata," "life of Europeans in British India," and "social changes in Bengal in the 19th century." Look for famous buildings like the Victoria Memorial. </li>
+                        <li><strong>For Question 11:</strong> To collect information on historical figures like Rani of Jhansi or Maharaja Ranjit Singh, you can use encyclopedias, history books, and reliable internet sources. Look for pictures of their forts, poems written about their bravery, and stories of their lives. </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Solutions based on NCERT Class 8 "Our Pasts - III" textbook content.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
