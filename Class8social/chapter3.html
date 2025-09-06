@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3: Ruling the Countryside - Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f5f5f5; /* Light grey background */
+            --header-gradient-start: #4a90e2;
+            --header-gradient-end: #5078f2;
+            --card-bg: #ffffff;
+            --text-color: #37474f; /* Dark blue-grey text */
+            --header-text: #ffffff;
+            --recall-bg: #e8f5e9;
+            --recall-border: #a5d6a7;
+            --discuss-bg: #e1f5fe;
+            --discuss-border: #81d4fa;
+            --do-bg: #f9fbe7;
+            --do-border: #e6ee9c;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+            color: var(--header-text);
+            padding: 25px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .recall-title { color: #1b5e20; border-bottom: 3px solid #1b5e20; }
+        .discuss-title { color: #01579b; border-bottom: 3px solid #01579b; }
+        .do-title { color: #827717; border-bottom: 3px solid #827717; }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .recall-card { background-color: var(--recall-bg); border-left: 5px solid var(--recall-border); }
+        .discuss-card { background-color: var(--discuss-bg); border-left: 5px solid var(--discuss-border); }
+        .do-card { background-color: var(--do-bg); border-left: 5px solid var(--do-border); }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1c3d5a;
+        }
+
+        .answer p, .answer li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            list-style-type: '🌿 ';
+        }
+        
+        .answer ul ul {
+            list-style-type: '- ';
+        }
+
+        .answer strong {
+            font-weight: 600;
+        }
+
+        .table-container {
+            overflow-x: auto; /* Enables horizontal scrolling for the table on small screens */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 400px; /* Prevents table from becoming too narrow */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #cfd8dc;
+        }
+        th {
+            background-color: #2d8659;
+            color: white;
+            font-weight: 600;
+        }
+        td {
+            background-color: #fff;
+        }
+        tr:nth-child(even) td {
+            background-color: #f7f9f9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 5px; }
+            header h1 { font-size: 1.8em; }
+            header p { font-size: 1em; }
+            .section-title { font-size: 1.5em; }
+            .question { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 3: Ruling the Countryside</h1>
+            <p>Made by studyscript.netlify.app</p>
+        </header>
+
+        <!-- Let's Recall Section -->
+        <section class="section">
+            <h2 class="section-title recall-title">Let's Recall</h2>
+            
+            <div class="card recall-card">
+                <div class="question">1. Match the following:</div>
+                <div class="answer table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Term</th>
+                                <th>Correct Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>ryot</strong></td><td>peasant</td></tr>
+                            <tr><td><strong>mahal</strong></td><td>village</td></tr>
+                            <tr><td><strong>nij</strong></td><td>cultivation on planter’s own land</td></tr>
+                            <tr><td><strong>ryoti</strong></td><td>cultivation on ryot’s lands</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card recall-card">
+                <div class="question">2. Fill in the blanks:</div>
+                <div class="answer">
+                    <ul>
+                        <li>(a) Growers of woad in Europe saw <strong>indigo</strong> as a crop which would provide competition to their earnings.</li>
+                        <li>(b) The demand for indigo increased in late eighteenth-century Britain because of <strong>the expansion of cotton production due to industrialisation, which created a huge new demand for cloth dyes</strong>.</li>
+                        <li>(c) The international demand for indigo was affected by the discovery of <strong>synthetic dyes</strong>.</li>
+                        <li>(d) The Champaran movement was against <strong>indigo planters</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Discuss Section -->
+        <section class="section">
+            <h2 class="section-title discuss-title">Let's Discuss</h2>
+            
+            <div class="card discuss-card">
+                <div class="question">3. Describe the main features of the Permanent Settlement.</div>
+                <div class="answer">
+                    <p>The Permanent Settlement was a land revenue system introduced by the Company in 1793. Its main features were:</p>
+                    <ul>
+                        <li><strong>Zamindars as Revenue Collectors:</strong> The rajas and taluqdars were recognized as zamindars. Their role was to collect rent from the peasants and pay revenue to the Company.</li>
+                        <li><strong>Fixed Revenue:</strong> The amount of revenue to be paid to the Company was fixed permanently. It was decided that this amount would not be increased in the future.</li>
+                        <li><strong>Encouraging Investment:</strong> The Company believed that because the revenue was fixed, zamindars would be encouraged to invest in improving the land. Any increased production would lead to higher profits for the zamindars, as the Company could not demand a larger share.</li>
+                         <li><strong>Loss of Zamindari:</strong> If a zamindar failed to pay the fixed revenue, their zamindari would be taken away and sold at auction.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">4. How was the mahalwari system different from the Permanent Settlement?</div>
+                <div class="answer">
+                    <p>The mahalwari system was different from the Permanent Settlement in key ways related to assessment, revenue, and collection:</p>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Feature</th>
+                                    <th>Permanent Settlement</th>
+                                    <th>Mahalwari System</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Unit of Assessment</strong></td>
+                                    <td>The revenue was fixed for the land owned by a <strong>zamindar</strong>.</td>
+                                    <td>The entire village (<strong>mahal</strong>) was assessed as one unit.</td>
+                                </tr>
+                                 <tr>
+                                    <td><strong>Revenue Demand</strong></td>
+                                    <td>The revenue was fixed <strong>permanently</strong> and could never be increased.</td>
+                                    <td>The revenue demand was to be <strong>revised periodically</strong>; it was not permanent.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Revenue Collector</strong></td>
+                                    <td>The <strong>zamindar</strong> was responsible for collecting and paying the revenue.</td>
+                                    <td>The village <strong>headman</strong> was given the charge of collecting the revenue.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card discuss-card">
+                <div class="question">5. Give two problems which arose with the new Munro system of fixing revenue.</div>
+                <div class="answer">
+                    <p>The Munro system (or Ryotwari system) also faced problems soon after it was implemented. Two major problems were:</p>
+                    <ul>
+                        <li><strong>High Revenue Demand:</strong> Driven by the desire to increase income from land, revenue officials fixed a very high revenue demand. The peasants were unable to pay this amount.</li>
+                        <li><strong>Peasants Fled the Countryside:</strong> Because they could not pay the high revenue, many ryots (peasants) fled the countryside. This led to many villages becoming deserted. The system failed to turn the peasants into rich, enterprising farmers as the officials had hoped.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">6. Why were ryots reluctant to grow indigo?</div>
+                <div class="answer">
+                    <p>The ryots (peasants) were reluctant to grow indigo for several reasons that made the system very oppressive for them:</p>
+                    <ul>
+                        <li><strong>Very Low Prices:</strong> The price they received from the planters for the indigo they produced was very low, and they never saw any profit.</li>
+                        <li><strong>The Cycle of Loans:</strong> The system of cash advances led to a never-ending cycle of loans. A new loan was given after every harvest, but the earnings were not enough to ever clear the debt.</li>
+                        <li><strong>Loss of Fertile Soil:</strong> Planters insisted that indigo be grown on the best soils. However, peasants preferred to grow rice on this soil for their own food.</li>
+                        <li><strong>Soil Exhaustion:</strong> As the chapter explains, indigo has deep roots and it exhausted the soil's fertility very quickly. After an indigo harvest, the land could not be used to sow rice.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card discuss-card">
+                <div class="question">7. What were the circumstances which led to the eventual collapse of indigo production in Bengal?</div>
+                <div class="answer">
+                    <p>The collapse of indigo production in Bengal was a result of a major peasant uprising and subsequent government action:</p>
+                     <ul>
+                        <li><strong>The "Blue Rebellion":</strong> In March 1859, thousands of ryots in Bengal refused to grow indigo. They attacked indigo factories, socially boycotted planters' agents (gomasthas), and swore not to take any more advances.</li>
+                        <li><strong>Support from Zamindars:</strong> The ryots felt they had the support of local zamindars and village headmen, who were also unhappy with the increasing power of the planters.</li>
+                        <li><strong>Government Intervention:</strong> Worried by another popular rebellion so soon after the Revolt of 1857, the British government intervened. The Lieutenant Governor's tour was seen as a sign of sympathy for the peasants.</li>
+                        <li><strong>The Indigo Commission:</strong> The government set up the Indigo Commission to investigate the system. The Commission found the planters guilty of using coercive methods and declared that indigo cultivation was not profitable for the ryots.</li>
+                        <li><strong>Final Decision:</strong> The Commission allowed ryots to refuse to produce indigo in the future after fulfilling their existing contracts. This decision led to the collapse of indigo production in Bengal, as planters shifted their operations to Bihar.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Let's Do Section -->
+        <section class="section">
+            <h2 class="section-title do-title">Let's Do</h2>
+
+            <div class="card do-card">
+                <div class="question">8 & 9. (Activity-Based Questions)</div>
+                <div class="answer">
+                    <p>These are research-based activities. Here are some guiding points to help you explore these topics:</p>
+                    <ul>
+                        <li><strong>For Question 8 (Champaran Movement):</strong>
+                            <ul>
+                                <li>As the chapter mentions, a peasant from Bihar persuaded Mahatma Gandhi to visit Champaran. This was in 1917.</li>
+                                <li>Search for "Champaran Satyagraha". You will find it was one of Gandhi's first major movements in India.</li>
+                                <li>Find out how he used methods of non-violent protest to fight against the unfair system of indigo cultivation (the tinkathia system) and support the peasants.</li>
+                            </ul>
+                        </li>
+                        <li><strong>For Question 9 (Tea or Coffee Plantations):</strong>
+                            <ul>
+                                <li>Choose either tea (common in Assam and Darjeeling) or coffee (common in Karnataka). </li>
+                                <li>Research the history of these plantations in India. You will find that, like indigo, they were often established by the British.</li>
+                                <li>Look for information on the life of the workers. You might find similarities, such as low wages and harsh working conditions, but also differences in the cultivation process and the specific challenges the workers faced.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Solutions based on NCERT Class 8 "Our Pasts - III" textbook content.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
