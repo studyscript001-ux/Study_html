@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound - Exercise Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 17px;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            color: #2c3e50;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        
+        .mcq-container {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #ffe0b2;
+            border-radius: 5px;
+        }
+        
+        .correct {
+            background: #c8e6c9;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .table-caption {
+            font-style: italic;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #555;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            h2 {
+                font-size: 22px;
+            }
+            
+            .content, .answer {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOUND</h1>
+        <p class="subtitle">Class 8 Science | Made by studyscript.netlify.app</p>
+    </header>
+
+    <div class="section">
+        <h2 class="section-title">Musical Instruments and their Vibrating Parts</h2>
+        <p class="table-caption">Complete the table with the vibrating parts of musical instruments:</p>
+        
+        <table>
+            <tr>
+                <th>S.No.</th>
+                <th>Musical Instrument</th>
+                <th>Vibrating Part Producing Sound</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Veena</td>
+                <td>Stretched string</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Tabla</td>
+                <td>Stretched membrane</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Flute</td>
+                <td>Air column</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Shehnai</td>
+                <td>Air column</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Manjira</td>
+                <td>Metal</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>Ghatam</td>
+                <td>Mud pot</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Harmonium</td>
+                <td>Reed</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exercise Questions</h2>
+        
+        <div class="content">
+            <div class="question">1. Choose the correct answer. Sound can travel through</div>
+            <div class="mcq-container">
+                <div class="mcq-option">(a) gases only</div>
+                <div class="mcq-option">(b) solids only</div>
+                <div class="mcq-option">(c) liquids only</div>
+                <div class="mcq-option correct">(d) solids, liquids and gases</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> Sound requires a medium to travel and can propagate through solids, liquids, and gases.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">2. Voice of which of the following is likely to have minimum frequency?</div>
+            <div class="mcq-container">
+                <div class="mcq-option">(a) Baby girl</div>
+                <div class="mcq-option">(b) Baby boy</div>
+                <div class="mcq-option correct">(c) A man</div>
+                <div class="mcq-option">(d) A woman</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> Men typically have longer vocal cords (about 20mm) which vibrate with lower frequency, producing deeper voices.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">3. In the following statements, tick 'T' against those which are true, and 'F' against those which are false.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) Sound cannot travel in vacuum. <span class="highlight">(T)</span></div>
+                <div class="blanks-item">(b) The number of oscillations per second of a vibrating object is called its time period. <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(c) If the amplitude of vibration is large, sound is feeble. <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(d) For human ears, the audible range is 20 Hz to 20,000 Hz. <span class="highlight">(T)</span></div>
+                <div class="blanks-item">(e) The lower the frequency of vibration, the higher is the pitch. <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(f) Unwanted or unpleasant sound is termed as music. <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(g) Noise pollution may cause partial hearing impairment. <span class="highlight">(T)</span></div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">4. Fill in the blanks with suitable words.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) Time taken by an object to complete one oscillation is called <span class="highlight">time period</span>.</div>
+                <div class="blanks-item">(b) Loudness is determined by the <span class="highlight">amplitude</span> of vibration.</div>
+                <div class="blanks-item">(c) The unit of frequency is <span class="highlight">hertz (Hz)</span>.</div>
+                <div class="blanks-item">(d) Unwanted sound is called <span class="highlight">noise</span>.</div>
+                <div class="blanks-item">(e) Shrillness of a sound is determined by the <span class="highlight">frequency</span> of vibration.</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">5. A pendulum oscillates 40 times in 4 seconds. Find its time period and frequency.</div>
+            <div class="answer">
+                <strong>Solution:</strong><br>
+                Number of oscillations = 40<br>
+                Total time taken = 4 seconds<br>
+                Time period = Total time taken / Number of oscillations = 4 / 40 = 0.1 seconds<br>
+                Frequency = 1 / Time period = 1 / 0.1 = 10 Hz
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">6. The sound from a mosquito is produced when it vibrates its wings at an average rate of 500 vibrations per second. What is the time period of the vibration?</div>
+            <div class="answer">
+                <strong>Solution:</strong><br>
+                Frequency = 500 Hz<br>
+                Time period = 1 / Frequency = 1 / 500 = 0.002 seconds
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">7. Identify the part which vibrates to produce sound in the following instruments.</div>
+            <div class="answer">
+                (a) Dholak: <span class="highlight">Stretched membrane</span><br>
+                (b) Sitar: <span class="highlight">Stretched string</span><br>
+                (c) Flute: <span class="highlight">Air column</span>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">8. What is the difference between noise and music? Can music become noise sometimes?</div>
+            <div class="answer">
+                <strong>Difference:</strong> Music is a pleasant, ordered sound that is pleasing to the ear, while noise is an unpleasant, disordered sound that can cause discomfort.<br><br>
+                <strong>Can music become noise?</strong> Yes, when music is too loud or played at inappropriate times, it can become noise that causes disturbance and discomfort.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">9. List sources of noise pollution in your surroundings.</div>
+            <div class="answer">
+                Sources of noise pollution include:
+                <ul>
+                    <li>Vehicles (cars, buses, trucks, motorcycles)</li>
+                    <li>Construction equipment</li>
+                    <li>Industrial machinery</li>
+                    <li>Loudspeakers</li>
+                    <li>Firecrackers</li>
+                    <li>Airplanes</li>
+                    <li>Household appliances at high volumes</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">10. Explain in what way noise pollution is harmful to human.</div>
+            <div class="answer">
+                Noise pollution can be harmful to humans in several ways:
+                <ul>
+                    <li>Hearing loss or impairment</li>
+                    <li>Sleep disturbances and insomnia</li>
+                    <li>Stress and anxiety</li>
+                    <li>High blood pressure (hypertension)</li>
+                    <li>Cardiovascular problems</li>
+                    <li>Reduced productivity and concentration</li>
+                    <li>Headaches and fatigue</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">11. Your parents are going to buy a house. They have been offered one on the roadside and another three lanes away from the roadside. Which house would you suggest your parents should buy? Explain your answer.</div>
+            <div class="answer">
+                <strong>Suggestion:</strong> The house three lanes away from the roadside would be better.<br><br>
+                <strong>Explanation:</strong> The house away from the roadside would experience less noise pollution from traffic, resulting in a quieter and more peaceful living environment. This would lead to better sleep, less stress, and overall improved quality of life.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">12. Sketch larynx and explain its function in your own words.</div>
+            <div class="answer">
+                <strong>Function of Larynx:</strong> The larynx (voice box) is located at the upper end of the windpipe. It contains two vocal cords that stretch across it, leaving a narrow slit for air passage. When air from the lungs is forced through this slit, the vocal cords vibrate, producing sound. The muscles attached to the vocal cords can change their tension, affecting the pitch of the sound produced.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">13. Lightning and thunder take place in the sky at the same time and at the same distance from us. Lightning is seen earlier and thunder is heard later. Can you explain why?</div>
+            <div class="answer">
+                <strong>Explanation:</strong> Light travels much faster (approximately 300,000 km/s) than sound (approximately 343 m/s in air). Although lightning and thunder occur simultaneously, light reaches our eyes almost instantly, while sound takes much longer to travel the same distance to our ears. This is why we see lightning before we hear thunder.
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sound Chapter Exercise Solutions | Class 8 Science | Based on NCERT Curriculum</p>
+    </footer>
+</body>
+</html>
