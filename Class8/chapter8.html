@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Force and Pressure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 16px;
+            position: relative;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(52, 152, 219, 0.1);
+            pointer-events: none;
+            z-index: -1;
+            white-space: nowrap;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 10px;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 18px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 26px;
+            }
+            
+            h3 {
+                font-size: 24px;
+            }
+            
+            .content, .answer {
+                font-size: 18px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 20px;
+            }
+            
+            h1 {
+                font-size: 38px;
+            }
+            
+            h2 {
+                font-size: 32px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="watermark">StudyScript</div>
+    
+    <div class="container">
+        <header>
+            <h1>FORCE AND PRESSURE</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by studyscript.netlify.app</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">Give two examples each of situations in which you push or pull to change the state of motion of objects.</p>
+                    <div class="answer">
+                        <p><strong>Push examples:</strong></p>
+                        <p>1. Pushing a car to make it move</p>
+                        <p>2. Pushing a swing to make it move</p>
+                        
+                        <p><strong>Pull examples:</strong></p>
+                        <p>1. Pulling a rope in tug-of-war</p>
+                        <p>2. Pulling a drawer to open it</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Give two examples of situations in which applied force causes a change in the shape of an object.</p>
+                    <div class="answer">
+                        <p>1. Pressing a clay ball to flatten it</p>
+                        <p>2. Stretching a rubber band to make it longer</p>
+                        <p>3. Squeezing a sponge to change its shape</p>
+                        <p>4. Inflating a balloon to make it expand</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Fill in the blanks in the following statements.</p>
+                    <div class="fill-blanks">
+                        <div class="blanks-item">
+                            <p>(a) To draw water from a well we have to <span class="highlight">pull</span> at the rope.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(b) A charged body <span class="highlight">attracts</span> an uncharged body towards it.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(c) To move a loaded trolley we have to <span class="highlight">push</span> or <span class="highlight">pull</span> it.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(d) The north pole of a magnet <span class="highlight">repels</span> the north pole of another magnet.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">An archer stretches her bow while taking aim at the target. She then releases the arrow, which begins to move towards the target. Based on this information fill up the gaps using the following terms: muscular, contact, non-contact, gravity, friction, shape, attraction.</p>
+                    <div class="fill-blanks">
+                        <div class="blanks-item">
+                            <p>(a) To stretch the bow, the archer applies a force that causes a change in its <span class="highlight">shape</span>.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(b) The force applied by the archer to stretch the bow is an example of <span class="highlight">muscular</span> force.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(c) The type of force responsible for a change in the state of motion of the arrow is an example of a <span class="highlight">contact</span> force.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(d) While the arrow moves towards its target, the forces acting on it are due to <span class="highlight">gravity</span> and that due to <span class="highlight">friction</span> of air.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">In the following situations identify the agent exerting the force and the object on which it acts. State the effect of the force in each case.</p>
+                    <div class="answer">
+                        <p><strong>(a) Squeezing a piece of lemon between the fingers to extract its juice.</strong></p>
+                        <p>Agent: Fingers</p>
+                        <p>Object: Lemon</p>
+                        <p>Effect: Changes the shape of the lemon and extracts juice</p>
+                        
+                        <p><strong>(b) Taking out paste from a toothpaste tube.</strong></p>
+                        <p>Agent: Fingers</p>
+                        <p>Object: Toothpaste tube</p>
+                        <p>Effect: Changes the shape of the tube and pushes out paste</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 5 (Continued)</div>
+                    <div class="answer">
+                        <p><strong>(c) A load suspended from a spring while its other end is on a hook fixed to a wall.</strong></p>
+                        <p>Agent: Load</p>
+                        <p>Object: Spring</p>
+                        <p>Effect: Changes the shape of the spring (stretches it)</p>
+                        
+                        <p><strong>(d) An athlete making a high jump to clear the bar at a certain height.</strong></p>
+                        <p>Agent: Athlete's muscles</p>
+                        <p>Object: Athlete's body</p>
+                        <p>Effect: Changes the state of motion of the athlete (makes them jump)</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">A blacksmith hammers a hot piece of iron while making a tool. How does the force due to hammering affect the piece of iron?</p>
+                    <div class="answer">
+                        <p>The force of hammering changes the shape of the hot iron piece. When the blacksmith hammers the hot iron, it flattens and takes the shape of the tool being made. The force applied by the hammer causes the iron to change its form without breaking because it is heated and malleable.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">An inflated balloon was pressed against a wall after it has been rubbed with a piece of synthetic cloth. It was found that the balloon sticks to the wall. What force might be responsible for the attraction between the balloon and the wall?</p>
+                    <div class="answer">
+                        <p>The electrostatic force is responsible for the attraction between the balloon and the wall. When the balloon is rubbed with synthetic cloth, it becomes electrically charged. This charged balloon attracts the uncharged wall due to electrostatic force, which is a non-contact force.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Name the forces acting on a plastic bucket containing water held above ground level in your hand. Discuss why the forces acting on the bucket do not bring a change in its state of motion.</p>
+                    <div class="answer">
+                        <p>The forces acting on the bucket are:</p>
+                        <p>1. Gravitational force (pulling the bucket downward)</p>
+                        <p>2. Muscular force (your hand pushing the bucket upward)</p>
+                        <p>These forces do not bring a change in the state of motion because they are balanced forces. The muscular force exerted by your hand is equal in magnitude but opposite in direction to the gravitational force. When balanced forces act on an object, they cancel each other out, and there is no change in the state of motion.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 9</div>
+                    <p class="question">A rocket has been fired upwards to launch a satellite in its orbit. Name the two forces acting on the rocket immediately after leaving the launching pad.</p>
+                    <div class="answer">
+                        <p>The two forces acting on the rocket are:</p>
+                        <p>1. Gravitational force (pulling the rocket downward towards Earth)</p>
+                        <p>2. Force of thrust (pushing the rocket upward due to the burning fuel)</p>
+                        <p>The thrust force is greater than the gravitational force, which is why the rocket accelerates upward.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="question">When we press the bulb of a dropper with its nozzle kept in water, air in the dropper is seen to escape in the form of bubbles. Once we release the pressure on the bulb, water gets filled in the dropper. The rise of water in the dropper is due to:</p>
+                    <div class="answer">
+                        <p>(a) pressure of water.</p>
+                        <p>(b) gravity of the earth.</p>
+                        <p>(c) shape of rubber bulb.</p>
+                        <p>(d) atmospheric pressure.</p>
+                        
+                        <p><strong>Correct answer: (d) atmospheric pressure</strong></p>
+                        <p>When we release the pressure on the bulb, the air pressure inside the dropper decreases. The higher atmospheric pressure outside pushes the water up into the dropper.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+</html>
