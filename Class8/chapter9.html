@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 15px;
+            font-size: 16px;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            margin-bottom: 8px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 22px;
+            color: #2c3e50;
+            margin: 20px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 20px;
+            color: #3498db;
+            margin: 18px 0 12px;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .card-header {
+            background: linear-gradient(to right, #3498db, #2980b9);
+            color: white;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 17px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 12px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .two-column {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 10px;
+        }
+        
+        .mcq-container {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 8px;
+            padding: 8px;
+            background: #ffe0b2;
+            border-radius: 5px;
+        }
+        
+        .correct {
+            background: #c8e6c9;
+        }
+        
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            body {
+                padding: 25px;
+                font-size: 18px;
+            }
+            
+            .container {
+                max-width: 90%;
+            }
+            
+            h1 {
+                font-size: 32px;
+            }
+            
+            h2 {
+                font-size: 26px;
+            }
+            
+            h3 {
+                font-size: 24px;
+            }
+            
+            .content, .answer {
+                font-size: 18px;
+            }
+            
+            .card-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 25px;
+            }
+            
+            .two-column {
+                flex-direction: row;
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            body {
+                font-size: 20px;
+            }
+            
+            h1 {
+                font-size: 38px;
+            }
+            
+            h2 {
+                font-size: 32px;
+            }
+            
+            .content, .answer {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>FRICTION</h1>
+            <p class="subtitle">CLASS - 8th (Science) | Made by studyscript.netlify.app</p>
+        </header>
+
+        <div class="section">
+            <h2 class="section-title">Exercise Questions</h2>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 1</div>
+                    <p class="question">Fill in the blanks.</p>
+                    <div class="fill-blanks">
+                        <div class="blanks-item">
+                            <p>(a) Friction opposes the <span class="highlight">relative motion</span> between the surfaces in contact with each other.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(b) Friction depends on the <span class="highlight">nature</span> of surfaces.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(c) Friction produces <span class="highlight">heat</span>.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(d) Sprinkling of powder on the carrom board <span class="highlight">reduces</span> friction.</p>
+                        </div>
+                        <div class="blanks-item">
+                            <p>(e) Sliding friction is <span class="highlight">less</span> than the static friction.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 2</div>
+                    <p class="question">Four children were asked to arrange forces due to rolling, static and sliding frictions in a decreasing order. Their arrangements are given below. Choose the correct arrangement.</p>
+                    <div class="mcq-container">
+                        <div class="mcq-option">(a) rolling, static, sliding</div>
+                        <div class="mcq-option">(b) rolling, sliding, static</div>
+                        <div class="mcq-option correct">(c) static, sliding, rolling</div>
+                        <div class="mcq-option">(d) sliding, static, rolling</div>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Correct answer: (c) static, sliding, rolling</strong></p>
+                        <p>Static friction is the strongest because it prevents objects from starting to move. Sliding friction is weaker than static friction but stronger than rolling friction. Rolling friction is the weakest of the three.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 3</div>
+                    <p class="question">Alida runs her toy car on dry marble floor, wet marble floor, newspaper and towel spread on the floor. The force of friction acting on the car on different surfaces in increasing order will be:</p>
+                    <div class="mcq-container">
+                        <div class="mcq-option correct">(a) wet marble floor, dry marble floor, newspaper and towel</div>
+                        <div class="mcq-option">(b) newspaper, towel, dry marble floor, wet marble floor</div>
+                        <div class="mcq-option">(c) towel, newspaper, dry marble floor, wet marble floor</div>
+                        <div class="mcq-option">(d) wet marble floor, dry marble floor, towel, newspaper</div>
+                    </div>
+                    <div class="answer">
+                        <p><strong>Correct answer: (a) wet marble floor, dry marble floor, newspaper and towel</strong></p>
+                        <p>Wet marble floor has the least friction because water acts as a lubricant. Dry marble floor has more friction than wet marble. Newspaper has even more friction, and towel has the most friction due to its rough surface.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 4</div>
+                    <p class="question">Suppose your writing desk is tilted a little. A book kept on it starts sliding down. Show the direction of frictional force acting on it.</p>
+                    <div class="answer">
+                        <p>When the book slides down the tilted desk, the frictional force acts in the opposite direction to the motion of the book. Since the book is sliding downward, the frictional force acts upward along the surface of the desk.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 5</div>
+                    <p class="question">You spill a bucket of soapy water on a marble floor accidently. Would it make it easier or more difficult for you to walk on the floor? Why?</p>
+                    <div class="answer">
+                        <p>It would make it more difficult to walk on the floor. Soapy water acts as a lubricant and reduces friction between your feet and the floor. With less friction, it becomes harder to get a good grip, and you might slip and fall.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 6</div>
+                    <p class="question">Explain why sportsmen use shoes with spikes.</p>
+                    <div class="answer">
+                        <p>Sportsmen use shoes with spikes to increase friction between their shoes and the ground. The spikes dig into the ground, providing better grip and preventing slipping. This helps them run faster, change direction quickly, and maintain balance during sports activities.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 7</div>
+                    <p class="question">Iqbal has to push a lighter box and Seema has to push a similar heavier box on the same floor. Who will have to apply a larger force and why?</p>
+                    <div class="answer">
+                        <p>Seema will have to apply a larger force. Friction depends on how hard the two surfaces press together. The heavier box presses harder against the floor, creating more friction. To overcome this greater friction, Seema needs to apply more force.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 8</div>
+                    <p class="question">Explain why sliding friction is less than static friction.</p>
+                    <div class="answer">
+                        <p>Sliding friction is less than static friction because:</p>
+                        <p>1. When an object is at rest, the irregularities on the surfaces are more deeply interlocked.</p>
+                        <p>2. Once the object starts moving, the contact points don't have enough time to lock into each other completely.</p>
+                        <p>3. When sliding, only the tips of surface irregularities are in contact, reducing the friction.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-header">Question 9</div>
+                    <p class="question">Give examples to show that friction is both a friend and a foe.</p>
+                    <div class="answer">
+                        <p><strong>Friction as a friend (helpful):</strong></p>
+                        <p>1. It allows us to walk without slipping</p>
+                        <p>2. It helps vehicles to move on roads without skidding</p>
+                        <p>3. It enables us to hold objects in our hands</p>
+                        <p>4. It helps in stopping vehicles when brakes are applied</p>
+                        
+                        <p><strong>Friction as a foe (harmful):</strong></p>
+                        <p>1. It causes wear and tear of machine parts</p>
+                        <p>2. It produces heat which can damage machines</p>
+                        <p>3. It makes it difficult to push heavy objects</p>
+                        <p>4. It causes soles of shoes to wear out</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">Question 10</div>
+                    <p class="question">Explain why objects moving in fluids must have special shapes.</p>
+                    <div class="answer">
+                        <p>Objects moving in fluids (liquids or gases) must have special shapes to reduce fluid friction (drag). Special streamlined shapes help in:</p>
+                        <p>1. Reducing the resistance offered by the fluid</p>
+                        <p>2. Allowing the fluid to flow smoothly around the object</p>
+                        <p>3. Minimizing energy loss due to friction</p>
+                        <p>4. Increasing speed and efficiency of movement</p>
+                        <p>Examples: Fish have streamlined bodies to move easily in water, and airplanes have special shapes to reduce air resistance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Download StudyScript App from Google Search "studyscript.netlify.app"</p>
+        </footer>
+    </div>
+</body>
+</html>
