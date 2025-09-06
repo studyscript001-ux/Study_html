@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: How, When and Where - Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f0f7ff; /* Lighter blue background */
+            --header-gradient-start: #4a90e2;
+            --header-gradient-end: #5078f2;
+            --card-bg: #ffffff;
+            --text-color: #34495e; /* Darker blue-grey text */
+            --header-text: #ffffff;
+            --recall-bg: #eaf5ff;
+            --recall-border: #a0c4ff;
+            --discuss-bg: #eaf5ff;
+            --discuss-border: #a0c4ff;
+            --do-bg: #fffbe6;
+            --do-border: #ffd54f;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+            color: var(--header-text);
+            padding: 25px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .recall-title { color: #1e3a8a; border-bottom: 3px solid #1e3a8a; }
+        .discuss-title { color: #1e3a8a; border-bottom: 3px solid #1e3a8a; }
+        .do-title { color: #b45309; border-bottom: 3px solid #b45309; }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .recall-card { background-color: var(--recall-bg); border-left: 5px solid var(--recall-border); }
+        .discuss-card { background-color: var(--discuss-bg); border-left: 5px solid var(--discuss-border); }
+        .do-card { background-color: var(--do-bg); border-left: 5px solid var(--do-border); }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1c3d5a;
+        }
+
+        .answer p, .answer li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            list-style-type: '✔ ';
+        }
+        
+        .answer ul ul {
+            list-style-type: '- ';
+        }
+
+        .answer strong {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .true-false {
+            font-weight: bold;
+        }
+        .true { color: #16a34a; }
+        .false { color: #dc2626; }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                padding: 5px;
+            }
+            header h1 {
+                font-size: 1.8em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 1: How, When and Where</h1>
+            <p>Made by studyscript.netlify.app</p>
+        </header>
+
+        <!-- Let's Recall Section -->
+        <section class="section">
+            <h2 class="section-title recall-title">Let's Recall</h2>
+            <div class="card recall-card">
+                <div class="question">
+                    1. State whether true or false:
+                </div>
+                <div class="answer">
+                    <ul>
+                        <li>
+                            <p><strong>(a) James Mill divided Indian history into three periods - Hindu, Muslim, Christian.</strong></p>
+                            <p><span class="false true-false">False.</span> As mentioned in the chapter, James Mill divided Indian history into three periods: <strong>Hindu, Muslim, and British.</strong></p>
+                        </li>
+                        <li>
+                            <p><strong>(b) Official documents help us understand what the people of the country think.</strong></p>
+                            <p><span class="false true-false">False.</span> The chapter explains that official documents tell us what the officials thought and what they were interested in. They do not always help us understand what other people in the country felt or the reasons behind their actions.</p>
+                        </li>
+                        <li>
+                            <p><strong>(c) The British thought surveys were important for effective administration.</strong></p>
+                            <p><span class="true true-false">True.</span> The text states that the British believed a country had to be properly known before it could be effectively administered. This is why they carried out detailed surveys to map the entire country.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Discuss Section -->
+        <section class="section">
+            <h2 class="section-title discuss-title">Let's Discuss</h2>
+            <div class="card discuss-card">
+                <div class="question">
+                    2. What is the problem with the periodisation of Indian history that James Mill offers?
+                </div>
+                <div class="answer">
+                    <p>James Mill's periodisation of Indian history into Hindu, Muslim, and British periods has several problems, as discussed in the chapter:</p>
+                    <ul>
+                        <li><strong>Based on Religion of Rulers:</strong> It suggests that the religion of the rulers was the only important historical change, ignoring the lives and practices of millions of other people. The chapter points out that a variety of faiths always existed simultaneously.</li>
+                        <li><strong>Incorrect View of Pre-British India:</strong> Mill thought that all Asian societies were at a lower level of civilisation than Europe. He saw the period before British rule as one of "darkness," dominated by religious intolerance, caste taboos, and superstitions. This is a prejudiced and incorrect view that ignores the achievements and diversity of Indian kingdoms.</li>
+                        <li><strong>Promotes a Biased Idea:</strong> By calling the British period a period of progress and civilisation, Mill's classification implies that the British rule was necessary to "civilise" India. This justifies the colonial conquest and rule.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">
+                    3. Why did the British preserve official documents?
+                </div>
+                <div class="answer">
+                    <p>The British preserved official documents for several key reasons related to their administrative culture:</p>
+                    <ul>
+                        <li><strong>Belief in Writing:</strong> The British believed that the act of writing was very important. Every instruction, plan, policy decision, agreement, and investigation had to be clearly written down.</li>
+                        <li><strong>For Study and Debate:</strong> Once things were written, they could be properly studied and debated. This created a culture of memos, notings, and reports.</li>
+                        <li><strong>Permanent Record:</strong> Preserving documents created a permanent record of all decisions and proceedings. This helped in future reference and maintained continuity in administration. To achieve this, they set up record rooms in all administrative offices and also established specialised institutions like archives and museums.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">
+                    4. How will the information historians get from old newspapers be different from that found in police reports?
+                </div>
+                <div class="answer">
+                    <p>The information from old newspapers and police reports would be very different because they represent two different perspectives:</p>
+                    <ul>
+                        <li><strong>Police Reports (Official Source):</strong>
+                            <ul>
+                                <li>These are official records created by the administration.</li>
+                                <li>They reflect the viewpoint of the government and what the officials thought.</li>
+                                <li>They might be biased, presenting information in a way that shows the administration's actions as justified. Their main focus would be on law and order from the government's perspective.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Newspapers (Unofficial Source):</strong>
+                            <ul>
+                                <li>Newspapers were not controlled by the government. Issues were debated in public through them.</li>
+                                <li>They reflect the feelings and opinions of the general public, leaders, reformers, poets, and novelists.</li>
+                                <li>They can provide a different side of the story, often criticising government policies or highlighting the impact of British rule on the common people. The chapter's example of the police strike report in the <em>Hindustan Times</em> shows how newspapers reported on the poor quality of food, a detail an official report might miss.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                     <p>In short, police reports give the official version, while newspapers give the public version of events.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Do Section -->
+        <section class="section">
+            <h2 class="section-title do-title">Let's Do</h2>
+            <div class="card do-card">
+                <div class="question">
+                    5. Can you think of examples of surveys in your world today? Think about how toy companies get information about what young people enjoy playing with or how the government finds out about the number of young people in school. What can a historian derive from such surveys?
+                </div>
+                <div class="answer">
+                    <p>Yes, surveys are very common in our world today. Here are some examples and what a future historian could learn from them:</p>
+                    <p><strong>Examples of Modern Surveys:</strong></p>
+                    <ul>
+                        <li><strong>Census:</strong> The Government of India conducts a Census every ten years to count the population and collect information about age, religion, occupation, and literacy rates.</li>
+                        <li><strong>Market Research Surveys:</strong> Companies survey people to know what products they like, like the toy company example, or what kind of shows people watch on TV.</li>
+                        <li><strong>Election Surveys:</strong> Before elections, agencies conduct surveys (opinion and exit polls) to understand which party people might vote for and what the important issues are for them.</li>
+                        <li><strong>School Surveys:</strong> Schools conduct surveys to get feedback from students and parents on teaching methods, facilities, and satisfaction levels.</li>
+                    </ul>
+                    <p><strong>What a Historian Can Derive from these Surveys:</strong></p>
+                    <p>A historian from the future could use these surveys to understand our society in great detail:</p>
+                    <ul>
+                        <li><strong>From Census:</strong> They could learn about our population growth, how many people were educated, what kind of jobs we did, and where people lived (cities vs. villages).</li>
+                        <li><strong>From Market Research:</strong> They could understand our economy, our tastes and preferences, our lifestyle, the popular culture of our time, and the state of technology (e.g., the shift from physical toys to digital games).</li>
+                        <li><strong>From Election Surveys:</strong> They would learn about our political system, the functioning of our democracy, and the social and economic issues that were important to us.</li>
+                    </ul>
+                    <p>Overall, these surveys would provide a historian with a valuable snapshot of the social, cultural, political, and economic life of our time.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Solutions based on NCERT Class 8 "Our Pasts - III" textbook content. If you have any doubt regarding this chapter please concern with your teacher</p>
+        </footer>
+    </div>
+
+</body>
+</html>
