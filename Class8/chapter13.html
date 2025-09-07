@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light - Complete Exercise Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 17px;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            color: #2c3e50;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        
+        .mcq-container {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #ffe0b2;
+            border-radius: 5px;
+        }
+        
+        .correct {
+            background: #c8e6c9;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .table-scroll-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .table-caption {
+            font-style: italic;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #555;
+        }
+        
+        .caution {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #f44336;
+        }
+        
+        .eye-diagram {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .eye-image {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(45deg, #f5f7fa 25%, #e4e8f0 25%, #e4e8f0 50%, #f5f7fa 50%, #f5f7fa 75%, #e4e8f0 75%, #e4e8f0 100%);
+            background-size: 20px 20px;
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .eye-labels {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+        
+        .eye-label {
+            padding: 12px;
+            background: #f8f9fa;
+            border-radius: 6px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .label-title {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .label-desc {
+            font-size: 14px;
+            color: #546e7a;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .content, .answer {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+            
+            .eye-labels {
+                grid-template-columns: 1fr;
+            }
+            
+            .image-placeholder {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>LIGHT</h1>
+        <p class="subtitle">CLASS 8 SCIENCE | Made by studyscript.netlify.app</p>
+    </header>
+
+    <div class="section">
+        <h2 class="section-title">Angles of Incidence and Reflection</h2>
+        <p class="table-caption">Experimental data showing relationship between angles:</p>
+        
+        <div class="table-scroll-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S. No.</th>
+                        <th>Angle of Incidence (∠i)</th>
+                        <th>Angle of Reflection (∠r)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>30°</td>
+                        <td>30°</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>45°</td>
+                        <td>45°</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>60°</td>
+                        <td>60°</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>75°</td>
+                        <td>75°</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>90°</td>
+                        <td>90°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exercise Questions</h2>
+        
+        <div class="content">
+            <div class="question">1. Suppose you are in a dark room. Can you see objects in the room? Can you see objects outside the room? Explain.</div>
+            <div class="answer">
+                In a dark room, I cannot see objects inside the room because there is no light to reflect from these objects to my eyes. However, if there is light outside the room (like sunlight or artificial light), I might be able to see objects outside through a window or opening, as light from those objects can reach my eyes.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">2. Differentiate between regular and diffused reflection. Does diffused reflection mean the failure of the laws of reflection?</div>
+            <div class="answer">
+                <strong>Regular Reflection:</strong> Occurs when light reflects from a smooth, polished surface like a mirror. The reflected rays are parallel and form a clear image.
+                <br><br>
+                <strong>Diffused Reflection:</strong> Occurs when light reflects from a rough or irregular surface. The reflected rays scatter in different directions, and no clear image is formed.
+                <br><br>
+                Diffused reflection does not mean the failure of the laws of reflection. At each point on the rough surface, the laws of reflection are still obeyed (angle of incidence equals angle of reflection). However, because the surface is uneven, the normals at different points face different directions, causing the reflected rays to scatter.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">3. Mention against each of the following whether regular or diffused reflection will take place when a beam of light strikes. Justify your answer in each case.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) Polished wooden table: <span class="highlight">Regular reflection</span> (smooth, polished surface)</div>
+                <div class="blanks-item">(b) Chalk powder: <span class="highlight">Diffused reflection</span> (rough, irregular surface)</div>
+                <div class="blanks-item">(c) Cardboard surface: <span class="highlight">Diffused reflection</span> (rough surface)</div>
+                <div class="blanks-item">(d) Marble floor with water spread over it: <span class="highlight">Regular reflection</span> (water creates a smooth surface)</div>
+                <div class="blanks-item">(e) Mirror: <span class="highlight">Regular reflection</span> (smooth, polished surface)</div>
+                <div class="blanks-item">(f) Piece of paper: <span class="highlight">Diffused reflection</span> (slightly rough surface)</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">4. State the laws of reflection.</div>
+            <div class="answer">
+                The two laws of reflection are:
+                <ol>
+                    <li>The angle of incidence is always equal to the angle of reflection (∠i = ∠r).</li>
+                    <li>The incident ray, the reflected ray, and the normal at the point of incidence all lie in the same plane.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">5. Describe an activity to show that the incident ray, the reflected ray and the normal at the point of incidence lie in the same plane.</div>
+            <div class="answer">
+                <strong>Activity:</strong>
+                <ol>
+                    <li>Fix a white sheet of paper on a drawing board.</li>
+                    <li>Place a plane mirror vertically on the paper and draw its outline.</li>
+                    <li>Draw a normal line perpendicular to the mirror at the point of incidence.</li>
+                    <li>Direct an incident ray at an angle to the normal and mark its path.</li>
+                    <li>Observe and mark the reflected ray.</li>
+                    <li>All three (incident ray, normal, and reflected ray) will be on the paper, showing they lie in the same plane.</li>
+                    <li>If you bend the paper along the normal line, the reflected ray disappears from view, confirming they must be in the same plane.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">6. Fill in the blanks in the following.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) A person 1 m in front of a plane mirror seems to be <span class="highlight">2</span> m away from his image.</div>
+                <div class="blanks-item">(b) If you touch your <span class="highlight">left</span> ear with right hand in front of a plane mirror it will be seen in the mirror that your right ear is touched with <span class="highlight">left hand</span>.</div>
+                <div class="blanks-item">(c) The size of the pupil becomes <span class="highlight">larger</span> when you see in dim light.</div>
+                <div class="blanks-item">(d) Night birds have <span class="highlight">fewer</span> cones than rods in their eyes.</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">7. Angle of incidence is equal to the angle of reflection.</div>
+            <div class="mcq-container">
+                <div class="mcq-option correct">(a) Always</div>
+                <div class="mcq-option">(b) Sometimes</div>
+                <div class="mcq-option">(c) Under special conditions</div>
+                <div class="mcq-option">(d) Never</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> According to the first law of reflection, the angle of incidence is always equal to the angle of reflection, regardless of the surface or conditions.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">8. Image formed by a plane mirror is</div>
+            <div class="mcq-container">
+                <div class="mcq-option">(a) virtual, behind the mirror and enlarged.</div>
+                <div class="mcq-option correct">(b) virtual, behind the mirror and of the same size as the object.</div>
+                <div class="mcq-option">(c) real at the surface of the mirror and enlarged.</div>
+                <div class="mcq-option">(d) real, behind the mirror and of the same size as the object.</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> A plane mirror always forms a virtual image that appears to be behind the mirror. The image is the same size as the object and is laterally inverted.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">9. Describe the construction of a kaleidoscope.</div>
+            <div class="answer">
+                A kaleidoscope is constructed as follows:
+                <ol>
+                    <li>Take three rectangular mirror strips (about 15 cm long and 4 cm wide).</li>
+                    <li>Join them together to form a triangular prism (mirrored surfaces facing inward).</li>
+                    <li>Fix this mirror arrangement inside a cardboard tube slightly longer than the mirrors.</li>
+                    <li>Close one end of the tube with a cardboard disc having a small hole in the center for viewing.</li>
+                    <li>At the other end, place a circular glass plate touching the mirrors.</li>
+                    <li>Put small pieces of colored glass or beads on this glass plate.</li>
+                    <li>Close this end with a ground glass plate, allowing space for the colored pieces to move.</li>
+                    <li>Decorate the outer tube with colored paper.</li>
+                </ol>
+                When you look through the hole, multiple reflections create beautiful, symmetrical patterns.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">10. Draw a labelled sketch of the human eye.</div>
+            <div class="answer">
+                <div class="eye-diagram">
+                    <h3 style="text-align: center; margin-bottom: 20px; color: #3498db;">Human Eye Diagram</h3>
+                    
+                    <img class="eye-image" src="https://drive.google.com/uc?export=view&id=1Ry8MpWKBg8NmCzgL3LX00jn5HWOyZlBM" alt="Human Eye Diagram">
+                    
+                    <div class="eye-labels">
+                        <div class="eye-label">
+                            <div class="label-title">Cornea</div>
+                            <div class="label-desc">Transparent front part that refracts light entering the eye</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Iris</div>
+                            <div class="label-desc">Colored part that controls the size of the pupil</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Pupil</div>
+                            <div class="label-desc">Opening that allows light to enter the eye</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Lens</div>
+                            <div class="label-desc">Focuses light onto the retina</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Retina</div>
+                            <div class="label-desc">Light-sensitive layer containing photoreceptor cells</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Optic Nerve</div>
+                            <div class="label-desc">Carries visual information from retina to brain</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Sclera</div>
+                            <div class="label-desc">White protective outer layer of the eye</div>
+                        </div>
+                        <div class="eye-label">
+                            <div class="label-title">Ciliary Body</div>
+                            <div class="label-desc">Controls the shape of the lens for focusing</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>The human eye is a complex optical instrument that works similarly to a camera. Light enters through the cornea, passes through the pupil (whose size is controlled by the iris), and is focused by the lens onto the retina. The retina contains photoreceptor cells (rods and cones) that convert light into electrical signals, which are then transmitted to the brain via the optic nerve.</p>
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="question">11. Gurmit wanted to perform Activity 13.8 using a laser torch. Her teacher advised her not to do so. Can you explain the basis of the teacher's advice?</div>
+            <div class="answer">
+                The teacher advised against using a laser torch because lasers can be harmful to eyes. Laser light is highly concentrated and can cause permanent damage to the retina if shone directly into someone's eyes. Even brief exposure to laser light can potentially cause vision problems or blindness. Regular torch light is much safer for such activities.
+            </div>
+        </div>
+        
+        <div class="content">
+            <div class="question">12. Explain how you can take care of your eyes.</div>
+            <div class="answer">
+                To take care of our eyes:
+                <ol>
+                    <li>Read in proper light - not too dim or too bright</li>
+                    <li>Maintain proper distance while reading (about 25 cm)</li>
+                    <li>Never look directly at the sun or bright lights</li>
+                    <li>Eat vitamin A rich foods (carrots, green vegetables, fruits)</li>
+                    <li>Wash eyes with clean water if dust particles enter</li>
+                    <li>Avoid rubbing eyes vigorously</li>
+                    <li>Get regular eye checkups</li>
+                    <li>Use protective eyewear when needed</li>
+                    <li>Take breaks during prolonged reading or screen time</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">13. What is the angle of incidence of a ray if the reflected ray is at an angle of 90° to the incident ray?</div>
+            <div class="answer">
+                According to the law of reflection, angle of incidence = angle of reflection.
+                <br><br>
+                If the angle between the incident ray and reflected ray is 90°, then:
+                <br>
+                Angle of incidence + Angle of reflection = 90°
+                <br>
+                Since angle of incidence = angle of reflection,
+                <br>
+                2 × Angle of incidence = 90°
+                <br>
+                Therefore, Angle of incidence = 45°
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">14. How many images of a candle will be formed if it is placed between two parallel plane mirrors separated by 40 cm?</div>
+            <div class="answer">
+                When an object is placed between two parallel mirrors, theoretically, an infinite number of images are formed. This happens because each image in one mirror acts as an object for the other mirror, creating a series of reflections that continue endlessly. In practice, the images become progressively dimmer and eventually become too faint to see.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">15. Two mirrors meet at right angles. A ray of light is incident on one at an angle of 30° as shown in Fig. 13.19. Draw the reflected ray from the second mirror.</div>
+            <div class="answer">
+                <strong>Solution:</strong>
+                <ol>
+                    <li>The first reflection: Angle of incidence = 30°, so angle of reflection = 30°</li>
+                    <li>This reflected ray will hit the second mirror at an angle of 60° (90° - 30° = 60°)</li>
+                    <li>For the second mirror: Angle of incidence = 60°, so angle of reflection = 60°</li>
+                    <li>The final reflected ray will make an angle of 60° with the second mirror</li>
+                </ol>
+                The reflected ray from the second mirror will be parallel to the original incident ray but in the opposite direction.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">16. Boojho stands at A just on the side of a plane mirror as shown in Fig. 13.20. Can he see himself in the mirror? Also can he see the image of objects situated at P, Q and R?</div>
+            <div class="answer">
+                <strong>Boojho at A:</strong> He cannot see himself in the mirror because he is positioned outside the field of view of the mirror. His position is such that light from himself cannot reach the mirror and reflect back to his eyes.
+                <br><br>
+                <strong>Objects at P, Q, and R:</strong> 
+                <ul>
+                    <li>He can see the image of object at P if it is within the mirror's field of view</li>
+                    <li>He can see the image of object at Q if it is within the mirror's field of view</li>
+                    <li>He might see the image of object at R depending on its position relative to the mirror</li>
+                </ul>
+                Whether Boojho can see these images depends on whether the light from these objects reflects off the mirror and reaches his eyes.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">17. (a) Find out the position of the image of an object situated at A in the plane mirror (Fig. 13.21).</div>
+            <div class="answer">
+                <strong>(a)</strong> The image of object at A will be formed behind the mirror at the same distance as object A is in front of the mirror. If we measure the perpendicular distance from A to the mirror, the image will be at an equal distance behind the mirror.
+                <br><br>
+                <strong>(b)</strong> Paheli at B can see this image if she is positioned such that the reflected light from the image can reach her eyes.
+                <br><br>
+                <strong>(c)</strong> Boojho at C can see this image if he is positioned such that the reflected light from the image can reach his eyes.
+                <br><br>
+                <strong>(d)</strong> When Paheli moves from B to C, the image of A does not move. The position of the image remains fixed behind the mirror regardless of the observer's position. Only the visibility of the image changes based on the observer's position.
+            </div>
+        </div>
+    </div>
+
+    <div class="caution">
+        <strong>Eye Safety:</strong> Always protect your eyes from bright lights and lasers. Never look directly at the sun, as it can cause permanent eye damage.
+    </div>
+
+    <footer>
+        <p>Light | Class 8 Science | Based on NCERT Curriculum</p>
+    </footer>
+</body>
+</html>
