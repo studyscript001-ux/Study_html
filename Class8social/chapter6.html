@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6: Civilising the "Native", Educating the Nation - Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f8f9fa; /* Light grey background */
+            --header-gradient-start: #2c3e50; /* Dark blue-grey */
+            --header-gradient-end: #34495e; /* Lighter blue-grey */
+            --card-bg: #ffffff;
+            --text-color: #333;
+            --header-text: #ffffff;
+            --recall-bg: #eef2f9;
+            --recall-border: #a9c0e2;
+            --discuss-bg: #e6f9f7;
+            --discuss-border: #80cbc4;
+            --do-bg: #fffbe6;
+            --do-border: #ffd54f;
+            --shadow-color: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--header-gradient-start), var(--header-gradient-end));
+            color: var(--header-text);
+            padding: 25px 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+        }
+
+        .recall-title { color: #2c3e50; border-bottom: 3px solid #2c3e50; }
+        .discuss-title { color: #00695c; border-bottom: 3px solid #00695c; }
+        .do-title { color: #f57f17; border-bottom: 3px solid #f57f17; }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px var(--shadow-color);
+        }
+
+        .recall-card { background-color: var(--recall-bg); border-left: 5px solid var(--recall-border); }
+        .discuss-card { background-color: var(--discuss-bg); border-left: 5px solid var(--discuss-border); }
+        .do-card { background-color: var(--do-bg); border-left: 5px solid var(--do-border); }
+
+        .question {
+            font-weight: 600;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #1c3d5a;
+        }
+
+        .answer p, .answer li {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            list-style-type: '📚 ';
+        }
+        .answer ul ul {
+            list-style-type: '- ';
+        }
+
+        .answer strong {
+            font-weight: 600;
+        }
+        
+        .true-false-section {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .true-false { font-weight: bold; }
+        .true { color: #16a34a; }
+        .false { color: #dc2626; }
+
+        .table-container { overflow-x: auto; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 400px;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: 600;
+        }
+        td { background-color: #fff; }
+        tr:nth-child(even) td { background-color: #f8f9fa; }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 5px; }
+            header h1 { font-size: 1.8em; }
+            header p { font-size: 1em; }
+            .section-title { font-size: 1.5em; }
+            .question { font-size: 1.1em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Civilising the "Native", Educating the Nation</h1>
+            <p>Class 8th Social Science - Our Past III | Made by studyscript.netlify.app</p>
+        </header>
+
+        <!-- Let's Recall Section -->
+        <section class="section">
+            <h2 class="section-title recall-title">Let's Recall</h2>
+            
+            <div class="card recall-card">
+                <div class="question">1. Match the following:</div>
+                <div class="answer table-container">
+                    <table>
+                        <thead>
+                            <tr><th>Person/Institution</th><th>Associated Idea/Person</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><strong>William Jones</strong></td><td>Respect for ancient cultures</td></tr>
+                            <tr><td><strong>Rabindranath Tagore</strong></td><td>Learning in a natural environment</td></tr>
+                            <tr><td><strong>Thomas Macaulay</strong></td><td>Promotion of English education</td></tr>
+                            <tr><td><strong>Mahatma Gandhi</strong></td><td>Critical of English education</td></tr>
+                            <tr><td><strong>Pathshalas</strong></td><td>Gurus</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="card recall-card">
+                <div class="question">2. State whether true or false:</div>
+                <div class="answer">
+                    <ul class="true-false-section">
+                        <li>
+                            <p>(a) James Mill was a severe critic of the Orientalists.</p>
+                            <p><span class="true true-false">True.</span> The chapter states, "James Mill was one of those who attacked the Orientalists." He believed that the aim of education should be to teach what was useful and practical (i.e., Western knowledge), not what the "natives" respected.</p>
+                        </li>
+                        <li>
+                            <p>(b) The 1854 Despatch on education was in favour of English being introduced as a medium of higher education in India.</p>
+                            <p><span class="true true-false">True.</span> The Wood's Despatch of 1854 argued for the practical benefits of European learning and this policy led to English becoming the medium for higher education in India.</p>
+                        </li>
+                        <li>
+                            <p>(c) Mahatma Gandhi thought that promotion of literacy was the most important aim of education.</p>
+                            <p><span class="false true-false">False.</span> As quoted in the chapter, Mahatma Gandhi said, "Literacy in itself is not education." He believed that education should develop a person's mind and soul, and he emphasized learning practical skills and handicrafts.</p>
+                        </li>
+                        <li>
+                            <p>(d) Rabindranath Tagore felt that children ought to be subjected to strict discipline.</p>
+                            <p><span class="false true-false">False.</span> The chapter explains that Tagore hated his school days because he found the discipline "suffocating and oppressive." He wanted to set up a school where a child could be free, happy, and creative, away from rigid discipline.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Discuss Section -->
+        <section class="section">
+            <h2 class="section-title discuss-title">Let's Discuss</h2>
+            
+            <div class="card discuss-card">
+                <div class="question">3. Why did William Jones feel the need to study Indian history, philosophy and law?</div>
+                <div class="answer">
+                    <p>William Jones, along with other Orientalists like Henry Colebrooke, felt the need to study Indian texts for several reasons:</p>
+                    <ul>
+                        <li><strong>Deep Respect for Ancient Cultures:</strong> Jones had a deep respect for ancient Indian civilisation, which he believed had attained its glory in the past.</li>
+                        <li><strong>To Understand India:</strong> He felt that to truly understand India, it was essential to discover the sacred and legal texts (like those on law, philosophy, and religion) that were produced in the ancient period.</li>
+                        <li><strong>Basis for Administration:</strong> He believed that only a study of these ancient texts could reveal the real ideas and laws of Hindus and Muslims, which would then form a solid basis for British administration in India.</li>
+                        <li><strong>A Dual Mission:</strong> Jones thought this project would not only help the British learn from Indian culture but also help Indians rediscover their own lost heritage and past glories.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card discuss-card">
+                <div class="question">4. Why did James Mill and Thomas Macaulay think that European education was essential in India?</div>
+                <div class="answer">
+                    <p>James Mill and Thomas Macaulay were strong critics of Oriental learning and championed European education for the following reasons:</p>
+                    <ul>
+                        <li><strong>Superiority of Western Knowledge:</strong> They believed that the knowledge of the East was "full of errors and unscientific thought." Macaulay famously claimed that "a single shelf of a good European library was worth the whole native literature of India and Arabia."</li>
+                        <li><strong>Education for Practical Use:</strong> They argued that education should be practical and useful. They felt that Indians should be taught about the scientific and technical advances of the West, not the poetry and sacred literature of the Orient.</li>
+                        <li><strong>A "Civilising" Mission:</strong> Macaulay saw India as an uncivilised country that needed to be civilised. He believed that teaching English would be a way to change the tastes, values, and culture of the people.</li>
+                        <li><strong>Creating Useful Subjects:</strong> Wood's Despatch later added that European learning would improve the moral character of Indians, making them truthful and honest, thus supplying the Company with trustworthy civil servants. It would also create a demand for British goods.</li>
+                    </ul>
+                </div>
+            </div>
+
+             <div class="card discuss-card">
+                <div class="question">5. Why did Mahatma Gandhi want to teach children handicrafts?</div>
+                <div class="answer">
+                    <p>Mahatma Gandhi strongly advocated for teaching handicrafts as a central part of education because he believed:</p>
+                    <ul>
+                        <li><strong>Education is More than Literacy:</strong> He argued that true education was an "all-round drawing out of the best in child and man - body, mind and spirit," and literacy alone was not education.</li>
+                        <li><strong>Develops the Mind and Soul:</strong> He felt that learning a craft and working with one's hands would develop a person's mind and their capacity to understand. It connects theoretical knowledge with practical, lived experience.</li>
+                        <li><strong>Scientific Learning:</strong> He wanted handicrafts to be taught scientifically, so that the child would know the "why and the wherefore of every process." This would promote a deeper, more practical understanding of the world.</li>
+                        <li><strong>Self-Reliance:</strong> Teaching a useful craft would enable children to produce from the very beginning of their training, making them self-reliant.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card discuss-card">
+                <div class="question">6. Why did Mahatma Gandhi think that English education had enslaved Indians?</div>
+                <div class="answer">
+                    <p>Mahatma Gandhi was highly critical of English education and believed it had enslaved Indians in several ways:</p>
+                     <ul>
+                        <li><strong>Created a Sense of Inferiority:</strong> He argued that it made Indians see Western civilisation as superior and destroyed the pride they had in their own culture.</li>
+                        <li><strong>Made them Admirers of British Rule:</strong> Charmed by the West, Indians educated in these institutions began admiring the British and their rule, instead of questioning it.</li>
+                        <li><strong>Distanced them from the Masses:</strong> Education in English, a foreign language, distanced the educated from their own social surroundings. They became "strangers in their own lands," unable to relate to the common people.</li>
+                        <li><strong>Valued the Wrong Things:</strong> He felt that this education focused on textbooks rather than practical knowledge and lived experience, which crippled the natural development of Indians.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's Do Section -->
+        <section class="section">
+            <h2 class="section-title do-title">Let's Do</h2>
+
+            <div class="card do-card">
+                <div class="question">7. Find out from your grandparents about what they studied in school.</div>
+                <div class="answer">
+                    <p>This is a wonderful activity to understand how education has changed over time. When you talk to your grandparents, you can ask them questions like:</p>
+                    <ul>
+                        <li>What subjects did you study in primary and middle school? (e.g., History, Geography, Maths, Science, a particular language).</li>
+                        <li>What language was used for teaching (medium of instruction)? Was it English, Hindi, or a regional language?</li>
+                        <li>Did you learn any practical skills or crafts in school, like Mahatma Gandhi suggested?</li>
+                        <li>What were your classrooms and textbooks like?</li>
+                        <li>How different was your school life from my school life today?</li>
+                    </ul>
+                    <p>Their answers will give you a real-life glimpse into the history of education in India!</p>
+                </div>
+            </div>
+            
+            <div class="card do-card">
+                <div class="question">8. Find out about the history of your school or any other school in the area you live.</div>
+                <div class="answer">
+                    <p>Discovering the history of your own school can be very exciting. Here are some steps you can take:</p>
+                     <ul>
+                        <li><strong>Check the School's Website or Diary:</strong> Often, the "About Us" section of a school's website or the first few pages of the school diary has a brief history.</li>
+                        <li><strong>Talk to Senior Teachers or the Principal:</strong> Teachers who have been at the school for a long time, or the Principal, might know a lot about its history.</li>
+                        <li><strong>Look for Foundation Stones:</strong> Check the school buildings for a foundation stone. It usually has the year the school was established and the name of the person who inaugurated it.</li>
+                        <li><strong>Find Old School Magazines:</strong> The school library might have old copies of school magazines, which are a treasure trove of information about the past.</li>
+                    </ul>
+                    <p>Try to find out: When was it founded? Who founded it? What was its original purpose? How has it changed over the years?</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Solutions based on NCERT Class 8 "Our Pasts - III" textbook content.</p>
+        </footer>
+    </div>
+</body>
+</html>
