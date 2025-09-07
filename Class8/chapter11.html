@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Effects of Electric Current - Exercise Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 17px;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            color: #2c3e50;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        
+        .mcq-container {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #ffe0b2;
+            border-radius: 5px;
+        }
+        
+        .correct {
+            background: #c8e6c9;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .table-scroll-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .table-caption {
+            font-style: italic;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #555;
+        }
+        
+        .caution {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #f44336;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .content, .answer {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            th, td {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+            
+            .content {
+                padding: 15px 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+        
+        /* Custom scrollbar for the table */
+        .table-scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CHEMICAL EFFECTS OF ELECTRIC CURRENT</h1>
+        <p class="subtitle">CLASS 8 SCIENCE | Made by studyscript.netlify.app</p>
+    </header>
+
+    <div class="section">
+        <h2 class="section-title">Good/Poor Conducting Liquids</h2>
+        <p class="table-caption">Test results for various liquids (scroll horizontally to view all data):</p>
+        
+        <div class="table-scroll-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Material</th>
+                        <th>Compass Needle Shows Deflection (Yes/No)</th>
+                        <th>Good Conductor/Poor Conductor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>Lemon juice</td>
+                        <td>Yes</td>
+                        <td>Good Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>Vinegar</td>
+                        <td>Yes</td>
+                        <td>Good Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>Tap Water</td>
+                        <td>Yes</td>
+                        <td>Good Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>Vegetable oil</td>
+                        <td>No</td>
+                        <td>Poor Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>Milk</td>
+                        <td>Yes</td>
+                        <td>Good Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>6.</td>
+                        <td>Honey</td>
+                        <td>No</td>
+                        <td>Poor Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>7.</td>
+                        <td>Distilled Water</td>
+                        <td>No</td>
+                        <td>Poor Conductor</td>
+                    </tr>
+                    <tr>
+                        <td>8.</td>
+                        <td>Salt Solution</td>
+                        <td>Yes</td>
+                        <td>Good Conductor</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exercise Questions</h2>
+        
+        <div class="content">
+            <div class="question">1. Fill in the blanks.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) Most liquids that conduct electricity are solutions of <span class="highlight">acids</span>, <span class="highlight">bases</span> and <span class="highlight">salts</span>.</div>
+                <div class="blanks-item">(b) The passage of an electric current through a solution causes <span class="highlight">chemical</span> effects.</div>
+                <div class="blanks-item">(c) If you pass current through copper sulphate solution, copper gets deposited on the plate connected to the <span class="highlight">negative</span> terminal of the battery.</div>
+                <div class="blanks-item">(d) The process of depositing a layer of any desired metal on another material by means of electricity is called <span class="highlight">electroplating</span>.</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">2. When the free ends of a tester are dipped into a solution, the magnetic needle shows deflection. Can you explain the reason?</div>
+            <div class="answer">
+                The magnetic needle shows deflection because the solution conducts electricity, allowing current to flow through the circuit. This current creates a magnetic field which affects the compass needle, causing it to deflect. The extent of deflection indicates how well the solution conducts electricity - greater deflection means better conductivity.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">3. Name three liquids, which when tested in the manner shown in Fig. 11.9, may cause the magnetic needle to deflect.</div>
+            <div class="answer">
+                Three liquids that can cause the magnetic needle to deflect are:
+                <ul>
+                    <li>Lemon juice (contains citric acid)</li>
+                    <li>Vinegar (contains acetic acid)</li>
+                    <li>Salt water (contains sodium and chloride ions)</li>
+                </ul>
+                These liquids contain ions that can carry electric current, allowing the circuit to be completed and creating a magnetic field that deflects the needle.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">4. The bulb does not glow in the setup shown in Fig. 11.10. List the possible reasons. Explain your answer.</div>
+            <div class="answer">
+                Possible reasons why the bulb does not glow:
+                <ul>
+                    <li>The liquid may be a poor conductor of electricity (like distilled water, oil, or honey)</li>
+                    <li>The battery may be drained or dead</li>
+                    <li>The bulb may be fused</li>
+                    <li>There may be loose connections in the circuit</li>
+                    <li>The electrodes may be too far apart in the solution</li>
+                    <li>The concentration of ions in the solution may be too low to conduct sufficient current</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">5. A tester is used to check the conduction of electricity through two liquids, labelled A and B. It is found that the bulb of the tester glows brightly for liquid A while it glows very dimly for liquid B. You would conclude that</div>
+            <div class="mcq-container">
+                <div class="mcq-option correct">(i) liquid A is a better conductor than liquid B.</div>
+                <div class="mcq-option">(ii) liquid B is a better conductor than liquid A.</div>
+                <div class="mcq-option">(iii) both liquids are equally conducting.</div>
+                <div class="mcq-option">(iv) conducting properties of liquid cannot be compared in this manner.</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> The brightness of the bulb indicates how well the liquid conducts electricity. A brighter glow means better conductivity because more current is flowing through the circuit. Liquid A allows more current to pass through it compared to liquid B, making it a better conductor.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">6. Does pure water conduct electricity? If not, what can we do to make it conducting?</div>
+            <div class="answer">
+                Pure water (distilled water) does not conduct electricity because it lacks ions. To make it conducting, we can add:
+                <ul>
+                    <li>Common salt (sodium chloride)</li>
+                    <li>Lemon juice or vinegar</li>
+                    <li>Any other acid, base, or salt</li>
+                </ul>
+                These substances dissociate into ions when dissolved in water, allowing the solution to conduct electricity.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">7. In case of a fire, before the firemen use the water hoses, they shut off the main electrical supply for the area. Explain why they do this.</div>
+            <div class="answer">
+                Firemen shut off the main electrical supply because water (especially tap water which contains dissolved salts) is a good conductor of electricity. If they spray water on electrical fires without cutting the power, the water could conduct electricity and electrocute anyone touching the water or standing in it. This precaution prevents electrical accidents during firefighting operations.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">8. A child staying in a coastal region tests the drinking water and also the seawater with his tester. He finds that the compass needle deflects more in the case of seawater. Can you explain the reason?</div>
+            <div class="answer">
+                Seawater contains a higher concentration of dissolved salts (like sodium chloride, magnesium chloride, etc.) compared to drinking water. These salts dissociate into ions that can carry electric current. The higher salt content makes seawater a better conductor of electricity, resulting in a stronger current and greater deflection of the compass needle.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">9. Is it safe for the electrician to carry out electrical repairs outdoors during heavy downpour? Explain.</div>
+            <div class="answer">
+                No, it is not safe for an electrician to carry out electrical repairs outdoors during heavy downpour. Rainwater is not pure - it contains dissolved gases and impurities that make it conductive. Additionally, the electrician and equipment would be wet, increasing the risk of electrocution. Water can provide a path for electricity to flow through the body, which can be fatal.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">10. Paheli had heard that rainwater is as good as distilled water. So she collected some rainwater in a clean glass tumbler and tested it using a tester. To her surprise she found that the compass needle showed deflection. What could be the reasons?</div>
+            <div class="answer">
+                Reasons why rainwater conducted electricity:
+                <ul>
+                    <li>Rainwater dissolves atmospheric gases like carbon dioxide, forming carbonic acid which makes it conductive</li>
+                    <li>It may contain impurities from the atmosphere (dust, pollutants)</li>
+                    <li>If collected in a glass tumbler, it might have dissolved some minerals from the glass</li>
+                    <li>Rainwater can contain dissolved salts and other ions picked up from the atmosphere</li>
+                </ul>
+                While rainwater is purer than tap water, it is not as pure as distilled water and can still conduct electricity to some extent.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">11. Prepare a list of objects around you that are electroplated.</div>
+            <div class="answer">
+                Common electroplated objects:
+                <ul>
+                    <li>Car parts (bumpers, door handles, wheel rims)</li>
+                    <li>Bathroom taps and fixtures</li>
+                    <li>Kitchen gas burners</li>
+                    <li>Bicycle handlebars</li>
+                    <li>Jewellery (gold or silver plated)</li>
+                    <li>Artificial jewellery</li>
+                    <li>Food cans (tin-plated iron)</li>
+                    <li>Silverware</li>
+                    <li>Electronic components</li>
+                    <li>Watch cases and bands</li>
+                    <li>Belt buckles</li>
+                    <li>Eyeglass frames</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">12. The process that you saw in Activity 11.7 is used for purification of copper. A thin plate of pure copper and a thick rod of impure copper are used as electrodes. Copper from impure rod is sought to be transferred to the thin copper plate. Which electrode should be attached to the positive terminal of the battery and why?</div>
+            <div class="answer">
+                The impure copper rod should be attached to the positive terminal of the battery. When current is passed through the circuit, copper from the impure rod (connected to positive terminal) will dissolve into the solution as copper ions. These ions will then be deposited on the pure copper plate (connected to the negative terminal), resulting in purification of copper. The impurities from the copper rod are left behind as anode mud.
+            </div>
+        </div>
+    </div>
+
+    <div class="caution">
+        <strong>Caution:</strong> Always be careful when working with electricity. Never experiment with mains electricity - only use batteries for such activities. Some conducting solutions can be corrosive or cause skin irritation.
+    </div>
+
+    <footer>
+        <p>Chemical Effects of Electric Current | Class 8 Science | Based on NCERT Curriculum</p>
+    </footer>
+</body>
+</html>
