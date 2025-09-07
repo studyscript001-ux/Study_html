@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some Natural Phenomena - Exercise Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            color: #2c3e50;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 25px;
+            background: linear-gradient(to right, #3498db, #2c3e50);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab', serif;
+            font-size: 24px;
+            color: #2c3e50;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #ecf0f1;
+        }
+        
+        .content {
+            font-size: 17px;
+            margin-bottom: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 0 6px 6px 0;
+            margin: 15px 0;
+            font-size: 16px;
+        }
+        
+        .highlight {
+            background: #e3f2fd;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+            color: #1565c0;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            font-family: 'Roboto Slab', serif;
+            font-size: 26px;
+            color: #2c3e50;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .fill-blanks {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .blanks-item {
+            margin-bottom: 12px;
+            padding-left: 10px;
+        }
+        
+        .mcq-container {
+            background: #fff3e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #ffe0b2;
+            border-radius: 5px;
+        }
+        
+        .correct {
+            background: #c8e6c9;
+            border-left: 4px solid #2e7d32;
+        }
+        
+        .table-scroll-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 25px 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+        
+        .table-caption {
+            font-style: italic;
+            margin-bottom: 10px;
+            text-align: center;
+            color: #555;
+        }
+        
+        .caution {
+            background: #ffebee;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #f44336;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 24px;
+            }
+            
+            h2 {
+                font-size: 20px;
+            }
+            
+            .content, .answer {
+                font-size: 16px;
+                padding: 15px;
+            }
+            
+            th, td {
+                padding: 10px 12px;
+                font-size: 14px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            th, td {
+                padding: 8px 10px;
+                font-size: 12px;
+            }
+            
+            .content {
+                padding: 15px 10px;
+            }
+            
+            .section {
+                padding: 15px;
+            }
+        }
+        
+        /* Custom scrollbar for the table */
+        .table-scroll-container::-webkit-scrollbar {
+            height: 8px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        
+        .table-scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+        
+        .diagram {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        
+        .diagram img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .diagram-caption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SOME NATURAL PHENOMENA</h1>
+        <p class="subtitle">CLASS 8 SCIENCE | Made by studyscript.netlify.app</p>
+    </header>
+
+    <div class="section">
+        <h2 class="section-title">Charging by Rubbing</h2>
+        <p class="table-caption">Objects and their charging behavior:</p>
+        
+        <div class="table-scroll-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Objects Rubbed</th>
+                        <th>Materials Used for Rubbing</th>
+                        <th>Attracts/Does Not Attract Pieces of Paper</th>
+                        <th>Charged/Not Charged</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Refill</td>
+                        <td>Polythene, woollen cloth</td>
+                        <td>Attracts</td>
+                        <td>Charged</td>
+                    </tr>
+                    <tr>
+                        <td>Balloon</td>
+                        <td>Polythene, woollen cloth, dry hair</td>
+                        <td>Attracts</td>
+                        <td>Charged</td>
+                    </tr>
+                    <tr>
+                        <td>Eraser</td>
+                        <td>Wool</td>
+                        <td>Attracts</td>
+                        <td>Charged</td>
+                    </tr>
+                    <tr>
+                        <td>Steel spoon</td>
+                        <td>Polythene, woollen cloth</td>
+                        <td>Does not attract</td>
+                        <td>Not charged</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Exercise Questions</h2>
+        
+        <div class="content">
+            <div class="question">1. Which of the following cannot be charged easily by friction?</div>
+            <div class="mcq-container">
+                <div class="mcq-option">(a) A plastic scale</div>
+                <div class="mcq-option correct">(b) A copper rod</div>
+                <div class="mcq-option">(c) An inflated balloon</div>
+                <div class="mcq-option">(d) A woollen cloth</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> Metals like copper are good conductors of electricity. When we try to charge them by friction, the charges immediately flow to the ground through our body. Therefore, they cannot be charged easily by friction.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">2. When a glass rod is rubbed with a piece of silk cloth the rod</div>
+            <div class="mcq-container">
+                <div class="mcq-option">(a) and the cloth both acquire positive charge</div>
+                <div class="mcq-option correct">(b) becomes positively charged while the cloth has a negative charge</div>
+                <div class="mcq-option">(c) and the cloth both acquire negative charge</div>
+                <div class="mcq-option">(d) becomes negatively charged while the cloth has a positive charge</div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> When a glass rod is rubbed with silk, the glass rod loses electrons and becomes positively charged, while the silk cloth gains electrons and becomes negatively charged.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">3. Write T against true and F against false in the following statements.</div>
+            <div class="fill-blanks">
+                <div class="blanks-item">(a) Like charges attract each other <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(b) A charged glass rod attracts a charged plastic straw <span class="highlight">(T)</span></div>
+                <div class="blanks-item">(c) Lightning conductor cannot protect a building from lightning <span class="highlight">(F)</span></div>
+                <div class="blanks-item">(d) Earthquakes can be predicted in advance <span class="highlight">(F)</span></div>
+            </div>
+            <div class="answer">
+                <strong>Explanation:</strong> 
+                <ul>
+                    <li>(a) Like charges repel each other, unlike charges attract</li>
+                    <li>(b) A charged glass rod (positive) attracts a charged plastic straw (negative)</li>
+                    <li>(c) Lightning conductors provide a safe path for lightning to reach the ground, protecting buildings</li>
+                    <li>(d) Earthquakes cannot be predicted accurately in advance with current technology</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">4. Sometimes, a crackling sound is heard while taking off a sweater during winters. Explain.</div>
+            <div class="answer">
+                The crackling sound is produced due to the discharge of static electricity. When we take off a sweater (especially woolen or synthetic), friction between the sweater and our body or other clothes causes the transfer of electrons, leading to the buildup of static charges. When these charges accumulate and then discharge, they create tiny sparks that produce the crackling sound.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">5. Explain why a charged body loses its charge if we touch it with our hand.</div>
+            <div class="answer">
+                When we touch a charged body with our hand, the electric charges transfer from the charged body to our body. Since our body is a conductor of electricity and is connected to the ground (earth), the charges flow through our body to the ground. This process is called earthing, and it causes the charged body to lose its charge.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">6. Name the scale on which the destructive energy of an earthquake is measured. An earthquake measures 3 on this scale. Would it be recorded by a seismograph? Is it likely to cause much damage?</div>
+            <div class="answer">
+                The destructive energy of an earthquake is measured on the <span class="highlight">Richter scale</span>. 
+                <br><br>
+                An earthquake measuring 3 on the Richter scale would be recorded by a seismograph, but it is considered a minor earthquake that is often felt by people but typically causes little to no damage. Earthquakes below magnitude 4.0 are generally not destructive.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">7. Suggest three measures to protect ourselves from lightning.</div>
+            <div class="answer">
+                Three measures to protect ourselves from lightning:
+                <ol>
+                    <li>Seek shelter inside a building or vehicle during a thunderstorm</li>
+                    <li>Avoid taking shelter under isolated tall trees, and instead squat low on the ground with hands on knees if caught in an open area</li>
+                    <li>Avoid contact with electrical appliances, wired phones, and plumbing during a thunderstorm</li>
+                </ol>
+                Additional measures include unplugging electronic devices and staying away from windows and doors.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">8. Explain why a charged balloon is repelled by another charged balloon whereas an uncharged balloon is attracted by another charged balloon?</div>
+            <div class="answer">
+                When both balloons are charged with the same type of charge (usually negative when rubbed with wool), they repel each other because like charges repel. <br><br>
+                An uncharged balloon is attracted to a charged balloon because the charged balloon induces opposite charges on the side of the uncharged balloon nearest to it. The attractive force between these opposite charges is stronger than the repulsive force between the similar charges on the far side.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">9. Describe with the help of a diagram an instrument which can be used to detect a charged body.</div>
+            <div class="answer">
+                An <span class="highlight">electroscope</span> is used to detect whether a body is charged or not. It consists of:
+                <ul>
+                    <li>A metal rod with a disc or ball at the top</li>
+                    <li>Two thin leaves of gold or aluminum attached to the bottom of the rod</li>
+                    <li>The rod is inserted in a flask with the leaves inside and the disc outside</li>
+                </ul>
+                <div class="diagram">
+                    <div style="text-align: center; font-weight: bold;">Simple Electroscope</div>
+                    <div style="margin: 15px 0; padding: 10px; background: #f0f0f0; border-radius: 5px;">
+                        <div style="text-align: center;">Metal disc</div>
+                        <div style="border-left: 3px solid #333; height: 80px; margin: 0 auto; width: 0;"></div>
+                        <div style="display: flex; justify-content: center;">
+                            <div style="border: 1px solid #333; width: 10px; height: 10px; border-radius: 50%; margin-top: -5px;"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+                            <div style="border: 1px solid #333; width: 40px; height: 60px; transform: rotate(-30deg);"></div>
+                            <div style="border: 1px solid #333; width: 40px; height: 60px; transform: rotate(30deg);"></div>
+                        </div>
+                        <div style="text-align: center; margin-top: 10px;">Metal leaves</div>
+                    </div>
+                    <div class="diagram-caption">When a charged object touches the metal disc, the leaves diverge due to repulsion of like charges</div>
+                </div>
+                When a charged body is brought near the disc, charge is transferred through the rod to the leaves. Since both leaves receive the same charge, they repel each other and diverge. The extent of divergence indicates the amount of charge.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">10. List three states in India where earthquakes are more likely to strike.</div>
+            <div class="answer">
+                Three states in India where earthquakes are more likely to strike:
+                <ol>
+                    <li>Jammu and Kashmir</li>
+                    <li>Gujarat</li>
+                    <li>Uttarakhand (and other Himalayan states)</li>
+                </ol>
+                Other earthquake-prone regions include the entire Northeast India, Himachal Pradesh, and the Rann of Kutch region.
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">11. Suppose you are outside your home and an earthquake strikes. What precaution would you take to protect yourself?</div>
+            <div class="answer">
+                If I'm outside during an earthquake, I would:
+                <ol>
+                    <li>Move to an open area away from buildings, trees, streetlights, and utility wires</li>
+                    <li>Drop to the ground and take cover by crouching low</li>
+                    <li>If in a vehicle, stop in a clear area and stay inside until shaking stops</li>
+                    <li>Protect my head and neck with my arms</li>
+                    <li>Stay away from bridges, overpasses, and other structures that might collapse</li>
+                    <li>Be prepared for aftershocks</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="question">12. The weather department has predicted that a thunderstorm is likely to occur on a certain day. Suppose you have to go out on that day. Would you carry an umbrella? Explain.</div>
+            <div class="answer">
+                No, I would not carry an umbrella if a thunderstorm is predicted. Here's why:
+                <ul>
+                    <li>An umbrella with a metal shaft can act as a lightning conductor, increasing the risk of being struck by lightning</li>
+                    <li>Holding an umbrella makes me the tallest object in an open area, which is dangerous during lightning</li>
+                    <li>It's safer to wear a raincoat or waterproof jacket instead</li>
+                    <li>If possible, I would postpone my trip or find indoor shelter until the storm passes</li>
+                </ul>
+                Safety during a thunderstorm involves avoiding being the highest point in an area and staying away from metal objects.
+            </div>
+        </div>
+    </div>
+
+    <div class="caution">
+        <strong>Safety Note:</strong> Always follow safety guidelines during natural phenomena like thunderstorms and earthquakes. Stay informed about weather alerts and have an emergency plan ready.
+    </div>
+
+    <footer>
+        <p>Some Natural Phenomena | Class 8 Science | Based on NCERT Curriculum</p>
+    </footer>
+</body>
+</html>
