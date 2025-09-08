@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Selfish Giant - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.0rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>The Selfish Giant</h1>
+            <p>NCERT Class 8 English - It So Happened</p>
+          <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part I</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Why is the Giant called selfish?</div>
+                <div class="answer">
+                    The Giant is called selfish because he built a high wall around his beautiful garden to prevent children from playing in it. He wanted to keep the garden all to himself and didn't want to share it with anyone else.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. On one occasion the children said: "How happy we are here!" Later they said: "How happy we were there!" What are they referring to in both the cases?</div>
+                <div class="answer">
+                    In both cases, the children are referring to the Giant's garden. The first time, they say "How happy we are here!" while playing in the garden. Later, after the Giant bans them, they say "How happy we were there!" remembering their joyful times in the garden.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. (i) When spring came, it was still winter in the garden. What does winter stand for or indicate here?<br>(ii) Winter has been presented like a story with its own characters and their activities. Describe the story in your own words.</div>
+                <div class="answer">
+                    (i) Winter in the garden indicates sadness, loneliness, and the absence of life and joy. It represents the Giant's selfishness and how it has affected the garden.<br>
+                    (ii) In the story, Winter is personified with characters like Snow, Frost, North Wind, and Hail. They decide to live in the Giant's garden all year round because Spring has forgotten it. Snow covers the grass with her white cloak, Frost paints the trees silver, North Wind roars all day, and Hail rattles on the roof and runs around the garden.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Was the Giant happy or sad over the state of the garden?</div>
+                <div class="answer">
+                    The Giant was sad over the state of the garden. He wondered why Spring was so late in coming and hoped for a change in the weather. He missed the beauty and joy that used to be in his garden.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. What effect did the linnet's song have over Hail and the North Wind?</div>
+                <div class="answer">
+                    The linnet's song made the Hail stop dancing over the Giant's head and the North Wind cease roaring. The beautiful music signaled the arrival of Spring and ended the reign of winter in the garden.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part II</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. (i) The Giant saw a most wonderful sight. What did he see?<br>(ii) What did he realise on seeing it?</div>
+                <div class="answer">
+                    (i) The Giant saw that the children had crept into the garden through a hole in the wall and were sitting in the trees. The trees had covered themselves with blossoms and were waving their arms above the children's heads. Birds were flying about with delight, and flowers were laughing through the grass.<br>
+                    (ii) On seeing this, the Giant realized how selfish he had been and understood why Spring had not come to his garden. He realized that his selfishness had kept joy and beauty away.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Why was it still winter in one corner of the garden?</div>
+                <div class="answer">
+                    It was still winter in one corner of the garden because a little boy was standing there who couldn't reach the branches of the tree to climb up. The tree was still covered with frost and snow, and the North Wind was blowing above it.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Describe the first meeting of the little boy and the Giant.</div>
+                <div class="answer">
+                    During their first meeting, the Giant found the little boy crying because he couldn't reach the branches of the tree. The Giant's heart melted, and he felt sorry for being selfish. He gently took the boy in his hands and put him up into the tree. The tree immediately broke into blossom, and the boy kissed the Giant in gratitude.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Describe their second meeting after a long interval.</div>
+                <div class="answer">
+                    In their second meeting after many years, the Giant saw the little boy standing under a tree covered with white blossoms in the farthest corner of the garden. The tree had golden branches with silver fruit. When the Giant approached, he saw wounds on the boy's hands and feet. The boy explained they were "the wounds of Love" and invited the Giant to come with him to his garden, which was paradise.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. The Giant lay dead, all covered with white blossoms. What does this sentence indicate about the once selfish Giant?</div>
+                <div class="answer">
+                    This sentence indicates that the once selfish Giant had undergone a complete transformation and found redemption. The white blossoms covering his body symbolize purity, peace, and divine acceptance. His selfishness was replaced by love and kindness, and he was rewarded with a peaceful death and entry into paradise.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-pencil-alt"></i> Exercise Questions</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The little child's hands and feet had marks of nails. Who does the child remind you of? Give a reason for your answer.</div>
+                <div class="answer">
+                    The child reminds us of Jesus Christ. The marks of nails on his hands and feet are similar to the wounds Jesus received when he was crucified. The child's statement that these are "the wounds of Love" further reinforces this connection, as Christian theology teaches that Jesus sacrificed himself out of love for humanity.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Is there something like this garden near where you live? Would you like one (without the Giant perhaps) and why? What would you do to keep it in good shape?</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own experiences. Example answer:] Yes, there is a public park near where I live, but it's not as beautiful as the Giant's garden. I would love to have a garden like that because it would be a peaceful place to play, relax, and connect with nature. To keep it in good shape, I would help by not plucking flowers, not littering, watering plants, and encouraging others to respect the garden.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Hindi Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Hindi Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ogre</td>
+                            <td>राक्षस</td>
+                        </tr>
+                        <tr>
+                            <td>Gruff</td>
+                            <td>कठोर/रूखा</td>
+                        </tr>
+                        <tr>
+                            <td>Trespassers</td>
+                            <td>अनधिकार प्रवेश करने वाले</td>
+                        </tr>
+                        <tr>
+                            <td>Prosecuted</td>
+                            <td>मुकदमा चलाया गया</td>
+                        </tr>
+                        <tr>
+                            <td>Blossoms</td>
+                            <td>फूल</td>
+                        </tr>
+                        <tr>
+                            <td>Cloak</td>
+                            <td>लबादा</td>
+                        </tr>
+                        <tr>
+                            <td>Rattled</td>
+                            <td>खड़खड़ाया</td>
+                        </tr>
+                        <tr>
+                            <td>Slates</td>
+                            <td>स्लेट के पत्थर</td>
+                        </tr>
+                        <tr>
+                            <td>Linnet</td>
+                            <td>एक प्रकार की चिड़िया</td>
+                        </tr>
+                        <tr>
+                            <td>Casement</td>
+                            <td>खिड़की</td>
+                        </tr>
+                        <tr>
+                            <td>Twittering</td>
+                            <td>चहचहाना</td>
+                        </tr>
+                        <tr>
+                            <td>Stole up</td>
+                            <td>चुपके से पहुँचा</td>
+                        </tr>
+                        <tr>
+                            <td>Feeble</td>
+                            <td>कमजोर</td>
+                        </tr>
+                        <tr>
+                            <td>Marvellous</td>
+                            <td>अद्भुत</td>
+                        </tr>
+                        <tr>
+                            <td>Hastened</td>
+                            <td>जल्दी की</td>
+                        </tr>
+                        <tr>
+                            <td>Slay</td>
+                            <td>मार डालना</td>
+                        </tr>
+                        <tr>
+                            <td>Awe</td>
+                            <td>भय मिश्रित आदर</td>
+                        </tr>
+                        <tr>
+                            <td>Paradise</td>
+                            <td>स्वर्ग</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Selfish Giant" from the NCERT Class 8 English textbook "It So Happened". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 8 English Solutions - It So Happened</p>
+            <p>The Selfish Giant by Oscar Wilde</p>
+        </div>
+    </div>
+</body>
+</html>
