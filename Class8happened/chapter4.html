@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Treasure Within - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #1abc9c 0%, #16a085 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #1abc9c;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #1abc9c;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #1abc9c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #1abc9c;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #1abc9c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #1abc9c;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+            
+            .vocab-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>The Treasure Within</h1>
+            <p>NCERT Class 8 English - It So Happened</p>
+          <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part I</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. What did Hafeez Contractor have nightmares about?</div>
+                <div class="answer">
+                    Hafeez Contractor had nightmares about appearing for a mathematics examination where he did not know anything. These nightmares continued for many years until they eventually disappeared.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What did the Principal say to him, which influenced him deeply?</div>
+                <div class="answer">
+                    The Principal told Hafeez that he had been a good student but never studied. He reminded Hafeez that his mother had worked hard to bring him up and pay his fees, and now it was time for him to rise to the occasion and study seriously.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. "... that year I did not step out onto the field." What was he busy doing that year?</div>
+                <div class="answer">
+                    That year, Hafeez was busy studying. He stopped playing games and focused entirely on his studies. He would go for prayers, eat, and study, dedicating all his time to academic work.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. (i) What "distraction" did Hafeez Contractor create one day?<br>(ii) Would you have liked to participate in the "distraction" had you been with him?</div>
+                <div class="answer">
+                    (i) One day, when Hafeez didn't want to study, he created a distraction by organizing a game of 'chor police' (a hide-and-seek game) for one whole hour during class time.<br>
+                    (ii) [This is a personal question. Students should answer based on their own opinion. Example answer:] While it might have been fun to play games instead of studying, I believe it's important to respect classroom rules and focus on learning.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part II</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Hafeez Contractor wanted to join the police force. Why didn't he?</div>
+                <div class="answer">
+                    Hafeez didn't join the police force because his mother advised him against it. She told him to complete his graduation instead, so he went to Jaihind College in Bombay.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. In the architect's office, Hafeez Contractor was advised to drop everything and join architecture. Why?</div>
+                <div class="answer">
+                    He was advised to join architecture because he demonstrated a natural talent for it. He correctly identified an error in a window detail drawing and was able to design a house immediately when asked, showing exceptional architectural skills.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. (i) What was Mrs Gupta's advice to Hafeez Contractor?<br>(ii) What made her advise him so?</div>
+                <div class="answer">
+                    (i) Mrs Gupta advised Hafeez that he was useless in everything else but his sketches were good, and he should become an architect when he grew up.<br>
+                    (ii) She gave this advice after seeing his sketches and recognizing his talent for drawing and design, even though he wasn't good at other subjects.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. How did he help fellow students who had lost a button?</div>
+                <div class="answer">
+                    Hafeez helped fellow students who had lost a button by cutting a button for them from chalk using a blade. This was important because discipline in the school required students to have a complete uniform.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. Which rules did he break as a school boy?</div>
+                <div class="answer">
+                    As a school boy, Hafeez broke several rules. He copied during exams, played pranks on others, created distractions in class, organized games during study time, and collected money from other students to buy movie tickets without having lunch.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 6. (i) What is Hafeez Contractor's definition of mathematics?<br>(ii) How would you want to define mathematics? Do you like the subject?</div>
+                <div class="answer">
+                    (i) Hafeez Contractor defines mathematics as putting design, construction, psychology, and sociology together and making a sketch from all that.<br>
+                    (ii) [This is a personal question. Students should answer based on their own understanding. Example answer:] I would define mathematics as the science of numbers, quantities, and shapes. It involves logical reasoning and problem-solving. I find mathematics challenging but interesting because it helps develop analytical thinking skills.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-pencil-alt"></i> Exercise Questions</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Is it likely that someone who is original and intelligent does not do very well at school? Should such a learner be called a failure? If not, why not?</div>
+                <div class="answer">
+                    Yes, it is quite likely that someone who is original and intelligent might not do well in traditional school settings. Such a learner should not be called a failure because intelligence and talent can manifest in different ways. The education system often focuses on specific types of intelligence and learning styles, which may not align with every student's strengths. Hafeez Contractor is a perfect example - he struggled with formal education but excelled in architecture due to his visual thinking and creative skills.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Who, in your view, is an 'unusual' learner?</div>
+                <div class="answer">
+                    An 'unusual' learner is someone who doesn't fit the traditional mold of academic success. They may struggle with conventional teaching methods and standardized testing but excel in practical, creative, or hands-on learning. These learners often think differently, have unique perspectives, and may demonstrate talents in areas not typically emphasized in formal education, such as problem-solving, innovation, or artistic expression.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. What can schools do to draw out the best in unusual learners? Suggest whatever seems reasonable to you.</div>
+                <div class="answer">
+                    Schools can draw out the best in unusual learners by:
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>Offering diverse learning methods that cater to different learning styles</li>
+                        <li>Recognizing and valuing multiple types of intelligence</li>
+                        <li>Providing hands-on, practical learning experiences</li>
+                        <li>Encouraging creativity and innovation</li>
+                        <li>Offering mentorship programs where students can explore their interests</li>
+                        <li>Creating a supportive environment where different talents are celebrated</li>
+                        <li>Reducing the emphasis on standardized testing as the only measure of success</li>
+                        <li>Providing opportunities for project-based learning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Hindi Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Hindi Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nightmare</td>
+                            <td>बुरा सपना</td>
+                        </tr>
+                        <tr>
+                            <td>Psyche</td>
+                            <td>मानसिकता</td>
+                        </tr>
+                        <tr>
+                            <td>Pranks</td>
+                            <td>मज़ाक</td>
+                        </tr>
+                        <tr>
+                            <td>Caning</td>
+                            <td>बेंत से मारना</td>
+                        </tr>
+                        <tr>
+                            <td>Incurred the wrath</td>
+                            <td>गुस्सा भड़काना</td>
+                        </tr>
+                        <tr>
+                            <td>Distraction</td>
+                            <td>ध्यान भटकाने वाली चीज़</td>
+                        </tr>
+                        <tr>
+                            <td>Strategies</td>
+                            <td>रणनीतियाँ</td>
+                        </tr>
+                        <tr>
+                            <td>Academics</td>
+                            <td>शैक्षणिक मामले</td>
+                        </tr>
+                        <tr>
+                            <td>Stumbled on</td>
+                            <td>संयोग से मिलना</td>
+                        </tr>
+                        <tr>
+                            <td>Offbeat</td>
+                            <td>असामान्य</td>
+                        </tr>
+                        <tr>
+                            <td>Calling</td>
+                            <td>व्यवसाय</td>
+                        </tr>
+                        <tr>
+                            <td>Influence</td>
+                            <td>प्रभाव</td>
+                        </tr>
+                        <tr>
+                            <td>Cakewalk</td>
+                            <td>बहुत आसान</td>
+                        </tr>
+                        <tr>
+                            <td>Cope</td>
+                            <td>सामना करना</td>
+                        </tr>
+                        <tr>
+                            <td>Curriculum</td>
+                            <td>पाठ्यक्रम</td>
+                        </tr>
+                        <tr>
+                            <td>Giftedness</td>
+                            <td>प्रतिभाशाली होना</td>
+                        </tr>
+                        <tr>
+                            <td>Street smart</td>
+                            <td>व्यावहारिक समझ</td>
+                        </tr>
+                        <tr>
+                            <td>Defied</td>
+                            <td>अवज्ञा की</td>
+                        </tr>
+                        <tr>
+                            <td>Instinctively</td>
+                            <td>सहज रूप से</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Treasure Within" from the NCERT Class 8 English textbook "It So Happened". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 8 English Solutions - It So Happened</p>
+            <p>The Treasure Within - Interview with Hafeez Contractor</p>
+        </div>
+    </div>
+</body>
+</html>
