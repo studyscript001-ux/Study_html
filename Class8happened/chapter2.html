@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Children at Work - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #f0e6ff 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .chapter-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #3498db;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            overflow-x: auto;
+            display: block;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            .chapter-icon {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 1.0rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <div class="chapter-icon">
+                <i class="fas fa-child"></i>
+            </div>
+            <h1>Children at Work</h1>
+            <p>NCERT Class 8 English - It So Happened</p>
+          <p>studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part I</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Velu stood on the platform but he felt "as if he was still on a moving train". Why?</div>
+                <div class="answer">
+                    Velu felt this way because he had been traveling on the train for a long time. His legs had become accustomed to the movement of the train, so even after getting off, he felt unsteady and wobbly, as if the ground was still moving beneath him.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What made him feel miserable?</div>
+                <div class="answer">
+                    Velu felt miserable because he was exhausted from his journey, hungry as he had eaten very little for two days (only some peanuts and a piece of jaggery), and overwhelmed by the noisy, crowded station which was very different from his village.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. (i) Velu travelled without a ticket. Why?<br>(ii) How did he escape the ticket collector's attention?</div>
+                <div class="answer">
+                    (i) Velu traveled without a ticket because he had no money to buy one.<br>
+                    (ii) He escaped the ticket collector's attention by staying in the unreserved compartment where the ticket collector didn't come to check tickets.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Why had Velu run away from home?</div>
+                <div class="answer">
+                    Velu ran away from home because he couldn't stand his father beating him anymore. His father would also snatch away all the money that Velu and his sisters earned and spend it on alcohol.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. Why did he decide to follow the 'strange' girl?</div>
+                <div class="answer">
+                    Velu decided to follow the strange girl because he was hungry and she offered to find him food. He also had no idea where to go or what to do in the new city, so he thought it was better to stay with someone who seemed to know her way around.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part II</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Can Velu read Tamil and English? How do you know?</div>
+                <div class="answer">
+                    Velu can read Tamil but not English. We know this because when he saw signs in English, he didn't understand them, but he could read the Tamil sign for "Central Jail."
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. "If you are not careful, you will soon be counting bars there," the girl said.<br>(i) What is she referring to?<br>(ii) What does she mean when she says "If you are not careful..."?</div>
+                <div class="answer">
+                    (i) She is referring to the Central Jail.<br>
+                    (ii) She means that if Velu isn't careful about following rules and staying out of trouble, he might end up in jail. The phrase "counting bars" refers to counting the bars on the jail cell windows, meaning being in prison.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. (i) Where did the girl lead Velu to?<br>(ii) What did they get to eat?</div>
+                <div class="answer">
+                    (i) The girl led Velu to a big garbage bin behind a wedding hall.<br>
+                    (ii) They got to eat leftover food from the garbage bin - a squashy banana and a vada that were untouched.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. What work did she do? Think of a one-word answer.</div>
+                <div class="answer">
+                    Ragpicking.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part III</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. (i) What material are the 'strange' huts made out of?<br>(ii) Why does Velu find them strange?</div>
+                <div class="answer">
+                    (i) The huts are made out of metal sheets, tyres, bricks, wood, and plastic.<br>
+                    (ii) Velu finds them strange because in his village, houses are made of mud and palm leaves, and these makeshift huts look crooked and unstable, as if they might fall down at any moment.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What sort of things did Jaya and children like her collect and what did they do with those things?</div>
+                <div class="answer">
+                    Jaya and children like her collected paper, plastic, glass, and other recyclable materials from rubbish bins. They sold these items to a man named Jam Bazaar Jaggi, who then sold them to a factory for recycling.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Is Velu happy or unhappy to find work? Give a reason for your answer.</div>
+                <div class="answer">
+                    Velu is unhappy to find work as a ragpicker. He hadn't run away from home to dig through garbage bins and initially refuses to do it. However, he agrees to do it temporarily because he has no other options and needs to survive until he finds a better job.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-pencil-alt"></i> Exercise Questions</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Is Velu a smart boy? Which instances in the text show that he is or isn't?</div>
+                <div class="answer">
+                    Velu shows both smart and not-so-smart qualities. He is smart enough to run away from an abusive home and find his way to a big city. He is also observant, noticing details about his surroundings. However, he is naive about city life and doesn't have a plan for survival, which shows his lack of experience and foresight.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Do you think Jaya is a brave and sensitive child with a sense of humour? Find instances of her courage, kind nature and humour in the text.</div>
+                <div class="answer">
+                    Yes, Jaya is brave, sensitive, and has a sense of humor. She shows courage by living independently in a big city and navigating its dangers. She shows kindness by helping Velu find food and offering him work. Her sense of humor is evident in her witty remarks, such as when she tells Velu he'll become "chutney" if he stands in the road or when she jokes about the Central Jail.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. What one throws away as waste may be valuable to others. Do you find this sentence meaningful in the context of this story? How?</div>
+                <div class="answer">
+                    Yes, this sentence is very meaningful in the context of the story. The entire livelihood of Jaya and other ragpickers depends on items that people throw away as waste. They collect paper, plastic, glass, and other materials that can be recycled and sold. Even the food they eat is often leftover from events, which would otherwise be wasted. This shows that what is worthless to some people can be valuable to others.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary</h2>
+            
+            <table class="vocab-table">
+                <thead>
+                    <tr>
+                        <th>English Word</th>
+                        <th>Hindi Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wobbly</td>
+                        <td>डगमगाता हुआ</td>
+                    </tr>
+                    <tr>
+                        <td>Miserable</td>
+                        <td>दुखी</td>
+                    </tr>
+                    <tr>
+                        <td>Exhausted</td>
+                        <td>थका हुआ</td>
+                    </tr>
+                    <tr>
+                        <td>Jaggery</td>
+                        <td>गुड़</td>
+                    </tr>
+                    <tr>
+                        <td>Compartment</td>
+                        <td>डिब्बा</td>
+                    </tr>
+                    <tr>
+                        <td>Grimace</td>
+                        <td>मुँह बनाना</td>
+                    </tr>
+                    <tr>
+                        <td>Glumly</td>
+                        <td>उदासी से</td>
+                    </tr>
+                    <tr>
+                        <td>Panicked</td>
+                        <td>घबराया हुआ</td>
+                    </tr>
+                    <tr>
+                        <td>Crookedly</td>
+                        <td>टेढ़ा-मेढ़ा</td>
+                    </tr>
+                    <tr>
+                        <td>Shove</td>
+                        <td>धक्का देना</td>
+                    </tr>
+                    <tr>
+                        <td>Weeding</td>
+                        <td>निराई करना</td>
+                    </tr>
+                    <tr>
+                        <td>Blockhead</td>
+                        <td>मूर्ख</td>
+                    </tr>
+                    <tr>
+                        <td>Posing</td>
+                        <td>दिखावा करना</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "Children at Work" from the NCERT Class 8 English textbook "It So Happened". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 8 English Solutions - It So Happened</p>
+            <p>Children at Work</p>
+        </div>
+    </div>
+</body>
+</html>
