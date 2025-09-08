@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fight - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffe6e6 0%, #e6f7ff 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #e74c3c;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e74c3c;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #e74c3c;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #e74c3c;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.1rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+            
+            .vocab-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>The Fight</h1>
+            <p>NCERT Class 8 English - It So Happened</p>
+          <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part I</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. In what way is the forest pool different from the one which Ranji knew in the Rajputana desert?</div>
+                <div class="answer">
+                    The forest pool was clean, cold, and inviting with gentle translucency and smooth round pebbles at the bottom. In contrast, the pools in the Rajputana desert were sticky, muddy pools where buffaloes wallowed and women washed clothes.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. The other boy asked Ranji to 'explain' himself.<br>(i) What did he expect Ranji to say?<br>(ii) Was he, in your opinion, right or wrong to ask this question?</div>
+                <div class="answer">
+                    (i) He expected Ranji to apologize and leave the pool, acknowledging that it belonged to him.<br>
+                    (ii) In my opinion, he was wrong to ask this question because no one can claim ownership of a natural resource like a forest pool. Everyone should have the right to enjoy nature's gifts.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Between Ranji and the other boy, who is trying to start a quarrel? Give a reason for your answer.</div>
+                <div class="answer">
+                    The other boy is trying to start a quarrel. He immediately adopts a hostile attitude, claims ownership of the pool, calls himself a "Warrior," and challenges Ranji without any provocation.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. "Then we will have to continue the fight," said the other.<br>(i) What made him say that?<br>(ii) Did the fight continue? If not, why not?</div>
+                <div class="answer">
+                    (i) He said this because neither boy was willing to back down or leave the pool, creating a stalemate.<br>
+                    (ii) No, the fight did not continue immediately. They decided to continue it the next day because neither was ready to take the initiative to fight again at that moment.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part II</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. What is it that Ranji finds difficult to explain at home?</div>
+                <div class="answer">
+                    Ranji finds it difficult to explain the cuts and bruises on his face, legs, and arms that he got from the fight.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Ranji sees his adversary in the bazaar.<br>(i) What does he wish to do?<br>(ii) What does he actually do, and why?</div>
+                <div class="answer">
+                    (i) Ranji first wishes to turn away and look elsewhere, and then he wishes to throw his lemonade bottle at his enemy.<br>
+                    (ii) He actually stands his ground and scowls at his adversary because he doesn't want to show fear or weakness.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Ranji is not at all eager for a second fight. Why does he go back to the pool, then?</div>
+                <div class="answer">
+                    Ranji goes back to the pool because not turning up would be an acknowledgement of defeat. He believes that as long as he fights, he has a right to the pool, even if he gets beaten.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Who was the better swimmer? How do you know it?</div>
+                <div class="answer">
+                    Ranji was the better swimmer. We know this because he could dive straight into the water, cut through it like a knife, surface with hardly a splash, and swim underwater—skills that Suraj didn't have.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. What surprises the warrior?</div>
+                <div class="answer">
+                    The warrior is surprised by Ranji's diving skills. His mouth hangs open in amazement when he sees Ranji dive straight into the water, cutting through it like a knife and surfacing with hardly a splash.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 6. Now that they are at the pool, why don't they continue the fight?</div>
+                <div class="answer">
+                    They don't continue the fight because Suraj becomes more interested in learning how to dive and swim underwater from Ranji. Their competitive energy transforms into curiosity and mutual respect.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 7. Ranji's superiority over the other boy is obvious in the following: physical strength, good diving, his being a fighter, sense of humour, swimming under water, making a good point, willingness to help. Underline the relevant phrases.</div>
+                <div class="answer">
+                    Ranji's superiority is obvious in: <u>good diving</u>, <u>swimming under water</u>, and <u>willingness to help</u>.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 8. What, according to you, makes the two adversaries turn into good friends in a matter of minutes? Explain it as you have understood it.</div>
+                <div class="answer">
+                    The two adversaries turn into good friends because they discover mutual respect and shared interests. Ranji's swimming skills impress Suraj, and Suraj's strength and determination impress Ranji. Instead of focusing on their differences, they recognize each other's strengths and realize they can learn from each other. This shift from competition to cooperation helps them form a friendship.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-pencil-alt"></i> Exercise Questions</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Is fighting the only way of resolving differences of opinion? What else can be done to reach a mutually acceptable settlement?</div>
+                <div class="answer">
+                    No, fighting is not the only way to resolve differences of opinion. Other ways include:
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>Communication and dialogue to understand each other's perspectives</li>
+                        <li>Compromise and finding middle ground</li>
+                        <li>Seeking mediation from a neutral third party</li>
+                        <li>Finding common interests and working together</li>
+                        <li>Agreeing to disagree respectfully</li>
+                        <li>Using problem-solving techniques to find win-win solutions</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Have you ever been in a serious fight only to realise later that it was unnecessary and futile? Share your experience/views with others frankly and honestly.</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own experiences. Example answer:] Yes, I once had a serious argument with my best friend over something trivial. We didn't talk to each other for days, and both of us were unhappy. Later, we realized that our friendship was more important than the argument, and we apologized to each other. It taught me that many fights are unnecessary and that communication is key to resolving conflicts.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Why do some of us find it necessary to prove that we are better than others? Will you be amused or annoyed to read the following sign at the back of the car in front of you? "I may be going slow but I am ahead of you."</div>
+                <div class="answer">
+                    Some people feel the need to prove they are better than others due to insecurity, the desire for validation, or competitive nature. This need often stems from a lack of self-confidence or the belief that one's worth depends on being superior to others.<br><br>
+                    I would be amused by the sign because it's humorous and shows the driver doesn't take themselves too seriously. It's a lighthearted way of acknowledging that even if they're not the fastest, they're still making progress.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Hindi Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Hindi Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Interminably</td>
+                            <td>अनंत रूप से</td>
+                        </tr>
+                        <tr>
+                            <td>Parched</td>
+                            <td>सूखा हुआ</td>
+                        </tr>
+                        <tr>
+                            <td>Translucency</td>
+                            <td>पारदर्शिता</td>
+                        </tr>
+                        <tr>
+                            <td>Torrent</td>
+                            <td>बाढ़</td>
+                        </tr>
+                        <tr>
+                            <td>Cascading</td>
+                            <td>झरना</td>
+                        </tr>
+                        <tr>
+                            <td>Trickle</td>
+                            <td>टपकना</td>
+                        </tr>
+                        <tr>
+                            <td>Wallowed</td>
+                            <td>लोटना</td>
+                        </tr>
+                        <tr>
+                            <td>Quench</td>
+                            <td>बुझाना</td>
+                        </tr>
+                        <tr>
+                            <td>Thickset</td>
+                            <td>मजबूत बनावट</td>
+                        </tr>
+                        <tr>
+                            <td>Taken aback</td>
+                            <td>हैरान</td>
+                        </tr>
+                        <tr>
+                            <td>Hostility</td>
+                            <td>शत्रुता</td>
+                        </tr>
+                        <tr>
+                            <td>Impasse</td>
+                            <td>गतिरोध</td>
+                        </tr>
+                        <tr>
+                            <td>Penetrated</td>
+                            <td>भेदना</td>
+                        </tr>
+                        <tr>
+                            <td>Muster</td>
+                            <td>जुटाना</td>
+                        </tr>
+                        <tr>
+                            <td>Staggered</td>
+                            <td>लड़खड़ाना</td>
+                        </tr>
+                        <tr>
+                            <td>Assailant</td>
+                            <td>हमलावर</td>
+                        </tr>
+                        <tr>
+                            <td>Swaying</td>
+                            <td>झूमना</td>
+                        </tr>
+                        <tr>
+                            <td>Spluttering</td>
+                            <td>थूथना</td>
+                        </tr>
+                        <tr>
+                            <td>Frenzied</td>
+                            <td>उन्मत्त</td>
+                        </tr>
+                        <tr>
+                            <td>Exhaustion</td>
+                            <td>थकावट</td>
+                        </tr>
+                        <tr>
+                            <td>Tremendous</td>
+                            <td>जबरदस्त</td>
+                        </tr>
+                        <tr>
+                            <td>Rapid</td>
+                            <td>तेज</td>
+                        </tr>
+                        <tr>
+                            <td>Inspiration</td>
+                            <td>प्रेरणा</td>
+                        </tr>
+                        <tr>
+                            <td>Scowled</td>
+                            <td>तिरछी नजर से देखना</td>
+                        </tr>
+                        <tr>
+                            <td>Adversary</td>
+                            <td>प्रतिद्वंद्वी</td>
+                        </tr>
+                        <tr>
+                            <td>Ferocity</td>
+                            <td>क्रूरता</td>
+                        </tr>
+                        <tr>
+                            <td>Acquiesce</td>
+                            <td>मौन स्वीकृति देना</td>
+                        </tr>
+                        <tr>
+                            <td>Vigour</td>
+                            <td>शक्ति</td>
+                        </tr>
+                        <tr>
+                            <td>Treading water</td>
+                            <td>पानी में सीधा खड़े रहना</td>
+                        </tr>
+                        <tr>
+                            <td>Feat</td>
+                            <td>करतब</td>
+                        </tr>
+                        <tr>
+                            <td>Plunge</td>
+                            <td>डुबकी लगाना</td>
+                        </tr>
+                        <tr>
+                            <td>Conceded</td>
+                            <td>स्वीकार किया</td>
+                        </tr>
+                        <tr>
+                            <td>Seer</td>
+                            <td>सेर (पुराना माप)</td>
+                        </tr>
+                        <tr>
+                            <td>Unflinching</td>
+                            <td>न डगमगाने वाला</td>
+                        </tr>
+                        <tr>
+                            <td>Limpid</td>
+                            <td>स्पष्ट</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Fight" from the NCERT Class 8 English textbook "It So Happened". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>Download StudyScript App</p>
+            <p>The Fight by Ruskin Bond</p>
+        </div>
+    </div>
+</body>
+</html>
