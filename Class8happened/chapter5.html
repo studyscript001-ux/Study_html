@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess September - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #ffe6f2 0%, #e6f7ff 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #e84393 0%, #fd79a8 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #e84393;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #e84393;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #e84393;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #e84393;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #e84393;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #e84393;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+            
+            .vocab-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>Princess September</h1>
+            <p>NCERT Class 8 English - It So Happened</p>
+          <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part I</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. How many daughters did the royal couple have?</div>
+                <div class="answer">
+                    The royal couple had many daughters. The exact number is not mentioned, but they were named after the months of the year, suggesting there were at least twelve daughters.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Why were they named after the months of the year?</div>
+                <div class="answer">
+                    The Queen found it confusing to remember so many names, so the King decided to name them after the months of the year to make it easier.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. The King had a peculiar habit. What was it? Why is it called peculiar?</div>
+                <div class="answer">
+                    The King's peculiar habit was that instead of receiving gifts on his birthday, he gave them. This is called peculiar because usually, people receive gifts on their birthdays, not give them away.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. (i) What was Princess September's reaction to the loss of her parrot?<br>(ii) What was her mother's reaction to it?<br>(iii) What do the reactions indicate about the nature and temperament of each?</div>
+                <div class="answer">
+                    (i) Princess September burst into a flood of tears and cried so much that nothing could comfort her.<br>
+                    (ii) Her mother, the Queen, called it "stuff and nonsense" and sent Princess September to bed without any supper.<br>
+                    (iii) Princess September's reaction shows she was emotional and sensitive, while the Queen's reaction shows she was practical and somewhat unsympathetic.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. What pulled the Princess out of her gloom?</div>
+                <div class="answer">
+                    A little bird that hopped into her room and sang a beautiful song about the King's garden pulled the Princess out of her gloom.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 6. How did the Maids of Honour come to know that the Princess and the bird had become intimate friends?</div>
+                <div class="answer">
+                    The Maids of Honour saw the bird eating rice from the Princess's hand, bathing in her saucer, and singing beautifully for her, which showed they had become intimate friends.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 7. The new bird was full of new songs but the old parrots always repeated themselves. What did they say?</div>
+                <div class="answer">
+                    The old parrots could only say "God save the king" and "Pretty Polly" in no less than seven Oriental languages.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 8. What is the King's opinion about his Councillors? Why did he form that opinion?</div>
+                <div class="answer">
+                    The King thought his Councillors were like the parrots because they said the same thing in seven different ways and it never meant anything in any way they said it. He formed this opinion because he saw the similarity between the repetitive nature of both.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 9. (i) The eight Princesses made an offer to Princess September. What was it?<br>(ii) Why, in your view, did they do it?</div>
+                <div class="answer">
+                    (i) The eight Princesses offered to buy Princess September a lovely green and yellow parrot using their combined pocket money.<br>
+                    (ii) They likely did it out of jealousy, as they were envious of her special bird that could sing beautiful songs, while their parrots could only repeat the same phrases.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 10. What did the sisters advise the Princess to do about her bird?</div>
+                <div class="answer">
+                    The sisters advised Princess September to put the bird in a cage to ensure he wouldn't fly away and she could always be sure of him.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Comprehension Check - Part II</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. In the following sentence elaborate the parts given in bold. "Under the circumstances it was a very unfortunate remark for the bird to make."</div>
+                <div class="answer">
+                    The "circumstances" refer to Princess September's anxiety about the bird not returning and her sisters' advice to cage him. The "unfortunate remark" was when the bird mentioned that he almost didn't come back that night because he was enjoying the party at his father-in-law's. This remark increased September's fear of losing him, making her decide to cage him for safety.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. (i) What did Princess September do to ensure the safety of her pet?<br>(ii) How did the bird react to it?</div>
+                <div class="answer">
+                    (i) Princess September put the bird in a golden cage to ensure his safety from her mother's cats.<br>
+                    (ii) The bird was surprised at first but agreed to stay in the cage for that night. However, the next morning he wanted to be let out and became unhappy when he couldn't escape.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Why did the bird refuse to be taken out in her cage?</div>
+                <div class="answer">
+                    The bird refused to be taken out in the cage because things looked quite different when seen through the bars of a cage. He wanted to experience freedom and see the trees, lake, and rice fields without obstruction.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. (i) What persuaded Princess September to give the bird his freedom again?<br>(ii) How did the bird react to it?</div>
+                <div class="answer">
+                    (i) Princess September was persuaded to give the bird his freedom when she found him lying still at the bottom of the cage as if dead, and he told her he couldn't sing unless he was free and would die if he couldn't sing.<br>
+                    (ii) The bird was grateful and promised to always come back, sing beautiful songs for her, and never forget her. He flew away into the blue sky.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. Princess September kept her window open day and night.<br>(i) How did it help the bird?<br>(ii) How did it help the Princess herself?</div>
+                <div class="answer">
+                    (i) It helped the bird because he could come into her room whenever he felt inclined, giving him the freedom to come and go as he pleased.<br>
+                    (ii) It helped the Princess because the bird's visits and songs made her extremely beautiful, and she eventually married the King of Cambodia and lived happily.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 6. The eight sisters kept their windows shut. How did it affect them?</div>
+                <div class="answer">
+                    The eight sisters grew extremely ugly as well as disagreeable because they kept their windows shut. When it was time for them to marry, they were given away to the King's Councillors with a pound of tea and a Siamese cat.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-pencil-alt"></i> Exercise Questions</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Are the sisters unkind and cruel? Find evidence in the text to support your idea.</div>
+                <div class="answer">
+                    Yes, the sisters are unkind and cruel. Evidence from the text includes:
+                    <ul style="margin: 10px 0 10px 20px;">
+                        <li>They were vexed when the King praised September's bird over their parrots</li>
+                        <li>They gave September bad advice out of jealousy</li>
+                        <li>They mocked September when her bird flew away</li>
+                        <li>They advised September to be firm even if the bird died from being caged</li>
+                        <li>They said if the bird died, it would serve him right and September would be well rid of him</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Which, to you, is the most important idea in this story, and why?<br>(i) importance of music<br>(ii) value of freedom<br>(iii) beauty of nature</div>
+                <div class="answer">
+                    The most important idea in this story is the value of freedom. The story clearly shows that the bird couldn't sing or be happy when caged, even in a golden cage. True love means wanting what's best for the loved one, even if it means giving up our own desires. Princess September learned that putting the bird's happiness before her own eventually brought her greater happiness in return. The contrast between September's open window and her sisters' shut windows further emphasizes how freedom leads to beauty and happiness, while restriction leads to ugliness and discontent.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Hindi Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Hindi Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Siam</td>
+                            <td>थाईलैंड</td>
+                        </tr>
+                        <tr>
+                            <td>Handy</td>
+                            <td>तुरंत उपलब्ध</td>
+                        </tr>
+                        <tr>
+                            <td>Oriental</td>
+                            <td>पूर्वी</td>
+                        </tr>
+                        <tr>
+                            <td>Maids of Honour</td>
+                            <td>रानी की सहायिकाएँ</td>
+                        </tr>
+                        <tr>
+                            <td>Perch</td>
+                            <td>बैठने की जगह</td>
+                        </tr>
+                        <tr>
+                            <td>Vexed</td>
+                            <td>नाराज</td>
+                        </tr>
+                        <tr>
+                            <td>Glum</td>
+                            <td>उदास</td>
+                        </tr>
+                        <tr>
+                            <td>Put their heads together</td>
+                            <td>मिलकर सलाह करना</td>
+                        </tr>
+                        <tr>
+                            <td>Pop</td>
+                            <td>डालना</td>
+                        </tr>
+                        <tr>
+                            <td>Ominously</td>
+                            <td>अशुभ संकेत के साथ</td>
+                        </tr>
+                        <tr>
+                            <td>Snares</td>
+                            <td>जाल</td>
+                        </tr>
+                        <tr>
+                            <td>Alighted</td>
+                            <td>नीचे आना</td>
+                        </tr>
+                        <tr>
+                            <td>Prowling</td>
+                            <td>चुपके से घूमना</td>
+                        </tr>
+                        <tr>
+                            <td>Disagreeable</td>
+                            <td>अप्रिय</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "Princess September" from the NCERT Class 8 English textbook "It So Happened". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>Download StudyScript App</p>
+            <p>Princess September by Somerset Maugham</p>
+        </div>
+    </div>
+</body>
+</html>
