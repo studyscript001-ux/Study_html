@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>सुभाषितानि - अभ्यास (हल)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset and Font Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Alice Blue */
+            color: #333;
+            margin: 0;
+            padding: 15px 10px; /* Reduced body padding */
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4682B4; /* Steel Blue */
+            color: white;
+            padding: 20px 25px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        header p {
+            margin: 5px 0 0;
+            opacity: 0.9;
+        }
+
+        /* Content Area */
+        main {
+            padding: 25px 15px; /* Reduced side padding */
+        }
+
+        /* Question Card Styling */
+        .question-card {
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-left: 6px solid #5cacee; /* A brighter blue */
+            border-radius: 10px;
+            margin-bottom: 25px;
+            padding: 20px 15px; /* Reduced side padding */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+        .question-card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-3px);
+        }
+
+        /* Question and Answer Text */
+        .question-title {
+            font-weight: 600;
+            font-size: 1.3em;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .question-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+        }
+        .answer {
+            color: #34495e;
+        }
+        .answer p, .answer li {
+            margin-bottom: 10px;
+        }
+
+        /* Special Highlighting for Fill-in-the-blanks */
+        .fill-in {
+            font-weight: 600;
+            color: #d35400; /* Pumpkin color */
+            background-color: #fef5e7;
+            padding: 3px 8px;
+            border-radius: 5px;
+            border-bottom: 2px solid #f39c12; /* Orange */
+        }
+
+        /* Table Wrapper for Responsiveness */
+        .table-wrapper {
+            overflow-x: auto; /* Enables horizontal scroll if table is wider than card */
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            min-width: 400px; /* Prevents table content from wrapping too aggressively */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #eaf5ff;
+            color: #4682B4;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* List Styling */
+        ol, ul {
+            padding-left: 25px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>सुभाषितानि</h1>
+            <p>कक्षा 8 | संस्कृत (रुचिरा - तृतीयो भागः) | प्रथमः पाठः</p>
+        </header>
+
+        <main>
+
+            <!-- Question 1 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 1: 🗣️</h2>
+                <p class="question-text">पाठे दत्तानां पद्यानां सस्वरवाचनं कुरुत।</p>
+                <div class="answer">
+                    <p><strong>उत्तरम्:</strong> यह एक अभ्यास गतिविधि है। छात्रों से अपेक्षा है कि वे पाठ में दिए गए श्लोकों को शुद्ध उच्चारण के साथ सस्वर (गाकर) पढ़ें।</p>
+                </div>
+            </div>
+
+            <!-- Question 2 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 2: ✍️</h2>
+                <p class="question-text">श्लोकांशेषु रिक्तस्थानानि पूरयत-</p>
+                <div class="answer">
+                    <p>(क) समुद्रमासाद्य <span class="fill-in">भवन्त्यपेयाः</span>।</p>
+                    <p>(ख) <span class="fill-in">श्रुत्वा</span> वचः मधुरसूक्तरसं सृजन्ति।</p>
+                    <p>(ग) तद्भागधेयं <span class="fill-in">परमं</span> पशूनाम्।</p>
+                    <p>(घ) विद्याफलं <span class="fill-in">व्यसनिनः</span> कृपणस्य सौख्यम्।</p>
+                    <p>(ङ) पौरुषं विहाय यः <span class="fill-in">दैवमेव</span> अवलम्बते।</p>
+                    <p>(च) चिन्तनीया हि विपदाम् <span class="fill-in">आदावेव</span> प्रतिक्रियाः।</p>
+                </div>
+            </div>
+
+            <!-- Question 3 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 3: 📝</h2>
+                <p class="question-text">प्रश्नानाम् उत्तराणि एकपदेन लिखत-</p>
+                <div class="answer">
+                    <ol type="क">
+                        <li><strong>प्रश्नः:</strong> व्यसनिनः किं नश्यति? <br> <strong>उत्तरम्:</strong> विद्याफलम्</li>
+                        <li><strong>प्रश्नः:</strong> कस्य यशः नश्यति? <br> <strong>उत्तरम्:</strong> लुब्धस्य</li>
+                        <li><strong>प्रश्नः:</strong> मधुमक्षिका किं जनयति? <br> <strong>उत्तरम्:</strong> माधुर्यम्</li>
+                        <li><strong>प्रश्नः:</strong> मधुरसूक्तरसं के सृजन्ति? <br> <strong>उत्तरम्:</strong> सन्तः</li>
+                        <li><strong>प्रश्नः:</strong> अर्थिनः केभ्यः विमुखा न यान्ति? <br> <strong>उत्तरम्:</strong> महीरुहेभ्यः</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 4 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 4: 🔄</h2>
+                <p class="question-text">अधोलिखित-तद्भव शब्दानां कृते पाठात् चित्वा संस्कृतपदानि लिखत-</p>
+                <div class="answer table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>तद्भव शब्द (हिन्दी)</th>
+                                <th>संस्कृत पद (पाठ से)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>कंजूस</td>
+                                <td>कृपणः</td>
+                            </tr>
+                            <tr>
+                                <td>कड़वा</td>
+                                <td>कटुकम्</td>
+                            </tr>
+                            <tr>
+                                <td>पूँछ</td>
+                                <td>पुच्छः</td>
+                            </tr>
+                            <tr>
+                                <td>लोभी</td>
+                                <td>लुब्धः</td>
+                            </tr>
+                            <tr>
+                                <td>मधुमक्खी</td>
+                                <td>मधुमक्षिका</td>
+                            </tr>
+                            <tr>
+                                <td>तिनका</td>
+                                <td>तृणम्</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 5 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 5: 🔎</h2>
+                <p class="question-text">अधोलिखितेषु वाक्येषु कर्तृपदं क्रियापदं च चित्वा लिखत-</p>
+                <div class="answer table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>वाक्यानि</th>
+                                <th>कर्त्ता (Subject)</th>
+                                <th>क्रिया (Verb)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>(क) निर्गुणं प्राप्य भवन्ति दोषाः।</td>
+                                <td>दोषाः</td>
+                                <td>भवन्ति</td>
+                            </tr>
+                            <tr>
+                                <td>(ख) गुणज्ञेषु गुणाः भवन्ति।</td>
+                                <td>गुणाः</td>
+                                <td>भवन्ति</td>
+                            </tr>
+                            <tr>
+                                <td>(ग) मधुमक्षिका माधुर्यं जनयेत्।</td>
+                                <td>मधुमक्षिका</td>
+                                <td>जनयेत्</td>
+                            </tr>
+                            <tr>
+                                <td>(घ) पिशुनस्य मैत्री यशः नाशयति।</td>
+                                <td>मैत्री</td>
+                                <td>नाशयति</td>
+                            </tr>
+                            <tr>
+                                <td>(ङ) नद्यः समुद्रमासाद्य अपेयाः भवन्ति।</td>
+                                <td>नद्यः</td>
+                                <td>भवन्ति</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 6 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 6: ❓</h2>
+                <p class="question-text">रेखाङ्कितानि पदानि आधृत्य प्रश्ननिर्माणं कुरुत-</p>
+                <div class="answer">
+                    <ol type="क">
+                        <li><strong>वाक्यम्:</strong> <u>गुणाः</u> गुणज्ञेषु गुणाः भवन्ति। <br> <strong>प्रश्नः:</strong> <strong>के</strong> गुणज्ञेषु गुणाः भवन्ति?</li>
+                        <li><strong>वाक्यम्:</strong> <u>नद्यः</u> सुस्वादुतोयाः भवन्ति। <br> <strong>प्रश्नः:</strong> <strong>काः</strong> सुस्वादुतोयाः भवन्ति?</li>
+                        <li><strong>वाक्यम्:</strong> <u>लुब्धस्य</u> यशः नश्यति। <br> <strong>प्रश्नः:</strong> <strong>कस्य</strong> यशः नश्यति?</li>
+                        <li><strong>वाक्यम्:</strong> <u>मधुमक्षिका</u> माधुर्यमेव जनयति। <br> <strong>प्रश्नः:</strong> <strong>का</strong> माधुर्यमेव जनयति?</li>
+                        <li><strong>वाक्यम्:</strong> तस्य <u>मूर्ध्नि</u> तिष्ठन्ति वायसाः। <br> <strong>प्रश्नः:</strong> तस्य <strong>कुत्र/कस्मिन्</strong> तिष्ठन्ति वायसाः?</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 7 Card -->
+            <div class="question-card">
+                <h2 class="question-title">प्रश्नः 7: ✨</h2>
+                <p class="question-text">उदाहरणानुसारं पदानि पृथक् कुरुत-</p>
+                <div class="answer">
+                    <ul>
+                        <li><strong>समुद्रमासाद्य</strong> &rarr; समुद्रम् + आसाद्य (उदाहरण)</li>
+                        <li><strong>माधुर्यमेव</strong> &rarr; माधुर्यम् + एव</li>
+                        <li><strong>अल्पमेव</strong> &rarr; अल्पम् + एव</li>
+                        <li><strong>सर्वमेव</strong> &rarr; सर्वम् + एव</li>
+                        <li><strong>दैवमेव</strong> &rarr; दैवम् + एव</li>
+                        <li><strong>महात्मनामुक्तिः</strong> &rarr; महात्मनाम् + उक्तिः</li>
+                        <li><strong>विपदामादावेव</strong> &rarr; विपदाम् + आदौ + एव</li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
+
