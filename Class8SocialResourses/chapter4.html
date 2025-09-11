@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 4: Industries - Exercises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4a90e2;
+            --secondary-color: #f5a623;
+            --background-color: #f0f4f8;
+            --card-bg-color: #ffffff;
+            --text-color: #333;
+            --header-color: #2c3e50;
+            --answer-bg: #e8f4fd;
+            --report-header-bg: #4a90e2;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 8px; /* Reduced side margin */
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-color), #357ABD);
+            color: white;
+            padding: 20px 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .qa-card {
+            background-color: var(--card-bg-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            border-left: 5px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            font-size: 1.25em;
+            font-weight: 600;
+            color: var(--header-color);
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            background-color: var(--answer-bg);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .answer p {
+            margin: 0 0 10px;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: var(--header-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        /* Universal class for scrollable table container */
+        .table-container {
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+        }
+        
+        .distinction-table {
+            width: 100%;
+            min-width: 500px; /* Force scroll on smaller screens */
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        .distinction-table th, .distinction-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .distinction-table th {
+            background-color: var(--answer-bg);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .examples-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .example-item {
+            background-color: var(--answer-bg);
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .example-item strong {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-color);
+        }
+        
+        .report-section {
+            background-color: var(--card-bg-color);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .report-table {
+            width: 100%;
+            min-width: 600px; /* Ensure table has a minimum width to demonstrate scrolling */
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .report-table th, .report-table td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+            white-space: nowrap; /* Prevent text wrapping in cells */
+        }
+
+        .report-table thead {
+            background-color: var(--report-header-bg);
+            color: white;
+            font-weight: 600;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em;
+            }
+            header p {
+                font-size: 1em;
+            }
+            .container {
+                padding: 10px;
+            }
+            .qa-card, .report-section {
+                padding: 20px;
+            }
+            .question {
+                font-size: 1.1em;
+            }
+        }
+        
+        @media (min-width: 600px) {
+            .examples-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Chapter 4 Industries</h1>
+            <p>Class 8th NCERT R&D</p>
+          <p>Made by studyscript.netlify.app</p>
+        </header>
+
+        <h2 class="section-title">1. Answer the following questions.</h2>
+
+        <!-- Question 1 (i) -->
+        <div class="qa-card">
+            <p class="question">(i) What is meant by the term 'industry'?</p>
+            <div class="answer">
+                <p>An industry refers to an economic activity that is concerned with:</p>
+                <ul>
+                    <li><strong>Production of goods</strong> (e.g., iron and steel industry).</li>
+                    <li><strong>Extraction of minerals</strong> (e.g., coal mining industry).</li>
+                    <li><strong>Provision of services</strong> (e.g., tourism industry).</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Question 1 (ii) -->
+        <div class="qa-card">
+            <p class="question">(ii) Which are the main factors which influence the location of an industry?</p>
+            <div class="answer">
+                <p>The main factors that influence the location of an industry are the availability of:</p>
+                <ul>
+                    <li>Raw material</li>
+                    <li>Land</li>
+                    <li>Water</li>
+                    <li>Labour</li>
+                    <li>Power</li>
+                    <li>Capital</li>
+                    <li>Transport</li>
+                    <li>Market</li>
+                </ul>
+                <p>Industries are ideally situated where some or all of these factors are easily available.</p>
+            </div>
+        </div>
+
+        <!-- Question 1 (iii) -->
+        <div class="qa-card">
+            <p class="question">(iii) Which industry is often referred to as the backbone of modern industry and why?</p>
+            <div class="answer">
+                <p>The <strong>Iron and Steel Industry</strong> is often referred to as the backbone of modern industry.</p>
+                <p><strong>Reason:</strong> This is because almost everything we use is either made of iron or steel, or has been made with tools and machinery of these metals. The products from the iron and steel industry are used as raw materials for many other industries. For example, ships, trains, trucks, autos, machinery, and even safety pins are made from steel.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">2. Distinguish between the following.</h2>
+
+        <!-- Question 2 (i) -->
+        <div class="qa-card">
+            <p class="question">(i) Agro-based and mineral-based industry</p>
+            <div class="answer">
+                <div class="table-container">
+                    <table class="distinction-table">
+                        <thead>
+                            <tr>
+                                <th>Basis</th>
+                                <th>Agro-based Industry</th>
+                                <th>Mineral-based Industry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Raw Material</strong></td>
+                                <td>Uses plant and animal-based products as raw materials.</td>
+                                <td>Uses mineral ores as raw materials.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td>Food processing, cotton textile, dairy products, leather industries.</td>
+                                <td>Iron and steel, heavy machinery, building materials.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Question 2 (ii) -->
+        <div class="qa-card">
+            <p class="question">(ii) Public sector and joint sector industry</p>
+            <div class="answer">
+                <div class="table-container">
+                    <table class="distinction-table">
+                        <thead>
+                            <tr>
+                                <th>Basis</th>
+                                <th>Public Sector Industry</th>
+                                <th>Joint Sector Industry</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Ownership</strong></td>
+                                <td>Owned and operated by the government.</td>
+                                <td>Owned and operated by the state and individuals (or a group of individuals) together.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Examples</strong></td>
+                                <td>Hindustan Aeronautics Limited (HAL), Steel Authority of India Limited (SAIL).</td>
+                                <td>Maruti Udyog Limited.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">3. Give two examples of the following.</h2>
+        
+        <div class="qa-card">
+            <div class="examples-grid">
+                <div class="example-item">
+                    <strong>(i) Raw Materials:</strong>
+                    <p>Cotton and Iron Ore</p>
+                </div>
+                <div class="example-item">
+                    <strong>(ii) End products:</strong>
+                    <p>A Shirt and a Car</p>
+                </div>
+                <div class="example-item">
+                    <strong>(iii) Tertiary Activities:</strong>
+                    <p>Banking and Tourism</p>
+                </div>
+                <div class="example-item">
+                    <strong>(iv) Agro-based Industries:</strong>
+                    <p>Cotton Textile Industry and Dairy Products</p>
+                </div>
+                <div class="example-item">
+                    <strong>(v) Cottage Industries:</strong>
+                    <p>Pottery and Basket Weaving</p>
+                </div>
+                <div class="example-item">
+                    <strong>(vi) Co-operatives:</strong>
+                    <p>Anand Milk Union Limited (AMUL) and Sudha Dairy</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="report-section">
+            <h2 class="section-title">4. Activity Report</h2>
+            <p>Report on Factors Affecting the Location of a Proposed Iron and Steel Plant on Developen Dweep.</p>
+            <div class="table-container">
+                <table class="report-table">
+                    <thead>
+                        <tr>
+                            <th>Resource</th>
+                            <th>Distance from X (km)</th>
+                            <th>Distance from Y (km)</th>
+                            <th>Weighting* (1-10)</th>
+                            <th>Score for Site X (Dist × Wt)</th>
+                            <th>Score for Site Y (Dist × Wt)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Iron ore</td>
+                            <td>20</td>
+                            <td>120</td>
+                            <td>10</td>
+                            <td>200</td>
+                            <td>1200</td>
+                        </tr>
+                        <tr>
+                            <td>Coal</td>
+                            <td>100</td>
+                            <td>40</td>
+                            <td>8</td>
+                            <td>800</td>
+                            <td>320</td>
+                        </tr>
+                        <tr>
+                            <td>Limestone</td>
+                            <td>30</td>
+                            <td>30</td>
+                            <td>3</td>
+                            <td>90</td>
+                            <td>90</td>
+                        </tr>
+                         <tr>
+                            <td>Water</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>25</td>
+                            <td>25</td>
+                        </tr>
+                         <tr>
+                            <td>Chief market</td>
+                            <td>150</td>
+                            <td>60</td>
+                            <td>7</td>
+                            <td>1050</td>
+                            <td>420</td>
+                        </tr>
+                         <tr>
+                            <td>Labour supply</td>
+                            <td>30</td>
+                            <td>50</td>
+                            <td>6</td>
+                            <td>180</td>
+                            <td>300</td>
+                        </tr>
+                         <tr style="font-weight: bold; background-color: #f0f4f8;">
+                            <td><strong>Total =</strong></td>
+                            <td colspan="3"></td>
+                            <td><strong>2345</strong></td>
+                            <td><strong>2355</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             <p style="margin-top: 15px; font-size: 0.9em; text-align: center;"><em>*Note: The larger the pull of the factor, the higher the weighting. The site with the lowest total is the most satisfactory. In this example, <strong>Site X</strong> is the better choice.</em></p>
+        </div>
+
+
+    </div>
+
+</body>
+</html>
+
+
