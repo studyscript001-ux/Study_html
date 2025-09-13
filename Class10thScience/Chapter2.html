@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>अम्ल, क्षारक एवं लवण - अभ्यास</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2E8B57 0%, #4CAF50 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #4caf50;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #37474f;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>अम्ल, क्षारक एवं लवण</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>कोई विलयन लाल लिटमस को नीला कर देता है, इसका pH संभवतः क्या होगा?</span>
+            </div>
+            <div class="answer">उत्तर: (d) 10<br>व्याख्या: लाल लिटमस को नीला करने वाला विलयन क्षारकीय होता है। क्षारकीय विलयन का pH मान 7 से अधिक होता है। दिए गए विकल्पों में 10 ही 7 से अधिक है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>कोई विलयन अंडे के पिसे हुए कवच से अभिक्रिया कर एक गैस उत्पन्न करता है, जो चूने के पानी को दूधिया कर देती है। इस विलयन में क्या होगा?</span>
+            </div>
+            <div class="answer">उत्तर: (b) HCl<br>व्याख्या: अंडे का कवच कैल्शियम कार्बोनेट से बना होता है। अम्ल के साथ अभिक्रिया करने पर यह कार्बन डाइऑक्साइड गैस उत्पन्न करता है जो चूने के पानी को दूधिया कर देती है। HCl एक अम्ल है जो यह अभिक्रिया कर सकता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>NaOH का 10 mL विलयन, HCl के 8 mL विलयन से पूर्णतः उदासीन हो जाता है। यदि हम NaOH के उसी विलयन का 20 mL लें तो इसे उदासीन करने के लिए HCl के उसी विलयन की कितनी मात्रा की आवश्यकता होगी?</span>
+            </div>
+            <div class="answer">उत्तर: (d) 16 mL<br>व्याख्या: उदासीनीकरण अभिक्रिया में अम्ल और क्षारक की मात्राएँ समानुपाती होती हैं। 10 mL NaOH के लिए 8 mL HCl चाहिए, तो 20 mL NaOH के लिए 16 mL HCl की आवश्यकता होगी।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>अपच का उपचार करने के लिए निम्नलिखित में से किस औषधि का उपयोग होता है?</span>
+            </div>
+            <div class="answer">उत्तर: (c) एेन्टैसिड<br>व्याख्या: एेन्टैसिड (Antacid) एक क्षारकीय पदार्थ है जो पेट में अधिक अम्ल की मात्रा को उदासीन करके अपच का उपचार करता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>निम्नलिखित अभिक्रिया के लिए पहले शब्द-समीकरण लिखिए तथा उसके बाद संतुलित समीकरण लिखिए—</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) जिंक + तनु सल्फ्यूरिक अम्ल → जिंक सल्फेट + हाइड्रोजन<br>
+            <div class="chemical-equation">Zn + H₂SO₄ → ZnSO₄ + H₂</div>
+            (b) मैग्नीशियम + तनु हाइड्रोक्लोरिक अम्ल → मैग्नीशियम क्लोराइड + हाइड्रोजन<br>
+            <div class="chemical-equation">Mg + 2HCl → MgCl₂ + H₂</div>
+            (c) एल्युमिनियम + तनु सल्फ्यूरिक अम्ल → एल्युमिनियम सल्फेट + हाइड्रोजन<br>
+            <div class="chemical-equation">2Al + 3H₂SO₄ → Al₂(SO₄)₃ + 3H₂</div>
+            (d) आयरन + तनु हाइड्रोक्लोरिक अम्ल → आयरन क्लोराइड + हाइड्रोजन<br>
+            <div class="chemical-equation">Fe + 2HCl → FeCl₂ + H₂</div></div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>एल्कोहल एवं ग्लूकोज जैसे यौगिकों में भी हाइड्रोजन होते हैं, लेकिन इनका वर्गीकरण अम्ल की तरह नहीं होता है। एक क्रियाकलाप द्वारा इसे साबित कीजिए।</span>
+            </div>
+            <div class="answer">उत्तर: एल्कोहल और ग्लूकोज के विलयनों में नीला लिटमस पेपर डालने पर उसका रंग नहीं बदलता, जबकि अम्ल लाल लिटमस पेपर को नीला कर देते हैं। इसके अलावा, इन विलयनों में विद्युत का चालन नहीं होता, जो दर्शाता है कि ये H⁺ आयन उत्पन्न नहीं करते। इस प्रकार ये साबित होता है कि एल्कोहल और ग्लूकोज अम्ल नहीं हैं।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>आसवित जल विद्युत का चालक क्यों नहीं होता, जबकि वर्षा जल होता है?</span>
+            </div>
+            <div class="answer">उत्तर: आसवित जल शुद्ध होता है और इसमें आयन नहीं होते, जबकि वर्षा जल में विभिन्न लवण घुले होते हैं जो आयनों का निर्माण करते हैं। विद्युत चालन के लिए आयनों की आवश्यकता होती है, इसलिए वर्षा जल विद्युत का चालन करता है लेकिन आसवित जल नहीं।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>जल की अनुपस्थिति में अम्ल का व्यवहार अम्लीय क्यों नहीं होता है?</span>
+            </div>
+            <div class="answer">उत्तर: अम्लों का अम्लीय व्यवहार H⁺ आयनों के कारण होता है। जल की अनुपस्थिति में अम्ल H⁺ आयन उत्पन्न नहीं कर पाते, इसलिए उनका व्यवहार अम्लीय नहीं होता। जल अम्लों के आयनन में सहायक होता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>पाँच विलयनों A, B, C, D, व E की जब सार्वत्रिक सूचक से जाँच की जाती है तो pH के मान क्रमशः 4, 1, 11, 7 एवं 9 प्राप्त होते हैं। कौन सा विलयन—</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) उदासीन है? - D (pH = 7)<br>
+            (b) प्रबल क्षारीय है? - C (pH = 11)<br>
+            (c) प्रबल अम्लीय है? - B (pH = 1)<br>
+            (d) दुर्बल अम्लीय है? - A (pH = 4)<br>
+            (e) दुर्बल क्षारीय है? - E (pH = 9)<br>
+            H⁺ आयन सांद्रता का आरोही क्रम: C (pH 11) < E (pH 9) < D (pH 7) < A (pH 4) < B (pH 1)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>परखनली 'A' एवं 'B' में समान लंबाई की मैग्नीशियम की पट्टी लीजिए। परखनली 'A' में हाइड्रोक्लोरिक अम्ल (HCl) तथा परखनली 'B' में एसिटिक अम्ल (CH₃COOH) डालिए। दोनों अम्लों की मात्रा तथा सांद्रता समान हैं। किस परखनली में अधिक तेजी से बुदबुदाहट होगी तथा क्यों?</span>
+            </div>
+            <div class="answer">उत्तर: परखनली 'A' (HCl वाली) में अधिक तेजी से बुदबुदाहट होगी क्योंकि HCl एक प्रबल अम्ल है जो एसिटिक अम्ल (दुर्बल अम्ल) की तुलना में अधिक H⁺ आयन उत्पन्न करता है, जिससे अभिक्रिया तेजी से होती है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>ताजे दूध के pH का मान 6 होता है। दही बन जाने पर इसके pH के मान में क्या परिवर्तन होगा? अपना उत्तर समझाइए।</span>
+            </div>
+            <div class="answer">उत्तर: दही बनने पर दूध का pH मान घटकर 6 से कम हो जाएगा क्योंकि दही बनने की प्रक्रिया में लैक्टिक अम्ल बनता है जो दूध की अम्लता बढ़ाता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>एक ग्वाला ताजे दूध में थोड़ा बेकिंग सोडा मिलाता है। (a) ताजा दूध के pH के मान को 6 से बदलकर थोड़ा क्षारीय क्यों बना देता है? (b) इस दूध को दही बनने में अधिक समय क्यों लगता है?</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) बेकिंग सोडा (सोडियम हाइड्रोजनकार्बोनेट) एक क्षारकीय पदार्थ है जो दूध की अम्लता को उदासीन करके उसे थोड़ा क्षारीय बना देता है।<br>
+            (b) दही बनाने वाले जीवाणु अम्लीय माध्यम में तेजी से कार्य करते हैं। क्षारीय माध्यम में इनकी क्रिया धीमी हो जाती है, इसलिए दही बनने में अधिक समय लगता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>प्लास्टर ऑफ पेरिस को आर्द्र-रोधी बर्तन में क्यों रखा जाना चाहिए। इसकी व्याख्या कीजिए।</span>
+            </div>
+            <div class="answer">उत्तर: प्लास्टर ऑफ पेरिस जल के साथ शीघ्रता से अभिक्रिया कर कठोर ठोस पदार्थ (जिप्सम) बनाता है। नमी की उपस्थिति में यह क्रिया स्वतः हो सकती है जिससे प्लास्टर ऑफ पेरिस अनुपयोगी हो जाता है। इसलिए इसे आर्द्र-रोधी बर्तन में रखना चाहिए।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>उदासीनीकरण अभिक्रिया क्या है? दो उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">उत्तर: उदासीनीकरण अभिक्रिया वह रासायनिक अभिक्रिया है जिसमें अम्ल और क्षारक आपस में अभिक्रिया करके लवण और जल बनाते हैं।<br>
+            उदाहरण:<br>
+            1. NaOH + HCl → NaCl + H₂O<br>
+            2. Ca(OH)₂ + H₂SO₄ → CaSO₄ + 2H₂O</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>धोने का सोडा एवं बेकिंग सोडा के दो-दो प्रमुख उपयोग बताइए।</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            <strong>धोने का सोडा (सोडियम कार्बोनेट):</strong><br>
+            1. जल की स्थायी कठोरता दूर करने में<br>
+            2. कागज, साबुन और काँच उद्योग में<br><br>
+            <strong>बेकिंग सोडा (सोडियम हाइड्रोजनकार्बोनेट):</strong><br>
+            1. खाना पकाने में खमीर उठाने के लिए<br>
+            2. अम्लता (एसिडिटी) दूर करने के लिए एंटासिड के रूप में</div>
+        </div>
+
+    </div>
+</body>
+</html>
