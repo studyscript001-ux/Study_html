@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>रासायनिक अभिक्रियाएँ एवं समीकरण - अभ्यास</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2E8B57 0%, #4CAF50 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #4caf50;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #37474f;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>रासायनिक अभिक्रियाएँ एवं समीकरण</h1>
+      <p>Made by studyscript.netlify.app</p>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>नीचे दी गई अभिक्रिया के संबंध में कौन सा कथन असत्य है?<br>2PbO(s) + C(s) → 2Pb(s) + CO₂(g)</span>
+            </div>
+            <div class="answer">उत्तर: (ii) (a) एवं (c)<br>व्याख्या: (a) सीसा अपचयित हो रहा है - यह सत्य है। (c) कार्बन उपचयित हो रहा है - यह भी सत्य है। लेकिन (b) कार्बन डाइऑक्साइड उपचयित हो रहा है - यह असत्य है क्योंकि CO₂ में उपचयन नहीं हो सकता।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>Fe₂O₃ + 2Al → Al₂O₃ + 2Fe ऊपर दी गई अभिक्रिया किस प्रकार की है?</span>
+            </div>
+            <div class="answer">उत्तर: (d) विस्थापन अभिक्रिया<br>व्याख्या: इसमें ऐलुमिनियम, आयरन को उसके यौगिक (Fe₂O₃) से विस्थापित कर रहा है, इसलिए यह विस्थापन अभिक्रिया है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>लौह-चूर्ण पर तनु हाइड्रोक्लोरिक अम्ल डालने से क्या होता है? सही उत्तर पर निशान लगाइए।</span>
+            </div>
+            <div class="answer">उत्तर: (a) हाइड्रोजन गैस एवं आयरन क्लोराइड बनता है।<br>व्याख्या: लोहा हाइड्रोक्लोरिक अम्ल के साथ अभिक्रिया करके फेरस क्लोराइड और हाइड्रोजन गैस देता है:<br>
+            <div class="chemical-equation">Fe(s) + 2HCl(aq) → FeCl₂(aq) + H₂(g)</div></div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>संतुलित रासायनिक समीकरण क्या है? रासायनिक समीकरण को संतुलित करना क्यों आवश्यक है?</span>
+            </div>
+            <div class="answer">उत्तर: संतुलित रासायनिक समीकरण वह समीकरण है जिसमें अभिकारकों और उत्पादों में प्रत्येक तत्व के परमाणुओं की संख्या समान होती है। इसे संतुलित करना आवश्यक है क्योंकि रासायनिक अभिक्रिया में द्रव्यमान के संरक्षण का नियम लागू होता है - न तो परमाणुओं का सृजन होता है और न ही विनाश।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>निम्न कथनों को रासायनिक समीकरण के रूप में परिवर्तित कर उन्हें संतुलित कीजिए।</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) N₂(g) + 3H₂(g) → 2NH₃(g)<br>
+            (b) 2H₂S(g) + 3O₂(g) → 2H₂O(l) + 2SO₂(g)<br>
+            (c) 3BaCl₂(aq) + Al₂(SO₄)₃(aq) → 3BaSO₄(s) + 2AlCl₃(aq)<br>
+            (d) 2K(s) + 2H₂O(l) → 2KOH(aq) + H₂(g)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>निम्न रासायनिक समीकरणों को संतुलित कीजिए—</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) 2HNO₃ + Ca(OH)₂ → Ca(NO₃)₂ + 2H₂O<br>
+            (b) 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O<br>
+            (c) NaCl + AgNO₃ → AgCl + NaNO₃ (पहले से संतुलित)<br>
+            (d) BaCl₂ + H₂SO₄ → BaSO₄ + 2HCl</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>निम्न अभिक्रियाओं के लिए संतुलित रासायनिक समीकरण लिखिए—</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) Ca(OH)₂(aq) + CO₂(g) → CaCO₃(s) + H₂O(l)<br>
+            (b) Zn(s) + 2AgNO₃(aq) → Zn(NO₃)₂(aq) + 2Ag(s)<br>
+            (c) 2Al(s) + 3CuCl₂(aq) → 2AlCl₃(aq) + 3Cu(s)<br>
+            (d) BaCl₂(aq) + K₂SO₄(aq) → BaSO₄(s) + 2KCl(aq)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>निम्न अभिक्रियाओं के लिए संतुलित रासायनिक समीकरण लिखिए एवं प्रत्येक अभिक्रिया का प्रकार बताइए।</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) 2KBr(aq) + BaI₂(aq) → 2KI(aq) + BaBr₂(s) - द्विविस्थापन अभिक्रिया<br>
+            (b) ZnCO₃(s) → ZnO(s) + CO₂(g) - वियोजन अभिक्रिया<br>
+            (c) H₂(g) + Cl₂(g) → 2HCl(g) - संयोजन अभिक्रिया<br>
+            (d) Mg(s) + 2HCl(aq) → MgCl₂(aq) + H₂(g) - विस्थापन अभिक्रिया</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>ऊष्माक्षेपी एवं ऊष्माशोषी अभिक्रिया का क्या अर्थ है? उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">उत्तर: ऊष्माक्षेपी अभिक्रिया वह अभिक्रिया है जिसमें ऊष्मा निकलती है, जैसे - कोयले का दहन। ऊष्माशोषी अभिक्रिया वह अभिक्रिया है जिसमें ऊष्मा अवशोषित होती है, जैसे - फेरस सल्फेट का वियोजन।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>श्वसन को ऊष्माक्षेपी अभिक्रिया क्यों कहते हैं? वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">उत्तर: श्वसन को ऊष्माक्षेपी अभिक्रिया कहते हैं क्योंकि इसमें ग्लूकोज का ऑक्सीजन के साथ अपघटन होता है जिससे कार्बन डाइऑक्साइड, जल और ऊर्जा (ऊष्मा) उत्पन्न होती है:<br>
+            <div class="chemical-equation">C₆H₁₂O₆(aq) + 6O₂(aq) → 6CO₂(aq) + 6H₂O(l) + ऊर्जा</div></div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>वियोजन अभिक्रिया को संयोजन अभिक्रिया के विपरीत क्यों कहा जाता है? इन अभिक्रियाओं के लिए समीकरण लिखिए।</span>
+            </div>
+            <div class="answer">उत्तर: वियोजन अभिक्रिया में एक पदार्थ टूटकर दो या अधिक पदार्थ बनाता है, जबकि संयोजन अभिक्रिया में दो या अधिक पदार्थ मिलकर एक पदार्थ बनाते हैं।<br>
+            वियोजन: CaCO₃(s) → CaO(s) + CO₂(g)<br>
+            संयोजन: 2H₂(g) + O₂(g) → 2H₂O(l)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>उन वियोजन अभिक्रियाओं के एक-एक समीकरण लिखिए, जिनमें ऊष्मा, प्रकाश एवं विद्युत के रूप में ऊर्जा प्रदान की जाती है।</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            ऊष्मा: 2FeSO₄(s) → Fe₂O₃(s) + SO₂(g) + SO₃(g)<br>
+            प्रकाश: 2AgCl(s) → 2Ag(s) + Cl₂(g)<br>
+            विद्युत: 2H₂O(l) → 2H₂(g) + O₂(g) (विद्युत अपघटन)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>विस्थापन एवं द्विविस्थापन अभिक्रियाओं में क्या अंतर है? इन अभिक्रियाओं के समीकरण लिखिए।</span>
+            </div>
+            <div class="answer">उत्तर: विस्थापन अभिक्रिया में एक अधिक क्रियाशील तत्व कम क्रियाशील तत्व को उसके यौगिक से विस्थापित कर देता है, जबकि द्विविस्थापन अभिक्रिया में दो यौगिकों के बीच आयनों का आदान-प्रदान होता है।<br>
+            विस्थापन: Zn(s) + CuSO₄(aq) → ZnSO₄(aq) + Cu(s)<br>
+            द्विविस्थापन: Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>सिल्वर के शोधन में, सिल्वर नाइट्रेट के विलयन से सिल्वर प्राप्त करने के लिए कॉपर धातु द्वारा विस्थापन किया जाता है। इस प्रक्रिया के लिए अभिक्रिया लिखिए।</span>
+            </div>
+            <div class="answer">उत्तर: 2AgNO₃(aq) + Cu(s) → Cu(NO₃)₂(aq) + 2Ag(s)<br>व्याख्या: कॉपर, सिल्वर से अधिक क्रियाशील है, इसलिए यह सिल्वर को उसके नाइट्रेट विलयन से विस्थापित कर देता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>अवक्षेपण अभिक्रिया से आप क्या समझते हैं? उदाहरण देकर समझाइए।</span>
+            </div>
+            <div class="answer">उत्तर: अवक्षेपण अभिक्रिया वह अभिक्रिया है जिसमें दो विलयनों की अभिक्रिया से एक अविलेय पदार्थ (अवक्षेप) बनता है। उदाहरण: सोडियम सल्फेट और बेरियम क्लोराइड की अभिक्रिया से बेरियम सल्फेट का श्वेत अवक्षेप बनता है:<br>
+            <div class="chemical-equation">Na₂SO₄(aq) + BaCl₂(aq) → BaSO₄(s) + 2NaCl(aq)</div></div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>ऑक्सीजन के योग या ह्रास के आधार पर निम्न पदों की व्याख्या कीजिए। प्रत्येक के लिए दो उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) उपचयन: ऑक्सीजन का योग या हाइड्रोजन का ह्रास। उदाहरण: 2Cu + O₂ → 2CuO; 2H₂S + O₂ → 2S + 2H₂O<br>
+            (b) अपचयन: ऑक्सीजन का ह्रास या हाइड्रोजन का योग। उदाहरण: CuO + H₂ → Cu + H₂O; WO₃ + 3H₂ → W + 3H₂O</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">17</span>
+                <span>एक भूरे रंग का चमकदार तत्व 'X' को वायु की उपस्थिति में गर्म करने पर वह काले रंग का हो जाता है। इस तत्व 'X' एवं उस काले रंग के यौगिक का नाम बताइए।</span>
+            </div>
+            <div class="answer">उत्तर: तत्व 'X' ताँबा (Cu) है और काले रंग का यौगिक कॉपर ऑक्साइड (CuO) है।<br>
+            <div class="chemical-equation">2Cu + O₂ → 2CuO</div>(ताँबे का भूरा चमकदार रंग) (काला पदार्थ)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">18</span>
+                <span>लोहे की वस्तुओं को हम पेंट क्यों करते हैं?</span>
+            </div>
+            <div class="answer">उत्तर: लोहे की वस्तुओं पर पेंट करने से वे वायु और नमी के संपर्क में नहीं आतीं, जिससे संक्षारण (जंग लगना) रोका जा सकता है। पेंट एक सुरक्षात्मक परत का काम करता है।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">19</span>
+                <span>तेल एवं वसायुक्त खाद्य पदार्थों को नाइट्रोजन से प्रभावित क्यों किया जाता है?</span>
+            </div>
+            <div class="answer">उत्तर: तेल और वसायुक्त खाद्य पदार्थों को नाइट्रोजन से युक्त करने से उनका वायुमंडलीय ऑक्सीजन के साथ संपर्क टूट जाता है, जिससे उपचयन (विकृतगंधिता) रुक जाता है और खाद्य पदार्थ लंबे समय तक खराब नहीं होते।</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">20</span>
+                <span>निम्नलिखित पदों का वर्णन कीजिए तथा प्रत्येक का एक-एक उदाहरण दीजिए—</span>
+            </div>
+            <div class="answer">उत्तर:<br>
+            (a) संक्षारण: धातुओं का वायु, नमी या अम्लों के संपर्क में आकर धीरे-धीरे नष्ट होना, संक्षारण कहलाता है।<br> उदाहरण: लोहे पर जंग लगना (4Fe + 3O₂ + xH₂O → 2Fe₂O₃.xH₂O)<br>
+            (b) विकृतगंधिता: तेल और वसायुक्त खाद्य पदार्थों के उपचयन से उनके स्वाद और गंध का खराब होना, विकृतगंधिता कहलाता है।<br> उदाहरण: रखा हुआ चिप्स या नमकीन का स्वाद खराब होना।</div>
+        </div>
+
+    </div>
+</body>
+</html>
