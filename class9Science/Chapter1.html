@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>हमारे आस-पास के पदार्थ - अभ्यास</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2E8B57 0%, #4CAF50 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #4caf50;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #37474f;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>हमारे आस-पास के पदार्थ  अभ्यास प्रश्नोत्तर</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>निम्नलिखित तापमानों को सेल्सियस इकाई में परिवर्तित करें:<br>(a) 300 K<br>(b) 573 K</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            (a) 300 K = 300 - 273 = 27°C<br>
+            (b) 573 K = 573 - 273 = 300°C<br>
+            व्याख्या: केल्विन से सेल्सियस में परिवर्तन के लिए सूत्र: °C = K - 273 का उपयोग किया जाता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>निम्नलिखित तापमानों को केल्विन इकाई में परिवर्तित करें:<br>(a) 25°C<br>(b) 373°C</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            (a) 25°C = 25 + 273 = 298 K<br>
+            (b) 373°C = 373 + 273 = 646 K<br>
+            व्याख्या: सेल्सियस से केल्विन में परिवर्तन के लिए सूत्र: K = °C + 273 का उपयोग किया जाता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>निम्नलिखित अवलोकनों के कारण लिखें:<br>(a) नैफ्थलीन को रखा छोड़ने पर यह समय के साथ कोई ठोस पदार्थ छोड़े बिना अदृश्य हो जाती है।<br>(b) हमें इत्र की गंध बहुत दूर बैठे हुए भी प्राप्त हो जाती है।</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            (a) नैफ्थलीन ऊर्ध्वपातन की प्रक्रिया से गुजरती है, जिसमें यह बिना द्रव में बदले सीधे ठोस से गैसीय अवस्था में परिवर्तित हो जाती है।<br>
+            (b) इत्र के कणों में गतिज ऊर्जा होती है और वे वायु के कणों के साथ मिलकर विसरण द्वारा हर तरफ फैल जाते हैं, इसलिए हमें दूर बैठे भी इत्र की गंध मिल जाती है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>निम्नलिखित पदार्थों को उनके कणों के बीच बढ़ते हुए आकर्षण बल के अनुसार व्यवस्थित करें:<br>(a) पानी<br>(b) चीनी<br>(c) ऑक्सीजन</span>
+            </div>
+            <div class="answer">उत्तर: ऑक्सीजन < पानी < चीनी<br>
+            व्याख्या: ऑक्सीजन गैस है जिसमें कणों के बीच आकर्षण बल सबसे कम होता है। पानी द्रव है जिसमें आकर्षण बल गैस से अधिक但 ठोस से कम होता है। चीनी ठोस है जिसमें कणों के बीच आकर्षण बल सबसे अधिक होता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>निम्नलिखित तापमानों पर जल की भौतिक अवस्था क्या है?<br>(a) 25°C<br>(b) 0°C<br>(c) 100°C</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            (a) 25°C पर जल द्रव अवस्था में होगा।<br>
+            (b) 0°C पर जल ठोस अवस्था (बर्फ) में होगा।<br>
+            (c) 100°C पर जल गैसीय अवस्था (भाप) में होगा।<br>
+            व्याख्या: जल का हिमांक बिंदु 0°C और क्वथनांक बिंदु 100°C होता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>पुष्टि हेतु कारण दें:<br>(a) जल कमरे के तापमान पर द्रव है।<br>(b) लोहे की अलमारी कमरे के तापमान पर ठोस है।</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            (a) जल कमरे के तापमान पर द्रव है क्योंकि इसका तापमान इसके हिमांक (0°C) से ऊपर और क्वथनांक (100°C) से नीचे होता है। द्रवों का निश्चित आयतन होता है但 आकार निश्चित नहीं होता।<br>
+            (b) लोहे की अलमारी कमरे के तापमान पर ठोस है क्योंकि ठोसों का निश्चित आकार और निश्चित आयतन होता है तथा इनमें कणों के बीच आकर्षण बल अत्यधिक प्रबल होता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>273 K पर बर्फ को ठंडा करने पर तथा जल को इसी तापमान पर ठंडा करने पर शीतलता का प्रभाव अधिक क्यों होता है?</span>
+            </div>
+            <div class="answer">उत्तर: 273 K (0°C) पर बर्फ को ठंडा करने पर शीतलता का प्रभाव अधिक होता है क्योंकि बर्फ जल की तुलना में संगलन की गुप्त ऊष्मा अवशोषित करती है। बर्फ के पिघलने की प्रक्रिया में यह परिवेश से ऊष्मा अवशोषित करती है, जिससे अधिक शीतलता महसूस होती है, जबकि जल में यह गुण नहीं होता।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>उबलते हुए जल अथवा भाप में से जलने की तीव्रता किसमें अधिक महसूस होती है?</span>
+            </div>
+            <div class="answer">उत्तर: भाप में जलने की तीव्रता अधिक महसूस होती है क्योंकि भाप में उबलते जल की तुलना में अधिक ऊष्मीय ऊर्जा होती है। भाप में वाष्पन की गुप्त ऊष्मा भी निहित होती है, जो त्वचा के संपर्क में आने पर मुक्त होती है, जिससे अधिक गंभीर जलन होती है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>निम्न चित्र के लिए A, B, C, D, E और F की अवस्था परिवर्तन को नामांकित करें:</span>
+            </div>
+            <div class="answer">उत्तर: <br>
+            A: ऊष्मा देने पर ठोस का द्रव में परिवर्तन (संगलन)<br>
+            B: ऊष्मा देने पर द्रव का गैस में परिवर्तन (वाष्पीकरण)<br>
+            C: ऊष्मा देने पर ठोस का सीधे गैस में परिवर्तन (ऊर्ध्वपातन)<br>
+            D: ऊष्मा निकालने पर गैस का द्रव में परिवर्तन (संघनन)<br>
+            E: ऊष्मा निकालने पर द्रव का ठोस में परिवर्तन (हिमीकरण)<br>
+            F: ऊष्मा निकालने पर गैस का सीधे ठोस में परिवर्तन (अवक्षेपण)<br>
+            व्याख्या: ये पदार्थ की विभिन्न अवस्थाओं के बीच होने वाले परिवर्तन हैं जो ऊष्मा के आदान-प्रदान पर निर्भर करते हैं।
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
