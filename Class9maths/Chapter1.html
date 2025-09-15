@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 9 गणित | अध्याय 1: संख्या पद्धति | संपूर्ण हल</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- MathJax for rendering mathematical equations -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <style>
+        :root {
+            --primary-color: #005A9C; /* Professional Blue */
+            --secondary-color: #34495e; /* Dark Slate Gray */
+            --accent-color: #00A9E0; /* Light Blue Accent */
+            --bg-color: #f8f9fa; /* Light Gray Background */
+            --card-bg-color: #ffffff;
+            --text-color: #333333;
+            --heading-color: #1d3557;
+            --border-color: #e9ecef;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --border-radius: 8px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+        }
+
+        /* Main Container - Adjusted for full width */
+        .container {
+            width: 100%;
+            max-width: 100%; /* Ensure it spans full width */
+            margin: 0; /* Remove auto margin */
+            padding: 1rem 1.5rem; /* Add padding for content spacing */
+        }
+
+        .main-header {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background-color: var(--primary-color);
+            color: var(--card-bg-color);
+            border-radius: var(--border-radius);
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow);
+        }
+        .main-header h1 {
+            font-size: 1.75rem;
+            margin: 0 0 0.25rem 0;
+            font-weight: 700;
+        }
+        .main-header p {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent-color);
+        }
+
+        .question-card {
+            background-color: var(--card-bg-color);
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            overflow-x: auto;
+        }
+
+        .question-title {
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .solution strong {
+            color: var(--secondary-color);
+        }
+
+        .explanation {
+            margin-top: 1.5rem;
+            padding: 1.25rem;
+            background-color: #e7f5ff; 
+            border-left: 4px solid var(--primary-color);
+            border-radius: 4px;
+        }
+        .explanation h4 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: var(--border-color);
+            margin: 1.5rem 0;
+        }
+        
+        ul, ol {
+            padding-left: 25px;
+        }
+
+        @media (min-width: 850px) {
+             .container {
+                max-width: 850px;
+                margin: 2rem auto; /* Center on larger screens */
+                padding: 2rem;
+             }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="main-header">
+            <h1>अध्याय 1: संख्या पद्धति</h1>
+            <p>कक्षा 9 - गणित (NCERT)</p>
+        </header>
+
+        <main>
+            <!-- प्रश्नावली 1.1 -->
+            <section id="prashnavali-1-1">
+                <h2>प्रश्नावली 1.1</h2>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 1: क्या शून्य एक परिमेय संख्या है? क्या इसे आप \(\frac{p}{q}\) के रूप में लिख सकते हैं, जहाँ p और q पूर्णांक हैं और \(q \neq 0\) है?</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> हाँ, शून्य एक परिमेय संख्या है।</p>
+                        <p><strong>कारण:</strong> परिमेय संख्या की परिभाषा के अनुसार, किसी भी संख्या को \(\frac{p}{q}\) के रूप में लिखा जा सके, जहाँ p और q पूर्णांक हों और \(q \neq 0\)। शून्य (0) को इस रूप में व्यक्त किया जा सकता है, जैसे \(\frac{0}{1}\), \(\frac{0}{5}\), या \(\frac{0}{-12}\)। इन सभी में, p और q पूर्णांक हैं और q शून्य नहीं है।</p>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 2: 3 और 4 के बीच में छः परिमेय संख्याएँ ज्ञात कीजिए।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> हमें 3 और 4 के बीच छः परिमेय संख्याएँ ज्ञात करनी हैं।</p>
+                        <ol>
+                            <li>चूंकि हमें 6 संख्याएँ ज्ञात करनी हैं, हम \(6 + 1 = 7\) लेंगे।</li>
+                            <li>3 और 4 को 7 के हर वाली तुल्य परिमेय संख्याओं में बदलेंगे:
+                                <ul>
+                                    <li>\(3 = 3 \times \frac{7}{7} = \frac{21}{7}\)</li>
+                                    <li>\(4 = 4 \times \frac{7}{7} = \frac{28}{7}\)</li>
+                                </ul>
+                            </li>
+                            <li>अब \(\frac{21}{7}\) और \(\frac{28}{7}\) के बीच की छः परिमेय संख्याएँ हैं: \(\frac{22}{7}, \frac{23}{7}, \frac{24}{7}, \frac{25}{7}, \frac{26}{7}, \frac{27}{7}\)।</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 3: \(\frac{3}{5}\) और \(\frac{4}{5}\) के बीच पाँच परिमेय संख्याएँ ज्ञात कीजिए।</p>
+                    <div class="solution">
+                         <p><strong>हल:</strong> हमें \(\frac{3}{5}\) और \(\frac{4}{5}\) के बीच पाँच परिमेय संख्याएँ ज्ञात करनी हैं।</p>
+                        <ol>
+                            <li>चूंकि हमें 5 संख्याएँ ज्ञात करनी हैं, हम \(5 + 1 = 6\) लेंगे।</li>
+                            <li>दी गई भिन्नों के अंश और हर दोनों को 6 से गुणा करेंगे:
+                                <ul>
+                                    <li>\(\frac{3}{5} = \frac{3 \times 6}{5 \times 6} = \frac{18}{30}\)</li>
+                                    <li>\(\frac{4}{5} = \frac{4 \times 6}{5 \times 6} = \frac{24}{30}\)</li>
+                                </ul>
+                            </li>
+                            <li>\(\frac{18}{30}\) और \(\frac{24}{30}\) के बीच की पाँच परिमेय संख्याएँ हैं: \(\frac{19}{30}, \frac{20}{30}, \frac{21}{30}, \frac{22}{30}, \frac{23}{30}\)।</li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 4: नीचे दिए गए कथन सत्य हैं या असत्य? कारण के साथ अपने उत्तर दीजिए।</p>
+                    <div class="solution">
+                        <p><strong>(i) प्रत्येक प्राकृत संख्या एक पूर्ण संख्या होती है।</strong><br>
+                        <strong>उत्तर:</strong> सत्य। <strong>कारण:</strong> पूर्ण संख्याओं (0, 1, 2, ...) के संग्रह में सभी प्राकृत संख्याएँ (1, 2, 3, ...) शामिल होती हैं।</p>
+                        <hr>
+                        <p><strong>(ii) प्रत्येक पूर्णांक एक पूर्ण संख्या होती है।</strong><br>
+                        <strong>उत्तर:</strong> असत्य। <strong>कारण:</strong> ऋणात्मक पूर्णांक (जैसे -2) पूर्ण संख्याएँ नहीं होतीं।</p>
+                        <hr>
+                        <p><strong>(iii) प्रत्येक परिमेय संख्या एक पूर्ण संख्या होती है।</strong><br>
+                        <strong>उत्तर:</strong> असत्य। <strong>कारण:</strong> भिन्न (जैसे \(\frac{1}{2}\)) परिमेय हैं, लेकिन पूर्ण संख्या नहीं हैं।</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- प्रश्नावली 1.2 -->
+            <section id="prashnavali-1-2">
+                <h2>प्रश्नावली 1.2</h2>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 1: नीचे दिए गए कथन सत्य हैं या असत्य हैं। कारण के साथ अपने उत्तर दीजिए।</p>
+                     <div class="solution">
+                        <p><strong>(i) प्रत्येक अपरिमेय संख्या एक वास्तविक संख्या होती है।</strong><br>
+                        <strong>उत्तर:</strong> सत्य। <strong>कारण:</strong> वास्तविक संख्याओं का समूह परिमेय और अपरिमेय संख्याओं से मिलकर ही बनता है।</p>
+                        <hr>
+                        <p><strong>(ii) संख्या रेखा का प्रत्येक बिन्दु \(\sqrt{m}\) के रूप का होता है, जहाँ m एक प्राकृत संख्या है।</strong><br>
+                        <strong>उत्तर:</strong> असत्य। <strong>कारण:</strong> संख्या रेखा पर ऋणात्मक संख्याएँ भी होती हैं, जिन्हें किसी प्राकृत संख्या के वर्गमूल के रूप में नहीं दर्शाया जा सकता।</p>
+                        <hr>
+                        <p><strong>(iii) प्रत्येक वास्तविक संख्या एक अपरिमेय संख्या होती है।</strong><br>
+                        <strong>उत्तर:</strong> असत्य। <strong>कारण:</strong> वास्तविक संख्याओं में परिमेय संख्याएँ (जैसे 2) भी होती हैं, जो अपरिमेय नहीं हैं।</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 2: क्या सभी धनात्मक पूर्णांकों के वर्गमूल अपरिमेय होते हैं? यदि नहीं, तो एक ऐसी संख्या के वर्गमूल का उदाहरण दीजिए जो एक परिमेय संख्या है।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> नहीं, सभी धनात्मक पूर्णांकों के वर्गमूल अपरिमेय नहीं होते हैं।</p>
+                        <p>उदाहरण के लिए, \(\sqrt{9} = 3\)। यहाँ 9 एक धनात्मक पूर्णांक है और इसका वर्गमूल 3 एक परिमेय संख्या है।</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 3: दिखाइए कि संख्या रेखा पर \(\sqrt{5}\) को किस प्रकार निरूपित किया जा सकता है।</p>
+                    <div class="solution">
+                         <p><strong>हल:</strong> हम पाइथागोरस प्रमेय का उपयोग करके \(\sqrt{5}\) को निरूपित कर सकते हैं, क्योंकि \(5 = 2^2 + 1^2\)।</p>
+                         <ol>
+                             <li>एक संख्या रेखा पर मूल बिंदु O (0) से 2 इकाई की दूरी पर बिंदु A लीजिए।</li>
+                             <li>बिंदु A पर 1 इकाई लंबा एक लंब AB खींचिए।</li>
+                             <li>O को B से मिलाइए। OB की लंबाई \(\sqrt{2^2 + 1^2} = \sqrt{5}\) है।</li>
+                             <li>परकार की नोक O पर और पेंसिल B पर रखकर, संख्या रेखा पर एक चाप खींचिए जो इसे बिंदु P पर काटता है। बिंदु P ही \(\sqrt{5}\) को दर्शाता है।</li>
+                         </ol>
+                    </div>
+                </div>
+            </section>
+
+             <!-- प्रश्नावली 1.3 -->
+            <section id="prashnavali-1-3">
+                <h2>प्रश्नावली 1.3</h2>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 1: निम्नलिखित भिन्नों को दशमलव रूप में लिखिए और बताइए कि प्रत्येक का दशमलव प्रसार किस प्रकार का है।</p>
+                    <div class="solution">
+                        <p><strong>(i) \(\frac{36}{100}\):</strong> 0.36 (सांत)</p>
+                        <p><strong>(ii) \(\frac{1}{11}\):</strong> \(0.\overline{09}\) (अनवसानी आवर्ती)</p>
+                        <p><strong>(iii) \(4\frac{1}{8} = \frac{33}{8}\):</strong> 4.125 (सांत)</p>
+                        <p><strong>(iv) \(\frac{3}{13}\):</strong> \(0.\overline{230769}\) (अनवसानी आवर्ती)</p>
+                        <p><strong>(v) \(\frac{2}{11}\):</strong> \(0.\overline{18}\) (अनवसानी आवर्ती)</p>
+                        <p><strong>(vi) \(\frac{329}{400}\):</strong> 0.8225 (सांत)</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 2: आप जानते हैं कि \(\frac{1}{7} = 0.\overline{142857}\) है। वास्तव में, लंबा भाग दिए बिना क्या आप यह बता सकते हैं कि \(\frac{2}{7}, \frac{3}{7}, \frac{4}{7}, \frac{5}{7}, \frac{6}{7}\) के दशमलव प्रसार क्या हैं?</p>
+                    <div class="solution">
+                         <p><strong>हल:</strong> हाँ, हम \(0.\overline{142857}\) को क्रमशः 2, 3, 4, 5, और 6 से गुणा करके मान ज्ञात कर सकते हैं।</p>
+                         <ul>
+                             <li>\(\frac{2}{7} = 2 \times 0.\overline{142857} = 0.\overline{285714}\)</li>
+                             <li>\(\frac{3}{7} = 3 \times 0.\overline{142857} = 0.\overline{428571}\)</li>
+                             <li>\(\frac{4}{7} = 4 \times 0.\overline{142857} = 0.\overline{571428}\)</li>
+                             <li>\(\frac{5}{7} = 5 \times 0.\overline{142857} = 0.\overline{714285}\)</li>
+                             <li>\(\frac{6}{7} = 6 \times 0.\overline{142857} = 0.\overline{857142}\)</li>
+                         </ul>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 3: निम्नलिखित को \(\frac{p}{q}\) के रूप में व्यक्त कीजिए।</p>
+                    <div class="solution">
+                        <p><strong>(i) \(0.\overline{6}\):</strong> माना \(x = 0.666...\)। तब \(10x = 6.666...\)। घटाने पर \(9x=6\), अतः \(x = \frac{6}{9} = \frac{2}{3}\)।</p>
+                        <hr>
+                        <p><strong>(ii) \(0.4\overline{7}\):</strong> माना \(x = 0.4777...\)। तब \(10x = 4.777...\) और \(100x = 47.777...\)। घटाने पर \(90x=43\), अतः \(x = \frac{43}{90}\)।</p>
+                        <hr>
+                        <p><strong>(iii) \(0.\overline{001}\):</strong> माना \(x = 0.001001...\)। तब \(1000x = 1.001001...\)। घटाने पर \(999x=1\), अतः \(x = \frac{1}{999}\)।</p>
+                    </div>
+                </div>
+                
+                 <div class="question-card">
+                    <p class="question-title">प्रश्न 4: \(0.99999...\) को \(\frac{p}{q}\) के रूप में व्यक्त कीजिए।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> माना \(x = 0.999...\)। तब \(10x = 9.999...\)। घटाने पर, \(9x=9\), अतः \(x = \frac{9}{9} = 1\)।</p>
+                         <div class="explanation">
+                            <h4>Explanation</h4>
+                            <p>हाँ, यह आश्चर्यजनक है। गणितीय रूप से, \(0.999...\) और 1 के बीच कोई अंतर नहीं होता है, वे एक ही मान का प्रतिनिधित्व करते हैं।</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 5: \(\frac{1}{17}\) के दशमलव प्रसार में अंकों के पुनरावृत्ति खंड में अंकों की अधिकतम संख्या क्या हो सकती है?</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> किसी भिन्न \(\frac{p}{q}\) में, पुनरावृत्ति खंड में अंकों की अधिकतम संख्या \(q-1\) हो सकती है। इसलिए, \(\frac{1}{17}\) के लिए, अधिकतम संख्या \(17 - 1 = 16\) हो सकती है। विभाजन करने पर, हम पाते हैं \(\frac{1}{17} = 0.\overline{0588235294117647}\), जिसमें 16 अंक हैं।</p>
+                    </div>
+                </div>
+                
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 6: \(\frac{p}{q}\) के रूप की परिमेय संख्याओं के उदाहरण लीजिए जिनका सांत दशमलव प्रसार है। क्या आप अनुमान लगा सकते हैं कि q को कौन-सा गुण अवश्य संतुष्ट करना चाहिए?</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> उदाहरण: \(\frac{1}{2}=0.5\), \(\frac{3}{4}=0.75\), \(\frac{7}{10}=0.7\)। इन सभी में, हर (q) के अभाज्य गुणनखंड केवल 2 या 5 या दोनों हैं।</p>
+                        <p><strong>गुण:</strong> एक परिमेय संख्या का दशमलव प्रसार सांत होता है यदि उसके हर (q) को \(2^n \times 5^m\) के रूप में लिखा जा सके, जहाँ n और m पूर्ण संख्याएँ हैं।</p>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 7: ऐसी तीन संख्याएँ लिखिए जिनके दशमलव प्रसार अनवसानी अनावर्ती हों।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> अनवसानी अनावर्ती दशमलव प्रसार वाली संख्याएँ अपरिमेय होती हैं। तीन उदाहरण हैं:</p>
+                        <ol>
+                            <li>0.101001000100001...</li>
+                            <li>0.23233233323333...</li>
+                            <li>\(\pi \approx 3.14159265...\)</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 8: परिमेय संख्याओं \(\frac{5}{7}\) और \(\frac{9}{11}\) के बीच की तीन अलग-अलग अपरिमेय संख्याएँ ज्ञात कीजिए।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> पहले, हम इन्हें दशमलव में बदलते हैं: \(\frac{5}{7} \approx 0.714...\) और \(\frac{9}{11} \approx 0.818...\)।</p>
+                        <p>इनके बीच तीन अपरिमेय संख्याएँ हैं:</p>
+                        <ol>
+                            <li>0.720720072000...</li>
+                            <li>0.751751175111...</li>
+                            <li>0.8010010001...</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 9: बताइए कि निम्नलिखित संख्याओं में कौन परिमेय और कौन अपरिमेय हैं।</p>
+                    <div class="solution">
+                        <p><strong>(i) \(\sqrt{23}\):</strong> अपरिमेय (23 पूर्ण वर्ग नहीं है)</p>
+                        <p><strong>(ii) \(\sqrt{225}\):</strong> परिमेय (\(\sqrt{225}=15\))</p>
+                        <p><strong>(iii) 0.3796:</strong> परिमेय (सांत दशमलव)</p>
+                        <p><strong>(iv) 7.478478...:</strong> परिमेय (अनवसानी आवर्ती)</p>
+                        <p><strong>(v) 1.1010010001...:</strong> अपरिमेय (अनवसानी अनावर्ती)</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- प्रश्नावली 1.4 -->
+             <section id="prashnavali-1-4">
+                <h2>प्रश्नावली 1.4</h2>
+                 <div class="question-card">
+                    <p class="question-title">प्रश्न 1: बताइए नीचे दी गई संख्याओं में कौन-कौन परिमेय हैं और कौन-कौन अपरिमेय हैं।</p>
+                    <div class="solution">
+                        <p><strong>(i) \(2 - \sqrt{5}\):</strong> अपरिमेय (परिमेय और अपरिमेय का अंतर)।</p>
+                        <p><strong>(ii) \((3 + \sqrt{23}) - \sqrt{23}\):</strong> \(3 + \sqrt{23} - \sqrt{23} = 3\), जो परिमेय है।</p>
+                        <p><strong>(iii) \(\frac{2\sqrt{7}}{7\sqrt{7}}\):</strong> \(\frac{2}{7}\), जो परिमेय है।</p>
+                        <p><strong>(iv) \(\frac{1}{\sqrt{2}}\):</strong> अपरिमेय (परिमेय और अपरिमेय का भागफल)।</p>
+                        <p><strong>(v) \(2\pi\):</strong> अपरिमेय (परिमेय और अपरिमेय का गुणनफल)।</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 2: निम्नलिखित व्यंजकों में से प्रत्येक व्यंजक को सरल कीजिए।</p>
+                     <div class="solution">
+                        <p><strong>(i) \((3 + \sqrt{3})(2 + \sqrt{2})\):</strong> \(6 + 3\sqrt{2} + 2\sqrt{3} + \sqrt{6}\)</p>
+                        <p><strong>(ii) \((3 + \sqrt{3})(3 - \sqrt{3})\):</strong> \(3^2 - (\sqrt{3})^2 = 9 - 3 = 6\)</p>
+                        <p><strong>(iii) \((\sqrt{5} + \sqrt{2})^2\):</strong> \(5 + 2\sqrt{10} + 2 = 7 + 2\sqrt{10}\)</p>
+                        <p><strong>(iv) \((\sqrt{5} - \sqrt{2})(\sqrt{5} + \sqrt{2})\):</strong> \(5 - 2 = 3\)</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 3: \(\pi = \frac{c}{d}\) और \(\pi\) के अपरिमेय होने के बीच अंतर्विरोध का निराकरण आप किस प्रकार करेंगे?</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong> इसमें कोई अंतर्विरोध नहीं है। जब हम किसी उपकरण से लंबाई मापते हैं, तो हमें केवल एक सन्निकट परिमेय मान मिलता है। यह संभव है कि परिधि (c) या व्यास (d) में से कोई एक या दोनों ही अपरिमेय हों, जिसके कारण उनका अनुपात \(\pi\) भी अपरिमेय होता है।</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 4: संख्या रेखा पर \(\sqrt{9.3}\) को निरूपित कीजिए।</p>
+                    <div class="solution">
+                        <p><strong>हल:</strong></p>
+                         <ol>
+                             <li>एक रेखा पर 9.3 इकाई का रेखाखंड AB खींचिए।</li>
+                             <li>B से 1 इकाई की दूरी पर बिंदु C लीजिए।</li>
+                             <li>AC का मध्य-बिंदु O ज्ञात कीजिए।</li>
+                             <li>O को केंद्र मानकर और OA त्रिज्या लेकर एक अर्धवृत्त खींचिए।</li>
+                             <li>B पर एक लंब खींचिए जो अर्धवृत्त को D पर काटे। BD की लंबाई ही \(\sqrt{9.3}\) है।</li>
+                             <li>B को 0 मानकर, BD त्रिज्या का चाप संख्या रेखा पर खींचिए। यह चाप जिस बिंदु (E) पर काटता है, वही \(\sqrt{9.3}\) है।</li>
+                         </ol>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 5: निम्नलिखित के हरों का परिमेयकरण कीजिए।</p>
+                     <div class="solution">
+                         <p><strong>(i) \(\frac{1}{\sqrt{7}}\):</strong> \( \frac{1}{\sqrt{7}} \times \frac{\sqrt{7}}{\sqrt{7}} = \frac{\sqrt{7}}{7}\)</p>
+                         <p><strong>(ii) \(\frac{1}{\sqrt{7} - \sqrt{6}}\):</strong> \( \frac{1}{\sqrt{7} - \sqrt{6}} \times \frac{\sqrt{7} + \sqrt{6}}{\sqrt{7} + \sqrt{6}} = \frac{\sqrt{7} + \sqrt{6}}{7-6} = \sqrt{7} + \sqrt{6}\)</p>
+                         <p><strong>(iii) \(\frac{1}{\sqrt{5} + \sqrt{2}}\):</strong> \( \frac{1}{\sqrt{5} + \sqrt{2}} \times \frac{\sqrt{5} - \sqrt{2}}{\sqrt{5} - \sqrt{2}} = \frac{\sqrt{5} - \sqrt{2}}{5-2} = \frac{\sqrt{5} - \sqrt{2}}{3}\)</p>
+                         <p><strong>(iv) \(\frac{1}{\sqrt{7} - 2}\):</strong> \( \frac{1}{\sqrt{7} - 2} \times \frac{\sqrt{7} + 2}{\sqrt{7} + 2} = \frac{\sqrt{7} + 2}{7-4} = \frac{\sqrt{7} + 2}{3}\)</p>
+                    </div>
+                </div>
+            </section>
+
+             <!-- प्रश्नावली 1.5 -->
+             <section id="prashnavali-1-5">
+                 <h2>प्रश्नावली 1.5</h2>
+                 <div class="question-card">
+                    <p class="question-title">प्रश्न 1: ज्ञात कीजिए:</p>
+                     <div class="solution">
+                        <p><strong>(i) \(64^{\frac{1}{2}}\):</strong> \((8^2)^{\frac{1}{2}} = 8^{2 \times \frac{1}{2}} = 8\)</p>
+                        <p><strong>(ii) \(32^{\frac{1}{5}}\):</strong> \((2^5)^{\frac{1}{5}} = 2^{5 \times \frac{1}{5}} = 2\)</p>
+                        <p><strong>(iii) \(125^{\frac{1}{3}}\):</strong> \((5^3)^{\frac{1}{3}} = 5^{3 \times \frac{1}{3}} = 5\)</p>
+                    </div>
+                </div>
+                 <div class="question-card">
+                    <p class="question-title">प्रश्न 2: ज्ञात कीजिए:</p>
+                    <div class="solution">
+                        <p><strong>(i) \(9^{\frac{3}{2}}\):</strong> \((3^2)^{\frac{3}{2}} = 3^{2 \times \frac{3}{2}} = 3^3 = 27\)</p>
+                        <p><strong>(ii) \(32^{\frac{2}{5}}\):</strong> \((2^5)^{\frac{2}{5}} = 2^{5 \times \frac{2}{5}} = 2^2 = 4\)</p>
+                        <p><strong>(iii) \(16^{\frac{3}{4}}\):</strong> \((2^4)^{\frac{3}{4}} = 2^{4 \times \frac{3}{4}} = 2^3 = 8\)</p>
+                        <p><strong>(iv) \(125^{-\frac{1}{3}}\):</strong> \(\frac{1}{125^{\frac{1}{3}}} = \frac{1}{(5^3)^{\frac{1}{3}}} = \frac{1}{5}\)</p>
+                    </div>
+                </div>
+                <div class="question-card">
+                    <p class="question-title">प्रश्न 3: सरल कीजिए:</p>
+                    <div class="solution">
+                        <p><strong>(i) \(2^{\frac{2}{3}} \cdot 2^{\frac{1}{5}}\):</strong> \(2^{(\frac{2}{3} + \frac{1}{5})} = 2^{(\frac{10+3}{15})} = 2^{\frac{13}{15}}\)</p>
+                        <p><strong>(ii) \(( \frac{1}{3^3} )^7\):</strong> \(\frac{1^7}{(3^3)^7} = \frac{1}{3^{21}} = 3^{-21}\)</p>
+                        <p><strong>(iii) \(\frac{11^{\frac{1}{2}}}{11^{\frac{1}{4}}}\):</strong> \(11^{(\frac{1}{2} - \frac{1}{4})} = 11^{(\frac{2-1}{4})} = 11^{\frac{1}{4}}\)</p>
+                        <p><strong>(iv) \(7^{\frac{1}{2}} \cdot 8^{\frac{1}{2}}\):</strong> \((7 \times 8)^{\frac{1}{2}} = 56^{\frac{1}{2}}\)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
+
