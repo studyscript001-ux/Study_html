@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 6: पुष्पी पादपों का शरीर</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>पुष्पी पादपों का शरीर</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान - अध्याय 6</h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>निम्नलिखित में शरीर के आधार पर अंतर करें<br>
+                (क) एकबीजपत्री जड़ और द्विबीजपत्री जड़<br>
+                (ख) एकबीजपत्री तना और द्विबीजपत्री तना</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(क) एकबीजपत्री जड़ और द्विबीजपत्री जड़ में अंतर:</span><br>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>आधार</th>
+                            <th>एकबीजपत्री जड़</th>
+                            <th>द्विबीजपत्री जड़</th>
+                        </tr>
+                        <tr>
+                            <td>प्राथमिक संरचना</td>
+                            <td>बहुअरी (पॉलीआर्क) जाइलम होता है</td>
+                            <td>द्वितीयक (डाइआर्क) से षट्कीय (हेक्सआर्क) जाइलम होता है</td>
+                        </tr>
+                        <tr>
+                            <td>द्वितीयक वृद्धि</td>
+                            <td>द्वितीयक वृद्धि अनुपस्थित होती है</td>
+                            <td>द्वितीयक वृद्धि होती है</td>
+                        </tr>
+                        <tr>
+                            <td>कैम्बियम</td>
+                            <td>कैम्बियम अनुपस्थित होता है</td>
+                            <td>कैम्बियम उपस्थित होता है</td>
+                        </tr>
+                        <tr>
+                            <td>जाइलम बंडल</td>
+                            <td>जाइलम और फ्लोएम बंडल अधिक संख्या में होते हैं</td>
+                            <td>जाइलम और फ्लोएम बंडल कम संख्या में होते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>पिथ</td>
+                            <td>विकसित और बड़ा पिथ होता है</td>
+                            <td>पिथ अनुपस्थित या छोटा होता है</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">(ख) एकबीजपत्री तना और द्विबीयपत्री तना में अंतर:</span><br>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>आधार</th>
+                            <th>एकबीजपत्री तना</th>
+                            <th>द्विबीजपत्री तना</th>
+                        </tr>
+                        <tr>
+                            <td>संवहन बंडल</td>
+                            <td>संवहन बंडल बिखरे हुए होते हैं</td>
+                            <td>संवहन बंडल एक वलय में व्यवस्थित होते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>द्वितीयक वृद्धि</td>
+                            <td>द्वितीयक वृद्धि अनुपस्थित होती है</td>
+                            <td>द्वितीयक वृद्धि होती है</td>
+                        </tr>
+                        <tr>
+                            <td>कैम्बियम</td>
+                            <td>कैम्बियम अनुपस्थित होता है</td>
+                            <td>कैम्बियम उपस्थित होता है</td>
+                        </tr>
+                        <tr>
+                            <td>पिथ</td>
+                            <td>पिथ विशिष्ट रूप से उपस्थित होता है</td>
+                            <td>पिथ उपस्थित होता है</td>
+                        </tr>
+                        <tr>
+                            <td>कार्टिक्स और पिथ</td>
+                            <td>कार्टिक्स और पिथ के बीच स्पष्ट अंतर नहीं होता</td>
+                            <td>कार्टिक्स और पिथ के बीच स्पष्ट अंतर होता है</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>आप एक सूक्ष्मदर्शी से मक्का के तने की अनुप्रस्थ काट का अवलोकन करते हैं। आप कैसे पहचानेंगे कि यह एकबीजपत्री तना है या द्विबीजपत्री तना? इसके कारण बताएं।</span>
+            </div>
+            <div class="answer">
+                मक्का का तना एकबीजपत्री तना है। इसे निम्नलिखित लक्षणों से पहचाना जा सकता है:<br><br>
+                
+                <ul>
+                    <li>संवहन बंडल बिखरे हुए (scattered) होते हैं, न कि एक वलय में व्यवस्थित</li>
+                    <li>प्रत्येक संवहन बंडल संयुक्त (conjoint), संवृत (closed) होता है और इसके चारों ओर स्क्लेरेन्काइमा आच्छद (sheath) होता है</li>
+                    <li>संवहन बंडलों में कैम्बियम अनुपस्थित होता है</li>
+                    <li>जाइलम वाहिकाओं की व्यवस्था V-आकार की होती है</li>
+                    <li>पैरेन्काइमा कोशिकाएँ भरण ऊतक के रूप में उपस्थित होती हैं</li>
+                    <li>द्वितीयक वृद्धि का अभाव होता है</li>
+                </ul>
+                
+                ये सभी लक्षण एकबीजपत्री तने की विशेषताएँ हैं, जबकि द्विबीजपत्री तने में संवहन बंडल एक वलय में व्यवस्थित होते हैं, कैम्बियम उपस्थित होता है और द्वितीयक वृद्धि होती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>एक सूक्ष्मदर्शी किसी पादप के भाग की अनुप्रस्थ काट निम्नलिखित शारीरिक रचनाएं दिखाती है।<br>
+                (क) संवहन बंडल संयुक्त, फैले हुए और उनके चारों ओर स्क्लेरेन्काइमातुक्त आच्छद है<br>
+                (ख) फ्लोएम में स्थूलकोण ऊतक नहीं है।<br>
+                आप कैसे पहचानेंगे कि यह किसका है?</span>
+            </div>
+            <div class="answer">
+                उपरोक्त लक्षणों के आधार पर यह एकबीजपत्री तने की अनुप्रस्थ काट है। इसकी पहचान के कारण:<br><br>
+                
+                <ul>
+                    <li>संयुक्त, फैले हुए संवहन बंडल और उनके चारों ओर स्क्लेरेन्काइमा आच्छद का होना एकबीजपत्री तने की विशेषता है</li>
+                    <li>फ्लोएम में स्थूलकोण ऊतक (पैरेन्काइमा) का अनुपस्थित होना एकबीजपत्री पादपों का लक्षण है, जबकि द्विबीजपत्री पादपों के फ्लोएम में स्थूलकोण ऊतक उपस्थित होता है</li>
+                    <li>एकबीजपत्री तने में संवहन बंडल बिखरे हुए होते हैं और प्रत्येक बंडल के चारों ओर स्क्लेरेन्काइमातुक्त आच्छद पाया जाता है</li>
+                    <li>इनमें द्वितीयक वृद्धि नहीं होती, इसलिए कैम्बियम अनुपस्थित होता है</li>
+                </ul>
+                
+                द्विबीजपत्री तने में संवहन बंडल एक वलय में व्यवस्थित होते हैं, फ्लोएम में स्थूलकोण ऊतक होता है और कैम्बियम उपस्थित होता है जो द्वितीयक वृद्धि के लिए उत्तरदायी होता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>रंध्र तंत्र क्या है? रंध्र की संरचना का वर्णन करें और इसका नामांकित चित्र बनाएं।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">रंध्र तंत्र:</span> रंध्र तंत्र पादपों की बाह्य त्वचा पर उपस्थित छोटे-छोटे रंध्रों (स्टोमेटा) का समूह है जो वाष्पोत्सर्जन और गैसों के आदान-प्रदान को नियंत्रित करता है। प्रत्येक रंध्र दो वृक्काकार द्वार कोशिकाओं से घिरा होता है।<br><br>
+                
+                <span class="highlight">रंध्र की संरचना:</span>
+                <ul>
+                    <li>प्रत्येक रंध्र दो वृक्काकार द्वार कोशिकाओं से मिलकर बना होता है</li>
+                    <li>द्वार कोशिकाओं में हरितलवक (क्लोरोप्लास्ट) पाया जाता है</li>
+                    <li>द्वार कोशिकाओं की भीतरी भित्ति मोटी और बाहरी भित्ति पतली होती है</li>
+                    <li>द्वार कोशिकाओं के बीच एक छिद्र होता है जिसे रंध्र छिद्र (स्टोमेटल पोर्स) कहते हैं</li>
+                    <li>रंध्र के आस-पास सहायक कोशिकाएँ हो सकती हैं जो द्वार कोशिकाओं से भिन्न होती हैं</li>
+                    <li>द्वार कोशिकाएँ जल की मात्रा के आधार पर फैलकर या सिकुड़कर रंध्र को खोलने और बंद करने का कार्य करती हैं</li>
+                </ul>
+                
+                <span class="highlight">नामांकित चित्र:</span><br>
+                [यहाँ रंध्र का नामांकित चित्र बनाया जाएगा जिसमें द्वार कोशिकाएँ, रंध्र छिद्र, सहायक कोशिकाएँ, और हरितलवक दिखाए जाएंगे]
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>पुष्पी पादपों में तीन मूलभूत ऊतक तंत्र बताएं। प्रत्येक तंत्र के ऊतक बताएं।</span>
+            </div>
+            <div class="answer">
+                पुष्पी पादपों में तीन मूलभूत ऊतक तंत्र निम्नलिखित हैं:<br><br>
+                
+                <span class="highlight">1. बाह्यत्वचीय ऊतक तंत्र:</span>
+                <ul>
+                    <li>बाह्यत्वचा (एपिडर्मिस) - पादप की बाहरी सतह को ढकने वाली कोशिकाओं की परत</li>
+                    <li>रंध्र (स्टोमेटा) - गैसों के आदान-प्रदान के लिए छिद्र</li>
+                    <li>बाह्यत्वचीय Appendages - रोम, कांटे, मोम आदि</li>
+                </ul>
+                
+                <span class="highlight">2. भरण ऊतक तंत्र:</span>
+                <ul>
+                    <li>मृदूतक (पैरेन्काइमा) - भोजन संग्रह, प्रकाश संश्लेषण का कार्य</li>
+                    <li>स्थूलकोण ऊतक (कोलेन्काइमा) - यांत्रिक सहारा प्रदान करना</li>
+                    <li>दृढ़ोतक (स्क्लेरेन्काइमा) - कठोरता और सहारा प्रदान करना</li>
+                </ul>
+                
+                <span class="highlight">3. संवहनी ऊतक तंत्र:</span>
+                <ul>
+                    <li>जाइलम (दारु) - जल और खनिज लवणों का संवहन</li>
+                    <li>फ्लोएम (पोषवाह) - भोजन का संवहन</li>
+                    <li>संवहनी कैम्बियम - द्वितीयक वृद्धि के लिए उत्तरदायी</li>
+                </ul>
+                
+                ये तीनों ऊतक तंत्र मिलकर पादप के शरीर का निर्माण करते हैं और विभिन्न शारीरिक कार्यों को संपन्न करते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>पादप शरीर का अध्ययन हमारे लिए कैसे उपयोगी है?</span>
+            </div>
+            <div class="answer">
+                पादप शरीर का अध्ययन हमारे लिए निम्नलिखित कारणों से उपयोगी है:<br><br>
+                
+                <ul>
+                    <li>पादपों की आंतरिक संरचना को समझने में सहायता करता है</li>
+                    <li>विभिन्न पादप ऊतकों के कार्यों और उनकी कार्यप्रणाली को जानने में मदद करता है</li>
+                    <li>पादपों की वृद्धि और विकास की प्रक्रिया को समझने में सहायक है</li>
+                    <li>कृषि के क्षेत्र में बेहतर फसल उत्पादन के लिए पादप संरचना का ज्ञान आवश्यक है</li>
+                    <li>औषधीय पादपों से दवाएँ बनाने में पादप शरीर संरचना का ज्ञान उपयोगी होता है</li>
+                    <li>वनस्पति विज्ञान और उद्यानिकी के विकास में सहायक</li>
+                    <li>पादपों की पहचान और वर्गीकरण में मदद करता है</li>
+                    <li>पर्यावरण संरक्षण और पारिस्थितिकी तंत्र को समझने में सहायक</li>
+                    <li>आनुवंशिक अभियांत्रिकी और पादप प्रजनन में महत्वपूर्ण भूमिका</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>समानांतर पत्ती की आंतरिक संरचना का वर्णन नामांकित चित्रों की सहायता से करें।</span>
+            </div>
+            <div class="answer">
+                समानांतर पत्ती (एकबीजपत्री पत्ती) की आंतरिक संरचना में निम्नलिखित भाग होते हैं:<br><br>
+                
+                <span class="highlight">1. बाह्यत्वचा (एपिडर्मिस):</span>
+                <ul>
+                    <li>पत्ती की ऊपरी और निचली सतह को ढकने वाली कोशिकाओं की परत</li>
+                    <li>मोमयुक्त क्यूटिकल से ढकी होती है जो जल की हानि को रोकती है</li>
+                    <li>दोनों सतहों पर रंध्र (स्टोमेटा) उपस्थित होते हैं</li>
+                </ul>
+                
+                <span class="highlight">2. मध्योतक (मेसोफिल):</span>
+                <ul>
+                    <li>बाह्यत्वचा के बीच का ऊतक जिसमें प्रकाश संश्लेषण होता है</li>
+                    <li>हरितलवक युक्त मृदूतक कोशिकाओं से बना होता है</li>
+                    <li>कोशिकाओं के बीच वायु अवकाश पाए जाते हैं</li>
+                </ul>
+                
+                <span class="highlight">3. संवहनी बंडल:</span>
+                <ul>
+                    <li>पत्ती में समानांतर व्यवस्थित होते हैं</li>
+                    <li>प्रत्येक बंडल के चारों ओर संवहनी बंडल आच्छद होता है</li>
+                    <li>जाइलम और फ्लोएम से मिलकर बना होता है</li>
+                    <li>जाइलम ऊपरी सतह की ओर और फ्लोएम निचली सतह की ओर होता है</li>
+                </ul>
+                
+                <span class="highlight">4. रंध्र:</span>
+                <ul>
+                    <li>दोनों सतहों पर समान रूप से वितरित</li>
+                    <li>द्वार कोशिकाओं द्वारा घिरे होते हैं</li>
+                    <li>गैसों के आदान-प्रदान और वाष्पोत्सर्जन में सहायक</li>
+                </ul>
+                
+                <span class="highlight">नामांकित चित्र:</span><br>
+                [यहाँ समानांतर पत्ती की अनुप्रस्थ काट का नामांकित चित्र बनाया जाएगा जिसमें ऊपरी एपिडर्मिस, निचली एपिडर्मिस, मेसोफिल, संवहनी बंडल, रंध्र, और बंडल आच्छद दिखाए जाएंगे]
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>मूल रोम कोशिकाओं की संरचना और स्थिति उन्हें विशेष कार्य करने में कैसे सहायता करती है?</span>
+            </div>
+            <div class="answer">
+                मूल रोम (रूट हेयर) जड़ की एपिडर्मल कोशिकाओं के बाहरी विस्तार हैं जो जल और खनिजों के अवशोषण में विशेष भूमिका निभाते हैं। इनकी संरचना और स्थिति उनके कार्य में निम्नलिखित प्रकार से सहायता करती है:<br><br>
+                
+                <span class="highlight">संरचनात्मक अनुकूलन:</span>
+                <ul>
+                    <li>लंबी, बेलनाकार संरचना जो अवशोषण सतह क्षेत्र को बढ़ाती है</li>
+                    <li>पतली कोशिका भित्ति जो जल और घुलनशील पदार्थों के आदान-प्रदान में सहायक</li>
+                    <li>बड़ी रसधानी (वैक्यूओल) जो अवशोषित जल के भंडारण में सहायक</li>
+                    <li>कोशिका झिल्ली के पास अनेक माइटोकॉन्ड्रिया जो सक्रिय परिवहन के लिए ऊर्जा प्रदान करते हैं</li>
+                </ul>
+                
+                <span class="highlight">स्थितिगत अनुकूलन:</span>
+                <ul>
+                    <li>जड़ के अग्रभाग के पास स्थित होते हैं जहाँ मृदा से जल और खनिज सरलता से उपलब्ध होते हैं</li>
+                    <li>मृदा कणों के संपर्क में रहकर जल के अवशोषण में सहायक</li>
+                    <li>अपेक्षाकृत कम आयु के होते हैं और निरंतर नए मूल रोम बनते रहते हैं</li>
+                </ul>
+                
+                <span class="highlight">कार्यात्मक महत्व:</span>
+                <ul>
+                    <li>अवशोषण सतह क्षेत्र में वृद्धि करके जल और खनिजों के अवशोषण की दर बढ़ाते हैं</li>
+                    <li>मृदा कणों के साथ निकट संपर्क बनाकर अवशोषण में सहायता</li>
+                    <li>पादप को मृदा में स्थिर रखने में सहायक</li>
+                    <li>कुछ पादपों में सहजातीय वृद्धि (सिम्बायोटिक संबंध) के लिए महत्वपूर्ण</li>
+                </ul>
+                
+                मूल रोम की ये संरचनात्मक और स्थितिगत विशेषताएँ इन्हें जल और खनिजों के अवशोषण के लिए अत्यधिक कुशल बनाती हैं।
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 6 "पुष्पी पादपों का शरीर" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 4: जीव जगत</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        /* Table styles */
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 10px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #1a2980;
+            color: white;
+            font-weight: 500;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            table {
+                font-size: 0.7rem;
+            }
+            
+            th, td {
+                padding: 6px 8px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+            
+            .table-container {
+                overflow-x: visible;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>जीव जगत</h1>
+            <h2>कक्षा 11 - जीवविज्ञान - अध्याय 4</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>यदि मूलभूत लक्षण ज्ञात न हों तो जीवों के वर्गीकरण में आप क्या कठिनाइयाँ महसूस करेंगे?</span>
+            </div>
+            <div class="answer">
+                मूलभूत लक्षणों के अभाव में जीवों के वर्गीकरण में निम्नलिखित कठिनाइयाँ उत्पन्न होंगी:<br><br>
+                <ul>
+                    <li>जीवों के बीच विकास संबंधी संबंध स्थापित करने में कठिनाई</li>
+                    <li>समान गुणों वाले जीवों को सही समूहों में वर्गीकृत न कर पाना</li>
+                    <li>नए जीवों की पहचान और वर्गीकरण में समस्या</li>
+                    <li>जैव विविधता के अध्ययन में अव्यवस्था</li>
+                    <li>वैज्ञानिक संचार में भ्रम की स्थिति</li>
+                    <li>जीवों की उत्पत्ति और विकास क्रम को समझने में बाधा</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>यदि आपको एक नमूना (Specimen) दे दिया जाए तो वर्गीकरण हेतु आप क्या दिन अपनाएँगे?</span>
+            </div>
+            <div class="answer">
+                किसी नमूने का वर्गीकरण करने के लिए निम्नलिखित चरण अपनाए जाएँगे:<br><br>
+                <ul>
+                    <li><span class="highlight">प्रारंभिक अवलोकन:</span> नमूने के सामान्य लक्षणों का अध्ययन</li>
+                    <li><span class="highlight">कोशिका संरचना:</span> प्रोकैरियोटिक या यूकैरियोटिक कोशिका की जाँच</li>
+                    <li><span class="highlight">शारीरिक संरचना:</span> एककोशिकीय या बहुकोशिकीय होने का निर्धारण</li>
+                    <li><span class="highlight">पोषण का प्रकार:</span> स्वपोषी, परपोषी या मृतजीवी</li>
+                    <li><span class="highlight">श्वसन:</span> ऑक्सीजन या अॉक्सीजन रहित श्वसन</li>
+                    <li><span class="highlight">प्रजनन:</span> लैंगिक या अलैंगिक प्रजनन</li>
+                    <li><span class="highlight">वर्गीकरण कुंजी:</span> वैज्ञानिक वर्गीकरण कुंजी का उपयोग</li>
+                    <li><span class="highlight">तुलनात्मक अध्ययन:</span> ज्ञात जीवों से तुलना करना</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>देहगुहा और प्रगुहा का अध्ययन जीवों के वर्गीकरण में किस प्रकार सहायक होता है?</span>
+            </div>
+            <div class="answer">
+                देहगुहा और प्रगुहा का अध्ययन जीवों के वर्गीकरण में महत्वपूर्ण भूमिका निभाता है:<br><br>
+                <ul>
+                    <li><span class="highlight">देहगुहा (Coelom):</span> यह शरीर की वह गुहा है जो आहारनाल और शरीर भित्ति के बीच स्थित होती है। इसके आधार पर जीवों को तीन श्रेणियों में वर्गीकृत किया जाता है:
+                        <ul>
+                            <li>अगुहिक (Acoelomate) - गुहा अनुपस्थित</li>
+                            <li>कूटगुहिक (Pseudocoelomate) - कूटगुहा उपस्थित</li>
+                            <li>सत्यगुहिक (Eucoelomate) - सत्यगुहा उपस्थित</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">प्रगुहा:</span> यह अमीबा जैसे एककोशिकीय जीवों में पायी जाने वाली गुहा है जो भोजन के पाचन में सहायता करती है।</li>
+                    <li>ये लक्षण जीवों की शारीरिक जटिलता और विकासात्मक स्तर को दर्शाते हैं, जो वर्गीकरण में महत्वपूर्ण आधार प्रदान करते हैं।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>अन्तः कोशिकीय और बाह्य कोशिकीय पाचन में भेद कीजिए।</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>अन्तः कोशिकीय पाचन (Intracellular Digestion)</th>
+                            <th>बाह्य कोशिकीय पाचन (Extracellular Digestion)</th>
+                        </tr>
+                        <tr>
+                            <td>कोशिका के भीतर होता है</td>
+                            <td>कोशिका के बाहर होता है</td>
+                        </tr>
+                        <tr>
+                            <td>लाइसोसोम द्वारा किया जाता है</td>
+                            <td>पाचक एंजाइमों द्वारा किया जाता है</td>
+                        </tr>
+                        <tr>
+                            <td>एककोशिकीय जीवों में पाया जाता है</td>
+                            <td>बहुकोशिकीय जीवों में पाया जाता है</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण: अमीबा, पैरामीशियम</td>
+                            <td>उदाहरण: कवक, जंतु</td>
+                        </tr>
+                        <tr>
+                            <td>पाचन के लिए विशिष्ट अंग अनुपस्थित</td>
+                            <td>पाचन तंत्र के विशिष्ट अंग उपस्थित</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>प्रत्यक्ष और अप्रत्यक्ष परिवर्धन में क्या अंतर है?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>प्रत्यक्ष परिवर्धन (Direct Development)</th>
+                            <th>अप्रत्यक्ष परिवर्धन (Indirect Development)</th>
+                        </tr>
+                        <tr>
+                            <td>शिशु वयस्क के समान दिखाई देते हैं</td>
+                            <td>शिशु वयस्क से भिन्न दिखाई देते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>लार्वा अवस्था अनुपस्थित</td>
+                            <td>लार्वा अवस्था उपस्थित</td>
+                        </tr>
+                        <tr>
+                            <td>कायांतरण (Metamorphosis) नहीं होता</td>
+                            <td>कायांतरण (Metamorphosis) होता है</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण: मनुष्य, चिड़िया, सरीसृप</td>
+                            <td>उदाहरण: तितली, मेंढक, मच्छर</td>
+                        </tr>
+                        <tr>
+                            <td>विकास सीधा और सरल होता है</td>
+                            <td>विकास जटिल और कई चरणों में होता है</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>परजीवी प्लैटिहेल्मिन्थीज के विशेष लक्षण बताइए।</span>
+            </div>
+            <div class="answer">
+                परजीवी प्लैटिहेल्मिन्थीज (चपटे कृमि) के प्रमुख लक्षण:<br><br>
+                <ul>
+                    <li><span class="highlight">शरीर की आकृति:</span> चपटा और लम्बा शरीर</li>
+                    <li><span class="highlight">सममिति:</span> द्विपार्श्व सममिति</li>
+                    <li><span class="highlight">देहगुहा:</span> अगुहिक (कोई सत्य देहगुहा नहीं)</li>
+                    <li><span class="highlight">पोषण:</span> परजीवी जीवन शैली</li>
+                    <li><span class="highlight">चिपकने वाले अंग:</span> चूषक और काँटे (हुक) उपस्थित</li>
+                    <li><span class="highlight">पाचन तंत्र:</span> अल्पविकसित या अनुपस्थित</li>
+                    <li><span class="highlight">श्वसन:</span> अवायवीय श्वसन</li>
+                    <li><span class="highlight">उत्सर्जन:</span> ज्वाला कोशिकाओं द्वारा</li>
+                    <li><span class="highlight">प्रजनन:</span> उच्च प्रजनन क्षमता, हर्माफ्रोडाइट</li>
+                    <li><span class="highlight">जीवन चक्र:</span> जटिल जीवन चक्र, एक से अधिक पोषी</li>
+                    <li>उदाहरण: फीता कृमि (Taenia), यकृत कृमि (Fasciola)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>अर्थोपोडा जीव-समूह का सबसे बड़ा वर्ग है, इस कथन के प्रमुख कारण बताइए।</span>
+            </div>
+            <div class="answer">
+                अर्थोपोडा संघ जीव-समूह का सबसे बड़ा वर्ग है, इसके निम्नलिखित कारण हैं:<br><br>
+                <ul>
+                    <li><span class="highlight">विविधता:</span> सभी ज्ञात जीवों का लगभग 85% हिस्सा अर्थोपोडा संघ का है</li>
+                    <li><span class="highlight">विस्तार:</span> ये जल, थल और वायु सभी स्थानों पर पाए जाते हैं</li>
+                    <li><span class="highlight">संख्या:</span> इनकी संख्या सबसे अधिक है (लाखों प्रजातियाँ)</li>
+                    <li><span class="highlight">अनुकूलन क्षमता:</span> विभिन्न परिस्थितियों के अनुकूलन की अद्भुत क्षमता</li>
+                    <li><span class="highlight">बाह्य कंकाल:</span> काइटिन का बना मजबूत बाह्य कंकाल सुरक्षा प्रदान करता है</li>
+                    <li><span class="highlight">खंडित शरीर:</span> खंडित शरीर और संधियुक्त उपांग गतिशीलता बढ़ाते हैं</li>
+                    <li><span class="highlight">प्रजनन क्षमता:</span> उच्च प्रजनन क्षमता और छोटा जीवन चक्र</li>
+                    <li><span class="highlight">आहार:</span> विविध प्रकार के आहार ग्रहण करने की क्षमता</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>जल संवहन तंत्र किस वर्ग का मुख्य लक्षण है?<br>
+                (क) पोरिफेरा (ख) निडारिया (ग) एकाइनोडर्मेटा (घ) कॉर्डेटा</span>
+            </div>
+            <div class="answer">
+                जल संवहन तंत्र (Water Vascular System) <span class="highlight">एकाइनोडर्मेटा वर्ग</span> का मुख्य लक्षण है।<br><br>
+                
+                <span class="highlight">विवरण:</span>
+                <ul>
+                    <li>एकाइनोडर्मेटा संघ के जीवों में जल संवहन तंत्र पाया जाता है</li>
+                    <li>यह तंत्र गति, भोजन ग्रहण, श्वसन और उत्सर्जन में सहायता करता है</li>
+                    <li>इसमें नलिका पाद (Tube feet) होते हैं जो पानी के दबाव से काम करते हैं</li>
+                    <li>उदाहरण: तारा मछली, समुद्री अर्चिन, समुद्री खीरा</li>
+                </ul>
+                
+                अन्य विकल्प:
+                <ul>
+                    <li>पोरिफेरा: कैनाल सिस्टम</li>
+                    <li>निडारिया: जाल जैसी तंत्रिका तंत्र</li>
+                    <li>कॉर्डेटा: विकसित रक्त संवहन तंत्र</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>सभी क्रस्टेशियन्स (Crustaceans) कॉर्डेट्स (Chordates) हैं, लेकिन सभी कॉर्डेट्स क्रस्टेशियन्स नहीं हैं। इस कथन को सिद्ध कीजिए।</span>
+            </div>
+            <div class="answer">
+                यह कथन <span class="highlight">गलत</span> है क्योंकि क्रस्टेशियन्स और कॉर्डेट्स दो अलग-अलग संघ हैं:<br><br>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>क्रस्टेशियन्स (Crustaceans)</th>
+                            <th>कॉर्डेट्स (Chordates)</th>
+                        </tr>
+                        <tr>
+                            <td>अर्थोपोडा संघ के सदस्य</td>
+                            <td>कॉर्डेटा संघ के सदस्य</td>
+                        </tr>
+                        <tr>
+                            <td>बाह्य कंकाल काइटिन का बना</td>
+                            <td>अन्तः कंकाल कार्टिलेज या अस्थि का बना</td>
+                        </tr>
+                        <tr>
+                            <td>नॉटोकॉर्ड अनुपस्थित</td>
+                            <td>नॉटोकॉर्ड उपस्थित (कम से कम भ्रूण अवस्था में)</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण: झींगा, केकड़ा, क्रैब</td>
+                            <td>उदाहरण: मनुष्य, मछली, पक्षी, सरीसृप</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">सही कथन होगा:</span> सभी क्रस्टेशियन्स अर्थोपोडा हैं, लेकिन सभी अर्थोपोडा क्रस्टेशियन्स नहीं हैं।<br>
+                क्रस्टेशियन्स और कॉर्डेट्स दोनों अलग-अलग संघों के सदस्य हैं, इसलिए कोई भी क्रस्टेशियन, कॉर्डेट नहीं हो सकता।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>मत्स्य में वायु-थैली (Air Bladder) की उपस्थिति का क्या महत्व है?</span>
+            </div>
+            <div class="answer">
+                मत्स्य में वायु-थैली (Air Bladder या Swim Bladder) के निम्नलिखित महत्व हैं:<br><br>
+                <ul>
+                    <li><span class="highlight">उत्प्लावन नियंत्रण:</span> मछली को बिना तैरने के विभिन्न जल स्तरों पर रुकने में सहायता</li>
+                    <li><span class="highlight">ऊर्जा संरक्षण:</span> तैरने के लिए ऊर्जा की बचत</li>
+                    <li><span class="highlight">ध्वनि उत्पादन:</span> कुछ मछलियों में ध्वनि उत्पादन में सहायता</li>
+                    <li><span class="highlight">श्वसन:</span> कुछ मछलियों में सहायक श्वसन अंग के रूप में कार्य</li>
+                    <li><span class="highlight">ध्वनि ग्रहण:</span> ध्वनि तरंगों को ग्रहण करने में सहायता</li>
+                    <li><span class="highlight">दाब अनुकूलन:</span> जल के दाब में परिवर्तन के अनुकूलन में सहायता</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>पक्षियों में उड़ने के लिए क्या-क्या रूपांतरण हैं?</span>
+            </div>
+            <div class="answer">
+                पक्षियों में उड़ने के लिए निम्नलिखित रूपांतरण पाए जाते हैं:<br><br>
+                <ul>
+                    <li><span class="highlight">पंख:</span> उड़ने के लिए विशेष रूप से विकसित पंख</li>
+                    <li><span class="highlight">हल्की हड्डियाँ:</span> हड्डियों में वायु-गुहिकाएँ (Air cavities) होती हैं जो इन्हें हल्का बनाती हैं</li>
+                    <li><span class="highlight">शक्तिशाली पेशियाँ:</span> उड़ान पेशियाँ (Flight muscles) विकसित</li>
+                    <li><span class="highlight">वायुथैली:</span> श्वसन तंत्र में वायुथैलियाँ उपस्थित</li>
+                    <li><span class="highlight">अण्डाकार शरीर:</span> वायु-अवरोध कम करने वाला शरीर</li>
+                    <li><span class="highlight">ताप नियमन:</span> उच्च शारीरिक तापमान और उच्च चयापचय दर</li>
+                    <li><span class="highlight">हृदय तंत्र:</span> चार-कक्षीय हृदय और कुशल रक्त परिसंचरण</li>
+                    <li><span class="highlight">पाचन तंत्र:</span> तीव्र पाचन क्षमता</li>
+                    <li><span class="highlight">दृष्टि:</span> तीक्ष्ण दृष्टि</li>
+                    <li><span class="highlight">अग्रपाद:</span> अग्रपाद पंखों में रूपांतरित</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>अण्डज और जरायुज द्वारा उत्पन्न अण्डों या बच्चों की संख्या में बराबर होते हैं? यदि हाँ तो क्यों? यदि नहीं तो क्यों?</span>
+            </div>
+            <div class="answer">
+                अण्डज (Oviparous) और जरायुज (Viviparous) द्वारा उत्पन्न अण्डों या बच्चों की संख्या <span class="highlight">बराबर नहीं</span> होती है। इसके निम्नलिखित कारण हैं:<br><br>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>अण्डज (Oviparous) जीव</th>
+                            <th>जरायुज (Viviparous) जीव</th>
+                        </tr>
+                        <tr>
+                            <td>अण्डे देते हैं</td>
+                            <td>सीधे बच्चे को जन्म देते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>अण्डों की संख्या अधिक होती है</td>
+                            <td>बच्चों की संख्या कम होती है</td>
+                        </tr>
+                        <tr>
+                            <td>भ्रूण का विकास बाह्य वातावरण में होता है</td>
+                            <td>भ्रूण का विकास मादा के शरीर के भीतर होता है</td>
+                        </tr>
+                        <tr>
+                            <td>शिशु की सुरक्षा कम होती है</td>
+                            <td>शिशु की सुरक्षा अधिक होती है</td>
+                        </tr>
+                        <tr>
+                            <td>उत्तरजीविता दर कम होती है</td>
+                            <td>उत्तरजीविता दर अधिक होती है</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण: पक्षी, सरीसृप, अधिकांश मछलियाँ</td>
+                            <td>उदाहरण: मनुष्य, गाय, व्हेल</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">कारण:</span> अण्डज जीवों में भ्रूण का विकास बाह्य वातावरण में होता है जहाँ खतरे अधिक होते हैं, इसलिए वे अधिक अण्डे देते हैं ताकि कुछ शिशु जीवित रह सकें। जरायुज जीवों में भ्रूण का विकास मादा के शरीर के भीतर सुरक्षित वातावरण में होता है, इसलिए वे कम संख्या में बच्चे पैदा करते हैं लेकिन उनकी उत्तरजीविता दर अधिक होती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>निम्नलिखित में से शारीरिक खंडन सबसे पहले किसमें देखा गया?<br>
+                (क) प्लैटिहेल्मिन्थीज (ख) एनेलिडा (ग) अर्थोपोडा (घ) मोलस्का</span>
+            </div>
+            <div class="answer">
+                शारीरिक खंडन (Metamerism) सबसे पहले <span class="highlight">एनेलिडा संघ</span> में देखा गया।<br><br>
+                
+                <span class="highlight">विवरण:</span>
+                <ul>
+                    <li>एनेलिडा संघ के जीवों में शरीर खंडों में विभाजित होता है</li>
+                    <li>प्रत्येक खंड में समान अंगों की पुनरावृत्ति होती है</li>
+                    <li>यह विकास की दृष्टि से एक महत्वपूर्ण अभिलक्षण है</li>
+                    <li>उदाहरण: केंचुआ, जोंक</li>
+                </ul>
+                
+                अन्य विकल्प:
+                <ul>
+                    <li>प्लैटिहेल्मिन्थीज: अखंडित शरीर</li>
+                    <li>अर्थोपोडा: खंडित शरीर (एनेलिडा के बाद विकसित)</li>
+                    <li>मोलस्का: अखंडित शरीर</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>निम्न का मिलान कीजिए-<br>
+                (i) प्रोटोनिफ्रिडिया (क) मोलस्का<br>
+                (ii) पैरापोडिया (ख) अर्थोपोडा<br>
+                (iii) नेफ्रिडिया (ग) एनेलिडा<br>
+                (iv) मैल्पीघियन नलिकाएँ (घ) प्लैटिहेल्मिन्थीज</span>
+            </div>
+            <div class="answer">
+                निम्नलिखित सही मिलान है:<br><br>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>स्तम्भ A</th>
+                            <th>स्तम्भ B</th>
+                        </tr>
+                        <tr>
+                            <td>(i) प्रोटोनिफ्रिडिया</td>
+                            <td>(घ) प्लैटिहेल्मिन्थीज</td>
+                        </tr>
+                        <tr>
+                            <td>(ii) पैरापोडिया</td>
+                            <td>(ग) एनेलिडा</td>
+                        </tr>
+                        <tr>
+                            <td>(iii) नेफ्रिडिया</td>
+                            <td>(क) मोलस्का</td>
+                        </tr>
+                        <tr>
+                            <td>(iv) मैल्पीघियन नलिकाएँ</td>
+                            <td>(ख) अर्थोपोडा</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">विवरण:</span>
+                <ul>
+                    <li><span class="highlight">प्रोटोनिफ्रिडिया:</span> प्लैटिहेल्मिन्थीज (चपटे कृमि) में उत्सर्जन अंग</li>
+                    <li><span class="highlight">पैरापोडिया:</span> एनेलिडा (खंडित कृमि) में गति के अंग</li>
+                    <li><span class="highlight">नेफ्रिडिया:</span> मोलस्का में उत्सर्जन अंग</li>
+                    <li><span class="highlight">मैल्पीघियन नलिकाएँ:</span> अर्थोपोडा में उत्सर्जन अंग</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>मनुष्यों पर पाए जाने वाले कुछ परजीवियों के नाम लिखिए।</span>
+            </div>
+            <div class="answer">
+                मनुष्यों पर पाए जाने वाले प्रमुख परजीवी और उनसे होने वाले रोग:<br><br>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>परजीवी का नाम</th>
+                            <th>रोग</th>
+                            <th>संक्रमण का तरीका</th>
+                        </tr>
+                        <tr>
+                            <td>प्लाज्मोडियम (Plasmodium)</td>
+                            <td>मलेरिया</td>
+                            <td>मादा एनाफिलीज मच्छर के काटने से</td>
+                        </tr>
+                        <tr>
+                            <td>ट्रिपैनोसोमा (Trypanosoma)</td>
+                            <td>नींद की बीमारी</td>
+                            <td>सी-सी मक्खी के काटने से</td>
+                        </tr>
+                        <tr>
+                            <td>एन्टअमीबा हिस्टोलिटिका (Entamoeba histolytica)</td>
+                            <td>अमीबिक पेचिश</td>
+                            <td>दूषित भोजन और जल</td>
+                        </tr>
+                        <tr>
+                            <td>टीनिया सोलियम (Taenia solium)</td>
+                            <td>फीता कृमि संक्रमण</td>
+                            <td>अधपका सूअर का मांस खाने से</td>
+                        </tr>
+                        <tr>
+                            <td>अस्केरिस (Ascaris)</td>
+                            <td>अस्केरियासिस</td>
+                            <td>दूषित भोजन और जल</td>
+                        </tr>
+                        <tr>
+                            <td>वुचेरेरिया (Wuchereria)</td>
+                            <td>फाइलेरिया (हाथीपाँव)</td>
+                            <td>क्यूलेक्स मच्छर के काटने से</td>
+                        </tr>
+                        <tr>
+                            <td>पेडीक्युलस (Pediculus)</td>
+                            <td>जूँ संक्रमण</td>
+                            <td>सीधे संपर्क या कपड़ों के माध्यम से</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 4 "जीव जगत" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

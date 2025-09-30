@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 1: जीव जगत</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>जीव जगत</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>जीवों को वर्गीकृत क्यों करते हैं?</span>
+            </div>
+            <div class="answer">
+                जीवों को वर्गीकृत करने के निम्नलिखित कारण हैं:<br><br>
+                <ul>
+                    <li>विविध जीवों का अध्ययन सुव्यवस्थित ढंग से करने के लिए</li>
+                    <li>जीवों के बीच समानताओं और अंतरों को समझने के लिए</li>
+                    <li>जीवों की पहचान करने और उनके नामकरण में सुविधा के लिए</li>
+                    <li>जैव विविधता के अध्ययन को सरल बनाने के लिए</li>
+                    <li>विकास संबंधी संबंधों को समझने के लिए</li>
+                    <li>जीवों के बारे में जानकारी को व्यवस्थित रूप से संग्रहित करने के लिए</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>वर्गीकरण प्रणाली को बार-बार क्यों बदलते हैं?</span>
+            </div>
+            <div class="answer">
+                वर्गीकरण प्रणाली को निम्नलिखित कारणों से बदला जाता है:<br><br>
+                <ul>
+                    <li>नए जीवों की खोज होने पर</li>
+                    <li>जीवों के बारे में नई जानकारी प्राप्त होने पर</li>
+                    <li>आणविक और आनुवंशिक अध्ययनों से नए तथ्य सामने आने पर</li>
+                    <li>विकास संबंधी नए सिद्धांतों के प्रतिपादन पर</li>
+                    <li>जीवों के बीच नए संबंधों का पता चलने पर</li>
+                    <li>वर्गीकरण की नई और बेहतर पद्धतियों के विकसित होने पर</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>जिन लोगों से आप प्रायः मिलते हैं, आप उन्हें किस आधार पर वर्गीकृत करना पसंद करेंगे?</span>
+            </div>
+            <div class="answer">
+                लोगों का वर्गीकरण निम्नलिखित आधारों पर किया जा सकता है:<br><br>
+                <ul>
+                    <li><span class="highlight">वस्त्रों के आधार पर</span> - पारंपरिक, आधुनिक, औपचारिक, अनौपचारिक</li>
+                    <li><span class="highlight">मातृभाषा के आधार पर</span> - हिंदी, अंग्रेजी, क्षेत्रीय भाषाएँ</li>
+                    <li><span class="highlight">निवास स्थान के आधार पर</span> - शहरी, ग्रामीण, महानगरीय</li>
+                    <li><span class="highlight">आर्थिक स्तर के आधार पर</span> - उच्च, मध्यम, निम्न वर्ग</li>
+                    <li><span class="highlight">शैक्षिक योग्यता के आधार पर</span> - स्नातक, स्नातकोत्तर, डॉक्टरेट</li>
+                    <li><span class="highlight">व्यवसाय के आधार पर</span> - छात्र, शिक्षक, डॉक्टर, इंजीनियर</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>व्यक्ति और समुदाय की पहचान से हमें क्या शिक्षा मिलती है?</span>
+            </div>
+            <div class="answer">
+                व्यक्ति और समुदाय की पहचान से हमें निम्नलिखित शिक्षा मिलती है:<br><br>
+                <ul>
+                    <li>सामाजिक सद्भाव और सहअस्तित्व की महत्ता का ज्ञान</li>
+                    <li>विविधता में एकता का महत्व</li>
+                    <li>सांस्कृतिक विरासत और परंपराओं का संरक्षण</li>
+                    <li>सामूहिक पहचान और व्यक्तिगत पहचान के बीच संतुलन</li>
+                    <li>समाज में अपनी भूमिका और उत्तरदायित्वों का बोध</li>
+                    <li>अन्य संस्कृतियों और समुदायों के प्रति सम्मान की भावना</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>आम का वैज्ञानिक नाम निम्नलिखित है। इनमें से कौन सा सही है?<br>
+                (क) मैंजिफेरा इंडिका<br>
+                (ख) मैंजिफेरा इंडिका (इटैलिक)</span>
+            </div>
+            <div class="answer">
+                आम का सही वैज्ञानिक नाम <span class="highlight">मैंजिफेरा इंडिका (इटैलिक)</span><br><br>
+                वैज्ञानिक नामकरण के नियमों के अनुसार:
+                <ul>
+                    <li>1. वंश नाम का पहला अक्षर बड़ा होना चाहिए।</li>
+                    <li>2. जाति सूचक नाम का पहला अक्षर छोटा होना चाहिए।</li>
+                    <li>3. पूरा नाम इटैलिक में लिखा जाना चाहिए या अंडरलाइन किया जाना चाहिए।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>वर्गिकी (Taxon) की परिभाषा दीजिए। विभिन्न पदानुक्रम स्तर पर वर्गिकी के कुछ उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">वर्गिकी (Taxon) की परिभाषा:</span> वर्गिकी जीवों के वर्गीकरण की कोई भी श्रेणी को कहते हैं जिसमें निश्चित विशेषताओं के आधार पर जीवों को समूहित किया जाता है। यह वर्गीकरण की कोई भी रैंक हो सकती है।<br><br>
+                
+                <span class="highlight">विभिन्न पदानुक्रम स्तर पर वर्गिकी के उदाहरण:</span>
+                <ul>
+                    <li><span class="highlight">जगत (Kingdom) स्तर:</span> पादप जगत (Plantae), प्राणि जगत (Animalia)</li>
+                    <li><span class="highlight">संघ (Phylum) स्तर:</span> कॉर्डेटा (Chordata), आर्थ्रोपोडा (Arthropoda)</li>
+                    <li><span class="highlight">वर्ग (Class) स्तर:</span> स्तनधारी (Mammalia), कीट (Insecta)</li>
+                    <li><span class="highlight">गण (Order) स्तर:</span> प्राइमेट (Primates), कार्निवोरा (Carnivora)</li>
+                    <li><span class="highlight">कुल (Family) स्तर:</span> फेलिडी (Felidae - बिल्ली कुल), होमिनिडी (Hominidae - मानव कुल)</li>
+                    <li><span class="highlight">वंश (Genus) स्तर:</span> Panthera (शेर, तेंदुआ आदि), Homo (मानव)</li>
+                    <li><span class="highlight">जाति (Species) स्तर:</span> Homo sapiens (मानव), Panthera tigris (बाघ)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>क्या आप वर्गिकी (Taxonomic) श्रेणियों का सही क्रम पहचान सकते हैं?<br>
+                (क) जाति → गण → संघ → जगत<br>
+                (ख) वंश → जाति → गण → जगत<br>
+                (ग) जाति → वंश → गण → संघ</span>
+            </div>
+            <div class="answer">
+                वर्गिकी श्रेणियों का सही क्रम है:<br><br>
+                
+                <span class="highlight">जाति (Species) → वंश (Genus) → कुल (Family) → गण (Order) → वर्ग (Class) → संघ (Phylum) → जगत (Kingdom)</span><br><br>
+                
+                दिए गए विकल्पों में से <span class="highlight">विकल्प (ग) "जाति → वंश → गण → संघ"</span> सही है क्योंकि यह वर्गिकी पदानुक्रम के क्रम को दर्शाता है।<br><br>
+                
+                विकल्प (क) और (ख) गलत हैं क्योंकि:
+                <ul>
+                    <li>विकल्प (क) में गण के बाद सीधे संघ आता है जबकि बीच में वर्ग होना चाहिए</li>
+                    <li>विकल्प (ख) में वंश के बाद जाति आती है जो गलत क्रम है (जाति के बाद वंश आना चाहिए)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>'जाति' शब्द के सभी मानवीय वर्तमान प्रासंगिक अर्थों को एकत्र कीजिए। क्या आप अपने शिक्षक से उच्च कोटि के पादपों और प्राणियों तथा जीवाणुओं की जाति के अर्थ को जानने के लिए चर्चा कर सकते हैं?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">'जाति' शब्द के मानवीय प्रासंगिक अर्थ:</span>
+                <ul>
+                    <li>जीव विज्ञान में: एक ही प्रकार के गुणों वाले जीवों का समूह जो आपस में प्रजनन कर सकते हैं</li>
+                    <li>समाजशास्त्र में: मानव समाज में जन्म के आधार पर बना सामाजिक विभाजन</li>
+                    <li>दर्शनशास्त्र में: किसी वस्तु या विचार का स्वरूप या प्रकार</li>
+                    <li>भाषाविज्ञान में: भाषा की एक विशिष्ट शैली या प्रकार</li>
+                    <li>व्याकरण में: शब्दों का वर्गीकरण (जैसे संज्ञा, सर्वनाम आदि)</li>
+                </ul>
+                
+                <span class="highlight">उच्च कोटि के पादपों, प्राणियों और जीवाणुओं की जाति:</span><br>
+                जीव विज्ञान में जाति (Species) जीवों का एक समूह है जिसके सदस्य:
+                <ul>
+                    <li>आपस में प्रजनन कर सकते हैं और उर्वर संतान पैदा कर सकते हैं</li>
+                    <li>शारीरिक और आनुवंशिक लक्षणों में समानता रखते हैं</li>
+                    <li>एक सामान्य पूर्वज से उत्पन्न हुए हैं</li>
+                    <li>एक विशिष्ट पारिस्थितिक स्थान (Niche) पर कब्जा करते हैं</li>
+                </ul>
+                
+                जीवाणुओं (Bacteria) के लिए जाति की अवधारणा थोड़ी भिन्न है क्योंकि उनमें लैंगिक जनन नहीं होता, फिर भी आनुवंशिक समानता के आधार पर उन्हें जातियों में वर्गीकृत किया जाता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>निम्नलिखित शब्दों को समझिए, और परिभाषित कीजिए:<br>
+                (क) संघ (ख) वर्ग (ग) कुल (घ) गण (ङ) वंश</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(क) संघ (Phylum):</span> जगत के बाद की वर्गिकी श्रेणी है। एक संघ में समान body plan वाले जीवों को रखा जाता है। उदाहरण: कॉर्डेटा संघ (रीढ़धारी जीव)।<br><br>
+                
+                <span class="highlight">(ख) वर्ग (Class):</span> संघ के बाद की श्रेणी है। एक वर्ग में समान characteristics वाले कई गण (Orders) शामिल होते हैं। उदाहरण: स्तनधारी वर्ग (Mammalia)।<br><br>
+                
+                <span class="highlight">(ग) कुल (Family):</span> गण के बाद की श्रेणी है। एक कुल में समान लक्षणों वाले कई वंश (Genera) शामिल होते हैं। उदाहरण: फेलिडी कुल (बिल्ली प्रजातियाँ)।<br><br>
+                
+                <span class="highlight">(घ) गण (Order):</span> वर्ग के बाद की श्रेणी है। एक गण में समान गुणों वाले कई कुल (Families) शामिल होते हैं। उदाहरण: मांसाहारी गण (Carnivora)।<br><br>
+                
+                <span class="highlight">(ङ) वंश (Genus):</span> कुल के बाद की श्रेणी है। एक वंश में निकट संबंधित और समान characteristics वाली जातियाँ (Species) शामिल होती हैं। उदाहरण: Panthera (शेर, बाघ, तेंदुआ आदि)।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>पादपों और प्राणियों के उचित उदाहरण देते हुए वर्गिकी पदानुक्रम का चित्रण कीजिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">वर्गिकी पदानुक्रम का चित्रण:</span><br><br>
+                
+                <span class="highlight">मनुष्य का वर्गिकी पदानुक्रम:</span>
+                <ul>
+                    <li>जगत (Kingdom): प्राणि जगत (Animalia)</li>
+                    <li>संघ (Phylum): कॉर्डेटा (Chordata)</li>
+                    <li>वर्ग (Class): स्तनधारी (Mammalia)</li>
+                    <li>गण (Order): प्राइमेट (Primates)</li>
+                    <li>कुल (Family): होमिनिडी (Hominidae)</li>
+                    <li>वंश (Genus): होमो (Homo)</li>
+                    <li>जाति (Species): सैपियन्स (sapiens) - <span class="highlight">Homo sapiens</span></li>
+                </ul>
+                
+                <span class="highlight">आम (Mango) का वर्गिकी पदानुक्रम:</span>
+                <ul>
+                    <li>जगत (Kingdom): पादप जगत (Plantae)</li>
+                    <li>संघ (Division): एंजियोस्पर्म (Angiospermae)</li>
+                    <li>वर्ग (Class): डाइकोटाइलिडोन (Dicotyledonae)</li>
+                    <li>गण (Order): सैपिंडेल्स (Sapindales)</li>
+                    <li>कुल (Family): एनाकार्डिएसी (Anacardiaceae)</li>
+                    <li>वंश (Genus): मैंगिफेरा (Mangifera)</li>
+                    <li>जाति (Species): इंडिका (indica) - <span class="highlight">Mangifera indica</span></li>
+                </ul>
+                
+                <span class="highlight">बाघ (Tiger) का वर्गिकी पदानुक्रम:</span>
+                <ul>
+                    <li>जगत (Kingdom): प्राणि जगत (Animalia)</li>
+                    <li>संघ (Phylum): कॉर्डेटा (Chordata)</li>
+                    <li>वर्ग (Class): स्तनधारी (Mammalia)</li>
+                    <li>गण (Order): मांसाहारी (Carnivora)</li>
+                    <li>कुल (Family): फेलिडी (Felidae)</li>
+                    <li>वंश (Genus): पैंथेरा (Panthera)</li>
+                    <li>जाति (Species): टाइग्रिस (tigris) - <span class="highlight">Panthera tigris</span></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 1 "जीव जगत" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

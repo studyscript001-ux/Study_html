@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 3: पादप जगत</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>पादप जगत</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान अध्याय 3</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>शैवालों के वर्गीकरण का क्या आधार है?</span>
+            </div>
+            <div class="answer">
+                शैवालों के वर्गीकरण का आधार निम्नलिखित है:<br><br>
+                <ul>
+                    <li>रंगद्रव्यों (पिगमेंट) के प्रकार</li>
+                    <li>संचित भोजन की प्रकृति</li>
+                    <li>कोशिका भित्ति की संरचना</li>
+                    <li>कशाभिका (फ्लैजेला) की संख्या और सम्मिलन का स्थान</li>
+                    <li>जीवन चक्र की विशेषताएं</li>
+                    <li>संरचनात्मक संगठन (एककोशिकीय, colonial, filamentous आदि)</li>
+                </ul>
+                इन आधारों पर शैवालों को तीन प्रमुख वर्गों में बाँटा गया है: क्लोरोफाइसी (हरे शैवाल), फियोफाइसी (भूरे शैवाल) और रोडोफाइसी (लाल शैवाल)।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>ब्रायोफाइट्स, टेरिडोफाइट्स, जिम्नोस्पर्म्स और एंजियोस्पर्म्स के जीवन-चक्र में कहाँ और कब अर्धसूत्री विभाजन होता है?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>पादप समूह</th>
+                            <th>अर्धसूत्री विभाजन का स्थान</th>
+                            <th>अर्धसूत्री विभाजन का समय</th>
+                        </tr>
+                        <tr>
+                            <td>ब्रायोफाइट्स</td>
+                            <td>कैप्सूल (संवृंत) में</td>
+                            <td>बीजाणु निर्माण के समय</td>
+                        </tr>
+                        <tr>
+                            <td>टेरिडोफाइट्स</td>
+                            <td>बीजाणुधानी (स्पोरैन्जिया) में</td>
+                            <td>बीजाणु निर्माण के समय</td>
+                        </tr>
+                        <tr>
+                            <td>जिम्नोस्पर्म्स</td>
+                            <td>माइक्रोस्पोरैन्जिया और मेगास्पोरैन्जिया में</td>
+                            <td>माइक्रोस्पोर और मेगास्पोर निर्माण के समय</td>
+                        </tr>
+                        <tr>
+                            <td>एंजियोस्पर्म्स</td>
+                            <td>परागकोश और बीजांड में</td>
+                            <td>परागकण और भ्रूणकोष निर्माण के समय</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>पादपों के तीन समूहों के नाम लिखिए, जिनमें स्त्रीधानी होती है। इनमें से किसी एक के जीवन-चक्र का संक्षिप्त वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">
+                स्त्रीधानी (आर्किगोनिया) वाले पादपों के तीन समूह हैं:
+                <ul>
+                    <li>ब्रायोफाइट्स (मॉस और लिवरवर्ट्स)</li>
+                    <li>टेरिडोफाइट्स (फर्न और उनके सहयोगी)</li>
+                    <li>जिम्नोस्पर्म्स (नग्नबीजी पादप)</li>
+                </ul>
+                
+                <span class="highlight">ब्रायोफाइट्स के जीवन-चक्र का संक्षिप्त वर्णन:</span><br>
+                ब्रायोफाइट्स में एक द्विजीवन-चक्र (alternation of generations) होता है जिसमें गैमीटोफाइट प्रमुख, हरा और स्वपोषी होता है, जबकि स्पोरोफाइट अपूर्ण और गैमीटोफाइट पर निर्भर होता है। नर युग्मक (शुक्राणु) और मादा युग्मक (अंडाणु) के संलयन से युग्मनज बनता है जो स्पोरोफाइट में विकसित होता है। स्पोरोफाइट अर्धसूत्री विभाजन द्वारा बीजाणु उत्पन्न करता है जो अंकुरित होकर नए गैमीटोफाइट बनाते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>निम्नलिखित की सूत्रगुणिता बताओ: मॉस के प्रोटोनेमा कोशिका, द्विबीजपत्री के प्राथमिक भ्रूणपोष के केन्द्रक, मॉस की पत्ती की कोशिका, फर्न के प्रोथैलस की कोशिका, फर्न के मुकुलेरी कोशिका, मार्केंशिया के जेमा कोशिका, एकबीजपत्री की मैट्रिक्स कोशिका, मार्केंशिया के अंडाशय और फर्न के जाइगोट।</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>संरचना</th>
+                            <th>सूत्रगुणिता (Ploidy)</th>
+                        </tr>
+                        <tr>
+                            <td>मॉस के प्रोटोनेमा कोशिका</td>
+                            <td>n (अगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>द्विबीजपत्री के प्राथमिक भ्रूणपोष के केन्द्रक</td>
+                            <td>3n (त्रिगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>मॉस की पत्ती की कोशिका</td>
+                            <td>n (अगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>फर्न के प्रोथैलस की कोशिका</td>
+                            <td>n (अगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>फर्न के मुकुलेरी कोशिका</td>
+                            <td>2n (द्विगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>मार्केंशिया के जेमा कोशिका</td>
+                            <td>n (अगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>एकबीजपत्री की मैट्रिक्स कोशिका</td>
+                            <td>2n (द्विगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>मार्केंशिया के अंडाशय</td>
+                            <td>n (अगुणित)</td>
+                        </tr>
+                        <tr>
+                            <td>फर्न के जाइगोट</td>
+                            <td>2n (द्विगुणित)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>शैवाल और जिम्नोस्पर्म के आर्थिक महत्व पर टिप्पणी लिखिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">शैवाल का आर्थिक महत्व:</span>
+                <ul>
+                    <li>प्रकाश संश्लेषण द्वारा वायुमंडल में ऑक्सीजन का स्तर बढ़ाना</li>
+                    <li>जलीय पारिस्थितिक तंत्र में प्राथमिक उत्पादक के रूप में कार्य करना</li>
+                    <li>भोजन के रूप में उपयोग (जैसे स्पाइरुलीना, क्लोरेला, पोर्फाइरा)</li>
+                    <li>आयोडीन, पोटाश और अल्जिनिक अम्ल जैसे उत्पादों का स्रोत</li>
+                    <li>जेली और आइसक्रीम बनाने में एगार-एगार का उपयोग</li>
+                    <li>जैव उर्वरक के रूप में नाइट्रोजन स्थिरीकरण</li>
+                </ul>
+                
+                <span class="highlight">जिम्नोस्पर्म का आर्थिक महत्व:</span>
+                <ul>
+                    <li>लकड़ी का महत्वपूर्ण स्रोत (देवदार, चीड़, स्प्रूस)</li>
+                    <li>कागज उद्योग के लिए लुगदी का उत्पादन</li>
+                    <li>रेजिन, टर्पेन्टाइन और अन्य रासायनिक उत्पादों का स्रोत</li>
+                    <li>सजावटी पौधों के रूप में उपयोग (साइकस, थुजा)</li>
+                    <li>दवाओं के निर्माण में उपयोग (टैक्सस से टैक्सोल कैंसर रोधी दवा)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>जिम्नोस्पर्म और एंजियोस्पर्म दोनों में बीज होते हैं, फिर भी उनका वर्गीकरण अलग-अलग क्यों है?</span>
+            </div>
+            <div class="answer">
+                जिम्नोस्पर्म और एंजियोस्पर्म दोनों बीज उत्पन्न करते हैं, फिर भी उनका वर्गीकरण अलग-अलग है क्योंकि इनमें निम्नलिखित मूलभूत अंतर हैं:
+                <ul>
+                    <li><span class="highlight">बीजों का स्थान:</span> जिम्नोस्पर्म में बीज अंडाशय द्वारा ढके नहीं होते (नग्नबीजी), जबकि एंजियोस्पर्म में बीज अंडाशय के भीतर विकसित होते हैं और फल द्वारा ढके होते हैं।</li>
+                    <li><span class="highlight">पुष्पों की उपस्थिति:</span> जिम्नोस्पर्म में वास्तविक पुष्प नहीं होते, जबकि एंजियोस्पर्म में पुष्प होते हैं।</li>
+                    <li><span class="highlight">परागण:</span> जिम्नोस्पर्म में परागण केवल वायु द्वारा होता है, जबकि एंजियोस्पर्म में वायु, जल, कीट, पक्षी आदि विभिन्न माध्यमों से परागण होता है।</li>
+                    <li><span class="highlight">संवहनी ऊतक:</span> जिम्नोस्पर्म में जाइलम में वाहिकाएँ (vessels) अनुपस्थित होती हैं, जबकि एंजियोस्पर्म में वाहिकाएँ उपस्थित होती हैं।</li>
+                    <li><span class="highlight">द्विनिषेचन:</span> जिम्नोस्पर्म में द्विनिषेचन नहीं होता, जबकि एंजियोस्पर्म में द्विनिषेचन की विशिष्ट प्रक्रिया होती है।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>विषमबीजाणुता क्या है? इसकी सार्थकता पर संक्षिप्त टिप्पणी लिखिए। इसके दो उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">विषमबीजाणुता (Heterospory):</span> यह एक ऐसी घटना है जिसमें एक पादप दो प्रकार के बीजाणु उत्पन्न करता है - सूक्ष्मबीजाणु (microspores) और गुरुबीजाणु (megaspores)। सूक्ष्मबीजाणु नर युग्मकोद्भिद (male gametophyte) और गुरुबीजाणु मादा युग्मकोद्भिद (female gametophyte) विकसित करते हैं।<br><br>
+                
+                <span class="highlight">सार्थकता:</span>
+                <ul>
+                    <li>यह एक महत्वपूर्ण विकासवादी अभ्युत्क्रम (evolutionary advancement) है जिसने बीज निर्माण का मार्ग प्रशस्त किया</li>
+                    <li>यह लैंगिक प्रजनन की दक्षता बढ़ाती है क्योंकि विशिष्टीकृत बीजाणु विशिष्ट कार्य करते हैं</li>
+                    <li>यह युग्मकोद्भिद के लिंग निर्धारण की ओर ले जाती है</li>
+                    <li>यह बीज पादपों की एक प्रमुख विशेषता है</li>
+                </ul>
+                
+                <span class="highlight">उदाहरण:</span>
+                <ul>
+                    <li>साल्विनिया (एक जलीय फर्न)</li>
+                    <li>सेलाजिनेला (एक लाइकोपोडियम)</li>
+                    <li>सभी बीजधारी पादप (जिम्नोस्पर्म और एंजियोस्पर्म)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>उदाहरण सहित निम्नलिखित शब्दावली का संक्षिप्त वर्णन कीजिए:<br>
+                (i) प्रोथैलस (ii) परिधान (iii) स्त्रीधानी (iv) द्विनिषेचन (v) बीजाणुधानी</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(i) प्रोथैलस (Prothallus):</span> फर्न और अन्य टेरिडोफाइट्स का हरा, हृदयाकार, थैलोइड अगुणित गैमीटोफाइट होता है। यह स्वपोषी और स्वतंत्र अस्तित्व वाला होता है। उदाहरण: ड्रायोप्टेरिस का प्रोथैलस।<br><br>
+                
+                <span class="highlight">(ii) परिधान (Perianth):</span> पुष्प का बाह्य आवरण जो पुंकेसर और स्त्रीकेसर की रक्षा करता है। यह दलचक्र (कोरोला) और बाह्यदलचक्र (केलीक्स) से मिलकर बना होता है। उदाहरण: गुलाब के फूल में पंखुड़ियाँ और बाह्यदल।<br><br>
+                
+                <span class="highlight">(iii) स्त्रीधानी (Archegonium):</span> ब्रायोफाइट्स, टेरिडोफाइट्स और जिम्नोस्पर्म्स में पाया जाने वाला फ्लास्क के आकार का मादा जनन अंग जिसमें अंडकोशिका (egg) बनती है। उदाहरण: फर्न के प्रोथैलस पर स्त्रीधानी।<br><br>
+                
+                <span class="highlight">(iv) द्विनिषेचन (Double Fertilization):</span> एंजियोस्पर्म्स में होने वाली एक विशिष्ट प्रक्रिया जिसमें दो निषेचन होते हैं - एक युग्मनज (zygote) बनाने के लिए और दूसरा भ्रूणपोष (endosperm) बनाने के लिए। उदाहरण: सभी फूलों वाले पौधे।<br><br>
+                
+                <span class="highlight">(v) बीजाणुधानी (Sporangium):</span> एक विशेष संरचना जिसमें बीजाणु (spores) बनते हैं और संग्रहीत होते हैं। उदाहरण: फर्न की पत्तियों के निचली सतह पर बीजाणुधानी।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>निम्नलिखित में अंतर कीजिए:<br>
+                (i) लाल शैवाल और भूरे शैवाल<br>
+                (ii) लिवरवर्ट और मॉस<br>
+                (iii) विषमबीजाणुक और समबीजाणुक टेरिडोफाइट</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>लाल शैवाल (रोडोफाइसी)</th>
+                            <th>भूरे शैवाल (फियोफाइसी)</th>
+                        </tr>
+                        <tr>
+                            <td>रंगद्रव्य</td>
+                            <td>क्लोरोफिल a, d और r-फाइकोएरिथ्रिन</td>
+                            <td>क्लोरोफिल a, c और फ्यूकोजैन्थिन</td>
+                        </tr>
+                        <tr>
+                            <td>संचित भोजन</td>
+                            <td>फ्लोरिडियन स्टार्च</td>
+                            <td>लैमिनेरिन और मैनिटोल</td>
+                        </tr>
+                        <tr>
+                            <td>कोशिका भित्ति</td>
+                            <td>सेल्यूलोज, पेक्टिक और सल्फेटेड पॉलीसेकेराइड</td>
+                            <td>सेल्यूलोज और एल्गिनिक अम्ल</td>
+                        </tr>
+                        <tr>
+                            <td>कशाभिका</td>
+                            <td>अनुपस्थित</td>
+                            <td>असमान, पार्श्विका</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण</td>
+                            <td>पोर्फाइरा, पोलीसाइफोनिया</td>
+                            <td>लैमिनेरिया, फ्यूकस, सारगासम</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>लिवरवर्ट (लिवरवर्ट्स)</th>
+                            <th>मॉस (मॉसेस)</th>
+                        </tr>
+                        <tr>
+                            <td>संरचना</td>
+                            <td>थैलस जैसी, पत्ती जैसी संरचना</td>
+                            <td>पत्तियों और तनों जैसी संरचना</td>
+                        </tr>
+                        <tr>
+                            <td>जेमा कप</td>
+                            <td>उपस्थित (कुछ में)</td>
+                            <td>अनुपस्थित</td>
+                        </tr>
+                        <tr>
+                            <td>अलिंगी प्रजनन</td>
+                            <td>जेमा कप द्वारा</td>
+                            <td>कलमों द्वारा</td>
+                        </tr>
+                        <tr>
+                            <td>स्पोरोफाइट</td>
+                            <td>कम विकसित, कैप्सूल सरल</td>
+                            <td>अधिक विकसित, कैप्सूल जटिल</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण</td>
+                            <td>मार्केंशिया, रिक्सिया</td>
+                            <td>फ्यूनारिया, पॉलीट्राइकम</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>विषमबीजाणुक टेरिडोफाइट</th>
+                            <th>समबीजाणुक टेरिडोफाइट</th>
+                        </tr>
+                        <tr>
+                            <td>बीजाणु</td>
+                            <td>दो प्रकार के (सूक्ष्म और गुरुबीजाणु)</td>
+                            <td>एक ही प्रकार के</td>
+                        </tr>
+                        <tr>
+                            <td>युग्मकोद्भिद</td>
+                            <td>एकलिंगी</td>
+                            <td>उभयलिंगी</td>
+                        </tr>
+                        <tr>
+                            <td>विकासवादी स्थिति</td>
+                            <td>अधिक उन्नत</td>
+                            <td>अपेक्षाकृत कम उन्नत</td>
+                        </tr>
+                        <tr>
+                            <td>बीज निर्माण</td>
+                            <td>बीज निर्माण की दिशा में एक कदम</td>
+                            <td>बीज निर्माण से दूर</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण</td>
+                            <td>साल्विनिया, सेलाजिनेला</td>
+                            <td>एडियंटम, ड्रायोप्टेरिस</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>स्तंभ I में दिए गए पादपों का स्तंभ II में दिए गए पादप वर्गों से मिलान कीजिए।<br>
+                स्तंभ I (पादप) &emsp; स्तंभ II (वर्ग)<br>
+                (क) क्लैमाइडोमोनस &emsp; (i) मॉस<br>
+                (ख) साइकस &emsp; (ii) टेरिडोफाइट<br>
+                (ग) सेलाजिनेला &emsp; (iii) शैवाल<br>
+                (घ) स्फैग्नम &emsp; (iv) जिम्नोस्पर्म</span>
+            </div>
+            <div class="answer">
+                स्तंभ I और स्तंभ II का सही मिलान निम्नलिखित है:<br><br>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>स्तंभ I (पादप)</th>
+                            <th>स्तंभ II (वर्ग)</th>
+                        </tr>
+                        <tr>
+                            <td>(क) क्लैमाइडोमोनस</td>
+                            <td>(iii) शैवाल</td>
+                        </tr>
+                        <tr>
+                            <td>(ख) साइकस</td>
+                            <td>(iv) जिम्नोस्पर्म</td>
+                        </tr>
+                        <tr>
+                            <td>(ग) सेलाजिनेला</td>
+                            <td>(ii) टेरिडोफाइट</td>
+                        </tr>
+                        <tr>
+                            <td>(घ) स्फैग्नम</td>
+                            <td>(i) मॉस</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>जिम्नोस्पर्म के महत्वपूर्ण लक्षणों का वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">
+                जिम्नोस्पर्म के महत्वपूर्ण लक्षण निम्नलिखित हैं:
+                <ul>
+                    <li>ये नग्नबीजी पौधे हैं, अर्थात इनके बीज अंडाशय द्वारा ढके नहीं होते</li>
+                    <li>ये बहुवर्षीय, वृक्ष या झाड़ियाँ होते हैं</li>
+                    <li>इनमें जाइलम में केवल ट्रैकिड्स होते हैं, वाहिकाएँ (vessels) अनुपस्थित होती हैं</li>
+                    <li>फ्लोएम में सहचर कोशिकाएँ (companion cells) अनुपस्थित होती हैं</li>
+                    <li>ये विषमबीजाणुक (heterosporous) होते हैं - सूक्ष्मबीजाणु और गुरुबीजाणु उत्पन्न करते हैं</li>
+                    <li>नर और मादा शंकु (cones) अलग-अलग होते हैं</li>
+                    <li>परागण वायु द्वारा होता है (anemophilous)</li>
+                    <li>निषेचन के बाद बीज बनते हैं जो नग्न होते हैं (अंडाशय द्वारा ढके नहीं होते)</li>
+                    <li>द्विनिषेचन (double fertilization) अनुपस्थित होता है</li>
+                    <li>इनमें स्त्रीधानी (archegonia) पाए जाते हैं</li>
+                    <li>भ्रूणपोष (endosperm) अगुणित (haploid) होता है और निषेचन से पहले बनता है</li>
+                </ul>
+                
+                जिम्नोस्पर्म के उदाहरण: साइकस, पाइनस (चीड़), सेड्रस (देवदार), जिंकगो आदि।
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 3 "पादप जगत" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
