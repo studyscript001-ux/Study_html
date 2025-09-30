@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 रसायन विज्ञान - अध्याय 1: विलयन</title>
+    <style>
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', 'Nirmala UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::after {
+            content: "";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            pointer-events: none;
+            z-index: 9999;
+            font-weight: bold;
+        }
+        
+        @media print {
+            body::after {
+                color: rgba(0, 0, 0, 0.1);
+            }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 20px 15px;
+            text-align: center;
+            margin: 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            border-radius: 0 0 15px 15px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .header h1 {
+            font-size: 1.8rem;
+            margin: 5px 0;
+        }
+        
+        .header h2 {
+            font-size: 1.4rem;
+            margin: 5px 0;
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px 15px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            padding: 18px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border-left: 5px solid #2575fc;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+        }
+        
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            font-size: 1rem;
+            line-height: 1.4;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        
+        .answer {
+            color: #34495e;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .answer p {
+            margin-bottom: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin: 12px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 10px 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: 600;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        
+        .question-number {
+            display: inline-block;
+            background: #2575fc;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px 10px;
+            }
+            
+            .card {
+                padding: 15px;
+                font-size: 0.85rem;
+                margin-bottom: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.6rem;
+            }
+            
+            .header h2 {
+                font-size: 1.2rem;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 15px 10px;
+            }
+            
+            .header h1 {
+                font-size: 1.4rem;
+            }
+            
+            .header h2 {
+                font-size: 1.1rem;
+            }
+            
+            .card {
+                padding: 12px;
+                border-radius: 10px;
+            }
+            
+            .question {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय : 1 विलयन</h1>
+        <h2>कक्षा 12 रसायन विज्ञान</h2>
+    </div>
+    
+    <div class="container">
+        <!-- Question 1.1 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.1</span> विलयन को परिभाषित कीजिए। कितने प्रकार के विभिन्न विलयन संभव हैं? प्रत्येक प्रकार के विलयन के संबंध में एक उदाहरण देकर संक्षेप में लिखिए।</div>
+            <div class="answer">
+                <p>विलयन दो या दो से अधिक पदार्थों का समांगी मिश्रण होता है जिसमें सभी स्थानों पर इसका संघटन और गुण समान होते हैं।</p>
+                <p><strong>विलयन के प्रकार:</strong></p>
+                <ol>
+                    <li><strong>ठोस विलयन</strong> - जैसे: पीतल (ताँबा और जस्ता का मिश्रण)</li>
+                    <li><strong>द्रव विलयन</strong> - जैसे: चीनी का जलीय विलयन</li>
+                    <li><strong>गैसीय विलयन</strong> - जैसे: वायु (ऑक्सीजन, नाइट्रोजन आदि गैसों का मिश्रण)</li>
+                </ol>
+            </div>
+        </div>
+        
+        <!-- Question 1.2 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.2</span> एक ऐसे ठोस विलयन का उदाहरण दीजिए जिसमें विलेय कोई गैस हो।</div>
+            <div class="answer">
+                <p>पैलेडियम में हाइड्रोजन गैस का विलयन। हाइड्रोजन गैस पैलेडियम धातु में विलेय होती है और ठोस विलयन बनाती है।</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.3 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.3</span> निम्नलिखित पदों को परिभाषित कीजिए -<br>(i) मोल-अंश (ii) मोललता (iii) मोलरता (iv) द्रव्यमान प्रतिशत</div>
+            <div class="answer">
+                <p><strong>(i) मोल-अंश:</strong> किसी घटक के मोलों की संख्या का विलयन में उपस्थित सभी घटकों के कुल मोलों की संख्या से अनुपात होता है।</p>
+                <p><strong>(ii) मोललता:</strong> 1 kg विलायक में उपस्थित विलेय के मोलों की संख्या होती है।</p>
+                <p><strong>(iii) मोलरता:</strong> 1 लीटर विलयन में उपस्थित विलेय के मोलों की संख्या होती है।</p>
+                <p><strong>(iv) द्रव्यमान प्रतिशत:</strong> विलयन के कुल द्रव्यमान में उपस्थित विलेय के द्रव्यमान का प्रतिशत होता है।</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.4 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.4</span> प्रयोगशाला कार्य के लिए, प्रयोग में लाए जाने वाले सांद्र नाइट्रिक अम्ल द्रव्यमान की दृष्टि से नाइट्रिक अम्ल का 68% जलीय विलयन है। यदि इस विलयन का घनत्व 1.504 g mL⁻¹ हो तो अम्ल के इस नमूने की मोलरता क्या होगी?</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>माना विलयन का आयतन = 1 L = 1000 mL</p>
+                <p>विलयन का द्रव्यमान = घनत्व × आयतन = 1.504 g/mL × 1000 mL = 1504 g</p>
+                <p>विलेय (HNO₃) का द्रव्यमान = 1504 g का 68% = (68/100) × 1504 = 1022.72 g</p>
+                <p>HNO₃ का मोलर द्रव्यमान = 1 + 14 + 48 = 63 g/mol</p>
+                <p>HNO₃ के मोलों की संख्या = 1022.72 / 63 = 16.23 mol</p>
+                <p>विलयन की मोलरता = मोलों की संख्या / लीटर में आयतन = 16.23 mol / 1 L = <strong>16.23 M</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.5 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.5</span> ग्लूकोज का एक जलीय विलयन 10% (w/w) है। विलयन की मोललता तथा विलयन में प्रत्येक घटक का मोल-अंश क्या है? यदि विलयन का घनत्व 1.2 g mL⁻¹ हो तो विलयन की मोलरता क्या होगी?</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>10% (w/w) ग्लूकोज विलयन का अर्थ है कि 100 g विलयन में 10 g ग्लूकोज और 90 g जल है।</p>
+                <p>ग्लूकोज (C₆H₁₂O₆) का मोलर द्रव्यमान = 180 g/mol</p>
+                <p>जल (H₂O) का मोलर द्रव्यमान = 18 g/mol</p>
+                <p>ग्लूकोज के मोल = 10 / 180 = 0.0556 mol</p>
+                <p>जल के मोल = 90 / 18 = 5 mol</p>
+                <p>मोललता = (0.0556 mol / 0.09 kg) = <strong>0.618 m</strong></p>
+                <p>ग्लूकोज का मोल-अंश = 0.0556 / (0.0556 + 5) = <strong>0.011</strong></p>
+                <p>जल का मोल-अंश = 5 / (0.0556 + 5) = <strong>0.989</strong></p>
+                <p>विलयन का आयतन = द्रव्यमान / घनत्व = 100 g / 1.2 g/mL = 83.33 mL = 0.08333 L</p>
+                <p>मोलरता = 0.0556 mol / 0.08333 L = <strong>0.667 M</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.6 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.6</span> सड़े हुए अंडे जैसी गंध वाली विषैली गैस H₂S गुणात्मक विश्लेषण में प्रयोग की जाती है। यदि H₂S गैस की जल में STP पर विलेयता 0.195 M हो तो हेनरी स्थिरांक की गणना कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>हेनरी के नियम के अनुसार: p = K<sub>H</sub> x</p>
+                <p>STP पर H₂S का दाब = 1 bar</p>
+                <p>विलेयता = 0.195 M</p>
+                <p>जल के मोल = 1000/18 = 55.55 mol</p>
+                <p>H₂S का मोल-अंश = 0.195 / (0.195 + 55.55) ≈ 0.195/55.745 ≈ 0.0035</p>
+                <p>K<sub>H</sub> = p/x = 1 bar / 0.0035 = <strong>285.7 bar</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.7 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.7</span> 298 K पर CO₂ गैस की जल में विलेयता के लिए हेनरी स्थिरांक का मान 1.67×10⁸ Pa है। 500 mL सोडा जल 2.5 atm दाब पर बंद किया गया। 298 K ताप पर घुली हुई CO₂ की मात्रा की गणना कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>हेनरी के नियम के अनुसार: p = K<sub>H</sub> x</p>
+                <p>p = 2.5 atm = 2.5 × 101325 Pa = 253312.5 Pa</p>
+                <p>K<sub>H</sub> = 1.67×10⁸ Pa</p>
+                <p>x = p/K<sub>H</sub> = 253312.5 / (1.67×10⁸) = 1.517×10⁻³</p>
+                <p>जल के मोल = 500/18 = 27.78 mol</p>
+                <p>CO₂ के मोल = x × कुल मोल ≈ 1.517×10⁻³ × 27.78 = 0.0421 mol</p>
+                <p>CO₂ का द्रव्यमान = 0.0421 × 44 = <strong>1.85 g</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.8 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.8</span> 350 K पर शुद्ध द्रवों A तथा B के वाष्पदाब क्रमशः 450 तथा 750 mm Hg हैं। यदि कुल वाष्पदाब 600 mm Hg हो तो द्रव मिश्रण का संघटन ज्ञात कीजिए। साथ ही वाष्प प्रावस्था का संघटन भी ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>राउल्ट के नियम के अनुसार: p<sub>कुल</sub> = p°<sub>A</sub>x<sub>A</sub> + p°<sub>B</sub>x<sub>B</sub></p>
+                <p>600 = 450x<sub>A</sub> + 750x<sub>B</sub></p>
+                <p>चूँकि x<sub>A</sub> + x<sub>B</sub> = 1, इसलिए x<sub>B</sub> = 1 - x<sub>A</sub></p>
+                <p>600 = 450x<sub>A</sub> + 750(1 - x<sub>A</sub>)</p>
+                <p>600 = 450x<sub>A</sub> + 750 - 750x<sub>A</sub></p>
+                <p>-150 = -300x<sub>A</sub></p>
+                <p>x<sub>A</sub> = 0.5, x<sub>B</sub> = 0.5</p>
+                <p>वाष्प प्रावस्था में:</p>
+                <p>y<sub>A</sub> = p<sub>A</sub>/p<sub>कुल</sub> = (450×0.5)/600 = 0.375</p>
+                <p>y<sub>B</sub> = 1 - 0.375 = 0.625</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.9 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.9</span> 298 K पर शुद्ध जल का वाष्पदाब 23.8 mm Hg है। 850 g जल में 50 g यूरिया (NH₂CONH₂) घोला जाता है। इस विलयन के लिए जल के वाष्पदाब तथा इसके आपेक्षिक अवनमन का परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>यूरिया (NH₂CONH₂) का मोलर द्रव्यमान = 14+4+12+16+14+4 = 60 g/mol</p>
+                <p>यूरिया के मोल = 50/60 = 0.833 mol</p>
+                <p>जल के मोल = 850/18 = 47.22 mol</p>
+                <p>यूरिया का मोल-अंश = 0.833/(0.833+47.22) = 0.0173</p>
+                <p>वाष्पदाब में अवनमन Δp = p° × x<sub>विलेय</sub> = 23.8 × 0.0173 = 0.412 mm Hg</p>
+                <p>विलयन का वाष्पदाब = 23.8 - 0.412 = <strong>23.388 mm Hg</strong></p>
+                <p>आपेक्षिक अवनमन = Δp/p° = 0.412/23.8 = <strong>0.0173</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.10 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.10</span> 750 mm Hg दाब पर जल का क्वथनांक 99.63°C है। 500 g जल में कितना ग्लूकोज मिलाया जाए कि इसका 100°C पर क्वथन हो जाए?</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>क्वथनांक में उन्नयन ΔT<sub>b</sub> = 100 - 99.63 = 0.37°C</p>
+                <p>जल के लिए K<sub>b</sub> = 0.52 K kg mol⁻¹</p>
+                <p>ΔT<sub>b</sub> = K<sub>b</sub> × m</p>
+                <p>0.37 = 0.52 × m</p>
+                <p>m = 0.37/0.52 = 0.7115 mol/kg</p>
+                <p>ग्लूकोज (C₆H₁₂O₆) का मोलर द्रव्यमान = 180 g/mol</p>
+                <p>0.5 kg जल में ग्लूकोज के मोल = 0.7115 × 0.5 = 0.35575 mol</p>
+                <p>ग्लूकोज का द्रव्यमान = 0.35575 × 180 = <strong>64.035 g</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.11 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.11</span> एस्कॉर्बिक अम्ल (विटामिन C, C₆H₈O₆) के उस द्रव्यमान का परिकलन कीजिए, जिसे 75 g एसिटिक अम्ल में घोलने पर उसके हिमांक में 1.5°C की कमी हो जाए। K<sub>f</sub> = 3.9 K kg mol⁻¹</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>हिमांक में अवनमन ΔT<sub>f</sub> = 1.5°C</p>
+                <p>K<sub>f</sub> = 3.9 K kg mol⁻¹</p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>1.5 = 3.9 × m</p>
+                <p>m = 1.5/3.9 = 0.3846 mol/kg</p>
+                <p>एस्कॉर्बिक अम्ल (C₆H₈O₆) का मोलर द्रव्यमान = 176 g/mol</p>
+                <p>0.075 kg एसिटिक अम्ल में एस्कॉर्बिक अम्ल के मोल = 0.3846 × 0.075 = 0.028845 mol</p>
+                <p>एस्कॉर्बिक अम्ल का द्रव्यमान = 0.028845 × 176 = <strong>5.077 g</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.12 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.12</span> 185,000 आणविक द्रव्यमान वाले एक बहुलक के 1.0 g को 37°C पर 450 mL जल में घोलने से उत्पन्न विलयन के परासरण दाब का पास्कल में परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>परासरण दाब π = (nRT)/V</p>
+                <p>बहुलक के मोल n = 1/185000 = 5.405×10⁻⁶ mol</p>
+                <p>R = 8.314 J mol⁻¹ K⁻¹ = 8.314 Pa m³ mol⁻¹ K⁻¹</p>
+                <p>T = 37 + 273 = 310 K</p>
+                <p>V = 450 mL = 450×10⁻⁶ m³ = 4.5×10⁻⁴ m³</p>
+                <p>π = (5.405×10⁻⁶ × 8.314 × 310) / (4.5×10⁻⁴)</p>
+                <p>π = (13.94×10⁻³) / (4.5×10⁻⁴) = 30.98 Pa</p>
+                <p>परासरण दाब = <strong>30.98 Pa</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.13 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.13</span> 1.06 g mL⁻¹ घनत्व वाले एसिटिक अम्ल (CH₃COOH) के 0.6 mL को 1 लीटर जल में घोला गया। अम्ल की इस सांद्रता के लिए हिमांक में अवनमन 0.0205°C प्रेक्षित किया गया। अम्ल के लिए वांट हॉफ गुणांक तथा वियोजन स्थिरांक का परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>एसिटिक अम्ल का द्रव्यमान = 0.6 mL × 1.06 g/mL = 0.636 g</p>
+                <p>एसिटिक अम्ल का मोलर द्रव्यमान = 60 g/mol</p>
+                <p>एसिटिक अम्ल के मोल = 0.636/60 = 0.0106 mol</p>
+                <p>मोललता = 0.0106 mol / 1 kg = 0.0106 m</p>
+                <p>सैद्धांतिक हिमांक अवनमन = K<sub>f</sub> × m = 1.86 × 0.0106 = 0.0197°C</p>
+                <p>वांट हॉफ गुणांक i = प्रेक्षित अवनमन/सैद्धांतिक अवनमन = 0.0205/0.0197 = 1.041</p>
+                <p>CH₃COOH ⇌ CH₃COO⁻ + H⁺</p>
+                <p>माना वियोजन की मात्रा = α</p>
+                <p>i = 1 + α = 1.041</p>
+                <p>α = 0.041</p>
+                <p>वियोजन स्थिरांक K<sub>a</sub> = (Cα²)/(1-α) = (0.0106 × 0.041²)/(1-0.041) = 1.86×10⁻⁵</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.14 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.14</span> 1.0 g कार्बनिक यौगिक को 50 g बेंजीन में घोलने पर बेंजीन के हिमांक में 0.40 K की कमी होती है। बेंजीन के लिए हिमांक अवनमन स्थिरांक 5.12 K kg mol⁻¹ है। यौगिक के मोलर द्रव्यमान की गणना कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.40 = 5.12 × m</p>
+                <p>m = 0.40/5.12 = 0.078125 mol/kg</p>
+                <p>0.05 kg बेंजीन में यौगिक के मोल = 0.078125 × 0.05 = 0.00390625 mol</p>
+                <p>यौगिक का मोलर द्रव्यमान = 1.0 g / 0.00390625 mol = <strong>256 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.15 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.15</span> 45 g एथिलीन ग्लाइकॉल (C₂H₆O₂) को 600 g जल में मिलाया गया। विलयन के (i) हिमांक अवनमन तथा (ii) हिमांक की गणना कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>एथिलीन ग्लाइकॉल (C₂H₆O₂) का मोलर द्रव्यमान = 62 g/mol</p>
+                <p>एथिलीन ग्लाइकॉल के मोल = 45/62 = 0.726 mol</p>
+                <p>मोललता = 0.726 mol / 0.6 kg = 1.21 m</p>
+                <p>हिमांक अवनमन ΔT<sub>f</sub> = K<sub>f</sub> × m = 1.86 × 1.21 = <strong>2.25 K</strong></p>
+                <p>विलयन का हिमांक = 273.15 - 2.25 = <strong>270.90 K</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.16 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.16</span> 1.00 g अवाष्पशील विद्युत अनापघट्य ठोस को 50 g बेंजीन में घोलने पर इसके हिमांक में 0.40 K की कमी हो जाती है। बेंजीन का हिमांक अवनमन स्थिरांक 5.12 K kg mol⁻¹ है। विलेय का मोलर द्रव्यमान ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.40 = 5.12 × m</p>
+                <p>m = 0.40/5.12 = 0.078125 mol/kg</p>
+                <p>0.05 kg बेंजीन में विलेय के मोल = 0.078125 × 0.05 = 0.00390625 mol</p>
+                <p>विलेय का मोलर द्रव्यमान = 1.0 g / 0.00390625 mol = <strong>256 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.17 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.17</span> किसी ताप पर शुद्ध बेंजीन का वाष्प दाब 0.850 bar है। 0.5 g अवाष्पशील विद्युत अनापघट्य ठोस को 39.0 g बेंजीन (मोलर द्रव्यमान 78 g mol⁻¹) में घोला गया। प्राप्त विलयन का वाष्प दाब 0.845 bar है। ठोस का मोलर द्रव्यमान क्या है?</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>राउल्ट के नियम के अनुसार: (p° - p)/p° = x<sub>विलेय</sub></p>
+                <p>(0.850 - 0.845)/0.850 = n<sub>विलेय</sub>/(n<sub>विलेय</sub> + n<sub>विलायक</sub>)</p>
+                <p>0.005/0.850 = n<sub>विलेय</sub>/(n<sub>विलेय</sub> + 0.5)</p>
+                <p>0.00588 = n<sub>विलेय</sub>/(n<sub>विलेय</sub> + 0.5)</p>
+                <p>n<sub>विलेय</sub> = 0.00294 mol</p>
+                <p>ठोस का मोलर द्रव्यमान = 0.5 g / 0.00294 mol = <strong>170 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.18 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.18</span> 2.5 g ऑक्सैलिक अम्ल (H₂C₂O₄) को 100 g जल में घोला गया। विलयन के क्वथनांक की गणना कीजिए। जल के लिए K<sub>b</sub> = 0.52 K kg mol⁻¹ है।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ऑक्सैलिक अम्ल (H₂C₂O₄) का मोलर द्रव्यमान = 90 g/mol</p>
+                <p>ऑक्सैलिक अम्ल के मोल = 2.5/90 = 0.02778 mol</p>
+                <p>मोललता = 0.02778 mol / 0.1 kg = 0.2778 m</p>
+                <p>क्वथनांक उन्नयन ΔT<sub>b</sub> = K<sub>b</sub> × m = 0.52 × 0.2778 = 0.144 K</p>
+                <p>विलयन का क्वथनांक = 373.15 + 0.144 = <strong>373.294 K</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.19 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.19</span> 1.0 g अवाष्पशील विद्युत अनापघट्य यौगिक को 50 g बेंजीन में घोलने पर बेंजीन के हिमांक में 0.40 K की कमी होती है। यौगिक का मोलर द्रव्यमान ज्ञात कीजिए। (बेंजीन के लिए K<sub>f</sub> = 5.12 K kg mol⁻¹)</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.40 = 5.12 × m</p>
+                <p>m = 0.40/5.12 = 0.078125 mol/kg</p>
+                <p>0.05 kg बेंजीन में यौगिक के मोल = 0.078125 × 0.05 = 0.00390625 mol</p>
+                <p>यौगिक का मोलर द्रव्यमान = 1.0 g / 0.00390625 mol = <strong>256 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.20 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.20</span> 1.5 g अवाष्पशील विद्युत अनापघट्य यौगिक को 75 g बेंजीन में घोलने पर बेंजीन के हिमांक में 0.25 K की कमी होती है। यौगिक का मोलर द्रव्यमान ज्ञात कीजिए। (बेंजीन के लिए K<sub>f</sub> = 5.12 K kg mol⁻¹)</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.25 = 5.12 × m</p>
+                <p>m = 0.25/5.12 = 0.048828 mol/kg</p>
+                <p>0.075 kg बेंजीन में यौगिक के मोल = 0.048828 × 0.075 = 0.0036621 mol</p>
+                <p>यौगिक का मोलर द्रव्यमान = 1.5 g / 0.0036621 mol = <strong>409.5 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.21 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.21</span> 0.520 g अवाष्पशील विद्युत अनापघट्य यौगिक को 80.0 g बेंजीन में घोलने पर बेंजीन के हिमांक में 0.30 K की कमी होती है। यौगिक का मोलर द्रव्यमान ज्ञात कीजिए। (बेंजीन के लिए K<sub>f</sub> = 5.12 K kg mol⁻¹)</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.30 = 5.12 × m</p>
+                <p>m = 0.30/5.12 = 0.05859 mol/kg</p>
+                <p>0.08 kg बेंजीन में यौगिक के मोल = 0.05859 × 0.08 = 0.0046875 mol</p>
+                <p>यौगिक का मोलर द्रव्यमान = 0.520 g / 0.0046875 mol = <strong>110.9 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.22 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.22</span> 1.0 g अवाष्पशील विद्युत अनापघट्य यौगिक को 50 g क्लोरोफॉर्म में घोलने पर क्लोरोफॉर्म के हिमांक में 0.34 K की कमी होती है। यौगिक का मोलर द्रव्यमान ज्ञात कीजिए। (क्लोरोफॉर्म के लिए K<sub>f</sub> = 4.70 K kg mol⁻¹)</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ΔT<sub>f</sub> = K<sub>f</sub> × m</p>
+                <p>0.34 = 4.70 × m</p>
+                <p>m = 0.34/4.70 = 0.07234 mol/kg</p>
+                <p>0.05 kg क्लोरोफॉर्म में यौगिक के मोल = 0.07234 × 0.05 = 0.003617 mol</p>
+                <p>यौगिक का मोलर द्रव्यमान = 1.0 g / 0.003617 mol = <strong>276.5 g/mol</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.23 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.23</span> निम्नलिखित युग्मों में उपस्थित सबसे महत्वपूर्ण अंतराआण्विक आकर्षण बलों का सुझाव दीजिए।<br>(i) n-हेक्सेन और n-ऑक्टेन<br>(ii) I₂ और CCl₄<br>(iii) NaClO₄ और H₂O<br>(iv) मेथनॉल और एसीटोन<br>(v) एसीटोनाइट्राइल (CH₃CN) और एसीटोन (C₃H₆O)</div>
+            <div class="answer">
+                <p><strong>उत्तर:</strong></p>
+                <p>(i) n-हेक्सेन और n-ऑक्टेन: लंडन बल (विक्षेपण बल)</p>
+                <p>(ii) I₂ और CCl₄: लंडन बल (विक्षेपण बल)</p>
+                <p>(iii) NaClO₄ और H₂O: आयन-द्विध्रुव अंतःक्रिया</p>
+                <p>(iv) मेथनॉल और एसीटोन: हाइड्रोजन बंधन</p>
+                <p>(v) एसीटोनाइट्राइल (CH₃CN) और एसीटोन (C₃H₆O): द्विध्रुव-द्विध्रुव अंतःक्रिया</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.24 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.24</span> विलेय-विलायक आकर्षण के आधार पर निम्नलिखित को n-ऑक्टेन की विलेयता के बढ़ते क्रम में व्यवस्थित कीजिए - KCl, CH₃OH, CH₃CN, साइक्लोहेक्सेन</div>
+            <div class="answer">
+                <p><strong>उत्तर:</strong></p>
+                <p>n-ऑक्टेन एक अध्रुवीय विलायक है। "समान समान को घोलता है" के सिद्धांत के अनुसार, अध्रुवीय यौगिक अध्रुवीय विलायक में बेहतर घुलेंगे।</p>
+                <p>विलेयता का बढ़ता क्रम: KCl < CH₃OH < CH₃CN < साइक्लोहेक्सेन</p>
+                <p>साइक्लोहेक्सेन सबसे अध्रुवीय है, इसलिए n-ऑक्टेन में सबसे अधिक घुलनशील है।</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.25 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.25</span> पहचानिए कि निम्नलिखित यौगिकों में से कौन जल में अत्यधिक विलेय, आंशिक रूप से विलेय और अविलेय हैं।<br>(i) फेनॉल<br>(ii) टॉलूईन<br>(iii) फॉर्मिक अम्ल<br>(iv) एथिलीन ग्लाइकॉल<br>(v) क्लोरोफॉर्म<br>(vi) पेंटेनॉल</div>
+            <div class="answer">
+                <p><strong>उत्तर:</strong></p>
+                <p>(i) फेनॉल: आंशिक रूप से विलेय (हाइड्रोक्सिल समूह के कारण आंशिक रूप से ध्रुवीय)</p>
+                <p>(ii) टॉलूईन: अविलेय (अध्रुवीय हाइड्रोकार्बन)</p>
+                <p>(iii) फॉर्मिक अम्ल: अत्यधिक विलेय (हाइड्रोजन बंधन बना सकता है)</p>
+                <p>(iv) एथिलीन ग्लाइकॉल: अत्यधिक विलेय (दो हाइड्रोक्सिल समूह, हाइड्रोजन बंधन)</p>
+                <p>(v) क्लोरोफॉर्म: अविलेय (अध्रुवीय)</p>
+                <p>(vi) पेंटेनॉल: आंशिक रूप से विलेय (हाइड्रोक्सिल समूह के कारण आंशिक रूप से ध्रुवीय)</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.26 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.26</span> यदि किसी झील के जल का घनत्व 1.25 g mL⁻¹ है और उसमें 92 g Na⁺ आयन प्रति किलो जल में उपस्थित हैं। तो झील में Na⁺ आयन की मोलरता ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>1 kg जल में Na⁺ आयनों का द्रव्यमान = 92 g</p>
+                <p>Na⁺ का मोलर द्रव्यमान = 23 g/mol</p>
+                <p>Na⁺ के मोल = 92/23 = 4 mol</p>
+                <p>जल का आयतन = द्रव्यमान/घनत्व = 1000 g / 1.25 g/mL = 800 mL = 0.8 L</p>
+                <p>मोलरता = मोल/लीटर में आयतन = 4 mol / 0.8 L = <strong>5 M</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.27 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.27</span> यदि CuS का विलेयता गुणनफल 6 × 10⁻¹⁶ है तो जलीय विलयन में उसकी अधिकतम मोलरता ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>CuS ⇌ Cu²⁺ + S²⁻</p>
+                <p>K<sub>sp</sub> = [Cu²⁺][S²⁻] = 6 × 10⁻¹⁶</p>
+                <p>माना CuS की विलेयता = s mol/L</p>
+                <p>तब [Cu²⁺] = s, [S²⁻] = s</p>
+                <p>K<sub>sp</sub> = s × s = s² = 6 × 10⁻¹⁶</p>
+                <p>s = √(6 × 10⁻¹⁶) = 2.45 × 10⁻⁸ mol/L</p>
+                <p>अधिकतम मोलरता = <strong>2.45 × 10⁻⁸ M</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.28 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.28</span> जब 6.5 g, एस्पिरिन (C₉H₈O₄) को 450 g एसीटोनाइट्राइल (CH₃CN) में घोला जाता है, तो एस्पिरिन का एसीटोनाइट्राइल में भार प्रतिशत ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>विलेय (एस्पिरिन) का द्रव्यमान = 6.5 g</p>
+                <p>विलायक (एसीटोनाइट्राइल) का द्रव्यमान = 450 g</p>
+                <p>विलयन का कुल द्रव्यमान = 6.5 + 450 = 456.5 g</p>
+                <p>भार प्रतिशत = (विलेय का द्रव्यमान/विलयन का द्रव्यमान) × 100</p>
+                <p>भार प्रतिशत = (6.5/456.5) × 100 = <strong>1.424%</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.29 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.29</span> नालोक्सोन (C₁₉H₂₁NO₃) जो कि मॉर्फिन जैसी होती है, का उपयोग ओपिओइड उपभोक्ताओं द्वारा ओपिओइड छोड़ने से उत्पन्न लक्षणों को दूर करने में किया जाता है। सामान्यतः नालोक्सोन की 1.5 mg खुराक दी जाती है। उपरोक्त खुराक के लिए 1.5 × 10⁻³ m जलीय विलयन का कितना द्रव्यमान आवश्यक होगा?</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>नालोक्सोन (C₁₉H₂₁NO₃) का मोलर द्रव्यमान = (12×19)+(1×21)+14+(16×3) = 228+21+14+48 = 311 g/mol</p>
+                <p>विलयन की मोललता = 1.5 × 10⁻³ m = 0.0015 mol/kg</p>
+                <p>1 kg जल में नालोक्सोन के मोल = 0.0015 mol</p>
+                <p>नालोक्सोन का द्रव्यमान = 0.0015 × 311 = 0.4665 g</p>
+                <p>विलयन का कुल द्रव्यमान = 1000 g (जल) + 0.4665 g (नालोक्सोन) = 1000.4665 g</p>
+                <p>1.5 mg = 0.0015 g नालोक्सोन के लिए आवश्यक विलयन:</p>
+                <p>0.4665 g नालोक्सोन उपस्थित है = 1000.4665 g विलयन में</p>
+                <p>0.0015 g नालोक्सोन उपस्थित होगा = (1000.4665 × 0.0015)/0.4665 = 3.217 g विलयन में</p>
+                <p>आवश्यक विलयन का द्रव्यमान = <strong>3.217 g</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.30 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.30</span> बेंजोइक अम्ल का मेथनॉल में 0.15 m विलयन बनाने के लिए आवश्यक मात्रा की गणना कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>बेंजोइक अम्ल (C₆H₅COOH) का मोलर द्रव्यमान = 122 g/mol</p>
+                <p>0.15 m विलयन का अर्थ है 1 kg मेथनॉल में 0.15 mol बेंजोइक अम्ल</p>
+                <p>बेंजोइक अम्ल का द्रव्यमान = 0.15 × 122 = 18.3 g</p>
+                <p>1 kg मेथनॉल में 18.3 g बेंजोइक अम्ल घोलकर 0.15 m विलयन तैयार किया जा सकता है।</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.31 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.31</span> एसिटिक अम्ल, ट्राइक्लोरोएसिटिक अम्ल और ट्राइफ्लूरोएसिटिक अम्ल की समान मात्रा से जल के हिमांक में अवनमन इनके उपरोक्त दिए गए क्रम में बढ़ता है। संक्षेप में समझाइए।</div>
+            <div class="answer">
+                <p><strong>उत्तर:</strong></p>
+                <p>हिमांक अवनमन एक अणुसंख्यक गुणधर्म है जो विलयन में कणों की संख्या पर निर्भर करता है।</p>
+                <p>एसिटिक अम्ल एक दुर्बल अम्ल है जो कम मात्रा में आयनित होता है। ट्राइक्लोरोएसिटिक अम्ल अधिक प्रबल अम्ल है क्योंकि क्लोरीन के -I प्रभाव के कारण। ट्राइफ्लूरोएसिटिक अम्ल सबसे प्रबल अम्ल है क्योंकि फ्लोरीन का -I प्रभाव सबसे अधिक होता है।</p>
+                <p>प्रबल अम्ल अधिक मात्रा में आयनित होते हैं, जिससे विलयन में कणों की संख्या बढ़ती है और हिमांक अवनमन बढ़ता है। इसलिए हिमांक अवनमन का क्रम है: एसिटिक अम्ल < ट्राइक्लोरोएसिटिक अम्ल < ट्राइफ्लूरोएसिटिक अम्ल</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.32 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.32</span> CH₃-CH₂-CHCl-COOH के 10 g को 250 g जल में मिलाने से होने वाले हिमांक के अवनमन की गणना कीजिए। (K<sub>a</sub> = 1.4 × 10⁻³, K<sub>f</sub> = 1.86 K kg mol⁻¹)</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>यौगिक (C₄H₇ClO₂) का मोलर द्रव्यमान = (12×4)+(1×7)+35.5+(16×2) = 48+7+35.5+32 = 122.5 g/mol</p>
+                <p>यौगिक के मोल = 10/122.5 = 0.08163 mol</p>
+                <p>मोललता = 0.08163 mol / 0.25 kg = 0.3265 m</p>
+                <p>K<sub>a</sub> = 1.4 × 10⁻³</p>
+                <p>α = √(K<sub>a</sub>/C) = √(1.4×10⁻³/0.3265) = √(4.288×10⁻³) = 0.0655</p>
+                <p>वांट हॉफ गुणांक i = 1 + α = 1 + 0.0655 = 1.0655</p>
+                <p>हिमांक अवनमन ΔT<sub>f</sub> = i × K<sub>f</sub> × m = 1.0655 × 1.86 × 0.3265 = <strong>0.647 K</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.33 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.33</span> CH₂FCOOH के 19.5 g को 500 g H₂O में घोलने पर जल के हिमांक में 1.0°C का अवनमन देखा गया। फ्लूरोएसिटिक अम्ल का वांट हॉफ गुणांक तथा वियोजन स्थिरांक परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>फ्लूरोएसिटिक अम्ल (CH₂FCOOH) का मोलर द्रव्यमान = 12+3+19+12+16+16+1 = 79 g/mol</p>
+                <p>अम्ल के मोल = 19.5/79 = 0.2468 mol</p>
+                <p>मोललता = 0.2468 mol / 0.5 kg = 0.4936 m</p>
+                <p>प्रेक्षित हिमांक अवनमन = 1.0°C</p>
+                <p>सैद्धांतिक हिमांक अवनमन = K<sub>f</sub> × m = 1.86 × 0.4936 = 0.918°C</p>
+                <p>वांट हॉफ गुणांक i = प्रेक्षित अवनमन/सैद्धांतिक अवनमन = 1.0/0.918 = 1.089</p>
+                <p>CH₂FCOOH ⇌ CH₂FCOO⁻ + H⁺</p>
+                <p>माना वियोजन की मात्रा = α</p>
+                <p>i = 1 + α = 1.089</p>
+                <p>α = 0.089</p>
+                <p>वियोजन स्थिरांक K<sub>a</sub> = (Cα²)/(1-α) = (0.4936 × 0.089²)/(1-0.089) = 3.91×10⁻³/0.911 = 4.29×10⁻³</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.34 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.34</span> 293 K पर जल का वाष्प दाब 17.535 mm Hg है। यदि 25 g ग्लूकोज को 450 g जल में घोलें तो 293 K पर जल का वाष्प दाब परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>ग्लूकोज (C₆H₁₂O₆) का मोलर द्रव्यमान = 180 g/mol</p>
+                <p>ग्लूकोज के मोल = 25/180 = 0.1389 mol</p>
+                <p>जल के मोल = 450/18 = 25 mol</p>
+                <p>ग्लूकोज का मोल-अंश = 0.1389/(0.1389+25) = 0.1389/25.1389 = 0.005525</p>
+                <p>वाष्प दाब में अवनमन Δp = p° × x<sub>विलेय</sub> = 17.535 × 0.005525 = 0.0969 mm Hg</p>
+                <p>विलयन का वाष्प दाब = 17.535 - 0.0969 = <strong>17.438 mm Hg</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.35 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.35</span> 298 K पर मेथेन की बेंजीन पर मोललता का हेनरी स्थिरांक 4.27 × 10⁵ mm Hg है। 298 K तथा 760 mm Hg दाब पर मेथेन की बेंजीन में विलेयता परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>हेनरी के नियम के अनुसार: p = K<sub>H</sub> x</p>
+                <p>760 = 4.27 × 10⁵ × x</p>
+                <p>x = 760/(4.27×10⁵) = 1.78 × 10⁻³</p>
+                <p>बेंजीन के मोल = 1000/78 = 12.82 mol</p>
+                <p>मेथेन के मोल = x × कुल मोल ≈ 1.78×10⁻³ × 12.82 = 0.0228 mol</p>
+                <p>मेथेन का द्रव्यमान = 0.0228 × 16 = 0.365 g</p>
+                <p>विलेयता = <strong>0.365 g/kg बेंजीन</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.36 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.36</span> 100 g द्रव A (मोलर द्रव्यमान 140 g mol⁻¹) को 1000 g द्रव B (मोलर द्रव्यमान 180 g mol⁻¹) में घोला गया। शुद्ध द्रव B का वाष्प दाब 500 Torr पाया गया। शुद्ध द्रव A का वाष्प दाब तथा विलयन में उसका वाष्प दाब परिकलन कीजिए यदि विलयन का कुल वाष्प दाब 475 Torr हो।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>द्रव A के मोल = 100/140 = 0.7143 mol</p>
+                <p>द्रव B के मोल = 1000/180 = 5.556 mol</p>
+                <p>कुल मोल = 0.7143 + 5.556 = 6.2703 mol</p>
+                <p>A का मोल-अंश = 0.7143/6.2703 = 0.1139</p>
+                <p>B का मोल-अंश = 5.556/6.2703 = 0.8861</p>
+                <p>राउल्ट के नियम के अनुसार: p<sub>कुल</sub> = p°<sub>A</sub>x<sub>A</sub> + p°<sub>B</sub>x<sub>B</sub></p>
+                <p>475 = p°<sub>A</sub> × 0.1139 + 500 × 0.8861</p>
+                <p>475 = 0.1139 p°<sub>A</sub> + 443.05</p>
+                <p>0.1139 p°<sub>A</sub> = 475 - 443.05 = 31.95</p>
+                <p>p°<sub>A</sub> = 31.95/0.1139 = 280.5 Torr</p>
+                <p>विलयन में A का वाष्प दाब = p°<sub>A</sub> × x<sub>A</sub> = 280.5 × 0.1139 = 31.95 Torr</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.37 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.37</span> 328 K पर शुद्ध एसीटोन तथा क्लोरोफॉर्म के वाष्प दाब क्रमशः 741.8 mm Hg तथा 632.8 mm Hg हैं। यह मानते हुए कि संघटन के सम्पूर्ण परिसर में ये आदर्श विलयन बनाते हैं, p<sub>कुल</sub>, p<sub>क्लोरोफॉर्म</sub>, तथा p<sub>एसीटोन</sub> को x<sub>एसीटोन</sub> के फलन के रूप में आलेखित कीजिए। मिश्रण के विभिन्न संघटनों के प्रेक्षित प्रायोगिक आंकड़े निम्नलिखित हैं।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>राउल्ट के नियम के अनुसार:</p>
+                <p>p<sub>एसीटोन</sub> = p°<sub>एसीटोन</sub> × x<sub>एसीटोन</sub> = 741.8 × x<sub>एसीटोन</sub></p>
+                <p>p<sub>क्लोरोफॉर्म</sub> = p°<sub>क्लोरोफॉर्म</sub> × (1 - x<sub>एसीटोन</sub>) = 632.8 × (1 - x<sub>एसीटोन</sub>)</p>
+                <p>p<sub>कुल</sub> = p<sub>एसीटोन</sub> + p<sub>क्लोरोफॉर्म</sub></p>
+                <p>इन समीकरणों का उपयोग करके विभिन्न x<sub>एसीटोन</sub> मानों के लिए वाष्प दाबों की गणना की जा सकती है और आलेख बनाया जा सकता है।</p>
+                <p>प्रायोगिक आंकड़ों से पता चलता है कि यह विलयन आदर्श विलयन से ऋणात्मक विचलन प्रदर्शित करता है क्योंकि एसीटोन और क्लोरोफॉर्म के बीच हाइड्रोजन आबंधन होता है।</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.38 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.38</span> संघटनों के सम्पूर्ण परिसर में बेंजीन तथा टॉलूईन आदर्श विलयन बनाते हैं। 300 K पर शुद्ध बेंजीन तथा टॉलूईन का वाष्प दाब क्रमशः 50.71 mm Hg तथा 32.06 mm Hg है। यदि 80 g बेंजीन को 100 g टॉलूईन में मिलाया जाए तो वाष्प प्रावस्था में उपस्थित बेंजीन के मोल-अंश परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>बेंजीन (C₆H₆) का मोलर द्रव्यमान = 78 g/mol</p>
+                <p>टॉलूईन (C₇H₈) का मोलर द्रव्यमान = 92 g/mol</p>
+                <p>बेंजीन के मोल = 80/78 = 1.0256 mol</p>
+                <p>टॉलूईन के मोल = 100/92 = 1.0870 mol</p>
+                <p>कुल मोल = 1.0256 + 1.0870 = 2.1126 mol</p>
+                <p>बेंजीन का मोल-अंश (द्रव) = 1.0256/2.1126 = 0.4855</p>
+                <p>टॉलूईन का मोल-अंश (द्रव) = 1.0870/2.1126 = 0.5145</p>
+                <p>बेंजीन का आंशिक दाब = 50.71 × 0.4855 = 24.62 mm Hg</p>
+                <p>टॉलूईन का आंशिक दाब = 32.06 × 0.5145 = 16.50 mm Hg</p>
+                <p>कुल दाब = 24.62 + 16.50 = 41.12 mm Hg</p>
+                <p>वाष्प प्रावस्था में बेंजीन का मोल-अंश = 24.62/41.12 = <strong>0.5987</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.39 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.39</span> वायु अनेक गैसों का मिश्रण है। 298 K पर आयतन में मुख्य घटक ऑक्सीजन और नाइट्रोजन लगभग 20% तथा 79% के अनुपात में हैं। 10 वायुमंडल दाब पर जल वायु के साथ साम्य में है। 298 K पर यदि ऑक्सीजन तथा नाइट्रोजन के हेनरी स्थिरांक क्रमशः 3.30 × 10⁷ mm तथा 6.51 × 10⁷ mm हैं, तो जल में इन गैसों का संघटन ज्ञात कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>वायुमंडलीय दाब = 10 atm = 10 × 760 = 7600 mm Hg</p>
+                <p>ऑक्सीजन का आंशिक दाब = 7600 × 20/100 = 1520 mm Hg</p>
+                <p>नाइट्रोजन का आंशिक दाब = 7600 × 79/100 = 6004 mm Hg</p>
+                <p>हेनरी के नियम के अनुसार: p = K<sub>H</sub> x</p>
+                <p>ऑक्सीजन के लिए: 1520 = 3.30 × 10⁷ × x<sub>O₂</sub></p>
+                <p>x<sub>O₂</sub> = 1520/(3.30×10⁷) = 4.606 × 10⁻⁵</p>
+                <p>नाइट्रोजन के लिए: 6004 = 6.51 × 10⁷ × x<sub>N₂</sub></p>
+                <p>x<sub>N₂</sub> = 6004/(6.51×10⁷) = 9.222 × 10⁻⁵</p>
+                <p>जल के मोल = 1000/18 = 55.56 mol</p>
+                <p>ऑक्सीजन के मोल = x<sub>O₂</sub> × कुल मोल ≈ 4.606×10⁻⁵ × 55.56 = 2.559×10⁻³ mol</p>
+                <p>नाइट्रोजन के मोल = x<sub>N₂</sub> × कुल मोल ≈ 9.222×10⁻⁵ × 55.56 = 5.124×10⁻³ mol</p>
+                <p>जल में ऑक्सीजन का संघटन = (2.559×10⁻³)/(2.559×10⁻³+5.124×10⁻³+55.56) ≈ 4.606×10⁻⁵</p>
+                <p>जल में नाइट्रोजन का संघटन = (5.124×10⁻³)/(2.559×10⁻³+5.124×10⁻³+55.56) ≈ 9.222×10⁻⁵</p>
+            </div>
+        </div>
+        
+        <!-- Question 1.40 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.40</span> यदि जल का परासरण दाब 27°C पर 0.75 वायुमंडल हो तो 2.5 लीटर जल में घुले CaCl₂ (i = 2.47) की मात्रा परिकलन कीजिए।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>परासरण दाब π = iCRT</p>
+                <p>π = 0.75 atm</p>
+                <p>i = 2.47</p>
+                <p>R = 0.0821 L atm mol⁻¹ K⁻¹</p>
+                <p>T = 27 + 273 = 300 K</p>
+                <p>V = 2.5 L</p>
+                <p>0.75 = 2.47 × C × 0.0821 × 300</p>
+                <p>0.75 = 2.47 × C × 24.63</p>
+                <p>0.75 = 60.84 × C</p>
+                <p>C = 0.75/60.84 = 0.01233 mol/L</p>
+                <p>2.5 L में CaCl₂ के मोल = 0.01233 × 2.5 = 0.030825 mol</p>
+                <p>CaCl₂ का मोलर द्रव्यमान = 40 + 71 = 111 g/mol</p>
+                <p>CaCl₂ का द्रव्यमान = 0.030825 × 111 = <strong>3.422 g</strong></p>
+            </div>
+        </div>
+        
+        <!-- Question 1.41 -->
+        <div class="card">
+            <div class="question"><span class="question-number">1.41</span> 2 लीटर जल में 25°C पर K₂SO₄ के 25 mg को घोलने पर बनने वाले विलयन का परासरण दाब, यह मानते हुए परिकलन कीजिए कि K₂SO₄ पूर्णतया वियोजित हो गया है।</div>
+            <div class="answer">
+                <p><strong>हल:</strong></p>
+                <p>K₂SO₄ का मोलर द्रव्यमान = (39×2)+32+(16×4) = 78+32+64 = 174 g/mol</p>
+                <p>K₂SO₄ के मोल = 0.025/174 = 1.437×10⁻⁴ mol</p>
+                <p>K₂SO₄ ⇌ 2K⁺ + SO₄²⁻ (कुल 3 आयन)</p>
+                <p>वांट हॉफ गुणांक i = 3</p>
+                <p>मोलरता C = 1.437×10⁻⁴ mol / 2 L = 7.185×10⁻⁵ M</p>
+                <p>R = 0.0821 L atm mol⁻¹ K⁻¹</p>
+                <p>T = 25 + 273 = 298 K</p>
+                <p>परासरण दाब π = iCRT = 3 × 7.185×10⁻⁵ × 0.0821 × 298</p>
+                <p>π = 3 × 7.185×10⁻⁵ × 24.4658 = 3 × 1.758×10⁻³ = 5.274×10⁻³ atm</p>
+                <p>π = <strong>0.005274 atm</strong> या <strong>4.0 mm Hg</strong></p>
+            </div>
+        </div>
+        
+        <!-- Completion Note -->
+        <div class="card">
+            <div class="answer">
+                <p><strong>नोट:</strong> यहाँ कक्षा 12 रसायन विज्ञान के अध्याय 1 "विलयन" के सभी 41 अभ्यास प्रश्नों के उत्तर दिए गए हैं। सभी उत्तर पाठ्यपुस्तक में दी गई अवधारणाओं और सूत्रों के आधार पर तैयार किए गए हैं।</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Add some interactivity to cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    this.style.transform = 'scale(1.02)';
+                    setTimeout(() => {
+                        this.style.transform = '';
+                    }, 300);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
