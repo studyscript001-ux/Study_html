@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 11: ऊष्मागतिकी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 11: ऊष्मागतिकी</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.1</div>
+            <div>कोई गीजर 3.0 लीटर प्रति मिनट की दर से बहते हुए जल को 27°C से 77°C तक गर्म करता है। यदि गीजर का परिचालन गैस बर्नर द्वारा किया जाए, तो ईंधन के व्यय की क्या दर होगी? बर्नर के ईंधन की दहन-ऊष्मा 4.0 × 10⁴ J/g है।</div>
+        </div>
+        <div class="answer">
+            जल के प्रवाह की दर = 3.0 लीटर/मिनट = 3000 ग्राम/मिनट = 50 ग्राम/सेकंड<br>
+            जल के तापमान में वृद्धि = 77°C - 27°C = 50°C<br>
+            जल की विशिष्ट ऊष्मा धारिता = 4.186 J/g°C<br><br>
+            
+            प्रति सेकंड आवश्यक ऊष्मा = m × c × ΔT = 50 × 4.186 × 50 = 10465 J/s<br>
+            बर्नर के ईंधन की दहन-ऊष्मा = 4.0 × 10⁴ J/g = 40000 J/g<br><br>
+            
+            ईंधन की आवश्यकता = आवश्यक ऊष्मा / दहन-ऊष्मा = 10465 / 40000 = 0.2616 g/s<br>
+            ईंधन व्यय की दर = 0.2616 × 3600 = 941.76 g/h ≈ 0.942 kg/h
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.2</div>
+            <div>स्थिर दाब पर 2.0 × 10⁻² kg नाइट्रोजन (कमरे के ताप पर) के ताप में 45°C वृद्धि करने के लिए कितनी ऊष्मा की आपूर्ति की जानी चाहिए? (N₂ का अणुभार = 28; R = 8.3 J mol⁻¹ K⁻¹)</div>
+        </div>
+        <div class="answer">
+            नाइट्रोजन का द्रव्यमान = 2.0 × 10⁻² kg = 20 g<br>
+            नाइट्रोजन के मोलों की संख्या, μ = द्रव्यमान / अणुभार = 20 / 28 = 0.714 mol<br>
+            ताप वृद्धि, ΔT = 45°C = 45 K<br><br>
+            
+            स्थिर दाब पर मोलर विशिष्ट ऊष्मा, Cₚ = (7/2)R (द्विपरमाणुक गैस के लिए)<br>
+            Cₚ = (7/2) × 8.3 = 29.05 J mol⁻¹ K⁻¹<br><br>
+            
+            आवश्यक ऊष्मा, Q = μ × Cₚ × ΔT = 0.714 × 29.05 × 45 ≈ 933.5 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.3</div>
+            <div>व्याख्या कीजिए कि ऐसा क्यों होता है:<br>
+                (a) भिन्न-भिन्न तापों T₁ व T₂ के दो पिंडों को यदि ऊष्मीय संपर्क में लाया जाए, तो यह आवश्यक नहीं कि उनका अंतिम ताप (T₁ + T₂)/2 ही हो।<br>
+                (b) रासायनिक या नाभिकीय संयंत्रों में शीतलक (अर्थात् द्रव जो संयंत्र के भिन्न-भिन्न भागों को अधिक गर्म होने से रोकता है) की विशिष्ट ऊष्मा अधिक होनी चाहिए।<br>
+                (c) कार को चलाते-चलाते उसके टायरों में वायुदाब बढ़ जाता है।<br>
+                (d) किसी बंदरगाह के निकट के शहर की जलवायु, समान अक्षांश के किसी रेगिस्तानी शहर की जलवायु से अधिक शीतोष्ण होती है।</div>
+        </div>
+        <div class="answer">
+            (a) दो पिंडों के अंतिम तापमान का मान उनकी ऊष्मा धारिताओं पर निर्भर करता है, न कि केवल उनके प्रारंभिक तापमानों के औसत पर। यदि दोनों पिंडों की ऊष्मा धारिताएँ भिन्न हैं, तो अंतिम तापमान (T₁ + T₂)/2 से भिन्न होगा।<br><br>
+            
+            (b) उच्च विशिष्ट ऊष्मा वाला शीतलक अधिक ऊष्मा अवशोषित कर सकता है बिना अधिक गर्म हुए, जिससे संयंत्र के विभिन्न भागों को प्रभावी ढंग से ठंडा रखा जा सकता है।<br><br>
+            
+            (c) कार चलाते समय टायरों में घर्षण के कारण ऊष्मा उत्पन्न होती है, जिससे टायरों की वायु का तापमान बढ़ जाता है। आदर्श गैस समीकरण के अनुसार, स्थिर आयतन पर तापमान बढ़ने से दाब बढ़ता है।<br><br>
+            
+            (d) बंदरगाह के निकट के शहरों में जल की उपस्थिति के कारण, जल की उच्च विशिष्ट ऊष्मा के कारण तापमान में परिवर्तन धीमा होता है। इसके विपरीत, रेगिस्तानी क्षेत्रों में तापमान में तीव्र परिवर्तन होते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.4</div>
+            <div>गतिशील पिस्टन लगे किसी सिलिंडर में मानक ताप व दाब पर 3 मोल हाइड्रोजन भरी है। सिलिंडर की दीवारें ऊष्मारोधी पदार्थ की बनी हैं तथा पिस्टन को उस पर बालू की परत लगाकर ऊष्मारोधी बनाया गया है। यदि गैस को उसके आरंभिक आयतन के आधे आयतन तक संपीडित किया जाए, तो गैस का दाब कितना बढ़ जाएगा?</div>
+        </div>
+        <div class="answer">
+            चूँकि सिलिंडर और पिस्टन ऊष्मारोधी हैं, यह एक रुद्धोष्म प्रक्रम है।<br>
+            हाइड्रोजन गैस के लिए, γ = Cₚ/Cᵥ = 1.4 (द्विपरमाणुक गैस)<br><br>
+            
+            रुद्धोष्म प्रक्रम के लिए: PVʏ = नियतांक<br>
+            या P₁V₁ʏ = P₂V₂ʏ<br><br>
+            
+            दिया गया है: V₂ = V₁/2<br>
+            इसलिए, P₂ = P₁ × (V₁/V₂)ʏ = P₁ × (2)¹·⁴<br><br>
+            
+            (2)¹·⁴ = 2.639<br>
+            अतः P₂ = 2.639 × P₁<br><br>
+            
+            गैस का दाब लगभग 2.64 गुना बढ़ जाएगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.5</div>
+            <div>रुद्धोष्म विधि द्वारा किसी गैस की अवस्था परिवर्तन करते समय उसकी एक साम्यावस्था A से दूसरी साम्यावस्था B तक ले जाने में निकाय पर 22.3 J कार्य किया जाता है। यदि गैस को दूसरी प्रक्रिया द्वारा अवस्था A से अवस्था B में लाने में निकाय द्वारा अवशोषित net ऊष्मा 9.35 cal है, तो बाद के प्रकरण में निकाय द्वारा किया गया net कार्य कितना है? (1 cal = 4.19 J)</div>
+        </div>
+        <div class="answer">
+            रुद्धोष्म प्रक्रम में: Q = 0<br>
+            ऊष्मागतिकी के प्रथम नियम से: ΔU = Q - W = 0 - (-22.3) = 22.3 J<br>
+            (ऋणात्मक चिह्न क्योंकि निकाय पर कार्य किया गया है)<br><br>
+            
+            दूसरे प्रक्रम में: Q = 9.35 cal = 9.35 × 4.19 = 39.1765 J<br>
+            अवस्था परिवर्तन समान है, इसलिए ΔU समान रहता है = 22.3 J<br><br>
+            
+            ऊष्मागतिकी के प्रथम नियम से: ΔU = Q - W<br>
+            22.3 = 39.1765 - W<br>
+            W = 39.1765 - 22.3 = 16.8765 J ≈ 16.88 J<br><br>
+            
+            अतः निकाय द्वारा किया गया net कार्य = 16.88 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.6</div>
+            <div>समान धारिता के दो सिलिंडर A तथा B एक-दूसरे से स्टॉपकॉक के द्वारा जुड़े हैं। A में मानक ताप व दाब पर गैस भरी है जबकि B पूर्णतया निर्वातित है। स्टॉपकॉक यकायक खोल दी जाती है। निम्नलिखित का उत्तर दीजिए:<br>
+                (a) सिलिंडर A तथा B में अंतिम दाब क्या होगा?<br>
+                (b) गैस की आंतरिक ऊर्जा में कितना परिवर्तन होगा?<br>
+                (c) गैस के ताप में क्या परिवर्तन होगा?<br>
+                (d) क्या निकाय की मध्यवर्ती अवस्थाएँ (अंतिम साम्यावस्था प्राप्त करने के पूर्व) इसके P-V-T पृष्ठ पर होंगी?</div>
+        </div>
+        <div class="answer">
+            (a) जब स्टॉपकॉक खोली जाती है, गैस निर्वात में मुक्त विस्तार करती है। मुक्त विस्तार में गैस पर कोई बाह्य कार्य नहीं होता। अंतिम दाब प्रारंभिक दाब का आधा होगा क्योंकि आयतन दोगुना हो गया है (बॉयल के नियम के अनुसार)।<br><br>
+            
+            (b) आदर्श गैस के लिए, आंतरिक ऊर्जा केवल तापमान पर निर्भर करती है। चूँकि तापमान स्थिर रहता है, आंतरिक ऊर्जा में कोई परिवर्तन नहीं होगा (ΔU = 0)।<br><br>
+            
+            (c) चूँकि आदर्श गैस का मुक्त विस्तार हो रहा है और कोई ऊष्मा या कार्य का आदान-प्रदान नहीं हो रहा, तापमान स्थिर रहता है (ΔT = 0)।<br><br>
+            
+            (d) मुक्त विस्तार एक अनुत्क्रमणीय प्रक्रम है। मध्यवर्ती अवस्थाएँ साम्यावस्था में नहीं होतीं, इसलिए वे P-V-T पृष्ठ पर नहीं होंगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.7</div>
+            <div>एक हीटर किसी निकाय को 100 W की दर से ऊष्मा प्रदान करता है। यदि निकाय 75 J s⁻¹ की दर से कार्य करता है, तो आंतरिक ऊर्जा की वृद्धि की दर क्या होगी?</div>
+        </div>
+        <div class="answer">
+            ऊष्मागतिकी के प्रथम नियम के अनुसार: dU = dQ - dW<br>
+            दिया गया है: dQ/dt = 100 W = 100 J/s<br>
+            dW/dt = 75 J/s (निकाय द्वारा किया गया कार्य)<br><br>
+            
+            इसलिए, dU/dt = dQ/dt - dW/dt = 100 - 75 = 25 J/s<br><br>
+            
+            आंतरिक ऊर्जा की वृद्धि की दर = 25 J/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.8</div>
+            <div>किसी ऊष्मागतिकीय निकाय को मूल अवस्था से मध्यवर्ती अवस्था तक चित्र (11-11) में दर्शाए अनुसार एक रेखीय प्रक्रम द्वारा ले जाया गया है।</div>
+        </div>
+        <div class="answer">
+            एक समदाबी प्रक्रम द्वारा इसके आयतन को E से F तक ले जाकर मूल मान तक कम कर देते हैं। गैस द्वारा D से E तथा वहाँ से F तक किए गए कुल कार्य का आकलन कीजिए।<br><br>
+            
+            कार्य = PΔV सूत्र द्वारा प्राप्त किया जाता है, जो P-V वक्र के अंतर्गत क्षेत्रफल के बराबर होता है।<br><br>
+            
+            D से E तक: यह एक समआयतनिक प्रक्रम है (आयतन स्थिर), इसलिए कार्य = 0<br><br>
+            
+            E से F तक: यह एक समदाबी प्रक्रम है (दाब स्थिर)<br>
+            कार्य = P × ΔV = 200 N/m² × (5.0 - 2.0) m³ = 200 × 3.0 = 600 J<br><br>
+            
+            कुल कार्य = 0 + 600 = 600 J
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

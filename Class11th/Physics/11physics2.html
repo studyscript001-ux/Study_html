@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 2: सरल रेखा में गति</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 2: सरल रेखा में गति</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.1</div>
+            <div>निम्नलिखित गति के उदाहरणों में से किनमें वस्तु को लगभग बिंदु वस्तु माना जा सकता है:<br>
+                (a) दो स्टेशनों के बीच बिना किसी झटके के चल रही कोई रेलगाड़ी<br>
+                (b) किसी वृत्तीय पथ पर साइकिल चला रहे किसी व्यक्ति के ऊपर बैठा कोई बंदर<br>
+                (c) जमीन से टकराकर तेजी से मुड़ने वाली क्रिकेट की कोई फिरकी गेंद<br>
+                (d) किसी मेज के किनारे से फिसलकर गिरा कोई बीजक</div>
+        </div>
+        <div class="answer">
+            (a) और (d) में वस्तु को बिंदु वस्तु माना जा सकता है क्योंकि इनमें वस्तु के आकार की तुलना में तय की गई दूरी बहुत अधिक है।<br>
+            (b) और (c) में वस्तु के आकार का प्रभाव महत्वपूर्ण है इसलिए इन्हें बिंदु वस्तु नहीं माना जा सकता।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.2</div>
+            <div>दो बच्चे A और B अपने विद्यालय O से लौटकर अपने-अपने घर P और Q क्रमशः जा रहे हैं। उनके स्थिति-समय (x-t) ग्राफ चित्र 2.9 में दिखाए गए हैं। नीचे लिखे कोष्ठकों में सही प्रविष्टियों को चुनिए:<br>
+                (a) B/A की तुलना में A/B विद्यालय के अधिक निकट रहता है<br>
+                (b) B/A की तुलना में A/B विद्यालय से पहले चलना प्रारंभ करता है<br>
+                (c) B/A की तुलना में A/B तेज चलता है<br>
+                (d) A और B घर (एक ही/भिन्न) समय पर पहुँचते हैं<br>
+                (e) A/B सड़क पर B/A से (एक बार/दो बार) आगे हो जाता है</div>
+        </div>
+        <div class="answer">
+            ग्राफ के विश्लेषण के आधार पर:<br>
+            (a) A, B की तुलना में विद्यालय के अधिक निकट रहता है (क्योंकि A का घर विद्यालय से कम दूरी पर है)<br>
+            (b) B, A की तुलना में विद्यालय से पहले चलना प्रारंभ करता है (B का ग्राफ पहले शुरू होता है)<br>
+            (c) B, A की तुलना में तेज चलता है (B के ग्राफ का ढलान अधिक है)<br>
+            (d) A और B घर भिन्न समय पर पहुँचते हैं (वे अलग-अलग समय पर x-अक्ष को काटते हैं)<br>
+            (e) A सड़क पर B से एक बार आगे हो जाता है (ग्राफ एक बिंदु पर मिलते हैं जहाँ A, B से आगे निकल जाता है)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.3</div>
+            <div>एक महिला अपने घर से सुबह 9.00 बजे 2.5 km दूर अपने कार्यालय के लिए सीधी सड़क पर 5 km h⁻¹ की चाल से चलती है। वहाँ वह शाम 5.00 बजे तक रहती है और 25 km h⁻¹ की चाल से चल रही किसी ऑटो रिक्शा द्वारा अपने घर लौटती है। उपयुक्त पैमाना चुनिए और उसकी गति का x-t ग्राफ खींचिए।</div>
+        </div>
+        <div class="answer">
+            सुबह 9.00 बजे से शाम 5.00 बजे तक का कुल समय = 8 घंटे<br>
+            कार्यालय जाने में लगा समय = दूरी/चाल = 2.5/5 = 0.5 घंटे = 30 मिनट<br>
+            वापस आने में लगा समय = 2.5/25 = 0.1 घंटे = 6 मिनट<br><br>
+            
+            ग्राफ बनाने के लिए:<br>
+            - x-अक्ष: समय (घंटों में), y-अक्ष: दूरी (km में)<br>
+            - 9.00 से 9.30 तक: रैखिक गति से 0 से 2.5 km तक<br>
+            - 9.30 से 17.00 तक: स्थिर (2.5 km पर)<br>
+            - 17.00 से 17.06 तक: रैखिक गति से 2.5 km से 0 तक
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.4</div>
+            <div>कोई शराबी एक संकरी गली में 5 कदम आगे बढ़ता है और 3 कदम पीछे आता है, उसके बाद फिर 5 कदम आगे बढ़ता है और 3 कदम पीछे आता है, और इसी तरह वह चलता रहता है। उसका हर कदम 1 m लंबा है और 1 s समय लगता है। उसकी गति का x-t ग्राफ खींचिए। ग्राफ से तथा किसी अन्य विधि से यह ज्ञात कीजिए कि वह जहाँ से चलना प्रारंभ करता है उससे 13 m दूर किसी गड्ढे में कितने समय बाद गिरेगा।</div>
+        </div>
+        <div class="answer">
+            प्रत्येक 2 कदमों के चक्र (5 आगे - 3 पीछे) में शुद्ध विस्थापन = 5 - 3 = 2 m<br>
+            प्रत्येक चक्र में लगा समय = 8 s (8 कदम × 1 s प्रति कदम)<br><br>
+            
+            13 m तक पहुँचने के लिए:<br>
+            6 पूर्ण चक्रों के बाद विस्थापन = 6 × 2 = 12 m<br>
+            अगले 5 कदम आगे बढ़ने पर: 12 + 5 = 17 m (जो 13 m से अधिक है)<br><br>
+            
+            इसलिए, 6 चक्रों (48 s) के बाद वह 12 m चला चुका होगा।<br>
+            अगले 5 कदम आगे बढ़ने में वह 13 m की दूरी 13वें कदम पर पार करेगा:<br>
+            कुल समय = 48 + 13 = 61 s<br><br>
+            
+            अतः वह 61 सेकंड बाद गड्ढे में गिरेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.5</div>
+            <div>कोई जेट वायुयान 500 km h⁻¹ की चाल से चल रहा है और यह जेट यान के सापेक्ष 1500 km h⁻¹ की चाल से अपने दहन उत्पादों को बाहर निकालता है। जमीन पर खड़े किसी प्रेक्षक के सापेक्ष इन दहन उत्पादों की चाल क्या होगी?</div>
+        </div>
+        <div class="answer">
+            जेट यान की चाल = 500 km h⁻¹ (वायुयान के सापेक्ष जमीन का वेग)<br>
+            दहन उत्पादों का वेग (यान के सापेक्ष) = 1500 km h⁻¹ (पीछे की ओर)<br><br>
+            
+            जमीन के सापेक्ष दहन उत्पादों का वेग = वायुयान का वेग + दहन उत्पादों का सापेक्ष वेग<br>
+            = 500 + (-1500) = -1000 km h⁻¹<br><br>
+            
+            ऋणात्मक चिन्ह दिशा को दर्शाता है। अतः जमीन के सापेक्ष दहन उत्पादों की चाल 1000 km h⁻¹ होगी (विपरीत दिशा में)।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.6</div>
+            <div>सीधे राजमार्ग पर कोई कार 126 km h⁻¹ की चाल से चल रही है। इसे 200 m की दूरी पर रोक दिया जाता है। कार के मंदन को एकसमान मानिए और इसका मान ज्ञात कीजिए। कार को रुकने में कितना समय लगा?</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक चाल u = 126 km h⁻¹ = 126 × (1000/3600) = 35 m s⁻¹<br>
+            अंतिम चाल v = 0 m s⁻¹<br>
+            दूरी s = 200 m<br><br>
+            
+            गति का तीसरा समीकरण: v² = u² + 2as<br>
+            0 = (35)² + 2 × a × 200<br>
+            0 = 1225 + 400a<br>
+            a = -1225/400 = -3.0625 m s⁻²<br><br>
+            
+            मंदन = 3.0625 m s⁻²<br><br>
+            
+            समय ज्ञात करने के लिए: v = u + at<br>
+            0 = 35 + (-3.0625) × t<br>
+            t = 35/3.0625 ≈ 11.43 s<br><br>
+            
+            अतः कार को रुकने में लगभग 11.43 सेकंड लगे।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.7</div>
+            <div>दो रेलगाड़ियाँ A और B दो समांतर पटरियों पर 72 km h⁻¹ की एकसमान चाल से एक ही दिशा में चल रही हैं। यदि प्रत्येक गाड़ी 400 m लंबी है और गाड़ी A गाड़ी B से आगे है, तो B के A से आगे निकल जाने के लिए उसकी चाल में कितनी वृद्धि करनी होगी?</div>
+        </div>
+        <div class="answer">
+            दोनों गाड़ियों की प्रारंभिक चाल = 72 km h⁻¹ = 20 m s⁻¹<br>
+            गाड़ी B को गाड़ी A से आगे निकलने के लिए उसे 400 m (अपनी लंबाई) + 400 m (गाड़ी A की लंबाई) = 800 m अतिरिक्त दूरी तय करनी होगी।<br><br>
+            
+            माना गाड़ी B की चाल में वृद्धि = v m s⁻¹<br>
+            तो सापेक्ष चाल = v m s⁻¹<br>
+            सापेक्ष दूरी = 800 m<br><br>
+            
+            आवश्यक समय t = दूरी/सापेक्ष चाल = 800/v सेकंड<br><br>
+            
+            इस समय में गाड़ी B द्वारा तय की गई अतिरिक्त दूरी = (v) × (800/v) = 800 m<br>
+            यह सही है। लेकिन हमें v का मान ज्ञात करना है जो कि गाड़ी B की चाल में वृद्धि है।<br><br>
+            
+            चूँकि प्रश्न में कोई समय सीमा नहीं दी गई है, इसलिए किसी भी चाल वृद्धि से गाड़ी B आगे निकल सकती है, लेकिन व्यावहारिक रूप से न्यूनतम वृद्धि के लिए हम मान सकते हैं कि गाड़ी B को 800 m अतिरिक्त दूरी तय करनी है।<br><br>
+            
+            इस प्रश्न के लिए और जानकारी की आवश्यकता है। सामान्यतः, यदि गाड़ी B की चाल v बढ़ा दी जाए, तो सापेक्ष चाल v होगी और 800 m की सापेक्ष दूरी तय करने में लगा समय 800/v सेकंड होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.8</div>
+            <div>किसी व्यक्ति के एक हाथ में एक बाल्टी है तथा दूसरे हाथ में एक बोतल है। बाल्टी में पानी 2.0 kg है तथा बोतल का द्रव्यमान 1.0 kg है। वह व्यक्ति बाल्टी को 4.0 m s⁻² त्वरण से ऊपर उठाता है तथा बोतल को 1.0 m s⁻² त्वरण से नीचे उतारता है। बाल्टी के हैंडल तथा बोतल पर लगने वाले बलों के मान ज्ञात कीजिए। (g = 10 m s⁻²)</div>
+        </div>
+        <div class="answer">
+            बाल्टी के लिए:<br>
+            द्रव्यमान m = 2.0 kg, त्वरण a = 4.0 m s⁻² (ऊपर की ओर)<br>
+            गुरुत्वाकर्षण बल mg = 2 × 10 = 20 N (नीचे की ओर)<br>
+            नेट बल F_net = m × a = 2 × 4 = 8 N (ऊपर की ओर)<br>
+            हैंडल द्वारा लगाया गया बल F_bucket = mg + F_net = 20 + 8 = 28 N<br><br>
+            
+            बोतल के लिए:<br>
+            द्रव्यमान m = 1.0 kg, त्वरण a = 1.0 m s⁻² (नीचे की ओर)<br>
+            गुरुत्वाकर्षण बल mg = 1 × 10 = 10 N (नीचे की ओर)<br>
+            नेट बल F_net = m × a = 1 × 1 = 1 N (नीचे की ओर)<br>
+            हाथ द्वारा लगाया गया बल F_bottle = mg - F_net = 10 - 1 = 9 N<br><br>
+            
+            अतः बाल्टी के हैंडल पर बल = 28 N (ऊपर की ओर)<br>
+            बोतल पर बल = 9 N (ऊपर की ओर)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.9</div>
+            <div>5000 kg द्रव्यमान के एक हेलीकॉप्टर को 25 m s⁻² के ऊर्ध्वाधर त्वरण से उठाया जा रहा है। हेलीकॉप्टर के रोटर द्वारा वायु पर लगाया गया बल तथा चालक सीट पर लगने वाले बल का परिमाण ज्ञात कीजिए। (g = 10 m s⁻²)</div>
+        </div>
+        <div class="answer">
+            हेलीकॉप्टर का द्रव्यमान m = 5000 kg<br>
+            त्वरण a = 25 m s⁻² (ऊपर की ओर)<br>
+            गुरुत्वाकर्षण बल mg = 5000 × 10 = 50000 N (नीचे की ओर)<br>
+            नेट बल F_net = m × a = 5000 × 25 = 125000 N (ऊपर की ओर)<br><br>
+            
+            रोटर द्वारा वायु पर लगाया गया बल = mg + F_net = 50000 + 125000 = 175000 N<br><br>
+            
+            चालक सीट पर लगने वाला बल: चूंकि चालक भी समान त्वरण से ऊपर उठ रहा है, यदि चालक का द्रव्यमान M है, तो सीट द्वारा चालक पर लगाया गया बल = M(g + a)<br>
+            चालक के द्रव्यमान के बिना हम सटीक मान नहीं निकाल सकते।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.10</div>
+            <div>10 kg तथा 20 kg के दो द्रव्यमान एक हल्की डोरी द्वारा जुड़े हैं जो एक घर्षणरहित घिरनी पर चढ़ी है। इस निकाय को मुक्त रूप से छोड़ दिया जाता है। डोरी में तनाव तथा निकाय का त्वरण ज्ञात कीजिए। (g = 10 m s⁻²)</div>
+        </div>
+        <div class="answer">
+            माना m₁ = 10 kg, m₂ = 20 kg<br>
+            भारी द्रव्यमान नीचे की ओर गति करेगा और हल्का द्रव्यमान ऊपर की ओर।<br><br>
+            
+            निकाय का त्वरण a = (m₂ - m₁)g / (m₁ + m₂) = (20 - 10)×10 / (10 + 20) = 100/30 = 3.33 m s⁻²<br><br>
+            
+            डोरी में तनाव T = (2m₁m₂)g / (m₁ + m₂) = (2×10×20)×10 / (10+20) = 4000/30 = 133.33 N<br><br>
+            
+            अतः त्वरण = 3.33 m s⁻² और डोरी में तनाव = 133.33 N
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.11</div>
+            <div>एक कार विरामावस्था से चलना प्रारंभ करती है और 30 सेकंड तक 2 m s⁻² के त्वरण से चलती है। इस अंतराल में कार द्वारा तय की गई दूरी ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 0 m s⁻¹<br>
+            त्वरण a = 2 m s⁻²<br>
+            समय t = 30 s<br><br>
+            
+            दूरी s = ut + (1/2)at² = 0 + (1/2)×2×(30)² = 1×900 = 900 m<br><br>
+            
+            अतः कार द्वारा तय की गई दूरी = 900 m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.12</div>
+            <div>एक वस्तु 20 m/s के वेग से ऊर्ध्वाधर ऊपर की ओर फेंकी जाती है। गुरुत्वीय त्वरण 10 m/s² मानते हुए ज्ञात कीजिए: (क) वस्तु कितनी ऊँचाई तक जाएगी? (ख) वह वापस नीचे आने में कितना समय लेगी?</div>
+        </div>
+        <div class="answer">
+            (क) अधिकतम ऊँचाई के लिए:<br>
+            v² = u² + 2as<br>
+            0 = (20)² + 2(-10)h<br>
+            0 = 400 - 20h<br>
+            h = 20 m<br><br>
+            
+            (ख) ऊपर जाने में लगा समय:<br>
+            v = u + at<br>
+            0 = 20 + (-10)t<br>
+            t = 2 s<br><br>
+            
+            ऊपर जाने और नीचे आने में लगा कुल समय = 2 × 2 = 4 s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.13</div>
+            <div>एक गेंद 80 m ऊँची मीनार से गिराई जाती है। गेंद जमीन से टकराने से ठीक पहले का वेग ज्ञात कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 0 m/s<br>
+            ऊँचाई h = 80 m<br>
+            गुरुत्वीय त्वरण g = 10 m/s²<br><br>
+            
+            v² = u² + 2gh = 0 + 2×10×80 = 1600<br>
+            v = √1600 = 40 m/s<br><br>
+            
+            अतः गेंद का जमीन से टकराने से ठीक पहले का वेग = 40 m/s (नीचे की ओर)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.14</div>
+            <div>एक कार 54 km/h की चाल से चल रही है। इसे 2 m/s² के मंदन से रोक दिया जाता है। कार को रुकने में लगने वाला समय और तय की गई दूरी ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 54 km/h = 54 × (1000/3600) = 15 m/s<br>
+            अंतिम वेग v = 0 m/s<br>
+            मंदन a = -2 m/s²<br><br>
+            
+            समय t = (v - u)/a = (0 - 15)/(-2) = 7.5 s<br><br>
+            
+            दूरी s = (v² - u²)/(2a) = (0 - 225)/(2×-2) = (-225)/(-4) = 56.25 m<br><br>
+            
+            अतः कार को रुकने में 7.5 सेकंड लगेंगे और यह 56.25 m की दूरी तय करेगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.15</div>
+            <div>एक वस्तु विरामावस्था से 4 m/s² के त्वरण से चलना प्रारंभ करती है। 10 सेकंड बाद इसका वेग क्या होगा?</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 0 m/s<br>
+            त्वरण a = 4 m/s²<br>
+            समय t = 10 s<br><br>
+            
+            v = u + at = 0 + 4×10 = 40 m/s<br><br>
+            
+            अतः 10 सेकंड बाद वेग = 40 m/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.16</div>
+            <div>एक वस्तु 5 m/s के वेग से चल रही है। यदि इसका त्वरण 2 m/s² है, तो 3 सेकंड बाद इसका वेग क्या होगा?</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 5 m/s<br>
+            त्वरण a = 2 m/s²<br>
+            समय t = 3 s<br><br>
+            
+            v = u + at = 5 + 2×3 = 5 + 6 = 11 m/s<br><br>
+            
+            अतः 3 सेकंड बाद वेग = 11 m/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.17</div>
+            <div>एक कार 20 m/s के वेग से चल रही है। यदि यह 5 m/s² के मंदन से रुकती है, तो रुकने से पहले यह कितनी दूरी तय करेगी?</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 20 m/s<br>
+            अंतिम वेग v = 0 m/s<br>
+            मंदन a = -5 m/s²<br><br>
+            
+            v² = u² + 2as<br>
+            0 = (20)² + 2×(-5)×s<br>
+            0 = 400 - 10s<br>
+            s = 40 m<br><br>
+            
+            अतः कार रुकने से पहले 40 m की दूरी तय करेगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.18</div>
+            <div>एक वस्तु 10 m/s के वेग से ऊपर की ओर फेंकी जाती है। यह कितनी ऊँचाई तक जाएगी? (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 10 m/s (ऊपर की ओर)<br>
+            अंतिम वेग v = 0 m/s<br>
+            गुरुत्वीय त्वरण g = -10 m/s² (नीचे की ओर)<br><br>
+            
+            v² = u² + 2gh<br>
+            0 = (10)² + 2×(-10)×h<br>
+            0 = 100 - 20h<br>
+            h = 5 m<br><br>
+            
+            अतः वस्तु 5 m की ऊँचाई तक जाएगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.19</div>
+            <div>एक पत्थर 40 m ऊँची चट्टान से गिराया जाता है। पत्थर जमीन से टकराने में कितना समय लेगा? (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक वेग u = 0 m/s<br>
+            ऊँचाई h = 40 m<br>
+            गुरुत्वीय त्वरण g = 10 m/s²<br><br>
+            
+            h = ut + (1/2)gt²<br>
+            40 = 0 + (1/2)×10×t²<br>
+            40 = 5t²<br>
+            t² = 8<br>
+            t = √8 = 2√2 ≈ 2.83 s<br><br>
+            
+            अतः पत्थर जमीन से टकराने में लगभग 2.83 सेकंड का समय लेगा।
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

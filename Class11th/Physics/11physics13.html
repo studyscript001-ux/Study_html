@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 13: दोलन</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 13: दोलन</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.1</div>
+            <div>निम्नलिखित उदाहरणों में से कौन आवर्ती गति को निरूपित करता है?<br>
+                (a) किसी नाविक द्वारा नदी के एक किनारे से दूसरे किनारे तक जाना और वापस आना<br>
+                (b) किसी स्वतंत्रतापूर्वक लटके हुए चुंबक को उसकी N-S दिशा से विस्थापित करके छोड़ना<br>
+                (c) अपने द्रव्यमान केंद्र के परितः घूर्णन करता हुआ कोई हाइड्रोजन अणु<br>
+                (d) किसी धनुष से छोड़ा गया तीर</div>
+        </div>
+        <div class="answer">
+            (b) और (c) आवर्ती गति को निरूपित करते हैं।<br>
+            (a) और (d) में गति आवर्ती नहीं है क्योंकि इनमें गति की पुनरावृत्ति निश्चित समय अंतराल के बाद नहीं होती।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.2</div>
+            <div>निम्नलिखित उदाहरणों में से कौन (लगभग) सरल आवर्त गति है और कौन आवर्ती परन्तु सरल आवर्त गति नहीं है?<br>
+                (a) पृथ्वी का अपने अक्ष के परितः घूर्णन<br>
+                (b) किसी U-नली में पारे के स्तंभ का दोलन<br>
+                (c) किसी चिकने गोलाकार कटोरे के अन्दर किसी बॉल बेयरिंग की गति जब इसे निचले बिंदु से थोड़ा ऊपर विस्थापित करके छोड़ा जाता है<br>
+                (d) किसी बहुपरमाणुक अणु की अपनी साम्यावस्था स्थिति के परितः व्यापक संकुचन</div>
+        </div>
+        <div class="answer">
+            (b) और (c) सरल आवर्त गति के उदाहरण हैं क्योंकि इनमें प्रत्यानयन बल विस्थापन के समानुपाती होता है और सदैव माध्य स्थिति की ओर निर्देशित होता है।<br>
+            (a) और (d) आवर्ती गति हैं परन्तु सरल आवर्त गति नहीं हैं क्योंकि इनमें प्रत्यानयन बल विस्थापन के समानुपाती नहीं है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.3</div>
+            <div>चित्र 13.18 में किसी कण की सरल आवर्त गति के लिए x-t ग्राफ दिखाया गया है। इस गति का आवर्तकाल, आयाम तथा (a) अधिकतम चाल, (b) अधिकतम त्वरण, और (c) किसी क्षण पर कण की चाल ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            ग्राफ से: आयाम A = 2 cm, आवर्तकाल T = 4 s<br><br>
+            
+            (a) अधिकतम चाल v_max = ωA = (2π/T)A = (2π/4)×2 = π cm/s<br>
+            (b) अधिकतम त्वरण a_max = ω²A = (2π/T)²A = (π²/4)×2 = π²/2 cm/s²<br>
+            (c) किसी क्षण पर चाल v = ω√(A² - x²) = (π/2)√(4 - x²) cm/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.4</div>
+            <div>निम्नलिखित में से कौन सा फलन (a) आवर्ती, (b) आवर्ती परन्तु सरल आवर्ती नहीं, और (c) अनावर्ती है? प्रत्येक आवर्ती गति का आवर्तकाल दीजिए: (ω कोई धनात्मक अचर है।)<br>
+                (a) sin ωt - cos ωt<br>
+                (b) sin³ ωt<br>
+                (c) 3 cos (π/4 - 2ωt)<br>
+                (d) cos ωt + cos 3ωt + cos 5ωt<br>
+                (e) exp (-ω²t²)<br>
+                (f) 1 + ωt + ω²t²</div>
+        </div>
+        <div class="answer">
+            (a) sin ωt - cos ωt = √2 sin(ωt - π/4) → सरल आवर्त गति, आवर्तकाल T = 2π/ω<br>
+            (b) sin³ ωt = (3 sin ωt - sin 3ωt)/4 → आवर्ती परन्तु सरल आवर्ती नहीं, आवर्तकाल T = 2π/ω<br>
+            (c) 3 cos (π/4 - 2ωt) = 3 cos(2ωt - π/4) → सरल आवर्त गति, आवर्तकाल T = π/ω<br>
+            (d) cos ωt + cos 3ωt + cos 5ωt → आवर्ती परन्तु सरल आवर्ती नहीं, आवर्तकाल T = 2π/ω<br>
+            (e) exp (-ω²t²) → अनावर्ती<br>
+            (f) 1 + ωt + ω²t² → अनावर्ती
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.5</div>
+            <div>कोई कण एक दूसरे से 10 cm दूरी पर स्थित दो बिंदुओं A और B के बीच रैखिक सरल आवर्त गति कर रहा है। A से B की ओर की दिशा को धनात्मक दिशा मानकर, निम्नलिखित स्थितियों में कण के विस्थापन का चिह्न (धनात्मक या ऋणात्मक) निर्धारित कीजिए:<br>
+                (a) कण A पर है,<br>
+                (b) कण B पर है,<br>
+                (c) कण A की ओर जाते हुए AB के मध्य बिंदु पर है,<br>
+                (d) कण B की ओर जाते हुए B से 2 cm दूर है,<br>
+                (e) कण B की ओर जाते हुए A से 3 cm दूर है, और<br>
+                (f) कण A की ओर जाते हुए B से 4 cm दूर है।</div>
+        </div>
+        <div class="answer">
+            माध्य स्थिति O, A और B के मध्य बिंदु पर है। A से O तक की दूरी = 5 cm, O से B तक की दूरी = 5 cm<br>
+            A की ओर विस्थापन ऋणात्मक और B की ओर धनात्मक माना गया है।<br><br>
+            
+            (a) कण A पर है: विस्थापन x = -5 cm (ऋणात्मक)<br>
+            (b) कण B पर है: विस्थापन x = +5 cm (धनात्मक)<br>
+            (c) कण A की ओर जाते हुए AB के मध्य बिंदु पर है: विस्थापन x = 0<br>
+            (d) कण B की ओर जाते हुए B से 2 cm दूर है: विस्थापन x = +3 cm (धनात्मक)<br>
+            (e) कण B की ओर जाते हुए A से 3 cm दूर है: विस्थापन x = -2 cm (ऋणात्मक)<br>
+            (f) कण A की ओर जाते हुए B से 4 cm दूर है: विस्थापन x = +1 cm (धनात्मक)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.6</div>
+            <div>निम्नलिखित में से किसी कण के त्वरण a और विस्थापन x के बीच संबंधों में से कौन सरल आवर्त गति के लिए अनुकूल है?<br>
+                (a) a = 0.7x<br>
+                (b) a = -200x²<br>
+                (c) a = -10x<br>
+                (d) a = 100x³</div>
+        </div>
+        <div class="answer">
+            सरल आवर्त गति के लिए त्वरण a, विस्थापन x के अनुक्रमानुपाती तथा विपरीत दिशा में होना चाहिए, अर्थात a ∝ -x<br>
+            (c) a = -10x सरल आवर्त गति के लिए अनुकूल है क्योंकि यह a ∝ -x के रूप में है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.7</div>
+            <div>सरल आवर्त गति करते किसी कण की गति का वर्णन निम्नलिखित विस्थापन फलन द्वारा किया जाता है: x(t) = A cos(ωt + φ)। यदि कण की आरंभिक (t = 0) स्थिति 1 cm और उसका आरंभिक वेग π cm/s है, तो कण का आयाम और आरंभिक कला कोण क्या है? कण की कोणीय आवृत्ति π s⁻¹ है। यदि सरल आवर्त गति का वर्णन करने के लिए कोज्या (cos) फलन के स्थान पर हम ज्या (sin) फलन चुनें, x = B sin(ωt + α), तो उपरोक्त आरंभिक प्रतिबंधों में कण का आयाम और आरंभिक कला कोण क्या होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है: x(t) = A cos(ωt + φ), ω = π s⁻¹<br>
+            t = 0 पर, x(0) = A cos φ = 1 cm<br>
+            वेग v = dx/dt = -Aω sin(ωt + φ)<br>
+            t = 0 पर, v(0) = -Aω sin φ = π cm/s<br><br>
+            
+            समीकरणों को हल करने पर:<br>
+            A cos φ = 1<br>
+            -Aπ sin φ = π ⇒ A sin φ = -1<br><br>
+            
+            वर्ग करके जोड़ने पर: A²(cos²φ + sin²φ) = 1 + 1 = 2 ⇒ A = √2 cm<br>
+            tan φ = sin φ/cos φ = -1/1 = -1 ⇒ φ = -π/4 rad<br><br>
+            
+            यदि x = B sin(ωt + α) लें, तो:<br>
+            t = 0 पर, x(0) = B sin α = 1<br>
+            v = dx/dt = Bω cos(ωt + α)<br>
+            t = 0 पर, v(0) = Bω cos α = π<br><br>
+            
+            समीकरणों को हल करने पर:<br>
+            B sin α = 1<br>
+            Bπ cos α = π ⇒ B cos α = 1<br><br>
+            
+            वर्ग करके जोड़ने पर: B²(sin²α + cos²α) = 1 + 1 = 2 ⇒ B = √2 cm<br>
+            tan α = sin α/cos α = 1/1 = 1 ⇒ α = π/4 rad
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.8</div>
+            <div>किसी कमानीदार तुला का पैमाना 0 से 50 kg तक अंकित है और पैमाने की लंबाई 20 cm है। इस तुला से लटकाया गया कोई पिण्ड, जब विस्थापित करके मुक्त किया जाता है, 0.6 s के आवर्तकाल से दोलन करता है। पिण्ड का द्रव्यमान कितना है?</div>
+        </div>
+        <div class="answer">
+            पैमाने की लंबाई = 20 cm = 0.2 m, माप परास = 0-50 kg<br>
+            अधिकतम बल F_max = 50g = 50 × 9.8 = 490 N<br>
+            स्प्रिंग नियतांक k = F_max/विस्तार = 490/0.2 = 2450 N/m<br><br>
+            
+            आवर्तकाल T = 2π√(m/k) = 0.6 s<br>
+            ⇒ √(m/k) = T/(2π) = 0.6/(2×3.14) ≈ 0.0955<br>
+            ⇒ m/k = (0.0955)² ≈ 0.00912<br>
+            ⇒ m = 0.00912 × k = 0.00912 × 2450 ≈ 22.34 kg<br><br>
+            
+            अतः पिण्ड का द्रव्यमान लगभग 22.34 kg है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.9</div>
+            <div>1200 N m⁻¹ स्प्रिंग नियतांक की कोई कमानी चित्र 13.19 में दर्शाए अनुसार किसी क्षैतिज मेज से जुड़ी है। कमानी के मुक्त सिरे से 3 kg द्रव्यमान का कोई पिण्ड जुड़ा है। इस पिण्ड को एक ओर 2.0 cm दूरी तक खींच कर मुक्त किया जाता है।<br>
+                (i) पिण्ड के दोलन की आवृत्ति,<br>
+                (ii) पिण्ड का अधिकतम त्वरण, और<br>
+                (iii) पिण्ड की अधिकतम चाल ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है: k = 1200 N/m, m = 3 kg, A = 2.0 cm = 0.02 m<br><br>
+            
+            (i) आवृत्ति ν = (1/2π)√(k/m) = (1/2×3.14)×√(1200/3) = (1/6.28)×√400 = (1/6.28)×20 ≈ 3.18 Hz<br>
+            (ii) अधिकतम त्वरण a_max = ω²A = (k/m)A = (1200/3)×0.02 = 400×0.02 = 8 m/s²<br>
+            (iii) अधिकतम चाल v_max = ωA = √(k/m)A = √(1200/3)×0.02 = 20×0.02 = 0.4 m/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.10</div>
+            <div>अभ्यास 13.9 में, मान लीजिए जब कमानी अतानित अवस्था में है तब पिण्ड की स्थिति x = 0 है और बाएं से दाएं की दिशा x-अक्ष की धनात्मक दिशा है। दोलन करते पिण्ड के विस्थापन x को समय के फलन के रूप में दर्शाइए, जबकि विराम घड़ी को आरंभ (t = 0) करते समय पिण्ड<br>
+                (a) अपनी माध्य स्थिति,<br>
+                (b) अपनी अधिकतम तानित स्थिति, और<br>
+                (c) अपनी अधिकतम संपीड़ित स्थिति पर है।<br>
+                सरल आवर्त गति के लिए ये फलन एक-दूसरे से आवृत्ति में, आयाम में अथवा आरंभिक कला में किस रूप में भिन्न हैं?</div>
+        </div>
+        <div class="answer">
+            सामान्य विस्थापन समीकरण: x(t) = A sin(ωt + φ)<br>
+            ω = √(k/m) = √(1200/3) = 20 rad/s, A = 0.02 m<br><br>
+            
+            (a) जब पिण्ड माध्य स्थिति पर है और दाएं की ओर गति कर रहा है: x(0) = 0, v(0) = +v_max<br>
+            x(0) = A sin φ = 0 ⇒ φ = 0 या π<br>
+            v(0) = Aω cos φ > 0 ⇒ cos φ > 0 ⇒ φ = 0<br>
+            ∴ x(t) = 0.02 sin(20t)<br><br>
+            
+            (b) जब पिण्ड अधिकतम तानित स्थिति पर है: x(0) = +A = +0.02 m, v(0) = 0<br>
+            x(0) = A sin φ = A ⇒ sin φ = 1 ⇒ φ = π/2<br>
+            ∴ x(t) = 0.02 sin(20t + π/2) = 0.02 cos(20t)<br><br>
+            
+            (c) जब पिण्ड अधिकतम संपीड़ित स्थिति पर है: x(0) = -A = -0.02 m, v(0) = 0<br>
+            x(0) = A sin φ = -A ⇒ sin φ = -1 ⇒ φ = -π/2 या 3π/2<br>
+            ∴ x(t) = 0.02 sin(20t - π/2) = -0.02 cos(20t)<br><br>
+            
+            ये सभी फलन आवृत्ति और आयाम में समान हैं, केवल आरंभिक कला में भिन्न हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.11</div>
+            <div>चित्र 13.20 में दिए गए दो आरेख दो वृत्तीय गतियों के तद्नुरूपी हैं। प्रत्येक आरेख पर वृत्त की त्रिज्या, परिक्रमण काल, आरंभिक स्थिति और परिक्रमण की दिशा दर्शायी गई है। प्रत्येक प्रकरण में, परिक्रमण करते कण के त्रिज्या-सदिश के x-अक्ष पर प्रक्षेप की तद्नुरूपी सरल आवर्त गति ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            (a) त्रिज्या A = 3 cm, आवर्तकाल T = 2 s, ω = 2π/T = π rad/s<br>
+            प्रारंभिक कोण = 90° = π/2 rad (x-अक्ष से), वामावर्त<br>
+            x-प्रक्षेप: x(t) = A cos(ωt + φ) = 3 cos(πt + π/2) = -3 sin(πt) cm<br><br>
+            
+            (b) त्रिज्या A = 2 m, आवर्तकाल T = 4 s, ω = 2π/T = π/2 rad/s<br>
+            प्रारंभिक कोण = 0 rad, दक्षिणावर्त<br>
+            x-प्रक्षेप: x(t) = A cos(-ωt + φ) = 2 cos(-πt/2 + 0) = 2 cos(πt/2) m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.12</div>
+            <div>नीचे दी गई प्रत्येक सरल आवर्त गति के लिए तद्नुरूपी निर्देश वृत्त आरेख खींचिए। घूर्णी कण की आरंभिक (t = 0) स्थिति, वृत्त की त्रिज्या तथा कोणीय चाल दर्शाइए। सुविधा के लिए प्रत्येक प्रकरण में परिक्रमण की दिशा वामावर्त लीजिए। (x को cm में以及 t को s में लीजिए।)<br>
+                (a) x = -2 sin(3t + π/3)<br>
+                (b) x = cos(π/6 - t)<br>
+                (c) x = 3 sin(2πt + π/4)<br>
+                (d) x = 2 cos πt</div>
+        </div>
+        <div class="answer">
+            (a) x = -2 sin(3t + π/3) = 2 cos(3t + π/3 + π/2) = 2 cos(3t + 5π/6)<br>
+            आयाम A = 2 cm, ω = 3 rad/s, प्रारंभिक कला φ = 5π/6 rad<br><br>
+            
+            (b) x = cos(π/6 - t) = cos(t - π/6) [∵ cos(-θ)=cosθ]<br>
+            आयाम A = 1 cm, ω = 1 rad/s, प्रारंभिक कला φ = -π/6 rad<br><br>
+            
+            (c) x = 3 sin(2πt + π/4) = 3 cos(2πt + π/4 - π/2) = 3 cos(2πt - π/4)<br>
+            आयाम A = 3 cm, ω = 2π rad/s, प्रारंभिक कला φ = -π/4 rad<br><br>
+            
+            (d) x = 2 cos πt<br>
+            आयाम A = 2 cm, ω = π rad/s, प्रारंभिक कला φ = 0 rad
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.13</div>
+            <div>चित्र 13.21(a) में k बल नियतांक की किसी कमानी के एक सिरे को किसी दृढ़ आधार से जुड़ा दर्शाया गया है以及 दूसरे मुक्त सिरे से एक द्रव्यमान m जुड़ा है। कमानी के मुक्त सिरे पर बल F आरोपित करने से कमानी तन जाती है। चित्र 13.21(b) में उसी कमानी के दोनों मुक्त सिरों से द्रव्यमान m जुड़ा दर्शाया गया है। कमानी के दोनों सिरों को चित्र 13.21 में समान बल F द्वारा तानित किया गया है।<br>
+                (a) दोनों प्रकरणों में कमानी का अधिकतम विस्तार क्या है?<br>
+                (b) यदि (a) का द्रव्यमान以及 (b) के दोनों द्रव्यमान मुक्त कर दिए जाएं, तो प्रत्येक प्रकरण में दोलन का आवर्तकाल ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            (a) प्रकरण (a) में: F = kx ⇒ x = F/k<br>
+            प्रकरण (b) में: प्रत्येक कमानी पर तनाव F है, अतः विस्तार x = F/k (प्रत्येक ओर)<br>
+            कुल विस्तार = 2x = 2F/k<br><br>
+            
+            (b) प्रकरण (a) में: आवर्तकाल T = 2π√(m/k)<br>
+            प्रकरण (b) में: तुल्य बल नियतांक k_eq = F/(कुल विस्तार) = F/(2F/k) = k/2<br>
+            आवर्तकाल T = 2π√(m/(k/2)) = 2π√(2m/k)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.14</div>
+            <div>किसी रेलवे इंजन के सिलिंडर हेड में पिस्टन का स्ट्रोक (आयाम का दो गुना) 1.0 m है। यदि पिस्टन 200 rad/min की कोणीय आवृत्ति से सरल आवर्त गति करता है, तो उसकी अधिकतम चाल कितनी है?</div>
+        </div>
+        <div class="answer">
+            स्ट्रोक = 2A = 1.0 m ⇒ आयाम A = 0.5 m<br>
+            कोणीय आवृत्ति ω = 200 rad/min = 200/60 rad/s = 10/3 rad/s<br><br>
+            
+            अधिकतम चाल v_max = ωA = (10/3) × 0.5 = 5/3 ≈ 1.67 m/s
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.15</div>
+            <div>चंद्रमा के पृष्ठ पर गुरुत्वीय त्वरण 1.7 m s⁻² है। यदि किसी सरल लोलक का पृथ्वी के पृष्ठ पर आवर्तकाल 3.5 s है, तो उसका चंद्रमा के पृष्ठ पर आवर्तकाल कितना होगा? (पृथ्वी के पृष्ठ पर g = 9.8 m s⁻²)</div>
+        </div>
+        <div class="answer">
+            सरल लोलक का आवर्तकाल T = 2π√(l/g)<br>
+            पृथ्वी पर: T_e = 3.5 = 2π√(l/9.8)<br>
+            चंद्रमा पर: T_m = 2π√(l/1.7)<br><br>
+            
+            दोनों समीकरणों का अनुपात लेने पर:<br>
+            T_m/T_e = √(g_e/g_m) = √(9.8/1.7) ≈ √5.7647 ≈ 2.401<br>
+            T_m = 2.401 × T_e = 2.401 × 3.5 ≈ 8.40 s<br><br>
+            
+            अतः चंद्रमा के पृष्ठ पर आवर्तकाल लगभग 8.40 s होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.16</div>
+            <div>किसी कार की छत से l लंबाई का कोई सरल लोलक, जिसके लोलक का द्रव्यमान M है, लटकाया गया है। कार R त्रिज्या की वृत्तीय पथ पर एकसमान चाल v से गतिमान है। यदि लोलक त्रिज्या दिशा में अपनी साम्यावस्था की स्थिति के इधर-उधर छोटे दोलन करता है, तो इसका आवर्तकाल कितना होगा?</div>
+        </div>
+        <div class="answer">
+            जब कार वृत्तीय पथ पर गति करती है, तो लोलक पर एक अतिरिक्त अपकेंद्रीय बल कार्य करता है।<br>
+            प्रभावी गुरुत्वीय त्वरण g_eff = √(g² + (v²/R)²)<br><br>
+            
+            सरल लोलक का आवर्तकाल T = 2π√(l/g_eff) = 2π√[l/√(g² + (v⁴/R²))]<br>
+            छोटे दोलनों के लिए, यही आवर्तकाल होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.17</div>
+            <div>आधार क्षेत्रफल A以及 ऊँचाई h के एक कॉर्क का बेलनाकार टुकड़ा ρ₁ घनत्व के किसी द्रव में तैर रहा है। कॉर्क को थोड़ा नीचे दबाकर मुक्त किया जाता है, दर्शाइए कि कॉर्क ऊपर-नीचे सरल आवर्त दोलन करता है जिसका आवर्तकाल T = 2π√(hρ/ρ₁g) है। यहाँ ρ कॉर्क का घनत्व है (द्रव की श्यानता के कारण अवमंदन को नगण्य मानिए।)</div>
+        </div>
+        <div class="answer">
+            माना कॉर्क साम्यावस्था में द्रव में h ऊँचाई तक डूबा है।<br>
+            आर्किमिडीज के सिद्धांत से: कॉर्क का भार = विस्थापित द्रव का भार<br>
+            A h ρ g = A y ρ₁ g (जहाँ y साम्यावस्था में डूबी ऊँचाई है)<br>
+            ⇒ y = (ρ/ρ₁)h<br><br>
+            
+            जब कॉर्क को x दूरी नीचे दबाया जाता है, तो उत्प्लावन बल में वृद्धि = A x ρ₁ g (ऊपर की ओर)<br>
+            प्रत्यानयन बल F = -A ρ₁ g x<br>
+            त्वरण a = F/m = - (A ρ₁ g/(ρ A h)) x = - (ρ₁ g/(ρ h)) x<br><br>
+            
+            चूँकि a ∝ -x, यह सरल आवर्त गति है।<br>
+            आवर्तकाल T = 2π√(विस्थापन/त्वरण) = 2π√(x/(ρ₁ g x/(ρ h))) = 2π√(ρ h/(ρ₁ g))
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">13.18</div>
+            <div>पारे से भरी किसी U-नली की एक भुजा में पारे का स्तंभ बंद करके वायु को भीतर रोक लिया गया है, तथा दूसरी भुजा खुली है। दर्शाइए कि जब खुली भुजा में से पारे का स्तंभ थोड़ा नीचे उतारकर मुक्त किया जाता है, तो U-नली में पारे का स्तंभ सरल आवर्त गति करता है।</div>
+        </div>
+        <div class="answer">
+            माना U-नली के दोनों भुजाओं में पारे के स्तंभ की ऊँचाई में अंतर 2x है।<br>
+            दाबान्तर = 2x ρ g (जहाँ ρ पारे का घनत्व है)<br>
+            इस दाबान्तर के कारण पारे पर लगने वाला प्रत्यानयन बल F = -दाबान्तर × अनुप्रस्थ काट क्षेत्रफल A<br>
+            F = -2x ρ g A<br><br>
+            
+            पारे का कुल द्रव्यमान m = स्तंभ की लंबाई l × A × ρ<br>
+            त्वरण a = F/m = - (2ρ g A/(l A ρ)) x = - (2g/l) x<br><br>
+            
+            चूँकि a ∝ -x, यह सरल आवर्त गति है।<br>
+            आवर्तकाल T = 2π√(l/(2g))
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

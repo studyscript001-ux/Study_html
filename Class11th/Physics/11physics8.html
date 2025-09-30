@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 8: ठोसों के यांत्रिक गुण</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 8: ठोसों के यांत्रिक गुण</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.1</div>
+            <div>4.7 m लंबे तथा 3.0 × 10⁻⁵ m² अनुप्रस्थ काट के स्टील के तार और 3.5 m लंबे तथा 4.0 × 10⁻⁵ m² अनुप्रस्थ काट के ताँबे के तार पर दिए गए समान परिमाण के भारों को लटकाने पर उनकी लंबाइयों में समान वृद्धि होती है। स्टील और ताँबे के यंग प्रत्यास्थता गुणांकों में क्या अनुपात है?</div>
+        </div>
+        <div class="answer">
+            यंग गुणांक Y = (F × L)/(A × ΔL)<br>
+            दोनों तारों के लिए F और ΔL समान हैं।<br>
+            Y_steel / Y_copper = (L_steel / A_steel) / (L_copper / A_copper) = (L_steel × A_copper) / (L_copper × A_steel)<br>
+            = (4.7 × 4.0 × 10⁻⁵) / (3.5 × 3.0 × 10⁻⁵) = (18.8) / (10.5) = 1.79<br>
+            अतः स्टील और ताँबे के यंग गुणांकों का अनुपात 1.79:1 है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.2</div>
+            <div>नीचे चित्र 8.9 में किसी दिए गए पदार्थ के लिए प्रतिबल-विकृति वक्र दर्शाया गया है। इस पदार्थ के लिए (a) यंग प्रत्यास्थता गुणांक, (b) सन्निकट पराभव सामर्थ्य क्या है?</div>
+        </div>
+        <div class="answer">
+            (a) यंग प्रत्यास्थता गुणांक = प्रतिबल/विकृति<br>
+            वक्र के प्रारंभिक रैखिक भाग से, Y = (150 × 10⁶ Pa)/(0.002) = 7.5 × 10¹⁰ Pa<br>
+            (b) पराभव सामर्थ्य वह प्रतिबल है जहाँ वक्र सपाट होने लगता है। ग्राफ से यह लगभग 290 × 10⁶ Pa है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.3</div>
+            <div>दो पदार्थों A और B के लिए प्रतिबल-विकृति ग्राफ चित्र 8.10 में दर्शाए गए हैं। इन ग्राफों को एक ही पैमाना मानकर खींचा गया है। (a) किस पदार्थ का यंग प्रत्यास्थता गुणांक अधिक है? (b) दोनों पदार्थों में कौन अधिक मजबूत है?</div>
+        </div>
+        <div class="answer">
+            (a) पदार्थ A का यंग गुणांक अधिक है क्योंकि उसके ग्राफ का ढलान (प्रतिबल/विकृति) अधिक है।<br>
+            (b) पदार्थ B अधिक मजबूत है क्योंकि उसका पराभव सामर्थ्य और चरम तन्य सामर्थ्य दोनों अधिक हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.4</div>
+            <div>निम्नलिखित दो कथनों को ध्यान से पढ़िए और कारण सहित बताइए कि वे सत्य हैं या असत्य:<br>
+                (a) स्टील की अपेक्षा रबर का यंग गुणांक अधिक है<br>
+                (b) किसी कुंडली का खिंचाव उसके अपरूपण गुणांक से निर्धारित होता है</div>
+        </div>
+        <div class="answer">
+            (a) असत्य - स्टील का यंग गुणांक (≈ 2 × 10¹¹ Pa) रबर के यंग गुणांक (≈ 10⁶ Pa) से कहीं अधिक है।<br>
+            (b) सत्य - जब कुंडली खिंचती है तो उसमें मुख्य रूप से अपरूपण विकृति उत्पन्न होती है, इसलिए उसका खिंचाव अपरूपण गुणांक से निर्धारित होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.5</div>
+            <div>0.25 cm व्यास के दो तार, जिनमें एक स्टील का और दूसरा पीतल का है, चित्र 8.11 के अनुसार भारित हैं। बिना भार लटकाए स्टील और पीतल के तारों की लंबाइयाँ क्रमश: 1.5 m और 1.0 m हैं। यदि स्टील और पीतल के यंग गुणांक क्रमश: 2.0 × 10¹¹ Pa तथा 0.91 × 10¹¹ Pa हों, तो स्टील और पीतल के तारों में विस्तार की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            तार का व्यास d = 0.25 cm = 0.0025 m<br>
+            अनुप्रस्थ काट का क्षेत्रफल A = πd²/4 = 3.14 × (0.0025)²/4 = 4.91 × 10⁻⁶ m²<br><br>
+            
+            स्टील के तार के लिए:<br>
+            भार F = 6 kg × 9.8 m/s² = 58.8 N<br>
+            लंबाई L = 1.5 m, Y = 2.0 × 10¹¹ Pa<br>
+            विस्तार ΔL = (F × L)/(Y × A) = (58.8 × 1.5)/(2.0 × 10¹¹ × 4.91 × 10⁻⁶) = 8.97 × 10⁻⁵ m<br><br>
+            
+            पीतल के तार के लिए:<br>
+            भार F = 6 + 4 = 10 kg × 9.8 m/s² = 98 N<br>
+            लंबाई L = 1.0 m, Y = 0.91 × 10¹¹ Pa<br>
+            विस्तार ΔL = (98 × 1.0)/(0.91 × 10¹¹ × 4.91 × 10⁻⁶) = 2.19 × 10⁻⁴ m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.6</div>
+            <div>ऐलुमिनियम के किसी घन के किनारे 10 cm लंबे हैं। इसका एक फलक किसी ऊर्ध्वाधर दीवार से कसकर जड़ा हुआ है। इस घन के सम्मुख फलक से 100 kg का एक द्रव्यमान जोड़ दिया गया है। ऐलुमिनियम का अपरूपण गुणांक 25 GPa है। इस फलक का ऊर्ध्वाधर विस्थापन कितना होगा?</div>
+        </div>
+        <div class="answer">
+            अपरूपण गुणांक G = 25 GPa = 25 × 10⁹ Pa<br>
+            भार F = 100 kg × 9.8 m/s² = 980 N<br>
+            क्षेत्रफल A = (0.1 m)² = 0.01 m²<br>
+            लंबाई L = 0.1 m<br><br>
+            
+            अपरूपण विकृति θ = F/(A × G) = 980/(0.01 × 25 × 10⁹) = 3.92 × 10⁻⁶<br>
+            विस्थापन Δx = θ × L = 3.92 × 10⁻⁶ × 0.1 = 3.92 × 10⁻⁷ m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.7</div>
+            <div>मृदु स्टील के चार समान समांतर पाइप 50,000 kg द्रव्यमान के किसी बड़े संदूक को आधार दिए हुए हैं। प्रत्येक पाइप की आंतरिक और बाह्य त्रिज्याएँ क्रमश: 30 और 60 cm हैं। भार वितरण को एकसमान मानते हुए प्रत्येक पाइप की संपीडन विकृति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            एक पाइप पर भार F = (50,000 × 9.8)/4 = 122,500 N<br>
+            पाइप का अनुप्रस्थ काट क्षेत्र A = π(R² - r²) = 3.14 × (0.6² - 0.3²) = 3.14 × 0.27 = 0.8478 m²<br>
+            स्टील का यंग गुणांक Y = 2.0 × 10¹¹ Pa (माना)<br><br>
+            
+            प्रतिबल σ = F/A = 122500/0.8478 = 144,500 Pa<br>
+            विकृति ε = σ/Y = 144500/(2.0 × 10¹¹) = 7.225 × 10⁻⁷
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.8</div>
+            <div>ताँबे का एक टुकड़ा, जिसका अनुप्रस्थ परिच्छेद 15.2 mm × 19.1 mm का है, 44,500 N बल के तनाव से खींचा जाता है, जिससे केवल प्रत्यास्थ विरूपण उत्पन्न होता है। उत्पन्न विकृति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            अनुप्रस्थ काट क्षेत्र A = 15.2 × 10⁻³ m × 19.1 × 10⁻³ m = 2.90 × 10⁻⁴ m²<br>
+            प्रतिबल σ = F/A = 44500/(2.90 × 10⁻⁴) = 1.534 × 10⁸ Pa<br>
+            ताँबे का यंग गुणांक Y = 1.1 × 10¹¹ Pa<br>
+            विकृति ε = σ/Y = 1.534 × 10⁸/(1.1 × 10¹¹) = 1.395 × 10⁻³
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.9</div>
+            <div>1.5 cm त्रिज्या का एक स्टील का केबल भार उठाने के लिए इस्तेमाल किया जाता है। यदि स्टील के लिए अधिकतम अनुमेय प्रतिबल 10⁸ N m⁻² है, तो उस अधिकतम भार की गणना कीजिए जिसे केबल उठा सकता है।</div>
+        </div>
+        <div class="answer">
+            केबल की त्रिज्या r = 1.5 cm = 0.015 m<br>
+            अनुप्रस्थ काट क्षेत्र A = πr² = 3.14 × (0.015)² = 7.065 × 10⁻⁴ m²<br>
+            अधिकतम अनुमेय प्रतिबल σ = 10⁸ N m⁻²<br>
+            अधिकतम भार F = σ × A = 10⁸ × 7.065 × 10⁻⁴ = 7.065 × 10⁴ N = 70.65 kN
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.10</div>
+            <div>15 kg द्रव्यमान की एक ठोस पट्टी को 2 m लंबी तीन तारों से सममित रूप से लटकाया गया है। सिरों वाली दोनों तारें ताँबे की हैं तथा बीच वाली लोहे की है। यदि प्रत्येक तार पर तनाव समान रहना है, तो तारों के व्यासों में अनुपात ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रत्येक तार पर तनाव F = (15 × 9.8)/3 = 49 N<br>
+            तनाव समान रखने के लिए प्रतिबल समान होना चाहिए: F/A = constant<br>
+            ∴ A ∝ 1/σ (यदि F समान है)<br><br>
+            
+            ताँबे के लिए अनुमेय प्रतिबल σ_cu, लोहे के लिए σ_fe<br>
+            क्षेत्रफल A ∝ 1/σ<br>
+            व्यास d ∝ 1/√σ<br>
+            ∴ d_cu : d_fe = 1/√σ_cu : 1/√σ_fe = √σ_fe : √σ_cu
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.11</div>
+            <div>एक मीटर अतानित लंबाई के स्टील के तार के एक सिरे से 14.5 kg का द्रव्यमान बाँध कर उसे एक ऊर्ध्वाधर वृत्त में घुमाया जाता है, उसके निम्नतम बिंदु पर उसका कोणीय वेग 2 rev/s है। तार के अनुप्रस्थ परिच्छेद का क्षेत्रफल 0.065 cm² है। तार में विस्तार की गणना कीजिए जब द्रव्यमान अपने पथ के निम्नतम बिंदु पर है।</div>
+        </div>
+        <div class="answer">
+            निम्नतम बिंदु पर: T - mg = mω²r<br>
+            ω = 2 rev/s = 4π rad/s, m = 14.5 kg, r = 1 m (तार की लंबाई)<br>
+            T = m(g + ω²r) = 14.5(9.8 + (4×3.14)²×1) = 14.5(9.8 + 157.75) = 14.5 × 167.55 = 2429.475 N<br><br>
+            
+            तार का क्षेत्रफल A = 0.065 cm² = 6.5 × 10⁻⁶ m²<br>
+            स्टील का Y = 2.0 × 10¹¹ Pa<br>
+            विस्तार ΔL = (T × L)/(Y × A) = (2429.475 × 1)/(2.0 × 10¹¹ × 6.5 × 10⁻⁶) = 1.868 × 10⁻³ m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.12</div>
+            <div>नीचे दिए गए आँकड़ों से जल के आयतन प्रत्यास्थता गुणांक की गणना कीजिए: प्रारंभिक आयतन = 100.0 L, दाब में वृद्धि = 100.0 atm (1 atm = 1.013 × 10⁵ Pa), अंतिम आयतन = 100.5 L। नियत ताप पर जल और वायु के आयतन प्रत्यास्थता गुणांकों की तुलना कीजिए। सरल शब्दों में समझाइए कि यह अनुपात इतना अधिक क्यों है?</div>
+        </div>
+        <div class="answer">
+            ΔP = 100 atm = 100 × 1.013 × 10⁵ = 1.013 × 10⁷ Pa<br>
+            ΔV = 100.5 - 100.0 = 0.5 L<br>
+            V = 100.0 L<br>
+            आयतन प्रत्यास्थता गुणांक B = -ΔP/(ΔV/V) = -1.013×10⁷/(0.5/100) = 2.026×10⁹ Pa<br><br>
+            
+            वायु का B ≈ 1.0 × 10⁵ Pa (नियत ताप पर)<br>
+            B_water/B_air ≈ 2.026×10⁹/1.0×10⁵ = 20260<br><br>
+            
+            यह अनुपात इतना अधिक है क्योंकि जल वायु की तुलना में बहुत कम संपीड्य है। वायु के अणु एक-दूसरे से दूर होते हैं और आसानी से संपीडित हो जाते हैं, जबकि जल के अणु निकट होते हैं और कम संपीड्य होते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.13</div>
+            <div>उस गहराई पर, जहाँ दाब 80.0 atm है, जल का घनत्व कितना होगा? दिया गया है कि पृष्ठ पर जल का घनत्व 1.03 × 10³ kg m⁻³, जल की संपीड्यता 45.8 × 10⁻¹¹ Pa⁻¹ (1 Pa = 1 N m⁻²) है।</div>
+        </div>
+        <div class="answer">
+            दाब में परिवर्तन ΔP = 80.0 atm = 80 × 1.013 × 10⁵ = 8.104 × 10⁶ Pa<br>
+            आयतन में भिन्नात्मक कमी = -ΔV/V = B⁻¹ × ΔP = 45.8 × 10⁻¹¹ × 8.104 × 10⁶ = 3.71 × 10⁻³<br>
+            नया घनत्व ρ' = ρ/(1 - ΔV/V) = 1.03 × 10³/(1 - 0.00371) = 1.0338 × 10³ kg m⁻³
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.14</div>
+            <div>काँच के एक स्लैब पर 10 atm का जलीय दाब लगाने पर, उसके आयतन में भिन्नात्मक अंतर की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            काँच का आयतन प्रत्यास्थता गुणांक B = 37 × 10⁹ Pa (सारणी 8.3 से)<br>
+            दाब परिवर्तन ΔP = 10 atm = 10 × 1.013 × 10⁵ = 1.013 × 10⁶ Pa<br>
+            आयतन में भिन्नात्मक परिवर्तन ΔV/V = ΔP/B = 1.013×10⁶/(37×10⁹) = 2.74 × 10⁻⁵
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.15</div>
+            <div>ताँबे के एक ठोस घन का एक किनारा 10 cm का है। इस पर 7.0 × 10⁶ Pa का जलीय दाब लगाने पर इसके आयतन में संकुचन निकालिए।</div>
+        </div>
+        <div class="answer">
+            ताँबे का आयतन प्रत्यास्थता गुणांक B = 140 × 10⁹ Pa (सारणी 8.3 से)<br>
+            ΔP = 7.0 × 10⁶ Pa<br>
+            ΔV/V = ΔP/B = 7.0×10⁶/(140×10⁹) = 5.0 × 10⁻⁵<br>
+            प्रारंभिक आयतन V = (0.1)³ = 0.001 m³<br>
+            आयतन में संकुचन ΔV = V × (ΔV/V) = 0.001 × 5.0 × 10⁻⁵ = 5.0 × 10⁻⁸ m³
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.16</div>
+            <div>1 लीटर जल पर दाब में कितना परिवर्तन किया जाए कि वह 0.10% से संपीडित हो जाए?</div>
+        </div>
+        <div class="answer">
+            जल का आयतन प्रत्यास्थता गुणांक B = 2.2 × 10⁹ Pa<br>
+            आयतन में भिन्नात्मक परिवर्तन ΔV/V = 0.10% = 0.001<br>
+            ΔP = B × (ΔV/V) = 2.2 × 10⁹ × 0.001 = 2.2 × 10⁶ Pa = 22 atm
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

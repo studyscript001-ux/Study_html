@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 12: अणुगति सिद्धांत</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 12: अणुगति सिद्धांत</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.1</div>
+            <div>ऑक्सीजन के अणुओं के आयतन और STP पर उनके द्वारा घेरे गए कुल आयतन का अनुपात ज्ञात कीजिए। ऑक्सीजन के एक अणु का व्यास 3 Å लीजिए।</div>
+        </div>
+        <div class="answer">
+            STP पर ऑक्सीजन के एक मोल का आयतन = 22.4 लीटर = 22.4 × 10⁻³ m³<br>
+            ऑक्सीजन के एक अणु का आयतन = (4/3)πr³, जहाँ r = 1.5 Å = 1.5 × 10⁻¹⁰ m<br>
+            एक अणु का आयतन = (4/3) × 3.14 × (1.5 × 10⁻¹⁰)³ = 1.413 × 10⁻²⁹ m³<br>
+            एक मोल में अणुओं की संख्या = 6.022 × 10²³<br>
+            अणुओं का कुल आयतन = 6.022 × 10²³ × 1.413 × 10⁻²⁹ = 8.51 × 10⁻⁶ m³<br>
+            अनुपात = (8.51 × 10⁻⁶) / (22.4 × 10⁻³) = 3.8 × 10⁻⁴<br><br>
+            
+            अतः ऑक्सीजन के अणुओं के आयतन और STP पर उनके द्वारा घेरे गए कुल आयतन का अनुपात 3.8 × 10⁻⁴ है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.2</div>
+            <div>मोलर आयतन, STP पर किसी गैस (आदर्श) के 1 मोल द्वारा घेरा गया आयतन है। (STP : 1 atm दाब, 0°C)। दर्शाइए कि यह 22.4 लीटर है।</div>
+        </div>
+        <div class="answer">
+            आदर्श गैस समीकरण के अनुसार: PV = nRT<br>
+            STP पर: P = 1 atm = 1.013 × 10⁵ Pa, T = 0°C = 273 K, n = 1 मोल, R = 8.314 J mol⁻¹ K⁻¹<br><br>
+            
+            V = nRT/P = (1 × 8.314 × 273) / (1.013 × 10⁵)<br>
+            V = (2269.722) / (101300) = 0.0224 m³ = 22.4 लीटर<br><br>
+            
+            अतः STP पर किसी गैस के 1 मोल द्वारा घेरा गया आयतन 22.4 लीटर है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.3</div>
+            <div>चित्र 12.8 में ऑक्सीजन के 1.00×10⁻³ kg द्रव्यमान के लिए दो अलग-अलग तापों पर PV/T और P के बीच ग्राफ दर्शाए गए हैं।<br>
+                (a) बिंदुदार रेखा क्या दर्शाती है?<br>
+                (b) क्या सत्य है: T₁ > T₂ या T₁ < T₂?<br>
+                (c) y-अक्ष पर जहाँ वक्र मिलते हैं, वहाँ PV/T का मान क्या है?<br>
+                (d) यदि हम ऐसे ही ग्राफ 1.00×10⁻³ kg हाइड्रोजन के लिए बनाएँ, तो क्या उस बिंदु पर जहाँ वक्र y-अक्ष से मिलते हैं, PV/T का मान वही होगा? यदि नहीं, तो हाइड्रोजन के कितने द्रव्यमान के लिए PV/T का मान (कम दाब और उच्च ताप के क्षेत्र के लिए वही होगा? H₂ का अणु द्रव्यमान = 2.02 u, O₂ का अणु द्रव्यमान = 32.0 u, R = 8.31 J mol⁻¹ K⁻¹</div>
+        </div>
+        <div class="answer">
+            (a) बिंदुदार रेखा आदर्श गैस व्यवहार को दर्शाती है, जहाँ PV/T नियत होता है।<br><br>
+            
+            (b) उच्च ताप पर, गैस आदर्श गैस के समान व्यवहार करती है, इसलिए T₁ > T₂<br><br>
+            
+            (c) y-अक्ष पर जहाँ वक्र मिलते हैं, P → 0 की स्थिति में गैस आदर्श गैस की तरह व्यवहार करती है।<br>
+            PV/T = nR = (m/M)R<br>
+            m = 1.00 × 10⁻³ kg, M = 32.0 × 10⁻³ kg mol⁻¹, R = 8.31 J mol⁻¹ K⁻¹<br>
+            PV/T = (1.00 × 10⁻³)/(32.0 × 10⁻³) × 8.31 = 0.2597 J K⁻¹<br><br>
+            
+            (d) हाइड्रोजन के लिए, PV/T का मान समान होगा यदि n समान हो, अर्थात m/M समान हो:<br>
+            m(O₂)/M(O₂) = m(H₂)/M(H₂)<br>
+            1.00 × 10⁻³/32.0 = m(H₂)/2.02<br>
+            m(H₂) = (1.00 × 10⁻³ × 2.02)/32.0 = 6.3125 × 10⁻⁵ kg<br><br>
+            
+            अतः हाइड्रोजन के 6.3125 × 10⁻⁵ kg द्रव्यमान के लिए PV/T का मान वही होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.4</div>
+            <div>एक ऑक्सीजन सिलिंडर जिसका आयतन 30 लीटर है, में ऑक्सीजन का आरंभिक दाब 15 atm और ताप 27°C है। इसमें से कुछ गैस निकाल लेने के बाद गेज दाब गिर कर 11 atm और ताप गिर कर 17°C हो जाता है। ज्ञात कीजिए कि सिलिंडर से ऑक्सीजन की कितनी मात्रा निकाली गई है। (R = 8.31 J mol⁻¹ K⁻¹, ऑक्सीजन का अणु द्रव्यमान O₂ = 32 u)</div>
+        </div>
+        <div class="answer">
+            आदर्श गैस समीकरण: PV = nRT<br>
+            प्रारंभिक अवस्था: P₁ = 15 atm = 15 × 1.013 × 10⁵ Pa, V = 30 × 10⁻³ m³, T₁ = 27 + 273 = 300 K<br>
+            अंतिम अवस्था: P₂ = 11 atm = 11 × 1.013 × 10⁵ Pa, V = 30 × 10⁻³ m³, T₂ = 17 + 273 = 290 K<br><br>
+            
+            प्रारंभिक मोलों की संख्या: n₁ = P₁V/RT₁<br>
+            अंतिम मोलों की संख्या: n₂ = P₂V/RT₂<br><br>
+            
+            निकाले गए ऑक्सीजन के मोल: Δn = n₁ - n₂ = V/R [P₁/T₁ - P₂/T₂]<br>
+            Δn = (30 × 10⁻³)/(8.31) × [(15 × 1.013 × 10⁵)/300 - (11 × 1.013 × 10⁵)/290]<br>
+            Δn = (0.00361) × [5065 - 3842.24] = 0.00361 × 1222.76 = 4.414 मोल<br><br>
+            
+            निकाली गई ऑक्सीजन की मात्रा = Δn × M = 4.414 × 32 = 141.25 g<br><br>
+            
+            अतः सिलिंडर से ऑक्सीजन की 141.25 g मात्रा निकाली गई।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.5</div>
+            <div>वायु का एक बुलबुला, जिसका आयतन 1.0 cm³ है, 40 m गहरी झील की तली से जहाँ ताप 12°C है, उठकर ऊपर पृष्ठ पर आता है जहाँ ताप 35°C है। अब इसका आयतन क्या होगा?</div>
+        </div>
+        <div class="answer">
+            झील की तली पर: V₁ = 1.0 cm³, T₁ = 12 + 273 = 285 K, गहराई h = 40 m<br>
+            जल का घनत्व ρ = 1000 kg/m³, वायुमंडलीय दाब P₀ = 1 atm = 1.013 × 10⁵ Pa<br>
+            तली पर दाब P₁ = P₀ + ρgh = 1.013 × 10⁵ + (1000 × 9.8 × 40) = 1.013 × 10⁵ + 3.92 × 10⁵ = 4.933 × 10⁵ Pa<br><br>
+            
+            पृष्ठ पर: T₂ = 35 + 273 = 308 K, P₂ = P₀ = 1.013 × 10⁵ Pa<br><br>
+            
+            आदर्श गैस समीकरण के अनुसार: P₁V₁/T₁ = P₂V₂/T₂<br>
+            V₂ = V₁ × (P₁/P₂) × (T₂/T₁) = 1.0 × (4.933 × 10⁵/1.013 × 10⁵) × (308/285)<br>
+            V₂ = 1.0 × 4.87 × 1.0807 = 5.26 cm³<br><br>
+            
+            अतः बुलबुले का आयतन ऊपर आने पर 5.26 cm³ हो जाएगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.6</div>
+            <div>एक कमरे में, जिसकी धारिता 25.0 m³ है, 27°C ताप और 1 atm दाब पर, वायु के कुल अणुओं (जिनमें नाइट्रोजन, ऑक्सीजन, जलवाष्प और अन्य सभी अवयवों के कण सम्मिलित हैं) की संख्या ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            आदर्श गैस समीकरण: PV = nRT<br>
+            P = 1 atm = 1.013 × 10⁵ Pa, V = 25.0 m³, T = 27 + 273 = 300 K, R = 8.314 J mol⁻¹ K⁻¹<br><br>
+            
+            n = PV/RT = (1.013 × 10⁵ × 25.0)/(8.314 × 300) = (2.5325 × 10⁶)/(2494.2) = 1015.4 मोल<br><br>
+            
+            अणुओं की संख्या = n × Nₐ = 1015.4 × 6.022 × 10²³ = 6.11 × 10²⁶<br><br>
+            
+            अतः कमरे में वायु के कुल अणुओं की संख्या 6.11 × 10²⁶ है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.7</div>
+            <div>हीलियम परमाणु की औसत तापीय ऊर्जा का आकलन कीजिए (i) कमरे के ताप (27°C) पर (ii) सूर्य के पृष्ठीय ताप (6000 K) पर (iii) 100 लाख केल्विन ताप (तारे के क्रोड का प्रारूपी ताप) पर।</div>
+        </div>
+        <div class="answer">
+            एकपरमाणुक गैस के लिए औसत तापीय ऊर्जा E = (3/2)kBT<br>
+            जहाँ kB = 1.38 × 10⁻²³ J K⁻१ है<br><br>
+            
+            (i) T = 27 + 273 = 300 K पर:<br>
+            E = (3/2) × 1.38 × 10⁻²³ × 300 = 6.21 × 10⁻²¹ J<br><br>
+            
+            (ii) T = 6000 K पर:<br>
+            E = (3/2) × 1.38 × 10⁻²³ × 6000 = 1.242 × 10⁻¹⁹ J<br><br>
+            
+            (iii) T = 10⁸ K पर:<br>
+            E = (3/2) × 1.38 × 10⁻²³ × 10⁸ = 2.07 × 10⁻¹⁵ J<br><br>
+            
+            अतः हीलियम परमाणु की औसत तापीय ऊर्जा:<br>
+            (i) 6.21 × 10⁻²¹ J (ii) 1.242 × 10⁻¹⁹ J (iii) 2.07 × 10⁻¹⁵ J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.8</div>
+            <div>समान धारिता के तीन पात्रों में एक ही ताप और दाब पर गैसें भरी हैं। पहले पात्र में नियॉन (एकपरमाणुक) गैस है, दूसरे में क्लोरीन (द्विपरमाणुक) गैस है और तीसरे में यूरेनियम हेक्साफ्लोराइड (बहुपरमाणुक) गैस है। क्या तीनों पात्रों में गैसों के संगत अणुओं की संख्या समान है? क्या तीनों प्रकरणों में अणुओं की vrms (वर्ग माध्य मूल चाल) समान है?</div>
+        </div>
+        <div class="answer">
+            आदर्श गैस समीकरण PV = nRT के अनुसार, समान P, V, T पर सभी गैसों के मोलों की संख्या n समान होगी।<br>
+            अतः तीनों पात्रों में अणुओं की संख्या समान होगी क्योंकि n समान है और अणुओं की संख्या = n × Nₐ<br><br>
+            
+            vrms = √(3RT/M) के अनुसार, vrms अणु के द्रव्यमान M पर निर्भर करती है।<br>
+            चूँकि तीनों गैसों के अणु द्रव्यमान भिन्न-भिन्न हैं, इसलिए उनकी vrms भिन्न-भिन्न होगी।<br><br>
+            
+            अतः: (क) हाँ, तीनों पात्रों में अणुओं की संख्या समान है<br>
+            (ख) नहीं, तीनों प्रकरणों में अणुओं की vrms समान नहीं है
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.9</div>
+            <div>किस ताप पर आर्गन गैस सिलिंडर में अणुओं की vrms, -20°C पर हीलियम गैस परमाणुओं की vrms के बराबर होगी? (Ar का परमाणु द्रव्यमान = 39.9 u, He का परमाणु द्रव्यमान = 4.0 u)</div>
+        </div>
+        <div class="answer">
+            vrms = √(3RT/M)<br>
+            आर्गन के लिए vrms = √(3RT(Ar)/M(Ar))<br>
+            हीलियम के लिए vrms = √(3RT(He)/M(He))<br><br>
+            
+            दोनों समान होने पर: √(3RT(Ar)/M(Ar)) = √(3RT(He)/M(He))<br>
+            T(Ar)/M(Ar) = T(He)/M(He)<br>
+            T(Ar) = T(He) × M(Ar)/M(He)<br><br>
+            
+            T(He) = -20°C = 253 K, M(Ar) = 39.9 u, M(He) = 4.0 u<br>
+            T(Ar) = 253 × (39.9/4.0) = 253 × 9.975 = 2523.675 K ≈ 2524 K<br><br>
+            
+            अतः आर्गन गैस का ताप 2524 K होने पर उसकी vrms, -20°C पर हीलियम गैस की vrms के बराबर होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.10</div>
+            <div>नाइट्रोजन गैस के एक सिलिंडर में, 2.0 atm दाब और 17°C ताप पर, नाइट्रोजन अणुओं का माध्य मुक्त पथ और संघट्ट आवृत्ति का आकलन कीजिए। नाइट्रोजन अणु की त्रिज्या लगभग 1.0 Å लीजिए। संघट्ट-काल की तुलना अणुओं द्वारा दो संघट्टों के बीच स्वतंत्रतापूर्वक चलने में लगे समय से कीजिए। (नाइट्रोजन का आणविक द्रव्यमान = 28.0 u)</div>
+        </div>
+        <div class="answer">
+            माध्य मुक्त पथ λ = 1/(√2 π d² n)<br>
+            जहाँ d = 2 × त्रिज्या = 2 × 1.0 × 10⁻¹⁰ = 2.0 × 10⁻¹⁰ m<br><br>
+            
+            P = 2.0 atm = 2.026 × 10⁵ Pa, T = 17 + 273 = 290 K<br>
+            n = P/(kBT) = (2.026 × 10⁵)/(1.38 × 10⁻²³ × 290) = (2.026 × 10⁵)/(4.002 × 10⁻²¹) = 5.064 × 10²⁵ m⁻³<br><br>
+            
+            λ = 1/(√2 × 3.14 × (2.0 × 10⁻¹⁰)² × 5.064 × 10²⁵)<br>
+            λ = 1/(1.414 × 3.14 × 4.0 × 10⁻²⁰ × 5.064 × 10²⁵) = 1/(1.414 × 3.14 × 2.0256 × 10⁶)<br>
+            λ = 1/(9.0 × 10⁶) = 1.11 × 10⁻⁷ m<br><br>
+            
+            vrms = √(3RT/M) = √(3 × 8.314 × 290)/(28 × 10⁻³)) = √(7234.38/0.028) = √258370.7 = 508.3 m/s<br><br>
+            
+            संघट्ट आवृत्ति f = vrms/λ = 508.3/(1.11 × 10⁻⁷) = 4.58 × 10⁹ s⁻¹<br><br>
+            
+            संघट्टों के बीच समय τ = 1/f = 2.18 × 10⁻¹⁰ s<br>
+            संघट्ट काल (अणु व्यास/वेग) = (2.0 × 10⁻¹⁰)/508.3 = 3.94 × 10⁻¹³ s<br><br>
+            
+            अतः संघट्ट काल, संघट्टों के बीच के समय की तुलना में बहुत छोटा है (लगभग 553 गुना)।
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>कक्षा 11 भौतिकी - अध्याय 6: द्रव्यमान केन्द्र और गति (अभ्यास 6.1–6.20)</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0,0,0,0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        .header {
+            background: linear-gradient(135deg,#6a11cb 0%,#2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .header h1 { font-size: 24px; margin-bottom: 10px; }
+        .header p { font-size: 16px; opacity: 0.9; }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom,#6a11cb,#2575fc);
+        }
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+            font-weight: 700;
+            font-size: 14px;
+        }
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+            overflow-wrap: break-word;
+        }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; table-layout: fixed; word-break: break-word; }
+        th, td { border: 1px solid #ddd; padding: 6px; text-align: center; }
+        th { background: #f2f2f2; font-weight: 600; }
+        @media (max-width:768px) {
+            body { padding: 15px; }
+            .header { padding: 20px; }
+            .header h1 { font-size: 20px; }
+            .question { font-size: 15px; }
+            .answer { font-size: 13px; }
+            table { font-size: 12px; }
+            .question-num { width: 28px; height: 28px; font-size: 13px; }
+        }
+        @media print {
+            body::before { font-size: 60px; color: rgba(0,0,0,0.1); z-index:9999; }
+            .card { box-shadow: none; border: 1px solid #ddd; }
+            .header { background: #6a11cb; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+        .math { font-weight: 600; }
+        .eq { display:inline-block; margin:0 4px; }
+    </style>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js" 
+    onload="renderMathInElement(document.body);"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 6: द्रव्यमान केन्द्र और गति</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <!-- 6.1 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.1</div>
+            <div>द्रव्यमान केन्द्र (centre of mass) की स्पष्ट परिभाषा दीजिए और सिद्ध कीजिए कि दो बिन्दु द्रव्यों के लिए द्रव्यमान केन्द्र का स्थान m<sub>1</sub> और m<sub>2</sub> के अनुपात में आता है।</div>
+        </div>
+        <div class="answer">
+            परिभाषा: द्रव्यमान केन्द्र वह बिंदु है जहाँ पूरे तंत्र का कुल द्रव्यमान एक बिंदु पर स्थित माना जा सकता है, जिससे बाह्य बलों के प्रभाव में तंत्र का कुल संवेग उसी बिंदु के व्यवहार जैसा होगा।<br><br>
+            सिद्ध (चरणबद्ध): मान लें दो कण m<sub>1</sub> व m<sub>2</sub> x-अक्ष पर क्रमशः x<sub>1</sub> और x<sub>2</sub> पर स्थित हैं। कुल द्रव्यमान M = m<sub>1</sub> + m<sub>2</sub>। द्रव्यमान केन्द्र R<sub>CM</sub> का निर्देशांक:
+            <br><strong>\(X_{CM} = \dfrac{m_1 x_1 + m_2 x_2}{m_1 + m_2}\).</strong><br>
+            यदि दूरी d = x<sub>2</sub> − x<sub>1</sub> मानकर m<sub>1</sub> से दूरी x तो x = (m<sub>2</sub>/(m<sub>1</sub>+m<sub>2</sub>))·d — अतः केन्द्र द्रव्यमान के प्रतिलोम अनुपात पर आता है।<br><br>
+            परीक्षा-नोट: यह सूत्र बार-बार प्रश्नों में आता है, इसे याद रखें और सरल उदाहरण के साथ दिखाएँ।
+        </div>
+    </div>
+
+    <!-- 6.2 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.2</div>
+            <div>HCl अणु में H का द्रव्यमान 1.0 u और Cl का 35.5 u है। H–Cl दूरी 1.27 Å है। H परमाणु से द्रव्यमान केन्द्र कितनी दूरी पर होगा? (सही यूनिट के साथ कदम-दर-कदम करें)</div>
+        </div>
+        <div class="answer">
+            दिया: m<sub>H</sub>=1.0, m<sub>Cl</sub>=35.5, d=1.27 Å = 1.27×10<sup>-10</sup> m.<br>
+            सूत्र: H से दूरी \(x_H = \dfrac{m_{Cl}}{m_H+m_{Cl}} \times d\).<br>
+            गणना: \(x_H = \dfrac{35.5}{1+35.5}\times1.27\AA = \dfrac{35.5}{36.5}\times1.27\AA \approx 1.236\AA\).<br>
+            परिणाम: H से ≈ 1.236 Å (≈1.236×10<sup>-10</sup> m), Cl से ≈ 0.034 Å।<br>
+            समझ: भारी परमाणु (Cl) के निकट द्रव्यमान केन्द्र रहेगा।
+        </div>
+    </div>
+
+    <!-- 6.3 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.3</div>
+            <div>निरन्तर द्रव्यमान वितरण के लिए द्रव्यमान केन्द्र निकालने का समाकलन सूत्र लिखिए और छोटा उदाहरण दीजिए (रेखीय थिन छड़ की लंबाई L पर)।</div>
+        </div>
+        <div class="answer">
+            सूत्र: \( \mathbf{R}_{CM} = \dfrac{1}{M}\int \mathbf{r}\,dm,\) जहाँ \(M=\int dm\).<br><br>
+            उदाहरण (समद्रव्यमान छोटी छड़ लम्बाई L, घनत्व λ (mass per unit length) समान): dm = λ dx. छड़ का केन्द्र:
+            \[
+            x_{CM}=\frac{1}{M}\int_0^L x\,dm=\frac{1}{\lambda L}\int_0^L x\,\lambda dx=\frac{1}{L}\left[\frac{x^2}{2}\right]_0^L=\frac{L}{2}.
+            \]
+            अतः समद्रव्यमान छड़ का CM मध्य में होता है (L/2)। (परीक्षा हेतु चरण दिखाएँ: dm, समाकलन और सीमाएँ)।
+        </div>
+    </div>
+
+    <!-- 6.4 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.4</div>
+            <div>दो बिंदु द्रव्यों के द्रव्यमान केन्द्र के x और y निर्देशांकों का सामान्य सूत्र लिखिए (यदि वे 2D में हों)।</div>
+        </div>
+        <div class="answer">
+            यदि न कणों के द्रव्यमान m<sub>i</sub> और स्थान (x<sub>i</sub>,y<sub>i</sub>) हों, तो:
+            <br>
+            <strong>\(X_{CM}=\dfrac{\sum m_i x_i}{\sum m_i},\quad Y_{CM}=\dfrac{\sum m_i y_i}{\sum m_i}\).</strong><br>
+            उपयोग: हर कण के द्रव्यमान × निर्देशांक जोड़ें और कुल द्रव्यमान से भाग दें — परीक्षा में यही तरीका लिखें।
+        </div>
+    </div>
+
+    <!-- 6.5 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.5</div>
+            <div>यदि N कण एक पंक्ति में हों जिनके द्रव्यमान m<sub>1</sub>, m<sub>2</sub>, ... m<sub>N</sub> तथा x निर्देशांक x<sub>1</sub>, x<sub>2</sub>, ... हों, तो समष्टि का द्रव्यमान केन्द्र कैसे निकलेगा? संक्षेप में लिखिए।</div>
+        </div>
+        <div class="answer">
+            उत्तर: बहु-कण प्रणाली के लिए सूत्र वही है:
+            <br><strong>\(X_{CM} = \dfrac{\sum_{i=1}^{N} m_i x_i}{\sum_{i=1}^{N} m_i}.\)</strong><br>
+            स्टेप्स: प्रत्येक कण का m_i x_i निकालें, सब जोड़ें और कुल M से भाग दें। सरल उदाहरण में दो कण का विशेष केस मिल जाता है।
+        </div>
+    </div>
+
+    <!-- 6.6 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.6</div>
+            <div>यदि किसी ठोस समद्रव्यमान वस्तु को दो भागों में बांटा जाए, तो समग्र द्रव्यमान केन्द्र का निर्धारण कैसे किया जाता है? (विधि बताइए)</div>
+        </div>
+        <div class="answer">
+            विधि: समग्र CM = (मूल हिस्सों के द्रव्यमान × उनके CM स्थानों का भारित योग) ÷ कुल द्रव्यमान।<br>
+            अर्थात् यदि भागों के द्रव्यमान M<sub>1</sub>, M<sub>2</sub> और उनके CM X<sub>1</sub>, X<sub>2</sub> हों:
+            <br><strong>\(X_{CM} = \dfrac{M_1 X_1 + M_2 X_2}{M_1 + M_2}\).</strong><br>
+            (यह बहु-भागों के लिए सामान्यीकृत होता है। परीक्षा-टिप: हिस्सों का चयन ऐसा रखें कि CM ज्ञात सरल हो।)
+        </div>
+    </div>
+
+    <!-- 6.7 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.7</div>
+            <div>दिखाइए कि बराबर द्रव्यमान वाले तीन कण यदि समकोण त्रिभुज के शीर्षों पर हों तो द्रव्यमान केन्द्र कहाँ होगा?</div>
+        </div>
+        <div class="answer">
+            बराबर द्रव्यमान होने पर CM = तीनों शीर्षों के स्थान का औसत होता है। समकोण त्रिभुज में यदि शीर्ष (0,0), (a,0), (0,b) हों तो:
+            \[
+            X_{CM}=\frac{0+a+0}{3}=\frac{a}{3}.
+            \]
+            \[
+            Y_{CM}=\frac{0+0+b}{3}=\frac{b}{3}.
+            \]
+            अतः CM = (a/3, b/3)। (सिद्धि: Σx/3 और Σy/3, क्योंकि m समान हैं)।
+        </div>
+    </div>
+
+    <!-- 6.8 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.8</div>
+            <div>किसी सतल आकृति के CM को निकालते समय तालिका में दिए मान कैसे उपयोग करेंगे — संक्षेप में स्टेप्स लिखिए।</div>
+        </div>
+        <div class="answer">
+            स्टेप्स:
+            <ol>
+                <li>आकृति को सरल हिस्सों में विभाजित करें (आयत/त्रिभुज/वृत्त)।</li>
+                <li>प्रत्येक हिस्से का क्षेत्रफल A<sub>i</sub> और उसके केन्द्र (x<sub>i</sub>, y<sub>i</sub>) ज्ञात करें (तालिका से)।</li>
+                <li>फिर X<sub>CM</sub> = (Σ A<sub>i</sub>x<sub>i</sub>)/(Σ A<sub>i</sub>) तथा Y के लिए समान सूत्र।</li>
+                <li>यदि घनत्व समान है तो क्षेत्रफल भारित औसत सीधे द्रव्यमान केन्द्र देगा।</li>
+            </ol>
+            (परीक्षा-नोट: तालिका के मान सीधे रखें और चरण दिखाएँ।)
+        </div>
+    </div>
+
+    <!-- 6.9 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.9</div>
+            <div>खोखला चक्का (annular ring) जिसका द्रव्यमान 1800 kg, बाहरी त्रिज्या 1.80 m तथा आंतरिक 1.05 m है — उसका जड़त्व (moment of inertia) about central axis निकालिए।</div>
+        </div>
+        <div class="answer">
+            खोखला बेलन (annulus) का I (axis through centre) होता है:
+            <br><strong>\(I=\dfrac{m}{2}(R^2+r^2)\)</strong>.<br>
+            मान रखते हुए: R=1.80 m, r=1.05 m, m=1800 kg.<br>
+            R²=3.24, r²=1.1025, योग=4.3425। इसलिए:
+            \[
+            I=0.5\times1800\times4.3425=900\times4.3425=3908.25\ \text{kg·m}^2.
+            \]
+            (उत्तर ≈ 3.91×10³ kg·m².) — चरण दिखाये: सूत्र → मान → गुणा।
+        </div>
+    </div>
+
+    <!-- 6.10 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.10</div>
+            <div>दो वस्तुओं m<sub>1</sub>, m<sub>2</sub> की चाल v<sub>1</sub>, v<sub>2</sub> हों। सम्पूर्ण प्रणाली का CM velocity क्या होगा? (सूत्र और संक्षिप्त व्याख्या)</div>
+        </div>
+        <div class="answer">
+            सूत्र: <strong>\(\vec v_{CM}=\dfrac{m_1\vec v_1 + m_2\vec v_2}{m_1+m_2}\).</strong><br>
+            व्याख्या: कुल संवेग ÷ कुल द्रव्यमान। यदि तीन या अधिक वस्तुएँ हों तो Σ उपयोग करें। (परीक्षा में vector रूप से लिखें और संवेग संरक्षण के सम्बन्ध बताइए।)
+        </div>
+    </div>
+
+    <!-- 6.11 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.11</div>
+            <div>20 kg द्रव्यमान का बिंदु 0.25 m त्रिज्या पर 100 rad/s की कोणीय चाल से परिक्रमण कर रहा है। (i) इसका जड़त्व I (about axis) और (ii) rotational kinetic energy K निकाले।</div>
+        </div>
+        <div class="answer">
+            (i) बिंदु-mass के लिए I = m r² = 20 × (0.25)² = 20 × 0.0625 = 1.25 kg·m².<br>
+            (ii) K = ½ I ω² = 0.5 × 1.25 × 100² = 0.625 × 10000 = 6250 J.<br>
+            (चरण: सूत्र—मान—गणना—एकाई।)
+        </div>
+    </div>
+
+    <!-- 6.12 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.12</div>
+            <div>(a) 40 rpm पर घूम रहे पंखे को angular deceleration α = 2.5 rad/s² से रोकना है — रुकने का समय निकालिए। (b) ω–t ग्राफ से α किस तरह मिलेगा?</div>
+        </div>
+        <div class="answer">
+            (a) 40 rpm = 40 × (2π/60) = 4.18879 rad/s. समय t = ω/α = 4.18879/2.5 ≈ 1.675 s.<br>
+            (b) ω–t ग्राफ का slope = α (यदि slope negative → deceleration)। ग्राफ का क्षेत्रफल = Δθ (angular displacement)।<br>
+            (लिखने का तरीका: rpm→rad/s → formula → गणना)।
+        </div>
+    </div>
+
+    <!-- 6.13 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.13</div>
+            <div>3 kg द्रव्यमान का एक पिंड 0.4 m त्रिज्या पर घुमाया जा रहा है; रस्सी में तनाव 30 N है। (a) पिंड की रेखीय वेग v क्या है? (b) पिंड पर लगने वाली केंद्राभिमुख बल का मान क्या होगा?</div>
+        </div>
+        <div class="answer">
+            (a) T = m v² / r ⇒ v = √(T/m) = √(30/3) = √10 ≈ 3.162 m/s.<br>
+            (b) केंद्राभिमुख बल F_c = m v² / r = 3 × (3.162)² / 0.4 = 3 ×10 /0.4 = 75 N.<br>
+            (सरल: पहले v निकालें फिर F_c की जाँच करें)। 
+        </div>
+    </div>
+
+    <!-- 6.14 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.14</div>
+            <div>I = 2 kg·m² वाला एक डण्डा 200 rad/s पर है; ब्रेक टॉर्क τ = 180 N·m लगाया जाता है जब तक वह रुक न जाए। (a) α क्या होगा? (b) प्रारम्भिक तथा अन्तिम rotational energy और कितनी ऊर्जा क्षय हुई?</div>
+        </div>
+        <div class="answer">
+            (a) α = τ / I = 180 / 2 = 90 rad/s² (रोकने की दिशा में)।<br>
+            (b) प्रारम्भिक KE = ½ I ω² = 0.5 × 2 × 200² = 40000 J. अन्त में KE = 0 (r u k). अतः क्षय = 40000 J (ब्रेक द्वारा गर्मी/ध्वनि में बदल जाता है)।<br>
+            (परीक्षा लिखावट: सूत्र—मान—गिनती—अर्थ)।
+        </div>
+    </div>
+
+    <!-- 6.15 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.15</div>
+            <div>व्यास R के साथ पूर्ण बेलन से R/2 त्रिज्या का आंतरिक हिस्सा हटा दिया गया है — शेष का जड़त्व कैसे निकाला जाएगा? (विधि बताइए)</div>
+        </div>
+        <div class="answer">
+            विधि: शेष = बाहरी पूरा बेलन − आंतरिक छोटा बेलन।<br>
+            I<sub>outer</sub> = ½ M<sub>outer</sub> R², I<sub>inner</sub> = ½ M<sub>inner</sub> (R/2)²।<br>
+            यदि घनत्व समान हो तो M<sub>inner</sub> proportional to (area ratio) और कुल I = I<sub>outer</sub> − I<sub>inner</sub>।<br>
+            (परीक्षा-उत्तर में कदम: माप लें, द्रव्यमान संबंध बनाएं, घटाव करें तथा संख्यात्मक मान दें जब माप उपलब्ध हों।)
+        </div>
+    </div>
+
+    <!-- 6.16 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.16</div>
+            <div>रॉड पर 5 g का द्रव्यमान 5.0 cm पर और 12 g का 12.0 cm पर लगा है। पूरा तंत्र 45.0 cm पर संतुलित है। रॉड का द्रव्यमान कितना होगा? (कदम-दर-कदम)</div>
+        </div>
+        <div class="answer">
+            पल संतुलन: Σ(m_i x_i) = M_rod × x_CM.<br>
+            यहाँ 5×5 + 12×12 = M × 45 ⇒ 25 + 144 = 45 M ⇒ 169 = 45 M ⇒ M = 169/45 = 3.7556 g ≈ 3.76 g.<br>
+            (ध्यान: सभी इकाइयाँ एक समान रखें; यहाँ cm व g उपयोग किए गए हैं)।
+        </div>
+    </div>
+
+    <!-- 6.17 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.17</div>
+            <div>टक्करों (collisions) में कोणीय संवेग और गतिज ऊर्जा का क्या व्यवहार होता है — (a) perfectly inelastic, (b) perfectly elastic, (c) जब बाहरी टॉर्क उपस्थित हो?</div>
+        </div>
+        <div class="answer">
+            (a) Perfectly inelastic: पार्टिकल चिपक जाते हैं — कुल संवेग (linear/angular) संरक्षित रहे सकता है यदि बाहरी टॉर्क/बल न हो; पर KE घटती है।<br>
+            (b) Perfectly elastic: कुल संवेग और कुल KE दोनों संरक्षित रहते हैं।<br>
+            (c) यदि बाहरी टॉर्क मौजूद है तो कोणीय संवेग संरक्षित नहीं रहेगा; बाहरी टॉर्क द्वारा angular momentum बदल सकता है।<br>
+            (निष्कर्ष: कोणीय संवेग तभी संरक्षित रहेगा जब बाहरी टॉर्क शून्य हो।)
+        </div>
+    </div>
+
+    <!-- 6.18 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.18</div>
+            <div>त्रिज्या 2.0 m तथा घनत्व 100 kg/m³ वाला ठोस गोला अगर स्पर्शीय वेग 0.20 m/s पर रखा जाए तो उसका कोणीय संवेग L कितना होगा? (स्टेप-बाय-स्टेप)</div>
+        </div>
+        <div class="answer">
+            चरण 1: V = (4/3)πR³ = (4/3)π(2)³ ≈ 33.5103 m³.<br>
+            चरण 2: m = ρ V = 100 × 33.5103 ≈ 3351.03 kg.<br>
+            चरण 3: I (solid sphere) = (2/5) m R² = (2/5) × 3351.03 × 4 ≈ 5361.65 kg·m².<br>
+            चरण 4: ω = v/R = 0.20/2 = 0.10 rad/s.<br>
+            चरण 5: L = I ω ≈ 5361.65 × 0.10 ≈ 536.17 kg·m²/s.<br>
+            (उत्तर ≈ 5.36×10² kg·m²/s)। 
+        </div>
+    </div>
+
+    <!-- 6.19 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.19</div>
+            <div>यदि कण का द्रव्यमान 5.30×10<sup>-26</sup> kg और वेग 500 m/s हो तो उसका रेखीय संवेग p कितना होगा? अगर यह r त्रिज्या पर वृत्तीय गति में है तो L कैसे निकलेगा?</div>
+        </div>
+        <div class="answer">
+            (a) p = m v = 5.30×10<sup>-26</sup> × 500 = 2.65×10<sup>-23</sup> kg·m/s.<br>
+            (b) यदि वह त्रिज्या r पर घूम रहा हो और v स्पर्शीय हो तो L = r × p = m v r (यदि r और v लम्बवत)।<br>
+            (नोट: संख्यात्मक L निकालने के लिए r चाहिए)।
+        </div>
+    </div>
+
+    <!-- 6.20 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.20</div>
+            <div>ढलान 30° पर स्थित तल पर एक कण की वेग 5 m/s है। (a) ढलान के अनुदिश वेग घटक क्या होगा? (b) यदि घर्षण न हो तो अधिकतम ऊँचाई h क्या होगा?</div>
+        </div>
+        <div class="answer">
+            (a) v<sub>∥</sub> = v cos30° = 5 × √3/2 ≈ 4.33 m/s.<br>
+            (b) ऊर्जा संरक्षण: ½ m v² = m g h ⇒ h = (½ v²)/g = (0.5×25)/9.8 ≈ 12.5/9.8 ≈ 1.276 m ≈ 1.28 m (घर्षण शून्य मानकर)।<br>
+            (लिखने का तरीका: पहले घटक, फिर ऊर्जा समीकरण और गणना)।
+        </div>
+    </div>
+
+</body>
+</html>

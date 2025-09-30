@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 भौतिकी - अध्याय 5: कार्य, ऊर्जा और शक्ति</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.05);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 15px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>अध्याय 5: कार्य, ऊर्जा और शक्ति</h1>
+        <p>कक्षा 11 भौतिकी | StudyScript</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.1</div>
+            <div>फलन F(x) = (3x² - 2x + 5) न्यूटन द्वारा किसी कण पर x-अक्ष के अनुदिश बल लगाया जाता है। इस बल द्वारा कण को x = 2m से x = 5m तक विस्थापित करने में किया गया कार्य ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            किया गया कार्य: W = ∫F(x)dx = ∫(3x² - 2x + 5)dx (सीमा x=2 से x=5 तक)<br>
+            W = [x³ - x² + 5x]²⁵ = (125 - 25 + 25) - (8 - 4 + 10) = 125 - 14 = 111 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.2</div>
+            <div>2 kg द्रव्यमान का एक पिंड 5 m/s के वेग से गतिमान है। इसकी गतिज ऊर्जा ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            गतिज ऊर्जा K = ½mv² = ½ × 2 × (5)² = 1 × 25 = 25 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.3</div>
+            <div>20 m ऊँची इमारत की छत से 0.5 kg द्रव्यमान के एक पत्थर को गिराया जाता है। जमीन पर पहुँचने से ठीक पहले इसकी गतिज ऊर्जा ज्ञात कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            ऊर्जा संरक्षण के नियम से: स्थितिज ऊर्जा = गतिज ऊर्जा<br>
+            mgh = ½mv²<br>
+            गतिज ऊर्जा = mgh = 0.5 × 10 × 20 = 100 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.4</div>
+            <div>एक व्यक्ति 10 kg का बोझ सिर पर रखकर 20 m ऊँची सीढ़ियाँ 25 सेकंड में चढ़ता है। उसके द्वारा व्यय की गई शक्ति की गणना कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            किया गया कार्य W = mgh = 10 × 10 × 20 = 2000 J<br>
+            शक्ति P = W/t = 2000/25 = 80 W
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.5</div>
+            <div>एक कार का इंजन 1000 N का बल लगाकर कार को 72 km/h की नियत चाल से चलाता है। इंजन की शक्ति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            चाल v = 72 km/h = 20 m/s<br>
+            शक्ति P = F × v = 1000 × 20 = 20000 W = 20 kW
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.6</div>
+            <div>एक स्प्रिंग जिसका बल नियतांक 200 N/m है, को 10 cm से खींचा जाता है। स्प्रिंग में संचित स्थितिज ऊर्जा की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            स्थितिज ऊर्जा U = ½kx² = ½ × 200 × (0.1)² = 100 × 0.01 = 1 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.7</div>
+            <div>0.1 kg द्रव्यमान की एक गोली 100 m/s के वेग से चलती हुई एक लकड़ी के गुटके से टकराती है और 0.05 m अन्दर धंसने के बाद रुक जाती है। गोली पर लकड़ी द्वारा लगाए गए औसत प्रतिरोधी बल की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            कार्य-ऊर्जा प्रमेय से: किया गया कार्य = गतिज ऊर्जा में परिवर्तन<br>
+            F × s = 0 - ½mv² (ऋणात्मक चिह्न मंदन दर्शाता है)<br>
+            F × 0.05 = -½ × 0.1 × (100)²<br>
+            F = (0.5 × 0.1 × 10000)/0.05 = 500/0.05 = 10000 N
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.8</div>
+            <div>एक पंप प्रति मिनट 1000 kg पानी 20 m की ऊँचाई तक उठाता है। पंप की शक्ति की गणना कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            प्रति सेकंड उठाया गया द्रव्यमान = 1000/60 = 50/3 kg<br>
+            शक्ति P = mgh/t = (50/3) × 10 × 20 = 10000/3 ≈ 3333.33 W ≈ 3.33 kW
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.9</div>
+            <div>एक मशीन 5 सेकंड में 500 J कार्य करती है। मशीन की शक्ति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            शक्ति P = W/t = 500/5 = 100 W
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.10</div>
+            <div>एक कार 108 km/h की चाल से चल रही है। यदि कार का द्रव्यमान 1000 kg है, तो इसकी गतिज ऊर्जा की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            चाल v = 108 km/h = 30 m/s<br>
+            गतिज ऊर्जा K = ½mv² = ½ × 1000 × (30)² = 500 × 900 = 450000 J = 450 kJ
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.11</div>
+            <div>एक बल F = (3î + 4ĵ) N किसी वस्तु पर लगता है और वस्तु को d = (5î + 2ĵ) m तक विस्थापित करता है। बल द्वारा किए गए कार्य की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            कार्य W = F·d = (3×5) + (4×2) = 15 + 8 = 23 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.12</div>
+            <div>एक पिंड पर 10 N का बल लगाकर उसे बल की दिशा में 5 m विस्थापित किया जाता है। बल द्वारा किए गए कार्य की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            कार्य W = F × d = 10 × 5 = 50 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.13</div>
+            <div>एक पंप 10 मिनट में 5000 kg पानी 15 m की ऊँचाई तक उठाता है। पंप की शक्ति की गणना कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            समय t = 10 मिनट = 600 सेकंड<br>
+            किया गया कार्य W = mgh = 5000 × 10 × 15 = 750000 J<br>
+            शक्ति P = W/t = 750000/600 = 1250 W = 1.25 kW
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.14</div>
+            <div>एक स्प्रिंग को 5 cm से खींचने में 10 J कार्य किया जाता है। स्प्रिंग के बल नियतांक की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            स्प्रिंग की स्थितिज ऊर्जा U = ½kx²<br>
+            10 = ½ × k × (0.05)²<br>
+            10 = ½ × k × 0.0025<br>
+            k = (10 × 2)/0.0025 = 20/0.0025 = 8000 N/m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.15</div>
+            <div>एक कार 54 km/h की चाल से चल रही है। यदि कार का द्रव्यमान 1500 kg है, तो इसकी गतिज ऊर्जा की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            चाल v = 54 km/h = 15 m/s<br>
+            गतिज ऊर्जा K = ½mv² = ½ × 1500 × (15)² = 750 × 225 = 168750 J = 168.75 kJ
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.16</div>
+            <div>एक व्यक्ति 15 kg का बोझ सिर पर रखकर 30 m ऊँची सीढ़ियाँ 40 सेकंड में चढ़ता है। उसके द्वारा व्यय की गई शक्ति की गणना कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            किया गया कार्य W = mgh = 15 × 10 × 30 = 4500 J<br>
+            शक्ति P = W/t = 4500/40 = 112.5 W
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.17</div>
+            <div>एक पिंड पर 20 N का बल लगाकर उसे बल की दिशा में 4 m विस्थापित किया जाता है। बल द्वारा किए गए कार्य की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            कार्य W = F × d = 20 × 4 = 80 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.18</div>
+            <div>एक मोटर 2 मिनट में 24000 J कार्य करती है। मोटर की शक्ति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            समय t = 2 मिनट = 120 सेकंड<br>
+            शक्ति P = W/t = 24000/120 = 200 W
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.19</div>
+            <div>एक स्प्रिंग को 4 cm से खींचने में 2 J कार्य किया जाता है। स्प्रिंग के बल नियतांक की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            स्प्रिंग की स्थितिज ऊर्जा U = ½kx²<br>
+            2 = ½ × k × (0.04)²<br>
+            2 = ½ × k × 0.0016<br>
+            k = (2 × 2)/0.0016 = 4/0.0016 = 2500 N/m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.20</div>
+            <div>एक पंप प्रति सेकंड 50 kg पानी 10 m की ऊँचाई तक उठाता है। पंप की शक्ति की गणना कीजिए। (g = 10 m/s²)</div>
+        </div>
+        <div class="answer">
+            शक्ति P = mgh/t = 50 × 10 × 10 = 5000 W = 5 kW
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.21</div>
+            <div>एक कार का इंजन 1500 N का बल लगाकर कार को 90 km/h की नियत चाल से चलाता है। इंजन की शक्ति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            चाल v = 90 km/h = 25 m/s<br>
+            शक्ति P = F × v = 1500 × 25 = 37500 W = 37.5 kW
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.22</div>
+            <div>एक पिंड पर F = (2î + 3ĵ) N का बल लगता है और वस्तु को d = (4î - 1ĵ) m तक विस्थापित करता है। बल द्वारा किए गए कार्य की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            कार्य W = F·d = (2×4) + (3×(-1)) = 8 - 3 = 5 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.23</div>
+            <div>एक मशीन 10 सेकंड में 2000 J कार्य करती है। मशीन की शक्ति की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            शक्ति P = W/t = 2000/10 = 200 W
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>
