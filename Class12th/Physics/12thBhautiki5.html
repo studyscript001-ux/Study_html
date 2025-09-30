@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिक विज्ञान - अध्याय 5: चुंबकत्व एवं द्रव्य</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+            font-size: 14px;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2575fc;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            min-width: 600px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .math-container {
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        
+        .math {
+            font-size: 14px !important;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            table {
+                font-size: 12px;
+            }
+        }
+        
+        @media print {
+            body::before {
+                content: "studyscript.netlify.app";
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+                font-size: 60px;
+                color: rgba(0, 0, 0, 0.1);
+                z-index: 9999;
+                font-weight: bold;
+            }
+            
+            .card {
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            .header {
+                background: #6a11cb;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 5: चुंबकत्व एवं द्रव्य</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.1</div>
+            <div>एक छोटा छड़ चुंबक जो एकसमान बाह्य चुंबकीय क्षेत्र 0.25 T के साथ 30° का कोण बनाता है, पर 4.5 × 10⁻² J का बल आघूर्ण लगता है। चुंबक के चुंबकीय आघूर्ण का परिमाण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            बल आघूर्ण, τ = 4.5 × 10⁻² J<br>
+            चुंबकीय क्षेत्र, B = 0.25 T<br>
+            कोण, θ = 30°<br><br>
+            
+            बल आघूर्ण का सूत्र: τ = mB sinθ<br><br>
+            
+            चुंबकीय आघूर्ण, m = \(\frac{τ}{B \sinθ}\)<br>
+            m = \(\frac{4.5 \times 10^{-2}}{0.25 \times \sin 30^\circ}\)<br>
+            m = \(\frac{4.5 \times 10^{-2}}{0.25 \times 0.5}\)<br>
+            m = \(\frac{4.5 \times 10^{-2}}{0.125}\)<br>
+            m = 0.36 J T⁻¹<br><br>
+            
+            अतः चुंबक का चुंबकीय आघूर्ण 0.36 J T⁻¹ है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.2</div>
+            <div>चुंबकीय आघूर्ण m = 0.32 JT⁻¹ वाला एक छोटा छड़ चुंबक, 0.15 T के एकसमान बाह्य चुंबकीय क्षेत्र में रखा है। यदि यह छड़ क्षेत्र के तल में घूमने के लिए स्वतंत्र हो, तो क्षेत्र के किस विन्यास में यह (i) स्थायी संतुलन और (ii) अस्थायी संतुलन में होगा? प्रत्येक स्थिति में चुंबक की स्थितिज ऊर्जा का मान बताइए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, m = 0.32 JT⁻¹<br>
+            चुंबकीय क्षेत्र, B = 0.15 T<br><br>
+            
+            स्थितिज ऊर्जा का सूत्र: U = -mB cosθ<br><br>
+            
+            (i) स्थायी संतुलन के लिए θ = 0°<br>
+            U = -mB cos0° = -mB × 1 = -mB<br>
+            U = -(0.32) × (0.15) = -0.048 J<br><br>
+            
+            (ii) अस्थायी संतुलन के लिए θ = 180°<br>
+            U = -mB cos180° = -mB × (-1) = mB<br>
+            U = (0.32) × (0.15) = 0.048 J<br><br>
+            
+            अतः:<br>
+            (i) स्थायी संतुलन में स्थितिज ऊर्जा = -0.048 J<br>
+            (ii) अस्थायी संतुलन में स्थितिज ऊर्जा = 0.048 J
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.3</div>
+            <div>एक परिनालिका में पास-पास लपेटे गए 800 फेरे हैं, तथा इसका अनुप्रस्थ काट का क्षेत्रफल 2.5 × 10⁻⁴ m² है और इसमें 3.0 A धारा प्रवाहित हो रही है। समझाइए कि किस अर्थ में परिनालिका एक छड़ चुंबक की तरह व्यवहार करती है? इसके साथ जुड़ा हुआ चुंबकीय आघूर्ण कितना है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फेरों की संख्या, N = 800<br>
+            अनुप्रस्थ काट क्षेत्रफल, A = 2.5 × 10⁻⁴ m²<br>
+            धारा, I = 3.0 A<br><br>
+            
+            परिनालिका का चुंबकीय आघूर्ण: m = NIA<br>
+            m = 800 × 3.0 × 2.5 × 10⁻⁴<br>
+            m = 800 × 7.5 × 10⁻⁴<br>
+            m = 6000 × 10⁻⁴ = 0.6 J T⁻¹<br><br>
+            
+            परिनालिका एक छड़ चुंबक की तरह व्यवहार करती है क्योंकि:<br>
+            1. इसके भीतर एकसमान चुंबकीय क्षेत्र उत्पन्न होता है<br>
+            2. इसके दो ध्रुव होते हैं - उत्तरी और दक्षिणी<br>
+            3. इसका एक निश्चित चुंबकीय आघूर्ण होता है<br>
+            4. बाहरी चुंबकीय क्षेत्र में यह छड़ चुंबक की तरह ही व्यवहार करती है<br><br>
+            
+            अतः परिनालिका का चुंबकीय आघूर्ण 0.6 J T⁻¹ है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.4</div>
+            <div>यदि प्रश्न 5.3 में वर्णित परिनालिका ऊर्ध्वाधर दिशा के परितः घूमने के लिए स्वतंत्र हो और इस पर 0.25 T का एकसमान क्षैतिज चुंबकीय क्षेत्र आरोपित किया जाए, तो इस परिनालिका पर लगने वाले बल आघूर्ण का परिमाण उस समय क्या होगा, जब इसकी अक्ष आरोपित क्षेत्र की दिशा से 30° का कोण बना रही हो?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रश्न 5.3 से चुंबकीय आघूर्ण, m = 0.6 J T⁻¹<br>
+            चुंबकीय क्षेत्र, B = 0.25 T<br>
+            कोण, θ = 30°<br><br>
+            
+            बल आघूर्ण का सूत्र: τ = mB sinθ<br>
+            τ = 0.6 × 0.25 × sin30°<br>
+            τ = 0.6 × 0.25 × 0.5<br>
+            τ = 0.075 N m<br><br>
+            
+            अतः परिनालिका पर लगने वाला बल आघूर्ण 0.075 N m है。
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.5</div>
+            <div>एक छड़ चुंबक जिसका चुंबकीय आघूर्ण 1.5 J T⁻¹ है, 0.22 T के एक एकसमान चुंबकीय क्षेत्र की दिशा के संपाती रखा है।<br>
+                (a) चुंबक को कितने कार्य द्वारा घुमाया जाएगा ताकि इसका चुंबकीय आघूर्ण (i) क्षेत्र के लंबवत, (ii) क्षेत्र के विपरीत दिशा में संरेखित हो जाए?<br>
+                (b) स्थिति (i) एवं (ii) में चुंबक पर कितना बल आघूर्ण होता है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, m = 1.5 J T⁻¹<br>
+            चुंबकीय क्षेत्र, B = 0.22 T<br><br>
+            
+            (a) कार्य का सूत्र: W = mB(1 - cosθ)<br><br>
+            
+            (i) θ = 90° के लिए:<br>
+            W = 1.5 × 0.22 × (1 - cos90°)<br>
+            W = 0.33 × (1 - 0) = 0.33 J<br><br>
+            
+            (ii) θ = 180° के लिए:<br>
+            W = 1.5 × 0.22 × (1 - cos180°)<br>
+            W = 0.33 × (1 - (-1)) = 0.33 × 2 = 0.66 J<br><br>
+            
+            (b) बल आघूर्ण का सूत्र: τ = mB sinθ<br><br>
+            
+            (i) θ = 90° के लिए:<br>
+            τ = 1.5 × 0.22 × sin90° = 1.5 × 0.22 × 1 = 0.33 N m<br><br>
+            
+            (ii) θ = 180° के लिए:<br>
+            τ = 1.5 × 0.22 × sin180° = 1.5 × 0.22 × 0 = 0 N m<br><br>
+            
+            अतः:<br>
+            (a) (i) कार्य = 0.33 J, (ii) कार्य = 0.66 J<br>
+            (b) (i) बल आघूर्ण = 0.33 N m, (ii) बल आघूर्ण = 0 N m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.6</div>
+            <div>2000 फेरों वाली एक परिनालिका का अनुप्रस्थ काट का क्षेत्रफल 1.6 × 10⁻⁴ m² है और इसमें 4.0 A की धारा प्रवाहित हो रही है, जिसे इसके केंद्र से इस प्रकार लटकाया गया है कि यह एक क्षैतिज तल में घूम सके।<br>
+                (a) परिनालिका के साथ संबद्ध चुंबकीय आघूर्ण क्या है?<br>
+                (b) यदि परिनालिका पर 7.5 × 10⁻² T का एकसमान क्षैतिज चुंबकीय क्षेत्र लगाया जाए, जो परिनालिका की अक्ष से 30° का कोण बनाता है, तो परिनालिका पर लगने वाला बल एवं बल आघूर्ण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फेरों की संख्या, N = 2000<br>
+            अनुप्रस्थ काट क्षेत्रफल, A = 1.6 × 10⁻⁴ m²<br>
+            धारा, I = 4.0 A<br>
+            चुंबकीय क्षेत्र, B = 7.5 × 10⁻² T<br>
+            कोण, θ = 30°<br><br>
+            
+            (a) परिनालिका का चुंबकीय आघूर्ण: m = NIA<br>
+            m = 2000 × 4.0 × 1.6 × 10⁻⁴<br>
+            m = 2000 × 6.4 × 10⁻⁴ = 1.28 J T⁻¹<br><br>
+            
+            (b) एकसमान चुंबकीय क्षेत्र में रखे चुंबकीय द्विध्रुव पर लगने वाला बल:<br>
+            F = 0 (एकसमान क्षेत्र में बल शून्य होता है)<br><br>
+            
+            बल आघूर्ण: τ = mB sinθ<br>
+            τ = 1.28 × 7.5 × 10⁻² × sin30°<br>
+            τ = 1.28 × 7.5 × 10⁻² × 0.5<br>
+            τ = 4.8 × 10⁻² N m<br><br>
+            
+            अतः:<br>
+            (a) चुंबकीय आघूर्ण = 1.28 J T⁻¹<br>
+            (b) बल = 0, बल आघूर्ण = 0.048 N m
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.7</div>
+            <div>किसी छोटे छड़ चुंबक का चुंबकीय आघूर्ण 0.48 J T⁻¹ है। चुंबक के केंद्र से 10 cm की दूरी पर स्थित किसी बिंदु पर इसके चुंबकीय क्षेत्र का परिमाण एवं दिशा बताइए, यदि यह बिंदु (i) चुंबक की अक्ष पर स्थित हो, (ii) चुंबक की निरक्ष रेखा पर स्थित हो।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, m = 0.48 J T⁻¹<br>
+            दूरी, r = 10 cm = 0.1 m<br><br>
+            
+            (i) अक्षीय बिंदु पर चुंबकीय क्षेत्र:<br>
+            \(B_a = \frac{\mu_0}{4\pi} \frac{2m}{r^3}\)<br>
+            \(B_a = 10^{-7} \times \frac{2 \times 0.48}{(0.1)^3}\)<br>
+            \(B_a = 10^{-7} \times \frac{0.96}{0.001}\)<br> 
+            \(B_a = 10^{-7} \times 960\)<br>
+            \(B_a = 9.6 \times 10^{-5} T\)<br>
+            दिशा: चुंबकीय आघूर्ण की दिशा में<br><br>
+            
+            (ii) निरक्षीय बिंदु पर चुंबकीय क्षेत्र:<br>
+            \(B_e = \frac{\mu_0}{4\pi} \frac{m}{r^3}\)<br>
+            \(B_e = 10^{-7} \times \frac{0.48}{(0.1)^3}\)<br>
+            \(B_e = 10^{-7} \times \frac{0.48}{0.001}\)<br>
+            \(B_e = 10^{-7} \times 480\)<br>
+            \(B_e = 4.8 \times 10^{-5} T\)<br>
+            दिशा: चुंबकीय आघूर्ण की दिशा के विपरीत<br><br>
+            
+            अतः:<br>
+            (i) अक्षीय बिंदु पर B = 9.6 × 10⁻⁵ T (चुंबकीय आघूर्ण की दिशा में)<br>
+            (ii) निरक्षीय बिंदु पर B = 4.8 × 10⁻⁵ T (चुंबकीय आघूर्ण की दिशा के विपरीत)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num"></div>
+            <div>चुंबकत्व से संबंधित महत्वपूर्ण भौतिक राशियाँ</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>भौतिक राशि</th>
+                            <th>प्रतीक</th>
+                            <th>प्रकृति</th>
+                            <th>विमाएँ</th>
+                            <th>मात्रक</th>
+                            <th>टिप्पणी</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>निर्वात की चुंबकशीलता</td>
+                            <td>μ₀</td>
+                            <td>अदिश</td>
+                            <td>[M L T⁻² A⁻²]</td>
+                            <td>T m A⁻¹</td>
+                            <td>μ₀/4π = 10⁻⁷</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकीय क्षेत्र</td>
+                            <td>B</td>
+                            <td>सदिश</td>
+                            <td>[M T⁻² A⁻¹]</td>
+                            <td>T (टेस्ला)</td>
+                            <td>10⁴ G (गॉस) = 1 T</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकीय आघूर्ण</td>
+                            <td>m</td>
+                            <td>सदिश</td>
+                            <td>[L² A]</td>
+                            <td>A m²</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकीय फ्लक्स</td>
+                            <td>φ<sub>B</sub></td>
+                            <td>अदिश</td>
+                            <td>[M L² T⁻² A⁻¹]</td>
+                            <td>W (वेबर)</td>
+                            <td>W = T m²</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकन</td>
+                            <td>M</td>
+                            <td>सदिश</td>
+                            <td>[L⁻¹ A]</td>
+                            <td>A m⁻¹</td>
+                            <td>चुंबकीय आघूर्ण प्रति आयतन</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकीय तीव्रता</td>
+                            <td>H</td>
+                            <td>सदिश</td>
+                            <td>[L⁻¹ A]</td>
+                            <td>A m⁻¹</td>
+                            <td>B = μ₀(H + M)</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकीय प्रवृत्ति</td>
+                            <td>χ</td>
+                            <td>अदिश</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>M = χH</td>
+                        </tr>
+                        <tr>
+                            <td>आपेक्षिक चुंबकशीलता</td>
+                            <td>μ<sub>r</sub></td>
+                            <td>अदिश</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>B = μ<sub>r</sub>μ₀H</td>
+                        </tr>
+                        <tr>
+                            <td>चुंबकशीलता</td>
+                            <td>μ</td>
+                            <td>अदिश</td>
+                            <td>[M L T⁻² A⁻²]</td>
+                            <td>T m A⁻¹</td>
+                            <td>μ = μ<sub>r</sub>μ₀ = N A⁻², B = μH</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Text selection protection
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.body.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+        });
+
+        // MathJax configuration for consistent font size
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            chtml: {
+                scale: 1.0,
+                displayAlign: 'center'
+            },
+            svg: {
+                scale: 1.0,
+                fontCache: 'global'
+            },
+            options: {
+                skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                renderActions: {
+                    addMenu: [0, '', '']
+                }
+            }
+        };
+    </script>
+</body>
+</html>
