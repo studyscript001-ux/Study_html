@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ऊष्मागतिकी - अभ्यास प्रश्नोत्तर</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2E8B57 0%, #4CAF50 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #4caf50;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #37474f;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ऊष्मागतिकी - अभ्यास प्रश्नोत्तर</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.1</span>
+                <span>ऊष्मागतिकीय अवस्था फलन किसे कहते हैं?</span>
+            </div>
+            <div class="answer">
+                उत्तर: ऊष्मागतिकीय अवस्था फलन वह राशि है जिसका मान सिस्टम की वर्तमान अवस्था पर निर्भर करता है, न कि उस अवस्था तक पहुँचने के पथ पर। अवस्था फलन का परिवर्तन केवल प्रारंभिक और अंतिम अवस्था पर निर्भर करता है। आंतरिक ऊर्जा (U), एन्थैल्पी (H), एन्ट्रॉपी (S) और गिब्स मुक्त ऊर्जा (G) ऊष्मागतिकीय अवस्था फलन के उदाहरण हैं।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.2</span>
+                <span>किसी प्रक्रम के उत्क्रमणीय होने के लिए आवश्यक परिस्थितियाँ क्या हैं?</span>
+            </div>
+            <div class="answer">
+                उत्तर: उत्क्रमणीय प्रक्रम के लिए आवश्यक परिस्थितियाँ:<br>
+                1. प्रक्रम असीमित धीमी गति से होना चाहिए<br>
+                2. प्रक्रम के दौरान सिस्टम सदैव साम्यावस्था में रहना चाहिए<br>
+                3. बाह्य दाब और सिस्टम के दाब में अत्यंत सूक्ष्म अंतर होना चाहिए<br>
+                4. प्रक्रम पू完全तः उत्क्रमणीय होना चाहिए, अर्थात् प्रक्रम को विपरीत दिशा में चलाकर सिस्टम और परिवेश दोनों को मूल अवस्था में लाया जा सके
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.3</span>
+                <span>सभी तत्वों की एन्थैल्पी उनकी संदर्भ-अवस्था में क्या होती है?</span>
+            </div>
+            <div class="answer">
+                उत्तर: संदर्भ-अवस्था में सभी तत्वों की एन्थैल्पी शून्य मानी जाती है। संदर्भ-अवस्था का तात्पर्य 298 K तापमान और 1 bar दाब पर किसी तत्व के सबसे स्थायी रूप से है। उदाहरण के लिए, O₂(g), H₂(g), C(ग्रेफाइट), Na(ठोस) आदि की संदर्भ-अवस्था में एन्थैल्पी शून्य मानी जाती है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.4</span>
+                <span>मीथेन के दहन के लिए ΔU⁰ का मान -X kJ mol⁻¹ है। इसके लिए ΔH⁰ का मान क्या होगा?</span>
+            </div>
+            <div class="answer">
+                उत्तर: मीथेन के दहन की अभिक्रिया है:<br>
+                CH₄(g) + 2O₂(g) → CO₂(g) + 2H₂O(l)<br>
+                इस अभिक्रिया में Δn_g = (1 - 3) = -2<br>
+                ΔH और ΔU के बीच संबंध: ΔH = ΔU + Δn_gRT<br>
+                चूँकि Δn_g ऋणात्मक है, इसलिए ΔH⁰, ΔU⁰ से कम होगा (ΔH⁰ < ΔU⁰)।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.5</span>
+                <span>मीथेन, ग्रेफाइट और हाइड्रोजन के लिए 298 K पर दहन एन्थैल्पी के मान क्रमशः -890.3 kJ mol⁻¹, -393.5 kJ mol⁻¹ और -285.8 kJ mol⁻¹ हैं। CH₄(g) की संभवन एन्थैल्पी क्या होगी?</span>
+            </div>
+            <div class="answer">
+                उत्तर: हेस के नियम के अनुसार:<br>
+                ΔfH(CH₄) = [ΔfH(CO₂) + 2×ΔfH(H₂O)] - [ΔcH(CH₄)]<br>
+                लेकिन दिया गया है दहन एन्थैल्पी, अतः:<br>
+                C(ग्रेफाइट) + 2H₂(g) → CH₄(g)<br>
+                ΔfH(CH₄) = [ΔcH(ग्रेफाइट) + 2×ΔcH(H₂)] - [ΔcH(CH₄)]<br>
+                = [-393.5 + 2×(-285.8)] - [-890.3]<br>
+                = [-393.5 -571.6] + 890.3 = -965.1 + 890.3 = -74.8 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.6</span>
+                <span>एक अभिक्रिया A + B → C + D + q के लिए एन्ट्रॉपी परिवर्तन धनात्मक पाया गया। यह अभिक्रिया संभव होगी:</span>
+            </div>
+            <div class="answer">
+                उत्तर: एन्ट्रॉपी परिवर्तन के धनात्मक होने का अर्थ है कि अभिक्रिया में अनियमितता बढ़ती है। गिब्स मुक्त ऊर्जा समीकरण ΔG = ΔH - TΔS के अनुसार, यदि ΔS धनात्मक है और अभिक्रिया ऊष्माक्षेपी है (q ऋणात्मक, ΔH ऋणात्मक), तो ΔG निश्चित रूप से ऋणात्मक होगा और अभिक्रिया सभी तापमानों पर स्वतःप्रवर्तित होगी। यदि अभिक्रिया ऊष्माशोषी है (ΔH धनात्मक), तो उच्च तापमान पर अभिक्रिया स्वतःप्रवर्तित हो सकती है क्योंकि TΔS पद प्रभावी हो जाता है। अतः यह अभिक्रिया उच्च तापमान पर संभव होगी।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.7</span>
+                <span>एक प्रक्रम में निकाय द्वारा 701 J ऊष्मा अवशोषित की जाती है और 394 J कार्य किया जाता है। इस प्रक्रम में आंतरिक ऊर्जा में कितना परिवर्तन होगा?</span>
+            </div>
+            <div class="answer">
+                उत्तर: ऊष्मागतिकी के प्रथम नियम के अनुसार:<br>
+                ΔU = q + w<br>
+                जहाँ निकाय द्वारा अवशोषित ऊष्मा q = +701 J<br>
+                और निकाय द्वारा किया गया कार्य w = -394 J (चूँकि निकाय द्वारा कार्य किया जा रहा है)<br>
+                ∴ ΔU = 701 J + (-394 J) = 307 J
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.8</span>
+                <span>एक बम कैलोरीमीटर में ऑक्सीजन की उपस्थिति में NH₂CN(s) की अभिक्रिया की गई और ΔU का मान -742.7 kJ mol⁻¹ पाया गया (298 K पर)। इस अभिक्रिया के लिए 298 K पर एन्थैल्पी परिवर्तन ज्ञात कीजिए:<br>NH₂CN(g) + 3/2O₂(g) → N₂(g) + CO₂(g) + H₂O(l)</span>
+            </div>
+            <div class="answer">
+                उत्तर: दी गई अभिक्रिया में गैसीय मोलों की संख्या में परिवर्तन:<br>
+                Δn_g = (1 + 1) - (1 + 1.5) = 2 - 2.5 = -0.5<br>
+                ΔH और ΔU के बीच संबंध: ΔH = ΔU + Δn_gRT<br>
+                R = 8.314 J mol⁻¹K⁻¹, T = 298 K<br>
+                Δn_gRT = (-0.5 mol) × (8.314 J mol⁻¹K⁻¹) × (298 K) = -1238.786 J = -1.239 kJ<br>
+                ΔH = (-742.7 kJ) + (-1.239 kJ) = -743.939 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.9</span>
+                <span>60.0 g ऐलुमिनियम का तापमान 35°C से 55°C करने के लिए कितने किलोजूल ऊष्मा की आवश्यकता होगी? Al की मोलर ऊष्माधारिता 24 J mol⁻¹ K⁻¹ है।</span>
+            </div>
+            <div class="answer">
+                उत्तर: ऐलुमिनियम के मोलों की संख्या = द्रव्यमान/मोलर द्रव्यमान = 60.0 g / 27 g mol⁻¹ = 2.222 mol<br>
+                ताप परिवर्तन ΔT = 55°C - 35°C = 20°C = 20 K<br>
+                आवश्यक ऊष्मा q = n × C_m × ΔT<br>
+                = 2.222 mol × 24 J mol⁻¹K⁻¹ × 20 K<br>
+                = 1066.56 J = 1.067 kJ
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.10</span>
+                <span>10.0°C पर 1 मोल जल को -10°C पर बर्फ बनने पर एन्थैल्पी-परिवर्तन की गणना कीजिए।<br>ΔfusH = 6.03 kJ mol⁻¹ 0°C पर,<br>C_p[H₂O(l)] = 75.3 J mol⁻¹ K⁻¹<br>C_p[H₂O(s)] = 36.8 J mol⁻¹ K⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: प्रक्रम तीन चरणों में होता है:<br>
+                1. 10°C के जल को 0°C के जल में ठंडा करना<br>
+                2. 0°C के जल का 0°C की बर्फ में बदलना<br>
+                3. 0°C की बर्फ को -10°C की बर्फ में ठंडा करना<br>
+                <br>
+                ΔH₁ = n × C_p(l) × ΔT = 1 mol × 75.3 J mol⁻¹K⁻¹ × (-10 K) = -753 J = -0.753 kJ<br>
+                ΔH₂ = n × (-ΔfusH) = 1 mol × (-6.03 kJ mol⁻¹) = -6.03 kJ<br>
+                ΔH₃ = n × C_p(s) × ΔT = 1 mol × 36.8 J mol⁻¹K⁻¹ × (-10 K) = -368 J = -0.368 kJ<br>
+                <br>
+                कुल एन्थैल्पी परिवर्तन ΔH = ΔH₁ + ΔH₂ + ΔH₃ = -0.753 - 6.03 - 0.368 = -7.151 kJ
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.11</span>
+                <span>CO₂ की दहन एन्थैल्पी -393.5 kJ mol⁻¹ है। कार्बन और ऑक्सीजन से 35.2 g CO₂ बनने पर उत्सर्जित ऊष्मा की गणना कीजिए।</span>
+            </div>
+            <div class="answer">
+                उत्तर: CO₂ के मोलों की संख्या = 35.2 g / 44 g mol⁻¹ = 0.8 mol<br>
+                चूँकि 1 mol CO₂ के बनने पर उत्सर्जित ऊष्मा = 393.5 kJ<br>
+                ∴ 0.8 mol CO₂ के बनने पर उत्सर्जित ऊष्मा = 0.8 × 393.5 kJ = 314.8 kJ
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.12</span>
+                <span>CO(g), CO₂(g), N₂O(g) और N₂O₄(g) की संभवन एन्थैल्पी क्रमशः -110, -393, 81 और 9.7 kJ mol⁻¹ हैं। अभिक्रिया N₂O₄(g) + 3CO(g) → N₂O(g) + 3CO₂(g) के लिए ΔrH का मान ज्ञात कीजिए।</span>
+            </div>
+            <div class="answer">
+                उत्तर: हेस के नियम के अनुसार:<br>
+                ΔrH = [ΣΔfH(उत्पाद) - ΣΔfH(अभिकारक)]<br>
+                = [ΔfH(N₂O) + 3×ΔfH(CO₂)] - [ΔfH(N₂O₄) + 3×ΔfH(CO)]<br>
+                = [81 + 3×(-393)] - [9.7 + 3×(-110)]<br>
+                = [81 - 1179] - [9.7 - 330] = [-1098] - [-320.3] = -1098 + 320.3 = -777.7 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.13</span>
+                <span>N₂(g) + 3H₂(g) → 2NH₃(g); ΔrH⁰ = -92.4 kJ mol⁻¹। NH₃ गैस की मानक संभवन एन्थैल्पी क्या है?</span>
+            </div>
+            <div class="answer">
+                उत्तर: दी गई अभिक्रिया 2 मोल NH₃ के निर्माण के लिए है, इसलिए:<br>
+                2NH₃ के निर्माण के लिए ΔrH⁰ = -92.4 kJ<br>
+                ∴ 1 मोल NH₃ के निर्माण के लिए ΔfH⁰ = -92.4 / 2 = -46.2 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.14</span>
+                <span>निम्नलिखित आँकड़ों से CH₃OH(l) की मानक संभवन एन्थैल्पी ज्ञात कीजिए:<br>CH₃OH(l) + 3/2O₂(g) → CO₂(g) + 2H₂O(l); ΔrH⁰ = -726 kJ mol⁻¹<br>C(ग्रेफाइट) + O₂(g) → CO₂(g); ΔcH⁰ = -393 kJ mol⁻¹<br>H₂(g) + 1/2O₂(g) → H₂O(l); ΔfH⁰ = -286 kJ mol⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: हेस के नियम का उपयोग करते हुए:<br>
+                लक्ष्य अभिक्रिया: C(ग्रेफाइट) + 2H₂(g) + 1/2O₂(g) → CH₃OH(l)<br>
+                <br>
+                हम जानते हैं:<br>
+                1. C(ग्रेफाइट) + O₂(g) → CO₂(g); ΔH = -393 kJ<br>
+                2. H₂(g) + 1/2O₂(g) → H₂O(l); ΔH = -286 kJ<br>
+                3. CH₃OH(l) + 3/2O₂(g) → CO₂(g) + 2H₂O(l); ΔH = -726 kJ<br>
+                <br>
+                लक्ष्य अभिक्रिया = [समीकरण 1] + 2×[समीकरण 2] - [समीकरण 3]<br>
+                ΔfH(CH₃OH) = [-393] + 2×[-286] - [-726]<br>
+                = -393 -572 + 726 = -239 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.15</span>
+                <span>अभिक्रिया CCl₄(g) → C(g) + 4Cl(g) के लिए एन्थैल्पी-परिवर्तन ज्ञात कीजिए और CCl₄ में C-Cl की बंध एन्थैल्पी की गणना कीजिए:<br>ΔvapH⁰(CCl₄) = 30.5 kJ mol⁻¹<br>ΔfH⁰(CCl₄) = -135.5 kJ mol⁻¹<br>ΔaH⁰(C) = 715.0 kJ mol⁻¹, यहाँ ΔaH⁰ परमाण्विकरण एन्थैल्पी है<br>ΔaH⁰(Cl₂) = 242 kJ mol⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: सर्वप्रथम CCl₄(g) → C(g) + 4Cl(g) के लिए ΔH ज्ञात करते हैं:<br>
+                बॉर्न-हैबर चक्र का उपयोग करते हुए:<br>
+                1. CCl₄(l) → CCl₄(g); ΔH = ΔvapH = 30.5 kJ mol⁻¹<br>
+                2. C(ग्रेफाइट) → C(g); ΔH = ΔaH⁰(C) = 715.0 kJ mol⁻¹<br>
+                3. 2Cl₂(g) → 4Cl(g); ΔH = 2×ΔaH⁰(Cl₂) = 2×242 = 484 kJ mol⁻¹<br>
+                4. C(ग्रेफाइट) + 2Cl₂(g) → CCl₄(l); ΔH = ΔfH⁰(CCl₄) = -135.5 kJ mol⁻¹<br>
+                <br>
+                लक्ष्य अभिक्रिया: CCl₄(g) → C(g) + 4Cl(g)<br>
+                ΔH = [समीकरण 2 + समीकरण 3] - [समीकरण 1 + समीकरण 4]<br>
+                = [715.0 + 484] - [30.5 + (-135.5)]<br>
+                = 1199 - (-105) = 1199 + 105 = 1304 kJ mol⁻¹<br>
+                <br>
+                CCl₄ में चार C-Cl बंध हैं, इसलिए औसत C-Cl बंध एन्थैल्पी = 1304 / 4 = 326 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.16</span>
+                <span>एक विलगित निकाय के लिए ΔU = 0, इसके लिए ΔS क्या होगा?</span>
+            </div>
+            <div class="answer">
+                उत्तर: विलगित निकाय के लिए, निकाय और परिवेश के बीच ऊर्जा या द्रव्य का आदान-प्रदान नहीं होता है, इसलिए ΔU = 0। ऊष्मागतिकी के द्वितीय नियम के अनुसार, विलगित निकाय में स्वतःप्रवर्तित प्रक्रम के लिए एन्ट्रॉपी परिवर्तन धनात्मक होना चाहिए (ΔS > 0)। साम्यावस्था में एन्ट्रॉपी अधिकतम होती है और ΔS = 0 होता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.17</span>
+                <span>298 K पर अभिक्रिया 2A + B → C के लिए, ΔH = 400 kJ mol⁻¹ और ΔS = 0.2 kJ K⁻¹ mol⁻¹। ΔH और ΔS को ताप-परिसर में स्थिर मानते हुए बताइए कि किस ताप पर अभिक्रिया स्वतः होगी?</span>
+            </div>
+            <div class="answer">
+                उत्तर: स्वतःप्रवर्तित प्रक्रम के लिए ΔG < 0 होना आवश्यक है।<br>
+                ΔG = ΔH - TΔS<br>
+                स्वतःप्रवर्तित प्रक्रम के लिए: ΔH - TΔS < 0<br>
+                चूँकि ΔH = 400 kJ mol⁻¹ (धनात्मक) और ΔS = 0.2 kJ K⁻¹ mol⁻¹ (धनात्मक)<br>
+                ∴ 400 - T(0.2) < 0<br>
+                T(0.2) > 400<br>
+                T > 400 / 0.2 = 2000 K<br>
+                अतः अभिक्रिया 2000 K से अधिक तापमान पर स्वतःप्रवर्तित होगी।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.18</span>
+                <span>अभिक्रिया 2Cl(g) → Cl₂(g) के लिए ΔH और ΔS के चिह्न क्या होंगे?</span>
+            </div>
+            <div class="answer">
+                उत्तर: अभिक्रिया 2Cl(g) → Cl₂(g) एक बंध निर्माण अभिक्रिया है जिसमें ऊर्जा उत्सर्जित होती है, इसलिए यह ऊष्माक्षेपी अभिक्रिया है और ΔH ऋणात्मक होगा। इस अभिक्रिया में दो मुक्त परमाणु एक अणु बनाते हैं, जिससे अनियमितता कम होती है, इसलिए एन्ट्रॉपी परिवर्तन ΔS भी ऋणात्मक होगा।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.19</span>
+                <span>अभिक्रिया 2A(g) + B(g) → 2D(g) के लिए U⁰ = -10.5 kJ और S⁰ = -44.1 JK⁻¹। अभिक्रिया के लिए G⁰ की गणना कीजिए और बताइए कि क्या अभिक्रिया स्वतः प्रवर्तित हो सकती है?</span>
+            </div>
+            <div class="answer">
+                उत्तर: ΔG⁰ = ΔH⁰ - TΔS⁰<br>
+                पहले ΔH⁰ ज्ञात करते हैं: ΔH⁰ = ΔU⁰ + Δn_gRT<br>
+                Δn_g = 2 - (2+1) = 2 - 3 = -1<br>
+                Δn_gRT = (-1) × (8.314 J mol⁻¹K⁻¹) × (298 K) = -2478.57 J = -2.478 kJ<br>
+                ΔH⁰ = (-10.5 kJ) + (-2.478 kJ) = -12.978 kJ<br>
+                <br>
+                अब ΔG⁰ = ΔH⁰ - TΔS⁰ = (-12.978 kJ) - (298 K × -0.0441 kJ K⁻¹)<br>
+                = -12.978 + 13.142 = 0.164 kJ = 164 J<br>
+                <br>
+                चूँकि ΔG⁰ धनात्मक है (164 J > 0), अतः अभिक्रिया स्वतःप्रवर्तित नहीं होगी।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.20</span>
+                <span>300 K पर एक अभिक्रिया के लिए साम्य स्थिरांक 10 है। ΔG⁰ का मान क्या होगा? R = 8.314 JK⁻¹ mol⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: ΔG⁰ = -RT ln K<br>
+                = -(8.314 J mol⁻¹K⁻¹) × (300 K) × ln(10)<br>
+                = -(8.314) × (300) × (2.3026) J mol⁻¹<br>
+                = -5744.14 J mol⁻¹ = -5.744 kJ mol⁻¹
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.21</span>
+                <span>निम्नलिखित अभिक्रियाओं के आधार पर NO(g) के ऊष्मागतिकीय स्थायित्व पर टिप्पणी कीजिए:<br>1/2N₂(g) + 1/2O₂(g) → NO(g); ΔrH⁰ = 90 kJ mol⁻¹<br>NO(g) + 1/2O₂(g) → NO₂(g); ΔrH⁰ = -74 kJ mol⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: पहली अभिक्रिया से पता चलता है कि NO(g) का निर्माण ऊष्माशोषी प्रक्रिया है (ΔH धनात्मक), जिसका अर्थ है कि NO ऊष्मागतिकीय रूप से N₂ और O₂ की तुलना में कम स्थायी है। दूसरी अभिक्रिया से पता चलता है कि NO, O₂ के साथ अभिक्रिया करके NO₂ बनाता है जो एक ऊष्माक्षेपी अभिक्रिया है (ΔH ऋणात्मक), जो इंगित करता है कि NO₂, NO की तुलना में अधिक स्थायी है। इस प्रकार NO न तो अत्यधिक स्थायी है और न ही अत्यधिक अस्थायी, लेकिन यह O₂ की उपस्थिति में NO₂ में परिवर्तित होकर अधिक स्थायी यौगिक बना सकता है।
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5.22</span>
+                <span>जब 1.00 मोल H₂O(l) को मानक परिस्थितियों में विघटित किया जाता है, तो परिवेश के एन्ट्रॉपी-परिवर्तन की गणना कीजिए: ΔfH⁰ = -286 kJ mol⁻¹</span>
+            </div>
+            <div class="answer">
+                उत्तर: जल के विघटन की अभिक्रिया: H₂O(l) → H₂(g) + 1/2O₂(g)<br>
+                इस अभिक्रिया के लिए ΔrH = -ΔfH(H₂O) = -(-286 kJ mol⁻¹) = 286 kJ mol⁻¹<br>
+                परिवेश द्वारा अवशोषित ऊष्मा = -286 kJ mol⁻¹ (चूँकि निकाय द्वारा ऊष्मा अवशोषित होती है)<br>
+                परिवेश का एन्ट्रॉपी परिवर्तन ΔS_surr = -ΔrH / T = -286000 J mol⁻¹ / 298 K = -959.73 J K⁻¹ mol⁻¹
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
