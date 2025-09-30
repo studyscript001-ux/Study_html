@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 गणित - अध्याय 1: समुच्चय (संपूर्ण हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #4364F7;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            border-left: 2px solid #a4bcfd;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 1: समुच्चय (Sets)</h1>
+            <p class="mt-2 text-lg">प्रश्नावली 1.1, 1.2, 1.3, 1.4 और 1.5 का संपूर्ण हल</p>
+        </div>
+
+        <!-- Prashnavali 1.1 -->
+        <section id="prashnavali-1-1">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2">प्रश्नावली 1.1</h2>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में कौन से समुच्चय हैं? अपने उत्तर का औचित्य बताइए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) J अक्षर से प्रारंभ होने वाले वर्ष के सभी महीनों का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह सुपरिभाषित है। इसके अवयव हैं: {जनवरी, जून, जुलाई}।</p></div>
+                    <div class="step"><p><b>(ii) भारत के दस सबसे अधिक प्रतिभाशाली लेखकों का संग्रह।</b><br><b>यह एक समुच्चय नहीं है।</b> क्योंकि 'सबसे अधिक प्रतिभाशाली' का मापदंड व्यक्तिपरक है और सुपरिभाषित नहीं है।</p></div>
+                    <div class="step"><p><b>(iii) विश्व के सर्वश्रेष्ठ ग्यारह बल्लेबाजों का संग्रह।</b><br><b>यह एक समुच्चय नहीं है।</b> क्योंकि 'सर्वश्रेष्ठ' का मापदंड सुपरिभाषित नहीं है और यह व्यक्ति-व्यक्ति पर निर्भर करता है।</p></div>
+                    <div class="step"><p><b>(iv) आपकी कक्षा के सभी बालकों का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह एक सुपरिभाषित संग्रह है। हम निश्चित रूप से बता सकते हैं कि कौन सा छात्र कक्षा में है और कौन सा नहीं।</p></div>
+                    <div class="step"><p><b>(v) 100 से कम सभी प्राकृत संख्याओं का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह सुपरिभाषित है। इसके अवयव हैं: {1, 2, 3, ..., 99}।</p></div>
+                    <div class="step"><p><b>(vi) लेखक प्रेमचंद द्वारा लिखित उपन्यासों का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह सुपरिभाषित है। कोई भी उपन्यास इस संग्रह में है या नहीं, यह निश्चित रूप से बताया जा सकता है।</p></div>
+                    <div class="step"><p><b>(vii) सभी सम पूर्णांकों का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह सुपरिभाषित है। इसके अवयव हैं: {..., -4, -2, 0, 2, 4, ...}।</p></div>
+                    <div class="step"><p><b>(viii) इस अध्याय में आने वाले प्रश्नों का संग्रह।</b><br><b>यह एक समुच्चय है।</b> क्योंकि यह सुपरिभाषित है और प्रश्नों की संख्या निश्चित है।</p></div>
+                    <div class="step"><p><b>(ix) विश्व के सबसे अधिक खतरनाक जानवरों का संग्रह।</b><br><b>यह एक समुच्चय नहीं है।</b> क्योंकि 'खतरनाक' की परिभाषा सुपरिभाषित नहीं है और व्यक्तिपरक है।</p></div>
+                </div>
+                <div class="explanation">
+                    <h4 class="font-semibold">स्पष्टीकरण:</h4>
+                    <p>वस्तुओं के सुपरिभाषित संग्रह को ही समुच्चय कहते हैं। 'सुपरिभाषित' का अर्थ है कि हम निश्चित रूप से यह तय कर सकें कि कोई वस्तु संग्रह में है अथवा नहीं। यदि संग्रह व्यक्ति की राय या पसंद पर निर्भर करता है, तो वह समुच्चय नहीं है।</p>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: मान लीजिए A = {1, 2, 3, 4, 5, 6}, रिक्त स्थानों में उपयुक्त प्रतीक ∈ अथवा ∉ भरिए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) 5 ___ A</b> &nbsp;=>&nbsp; 5 <b>∈</b> A (क्योंकि 5 समुच्चय A का अवयव है)</p></div>
+                    <div class="step"><p><b>(ii) 8 ___ A</b> &nbsp;=>&nbsp; 8 <b>∉</b> A (क्योंकि 8 समुच्चय A का अवयव नहीं है)</p></div>
+                    <div class="step"><p><b>(iii) 0 ___ A</b> &nbsp;=>&nbsp; 0 <b>∉</b> A (क्योंकि 0 समुच्चय A का अवयव नहीं है)</p></div>
+                    <div class="step"><p><b>(iv) 4 ___ A</b> &nbsp;=>&nbsp; 4 <b>∈</b> A (क्योंकि 4 समुच्चय A का अवयव है)</p></div>
+                    <div class="step"><p><b>(v) 2 ___ A</b> &nbsp;=>&nbsp; 2 <b>∈</b> A (क्योंकि 2 समुच्चय A का अवयव है)</p></div>
+                    <div class="step"><p><b>(vi) 10 ___ A</b> &nbsp;=>&nbsp; 10 <b>∉</b> A (क्योंकि 10 समुच्चय A का अवयव नहीं है)</p></div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: निम्नलिखित समुच्चयों को रोस्टर रूप में लिखिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A = {x : x एक पूर्णांक है और -3 < x < 7}</b><br>A = {-2, -1, 0, 1, 2, 3, 4, 5, 6}</p></div>
+                    <div class="step"><p><b>(ii) B = {x : x संख्या 6 से कम एक प्राकृत संख्या है}</b><br>B = {1, 2, 3, 4, 5}</p></div>
+                    <div class="step"><p><b>(iii) C = {x : x दो अंकों की ऐसी प्राकृत संख्या है जिसके अंकों का योगफल 8 है}</b><br>C = {17, 26, 35, 44, 53, 62, 71, 80}</p></div>
+                    <div class="step"><p><b>(iv) D = {x : x एक अभाज्य संख्या है जो संख्या 60 की भाजक है}</b><br>60 के भाजक: 1, 2, 3, 4, 5, 6, 10, 12, 15, 20, 30, 60। इनमें से अभाज्य संख्याएँ 2, 3, 5 हैं।<br>D = {2, 3, 5}</p></div>
+                    <div class="step"><p><b>(v) E = TRIGONOMETRY शब्द के सभी अक्षरों का समुच्चय</b><br>E = {T, R, I, G, O, N, M, E, Y}</p></div>
+                    <div class="step"><p><b>(vi) F = BETTER शब्द के सभी अक्षरों का समुच्चय</b><br>F = {B, E, T, R}</p></div>
+                </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: निम्नलिखित समुच्चयों को समुच्चय निर्माण रूप में व्यक्त कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {3, 6, 9, 12}</b><br>{x : x = 3n, n ∈ N तथा 1 ≤ n ≤ 4}</p></div>
+                    <div class="step"><p><b>(ii) {2, 4, 8, 16, 32}</b><br>{x : x = 2ⁿ, n ∈ N तथा 1 ≤ n ≤ 5}</p></div>
+                    <div class="step"><p><b>(iii) {5, 25, 125, 625}</b><br>{x : x = 5ⁿ, n ∈ N तथा 1 ≤ n ≤ 4}</p></div>
+                    <div class="step"><p><b>(iv) {2, 4, 6, ...}</b><br>{x : x एक सम प्राकृत संख्या है}</p></div>
+                    <div class="step"><p><b>(v) {1, 4, 9, ..., 100}</b><br>{x : x = n², n ∈ N तथा 1 ≤ n ≤ 10}</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित समुच्चयों के सभी अवयवों (सदस्यों) को सूचीबद्ध कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A = {x : x एक विषम प्राकृत संख्या है}</b><br>A = {1, 3, 5, 7, ...}</p></div>
+                    <div class="step"><p><b>(ii) B = {x : x एक पूर्णांक है, -1/2 < x < 9/2}</b><br>-0.5 < x < 4.5 के बीच पूर्णांक हैं: 0, 1, 2, 3, 4।<br>B = {0, 1, 2, 3, 4}</p></div>
+                    <div class="step"><p><b>(iii) C = {x : x एक पूर्णांक है, x² ≤ 4}</b><br>जिन पूर्णांकों का वर्ग 4 या 4 से कम हो: -2, -1, 0, 1, 2।<br>C = {-2, -1, 0, 1, 2}</p></div>
+                    <div class="step"><p><b>(iv) D = {x : x, LOYAL शब्द का एक अक्षर है}</b><br>D = {L, O, Y, A}</p></div>
+                    <div class="step"><p><b>(v) E = {x : x वर्ष का एक ऐसा महीना है, जिसमें 31 दिन नहीं होते हैं}</b><br>E = {फरवरी, अप्रैल, जून, सितंबर, नवंबर}</p></div>
+                    <div class="step"><p><b>(vi) F = {x : x अंग्रेजी वर्णमाला का एक व्यंजन है, जो k से पहले आता है}</b><br>F = {b, c, d, f, g, h, j}</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: बाईं ओर रोस्टर रूप में लिखित और दाईं ओर समुच्चय निर्माण रूप में वर्णित समुच्चयों का सही मिलान कीजिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {1, 2, 3, 6}</b>  ->  <b>(c) {x : x एक प्राकृत संख्या है और 6 की भाजक है}</b></p></div>
+                    <div class="step"><p><b>(ii) {2, 3}</b>  ->  <b>(a) {x : x एक अभाज्य संख्या है और 6 की भाजक है}</b></p></div>
+                    <div class="step"><p><b>(iii) {M, A, T, H, E, I, C, S}</b>  ->  <b>(d) {x : x MATHEMATICS शब्द का एक अक्षर है}</b></p></div>
+                    <div class="step"><p><b>(iv) {1, 3, 5, 7, 9}</b>  ->  <b>(b) {x : x संख्या 10 से कम एक विषम प्राकृत संख्या है}</b></p></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prashnavali 1.2 -->
+        <section id="prashnavali-1-2" class="mt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2">प्रश्नावली 1.2</h2>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में से कौन से रिक्त समुच्चय के उदाहरण हैं?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) 2 से भाज्य विषम प्राकृत संख्याओं का समुच्चय।</b><br><b>यह एक रिक्त समुच्चय है</b> क्योंकि कोई भी विषम प्राकृत संख्या 2 से भाज्य नहीं होती।</p></div>
+                    <div class="step"><p><b>(ii) सम अभाज्य संख्याओं का समुच्चय।</b><br><b>यह रिक्त समुच्चय नहीं है</b> क्योंकि 2 एक सम अभाज्य संख्या है। समुच्चय {2} है।</p></div>
+                    <div class="step"><p><b>(iii) {x : x एक प्राकृत संख्या है, x < 5 और साथ ही साथ x > 7}</b><br><b>यह एक रिक्त समुच्चय है</b> क्योंकि ऐसी कोई प्राकृत संख्या नहीं है जो 5 से छोटी और 7 से बड़ी हो।</p></div>
+                    <div class="step"><p><b>(iv) {y : y किन्हीं भी दो समांतर रेखाओं का उभयनिष्ठ बिंदु है}</b><br><b>यह एक रिक्त समुच्चय है</b> क्योंकि समांतर रेखाएँ कभी भी एक दूसरे को नहीं काटतीं, इसलिए उनका कोई उभयनिष्ठ बिंदु नहीं होता।</p></div>
+                 </div>
+                 <div class="explanation"><h4 class="font-semibold">स्पष्टीकरण:</h4><p>एक समुच्चय जिसमें एक भी अवयव नहीं होता है, उसे रिक्त समुच्चय (Empty Set) कहते हैं। इसे φ या { } से दर्शाते हैं।</p></div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित समुच्चयों में से कौन परिमित और कौन अपरिमित हैं?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) वर्ष के महीनों का समुच्चय।</b><br><b>परिमित</b>, क्योंकि इसमें 12 अवयव हैं।</p></div>
+                    <div class="step"><p><b>(ii) {1, 2, 3, ...}</b><br><b>अपरिमित</b>, क्योंकि प्राकृत संख्याओं की गिनती कभी समाप्त नहीं होती।</p></div>
+                    <div class="step"><p><b>(iii) {1, 2, 3, ..., 99, 100}</b><br><b>परिमित</b>, क्योंकि इसमें 100 अवयव हैं।</p></div>
+                    <div class="step"><p><b>(iv) 100 से बड़े धन पूर्णांकों का समुच्चय।</b><br><b>अपरिमित</b>, क्योंकि 100 से बड़ी अनंत संख्याएँ हैं।</p></div>
+                    <div class="step"><p><b>(v) 99 से छोटे अभाज्य पूर्णांकों का समुच्चय।</b><br><b>परिमित</b>, क्योंकि 99 से छोटे अभाज्य पूर्णांकों की संख्या निश्चित है।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: निम्नलिखित समुच्चयों में से प्रत्येक के लिए बताइए कि कौन परिमित है और कौन अपरिमित है?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) x-अक्ष के समांतर रेखाओं का समुच्चय।</b><br><b>अपरिमित</b>, क्योंकि x-अक्ष के समांतर अनंत रेखाएँ खींची जा सकती हैं।</p></div>
+                    <div class="step"><p><b>(ii) अंग्रेज़ी वर्णमाला के अक्षरों का समुच्चय।</b><br><b>परिमित</b>, क्योंकि इसमें 26 अक्षर होते हैं।</p></div>
+                    <div class="step"><p><b>(iii) उन संख्याओं का समुच्चय जो 5 के गुणज हैं।</b><br><b>अपरिमित</b>, क्योंकि 5 के अनंत गुणज होते हैं (5, 10, 15, ...)।</p></div>
+                    <div class="step"><p><b>(iv) पृथ्वी पर रहने वाले जानवरों का समुच्चय।</b><br><b>परिमित</b>, क्योंकि जानवरों की संख्या बहुत बड़ी होने के बावजूद एक निश्चित संख्या है।</p></div>
+                    <div class="step"><p><b>(v) मूल बिंदु (0,0) से हो कर जाने वाले वृत्तों का समुच्चय।</b><br><b>अपरिमित</b>, क्योंकि मूल बिंदु से होकर जाने वाले अनंत वृत्त बनाए जा सकते हैं (अलग-अलग त्रिज्याओं के)।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: निम्नलिखित में बतलाइए कि A = B है अथवा नहीं है:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A = {a, b, c, d}, B = {d, c, b, a}</b><br><b>A = B</b>, क्योंकि दोनों समुच्चयों में समान अवयव हैं। क्रम का महत्व नहीं होता।</p></div>
+                    <div class="step"><p><b>(ii) A = {4, 8, 12, 16}, B = {8, 4, 16, 18}</b><br><b>A ≠ B</b>, क्योंकि 12 ∈ A लेकिन 12 ∉ B, तथा 18 ∈ B लेकिन 18 ∉ A।</p></div>
+                    <div class="step"><p><b>(iii) A = {2, 4, 6, 8, 10}, B = {x : x सम धन पूर्णांक है और x ≤ 10}</b><br>B को रोस्टर रूप में लिखने पर: B = {2, 4, 6, 8, 10}। अतः, <b>A = B</b>।</p></div>
+                    <div class="step"><p><b>(iv) A = {x : x संख्या 10 का एक गुणज है}, B = {10, 15, 20, 25, 30, ...}</b><br>A को रोस्टर रूप में लिखने पर: A = {10, 20, 30, ...}।<br><b>A ≠ B</b>, क्योंकि 15 ∈ B लेकिन 15 ∉ A।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: क्या निम्नलिखित समुच्चय युग्म समान हैं? कारण सहित बताइए।</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A = {2, 3}, B = {x : x समीकरण x²+5x+6 = 0 का एक हल है}</b><br>B के लिए समीकरण हल करें: x² + 2x + 3x + 6 = 0 => x(x+2) + 3(x+2) = 0 => (x+2)(x+3) = 0। हल हैं x = -2, -3।<br>अतः B = {-2, -3}।<br>चूंकि A = {2, 3} और B = {-2, -3}, इसलिए <b>A ≠ B</b>।</p></div>
+                    <div class="step"><p><b>(ii) A = {x : x शब्द 'FOLLOW' का एक अक्षर है}, B = {y : y शब्द 'WOLF' का एक अक्षर है}</b><br>A को रोस्टर रूप में: A = {F, O, L, W}।<br>B को रोस्टर रूप में: B = {W, O, L, F}।<br>चूंकि दोनों समुच्चयों में समान अवयव हैं, इसलिए <b>A = B</b>।</p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: नीचे दिए हुए समुच्चयों में से समान समुच्चयों का चयन कीजिए:</h3>
+                <p>A = {2, 4, 8, 12}, B = {1, 2, 3, 4}, C = {4, 8, 12, 14}, D = {3, 1, 4, 2},<br>E = {-1, 1}, F = {0, a}, G = {1, -1}, H = {0, 1}</p>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p>समुच्चयों की तुलना करने पर:</p></div>
+                    <div class="step"><p>B के अवयव {1, 2, 3, 4} हैं।</p></div>
+                    <div class="step"><p>D के अवयव {3, 1, 4, 2} हैं। चूंकि B और D में समान अवयव हैं, <b>B = D</b>।</p></div>
+                    <div class="step"><p>E के अवयव {-1, 1} हैं।</p></div>
+                    <div class="step"><p>G के अवयव {1, -1} हैं। चूंकि E और G में समान अवयव हैं, <b>E = G</b>।</p></div>
+                    <div class="step"><p>अन्य कोई समुच्चय समान नहीं है।</p></div>
+                 </div>
+            </div>
+
+        </section>
+        
+        <!-- Prashnavali 1.3 -->
+        <section id="prashnavali-1-3" class="mt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2">प्रश्नावली 1.3</h2>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: रिक्त स्थानों में प्रतीक ⊂ या ⊄ को भर कर सही कथन बनाइए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {2, 3, 4} ___ {1, 2, 3, 4, 5}</b> &nbsp;=>&nbsp; <b>⊂</b> (क्योंकि 2, 3, 4 दूसरे समुच्चय में हैं)</p></div>
+                    <div class="step"><p><b>(ii) {a, b, c} ___ {b, c, d}</b> &nbsp;=>&nbsp; <b>⊄</b> (क्योंकि 'a' दूसरे समुच्चय में नहीं है)</p></div>
+                    <div class="step"><p><b>(iii) {x : x आपके विद्यालय की कक्षा XI का एक विद्यार्थी है} ___ {x : x आपके विद्यालय का एक विद्यार्थी है}</b> &nbsp;=>&nbsp; <b>⊂</b> (क्योंकि कक्षा XI के सभी विद्यार्थी विद्यालय के विद्यार्थी हैं)</p></div>
+                    <div class="step"><p><b>(iv) {x : x किसी समतल में स्थित एक वृत्त है} ___ {x : x एक समान समतल में वृत्त है जिसकी त्रिज्या 1 इकाई है}</b> &nbsp;=>&nbsp; <b>⊄</b> (क्योंकि पहले समुच्चय में सभी त्रिज्याओं के वृत्त हैं, जबकि दूसरे में केवल 1 इकाई त्रिज्या वाले)</p></div>
+                    <div class="step"><p><b>(v) {x : x किसी समतल में स्थित एक त्रिभुज है} ___ {x : x किसी समतल में स्थित एक आयत है}</b> &nbsp;=>&nbsp; <b>⊄</b> (क्योंकि त्रिभुज, आयत नहीं हो सकता)</p></div>
+                    <div class="step"><p><b>(vi) {x : x किसी समतल में स्थित एक समबाहु त्रिभुज है} ___ {x : x किसी समतल में स्थित एक त्रिभुज है}</b> &nbsp;=>&nbsp; <b>⊂</b> (क्योंकि प्रत्येक समबाहु त्रिभुज एक त्रिभुज होता है)</p></div>
+                    <div class="step"><p><b>(vii) {x : x एक सम प्राकृत संख्या है} ___ {x : x एक पूर्णांक है}</b> &nbsp;=>&nbsp; <b>⊂</b> (क्योंकि प्रत्येक सम प्राकृत संख्या एक पूर्णांक होती है)</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: जाँचिए कि निम्नलिखित कथन सत्य हैं अथवा असत्य हैं:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {a, b} ⊄ {b, c, a}</b> &nbsp;=>&nbsp; <b>असत्य।</b> क्योंकि a और b दोनों दूसरे समुच्चय में मौजूद हैं, अतः {a, b} ⊂ {b, c, a}।</p></div>
+                    <div class="step"><p><b>(ii) {a, e} ⊂ {x : x अंग्रेजी वर्णमाला का एक स्वर है}</b> &nbsp;=>&nbsp; <b>सत्य।</b> क्योंकि स्वरों का समुच्चय {a, e, i, o, u} होता है और a, e इसमें शामिल हैं।</p></div>
+                    <div class="step"><p><b>(iii) {1, 2, 3} ⊂ {1, 3, 5}</b> &nbsp;=>&nbsp; <b>असत्य।</b> क्योंकि 2 पहले समुच्चय में है लेकिन दूसरे में नहीं।</p></div>
+                    <div class="step"><p><b>(iv) {a} ⊂ {a, b, c}</b> &nbsp;=>&nbsp; <b>सत्य।</b> क्योंकि 'a' दूसरे समुच्चय में है।</p></div>
+                    <div class="step"><p><b>(v) {a} ∈ {a, b, c}</b> &nbsp;=>&nbsp; <b>असत्य।</b> {a} एक समुच्चय है, जबकि {a, b, c} के अवयव a, b, c हैं, न कि समुच्चय {a}। सही कथन a ∈ {a, b, c} होगा।</p></div>
+                    <div class="step"><p><b>(vi) {x : x संख्या 6 से कम एक सम प्राकृत संख्या है} ⊂ {x : x एक प्राकृत संख्या है, जो संख्या 36 को विभाजित करती है}</b> &nbsp;=>&nbsp; <b>सत्य।</b> पहला समुच्चय है {2, 4}। 36 के भाजक {1, 2, 3, 4, 6, 9, 12, 18, 36} हैं। चूंकि 2 और 4 दोनों 36 के भाजक हैं, कथन सत्य है।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: मान लीजिए कि A = {1, 2, {3, 4}, 5}। निम्नलिखित में से कौन सा कथन सही नहीं है और क्यों?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <p class="mb-2">यहां समुच्चय A के अवयव हैं: 1, 2, {3, 4}, और 5। ध्यान दें कि {3, 4} स्वयं एक अवयव है।</p>
+                    <div class="step"><p><b>(i) {3, 4} ⊂ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> क्योंकि {3, 4} समुच्चय A का एक अवयव है, न कि उपसमुच्चय। उपसमुच्चय होने के लिए इसके अवयव (3 और 4) को A का अवयव होना चाहिए था, जो वे नहीं हैं।</p></div>
+                    <div class="step"><p><b>(ii) {3, 4} ∈ A</b> &nbsp;=>&nbsp; <b>सही है।</b> क्योंकि {3, 4} सीधे तौर पर A का एक अवयव है।</p></div>
+                    <div class="step"><p><b>(iii) {{3, 4}} ⊂ A</b> &nbsp;=>&nbsp; <b>सही है।</b> क्योंकि यह एक ऐसा समुच्चय है जिसका अवयव {3, 4} है, और वह अवयव A में भी है।</p></div>
+                    <div class="step"><p><b>(iv) 1 ∈ A</b> &nbsp;=>&nbsp; <b>सही है।</b> 1, समुच्चय A का एक अवयव है।</p></div>
+                    <div class="step"><p><b>(v) 1 ⊂ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> क्योंकि 1 एक अवयव है, समुच्चय नहीं। उपसमुच्चय का प्रतीक (⊂) दो समुच्चयों के बीच लगता है।</p></div>
+                    <div class="step"><p><b>(vi) {1, 2, 5} ⊂ A</b> &nbsp;=>&nbsp; <b>सही है।</b> क्योंकि 1, 2, और 5 तीनों A के अवयव हैं।</p></div>
+                    <div class="step"><p><b>(vii) {1, 2, 5} ∈ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> क्योंकि {1, 2, 5} एक समुच्चय है और यह A के अवयवों की सूची में नहीं है।</p></div>
+                    <div class="step"><p><b>(viii) {1, 2, 3} ⊂ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> क्योंकि 3, समुच्चय A का अवयव नहीं है। A का अवयव {3, 4} है।</p></div>
+                    <div class="step"><p><b>(ix) φ ∈ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> रिक्त समुच्चय (φ) A का उपसमुच्चय होता है, लेकिन यहां यह अवयव के रूप में सूचीबद्ध नहीं है।</p></div>
+                    <div class="step"><p><b>(x) φ ⊂ A</b> &nbsp;=>&nbsp; <b>सही है।</b> रिक्त समुच्चय प्रत्येक समुच्चय का उपसमुच्चय होता है।</p></div>
+                    <div class="step"><p><b>(xi) {φ} ⊂ A</b> &nbsp;=>&nbsp; <b>सही नहीं है।</b> क्योंकि φ, समुच्चय A का अवयव नहीं है।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: निम्नलिखित समुच्चयों के सभी उपसमुच्चय लिखिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <p class="mb-2">किसी n अवयवों वाले समुच्चय के उपसमुच्चयों की संख्या 2ⁿ होती है।</p>
+                    <div class="step"><p><b>(i) {a}</b> (n=1, उपसमुच्चय = 2¹=2)<br>उपसमुच्चय: <b>φ, {a}</b></p></div>
+                    <div class="step"><p><b>(ii) {a, b}</b> (n=2, उपसमुच्चय = 2²=4)<br>उपसमुच्चय: <b>φ, {a}, {b}, {a, b}</b></p></div>
+                    <div class="step"><p><b>(iii) {1, 2, 3}</b> (n=3, उपसमुच्चय = 2³=8)<br>उपसमुच्चय: <b>φ, {1}, {2}, {3}, {1, 2}, {1, 3}, {2, 3}, {1, 2, 3}</b></p></div>
+                    <div class="step"><p><b>(iv) φ</b> (n=0, उपसमुच्चय = 2⁰=1)<br>उपसमुच्चय: <b>φ</b></p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित को अंतराल रूप में लिखिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {x : x ∈ R, – 4 < x ≤ 6}</b><br><b>(-4, 6]</b></p></div>
+                    <div class="step"><p><b>(ii) {x : x ∈ R, – 12 < x < –10}</b><br><b>(-12, -10)</b></p></div>
+                    <div class="step"><p><b>(iii) {x : x ∈ R, 0 ≤ x < 7}</b><br><b>[0, 7)</b></p></div>
+                    <div class="step"><p><b>(iv) {x : x ∈ R, 3 ≤ x ≤ 4}</b><br><b>[3, 4]</b></p></div>
+                 </div>
+                 <div class="explanation"><h4 class="font-semibold">स्पष्टीकरण:</h4><p>छोटे कोष्ठक '()' का प्रयोग तब होता है जब अंत बिंदु शामिल नहीं होता (< या >)। बड़े कोष्ठक '[]' का प्रयोग तब होता है जब अंत बिंदु शामिल होता है (≤ या ≥)।</p></div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: निम्नलिखित अंतरालों को समुच्चय निर्माण रूप में लिखिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) (– 3, 0)</b><br><b>{x : x ∈ R, -3 < x < 0}</b></p></div>
+                    <div class="step"><p><b>(ii) [6 , 12]</b><br><b>{x : x ∈ R, 6 ≤ x ≤ 12}</b></p></div>
+                    <div class="step"><p><b>(iii) (6, 12]</b><br><b>{x : x ∈ R, 6 < x ≤ 12}</b></p></div>
+                    <div class="step"><p><b>(iv) [–23, 5)</b><br><b>{x : x ∈ R, -23 ≤ x < 5}</b></p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: निम्नलिखित में से प्रत्येक के लिए आप कौन-सा सार्वत्रिक समुच्चय प्रस्तावित करेंगे?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) समकोण त्रिभुजों का समुच्चय।</b><br>सार्वत्रिक समुच्चय (U) = {x : x किसी समतल में स्थित एक त्रिभुज है} या {x : x एक बहुभुज है}।</p></div>
+                    <div class="step"><p><b>(ii) समद्विबाहु त्रिभुजों का समुच्चय।</b><br>सार्वत्रिक समुच्चय (U) = {x : x किसी समतल में स्थित एक त्रिभुज है} या {x : x एक बहुभुज है}।</p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: समुच्चय A = {1, 3, 5}, B = {2, 4, 6} और C = {0, 2, 4, 6, 8} प्रदत्त हैं। इन तीनों समुच्चयों A, B और C के लिए निम्नलिखित में से कौन सा (से) सार्वत्रिक समुच्चय लिए जा सकते हैं?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <p class="mb-2">एक सार्वत्रिक समुच्चय में A, B, और C के सभी अवयव शामिल होने चाहिए। A, B, C के सभी अवयव हैं: 0, 1, 2, 3, 4, 5, 6, 8।</p>
+                    <div class="step"><p><b>(i) {0, 1, 2, 3, 4, 5, 6}</b> &nbsp;=>&nbsp; <b>नहीं</b>, क्योंकि इसमें 8 नहीं है जो C का अवयव है।</p></div>
+                    <div class="step"><p><b>(ii) φ</b> &nbsp;=>&nbsp; <b>नहीं</b>, क्योंकि यह रिक्त है।</p></div>
+                    <div class="step"><p><b>(iii) {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</b> &nbsp;=>&nbsp; <b>हाँ</b>, क्योंकि इसमें A, B, और C के सभी अवयव हैं।</p></div>
+                    <div class="step"><p><b>(iv) {1, 2, 3, 4, 5, 6, 7, 8}</b> &nbsp;=>&nbsp; <b>नहीं</b>, क्योंकि इसमें 0 नहीं है जो C का अवयव है।</p></div>
+                    <div class="step"><p><b>उत्तर: केवल (iii) सार्वत्रिक समुच्चय लिया जा सकता है।</b></p></div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Prashnavali 1.4 -->
+        <section id="prashnavali-1-4" class="mt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2">प्रश्नावली 1.4</h2>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में से प्रत्येक समुच्चय युग्म का सम्मिलन ज्ञात कीजिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) X = {1, 3, 5}, Y = {1, 2, 3}</b><br>X ∪ Y = {1, 2, 3, 5}</p></div>
+                    <div class="step"><p><b>(ii) A = {a, e, i, o, u}, B = {a, b, c}</b><br>A ∪ B = {a, b, c, e, i, o, u}</p></div>
+                    <div class="step"><p><b>(iii) A = {x : x एक प्राकृत संख्या है और 3 का गुणज है}, B = {x : x संख्या 6 से कम एक प्राकृत संख्या है}</b><br>A = {3, 6, 9, ...}, B = {1, 2, 3, 4, 5}<br>A ∪ B = {1, 2, 3, 4, 5, 6, 9, 12, ...} = {1, 2, 4, 5} ∪ {x : x, 3 का गुणज एक प्राकृत संख्या है}</p></div>
+                    <div class="step"><p><b>(iv) A = {x : x एक प्राकृत संख्या है और 1 < x ≤ 6}, B = {x : x एक प्राकृत संख्या है और 6 < x < 10}</b><br>A = {2, 3, 4, 5, 6}, B = {7, 8, 9}<br>A ∪ B = {2, 3, 4, 5, 6, 7, 8, 9}</p></div>
+                    <div class="step"><p><b>(v) A = {1, 2, 3}, B = φ</b><br>A ∪ B = {1, 2, 3} = A</p></div>
+                </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: मान लीजिए कि A = {a, b}, B = {a, b, c}। क्या A ⊂ B? A ∪ B ज्ञात कीजिए।</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p>हाँ, <b>A ⊂ B</b> क्योंकि A के सभी अवयव (a और b) B में भी हैं।</p></div>
+                    <div class="step"><p><b>A ∪ B</b> = {a, b} ∪ {a, b, c} = <b>{a, b, c}</b> = B</p></div>
+                    <div class="explanation"><p><b>निष्कर्ष:</b> यदि A ⊂ B, तो A ∪ B = B होता है।</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: यदि A और B दो ऐसे समुच्चय हैं कि A ⊂ B, तो A ∪ B क्या है?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p>प्रश्न 2 के निष्कर्ष के अनुसार, यदि A ⊂ B, तो A के सभी अवयव पहले से ही B में हैं। जब हम सम्मिलन (Union) करते हैं, तो हम सभी अवयवों को एक साथ लिखते हैं। इसलिए, परिणाम समुच्चय B ही होगा।</p></div>
+                    <div class="step"><p><b>A ∪ B = B</b></p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: यदि A = {1, 2, 3, 4}, B = {3, 4, 5, 6}, C = {5, 6, 7, 8} और D = {7, 8, 9, 10}, तो निम्नलिखित ज्ञात कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A ∪ B</b> = {1, 2, 3, 4, 5, 6}</p></div>
+                    <div class="step"><p><b>(ii) A ∪ C</b> = {1, 2, 3, 4, 5, 6, 7, 8}</p></div>
+                    <div class="step"><p><b>(iii) B ∪ C</b> = {3, 4, 5, 6, 7, 8}</p></div>
+                    <div class="step"><p><b>(iv) B ∪ D</b> = {3, 4, 5, 6, 7, 8, 9, 10}</p></div>
+                    <div class="step"><p><b>(v) A ∪ B ∪ C</b> = {1, 2, 3, 4, 5, 6, 7, 8}</p></div>
+                    <div class="step"><p><b>(vi) A ∪ B ∪ D</b> = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}</p></div>
+                    <div class="step"><p><b>(vii) B ∪ C ∪ D</b> = {3, 4, 5, 6, 7, 8, 9, 10}</p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: प्रश्न 1 में दिए प्रत्येक समुच्चय युग्म का सर्वनिष्ठ समुच्चय ज्ञात कीजिए।</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) X = {1, 3, 5}, Y = {1, 2, 3}</b><br>X ∩ Y = {1, 3}</p></div>
+                    <div class="step"><p><b>(ii) A = {a, e, i, o, u}, B = {a, b, c}</b><br>A ∩ B = {a}</p></div>
+                    <div class="step"><p><b>(iii) A = {3, 6, 9, ...}, B = {1, 2, 3, 4, 5}</b><br>A ∩ B = {3}</p></div>
+                    <div class="step"><p><b>(iv) A = {2, 3, 4, 5, 6}, B = {7, 8, 9}</b><br>A ∩ B = φ (कोई उभयनिष्ठ अवयव नहीं)</p></div>
+                    <div class="step"><p><b>(v) A = {1, 2, 3}, B = φ</b><br>A ∩ B = φ</p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: यदि A={3,5,7,9,11}, B={7,9,11,13}, C={11,13,15} और D={15,17}; तो निम्नलिखित ज्ञात कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A ∩ B</b> = {7, 9, 11}</p></div>
+                    <div class="step"><p><b>(ii) B ∩ C</b> = {11, 13}</p></div>
+                    <div class="step"><p><b>(iii) A ∩ C ∩ D</b> = (A ∩ C) ∩ D = {11} ∩ {15, 17} = φ</p></div>
+                    <div class="step"><p><b>(iv) A ∩ C</b> = {11}</p></div>
+                    <div class="step"><p><b>(v) B ∩ D</b> = φ</p></div>
+                    <div class="step"><p><b>(vi) A ∩ (B ∪ C)</b> = A ∩ {7, 9, 11, 13, 15} = {7, 9, 11}</p></div>
+                    <div class="step"><p><b>(vii) A ∩ D</b> = φ</p></div>
+                    <div class="step"><p><b>(viii) A ∩ (B ∪ D)</b> = A ∩ {7, 9, 11, 13, 15, 17} = {7, 9, 11}</p></div>
+                    <div class="step"><p><b>(ix) (A ∩ B) ∩ (B ∪ C)</b> = {7, 9, 11} ∩ {7, 9, 11, 13, 15} = {7, 9, 11}</p></div>
+                    <div class="step"><p><b>(x) (A ∪ D) ∩ (B ∪ C)</b> = {3, 5, 7, 9, 11, 15, 17} ∩ {7, 9, 11, 13, 15} = {7, 9, 11, 15}</p></div>
+                 </div>
+            </div>
+             
+             <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: यदि A = {x : x एक प्राकृत संख्या है}, B = {x : x एक सम प्राकृत संख्या है}, C = {x : x एक विषम प्राकृत संख्या है} और D = {x : x एक अभाज्य संख्या है}, तो निम्नलिखित ज्ञात कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A ∩ B</b> = {x : x एक प्राकृत संख्या है} ∩ {x : x एक सम प्राकृत संख्या है} = <b>{x : x एक सम प्राकृत संख्या है} = B</b></p></div>
+                    <div class="step"><p><b>(ii) A ∩ C</b> = {x : x एक प्राकृत संख्या है} ∩ {x : x एक विषम प्राकृत संख्या है} = <b>{x : x एक विषम प्राकृत संख्या है} = C</b></p></div>
+                    <div class="step"><p><b>(iii) A ∩ D</b> = {x : x एक प्राकृत संख्या है} ∩ {x : x एक अभाज्य संख्या है} = <b>{x : x एक अभाज्य संख्या है} = D</b></p></div>
+                    <div class="step"><p><b>(iv) B ∩ C</b> = {x : x एक सम प्राकृत संख्या है} ∩ {x : x एक विषम प्राकृत संख्या है} = <b>φ</b></p></div>
+                    <div class="step"><p><b>(v) B ∩ D</b> = {x : x एक सम प्राकृत संख्या है} ∩ {x : x एक अभाज्य संख्या है} = <b>{2}</b> (2 एकमात्र सम अभाज्य संख्या है)</p></div>
+                    <div class="step"><p><b>(vi) C ∩ D</b> = {x : x एक विषम प्राकृत संख्या है} ∩ {x : x एक अभाज्य संख्या है} = <b>{x : x एक विषम अभाज्य संख्या है}</b></p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: निम्नलिखित समुच्चय युग्मों में से कौन से युग्म असंयुक्त हैं?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                     <p class="mb-2">दो समुच्चय असंयुक्त (Disjoint) होते हैं यदि उनका सर्वनिष्ठ (Intersection) रिक्त हो (A ∩ B = φ)।</p>
+                    <div class="step"><p><b>(i) {1, 2, 3, 4} तथा {x : x एक प्राकृत संख्या है और 4 ≤ x ≤ 6}</b><br>दूसरा समुच्चय है {4, 5, 6}।<br>सर्वनिष्ठ: {1, 2, 3, 4} ∩ {4, 5, 6} = {4}। यह रिक्त नहीं है, अतः <b>असंयुक्त नहीं है।</b></p></div>
+                    <div class="step"><p><b>(ii) {a, e, i, o, u} तथा {c, d, e, f}</b><br>सर्वनिष्ठ: {e}। यह रिक्त नहीं है, अतः <b>असंयुक्त नहीं है।</b></p></div>
+                    <div class="step"><p><b>(iii) {x : x एक सम पूर्णांक है} और {x : x एक विषम पूर्णांक है}</b><br>सम पूर्णांक = {..., -2, 0, 2, ...}। विषम पूर्णांक = {..., -3, -1, 1, 3, ...}।<br>इनमें कोई उभयनिष्ठ अवयव नहीं है। सर्वनिष्ठ φ है। अतः <b>यह युग्म असंयुक्त है।</b></p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: यदि A={3,6,9,12,15,18,21}, B={4,8,12,16,20}, C={2,4,6,8,10,12,14,16}, D={5,10,15,20}; तो निम्नलिखित को ज्ञात कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                     <p class="mb-2">A – B का अर्थ है A के वे अवयव जो B में नहीं हैं।</p>
+                    <div class="step"><p><b>(i) A – B</b> = {3, 6, 9, 15, 18, 21}</p></div>
+                    <div class="step"><p><b>(ii) A – C</b> = {3, 9, 15, 18, 21}</p></div>
+                    <div class="step"><p><b>(iii) A – D</b> = {3, 6, 9, 12, 18, 21}</p></div>
+                    <div class="step"><p><b>(iv) B – A</b> = {4, 8, 16, 20}</p></div>
+                    <div class="step"><p><b>(v) C – A</b> = {2, 4, 8, 10, 14, 16}</p></div>
+                    <div class="step"><p><b>(vi) D – A</b> = {5, 10, 20}</p></div>
+                    <div class="step"><p><b>(vii) B – C</b> = {20}</p></div>
+                    <div class="step"><p><b>(viii) B – D</b> = {4, 8, 12, 16}</p></div>
+                    <div class="step"><p><b>(ix) C – B</b> = {2, 6, 10, 14}</p></div>
+                    <div class="step"><p><b>(x) D – B</b> = {5, 10, 15}</p></div>
+                    <div class="step"><p><b>(xi) C – D</b> = {2, 4, 6, 8, 12, 14, 16}</p></div>
+                    <div class="step"><p><b>(xii) D – C</b> = {5, 15, 20}</p></div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: यदि X = {a, b, c, d} और Y = {f, b, d, g}, तो निम्नलिखित को ज्ञात कीजिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) X – Y</b> = {a, c}</p></div>
+                    <div class="step"><p><b>(ii) Y – X</b> = {f, g}</p></div>
+                    <div class="step"><p><b>(iii) X ∩ Y</b> = {b, d}</p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: यदि R वास्तविक संख्याओं और Q परिमेय संख्याओं के समुच्चय हैं, तो R – Q क्या होगा?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p>वास्तविक संख्याओं (R) का समुच्चय परिमेय (Q) और अपरिमेय (T) संख्याओं से मिलकर बनता है। R = Q ∪ T।</p></div>
+                    <div class="step"><p>R – Q का अर्थ है वास्तविक संख्याओं के समुच्चय में से परिमेय संख्याओं को हटा देना।</p></div>
+                    <div class="step"><p>अतः, R – Q = T = <b>अपरिमेय संख्याओं का समुच्चय।</b></p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 12: बताइए कि निम्नलिखित कथनों में से प्रत्येक सत्य है या असत्य? अपने उत्तर का औचित्य भी बताइए।</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) {2, 3, 4, 5} तथा {3, 6} असंयुक्त समुच्चय हैं।</b><br><b>असत्य।</b> क्योंकि दोनों समुच्चयों में अवयव '3' उभयनिष्ठ है। {2, 3, 4, 5} ∩ {3, 6} = {3}।</p></div>
+                    <div class="step"><p><b>(ii) {a, e, i, o, u} तथा {a, b, c, d} असंयुक्त समुच्चय हैं।</b><br><b>असत्य।</b> क्योंकि दोनों समुच्चयों में अवयव 'a' उभयनिष्ठ है।</p></div>
+                    <div class="step"><p><b>(iii) {2, 6, 10, 14} तथा {3, 7, 11, 15} असंयुक्त समुच्चय हैं।</b><br><b>सत्य।</b> क्योंकि दोनों समुच्चयों में कोई भी अवयव उभयनिष्ठ नहीं है।</p></div>
+                    <div class="step"><p><b>(iv) {2, 6, 10} तथा {3, 7, 11} असंयुक्त समुच्चय हैं।</b><br><b>सत्य।</b> क्योंकि दोनों समुच्चयों में कोई भी अवयव उभयनिष्ठ नहीं है।</p></div>
+                 </div>
+            </div>
+
+        </section>
+
+        <!-- Prashnavali 1.5 -->
+        <section id="prashnavali-1-5" class="mt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-blue-600 pb-2">प्रश्नावली 1.5</h2>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: मान लीजिए कि U={1,2,3,4,5,6,7,8,9}, A={1,2,3,4}, B={2,4,6,8} और C={3,4,5,6}, तो निम्नलिखित ज्ञात कीजिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                     <p class="mb-2">A' (A का पूरक) का अर्थ है U के वे अवयव जो A में नहीं हैं।</p>
+                    <div class="step"><p><b>(i) A'</b> = U – A = {5, 6, 7, 8, 9}</p></div>
+                    <div class="step"><p><b>(ii) B'</b> = U – B = {1, 3, 5, 7, 9}</p></div>
+                    <div class="step"><p><b>(iii) (A ∪ C)'</b> <br> पहले A ∪ C = {1, 2, 3, 4, 5, 6} <br> फिर (A ∪ C)' = U – (A ∪ C) = {7, 8, 9}</p></div>
+                    <div class="step"><p><b>(iv) (A ∪ B)'</b> <br> पहले A ∪ B = {1, 2, 3, 4, 6, 8} <br> फिर (A ∪ B)' = U – (A ∪ B) = {5, 7, 9}</p></div>
+                    <div class="step"><p><b>(v) (A')'</b> = A = {1, 2, 3, 4}</p></div>
+                    <div class="step"><p><b>(vi) (B – C)'</b> <br> पहले B – C = {2, 8} <br> फिर (B – C)' = U – {2, 8} = {1, 3, 4, 5, 6, 7, 9}</p></div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: यदि U = {a, b, c, d, e, f, g, h}, तो निम्नलिखित समुच्चयों के पूरक ज्ञात कीजिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A = {a, b, c}</b><br>A' = {d, e, f, g, h}</p></div>
+                    <div class="step"><p><b>(ii) B = {d, e, f, g}</b><br>B' = {a, b, c, h}</p></div>
+                    <div class="step"><p><b>(iii) C = {a, c, e, g}</b><br>C' = {b, d, f, h}</p></div>
+                    <div class="step"><p><b>(iv) D = {f, g, h, a}</b><br>D' = {b, c, d, e}</p></div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: प्राकृत संख्याओं के समुच्चय को सार्वत्रिक समुच्चय मानते हुए, निम्नलिखित समुच्चयों के पूरक लिखिए:</h3>
+                <div>
+                     <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                     <p class="mb-2">यहाँ U = N = {1, 2, 3, 4, ...}</p>
+                    <div class="step"><p><b>(i) {x : x एक सम प्राकृत संख्या है}'</b> = {x : x एक विषम प्राकृत संख्या है}</p></div>
+                    <div class="step"><p><b>(ii) {x : x एक विषम प्राकृत संख्या है}'</b> = {x : x एक सम प्राकृत संख्या है}</p></div>
+                    <div class="step"><p><b>(iii) {x : x संख्या 3 का एक धन गुणज है}'</b> = {x : x ∈ N और x, 3 का गुणज नहीं है}</p></div>
+                    <div class="step"><p><b>(iv) {x : x एक अभाज्य संख्या है}'</b> = {x : x एक भाज्य प्राकृत संख्या है और x=1}</p></div>
+                    <div class="step"><p><b>(v) {x : x, 3 और 5 से विभाजित होने वाली एक संख्या है}'</b> = {x : x ∈ N और x, 15 का गुणज नहीं है}</p></div>
+                    <div class="step"><p><b>(vi) {x : x एक पूर्ण वर्ग संख्या है}'</b> = {x : x ∈ N और x एक पूर्ण वर्ग नहीं है}</p></div>
+                    <div class="step"><p><b>(vii) {x : x एक पूर्ण घन संख्या है}'</b> = {x : x ∈ N और x एक पूर्ण घन नहीं है}</p></div>
+                    <div class="step"><p><b>(viii) {x : x + 5 = 8}'</b> = {x : x = 3}' = {x : x ∈ N और x ≠ 3}</p></div>
+                    <div class="step"><p><b>(ix) {x : 2x + 5 = 9}'</b> = {x : 2x = 4 => x = 2}' = {x : x ∈ N और x ≠ 2}</p></div>
+                    <div class="step"><p><b>(x) {x : x ≥ 7}'</b> = {x : x ∈ N और x < 7} = {1, 2, 3, 4, 5, 6}</p></div>
+                    <div class="step"><p><b>(xi) {x : x ∈ N और 2x + 1 > 10}'</b> = {x : x ∈ N और 2x > 9 => x > 4.5}' = {x : x ∈ N और x ≤ 4.5} = {1, 2, 3, 4}</p></div>
+                </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: यदि U={1,2,3,4,5,6,7,8,9}, A={2,4,6,8} और B={2,3,5,7}, तो सत्यापित कीजिए कि:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <p class="mb-2">A = {2, 4, 6, 8} => A' = {1, 3, 5, 7, 9}<br>B = {2, 3, 5, 7} => B' = {1, 4, 6, 8, 9}</p>
+                    <div class="step">
+                        <p><b>(i) (A ∪ B)' = A' ∩ B'</b></p>
+                        <p>L.H.S: A ∪ B = {2, 3, 4, 5, 6, 7, 8} => (A ∪ B)' = {1, 9}</p>
+                        <p>R.H.S: A' ∩ B' = {1, 3, 5, 7, 9} ∩ {1, 4, 6, 8, 9} = {1, 9}</p>
+                        <p><b>चूंकि L.H.S = R.H.S, यह सत्यापित हुआ।</b></p>
+                    </div>
+                    <div class="step">
+                        <p><b>(ii) (A ∩ B)' = A' ∪ B'</b></p>
+                        <p>L.H.S: A ∩ B = {2} => (A ∩ B)' = {1, 3, 4, 5, 6, 7, 8, 9}</p>
+                        <p>R.H.S: A' ∪ B' = {1, 3, 5, 7, 9} ∪ {1, 4, 6, 8, 9} = {1, 3, 4, 5, 6, 7, 8, 9}</p>
+                        <p><b>चूंकि L.H.S = R.H.S, यह सत्यापित हुआ।</b></p>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित में से प्रत्येक के लिए उपयुक्त वेन आरेख खींचिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) (A ∪ B)'</b><br>यह वेन आरेख में वह क्षेत्र है जो सार्वत्रिक समुच्चय (आयत) के अंदर है, लेकिन A और B दोनों वृत्तों के बाहर है।</p>
+                        [attachment_0](attachment)
+                    </div>
+                     <div class="step">
+                        <p><b>(ii) A' ∩ B'</b><br>यह वह क्षेत्र है जो A के बाहर और B के बाहर दोनों जगह है। यह डी मॉर्गन के नियम के अनुसार (A ∪ B)' के समान ही क्षेत्र है।</p>
+                    </div>
+                     <div class="step">
+                        <p><b>(iii) (A ∩ B)'</b><br>यह सार्वत्रिक समुच्चय का पूरा क्षेत्र है, सिवाय उस हिस्से के जहां A और B एक दूसरे को काटते हैं (सर्वनिष्ठ क्षेत्र)।</p>
+                        [attachment_1](attachment)
+                    </div>
+                     <div class="step">
+                        <p><b>(iv) A' ∪ B'</b><br>यह वह क्षेत्र है जो या तो A के बाहर है या B के बाहर है (या दोनों)। यह डी मॉर्गन के नियम के अनुसार (A ∩ B)' के समान ही क्षेत्र है।</p>
+                    </div>
+                 </div>
+            </div>
+            
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: मान लीजिए कि किसी समतल में स्थित सभी त्रिभुजों का समुच्चय सार्वत्रिक समुच्चय U है। यदि A उन सभी त्रिभुजों का समुच्चय है जिनमें कम से कम एक कोण 60° से भिन्न है, तो A' क्या है?</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p>समुच्चय A में वे सभी त्रिभुज हैं जिनका कम से कम एक कोण 60° का नहीं है।</p></div>
+                    <div class="step"><p>A' (A का पूरक) में वे त्रिभुज होंगे जो A में नहीं हैं। इसका मतलब है कि A' में वे त्रिभुज होंगे जिनका कोई भी कोण 60° से भिन्न नहीं है।</p></div>
+                    <div class="step"><p>यदि किसी त्रिभुज का कोई भी कोण 60° से भिन्न नहीं है, तो इसका मतलब है कि उसके सभी कोण 60° के हैं।</p></div>
+                    <div class="step"><p>जिस त्रिभुज के सभी कोण 60° के होते हैं, वह समबाहु त्रिभुज कहलाता है।</p></div>
+                    <div class="step"><p>अतः, <b>A' सभी समबाहु त्रिभुजों का समुच्चय है।</b></p></div>
+                 </div>
+            </div>
+
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: निम्नलिखित कथनों को सत्य बनाने के लिए रिक्त स्थानों को भरिए:</h3>
+                 <div>
+                    <h4 class="font-semibold text-lg mb-2 text-blue-700">हल:</h4>
+                    <div class="step"><p><b>(i) A ∪ A' = ___</b> &nbsp;=>&nbsp; <b>U</b> (पूरक नियम)</p></div>
+                    <div class="step"><p><b>(ii) φ' ∩ A = ___</b> &nbsp;=>&nbsp; U ∩ A = <b>A</b> (क्योंकि φ' = U)</p></div>
+                    <div class="step"><p><b>(iii) A ∩ A' = ___</b> &nbsp;=>&nbsp; <b>φ</b> (पूरक नियम)</p></div>
+                    <div class="step"><p><b>(iv) U' ∩ A = ___</b> &nbsp;=>&nbsp; φ ∩ A = <b>φ</b> (क्योंकि U' = φ)</p></div>
+                 </div>
+            </div>
+
+        </section>
+    </div>
+
+</body>
+</html>
+
