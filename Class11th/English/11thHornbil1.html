@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Portrait of a Lady - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.0rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>The Portrait of a Lady</h1>
+            <p>NCERT Class 11 English - Hornbill</p>
+            <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Understanding the Text</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The three phases of the author's relationship with his grandmother before he left the country to study abroad.</div>
+                <div class="answer">
+                    The three phases were:<br>
+                    1. Childhood in the village: They were close companions. She woke him up, got him ready for school, and accompanied him to the temple school.<br>
+                    2. City life: When they moved to the city, their relationship changed. He went to an English school by bus, and she could no longer accompany him or help with his studies.<br>
+                    3. University years: When he went to university, the common link of their friendship was snapped. She accepted her seclusion with resignation and spent most of her time spinning and praying.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Three reasons why the author's grandmother was disturbed when he started going to the city school.</div>
+                <div class="answer">
+                    The grandmother was disturbed because:<br>
+                    1. There was no teaching about God and scriptures in the English school.<br>
+                    2. She could not help him with his lessons as they involved English and Western science.<br>
+                    3. She was unhappy when music lessons were introduced, as she considered music to be associated with harlots and beggars, not meant for gentlefolk.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Three ways in which the author's grandmother spent her days after he grew up.</div>
+                <div class="answer">
+                    After the author grew up, his grandmother:<br>
+                    1. Spent most of her time at her spinning wheel, spinning and reciting prayers from sunrise to sunset.<br>
+                    2. Took a break in the afternoon to feed sparrows, which was the happiest half-hour of her day.<br>
+                    3. Rarely talked to anyone and accepted her seclusion with resignation.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. The odd way in which the author's grandmother behaved just before she died.</div>
+                <div class="answer">
+                    The evening before she died, instead of praying as she normally did, she collected the women of the neighborhood, got an old drum, and started singing. For several hours, she thumped the sagging skins of the dilapidated drum and sang of the home-coming of warriors. This was unusual as she had never missed her prayers before.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. The way in which the sparrows expressed their sorrow when the author's grandmother died.</div>
+                <div class="answer">
+                    When the grandmother died, thousands of sparrows sat scattered on the floor in the verandah and her room, right up to where she lay dead. There was no chirruping. They took no notice of the bread crumbs offered to them by the author's mother. When the grandmother's corpse was carried off, they flew away quietly, expressing their sorrow through their silent mourning.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talking about the Text</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The author's grandmother was a religious person. What are the different ways in which we come to know this?</div>
+                <div class="answer">
+                    We know the grandmother was religious through:<br>
+                    1. Her constant prayer: She was always telling the beads of her rosary and her lips constantly moved in inaudible prayer.<br>
+                    2. Morning prayers: She said her morning prayer in a monotonous sing-song while bathing and dressing the author.<br>
+                    3. Reading scriptures: She sat inside the temple reading scriptures while the author learned at school.<br>
+                    4. Devotion: Even when she came to see the author off at the station, her mind was lost in prayer.<br>
+                    5. Final moments: She spent her last moments praying and telling her beads.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Describe the changing relationship between the author and his grandmother. Did their feelings for each other change?</div>
+                <div class="answer">
+                    The relationship between the author and his grandmother evolved through different phases:<br>
+                    1. Childhood: They were very close companions in the village.<br>
+                    2. City life: Their interaction decreased as he attended an English school and she couldn't relate to his studies.<br>
+                    3. University: The common link of friendship snapped as he got his own room.<br>
+                    Despite these changes, their underlying love and respect for each other remained constant. This is evident when she came to see him off at the station without showing emotion but silently kissed his forehead, and when he cherished that moist imprint. Their feelings didn't change, only the expression of them did.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Would you agree that the author's grandmother was a person strong in character? If yes, give instances that show this.</div>
+                <div class="answer">
+                    Yes, the grandmother was definitely a person of strong character. This is shown through:<br>
+                    1. Her acceptance of change: When the author moved to the city school and later university, she accepted her seclusion with resignation without complaint.<br>
+                    2. Her convictions: She held strong beliefs about what was appropriate (like her disapproval of music lessons) and didn't compromise them.<br>
+                    3. Her independence: She developed her own routines of spinning and feeding sparrows without depending on others for company.<br>
+                    4. Her dignified farewell: When the author left for abroad, she didn't show emotion but silently kissed his forehead.<br>
+                    5. Her acceptance of death: She calmly accepted that her end was near and spent her last moments in prayer.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Have you known someone like the author's grandmother? Do you feel the same sense of loss with regard to someone whom you have loved and lost?</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own experiences. Example answer:] Yes, I had a grandmother who was very similar - deeply religious, always praying, and very affectionate. When she passed away, I felt a profound sense of loss similar to what the author describes. Her absence created a void that couldn't be filled, and I still cherish the memories of the time we spent together.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Thinking about Language</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Which language do you think the author and his grandmother used while talking to each other?</div>
+                <div class="answer">
+                    Based on the context of the story, the author and his grandmother likely communicated in their mother tongue or regional language. Since the grandmother was not familiar with English (as evidenced by her inability to help with English lessons), and the story is set in India, they probably spoke in their native language, which could be Hindi or another regional Indian language.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Which language do you use to talk to elderly relatives in your family?</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own experiences. Example answer:] I use a mix of Hindi and English when talking to my elderly relatives. While they understand some English, they are more comfortable communicating in Hindi, which is our mother tongue.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. How would you say 'a dilapidated drum' in your language?</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own language. Example answer in Hindi:] In Hindi, 'a dilapidated drum' would be "एक जीर्ण-शीर्ण ढोल" (Ek jeern-sheern dhol).
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Can you think of a song or a poem in your language that talks of homecoming?</div>
+                <div class="answer">
+                    [This is a personal question. Students should answer based on their own language. Example answer in Hindi:] Yes, there is a famous Hindi song "Ghar aaja pardesi" from the movie Dilwale Dulhania Le Jayenge that talks about homecoming. There are also many folk songs in various Indian languages that celebrate the return of loved ones.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-font"></i> Working with Words</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> I. Notice the following uses of the word 'tell' in the text.</div>
+                <div class="answer">
+                    <strong>1. Her fingers were busy telling the beads of her rosary.</strong> - Meaning: count while reciting<br>
+                    <strong>2. I would tell her English words and little things of Western science and learning.</strong> - Meaning: give information to somebody<br>
+                    <strong>3. At her age one could never tell.</strong> - Meaning: be sure<br>
+                    <strong>4. She told us that her end was near.</strong> - Meaning: make something known to someone in spoken or written words
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> II. Notice the different senses of the word 'take'.</div>
+                <div class="answer">
+                    <strong>1. to take to something:</strong> to begin to do something as a habit<br>
+                    Example from text: "There were no dogs in the streets and she <strong>took to</strong> feeding sparrows in the courtyard of our city house."<br><br>
+                    <strong>2. to take ill:</strong> to suddenly become ill<br>
+                    Example from text: "The next morning she was <strong>taken ill</strong>."
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> III. The word 'hobble' means to walk with difficulty because the legs and feet are in bad condition. Tick the words in the box below that also refer to a manner of walking.</div>
+                <div class="answer">
+                    The words that refer to a manner of walking are:<br>
+                    - shuffle<br>
+                    - stride<br>
+                    - waddle<br>
+                    - swagger<br>
+                    - trudge<br>
+                    - slog
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-shapes"></i> Noticing Form</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Notice the form of the verbs italicised in these sentences.</div>
+                <div class="answer">
+                    These sentences use the <strong>past perfect form</strong> of verbs, which is used when we recount things in the distant past. The past perfect is formed with "had" + past participle.<br><br>
+                    Examples from the text:<br>
+                    1. My grandmother was an old woman. She <strong>had been</strong> old and wrinkled for the twenty years that I <strong>had known</strong> her. People said that she <strong>had once been</strong> young and pretty and <strong>had</strong> even <strong>had</strong> a husband...<br>
+                    2. When we both <strong>had finished</strong> we would walk back together.<br>
+                    3. When I came back she would ask me what the teacher <strong>had taught</strong> me.<br>
+                    4. It was the first time since I <strong>had known</strong> her that she did not pray.<br>
+                    5. The sun was setting and <strong>had lit</strong> her room and verandah with a golden light.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Things to Do</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Talk with your family members about elderly people who you have been intimately connected with and who are not there with you now. Write a short description of someone you liked a lot.</div>
+                <div class="answer">
+                    [This is a personal writing task. Students should write based on their own experiences. Example answer:]<br><br>
+                    My maternal grandmother was a remarkable woman whom I deeply admired. She had a gentle demeanor and a warm smile that could light up any room. Despite facing many hardships in her life, she never lost her positive outlook. She had a small garden where she grew vegetables and flowers, and she would often tell me stories while we worked in the garden together. Her hands, though wrinkled with age, were always busy - either knitting sweaters for the family or preparing delicious meals. She had a special way of making everyone feel loved and valued. Even though she passed away five years ago, her teachings about kindness, patience, and the importance of family continue to guide me. I miss her dearly, especially her comforting presence and the wisdom she shared so freely.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-image"></i> A Photograph - Think It Out</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. What does the word 'cardboard' denote in the poem? Why has this word been used?</div>
+                <div class="answer">
+                    The word 'cardboard' refers to the photograph mount or the stiff backing on which the photograph is pasted. The poet uses this word to emphasize how the photograph, though physically preserved, represents a moment that is long gone and cannot be brought back.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What has the camera captured?</div>
+                <div class="answer">
+                    The camera has captured a happy moment from the poet's mother's childhood - a seaside holiday with her two girl cousins. The three of them are holding hands and smiling at the uncle who is taking their photograph.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. What has not changed over the years? Does this suggest something to you?</div>
+                <div class="answer">
+                    The sea has not changed over the years. This suggests the permanence of nature in contrast to the transient nature of human life. While human beings grow old and die, nature remains largely unchanged.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. The poet's mother laughed at the snapshot. What did this laugh indicate?</div>
+                <div class="answer">
+                    The mother's laugh indicated her nostalgic recollection of a happy moment from her childhood. It shows how she cherished that memory but also recognized how much time had passed since then.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. What is the meaning of the line "Both wry with the laboured ease of loss."</div>
+                <div class="answer">
+                    This line means that both the mother's past (the sea holiday) and the poet's present (her mother's laughter) are connected by the experience of loss. The mother has lost her childhood, and the poet has lost her mother. The phrase "laboured ease" suggests that although they try to accept these losses with apparent ease, it actually requires effort.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 6. What does "this circumstance" refer to?</div>
+                <div class="answer">
+                    "This circumstance" refers to the poet's present situation where her mother has been dead for nearly as many years as the girl in the photograph (the mother) had lived. It highlights the irony and pain of this timing.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 7. The three stanzas depict three different phases. What are they?</div>
+                <div class="answer">
+                    The three phases are:<br>
+                    1. The mother's childhood: Shown through the photograph of the seaside holiday with her cousins.<br>
+                    2. The mother's adulthood: When she would look at the photograph and laugh nostalgically.<br>
+                    3. The poet's present: After her mother's death, reflecting on the photograph and the passage of time.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Revolting</td>
+                            <td>Causing intense disgust</td>
+                        </tr>
+                        <tr>
+                            <td>Serenity</td>
+                            <td>The state of being calm, peaceful, and untroubled</td>
+                        </tr>
+                        <tr>
+                            <td>Seclusion</td>
+                            <td>The state of being private and away from other people</td>
+                        </tr>
+                        <tr>
+                            <td>Resignation</td>
+                            <td>Acceptance of something undesirable but inevitable</td>
+                        </tr>
+                        <tr>
+                            <td>Veritable</td>
+                            <td>Used as an intensifier, often to qualify a metaphor</td>
+                        </tr>
+                        <tr>
+                            <td>Bedlam</td>
+                            <td>A scene of uproar and confusion</td>
+                        </tr>
+                        <tr>
+                            <td>Chirrupings</td>
+                            <td>Short, high-pitched sounds made by small birds</td>
+                        </tr>
+                        <tr>
+                            <td>Frivolous</td>
+                            <td>Not having any serious purpose or value</td>
+                        </tr>
+                        <tr>
+                            <td>Rebukes</td>
+                            <td>Expressions of disapproval or criticism</td>
+                        </tr>
+                        <tr>
+                            <td>Dilapidated</td>
+                            <td>In a state of disrepair or ruin as a result of age or neglect</td>
+                        </tr>
+                        <tr>
+                            <td>Paddling</td>
+                            <td>Walking with bare feet in shallow water</td>
+                        </tr>
+                        <tr>
+                            <td>Transient</td>
+                            <td>Lasting only for a short time; impermanent</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Portrait of a Lady" and the poem "A Photograph" from the NCERT Class 11 English textbook "Hornbill". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 11 English Solutions - Hornbill</p>
+            <p>The Portrait of a Lady by Khushwant Singh | A Photograph by Shirley Toulson</p>
+        </div>
+    </div>
+
+    <script>
+        // Text selection/copy protection
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        document.addEventListener('selectstart', event => event.preventDefault());
+    </script>
+</body>
+</html>
