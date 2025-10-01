@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 गणित - अध्याय 1: संबंध एवं फलन (पूर्ण हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 0.75rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .explanation {
+            background-color: #f9fafb;
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        .no-select {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .fraction span {
+            display: block;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding: 0 5px;
+        }
+        .fraction .denominator {
+            padding: 0 5px;
+        }
+        .math-expression {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8 no-select">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 1: संबंध एवं फलन</h1>
+            <p class="mt-2 text-lg">कक्षा 12 गणित - पूर्ण हल</p>
+        </div>
+
+        <!-- Prashnavali 1.1 -->
+        <section id="prashnavali-1-1">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">प्रश्नावली 1.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निर्धारित कीजिए कि क्या निम्नलिखित संबंधों में से प्रत्येक स्वतुल्य, सममित और संक्रामक हैं:</h3>
+                <p class="mb-4">(i) समुच्चय A = {1, 2, 3, ..., 13, 14} में संबंध R, इस प्रकार परिभाषित है कि R = {(x, y) : 3x - y = 0}</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) R = {(x, y) : 3x - y = 0}</b></p>
+                        <p>R = {(1, 3), (2, 6), (3, 9), (4, 12)}</p>
+                        <p><b>स्वतुल्यता:</b> (1,1) ∉ R क्योंकि 3×1 - 1 = 2 ≠ 0। अतः R स्वतुल्य नहीं है।</p>
+                        <p><b>सममितता:</b> (1,3) ∈ R लेकिन (3,1) ∉ R क्योंकि 3×3 - 1 = 8 ≠ 0। अतः R सममित नहीं है।</p>
+                        <p><b>संक्रामकता:</b> (1,3) ∈ R और (3,9) ∈ R लेकिन (1,9) ∉ R क्योंकि 3×1 - 9 = -6 ≠ 0। अतः R संक्रामक नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सिद्ध कीजिए कि वास्तविक संख्याओं के समुच्चय R में R = {(a, b) : a ≤ b²}, द्वारा परिभाषित संबंध R, न तो स्वतुल्य है, न सममित है और न ही संक्रामक है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> (1,1) के लिए, 1 ≤ 1² ⇒ 1 ≤ 1 (सत्य)। लेकिन (1/2, 1/2) के लिए, 1/2 ≤ (1/2)² ⇒ 1/2 ≤ 1/4 (असत्य)। अतः R स्वतुल्य नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) ∈ R क्योंकि 1 ≤ 4, लेकिन (2,1) ∉ R क्योंकि 2 ≤ 1² ⇒ 2 ≤ 1 (असत्य)। अतः R सममित नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> (2,-1) ∈ R क्योंकि 2 ≤ 1, और (-1,-2) ∈ R क्योंकि -1 ≤ 4, लेकिन (2,-2) ∉ R क्योंकि 2 ≤ 4 (सत्य) परंतु यह उदाहरण गलत है। बेहतर उदाहरण: (5,3) ∈ R (5≤9) और (3,2) ∈ R (3≤4) लेकिन (5,2) ∉ R (5≤4 असत्य)। अतः R संक्रामक नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: जाँच कीजिए कि क्या समुच्चय {1, 2, 3, 4, 5, 6} में R = {(a, b) : b = a + 1} द्वारा परिभाषित संबंध R स्वतुल्य, सममित या संक्रामक है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>R = {(1,2), (2,3), (3,4), (4,5), (5,6)}</p>
+                    </div>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> किसी भी a के लिए (a,a) ∉ R क्योंकि a ≠ a+1। अतः R स्वतुल्य नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) ∈ R लेकिन (2,1) ∉ R क्योंकि 1 ≠ 2+1। अतः R सममित नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> (1,2) ∈ R और (2,3) ∈ R लेकिन (1,3) ∉ R क्योंकि 3 ≠ 1+1। अतः R संक्रामक नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: सिद्ध कीजिए कि R में R = {(a, b) : a ≤ b}, द्वारा परिभाषित संबंध R स्वतुल्य और संक्रामक है किन्तु सममित नहीं है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> किसी भी a ∈ R के लिए, a ≤ a सत्य है। अतः (a,a) ∈ R। इस प्रकार R स्वतुल्य है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) ∈ R क्योंकि 1 ≤ 2, लेकिन (2,1) ∉ R क्योंकि 2 ≤ 1 असत्य है। अतः R सममित नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> माना (a,b) ∈ R और (b,c) ∈ R, तो a ≤ b और b ≤ c ⇒ a ≤ c ⇒ (a,c) ∈ R। अतः R संक्रामक है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: जाँच कीजिए कि क्या R में R = {(a, b) : a ≤ b³} द्वारा परिभाषित संबंध R स्वतुल्य, सममित अथवा संक्रामक हैं।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> (1,1) के लिए, 1 ≤ 1³ ⇒ 1 ≤ 1 (सत्य)। लेकिन (1/2, 1/2) के लिए, 1/2 ≤ (1/2)³ ⇒ 1/2 ≤ 1/8 (असत्य)। अतः R स्वतुल्य नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) ∈ R क्योंकि 1 ≤ 8, लेकिन (2,1) ∉ R क्योंकि 2 ≤ 1³ ⇒ 2 ≤ 1 (असत्य)। अतः R सममित नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> (3,2) ∈ R क्योंकि 3 ≤ 8, और (2,1) ∉ R (पहले से), लेकिन बेहतर उदाहरण: (100,5) ∈ R (100≤125) और (5,2) ∈ R (5≤8) लेकिन (100,2) ∉ R (100≤8 असत्य)। अतः R संक्रामक नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: सिद्ध कीजिए कि समुच्चय {1, 2, 3} में R = {(1, 2), (2, 1)} द्वारा प्रदत्त संबंध R सममित है किन्तु न तो स्वतुल्य है और न संक्रामक है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> (1,1) ∉ R, (2,2) ∉ R, (3,3) ∉ R। अतः R स्वतुल्य नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) ∈ R और (2,1) ∈ R। अतः R सममित है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> (1,2) ∈ R और (2,1) ∈ R लेकिन (1,1) ∉ R। अतः R संक्रामक नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: सिद्ध कीजिए कि किसी समतल में स्थित बिंदुओं के समुच्चय में, R = {(P, Q) : बिंदु P की मूल बिंदु से दूरी, बिंदु Q की मूल बिंदु से दूरी के समान है} द्वारा प्रदत्त संबंध R एक तुल्यता संबंध है। पुनः सिद्ध कीजिए कि बिंदु P ≠ (0, 0) से संबंधित सभी बिंदुओं का समुच्चय P से होकर जाने वाले एक ऐसे वृत्त को निरूपित करता है, जिसका केंद्र मूलबिंदु पर है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> किसी भी बिंदु P के लिए, P से मूल बिंदु की दूरी स्वयं के बराबर है। अतः (P,P) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि (P,Q) ∈ R, तो P की मूल बिंदु से दूरी = Q की मूल बिंदु से दूरी ⇒ Q की दूरी = P की दूरी ⇒ (Q,P) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि (P,Q) ∈ R और (Q,R) ∈ R, तो P की दूरी = Q की दूरी और Q की दूरी = R की दूरी ⇒ P की दूरी = R की दूरी ⇒ (P,R) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p>अतः R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>P ≠ (0,0) से संबंधित सभी बिंदु Q इस प्रकार हैं कि Q की मूल बिंदु से दूरी = P की मूल बिंदु से दूरी (मान लीजिए r)। ये सभी बिंदु मूल बिंदु पर केंद्र और त्रिज्या r वाले वृत्त पर स्थित हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: सिद्ध कीजिए कि A = {1, 2, 3, 4, 5} में, R = {(a, b) : |a - b| सम है} द्वारा प्रदत्त संबंध R एक तुल्यता संबंध है। प्रमाणित कीजिए कि {1, 3, 5} के सभी अवयव एक-दूसरे से संबंधित हैं और समुच्चय {2, 4} के सभी अवयव एक-दूसरे से संबंधित हैं, परंतु {1, 3, 5} का कोई भी अवयव {2, 4} के किसी अवयव से संबंधित नहीं है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> प्रत्येक a ∈ A के लिए, |a - a| = 0 (सम) ⇒ (a,a) ∈ R। अतः R स्वतुल्य है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि (a,b) ∈ R ⇒ |a - b| सम है ⇒ |b - a| सम है ⇒ (b,a) ∈ R। अतः R सममित है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि (a,b) ∈ R और (b,c) ∈ R ⇒ |a - b| सम और |b - c| सम है।</p>
+                        <p>|a - c| = |(a - b) + (b - c)|</p>
+                        <p>दो सम संख्याओं का योग सम होता है ⇒ |a - c| सम है ⇒ (a,c) ∈ R। अतः R संक्रामक है।</p>
+                    </div>
+                    <div class="step">
+                        <p>इस प्रकार R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>{1, 3, 5} के अवयव: |1-3| = 2 (सम), |1-5| = 4 (सम), |3-5| = 2 (सम)। अतः सभी एक-दूसरे से संबंधित हैं।</p>
+                    </div>
+                    <div class="step">
+                        <p>{2, 4} के अवयव: |2-4| = 2 (सम)। अतः दोनों एक-दूसरे से संबंधित हैं।</p>
+                    </div>
+                    <div class="step">
+                        <p>{1, 3, 5} और {2, 4} के बीच: |1-2| = 1 (विषम), |1-4| = 3 (विषम), |3-2| = 1 (विषम), |3-4| = 1 (विषम), |5-2| = 3 (विषम), |5-4| = 1 (विषम)। अतः कोई भी अवयव एक-दूसरे से संबंधित नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: सिद्ध कीजिए कि समुच्चय A = {x ∈ Z : 0 ≤ x ≤ 12} में, दिए गए निम्नलिखित संबंधों R में से प्रत्येक एक तुल्यता संबंध है:</h3>
+                <p class="mb-4">(i) R = {(a, b) : |a - b|, 4 का एक गुणज है},<br>
+                (ii) R = {(a, b) : a = b}<br>
+                प्रत्येक स्थिति में 1 से संबंधित अवयवों को ज्ञात कीजिए।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) R = {(a, b) : |a - b|, 4 का एक गुणज है}</b></p>
+                        <p><b>स्वतुल्यता:</b> |a - a| = 0, जो 4 का गुणज है ⇒ (a,a) ∈ R</p>
+                        <p><b>सममितता:</b> यदि |a - b|, 4 का गुणज है ⇒ |b - a|, 4 का गुणज है ⇒ (b,a) ∈ R</p>
+                        <p><b>संक्रामकता:</b> यदि |a - b| = 4m और |b - c| = 4n, तो |a - c| = |(a - b) + (b - c)| ≤ |a - b| + |b - c| = 4(m+n) जो 4 का गुणज है ⇒ (a,c) ∈ R</p>
+                        <p>1 से संबंधित अवयव: {1, 5, 9} (क्योंकि |1-1|=0, |1-5|=4, |1-9|=8, सभी 4 के गुणज हैं)</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(ii) R = {(a, b) : a = b}</b></p>
+                        <p><b>स्वतुल्यता:</b> a = a ⇒ (a,a) ∈ R</p>
+                        <p><b>सममितता:</b> यदि a = b ⇒ b = a ⇒ (b,a) ∈ R</p>
+                        <p><b>संक्रामकता:</b> यदि a = b और b = c ⇒ a = c ⇒ (a,c) ∈ R</p>
+                        <p>1 से संबंधित अवयव: केवल {1}</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: एक ऐसे संबंध का उदाहरण दीजिए, जो</h3>
+                <p class="mb-4">(i) सममित हो परंतु न तो स्वतुल्य हो और न संक्रामक हो।<br>
+                (ii) संक्रामक हो परंतु न तो स्वतुल्य हो और न सममित हो।<br>
+                (iii) स्वतुल्य और सममित हो किंतु संक्रामक न हो।<br>
+                (iv) स्वतुल्य और संक्रामक हो किंतु सममित न हो।<br>
+                (v) सममित और संक्रामक हो किंतु स्वतुल्य न हो।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) सममित परंतु न स्वतुल्य न संक्रामक:</b> A = {1,2,3} में R = {(1,2), (2,1)}</p>
+                        <p>सममित: (1,2) और (2,1) दोनों हैं</p>
+                        <p>स्वतुल्य नहीं: (1,1), (2,2), (3,3) नहीं हैं</p>
+                        <p>संक्रामक नहीं: (1,2) और (2,1) हैं लेकिन (1,1) नहीं है</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(ii) संक्रामक परंतु न स्वतुल्य न सममित:</b> A = {1,2,3} में R = {(1,2), (2,3), (1,3)}</p>
+                        <p>संक्रामक: (1,2) और (2,3) ⇒ (1,3)</p>
+                        <p>स्वतुल्य नहीं: (1,1) आदि नहीं हैं</p>
+                        <p>सममित नहीं: (1,2) है लेकिन (2,1) नहीं है</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(iii) स्वतुल्य और सममित परंतु संक्रामक नहीं:</b> A = {1,2,3} में R = {(1,1), (2,2), (3,3), (1,2), (2,1), (2,3), (3,2)}</p>
+                        <p>स्वतुल्य: सभी (a,a) हैं</p>
+                        <p>सममित: सभी के प्रतिलोम हैं</p>
+                        <p>संक्रामक नहीं: (1,2) और (2,3) हैं लेकिन (1,3) नहीं है</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(iv) स्वतुल्य और संक्रामक परंतु सममित नहीं:</b> A = {1,2,3} में R = {(1,1), (2,2), (3,3), (1,2), (2,3), (1,3)}</p>
+                        <p>स्वतुल्य: सभी (a,a) हैं</p>
+                        <p>संक्रामक: (1,2) और (2,3) ⇒ (1,3)</p>
+                        <p>सममित नहीं: (1,2) है लेकिन (2,1) नहीं है</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(v) सममित और संक्रामक परंतु स्वतुल्य नहीं:</b> A = {1,2,3} में R = {(1,1), (2,2), (1,2), (2,1)}</p>
+                        <p>सममित: सभी के प्रतिलोम हैं</p>
+                        <p>संक्रामक: (1,2) और (2,1) ⇒ (1,1); (2,1) और (1,2) ⇒ (2,2)</p>
+                        <p>स्वतुल्य नहीं: (3,3) नहीं है</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: सिद्ध कीजिए कि किसी समतल में स्थित बिंदुओं के समुच्चय में, R = {(P, Q) : बिंदु P की मूल बिंदु से दूरी, बिंदु Q की मूल बिंदु से दूरी के समान है} द्वारा प्रदत्त संबंध R एक तुल्यता संबंध है। पुनः सिद्ध कीजिए कि बिंदु P ≠ (0, 0) से संबंधित सभी बिंदुओं का समुच्चय P से होकर जाने वाले एक ऐसे वृत्त को निरूपित करता है, जिसका केंद्र मूलबिंदु पर है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> किसी भी बिंदु P के लिए, P से मूल बिंदु की दूरी स्वयं के बराबर है। अतः (P,P) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि (P,Q) ∈ R, तो P की मूल बिंदु से दूरी = Q की मूल बिंदु से दूरी ⇒ Q की दूरी = P की दूरी ⇒ (Q,P) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि (P,Q) ∈ R और (Q,R) ∈ R, तो P की दूरी = Q की दूरी और Q की दूरी = R की दूरी ⇒ P की दूरी = R की दूरी ⇒ (P,R) ∈ R।</p>
+                    </div>
+                    <div class="step">
+                        <p>अतः R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>P ≠ (0,0) से संबंधित सभी बिंदु Q इस प्रकार हैं कि Q की मूल बिंदु से दूरी = P की मूल बिंदु से दूरी (मान लीजिए r)। ये सभी बिंदु मूल बिंदु पर केंद्र और त्रिज्या r वाले वृत्त पर स्थित हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 12: सिद्ध कीजिए कि समस्त त्रिभुजों के समुच्चय A में, R = {(T₁, T₂) : T₁, T₂ के समरूप है} द्वारा परिभाषित संबंध R एक तुल्यता संबंध है। भुजाओं 3, 4, 5 वाले समकोण त्रिभुज T₁, भुजाओं 5, 12, 13 वाले समकोण त्रिभुज T₂ तथा भुजाओं 6, 8, 10 वाले समकोण त्रिभुज T₃ पर विचार कीजिए। T₁, T₂ और T₃ में से कौन-से त्रिभुज परस्पर संबंधित हैं?</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> प्रत्येक त्रिभुज स्वयं के समरूप है। अतः (T,T) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि T₁, T₂ के समरूप है ⇒ T₂, T₁ के समरूप है ⇒ (T₂,T₁) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि T₁, T₂ के समरूप है और T₂, T₃ के समरूप है ⇒ T₁, T₃ के समरूप है ⇒ (T₁,T₃) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p>अतः R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>T₁ (3,4,5) और T₃ (6,8,10) समरूप हैं क्योंकि T₃ की भुजाएँ T₁ की भुजाओं की दुगुनी हैं।</p>
+                        <p>T₂ (5,12,13) किसी के साथ समरूप नहीं है क्योंकि इसकी भुजाओं का अनुपात भिन्न है।</p>
+                        <p>अतः T₁ और T₃ परस्पर संबंधित हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 13: सिद्ध कीजिए कि समस्त बहुभुजों के समुच्चय A में, R = {(P₁, P₂) : P₁ तथा P₂ की भुजाओं की संख्या समान है} प्रकार से परिभाषित संबंध R एक तुल्यता संबंध है। 3, 4 और 5 लंबाई की भुजाओं वाले समकोण त्रिभुज से संबंधित समुच्चय A के सभी अवयवों का समुच्चय ज्ञात कीजिए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> प्रत्येक बहुभुज की भुजाओं की संख्या स्वयं के बराबर है। अतः (P,P) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि P₁ और P₂ की भुजाओं की संख्या समान है ⇒ P₂ और P₁ की भुजाओं की संख्या समान है ⇒ (P₂,P₁) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि P₁ और P₂ की भुजाओं की संख्या समान है और P₂ और P₃ की भुजाओं की संख्या समान है ⇒ P₁ और P₃ की भुजाओं की संख्या समान है ⇒ (P₁,P₃) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p>अतः R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>3, 4 और 5 भुजाओं वाला समकोण त्रिभुज एक त्रिभुज है (3 भुजाएँ)।</p>
+                        <p>इससे संबंधित सभी अवयव वे बहुभुज हैं जिनकी 3 भुजाएँ हैं, अर्थात सभी त्रिभुज।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 14: मान लीजिए कि XY-तल में स्थित समस्त रेखाओं का समुच्चय L है और L में R = {(L₁, L₂) : L₁ समान्तर है L₂ के} द्वारा परिभाषित संबंध R है। सिद्ध कीजिए कि R एक तुल्यता संबंध है। रेखा y = 2x + 4 से संबंधित समस्त रेखाओं का समुच्चय ज्ञात कीजिए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> प्रत्येक रेखा स्वयं के समान्तर है। अतः (L,L) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> यदि L₁, L₂ के समान्तर है ⇒ L₂, L₁ के समान्तर है ⇒ (L₂,L₁) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> यदि L₁, L₂ के समान्तर है और L₂, L₃ के समान्तर है ⇒ L₁, L₃ के समान्तर है ⇒ (L₁,L₃) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p>अतः R एक तुल्यता संबंध है।</p>
+                    </div>
+                    <div class="step">
+                        <p>y = 2x + 4 का ढाल (slope) = 2</p>
+                        <p>इससे संबंधित सभी रेखाएँ वे हैं जिनका ढाल 2 है, अर्थात y = 2x + c के रूप की सभी रेखाएँ, जहाँ c कोई वास्तविक संख्या है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 15: मान लीजिए कि समुच्चय {1, 2, 3, 4} में, R = {(1, 2), (2, 2), (1, 1), (4,4), (1, 3), (3, 3), (3, 2)} द्वारा परिभाषित संबंध R है। निम्नलिखित में से सही उत्तर चुनिए:</h3>
+                <p class="mb-4">(A) R स्वतुल्य तथा सममित है किंतु संक्रामक नहीं है।<br>
+                (B) R स्वतुल्य तथा संक्रामक है किंतु सममित नहीं है।<br>
+                (C) R सममित तथा संक्रामक है किंतु स्वतुल्य नहीं है।<br>
+                (D) R एक तुल्यता संबंध है।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>स्वतुल्यता:</b> (1,1), (2,2), (3,3), (4,4) सभी हैं। अतः स्वतुल्य है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>सममितता:</b> (1,2) है लेकिन (2,1) नहीं है। अतः सममित नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>संक्रामकता:</b> (1,2) और (2,2) ⇒ (1,2) (है); (1,3) और (3,2) ⇒ (1,2) (है)। कोई विरोधाभास नहीं। अतः संक्रामक है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>उत्तर:</b> (B) R स्वतुल्य तथा संक्रामक है किंतु सममित नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 16: मान लीजिए कि समुच्चय N में, R = {(a, b) : a = b - 2, b > 6} द्वारा प्रदत्त संबंध R है। निम्नलिखित में से सही उत्तर चुनिए:</h3>
+                <p class="mb-4">(A) (2, 4) ∈ R<br>
+                (B) (3, 8) ∈ R<br>
+                (C) (6, 8) ∈ R<br>
+                (D) (8, 7) ∈ R</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>R = {(a, b) : a = b - 2, b > 6}</p>
+                        <p>इसका अर्थ है a और b इस प्रकार हैं कि a = b - 2 और b > 6</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(A) (2,4):</b> 2 = 4 - 2 (सत्य) लेकिन 4 > 6 (असत्य)। अतः (2,4) ∉ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(B) (3,8):</b> 3 = 8 - 2 (असत्य, क्योंकि 8-2=6)। अतः (3,8) ∉ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(C) (6,8):</b> 6 = 8 - 2 (सत्य) और 8 > 6 (सत्य)। अतः (6,8) ∈ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(D) (8,7):</b> 8 = 7 - 2 (असत्य, क्योंकि 7-2=5)। अतः (8,7) ∉ R</p>
+                    </div>
+                    <div class="step">
+                        <p><b>उत्तर:</b> (C) (6, 8) ∈ R</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Prashnavali 1.2 -->
+        <section id="prashnavali-1-2" class="mt-12">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2">प्रश्नावली 1.2</h2>
+
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: सिद्ध कीजिए कि f(x) = 1/x द्वारा प्रदत्त फलन f : R* → R* एकैकी तथा आच्छादक है, जहाँ R* सभी ऋणेतर वास्तविक संख्याओं का समुच्चय है। यदि प्रांत R* को N से बदल दिया जाए, जबकि सहप्रांत पूर्ववत R* ही रहे, तो भी क्या यह परिणाम सत्य होगा?</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी (Injective):</b> माना f(x₁) = f(x₂) ⇒ 1/x₁ = 1/x₂ ⇒ x₁ = x₂। अतः f एकैकी है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक (Surjective):</b> किसी भी y ∈ R* के लिए, x = 1/y ∈ R* इस प्रकार है कि f(x) = 1/(1/y) = y। अतः f आच्छादक है।</p>
+                    </div>
+                    <div class="step">
+                        <p>यदि प्रांत N है, तो f : N → R* में, f एकैकी तो है (उपरोक्त कारण से) लेकिन आच्छादक नहीं है क्योंकि R* के कई मान (जैसे 1/2, 1/3, आदि) N के किसी भी अवयव के प्रतिबिम्ब नहीं हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित फलनों की एकैकी (Injective) तथा आच्छादक (Surjective) गुणों की जाँच कीजिए:</h3>
+                <p class="mb-4">(i) f(x) = x² द्वारा प्रदत्त f : N → N फलन है।<br>
+                (ii) f(x) = x² द्वारा प्रदत्त f : Z → Z फलन है।<br>
+                (iii) f(x) = x² द्वारा प्रदत्त f : R → R फलन है।<br>
+                (iv) f(x) = x³ द्वारा प्रदत्त f : N → N फलन है।<br>
+                (v) f(x) = x³ द्वारा प्रदत्त f : Z → Z फलन है।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) f : N → N, f(x) = x²</b></p>
+                        <p><b>एकैकी:</b> हाँ, क्योंकि x₁² = x₂² ⇒ x₁ = x₂ (N में)</p>
+                        <p><b>आच्छादक:</b> नहीं, क्योंकि N के कुछ अवयव (जैसे 2, 3, 5, आदि) किसी भी x ∈ N के वर्ग नहीं हैं।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(ii) f : Z → Z, f(x) = x²</b></p>
+                        <p><b>एकैकी:</b> नहीं, क्योंकि f(1) = 1 और f(-1) = 1</p>
+                        <p><b>आच्छादक:</b> नहीं, क्योंकि Z के कुछ अवयव (जैसे -1, 2, 3, आदि) किसी भी x ∈ Z के वर्ग नहीं हैं।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(iii) f : R → R, f(x) = x²</b></p>
+                        <p><b>एकैकी:</b> नहीं, क्योंकि f(1) = 1 और f(-1) = 1</p>
+                        <p><b>आच्छादक:</b> नहीं, क्योंकि R के ऋणात्मक अवयव किसी भी x ∈ R के वर्ग नहीं हैं।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(iv) f : N → N, f(x) = x³</b></p>
+                        <p><b>एकैकी:</b> हाँ, क्योंकि x₁³ = x₂³ ⇒ x₁ = x₂</p>
+                        <p><b>आच्छादक:</b> हाँ, क्योंकि प्रत्येक y ∈ N के लिए, x = y^(1/3) ∈ N इस प्रकार है कि f(x) = y</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(v) f : Z → Z, f(x) = x³</b></p>
+                        <p><b>एकैकी:</b> हाँ, क्योंकि x₁³ = x₂³ ⇒ x₁ = x₂</p>
+                        <p><b>आच्छादक:</b> हाँ, क्योंकि प्रत्येक y ∈ Z के लिए, x = y^(1/3) ∈ Z इस प्रकार है कि f(x) = y</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: सिद्ध कीजिए कि f(x) = [x] द्वारा प्रदत्त महत्तम पूर्णांक फलन f : R → R, न तो एकैकी है और न आच्छादक है, जहाँ [x], x से कम या उसके बराबर महत्तम पूर्णांक को निरूपित करता है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी नहीं:</b> f(1.2) = 1 और f(1.5) = 1, अतः भिन्न x के लिए समान f(x) मान।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक नहीं:</b> सहप्रांत R में 1.5 जैसे मान हैं जो किसी भी x ∈ R के लिए [x] के रूप में नहीं आ सकते क्योंकि [x] हमेशा एक पूर्णांक होता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: सिद्ध कीजिए कि f(x) = |x| द्वारा प्रदत्त मापांक फलन f : R → R, न तो एकैकी है और न आच्छादक है, जहाँ |x| बराबर x, यदि x धनात्मक या 0 है तथा |x| बराबर -x, यदि x ऋणात्मक है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी नहीं:</b> f(1) = 1 और f(-1) = 1, अतः भिन्न x के लिए समान f(x) मान।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक नहीं:</b> सहप्रांत R में -1 जैसे ऋणात्मक मान हैं जो किसी भी x ∈ R के लिए |x| के रूप में नहीं आ सकते क्योंकि |x| हमेशा ≥ 0 होता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: सिद्ध कीजिए कि f : R → R,</h3>
+                <p class="mb-4">f(x) = 
+                \begin{cases}
+                1, & \text{यदि } x > 0 \\
+                0, & \text{यदि } x = 0 \\
+                -1, & \text{यदि } x < 0
+                \end{cases}
+                द्वारा प्रदत्त चिह्न फलन न तो एकैकी है और न आच्छादक है।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी नहीं:</b> f(1) = 1 और f(2) = 1, अतः भिन्न x के लिए समान f(x) मान।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक नहीं:</b> सहप्रांत R में 2 जैसे मान हैं जो किसी भी x ∈ R के लिए f(x) के रूप में नहीं आ सकते क्योंकि f(x) केवल -1, 0, 1 मान लेता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: मान लीजिए कि A = {1, 2, 3}, B = {4, 5, 6, 7} तथा f = {(1, 4), (2, 5), (3, 6)} A से B तक एक फलन है। सिद्ध कीजिए कि f एकैकी है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>f = {(1, 4), (2, 5), (3, 6)}</p>
+                        <p>A के सभी अवयवों के प्रतिबिम्ब भिन्न-भिन्न हैं:</p>
+                        <p>f(1) = 4, f(2) = 5, f(3) = 6</p>
+                        <p>चूंकि A के प्रत्येक अवयव का B में एक अद्वितीय प्रतिबिम्ब है और कोई भी दो अवयवों का प्रतिबिम्ब समान नहीं है, इसलिए f एकैकी है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: निम्नलिखित में से प्रत्येक स्थिति में बताइए कि क्या दिए हुए फलन एकैकी, आच्छादक अथवा एकैकी आच्छादी (bijective) हैं। अपने उत्तर का औचित्य भी बताइए।</h3>
+                <p class="mb-4">(i) f(x) = 3 - 4x द्वारा परिभाषित फलन f : R → R है।<br>
+                (ii) f(x) = 1 + x² द्वारा परिभाषित फलन f : R → R है।</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>(i) f(x) = 3 - 4x</b></p>
+                        <p><b>एकैकी:</b> माना f(x₁) = f(x₂) ⇒ 3 - 4x₁ = 3 - 4x₂ ⇒ -4x₁ = -4x₂ ⇒ x₁ = x₂। अतः एकैकी है।</p>
+                        <p><b>आच्छादक:</b> किसी भी y ∈ R के लिए, x = (3 - y)/4 ∈ R इस प्रकार है कि f(x) = y। अतः आच्छादक है।</p>
+                        <p><b>निष्कर्ष:</b> f एकैकी आच्छादी (bijective) है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>(ii) f(x) = 1 + x²</b></p>
+                        <p><b>एकैकी:</b> f(1) = 2 और f(-1) = 2, अतः एकैकी नहीं है।</p>
+                        <p><b>आच्छादक:</b> सहप्रांत R में -1 जैसे मान हैं जो किसी भी x ∈ R के लिए 1 + x² के रूप में नहीं आ सकते क्योंकि 1 + x² ≥ 1। अतः आच्छादक नहीं है।</p>
+                        <p><b>निष्कर्ष:</b> f न एकैकी है न आच्छादक है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: मान लीजिए कि A तथा B दो समुच्चय हैं। सिद्ध कीजिए कि f : A × B → B × A, इस प्रकार कि f(a, b) = (b, a) एक एकैकी आच्छादी (bijective) फलन है।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी:</b> माना f(a₁, b₁) = f(a₂, b₂) ⇒ (b₁, a₁) = (b₂, a₂) ⇒ b₁ = b₂ और a₁ = a₂ ⇒ (a₁, b₁) = (a₂, b₂)। अतः एकैकी है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक:</b> B × A का कोई भी अवयव (b, a) लीजिए। A × B में (a, b) इस प्रकार है कि f(a, b) = (b, a)। अतः आच्छादक है।</p>
+                    </div>
+                    <div class="step">
+                        <p>चूंकि f एकैकी और आच्छादक दोनों है, इसलिए यह एकैकी आच्छादी (bijective) है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: मान लीजिए कि समस्त n ∈ N के लिए, f(n) = 
+                \begin{cases}
+                \frac{n+1}{2}, & \text{यदि n विषम है} \\
+                \frac{n}{2}, & \text{यदि n सम है}
+                \end{cases}
+                द्वारा परिभाषित एक फलन f : N → N है। बताइए कि क्या फलन f एकैकी आच्छादी (bijective) है। अपने उत्तर का औचित्य भी बताइए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी नहीं:</b> f(1) = <div class="fraction"><span class="numerator">1+1</span><span class="denominator">2</span></div> = 1 और f(2) = <div class="fraction"><span class="numerator">2</span><span class="denominator">2</span></div> = 1, अतः भिन्न n के लिए समान f(n) मान।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक:</b> प्रत्येक m ∈ N के लिए:</p>
+                        <p>यदि m विषम है, तो n = 2m - 1 ∈ N इस प्रकार है कि f(n) = <div class="fraction"><span class="numerator">(2m - 1) + 1</span><span class="denominator">2</span></div> = m</p>
+                        <p>यदि m सम है, तो n = 2m ∈ N इस प्रकार है कि f(n) = <div class="fraction"><span class="numerator">2m</span><span class="denominator">2</span></div> = m</p>
+                        <p>अतः आच्छादक है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>निष्कर्ष:</b> f आच्छादक है परंतु एकैकी नहीं है, इसलिए एकैकी आच्छादी नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: मान लीजिए कि A = R - {3} तथा B = R - {1} हैं। f(x) = <div class="fraction"><span class="numerator">x-2</span><span class="denominator">x-3</span></div> द्वारा परिभाषित फलन f : A → B पर विचार कीजिए। क्या f एकैकी तथा आच्छादक है? अपने उत्तर का औचित्य भी बताइए।</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी:</b> माना f(x₁) = f(x₂) ⇒ <div class="fraction"><span class="numerator">x₁-2</span><span class="denominator">x₁-3</span></div> = <div class="fraction"><span class="numerator">x₂-2</span><span class="denominator">x₂-3</span></div></p>
+                        <p>⇒ (x₁-2)(x₂-3) = (x₂-2)(x₁-3)</p>
+                        <p>⇒ x₁x₂ - 3x₁ - 2x₂ + 6 = x₁x₂ - 3x₂ - 2x₁ + 6</p>
+                        <p>⇒ -3x₁ - 2x₂ = -3x₂ - 2x₁</p>
+                        <p>⇒ -x₁ = -x₂ ⇒ x₁ = x₂</p>
+                        <p>अतः f एकैकी है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक:</b> माना y ∈ B = R - {1}</p>
+                        <p>f(x) = y ⇒ <div class="fraction"><span class="numerator">x-2</span><span class="denominator">x-3</span></div> = y</p>
+                        <p>⇒ x - 2 = y(x - 3)</p>
+                        <p>⇒ x - 2 = yx - 3y</p>
+                        <p>⇒ x - yx = 2 - 3y</p>
+                        <p>⇒ x(1 - y) = 2 - 3y</p>
+                        <p>⇒ x = <div class="fraction"><span class="numerator">2 - 3y</span><span class="denominator">1 - y</span></div></p>
+                        <p>चूंकि y ≠ 1, इसलिए x परिभाषित है।</p>
+                        <p>साथ ही, x ≠ 3 क्योंकि यदि x = 3 तो 3 = <div class="fraction"><span class="numerator">2 - 3y</span><span class="denominator">1 - y</span></div> ⇒ 3(1 - y) = 2 - 3y ⇒ 3 - 3y = 2 - 3y ⇒ 3 = 2 (असंभव)</p>
+                        <p>अतः f आच्छादक है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>निष्कर्ष:</b> f एकैकी और आच्छादक दोनों है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: मान लीजिए कि f : R → R, f(x) = x⁴ द्वारा परिभाषित है। सही उत्तर का चयन कीजिए।</h3>
+                <p class="mb-4">(A) f एकैकी आच्छादक है<br>
+                (B) f बहुएक आच्छादक है<br>
+                (C) f एकैकी है किंतु आच्छादक नहीं है<br>
+                (D) f न तो एकैकी है और न आच्छादक है</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी नहीं:</b> f(1) = 1 और f(-1) = 1, अतः एकैकी नहीं है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक नहीं:</b> सहप्रांत R में -1 जैसे ऋणात्मक मान हैं जो किसी भी x ∈ R के लिए x⁴ के रूप में नहीं आ सकते क्योंकि x⁴ ≥ 0।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>उत्तर:</b> (D) f न तो एकैकी है और न आच्छादक है</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 12: मान लीजिए कि f(x) = 3x द्वारा परिभाषित फलन f : R → R है। सही उत्तर चुनिए:</h3>
+                <p class="mb-4">(A) f एकैकी आच्छादक है<br>
+                (B) f बहुएक आच्छादक है<br>
+                (C) f एकैकी है परंतु आच्छादक नहीं है<br>
+                (D) f न तो एकैकी है और न आच्छादक है</p>
+                <div>
+                    <h4 class="font-semibold text-lg mb-2 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><b>एकैकी:</b> माना f(x₁) = f(x₂) ⇒ 3x₁ = 3x₂ ⇒ x₁ = x₂। अतः एकैकी है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>आच्छादक:</b> किसी भी y ∈ R के लिए, x = y/3 ∈ R इस प्रकार है कि f(x) = 3×(y/3) = y। अतः आच्छादक है।</p>
+                    </div>
+                    <div class="step">
+                        <p><b>उत्तर:</b> (A) f एकैकी आच्छादक है</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+        // Additional protection against right-click
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Additional protection against keyboard shortcuts for copy
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</body>
+</html>
