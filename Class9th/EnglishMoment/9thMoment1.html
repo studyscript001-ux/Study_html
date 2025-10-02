@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lost Child - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #3498db;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #3498db;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #3498db;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.0rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+        }
+        
+        /* Text selection protection */
+        .protected-content {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .message {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: none;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <div class="message" id="copyMessage">Content copying is disabled</div>
+    
+    <div class="container protected-content">
+        <div class="chapter-header">
+            <h1>The Lost Child</h1>
+            <p>NCERT Class 9 English - Moments</p>
+            <p>Chapter 1</p>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Think About It</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. What are the things the child sees on his way to the fair? Why does he lag behind?</div>
+                <div class="answer">
+                    On his way to the fair, the child sees many fascinating things that capture his attention. He is drawn to the toys in the shops along the way, the beautiful mustard fields that look like "melting gold," dragonflies with gaudy purple wings, insects and worms along the footpath, and a grove where young flowers rain down. He lags behind because he is naturally curious and gets easily distracted by these interesting sights. The child's innocence and wonder at the world around him make him stop to explore everything that catches his eye, causing him to fall behind his parents.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. In the fair he wants many things. What are they? Why does he move on without waiting for an answer?</div>
+                <div class="answer">
+                    At the fair, the child wants several things:
+                    <ul>
+                        <li>Burfi (his favorite sweet) from the sweetmeat seller</li>
+                        <li>A garland of gulmohur flowers from the flower-seller</li>
+                        <li>Colored balloons (yellow, red, green, and purple) from the balloon-seller</li>
+                        <li>To listen to the snake-charmer's music</li>
+                        <li>A ride on the roundabout</li>
+                    </ul>
+                    He moves on without waiting for an answer because he already knows what his parents' response will be. He understands that they will refuse each request - they would say he's greedy for wanting sweets, that flowers are cheap, that he's too old for balloons, that the snake-charmer's music is coarse, and likely that the roundabout is too crowded or dangerous. His previous experiences with their refusals have taught him not to expect a positive response.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. When does he realise that he has lost his way? How have his anxiety and insecurity been described?</div>
+                <div class="answer">
+                    The child realizes he has lost his way when he turns to look at his parents after requesting to go on the roundabout and finds they are nowhere to be seen. He looks ahead, on both sides, and behind him, but cannot find them anywhere.
+                    <br><br>
+                    His anxiety and insecurity are vividly described through:
+                    <ul>
+                        <li>A "full, deep cry" rising within his dry throat</li>
+                        <li>Running in "real fear" while crying "Mother, Father"</li>
+                        <li>Tears rolling down "hot and fierce"</li>
+                        <li>His flushed face being "convulsed with fear"</li>
+                        <li>Running "hither and thither in all directions" in a panic</li>
+                        <li>His turban coming untied and clothes becoming muddy</li>
+                        <li>His cries turning into suppressed sobs when he becomes exhausted</li>
+                        <li>Running through the crowd, nearly getting trampled</li>
+                    </ul>
+                    These descriptions powerfully convey the child's escalating terror and helplessness as he realizes he is alone in the unfamiliar, crowded fair.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Why does the lost child lose interest in the things that he had wanted earlier?</div>
+                <div class="answer">
+                    The lost child loses interest in the things he wanted earlier because his primary need has shifted dramatically. When he was with his parents, his desires were for entertainment and pleasure - sweets, toys, and rides. But once separated from them, his fundamental need for safety, security, and the comfort of his parents overwhelms all other wants. The fear and anxiety of being alone in a crowded, unfamiliar place make material desires insignificant. His only thought is to reunite with his parents, and nothing else matters. This shows how our basic needs for security and belonging can override all other desires in times of crisis.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 5. What do you think happens in the end? Does the child find his parents?</div>
+                <div class="answer">
+                    While the story ends without explicitly telling us whether the child finds his parents, there are strong indications that he likely does. The man who rescues him from the crowd is kind and tries various methods to comfort him. Given the setting of a village fair where communities are typically close-knit, it's probable that someone would recognize the child or that the parents would be searching for him nearby. The man would likely take the child to a safe place and help locate his parents, perhaps through announcements or by asking around. The child's persistent cries for his parents would also draw attention and potentially help in reuniting them. Though the author leaves it open-ended, the natural conclusion would be that the child is eventually reunited with his worried parents.
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talk About It</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> How to ensure not to get lost.</div>
+                <div class="answer">
+                    Based on the story and general safety practices, here are some ways to ensure not to get lost:
+                    <ul>
+                        <li><strong>Stay close to parents/guardians:</strong> Always keep your parents or guardians in sight, especially in crowded places.</li>
+                        <li><strong>Hold hands:</strong> In very crowded areas, hold an adult's hand to maintain physical contact.</li>
+                        <li><strong>Establish meeting points:</strong> Agree on a specific meeting point in case you get separated.</li>
+                        <li><strong>Memorize contact information:</strong> Know your parents' full names and phone numbers, or keep this information in a safe place.</li>
+                        <li><strong>Wear bright clothing:</strong> This makes you more visible in a crowd.</li>
+                        <li><strong>Stay in one place if lost:</strong> If you do get separated, stay where you are rather than wandering further.</li>
+                        <li><strong>Identify safe people:</strong> Teach children to identify security personnel, police officers, or information desk staff who can help.</li>
+                        <li><strong>Pay attention to surroundings:</strong> Notice landmarks that can help you find your way back.</li>
+                        <li><strong>Use technology:</strong> For older children, mobile phones with location sharing can be helpful.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book-open"></i> Suggested Reading</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-book"></i> Books recommended for further reading:</div>
+                <div class="answer">
+                    <ul>
+                        <li><strong>"The Coolie"</strong> by Mulk Raj Anand</li>
+                        <li><strong>"Kabuliwallah"</strong> by Rabindranath Tagore</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Difficult Words with Meanings</h2>
+            
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr>
+                            <th>English Word</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gaily</td>
+                            <td>In a cheerful, light-hearted way</td>
+                        </tr>
+                        <tr>
+                            <td>Brimming</td>
+                            <td>Full to the point of overflowing</td>
+                        </tr>
+                        <tr>
+                            <td>Lagging</td>
+                            <td>Falling behind</td>
+                        </tr>
+                        <tr>
+                            <td>Lingering</td>
+                            <td>Staying longer than necessary</td>
+                        </tr>
+                        <tr>
+                            <td>Suppress</td>
+                            <td>To restrain or hold back</td>
+                        </tr>
+                        <tr>
+                            <td>Bustling</td>
+                            <td>Moving in an energetic, busy manner</td>
+                        </tr>
+                        <tr>
+                            <td>Gaudy</td>
+                            <td>Extravagantly bright or showy</td>
+                        </tr>
+                        <tr>
+                            <td>Intercepting</td>
+                            <td>Stopping or catching something on its way</td>
+                        </tr>
+                        <tr>
+                            <td>Caper</td>
+                            <td>A playful skipping movement</td>
+                        </tr>
+                        <tr>
+                            <td>Converging</td>
+                            <td>Coming together from different directions</td>
+                        </tr>
+                        <tr>
+                            <td>Whirlpool</td>
+                            <td>A powerful circular current of water; here, a busy, chaotic place</td>
+                        </tr>
+                        <tr>
+                            <td>Repelled</td>
+                            <td>Driven away; disgusted</td>
+                        </tr>
+                        <tr>
+                            <td>Irresistibly</td>
+                            <td>In a way that cannot be resisted</td>
+                        </tr>
+                        <tr>
+                            <td>Coiled</td>
+                            <td>Arranged in a series of loops</td>
+                        </tr>
+                        <tr>
+                            <td>Roundabout</td>
+                            <td>A merry-go-round or carousel</td>
+                        </tr>
+                        <tr>
+                            <td>Convulsed</td>
+                            <td>Shaken violently with emotion</td>
+                        </tr>
+                        <tr>
+                            <td>Congested</td>
+                            <td>Overcrowded; blocked</td>
+                        </tr>
+                        <tr>
+                            <td>Jostled</td>
+                            <td>Pushed, elbowed, or bumped against</td>
+                        </tr>
+                        <tr>
+                            <td>Hefty</td>
+                            <td>Large, heavy, and powerful</td>
+                        </tr>
+                        <tr>
+                            <td>Surging</td>
+                            <td>Moving suddenly and powerfully forward</td>
+                        </tr>
+                        <tr>
+                            <td>Disconsolate</td>
+                            <td>Very unhappy and unable to be comforted</td>
+                        </tr>
+                        <tr>
+                            <td>Reiterated</td>
+                            <td>Repeated something for emphasis</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Lost Child" from the NCERT Class 9 English textbook "Moments". Students should try to write answers in their own words after understanding the concepts.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 9 English Solutions - Moments</p>
+            <p>The Lost Child by Mulk Raj Anand</p>
+        </div>
+    </div>
+
+    <script>
+        // Text selection and copy protection
+        document.addEventListener('DOMContentLoaded', function() {
+            // Prevent right-click context menu
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                showMessage();
+            });
+            
+            // Prevent keyboard shortcuts for copy, cut, paste
+            document.addEventListener('keydown', function(e) {
+                // Ctrl+C, Ctrl+X, Ctrl+V
+                if ((e.ctrlKey || e.metaKey) && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+                    e.preventDefault();
+                    showMessage();
+                }
+                
+                // Ctrl+A (select all)
+                if ((e.ctrlKey || e.metaKey) && e.key === 'a') {
+                    e.preventDefault();
+                    showMessage();
+                }
+            });
+            
+            // Show message when selection is attempted
+            document.addEventListener('selectstart', function(e) {
+                e.preventDefault();
+                showMessage();
+            });
+            
+            function showMessage() {
+                const message = document.getElementById('copyMessage');
+                message.style.display = 'block';
+                setTimeout(function() {
+                    message.style.display = 'none';
+                }, 2000);
+            }
+        });
+    </script>
+</body>
+</html>
