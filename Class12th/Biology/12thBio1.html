@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Biology - Chapter 1 Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+
+        :root {
+            --primary: #1a4b8c;
+            --primary-light: #2a6ec6;
+            --primary-dark: #0d2d56;
+            --secondary: #00a8e8;
+            --light: #f8f9fa;
+            --light-gray: #e9ecef;
+            --medium-gray: #adb5bd;
+            --dark: #212529;
+            --border-radius: 8px;
+            --shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: var(--dark);
+            line-height: 1.6;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        body::after {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: rgba(0, 0, 0, 0.03);
+            transform: rotate(-45deg);
+            pointer-events: none;
+            z-index: 9999;
+            font-weight: 900;
+            letter-spacing: 8px;
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+            color: white;
+            padding: 1.5rem 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23000" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .chapter-title {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .chapter-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 2rem 0;
+        }
+
+        .content-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Questions Grid */
+        .questions-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+            margin-bottom: 2rem;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid var(--light-gray);
+        }
+
+        .question-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card-header {
+            background: linear-gradient(to right, var(--primary), var(--primary-light));
+            color: white;
+            padding: 1.25rem;
+        }
+
+        .question-number {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .question-number i {
+            font-size: 1.2rem;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--dark);
+            line-height: 1.5;
+            font-size: 1.05rem;
+        }
+
+        .answer-text {
+            color: var(--dark);
+            line-height: 1.7;
+            text-align: justify;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        .copyright {
+            opacity: 0.6;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+            }
+            
+            .chapter-title {
+                font-size: 1.7rem;
+            }
+            
+            .chapter-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .card-body {
+                padding: 1.25rem;
+            }
+            
+            body::after {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .card-header {
+                padding: 1rem;
+            }
+            
+            .card-body {
+                padding: 1rem;
+            }
+        }
+
+        @media print {
+            header, footer {
+                display: none;
+            }
+            
+            .question-card {
+                break-inside: avoid;
+                box-shadow: none;
+                border: 1px solid #ddd;
+            }
+            
+            body::after {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="chapter-title">कक्षा 12 जीव विज्ञान</h1>
+                <h2 class="chapter-subtitle">अध्याय 1: पुष्पीय पादपों में लैंगिक जनन</h2>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="content-header">
+                <h2 class="section-title">अभ्यास प्रश्नों के उत्तर</h2>
+            </div>
+
+            <div class="questions-container">
+                <!-- Question 1 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 1</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">एक आवृतबीजी पुष्प के उन अंगों के नाम बताइए जहाँ नर और मादा युग्मकोद्भिद् का विकास होता है।</div>
+                        <div class="answer-text">
+                            आवृतबीजी पादपों में नर युग्मकोद्भिद का विकास परागकोष में होता है जबकि मादा युग्मकोद्भिद का विकास बीजांड में होता है। परागकोष में परागकणों का निर्माण होता है जो नर युग्मक का प्रतिनिधित्व करते हैं। बीजांड में भ्रूणकोष का विकास होता है जो मादा युग्मक का प्रतिनिधित्व करता है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 2</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">लघुबीजाणुधानी और गुरुबीजाणुधानी के बीच अंतर स्पष्ट कीजिए। इन घटनाओं के दौरान किस प्रकार का कोशिका विभाजन संपन्न होता है?</div>
+                        <div class="answer-text">
+                            लघुबीजाणुधानी और गुरुबीजाणुधानी में प्रमुख अंतर:<br>
+                            1. लघुबीजाणुधानी में लघुबीजाणुओं का निर्माण होता है जबकि गुरुबीजाणुधानी में गुरुबीजाणुओं का निर्माण होता है।<br>
+                            2. लघुबीजाणुधानी परागकोष में स्थित होती है जबकि गुरुबीजाणुधानी बीजांड में स्थित होती है।<br>
+                            3. लघुबीजाणुधानी के परिणामस्वरूप परागकण बनते हैं जबकि गुरुबीजाणुधानी के परिणामस्वरूप भ्रूणकोष बनता है।<br><br>
+                            
+                            इन दोनों प्रक्रियाओं में अर्धसूत्री विभाजन होता है। लघुबीजाणुधानी के अंत में लघुबीजाणु चतुष्क (परागकण) बनते हैं जबकि गुरुबीजाणुधानी के अंत में गुरुबीजाणु चतुष्क बनता है जिसमें से एक क्रियाशील गुरुबीजाणु भ्रूणकोष में विकसित होता है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 3</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">निम्नलिखित शब्दावलियों को सही विकासीय क्रम में व्यवस्थित कीजिए - परागकण, बीजाणुजन ऊतक, लघुबीजाणुचतुष्क, परागमातृ कोशिका, नर युग्मक</div>
+                        <div class="answer-text">
+                            सही विकासीय क्रम इस प्रकार है:<br>
+                            1. बीजाणुजन ऊतक<br>
+                            2. परागमातृ कोशिका<br>
+                            3. लघुबीजाणुचतुष्क<br>
+                            4. परागकण<br>
+                            5. नर युग्मक
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 4</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">एक प्रारूपी आवृतबीजी बीजांड के भागों का वर्णन करते हुए एक स्पष्ट एवं साफ नामांकित चित्र बनाइए।</div>
+                        <div class="answer-text">
+                            एक प्रारूपी आवृतबीजी बीजांड के प्रमुख भाग निम्नलिखित हैं:<br>
+                            1. बीजांडवृंत - बीजांड को अंडाशय की भीतरी दीवार से जोड़ने वाला डंठल<br>
+                            2. बीजांडकाय - बीजांड का मुख्य भाग<br>
+                            3. अध्यावरण - बीजांड को ढकने वाली एक या दो सुरक्षात्मक परतें<br>
+                            4. बीजांडद्वार - अध्यावरण का एक छोटा सा छिद्र जहाँ से परागनली प्रवेश करती है<br>
+                            5. बीजांडकोश - भ्रूणकोष वाला कक्ष<br>
+                            6. भ्रूणकोष - मादा युग्मकोद्भिद<br>
+                            7. निभाग - बीजांडवृंत के ठीक विपरीत सिरा<br>
+                            
+                            (नोट: चित्र के लिए पाठ्यपुस्तक के पृष्ठ 9 के चित्र 1.7 का संदर्भ लें)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 5</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">आप मादा युग्मकोद्भिद् के एकबीजाणुज विकास से क्या समझते हैं?</div>
+                        <div class="answer-text">
+                            मादा युग्मकोद्भिद् के एकबीजाणुज विकास से तात्पर्य है कि एक ही गुरुबीजाणु मातृ कोशिका से अर्धसूत्री विभाजन द्वारा चार गुरुबीजाणु बनते हैं, जिनमें से केवल एक ही क्रियाशील होता है और वही भ्रूणकोष में विकसित होता है। शेष तीन गुरुबीजाणु निष्क्रिय रहते हैं और अंततः नष्ट हो जाते हैं। यह प्रक्रिया अधिकांश आवृतबीजी पादपों में पाई जाती है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 6 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 6</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">एक स्पष्ट एवं साफ रेखाचित्र के द्वारा परिपक्व मादा युग्मकोद्भिद् की 7-कोशिकीय, 8-न्यूक्लिएट प्रकृति की व्याख्या कीजिए।</div>
+                        <div class="answer-text">
+                            एक परिपक्व मादा युग्मकोद्भिद् (भ्रूणकोष) में आमतौर पर 7 कोशिकाएँ और 8 केंद्रक होते हैं। इसकी संरचना इस प्रकार है:<br>
+                            1. बीजांडद्वारीय सिरे पर 3 कोशिकाएँ - 2 सहायक कोशिकाएँ और 1 अंड कोशिका<br>
+                            2. केंद्र में 1 बड़ी द्विकेंद्रकीय केंद्रीय कोशिका<br>
+                            3. निभागीय सिरे पर 3 प्रतिव्यासांत कोशिकाएँ<br>
+                            4. दो ध्रुवीय केंद्रक केंद्रीय कोशिका में स्थित होते हैं<br>
+                            
+                            इस प्रकार कुल 7 कोशिकाएँ (1 अंड कोशिका + 2 सहायक कोशिकाएँ + 3 प्रतिव्यासांत कोशिकाएँ + 1 केंद्रीय कोशिका) और 8 केंद्रक (प्रत्येक कोशिका में 1 केंद्रक + केंद्रीय कोशिका में 2 ध्रुवीय केंद्रक) होते हैं।<br><br>
+                            
+                            (नोट: चित्र के लिए पाठ्यपुस्तक के पृष्ठ 11 के चित्र 1.8 का संदर्भ लें)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 7 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 7</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">उभयलिंगी पुष्पों से क्या तात्पर्य है? क्या एकलिंगी पुष्पों में पर-परागण संपन्न होता है? अपने उत्तर की समुचित व्याख्या कीजिए।</div>
+                        <div class="answer-text">
+                            उभयलिंगी पुष्पों से तात्पर्य ऐसे पुष्पों से है जिनमें नर और मादा दोनों प्रकार के जनन अंग (पुंकेसर और स्त्रीकेसर) उपस्थित होते हैं। एकलिंगी पुष्पों में या तो केवल नर जनन अंग होते हैं या केवल मादा जनन अंग होते हैं।<br><br>
+                            
+                            एकलिंगी पुष्पों में पर-परागण संपन्न हो सकता है क्योंकि इन पुष्पों में या तो केवल परागकोष होते हैं या केवल बीजांड होते हैं। ऐसे में परागकणों का स्थानांतरण एक पुष्प से दूसरे पुष्प के वर्तिकाग्र तक होना आवश्यक है, जो प्रायः वायु, जल या जंतुओं द्वारा होता है। इस प्रकार एकलिंगी पुष्पों में पर-परागण ही संभव है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 8 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 8</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">पुष्पों द्वारा स्व-परागण रोकने के लिए विकसित की गई दो कार्यनीतियों का वर्णन दीजिए।</div>
+                        <div class="answer-text">
+                            पुष्पों द्वारा स्व-परागण रोकने के लिए अपनाई गई दो प्रमुख कार्यनीतियाँ हैं:<br><br>
+                            
+                            1. <strong>विषमयुग्मतार्किकता</strong> - इसमें एक ही पादप के परागकण उसी पादप के वर्तिकाग्र पर अंकुरित नहीं हो पाते हैं। ऐसा वर्तिकाग्र या वर्तिका में उपस्थित रासायनिक पदार्थों के कारण होता है जो स्व-परागकणों के अंकुरण को रोकते हैं।<br><br>
+                            
+                            2. <strong>पुंकेसर और स्त्रीकेसर की असमकालिक परिपक्वता</strong> - इसमें एक ही पुष्प के पुंकेसर और स्त्रीकेसर अलग-अलग समय पर परिपक्व होते हैं। कुछ पुष्पों में पहले पुंकेसर परिपक्व होते हैं (पूर्वपुंकेसरता) तो कुछ में पहले स्त्रीकेसर परिपक्व होते हैं (पूर्वस्त्रीकेसरता)। इससे स्व-परागण की संभावना कम हो जाती है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 9 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 9</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">स्व-अयोग्यता क्या है? स्व-अयोग्यता वाली प्रजातियों में स्व-परागण प्रक्रिया बीज की रचना तक क्यों नहीं पहुँच पाती है?</div>
+                        <div class="answer-text">
+                            स्व-अयोग्यता एक आनुवंशिक तंत्र है जिसके कारण एक पादप के अपने ही परागकण उसी पादप के वर्तिकाग्र पर निषेचन करने में असमर्थ होते हैं। यह आत्म-असंगति का एक रूप है जो संकरण को बढ़ावा देता है।<br><br>
+                            
+                            स्व-अयोग्यता वाली प्रजातियों में स्व-परागण प्रक्रिया बीज की रचना तक नहीं पहुँच पाती है क्योंकि:<br>
+                            1. स्व-परागकण वर्तिकाग्र पर अंकुरित नहीं हो पाते हैं<br>
+                            2. यदि अंकुरित हो भी जाएँ तो परागनली का विकास रुक जाता है<br>
+                            3. परागनली वर्तिका में आगे नहीं बढ़ पाती है<br>
+                            4. परिणामस्वरूप नर युग्मक अंड कोशिका तक नहीं पहुँच पाते हैं और निषेचन नहीं हो पाता है<br>
+                            5. बिना निषेचन के भ्रूणपोष और भ्रूण का निर्माण नहीं होता है, इसलिए बीज का निर्माण नहीं हो पाता है
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 10 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 10</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">बैगिंग (थैली लगाना) या टैगिंग तकनीक क्या है? पादप प्रजनन कार्यक्रम में यह कैसे उपयोगी है?</div>
+                        <div class="answer-text">
+                            बैगिंग या टैगिंग तकनीक पादप प्रजनन में उपयोग की जाने वाली एक विधि है जिसमें पुष्पों को विशेष प्रकार की थैलियों से ढक दिया जाता है ताकि अनचाहे परागण को रोका जा सके।<br><br>
+                            
+                            पादप प्रजनन कार्यक्रम में इसकी उपयोगिता:<br>
+                            1. यह नियंत्रित परागण की अनुमति देती है<br>
+                            2. अवांछित परागकणों से पुष्पों की सुरक्षा करती है<br>
+                            3. संकर किस्मों के विकास में सहायक होती है<br>
+                            4. शुद्ध बीज उत्पादन में मदद करती है<br>
+                            5. आनुवंशिक अध्ययनों में उपयोगी है
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 11 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 11</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">त्रिसंलयन क्या है? यह कहाँ और कैसे संपन्न होता है? त्रिसंलयन में सम्मिलित न्यूक्लिएई के नाम बताइए।</div>
+                        <div class="answer-text">
+                            त्रिसंलयन आवृतबीजी पादपों में होने वाली एक विशेष प्रकार की निषेचन प्रक्रिया है जिसमें एक नर युग्मक दो ध्रुवीय केंद्रकों से संलयित होता है।<br><br>
+                            
+                            यह भ्रूणकोष में संपन्न होता है। प्रक्रिया इस प्रकार है:<br>
+                            1. परागनली भ्रूणकोष में प्रवेश करती है<br>
+                            2. दो नर युग्मक मुक्त होते हैं<br>
+                            3. एक नर युग्मक अंड कोशिका से संलयित होकर युग्मनज बनाता है (युग्मनज संलयन)<br>
+                            4. दूसरा नर युग्मक दो ध्रुवीय केंद्रकों से संलयित होकर त्रिसंलयन करता है<br><br>
+                            
+                            त्रिसंलयन में सम्मिलित न्यूक्लिएई हैं:<br>
+                            1. एक नर युग्मक का केंद्रक<br>
+                            2. दो ध्रुवीय केंद्रक
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 12 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 12</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">एक निषेचित बीजांड में, युग्मनज प्रसुप्ति के बारे में आप क्या सोचते हैं?</div>
+                        <div class="answer-text">
+                            एक निषेचित बीजांड में, युग्मनज प्रसुप्ति से तात्पर्य उस अवधि से है जब युग्मनज विभाजित होने के बजाय एक निष्क्रिय अवस्था में चला जाता है। यह प्रसुप्ति अवधि बीज के परिपक्व होने और प्रसार के लिए महत्वपूर्ण है।<br><br>
+                            
+                            प्रसुप्ति के कारण:<br>
+                            1. बीज का परिपक्व होना और प्रसार के लिए तैयार होना<br>
+                            2. प्रतिकूल परिस्थितियों का सामना करने की क्षमता<br>
+                            3. बीज के अंकुरण के लिए उपयुक्त परिस्थितियों की प्रतीक्षा<br><br>
+                            
+                            यह प्रसुप्ति हार्मोन्स द्वारा नियंत्रित होती है और उचित तापमान, नमी और ऑक्सीजन की उपलब्धता पर अंकुरण होता है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 13 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 13</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">इनमें भेद कीजिए - (क) बीजांडवृन्त और बीजांडासन (ख) प्रांकुर कोश और मूलांकुर कोश (ग) अध्यावरण और बीजावरण (घ) परिभ्रूणपोष और फलभित्ति</div>
+                        <div class="answer-text">
+                            (क) <strong>बीजांडवृन्त और बीजांडासन</strong><br>
+                            बीजांडवृंत बीजांड को अंडाशय की भीतरी दीवार से जोड़ने वाला डंठल है जबकि बीजांडासन बीजांड का आधारीय भाग है जहाँ से बीजांडवृंत जुड़ा होता है।<br><br>
+                            
+                            (ख) <strong>प्रांकुर कोश और मूलांकुर कोश</strong><br>
+                            प्रांकुर कोश (कोलेओराइजा) मूलांकुर को ढकने वाला एक अविभेदित आवरण है जबकि मूलांकुर कोश (कोलेओप्टाइल) प्रांकुर को ढकने वाला एक खोखला-शंक्वाकार आवरण है।<br><br>
+                            
+                            (ग) <strong>अध्यावरण और बीजावरण</strong><br>
+                            अध्यावरण बीजांड को ढकने वाली एक या दो सुरक्षात्मक परतें हैं जबकि बीजावरण बीज को ढकने वाली सुरक्षात्मक परत है जो परिपक्व बीज में अध्यावरण से विकसित होती है।<br><br>
+                            
+                            (घ) <strong>परिभ्रूणपोष और फलभित्ति</strong><br>
+                            परिभ्रूणपोष भ्रूणपोष का वह भाग है जो बीज में शेष रह जाता है जबकि फलभित्ति अंडाशय की दीवार से विकसित होने वाली फल की दीवार है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 14 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 14</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">एक सेब को मिश्रित फल क्यों कहते हैं? फल की रचना में पुष्प का कौन सा भाग भाग लेता है?</div>
+                        <div class="answer-text">
+                            एक सेब को मिश्रित फल इसलिए कहते हैं क्योंकि यह केवल अंडाशय से ही नहीं बल्कि पुष्प के अन्य भागों से भी विकसित होता है। सेब के फल के निर्माण में पुष्पासन (रीसेप्टेकल) महत्वपूर्ण भूमिका निभाता है।<br><br>
+                            
+                            फल की रचना में भाग लेने वाले पुष्प के भाग:<br>
+                            1. पुष्पासन (रीसेप्टेकल) - फल के मांसल भाग का निर्माण करता है<br>
+                            2. अंडाशय - फल के केंद्रीय भाग का निर्माण करता है<br>
+                            3. बाह्यदल और दल - कभी-कभी फल के शीर्ष पर दिखाई देते हैं
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 15 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 15</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">बहुभ्रूणता से क्या तात्पर्य है? एक पादप जनक कब और क्यों इस तकनीक का प्रयोग करता है?</div>
+                        <div class="answer-text">
+                            बहुभ्रूणता से तात्पर्य एक ही बीज में एक से अधिक भ्रूणों की उपस्थिति से है। यह प्राकृतिक रूप से या कृत्रिम रूप से हो सकता है।<br><br>
+                            
+                            एक पादप जनक इस तकनीक का प्रयोग करता है:<br>
+                            1. जब वह आनुवंशिक रूप से समान पादपों का उत्पादन करना चाहता है<br>
+                            2. संकर पादपों के प्रसार के लिए<br>
+                            3. दुर्लभ या मूल्यवान पादपों के संरक्षण के लिए<br>
+                            4. बीज द्वारा प्रसार में सहायता के लिए<br><br>
+                            
+                            यह तकनीक पादप प्रजनन और बागवानी में महत्वपूर्ण है क्योंकि इससे आनुवंशिक रूप से समान पादपों का तीव्र गति से उत्पादन किया जा सकता है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 16 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 16</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">यदि कोई व्यक्ति वृद्धिकारकों का प्रयोग करते हुए अनिषेकजनन को प्रेरित करता है तो आप प्रेरित अनिषेकजनन के लिए कौन सा फल चुनते हैं और क्यों?</div>
+                        <div class="answer-text">
+                            यदि वृद्धिकारकों का प्रयोग करके अनिषेकजनन को प्रेरित किया जा रहा है तो मैं केला (केला) का फल चुनूंगा क्योंकि:<br><br>
+                            
+                            1. केले में अनिषेकजनन द्वारा बीजरहित फल उत्पादन की प्राकृतिक क्षमता होती है<br>
+                            2. वृद्धिकारकों के प्रति इसकी प्रतिक्रिया अच्छी होती है<br>
+                            3. इसके फल आर्थिक रूप से महत्वपूर्ण हैं<br>
+                            4. बीजरहित फल उपभोक्ताओं द्वारा पसंद किए जाते हैं<br>
+                            5. इसकी खेती व्यावसायिक रूप से की जाती है<br><br>
+                            
+                            अनिषेकजनन द्वारा उत्पादित केले के फल बीजरहित होते हैं और उनकी गुणवत्ता बेहतर होती है, जिससे बाजार में उनकी मांग अधिक होती है।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 17 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 17</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">परागकण भित्ति रचना में टेपीटम की भूमिका की व्याख्या कीजिए।</div>
+                        <div class="answer-text">
+                            टेपीटम परागकोष की सबसे भीतरी परत है जो परागकणों के विकास और परागकण भित्ति के निर्माण में महत्वपूर्ण भूमिका निभाता है। टेपीटम की भूमिका इस प्रकार है:<br><br>
+                            
+                            1. यह परागकणों को पोषण प्रदान करता है<br>
+                            2. यह स्पोरोपोलेनिन के संश्लेषण में सहायक होता है जो परागकण भित्ति का मुख्य घटक है<br>
+                            3. यह परागकणों के लिए आवश्यक एंजाइम और हार्मोन उत्पन्न करता है<br>
+                            4. यह परागकणों की सतह पर लगने वाले तेल और चिपचिपे पदार्थों का स्राव करता है<br>
+                            5. यह परागकणों की सुरक्षा में सहायक होता है<br><br>
+                            
+                            टेपीटम की कोशिकाएँ सघन साइटोप्लाज्म और बड़े केंद्रक वाली होती हैं तथा परागकणों के परिपक्व होने पर नष्ट हो जाती हैं।
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 18 -->
+                <div class="question-card">
+                    <div class="card-header">
+                        <div class="question-number">
+                            <i class="fas fa-question-circle"></i>
+                            <span>प्रश्न 18</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="question-text">अनिषेकजनन क्या है और इसका क्या महत्व है?</div>
+                        <div class="answer-text">
+                            अनिषेकजनन एक अलैंगिक जनन प्रक्रिया है जिसमें बिना निषेचन के बीज का निर्माण होता है। इसमें अंड कोशिका या अन्य कोशिकाएँ बिना नर युग्मक के संलयन के भ्रूण में विकसित हो जाती हैं।<br><br>
+                            
+                            अनिषेकजनन का महत्व:<br>
+                            1. यह आनुवंशिक रूप से मातृ पादप के समान संतति उत्पन्न करता है<br>
+                            2. यह संकर पादपों के प्रसार में सहायक होता है<br>
+                            3. यह उन पादपों में बीज उत्पादन की अनुमति देता है जिनमें परागण या निषेचन की समस्या होती है<br>
+                            4. यह बागवानी और कृषि में महत्वपूर्ण है क्योंकि इससे बीजरहित फलों का उत्पादन किया जा सकता है<br>
+                            5. यह दुर्लभ और लुप्तप्राय प्रजातियों के संरक्षण में सहायक हो सकता है<br>
+                            6. यह पादप प्रजनन कार्यक्रमों में उपयोगी है
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">StudyScript</div>
+                <p class="copyright">© 2023 StudyScript. सभी अधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Text protection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
