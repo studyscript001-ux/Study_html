@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8, सामाजिक विज्ञान - हमारे अतीत-III: अध्याय 7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #27ae60;
+            --background-color: #f9f9f9;
+            --card-background-color: #ffffff;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --border-color: #ddd;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            cursor: default;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            margin: 8px 0 0;
+            font-weight: 400;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: inline-block;
+        }
+
+        .qa-card {
+            background-color: var(--card-background-color);
+            border: 1px solid var(--border-color);
+            border-left: 6px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px var(--shadow-color);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .answer p {
+            margin: 0 0 12px;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer ul {
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .blank-answer {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        .blank-item {
+            margin-bottom: 10px;
+            padding: 8px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .reformer-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        .reformer-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .reformer-name {
+            font-weight: 700;
+            color: var(--heading-color);
+            margin-bottom: 8px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+             .header h2 {
+                font-size: 1.1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.15em;
+            }
+            .answer {
+                font-size: 1em;
+            }
+            .qa-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>महिलाएँ, जाति एवं सुधार</h1>
+            <h2>सामाजिक विज्ञान (हमारे अतीत - III), कक्षा: 8, अध्याय 7</h2>
+        </header>
+
+        <!-- Section: फिर से याद करें -->
+        <section class="section">
+            <h2 class="section-title">फिर से याद करें</h2>
+
+            <div class="qa-card">
+                <p class="question">1. निम्नलिखित लोगों ने किन सामाजिक विचारों का समर्थन और प्रसार किया:</p>
+                <div class="answer">
+                    <div class="reformer-list">
+                        <div class="reformer-item">
+                            <div class="reformer-name">राममोहन रॉय</div>
+                            <div>सती प्रथा का विरोध, महिला शिक्षा और अधिकारों का समर्थन, ब्रह्मो समाज की स्थापना, पश्चिमी शिक्षा का प्रसार</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">दयानंद सरस्वती</div>
+                            <div>आर्य समाज की स्थापना, वेदों की ओर लौटने का आह्वान, सामाजिक कुरीतियों का विरोध, महिला शिक्षा और विधवा विवाह का समर्थन</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">वीरेशलिंगम पंतुलु</div>
+                            <div>विधवा विवाह को प्रोत्साहन, महिला शिक्षा का समर्थन, तेलुगु साहित्य के माध्यम से सामाजिक सुधार</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">ज्योतिराव फुले</div>
+                            <div>जाति व्यवस्था का विरोध, महिला शिक्षा, सत्यशोधक समाज की स्थापना, शूद्रों और अतिशूद्रों के अधिकारों के लिए संघर्ष</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">पंडिता रमाबाई</div>
+                            <div>महिला शिक्षा और अधिकारों का समर्थन, विधवाओं की दशा सुधारने के लिए आश्रम की स्थापना, हिंदू धर्म में महिलाओं के दमन की आलोचना</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">पेरियार</div>
+                            <div>जाति व्यवस्था और ब्राह्मणवाद का विरोध, स्वाभिमान आंदोलन, महिलाओं की समानता का समर्थन, धर्म की आलोचना</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">मुमताज़ अली</div>
+                            <div>महिला शिक्षा और उनके अधिकारों का समर्थन, इस्लाम में महिलाओं की बेहतर स्थिति के पक्ष में तर्क</div>
+                        </div>
+                        <div class="reformer-item">
+                            <div class="reformer-name">ईश्वरचंद्र विद्यासागर</div>
+                            <div>विधवा विवाह के पक्ष में आंदोलन, महिला शिक्षा का समर्थन, संस्कृत शिक्षा के विद्वान</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">2. निम्नलिखित में से सही या गलत बताएँ:</p>
+                <div class="answer">
+                    <div class="blank-answer">
+                        <div class="blank-item">
+                            <strong>(क)</strong> जब अंग्रेज़ों ने बंगाल पर कब्ज़ा किया तो उन्होंने विवाह, गोद लेने, संपत्ति उत्तराधिकार आदि के बारे में नए कानून बना दिए। - <strong>सही</strong>
+                        </div>
+                        <div class="blank-item">
+                            <strong>(ख)</strong> समाज सुधारकों को सामाजिक तौर-तरीकों में सुधार के लिए प्राचीन ग्रंथों से दूर रहना पड़ता था। - <strong>गलत</strong>
+                        </div>
+                        <div class="blank-item">
+                            <strong>(ग)</strong> सुधारकों को देश के सभी लोगों का पूरा समर्थन मिलता था। - <strong>गलत</strong>
+                        </div>
+                        <div class="blank-item">
+                            <strong>(घ)</strong> बाल विवाह निषेध अधिनियम 1829 में पारित किया गया था। - <strong>गलत</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: आइए विचार करें -->
+        <section class="section">
+            <h2 class="section-title">आइए विचार करें</h2>
+
+            <div class="qa-card">
+                <p class="question">3. प्राचीन ग्रंथों के ज्ञान से सुधारकों को नए कानून बनवाने में किस तरह मदद मिली?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> सुधारक प्राचीन ग्रंथों का उपयोग अपने तर्कों को मजबूत करने के लिए करते थे। जब भी वे किसी हानिकारक प्रथा (जैसे सती प्रथा) को चुनौती देना चाहते थे, तो वे प्राचीन धार्मिक ग्रंथों से ऐसे श्लोक या वाक्य ढूँढ़ते थे जो उनकी सोच का समर्थन करते हों। फिर वे दलील देते थे कि वर्तमान में प्रचलित प्रथा प्राचीन और शुद्ध परंपरा के विरुद्ध है। इस तरह के विद्वतापूर्ण तर्कों से अंग्रेजी सरकार को नए कानून बनाने में मदद मिली, जैसे 1829 में सती प्रथा पर प्रतिबंध लगाने में राजा राममोहन रॉय के तर्कों ने महत्वपूर्ण भूमिका निभाई।</p>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">4. लड़कियों को स्कूल न भेजने के पीछे लोगों के पास कौन-कौन से कारण होते थे?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> लड़कियों को स्कूल न भेजने के पीछे निम्नलिखित रूढ़िवादी मान्यताएँ और कारण थे:</p>
+                    <ul>
+                        <li>यह माना जाता था कि महिलाओं का स्थान घर की चारदीवारी के भीतर है, बाहर शिक्षा प्राप्त करना उनके लिए अनुपयुक्त है।</li>
+                        <li>ऐसा विश्वास था कि शिक्षा प्राप्त करने से लड़कियाँ विद्रोही हो जाएँगी और पारंपरिक भूमिकाओं को निभाने से इनकार कर देंगी।</li>
+                        <li>कई लोगों को डर था कि शिक्षित लड़कियाँ शादी के लायक नहीं रह जाएँगी।</li>
+                        <li>संसाधनों की कमी के चलते, परिवार अक्सर लड़कों की शिक्षा को प्राथमिकता देते थे।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">5. ईसाई प्रचारकों की बहुत सारे लोग क्यों आलोचना करते थे? क्या कुछ लोगों ने उनका समर्थन भी किया होगा? यदि हाँ तो किस कारण?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> रूढ़िवादी लोग ईसाई प्रचारकों की आलोचना इसलिए करते थे क्योंकि वे उन्हें भारतीय संस्कृति और धर्म को नष्ट करने वाला मानते थे। उन्हें डर था कि प्रचारक लोगों को ईसाई धर्म में परिवर्तित कर रहे हैं और पश्चिमी मूल्यों को थोप रहे हैं।</p>
+                    <p><strong>हाँ, कुछ लोगों ने उनका समर्थन भी किया,</strong> खासकर निम्न जातियों और आदिवासी समुदायों के लोग। इसका कारण यह था कि प्रचारकों ने इन वंचित समूहों के बच्चों के लिए स्कूल खोले, जिससे उन्हें शिक्षा और आगे बढ़ने के नए अवसर मिले, जो उन्हें पारंपरिक रूढ़िवादी समाज में नहीं मिल पा रहे थे।</p>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">6. अंग्रेजों के काल में ऐसे लोगों के लिए कौन-से नए अवसर पैदा हुए जो "निम्न" मानी जाने वाली जातियों से संबंधित थे?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> अंग्रेजों के काल में "निम्न" मानी जाने वाली जातियों के लिए निम्नलिखित नए अवसर पैदा हुए:</p>
+                    <ul>
+                        <li><strong>नए रोजगार:</strong> शहरों, कारखानों, नगरपालिकाओं, रेलवे और बागानों में नौकरियाँ मिलने लगीं, जहाँ जाति आधारित भेदभाव अपेक्षाकृत कम था।</li>
+                        <li><strong>सेना में भर्ती:</strong> कुछ "अछूत" समुदायों (जैसे महार) को सेना में नौकरी मिलने लगी।</li>
+                        <li><strong>शिक्षा:</strong> ईसाई मिशनरियों द्वारा खोले गए स्कूलों में पढ़ने का मौका मिला।</li>
+                        <li><strong>पलायन:</strong> गाँवों के दमनकारी माहौल से बचने और नए स्थानों (जैसे असम, मॉरिशस) पर रोजगार तलाशने का अवसर मिला।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">7. ज्योतिराव फुले और अन्य सुधारकों ने समाज में जातीय असमानताओं की आलोचनाओं को किस तरह सही ठहराया?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> ज्योतिराव फुले ने जातीय असमानता की आलोचना को ऐतिहासिक तर्कों से सही ठहराया। उनका तर्क था कि आर्य विदेशी आक्रमणकारी थे जिन्होंने इस देश के मूल निवासियों (जिन्हें उन्होंने शूद्र और अतिशूद्र कहा) को पराजित कर गुलाम बना लिया और उन्हें 'निम्न' जाति का घोषित कर दिया। इस प्रकार, 'ऊँची' जातियों का दमन उनके श्रेष्ठ होने के कारण नहीं, बल्कि एक ऐतिहासिक अन्याय का परिणाम था। उन्होंने कहा कि जमीन और सत्ता पर असली अधिकार मूल निवासियों का है।</p>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">8. फुले ने अपनी पुस्तक गुलामगीरी को गुलामों की आजादी के लिए चल रहे अमेरिकी आंदोलन को समर्पित क्यों किया?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> फुले ने अपनी पुस्तक 'गुलामगीरी' अमेरिका के उन लोगों को समर्पित की जिन्होंने दास प्रथा के खिलाफ संघर्ष किया था। उन्होंने ऐसा इसलिए किया ताकि भारत की 'निम्न' जातियों की दुर्दशा और अमेरिका के काले गुलामों की दुर्दशा के बीच एक समानता स्थापित की जा सके। इसके द्वारा वे यह संदेश देना चाहते थे कि जाति आधारित उत्पीड़न भी एक प्रकार की गुलामी है और इसके खिलाफ भी उसी तरह का वैश्विक संघर्ष आवश्यक है।</p>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">9. मंदिर प्रवेश आंदोलन के जरिए अम्बेडकर क्या हासिल करना चाहते थे?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> डॉ. अम्बेडकर मंदिर प्रवेश आंदोलन के जरिए निम्नलिखित हासिल करना चाहते थे:</p>
+                    <ul>
+                        <li>वे समाज में व्याप्त जातीय पूर्वाग्रहों और 'अछूतों' के प्रति गहरे भेदभाव को उजागर करना चाहते थे।</li>
+                        <li>उनका लक्ष्य दलितों के मौलिक मानवाधिकारों और धार्मिक समानता की मांग को मजबूती से रखना था।</li>
+                        <li>यह आंदोलन दलितों में आत्म-सम्मान और आत्म-चेतना जगाने का एक माध्यम भी था।</li>
+                        <li>वे हिंदू समाज को यह दिखाना चाहते थे कि जब तक दलितों के साथ मंदिरों में समान व्यवहार नहीं किया जाता, तब तक समाज में वास्तविक समानता संभव नहीं है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qa-card">
+                <p class="question">10. ज्योतिराव फुले और रामास्वामी नायकर राष्ट्रीय आंदोलन की आलोचना क्यों करते थे? क्या उनकी आलोचना से राष्ट्रीय संघर्ष में किसी तरह की मदद मिली?</p>
+                <div class="answer">
+                    <p><strong>उत्तर:</strong> फुले और पेरियार (रामास्वामी नायकर) राष्ट्रीय आंदोलन की आलोचना इसलिए करते थे क्योंकि उनका मानना था कि यह आंदोलन मुख्यतः उच्च जातियों के हाथों में केन्द्रित है और यह दलितों, शूद्रों तथा अन्य वंचित समूहों की वास्तविक समस्याओं (जैसे जातिगत भेदभाव और सामाजिक अन्याय) को गंभीरता से नहीं उठा रहा है। उन्हें डर था कि स्वतंत्रता के बाद भी सत्ता पर उच्च जातियों का ही कब्जा रहेगा और सामाजिक समानता का लक्ष्य पीछे छूट जाएगा।</p>
+                    <p><strong>हाँ, उनकी आलोचना से राष्ट्रीय संघर्ष को मदद मिली।</strong> इसने राष्ट्रीय आंदोलन के भीतर ही आत्ममंथन की प्रक्रिया शुरू की और यह सुनिश्चित करने पर जोर दिया कि स्वतंत्रता का अर्थ केवल विदेशी शासन से मुक्ति नहीं, बल्कि एक समतामूलक और न्यायपूर्ण समाज की स्थापना भी है। इसने सामाजिक न्याय के प्रश्न को राष्ट्रीय एजेंडे का एक अहम हिस्सा बनाया।</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent copy, cut and paste
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent keyboard shortcuts for copy, cut, paste
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'v' || e.key === 'V')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
