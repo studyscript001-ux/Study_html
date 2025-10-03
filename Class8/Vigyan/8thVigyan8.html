@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 विज्ञान - अध्याय 8: बल तथा दाब</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #2E8B57 0%, #4CAF50 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #4caf50;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #4caf50;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #37474f;
+            font-size: 0.95rem;
+            text-align: justify;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .table-container {
+            margin: 15px 0;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>अध्याय 8: बल तथा दाब</h1>
+        
+        <!-- Question 1 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>ठोकर या खिंचाव के द्वारा वस्तुओं की गति की अवस्था में परिवर्तन के दो-दो उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">
+                <strong>ठोकर के उदाहरण:</strong><br>
+                1. फुटबॉल को लात मारकर गति में लाना<br>
+                2. बल्ले से क्रिकेट की गेंद को मारना<br><br>
+                
+                <strong>खिंचाव के उदाहरण:</strong><br>
+                1. कुएँ से पानी की बाल्टी को रस्सी से खींचना<br>
+                2. रस्साकशी में रस्सी को खींचना
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>ऐसे दो उदाहरण दीजिए जिनमें लगाए गए बल द्वारा वस्तु की आकृति में परिवर्तन हो जाता है।</span>
+            </div>
+            <div class="answer">
+                1. रबर की गेंद को दबाने पर उसकी आकृति बदल जाती है।<br>
+                2. लोहे की गरम दराँती को हथौड़े से पीटने पर उसकी आकृति बदल जाती है।<br>
+                3. स्प्रिंग को खींचने या दबाने पर उसकी लंबाई बदल जाती है।
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>निम्नलिखित कथनों में रिक्त स्थानों की पूर्ति कीजिए -<br>
+                (क) कुएँ से पानी निकालते समय हमें रस्सी को ______ पड़ता है।<br>
+                (ख) एक आवेशित वस्तु अनावेशित वस्तु को ______ करती है।<br>
+                (ग) सामान से लदी हुई ट्रॉली को चलाने के लिए हमें उसे ______ पड़ता है।<br>
+                (घ) किसी चुंबक का उत्तरी ध्रुव दूसरे चुंबक के उत्तरी ध्रुव को ______ करता है।</span>
+            </div>
+            <div class="answer">
+                (क) खींचना<br>
+                (ख) आकर्षित<br>
+                (ग) धक्का देना<br>
+                (घ) प्रतिकर्षित
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>एक धनुर्धर लक्ष्य पर निशाना साधते हुए अपने धनुष को खींचती है। फिर वह तीर को छोड़ती है जो लक्ष्य की ओर बढ़ने लगता है। इस जानकारी के आधार पर निम्नलिखित रिक्त स्थानों की पूर्ति दिए गए शब्दों से कीजिए -<br>
+                स्पर्श/अस्पर्श/गुरुत्व/घर्षण/आकृति/आकर्षण<br>
+                (क) धनुष को खींचने के लिए धनुर्धर एक बल लगाती है जिसके कारण उसकी ______ में परिवर्तन होता है।<br>
+                (ख) धनुष को खींचने के लिए धनुर्धर द्वारा लगाया गया बल ______ बल का उदाहरण है।<br>
+                (ग) तीर की गति की अवस्था में परिवर्तन के लिए उत्तरदायी बल का प्रकार ______ बल का उदाहरण है।<br>
+                (घ) जब तीर लक्ष्य की ओर गति करता है तब उस पर लगने वाले बल ______ तथा वायु के ______ के कारण होते हैं।</span>
+            </div>
+            <div class="answer">
+                (क) आकृति<br>
+                (ख) स्पर्श<br>
+                (ग) अस्पर्श<br>
+                (घ) गुरुत्व, घर्षण
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>निम्न स्थितियों में बल लगाने वाले कारक, तथा जिस वस्तु पर बल लग रहा है, उनकी पहचान कीजिए। प्रत्येक स्थिति में जिस रूप में बल का प्रभाव दिखाई दे रहा है उसे भी बताइए।<br>
+                (क) जूस निकालने के लिए नींबू के टुकड़ों को उँगलियों से दबाना।<br>
+                (ख) टूथपेस्ट की ट्यूब से पेस्ट बाहर निकालना।<br>
+                (ग) दीवार में लगे हुए हुक से लटकी स्प्रिंग के दूसरे सिरे से लटका एक भार।<br>
+                (घ) ऊँची कूद करते समय एक खिलाड़ी द्वारा एक निश्चित ऊँचाई की पोल (बाधा) को पार करना।</span>
+            </div>
+            <div class="answer">
+                <table>
+                    <tr>
+                        <th>स्थिति</th>
+                        <th>बल लगाने वाला</th>
+                        <th>जिस पर बल लग रहा है</th>
+                        <th>बल का प्रभाव</th>
+                    </tr>
+                    <tr>
+                        <td>(क)</td>
+                        <td>उँगलियाँ</td>
+                        <td>नींबू के टुकड़े</td>
+                        <td>नींबू की आकृति बदल जाती है और रस निकलता है</td>
+                    </tr>
+                    <tr>
+                        <td>(ख)</td>
+                        <td>हाथ</td>
+                        <td>टूथपेस्ट की ट्यूब</td>
+                        <td>ट्यूब की आकृति बदलती है और पेस्ट बाहर आता है</td>
+                    </tr>
+                    <tr>
+                        <td>(ग)</td>
+                        <td>भार</td>
+                        <td>स्प्रिंग</td>
+                        <td>स्प्रिंग खिंच जाती है (लंबाई बढ़ जाती है)</td>
+                    </tr>
+                    <tr>
+                        <td>(घ)</td>
+                        <td>खिलाड़ी</td>
+                        <td>पोल (बाधा)</td>
+                        <td>पोल टूट सकती है या खिलाड़ी उसे पार कर जाता है</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>एक औज़ार बनाते समय लोहार लोहे के गरम टुकड़े को हथौड़े से पीटता है। पीटने के कारण लगने वाला बल लोहे के टुकड़े को किस प्रकार प्रभावित करता है?</span>
+            </div>
+            <div class="answer">
+                लोहे के गरम टुकड़े पर हथौड़े से पीटने पर लगने वाला बल उसकी आकृति को बदल देता है। लोहा गरम होने के कारण नरम होता है और बल लगाने पर मुड़कर वांछित आकृति ले लेता है। यह बल लोहे के टुकड़े की आकृति में स्थायी परिवर्तन लाता है।
+            </div>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>एक फुलाया हुआ गुब्बारा संश्लेषित वस्त्र के टुकड़े से रगड़कर एक दीवार पर दबाया गया। यह देखा गया कि गुब्बारा दीवार से चिपक जाता है। दीवार तथा गुब्बारे के बीच आकर्षण के लिए उत्तरदायी बल का नाम बताइए।</span>
+            </div>
+            <div class="answer">
+                दीवार तथा गुब्बारे के बीच आकर्षण के लिए उत्तरदायी बल <strong>स्थिर वैद्युत बल (Electrostatic Force)</strong> है। जब गुब्बारे को संश्लेषित वस्त्र से रगड़ा जाता है तो उस पर स्थिर विद्युत आवेश उत्पन्न हो जाता है, जो दीवार पर विपरीत आवेश उत्पन्न करता है और इसके कारण आकर्षण बल उत्पन्न होता है।
+            </div>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>आप अपने हाथ में पानी से भरी एक प्लास्टिक की बाल्टी लटकाए हुए हैं। बाल्टी पर लगने वाले बलों के नाम बताइए। विचार-विमर्श कीजिए कि बाल्टी पर लगने वाले बलों द्वारा उसकी गति की अवस्था में परिवर्तन क्यों नहीं होता?</span>
+            </div>
+            <div class="answer">
+                बाल्टी पर लगने वाले बल:<br>
+                1. <strong>गुरुत्व बल</strong> - पृथ्वी द्वारा बाल्टी और उसमें भरे पानी पर लगाया गया बल (नीचे की ओर)<br>
+                2. <strong>हाथ द्वारा लगाया गया बल</strong> - हाथ द्वारा बाल्टी को पकड़े रखने के लिए लगाया गया बल (ऊपर की ओर)<br><br>
+                
+                बाल्टी की गति की अवस्था में परिवर्तन नहीं होता क्योंकि दोनों बल परिमाण में बराबर और दिशा में विपरीत हैं। इसलिए नेट बल शून्य है। न्यूटन के गति के प्रथम नियम के अनुसार, यदि किसी वस्तु पर लगने वाला नेट बल शून्य है तो वह वस्तु या तो विरामावस्था में रहेगी या एकसमान गति की अवस्था में रहेगी।
+            </div>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>किसी उपग्रह को इसकी कक्षा में प्रक्षेपित करने के लिए एक रॉकेट को ऊपर की ओर प्रक्षेपित किया गया। प्रणोदन चरण को छोड़ने के तुरंत बाद रॉकेट पर लगने वाले दो बलों के नाम बताइए।</span>
+            </div>
+            <div class="answer">
+                प्रणोदन चरण को छोड़ने के तुरंत बाद रॉकेट पर लगने वाले दो बल:<br>
+                1. <strong>गुरुत्व बल</strong> - पृथ्वी द्वारा रॉकेट पर लगाया गया आकर्षण बल (नीचे की ओर)<br>
+                2. <strong>वायु का घर्षण बल</strong> - वायुमंडल में रॉकेट की गति के विपरीत दिशा में लगने वाला बल
+            </div>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>जब किसी ड्रॉपर के बल्ब को दबाकर इसकी नली को पानी में रखते हैं तो ड्रॉपर की वायु बुलबुलों के रूप में बाहर निकलती दिखाई देती है। बल्ब पर से दबाव हटा लेने पर ड्रॉपर में पानी भर जाता है। ड्रॉपर में पानी के चढ़ने का कारण है -<br>
+                (क) पानी का दाब<br>
+                (ख) गुरुत्व बल<br>
+                (ग) रबर के बल्ब की आकृति<br>
+                (घ) वायुमंडलीय दाब</span>
+            </div>
+            <div class="answer">
+                उत्तर: (घ) <strong>वायुमंडलीय दाब</strong><br><br>
+                जब ड्रॉपर के बल्ब को दबाकर नली को पानी में रखते हैं और फिर बल्ब पर से दबाव हटा लेते हैं, तो ड्रॉपर के अंदर का दाब कम हो जाता है। बाहर का वायुमंडलीय दाब पानी पर कार्य करता है और पानी को ड्रॉपर में ऊपर की ओर धकेलता है।
+            </div>
+        </div>
+
+        <div class="note">
+            नोट: यदि आपको किसी प्रश्न के उत्तर में संदेह है तो आप अपने शिक्षकों से बात कर सकते हैं।
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
