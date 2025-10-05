@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8, सामाजिक विज्ञान - संसाधन एवं विकास: पाठ 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f9f9f9;
+            --card-background-color: #ffffff;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --border-color: #ddd;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            cursor: default;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            margin: 8px 0 0;
+            font-weight: 400;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: inline-block;
+        }
+
+        .qa-card {
+            background-color: var(--card-background-color);
+            border: 1px solid var(--border-color);
+            border-left: 6px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px var(--shadow-color);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .answer p {
+            margin: 0 0 12px;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer ul {
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #666;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 3px solid var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .label {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .true-false-item {
+            margin-bottom: 10px;
+        }
+
+        /* Table Container with Scroll */
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 600px; /* Minimum width to ensure proper display */
+        }
+        
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+        }
+
+        /* Scrollbar Styling */
+        .table-container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .table-container::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        .table-container::-webkit-scrollbar-thumb:hover {
+            background: #2980b9;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+             .header h2 {
+                font-size: 1.1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.15em;
+            }
+            .answer {
+                font-size: 1em;
+            }
+            .qa-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>भूमि, मृदा, जल, प्राकृतिक वनस्पति और वन्य जीवन संसाधन</h1>
+            <h2>सामाजिक विज्ञान - संसाधन एवं विकास, कक्षा:8 अध्याय 2</h2>
+        </header>
+
+        <!-- Section: अभ्यास प्रश्न -->
+        <section class="section">
+            <h2 class="section-title">अभ्यास प्रश्न</h2>
+
+            <!-- Question 1 -->
+            <div class="qa-card">
+                <p class="question">1. निम्नलिखित प्रश्नों के उत्तर दीजिए:</p>
+                <div class="answer">
+                    <div class="true-false-item">
+                        <p><span class="label">(i) मृदा निर्माण के लिए उत्तरदायी दो मुख्य जलवायु कारक कौन-से हैं?</span></p>
+                        <p><strong>उत्तर:</strong> मृदा निर्माण के लिए उत्तरदायी दो मुख्य जलवायु कारक हैं - तापमान और वर्षा। ये कारक चट्टानों के अपक्षय की दर और मृदा निर्माण की प्रक्रिया को प्रभावित करते हैं।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(ii) भूमि निम्नीकरण के कोई दो कारण लिखिए।</span></p>
+                        <p><strong>उत्तर:</strong> भूमि निम्नीकरण के दो कारण हैं:
+                        <ul>
+                            <li>वनों की कटाई और अत्यधिक चराई</li>
+                            <li>असंतुलित रासायनिक उर्वरकों और कीटनाशकों का उपयोग</li>
+                        </ul></p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(iii) भूमि को महत्वपूर्ण संसाधन क्यों माना जाता है?</span></p>
+                        <p><strong>उत्तर:</strong> भूमि को महत्वपूर्ण संसाधन माना जाता है क्योंकि:
+                        <ul>
+                            <li>यह कृषि, वानिकी, खनन और उद्योग सहित मानव की सभी आर्थिक गतिविधियों का आधार है</li>
+                            <li>यह आवास और अन्य बुनियादी ढाँचे के लिए स्थान प्रदान करती है</li>
+                            <li>इसकी उपलब्धता सीमित है और इसकी गुणवत्ता में स्थान के अनुसार भिन्नता है</li>
+                        </ul></p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(iv) किन्हीं दों सोपानों के नाम बताइए जिन्हें सरकार ने पौधों और जानवरों के संरक्षण के लिए आरंभ किया है।</span></p>
+                        <p><strong>उत्तर:</strong> सरकार द्वारा पौधों और जानवरों के संरक्षण के लिए आरंभ की गई दो स्थितियाँ हैं:
+                        <ul>
+                            <li>राष्ट्रीय उद्यान</li>
+                            <li>वन्यजीव अभयारण्य</li>
+                        </ul></p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(v) जल संरक्षण के तीन तरीके बताइए।</span></p>
+                        <p><strong>उत्तर:</strong> जल संरक्षण के तीन तरीके हैं:
+                        <ul>
+                            <li>वर्षा जल संचयन</li>
+                            <li>ड्रिप सिंचाई प्रणाली का उपयोग</li>
+                            <li>घरेलू उपयोग में जल की बर्बादी रोकना</li>
+                        </ul></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="qa-card">
+                <p class="question">2. सही उत्तर पर निशान लगाइए:</p>
+                <div class="answer">
+                    <div class="true-false-item">
+                        <p><span class="label">(i) निम्नलिखित में से कौन-सा कारक मृदा निर्माण का नहीं है?</span></p>
+                        <p><strong>उत्तर:</strong> (ख) मृदा का गठन - क्योंकि मृदा का गठन मृदा निर्माण का परिणाम है, कारक नहीं।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(ii) निम्नलिखित में से कौन-सी विधि तीव्र ढालों पर मृदा अपरदन को रोकने के लिए सर्वाधिक उपयुक्त है?</span></p>
+                        <p><strong>उत्तर:</strong> (ग) समोच्चरेखीय जुताई - क्योंकि यह ढाल पर जल के प्रवाह को रोकती है और मृदा अपरदन को कम करती है।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(iii) निम्नलिखित में से कौन-सा प्रकृति के संरक्षण के अनुकूल नहीं है?</span></p>
+                        <p><strong>उत्तर:</strong> (ग) खरीदारी के बाद पॉलीथीन को नष्ट कर देना चाहिए - क्योंकि पॉलीथीन को नष्ट करने के बजाय पुनःचक्रित करना चाहिए।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="qa-card">
+                <p class="question">3. निम्नलिखित का मिलान कीजिए:</p>
+                <div class="answer">
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>स्तम्भ (क)</th>
+                                    <th>स्तम्भ (ख)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>(क) भूमि उपयोग</td>
+                                    <td>(iii) भूमि का उत्पादक उपयोग</td>
+                                </tr>
+                                <tr>
+                                    <td>(ख) अवशेष</td>
+                                    <td>(iv) ऊपरी मृदा पर जमा जैविक पदार्थ</td>
+                                </tr>
+                                <tr>
+                                    <td>(ग) पट्टे बाँध</td>
+                                    <td>(i) मृदा अपरदन को रोकना</td>
+                                </tr>
+                                <tr>
+                                    <td>(घ) जैवमंडल</td>
+                                    <td>(ii) स्थलमंडल, जलमंडल और वायुमंडल के बीच जुड़ा एक विस्तृत क्षेत्र</td>
+                                </tr>
+                                <tr>
+                                    <td>(ङ) समोच्चरेखीय जुताई</td>
+                                    <td>(v) ढाल से नीचे बहते जल के लिए एक प्राकृतिक अवरोध का निर्माण करना</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="qa-card">
+                <p class="question">4. निम्नलिखित कथनों में से सत्य/असत्य बताइए। यदि सत्य है तो उसके कारण लिखिए:</p>
+                <div class="answer">
+                    <div class="true-false-item">
+                        <p><span class="label">(i) भारत का गंगा, ब्रह्मपुत्र का मैदान अत्यधिक आबादी वाला प्रदेश है।</span></p>
+                        <p><strong>उत्तर:</strong> सत्य - क्योंकि यह मैदानी क्षेत्र उपजाऊ भूमि और जल की उपलब्धता के कारण घनी आबादी वाला है।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(ii) भारत में प्रति व्यक्ति जल की उपलब्धता कम हो रही है।</span></p>
+                        <p><strong>उत्तर:</strong> सत्य - क्योंकि जनसंख्या वृद्धि के साथ प्रति व्यक्ति जल की उपलब्धता कम होती जा रही है।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(iii) तटीय क्षेत्रों में पवन गति रोकने के लिए पेड़ों की पंक्ति में लगाए जाते हैं, जिसे बीच की फसल उगाना कहते हैं।</span></p>
+                        <p><strong>उत्तर:</strong> असत्य - क्योंकि पवन गति रोकने के लिए पेड़ों की पंक्ति को 'विंडब्रेक' कहते हैं, न कि बीच की फसल।</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(iv) मानवीय हस्तक्षेप और जलवायु परिवर्तन पारिस्थितिकी तंत्र को व्यवस्थित रख सकते हैं।</span></p>
+                        <p><strong>उत्तर:</strong> असत्य - क्योंकि मानवीय हस्तक्षेप और जलवायु परिवर्तन प्रायः पारिस्थितिकी तंत्र को असंतुलित करते हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="qa-card">
+                <p class="question">5. क्रियाकलाप:</p>
+                <div class="answer">
+                    <p>भूमि उपयोग प्रारूप में परिवर्तन के लिए उत्तरदायी कुछ और कारणों की चर्चा कीजिए। पिछले कुछ वर्षों में क्या आपके स्थान पर भूमि उपयोग प्रारूप में कोई परिवर्तन हुआ है? अपने माता-पिता और बड़े लोगों से पता कीजिए। आप निम्नलिखित प्रश्नों को पूछकर एक साक्षात्कार ले सकते हैं:</p>
+                    
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>स्थान</th>
+                                    <th>जब आपके दादा-दादी 30 वर्ष की आयु में थे</th>
+                                    <th>जब आपके माता-पिता 30 वर्ष की आयु में थे</th>
+                                    <th>आप क्यों सोचते हैं कि ऐसा हो रहा है?</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>ग्रामीण</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>पशु और मुर्गी पालन उद्योग की संख्या</li>
+                                            <li>गाँव में पेड़ों और तालाबों की संख्या</li>
+                                            <li>परिवार के मुखिया का व्यवसाय</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>पशु और मुर्गी पालन उद्योग की संख्या</li>
+                                            <li>गाँव में पेड़ों और तालाबों की संख्या</li>
+                                            <li>परिवार के मुखिया का व्यवसाय</li>
+                                        </ul>
+                                    </td>
+                                    <td>शहरीकरण, औद्योगीकरण और तकनीकी विकास के कारण ग्रामीण क्षेत्रों में परिवर्तन आया है।</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>शहरी</strong></td>
+                                    <td>
+                                        <ul>
+                                            <li>कारों की संख्या</li>
+                                            <li>घर में मंजिलों की संख्या</li>
+                                            <li>पक्की सड़कों की संख्या</li>
+                                            <li>पार्क और खेल के मैदानों की संख्या</li>
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>कारों की संख्या</li>
+                                            <li>घर में मंजिलों की संख्या</li>
+                                            <li>पक्की सड़कों की संख्या</li>
+                                            <li>पार्क और खेल के मैदानों की संख्या</li>
+                                        </ul>
+                                    </td>
+                                    <td>जनसंख्या वृद्धि, आर्थिक विकास और नगरीय विस्तार के कारण शहरी क्षेत्रों में परिवर्तन आया है।</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="note">
+                        <p><strong>नोट:</strong> आपने जो तालिका पूरी की है उसके आधार पर भूमि उपयोग प्रारूपों का एक चित्र बनाइए जिसे आप 20 वर्ष बाद अपने स्थान पर देखने की कल्पना करते हैं। आप क्यों सोचते हैं कि वर्षों बाद भूमि उपयोग प्रारूप बदल जाता है?</p>
+                        <p><strong>उत्तर:</strong> भूमि उपयोग प्रारूप समय के साथ बदलता है क्योंकि:
+                        <ul>
+                            <li>जनसंख्या में वृद्धि होती है और आवासीय क्षेत्रों का विस्तार होता है</li>
+                            <li>आर्थिक गतिविधियाँ बदलती हैं और नए उद्योग स्थापित होते हैं</li>
+                            <li>तकनीकी विकास के साथ कृषि पद्धतियाँ बदलती हैं</li>
+                            <li>सरकारी नीतियाँ और योजनाएँ भूमि उपयोग को प्रभावित करती हैं</li>
+                            <li>पर्यावरणीय चिंताएँ और संरक्षण के प्रयास भूमि उपयोग को प्रभावित करते हैं</li>
+                        </ul></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent copy, cut and paste
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent keyboard shortcuts for copy, cut, paste
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'v' || e.key === 'V')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
