@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8, सामाजिक विज्ञान - सामाजिक एवं राजनीतिक जीवन III: पाठ 3</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f9f9f9;
+            --card-background-color: #ffffff;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --border-color: #ddd;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            cursor: default;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            margin: 8px 0 0;
+            font-weight: 400;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: inline-block;
+        }
+
+        .qa-card {
+            background-color: var(--card-background-color);
+            border: 1px solid var(--border-color);
+            border-left: 6px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px var(--shadow-color);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .answer p {
+            margin: 0 0 12px;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer ul {
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #666;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 3px solid var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .label {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .true-false-item {
+            margin-bottom: 10px;
+        }
+
+        .election-map {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            background: linear-gradient(135deg, #e0f7fa, #80deea);
+            border-radius: 8px;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid var(--primary-color);
+        }
+
+        .state-outline {
+            position: absolute;
+            border: 2px solid #00695c;
+            border-radius: 8px;
+            background-color: rgba(0, 150, 136, 0.1);
+        }
+
+        .up {
+            top: 50px;
+            left: 200px;
+            width: 150px;
+            height: 120px;
+            background-color: rgba(77, 182, 172, 0.3);
+        }
+
+        .bihar {
+            top: 170px;
+            left: 250px;
+            width: 120px;
+            height: 100px;
+            background-color: rgba(77, 182, 172, 0.3);
+        }
+
+        .mp {
+            top: 120px;
+            left: 100px;
+            width: 180px;
+            height: 150px;
+            background-color: rgba(129, 199, 132, 0.3);
+        }
+
+        .maharashtra {
+            top: 180px;
+            left: 50px;
+            width: 140px;
+            height: 130px;
+            background-color: rgba(129, 199, 132, 0.3);
+        }
+
+        .state-label {
+            position: absolute;
+            font-weight: bold;
+            color: #01579b;
+            text-align: center;
+            width: 100%;
+        }
+
+        .up .state-label {
+            top: 45%;
+        }
+
+        .bihar .state-label {
+            top: 40%;
+        }
+
+        .mp .state-label {
+            top: 40%;
+        }
+
+        .maharashtra .state-label {
+            top: 40%;
+        }
+
+        .map-legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            gap: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .color-box {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .green {
+            background-color: rgba(77, 182, 172, 0.5);
+        }
+
+        .blue {
+            background-color: rgba(129, 199, 132, 0.5);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+             .header h2 {
+                font-size: 1.1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.15em;
+            }
+            .answer {
+                font-size: 1em;
+            }
+            .qa-card {
+                padding: 15px;
+            }
+            .election-map {
+                height: 300px;
+            }
+            .state-outline {
+                border-width: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>संसद तथा कानूनों का निर्माण</h1>
+            <h2>सामाजिक एवं राजनीतिक जीवन - III, कक्षा:8 अध्याय 3</h2>
+        </header>
+
+        <!-- Section: अभ्यास प्रश्न -->
+        <section class="section">
+            <h2 class="section-title">अभ्यास प्रश्न</h2>
+
+            <!-- Question 1 -->
+            <div class="qa-card">
+                <p class="question">1. राष्ट्रवादी आंदोलन ने इस विचार का समर्थन किया कि सभी वयस्कों को मत देने का अधिकार होना चाहिए। इसके पक्ष में एक कारण बताइए।</p>
+                <div class="answer">
+                    <p>राष्ट्रवादी आंदोलन ने सार्वभौमिक वयस्क मताधिकार का समर्थन किया क्योंकि यह स्वतंत्रता संग्राम के मूलभूत सिद्धांतों में से एक था। स्वतंत्रता संग्राम में विभिन्न वर्गों के लोगों ने भाग लिया था और उन्हें विश्वास था कि स्वतंत्र भारत में सभी वयस्क नागरिकों को देश के शासन में भागीदारी का अधिकार मिलना चाहिए। यह लोकतंत्र की मूल भावना के अनुरूप था कि सभी नागरिकों को बिना किसी भेदभाव के मतदान का अधिकार प्राप्त हो। इससे देश के हर वर्ग की आवाज संसद तक पहुँच सकती थी और सही मायने में प्रतिनिधित्व आधारित लोकतंत्र की स्थापना हो सकती थी।</p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="qa-card">
+                <p class="question">2. बगल में 2004 के संसदीय चुनाव क्षेत्रों का नक्शा दिया गया है। इस नक्शे में अपने राज्य के चुनाव क्षेत्रों को पहचानने का प्रयास करें। आपके चुनाव क्षेत्र के सांसद का क्या नाम है? आपके राज्य से संसद में कितने सांसद जाते हैं? कुछ निर्वाचन क्षेत्रों को हरे और कुछ को नीले रंग में क्यों दिखाया गया है?</p>
+                <div class="answer">
+                    <p>2004 के संसदीय चुनाव क्षेत्रों के नक्शे में:</p>
+                    </div>
+                    
+                    <ul>
+                        <li><strong>राज्य (मध्यप्रदेश) के चुनाव क्षेत्र:</strong> मुरैना, भिंड, ग्वालियर, गुना, सागर, टीकमगढ़, दमोह, खजुराहो, सतना, रीवा, सीधी, शहडोल, जबलपुर, मण्डला, बालाघाट, छिंदवाड़ा, नर्मदापुरम (पूर्व नाम – होशंगाबाद), विदिशा, भोपाल, राजगढ़, देवास, उज्जैन, मंदसौर, रतलाम, धार, इंदौर, खरगोन, खंडवा, बैतूल</li>
+                        <li><strong>सांसद (खजुराहो) का नाम:</strong>  माननीय विष्णुदत्त शर्मा</li>
+                        <li><strong>राज्य (मध्यप्रदेश) से सांसदों की संख्या:</strong> 29</li>
+                        <li><strong>नक्शे में रंगों का महत्व:</strong> हरे और नीले रंग से अलग-अलग राज्यों के चुनाव क्षेत्रों को दर्शाया गया है जहां नीले रंग में अनुसूचित जाति के 84 क्षेत्र हैं, और हरे रंग में अनुसूचित जनजाति के 47 क्षेत्र हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="qa-card">
+                <p class="question">3. अध्याय 1 में आपने पढ़ा कि भारत में प्रचलित 'संसदीय शासन व्यवस्था' में तीन स्तर होते हैं। इनमें से एक स्तर संसद (केंद्र सरकार) तथा दूसरा स्तर विभिन्न राज्य विधानसभाओं (राज्य सरकारों) का होता है। अपने क्षेत्र के विभिन्न प्रतिनिधियों से संबंधित जानकारियों के आधार पर नीचे दी गई तालिका को भरें-</p>
+                <div class="answer">
+                    <table style="width:100%; border-collapse: collapse; margin-top: 15px;">
+                        <thead>
+                            <tr style="background-color: #f2f2f2;">
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">प्रश्न</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">राज्य सरकार</th>
+                                <th style="padding: 12px; text-align: left; border: 1px solid #ddd;">केंद्र सरकार</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">कौन सा/से राजनीतिक दल अभी सत्ता में है/हैं?</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[राज्य की सत्तारूढ़ पार्टी]</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[केंद्र की सत्तारूढ़ पार्टी]</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">आपके क्षेत्र से निर्वाचित प्रतिनिधि कौन है?</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[विधायक का नाम]</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[सांसद का नाम]</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">अभी कौन सा राजनीतिक दल विपक्ष में है?</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[राज्य की विपक्षी पार्टी]</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[केंद्र की विपक्षी पार्टी]</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">पिछले चुनाव कब हुए थे?</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[राज्य विधानसभा चुनाव की तारीख]</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[लोकसभा चुनाव की तारीख]</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">अगले चुनाव कब होंगे?</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[अगले राज्य चुनाव की तारीख]</td>
+                                <td style="padding: 12px; border: 1px solid #ddd; vertical-align: top;">[अगले लोकसभा चुनाव की तारीख]</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="note">नोट: यह तालिका सामान्य प्रारूप दर्शाती है। वास्तविक जानकारी स्थानीय चुनाव आयोग या संबंधित सरकारी वेबसाइटों से प्राप्त की जा सकती है।</p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="qa-card">
+                <p class="question">4. घरेलू हिंसा पर नया कानून कैसे बना, महिला संगठनों ने इस प्रक्रिया में अलग-अलग तरीकों से क्या भूमिका निभाई, उसे अपने शब्दों में लिखिए।</p>
+                <div class="answer">
+                    <p>घरेलू हिंसा पर नया कानून बनाने में महिला संगठनों ने निम्नलिखित महत्वपूर्ण भूमिका निभाई:</p>
+                    <ul>
+                        <li><strong>जागरूकता फैलाना:</strong> महिला संगठनों ने घरेलू हिंसा के मुद्दे पर जनजागरूकता फैलाई और इसे एक सार्वजनिक मुद्दा बनाया। उन्होंने समाज में फैली इस समस्या को सामने लाने का कार्य किया।</li>
+                        <li><strong>मसौदा तैयार करना:</strong> वकीलों, कानून के छात्रों और समाजशास्त्रियों के सहयोग से महिला संगठनों ने 'घरेलू हिंसा (निवारण और संरक्षण) विधेयक' का मसौदा तैयार किया।</li>
+                        <li><strong>जनसमर्थन जुटाना:</strong> इन संगठनों ने रैलियाँ, धरने और जनसभाएँ आयोजित करके लोगों का समर्थन जुटाया और सरकार पर दबाव बनाया।</li>
+                        <li><strong>मीडिया का उपयोग:</strong> अखबारों, टेलीविजन और रेडियो के माध्यम से इस मुद्दे को उठाया गया, जिससे आम जनता तक यह बात पहुँची।</li>
+                        <li><strong>सरकार पर दबाव:</strong> महिला संगठनों ने संसद सदस्यों से मिलकर इस कानून के पक्ष में दबाव बनाया और उन्हें इसकी आवश्यकता समझाई।</li>
+                        <li><strong>पीड़ित महिलाओं की कहानियाँ सामने लाना:</strong> इन संगठनों ने घरेलू हिंसा से पीड़ित महिलाओं की वास्तविक कहानियों को सामने लाकर कानून की आवश्यकता को रेखांकित किया।</li>
+                    </ul>
+                    <p>इन सभी प्रयासों के परिणामस्वरूप 2005 में 'घरेलू हिंसा (निवारण और संरक्षण) अधिनियम' पारित हुआ, जिसने महिलाओं को घरेलू हिंसा के विरुद्ध कानूनी संरक्षण प्रदान किया और उन्हें सुरक्षा, आवास और आर्थिक सहायता का अधिकार दिया।</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent copy, cut and paste
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent keyboard shortcuts for copy, cut, paste
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'v' || e.key === 'V')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

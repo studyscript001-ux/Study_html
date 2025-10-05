@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8, सामाजिक विज्ञान - सामाजिक एवं राजनीतिक जीवन III: पाठ 4 - न्यायपालिका</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2ecc71;
+            --background-color: #f9f9f9;
+            --card-background-color: #ffffff;
+            --text-color: #333;
+            --heading-color: #2c3e50;
+            --border-color: #ddd;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        body {
+            font-family: 'Noto Sans Devanagari', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 10px;
+            cursor: default;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 5px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: 0 6px 12px var(--shadow-color);
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .header h2 {
+            margin: 8px 0 0;
+            font-weight: 400;
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            color: var(--heading-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            display: inline-block;
+        }
+
+        .qa-card {
+            background-color: var(--card-background-color);
+            border: 1px solid var(--border-color);
+            border-left: 6px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 3px 8px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .qa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px var(--shadow-color);
+        }
+
+        .question {
+            font-weight: 700;
+            font-size: 1.25em;
+            color: var(--heading-color);
+            margin-bottom: 15px;
+        }
+
+        .answer {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: #4a4a4a;
+        }
+
+        .answer p {
+            margin: 0 0 12px;
+        }
+        
+        .answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .answer ul {
+            padding-left: 25px;
+            margin-top: 5px;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .note {
+            font-style: italic;
+            color: #666;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 6px;
+            border-left: 3px solid var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .label {
+            font-weight: 700;
+            color: #333;
+        }
+
+        .true-false-item {
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .highlight {
+            background-color: #fffacd;
+            padding: 5px;
+            border-radius: 3px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.6em;
+            }
+             .header h2 {
+                font-size: 1.1em;
+            }
+            .section-title {
+                font-size: 1.5em;
+            }
+            .question {
+                font-size: 1.15em;
+            }
+            .answer {
+                font-size: 1em;
+            }
+            .qa-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>न्यायपालिका</h1>
+            <h2>सामाजिक एवं राजनीतिक जीवन - III, कक्षा:8 अध्याय 4</h2>
+        </header>
+
+        <!-- Section: अभ्यास प्रश्न -->
+        <section class="section">
+            <h2 class="section-title">अभ्यास प्रश्न</h2>
+
+            <!-- Question 1 -->
+            <div class="qa-card">
+                <p class="question">1. आप पढ़ चुके हैं कि 'कानून को कायम रखना और मौलिक अधिकारों को लागू करना' न्यायपालिका का एक मुख्य काम होता है। आपकी राय में इस महत्वपूर्ण काम को करने के लिए न्यायपालिका का स्वतंत्र होना क्यों आवश्यक है?</p>
+                <div class="answer">
+                    <p>न्यायपालिका का स्वतंत्र होना निम्नलिखित कारणों से आवश्यक है:</p>
+                    <ul>
+                        <li>स्वतंत्र न्यायपालिका निष्पक्ष और न्यायसंगत फैसले ले सकती है बिना किसी दबाव या भय के।</li>
+                        <li>यह सरकार के अन्य अंगों - विधायिका और कार्यपालिका पर अंकुश लगाने का काम करती है।</li>
+                        <li>संविधान की रक्षा करने और मौलिक अधिकारों को लागू करने के लिए स्वतंत्र न्यायपालिका आवश्यक है।</li>
+                        <li>स्वतंत्र न्यायपालिका सामान्य नागरिकों को सरकार या शक्तिशाली लोगों के खिलाफ न्याय दिलाने में सक्षम होती है।</li>
+                        <li>यह लोकतंत्र की मजबूती और स्थिरता सुनिश्चित करती है।</li>
+                        <li>स्वतंत्र न्यायपालिका शक्तियों के पृथक्करण के सिद्धांत को मजबूत करती है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="qa-card">
+                <p class="question">2. अध्याय 1 में मौलिक अधिकारों की सूची दी गई है। उसे फिर से पढ़ें। आपको ऐसा क्यों लगता है कि संवैधानिक उपचारों का अधिकार न्यायिक पुनरावलोकन की अवधारणा से जुड़ा हुआ है?</p>
+                <div class="answer">
+                    <p>संवैधानिक उपचारों का अधिकार न्यायिक पुनरावलोकन से निम्नलिखित कारणों से जुड़ा हुआ है:</p>
+                    <ul>
+                        <li>संवैधानिक उपचारों का अधिकार (अनुच्छेद 32 और 226) नागरिकों को उनके मौलिक अधिकारों के उल्लंघन पर न्यायालय की शरण लेने का अधिकार देता है।</li>
+                        <li>न्यायिक पुनरावलोकन न्यायपालिका को यह शक्ति देता है कि वह संसद या विधानसभाओं द्वारा बनाए गए कानूनों की संवैधानिकता की जांच कर सके।</li>
+                        <li>जब कोई नागरिक संवैधानिक उपचारों का अधिकार का उपयोग करता है, तो न्यायालय न्यायिक पुनरावलोकन के माध्यम से यह जांच सकता है कि क्या संबंधित कानून संविधान के अनुरूप है।</li>
+                        <li>इस प्रकार, संवैधानिक उपचारों का अधिकार न्यायिक पुनरावलोकन को सक्रिय करने का एक माध्यम बनता है।</li>
+                        <li>दोनों ही संविधान की सर्वोच्चता और मौलिक अधिकारों की रक्षा सुनिश्चित करते हैं।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="qa-card">
+                <p class="question">3. नीचे तीन स्तर की अदालत को दिखाया गया है। प्रत्येक के सामने लिखें कि उस अदालत ने सुनीता गोयल के मामले में क्या फैसला दिया था? अपने उत्तर को कक्षा के अन्य विद्यार्थियों द्वारा दिए गए उत्तरों के साथ मिलाकर देखें।</p>
+                <div class="answer">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 30%;">अदालत</th>
+                                <th>सुनीता गोयल के मामले में फैसला</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>सर्वोच्च न्यायालय</strong></td>
+                                <td>सर्वोच्च न्यायालय ने लक्ष्मण कुमार और उसकी माँ को दोषी ठहराया, लेकिन भाई को सबूतों की कमी के कारण बरी कर दिया। दोनों दोषियों को उम्रकैद की सजा सुनाई गई।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>उच्च न्यायालय</strong></td>
+                                <td>उच्च न्यायालय ने सभी तीनों आरोपियों - लक्ष्मण कुमार, उसकी माँ और भाई को बरी कर दिया, यह मानते हुए कि सुनीता की मौत एक दुर्घटना थी।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>निचली अदालत</strong></td>
+                                <td>निचली अदालत ने तीनों आरोपियों - लक्ष्मण कुमार, उसकी माँ और भाई को दोषी ठहराया और उन्हें मौत की सजा सुनाई।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="qa-card">
+                <p class="question">4. सुनीता गोयल मामले को ध्यान में रखते हुए नीचे दिए गए कथनों को पढ़ें। जो कथन सही हैं उन पर सही का निशान लगाएँ और जो गलत हैं उन्हें सही करके लिखें।</p>
+                <div class="answer">
+                    <div class="true-false-item">
+                        <p><span class="label">(क) अभियुक्त इस मामले को उच्च न्यायालय ले गए क्योंकि वे निचली अदालत के फैसले से संतुष्ट नहीं थे।</span></p>
+                        <p><strong>उत्तर:</strong> <span class="highlight">सही ✓</span></p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(ख) वे उच्च न्यायालय के फैसले के खिलाफ सर्वोच्च न्यायालय गए।</span></p>
+                        <p><strong>उत्तर:</strong> <span class="highlight">सही ✓</span> (यह याचिका 'इंडियन एसोसिएशन ऑफ वूमेन लॉयर्स' नामक संस्था द्वारा दायर की गई थी)</p>
+                    </div>
+                    
+                    <div class="true-false-item">
+                        <p><span class="label">(ग) यदि अभियुक्त सर्वोच्च न्यायालय के फैसले से संतुष्ट नहीं हैं, तो वे फिर से निचली अदालत में जा सकते हैं।</span></p>
+                        <p><strong>उत्तर:</strong> <span class="highlight">गलत ✗</span> सही कथन: सर्वोच्च न्यायालय का फैसला अंतिम होता है, इसके बाद किसी अन्य अदालत में अपील नहीं की जा सकती।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="qa-card">
+                <p class="question">5. आपको ऐसा क्यों लगता है कि 1980 के दशक में शुरू किया गया जनहित याचिका (PIL) का प्रावधान सभी को न्याय दिलाने की दिशा में एक महत्वपूर्ण कदम था?</p>
+                <div class="answer">
+                    <p>जनहित याचिका (PIL) का प्रावधान निम्नलिखित कारणों से सभी को न्याय दिलाने की दिशा में एक महत्वपूर्ण कदम था:</p>
+                    <ul>
+                        <li>PIL ने न्याय तक पहुँच को व्यापक बनाया, जिससे गरीब और वंचित वर्ग के लोग भी न्याय प्राप्त कर सके।</li>
+                        <li>इसके माध्यम से कोई भी व्यक्ति या संगठन उन लोगों की ओर से याचिका दायर कर सकता है जो स्वयं अदालत नहीं जा सकते।</li>
+                        <li>PIL ने कानूनी प्रक्रिया को सरल बनाया - अब एक पत्र या तार को भी याचिका माना जा सकता है।</li>
+                        <li>इसके माध्यम से सामाजिक न्याय और सार्वजनिक हित से जुड़े मुद्दों पर अदालतें हस्तक्षेप कर सकीं।</li>
+                        <li>PIL के कारण ही मध्याह्न भोजन योजना, बंधुआ मजदूरी से मुक्ति, और पर्यावरण संरक्षण जैसे महत्वपूर्ण मामलों में न्याय मिल सका।</li>
+                        <li>यह प्रावधान न्यायिक सक्रियता को बढ़ावा देता है और न्यायपालिका को सामाजिक परिवर्तन का माध्यम बनाता है।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="qa-card">
+                <p class="question">6. ओल्गा टेलिस बनाम बॉम्बे नगर निगम मामले में दिए गए फैसले के अंशों को फिर से पढ़ें। इस फैसले में कहा गया है कि आजीविका का अधिकार जीवन के अधिकार का हिस्सा है। अपने शब्दों में लिखें कि न्यायाधीशों का यह कथन का क्या मतलब था?</p>
+                <div class="answer">
+                    <p>ओल्गा टेलिस बनाम बॉम्बे नगर निगम मामले में न्यायाधीशों के कथन का मतलब है:</p>
+                    <ul>
+                        <li>संविधान के अनुच्छेद 21 में दिए गए 'जीवन के अधिकार' का मतलब केवल जीवित रहने का अधिकार नहीं है, बल्कि गरिमापूर्ण जीवन जीने का अधिकार है।</li>
+                        <li>गरिमापूर्ण जीवन जीने के लिए आजीविका (रोजगार और आमदनी) आवश्यक है, इसलिए आजीविका का अधिकार जीवन के अधिकार का हिस्सा बन जाता है।</li>
+                        <li>यदि किसी व्यक्ति को उसकी आजीविका से वंचित कर दिया जाए, तो वह गरिमापूर्ण जीवन नहीं जी सकता, इस प्रकार उसके जीवन के अधिकार का हनन होता है।</li>
+                        <li>इस मामले में, फुटपाथ पर रहने वाले और छोटे-मोटे काम करने वाले लोगों को बेदखल करने से उनकी आजीविका छिन जाती, जिससे उनके जीवन के अधिकार का उल्लंघन होता।</li>
+                        <li>इस फैसले ने जीवन के अधिकार की व्याख्या को विस्तार दिया और इसे और अधिक सार्थक बनाया।</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="qa-card">
+                <p class="question">7. इंसाफ में देरी यानी इंसाफ का कत्ल' इस विषय पर एक कहानी बनाएँ।</p>
+                <div class="answer">
+                    <p><strong>न्याय में देरी यानी न्याय से इनकार</strong></p>
+                    <p>रामू एक गरीब किसान था। उसकी पाँच बीघा जमीन एक शक्तिशाली जमींदार ने हड़प ली थी। रामू ने निचली अदालत में मुकदमा दायर किया। केस की सुनवाई शुरू होने में ही दो साल लग गए। फिर गवाहों की गवाही, दस्तावेजों की जांच में और तीन साल निकल गए।</p>
+                    <p>आखिरकार छह साल बाद निचली अदालत ने रामू के पक्ष में फैसला सुनाया। लेकिन जमींदार ने उच्च न्यायालय में अपील कर दी। उच्च न्यायालय में केस की सुनवाई में और पाँच साल लग गए। इस बीच रामू की उम्र बढ़ती गई और उसकी सेहत खराब होती गई।</p>
+                    <p>उच्च न्यायालय ने भी रामू के पक्ष में फैसला सुनाया, लेकिन जमींदार ने सर्वोच्च न्यायालय में अपील कर दी। सर्वोच्च न्यायालय में केस की सुनवाई शुरू होने से पहले ही रामू की दिल का दौरा पड़ने से मौत हो गई।</p>
+                    <p>कुल मिलाकर पंद्रह साल की कानूनी लड़ाई के बाद रामू को न्याय तो मिल गया, लेकिन वह उस न्याय का लाभ उठाने के लिए जीवित नहीं था। न्याय में हुई देरी ने रामू को न्याय से वंचित कर दिया। यह कहानी साबित करती है कि "इंसाफ में देरी यानी इंसाफ का कत्ल ।</p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="qa-card">
+                <p class="question">8. अगले पृष्ठ पर दिए गए शब्द-जाल में से प्रत्येक शब्द का वाक्य में प्रयोग करें।</p>
+                <div class="answer">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 20%;">शब्द</th>
+                                <th>वाक्य में प्रयोग</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>बरी करना</strong></td>
+                                <td>अदालत ने सबूतों के अभाव में आरोपी को बरी कर दिया।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>अपील करना</strong></td>
+                                <td>निचली अदालत के फैसले से असंतुष्ट होकर वकील ने उच्च न्यायालय में अपील की।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>मुआवजा</strong></td>
+                                <td>दुर्घटना के शिकार को पर्याप्त मुआवजा मिलना चाहिए।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>बेदखली</strong></td>
+                                <td>किराएदार ने बेदखली के आदेश के खिलाफ अदालत में याचिका दायर की।</td>
+                            </tr>
+                            <tr>
+                                <td><strong>उल्लंघन</strong></td>
+                                <td>पुलिस की कार्रवाई नागरिकों के मौलिक अधिकारों का उल्लंघन थी।</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="qa-card">
+                <p class="question">9. यह पोस्टर भोजन के अधिकार अभियान द्वारा बनाया गया है। इस पोस्टर को पढ़कर भोजन के अधिकार के बारे में सरकार की जिम्मेदारियों की सूची बनाएँ। इस पोस्टर में कहा गया है कि "भूखे पेट भरे गोदाम! नहीं चलेंगे, नहीं चलेंगे!!" इस कथन को पृष्ठ 55 पर भोजन के अधिकार के बारे में दिए गए चित्र-वर्णन से मिलाकर देखें।</p>
+                <div class="answer">
+                    <p>भोजन के अधिकार के संबंध में सरकार की जिम्मेदारियाँ:</p>
+                    <ul>
+                        <li>सरकार का यह दायित्व है कि वह सभी नागरिकों को पर्याप्त और पौष्टिक भोजन उपलब्ध कराए।</li>
+                        <li>सरकार को यह सुनिश्चित करना चाहिए कि सार्वजनिक वितरण प्रणाली के माध्यम से गरीबों को सस्ते दर पर अनाज मिले।</li>
+                        <li>सरकार को स्कूलों में मध्याह्न भोजन योजना चलानी चाहिए ताकि बच्चों को पौष्टिक भोजन मिल सके।</li>
+                        <li>सरकार को यह सुनिश्चित करना चाहिए कि गोदामों में संग्रहीत अनाज की बर्बादी न हो और वह जरूरतमंदों तक पहुँचे।</li>
+                        <li>सूखा या अकाल जैसी प्राकृतिक आपदाओं के समय सरकार को राहत कार्य चलाने चाहिए।</li>
+                        <li>सरकार को रोजगार गारंटी योजनाओं के माध्यम से लोगों को आय के स्रोत उपलब्ध कराने चाहिए ताकि वे भोजन खरीद सकें।</li>
+                    </ul>
+                    <p><strong>"भूखे पेट भरे गोदाम! नहीं चलेंगे, नहीं चलेंगे!!"</strong> - इस कथन का अर्थ है कि जब लोग भूखे हैं, तो सरकारी गोदामों में अनाज का भरा होना कोई मायने नहीं रखता। सरकार की जिम्मेदारी है कि वह गोदामों में संग्रहीत अनाज को भूखे लोगों तक पहुँचाए। पृष्ठ 55 पर दिए गए चित्र-वर्णन में स्पष्ट किया गया है कि सर्वोच्च न्यायालय ने राज्य सरकारों को निर्देश दिया था कि वे सभी को भोजन उपलब्ध कराने की व्यवस्था करें, खासकर स्कूली बच्चों को मध्याह्न भोजन उपलब्ध कराएँ।</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent drag and drop
+        document.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent copy, cut and paste
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('paste', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent keyboard shortcuts for copy, cut, paste
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'v' || e.key === 'V')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
