@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 6: घन और घनमूल (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 6: घन और घनमूल</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 6.1 Section -->
+        <section id="prashnavali-6-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में से कौन-सी संख्याएँ पूर्ण घन नहीं हैं?<br>
+                (i) 216 (ii) 128 (iii) 1000 (iv) 100 (v) 46656</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 216</strong></p>
+                        <p class="mb-2">216 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">216 = 2 × 2 × 2 × 3 × 3 × 3 = 2³ × 3³</p>
+                        <p class="mb-2">सभी अभाज्य गुणनखंड तीन-तीन के समूह में हैं।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 216 एक पूर्ण घन है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 128</strong></p>
+                        <p class="mb-2">128 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">128 = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁷</p>
+                        <p class="mb-2">2 सात बार आया है, जो तीन के समूह में नहीं है (7 ÷ 3 = 2 शेष 1)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 128 एक पूर्ण घन नहीं है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 1000</strong></p>
+                        <p class="mb-2">1000 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">1000 = 2 × 2 × 2 × 5 × 5 × 5 = 2³ × 5³</p>
+                        <p class="mb-2">सभी अभाज्य गुणनखंड तीन-तीन के समूह में हैं।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 1000 एक पूर्ण घन है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 100</strong></p>
+                        <p class="mb-2">100 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">100 = 2 × 2 × 5 × 5 = 2² × 5²</p>
+                        <p class="mb-2">2 और 5 दो-दो बार आए हैं, जो तीन के समूह में नहीं हैं।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 100 एक पूर्ण घन नहीं है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 46656</strong></p>
+                        <p class="mb-2">46656 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">46656 = 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 × 3 × 3 × 3 = 2⁶ × 3⁶</p>
+                        <p class="mb-2">सभी अभाज्य गुणनखंड तीन-तीन के समूह में हैं (6 ÷ 3 = 2)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 46656 एक पूर्ण घन है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: वह सबसे छोटी संख्या ज्ञात कीजिए जिससे निम्नलिखित संख्याओं को गुणा करने पर पूर्ण घन प्राप्त हो जाए:<br>
+                (i) 243 (ii) 256 (iii) 72 (iv) 675 (v) 100</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 243</strong></p>
+                        <p class="mb-2">243 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">243 = 3 × 3 × 3 × 3 × 3 = 3⁵</p>
+                        <p class="mb-2">3 पाँच बार आया है। इसे तीन के समूह में लाने के लिए एक और 3 की आवश्यकता है (5 + 1 = 6, 6 ÷ 3 = 2)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 3 से गुणा करना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 256</strong></p>
+                        <p class="mb-2">256 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">256 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁸</p>
+                        <p class="mb-2">2 आठ बार आया है। इसे तीन के समूह में लाने के लिए एक और 2 की आवश्यकता है (8 + 1 = 9, 9 ÷ 3 = 3)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 2 से गुणा करना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 72</strong></p>
+                        <p class="mb-2">72 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²</p>
+                        <p class="mb-2">2 तीन बार आया है (ठीक है), लेकिन 3 दो बार आया है। इसे तीन के समूह में लाने के लिए एक और 3 की आवश्यकता है।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 3 से गुणा करना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 675</strong></p>
+                        <p class="mb-2">675 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">675 = 3 × 3 × 3 × 5 × 5 = 3³ × 5²</p>
+                        <p class="mb-2">3 तीन बार आया है (ठीक है), लेकिन 5 दो बार आया है। इसे तीन के समूह में लाने के लिए एक और 5 की आवश्यकता है।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 5 से गुणा करना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 100</strong></p>
+                        <p class="mb-2">100 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">100 = 2 × 2 × 5 × 5 = 2² × 5²</p>
+                        <p class="mb-2">2 दो बार और 5 दो बार आया है। इसे तीन के समूह में लाने के लिए एक 2 और एक 5 की आवश्यकता है।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 2 × 5 = 10 से गुणा करना होगा।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: वह सबसे छोटी संख्या ज्ञात कीजिए जिससे निम्नलिखित संख्याओं को भाग देने पर भागफल एक पूर्ण घन प्राप्त हो जाए:<br>
+                (i) 81 (ii) 128 (iii) 135 (iv) 192 (v) 704</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 81</strong></p>
+                        <p class="mb-2">81 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">81 = 3 × 3 × 3 × 3 = 3⁴</p>
+                        <p class="mb-2">3 चार बार आया है। इसे तीन के समूह में लाने के लिए एक 3 को हटाना होगा (4 - 1 = 3, 3 ÷ 3 = 1)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 3 से भाग देना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 128</strong></p>
+                        <p class="mb-2">128 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">128 = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁷</p>
+                        <p class="mb-2">2 सात बार आया है। इसे तीन के समूह में लाने के लिए एक 2 को हटाना होगा (7 - 1 = 6, 6 ÷ 3 = 2)।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 2 से भाग देना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 135</strong></p>
+                        <p class="mb-2">135 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">135 = 3 × 3 × 3 × 5 = 3³ × 5¹</p>
+                        <p class="mb-2">3 तीन बार आया है (ठीक है), लेकिन 5 एक बार आया है। इसे तीन के समूह में लाने के लिए 5 को हटाना होगा।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 5 से भाग देना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 192</strong></p>
+                        <p class="mb-2">192 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">192 = 2 × 2 × 2 × 2 × 2 × 2 × 3 = 2⁶ × 3¹</p>
+                        <p class="mb-2">2 छह बार आया है (ठीक है, 6 ÷ 3 = 2), लेकिन 3 एक बार आया है। इसे तीन के समूह में लाने के लिए 3 को हटाना होगा।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 3 से भाग देना होगा।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 704</strong></p>
+                        <p class="mb-2">704 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">704 = 2 × 2 × 2 × 2 × 2 × 2 × 11 = 2⁶ × 11¹</p>
+                        <p class="mb-2">2 छह बार आया है (ठीक है, 6 ÷ 3 = 2), लेकिन 11 एक बार आया है। इसे तीन के समूह में लाने के लिए 11 को हटाना होगा।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 11 से भाग देना होगा।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: परीक्षित प्लास्टिसिन का एक घनाभ बनाता है, जिसकी भुजाएँ 5 cm, 2 cm और 5 cm हैं। एक घन बनाने के लिए ऐसे कितने घनाभों की आवश्यकता होगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाभ का आयतन = लंबाई × चौड़ाई × ऊँचाई</p>
+                        <p class="mb-2">घनाभ का आयतन = 5 cm × 2 cm × 5 cm = 50 cm³</p>
+                        <p class="mb-2">घन बनाने के लिए हमें एक पूर्ण घन संख्या चाहिए।</p>
+                        <p class="mb-2">50 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">50 = 2 × 5 × 5</p>
+                        <p class="mb-2">इसे पूर्ण घन बनाने के लिए, हमें 2 × 2 × 5 = 20 और घनाभों की आवश्यकता होगी।</p>
+                        <p class="mb-2">कुल आयतन = 50 × 20 = 1000 cm³</p>
+                        <p class="mb-2">घन की भुजा = ∛1000 = 10 cm</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> 20 घनाभों की आवश्यकता होगी।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.2 Section -->
+        <section id="prashnavali-6-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: अभाज्य गुणनखंड विधि द्वारा निम्नलिखित संख्याओं का घनमूल ज्ञात कीजिए:<br>
+                (i) 64 (ii) 512 (iii) 10648 (iv) 27000 (v) 15625 (vi) 13824 (vii) 110592 (viii) 46656 (ix) 175616 (x) 91125</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 64</strong></p>
+                        <p class="mb-2">64 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">64 = 2 × 2 × 2 × 2 × 2 × 2 = 2⁶</p>
+                        <p class="mb-2">घनमूल = 2 × 2 = 4</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛64 = 4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 512</strong></p>
+                        <p class="mb-2">512 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">512 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁹</p>
+                        <p class="mb-2">घनमूल = 2 × 2 × 2 = 8</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛512 = 8</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 10648</strong></p>
+                        <p class="mb-2">10648 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">10648 = 2 × 2 × 2 × 11 × 11 × 11 = 2³ × 11³</p>
+                        <p class="mb-2">घनमूल = 2 × 11 = 22</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛10648 = 22</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 27000</strong></p>
+                        <p class="mb-2">27000 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">27000 = 2 × 2 × 2 × 3 × 3 × 3 × 5 × 5 × 5 = 2³ × 3³ × 5³</p>
+                        <p class="mb-2">घनमूल = 2 × 3 × 5 = 30</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛27000 = 30</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 15625</strong></p>
+                        <p class="mb-2">15625 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">15625 = 5 × 5 × 5 × 5 × 5 × 5 = 5⁶</p>
+                        <p class="mb-2">घनमूल = 5 × 5 = 25</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛15625 = 25</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vi) 13824</strong></p>
+                        <p class="mb-2">13824 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">13824 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 = 2⁹ × 3³</p>
+                        <p class="mb-2">घनमूल = 2 × 2 × 2 × 3 = 24</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛13824 = 24</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vii) 110592</strong></p>
+                        <p class="mb-2">110592 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">110592 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 = 2¹² × 3³</p>
+                        <p class="mb-2">घनमूल = 2 × 2 × 2 × 2 × 3 = 48</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛110592 = 48</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(viii) 46656</strong></p>
+                        <p class="mb-2">46656 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">46656 = 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 × 3 × 3 × 3 = 2⁶ × 3⁶</p>
+                        <p class="mb-2">घनमूल = 2 × 2 × 3 × 3 = 36</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛46656 = 36</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ix) 175616</strong></p>
+                        <p class="mb-2">175616 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">175616 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 7 × 7 × 7 = 2⁹ × 7³</p>
+                        <p class="mb-2">घनमूल = 2 × 2 × 2 × 7 = 56</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛175616 = 56</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(x) 91125</strong></p>
+                        <p class="mb-2">91125 का अभाज्य गुणनखंड करने पर:</p>
+                        <p class="mb-2">91125 = 3 × 3 × 3 × 3 × 3 × 3 × 5 × 5 × 5 = 3⁶ × 5³</p>
+                        <p class="mb-2">घनमूल = 3 × 3 × 5 = 45</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> ∛91125 = 45</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: बताइए सत्य है या असत्य:<br>
+                (i) किसी भी विषम संख्या का घन सम होता है।<br>
+                (ii) एक पूर्ण घन दो शून्यों पर समाप्त नहीं होता है।<br>
+                (iii) यदि किसी संख्या का वर्ग 5 पर समाप्त होता है, तो उसका घन 25 पर समाप्त होता है।<br>
+                (iv) ऐसा कोई पूर्ण घन नहीं है जो 8 पर समाप्त होता है।<br>
+                (v) दो अंकों की संख्या का घन तीन अंकों की संख्या हो सकती है।<br>
+                (vi) दो अंकों की संख्या के घन में सात या अधिक अंक हो सकते हैं।<br>
+                (vii) एक अंक वाली संख्या का घन एक अंक वाली संख्या हो सकती है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) किसी भी विषम संख्या का घन सम होता है।</strong></p>
+                        <p class="mb-2">विषम × विषम = विषम<br>विषम × विषम × विषम = विषम</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> असत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) एक पूर्ण घन दो शून्यों पर समाप्त नहीं होता है।</strong></p>
+                        <p class="mb-2">पूर्ण घन के लिए, शून्यों की संख्या 3 के गुणज में होनी चाहिए।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> सत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) यदि किसी संख्या का वर्ग 5 पर समाप्त होता है, तो उसका घन 25 पर समाप्त होता है।</strong></p>
+                        <p class="mb-2">जैसे 5² = 25 (5 पर समाप्त), 5³ = 125 (25 पर समाप्त)<br>15² = 225 (5 पर समाप्त), 15³ = 3375 (75 पर समाप्त)</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> असत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) ऐसा कोई पूर्ण घन नहीं है जो 8 पर समाप्त होता है।</strong></p>
+                        <p class="mb-2">2³ = 8, 12³ = 1728, 22³ = 10648 (सभी 8 पर समाप्त)</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> असत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) दो अंकों की संख्या का घन तीन अंकों की संख्या हो सकती है।</strong></p>
+                        <p class="mb-2">4³ = 64 (दो अंक), 5³ = 125 (तीन अंक)</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> सत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vi) दो अंकों की संख्या के घन में सात या अधिक अंक हो सकते हैं।</strong></p>
+                        <p class="mb-2">99³ = 970299 (छह अंक), 100³ = 1000000 (सात अंक) लेकिन 100 तीन अंकों की संख्या है।</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> असत्य</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vii) एक अंक वाली संख्या का घन एक अंक वाली संख्या हो सकती है।</strong></p>
+                        <p class="mb-2">1³ = 1, 2³ = 8 (दोनों एक अंक वाली संख्याएँ हैं)</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> सत्य</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

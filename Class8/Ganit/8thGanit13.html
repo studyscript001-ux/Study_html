@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 13: आलेखों से परिचय (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .graph-reference {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 13: आलेखों से परिचय</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 13.1 Section -->
+        <section id="prashnavali-13-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 13.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्न आलेख किसी अस्पताल में एक रोगी का प्रति घंटे लिया गया तापमान दर्शाता है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) रोगी का तापमान दोपहर 1 बजे क्या था?</p>
+                        <p class="mb-2">आलेख से देखने पर: दोपहर 1 बजे रोगी का तापमान 36.5°C था।</p>
+                        <p><strong>उत्तर:</strong> 36.5°C</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) रोगी का तापमान 38.5°C कब था?</p>
+                        <p class="mb-2">आलेख से देखने पर: रोगी का तापमान 38.5°C दोपहर 12 बजे था।</p>
+                        <p><strong>उत्तर:</strong> दोपहर 12 बजे</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) इस पूरे अंतराल में रोगी का तापमान दो बार एक समान था। ये दो समय क्या-क्या थे?</p>
+                        <p class="mb-2">आलेख से देखने पर: रोगी का तापमान दोपहर 1 बजे और 2 बजे एक समान (36.5°C) था।</p>
+                        <p><strong>उत्तर:</strong> दोपहर 1 बजे और 2 बजे</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) दोपहर 1:30 बजे रोगी का तापमान क्या था? आप इस निष्कर्ष पर कैसे पहुँचे?</p>
+                        <p class="mb-2">आलेख से देखने पर: दोपहर 1:30 बजे रोगी का तापमान 36.5°C था।</p>
+                        <p class="mb-2">तर्क: दोपहर 1 बजे और 2 बजे के बीच का समय 1:30 बजे है और इस समय आलेख एक सीधी रेखा दिखाता है जो 36.5°C पर है।</p>
+                        <p><strong>उत्तर:</strong> 36.5°C</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) किन अंतरालों में रोगी का तापमान 'बढ़ने का रुझान' दर्शाता है?</p>
+                        <p class="mb-2">आलेख से देखने पर: रोगी का तापमान सुबह 9 बजे से 10 बजे, सुबह 10 बजे से 11 बजे, और दोपहर 2 बजे से 3 बजे के बीच बढ़ने का रुझान दर्शाता है।</p>
+                        <p><strong>उत्तर:</strong> सुबह 9-10 बजे, 10-11 बजे और दोपहर 2-3 बजे</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक निर्माता कंपनी की विभिन्न वर्षों में की गई बिक्री निम्न आलेख द्वारा दर्शाई गई है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) (i) वर्ष 2002 में (ii) वर्ष 2006 में कितनी बिक्री थी?</p>
+                        <p class="mb-2">आलेख से देखने पर:</p>
+                        <p class="mb-2">(i) वर्ष 2002 में बिक्री = 4 करोड़ रुपये</p>
+                        <p class="mb-2">(ii) वर्ष 2006 में बिक्री = 8 करोड़ रुपये</p>
+                        <p><strong>उत्तर:</strong> (i) 4 करोड़ रुपये, (ii) 8 करोड़ रुपये</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) (i) वर्ष 2003 में (ii) वर्ष 2005 में कितनी बिक्री थी?</p>
+                        <p class="mb-2">आलेख से देखने पर:</p>
+                        <p class="mb-2">(i) वर्ष 2003 में बिक्री = 7 करोड़ रुपये</p>
+                        <p class="mb-2">(ii) वर्ष 2005 में बिक्री = 10 करोड़ रुपये</p>
+                        <p><strong>उत्तर:</strong> (i) 7 करोड़ रुपये, (ii) 10 करोड़ रुपये</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) वर्ष 2002 और वर्ष 2006 की बिक्रियों में कितना अंतर था?</p>
+                        <p class="mb-2">गणना: वर्ष 2006 की बिक्री - वर्ष 2002 की बिक्री = 8 - 4 = 4 करोड़ रुपये</p>
+                        <p><strong>उत्तर:</strong> 4 करोड़ रुपये</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) किस अंतराल में बिक्रियों का यह अंतर सबसे अधिक था?</p>
+                        <p class="mb-2">आलेख से देखने पर: वर्ष 2004 और 2005 के बीच बिक्रियों का अंतर सबसे अधिक था।</p>
+                        <p class="mb-2">गणना: 2004 की बिक्री = 6.5 करोड़, 2005 की बिक्री = 10 करोड़, अंतर = 3.5 करोड़</p>
+                        <p><strong>उत्तर:</strong> वर्ष 2004 और 2005 के बीच</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: वनस्पति विज्ञान के एक प्रयोग में, समान प्रयोगशाला परिस्थितियों में दो पौधे A और B उगाए गए। तीन सप्ताह तक उनकी ऊँचाइयों को हर सप्ताह के अंत में मापा गया। परिणामों को निम्न आलेख में दर्शाया गया है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) (i) 2 सप्ताह बाद (ii) 3 सप्ताह बाद पौधे A की ऊँचाई कितनी थी?</p>
+                        <p class="mb-2">आलेख से देखने पर:</p>
+                        <p class="mb-2">(i) 2 सप्ताह बाद पौधे A की ऊँचाई = 7 cm</p>
+                        <p class="mb-2">(ii) 3 सप्ताह बाद पौधे A की ऊँचाई = 9 cm</p>
+                        <p><strong>उत्तर:</strong> (i) 7 cm, (ii) 9 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) (i) 2 सप्ताह बाद (ii) 3 सप्ताह बाद पौधे B की ऊँचाई कितनी थी?</p>
+                        <p class="mb-2">आलेख से देखने पर:</p>
+                        <p class="mb-2">(i) 2 सप्ताह बाद पौधे B की ऊँचाई = 7 cm</p>
+                        <p class="mb-2">(ii) 3 सप्ताह बाद पौधे B की ऊँचाई = 10 cm</p>
+                        <p><strong>उत्तर:</strong> (i) 7 cm, (ii) 10 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) तीसरे सप्ताह में पौधे A की ऊँचाई कितनी बढ़ी?</p>
+                        <p class="mb-2">गणना: तीसरे सप्ताह के अंत में ऊँचाई - दूसरे सप्ताह के अंत में ऊँचाई = 9 - 7 = 2 cm</p>
+                        <p><strong>उत्तर:</strong> 2 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) दूसरे सप्ताह के अंत से तीसरे सप्ताह के अंत तक पौधे B की ऊँचाई कितनी बढ़ी?</p>
+                        <p class="mb-2">गणना: तीसरे सप्ताह के अंत में ऊँचाई - दूसरे सप्ताह के अंत में ऊँचाई = 10 - 7 = 3 cm</p>
+                        <p><strong>उत्तर:</strong> 3 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) किस सप्ताह में पौधे A की ऊँचाई सबसे अधिक बढ़ी?</p>
+                        <p class="mb-2">आलेख से देखने पर: पहले सप्ताह में पौधे A की ऊँचाई 0 cm से 7 cm तक बढ़ी, यानी 7 cm की वृद्धि।</p>
+                        <p class="mb-2">दूसरे सप्ताह में 7 cm से 7 cm तक, यानी 0 cm की वृद्धि।</p>
+                        <p class="mb-2">तीसरे सप्ताह में 7 cm से 9 cm तक, यानी 2 cm की वृद्धि।</p>
+                        <p><strong>उत्तर:</strong> पहले सप्ताह में</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(f) किस सप्ताह में पौधे B की ऊँचाई सबसे कम बढ़ी?</p>
+                        <p class="mb-2">आलेख से देखने पर: पहले सप्ताह में पौधे B की ऊँचाई 0 cm से 4 cm तक बढ़ी, यानी 4 cm की वृद्धि।</p>
+                        <p class="mb-2">दूसरे सप्ताह में 4 cm से 7 cm तक, यानी 3 cm की वृद्धि।</p>
+                        <p class="mb-2">तीसरे सप्ताह में 7 cm से 10 cm तक, यानी 3 cm की वृद्धि।</p>
+                        <p><strong>उत्तर:</strong> दूसरे और तीसरे सप्ताह में (3 cm की वृद्धि)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(g) क्या किसी सप्ताह में दोनों पौधों की ऊँचाइयाँ समान थीं? पहचानिए।</p>
+                        <p class="mb-2">आलेख से देखने पर: दूसरे सप्ताह के अंत में दोनों पौधों की ऊँचाई 7 cm थी।</p>
+                        <p><strong>उत्तर:</strong> हाँ, दूसरे सप्ताह के अंत में दोनों पौधों की ऊँचाई 7 cm थी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: निम्न आलेख किसी सप्ताह के प्रत्येक दिन के लिए पूर्वानुमानित तापमान तथा वास्तविक तापमान को दर्शाता है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) किस दिन पूर्वानुमानित तापमान और वास्तविक तापमान समान था?</p>
+                        <p class="mb-2">आलेख से देखने पर: मंगलवार, शुक्रवार और रविवार को पूर्वानुमानित और वास्तविक तापमान समान थे।</p>
+                        <p><strong>उत्तर:</strong> मंगलवार, शुक्रवार और रविवार</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) सप्ताह में पूर्वानुमानित अधिकतम तापमान क्या था?</p>
+                        <p class="mb-2">आलेख से देखने पर: सप्ताह में पूर्वानुमानित अधिकतम तापमान 35°C था (गुरुवार को)।</p>
+                        <p><strong>उत्तर:</strong> 35°C</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) सप्ताह में वास्तविक न्यूनतम तापमान क्या था?</p>
+                        <p class="mb-2">आलेख से देखने पर: सप्ताह में वास्तविक न्यूनतम तापमान 15°C था (सोमवार को)।</p>
+                        <p><strong>उत्तर:</strong> 15°C</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) किस दिन वास्तविक तापमान और पूर्वानुमानित तापमान में अंतर सबसे अधिक था?</p>
+                        <p class="mb-2">आलेख से देखने पर: गुरुवार को वास्तविक तापमान (22.5°C) और पूर्वानुमानित तापमान (35°C) में अंतर सबसे अधिक था।</p>
+                        <p class="mb-2">गणना: 35 - 22.5 = 12.5°C</p>
+                        <p><strong>उत्तर:</strong> गुरुवार</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्न सारणी के अनुसार एक रैखिक आलेख बनाइए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) विभिन्न वर्षों में एक पर्वतीय नगर में हिमपात के दिनों की संख्या:</p>
+                        <p class="mb-2">वर्ष: 2003, 2004, 2005, 2006</p>
+                        <p class="mb-2">दिन: 8, 10, 5, 12</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर वर्ष और Y-अक्ष पर दिनों की संख्या अंकित करें</p>
+                        <p class="mb-2">2. बिंदु (2003, 8), (2004, 10), (2005, 5), (2006, 12) अंकित करें</p>
+                        <p class="mb-2">3. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p><strong>उत्तर:</strong> आलेख पाठ्यपुस्तक में देखें</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) विभिन्न वर्षों में एक गाँव में, पुरुषों और स्त्रियों की संख्या (हजारों में):</p>
+                        <p class="mb-2">वर्ष: 2003, 2004, 2005, 2006, 2007</p>
+                        <p class="mb-2">पुरुषों की संख्या: 12, 12.5, 13, 13.2, 13.5</p>
+                        <p class="mb-2">स्त्रियों की संख्या: 11.3, 11.9, 13, 13.6, 12.8</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर वर्ष और Y-अक्ष पर जनसंख्या (हजारों में) अंकित करें</p>
+                        <p class="mb-2">2. पुरुषों के लिए बिंदु: (2003, 12), (2004, 12.5), (2005, 13), (2006, 13.2), (2007, 13.5)</p>
+                        <p class="mb-2">3. स्त्रियों के लिए बिंदु: (2003, 11.3), (2004, 11.9), (2005, 13), (2006, 13.6), (2007, 12.8)</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p><strong>उत्तर:</strong> आलेख पाठ्यपुस्तक में देखें</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: एक डाकिया किसी पास के मीउजियम में एक व्यापारी को पार्सल देने के लिए साइकिल पर जाता है। विभिन्न समयों पर शहर से उसकी दूरियाँ निम्न आलेख द्वारा दर्शाई गई हैं:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) X-अक्ष पर समय दर्शाने के लिए क्या पैमाना प्रयोग किया गया है?</p>
+                        <p class="mb-2">आलेख से देखने पर: X-अक्ष पर 4 इकाई = 1 घंटा</p>
+                        <p><strong>उत्तर:</strong> 4 इकाई = 1 घंटा</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) उसने पूरी यात्रा के लिए कितना समय लिया?</p>
+                        <p class="mb-2">आलेख से देखने पर: वह सुबह 8 बजे शहर से चला और दोपहर 12:30 बजे वापस आया।</p>
+                        <p class="mb-2">गणना: 8:00 से 12:30 = 4.5 घंटे</p>
+                        <p><strong>उत्तर:</strong> 4.5 घंटे</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) व्यापारी के स्थान की शहर से दूरी कितनी है?</p>
+                        <p class="mb-2">आलेख से देखने पर: व्यापारी के स्थान की शहर से दूरी 22 km है।</p>
+                        <p><strong>उत्तर:</strong> 22 km</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) क्या डाकिया रास्ते में कहीं रुका? विवरण दीजिए।</p>
+                        <p class="mb-2">आलेख से देखने पर: हाँ, डाकिया सुबह 10 बजे से 10:30 बजे तक रुका।</p>
+                        <p class="mb-2">तर्क: इस समय अंतराल में दूरी में कोई परिवर्तन नहीं हुआ।</p>
+                        <p><strong>उत्तर:</strong> हाँ, सुबह 10 बजे से 10:30 बजे तक</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) किस अंतराल में उसकी चाल सबसे अधिक थी?</p>
+                        <p class="mb-2">आलेख से देखने पर: दोपहर 1 बजे से 2 बजे के बीच उसकी चाल सबसे अधिक थी।</p>
+                        <p class="mb-2">गणना: इस अंतराल में उसने 10 km की दूरी 1 घंटे में तय की, चाल = 10 km/h</p>
+                        <p><strong>उत्तर:</strong> दोपहर 1 बजे से 2 बजे के बीच</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: निम्न आलेखों में कौन-कौन से आलेख समय और तापमान के बीच संभव हैं? तर्क सहित अपने उत्तर दीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) यह आलेख संभव है क्योंकि तापमान समय के साथ लगातार बदल सकता है।</p>
+                        <p><strong>उत्तर:</strong> संभव</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) यह आलेख संभव नहीं है क्योंकि एक ही समय पर अलग-अलग तापमान नहीं हो सकते।</p>
+                        <p><strong>उत्तर:</strong> असंभव</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) यह आलेख संभव है क्योंकि तापमान समय के साथ स्थिर रह सकता है।</p>
+                        <p><strong>उत्तर:</strong> संभव</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) यह आलेख संभव है क्योंकि तापमान समय के साथ बदल सकता है।</p>
+                        <p><strong>उत्तर:</strong> संभव</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 13.2 Section -->
+        <section id="prashnavali-13-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 13.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: उपयुक्त पैमाना प्रयोग करते हुए, निम्न सारणी में दी गई राशियों के लिए आलेख बनाइए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) सेबों का मूल्य</p>
+                        <p class="mb-2">सेबों की संख्या: 1, 2, 3, 4, 5</p>
+                        <p class="mb-2">मूल्य (रुपयों में): 5, 10, 15, 20, 25</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर सेबों की संख्या और Y-अक्ष पर मूल्य अंकित करें</p>
+                        <p class="mb-2">2. पैमाना: X-अक्ष पर 1 इकाई = 1 सेब, Y-अक्ष पर 1 इकाई = 5 रुपये</p>
+                        <p class="mb-2">3. बिंदु (1, 5), (2, 10), (3, 15), (4, 20), (5, 25) अंकित करें</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p class="mb-2">(i) सुबह 7:30 बजे और 8 बजे के अंतराल में कार द्वारा तय की गई दूरी:</p>
+                        <p class="mb-2">सुबह 7:30 बजे दूरी = 60 km, सुबह 8 बजे दूरी = 120 km</p>
+                        <p class="mb-2">तय दूरी = 120 - 60 = 60 km</p>
+                        <p><strong>उत्तर:</strong> 60 km</p>
+                        <p class="mb-2">(ii) कार के 100 km दूरी तय कर लेने पर समय क्या था?</p>
+                        <p class="mb-2">आलेख से देखने पर: कार ने 100 km की दूरी सुबह 7:30 बजे तय की</p>
+                        <p><strong>उत्तर:</strong> सुबह 7:30 बजे</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) कार द्वारा तय की गई दूरी</p>
+                        <p class="mb-2">समय (घंटों में): सुबह 6 बजे, 7 बजे, 8 बजे, 9 बजे</p>
+                        <p class="mb-2">दूरी (km में): 40, 80, 120, 160</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर समय और Y-अक्ष पर दूरी अंकित करें</p>
+                        <p class="mb-2">2. पैमाना: X-अक्ष पर 2 इकाई = 1 घंटा, Y-अक्ष पर 1 इकाई = 20 km</p>
+                        <p class="mb-2">3. बिंदु (6, 40), (7, 80), (8, 120), (9, 160) अंकित करें</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) जमा धन पर वार्षिक ब्याज</p>
+                        <p class="mb-2">जमा धन (रुपयों में): 1000, 2000, 3000, 4000, 5000</p>
+                        <p class="mb-2">साधारण ब्याज (रुपयों में): 80, 160, 240, 320, 400</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर जमा धन और Y-अक्ष पर ब्याज अंकित करें</p>
+                        <p class="mb-2">2. पैमाना: X-अक्ष पर 1 इकाई = 1000 रुपये, Y-अक्ष पर 1 इकाई = 80 रुपये</p>
+                        <p class="mb-2">3. बिंदु (1000, 80), (2000, 160), (3000, 240), (4000, 320), (5000, 400) अंकित करें</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p class="mb-2">(i) क्या आलेख मूल बिंदु से गुजरता है?</p>
+                        <p class="mb-2">हाँ, क्योंकि जब जमा धन 0 है तो ब्याज भी 0 होगा।</p>
+                        <p><strong>उत्तर:</strong> हाँ</p>
+                        <p class="mb-2">(ii) आलेख से 2500 रुपये का वार्षिक ब्याज ज्ञात कीजिए।</p>
+                        <p class="mb-2">आलेख से देखने पर: 2500 रुपये के लिए ब्याज = 200 रुपये</p>
+                        <p><strong>उत्तर:</strong> 200 रुपये</p>
+                        <p class="mb-2">(iii) 280 रुपये ब्याज प्राप्त करने के लिए कितना धन जमा करना होगा?</p>
+                        <p class="mb-2">आलेख से देखने पर: 280 रुपये ब्याज के लिए जमा धन = 3500 रुपये</p>
+                        <p><strong>उत्तर:</strong> 3500 रुपये</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्न सारणियों के लिए आलेख खींचिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) वर्ग की भुजा (सेमी में) और परिमाप (सेमी में)</p>
+                        <p class="mb-2">भुजा (सेमी में): 2, 3, 3.5, 5, 6</p>
+                        <p class="mb-2">परिमाप (सेमी में): 8, 12, 14, 20, 24</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर भुजा और Y-अक्ष पर परिमाप अंकित करें</p>
+                        <p class="mb-2">2. पैमाना: X-अक्ष पर 1 इकाई = 1 सेमी, Y-अक्ष पर 1 इकाई = 4 सेमी</p>
+                        <p class="mb-2">3. बिंदु (2, 8), (3, 12), (3.5, 14), (5, 20), (6, 24) अंकित करें</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p class="mb-2">क्या यह रैखिक आलेख है?</p>
+                        <p class="mb-2">हाँ, क्योंकि परिमाप = 4 × भुजा, जो एक रैखिक समीकरण है।</p>
+                        <p><strong>उत्तर:</strong> हाँ</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) वर्ग की भुजा (सेमी में) और क्षेत्रफल (सेमी² में)</p>
+                        <p class="mb-2">भुजा (सेमी में): 2, 3, 4, 5, 6</p>
+                        <p class="mb-2">क्षेत्रफल (सेमी² में): 4, 9, 16, 25, 36</p>
+                        <p class="mb-2">आलेख बनाने के चरण:</p>
+                        <p class="mb-2">1. X-अक्ष पर भुजा और Y-अक्ष पर क्षेत्रफल अंकित करें</p>
+                        <p class="mb-2">2. पैमाना: X-अक्ष पर 1 इकाई = 1 सेमी, Y-अक्ष पर 1 इकाई = 5 सेमी²</p>
+                        <p class="mb-2">3. बिंदु (2, 4), (3, 9), (4, 16), (5, 25), (6, 36) अंकित करें</p>
+                        <p class="mb-2">4. इन बिंदुओं को रेखाखंडों से मिलाएँ</p>
+                        <p class="mb-2">क्या यह रैखिक आलेख है?</p>
+                        <p class="mb-2">नहीं, क्योंकि क्षेत्रफल = (भुजा)², जो एक द्विघात समीकरण है।</p>
+                        <p><strong>उत्तर:</strong> नहीं</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

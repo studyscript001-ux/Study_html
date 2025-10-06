@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 3: चतुर्भुजों को समझना (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .figure {
+            text-align: center;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+        .scrollable-table {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        .scrollable-table table {
+            min-width: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 3: चतुर्भुजों को समझना</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 3.1 Section -->
+        <section id="prashnavali-3-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 3.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: यहाँ कुछ आकृतियाँ दी गई हैं। प्रत्येक का वर्गीकरण निम्नलिखित आधार पर कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">दी गई आकृतियों का वर्गीकरण:</p>
+                        
+                        <div class="scrollable-table">
+                            <table class="border-collapse border border-gray-300 mb-4">
+                                <thead>
+                                    <tr class="bg-gray-100">
+                                        <th class="border border-gray-300 p-2">आकृति</th>
+                                        <th class="border border-gray-300 p-2">साधारण वक्र</th>
+                                        <th class="border border-gray-300 p-2">साधारण बंद वक्र</th>
+                                        <th class="border border-gray-300 p-2">बहुभुज</th>
+                                        <th class="border border-gray-300 p-2">उत्तल बहुभुज</th>
+                                        <th class="border border-gray-300 p-2">अवतल बहुभुज</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(i)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(ii)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(iii)</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(iv)</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(v)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(vi)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(vii)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="border border-gray-300 p-2">(viii)</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                        <td class="border border-gray-300 p-2">नहीं</td>
+                                        <td class="border border-gray-300 p-2">हाँ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>व्याख्या:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li><strong>साधारण वक्र:</strong> वह वक्र जो स्वयं को काटता नहीं है</li>
+                            <li><strong>साधारण बंद वक्र:</strong> वह साधारण वक्र जो बंद होता है</li>
+                            <li><strong>बहुभुज:</strong> केवल रेखाखंडों से बनी सरल बंद आकृति</li>
+                            <li><strong>उत्तल बहुभुज:</strong> बहुभुज जिसमें कोई भी अंतःकोण 180° से अधिक नहीं होता</li>
+                            <li><strong>अवतल बहुभुज:</strong> बहुभुज जिसमें कम से कम एक अंतःकोण 180° से अधिक होता है</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सम बहुभुज क्या है? एक सम बहुभुज का नाम बताइए जिसमें (i) 3 भुजाएँ (ii) 4 भुजाएँ (iii) 6 भुजाएँ हों।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>सम बहुभुज:</strong> वह बहुभुज जिसकी सभी भुजाएँ समान लंबाई की होती हैं और सभी कोण समान माप के होते हैं, सम बहुभुज कहलाता है।</p>
+                        
+                        <p class="mb-2">विभिन्न भुजाओं वाले सम बहुभुज:</p>
+                        <ul class="list-disc pl-5">
+                            <li><strong>(i) 3 भुजाएँ:</strong> समबाहु त्रिभुज (Equilateral Triangle)</li>
+                            <li><strong>(ii) 4 भुजाएँ:</strong> वर्ग (Square)</li>
+                            <li><strong>(iii) 6 भुजाएँ:</strong> समषट्भुज (Regular Hexagon)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>विशेषताएँ:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>सम बहुभुज में सभी भुजाएँ बराबर होती हैं</li>
+                            <li>सम बहुभुज में सभी कोण बराबर होते हैं</li>
+                            <li>सम बहुभुज में सममिति होती है</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.2 Section -->
+        <section id="prashnavali-3-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 3.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित आकृतियों में x का मान ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a)</strong> बहुभुज के बाह्य कोणों का योग = 360°</p>
+                        <p class="mb-2">दिया गया है: 125° + 125° + x = 360°</p>
+                        <p class="mb-2">250° + x = 360°</p>
+                        <p class="mb-2">x = 360° - 250°</p>
+                        <p class="mb-2">x = 110°</p>
+                        
+                        <p class="mb-2"><strong>(b)</strong> बहुभुज के बाह्य कोणों का योग = 360°</p>
+                        <p class="mb-2">दिया गया है: 90° + 60° + 70° + x + 90° = 360°</p>
+                        <p class="mb-2">310° + x = 360°</p>
+                        <p class="mb-2">x = 360° - 310°</p>
+                        <p class="mb-2">x = 50°</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>सिद्धांत:</strong> किसी भी बहुभुज के सभी बाह्य कोणों का योग सदैव 360° होता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक सम बहुभुज के प्रत्येक बाह्य कोण का माप ज्ञात कीजिए जिसकी (i) 9 भुजाएँ (ii) 15 भुजाएँ हों।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">सम बहुभुज के लिए, प्रत्येक बाह्य कोण = 360° / भुजाओं की संख्या</p>
+                        
+                        <p class="mb-2"><strong>(i) 9 भुजाएँ:</strong></p>
+                        <p class="mb-2">प्रत्येक बाह्य कोण = 360° / 9 = 40°</p>
+                        
+                        <p class="mb-2"><strong>(ii) 15 भुजाएँ:</strong></p>
+                        <p class="mb-2">प्रत्येक बाह्य कोण = 360° / 15 = 24°</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>सूत्र:</strong> सम बहुभुज का प्रत्येक बाह्य कोण = 360° / n, जहाँ n भुजाओं की संख्या है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक सम बहुभुज की कितनी भुजाएँ होंगी यदि एक बाह्य कोण का माप 24° हो?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">सम बहुभुज के लिए, भुजाओं की संख्या = 360° / प्रत्येक बाह्य कोण</p>
+                        <p class="mb-2">दिया गया है: प्रत्येक बाह्य कोण = 24°</p>
+                        <p class="mb-2">भुजाओं की संख्या = 360° / 24°</p>
+                        <p class="mb-2">भुजाओं की संख्या = 15</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>सूत्र:</strong> n = 360° / प्रत्येक बाह्य कोण, जहाँ n भुजाओं की संख्या है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक सम बहुभुज की भुजाओं की संख्या ज्ञात कीजिए यदि इसका प्रत्येक अंतःकोण 165° का हो।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">सम बहुभुज के लिए, प्रत्येक बाह्य कोण = 180° - प्रत्येक अंतःकोण</p>
+                        <p class="mb-2">दिया गया है: प्रत्येक अंतःकोण = 165°</p>
+                        <p class="mb-2">प्रत्येक बाह्य कोण = 180° - 165° = 15°</p>
+                        <p class="mb-2">भुजाओं की संख्या = 360° / प्रत्येक बाह्य कोण</p>
+                        <p class="mb-2">भुजाओं की संख्या = 360° / 15° = 24</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>संबंध:</strong> अंतःकोण + बाह्य कोण = 180° (रैखिक युग्म)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: (a) क्या एक ऐसा सम बहुभुज संभव है जिसके प्रत्येक बाह्य कोण का माप 22° हो?<br>(b) क्या यह किसी सम बहुभुज का अंतःकोण हो सकता है? क्यों?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a)</strong> भुजाओं की संख्या = 360° / 22° = 16.36</p>
+                        <p class="mb-2">चूँकि भुजाओं की संख्या पूर्ण संख्या नहीं है, इसलिए ऐसा सम बहुभुज संभव नहीं है।</p>
+                        
+                        <p class="mb-2"><strong>(b)</strong> यदि अंतःकोण = 22°, तो बाह्य कोण = 180° - 22° = 158°</p>
+                        <p class="mb-2">भुजाओं की संख्या = 360° / 158° ≈ 2.27</p>
+                        <p class="mb-2">चूँकि भुजाओं की संख्या पूर्ण संख्या नहीं है और 3 से कम है, इसलिए यह किसी सम बहुभुज का अंतःकोण नहीं हो सकता।</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>शर्त:</strong> सम बहुभुज के लिए, 360° को प्रत्येक बाह्य कोण से विभाजित करने पर भुजाओं की संख्या एक पूर्ण संख्या होनी चाहिए और वह 3 या अधिक होनी चाहिए।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: (a) किसी सम बहुभुज में कम से कम कितने अंश का अंतःकोण संभव है? क्यों?<br>(b) किसी सम बहुभुज में अधिक से अधिक कितने अंश का बाह्य कोण संभव है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a)</strong> सम बहुभुज में न्यूनतम अंतःकोण त्रिभुज में होता है।</p>
+                        <p class="mb-2">समबाहु त्रिभुज में प्रत्येक अंतःकोण = 60°</p>
+                        <p class="mb-2">अतः कम से कम 60° का अंतःकोण संभव है।</p>
+                        
+                        <p class="mb-2"><strong>(b)</strong> सम बहुभुज में अधिकतम बाह्य कोण त्रिभुज में होता है।</p>
+                        <p class="mb-2">समबाहु त्रिभुज में प्रत्येक बाह्य कोण = 120°</p>
+                        <p class="mb-2">अतः अधिक से अधिक 120° का बाह्य कोण संभव है।</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>तर्क:</strong> जैसे-जैसे भुजाओं की संख्या बढ़ती है, अंतःकोण बढ़ता है और बाह्य कोण घटता है। त्रिभुज में अंतःकोण न्यूनतम और बाह्य कोण अधिकतम होता है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.3 Section -->
+        <section id="prashnavali-3-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 3.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: ABCD एक समांतर चतुर्भुज है। प्रत्येक कथन को परिभाषा या प्रयोग किए गए गुण द्वारा पूरा कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) AD = ......</strong></p>
+                        <p class="mb-2">AD = BC (समांतर चतुर्भुज की सम्मुख भुजाएँ बराबर होती हैं)</p>
+                        
+                        <p class="mb-2"><strong>(ii) ∠DCB = ......</strong></p>
+                        <p class="mb-2">∠DCB = ∠DAB (समांतर चतुर्भुज के सम्मुख कोण बराबर होते हैं)</p>
+                        
+                        <p class="mb-2"><strong>(iii) OC = ......</strong></p>
+                        <p class="mb-2">OC = OA (समांतर चतुर्भुज के विकर्ण परस्पर समद्विभाजित करते हैं)</p>
+                        
+                        <p class="mb-2"><strong>(iv) m∠DAB + m∠CDA = ......</strong></p>
+                        <p class="mb-2">m∠DAB + m∠CDA = 180° (समांतर चतुर्भुज के आसन्न कोण संपूरक होते हैं)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित समांतर चतुर्भुजों में अज्ञात x, y, z के मानों को ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i)</strong> समांतर चतुर्भुज में सम्मुख कोण बराबर होते हैं:</p>
+                        <p class="mb-2">y = 100° (सम्मुख कोण)</p>
+                        <p class="mb-2">आसन्न कोणों का योग = 180°</p>
+                        <p class="mb-2">x + 100° = 180° ⇒ x = 80°</p>
+                        <p class="mb-2">z = x = 80° (सम्मुख कोण)</p>
+                        
+                        <p class="mb-2"><strong>(ii)</strong> समांतर चतुर्भुज में सम्मुख भुजाएँ बराबर होती हैं:</p>
+                        <p class="mb-2">50° + y = 180° ⇒ y = 130° (आसन्न कोण)</p>
+                        <p class="mb-2">x = y = 130° (सम्मुख कोण)</p>
+                        <p class="mb-2">z = x = 130° (संगत कोण)</p>
+                        
+                        <p class="mb-2"><strong>(iii)</strong> x = 90° (शीर्षाभिमुख कोण)</p>
+                        <p class="mb-2">y + 30° = 180° ⇒ y = 150° (एकांतर कोण)</p>
+                        <p class="mb-2">z + 30° = 180° ⇒ z = 150° (आसन्न कोण)</p>
+                        
+                        <p class="mb-2"><strong>(iv)</strong> x = 80° (सम्मुख कोण)</p>
+                        <p class="mb-2">y = 100° (आसन्न कोण)</p>
+                        <p class="mb-2">z = 80° (सम्मुख कोण)</p>
+                        
+                        <p class="mb-2"><strong>(v)</strong> y = 112° (सम्मुख कोण)</p>
+                        <p class="mb-2">x + 40° + y = 180° (त्रिभुज के कोणों का योग)</p>
+                        <p class="mb-2">x + 40° + 112° = 180° ⇒ x = 28°</p>
+                        <p class="mb-2">z = 28° (एकांतर कोण)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: क्या एक चतुर्भुज ABCD समांतर चतुर्भुज हो सकता है यदि:<br>(i) ∠D + ∠B = 180°?<br>(ii) AB = DC = 8 cm, AD = 4 cm और BC = 4.4 cm?<br>(iii) ∠A = 70° और ∠C = 65°?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i)</strong> हाँ, यदि चतुर्भुज में सम्मुख कोणों का योग 180° हो, तो वह समांतर चतुर्भुज हो सकता है।</p>
+                        
+                        <p class="mb-2"><strong>(ii)</strong> नहीं, क्योंकि समांतर चतुर्भुज में सम्मुख भुजाएँ बराबर होती हैं, लेकिन यहाँ AD ≠ BC (4 cm ≠ 4.4 cm)।</p>
+                        
+                        <p class="mb-2"><strong>(iii)</strong> नहीं, क्योंकि समांतर चतुर्भुज में सम्मुख कोण बराबर होते हैं, लेकिन यहाँ ∠A ≠ ∠C (70° ≠ 65°)।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक चतुर्भुज की रफ आकृति खींचिए जो समांतर चतुर्भुज न हो परंतु जिसके दो सम्मुख कोणों के माप बराबर हों।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक समद्विबाहु समलंब की आकृति खींची जा सकती है जिसमें आधार के कोण बराबर होते हैं लेकिन यह समांतर चतुर्भुज नहीं होता।</p>
+                        <div class="figure">
+                            [समद्विबाहु समलंब का चित्र]
+                        </div>
+                        <p class="mb-2">इसमें ∠A = ∠B और ∠C = ∠D, लेकिन सभी भुजाएँ बराबर नहीं हैं और आसन्न कोण संपूरक नहीं हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: किसी समांतर चतुर्भुज के दो आसन्न कोणों का अनुपात 3:2 है। समांतर चतुर्भुज के सभी कोणों की माप ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">माना आसन्न कोण 3x और 2x हैं।</p>
+                        <p class="mb-2">समांतर चतुर्भुज में आसन्न कोणों का योग = 180°</p>
+                        <p class="mb-2">3x + 2x = 180°</p>
+                        <p class="mb-2">5x = 180°</p>
+                        <p class="mb-2">x = 36°</p>
+                        <p class="mb-2">कोण = 3x = 3 × 36° = 108°</p>
+                        <p class="mb-2">और 2x = 2 × 36° = 72°</p>
+                        <p class="mb-2">समांतर चतुर्भुज के सम्मुख कोण बराबर होते हैं, अतः कोण हैं: 108°, 72°, 108°, 72°</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: किसी समांतर चतुर्भुज के दो आसन्न कोणों के माप बराबर हैं। समांतर चतुर्भुज के सभी कोणों की माप ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">माना प्रत्येक आसन्न कोण = x</p>
+                        <p class="mb-2">समांतर चतुर्भुज में आसन्न कोणों का योग = 180°</p>
+                        <p class="mb-2">x + x = 180°</p>
+                        <p class="mb-2">2x = 180°</p>
+                        <p class="mb-2">x = 90°</p>
+                        <p class="mb-2">समांतर चतुर्भुज के सभी कोण 90° के हैं।</p>
+                        <p class="mb-2">यह एक आयत है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: संलग्न आकृति HOPE एक समांतर चतुर्भुज है। x, y और z कोणों की माप ज्ञात कीजिए। ज्ञात करने में प्रयोग किए गए गुणों को बताइए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">HOPE समांतर चतुर्भुज है:</p>
+                        <p class="mb-2">∠O = ∠E = 70° (सम्मुख कोण)</p>
+                        <p class="mb-2">∠H + ∠O = 180° (आसन्न कोण)</p>
+                        <p class="mb-2">40° + z + 70° = 180°</p>
+                        <p class="mb-2">z = 180° - 110° = 70°</p>
+                        <p class="mb-2">x = 180° - (40° + 70°) = 70° (त्रिभुज के कोणों का योग)</p>
+                        <p class="mb-2">y = 40° (एकांतर कोण)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: निम्नलिखित आकृतियाँ GUNS और RUNS समांतर चतुर्भुज हैं। x तथा y ज्ञात कीजिए (लंबाई cm में है):</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>GUNS समांतर चतुर्भुज:</strong></p>
+                        <p class="mb-2">समांतर चतुर्भुज में सम्मुख भुजाएँ बराबर होती हैं:</p>
+                        <p class="mb-2">3y - 1 = 26 ⇒ 3y = 27 ⇒ y = 9 cm</p>
+                        <p class="mb-2">3x = 18 ⇒ x = 6 cm</p>
+                        
+                        <p class="mb-2"><strong>RUNS समांतर चतुर्भुज:</strong></p>
+                        <p class="mb-2">विकर्ण परस्पर समद्विभाजित करते हैं:</p>
+                        <p class="mb-2">x + y = 16 ...(1)</p>
+                        <p class="mb-2">y + 7 = 20 ⇒ y = 13 cm</p>
+                        <p class="mb-2">(1) से: x + 13 = 16 ⇒ x = 3 cm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: दी गई आकृति में RISK और CLUE दोनों समांतर चतुर्भुज हैं, x का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">RISK समांतर चतुर्भुज में:</p>
+                        <p class="mb-2">∠R + ∠K = 180° (आसन्न कोण)</p>
+                        <p class="mb-2">120° + ∠K = 180° ⇒ ∠K = 60°</p>
+                        <p class="mb-2">CLUE समांतर चतुर्भुज में:</p>
+                        <p class="mb-2">∠L = ∠E = 70° (सम्मुख कोण)</p>
+                        <p class="mb-2">त्रिभुज में: x + 60° + 70° = 180°</p>
+                        <p class="mb-2">x = 180° - 130° = 50°</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: बताइए कैसे यह आकृति एक समलंब है। इसकी कौन सी दो भुजाएँ समांतर हैं?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">यह आकृति एक समलंब है क्योंकि इसमें भुजाओं का केवल एक युग्म समांतर है।</p>
+                        <p class="mb-2">भुजा PQ और भुजा SR समांतर हैं क्योंकि उन पर बने एकांतर कोण बराबर हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: आकृति में m∠C ज्ञात कीजिए यदि AB || DC है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">AB || DC (दिया है)</p>
+                        <p class="mb-2">∠B + ∠C = 180° (तिर्यक रेखा के एक ही ओर के अंतः कोण)</p>
+                        <p class="mb-2">120° + ∠C = 180°</p>
+                        <p class="mb-2">∠C = 180° - 120° = 60°</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 12: आकृति में ∠P और ∠S की माप ज्ञात कीजिए यदि SP || RQ है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">SP || RQ (दिया है)</p>
+                        <p class="mb-2">∠P + ∠Q = 180° (तिर्यक रेखा के एक ही ओर के अंतः कोण)</p>
+                        <p class="mb-2">∠P + 130° = 180° ⇒ ∠P = 50°</p>
+                        <p class="mb-2">∠S + ∠R = 180° (तिर्यक रेखा के एक ही ओर के अंतः कोण)</p>
+                        <p class="mb-2">∠S + 90° = 180° ⇒ ∠S = 90°</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.4 Section -->
+        <section id="prashnavali-3-4" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 3.4</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: बताइए, कथन सत्य है या असत्य:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a) सभी आयत वर्ग होते हैं:</strong> असत्य (सभी वर्ग आयत होते हैं, लेकिन सभी आयत वर्ग नहीं होते)</p>
+                        <p class="mb-2"><strong>(b) सभी सम चतुर्भुज समांतर चतुर्भुज होते हैं:</strong> सत्य</p>
+                        <p class="mb-2"><strong>(c) सभी वर्ग सम चतुर्भुज और आयत भी होते हैं:</strong> सत्य</p>
+                        <p class="mb-2"><strong>(d) सभी वर्ग समांतर चतुर्भुज नहीं होते:</strong> असत्य (सभी वर्ग समांतर चतुर्भुज होते हैं)</p>
+                        <p class="mb-2"><strong>(e) सभी पतंग सम चतुर्भुज होती हैं:</strong> असत्य</p>
+                        <p class="mb-2"><strong>(f) सभी सम चतुर्भुज पतंग होते हैं:</strong> असत्य</p>
+                        <p class="mb-2"><strong>(g) सभी समांतर चतुर्भुज समलंब होते हैं:</strong> असत्य</p>
+                        <p class="mb-2"><strong>(h) सभी वर्ग समलंब होते हैं:</strong> सत्य</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: उन सभी चतुर्भुजों की पहचान कीजिए जिनमें:<br>(a) चारों भुजाएँ बराबर लंबाई की हों<br>(b) चार समकोण हों</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a) चारों भुजाएँ बराबर लंबाई की हों:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>वर्ग (Square)</li>
+                            <li>सम चतुर्भुज (Rhombus)</li>
+                        </ul>
+                        
+                        <p class="mb-2"><strong>(b) चार समकोण हों:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>वर्ग (Square)</li>
+                            <li>आयत (Rectangle)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: बताइए कैसे एक वर्ग:<br>(i) एक चतुर्भुज<br>(ii) एक समांतर चतुर्भुज<br>(iii) एक सम चतुर्भुज<br>(iv) एक आयत है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) एक चतुर्भुज:</strong> वर्ग में चार भुजाएँ होती हैं, इसलिए यह एक चतुर्भुज है।</p>
+                        <p class="mb-2"><strong>(ii) एक समांतर चतुर्भुज:</strong> वर्ग की सम्मुख भुजाएँ समांतर और बराबर होती हैं, इसलिए यह एक समांतर चतुर्भुज है।</p>
+                        <p class="mb-2"><strong>(iii) एक सम चतुर्भुज:</strong> वर्ग की सभी भुजाएँ बराबर होती हैं, इसलिए यह एक सम चतुर्भुज है।</p>
+                        <p class="mb-2"><strong>(iv) एक आयत:</strong> वर्ग के सभी कोण 90° के होते हैं, इसलिए यह एक आयत है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक चतुर्भुज का नाम बताइए जिसके विकर्ण:<br>(i) एक दूसरे को समद्विभाजित करते हैं<br>(ii) एक दूसरे पर लंब समद्विभाजक हों<br>(iii) बराबर हों</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) एक दूसरे को समद्विभाजित करते हैं:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>समांतर चतुर्भुज (Parallelogram)</li>
+                            <li>आयत (Rectangle)</li>
+                            <li>वर्ग (Square)</li>
+                            <li>सम चतुर्भुज (Rhombus)</li>
+                        </ul>
+                        
+                        <p class="mb-2"><strong>(ii) एक दूसरे पर लंब समद्विभाजक हों:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>सम चतुर्भुज (Rhombus)</li>
+                            <li>वर्ग (Square)</li>
+                            <li>पतंग (Kite)</li>
+                        </ul>
+                        
+                        <p class="mb-2"><strong>(iii) बराबर हों:</strong></p>
+                        <ul class="list-disc pl-5">
+                            <li>आयत (Rectangle)</li>
+                            <li>वर्ग (Square)</li>
+                            <li>समद्विबाहु समलंब (Isosceles Trapezium)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: बताइए एक आयत उत्तल चतुर्भुज कैसे है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत एक उत्तल चतुर्भुज है क्योंकि:</p>
+                        <ul class="list-disc pl-5">
+                            <li>इसके सभी अंतःकोण 180° से कम होते हैं (प्रत्येक 90°)</li>
+                            <li>इसके किसी भी दो बिंदुओं को मिलाने वाला रेखाखंड पूर्णतः आयत के अंदर स्थित होता है</li>
+                            <li>इसके विकर्ण आयत के अंदर स्थित होते हैं</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: ABC एक समकोण त्रिभुज है और 'O' समकोण की सम्मुख भुजा का मध्य बिंदु है। बताइए कैसे 'O' बिंदु A, B तथा C से समान दूरी पर स्थित है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">ABC एक समकोण त्रिभुज है जिसमें ∠B = 90°</p>
+                        <p class="mb-2">O, AC का मध्य बिंदु है (AC समकोण की सम्मुख भुजा है)</p>
+                        <p class="mb-2">समकोण त्रिभुज में, कर्ण का मध्य बिंदु त्रिभुज के तीनों शीर्षों से समान दूरी पर होता है।</p>
+                        <p class="mb-2">इसलिए, OA = OB = OC</p>
+                        <p class="mb-2">अतः बिंदु O, A, B और C से समान दूरी पर स्थित है।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

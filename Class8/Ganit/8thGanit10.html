@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 10: घातांक और घात</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .exponent {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 10: घातांक और घात</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 10.1 Section -->
+        <section id="prashnavali-10-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 10.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: मान ज्ञात कीजिए: (i) 3<span class="exponent">-2</span> (ii) (-4)<span class="exponent">-2</span> (iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 3<span class="exponent">-2</span></p>
+                        <p class="mb-2">घातांक के नियमानुसार: a<span class="exponent">-m</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">a<span class="exponent">m</span></span></span></p>
+                        <p class="mb-2">3<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">3²<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (-4)<span class="exponent">-2</span></p>
+                        <p class="mb-2">(-4)<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">(-4)²<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span> = (<span class="fraction"><span class="numerator">2</span><span class="denominator">1</span></span>)<span class="exponent">5</span> = 2<span class="exponent">5</span> = 32</p>
+                        <p><strong>उत्तर:</strong> 32</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सरल कीजिए और उत्तर को धनात्मक घातांक के रूप में व्यक्त कीजिए:</h3>
+                <p class="mb-4">(i) (-4)<span class="exponent">5</span> ÷ (-4)<span class="exponent">8</span> (ii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span> (iii) (-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span></p>
+                <p class="mb-4">(iv) (3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span>) × 3<span class="exponent">-5</span> (v) 2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (-4)<span class="exponent">5</span> ÷ (-4)<span class="exponent">8</span></p>
+                        <p class="mb-2">घातांक के नियमानुसार: a<span class="exponent">m</span> ÷ a<span class="exponent">n</span> = a<span class="exponent">m-n</span></p>
+                        <p class="mb-2">(-4)<span class="exponent">5-8</span> = (-4)<span class="exponent">-3</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">(-4)³<span class="exponent"></span></span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                        <p><strong>उत्तर:</strong> -<span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">1²<span class="exponent"></span></span><span class="denominator">(2³)²<span class="exponent"></span><span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2⁶<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span></p>
+                        <p class="mb-2">(-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span> = [(-3) × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)]<span class="exponent">4</span> = (-5)<span class="exponent">4</span> = 625</p>
+                        <p><strong>उत्तर:</strong> 625</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) (3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span>) × 3<span class="exponent">-5</span></p>
+                        <p class="mb-2">3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span> = 3<span class="exponent">-7-(-10)</span> = 3<span class="exponent">3</span></p>
+                        <p class="mb-2">3<span class="exponent">3</span> × 3<span class="exponent">-5</span> = 3<span class="exponent">3-5</span> = 3<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span></p>
+                        <p class="mb-2">2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span> = [2 × (-7)]<span class="exponent">-3</span> = (-14)<span class="exponent">-3</span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2744</span></span></p>
+                        <p><strong>उत्तर:</strong> -<span class="fraction"><span class="numerator">1</span><span class="denominator">2744</span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: मान ज्ञात कीजिए:</h3>
+                <p class="mb-4">(i) (3<span class="exponent">0</span> + 4<span class="exponent">-1</span>) × 2<span class="exponent">2</span> (ii) (2<span class="exponent">-1</span> × 4<span class="exponent">-1</span>) ÷ 2<span class="exponent">-2</span></p>
+                <p class="mb-4">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span> (iv) (3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span></p>
+                <p class="mb-4">(v) {(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span>}<span class="exponent">2</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (3<span class="exponent">0</span> + 4<span class="exponent">-1</span>) × 2<span class="exponent">2</span></p>
+                        <p class="mb-2">3<span class="exponent">0</span> = 1, 4<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 2<span class="exponent">2</span> = 4</p>
+                        <p class="mb-2">(1 + <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 4 = (<span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>) × 4 = 5</p>
+                        <p><strong>उत्तर:</strong> 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (2<span class="exponent">-1</span> × 4<span class="exponent">-1</span>) ÷ 2<span class="exponent">-2</span></p>
+                        <p class="mb-2">2<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, 4<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 2<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>) × 4 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> = 2<span class="exponent">2</span> = 4</p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> = 3<span class="exponent">2</span> = 9</p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span> = 4<span class="exponent">2</span> = 16</p>
+                        <p class="mb-2">4 + 9 + 16 = 29</p>
+                        <p><strong>उत्तर:</strong> 29</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) (3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span></p>
+                        <p class="mb-2">किसी भी संख्या की 0 घात 1 होती है</p>
+                        <p class="mb-2">(3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span> = 1</p>
+                        <p><strong>उत्तर:</strong> 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) {(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span>}<span class="exponent">2</span></p>
+                        <p class="mb-2">(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> = (<span class="fraction"><span class="numerator">3</span><span class="denominator">-2</span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">{<span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span>}<span class="exponent">2</span> = <span class="fraction"><span class="numerator">81</span><span class="denominator">16</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">81</span><span class="denominator">16</span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: मान ज्ञात कीजिए:</h3>
+                <p class="mb-4">(i) (8<span class="exponent">-1</span> × 5<span class="exponent">3</span>)/ 2<span class="exponent">-4</span> (ii) (5<span class="exponent">-1</span> × 2<span class="exponent">-1</span>) × 6<span class="exponent">-1</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (8<span class="exponent">-1</span> × 5³</span class="exponent"></span>)/ 2<span class="exponent">-4</span></p>
+                        <p class="mb-2">8<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>, 2<span class="exponent">-4</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span> × 125) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span>) = (<span class="fraction"><span class="numerator">125</span><span class="denominator">8</span></span>) × 16 = 125 × 2 = 250</p>
+                        <p><strong>उत्तर:</strong> 250</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (5<span class="exponent">-1</span> × 2<span class="exponent">-1</span>) × 6<span class="exponent">-1</span></p>
+                        <p class="mb-2">5<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span>, 2<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, 6<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> = (<span class="fraction"><span class="numerator">1</span><span class="denominator">10</span></span>) × <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">60</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">60</span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: m का मान ज्ञात कीजिए जिसके लिए 5<span class="exponent">m</span> ÷ 5<span class="exponent">-3</span> = 5<span class="exponent">5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5<span class="exponent">m</span> ÷ 5<span class="exponent">-3</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">घातांक के नियमानुसार: 5<span class="exponent">m-(-3)</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">5<span class="exponent">m+3</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">आधार समान हैं, इसलिए घातांक भी समान होंगे:</p>
+                        <p class="mb-2">m + 3 = 5</p>
+                        <p class="mb-2">m = 5 - 3 = 2</p>
+                        <p><strong>उत्तर:</strong> m = 2</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: मान ज्ञात कीजिए:</h3>
+                <p class="mb-4">(i) {(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> - (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span>}<span class="exponent">-1</span></p>
+                <p class="mb-4">(ii) (<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) {(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> - (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span>}<span class="exponent">-1</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> = 3, (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span> = 4</p>
+                        <p class="mb-2">{(3 - 4)}<span class="exponent">-1</span> = (-1)<span class="exponent">-1</span> = -1</p>
+                        <p><strong>उत्तर:</strong> -1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7-5</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">64</span><span class="denominator">25</span></span></p>
+                        <p><strong>उत्तर:</strong> <span class="fraction"><span class="numerator">64</span><span class="denominator">25</span></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: सरल कीजिए:</h3>
+                <p class="mb-4">(i) 25 × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 10 × t<span class="exponent">-8</span></span> (t ≠ 0)</p>
+                <p class="mb-4">(ii) 3<span class="exponent">-5</span> × 10<span class="exponent">-5</span> × 125</span> / 5<span class="exponent">-7</span> × 6<span class="exponent">-5</span></span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 25 × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 10 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">25 = 5<span class="exponent">2</span>, 10 = 2 × 5</p>
+                        <p class="mb-2">5<span class="exponent">2</span> × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 2 × 5 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">2</span> × t<span class="exponent">-4</span> / 5<span class="exponent">-2</span> × 2 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">2-(-2)</span> × t<span class="exponent">-4-(-8)</span> /2</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">4</span> × t<span class="exponent">4</span> / 2</span></span> = 625t<span class="exponent">4</span>/2</span></p>
+                        <p><strong>उत्तर:</strong> 625t<span class="exponent">4</span>/2</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 3<span class="exponent">-5</span> × 10<span class="exponent">-5</span> × 125</span> / 5<span class="exponent">-7</span> × 6<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">10 = 2 × 5, 125 = 5<span class="exponent">3</span>, 6 = 2 × 3</p>
+                        <p class="mb-2">3<span class="exponent">-5</span> × (2×5)<span class="exponent">-5</span> × 5<span class="exponent">3</span></span> / 5<span class="exponent">-7</span> × (2×3)<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">= 3<span class="exponent">-5</span> × 2<span class="exponent">-5</span> × 5<span class="exponent">-5</span> × 5<span class="exponent">3</span> / 5<span class="exponent">-7</span> × 2<span class="exponent">-5</span> × 3<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">-5+3-(-7)</span> = 5<span class="exponent">5</span> = 3125</p>
+                        <p><strong>उत्तर:</strong> 3125</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 10.2 Section -->
+        <section id="prashnavali-10-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 10.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित संख्याओं को मानक रूप में व्यक्त कीजिए:</h3>
+                <p class="mb-4">(i) 0.0000000000085 (ii) 0.00000000000942</p>
+                <p class="mb-4">(iii) 6020000000000000 (iv) 0.00000000837</p>
+                <p class="mb-4">(v) 31860000000</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 0.0000000000085</p>
+                        <p class="mb-2">दशमलव को 12 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">8.5 × 10<span class="exponent">-12</span></p>
+                        <p><strong>उत्तर:</strong> 8.5 × 10<span class="exponent">-12</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 0.00000000000942</p>
+                        <p class="mb-2">दशमलव को 12 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">9.42 × 10<span class="exponent">-12</span></p>
+                        <p><strong>उत्तर:</strong> 9.42 × 10<span class="exponent">-12</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) 6020000000000000</p>
+                        <p class="mb-2">दशमलव को 15 स्थान बाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">6.02 × 10<span class="exponent">15</span></p>
+                        <p><strong>उत्तर:</strong> 6.02 × 10<span class="exponent">15</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) 0.00000000837</p>
+                        <p class="mb-2">दशमलव को 9 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">8.37 × 10<span class="exponent">-9</span></p>
+                        <p><strong>उत्तर:</strong> 8.37 × 10<span class="exponent">-9</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 31860000000</p>
+                        <p class="mb-2">दशमलव को 10 स्थान बाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">3.186 × 10<span class="exponent">10</span></p>
+                        <p><strong>उत्तर:</strong> 3.186 × 10<span class="exponent">10</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित संख्याओं को सामान्य रूप में व्यक्त कीजिए:</h3>
+                <p class="mb-4">(i) 3.02 × 10<span class="exponent">-6</span> (ii) 4.5 × 10<span class="exponent">4</span> (iii) 3 × 10<span class="exponent">-8</span></p>
+                <p class="mb-4">(iv) 1.0001 × 10<span class="exponent">9</span> (v) 5.8 × 10<span class="exponent">12</span> (vi) 3.61492 × 10<span class="exponent">6</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 3.02 × 10<span class="exponent">-6</span></p>
+                        <p class="mb-2">दशमलव को 6 स्थान बाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">0.00000302</p>
+                        <p><strong>उत्तर:</strong> 0.00000302</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 4.5 × 10<span class="exponent">4</span></p>
+                        <p class="mb-2">दशमलव को 4 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">45000</p>
+                        <p><strong>उत्तर:</strong> 45000</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) 3 × 10<span class="exponent">-8</span></p>
+                        <p class="mb-2">दशमलव को 8 स्थान बाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">0.00000003</p>
+                        <p><strong>उत्तर:</strong> 0.00000003</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) 1.0001 × 10<span class="exponent">9</span></p>
+                        <p class="mb-2">दशमलव को 9 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">1000100000</p>
+                        <p><strong>उत्तर:</strong> 1000100000</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 5.8 × 10<span class="exponent">12</span></p>
+                        <p class="mb-2">दशमलव को 12 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">5800000000000</p>
+                        <p><strong>उत्तर:</strong> 5800000000000</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(vi) 3.61492 × 10<span class="exponent">6</span></p>
+                        <p class="mb-2">दशमलव को 6 स्थान दाईं ओर ले जाना होगा</p>
+                        <p class="mb-2">3614920</p>
+                        <p><strong>उत्तर:</strong> 3614920</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: निम्नलिखित कथनों में आई संख्याओं को मानक रूप में व्यक्त कीजिए:</h3>
+                <p class="mb-4">(i) 1 माइक्रॉन <span class="fraction"><span class="numerator">1</span><span class="denominator">1000000</span></span> m के बराबर होता है।</p>
+                <p class="mb-4">(ii) एक इलेक्ट्रॉन का आवेश 0.000,000,000,000,000,000,16 कूलॉम होता है।</p>
+                <p class="mb-4">(iii) एक जीवाणु की माप 0.0000005 m है।</p>
+                <p class="mb-4">(iv) एक पादप कोशिका की माप 0.00001275 m है।</p>
+                <p class="mb-4">(v) मोटे कागज की मोटाई 0.07 mm है।</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 1 माइक्रॉन = <span class="fraction"><span class="numerator">1</span><span class="denominator">1000000</span></span> m = 1 × 10<span class="exponent">-6</span> m</p>
+                        <p><strong>उत्तर:</strong> 1 × 10<span class="exponent">-6</span> m</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) एक इलेक्ट्रॉन का आवेश = 0.000,000,000,000,000,000,16 कूलॉम</p>
+                        <p class="mb-2">= 1.6 × 10<span class="exponent">-19</span> कूलॉम</p>
+                        <p><strong>उत्तर:</strong> 1.6 × 10<span class="exponent">-19</span> कूलॉम</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) एक जीवाणु की माप = 0.0000005 m = 5 × 10<span class="exponent">-7</span> m</p>
+                        <p><strong>उत्तर:</strong> 5 × 10<span class="exponent">-7</span> m</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) एक पादप कोशिका की माप = 0.00001275 m = 1.275 × 10<span class="exponent">-5</span> m</p>
+                        <p><strong>उत्तर:</strong> 1.275 × 10<span class="exponent">-5</span> m</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) मोटे कागज की मोटाई = 0.07 mm = 7 × 10<span class="exponent">-2</span> mm</p>
+                        <p><strong>उत्तर:</strong> 7 × 10<span class="exponent">-2</span> mm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक ढेर में 5 किताबें हैं, जिनमें प्रत्येक की मोटाई 20 mm तथा 5 कागज की शीटें हैं, जिनमें प्रत्येक की मोटाई 0.016 mm है। इस ढेर की कुल मोटाई ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 किताबों की कुल मोटाई = 5 × 20 = 100 mm</p>
+                        <p class="mb-2">5 कागज की शीटों की कुल मोटाई = 5 × 0.016 = 0.08 mm</p>
+                        <p class="mb-2">ढेर की कुल मोटाई = 100 + 0.08 = 100.08 mm</p>
+                        <p class="mb-2">मानक रूप में = 1.0008 × 10<span class="exponent">2</span> mm</p>
+                        <p><strong>उत्तर:</strong> 100.08 mm या 1.0008 × 10<span class="exponent">2</span> mm</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

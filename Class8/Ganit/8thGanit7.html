@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 7: राशियों की तुलना</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 7: राशियों की तुलना</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 7.1 Section -->
+        <section id="prashnavali-7-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 7.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित का अनुपात ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(क) एक साइकिल की 15 km प्रति घंटे की चाल का एक स्कूटर की 30 km प्रति घंटे की चाल से</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">साइकिल की चाल = 15 km/h</p>
+                        <p class="mb-2">स्कूटर की चाल = 30 km/h</p>
+                        <p class="mb-2">अनुपात = 15 : 30</p>
+                        <p class="mb-2">सरल रूप में = 15/30 = 1/2 = 1 : 2</p>
+                        <p><strong>उत्तर:</strong> 1 : 2</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ख) 5 m का 10 km से</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 m और 10 km को समान मात्रक में बदलना होगा</p>
+                        <p class="mb-2">10 km = 10 × 1000 = 10,000 m</p>
+                        <p class="mb-2">अनुपात = 5 : 10,000</p>
+                        <p class="mb-2">सरल रूप में = 5/10000 = 1/2000 = 1 : 2000</p>
+                        <p><strong>उत्तर:</strong> 1 : 2000</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ग) 50 पैसे का ₹ 5 से</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">₹ 5 = 5 × 100 = 500 पैसे</p>
+                        <p class="mb-2">अनुपात = 50 : 500</p>
+                        <p class="mb-2">सरल रूप में = 50/500 = 1/10 = 1 : 10</p>
+                        <p><strong>उत्तर:</strong> 1 : 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित अनुपातों को प्रतिशत में परिवर्तित कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(क) 3 : 4</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अनुपात 3 : 4 को भिन्न में लिखने पर = 3/4</p>
+                        <p class="mb-2">प्रतिशत में बदलने के लिए 100 से गुणा करें</p>
+                        <p class="mb-2">3/4 × 100 = 75%</p>
+                        <p><strong>उत्तर:</strong> 75%</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ख) 2 : 3</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अनुपात 2 : 3 को भिन्न में लिखने पर = 2/3</p>
+                        <p class="mb-2">प्रतिशत में बदलने के लिए 100 से गुणा करें</p>
+                        <p class="mb-2">2/3 × 100 = 200/3 = 66.67% (लगभग)</p>
+                        <p><strong>उत्तर:</strong> 66.67%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: 25 विद्यार्थियों में से 72% गणित में रुचि रखते हैं। कितने प्रतिशत विद्यार्थी गणित में रुचि नहीं रखते?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल विद्यार्थी = 100%</p>
+                        <p class="mb-2">गणित में रुचि रखने वाले = 72%</p>
+                        <p class="mb-2">गणित में रुचि न रखने वाले = 100% - 72% = 28%</p>
+                        <p><strong>उत्तर:</strong> 28%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक फुटबॉल टीम ने जितने मैच खेले उनमें से 10 में जीत हासिल की। यदि उनकी जीत का प्रतिशत 40 था, तो उस टीम ने कुल कितने मैच खेले?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">मान लीजिए कुल मैचों की संख्या = x</p>
+                        <p class="mb-2">जीते हुए मैच = 10</p>
+                        <p class="mb-2">जीत का प्रतिशत = 40%</p>
+                        <p class="mb-2">अतः, 40% of x = 10</p>
+                        <p class="mb-2">(40/100) × x = 10</p>
+                        <p class="mb-2">x = 10 × (100/40) = 10 × 2.5 = 25</p>
+                        <p><strong>उत्तर:</strong> 25 मैच</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: यदि चमेली के पास अपने धन का 75% खर्च करने के बाद ₹ 600 बचे, तो उसके पास शुरू में कितने रुपये थे?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">मान लीजिए शुरुआत में धन = ₹ x</p>
+                        <p class="mb-2">खर्च किया = x का 75% = 0.75x</p>
+                        <p class="mb-2">बचा धन = x - 0.75x = 0.25x</p>
+                        <p class="mb-2">प्रश्नानुसार, 0.25x = 600</p>
+                        <p class="mb-2">x = 600 / 0.25 = 600 × 4 = 2400</p>
+                        <p><strong>उत्तर:</strong> ₹ 2400</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: यदि किसी शहर में 60% व्यक्ति क्रिकेट पसंद करते हैं, 30% फुटबॉल पसंद करते हैं और शेष अन्य खेल पसंद करते हैं, तो कितने प्रतिशत व्यक्ति अन्य खेल पसंद करते हैं? यदि कुल व्यक्ति 50 लाख हैं, तो प्रत्येक प्रकार के खेल को पसंद करने वाले व्यक्तियों की वास्तविक संख्या ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">क्रिकेट पसंद करने वाले = 60%</p>
+                        <p class="mb-2">फुटबॉल पसंद करने वाले = 30%</p>
+                        <p class="mb-2">अन्य खेल पसंद करने वाले = 100% - (60% + 30%) = 10%</p>
+                        <p class="mb-2">कुल व्यक्ति = 50 लाख</p>
+                        <p class="mb-2">क्रिकेट पसंद करने वाले = 50 लाख का 60% = 50,00,000 × 60/100 = 30,00,000</p>
+                        <p class="mb-2">फुटबॉल पसंद करने वाले = 50 लाख का 30% = 50,00,000 × 30/100 = 15,00,000</p>
+                        <p class="mb-2">अन्य खेल पसंद करने वाले = 50 लाख का 10% = 50,00,000 × 10/100 = 5,00,000</p>
+                        <p><strong>उत्तर:</strong> अन्य खेल पसंद करने वाले 10% हैं। क्रिकेट: 30 लाख, फुटबॉल: 15 लाख, अन्य: 5 लाख</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.2 Section -->
+        <section id="prashnavali-7-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 7.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: एक दुकान 20% छूट देती है। निम्नलिखित में से प्रत्येक का विक्रय मूल्य ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(क) ₹ 120 अंकित मूल्य वाली एक पोशाक</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अंकित मूल्य = ₹ 120</p>
+                        <p class="mb-2">छूट = 20%</p>
+                        <p class="mb-2">छूट की राशि = 120 का 20% = 120 × 20/100 = ₹ 24</p>
+                        <p class="mb-2">विक्रय मूल्य = अंकित मूल्य - छूट = 120 - 24 = ₹ 96</p>
+                        <p><strong>उत्तर:</strong> ₹ 96</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ख) ₹ 750 अंकित मूल्य वाले एक जोड़ी जूते</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अंकित मूल्य = ₹ 750</p>
+                        <p class="mb-2">छूट = 20%</p>
+                        <p class="mb-2">छूट की राशि = 750 का 20% = 750 × 20/100 = ₹ 150</p>
+                        <p class="mb-2">विक्रय मूल्य = अंकित मूल्य - छूट = 750 - 150 = ₹ 600</p>
+                        <p><strong>उत्तर:</strong> ₹ 600</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ग) ₹ 250 अंकित मूल्य वाला एक थैला</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अंकित मूल्य = ₹ 250</p>
+                        <p class="mb-2">छूट = 20%</p>
+                        <p class="mb-2">छूट की राशि = 250 का 20% = 250 × 20/100 = ₹ 50</p>
+                        <p class="mb-2">विक्रय मूल्य = अंकित मूल्य - छूट = 250 - 50 = ₹ 200</p>
+                        <p><strong>उत्तर:</strong> ₹ 200</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: ₹ 15000 अंकित मूल्य वाली एक मेज ₹ 14400 में उपलब्ध है। छूट और छूट प्रतिशत ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अंकित मूल्य = ₹ 15000</p>
+                        <p class="mb-2">विक्रय मूल्य = ₹ 14400</p>
+                        <p class="mb-2">छूट = अंकित मूल्य - विक्रय मूल्य = 15000 - 14400 = ₹ 600</p>
+                        <p class="mb-2">छूट प्रतिशत = (छूट / अंकित मूल्य) × 100</p>
+                        <p class="mb-2">छूट प्रतिशत = (600 / 15000) × 100 = 4%</p>
+                        <p><strong>उत्तर:</strong> छूट = ₹ 600, छूट प्रतिशत = 4%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक अलमारी 5% छूट पर ₹ 5225 में बेची जाती है। अलमारी का अंकित मूल्य ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">मान लीजिए अंकित मूल्य = ₹ x</p>
+                        <p class="mb-2">छूट = 5%</p>
+                        <p class="mb-2">विक्रय मूल्य = अंकित मूल्य - छूट = x - x का 5% = x - 0.05x = 0.95x</p>
+                        <p class="mb-2">प्रश्नानुसार, 0.95x = 5225</p>
+                        <p class="mb-2">x = 5225 / 0.95 = 5500</p>
+                        <p><strong>उत्तर:</strong> ₹ 5500</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: ₹ 577.80 के बिल पर 15% छूट का आकलन कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बिल राशि = ₹ 577.80</p>
+                        <p class="mb-2">निकटतम राशि = ₹ 580 (लगभग)</p>
+                        <p class="mb-2">580 का 10% = 580 × 10/100 = ₹ 58</p>
+                        <p class="mb-2">580 का 5% = 58 का आधा = ₹ 29</p>
+                        <p class="mb-2">कुल छूट (10% + 5%) = 58 + 29 = ₹ 87</p>
+                        <p class="mb-2">अनुमानित देय राशि = 580 - 87 = ₹ 493</p>
+                        <p><strong>उत्तर:</strong> अनुमानित छूट ₹ 87, देय राशि ₹ 493</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: ₹ 375 का 15% ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">₹ 375 का 10% = 375 × 10/100 = ₹ 37.5</p>
+                        <p class="mb-2">₹ 375 का 5% = 37.5 का आधा = ₹ 18.75</p>
+                        <p class="mb-2">₹ 375 का 15% = 10% + 5% = 37.5 + 18.75 = ₹ 56.25</p>
+                        <p><strong>उत्तर:</strong> ₹ 56.25</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.3 Section -->
+        <section id="prashnavali-7-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 7.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: 5% वार्षिक दर से बढ़ते हुए वर्ष 2003 के अंत में एक स्थान की जनसंख्या 54,000 हो गई। निम्नलिखित ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) वर्ष 2001 में जनसंख्या</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">मान लीजिए वर्ष 2001 में जनसंख्या = P</p>
+                        <p class="mb-2">वृद्धि दर = 5% वार्षिक</p>
+                        <p class="mb-2">वर्ष 2003 में जनसंख्या = P(1 + 5/100)<sup>2</sup> = P(1.05)<sup>2</sup> = P × 1.1025</p>
+                        <p class="mb-2">प्रश्नानुसार, P × 1.1025 = 54000</p>
+                        <p class="mb-2">P = 54000 / 1.1025 ≈ 48980</p>
+                        <p><strong>उत्तर:</strong> लगभग 48,980</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) वर्ष 2005 में जनसंख्या</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">वर्ष 2003 में जनसंख्या = 54000</p>
+                        <p class="mb-2">वर्ष 2005 में जनसंख्या = 54000 × (1 + 5/100)<sup>2</sup> = 54000 × (1.05)<sup>2</sup></p>
+                        <p class="mb-2">= 54000 × 1.1025 = 59535</p>
+                        <p><strong>उत्तर:</strong> 59,535</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक प्रयोगशाला में, किसी निश्चित प्रयोग में बैक्टीरिया की संख्या 2.5% प्रति घंटे की दर से बढ़ रही है। यदि प्रयोग के आरंभ में बैक्टीरिया की संख्या 5,06,000 थी, तो 2 घंटे के अंत में बैक्टीरिया की संख्या ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">प्रारंभिक बैक्टीरिया संख्या = 5,06,000</p>
+                        <p class="mb-2">वृद्धि दर = 2.5% प्रति घंटा</p>
+                        <p class="mb-2">2 घंटे बाद बैक्टीरिया संख्या = 506000 × (1 + 2.5/100)<sup>2</sup></p>
+                        <p class="mb-2">= 506000 × (1.025)<sup>2</sup> = 506000 × 1.050625</p>
+                        <p class="mb-2">= 531,616.25 ≈ 5,31,616</p>
+                        <p><strong>उत्तर:</strong> लगभग 5,31,616</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक स्कूटर ₹ 42,000 में खरीदा गया। 8% वार्षिक दर से इसके मूल्य का अवमूल्यन हो गया। 1 वर्ष के बाद स्कूटर का मूल्य ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">स्कूटर का क्रय मूल्य = ₹ 42,000</p>
+                        <p class="mb-2">अवमूल्यन दर = 8% वार्षिक</p>
+                        <p class="mb-2">1 वर्ष बाद मूल्य = 42000 × (1 - 8/100) = 42000 × (92/100)</p>
+                        <p class="mb-2">= 42000 × 0.92 = ₹ 38,640</p>
+                        <p><strong>उत्तर:</strong> ₹ 38,640</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 2: एक चर वाले रैखिक समीकरण (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 2: एक चर वाले रैखिक समीकरण</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 2.1 Section -->
+        <section id="prashnavali-2-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 2.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: 3x = 2x + 18</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3x = 2x + 18</p>
+                        <p class="mb-2">दोनों पक्षों से 2x घटाने पर:</p>
+                        <p class="mb-2">3x - 2x = 2x + 18 - 2x</p>
+                        <p class="mb-2">x = 18</p>
+                        <p><strong>उत्तर:</strong> x = 18</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 18 रखने पर</p>
+                        <p>बायाँ पक्ष = 3 × 18 = 54</p>
+                        <p>दायाँ पक्ष = 2 × 18 + 18 = 36 + 18 = 54</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: 5t - 3 = 3t - 5</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5t - 3 = 3t - 5</p>
+                        <p class="mb-2">दोनों पक्षों से 3t घटाने पर:</p>
+                        <p class="mb-2">5t - 3 - 3t = 3t - 5 - 3t</p>
+                        <p class="mb-2">2t - 3 = -5</p>
+                        <p class="mb-2">दोनों पक्षों में 3 जोड़ने पर:</p>
+                        <p class="mb-2">2t - 3 + 3 = -5 + 3</p>
+                        <p class="mb-2">2t = -2</p>
+                        <p class="mb-2">दोनों पक्षों को 2 से भाग देने पर:</p>
+                        <p class="mb-2">t = -1</p>
+                        <p><strong>उत्तर:</strong> t = -1</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> t = -1 रखने पर</p>
+                        <p>बायाँ पक्ष = 5 × (-1) - 3 = -5 - 3 = -8</p>
+                        <p>दायाँ पक्ष = 3 × (-1) - 5 = -3 - 5 = -8</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: 5x + 9 = 5 + 3x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5x + 9 = 5 + 3x</p>
+                        <p class="mb-2">दोनों पक्षों से 3x घटाने पर:</p>
+                        <p class="mb-2">5x + 9 - 3x = 5 + 3x - 3x</p>
+                        <p class="mb-2">2x + 9 = 5</p>
+                        <p class="mb-2">दोनों पक्षों से 9 घटाने पर:</p>
+                        <p class="mb-2">2x + 9 - 9 = 5 - 9</p>
+                        <p class="mb-2">2x = -4</p>
+                        <p class="mb-2">दोनों पक्षों को 2 से भाग देने पर:</p>
+                        <p class="mb-2">x = -2</p>
+                        <p><strong>उत्तर:</strong> x = -2</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = -2 रखने पर</p>
+                        <p>बायाँ पक्ष = 5 × (-2) + 9 = -10 + 9 = -1</p>
+                        <p>दायाँ पक्ष = 5 + 3 × (-2) = 5 - 6 = -1</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: 4z + 3 = 6 + 2z</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4z + 3 = 6 + 2z</p>
+                        <p class="mb-2">दोनों पक्षों से 2z घटाने पर:</p>
+                        <p class="mb-2">4z + 3 - 2z = 6 + 2z - 2z</p>
+                        <p class="mb-2">2z + 3 = 6</p>
+                        <p class="mb-2">दोनों पक्षों से 3 घटाने पर:</p>
+                        <p class="mb-2">2z + 3 - 3 = 6 - 3</p>
+                        <p class="mb-2">2z = 3</p>
+                        <p class="mb-2">दोनों पक्षों को 2 से भाग देने पर:</p>
+                        <p class="mb-2">z = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> z = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> z = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 4 × 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </span> + 3 = 6 + 3 = 9
+                        </p>
+                        <p>दायाँ पक्ष = 6 + 2 × 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </span> = 6 + 3 = 9
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: 2x - 1 = 14 - x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">2x - 1 = 14 - x</p>
+                        <p class="mb-2">दोनों पक्षों में x जोड़ने पर:</p>
+                        <p class="mb-2">2x - 1 + x = 14 - x + x</p>
+                        <p class="mb-2">3x - 1 = 14</p>
+                        <p class="mb-2">दोनों पक्षों में 1 जोड़ने पर:</p>
+                        <p class="mb-2">3x - 1 + 1 = 14 + 1</p>
+                        <p class="mb-2">3x = 15</p>
+                        <p class="mb-2">दोनों पक्षों को 3 से भाग देने पर:</p>
+                        <p class="mb-2">x = 5</p>
+                        <p><strong>उत्तर:</strong> x = 5</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 5 रखने पर</p>
+                        <p>बायाँ पक्ष = 2 × 5 - 1 = 10 - 1 = 9</p>
+                        <p>दायाँ पक्ष = 14 - 5 = 9</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: 8x + 4 = 3(x - 1) + 7</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">8x + 4 = 3(x - 1) + 7</p>
+                        <p class="mb-2">दायाँ पक्ष को सरल करने पर:</p>
+                        <p class="mb-2">8x + 4 = 3x - 3 + 7</p>
+                        <p class="mb-2">8x + 4 = 3x + 4</p>
+                        <p class="mb-2">दोनों पक्षों से 3x घटाने पर:</p>
+                        <p class="mb-2">8x + 4 - 3x = 3x + 4 - 3x</p>
+                        <p class="mb-2">5x + 4 = 4</p>
+                        <p class="mb-2">दोनों पक्षों से 4 घटाने पर:</p>
+                        <p class="mb-2">5x + 4 - 4 = 4 - 4</p>
+                        <p class="mb-2">5x = 0</p>
+                        <p class="mb-2">दोनों पक्षों को 5 से भाग देने पर:</p>
+                        <p class="mb-2">x = 0</p>
+                        <p><strong>उत्तर:</strong> x = 0</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 0 रखने पर</p>
+                        <p>बायाँ पक्ष = 8 × 0 + 4 = 0 + 4 = 4</p>
+                        <p>दायाँ पक्ष = 3(0 - 1) + 7 = 3 × (-1) + 7 = -3 + 7 = 4</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: x = 
+                    <span class="fraction">
+                        <span class="numerator">4</span>
+                        <span class="denominator">5</span>
+                    </span> (x + 10)
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">x = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> (x + 10)
+                        </p>
+                        <p class="mb-2">दोनों पक्षों को 5 से गुणा करने पर:</p>
+                        <p class="mb-2">5x = 4(x + 10)</p>
+                        <p class="mb-2">5x = 4x + 40</p>
+                        <p class="mb-2">दोनों पक्षों से 4x घटाने पर:</p>
+                        <p class="mb-2">5x - 4x = 4x + 40 - 4x</p>
+                        <p class="mb-2">x = 40</p>
+                        <p><strong>उत्तर:</strong> x = 40</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 40 रखने पर</p>
+                        <p>बायाँ पक्ष = 40</p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> (40 + 10) = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> × 50 = 40
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: 
+                    <span class="fraction">
+                        <span class="numerator">2x</span>
+                        <span class="denominator">3</span>
+                    </span> + 1 = 
+                    <span class="fraction">
+                        <span class="numerator">7x</span>
+                        <span class="denominator">15</span>
+                    </span> + 3
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">2x</span>
+                                <span class="denominator">3</span>
+                            </span> + 1 = 
+                            <span class="fraction">
+                                <span class="numerator">7x</span>
+                                <span class="denominator">15</span>
+                            </span> + 3
+                        </p>
+                        <p class="mb-2">दोनों पक्षों को 15 से गुणा करने पर (15, 3 और 15 का लघुत्तम समापवर्त्य है):</p>
+                        <p class="mb-2">15 × 
+                            <span class="fraction">
+                                <span class="numerator">2x</span>
+                                <span class="denominator">3</span>
+                            </span> + 15 × 1 = 15 × 
+                            <span class="fraction">
+                                <span class="numerator">7x</span>
+                                <span class="denominator">15</span>
+                            </span> + 15 × 3
+                        </p>
+                        <p class="mb-2">5 × 2x + 15 = 7x + 45</p>
+                        <p class="mb-2">10x + 15 = 7x + 45</p>
+                        <p class="mb-2">दोनों पक्षों से 7x घटाने पर:</p>
+                        <p class="mb-2">10x + 15 - 7x = 7x + 45 - 7x</p>
+                        <p class="mb-2">3x + 15 = 45</p>
+                        <p class="mb-2">दोनों पक्षों से 15 घटाने पर:</p>
+                        <p class="mb-2">3x + 15 - 15 = 45 - 15</p>
+                        <p class="mb-2">3x = 30</p>
+                        <p class="mb-2">दोनों पक्षों को 3 से भाग देने पर:</p>
+                        <p class="mb-2">x = 10</p>
+                        <p><strong>उत्तर:</strong> x = 10</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 10 रखने पर</p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">2 × 10</span>
+                                <span class="denominator">3</span>
+                            </span> + 1 = 
+                            <span class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">3</span>
+                            </span> + 1 = 
+                            <span class="fraction">
+                                <span class="numerator">20 + 3</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">23</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">7 × 10</span>
+                                <span class="denominator">15</span>
+                            </span> + 3 = 
+                            <span class="fraction">
+                                <span class="numerator">70</span>
+                                <span class="denominator">15</span>
+                            </span> + 3 = 
+                            <span class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">3</span>
+                            </span> + 3 = 
+                            <span class="fraction">
+                                <span class="numerator">14 + 9</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">23</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: 2y + 
+                    <span class="fraction">
+                        <span class="numerator">5</span>
+                        <span class="denominator">3</span>
+                    </span> = 
+                    <span class="fraction">
+                        <span class="numerator">26</span>
+                        <span class="denominator">3</span>
+                    </span> - y
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">2y + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">26</span>
+                                <span class="denominator">3</span>
+                            </span> - y
+                        </p>
+                        <p class="mb-2">दोनों पक्षों में y जोड़ने पर:</p>
+                        <p class="mb-2">2y + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> + y = 
+                            <span class="fraction">
+                                <span class="numerator">26</span>
+                                <span class="denominator">3</span>
+                            </span> - y + y
+                        </p>
+                        <p class="mb-2">3y + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">26</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">दोनों पक्षों से 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> घटाने पर:
+                        </p>
+                        <p class="mb-2">3y + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">26</span>
+                                <span class="denominator">3</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">3y = 
+                            <span class="fraction">
+                                <span class="numerator">21</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">3y = 7</p>
+                        <p class="mb-2">दोनों पक्षों को 3 से भाग देने पर:</p>
+                        <p class="mb-2">y = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> y = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> y = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 2 × 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">3</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">19</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">26</span>
+                                <span class="denominator">3</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">19</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: 3m = 5m - 
+                    <span class="fraction">
+                        <span class="numerator">8</span>
+                        <span class="denominator">5</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3m = 5m - 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">दोनों पक्षों से 5m घटाने पर:</p>
+                        <p class="mb-2">3m - 5m = 5m - 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span> - 5m
+                        </p>
+                        <p class="mb-2">-2m = - 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">दोनों पक्षों को -1 से गुणा करने पर:</p>
+                        <p class="mb-2">2m = 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">दोनों पक्षों को 2 से भाग देने पर:</p>
+                        <p class="mb-2">m = 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5 × 2</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">10</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> m = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> m = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 3 × 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 5 × 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">5</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.2 Section -->
+        <section id="prashnavali-2-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 2.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: 
+                    <span class="fraction">
+                        <span class="numerator">x</span>
+                        <span class="denominator">2</span>
+                    </span> - 
+                    <span class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="denominator">5</span>
+                    </span> = 
+                    <span class="fraction">
+                        <span class="numerator">x</span>
+                        <span class="denominator">3</span>
+                    </span> + 
+                    <span class="fraction">
+                        <span class="numerator">1</span>
+                        <span class="denominator">4</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">x</span>
+                                <span class="denominator">2</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">x</span>
+                                <span class="denominator">3</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">हरों 2, 5, 3 और 4 का लघुत्तम समापवर्त्य (LCM) = 60</p>
+                        <p class="mb-2">दोनों पक्षों को 60 से गुणा करने पर:</p>
+                        <p class="mb-2">60 × 
+                            <span class="fraction">
+                                <span class="numerator">x</span>
+                                <span class="denominator">2</span>
+                            </span> - 60 × 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 60 × 
+                            <span class="fraction">
+                                <span class="numerator">x</span>
+                                <span class="denominator">3</span>
+                            </span> + 60 × 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">30x - 12 = 20x + 15</p>
+                        <p class="mb-2">दोनों पक्षों से 20x घटाने पर:</p>
+                        <p class="mb-2">30x - 12 - 20x = 20x + 15 - 20x</p>
+                        <p class="mb-2">10x - 12 = 15</p>
+                        <p class="mb-2">दोनों पक्षों में 12 जोड़ने पर:</p>
+                        <p class="mb-2">10x - 12 + 12 = 15 + 12</p>
+                        <p class="mb-2">10x = 27</p>
+                        <p class="mb-2">दोनों पक्षों को 10 से भाग देने पर:</p>
+                        <p class="mb-2">x = 
+                            <span class="fraction">
+                                <span class="numerator">27</span>
+                                <span class="denominator">10</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> x = 
+                            <span class="fraction">
+                                <span class="numerator">27</span>
+                                <span class="denominator">10</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 
+                            <span class="fraction">
+                                <span class="numerator">27</span>
+                                <span class="denominator">10</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">27/10</span>
+                                <span class="denominator">2</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">27</span>
+                                <span class="denominator">20</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">27 - 4</span>
+                                <span class="denominator">20</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">23</span>
+                                <span class="denominator">20</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">27/10</span>
+                                <span class="denominator">3</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">27</span>
+                                <span class="denominator">30</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">54 + 15</span>
+                                <span class="denominator">60</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">69</span>
+                                <span class="denominator">60</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">23</span>
+                                <span class="denominator">20</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: 
+                    <span class="fraction">
+                        <span class="numerator">n</span>
+                        <span class="denominator">2</span>
+                    </span> - 
+                    <span class="fraction">
+                        <span class="numerator">3n</span>
+                        <span class="denominator">4</span>
+                    </span> + 
+                    <span class="fraction">
+                        <span class="numerator">5n</span>
+                        <span class="denominator">6</span>
+                    </span> = 21
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">n</span>
+                                <span class="denominator">2</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">3n</span>
+                                <span class="denominator">4</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">5n</span>
+                                <span class="denominator">6</span>
+                            </span> = 21
+                        </p>
+                        <p class="mb-2">हरों 2, 4 और 6 का लघुत्तम समापवर्त्य (LCM) = 12</p>
+                        <p class="mb-2">दोनों पक्षों को 12 से गुणा करने पर:</p>
+                        <p class="mb-2">12 × 
+                            <span class="fraction">
+                                <span class="numerator">n</span>
+                                <span class="denominator">2</span>
+                            </span> - 12 × 
+                            <span class="fraction">
+                                <span class="numerator">3n</span>
+                                <span class="denominator">4</span>
+                            </span> + 12 × 
+                            <span class="fraction">
+                                <span class="numerator">5n</span>
+                                <span class="denominator">6</span>
+                            </span> = 12 × 21
+                        </p>
+                        <p class="mb-2">6n - 9n + 10n = 252</p>
+                        <p class="mb-2">7n = 252</p>
+                        <p class="mb-2">दोनों पक्षों को 7 से भाग देने पर:</p>
+                        <p class="mb-2">n = 36</p>
+                        <p><strong>उत्तर:</strong> n = 36</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> n = 36 रखने पर</p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">36</span>
+                                <span class="denominator">2</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">3×36</span>
+                                <span class="denominator">4</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">5×36</span>
+                                <span class="denominator">6</span>
+                            </span> = 18 - 27 + 30 = 21
+                        </p>
+                        <p>दायाँ पक्ष = 21</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: x + 7 - 
+                    <span class="fraction">
+                        <span class="numerator">8x</span>
+                        <span class="denominator">3</span>
+                    </span> = 
+                    <span class="fraction">
+                        <span class="numerator">17</span>
+                        <span class="denominator">6</span>
+                    </span> - 
+                    <span class="fraction">
+                        <span class="numerator">5x</span>
+                        <span class="denominator">2</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">x + 7 - 
+                            <span class="fraction">
+                                <span class="numerator">8x</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">17</span>
+                                <span class="denominator">6</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">5x</span>
+                                <span class="denominator">2</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">हरों 3, 6 और 2 का लघुत्तम समापवर्त्य (LCM) = 6</p>
+                        <p class="mb-2">दोनों पक्षों को 6 से गुणा करने पर:</p>
+                        <p class="mb-2">6 × x + 6 × 7 - 6 × 
+                            <span class="fraction">
+                                <span class="numerator">8x</span>
+                                <span class="denominator">3</span>
+                            </span> = 6 × 
+                            <span class="fraction">
+                                <span class="numerator">17</span>
+                                <span class="denominator">6</span>
+                            </span> - 6 × 
+                            <span class="fraction">
+                                <span class="numerator">5x</span>
+                                <span class="denominator">2</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">6x + 42 - 16x = 17 - 15x</p>
+                        <p class="mb-2">-10x + 42 = 17 - 15x</p>
+                        <p class="mb-2">दोनों पक्षों में 15x जोड़ने पर:</p>
+                        <p class="mb-2">-10x + 42 + 15x = 17 - 15x + 15x</p>
+                        <p class="mb-2">5x + 42 = 17</p>
+                        <p class="mb-2">दोनों पक्षों से 42 घटाने पर:</p>
+                        <p class="mb-2">5x + 42 - 42 = 17 - 42</p>
+                        <p class="mb-2">5x = -25</p>
+                        <p class="mb-2">दोनों पक्षों को 5 से भाग देने पर:</p>
+                        <p class="mb-2">x = -5</p>
+                        <p><strong>उत्तर:</strong> x = -5</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = -5 रखने पर</p>
+                        <p>बायाँ पक्ष = -5 + 7 - 
+                            <span class="fraction">
+                                <span class="numerator">8×(-5)</span>
+                                <span class="denominator">3</span>
+                            </span> = 2 + 
+                            <span class="fraction">
+                                <span class="numerator">40</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">6+40</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">46</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">17</span>
+                                <span class="denominator">6</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">5×(-5)</span>
+                                <span class="denominator">2</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">17</span>
+                                <span class="denominator">6</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">2</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">17+75</span>
+                                <span class="denominator">6</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">92</span>
+                                <span class="denominator">6</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">46</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: 
+                    <span class="fraction">
+                        <span class="numerator">x - 5</span>
+                        <span class="denominator">3</span>
+                    </span> = 
+                    <span class="fraction">
+                        <span class="numerator">x - 3</span>
+                        <span class="denominator">5</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">x - 5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">x - 3</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">वज्र गुणन (Cross Multiplication) करने पर:</p>
+                        <p class="mb-2">5(x - 5) = 3(x - 3)</p>
+                        <p class="mb-2">5x - 25 = 3x - 9</p>
+                        <p class="mb-2">दोनों पक्षों से 3x घटाने पर:</p>
+                        <p class="mb-2">5x - 25 - 3x = 3x - 9 - 3x</p>
+                        <p class="mb-2">2x - 25 = -9</p>
+                        <p class="mb-2">दोनों पक्षों में 25 जोड़ने पर:</p>
+                        <p class="mb-2">2x - 25 + 25 = -9 + 25</p>
+                        <p class="mb-2">2x = 16</p>
+                        <p class="mb-2">दोनों पक्षों को 2 से भाग देने पर:</p>
+                        <p class="mb-2">x = 8</p>
+                        <p><strong>उत्तर:</strong> x = 8</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> x = 8 रखने पर</p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">8 - 5</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">3</span>
+                            </span> = 1
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">8 - 3</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">5</span>
+                            </span> = 1
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: 
+                    <span class="fraction">
+                        <span class="numerator">3t - 2</span>
+                        <span class="denominator">4</span>
+                    </span> - 
+                    <span class="fraction">
+                        <span class="numerator">2t + 3</span>
+                        <span class="denominator">3</span>
+                    </span> = 
+                    <span class="fraction">
+                        <span class="numerator">2</span>
+                        <span class="denominator">3</span>
+                    </span> - t
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">3t - 2</span>
+                                <span class="denominator">4</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">2t + 3</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> - t
+                        </p>
+                        <p class="mb-2">हरों 4 और 3 का लघुत्तम समापवर्त्य (LCM) = 12</p>
+                        <p class="mb-2">दोनों पक्षों को 12 से गुणा करने पर:</p>
+                        <p class="mb-2">12 × 
+                            <span class="fraction">
+                                <span class="numerator">3t - 2</span>
+                                <span class="denominator">4</span>
+                            </span> - 12 × 
+                            <span class="fraction">
+                                <span class="numerator">2t + 3</span>
+                                <span class="denominator">3</span>
+                            </span> = 12 × 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> - 12 × t
+                        </p>
+                        <p class="mb-2">3(3t - 2) - 4(2t + 3) = 8 - 12t</p>
+                        <p class="mb-2">9t - 6 - 8t - 12 = 8 - 12t</p>
+                        <p class="mb-2">t - 18 = 8 - 12t</p>
+                        <p class="mb-2">दोनों पक्षों में 12t जोड़ने पर:</p>
+                        <p class="mb-2">t - 18 + 12t = 8 - 12t + 12t</p>
+                        <p class="mb-2">13t - 18 = 8</p>
+                        <p class="mb-2">दोनों पक्षों में 18 जोड़ने पर:</p>
+                        <p class="mb-2">13t - 18 + 18 = 8 + 18</p>
+                        <p class="mb-2">13t = 26</p>
+                        <p class="mb-2">दोनों पक्षों को 13 से भाग देने पर:</p>
+                        <p class="mb-2">t = 2</p>
+                        <p><strong>उत्तर:</strong> t = 2</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> t = 2 रखने पर</p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">3×2 - 2</span>
+                                <span class="denominator">4</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">2×2 + 3</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">4</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span> = 1 - 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">3 - 7</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">-4</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> - 2 = 
+                            <span class="fraction">
+                                <span class="numerator">2 - 6</span>
+                                <span class="denominator">3</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">-4</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: m - 
+                    <span class="fraction">
+                        <span class="numerator">m - 1</span>
+                        <span class="denominator">2</span>
+                    </span> = 1 - 
+                    <span class="fraction">
+                        <span class="numerator">m - 2</span>
+                        <span class="denominator">3</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">m - 
+                            <span class="fraction">
+                                <span class="numerator">m - 1</span>
+                                <span class="denominator">2</span>
+                            </span> = 1 - 
+                            <span class="fraction">
+                                <span class="numerator">m - 2</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">हरों 2 और 3 का लघुत्तम समापवर्त्य (LCM) = 6</p>
+                        <p class="mb-2">दोनों पक्षों को 6 से गुणा करने पर:</p>
+                        <p class="mb-2">6 × m - 6 × 
+                            <span class="fraction">
+                                <span class="numerator">m - 1</span>
+                                <span class="denominator">2</span>
+                            </span> = 6 × 1 - 6 × 
+                            <span class="fraction">
+                                <span class="numerator">m - 2</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">6m - 3(m - 1) = 6 - 2(m - 2)</p>
+                        <p class="mb-2">6m - 3m + 3 = 6 - 2m + 4</p>
+                        <p class="mb-2">3m + 3 = 10 - 2m</p>
+                        <p class="mb-2">दोनों पक्षों में 2m जोड़ने पर:</p>
+                        <p class="mb-2">3m + 3 + 2m = 10 - 2m + 2m</p>
+                        <p class="mb-2">5m + 3 = 10</p>
+                        <p class="mb-2">दोनों पक्षों से 3 घटाने पर:</p>
+                        <p class="mb-2">5m + 3 - 3 = 10 - 3</p>
+                        <p class="mb-2">5m = 7</p>
+                        <p class="mb-2">दोनों पक्षों को 5 से भाग देने पर:</p>
+                        <p class="mb-2">m = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> m = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> m = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">7/5 - 1</span>
+                                <span class="denominator">2</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">2/5</span>
+                                <span class="denominator">2</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">5</span>
+                            </span> - 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">6</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p>दायाँ पक्ष = 1 - 
+                            <span class="fraction">
+                                <span class="numerator">7/5 - 2</span>
+                                <span class="denominator">3</span>
+                            </span> = 1 - 
+                            <span class="fraction">
+                                <span class="numerator">-3/5</span>
+                                <span class="denominator">3</span>
+                            </span> = 1 + 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">6</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: 3(t - 3) = 5(2t + 1)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3(t - 3) = 5(2t + 1)</p>
+                        <p class="mb-2">कोष्ठक हटाने पर:</p>
+                        <p class="mb-2">3t - 9 = 10t + 5</p>
+                        <p class="mb-2">दोनों पक्षों से 3t घटाने पर:</p>
+                        <p class="mb-2">3t - 9 - 3t = 10t + 5 - 3t</p>
+                        <p class="mb-2">-9 = 7t + 5</p>
+                        <p class="mb-2">दोनों पक्षों से 5 घटाने पर:</p>
+                        <p class="mb-2">-9 - 5 = 7t + 5 - 5</p>
+                        <p class="mb-2">-14 = 7t</p>
+                        <p class="mb-2">दोनों पक्षों को 7 से भाग देने पर:</p>
+                        <p class="mb-2">t = -2</p>
+                        <p><strong>उत्तर:</strong> t = -2</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> t = -2 रखने पर</p>
+                        <p>बायाँ पक्ष = 3(-2 - 3) = 3 × (-5) = -15</p>
+                        <p>दायाँ पक्ष = 5(2×(-2) + 1) = 5(-4 + 1) = 5 × (-3) = -15</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: 15(y - 4) - 2(y - 9) + 5(y + 6) = 0</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">15(y - 4) - 2(y - 9) + 5(y + 6) = 0</p>
+                        <p class="mb-2">कोष्ठक हटाने पर:</p>
+                        <p class="mb-2">15y - 60 - 2y + 18 + 5y + 30 = 0</p>
+                        <p class="mb-2">समान पदों को मिलाने पर:</p>
+                        <p class="mb-2">(15y - 2y + 5y) + (-60 + 18 + 30) = 0</p>
+                        <p class="mb-2">18y - 12 = 0</p>
+                        <p class="mb-2">दोनों पक्षों में 12 जोड़ने पर:</p>
+                        <p class="mb-2">18y - 12 + 12 = 0 + 12</p>
+                        <p class="mb-2">18y = 12</p>
+                        <p class="mb-2">दोनों पक्षों को 18 से भाग देने पर:</p>
+                        <p class="mb-2">y = 
+                            <span class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">18</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> y = 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> y = 
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 15(
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> - 4) - 2(
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> - 9) + 5(
+                            <span class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </span> + 6)
+                        </p>
+                        <p>= 15(
+                            <span class="fraction">
+                                <span class="numerator">-10</span>
+                                <span class="denominator">3</span>
+                            </span>) - 2(
+                            <span class="fraction">
+                                <span class="numerator">-25</span>
+                                <span class="denominator">3</span>
+                            </span>) + 5(
+                            <span class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">3</span>
+                            </span>)
+                        </p>
+                        <p>= -50 + 
+                            <span class="fraction">
+                                <span class="numerator">50</span>
+                                <span class="denominator">3</span>
+                            </span> + 
+                            <span class="fraction">
+                                <span class="numerator">100</span>
+                                <span class="denominator">3</span>
+                            </span> = -50 + 
+                            <span class="fraction">
+                                <span class="numerator">150</span>
+                                <span class="denominator">3</span>
+                            </span> = -50 + 50 = 0
+                        </p>
+                        <p>दायाँ पक्ष = 0</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: 3(5z - 7) - 2(9z - 11) = 4(8z - 13) - 17</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3(5z - 7) - 2(9z - 11) = 4(8z - 13) - 17</p>
+                        <p class="mb-2">कोष्ठक हटाने पर:</p>
+                        <p class="mb-2">15z - 21 - 18z + 22 = 32z - 52 - 17</p>
+                        <p class="mb-2">समान पदों को मिलाने पर:</p>
+                        <p class="mb-2">(15z - 18z) + (-21 + 22) = 32z - 69</p>
+                        <p class="mb-2">-3z + 1 = 32z - 69</p>
+                        <p class="mb-2">दोनों पक्षों में 3z जोड़ने पर:</p>
+                        <p class="mb-2">-3z + 1 + 3z = 32z - 69 + 3z</p>
+                        <p class="mb-2">1 = 35z - 69</p>
+                        <p class="mb-2">दोनों पक्षों में 69 जोड़ने पर:</p>
+                        <p class="mb-2">1 + 69 = 35z - 69 + 69</p>
+                        <p class="mb-2">70 = 35z</p>
+                        <p class="mb-2">दोनों पक्षों को 35 से भाग देने पर:</p>
+                        <p class="mb-2">z = 2</p>
+                        <p><strong>उत्तर:</strong> z = 2</p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> z = 2 रखने पर</p>
+                        <p>बायाँ पक्ष = 3(5×2 - 7) - 2(9×2 - 11) = 3(10 - 7) - 2(18 - 11) = 3×3 - 2×7 = 9 - 14 = -5</p>
+                        <p>दायाँ पक्ष = 4(8×2 - 13) - 17 = 4(16 - 13) - 17 = 4×3 - 17 = 12 - 17 = -5</p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: 0.25(4f - 3) = 0.05(10f - 9)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">0.25(4f - 3) = 0.05(10f - 9)</p>
+                        <p class="mb-2">दशमलव को भिन्न में बदलने पर:</p>
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span>(4f - 3) = 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">20</span>
+                            </span>(10f - 9)
+                        </p>
+                        <p class="mb-2">दोनों पक्षों को 20 से गुणा करने पर:</p>
+                        <p class="mb-2">20 × 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </span>(4f - 3) = 20 × 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">20</span>
+                            </span>(10f - 9)
+                        </p>
+                        <p class="mb-2">5(4f - 3) = 1(10f - 9)</p>
+                        <p class="mb-2">20f - 15 = 10f - 9</p>
+                        <p class="mb-2">दोनों पक्षों से 10f घटाने पर:</p>
+                        <p class="mb-2">20f - 15 - 10f = 10f - 9 - 10f</p>
+                        <p class="mb-2">10f - 15 = -9</p>
+                        <p class="mb-2">दोनों पक्षों में 15 जोड़ने पर:</p>
+                        <p class="mb-2">10f - 15 + 15 = -9 + 15</p>
+                        <p class="mb-2">10f = 6</p>
+                        <p class="mb-2">दोनों पक्षों को 10 से भाग देने पर:</p>
+                        <p class="mb-2">f = 
+                            <span class="fraction">
+                                <span class="numerator">6</span>
+                                <span class="denominator">10</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> f = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="explanation">
+                        <p><strong>जाँच:</strong> f = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </span> रखने पर
+                        </p>
+                        <p>बायाँ पक्ष = 0.25(4×
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </span> - 3) = 0.25(
+                            <span class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </span> - 3) = 0.25(
+                            <span class="fraction">
+                                <span class="numerator">12 - 15</span>
+                                <span class="denominator">5</span>
+                            </span>) = 0.25 × 
+                            <span class="fraction">
+                                <span class="numerator">-3</span>
+                                <span class="denominator">5</span>
+                            </span> = -0.15
+                        </p>
+                        <p>दायाँ पक्ष = 0.05(10×
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </span> - 9) = 0.05(6 - 9) = 0.05 × (-3) = -0.15
+                        </p>
+                        <p>बायाँ पक्ष = दायाँ पक्ष (सत्यापित)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

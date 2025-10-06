@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 9: क्षेत्रमिति (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .section-title {
+            background-color: #e0e7ff;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            margin: 1.5rem 0;
+            font-weight: 600;
+            color: #3730a3;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 9: क्षेत्रमिति</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+            <p class="mt-1 text-sm">प्रश्नावली 9.1, 9.2 और 9.3 के सम्पूर्ण हल</p>
+        </div>
+
+        <!-- Exercise 9.1 Section -->
+        <section id="prashnavali-9-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 9.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: एक मेज के ऊपरी पृष्ठ (सतह) का आकार समलंब जैसा है। यदि इसकी समांतर भुजाएँ 1 m और 1.2 m हैं और इन समांतर भुजाओं के बीच की दूरी 0.8 m है, तो इसका क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">समलंब का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (समांतर भुजाओं का योग) × ऊँचाई</p>
+                        <p class="mb-2">दिया गया है:</p>
+                        <p class="mb-2">समांतर भुजा 1, a = 1 m</p>
+                        <p class="mb-2">समांतर भुजा 2, b = 1.2 m</p>
+                        <p class="mb-2">ऊँचाई, h = 0.8 m</p>
+                        <p class="mb-2">क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (1 + 1.2) × 0.8</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 2.2 × 0.8</p>
+                        <p class="mb-2">= 1.1 × 0.8</p>
+                        <p class="mb-2">= 0.88 m²</p>
+                        <p><strong>उत्तर:</strong> बैग के माथे का क्षेत्रफल 0.88 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक समलंब का क्षेत्रफल 34 cm² है और इसकी ऊँचाई 4 cm है। समांतर भुजाओं में से एक 10 cm लंबाई की है। दूसरी समांतर भुजा की लंबाई ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">समलंब का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (a + b) × h</p>
+                        <p class="mb-2">दिया गया है:</p>
+                        <p class="mb-2">क्षेत्रफल = 34 cm²</p>
+                        <p class="mb-2">ऊँचाई, h = 4 cm</p>
+                        <p class="mb-2">एक समांतर भुजा, a = 10 cm</p>
+                        <p class="mb-2">माना दूसरी समांतर भुजा = b</p>
+                        <p class="mb-2">34 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (10 + b) × 4</p>
+                        <p class="mb-2">34 = 2 × (10 + b)</p>
+                        <p class="mb-2">34 = 20 + 2b</p>
+                        <p class="mb-2">2b = 34 - 20</p>
+                        <p class="mb-2">2b = 14</p>
+                        <p class="mb-2">b = 7 cm</p>
+                        <p><strong>उत्तर:</strong> दूसरी समांतर भुजा की लंबाई 7 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक समलंब के आकार के खेत ABCD की बाड़ की लंबाई 120 m है। यदि BC = 48 m, CD = 17 m और AD = 40 m है, तो इस खेत का क्षेत्रफल ज्ञात कीजिए। भुजा AB समांतर भुजाओं AD तथा BC पर लंब है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">दिया गया है:</p>
+                        <p class="mb-2">बाड़ की लंबाई = 120 m</p>
+                        <p class="mb-2">BC = 48 m, CD = 17 m, AD = 40 m</p>
+                        <p class="mb-2">AB, AD और BC पर लंब है</p>
+                        <p class="mb-2">बाड़ की लंबाई = AB + BC + CD + DA</p>
+                        <p class="mb-2">120 = AB + 48 + 17 + 40</p>
+                        <p class="mb-2">120 = AB + 105</p>
+                        <p class="mb-2">AB = 120 - 105 = 15 m</p>
+                        <p class="mb-2">समलंब का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (समांतर भुजाओं का योग) × ऊँचाई</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (AD + BC) × AB</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (40 + 48) × 15</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 88 × 15</p>
+                        <p class="mb-2">= 44 × 15 = 660 m²</p>
+                        <p><strong>उत्तर:</strong> खेत का क्षेत्रफल 660 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक चतुर्भुज आकार के खेत का विकर्ण 24 m है और शेष सम्मुख शीर्षों से इस विकर्ण पर खींचे गए लंब 8 m तथा 13 m हैं। खेत का क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">चतुर्भुज का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × विकर्ण × (लंबों का योग)</p>
+                        <p class="mb-2">दिया गया है:</p>
+                        <p class="mb-2">विकर्ण = 24 m</p>
+                        <p class="mb-2">लंब = 8 m और 13 m</p>
+                        <p class="mb-2">क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 24 × (8 + 13)</p>
+                        <p class="mb-2">= 12 × 21</p>
+                        <p class="mb-2">= 252 m²</p>
+                        <p><strong>उत्तर:</strong> खेत का क्षेत्रफल 252 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: किसी समचतुर्भुज के विकर्ण 7.5 cm एवं 12 cm हैं। इसका क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">समचतुर्भुज का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × विकर्ण 1 × विकर्ण 2</p>
+                        <p class="mb-2">दिया गया है:</p>
+                        <p class="mb-2">विकर्ण 1, d₁ = 7.5 cm</p>
+                        <p class="mb-2">विकर्ण 2, d₂ = 12 cm</p>
+                        <p class="mb-2">क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 7.5 × 12</p>
+                        <p class="mb-2">= 7.5 × 6</p>
+                        <p class="mb-2">= 45 cm²</p>
+                        <p><strong>उत्तर:</strong> समचतुर्भुज का क्षेत्रफल 45 cm² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: एक समचतुर्भुज का क्षेत्रफल ज्ञात कीजिए जिसकी भुजा 6 cm और शीर्षलंब 4 cm है। यदि एक विकर्ण की लंबाई 8 cm है तो दूसरे विकर्ण की लंबाई ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">भाग 1: समचतुर्भुज का क्षेत्रफल</p>
+                        <p class="mb-2">समचतुर्भुज का क्षेत्रफल = भुजा × शीर्षलंब</p>
+                        <p class="mb-2">= 6 × 4 = 24 cm²</p>
+                        
+                        <p class="mb-2">भाग 2: दूसरे विकर्ण की लंबाई</p>
+                        <p class="mb-2">समचतुर्भुज का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × d₁ × d₂</p>
+                        <p class="mb-2">24 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 8 × d₂</p>
+                        <p class="mb-2">24 = 4 × d₂</p>
+                        <p class="mb-2">d₂ = <span class="fraction"><span class="numerator">24</span><span class="denominator">4</span></span> = 6 cm</p>
+                        <p><strong>उत्तर:</strong> समचतुर्भुज का क्षेत्रफल 24 cm² है और दूसरे विकर्ण की लंबाई 6 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: किसी भवन के फर्श में समचतुर्भुज के आकार की 3000 टाइलें हैं और इनमें से प्रत्येक के विकर्ण 45 cm तथा 30 cm लंबाई के हैं। 4 रुपये प्रति वर्ग मीटर की दर से इस फर्श को पॉलिश करने का व्यय ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक टाइल का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × d₁ × d₂</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 45 × 30</p>
+                        <p class="mb-2">= 45 × 15 = 675 cm²</p>
+                        
+                        <p class="mb-2">3000 टाइलों का कुल क्षेत्रफल = 3000 × 675 = 2,025,000 cm²</p>
+                        <p class="mb-2">= 202.5 m² (∵ 1 m² = 10,000 cm²)</p>
+                        
+                        <p class="mb-2">पॉलिश करने का व्यय = क्षेत्रफल × दर</p>
+                        <p class="mb-2">= 202.5 × 4 = 810 रुपये</p>
+                        <p><strong>उत्तर:</strong> फर्श को पॉलिश करने का व्यय 810 रुपये है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: मोहन एक समलंब के आकार का खेत खरीदना चाहता है। इस खेत की नदी के साथ वाली भुजा सड़क के साथ वाली भुजा के समांतर है और लंबाई में दुगुनी है। यदि इस खेत का क्षेत्रफल 10,500 m² है और दो समांतर भुजाओं के बीच की लंबवत दूरी 100 m है, तो नदी के साथ वाली भुजा की लंबाई ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">माना सड़क के साथ वाली भुजा = x m</p>
+                        <p class="mb-2">तो नदी के साथ वाली भुजा = 2x m</p>
+                        <p class="mb-2">ऊँचाई, h = 100 m</p>
+                        <p class="mb-2">समलंब का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (समांतर भुजाओं का योग) × h</p>
+                        <p class="mb-2">10,500 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (x + 2x) × 100</p>
+                        <p class="mb-2">10,500 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 3x × 100</p>
+                        <p class="mb-2">10,500 = 150x</p>
+                        <p class="mb-2">x = <span class="fraction"><span class="numerator">10,500</span><span class="denominator">150</span></span> = 70 m</p>
+                        <p class="mb-2">नदी के साथ वाली भुजा = 2x = 2 × 70 = 140 m</p>
+                        <p><strong>उत्तर:</strong> नदी के साथ वाली भुजा की लंबाई 140 m है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: एक ऊपर उठे हुए चबूतरे का ऊपरी पृष्ठ अष्टभुज के आकार का है। जैसा कि आकृति में दर्शाया गया है। अष्टभुजी पृष्ठ का क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">अष्टभुज को एक वर्ग और चार समकोण त्रिभुजों में विभाजित किया जा सकता है।</p>
+                        <p class="mb-2">वर्ग की भुजा = 5 m</p>
+                        <p class="mb-2">वर्ग का क्षेत्रफल = 5 × 5 = 25 m²</p>
+                        
+                        <p class="mb-2">प्रत्येक समकोण त्रिभुज का आधार = 4 m, ऊँचाई = 3 m</p>
+                        <p class="mb-2">एक त्रिभुज का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 4 × 3 = 6 m²</p>
+                        <p class="mb-2">चार त्रिभुजों का क्षेत्रफल = 4 × 6 = 24 m²</p>
+                        
+                        <p class="mb-2">अष्टभुज का कुल क्षेत्रफल = वर्ग का क्षेत्रफल + चार त्रिभुजों का क्षेत्रफल</p>
+                        <p class="mb-2">= 25 + 24 = 49 m²</p>
+                        <p><strong>उत्तर:</strong> अष्टभुजी पृष्ठ का क्षेत्रफल 49 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: एक पंचभुज आकार का बगीचा है जैसा कि आकृति में दर्शाया गया है। इसका क्षेत्रफल ज्ञात करने के लिए इसे तीन भागों में विभाजित किया गया है। बगीचे का क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पंचभुज को तीन भागों में विभाजित किया गया है:</p>
+                        <p class="mb-2">1. समलंब ABDE</p>
+                        <p class="mb-2">2. समकोण त्रिभुज BCD</p>
+                        
+                        <p class="mb-2">भाग 1: समलंब ABDE का क्षेत्रफल</p>
+                        <p class="mb-2">समांतर भुजाएँ: AE = 30 m, BD = 15 m</p>
+                        <p class="mb-2">ऊँचाई = 15 m</p>
+                        <p class="mb-2">क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × (30 + 15) × 15</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 45 × 15 = 337.5 m²</p>
+                        
+                        <p class="mb-2">भाग 2: समकोण त्रिभुज BCD का क्षेत्रफल</p>
+                        <p class="mb-2">आधार = 15 m, ऊँचाई = 15 m</p>
+                        <p class="mb-2">क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × 15 × 15 = 112.5 m²</p>
+                        
+                        <p class="mb-2">कुल क्षेत्रफल = 337.5 + 112.5 = 450 m²</p>
+                        <p><strong>उत्तर:</strong> बगीचे का क्षेत्रफल 450 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: संलग्न पिक्चर फ्रेम के आरेख की बाहरी एवं अंतः विमाएँ क्रमशः 24 cm × 28 cm एवं 16 cm × 20 cm हैं। यदि फ्रेम के प्रत्येक खंड की चौड़ाई समान है, तो प्रत्येक खंड का क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बाहरी आयाम: 24 cm × 28 cm</p>
+                        <p class="mb-2">अंदरूनी आयाम: 16 cm × 20 cm</p>
+                        
+                        <p class="mb-2">फ्रेम की कुल चौड़ाई = (24 - 16)/2 = 4 cm (दोनों ओर)</p>
+                        
+                        <p class="mb-2">फ्रेम को चार खंडों में विभाजित किया गया है:</p>
+                        <p class="mb-2">1. ऊपरी खंड: लंबाई = 24 cm, चौड़ाई = 4 cm</p>
+                        <p class="mb-2">क्षेत्रफल = 24 × 4 = 96 cm²</p>
+                        
+                        <p class="mb-2">2. निचला खंड: लंबाई = 24 cm, चौड़ाई = 4 cm</p>
+                        <p class="mb-2">क्षेत्रफल = 24 × 4 = 96 cm²</p>
+                        
+                        <p class="mb-2">3. बायाँ खंड: लंबाई = 20 cm, चौड़ाई = 4 cm</p>
+                        <p class="mb-2">क्षेत्रफल = 20 × 4 = 80 cm²</p>
+                        
+                        <p class="mb-2">4. दायाँ खंड: लंबाई = 20 cm, चौड़ाई = 4 cm</p>
+                        <p class="mb-2">क्षेत्रफल = 20 × 4 = 80 cm²</p>
+                        
+                        <p><strong>उत्तर:</strong> प्रत्येक खंड का क्षेत्रफल: ऊपरी और निचला = 96 cm², बायाँ और दायाँ = 80 cm²</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Exercise 9.2 Section -->
+        <section id="prashnavali-9-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 9.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: दो घनाभाकार डिब्बे हैं जैसा कि संलग्न आकृति में दर्शाया गया है। किस डिब्बे को बनाने के लिए कम सामग्री की आवश्यकता है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाभ का पृष्ठीय क्षेत्रफल = 2(lb + bh + hl)</p>
+                        <p class="mb-2">पहला डिब्बा: l = 60 cm, b = 40 cm, h = 50 cm</p>
+                        <p class="mb-2">पृष्ठीय क्षेत्रफल = 2(60×40 + 40×50 + 50×60)</p>
+                        <p class="mb-2">= 2(2400 + 2000 + 3000)</p>
+                        <p class="mb-2">= 2 × 7400 = 14800 cm²</p>
+                        <p class="mb-2">दूसरा डिब्बा: l = 50 cm, b = 50 cm, h = 50 cm (घन)</p>
+                        <p class="mb-2">पृष्ठीय क्षेत्रफल = 6a² = 6 × 50² = 6 × 2500 = 15000 cm²</p>
+                        <p class="mb-2">14800 cm² < 15000 cm²</p>
+                        <p><strong>उत्तर:</strong> पहले डिब्बे को बनाने के लिए कम सामग्री की आवश्यकता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: 80 cm × 48 cm × 24 cm माप वाले एक सूटकेस को तिरपाल के कपड़े से ढकना है। ऐसे 100 सूटकेसों को ढकने के लिए 96 cm चौड़ाई वाले कितने मीटर तिरपाल के कपड़े की आवश्यकता है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक सूटकेस का पृष्ठीय क्षेत्रफल = 2(lb + bh + hl)</p>
+                        <p class="mb-2">= 2(80×48 + 48×24 + 24×80)</p>
+                        <p class="mb-2">= 2(3840 + 1152 + 1920)</p>
+                        <p class="mb-2">= 2 × 6912 = 13824 cm²</p>
+                        <p class="mb-2">100 सूटकेसों का कुल क्षेत्रफल = 100 × 13824 = 1382400 cm²</p>
+                        <p class="mb-2">कपड़े की चौड़ाई = 96 cm</p>
+                        <p class="mb-2">कपड़े की लंबाई = कुल क्षेत्रफल / चौड़ाई</p>
+                        <p class="mb-2">= 1382400 / 96 = 14400 cm</p>
+                        <p class="mb-2">= 144 m (∵ 1 m = 100 cm)</p>
+                        <p><strong>उत्तर:</strong> 144 मीटर तिरपाल के कपड़े की आवश्यकता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक ऐसे घन की भुजा ज्ञात कीजिए जिसका पृष्ठीय क्षेत्रफल 600 cm² है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घन का पृष्ठीय क्षेत्रफल = 6a²</p>
+                        <p class="mb-2">6a² = 600</p>
+                        <p class="mb-2">a² = <span class="fraction"><span class="numerator">600</span><span class="denominator">6</span></span> = 100</p>
+                        <p class="mb-2">a = √100 = 10 cm</p>
+                        <p><strong>उत्तर:</strong> घन की भुजा 10 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: रुखसार ने 1 m × 2 m × 1.5 m माप वाली एक पेटी को बाहर से पेंट किया। यदि उसने पेटी के तल के अतिरिक्त उसे सभी जगह से पेंट किया हो तो ज्ञात कीजिए कि उसने कितने पृष्ठीय क्षेत्रफल को पेंट किया।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पेटी का कुल पृष्ठीय क्षेत्रफल = 2(lb + bh + hl)</p>
+                        <p class="mb-2">= 2(1×2 + 2×1.5 + 1.5×1)</p>
+                        <p class="mb-2">= 2(2 + 3 + 1.5) = 2 × 6.5 = 13 m²</p>
+                        <p class="mb-2">तल का क्षेत्रफल = l × b = 1 × 2 = 2 m²</p>
+                        <p class="mb-2">पेंट किया गया क्षेत्रफल = कुल क्षेत्रफल - तल का क्षेत्रफल</p>
+                        <p class="mb-2">= 13 - 2 = 11 m²</p>
+                        <p><strong>उत्तर:</strong> रुखसार ने 11 m² क्षेत्रफल को पेंट किया।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: डैनियल एक ऐसे घनाभाकार कमरे की दीवारों और छत को पेंट कर रहा है जिसकी लंबाई, चौड़ाई और ऊँचाई क्रमशः 15 m, 10 m एवं 7 m हैं। पेंट की प्रत्येक कैन की सहायता से 100 m² क्षेत्रफल को पेंट किया जा सकता है। तो उस कमरे के लिए उसे पेंट की कितनी कैनों की आवश्यकता होगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">दीवारों का क्षेत्रफल = 2(l + b) × h</p>
+                        <p class="mb-2">= 2(15 + 10) × 7</p>
+                        <p class="mb-2">= 2 × 25 × 7 = 350 m²</p>
+                        <p class="mb-2">छत का क्षेत्रफल = l × b = 15 × 10 = 150 m²</p>
+                        <p class="mb-2">कुल पेंट करने योग्य क्षेत्रफल = 350 + 150 = 500 m²</p>
+                        <p class="mb-2">पेंट की कैनों की संख्या = कुल क्षेत्रफल / प्रति कैन क्षेत्रफल</p>
+                        <p class="mb-2">= 500 / 100 = 5 कैन</p>
+                        <p><strong>उत्तर:</strong> डैनियल को 5 कैन पेंट की आवश्यकता होगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: वर्णन कीजिए कि दाईं ओर दी गई आकृतियाँ किस प्रकार एक समान हैं और किस प्रकार एक दूसरे से भिन्न हैं? किस डिब्बे का पार्श्व पृष्ठीय क्षेत्रफल अधिक है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">समानताएँ:</p>
+                        <p class="mb-2">- दोनों घनाभ हैं</p>
+                        <p class="mb-2">- दोनों का आयतन समान है (घनों की संख्या समान है)</p>
+                        
+                        <p class="mb-2">अंतर:</p>
+                        <p class="mb-2">- पहले डिब्बे की विमाएँ: 4 cm × 4 cm × 2 cm</p>
+                        <p class="mb-2">- दूसरे डिब्बे की विमाएँ: 8 cm × 2 cm × 2 cm</p>
+                        
+                        <p class="mb-2">पहले डिब्बे का पार्श्व पृष्ठीय क्षेत्रफल:</p>
+                        <p class="mb-2">= 2(l + b) × h = 2(4 + 4) × 2 = 2 × 8 × 2 = 32 cm²</p>
+                        
+                        <p class="mb-2">दूसरे डिब्बे का पार्श्व पृष्ठीय क्षेत्रफल:</p>
+                        <p class="mb-2">= 2(l + b) × h = 2(8 + 2) × 2 = 2 × 10 × 2 = 40 cm²</p>
+                        
+                        <p class="mb-2">40 > 32</p>
+                        <p><strong>उत्तर:</strong> दूसरे डिब्बे का पार्श्व पृष्ठीय क्षेत्रफल अधिक है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: 7 m त्रिज्या और 3 m ऊँचाई वाला एक बंद बेलनाकार टैंक किसी धातु की एक चादर से बना हुआ है। उसे बनाने के लिए वांछित धातु की चादर की मात्रा ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बेलन का कुल पृष्ठीय क्षेत्रफल = 2πr(r + h)</p>
+                        <p class="mb-2">= 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 7 × (7 + 3)</p>
+                        <p class="mb-2">= 2 × 22 × 10 = 440 m²</p>
+                        <p><strong>उत्तर:</strong> आवश्यक धातु की चादर का क्षेत्रफल 440 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: एक खोखले बेलन का वक्र पृष्ठीय क्षेत्रफल 4224 cm² है। इसे इसकी ऊँचाई के अनुदिश काटकर 32 cm चौड़ाई की एक आयताकार चादर बनाई जाती है। आयताकार चादर का परिमाप ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बेलन का वक्र पृष्ठीय क्षेत्रफल = आयताकार चादर का क्षेत्रफल</p>
+                        <p class="mb-2">4224 = लंबाई × चौड़ाई</p>
+                        <p class="mb-2">4224 = लंबाई × 32</p>
+                        <p class="mb-2">लंबाई = <span class="fraction"><span class="numerator">4224</span><span class="denominator">32</span></span> = 132 cm</p>
+                        <p class="mb-2">आयत का परिमाप = 2(लंबाई + चौड़ाई)</p>
+                        <p class="mb-2">= 2(132 + 32) = 2 × 164 = 328 cm</p>
+                        <p><strong>उत्तर:</strong> आयताकार चादर का परिमाप 328 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: किसी सड़क को समतल करने के लिए एक सड़क रोलर को सड़क के ऊपर एक बार घूमने के लिए 750 चक्कर लगाने पड़ते हैं। यदि सड़क रोलर का व्यास 84 cm और लंबाई 1 m है तो सड़क का क्षेत्रफल ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">रोलर का व्यास = 84 cm, त्रिज्या = 42 cm = 0.42 m</p>
+                        <p class="mb-2">लंबाई = 1 m</p>
+                        <p class="mb-2">एक चक्कर में तय क्षेत्रफल = रोलर का वक्र पृष्ठीय क्षेत्रफल</p>
+                        <p class="mb-2">= 2πrh = 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 0.42 × 1</p>
+                        <p class="mb-2">= 2 × 22 × 0.06 = 2.64 m²</p>
+                        <p class="mb-2">750 चक्करों में तय क्षेत्रफल = 750 × 2.64 = 1980 m²</p>
+                        <p><strong>उत्तर:</strong> सड़क का क्षेत्रफल 1980 m² है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: एक कंपनी अपने दूध पाउडर को ऐसे बेलनाकार डिब्बों में पैक करती है जिनका व्यास 14 cm और ऊँचाई 20 cm है। कंपनी डिब्बे के चारों ओर एक लेबल लगाती है। यदि यह लेबल डिब्बे के तल और शीर्ष दोनों से 2 cm की दूरी पर चिपकाया जाता है तो लेबल का क्षेत्रफल क्या है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">डिब्बे का व्यास = 14 cm, त्रिज्या = 7 cm</p>
+                        <p class="mb-2">कुल ऊँचाई = 20 cm</p>
+                        <p class="mb-2">लेबल की ऊँचाई = कुल ऊँचाई - (ऊपर की दूरी + नीचे की दूरी)</p>
+                        <p class="mb-2">= 20 - (2 + 2) = 16 cm</p>
+                        <p class="mb-2">लेबल का क्षेत्रफल = बेलन का वक्र पृष्ठीय क्षेत्रफल</p>
+                        <p class="mb-2">= 2πrh = 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 7 × 16</p>
+                        <p class="mb-2">= 2 × 22 × 16 = 704 cm²</p>
+                        <p><strong>उत्तर:</strong> लेबल का क्षेत्रफल 704 cm² है।</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Exercise 9.3 Section -->
+        <section id="prashnavali-9-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 9.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: आपको एक बेलनाकार टैंक दिया गया है, निम्नलिखित में से किस स्थिति में आप उसका पृष्ठीय क्षेत्रफल ज्ञात करेंगे और किस स्थिति में आयतन:</h3>
+                <p class="mb-4">(a) यह ज्ञात करने के लिए कि इसमें कितना पानी रखा जा सकता है।<br>
+                   (b) इसका प्लास्टर करने के लिए आवश्यक सीमेंट बैगों की संख्या।<br>
+                   (c) इसमें भरे पानी से भरे जाने वाले छोटे टैंकों की संख्या।</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) टैंक में कितना पानी रखा जा सकता है - यह ज्ञात करने के लिए हमें टैंक का <strong>आयतन</strong> ज्ञात करना होगा।</p>
+                        <p class="mb-2">(b) प्लास्टर करने के लिए आवश्यक सीमेंट बैगों की संख्या - यह ज्ञात करने के लिए हमें टैंक का <strong>पृष्ठीय क्षेत्रफल</strong> ज्ञात करना होगा।</p>
+                        <p class="mb-2">(c) छोटे टैंकों की संख्या - यह ज्ञात करने के लिए हमें टैंक का <strong>आयतन</strong> ज्ञात करना होगा।</p>
+                        <p><strong>उत्तर:</strong> (a) आयतन, (b) पृष्ठीय क्षेत्रफल, (c) आयतन</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: बेलन A का व्यास 7 cm और ऊँचाई 14 cm है। बेलन B का व्यास 14 cm और ऊँचाई 7 cm है। परिकलन किए बिना क्या आप बता सकते हैं कि इन दोनों में से किसका आयतन अधिक है? दोनों बेलनों का आयतन ज्ञात करके इसकी जाँच कीजिए। जाँच कीजिए कि क्या अधिक आयतन वाले बेलन का पृष्ठीय क्षेत्रफल भी अधिक है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बेलन का आयतन = πr²h</p>
+                        <p class="mb-2"><strong>बेलन A:</strong></p>
+                        <p class="mb-2">त्रिज्या, r = <span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span> = 3.5 cm</p>
+                        <p class="mb-2">ऊँचाई, h = 14 cm</p>
+                        <p class="mb-2">आयतन = <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 3.5² × 14</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 12.25 × 14</p>
+                        <p class="mb-2">= 22 × 12.25 × 2 = 539 cm³</p>
+                        
+                        <p class="mb-2"><strong>बेलन B:</strong></p>
+                        <p class="mb-2">त्रिज्या, r = <span class="fraction"><span class="numerator">14</span><span class="denominator">2</span></span> = 7 cm</p>
+                        <p class="mb-2">ऊँचाई, h = 7 cm</p>
+                        <p class="mb-2">आयतन = <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 7² × 7</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 49 × 7</p>
+                        <p class="mb-2">= 22 × 49 = 1078 cm³</p>
+                        
+                        <p class="mb-2">1078 > 539</p>
+                        <p class="mb-2"><strong>उत्तर:</strong> बेलन B का आयतन अधिक है।</p>
+                        
+                        <div class="explanation">
+                            <p><strong>पृष्ठीय क्षेत्रफल की जाँच:</strong></p>
+                            <p>बेलन A का पृष्ठीय क्षेत्रफल = 2πr(r+h) = 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 3.5(3.5+14)</p>
+                            <p>= 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 3.5 × 17.5 = 385 cm²</p>
+                            <p>बेलन B का पृष्ठीय क्षेत्रफल = 2πr(r+h) = 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 7(7+7)</p>
+                            <p>= 2 × <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 7 × 14 = 616 cm²</p>
+                            <p>616 > 385, इसलिए अधिक आयतन वाले बेलन का पृष्ठीय क्षेत्रफल भी अधिक है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक ऐसे घनाभ की ऊँचाई ज्ञात कीजिए जिसके आधार का क्षेत्रफल 180 cm² और जिसका आयतन 900 cm³ है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाभ का आयतन = आधार का क्षेत्रफल × ऊँचाई</p>
+                        <p class="mb-2">900 = 180 × h</p>
+                        <p class="mb-2">h = <span class="fraction"><span class="numerator">900</span><span class="denominator">180</span></span> = 5 cm</p>
+                        <p><strong>उत्तर:</strong> घनाभ की ऊँचाई 5 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: एक घनाभ की विमाएँ 60 cm × 54 cm × 30 cm हैं। इस घनाभ के अंदर 6 cm भुजा वाले कितने छोटे घन रखे जा सकते हैं?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाभ का आयतन = l × b × h</p>
+                        <p class="mb-2">= 60 × 54 × 30 = 97200 cm³</p>
+                        <p class="mb-2">छोटे घन का आयतन = a³ = 6³ = 216 cm³</p>
+                        <p class="mb-2">घनों की संख्या = घनाभ का आयतन / एक घन का आयतन</p>
+                        <p class="mb-2">= 97200 / 216 = 450</p>
+                        <p><strong>उत्तर:</strong> 450 छोटे घन रखे जा सकते हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: एक ऐसे बेलन की ऊँचाई ज्ञात कीजिए जिसका आयतन 1.54 m³ और जिसके आधार का व्यास 140 cm है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">व्यास = 140 cm, त्रिज्या = 70 cm = 0.7 m</p>
+                        <p class="mb-2">बेलन का आयतन = πr²h</p>
+                        <p class="mb-2">1.54 = <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × (0.7)² × h</p>
+                        <p class="mb-2">1.54 = <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 0.49 × h</p>
+                        <p class="mb-2">1.54 = 22 × 0.07 × h</p>
+                        <p class="mb-2">1.54 = 1.54 × h</p>
+                        <p class="mb-2">h = 1 m</p>
+                        <p><strong>उत्तर:</strong> बेलन की ऊँचाई 1 m है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: एक दूध का टैंक बेलन के आकार का है जिसकी त्रिज्या 1.5 m और लंबाई 7 m है। इस टैंक में भरे जा सकने वाले दूध की मात्रा लीटर में ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">बेलन का आयतन = πr²h</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × (1.5)² × 7</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span> × 2.25 × 7</p>
+                        <p class="mb-2">= 22 × 2.25 = 49.5 m³</p>
+                        <p class="mb-2">1 m³ = 1000 लीटर</p>
+                        <p class="mb-2">49.5 m³ = 49.5 × 1000 = 49500 लीटर</p>
+                        <p><strong>उत्तर:</strong> टैंक में 49500 लीटर दूध आ सकता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: यदि किसी घन के प्रत्येक किनारे को दुगुना कर दिया जाए, तो</h3>
+                <p class="mb-4">(i) इसके पृष्ठीय क्षेत्रफल में कितने गुना वृद्धि होगी?<br>
+                   (ii) इसके आयतन में कितने गुना वृद्धि होगी?</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">माना घन की भुजा = a</p>
+                        <p class="mb-2">नई भुजा = 2a</p>
+                        
+                        <p class="mb-2">(i) पृष्ठीय क्षेत्रफल:</p>
+                        <p class="mb-2">मूल पृष्ठीय क्षेत्रफल = 6a²</p>
+                        <p class="mb-2">नया पृष्ठीय क्षेत्रफल = 6(2a)² = 6 × 4a² = 24a²</p>
+                        <p class="mb-2">वृद्धि = <span class="fraction"><span class="numerator">24a²</span><span class="denominator">6a²</span></span> = 4 गुना</p>
+                        
+                        <p class="mb-2">(ii) आयतन:</p>
+                        <p class="mb-2">मूल आयतन = a³</p>
+                        <p class="mb-2">नया आयतन = (2a)³ = 8a³</p>
+                        <p class="mb-2">वृद्धि = <span class="fraction"><span class="numerator">8a³</span><span class="denominator">a³</span></span> = 8 गुना</p>
+                        
+                        <p><strong>उत्तर:</strong> (i) 4 गुना, (ii) 8 गुना</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: एक कुएँ के अंदर 60 लीटर प्रति मिनट की दर से पानी गिर रहा है। यदि कुएँ का आयतन 108 m³ है, तो ज्ञात कीजिए कि इस कुएँ को भरने में कितने घंटे लगेंगे?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुएँ का आयतन = 108 m³</p>
+                        <p class="mb-2">1 m³ = 1000 लीटर</p>
+                        <p class="mb-2">108 m³ = 108 × 1000 = 108000 लीटर</p>
+                        <p class="mb-2">पानी गिरने की दर = 60 लीटर/मिनट</p>
+                        <p class="mb-2">लगने वाला समय = कुल आयतन / दर</p>
+                        <p class="mb-2">= 108000 / 60 = 1800 मिनट</p>
+                        <p class="mb-2">= 1800 / 60 = 30 घंटे</p>
+                        <p><strong>उत्तर:</strong> कुएँ को भरने में 30 घंटे लगेंगे।</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

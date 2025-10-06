@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 8: बीजीय व्यंजक एवं सर्वसमिकाएँ (हल)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 8: बीजीय व्यंजक एवं सर्वसमिकाएँ</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 8.1 Section -->
+        <section id="prashnavali-8-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 8.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित युग्मों को जोड़िए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) ab - bc, bc - ca, ca - ab</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ab - bc) + (bc - ca) + (ca - ab)</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(ab - ab) + (-bc + bc) + (-ca + ca)</p>
+                        <p class="mb-2">0 + 0 + 0 = 0</p>
+                        <p><strong>उत्तर:</strong> 0</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) a - b + ab, b - c + bc, c - a + ac</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a - b + ab) + (b - c + bc) + (c - a + ac)</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(a - a) + (-b + b) + (-c + c) + ab + bc + ac</p>
+                        <p class="mb-2">0 + 0 + 0 + ab + bc + ac</p>
+                        <p><strong>उत्तर:</strong> ab + bc + ac</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 2p²q² - 3pq + 4, 5 + 7pq - 3p²q²</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2p²q² - 3pq + 4) + (5 + 7pq - 3p²q²)</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(2p²q² - 3p²q²) + (-3pq + 7pq) + (4 + 5)</p>
+                        <p class="mb-2">-p²q² + 4pq + 9</p>
+                        <p><strong>उत्तर:</strong> -p²q² + 4pq + 9</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) l² + m², m² + n², n² + l², 2lm + 2mn + 2nl</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(l² + m²) + (m² + n²) + (n² + l²) + (2lm + 2mn + 2nl)</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(l² + l²) + (m² + m²) + (n² + n²) + 2lm + 2mn + 2nl</p>
+                        <p class="mb-2">2l² + 2m² + 2n² + 2lm + 2mn + 2nl</p>
+                        <p class="mb-2">2 से उभयनिष्ठ लेने पर:</p>
+                        <p><strong>उत्तर:</strong> 2(l² + m² + n² + lm + mn + nl)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: घटाइए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) 12a - 9ab + 5b - 3 में से 4a - 7ab + 3b + 12 को घटाइए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(12a - 9ab + 5b - 3) - (4a - 7ab + 3b + 12)</p>
+                        <p class="mb-2">कोष्ठक हटाने पर (दूसरे कोष्ठक के चिह्न बदलने पर):</p>
+                        <p class="mb-2">12a - 9ab + 5b - 3 - 4a + 7ab - 3b - 12</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(12a - 4a) + (-9ab + 7ab) + (5b - 3b) + (-3 - 12)</p>
+                        <p class="mb-2">8a - 2ab + 2b - 15</p>
+                        <p><strong>उत्तर:</strong> 8a - 2ab + 2b - 15</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) 5xy - 2yz - 2zx + 10xyz में से 3xy + 5yz - 7zx को घटाइए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(5xy - 2yz - 2zx + 10xyz) - (3xy + 5yz - 7zx)</p>
+                        <p class="mb-2">कोष्ठक हटाने पर (दूसरे कोष्ठक के चिह्न बदलने पर):</p>
+                        <p class="mb-2">5xy - 2yz - 2zx + 10xyz - 3xy - 5yz + 7zx</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(5xy - 3xy) + (-2yz - 5yz) + (-2zx + 7zx) + 10xyz</p>
+                        <p class="mb-2">2xy - 7yz + 5zx + 10xyz</p>
+                        <p><strong>उत्तर:</strong> 2xy - 7yz + 5zx + 10xyz</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(c) 18 - 3p - 11q + 5pq - 2pq² + 5p²q में से 4p²q - 3pq + 5pq² - 8p + 7q - 10 को घटाइए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(18 - 3p - 11q + 5pq - 2pq² + 5p²q) - (4p²q - 3pq + 5pq² - 8p + 7q - 10)</p>
+                        <p class="mb-2">कोष्ठक हटाने पर (दूसरे कोष्ठक के चिह्न बदलने पर):</p>
+                        <p class="mb-2">18 - 3p - 11q + 5pq - 2pq² + 5p²q - 4p²q + 3pq - 5pq² + 8p - 7q + 10</p>
+                        <p class="mb-2">समान पदों को समूहित करने पर:</p>
+                        <p class="mb-2">(18 + 10) + (-3p + 8p) + (-11q - 7q) + (5pq + 3pq) + (-2pq² - 5pq²) + (5p²q - 4p²q)</p>
+                        <p class="mb-2">28 + 5p - 18q + 8pq - 7pq² + p²q</p>
+                        <p><strong>उत्तर:</strong> 28 + 5p - 18q + 8pq - 7pq² + p²q</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 8.2 Section -->
+        <section id="prashnavali-8-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 8.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित एकपदी युग्मों का गुणनफल ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 4, 7p</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4 × 7p = 28p</p>
+                        <p><strong>उत्तर:</strong> 28p</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) -4p, 7p</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">-4p × 7p = -28p²</p>
+                        <p><strong>उत्तर:</strong> -28p²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) -4p, 7pq</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">-4p × 7pq = -28p²q</p>
+                        <p><strong>उत्तर:</strong> -28p²q</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) 4p³, -3p</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4p³ × (-3p) = -12p⁴</p>
+                        <p><strong>उत्तर:</strong> -12p⁴</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) 4p, 0</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4p × 0 = 0</p>
+                        <p><strong>उत्तर:</strong> 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित एकपदी युग्मों के रूप में लंबाई एवं चौड़ाई रखने वाले आयतों का क्षेत्रफल ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(p, q)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत का क्षेत्रफल = लंबाई × चौड़ाई</p>
+                        <p class="mb-2">= p × q = pq</p>
+                        <p><strong>उत्तर:</strong> pq</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(10m, 5n)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत का क्षेत्रफल = 10m × 5n = 50mn</p>
+                        <p><strong>उत्तर:</strong> 50mn</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(20x², 5y²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत का क्षेत्रफल = 20x² × 5y² = 100x²y²</p>
+                        <p><strong>उत्तर:</strong> 100x²y²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(4x, 3x²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत का क्षेत्रफल = 4x × 3x² = 12x³</p>
+                        <p><strong>उत्तर:</strong> 12x³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(3mn, 4np)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आयत का क्षेत्रफल = 3mn × 4np = 12m n² p</p>
+                        <p><strong>उत्तर:</strong> 12m n² p</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: गुणनफलों की सारणी को पूरा कीजिए:</h3>
+                
+                <div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full border border-gray-300">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-300 px-4 py-2">प्रथम एकपदी →<br>द्वितीय एकपदी ↓</th>
+                                    <th class="border border-gray-300 px-4 py-2">2x</th>
+                                    <th class="border border-gray-300 px-4 py-2">-5y</th>
+                                    <th class="border border-gray-300 px-4 py-2">3x²</th>
+                                    <th class="border border-gray-300 px-4 py-2">-4xy</th>
+                                    <th class="border border-gray-300 px-4 py-2">7x²y</th>
+                                    <th class="border border-gray-300 px-4 py-2">-9x²y²</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">2x</td>
+                                    <td class="border border-gray-300 px-4 py-2">4x²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-10xy</td>
+                                    <td class="border border-gray-300 px-4 py-2">6x³</td>
+                                    <td class="border border-gray-300 px-4 py-2">-8x²y</td>
+                                    <td class="border border-gray-300 px-4 py-2">14x³y</td>
+                                    <td class="border border-gray-300 px-4 py-2">-18x³y²</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">-5y</td>
+                                    <td class="border border-gray-300 px-4 py-2">-10xy</td>
+                                    <td class="border border-gray-300 px-4 py-2">25y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-15x²y</td>
+                                    <td class="border border-gray-300 px-4 py-2">20xy²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-35x²y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">45x²y³</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">3x²</td>
+                                    <td class="border border-gray-300 px-4 py-2">6x³</td>
+                                    <td class="border border-gray-300 px-4 py-2">-15x²y</td>
+                                    <td class="border border-gray-300 px-4 py-2">9x⁴</td>
+                                    <td class="border border-gray-300 px-4 py-2">-12x³y</td>
+                                    <td class="border border-gray-300 px-4 py-2">21x⁴y</td>
+                                    <td class="border border-gray-300 px-4 py-2">-27x⁴y²</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">-4xy</td>
+                                    <td class="border border-gray-300 px-4 py-2">-8x²y</td>
+                                    <td class="border border-gray-300 px-4 py-2">20xy²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-12x³y</td>
+                                    <td class="border border-gray-300 px-4 py-2">16x²y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-28x³y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">36x³y³</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">7x²y</td>
+                                    <td class="border border-gray-300 px-4 py-2">14x³y</td>
+                                    <td class="border border-gray-300 px-4 py-2">-35x²y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">21x⁴y</td>
+                                    <td class="border border-gray-300 px-4 py-2">-28x³y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">49x⁴y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-63x⁴y³</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2 font-semibold">-9x²y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">-18x³y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">45x²y³</td>
+                                    <td class="border border-gray-300 px-4 py-2">-27x⁴y²</td>
+                                    <td class="border border-gray-300 px-4 py-2">36x³y³</td>
+                                    <td class="border border-gray-300 px-4 py-2">-63x⁴y³</td>
+                                    <td class="border border-gray-300 px-4 py-2">81x⁴y⁴</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: ऐसे घनाकार बक्सों का आयतन ज्ञात कीजिए जिनकी लंबाई, चौड़ाई और ऊँचाई क्रमशः निम्नलिखित है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 5a, 3a², 7a⁴</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाकार बक्से का आयतन = लंबाई × चौड़ाई × ऊँचाई</p>
+                        <p class="mb-2">= 5a × 3a² × 7a⁴</p>
+                        <p class="mb-2">= (5 × 3 × 7) × (a × a² × a⁴)</p>
+                        <p class="mb-2">= 105 × a¹⁺²⁺⁴</p>
+                        <p class="mb-2">= 105a⁷</p>
+                        <p><strong>उत्तर:</strong> 105a⁷</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 2p, 4q, 8r</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाकार बक्से का आयतन = 2p × 4q × 8r</p>
+                        <p class="mb-2">= (2 × 4 × 8) × p × q × r</p>
+                        <p class="mb-2">= 64pqr</p>
+                        <p><strong>उत्तर:</strong> 64pqr</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) xy, 2x²y, 2xy²</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाकार बक्से का आयतन = xy × 2x²y × 2xy²</p>
+                        <p class="mb-2">= (1 × 2 × 2) × (x × x² × x) × (y × y × y²)</p>
+                        <p class="mb-2">= 4 × x¹⁺²⁺¹ × y¹⁺¹⁺²</p>
+                        <p class="mb-2">= 4x⁴y⁴</p>
+                        <p><strong>उत्तर:</strong> 4x⁴y⁴</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) a, 2b, 3c</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">घनाकार बक्से का आयतन = a × 2b × 3c</p>
+                        <p class="mb-2">= (1 × 2 × 3) × a × b × c</p>
+                        <p class="mb-2">= 6abc</p>
+                        <p><strong>उत्तर:</strong> 6abc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित का गुणनफल ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) xy, yz, zx</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">xy × yz × zx</p>
+                        <p class="mb-2">= (x × y) × (y × z) × (z × x)</p>
+                        <p class="mb-2">= x × x × y × y × z × z</p>
+                        <p class="mb-2">= x²y²z²</p>
+                        <p><strong>उत्तर:</strong> x²y²z²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) a, -a², a³</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">a × (-a²) × a³</p>
+                        <p class="mb-2">= - (a × a² × a³)</p>
+                        <p class="mb-2">= - a¹⁺²⁺³</p>
+                        <p class="mb-2">= -a⁶</p>
+                        <p><strong>उत्तर:</strong> -a⁶</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 2, 4y, 8y², 16y³</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">2 × 4y × 8y² × 16y³</p>
+                        <p class="mb-2">= (2 × 4 × 8 × 16) × (y × y² × y³)</p>
+                        <p class="mb-2">= 1024 × y¹⁺²⁺³</p>
+                        <p class="mb-2">= 1024y⁶</p>
+                        <p><strong>उत्तर:</strong> 1024y⁶</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) a, 2b, 3c, 6abc</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">a × 2b × 3c × 6abc</p>
+                        <p class="mb-2">= (1 × 2 × 3 × 6) × (a × b × c × a × b × c)</p>
+                        <p class="mb-2">= 36 × a² × b² × c²</p>
+                        <p class="mb-2">= 36a²b²c²</p>
+                        <p><strong>उत्तर:</strong> 36a²b²c²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) m, -mn, mnp</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">m × (-mn) × mnp</p>
+                        <p class="mb-2">= - (m × m × m) × (n × n) × p</p>
+                        <p class="mb-2">= - m³ × n² × p</p>
+                        <p class="mb-2">= -m³n²p</p>
+                        <p><strong>उत्तर:</strong> -m³n²p</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 8.3 Section -->
+        <section id="prashnavali-8-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 8.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित युग्मों में प्रत्येक के व्यंजकों का गुणन कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 4p, q + r</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4p × (q + r)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= (4p × q) + (4p × r)</p>
+                        <p class="mb-2">= 4pq + 4pr</p>
+                        <p><strong>उत्तर:</strong> 4pq + 4pr</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) ab, a - b</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">ab × (a - b)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= (ab × a) - (ab × b)</p>
+                        <p class="mb-2">= a²b - ab²</p>
+                        <p><strong>उत्तर:</strong> a²b - ab²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) a + b, 7a²b²</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a + b) × 7a²b²</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= (a × 7a²b²) + (b × 7a²b²)</p>
+                        <p class="mb-2">= 7a³b² + 7a²b³</p>
+                        <p><strong>उत्तर:</strong> 7a³b² + 7a²b³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) a² - 9, 4a</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a² - 9) × 4a</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= (a² × 4a) - (9 × 4a)</p>
+                        <p class="mb-2">= 4a³ - 36a</p>
+                        <p><strong>उत्तर:</strong> 4a³ - 36a</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) pq + qr + rp, 0</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(pq + qr + rp) × 0</p>
+                        <p class="mb-2">किसी भी संख्या का 0 से गुणनफल 0 होता है:</p>
+                        <p class="mb-2">= 0</p>
+                        <p><strong>उत्तर:</strong> 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सारणी पूरी कीजिए:</h3>
+                
+                <div>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full border border-gray-300">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-300 px-4 py-2">प्रथम व्यंजक</th>
+                                    <th class="border border-gray-300 px-4 py-2">द्वितीय व्यंजक</th>
+                                    <th class="border border-gray-300 px-4 py-2">गुणनफल</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2">a</td>
+                                    <td class="border border-gray-300 px-4 py-2">b + c + d</td>
+                                    <td class="border border-gray-300 px-4 py-2">a(b + c + d) = ab + ac + ad</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2">x + y - 5</td>
+                                    <td class="border border-gray-300 px-4 py-2">5xy</td>
+                                    <td class="border border-gray-300 px-4 py-2">(x + y - 5) × 5xy = 5x²y + 5xy² - 25xy</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2">p</td>
+                                    <td class="border border-gray-300 px-4 py-2">6p² - 7p + 5</td>
+                                    <td class="border border-gray-300 px-4 py-2">p(6p² - 7p + 5) = 6p³ - 7p² + 5p</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2">4p²q²</td>
+                                    <td class="border border-gray-300 px-4 py-2">p² - q²</td>
+                                    <td class="border border-gray-300 px-4 py-2">4p²q²(p² - q²) = 4p⁴q² - 4p²q⁴</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-2">a + b + c</td>
+                                    <td class="border border-gray-300 px-4 py-2">abc</td>
+                                    <td class="border border-gray-300 px-4 py-2">(a + b + c) × abc = a²bc + ab²c + abc²</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: गुणनफल ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) (a²) × (2a²²) × (4a²⁶)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a²) × (2a²²) × (4a²⁶)</p>
+                        <p class="mb-2">= (1 × 2 × 4) × (a² × a²² × a²⁶)</p>
+                        <p class="mb-2">= 8 × a²⁺²²⁺²⁶</p>
+                        <p class="mb-2">= 8 × a⁵⁰</p>
+                        <p class="mb-2">= 8a⁵⁰</p>
+                        <p><strong>उत्तर:</strong> 8a⁵⁰</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) (2/3 xy) × (-9/10 x²y²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2/3 xy) × (-9/10 x²y²)</p>
+                        <p class="mb-2">= (2/3 × -9/10) × (x × x²) × (y × y²)</p>
+                        <p class="mb-2">= -18/30 × x³ × y³</p>
+                        <p class="mb-2">= -3/5 x³y³</p>
+                        <p><strong>उत्तर:</strong> -3/5 x³y³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) (-10/3 pq³) × (6/5 p³q)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(-10/3 pq³) × (6/5 p³q)</p>
+                        <p class="mb-2">= (-10/3 × 6/5) × (p × p³) × (q³ × q)</p>
+                        <p class="mb-2">= -60/15 × p⁴ × q⁴</p>
+                        <p class="mb-2">= -4p⁴q⁴</p>
+                        <p><strong>उत्तर:</strong> -4p⁴q⁴</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) x × x² × x³ × x⁴</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">x × x² × x³ × x⁴</p>
+                        <p class="mb-2">= x¹⁺²⁺³⁺⁴</p>
+                        <p class="mb-2">= x¹⁰</p>
+                        <p><strong>उत्तर:</strong> x¹⁰</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) 3x(4x - 5) + 3 को सरल कीजिए और (i) x = 3, (ii) x = 1/2 के लिए इसका मान ज्ञात कीजिए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3x(4x - 5) + 3</p>
+                        <p class="mb-2">= 12x² - 15x + 3</p>
+                        <p class="mb-2"><strong>(i) x = 3 के लिए:</strong></p>
+                        <p class="mb-2">= 12(3)² - 15(3) + 3</p>
+                        <p class="mb-2">= 12 × 9 - 45 + 3</p>
+                        <p class="mb-2">= 108 - 45 + 3 = 66</p>
+                        <p class="mb-2"><strong>(ii) x = 1/2 के लिए:</strong></p>
+                        <p class="mb-2">= 12(1/2)² - 15(1/2) + 3</p>
+                        <p class="mb-2">= 12 × 1/4 - 15/2 + 3</p>
+                        <p class="mb-2">= 3 - 7.5 + 3 = -1.5</p>
+                        <p><strong>उत्तर:</strong> सरलीकृत रूप: 12x² - 15x + 3, (i) 66, (ii) -1.5</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) a(a² + a + 1) + 5 को सरल कीजिए और (i) a = 0, (ii) a = 1, (iii) a = -1 के लिए इसका मान ज्ञात कीजिए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">a(a² + a + 1) + 5</p>
+                        <p class="mb-2">= a³ + a² + a + 5</p>
+                        <p class="mb-2"><strong>(i) a = 0 के लिए:</strong></p>
+                        <p class="mb-2">= 0³ + 0² + 0 + 5 = 5</p>
+                        <p class="mb-2"><strong>(ii) a = 1 के लिए:</strong></p>
+                        <p class="mb-2">= 1³ + 1² + 1 + 5 = 1 + 1 + 1 + 5 = 8</p>
+                        <p class="mb-2"><strong>(iii) a = -1 के लिए:</strong></p>
+                        <p class="mb-2">= (-1)³ + (-1)² + (-1) + 5 = -1 + 1 - 1 + 5 = 4</p>
+                        <p><strong>उत्तर:</strong> सरलीकृत रूप: a³ + a² + a + 5, (i) 5, (ii) 8, (iii) 4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) p(p - q), q(q - r) और r(r - p) को जोड़िए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">p(p - q) = p² - pq</p>
+                        <p class="mb-2">q(q - r) = q² - qr</p>
+                        <p class="mb-2">r(r - p) = r² - rp</p>
+                        <p class="mb-2">जोड़ने पर:</p>
+                        <p class="mb-2">(p² - pq) + (q² - qr) + (r² - rp)</p>
+                        <p class="mb-2">= p² + q² + r² - pq - qr - rp</p>
+                        <p><strong>उत्तर:</strong> p² + q² + r² - pq - qr - rp</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) 2x(z - x - y) और 2y(z - y - x) को जोड़िए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">2x(z - x - y) = 2xz - 2x² - 2xy</p>
+                        <p class="mb-2">2y(z - y - x) = 2yz - 2y² - 2xy</p>
+                        <p class="mb-2">जोड़ने पर:</p>
+                        <p class="mb-2">(2xz - 2x² - 2xy) + (2yz - 2y² - 2xy)</p>
+                        <p class="mb-2">= 2xz + 2yz - 2x² - 2y² - 4xy</p>
+                        <p class="mb-2">= 2(xz + yz - x² - y² - 2xy)</p>
+                        <p><strong>उत्तर:</strong> 2xz + 2yz - 2x² - 2y² - 4xy</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(c) 4l(10n - 3m + 2l) में से 3l(l - 4m + 5n) को घटाइए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4l(10n - 3m + 2l) = 40ln - 12lm + 8l²</p>
+                        <p class="mb-2">3l(l - 4m + 5n) = 3l² - 12lm + 15ln</p>
+                        <p class="mb-2">घटाने पर:</p>
+                        <p class="mb-2">(40ln - 12lm + 8l²) - (3l² - 12lm + 15ln)</p>
+                        <p class="mb-2">= 40ln - 12lm + 8l² - 3l² + 12lm - 15ln</p>
+                        <p class="mb-2">= (40ln - 15ln) + (-12lm + 12lm) + (8l² - 3l²)</p>
+                        <p class="mb-2">= 25ln + 0 + 5l²</p>
+                        <p class="mb-2">= 5l² + 25ln</p>
+                        <p><strong>उत्तर:</strong> 5l² + 25ln</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(d) 4c(-a + b + c) में से 3a(a + b + c) - 2b(a - b + c) को घटाइए</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">4c(-a + b + c) = -4ac + 4bc + 4c²</p>
+                        <p class="mb-2">3a(a + b + c) = 3a² + 3ab + 3ac</p>
+                        <p class="mb-2">2b(a - b + c) = 2ab - 2b² + 2bc</p>
+                        <p class="mb-2">3a(a + b + c) - 2b(a - b + c) = (3a² + 3ab + 3ac) - (2ab - 2b² + 2bc)</p>
+                        <p class="mb-2">= 3a² + 3ab + 3ac - 2ab + 2b² - 2bc</p>
+                        <p class="mb-2">= 3a² + ab + 3ac + 2b² - 2bc</p>
+                        <p class="mb-2">अब घटाने पर:</p>
+                        <p class="mb-2">(-4ac + 4bc + 4c²) - (3a² + ab + 3ac + 2b² - 2bc)</p>
+                        <p class="mb-2">= -4ac + 4bc + 4c² - 3a² - ab - 3ac - 2b² + 2bc</p>
+                        <p class="mb-2">= -3a² - 2b² + 4c² - ab + (-4ac - 3ac) + (4bc + 2bc)</p>
+                        <p class="mb-2">= -3a² - 2b² + 4c² - ab - 7ac + 6bc</p>
+                        <p><strong>उत्तर:</strong> -3a² - 2b² + 4c² - ab - 7ac + 6bc</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 8.4 Section -->
+        <section id="prashnavali-8-4" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 8.4</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: गुणा कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) (2x + 5) और (4x - 3)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2x + 5)(4x - 3)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= 2x(4x - 3) + 5(4x - 3)</p>
+                        <p class="mb-2">= 8x² - 6x + 20x - 15</p>
+                        <p class="mb-2">= 8x² + 14x - 15</p>
+                        <p><strong>उत्तर:</strong> 8x² + 14x - 15</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) (y - 8) और (3y - 4)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(y - 8)(3y - 4)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= y(3y - 4) - 8(3y - 4)</p>
+                        <p class="mb-2">= 3y² - 4y - 24y + 32</p>
+                        <p class="mb-2">= 3y² - 28y + 32</p>
+                        <p><strong>उत्तर:</strong> 3y² - 28y + 32</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) (2.5l - 0.5m) और (2.5l + 0.5m)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2.5l - 0.5m)(2.5l + 0.5m)</p>
+                        <p class="mb-2">यह (a - b)(a + b) = a² - b² के रूप में है:</p>
+                        <p class="mb-2">= (2.5l)² - (0.5m)²</p>
+                        <p class="mb-2">= 6.25l² - 0.25m²</p>
+                        <p><strong>उत्तर:</strong> 6.25l² - 0.25m²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) (a + 3b) और (x + 5)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a + 3b)(x + 5)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= a(x + 5) + 3b(x + 5)</p>
+                        <p class="mb-2">= ax + 5a + 3bx + 15b</p>
+                        <p><strong>उत्तर:</strong> ax + 5a + 3bx + 15b</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) (2pq + 3q²) और (3pq - 2q²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2pq + 3q²)(3pq - 2q²)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= 2pq(3pq - 2q²) + 3q²(3pq - 2q²)</p>
+                        <p class="mb-2">= 6p²q² - 4pq³ + 9pq³ - 6q⁴</p>
+                        <p class="mb-2">= 6p²q² + 5pq³ - 6q⁴</p>
+                        <p><strong>उत्तर:</strong> 6p²q² + 5pq³ - 6q⁴</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vi) (3/4 a² + 3b²) और 4(a² - 2/3 b²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(3/4 a² + 3b²) × 4(a² - 2/3 b²)</p>
+                        <p class="mb-2">= (3/4 a² + 3b²) × (4a² - 8/3 b²)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= 3/4 a²(4a² - 8/3 b²) + 3b²(4a² - 8/3 b²)</p>
+                        <p class="mb-2">= 3a⁴ - 2a²b² + 12a²b² - 8b⁴</p>
+                        <p class="mb-2">= 3a⁴ + 10a²b² - 8b⁴</p>
+                        <p><strong>उत्तर:</strong> 3a⁴ + 10a²b² - 8b⁴</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: गुणनफल ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) (5 - 2x)(3 + x)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(5 - 2x)(3 + x)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= 5(3 + x) - 2x(3 + x)</p>
+                        <p class="mb-2">= 15 + 5x - 6x - 2x²</p>
+                        <p class="mb-2">= 15 - x - 2x²</p>
+                        <p class="mb-2">= -2x² - x + 15</p>
+                        <p><strong>उत्तर:</strong> -2x² - x + 15</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) (x + 7y)(7x - y)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(x + 7y)(7x - y)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= x(7x - y) + 7y(7x - y)</p>
+                        <p class="mb-2">= 7x² - xy + 49xy - 7y²</p>
+                        <p class="mb-2">= 7x² + 48xy - 7y²</p>
+                        <p><strong>उत्तर:</strong> 7x² + 48xy - 7y²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) (a² + b)(a + b²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a² + b)(a + b²)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= a²(a + b²) + b(a + b²)</p>
+                        <p class="mb-2">= a³ + a²b² + ab + b³</p>
+                        <p><strong>उत्तर:</strong> a³ + a²b² + ab + b³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) (p² - q²)(2p + q)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(p² - q²)(2p + q)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= p²(2p + q) - q²(2p + q)</p>
+                        <p class="mb-2">= 2p³ + p²q - 2pq² - q³</p>
+                        <p><strong>उत्तर:</strong> 2p³ + p²q - 2pq² - q³</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: सरल कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) (x² - 5)(x + 5) + 25</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(x² - 5)(x + 5) + 25</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= x²(x + 5) - 5(x + 5) + 25</p>
+                        <p class="mb-2">= x³ + 5x² - 5x - 25 + 25</p>
+                        <p class="mb-2">= x³ + 5x² - 5x</p>
+                        <p><strong>उत्तर:</strong> x³ + 5x² - 5x</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) (a² + 5)(b³ + 3) + 5</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a² + 5)(b³ + 3) + 5</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= a²(b³ + 3) + 5(b³ + 3) + 5</p>
+                        <p class="mb-2">= a²b³ + 3a² + 5b³ + 15 + 5</p>
+                        <p class="mb-2">= a²b³ + 3a² + 5b³ + 20</p>
+                        <p><strong>उत्तर:</strong> a²b³ + 3a² + 5b³ + 20</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) (t + s²)(t² - s)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(t + s²)(t² - s)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= t(t² - s) + s²(t² - s)</p>
+                        <p class="mb-2">= t³ - ts + s²t² - s³</p>
+                        <p class="mb-2">= t³ + s²t² - ts - s³</p>
+                        <p><strong>उत्तर:</strong> t³ + s²t² - ts - s³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) (a + b)(c - d) + (a - b)(c + d) + 2(ac + bd)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a + b)(c - d) + (a - b)(c + d) + 2(ac + bd)</p>
+                        <p class="mb-2">प्रत्येक भाग को अलग-अलग हल करने पर:</p>
+                        <p class="mb-2">(a + b)(c - d) = ac - ad + bc - bd</p>
+                        <p class="mb-2">(a - b)(c + d) = ac + ad - bc - bd</p>
+                        <p class="mb-2">2(ac + bd) = 2ac + 2bd</p>
+                        <p class="mb-2">सभी को जोड़ने पर:</p>
+                        <p class="mb-2">(ac - ad + bc - bd) + (ac + ad - bc - bd) + (2ac + 2bd)</p>
+                        <p class="mb-2">= ac + ac + 2ac - ad + ad + bc - bc - bd - bd + 2bd</p>
+                        <p class="mb-2">= 4ac + 0 + 0 + 0</p>
+                        <p class="mb-2">= 4ac</p>
+                        <p><strong>उत्तर:</strong> 4ac</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) (x + y)(2x + y) + (x + 2y)(x - y)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(x + y)(2x + y) + (x + 2y)(x - y)</p>
+                        <p class="mb-2">प्रत्येक भाग को अलग-अलग हल करने पर:</p>
+                        <p class="mb-2">(x + y)(2x + y) = 2x² + xy + 2xy + y² = 2x² + 3xy + y²</p>
+                        <p class="mb-2">(x + 2y)(x - y) = x² - xy + 2xy - 2y² = x² + xy - 2y²</p>
+                        <p class="mb-2">दोनों को जोड़ने पर:</p>
+                        <p class="mb-2">(2x² + 3xy + y²) + (x² + xy - 2y²)</p>
+                        <p class="mb-2">= 3x² + 4xy - y²</p>
+                        <p><strong>उत्तर:</strong> 3x² + 4xy - y²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vi) (x + y)(x² - xy + y²)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(x + y)(x² - xy + y²)</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= x(x² - xy + y²) + y(x² - xy + y²)</p>
+                        <p class="mb-2">= x³ - x²y + xy² + x²y - xy² + y³</p>
+                        <p class="mb-2">= x³ + (-x²y + x²y) + (xy² - xy²) + y³</p>
+                        <p class="mb-2">= x³ + y³</p>
+                        <p><strong>उत्तर:</strong> x³ + y³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vii) (1.5x - 4y)(1.5x + 4y + 3) - 4.5x + 12y</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(1.5x - 4y)(1.5x + 4y + 3) - 4.5x + 12y</p>
+                        <p class="mb-2">वितरण नियम का प्रयोग करने पर:</p>
+                        <p class="mb-2">= 1.5x(1.5x + 4y + 3) - 4y(1.5x + 4y + 3) - 4.5x + 12y</p>
+                        <p class="mb-2">= 2.25x² + 6xy + 4.5x - 6xy - 16y² - 12y - 4.5x + 12y</p>
+                        <p class="mb-2">= 2.25x² + (6xy - 6xy) + (4.5x - 4.5x) - 16y² + (-12y + 12y)</p>
+                        <p class="mb-2">= 2.25x² - 16y²</p>
+                        <p><strong>उत्तर:</strong> 2.25x² - 16y²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(viii) (a + b + c)(a + b - c)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a + b + c)(a + b - c)</p>
+                        <p class="mb-2">मान लें कि (a + b) = x, तो:</p>
+                        <p class="mb-2">= (x + c)(x - c)</p>
+                        <p class="mb-2">= x² - c²</p>
+                        <p class="mb-2">= (a + b)² - c²</p>
+                        <p class="mb-2">= a² + 2ab + b² - c²</p>
+                        <p><strong>उत्तर:</strong> a² + 2ab + b² - c²</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

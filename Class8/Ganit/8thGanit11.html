@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 11: सीधा और प्रतिलोम समानुपात</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .final-answer {
+            background-color: #e8f6f3;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 11: सीधा और प्रतिलोम समानुपात</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 11.1 Section -->
+        <section id="prashnavali-11-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 11.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: एक रेलवे स्टेशन के पास कार पार्किंग शुल्क इस प्रकार है:</h3>
+                <p>4 घंटे तक - ₹60, 8 घंटे तक - ₹100, 12 घंटे तक - ₹140, 24 घंटे तक - ₹180</p>
+                <p>जाँच कीजिए कि क्या कार पार्किंग शुल्क पार्किंग समय के सीधे अनुपात में है?</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पार्किंग समय और शुल्क का अनुपात ज्ञात करते हैं:</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">4 घंटे के लिए: 
+                            <span class="fraction">
+                                <span class="numerator">60</span>
+                                <span class="denominator">4</span>
+                            </span> = 15
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">8 घंटे के लिए: 
+                            <span class="fraction">
+                                <span class="numerator">100</span>
+                                <span class="denominator">8</span>
+                            </span> = 12.5
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">12 घंटे के लिए: 
+                            <span class="fraction">
+                                <span class="numerator">140</span>
+                                <span class="denominator">12</span>
+                            </span> = 11.67
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">24 घंटे के लिए: 
+                            <span class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">24</span>
+                            </span> = 7.5
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">चूंकि सभी अनुपात बराबर नहीं हैं, इसलिए पार्किंग शुल्क पार्किंग समय के सीधे अनुपात में नहीं है।</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: नहीं, पार्किंग शुल्क पार्किंग समय के सीधे अनुपात में नहीं है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक पेंट के मूल मिश्रण के 8 भागों में लाल रंग के पदार्थ का 1 भाग मिलाकर मिश्रण तैयार किया जाता है। निम्नलिखित सारणी में, मूल मिश्रण के उन भागों की जानकारी कीजिए जिन्हें मिलाने की आवश्यकता है:</h3>
+                <p>लाल रंग के पदार्थ के भाग: 1, 4, 7, 12, 20</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग और मूल मिश्रण का अनुपात = 1:8</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग के 1 भाग के लिए मूल मिश्रण के 8 भाग</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग के 4 भाग के लिए मूल मिश्रण के 4 × 8 = 32 भाग</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग के 7 भाग के लिए मूल मिश्रण के 7 × 8 = 56 भाग</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग के 12 भाग के लिए मूल मिश्रण के 12 × 8 = 96 भाग</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग के 20 भाग के लिए मूल मिश्रण के 20 × 8 = 160 भाग</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: लाल रंग के 1, 4, 7, 12, 20 भागों के लिए क्रमशः मूल मिश्रण के 8, 32, 56, 96, 160 भागों की आवश्यकता है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: प्रश्न 2 में यदि लाल रंग के पदार्थ के 1 भाग के लिए 75 mL मूल मिश्रण की आवश्यकता है, तो मूल मिश्रण के 1800 mL में हमें कितना लाल रंग का पदार्थ मिलाना चाहिए?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">लाल रंग और मूल मिश्रण का अनुपात = 1:8</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 भाग लाल रंग के लिए मूल मिश्रण = 8 भाग = 75 mL</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">अतः 1 भाग = 
+                            <span class="fraction">
+                                <span class="numerator">75</span>
+                                <span class="denominator">8</span>
+                            </span> = 9.375 mL
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1800 mL मूल मिश्रण में लाल रंग = 
+                            <span class="fraction">
+                                <span class="numerator">1800</span>
+                                <span class="denominator">9.375</span>
+                            </span> = 192 भाग
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">वैकल्पिक विधि: माना आवश्यक लाल रंग = x भाग</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">तब, 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">8</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">x</span>
+                                <span class="denominator">1800</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">x = 
+                            <span class="fraction">
+                                <span class="numerator">1800</span>
+                                <span class="denominator">8</span>
+                            </span> = 225 mL
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 1800 mL मूल मिश्रण में 225 mL लाल रंग मिलाना चाहिए।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: किसी सॉफ्ट ड्रिंक फैक्ट्री में एक मशीन 840 बोतलें 6 घंटे में भरती है। वह मशीन पाँच घंटे में कितनी बोतलें भरेगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">6 घंटे में बोतलें भरती है = 840</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 घंटे में बोतलें भरती है = 
+                            <span class="fraction">
+                                <span class="numerator">840</span>
+                                <span class="denominator">6</span>
+                            </span> = 140
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 घंटे में बोतलें भरती है = 140 × 5 = 700</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 5 घंटे में 700 बोतलें भरेगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: एक बैक्टीरिया (जीवाणु) के फोटोग्राफ को 50,000 गुना आवर्धित करने पर उसकी लंबाई 5 cm हो जाती है। इस बैक्टीरिया की वास्तविक लंबाई क्या है? यदि फोटोग्राफ को केवल 20,000 गुना आवर्धित किया जाए, तो उसकी आवर्धित लंबाई क्या होगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आवर्धित लंबाई = 5 cm, आवर्धन = 50,000 गुना</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">वास्तविक लंबाई = 
+                            <span class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">50000</span>
+                            </span> = 0.0001 cm = 1 × 10<sup>-4</sup> cm
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">20,000 गुना आवर्धन पर लंबाई = 0.0001 × 20000 = 2 cm</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: बैक्टीरिया की वास्तविक लंबाई 0.0001 cm है और 20,000 गुना आवर्धन पर लंबाई 2 cm होगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: एक जहाज के मॉडल में, उसका मस्तूल 9 cm ऊँचा है, जबकि वास्तविक जहाज का मस्तूल 12 m ऊँचा है। यदि जहाज की लंबाई 28 m है, तो उसके मॉडल की लंबाई कितनी है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">मस्तूल की ऊँचाई का अनुपात = मॉडल : वास्तविक = 9 cm : 12 m = 9 cm : 1200 cm = 9:1200 = 3:400</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="fraction">
+                                <span class="numerator">मॉडल की लंबाई</span>
+                                <span class="denominator">वास्तविक लंबाई</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">400</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">मॉडल की लंबाई = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">400</span>
+                            </span> × 28 m = 
+                            <span class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">400</span>
+                            </span> × 2800 cm = 21 cm
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: मॉडल की लंबाई 21 cm है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: मान लीजिए 2 kg चीनी में 9 × 10<sup>6</sup> क्रिस्टल हैं। निम्नलिखित चीनी में कितने चीनी के क्रिस्टल होंगे? (i) 5 kg (ii) 1.2 kg</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">2 kg चीनी में क्रिस्टल = 9 × 10<sup>6</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 kg चीनी में क्रिस्टल = 
+                            <span class="fraction">
+                                <span class="numerator">9 × 10<sup>6</sup></span>
+                                <span class="denominator">2</span>
+                            </span> = 4.5 × 10<sup>6</sup>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 5 kg चीनी में क्रिस्टल = 5 × 4.5 × 10<sup>6</sup> = 22.5 × 10<sup>6</sup> = 2.25 × 10<sup>7</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 1.2 kg चीनी में क्रिस्टल = 1.2 × 4.5 × 10<sup>6</sup> = 5.4 × 10<sup>6</sup></p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: (i) 5 kg चीनी में 2.25 × 10<sup>7</sup> क्रिस्टल, (ii) 1.2 kg चीनी में 5.4 × 10<sup>6</sup> क्रिस्टल</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: रश्मि के पास एक सड़क का मानचित्र है, जिसके पैमाने में 1 cm दूरी 18 km निरूपित करती है। वह उस सड़क पर अपनी कार से 72 km की दूरी तय करती है। उसके द्वारा तय की गई दूरी मानचित्र में क्या होगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पैमाना: 1 cm = 18 km</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 km = 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">18</span>
+                            </span> cm
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">72 km = 72 × 
+                            <span class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">18</span>
+                            </span> = 4 cm
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: मानचित्र में दूरी 4 cm होगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: एक 5 m 60 cm ऊँचे ऊर्ध्वाधर खंभे की छाया की लंबाई 3 m 20 cm है। उसी समय ज्ञात कीजिए: (i) 10 m 50 cm ऊँचे एक अन्य खंभे की छाया की लंबाई (ii) उस खंभे की ऊँचाई जिसकी छाया की लंबाई 5 m है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">खंभे की ऊँचाई = 5 m 60 cm = 560 cm, छाया = 3 m 20 cm = 320 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">ऊँचाई और छाया का अनुपात = 
+                            <span class="fraction">
+                                <span class="numerator">560</span>
+                                <span class="denominator">320</span>
+                            </span> = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">4</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) दूसरे खंभे की ऊँचाई = 10 m 50 cm = 1050 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">छाया = 
+                            <span class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">7</span>
+                            </span> × 1050 = 4 × 150 = 600 cm = 6 m
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) छाया = 5 m = 500 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">ऊँचाई = 
+                            <span class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">4</span>
+                            </span> × 500 = 7 × 125 = 875 cm = 8 m 75 cm
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: (i) छाया की लंबाई 6 m, (ii) खंभे की ऊँचाई 8 m 75 cm</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: माल से लदा हुआ एक ट्रक 25 मिनट में 14 km चलता है। यदि चाल वही रहे, तो वह 5 घंटे में कितनी दूरी तय कर पाएगा?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">25 मिनट में दूरी = 14 km</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 मिनट में दूरी = 
+                            <span class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">25</span>
+                            </span> km
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 घंटे = 5 × 60 = 300 मिनट</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">300 मिनट में दूरी = 300 × 
+                            <span class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">25</span>
+                            </span> = 12 × 14 = 168 km
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 5 घंटे में 168 km दूरी तय करेगा।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 11.2 Section -->
+        <section id="prashnavali-11-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 11.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में से कौन प्रतिलोम अनुपात में हैं?</h3>
+                <p>(i) किसी कार्य पर लगे व्यक्तियों की संख्या और उस कार्य को पूरा करने में लगा समय।</p>
+                <p>(ii) एक समान चाल से किसी यात्रा में लिया गया समय और तय की गई दूरी।</p>
+                <p>(iii) खेती की गई भूमि का क्षेत्रफल और काटी गई फसल।</p>
+                <p>(iv) एक निश्चित यात्रा में लिया गया समय और वाहन की चाल।</p>
+                <p>(v) किसी देश की जनसंख्या और प्रति व्यक्ति भूमि का क्षेत्रफल।</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) प्रतिलोम अनुपात - हाँ (अधिक व्यक्ति, कम समय)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) सीधा अनुपात - नहीं (अधिक समय, अधिक दूरी)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) सीधा अनुपात - नहीं (अधिक भूमि, अधिक फसल)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) प्रतिलोम अनुपात - हाँ (अधिक चाल, कम समय)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) प्रतिलोम अनुपात - हाँ (अधिक जनसंख्या, कम भूमि प्रति व्यक्ति)</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: (i), (iv) और (v) प्रतिलोम अनुपात में हैं।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: एक टेलीविजन गेम शो में ₹ 1,00,000 की पुरस्कार राशि विजेताओं में समान रूप से वितरित की जानी है। निम्नलिखित सारणी को पूरा कीजिए तथा ज्ञात कीजिए कि क्या एक व्यक्तिगत विजेता को दी जाने वाली पुरस्कार की राशि विजेताओं की संख्या के अनुक्रमानुपाती है या व्युत्क्रमानुपाती है?</h3>
+                <p>विजेताओं की संख्या: 1, 2, 4, 5, 8, 10, 20</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल पुरस्कार राशि = ₹ 1,00,000</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 विजेता को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">1</span>
+                            </span> = ₹ 1,00,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">2 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">2</span>
+                            </span> = ₹ 50,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">4 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">4</span>
+                            </span> = ₹ 25,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">5</span>
+                            </span> = ₹ 20,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">8 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">8</span>
+                            </span> = ₹ 12,500
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">10 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">10</span>
+                            </span> = ₹ 10,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">20 विजेताओं को मिलेगा = 
+                            <span class="fraction">
+                                <span class="numerator">1,00,000</span>
+                                <span class="denominator">20</span>
+                            </span> = ₹ 5,000
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">जैसे-जैसे विजेताओं की संख्या बढ़ती है, प्रत्येक को मिलने वाली राशि घटती है।</p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: पुरस्कार राशि विजेताओं की संख्या के व्युत्क्रमानुपाती है।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: रहमान तीलियों या डंडियों का प्रयोग करते हुए, एक पहिया बना रहा है। वह बराबर तीलियाँ इस प्रकार लगाना चाहता है कि किन्हीं भी क्रमागत तीलियों के युग्मों के बीच के कोण बराबर हैं। निम्नलिखित सारणी को पूरा करके, उसकी सहायता कीजिए:</h3>
+                <p>तीलियों की संख्या: 4, 6, 8, 10, 12</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक पूरे वृत्त का कोण = 360°</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">4 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">4</span>
+                            </span> = 90°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">6 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">6</span>
+                            </span> = 60°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">8 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">8</span>
+                            </span> = 45°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">10 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">10</span>
+                            </span> = 36°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">12 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">12</span>
+                            </span> = 30°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) हाँ, तीलियों की संख्या और कोण व्युत्क्रमानुपाती हैं।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 15 तीलियों के लिए कोण = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">15</span>
+                            </span> = 24°
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) यदि कोण 40° है, तो तीलियों की संख्या = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">40</span>
+                            </span> = 9
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: (i) हाँ, (ii) 24°, (iii) 9 तीलियाँ</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: यदि किसी डिब्बे की मिठाई को 24 बच्चों में बाँटा जाए, तो प्रत्येक बच्चे को 5 मिठाइयाँ मिलती हैं। यदि बच्चों की संख्या में 4 की कमी हो जाए, तो प्रत्येक बच्चे को कितनी मिठाइयाँ मिलेंगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल मिठाइयाँ = 24 × 5 = 120</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">बच्चों की नई संख्या = 24 - 4 = 20</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">प्रत्येक बच्चे को मिठाइयाँ = 
+                            <span class="fraction">
+                                <span class="numerator">120</span>
+                                <span class="denominator">20</span>
+                            </span> = 6
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: प्रत्येक बच्चे को 6 मिठाइयाँ मिलेंगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: एक किसान की पशुशाला में 20 पशुओं के लिए 6 दिन का पर्याप्त भोजन है। यदि इस पशुशाला में 10 पशु और आ जाएँ, तो यह भोजन कितने दिन तक पर्याप्त रहेगा?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल भोजन = 20 × 6 = 120 पशु-दिन</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">नए पशुओं की संख्या = 20 + 10 = 30</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">भोजन के दिन = 
+                            <span class="fraction">
+                                <span class="numerator">120</span>
+                                <span class="denominator">30</span>
+                            </span> = 4
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: भोजन 4 दिन तक पर्याप्त रहेगा।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: एक ठेकेदार यह आकलन करता है कि जलमीन के एक घर में तार लगाने का कार्य 3 व्यक्ति 4 दिन में कर सकते हैं। यदि वह तीन के स्थान पर चार व्यक्तियों को इस काम पर लगाता है, तो यह कार्य कितने दिन में पूरा हो जाएगा?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल कार्य = 3 × 4 = 12 व्यक्ति-दिन</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">4 व्यक्तियों द्वारा लिया गया समय = 
+                            <span class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">4</span>
+                            </span> = 3 दिन
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: कार्य 3 दिन में पूरा हो जाएगा।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: बोतलों के एक बैच (batch) को 25 बक्सों में रखा जाता है, जबकि प्रत्येक बक्स में 12 बोतलें हैं। यदि इस बैच की बोतलों को इस प्रकार रखा जाए कि प्रत्येक बक्स में 20 बोतलें हों, तो कितने बक्स भरे जाएँगे?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल बोतलें = 25 × 12 = 300</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">प्रत्येक बक्स में बोतलें = 20</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">बक्सों की संख्या = 
+                            <span class="fraction">
+                                <span class="numerator">300</span>
+                                <span class="denominator">20</span>
+                            </span> = 15
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 15 बक्स भरे जाएँगे।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: एक फैक्ट्री को कुछ वस्तुएँ 63 दिन में बनाने के लिए 42 मशीनों की आवश्यकता होती है। उतनी ही वस्तुएँ 54 दिन में बनाने के लिए, कितनी मशीनों की आवश्यकता होगी?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल कार्य = 42 × 63 = 2646 मशीन-दिन</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">54 दिन में आवश्यक मशीनें = 
+                            <span class="fraction">
+                                <span class="numerator">2646</span>
+                                <span class="denominator">54</span>
+                            </span> = 49
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 49 मशीनों की आवश्यकता होगी।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: एक कार एक स्थान तक पहुँचने में 60 km/h की चाल से चलकर 2 घंटे का समय लेती है। 80 km/h की चाल से उस कार को कितना समय लगेगा?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल दूरी = 60 × 2 = 120 km</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">80 km/h की चाल से समय = 
+                            <span class="fraction">
+                                <span class="numerator">120</span>
+                                <span class="denominator">80</span>
+                            </span> = 1.5 घंटे = 1 घंटा 30 मिनट
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: 1 घंटा 30 मिनट का समय लगेगा।</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: दो व्यक्ति एक घर में नई खिड़कियाँ 3 दिन में लगा सकते हैं।</h3>
+                <p>(i) कार्य आरंभ होने से पहले, एक व्यक्ति बीमार पड़ जाता है। अब यह कार्य कितने दिन में पूरा हो पाएगा?</p>
+                <p>(ii) एक ही दिन में खिड़कियाँ लगाने के लिए, कितने व्यक्तियों की आवश्यकता होगी?</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल कार्य = 2 × 3 = 6 व्यक्ति-दिन</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 1 व्यक्ति द्वारा लिया गया समय = 
+                            <span class="fraction">
+                                <span class="numerator">6</span>
+                                <span class="denominator">1</span>
+                            </span> = 6 दिन
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 1 दिन में आवश्यक व्यक्ति = 
+                            <span class="fraction">
+                                <span class="numerator">6</span>
+                                <span class="denominator">1</span>
+                            </span> = 6 व्यक्ति
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: (i) 6 दिन, (ii) 6 व्यक्ति</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 11: किसी स्कूल में, 45 मिनट अवधि के 8 कालांश होते हैं। यह कल्पना करते हुए कि स्कूल का कार्य समय उतना ही रहता है, यदि स्कूल में बराबर अवधि के 9 कालांश हों, तो प्रत्येक कालांश कितने समय का होगा?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">कुल स्कूल समय = 8 × 45 = 360 मिनट</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">9 कालांशों में प्रत्येक की अवधि = 
+                            <span class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">9</span>
+                            </span> = 40 मिनट
+                        </p>
+                    </div>
+                    
+                    <div class="final-answer">
+                        <p>उत्तर: प्रत्येक कालांश 40 मिनट का होगा।</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

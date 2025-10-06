@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 8 गणित - अध्याय 12: गुणनखंडन</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .sub-question {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 12: गुणनखंडन</h1>
+            <p class="mt-2 text-lg">कक्षा 8 : गणित</p>
+        </div>
+
+        <!-- Exercise 12.1 Section -->
+        <section id="prashnavali-12-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 12.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: दिए हुए पदों में सार्व गुणनखंड ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 12x, 36</p>
+                        <p class="mb-2">12x = 2 × 2 × 3 × x</p>
+                        <p class="mb-2">36 = 2 × 2 × 3 × 3</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 2 × 3 = 12</p>
+                        <p><strong>उत्तर:</strong> 12</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 2y, 22xy</p>
+                        <p class="mb-2">2y = 2 × y</p>
+                        <p class="mb-2">22xy = 2 × 11 × x × y</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × y = 2y</p>
+                        <p><strong>उत्तर:</strong> 2y</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 14pq, 28p²q²</p>
+                        <p class="mb-2">14pq = 2 × 7 × p × q</p>
+                        <p class="mb-2">28p²q² = 2 × 2 × 7 × p × p × q × q</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 7 × p × q = 14pq</p>
+                        <p><strong>उत्तर:</strong> 14pq</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 2x, 3x², 4</p>
+                        <p class="mb-2">2x = 2 × x</p>
+                        <p class="mb-2">3x² = 3 × x × x</p>
+                        <p class="mb-2">4 = 2 × 2</p>
+                        <p class="mb-2">सार्व गुणनखंड = 1 (केवल 1 ही सार्व गुणनखंड है)</p>
+                        <p><strong>उत्तर:</strong> 1</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 6abc, 24ab², 12a²b</p>
+                        <p class="mb-2">6abc = 2 × 3 × a × b × c</p>
+                        <p class="mb-2">24ab² = 2 × 2 × 2 × 3 × a × b × b</p>
+                        <p class="mb-2">12a²b = 2 × 2 × 3 × a × a × b</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 3 × a × b = 6ab</p>
+                        <p><strong>उत्तर:</strong> 6ab</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 16x³, -4x², 32x</p>
+                        <p class="mb-2">16x³ = 2 × 2 × 2 × 2 × x × x × x</p>
+                        <p class="mb-2">-4x² = -1 × 2 × 2 × x × x</p>
+                        <p class="mb-2">32x = 2 × 2 × 2 × 2 × 2 × x</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 2 × x = 4x</p>
+                        <p><strong>उत्तर:</strong> 4x</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 10pq, 20qr, 30rp</p>
+                        <p class="mb-2">10pq = 2 × 5 × p × q</p>
+                        <p class="mb-2">20qr = 2 × 2 × 5 × q × r</p>
+                        <p class="mb-2">30rp = 2 × 3 × 5 × r × p</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 5 = 10</p>
+                        <p><strong>उत्तर:</strong> 10</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 3x²y³, 10x³y², 6x²y²z</p>
+                        <p class="mb-2">3x²y³ = 3 × x × x × y × y × y</p>
+                        <p class="mb-2">10x³y² = 2 × 5 × x × x × x × y × y</p>
+                        <p class="mb-2">6x²y²z = 2 × 3 × x × x × y × y × z</p>
+                        <p class="mb-2">सार्व गुणनखंड = x × x × y × y = x²y²</p>
+                        <p><strong>उत्तर:</strong> x²y²</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित व्यंजकों के गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 7x - 42</p>
+                        <p class="mb-2">7x = 7 × x</p>
+                        <p class="mb-2">42 = 7 × 6</p>
+                        <p class="mb-2">सार्व गुणनखंड = 7</p>
+                        <p class="mb-2">7x - 42 = 7(x - 6)</p>
+                        <p><strong>उत्तर:</strong> 7(x - 6)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 6p - 12q</p>
+                        <p class="mb-2">6p = 2 × 3 × p</p>
+                        <p class="mb-2">12q = 2 × 2 × 3 × q</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 3 = 6</p>
+                        <p class="mb-2">6p - 12q = 6(p - 2q)</p>
+                        <p><strong>उत्तर:</strong> 6(p - 2q)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 7a² + 14a</p>
+                        <p class="mb-2">7a² = 7 × a × a</p>
+                        <p class="mb-2">14a = 2 × 7 × a</p>
+                        <p class="mb-2">सार्व गुणनखंड = 7 × a = 7a</p>
+                        <p class="mb-2">7a² + 14a = 7a(a + 2)</p>
+                        <p><strong>उत्तर:</strong> 7a(a + 2)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) -16z + 20z³</p>
+                        <p class="mb-2">-16z = -1 × 2 × 2 × 2 × 2 × z</p>
+                        <p class="mb-2">20z³ = 2 × 2 × 5 × z × z × z</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 2 × z = 4z</p>
+                        <p class="mb-2">-16z + 20z³ = 4z(-4 + 5z²)</p>
+                        <p><strong>उत्तर:</strong> 4z(5z² - 4)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 20l²m + 30alm</p>
+                        <p class="mb-2">20l²m = 2 × 2 × 5 × l × l × m</p>
+                        <p class="mb-2">30alm = 2 × 3 × 5 × a × l × m</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 5 × l × m = 10lm</p>
+                        <p class="mb-2">20l²m + 30alm = 10lm(2l + 3a)</p>
+                        <p><strong>उत्तर:</strong> 10lm(2l + 3a)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 5x²y - 15xy²</p>
+                        <p class="mb-2">5x²y = 5 × x × x × y</p>
+                        <p class="mb-2">15xy² = 3 × 5 × x × y × y</p>
+                        <p class="mb-2">सार्व गुणनखंड = 5 × x × y = 5xy</p>
+                        <p class="mb-2">5x²y - 15xy² = 5xy(x - 3y)</p>
+                        <p><strong>उत्तर:</strong> 5xy(x - 3y)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 10a² - 15b² + 20c²</p>
+                        <p class="mb-2">10a² = 2 × 5 × a × a</p>
+                        <p class="mb-2">15b² = 3 × 5 × b × b</p>
+                        <p class="mb-2">20c² = 2 × 2 × 5 × c × c</p>
+                        <p class="mb-2">सार्व गुणनखंड = 5</p>
+                        <p class="mb-2">10a² - 15b² + 20c² = 5(2a² - 3b² + 4c²)</p>
+                        <p><strong>उत्तर:</strong> 5(2a² - 3b² + 4c²)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) -4a² + 4ab - 4ca</p>
+                        <p class="mb-2">-4a² = -1 × 2 × 2 × a × a</p>
+                        <p class="mb-2">4ab = 2 × 2 × a × b</p>
+                        <p class="mb-2">4ca = 2 × 2 × c × a</p>
+                        <p class="mb-2">सार्व गुणनखंड = 2 × 2 × a = 4a</p>
+                        <p class="mb-2">-4a² + 4ab - 4ca = 4a(-a + b - c)</p>
+                        <p><strong>उत्तर:</strong> 4a(-a + b - c) या -4a(a - b + c)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ix) x²yz + xy²z + xyz²</p>
+                        <p class="mb-2">x²yz = x × x × y × z</p>
+                        <p class="mb-2">xy²z = x × y × y × z</p>
+                        <p class="mb-2">xyz² = x × y × z × z</p>
+                        <p class="mb-2">सार्व गुणनखंड = x × y × z = xyz</p>
+                        <p class="mb-2">x²yz + xy²z + xyz² = xyz(x + y + z)</p>
+                        <p><strong>उत्तर:</strong> xyz(x + y + z)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(x) ax²y + bxy² + cxyz</p>
+                        <p class="mb-2">ax²y = a × x × x × y</p>
+                        <p class="mb-2">bxy² = b × x × y × y</p>
+                        <p class="mb-2">cxyz = c × x × y × z</p>
+                        <p class="mb-2">सार्व गुणनखंड = x × y = xy</p>
+                        <p class="mb-2">ax²y + bxy² + cxyz = xy(ax + by + cz)</p>
+                        <p><strong>उत्तर:</strong> xy(ax + by + cz)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) x² + xy + 8x + 8y</p>
+                        <p class="mb-2">समूह बनाने पर: (x² + xy) + (8x + 8y)</p>
+                        <p class="mb-2">x(x + y) + 8(x + y)</p>
+                        <p class="mb-2">(x + y)(x + 8)</p>
+                        <p><strong>उत्तर:</strong> (x + y)(x + 8)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 15xy - 6x + 5y - 2</p>
+                        <p class="mb-2">समूह बनाने पर: (15xy - 6x) + (5y - 2)</p>
+                        <p class="mb-2">3x(5y - 2) + 1(5y - 2)</p>
+                        <p class="mb-2">(5y - 2)(3x + 1)</p>
+                        <p><strong>उत्तर:</strong> (5y - 2)(3x + 1)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) ax + bx - ay - by</p>
+                        <p class="mb-2">समूह बनाने पर: (ax + bx) - (ay + by)</p>
+                        <p class="mb-2">x(a + b) - y(a + b)</p>
+                        <p class="mb-2">(a + b)(x - y)</p>
+                        <p><strong>उत्तर:</strong> (a + b)(x - y)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 15pq + 15 + 9q + 25p</p>
+                        <p class="mb-2">पुनर्व्यवस्थित करने पर: 15pq + 9q + 25p + 15</p>
+                        <p class="mb-2">समूह बनाने पर: (15pq + 9q) + (25p + 15)</p>
+                        <p class="mb-2">3q(5p + 3) + 5(5p + 3)</p>
+                        <p class="mb-2">(5p + 3)(3q + 5)</p>
+                        <p><strong>उत्तर:</strong> (5p + 3)(3q + 5)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) z - 7 + 7xy - xyz</p>
+                        <p class="mb-2">पुनर्व्यवस्थित करने पर: -xyz + 7xy + z - 7</p>
+                        <p class="mb-2">समूह बनाने पर: (-xyz + 7xy) + (z - 7)</p>
+                        <p class="mb-2">-xy(z - 7) + 1(z - 7)</p>
+                        <p class="mb-2">(z - 7)(1 - xy)</p>
+                        <p><strong>उत्तर:</strong> (z - 7)(1 - xy)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 12.2 Section -->
+        <section id="prashnavali-12-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 12.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: सर्वसमिकाओं का प्रयोग करके निम्नलिखित वर्गों के गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) a² + 8a + 16</p>
+                        <p class="mb-2">यह (a + b)² = a² + 2ab + b² के रूप में है</p>
+                        <p class="mb-2">यहाँ a = a, b = 4</p>
+                        <p class="mb-2">a² + 8a + 16 = (a + 4)²</p>
+                        <p><strong>उत्तर:</strong> (a + 4)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) p² - 10p + 25</p>
+                        <p class="mb-2">यह (a - b)² = a² - 2ab + b² के रूप में है</p>
+                        <p class="mb-2">यहाँ a = p, b = 5</p>
+                        <p class="mb-2">p² - 10p + 25 = (p - 5)²</p>
+                        <p><strong>उत्तर:</strong> (p - 5)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 25m² + 30m + 9</p>
+                        <p class="mb-2">यह (a + b)² = a² + 2ab + b² के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 5m, b = 3</p>
+                        <p class="mb-2">25m² + 30m + 9 = (5m + 3)²</p>
+                        <p><strong>उत्तर:</strong> (5m + 3)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 49y² + 84yz + 36z²</p>
+                        <p class="mb-2">यह (a + b)² = a² + 2ab + b² के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 7y, b = 6z</p>
+                        <p class="mb-2">49y² + 84yz + 36z² = (7y + 6z)²</p>
+                        <p><strong>उत्तर:</strong> (7y + 6z)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 4x² - 8x + 4</p>
+                        <p class="mb-2">4 उभयनिष्ठ लेने पर: 4(x² - 2x + 1)</p>
+                        <p class="mb-2">x² - 2x + 1 = (x - 1)²</p>
+                        <p class="mb-2">4x² - 8x + 4 = 4(x - 1)²</p>
+                        <p><strong>उत्तर:</strong> 4(x - 1)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 121b² - 88bc + 16c²</p>
+                        <p class="mb-2">यह (a - b)² = a² - 2ab + b² के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 11b, b = 4c</p>
+                        <p class="mb-2">121b² - 88bc + 16c² = (11b - 4c)²</p>
+                        <p><strong>उत्तर:</strong> (11b - 4c)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) (l + m)² - 4lm</p>
+                        <p class="mb-2">(l + m)² - 4lm = l² + 2lm + m² - 4lm</p>
+                        <p class="mb-2">= l² - 2lm + m²</p>
+                        <p class="mb-2">= (l - m)²</p>
+                        <p><strong>उत्तर:</strong> (l - m)²</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) a⁴ + 2a²b² + b⁴</p>
+                        <p class="mb-2">यह (a² + b²)² = a⁴ + 2a²b² + b⁴ के रूप में है</p>
+                        <p class="mb-2">a⁴ + 2a²b² + b⁴ = (a² + b²)²</p>
+                        <p><strong>उत्तर:</strong> (a² + b²)²</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 4p² - 9q²</p>
+                        <p class="mb-2">यह a² - b² = (a + b)(a - b) के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 2p, b = 3q</p>
+                        <p class="mb-2">4p² - 9q² = (2p + 3q)(2p - 3q)</p>
+                        <p><strong>उत्तर:</strong> (2p + 3q)(2p - 3q)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 63a² - 112b²</p>
+                        <p class="mb-2">7 उभयनिष्ठ लेने पर: 7(9a² - 16b²)</p>
+                        <p class="mb-2">9a² - 16b² = (3a)² - (4b)²</p>
+                        <p class="mb-2">(3a + 4b)(3a - 4b)</p>
+                        <p class="mb-2">63a² - 112b² = 7(3a + 4b)(3a - 4b)</p>
+                        <p><strong>उत्तर:</strong> 7(3a + 4b)(3a - 4b)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 49x² - 36</p>
+                        <p class="mb-2">यह a² - b² = (a + b)(a - b) के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 7x, b = 6</p>
+                        <p class="mb-2">49x² - 36 = (7x + 6)(7x - 6)</p>
+                        <p><strong>उत्तर:</strong> (7x + 6)(7x - 6)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 16x⁵ - 144x³</p>
+                        <p class="mb-2">16x³ उभयनिष्ठ लेने पर: 16x³(x² - 9)</p>
+                        <p class="mb-2">x² - 9 = (x + 3)(x - 3)</p>
+                        <p class="mb-2">16x⁵ - 144x³ = 16x³(x + 3)(x - 3)</p>
+                        <p><strong>उत्तर:</strong> 16x³(x + 3)(x - 3)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (l + m)² - (l - m)²</p>
+                        <p class="mb-2">यह a² - b² = (a + b)(a - b) के रूप में है</p>
+                        <p class="mb-2">यहाँ a = (l + m), b = (l - m)</p>
+                        <p class="mb-2">(l + m)² - (l - m)² = [(l + m) + (l - m)][(l + m) - (l - m)]</p>
+                        <p class="mb-2">= [l + m + l - m][l + m - l + m]</p>
+                        <p class="mb-2">= [2l][2m] = 4lm</p>
+                        <p><strong>उत्तर:</strong> 4lm</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 9x²y² - 16</p>
+                        <p class="mb-2">यह a² - b² = (a + b)(a - b) के रूप में है</p>
+                        <p class="mb-2">यहाँ a = 3xy, b = 4</p>
+                        <p class="mb-2">9x²y² - 16 = (3xy + 4)(3xy - 4)</p>
+                        <p><strong>उत्तर:</strong> (3xy + 4)(3xy - 4)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) (x² - 2xy + y²) - z²</p>
+                        <p class="mb-2">x² - 2xy + y² = (x - y)²</p>
+                        <p class="mb-2">(x - y)² - z² = [(x - y) + z][(x - y) - z]</p>
+                        <p class="mb-2">= (x - y + z)(x - y - z)</p>
+                        <p><strong>उत्तर:</strong> (x - y + z)(x - y - z)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 25a² - 4b² + 28bc - 49c²</p>
+                        <p class="mb-2">पुनर्व्यवस्थित करने पर: 25a² - (4b² - 28bc + 49c²)</p>
+                        <p class="mb-2">4b² - 28bc + 49c² = (2b)² - 2(2b)(7c) + (7c)² = (2b - 7c)²</p>
+                        <p class="mb-2">25a² - (2b - 7c)² = (5a)² - (2b - 7c)²</p>
+                        <p class="mb-2">= [5a + (2b - 7c)][5a - (2b - 7c)]</p>
+                        <p class="mb-2">= (5a + 2b - 7c)(5a - 2b + 7c)</p>
+                        <p><strong>उत्तर:</strong> (5a + 2b - 7c)(5a - 2b + 7c)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: निम्नलिखित व्यंजकों के गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) ax² + bx</p>
+                        <p class="mb-2">x उभयनिष्ठ लेने पर: x(ax + b)</p>
+                        <p><strong>उत्तर:</strong> x(ax + b)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 7p² + 21q²</p>
+                        <p class="mb-2">7 उभयनिष्ठ लेने पर: 7(p² + 3q²)</p>
+                        <p><strong>उत्तर:</strong> 7(p² + 3q²)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 2x³ + 2xy² + 2xz²</p>
+                        <p class="mb-2">2x उभयनिष्ठ लेने पर: 2x(x² + y² + z²)</p>
+                        <p><strong>उत्तर:</strong> 2x(x² + y² + z²)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) am² + bm² + bn² + an²</p>
+                        <p class="mb-2">समूह बनाने पर: (am² + bm²) + (bn² + an²)</p>
+                        <p class="mb-2">m²(a + b) + n²(a + b)</p>
+                        <p class="mb-2">(a + b)(m² + n²)</p>
+                        <p><strong>उत्तर:</strong> (a + b)(m² + n²)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (lm + l) + m + 1</p>
+                        <p class="mb-2">समूह बनाने पर: l(m + 1) + 1(m + 1)</p>
+                        <p class="mb-2">(m + 1)(l + 1)</p>
+                        <p><strong>उत्तर:</strong> (m + 1)(l + 1)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) y(y + z) + 9(y + z)</p>
+                        <p class="mb-2">(y + z) उभयनिष्ठ लेने पर: (y + z)(y + 9)</p>
+                        <p><strong>उत्तर:</strong> (y + z)(y + 9)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 5y² - 20y - 8z + 2yz</p>
+                        <p class="mb-2">पुनर्व्यवस्थित करने पर: 5y² - 20y + 2yz - 8z</p>
+                        <p class="mb-2">समूह बनाने पर: (5y² - 20y) + (2yz - 8z)</p>
+                        <p class="mb-2">5y(y - 4) + 2z(y - 4)</p>
+                        <p class="mb-2">(y - 4)(5y + 2z)</p>
+                        <p><strong>उत्तर:</strong> (y - 4)(5y + 2z)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 10ab + 4a + 5b + 2</p>
+                        <p class="mb-2">समूह बनाने पर: (10ab + 4a) + (5b + 2)</p>
+                        <p class="mb-2">2a(5b + 2) + 1(5b + 2)</p>
+                        <p class="mb-2">(5b + 2)(2a + 1)</p>
+                        <p><strong>उत्तर:</strong> (5b + 2)(2a + 1)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ix) 6xy - 4y + 6 - 9x</p>
+                        <p class="mb-2">पुनर्व्यवस्थित करने पर: 6xy - 9x - 4y + 6</p>
+                        <p class="mb-2">समूह बनाने पर: (6xy - 9x) - (4y - 6)</p>
+                        <p class="mb-2">3x(2y - 3) - 2(2y - 3)</p>
+                        <p class="mb-2">(2y - 3)(3x - 2)</p>
+                        <p><strong>उत्तर:</strong> (2y - 3)(3x - 2)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) a⁴ - b⁴</p>
+                        <p class="mb-2">(a²)² - (b²)² = (a² + b²)(a² - b²)</p>
+                        <p class="mb-2">= (a² + b²)(a + b)(a - b)</p>
+                        <p><strong>उत्तर:</strong> (a² + b²)(a + b)(a - b)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) p⁴ - 81</p>
+                        <p class="mb-2">(p²)² - (9)² = (p² + 9)(p² - 9)</p>
+                        <p class="mb-2">= (p² + 9)(p + 3)(p - 3)</p>
+                        <p><strong>उत्तर:</strong> (p² + 9)(p + 3)(p - 3)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) x⁴ - (y + z)⁴</p>
+                        <p class="mb-2">(x²)² - [(y + z)²]²</p>
+                        <p class="mb-2">= [x² + (y + z)²][x² - (y + z)²]</p>
+                        <p class="mb-2">= [x² + (y + z)²][x + (y + z)][x - (y + z)]</p>
+                        <p class="mb-2">= [x² + (y + z)²][x + y + z][x - y - z]</p>
+                        <p><strong>उत्तर:</strong> [x² + (y + z)²][x + y + z][x - y - z]</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) x⁴ - (x - z)⁴</p>
+                        <p class="mb-2">(x²)² - [(x - z)²]²</p>
+                        <p class="mb-2">= [x² + (x - z)²][x² - (x - z)²]</p>
+                        <p class="mb-2">= [x² + (x - z)²][x + (x - z)][x - (x - z)]</p>
+                        <p class="mb-2">= [x² + (x - z)²][2x - z][z]</p>
+                        <p><strong>उत्तर:</strong> z(2x - z)[x² + (x - z)²]</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) a⁴ - 2a²b² + b⁴</p>
+                        <p class="mb-2">यह (a²)² - 2(a²)(b²) + (b²)² के रूप में है</p>
+                        <p class="mb-2">= (a² - b²)²</p>
+                        <p class="mb-2">= [(a + b)(a - b)]²</p>
+                        <p class="mb-2">= (a + b)²(a - b)²</p>
+                        <p><strong>उत्तर:</strong> (a + b)²(a - b)²</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित व्यंजकों के गुणनखंड कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) p² + 6p + 8</p>
+                        <p class="mb-2">हमें दो ऐसी संख्याएँ चाहिए जिनका योग 6 और गुणनफल 8 हो</p>
+                        <p class="mb-2">4 और 2: 4 + 2 = 6, 4 × 2 = 8</p>
+                        <p class="mb-2">p² + 6p + 8 = p² + 4p + 2p + 8</p>
+                        <p class="mb-2">= p(p + 4) + 2(p + 4)</p>
+                        <p class="mb-2">= (p + 4)(p + 2)</p>
+                        <p><strong>उत्तर:</strong> (p + 4)(p + 2)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) q² - 10q + 21</p>
+                        <p class="mb-2">हमें दो ऐसी संख्याएँ चाहिए जिनका योग -10 और गुणनफल 21 हो</p>
+                        <p class="mb-2">-7 और -3: -7 + (-3) = -10, (-7) × (-3) = 21</p>
+                        <p class="mb-2">q² - 10q + 21 = q² - 7q - 3q + 21</p>
+                        <p class="mb-2">= q(q - 7) - 3(q - 7)</p>
+                        <p class="mb-2">= (q - 7)(q - 3)</p>
+                        <p><strong>उत्तर:</strong> (q - 7)(q - 3)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) p² + 6p - 16</p>
+                        <p class="mb-2">हमें दो ऐसी संख्याएँ चाहिए जिनका योग 6 और गुणनफल -16 हो</p>
+                        <p class="mb-2">8 और -2: 8 + (-2) = 6, 8 × (-2) = -16</p>
+                        <p class="mb-2">p² + 6p - 16 = p² + 8p - 2p - 16</p>
+                        <p class="mb-2">= p(p + 8) - 2(p + 8)</p>
+                        <p class="mb-2">= (p + 8)(p - 2)</p>
+                        <p><strong>उत्तर:</strong> (p + 8)(p - 2)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 12.3 Section -->
+        <section id="prashnavali-12-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 12.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित विभाजन कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 28x⁴ ÷ 56x</p>
+                        <p class="mb-2">= (28/56) × (x⁴/x)</p>
+                        <p class="mb-2">= (1/2) × x³</p>
+                        <p class="mb-2">= x³/2</p>
+                        <p><strong>उत्तर:</strong> x³/2</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) -36y³ ÷ 9y²</p>
+                        <p class="mb-2">= (-36/9) × (y³/y²)</p>
+                        <p class="mb-2">= -4 × y</p>
+                        <p class="mb-2">= -4y</p>
+                        <p><strong>उत्तर:</strong> -4y</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 66pq²r³ ÷ 11qr²</p>
+                        <p class="mb-2">= (66/11) × (p/p⁰) × (q²/q) × (r³/r²)</p>
+                        <p class="mb-2">= 6 × p × q × r</p>
+                        <p class="mb-2">= 6pqr</p>
+                        <p><strong>उत्तर:</strong> 6pqr</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 34x³y³z³ ÷ 51xy²z³</p>
+                        <p class="mb-2">= (34/51) × (x³/x) × (y³/y²) × (z³/z³)</p>
+                        <p class="mb-2">= (2/3) × x² × y × 1</p>
+                        <p class="mb-2">= (2x²y)/3</p>
+                        <p><strong>उत्तर:</strong> (2x²y)/3</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 12a⁸b⁸ ÷ (-6a⁶b⁴)</p>
+                        <p class="mb-2">= (12/-6) × (a⁸/a⁶) × (b⁸/b⁴)</p>
+                        <p class="mb-2">= -2 × a² × b⁴</p>
+                        <p class="mb-2">= -2a²b⁴</p>
+                        <p><strong>उत्तर:</strong> -2a²b⁴</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: दिए हुए बहुपद को दिए हुए एकपदी से भाग दीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (5x² - 6x) ÷ 3x</p>
+                        <p class="mb-2">= (5x²/3x) - (6x/3x)</p>
+                        <p class="mb-2">= (5x/3) - 2</p>
+                        <p><strong>उत्तर:</strong> (5x/3) - 2</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (3y⁸ - 4y⁶ + 5y⁴) ÷ y⁴</p>
+                        <p class="mb-2">= (3y⁸/y⁴) - (4y⁶/y⁴) + (5y⁴/y⁴)</p>
+                        <p class="mb-2">= 3y⁴ - 4y² + 5</p>
+                        <p><strong>उत्तर:</strong> 3y⁴ - 4y² + 5</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 8(x³y²z² + x²y³z² + x²y²z³) ÷ 4x²y²z²</p>
+                        <p class="mb-2">= [8x³y²z²/(4x²y²z²)] + [8x²y³z²/(4x²y²z²)] + [8x²y²z³/(4x²y²z²)]</p>
+                        <p class="mb-2">= 2x + 2y + 2z</p>
+                        <p class="mb-2">= 2(x + y + z)</p>
+                        <p><strong>उत्तर:</strong> 2(x + y + z)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) (x³ + 2x² + 3x) ÷ 2x</p>
+                        <p class="mb-2">= (x³/2x) + (2x²/2x) + (3x/2x)</p>
+                        <p class="mb-2">= (x²/2) + x + (3/2)</p>
+                        <p><strong>उत्तर:</strong> (x²/2) + x + (3/2)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (p³q⁶ - p⁶q³) ÷ p³q³</p>
+                        <p class="mb-2">= (p³q⁶/p³q³) - (p⁶q³/p³q³)</p>
+                        <p class="mb-2">= q³ - p³</p>
+                        <p><strong>उत्तर:</strong> q³ - p³</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: निम्नलिखित विभाजन कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (10x - 25) ÷ 5</p>
+                        <p class="mb-2">= (10x/5) - (25/5)</p>
+                        <p class="mb-2">= 2x - 5</p>
+                        <p><strong>उत्तर:</strong> 2x - 5</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (10x - 25) ÷ (2x - 5)</p>
+                        <p class="mb-2">5 उभयनिष्ठ लेने पर: 5(2x - 5)</p>
+                        <p class="mb-2">[5(2x - 5)] ÷ (2x - 5) = 5</p>
+                        <p><strong>उत्तर:</strong> 5</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 10y(6y + 21) ÷ 5(2y + 7)</p>
+                        <p class="mb-2">10y(6y + 21) = 10y × 3(2y + 7) = 30y(2y + 7)</p>
+                        <p class="mb-2">[30y(2y + 7)] ÷ [5(2y + 7)] = 6y</p>
+                        <p><strong>उत्तर:</strong> 6y</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 9x²y²(3z - 24) ÷ 27xy(z - 8)</p>
+                        <p class="mb-2">9x²y²(3z - 24) = 9x²y² × 3(z - 8) = 27x²y²(z - 8)</p>
+                        <p class="mb-2">[27x²y²(z - 8)] ÷ [27xy(z - 8)] = xy</p>
+                        <p><strong>उत्तर:</strong> xy</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 96abc(3a - 12)(5b - 30) ÷ 144(a - 4)(b - 6)</p>
+                        <p class="mb-2">96abc(3a - 12)(5b - 30) = 96abc × 3(a - 4) × 5(b - 6)</p>
+                        <p class="mb-2">= 1440 abc (a - 4)(b - 6)</p>
+                        <p class="mb-2">[1440 abc (a - 4)(b - 6)] ÷ [144(a - 4)(b - 6)] = 10abc</p>
+                        <p><strong>उत्तर:</strong> 10abc</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: निर्देशानुसार भाग दीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 5(2x + 1)(3x + 5) ÷ (2x + 1)</p>
+                        <p class="mb-2">= 5(3x + 5)</p>
+                        <p><strong>उत्तर:</strong> 5(3x + 5)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 26xy(x + 5)(y - 4) ÷ 13x(y - 4)</p>
+                        <p class="mb-2">= 2y(x + 5)</p>
+                        <p><strong>उत्तर:</strong> 2y(x + 5)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 52pqr(p + q)(q + r)(r + p) ÷ 104pq(q + r)(r + p)</p>
+                        <p class="mb-2">= [52/104] × r × (p + q)</p>
+                        <p class="mb-2">= (1/2) × r × (p + q)</p>
+                        <p class="mb-2">= r(p + q)/2</p>
+                        <p><strong>उत्तर:</strong> r(p + q)/2</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 20(y + 4)(y² + 5y + 3) ÷ 5(y + 4)</p>
+                        <p class="mb-2">= 4(y² + 5y + 3)</p>
+                        <p><strong>उत्तर:</strong> 4(y² + 5y + 3)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) x(x + 1)(x + 2)(x + 3) ÷ x(x + 1)</p>
+                        <p class="mb-2">= (x + 2)(x + 3)</p>
+                        <p><strong>उत्तर:</strong> (x + 2)(x + 3)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: व्यंजक के गुणनखंड कीजिए और निर्देशानुसार भाग दीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (y² + 7y + 10) ÷ (y + 5)</p>
+                        <p class="mb-2">y² + 7y + 10 = y² + 5y + 2y + 10</p>
+                        <p class="mb-2">= y(y + 5) + 2(y + 5)</p>
+                        <p class="mb-2">= (y + 5)(y + 2)</p>
+                        <p class="mb-2">[(y + 5)(y + 2)] ÷ (y + 5) = y + 2</p>
+                        <p><strong>उत्तर:</strong> y + 2</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (m² - 14m - 32) ÷ (m + 2)</p>
+                        <p class="mb-2">m² - 14m - 32 = m² - 16m + 2m - 32</p>
+                        <p class="mb-2">= m(m - 16) + 2(m - 16)</p>
+                        <p class="mb-2">= (m - 16)(m + 2)</p>
+                        <p class="mb-2">[(m - 16)(m + 2)] ÷ (m + 2) = m - 16</p>
+                        <p><strong>उत्तर:</strong> m - 16</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) (5p² - 25p + 20) ÷ (p - 1)</p>
+                        <p class="mb-2">5p² - 25p + 20 = 5(p² - 5p + 4)</p>
+                        <p class="mb-2">p² - 5p + 4 = p² - 4p - p + 4</p>
+                        <p class="mb-2">= p(p - 4) - 1(p - 4)</p>
+                        <p class="mb-2">= (p - 4)(p - 1)</p>
+                        <p class="mb-2">5(p - 4)(p - 1) ÷ (p - 1) = 5(p - 4)</p>
+                        <p><strong>उत्तर:</strong> 5(p - 4)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 4yz(z² + 6z - 16) ÷ 2y(z + 8)</p>
+                        <p class="mb-2">z² + 6z - 16 = z² + 8z - 2z - 16</p>
+                        <p class="mb-2">= z(z + 8) - 2(z + 8)</p>
+                        <p class="mb-2">= (z + 8)(z - 2)</p>
+                        <p class="mb-2">4yz(z + 8)(z - 2) ÷ 2y(z + 8) = 2z(z - 2)</p>
+                        <p><strong>उत्तर:</strong> 2z(z - 2)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 5pq(p² - q²) ÷ 2p(p + q)</p>
+                        <p class="mb-2">p² - q² = (p + q)(p - q)</p>
+                        <p class="mb-2">5pq(p + q)(p - q) ÷ 2p(p + q) = (5q/2)(p - q)</p>
+                        <p><strong>उत्तर:</strong> (5q/2)(p - q)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 12xy(9x² - 16y²) ÷ 4xy(3x + 4y)</p>
+                        <p class="mb-2">9x² - 16y² = (3x)² - (4y)² = (3x + 4y)(3x - 4y)</p>
+                        <p class="mb-2">12xy(3x + 4y)(3x - 4y) ÷ 4xy(3x + 4y) = 3(3x - 4y)</p>
+                        <p><strong>उत्तर:</strong> 3(3x - 4y)</p>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 39y³(50y² - 98) ÷ 26y²(5y + 7)</p>
+                        <p class="mb-2">50y² - 98 = 2(25y² - 49) = 2[(5y)² - (7)²] = 2(5y + 7)(5y - 7)</p>
+                        <p class="mb-2">39y³ × 2(5y + 7)(5y - 7) = 78y³(5y + 7)(5y - 7)</p>
+                        <p class="mb-2">78y³(5y + 7)(5y - 7) ÷ 26y²(5y + 7) = 3y(5y - 7)</p>
+                        <p><strong>उत्तर:</strong> 3y(5y - 7)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
