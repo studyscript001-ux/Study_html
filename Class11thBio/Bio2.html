@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 2: जीव जगत का वर्गीकरण</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>जीव जगत का वर्गीकरण</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान अध्याय 2</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>वर्गीकरण की पद्धतियों में समय के साथ आए परिवर्तनों की व्याख्या कीजिए।</span>
+            </div>
+            <div class="answer">
+                जीवों के वर्गीकरण की पद्धतियों में समय के साथ अनेक परिवर्तन आए हैं:
+                <ul>
+                    <li>प्रारंभ में, अरस्तू ने सरल बाह्य लक्षणों के आधार पर पौधों को वृक्ष, झाड़ी और शाक में तथा जंतुओं को लाल रक्त की उपस्थिति या अनुपस्थिति के आधार पर वर्गीकृत किया।</li>
+                    <li>लीनियस के समय में सभी जीवों को दो जगतों (पादप और जंतु) में वर्गीकृत किया गया।</li>
+                    <li>बाद में, आर. एच. व्हिटेकर ने 1969 में पाँच जगत वर्गीकरण प्रणाली प्रस्तावित की, जिसमें मोनेरा, प्रोटिस्टा, फंजाई, प्लांटी और एनिमेलिया शामिल हैं।</li>
+                    <li>समय के साथ, कोशिका संरचना, कोशिका भित्ति के लक्षण, पोषण की विधि, आवास, प्रजनन की विधियाँ और विकासीय संबंधों को भी वर्गीकरण के मापदंडों में शामिल किया गया।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>निम्नलिखित के बारे में आर्थिक दृष्टि से दो महत्वपूर्ण उपयोगों को लिखें:<br>
+                (क) परपोषी बैक्टीरिया<br>
+                (ख) आद्य बैक्टीरिया</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(क) परपोषी बैक्टीरिया के महत्वपूर्ण उपयोग:</span>
+                <ul>
+                    <li>दही और छाछ बनाने में सहायक होते हैं।</li>
+                    <li>प्रतिजैविकों (एंटीबायोटिक्स) के उत्पादन में उपयोगी होते हैं।</li>
+                    <li>दालों की जड़ों में नाइट्रोजन स्थिरीकरण में सहायता करते हैं।</li>
+                </ul>
+                
+                <span class="highlight">(ख) आद्य बैक्टीरिया के महत्वपूर्ण उपयोग:</span>
+                <ul>
+                    <li>मीथेनोजेन्स गोबर गैस संयंत्रों में मीथेन गैस उत्पादन में सहायक होते हैं।</li>
+                    <li>अत्यधिक कठोर परिस्थितियों में जैव-प्रौद्योगिकीय अनुप्रयोगों में उपयोगी होते हैं।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>डायटम की कोशिका भित्ति के क्या लक्षण हैं?</span>
+            </div>
+            <div class="answer">
+                डायटम की कोशिका भित्ति के निम्नलिखित लक्षण हैं:
+                <ul>
+                    <li>यह सिलिका की बनी होती है, जिससे यह कठोर और पारदर्शी होती है।</li>
+                    <li>कोशिका भित्ति दो अतिव्यापी खंडों से मिलकर बनी होती है, जिन्हें थीका (theca) कहते हैं।</li>
+                    <li>कोशिका भित्ति पर जटिल और सुन्दर नक्काशीदार पैटर्न होते हैं।</li>
+                    <li>यह नष्ट नहीं होती और समुद्री तल पर जमा होकर डायटोमाइट मिट्टी बनाती है।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>'शैवाल प्रस्फुटन' (Algal Bloom) और 'लाल ज्वार' (red-tides) क्या दर्शाते हैं?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">शैवाल प्रस्फुटन (Algal Bloom):</span> जलाशयों में शैवालों की अत्यधिक वृद्धि को शैवाल प्रस्फुटन कहते हैं। यह जल में पोषक तत्वों (विशेषकर नाइट्रोजन और फॉस्फोरस) की अधिकता के कारण होता है। इससे जल का रंग हरा या नीला-हरा हो जाता है और जल में ऑक्सीजन की कमी हो जाती है, जिससे जलीय जीव मरने लगते हैं।<br><br>
+                
+                <span class="highlight">लाल ज्वार (Red-tides):</span> समुद्री जल में डायनोफ्लैजिलेट्स की अत्यधिक वृद्धि के कारण समुद्र का रंग लाल हो जाता है, इसे लाल ज्वार कहते हैं। ये जीव हानिकारक विष उत्पन्न करते हैं, जिससे समुद्री जीव (मछलियाँ, शंख आदि) मर जाते हैं और समुद्री पारिस्थितिकी तंत्र को नुकसान पहुँचता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>वायरस से वाइरॉइड कैसे भिन्न होते हैं?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>वायरस</th>
+                            <th>वाइरॉइड</th>
+                        </tr>
+                        <tr>
+                            <td>आकार</td>
+                            <td>अपेक्षाकृत बड़े</td>
+                            <td>वायरस से छोटे</td>
+                        </tr>
+                        <tr>
+                            <td>आनुवंशिक पदार्थ</td>
+                            <td>DNA या RNA</td>
+                            <td>केवल RNA</td>
+                        </tr>
+                        <tr>
+                            <td>प्रोटीन आवरण</td>
+                            <td>उपस्थित (कैप्सिड)</td>
+                            <td>अनुपस्थित</td>
+                        </tr>
+                        <tr>
+                            <td>आणविक भार</td>
+                            <td>अधिक</td>
+                            <td>कम</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण</td>
+                            <td>TMV, HIV, इन्फ्लुएंजा</td>
+                            <td>पोटैटो स्पिंडल ट्यूबर</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>प्रोटोजोआ के चार प्रमुख समूहों का संक्षिप्त वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">
+                प्रोटोजोआ के चार प्रमुख समूह निम्नलिखित हैं:
+                <ul>
+                    <li><span class="highlight">अमीबीय प्रोटोजोआ:</span> ये स्वच्छ जल, समुद्री जल और नम मिट्टी में पाए जाते हैं। इनमें कूटपाद (pseudopodia) होते हैं, जिनकी सहायता से ये गति करते हैं और भोजन ग्रहण करते हैं। उदाहरण: अमीबा, एंटअमीबा।</li>
+                    <li><span class="highlight">कशाभी प्रोटोजोआ:</span> इनके शरीर पर कशाभ (flagella) पाए जाते हैं। कुछ परजीवी होते हैं और रोग उत्पन्न करते हैं। उदाहरण: ट्रिपैनोसोमा (नींद की बीमारी)।</li>
+                    <li><span class="highlight">सिलियेटेड प्रोटोजोआ:</span> इनके शरीर पर हजारों की संख्या में सिलिया (cilia) पाए जाते हैं। ये जलीय और अत्यंत सक्रिय होते हैं। उदाहरण: पैरामीशियम।</li>
+                    <li><span class="highlight">स्पोरोजोआ:</span> इनके जीवन चक्र में संक्रमण करने योग्य बीजाणु जैसी अवस्था पाई जाती है। सबसे प्रसिद्ध प्लाज्मोडियम (मलेरिया परजीवी) है, जिसने मानव जनसंख्या पर विनाशकारी प्रभाव डाला है।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>पादप स्वपोषी हैं। क्या आप ऐसे कुछ पादपों को बता सकते हैं, जो आंशिक रूप से परजीवी हैं?</span>
+            </div>
+            <div class="answer">
+                हाँ, कुछ पादप आंशिक रूप से परजीवी (Partial Parasites) होते हैं। ये पादप प्रकाश संश्लेषण द्वारा अपना कुछ भोजन स्वयं बना सकते हैं, लेकिन पानी और खनिजों के लिए अन्य पौधों पर निर्भर रहते हैं। इनके उदाहरण हैं:
+                <ul>
+                    <li><span class="highlight">अमरबेल (Cuscuta):</span> यह पीले रंग का परजीवी पौधा है जो अपने पोषक पौधे से जुड़कर पानी और खनिज प्राप्त करता है।</li>
+                    <li><span class="highlight">लोरेंथस (Loranthus):</span> यह एक आंशिक परजीवी पौधा है जो वृक्षों की शाखाओं पर उगता है और उनसे जल और खनिज प्राप्त करता है।</li>
+                    <li><span class="highlight">वेनस फ्लाईट्रैप (Venus Flytrap) और पिचर प्लांट (Pitcher Plant):</span> ये कीटभक्षी पौधे हैं जो नाइट्रोजन की पूर्ति के लिए कीटों का शिकार करते हैं, लेकिन प्रकाश संश्लेषण द्वारा कार्बोहाइड्रेट स्वयं बनाते हैं।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>'शैवालांश' और 'कवकांश' शब्दों से क्या पता चलता है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">शैवालांश (Phycobiont):</span> लाइकेन में शैवाल वाला भाग शैवालांश कहलाता है। यह स्वपोषी होता है और प्रकाश संश्लेषण द्वारा भोजन का निर्माण करता है।<br><br>
+                
+                <span class="highlight">कवकांश (Mycobiont):</span> लाइकेन में कवक वाला भाग कवकांश कहलाता है। यह परजीवी होता है और शैवालांश द्वारा निर्मित भोजन का उपयोग करता है तथा शैवालांश को आश्रय प्रदान करता है और जल व खनिजों का अवशोषण करता है।<br><br>
+                
+                लाइकेन में शैवालांश और कवकांश का सहजीवन (Symbiosis) इतना घनिष्ठ होता है कि प्रकृति में लाइकेन को देखकर यह अनुमान लगाना असंभव है कि इसमें दो भिन्न जीव हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>कवक (फंजाई) जगत के वर्गों का तुलनात्मक विवरण निम्नलिखित बिंदुओं पर करें:<br>
+                (क) पोषण की विधि<br>
+                (ख) जनन की विधि</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>कवक वर्ग</th>
+                            <th>पोषण की विधि</th>
+                            <th>जनन की विधि</th>
+                        </tr>
+                        <tr>
+                            <td>फाइकोमाइसिटीज (Phycomycetes)</td>
+                            <td>मृतजीवी (Saprophytic) या परजीवी (Parasitic)</td>
+                            <td>अलैंगिक (कोनिडिया द्वारा) और लैंगिक (युग्मक संलयन द्वारा)</td>
+                        </tr>
+                        <tr>
+                            <td>एस्कोमाइसिटीज (Ascomycetes)</td>
+                            <td>मृतजीवी, परजीवी या सहजीवी</td>
+                            <td>अलैंगिक (कोनिडिया द्वारा) और लैंगिक (एस्कस में एस्कोस्पोर द्वारा)</td>
+                        </tr>
+                        <tr>
+                            <td>बेसिडियोमाइसिटीज (Basidiomycetes)</td>
+                            <td>मृतजीवी या परजीवी</td>
+                            <td>लैंगिक (बेसिडियम पर बेसिडियोस्पोर द्वारा), अलैंगिक जनन असामान्य</td>
+                        </tr>
+                        <tr>
+                            <td>ड्यूटेरोमाइसिटीज (Deuteromycetes)</td>
+                            <td>मृतजीवी, परजीवी या अपूर्ण कवक</td>
+                            <td>केवल अलैंगिक (कोनिडिया द्वारा), लैंगिक जनन ज्ञात नहीं</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>युग्लीना के विशिष्ट अभिलक्षण कौन-कौन से हैं?</span>
+            </div>
+            <div class="answer">
+                युग्लीना के विशिष्ट अभिलक्षण निम्नलिखित हैं:
+                <ul>
+                    <li>यह एक एककोशिकीय, मीठे पानी में पाया जाने वाला जीव है।</li>
+                    <li>इसमें कोशिका भित्ति के स्थान पर प्रोटीनयुक्त पतली, लचीली पेलिकल होती है।</li>
+                    <li>इसमें दो कशाभ (flagella) होते हैं - एक छोटा और एक लंबा।</li>
+                    <li>सूर्य के प्रकाश की उपस्थिति में यह प्रकाश संश्लेषण द्वारा स्वपोषी होता है, लेकिन सूर्य के प्रकाश के अभाव में यह छोटे जीवों का शिकार कर परपोषी की तरह व्यवहार करता है।</li>
+                    <li>इसमें पाए जाने वाले वर्णक उच्च पादपों में पाए जाने वाले वर्णकों के समान होते हैं।</li>
+                    <li>इसमें एक लाल आँख का धब्बा (stigma) होता है जो प्रकाश की दिशा का पता लगाने में सहायक होता है।</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>संरचना और आनुवंशिक पदार्थ की प्रकृति के संदर्भ में वायरस का संक्षिप्त विवरण दें। वायरस से होने वाले चार रोगों के नाम भी लिखें।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">वायरस का संक्षिप्त विवरण:</span>
+                <ul>
+                    <li>वायरस अकोशिकीय सूक्ष्मजीव हैं जो जीवित कोशिका के बाहर निष्क्रिय रहते हैं।</li>
+                    <li>इनकी संरचना में आनुवंशिक पदार्थ (DNA या RNA) और प्रोटीन आवरण (कैप्सिड) होता है।</li>
+                    <li>आनुवंशिक पदार्थ की प्रकृति के आधार पर वायरस दो प्रकार के होते हैं - DNA वायरस और RNA वायरस।</li>
+                    <li>पादप वायरस में आमतौर पर एकल रज्जुक RNA होता है, जबकि जंतु वायरस में एकल या द्वि-रज्जुक RNA या DNA हो सकता है।</li>
+                    <li>प्रोटीन आवरण (कैप्सिड) छोटी-छोटी इकाइयों (कैप्सोमियर्स) से मिलकर बना होता है, जो सर्पिल या बहुफलकीय ज्यामितीय आकार में व्यवस्थित होते हैं।</li>
+                </ul>
+                
+                <span class="highlight">वायरस से होने वाले चार रोग:</span>
+                <ul>
+                    <li>खसरा (Measles)</li>
+                    <li>चेचक (Smallpox)</li>
+                    <li>इन्फ्लुएंजा (Influenza)</li>
+                    <li>एड्स (AIDS)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>अपनी कक्षा में इस शीर्षक 'क्या वायरस सजीव है या निर्जीव?' पर चर्चा करें।</span>
+            </div>
+            <div class="answer">
+                वायरस सजीव है या निर्जीव, यह विषय वैज्ञानिकों के बीच चर्चा का विषय रहा है। वायरस में सजीव और निर्जीव दोनों के लक्षण पाए जाते हैं:<br><br>
+                
+                <span class="highlight">सजीव के लक्षण:</span>
+                <ul>
+                    <li>वायरस में आनुवंशिक पदार्थ (DNA या RNA) होता है।</li>
+                    <li>ये जनन कर सकते हैं (होस्ट कोशिका के अंदर)।</li>
+                    <li>इनमें उत्परिवर्तन (mutation) हो सकते हैं।</li>
+                    <li>ये अनुकूलन कर सकते हैं और विकसित हो सकते हैं।</li>
+                </ul>
+                
+                <span class="highlight">निर्जीव के लक्षण:</span>
+                <ul>
+                    <li>कोशिका संरचना का अभाव होता है।</li>
+                    <li>स्वयं का उपापचय (metabolism) नहीं होता।</li>
+                    <li>कोशिका के बाहर निष्क्रिय रहते हैं और क्रिस्टल के रूप में संग्रहीत किए जा सकते हैं।</li>
+                    <li>स्वयं जनन नहीं कर सकते, होस्ट कोशिका की मशीनरी का उपयोग करते हैं।</li>
+                </ul>
+                
+                इस आधार पर कहा जा सकता है कि वायरस सजीव और निर्जीव के बीच की कड़ी हैं। जीवित कोशिका के अंदर ये सजीव की तरह व्यवहार करते हैं, जबकि बाहर निर्जीव की तरह।
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 2 "जीव जगत का वर्गीकरण" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

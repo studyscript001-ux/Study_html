@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 11: उच्च पादपों में प्रकाश संश्लेषण</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .graph-container {
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .graph {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            background: white;
+        }
+        
+        .graph-caption {
+            font-style: italic;
+            margin-top: 10px;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>उच्च पादपों में प्रकाश संश्लेषण</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान अध्याय 11</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>एक पौधे को बाहर से देखकर क्या आप बता सकते हैं कि वह C₃ है अथवा C₄? कैसे और क्यों?</span>
+            </div>
+            <div class="answer">
+                हाँ, बाहरी लक्षणों के आधार पर हम C₃ और C₄ पौधों में अंतर कर सकते हैं:<br><br>
+                
+                <span class="highlight">C₄ पौधों के बाहरी लक्षण:</span>
+                <ul>
+                    <li>C₄ पौधे प्रायः उष्णकटिबंधीय और उपोष्णकटिबंधीय क्षेत्रों में पाए जाते हैं</li>
+                    <li>इनमें अधिकांशतः घासें और अनाज वाले पौधे शामिल हैं जैसे मक्का, ज्वार, बाजरा, गन्ना</li>
+                    <li>इनकी पत्तियों का रंग गहरा हरा होता है</li>
+                    <li>ये उच्च तापमान और उच्च प्रकाश तीव्रता में भी अच्छी वृद्धि करते हैं</li>
+                    <li>इनकी जल उपयोग दक्षता उच्च होती है</li>
+                </ul>
+                
+                <span class="highlight">C₃ पौधों के बाहरी लक्षण:</span>
+                <ul>
+                    <li>C₃ पौधे शीतोष्ण और समशीतोष्ण क्षेत्रों में पाए जाते हैं</li>
+                    <li>अधिकांश पेड़-पौधे, सब्जियाँ और अनाज जैसे गेहूँ, चावल, सोयाबीन C₃ पौधे हैं</li>
+                    <li>ये कम तापमान और कम प्रकाश तीव्रता में भी वृद्धि कर सकते हैं</li>
+                </ul>
+                
+                C₄ पौधों की पहचान उनके विकास के स्थान, पत्तियों के गहरे हरे रंग और उच्च तापमान सहनशीलता से की जा सकती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>एक पौधे की आंतरिक संरचना को देखकर क्या आप बता सकते हैं कि वह C₃ है अथवा C₄? वर्णन करें?</span>
+            </div>
+            <div class="answer">
+                हाँ, पौधे की आंतरिक संरचना देखकर C₃ और C₄ पौधों में स्पष्ट अंतर किया जा सकता है:<br><br>
+                
+                <span class="highlight">C₄ पौधों की आंतरिक संरचना (क्रैन्ज़ एनाटॉमी):</span>
+                <ul>
+                    <li>पत्ती के क्रॉस सेक्शन में दो प्रकार की कोशिकाएँ दिखाई देती हैं - मीसोफिल कोशिकाएँ और बंडल शीथ कोशिकाएँ</li>
+                    <li>मीसोफिल कोशिकाएँ बंडल शीथ कोशिकाओं के चारों ओर घेरा बनाती हैं</li>
+                    <li>बंडल शीथ कोशिकाएँ बड़ी, रंगहीन और क्लोरोप्लास्ट से भरपूर होती हैं</li>
+                    <li>बंडल शीथ कोशिकाओं की कोशिका भित्ति मोटी होती है और इंटरसेलुलर स्थान कम होते हैं</li>
+                    <li>मीसोफिल और बंडल शीथ कोशिकाओं के बीच कई प्लास्मोडेस्माटा होते हैं</li>
+                </ul>
+                
+                <span class="highlight">C₃ पौधों की आंतरिक संरचना:</span>
+                <ul>
+                    <li>पत्ती के क्रॉस सेक्शन में केवल एक प्रकार की मीसोफिल कोशिकाएँ होती हैं</li>
+                    <li>बंडल शीथ कोशिकाएँ कम विकसित होती हैं और क्लोरोप्लास्ट कम होते हैं</li>
+                    <li>मीसोफिल कोशिकाएँ ढीले ढंग से व्यवस्थित होती हैं और इंटरसेलुलर स्थान अधिक होते हैं</li>
+                </ul>
+                
+                C₄ पौधों में क्रैन्ज़ एनाटॉमी CO₂ की सांद्रता बढ़ाने और प्रकाश श्वसन को कम करने में मदद करती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>हालांकि C₄ पौधे में बहुत कम कोशिकाएं जैव-संश्लेषण केल्विन पथ को वहन करते हैं, फिर भी वे उच्च उत्पादकता वाले होते हैं। क्या इस पर चर्चा कर सकते हो कि ऐसा क्यों हैं?</span>
+            </div>
+            <div class="answer">
+                C₄ पौधों में उच्च उत्पादकता के निम्नलिखित कारण हैं:<br><br>
+                
+                <span class="highlight">1. CO₂ सांद्रण तंत्र:</span>
+                <ul>
+                    <li>C₄ पौधों में CO₂ सांद्रण तंत्र होता है जो रुबिस्को एंजाइम के पास CO₂ की सांद्रता बढ़ा देता है</li>
+                    <li>यह तंत्र प्रकाश श्वसन को कम करता है, जिससे ऊर्जा की बचत होती है</li>
+                    <li>मीसोफिल कोशिकाओं में PEP कार्बोक्सिलेज एंजाइम CO₂ को स्थिर करता है जिसकी CO₂ के प्रति आत्मीयता अधिक होती है</li>
+                </ul>
+                
+                <span class="highlight">2. बंडल शीथ कोशिकाओं में केल्विन चक्र:</span>
+                <ul>
+                    <li>बंडल शीथ कोशिकाओं में CO₂ की उच्च सांद्रता रुबिस्को की कार्बोक्सिलेज गतिविधि को बढ़ाती है</li>
+                    <li>यह कोशिकाएँ विशेष रूप से केल्विन चक्र के लिए अनुकूलित होती हैं</li>
+                </ul>
+                
+                <span class="highlight">3. जल उपयोग दक्षता:</span>
+                <ul>
+                    <li>C₄ पौधों में रंध्र कम खुलते हैं, जिससे जल की हानि कम होती है</li>
+                    <li>ये शुष्क परिस्थितियों में भी प्रकाश संश्लेषण जारी रख सकते हैं</li>
+                </ul>
+                
+                <span class="highlight">4. उच्च तापमान सहनशीलता:</span>
+                <ul>
+                    <li>C₄ पौधे उच्च तापमान पर भी कुशलता से कार्य कर सकते हैं</li>
+                    <li>उच्च तापमान पर प्रकाश श्वसन बढ़ता है, लेकिन C₄ पौधों में यह समस्या नहीं होती</li>
+                </ul>
+                
+                इन सभी कारणों से C₄ पौधों की उत्पादकता C₃ पौधों से अधिक होती है, भले ही केल्विन चक्र केवल बंडल शीथ कोशिकाओं में ही होता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>रुबिस्को (RuBisCO) एक एंजाइम है जो कार्बोक्सिलेस और ऑक्सीजिनेस के रूप में काम करता है। आप ऐसा क्यों मानते हैं कि C₄ पौधों में, रुबिस्को अधिक मात्रा में कार्बोक्सिलेशन करता है?</span>
+            </div>
+            <div class="answer">
+                C₄ पौधों में रुबिस्को एंजाइम अधिक मात्रा में कार्बोक्सिलेशन करता है, इसके निम्नलिखित कारण हैं:<br><br>
+                
+                <span class="highlight">1. CO₂ सांद्रण तंत्र:</span>
+                <ul>
+                    <li>C₄ पौधों में CO₂ सांद्रण तंत्र बंडल शीथ कोशिकाओं में CO₂ की सांद्रता बढ़ा देता है</li>
+                    <li>उच्च CO₂ सांद्रता रुबिस्को की कार्बोक्सिलेज गतिविधि को बढ़ावा देती है</li>
+                    <li>CO₂/O₂ अनुपात अधिक होने से ऑक्सीजिनेस गतिविधि दब जाती है</li>
+                </ul>
+                
+                <span class="highlight">2. एंजाइम का स्थानीयकरण:</span>
+                <ul>
+                    <li>C₄ पौधों में रुबिस्को केवल बंडल शीथ कोशिकाओं में पाया जाता है</li>
+                    <li>ये कोशिकाएँ O₂ से कम वातावरण प्रदान करती हैं</li>
+                    <li>बंडल शीथ कोशिकाओं की मोटी भित्ति O₂ के प्रवेश को सीमित करती है</li>
+                </ul>
+                
+                <span class="highlight">3. प्रकाश श्वसन का अभाव:</span>
+                <ul>
+                    <li>C₄ पौधों में प्रकाश श्वसन नगण्य होता है</li>
+                    <li>प्रकाश श्वसन के दौरान रुबिस्को ऑक्सीजिनेस के रूप में कार्य करता है</li>
+                    <li>प्रकाश श्वसन के अभाव में रुबिस्को का समय और ऊर्जा कार्बोक्सिलेशन में ही लगता है</li>
+                </ul>
+                
+                <span class="highlight">4. तापमान प्रभाव:</span>
+                <ul>
+                    <li>उच्च तापमान पर रुबिस्को की ऑक्सीजिनेस गतिविधि बढ़ती है</li>
+                    <li>C₄ पौधों का CO₂ सांद्रण तंत्र इस प्रभाव को संतुलित कर देता है</li>
+                </ul>
+                
+                इन कारणों से C₄ पौधों में रुबिस्को एंजाइम C₃ पौधों की तुलना में अधिक कुशलता से कार्बोक्सिलेशन करता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>मान लीजिए, यहाँ पर क्लोरोफिल बी की उच्च सांद्रता युक्त, मगर क्लोरोफिल ए की कमी वाले पेड़ थे। क्या ये प्रकाश संश्लेषण करते होंगे? तब पौधों में क्लोरोफिल बी क्यों होता हैं? और फिर दूसरे गौण वर्णकों की क्या जरूरत है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">क्या केवल क्लोरोफिल बी वाले पौधे प्रकाश संश्लेषण कर सकते हैं?</span><br>
+                नहीं, केवल क्लोरोफिल बी वाले पौधे प्रकाश संश्लेषण नहीं कर सकते। क्लोरोफिल ए प्रकाश संश्लेषण के लिए आवश्यक है क्योंकि:
+                <ul>
+                    <li>क्लोरोफिल ए प्रकाश संश्लेषण के प्रतिक्रिया केंद्रों (P680 और P700) में पाया जाता है</li>
+                    <li>यह प्रकाश ऊर्जा को रासायनिक ऊर्जा में परिवर्तित करने में सीधे भाग लेता है</li>
+                    <li>क्लोरोफिल बी केवल सहायक वर्णक के रूप में कार्य करता है</li>
+                </ul>
+                
+                <span class="highlight">पौधों में क्लोरोफिल बी का महत्व:</span>
+                <ul>
+                    <li>क्लोरोफिल बी प्रकाश संश्लेषण की दक्षता बढ़ाता है</li>
+                    <li>यह प्रकाश ऊर्जा को अवशोषित कर क्लोरोफिल ए तक पहुँचाता है</li>
+                    <li>यह प्रकाश संश्लेषण के लिए उपयोगी तरंगदैर्ध्यों के स्पेक्ट्रम को विस्तृत करता है</li>
+                    <li>यह प्रकाश संग्रहण परिसरों (LHC) का महत्वपूर्ण घटक है</li>
+                </ul>
+                
+                <span class="highlight">अन्य सहायक वर्णकों का महत्व:</span>
+                <ul>
+                    <li><span class="highlight">कैरोटीनॉयड:</span> नीले और हरे प्रकाश को अवशोषित करते हैं, प्रकाश संश्लेषण के लिए उपयोगी स्पेक्ट्रम को और विस्तृत करते हैं</li>
+                    <li><span class="highlight">जैन्थोफिल:</span> अतिरिक्त प्रकाश ऊर्जा को ताप के रूप में व्यय करके प्रकाश संश्लेषण तंत्र की रक्षा करते हैं</li>
+                    <li><span class="highlight">फाइकोबिलिन:</span> लाल और नीले शैवालों में पाए जाने वाले वर्णक जो हरे प्रकाश को अवशोषित करते हैं</li>
+                </ul>
+                
+                विभिन्न वर्णकों का संयोजन प्रकाश संश्लेषण की दक्षता को अधिकतम करता है और पौधों को विभिन्न प्रकाश परिस्थितियों में जीवित रहने में मदद करता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>यदि पत्ती को अंधेरे में रख दिया गया हो तो उसका रंग क्रमशः पीला एवं हरा पीला हो जाता है? कौन से वर्णक आपकी सोच में अधिक स्थायी हैं?</span>
+            </div>
+            <div class="answer">
+                जब पत्ती को अंधेरे में रखा जाता है, तो उसका रंग पीला हो जाता है। इसके निम्नलिखित कारण हैं:<br><br>
+                
+                <span class="highlight">वर्णकों का विघटन:</span>
+                <ul>
+                    <li>प्रकाश की अनुपस्थिति में क्लोरोफिल का निर्माण रुक जाता है</li>
+                    <li>मौजूदा क्लोरोफिल धीरे-धीरे विघटित हो जाता है</li>
+                    <li>क्लोरोफिल एक अस्थिर वर्णक है जो प्रकाश की अनुपस्थिति में टूट जाता है</li>
+                </ul>
+                
+                <span class="highlight">अधिक स्थायी वर्णक:</span>
+                <ul>
+                    <li><span class="highlight">कैरोटीनॉयड:</span> ये वर्णक क्लोरोफिल की तुलना में अधिक स्थायी होते हैं</li>
+                    <li><span class="highlight">जैन्थोफिल:</span> ये भी काफी स्थायी वर्णक हैं</li>
+                    <li>कैरोटीनॉयड पीले, नारंगी और लाल रंग के होते हैं</li>
+                    <li>क्लोरोफिल के विघटन के बाद यही वर्णक दिखाई देते हैं, जिससे पत्ती पीली दिखती है</li>
+                </ul>
+                
+                <span class="highlight">वर्णकों की स्थायित्व क्रम:</span>
+                <ol>
+                    <li>कैरोटीनॉयड (सबसे स्थायी)</li>
+                    <li>जैन्थोफिल</li>
+                    <li>क्लोरोफिल बी</li>
+                    <li>क्लोरोफिल ए (सबसे कम स्थायी)</li>
+                </ol>
+                
+                पतझड़ के मौसम में पत्तियों के पीले होने का यही कारण है - क्लोरोफिल का विघटन और कैरोटीनॉयड का दिखाई देना।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>एक ही पौधे की पत्ती का छाया वाला (उल्टा) भाग देखें और उसके चमक वाले (सीधे) भाग से तुलना करें अथवा गमले में लगे धूप में रखे हुए तथा छाया में रखे हुए पौधों के बीच तुलना करें। कौन सा गहरे हरे रंग का होता है, और क्यों?</span>
+            </div>
+            <div class="answer">
+                छाया में रखे गए पौधे या पत्ती के छाया वाले भाग गहरे हरे रंग के होते हैं। इसके निम्नलिखित कारण हैं:<br><br>
+                
+                <span class="highlight">क्लोरोफिल की मात्रा में अंतर:</span>
+                <ul>
+                    <li>छाया में उगने वाले पौधों में क्लोरोफिल की मात्रा अधिक होती है</li>
+                    <li>यह कम प्रकाश की स्थिति में प्रकाश संश्लेषण की दक्षता बनाए रखने के लिए एक अनुकूलन है</li>
+                    <li>अधिक क्लोरोफिल उपलब्ध प्रकाश को अधिक कुशलता से अवशोषित करने में मदद करता है</li>
+                </ul>
+                
+                <span class="highlight">प्रकाश संग्रहण परिसरों (LHC) का आकार:</span>
+                <ul>
+                    <li>छाया में उगने वाले पौधों में प्रकाश संग्रहण परिसरों का आकार बड़ा होता है</li>
+                    <li>ये बड़े परिसर अधिक क्लोरोफिल अणु धारण कर सकते हैं</li>
+                    <li>इससे कम प्रकाश तीव्रता में भी प्रकाश संश्लेषण जारी रखना संभव हो पाता है</li>
+                </ul>
+                
+                <span class="highlight">पत्ती की संरचना में अंतर:</span>
+                <ul>
+                    <li>छाया में उगने वाले पौधों की पत्तियाँ पतली होती हैं</li>
+                    <li>इनमें मीसोफिल कोशिकाओं की परतें कम होती हैं</li>
+                    <li>पतली पत्तियाँ प्रकाश के अधिकतम अवशोषण में मदद करती हैं</li>
+                </ul>
+                
+                <span class="highlight">वर्णक अनुपात में परिवर्तन:</span>
+                <ul>
+                    <li>छाया में उगने वाले पौधों में क्लोरोफिल a/क्लोरोफिल b अनुपात कम होता है</li>
+                    <li>क्लोरोफिल b की सापेक्षिक मात्रा अधिक होती है जो प्रकाश संग्रहण दक्षता बढ़ाती है</li>
+                </ul>
+                
+                ये सभी अनुकूलन छाया में उगने वाले पौधों को कम प्रकाश की स्थिति में भी जीवित रहने और प्रकाश संश्लेषण जारी रखने में मदद करते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>प्रकाश-संश्लेषण की दर पर प्रकाश का प्रभाव पड़ता है (चित्र 13.10)। ग्राफ के आधार पर निम्नलिखित प्रश्नों के उत्तर दें:<br>
+                (अ) वक्र के किस बिंदु अथवा बिंदुओं पर (क, ख, अथवा ग) प्रकाश एक नियामक कारक है?<br>
+                (ब) क बिंदु पर नियामक कारक कौन से हैं?<br>
+                (स) वक्र में ग और घ क्या निरूपित करता है?</span>
+            </div>
+            <div class="answer">
+                <div class="graph-container">
+                    <!-- This is a placeholder for the graph -->
+                    <div class="graph" style="height: 300px; background: linear-gradient(to top, #e8f5e9, #c8e6c9); display: flex; align-items: flex-end; justify-content: space-around; padding: 20px;">
+                        <div style="text-align: center;">
+                            <div style="background: #4caf50; width: 30px; height: 50px; margin: 0 auto;"></div>
+                            <div style="margin-top: 5px;">क</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="background: #4caf50; width: 30px; height: 120px; margin: 0 auto;"></div>
+                            <div style="margin-top: 5px;">ख</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="background: #4caf50; width: 30px; height: 180px; margin: 0 auto;"></div>
+                            <div style="margin-top: 5px;">ग</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="background: #4caf50; width: 30px; height: 180px; margin: 0 auto;"></div>
+                            <div style="margin-top: 5px;">घ</div>
+                        </div>
+                    </div>
+                    <div class="graph-caption">प्रकाश संश्लेषण दर बनाम प्रकाश तीव्रता ग्राफ</div>
+                </div>
+                
+                <span class="highlight">(अ) वक्र के किस बिंदु अथवा बिंदुओं पर प्रकाश एक नियामक कारक है?</span><br>
+                प्रकाश वक्र के <span class="highlight">क और ख बिंदुओं</span> पर एक नियामक कारक है। इन बिंदुओं पर प्रकाश संश्लेषण की दर प्रकाश तीव्रता पर निर्भर करती है। प्रकाश तीव्रता बढ़ने पर प्रकाश संश्लेषण की दर भी बढ़ती है।<br><br>
+                
+                <span class="highlight">(ब) क बिंदु पर नियामक कारक कौन से हैं?</span><br>
+                क बिंदु पर प्रकाश संश्लेषण की दर को नियंत्रित करने वाले कारक हैं:
+                <ul>
+                    <li><span class="highlight">प्रकाश तीव्रता:</span> यह मुख्य नियामक कारक है</li>
+                    <li><span class="highlight">प्रकाश की गुणवत्ता:</span> विभिन्न तरंगदैर्ध्यों का प्रभाव</li>
+                    <li><span class="highlight">प्रकाश की अवधि:</span> प्रकाश के संपर्क में रहने का समय</li>
+                </ul>
+                
+                <span class="highlight">(स) वक्र में ग और घ क्या निरूपित करता है?</span><br>
+                <ul>
+                    <li><span class="highlight">ग बिंदु:</span> यह संतृप्ति बिंदु (Saturation Point) को निरूपित करता है। इस बिंदु के बाद प्रकाश तीव्रता बढ़ाने पर भी प्रकाश संश्लेषण की दर नहीं बढ़ती।</li>
+                    <li><span class="highlight">घ बिंदु:</span> यह प्रकाश संश्लेषण की अधिकतम दर (Maximum Rate of Photosynthesis) को निरूपित करता है। इस बिंदु पर प्रकाश संश्लेषण अपनी अधिकतम क्षमता पर पहुँच जाता है।</li>
+                </ul>
+                
+                घ बिंदु के बाद प्रकाश संश्लेषण की दर स्थिर रहती है क्योंकि अब यह अन्य कारकों जैसे CO₂ सांद्रता, तापमान, या एंजाइम सांद्रता द्वारा सीमित हो जाती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>निम्नांकित में तुलना करें-<br>
+                (अ) C₃ एवं C₄ पथ<br>
+                (ब) चक्रीय एवं अचक्रीय फोटोफॉस्फोरिलेसन<br>
+                (स) C₃ एवं C₄ पादपों की पत्ती की शारीरिकी</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(अ) C₃ एवं C₄ पथ की तुलना</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>C₃ पथ</th>
+                            <th>C₄ पथ</th>
+                        </tr>
+                        <tr>
+                            <td>प्राथमिक CO₂ ग्राही</td>
+                            <td>RuBP (राइबुलोज-1,5-बिसफॉस्फेट)</td>
+                            <td>PEP (फॉस्फोइनोल पाइरुवेट)</td>
+                        </tr>
+                        <tr>
+                            <td>प्राथमिक CO₂ स्थिरीकरण उत्पाद</td>
+                            <td>3-फॉस्फोग्लिसरेट (3-PGA)</td>
+                            <td>ऑक्सेलोएसिटेट (OAA)</td>
+                        </tr>
+                        <tr>
+                            <td>मुख्य एंजाइम</td>
+                            <td>RuBisCO</td>
+                            <td>PEP कार्बोक्सिलेज</td>
+                        </tr>
+                        <tr>
+                            <td>प्रकाश श्वसन</td>
+                            <td>उच्च</td>
+                            <td>नगण्य</td>
+                        </tr>
+                        <tr>
+                            <td>इष्टतम तापमान</td>
+                            <td>20-25°C</td>
+                            <td>30-40°C</td>
+                        </tr>
+                        <tr>
+                            <td>जल उपयोग दक्षता</td>
+                            <td>कम</td>
+                            <td>उच्च</td>
+                        </tr>
+                        <tr>
+                            <td>उदाहरण</td>
+                            <td>गेहूँ, चावल, सोयाबीन</td>
+                            <td>मक्का, गन्ना, बाजरा</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">(ब) चक्रीय एवं अचक्रीय फोटोफॉस्फोरिलेसन की तुलना</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>चक्रीय फोटोफॉस्फोरिलेसन</th>
+                            <th>अचक्रीय फोटोफॉस्फोरिलेसन</th>
+                        </tr>
+                        <tr>
+                            <td>प्रकाश तंत्र</td>
+                            <td>केवल PS I</td>
+                            <td>PS I और PS II दोनों</td>
+                        </tr>
+                        <tr>
+                            <td>इलेक्ट्रॉन स्रोत</td>
+                            <td>PS I से इलेक्ट्रॉन</td>
+                            <td>जल का विघटन</td>
+                        </tr>
+                        <tr>
+                            <td>इलेक्ट्रॉन गंतव्य</td>
+                            <td>वापस PS I</td>
+                            <td>NADP+</td>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन उत्पादन</td>
+                            <td>नहीं</td>
+                            <td>हाँ</td>
+                        </tr>
+                        <tr>
+                            <td>NADPH उत्पादन</td>
+                            <td>नहीं</td>
+                            <td>हाँ</td>
+                        </tr>
+                        <tr>
+                            <td>ATP उत्पादन</td>
+                            <td>हाँ</td>
+                            <td>हाँ</td>
+                        </tr>
+                        <tr>
+                            <td>मुख्य उत्पाद</td>
+                            <td>केवल ATP</td>
+                            <td>ATP और NADPH</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">(स) C₃ एवं C₄ पादपों की पत्ती की शारीरिकी की तुलना</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>C₃ पादप</th>
+                            <th>C₄ पादप</th>
+                        </tr>
+                        <tr>
+                            <td>शारीरिकी प्रकार</td>
+                            <td>सामान्य</td>
+                            <td>क्रैन्ज़ एनाटॉमी</td>
+                        </tr>
+                        <tr>
+                            <td>मीसोफिल कोशिकाएँ</td>
+                            <td>एक प्रकार की</td>
+                            <td>दो प्रकार की</td>
+                        </tr>
+                        <tr>
+                            <td>बंडल शीथ कोशिकाएँ</td>
+                            <td>छोटी, कम विकसित</td>
+                            <td>बड़ी, अच्छी विकसित</td>
+                        </tr>
+                        <tr>
+                            <td>क्लोरोप्लास्ट</td>
+                            <td>केवल मीसोफिल में</td>
+                            <td>मीसोफिल और बंडल शीथ दोनों में</td>
+                        </tr>
+                        <tr>
+                            <td>बंडल शीथ की भित्ति</td>
+                            <td>पतली</td>
+                            <td>मोटी</td>
+                        </tr>
+                        <tr>
+                            <td>इंटरसेलुलर स्थान</td>
+                            <td>अधिक</td>
+                            <td>कम</td>
+                        </tr>
+                        <tr>
+                            <td>प्लास्मोडेस्माटा</td>
+                            <td>सामान्य</td>
+                            <td>अधिक संख्या में</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 11 "उच्च पादपों में प्रकाश संश्लेषण" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

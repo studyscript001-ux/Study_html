@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 12: पादप में श्वसन</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .diagram-description {
+            background: #f0f8ff;
+            border: 1px solid #b3d9ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>पादप में श्वसन</h1>
+            <h2>कक्षा 11 - जीवविज्ञान अध्याय 12</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>इनमें अंतर करिए?<br>
+                (अ) साँस (श्वसन) और दहन<br>
+                (ब) ग्लाइकोलिसिस तथा क्रेब्स चक्र<br>
+                (स) ऑक्सी श्वसन तथा किण्वन</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>साँस (श्वसन)</th>
+                            <th>दहन</th>
+                        </tr>
+                        <tr>
+                            <td>प्रकृति</td>
+                            <td>जैव रासायनिक प्रक्रिया</td>
+                            <td>भौतिक-रासायनिक प्रक्रिया</td>
+                        </tr>
+                        <tr>
+                            <td>तापमान</td>
+                            <td>नियंत्रित कोशिकीय तापमान</td>
+                            <td>उच्च तापमान</td>
+                        </tr>
+                        <tr>
+                            <td>ऊर्जा मुक्ति</td>
+                            <td>चरणबद्ध, ATP के रूप में</td>
+                            <td>एक साथ, ऊष्मा के रूप में</td>
+                        </tr>
+                        <tr>
+                            <td>एंजाइम</td>
+                            <td>एंजाइम द्वारा नियंत्रित</td>
+                            <td>बिना एंजाइम के</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>ग्लाइकोलिसिस</th>
+                            <th>क्रेब्स चक्र</th>
+                        </tr>
+                        <tr>
+                            <td>स्थान</td>
+                            <td>कोशिकाद्रव्य</td>
+                            <td>माइटोकॉन्ड्रिया का मैट्रिक्स</td>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन आवश्यकता</td>
+                            <td>अनावश्यक</td>
+                            <td>आवश्यक</td>
+                        </tr>
+                        <tr>
+                            <td>उत्पाद</td>
+                            <td>पाइरूवेट, NADH, ATP</td>
+                            <td>CO₂, NADH, FADH₂, ATP</td>
+                        </tr>
+                        <tr>
+                            <td>ATP उत्पादन</td>
+                            <td>कम (शुद्ध 2 ATP)</td>
+                            <td>अधिक (2 ATP प्रत्यक्ष)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>ऑक्सी श्वसन</th>
+                            <th>किण्वन</th>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन</td>
+                            <td>आवश्यक</td>
+                            <td>अनावश्यक</td>
+                        </tr>
+                        <tr>
+                            <td>ATP उत्पादन</td>
+                            <td>अधिक (36-38 ATP)</td>
+                            <td>कम (2 ATP)</td>
+                        </tr>
+                        <tr>
+                            <td>अंतिम उत्पाद</td>
+                            <td>CO₂ और H₂O</td>
+                            <td>इथेनॉल या लैक्टिक अम्ल</td>
+                        </tr>
+                        <tr>
+                            <td>ऊर्जा दक्षता</td>
+                            <td>उच्च</td>
+                            <td>निम्न</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>श्वसनीय क्रियाधार क्या है? सर्वाधिक साधारण क्रियाधार का नाम बताइए?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">श्वसनीय क्रियाधार</span> वह कार्बनिक पदार्थ है जिसका कोशिका में श्वसन के दौरान ऑक्सीकरण होता है और इससे ऊर्जा मुक्त होती है।<br><br>
+                
+                श्वसनीय क्रियाधार में कार्बन-कार्बन बंधन होते हैं जिनके टूटने पर ऊर्जा मुक्त होती है। ये क्रियाधार मुख्यतः कार्बोहाइड्रेट, वसा और प्रोटीन होते हैं।<br><br>
+                
+                <span class="highlight">सर्वाधिक साधारण क्रियाधार</span> <span class="highlight">ग्लूकोज</span> है, जो एक मोनोसैकेराइड है और कोशिकीय श्वसन में सबसे अधिक प्रयोग होने वाला क्रियाधार है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>ग्लाइकोलिसिस को रेखा द्वारा बनाइए?</span>
+            </div>
+            <div class="answer">
+                <div class="diagram-description">
+                    <span class="highlight">ग्लाइकोलिसिस प्रक्रिया का रेखाचित्र:</span><br><br>
+                    
+                    ग्लूकोज (6C) → ग्लूकोज-6-फॉस्फेट (6C) → फ्रक्टोज-6-फॉस्फेट (6C) → फ्रक्टोज-1,6-बिसफॉस्फेट (6C) →<br>
+                    ↓ (एल्डोलेज द्वारा विखंडन)<br>
+                    डाइहाइड्रॉक्सीएसीटोन फॉस्फेट (3C) ⇄ ग्लिसरैल्डिहाइड-3-फॉस्फेट (3C)<br>
+                    ↓ (2 अणु)<br>
+                    1,3-बिसफॉस्फोग्लिसरिक अम्ल (3C) → 3-फॉस्फोग्लिसरिक अम्ल (3C) → 2-फॉस्फोग्लिसरिक अम्ल (3C) →<br>
+                    फॉस्फोइनोल पाइरूवेट (3C) → पाइरूवेट (3C)<br><br>
+                    
+                    <span class="highlight">कुल उत्पाद (प्रति ग्लूकोज अणु):</span><br>
+                    - 2 पाइरूवेट अणु<br>
+                    - शुद्ध 2 ATP अणु<br>
+                    - 2 NADH + H⁺ अणु
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>ऑक्सी श्वसन के मुख्य चरण कौन-कौन से हैं? यह कहाँ संपन्न होती है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">ऑक्सी श्वसन के मुख्य चरण:</span>
+                <ol>
+                    <li><span class="highlight">ग्लाइकोलिसिस</span> - ग्लूकोज का पाइरूवेट में विखंडन</li>
+                    <li><span class="highlight">पाइरूवेट का ऑक्सीकरण</span> - पाइरूवेट का एसिटाइल CoA में रूपांतरण</li>
+                    <li><span class="highlight">क्रेब्स चक्र (सिट्रिक अम्ल चक्र)</span> - एसिटाइल CoA का पूर्ण ऑक्सीकरण</li>
+                    <li><span class="highlight">इलेक्ट्रॉन परिवहन तंत्र और ऑक्सीडेटिव फॉस्फोरिलीकरण</span> - ATP संश्लेषण</li>
+                </ol>
+                
+                <span class="highlight">संपन्न होने का स्थान:</span>
+                <ul>
+                    <li><span class="highlight">ग्लाइकोलिसिस:</span> कोशिकाद्रव्य में</li>
+                    <li><span class="highlight">पाइरूवेट का ऑक्सीकरण:</span> माइटोकॉन्ड्रिया के मैट्रिक्स में</li>
+                    <li><span class="highlight">क्रेब्स चक्र:</span> माइटोकॉन्ड्रिया के मैट्रिक्स में</li>
+                    <li><span class="highlight">इलेक्ट्रॉन परिवहन तंत्र:</span> माइटोकॉन्ड्रिया की आंतरिक झिल्ली पर</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>क्रेब्स चक्र का समग्र रेखा चित्र बनाइए?</span>
+            </div>
+            <div class="answer">
+                <div class="diagram-description">
+                    <span class="highlight">क्रेब्स चक्र (सिट्रिक अम्ल चक्र) का समग्र रेखाचित्र:</span><br><br>
+                    
+                    एसिटाइल CoA (2C) + ऑक्सेलोएसिटेट (4C) → सिट्रेट (6C) → सिस-एकोनिटेट (6C) → आइसोसिट्रेट (6C) →<br>
+                    ↓ (पहला CO₂ मुक्त)<br>
+                    α-कीटोग्लूटरेट (5C) →<br>
+                    ↓ (दूसरा CO₂ मुक्त)<br>
+                    सक्सिनिल CoA (4C) → सक्सिनेट (4C) → फ्यूमेरेट (4C) → मैलेट (4C) → ऑक्सेलोएसिटेट (4C)<br><br>
+                    
+                    <span class="highlight">प्रति एसिटाइल CoA अणु उत्पाद:</span><br>
+                    - 2 CO₂ अणु<br>
+                    - 3 NADH + H⁺ अणु<br>
+                    - 1 FADH₂ अणु<br>
+                    - 1 GTP/ATP अणु<br><br>
+                    
+                    <span class="highlight">प्रति ग्लूकोज अणु कुल उत्पाद (2 एसिटाइल CoA के लिए):</span><br>
+                    - 4 CO₂ अणु<br>
+                    - 6 NADH + H⁺ अणु<br>
+                    - 2 FADH₂ अणु<br>
+                    - 2 GTP/ATP अणु
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>इलेक्ट्रॉन परिवहन तंत्र का वर्णन कीजिए?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">इलेक्ट्रॉन परिवहन तंत्र (Electron Transport System - ETS)</span> माइटोकॉन्ड्रिया की आंतरिक झिल्ली पर स्थित प्रोटीनों का एक समूह है जो इलेक्ट्रॉनों को एक वाहक से दूसरे वाहक तक स्थानांतरित करता है और इस प्रक्रिया में ऊर्जा मुक्त करता है जिसका उपयोग ATP संश्लेषण के लिए किया जाता है।<br><br>
+                
+                <span class="highlight">मुख्य विशेषताएं:</span>
+                <ul>
+                    <li>यह माइटोकॉन्ड्रिया की आंतरिक झिल्ली पर स्थित होता है</li>
+                    <li>इसमें चार प्रमुख प्रोटीन संकुल (Complex I, II, III, IV) होते हैं</li>
+                    <li>इलेक्ट्रॉन NADH और FADH₂ से प्राप्त होते हैं</li>
+                    <li>इलेक्ट्रॉनों का प्रवाह उच्च ऊर्जा स्तर से निम्न ऊर्जा स्तर की ओर होता है</li>
+                    <li>अंतिम इलेक्ट्रॉन ग्राही आणविक ऑक्सीजन (O₂) होती है जो H₂O बनाती है</li>
+                </ul>
+                
+                <span class="highlight">इलेक्ट्रॉन प्रवाह पथ:</span><br>
+                NADH → Complex I → Ubiquinone → Complex III → Cytochrome c → Complex IV → O₂<br>
+                FADH₂ → Complex II → Ubiquinone → Complex III → Cytochrome c → Complex IV → O₂<br><br>
+                
+                <span class="highlight">ATP उत्पादन:</span> प्रत्येक NADH के ऑक्सीकरण से 3 ATP और प्रत्येक FADH₂ के ऑक्सीकरण से 2 ATP का निर्माण होता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>निम्न के मध्य अंतर कीजिए?<br>
+                (अ) ऑक्सी श्वसन तथा अनॉक्सी श्वसन<br>
+                (ब) ग्लाइकोलिसिस तथा किण्वन<br>
+                (स) ग्लाइकोलिसिस तथा सिट्रिक अम्ल चक्र</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>ऑक्सी श्वसन</th>
+                            <th>अनॉक्सी श्वसन</th>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन</td>
+                            <td>आवश्यक</td>
+                            <td>अनावश्यक</td>
+                        </tr>
+                        <tr>
+                            <td>ATP उत्पादन</td>
+                            <td>अधिक (36-38 ATP)</td>
+                            <td>कम (2 ATP)</td>
+                        </tr>
+                        <tr>
+                            <td>अंतिम उत्पाद</td>
+                            <td>CO₂ और H₂O</td>
+                            <td>इथेनॉल + CO₂ या लैक्टिक अम्ल</td>
+                        </tr>
+                        <tr>
+                            <td>ऊर्जा दक्षता</td>
+                            <td>उच्च (~40%)</td>
+                            <td>निम्न (~2%)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>ग्लाइकोलिसिस</th>
+                            <th>किण्वन</th>
+                        </tr>
+                        <tr>
+                            <td>परिभाषा</td>
+                            <td>ग्लूकोज का पाइरूवेट में विखंडन</td>
+                            <td>अनॉक्सी परिस्थितियों में पाइरूवेट का अपूर्ण ऑक्सीकरण</td>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन</td>
+                            <td>आवश्यक नहीं</td>
+                            <td>आवश्यक नहीं</td>
+                        </tr>
+                        <tr>
+                            <td>ATP उत्पादन</td>
+                            <td>शुद्ध 2 ATP</td>
+                            <td>शुद्ध 2 ATP</td>
+                        </tr>
+                        <tr>
+                            <td>NAD⁺ पुनर्जनन</td>
+                            <td>आवश्यक नहीं</td>
+                            <td>आवश्यक (किण्वन द्वारा)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th>ग्लाइकोलिसिस</th>
+                            <th>सिट्रिक अम्ल चक्र</th>
+                        </tr>
+                        <tr>
+                            <td>स्थान</td>
+                            <td>कोशिकाद्रव्य</td>
+                            <td>माइटोकॉन्ड्रिया का मैट्रिक्स</td>
+                        </tr>
+                        <tr>
+                            <td>ऑक्सीजन आवश्यकता</td>
+                            <td>नहीं</td>
+                            <td>हाँ</td>
+                        </tr>
+                        <tr>
+                            <td>उत्पाद (प्रति ग्लूकोज)</td>
+                            <td>2 पाइरूवेट, 2 NADH, शुद्ध 2 ATP</td>
+                            <td>6 NADH, 2 FADH₂, 4 CO₂, 2 ATP</td>
+                        </tr>
+                        <tr>
+                            <td>CO₂ मुक्ति</td>
+                            <td>नहीं</td>
+                            <td>हाँ</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>शुद्ध एटीपी के अणुओं की प्राप्ति की गणना के दौरान आप क्या कल्पनाएं करते हैं?</span>
+            </div>
+            <div class="answer">
+                शुद्ध ATP अणुओं की प्राप्ति की गणना करते समय निम्नलिखित कल्पनाएं की जाती हैं:
+                <ul>
+                    <li>ग्लाइकोलिसिस, क्रेब्स चक्र और इलेक्ट्रॉन परिवहन तंत्र पूर्ण रूप से कार्य कर रहे हैं</li>
+                    <li>सभी NADH और FADH₂ इलेक्ट्रॉन परिवहन तंत्र में प्रवेश करते हैं</li>
+                    <li>प्रति NADH के ऑक्सीकरण से 3 ATP और प्रति FADH₂ के ऑक्सीकरण से 2 ATP बनते हैं</li>
+                    <li>ग्लूकोज का पूर्ण ऑक्सीकरण होता है</li>
+                    <li>ऊर्जा का कोई अन्य उपयोग नहीं हो रहा है</li>
+                    <li>माइटोकॉन्ड्रिया की झिल्ली पूरी तरह से अभेद्य है</li>
+                </ul>
+                
+                <span class="highlight">एक ग्लूकोज अणु से ATP उत्पादन की गणना:</span>
+                <ul>
+                    <li>ग्लाइकोलिसिस: शुद्ध 2 ATP + 2 NADH (2×3=6 ATP) = 8 ATP</li>
+                    <li>पाइरूवेट का ऑक्सीकरण: 2 NADH (2×3=6 ATP) = 6 ATP</li>
+                    <li>क्रेब्स चक्र: 2 ATP/GTP + 6 NADH (6×3=18 ATP) + 2 FADH₂ (2×2=4 ATP) = 24 ATP</li>
+                    <li><span class="highlight">कुल ATP:</span> 8 + 6 + 24 = 38 ATP</li>
+                </ul>
+                
+                वास्तविक परिस्थितियों में यह मान 36-38 ATP के बीच हो सकता है क्योंकि कुछ ऊर्जा झिल्ली पार करने में व्यय होती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>'श्वसनीय पथ एक ऐंफीबोलिक पथ होता है', इसकी चर्चा करें।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">श्वसनीय पथ एक ऐंफीबोलिक पथ है</span> - इस कथन का अर्थ है कि श्वसन मार्ग अपघटन (कैटाबोलिक) और संश्लेषण (एनाबोलिक) दोनों प्रक्रियाओं में भाग लेता है।<br><br>
+                
+                <span class="highlight">ऐंफीबोलिक पथ के रूप में श्वसन की भूमिका:</span>
+                <ul>
+                    <li><span class="highlight">कैटाबोलिक भूमिका:</span> श्वसन में जटिल कार्बनिक अणुओं (ग्लूकोज, वसा, प्रोटीन) का सरल अणुओं (CO₂ और H₂O) में विघटन होता है और इस प्रक्रिया में ऊर्जा मुक्त होती है</li>
+                    <li><span class="highlight">एनाबोलिक भूमिका:</span> श्वसन के मध्यवर्ती उत्पाद (इंटरमीडिएट्स) अन्य जैव अणुओं के संश्लेषण के लिए प्रारंभिक बिंदु के रूप में कार्य करते हैं</li>
+                </ul>
+                
+                <span class="highlight">उदाहरण:</span>
+                <ul>
+                    <li>ग्लाइकोलिसिस और क्रेब्स चक्र के मध्यवर्ती उत्पाद अमीनो अम्ल, वसीय अम्ल, न्यूक्लियोटाइड आदि के संश्लेषण में उपयोग होते हैं</li>
+                    <li>पाइरूवेट से एलेनिन का संश्लेषण</li>
+                    <li>α-कीटोग्लूटरेट से ग्लूटामेट का संश्लेषण</li>
+                    <li>ऑक्सेलोएसिटेट से एस्पार्टेट का संश्लेषण</li>
+                </ul>
+                
+                इस प्रकार श्वसन मार्ग न केवल ऊर्जा मुक्त करता है बल्कि कोशिका के विभिन्न जैव संश्लेषण कार्यों के लिए अग्रदूत (प्रिकर्सर) अणु भी प्रदान करता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>साँस गुणांक को पारिभाषित कीजिए, वसा के लिए इसका क्या मान है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">साँस गुणांक (Respiratory Quotient - RQ)</span> श्वसन के दौरान उत्पन्न कार्बन डाइऑक्साइड की मात्रा और उपयोग की गई ऑक्सीजन की मात्रा का अनुपात है।<br><br>
+                
+                <span class="highlight">सूत्र:</span> RQ = उत्पन्न CO₂ का आयतन / उपयोग O₂ का आयतन<br><br>
+                
+                <span class="highlight">वसा के लिए साँस गुणांक:</span><br>
+                वसा के लिए साँस गुणांक का मान 1 से कम होता है, आमतौर पर लगभग 0.7 होता है।<br><br>
+                
+                <span class="highlight">उदाहरण गणना (ट्राइपामिटिन वसा के लिए):</span><br>
+                2(C₅₁H₉₈O₆) + 145O₂ → 102CO₂ + 98H₂O + ऊर्जा<br>
+                RQ = 102 CO₂ / 145 O₂ = 0.7<br><br>
+                
+                <span class="highlight">विभिन्न क्रियाधारों के लिए RQ मान:</span>
+                <ul>
+                    <li>कार्बोहाइड्रेट (ग्लूकोज): RQ = 1.0</li>
+                    <li>वसा: RQ = 0.7</li>
+                    <li>प्रोटीन: RQ = 0.9</li>
+                    <li>जैविक अम्ल: RQ > 1.0</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>ऑक्सीकारी फॉस्फोरिलीकरण क्या है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">ऑक्सीकारी फॉस्फोरिलीकरण (Oxidative Phosphorylation)</span> वह प्रक्रिया है जिसमें इलेक्ट्रॉन परिवहन तंत्र के माध्यम से इलेक्ट्रॉनों के प्रवाह के दौरान मुक्त ऊर्जा का उपयोग ADP से ATP के संश्लेषण के लिए किया जाता है।<br><br>
+                
+                <span class="highlight">मुख्य विशेषताएं:</span>
+                <ul>
+                    <li>यह माइटोकॉन्ड्रिया की आंतरिक झिल्ली पर होता है</li>
+                    <li>इसमें इलेक्ट्रॉन परिवहन और ATP संश्लेषण युग्मित (coupled) होते हैं</li>
+                    <li>NADH और FADH₂ के ऑक्सीकरण से मुक्त ऊर्जा का उपयोग ATP बनाने में होता है</li>
+                    <li>अंतिम इलेक्ट्रॉन ग्राही आणविक ऑक्सीजन होती है</li>
+                    <li>यह प्रक्रिया केमियोस्मोसिस सिद्धांत पर आधारित है</li>
+                </ul>
+                
+                <span class="highlight">प्रक्रिया:</span>
+                <ol>
+                    <li>इलेक्ट्रॉन परिवहन तंत्र में इलेक्ट्रॉनों का प्रवाह प्रोटॉन (H⁺ आयन) को माइटोकॉन्ड्रिया के मैट्रिक्स से इंटरमेम्ब्रेन स्पेस में पंप करता है</li>
+                    <li>इससे एक प्रोटॉन सांद्रता प्रवणता (proton gradient) बनती है</li>
+                    <li>प्रोटॉन ATP सिन्थेज़ (Complex V) के माध्यम से वापस मैट्रिक्स में आते हैं</li>
+                    <li>इस प्रोटॉन प्रवाह की ऊर्जा का उपयोग ADP के फॉस्फोरिलीकरण द्वारा ATP बनाने में होता है</li>
+                </ol>
+                
+                यह प्रक्रिया ऑक्सी श्वसन में ATP उत्पादन का मुख्य स्रोत है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>साँस के प्रत्येक चरण में मुक्त होने वाली ऊर्जा का क्या महत्व है?</span>
+            </div>
+            <div class="answer">
+                श्वसन के प्रत्येक चरण में मुक्त होने वाली ऊर्जा का महत्व निम्नलिखित है:
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>श्वसन चरण</th>
+                            <th>मुक्त ऊर्जा का महत्व</th>
+                        </tr>
+                        <tr>
+                            <td>ग्लाइकोलिसिस</td>
+                            <td>
+                                <ul>
+                                    <li>कोशिका को तत्काल ऊर्जा (ATP) प्रदान करना</li>
+                                    <li>अनॉक्सी परिस्थितियों में भी ऊर्जा उत्पादन जारी रखना</li>
+                                    <li>पाइरूवेट का निर्माण करना जो आगे की प्रक्रियाओं के लिए आधार है</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>पाइरूवेट का ऑक्सीकरण</td>
+                            <td>
+                                <ul>
+                                    <li>एसिटाइल CoA का निर्माण करना जो क्रेब्स चक्र में प्रवेश करता है</li>
+                                    <li>अतिरिक्त NADH का उत्पादन करना</li>
+                                    <li>कार्बन श्रृंखला को छोटा करना</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>क्रेब्स चक्र</td>
+                            <td>
+                                <ul>
+                                    <li>अधिक मात्रा में NADH और FADH₂ का उत्पादन करना</li>
+                                    <li>कुछ ATP/GTP का सीधा उत्पादन करना</li>
+                                    <li>विभिन्न जैव संश्लेषण प्रक्रियाओं के लिए मध्यवर्ती उत्पाद प्रदान करना</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>इलेक्ट्रॉन परिवहन तंत्र और ऑक्सीकारी फॉस्फोरिलीकरण</td>
+                            <td>
+                                <ul>
+                                    <li>श्वसन में उत्पन्न अधिकांश ATP का संश्लेषण करना</li>
+                                    <li>ऊर्जा को ATP के रूप में संचित करना</li>
+                                    <li>NAD⁺ और FAD⁺ का पुनर्जनन करना ताकि श्वसन जारी रह सके</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">समग्र महत्व:</span>
+                <ul>
+                    <li>कोशिका की सभी जैविक क्रियाओं के लिए ऊर्जा की आपूर्ति</li>
+                    <li>विभिन्न जैव संश्लेषण प्रक्रियाओं के लिए अग्रदूत अणुओं का निर्माण</li>
+                    <li>कोशिकीय होमियोस्टेसिस (साम्यावस्था) बनाए रखना</li>
+                    <li>तापमान नियंत्रण में सहायता</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 12 "पादप में श्वसन" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 10: कोशिका चक्र और कोशिका विभाजन</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>कोशिका चक्र और कोशिका विभाजन</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान अध्याय 10</h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>स्तनधारियों की कोशिकाओं की औसत कोशिका चक्र अवधि कितनी होती है?</span>
+            </div>
+            <div class="answer">
+                स्तनधारियों की कोशिकाओं की औसत कोशिका चक्र अवधि लगभग <span class="highlight">24 घंटे</span> होती है। मानव कोशिकाओं में कोशिका चक्र लगभग 24 घंटे का होता है, जिसमें से अंतरावस्था लगभग 23 घंटे तक रहती है और कोशिका विभाजन (M प्रावस्था) लगभग 1 घंटे में पूरा होता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>जीवद्रव्य विभाजन व केंद्रक विभाजन में क्या अंतर है?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>जीवद्रव्य विभाजन (साइटोकाइनेसिस)</th>
+                            <th>केंद्रक विभाजन (कैरियोकाइनेसिस)</th>
+                        </tr>
+                        <tr>
+                            <td>यह कोशिका द्रव्य का विभाजन है</td>
+                            <td>यह कोशिका केंद्रक का विभाजन है</td>
+                        </tr>
+                        <tr>
+                            <td>यह कैरियोकाइनेसिस के बाद होता है</td>
+                            <td>यह साइटोकाइनेसिस से पहले होता है</td>
+                        </tr>
+                        <tr>
+                            <td>इसमें कोशिका द्रव्य दो भागों में बंटता है</td>
+                            <td>इसमें केंद्रक दो भागों में बंटता है</td>
+                        </tr>
+                        <tr>
+                            <td>पादप और प्राणी कोशिकाओं में विभाजन के तरीके अलग-अलग होते हैं</td>
+                            <td>पादप और प्राणी कोशिकाओं में केंद्रक विभाजन का तरीका समान होता है</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>अंतरावस्था में होने वाली घटनाओं का वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">
+                अंतरावस्था कोशिका चक्र की सबसे लंबी अवस्था है जो कोशिका विभाजन की तैयारी के लिए होती है। इसमें निम्नलिखित घटनाएँ होती हैं:
+                <ul>
+                    <li><span class="highlight">G1 प्रावस्था:</span> कोशिका की वृद्धि होती है, प्रोटीन संश्लेषण और अंगकों का निर्माण होता है।</li>
+                    <li><span class="highlight">S प्रावस्था:</span> DNA का द्विगुणन होता है, क्रोमोसोम की संख्या दोगुनी हो जाती है।</li>
+                    <li><span class="highlight">G2 प्रावस्था:</span> कोशिका विभाजन के लिए आवश्यक प्रोटीनों का संश्लेषण होता है, कोशिका विभाजन की तैयारी पूरी होती है।</li>
+                </ul>
+                अंतरावस्था में कोशिका चयापचय क्रियाओं में सक्रिय रहती है और विभाजन के लिए आवश्यक ऊर्जा व पदार्थों का संचय करती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>कोशिका चक्र का Go (प्रशांत प्रावस्था) क्या है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">G0 प्रावस्था</span> कोशिका चक्र की एक विशेष अवस्था है जिसमें कोशिकाएँ विभाजन नहीं करती हैं। ये कोशिकाएँ G1 प्रावस्था से निकलकर इस अवस्था में प्रवेश करती हैं। G0 प्रावस्था की विशेषताएँ:
+                <ul>
+                    <li>इस अवस्था में कोशिकाएँ चयापचय क्रियाओं में सक्रिय रहती हैं लेकिन विभाजित नहीं होती</li>
+                    <li>ये कोशिकाएँ शरीर की आवश्यकता के अनुसार पुनः कोशिका चक्र में प्रवेश कर सकती हैं</li>
+                    <li>हृदय की मांसपेशी कोशिकाएँ और तंत्रिका कोशिकाएँ सामान्यतः G0 प्रावस्था में रहती हैं</li>
+                    <li>यह प्रावस्था कोशिकाओं को विशेषीकृत कार्यों के लिए अनुमति देती है</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>सूत्री विभाजन को सम विभाजन क्यों कहते हैं?</span>
+            </div>
+            <div class="answer">
+                सूत्री विभाजन को <span class="highlight">सम विभाजन</span> कहते हैं क्योंकि:
+                <ul>
+                    <li>इस विभाजन में मातृ कोशिका और संतति कोशिकाओं के गुणसूत्रों की संख्या समान रहती है</li>
+                    <li>DNA की मात्रा और गुणसूत्रों की संख्या दोनों संतति कोशिकाओं में बराबर होती है</li>
+                    <li>यह विभाजन द्विगुणित कोशिकाओं में होता है और संतति कोशिकाएँ आनुवंशिक रूप से मातृ कोशिका के समान होती हैं</li>
+                    <li>यह शरीर की वृद्धि, मरम्मत और अलैंगिक जनन के लिए होता है</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>कोशिका चक्र की उस अवस्था का नाम बताएं, जिसमें निम्न घटनाएं संपन्न होती हैं-<br>
+                (i) गुणसूत्र तर्क मध्यरेखा की तरफ गति करते हैं।<br>
+                (ii) गुणसूत्रबिंदु का टूटना व अर्धगुणसूत्र का पृथक् होना।<br>
+                (iii) समजात गुणसूत्रों का आपस में युग्मन होना।<br>
+                (iv) समजात गुणसूत्रों के बीच विनिमय का होना।</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>घटना</th>
+                            <th>अवस्था</th>
+                        </tr>
+                        <tr>
+                            <td>(i) गुणसूत्र तर्क मध्यरेखा की तरफ गति करते हैं</td>
+                            <td>मध्यावस्था</td>
+                        </tr>
+                        <tr>
+                            <td>(ii) गुणसूत्रबिंदु का टूटना व अर्धगुणसूत्र का पृथक् होना</td>
+                            <td>पश्चावस्था</td>
+                        </tr>
+                        <tr>
+                            <td>(iii) समजात गुणसूत्रों का आपस में युग्मन होना</td>
+                            <td>अर्धसूत्री विभाजन I की पूर्वावस्था</td>
+                        </tr>
+                        <tr>
+                            <td>(iv) समजात गुणसूत्रों के बीच विनिमय का होना</td>
+                            <td>अर्धसूत्री विभाजन I की पूर्वावस्था (सिनैप्सिस के दौरान)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>निम्न के बारे में वर्णन करें।<br>
+                (i) सूत्रयुग्मन<br>
+                (ii) युगली<br>
+                (iii) काएज्मेटा</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(i) सूत्रयुग्मन (सिनैप्सिस):</span> अर्धसूत्री विभाजन की पूर्वावस्था I में होने वाली वह प्रक्रिया है जिसमें समजात गुणसूत्र जोड़े बनाते हैं और आपस में जुड़ जाते हैं। यह जाइगोटीन उपअवस्था में शुरू होता है और पैकीटीन उपअवस्था में पूरा होता है।<br><br>
+                
+                <span class="highlight">(ii) युगली (बाइवेलेंट):</span> सिनैप्सिस के दौरान बनने वाला समजात गुणसूत्रों का जोड़ा युगली कहलाता है। प्रत्येक युगली में चार क्रोमैटिड होते हैं, इसलिए इसे टेट्रैड भी कहते हैं।<br><br>
+                
+                <span class="highlight">(iii) काएज्मेटा (कायज़्मा):</span> डिप्लोटीन उपअवस्था में गुणसूत्रों के बीच जिस स्थान पर क्रॉसिंग ओवर होता है, उसे काएज्मेटा कहते हैं। यह वह बिंदु है जहाँ गुणसूत्रों के बीच आनुवंशिक पदार्थ का आदान-प्रदान होता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>पादप व प्राणी कोशिकाओं के कोशिकाद्रव्य विभाजन में क्या अंतर है?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>पादप कोशिकाओं में कोशिकाद्रव्य विभाजन</th>
+                            <th>प्राणी कोशिकाओं में कोशिकाद्रव्य विभाजन</th>
+                        </tr>
+                        <tr>
+                            <td>कोशिका प्लेट बनती है</td>
+                            <td>खाँच बनती है</td>
+                        </tr>
+                        <tr>
+                            <td>कोशिका मध्य से बाहर की ओर विभाजित होती है</td>
+                            <td>कोशिका बाहर से अंदर की ओर विभाजित होती है</td>
+                        </tr>
+                        <tr>
+                            <td>गॉल्जीकाय से प्राप्त पुटिकाएँ कोशिका प्लेट बनाती हैं</td>
+                            <td>एक्टिन और मायोसिन प्रोटीन के सिकुड़ने से खाँच बनती है</td>
+                        </tr>
+                        <tr>
+                            <td>कोशिका भित्ति के कारण कोशिका आकार स्थिर रहता है</td>
+                            <td>कोशिका झिल्ली लचीली होती है, आकार बदल सकता है</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>अर्धसूत्री विभाजन के बाद बनने वाली चार संतति कोशिकाएं कहाँ आकार में समान व कहाँ भिन्न आकार की होती हैं?</span>
+            </div>
+            <div class="answer">
+                अर्धसूत्री विभाजन के बाद बनने वाली चार संतति कोशिकाएँ:
+                <ul>
+                    <li><span class="highlight">आकार में समान:</span> नर युग्मकों (शुक्राणुओं) के निर्माण में अर्धसूत्री विभाजन के बाद चारों संतति कोशिकाएँ आकार में समान होती हैं।</li>
+                    <li><span class="highlight">आकार में भिन्न:</span> मादा युग्मकों (अंडाणुओं) के निर्माण में अर्धसूत्री विभाजन के बाद चारों संतति कोशिकाएँ आकार में भिन्न होती हैं। एक बड़ा अंडाणु और तीन छोटी ध्रुवीय काय कोशिकाएँ बनती हैं।</li>
+                </ul>
+                यह अंतर कोशिका द्रव्य के असमान विभाजन के कारण होता है। अंडाणु निर्माण में अधिकांश कोशिका द्रव्य एक ही कोशिका में संचित हो जाता है जबकि शुक्राणु निर्माण में कोशिका द्रव्य समान रूप से बंट जाता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>सूत्री विभाजन की पश्चावस्था अर्धसूत्री विभाजन की पश्चावस्था 1 में क्या अंतर है?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>सूत्री विभाजन की पश्चावस्था</th>
+                            <th>अर्धसूत्री विभाजन की पश्चावस्था I</th>
+                        </tr>
+                        <tr>
+                            <td>इसमें अर्धगुणसूत्र अलग होते हैं</td>
+                            <td>इसमें पूरे गुणसूत्र अलग होते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>संतति कोशिकाओं में गुणसूत्रों की संख्या मातृ कोशिका के समान होती है</td>
+                            <td>संतति कोशिकाओं में गुणसूत्रों की संख्या आधी हो जाती है</td>
+                        </tr>
+                        <tr>
+                            <td>गुणसूत्र एकल क्रोमैटिड वाले होते हैं</td>
+                            <td>गुणसूत्र द्विक्रोमैटिड वाले होते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>कोशिका विभाजन के बाद द्विगुणित कोशिकाएँ बनती हैं</td>
+                            <td>कोशिका विभाजन के बाद अगुणित कोशिकाएँ बनती हैं</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>सूत्री व अर्धसूत्री विभाजन में प्रमुख अंतरों को सूचीबद्ध करें?</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>सूत्री विभाजन</th>
+                            <th>अर्धसूत्री विभाजन</th>
+                        </tr>
+                        <tr>
+                            <td>एक कोशिका विभाजन से दो संतति कोशिकाएँ बनती हैं</td>
+                            <td>एक कोशिका विभाजन से चार संतति कोशिकाएँ बनती हैं</td>
+                        </tr>
+                        <tr>
+                            <td>संतति कोशिकाओं में गुणसूत्रों की संख्या मातृ कोशिका के समान रहती है</td>
+                            <td>संतति कोशिकाओं में गुणसूत्रों की संख्या आधी हो जाती है</td>
+                        </tr>
+                        <tr>
+                            <td>समजात गुणसूत्रों का सयुग्मन नहीं होता</td>
+                            <td>समजात गुणसूत्रों का सयुग्मन होता है</td>
+                        <tr>
+                            <td>क्रॉसिंग ओवर नहीं होता</td>
+                            <td>क्रॉसिंग ओवर होता है</td>
+                        </tr>
+                        <tr>
+                            <td>दो चक्र होते हैं</td>
+                            <td>दो क्रमिक विभाजन होते हैं</td>
+                        </tr>
+                        <tr>
+                            <td>शरीर की वृद्धि और मरम्मत के लिए होता है</td>
+                            <td>युग्मक निर्माण के लिए होता है</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>अर्धसूची विभाजन का क्या महत्व है?</span>
+            </div>
+            <div class="answer">
+                अर्धसूत्री विभाजन का महत्व निम्नलिखित है:
+                <ul>
+                    <li><span class="highlight">युग्मक निर्माण:</span> यह युग्मकों (शुक्राणु और अंडाणु) के निर्माण के लिए आवश्यक है</li>
+                    <li><span class="highlight">गुणसूत्रों की संख्या का नियंत्रण:</span> निषेचन के बाद गुणसूत्रों की संख्या स्थिर रखने के लिए युग्मकों में गुणसूत्रों की संख्या आधी कर देता है</li>
+                    <li><span class="highlight">आनुवंशिक विविधता:</span> क्रॉसिंग ओवर और यादृच्छिक वितरण के कारण आनुवंशिक विविधता उत्पन्न होती है</li>
+                    <li><span class="highlight">विकास और जैव विकास:</span> आनुवंशिक विविधता जैव विकास का आधार है</li>
+                    <li><span class="highlight">प्रजनन:</span> लैंगिक प्रजनन के लिए आवश्यक है</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>अपने शिक्षक के साथ निम्न के बारे में चर्चा करे-<br>
+                (i) अगुणित कीटों व निम्न श्रेणी के पादपों में कोशिका विभाजन कहाँ संपन्न होता है?<br>
+                (ii) उच्च श्रेणी पादपों की कुछ अणुणित कोशिकाओं में कोशिका विभाजन कहाँ नहीं होता है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">(i) अगुणित कीटों व निम्न श्रेणी के पादपों में कोशिका विभाजन:</span> अगुणित कीटों (जैसे मधुमक्खियों के नर) और निम्न श्रेणी के पादपों में कोशिका विभाजन अगुणित कोशिकाओं में भी होता है। इनमें समसूत्री विभाजन द्वारा अगुणित कोशिकाएँ बनती हैं।<br><br>
+                
+                <span class="highlight">(ii) उच्च श्रेणी पादपों की कुछ अणुणित कोशिकाओं में कोशिका विभाजन:</span> उच्च श्रेणी के पादपों में कुछ विशेषीकृत कोशिकाएँ जैसे जाइलम वाहिकाएँ, स्क्लेरेन्काइमा कोशिकाएँ, और परिपक्व गार्ड कोशिकाएँ विभाजित नहीं होती हैं। ये कोशिकाएँ G0 प्रावस्था में चली जाती हैं और विभाजन क्षमता खो देती हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>क्या S प्रावस्था में बिना डीएनए प्रतिकृति के सूत्री विभाजन हो सकता है?</span>
+            </div>
+            <div class="answer">
+                नहीं, S प्रावस्था में बिना डीएनए प्रतिकृति के सूत्री विभाजन <span class="highlight">नहीं हो सकता</span>। S प्रावस्था में DNA का द्विगुणन होता है जो समसूत्री विभाजन के लिए आवश्यक है। बिना DNA प्रतिकृति के:
+                <ul>
+                    <li>गुणसूत्रों की संख्या सही नहीं रहेगी</li>
+                    <li>संतति कोशिकाओं में अपूर्ण आनुवंशिक सामग्री होगी</li>
+                    <li>कोशिका विभाजन सही ढंग से पूरा नहीं हो पाएगा</li>
+                    <li>आनुवंशिक अस्थिरता उत्पन्न होगी</li>
+                </ul>
+                DNA प्रतिकृति के बिना कोशिका विभाजन असंभव है क्योंकि प्रत्येक संतति कोशिका को पूर्ण आनुवंशिक सामग्री की आवश्यकता होती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>क्या बिना कोशिका विभाजन के डीएनए प्रतिकृति हो सकती है?</span>
+            </div>
+            <div class="answer">
+                हाँ, बिना कोशिका विभाजन के डीएनए प्रतिकृति <span class="highlight">हो सकती है</span>। इसके उदाहरण:
+                <ul>
+                    <li><span class="highlight">बहुकेंद्रकी कोशिकाएँ:</span> कुछ कोशिकाओं में बार-बार केंद्रक विभाजन होता है लेकिन द्रव्य विभाजन नहीं होता, जिससे बहुकेंद्रकी कोशिकाएँ बनती हैं</li>
+                    <li><span class="highlight">अंतर्विषमताएँ:</span> कुछ विशेष परिस्थितियों में कोशिका DNA का द्विगुणन कर सकती है लेकिन विभाजित नहीं होती</li>
+                    <li><span class="highlight">कैंसर कोशिकाएँ:</span> कुछ कैंसर कोशिकाओं में DNA प्रतिकृति तो होती है लेकिन विभाजन नियंत्रण तंत्र काम नहीं करता</li>
+                    <li><span class="highlight">विशेष जैविक प्रक्रियाएँ:</span> कुछ विशेष प्रक्रियाओं में DNA प्रतिकृति अलग से हो सकती है</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>कोशिका विभाजन की प्रत्येक अवस्थाओं के दौरान होने वाली घटनाओं का विश्लेषण करें और ध्यान दें कि निम्न लिखित दो प्राचलों में कैसे परिवर्तन होता है?<br>
+                (1) प्रत्येक कोशिका की गुणसूत्र संख्या (N)<br>
+                (ii) प्रत्येक कोशिक में डीएनए की मात्रा (C)</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>अवस्था</th>
+                            <th>गुणसूत्र संख्या (N)</th>
+                            <th>DNA मात्रा (C)</th>
+                        </tr>
+                        <tr>
+                            <td>G1 प्रावस्था</td>
+                            <td>2N</td>
+                            <td>2C</td>
+                        </tr>
+                        <tr>
+                            <td>S प्रावस्था</td>
+                            <td>2N</td>
+                            <td>2C से 4C तक बढ़ती है</td>
+                        </tr>
+                        <tr>
+                            <td>G2 प्रावस्था</td>
+                            <td>2N</td>
+                            <td>4C</td>
+                        </tr>
+                        <tr>
+                            <td>सूत्री विभाजन</td>
+                            <td>2N (अंत तक)</td>
+                            <td>4C (अंत तक)</td>
+                        </tr>
+                        <tr>
+                            <td>सूत्री विभाजन के बाद</td>
+                            <td>2N (प्रत्येक संतति कोशिका में)</td>
+                            <td>2C (प्रत्येक संतति कोशिका में)</td>
+                        </tr>
+                        <tr>
+                            <td>अर्धसूत्री विभाजन I के बाद</td>
+                            <td>N (प्रत्येक संतति कोशिका में)</td>
+                            <td>2C (प्रत्येक संतति कोशिका में)</td>
+                        </tr>
+                        <tr>
+                            <td>अर्धसूत्री विभाजन II के बाद</td>
+                            <td>N (प्रत्येक संतति कोशिका में)</td>
+                            <td>C (प्रत्येक संतति कोशिका में)</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <span class="highlight">विश्लेषण:</span>
+                <ul>
+                    <li>सूत्री विभाजन में गुणसूत्र संख्या (N) स्थिर रहती है जबकि DNA मात्रा (C) विभाजन के बाद आधी हो जाती है</li>
+                    <li>अर्धसूत्री विभाजन I में गुणसूत्र संख्या आधी हो जाती है लेकिन DNA मात्रा वही रहती है</li>
+                    <li>अर्धसूत्री विभाजन II में DNA मात्रा आधी हो जाती है</li>
+                    <li>S प्रावस्था में DNA मात्रा दोगुनी हो जाती है लेकिन गुणसूत्र संख्या नहीं बदलती</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 10 "कोशिका चक्र और कोशिका विभाजन" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

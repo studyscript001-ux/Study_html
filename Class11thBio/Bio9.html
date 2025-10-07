@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 9: जैव अणु</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .molecule-structure {
+            text-align: center;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #b0e0e6;
+        }
+        
+        .chemical-formula {
+            font-family: 'Courier New', monospace;
+            background: #f9f9f9;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>जैव अणु</h1>
+            <h2>कक्षा 11  -  जीवविज्ञान अध्याय 9</h2>
+            <h2></h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>वृहत् अणु क्या है? उदाहरण दीजिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">वृहत् अणु (Macromolecules)</span> वे बड़े आणविक भार वाले जटिल कार्बनिक अणु हैं जो छोटे-छोटे अणुओं (मोनोमर्स) के बहुलकीकरण (polymerization) से बनते हैं। ये जीवों के संरचनात्मक और कार्यात्मक आधार होते हैं।
+                <br><br>
+                <span class="highlight">वृहत् अणुओं के उदाहरण:</span>
+                <ul>
+                    <li><span class="highlight">प्रोटीन:</span> अमीनो अम्लों के बहुलक (उदाहरण: हीमोग्लोबिन, एंजाइम)</li>
+                    <li><span class="highlight">न्यूक्लिक अम्ल:</span> न्यूक्लियोटाइड्स के बहुलक (उदाहरण: DNA, RNA)</li>
+                    <li><span class="highlight">पॉलीसैकेराइड:</span> मोनोसैकेराइड्स के बहुलक (उदाहरण: स्टार्च, सेल्यूलोज, ग्लाइकोजन)</li>
+                    <li><span class="highlight">लिपिड:</span> वसा अम्ल और ग्लिसरॉल के संयोजन से बनते हैं (उदाहरण: ट्राइग्लिसराइड्स, फॉस्फोलिपिड्स)</li>
+                </ul>
+                इन वृहत् अणुओं का आणविक भार 10,000 डाल्टन से लेकर लाखों डाल्टन तक हो सकता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>प्रोटीन की तृतीयक संरचना से क्या तात्पर्य है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">प्रोटीन की तृतीयक संरचना</span> से तात्पर्य एक पॉलीपेप्टाइड श्रृंखला की त्रि-आयामी संरचना से है। यह संरचना प्रोटीन के कार्य के लिए अत्यंत महत्वपूर्ण है।
+                <br><br>
+                <span class="highlight">तृतीयक संरचना की विशेषताएं:</span>
+                <ul>
+                    <li>यह प्रोटीन की वास्तविक कार्यात्मक संरचना है</li>
+                    <li>इसमें पॉलीपेप्टाइड श्रृंखला विभिन्न प्रकार के मोड़ और वलन (folding) द्वारा एक विशिष्ट त्रि-आयामी आकार ग्रहण करती है</li>
+                    <li>यह संरचना विभिन्न प्रकार के बंधों द्वारा स्थिर रहती है:
+                        <ul>
+                            <li>हाइड्रोजन बंध</li>
+                            <li>आयनिक बंध</li>
+                            <li>वान्डरवाल्स बल</li>
+                            <li>हाइड्रोफोबिक अंतःक्रियाएं</li>
+                            <li>डाइसल्फाइड बंध (सिस्टीन अमीनो अम्ल के बीच)</li>
+                        </ul>
+                    </li>
+                    <li>तृतीयक संरचना में प्रोटीन गोलाकार (ग्लोब्युलर) या रेशेदार (फाइब्रस) हो सकता है</li>
+                    <li>उदाहरण: मायोग्लोबिन एक गोलाकार प्रोटीन है जिसकी तृतीयक संरचना होती है</li>
+                </ul>
+                प्रोटीन की तृतीयक संरचना उसके जैविक कार्य को निर्धारित करती है। यदि यह संरचना बदल जाए तो प्रोटीन अपना कार्य करने की क्षमता खो सकता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>10 ऐसे रुचिकर सूक्ष्म जैव अणुओं का पता लगाइए जो कम अणुभार वाले होते हैं व इनकी संरचना बनाइए? ऐसे उद्योगों का पता लगाइए जो इन यौगिकों का निर्माण विलगन द्वारा करते हैं? इनको खरीदने वाले कौन है? मालूम कीजिए?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">10 रुचिकर सूक्ष्म जैव अणु (कम अणुभार वाले):</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>जैव अणु</th>
+                            <th>अणुभार</th>
+                            <th>संरचना/सूत्र</th>
+                            <th>मुख्य उद्योग</th>
+                            <th>मुख्य खरीदार</th>
+                        </tr>
+                        <tr>
+                            <td>ग्लूकोज</td>
+                            <td>180 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></td>
+                            <td>खाद्य, दवा उद्योग</td>
+                            <td>चीनी उद्योग, अस्पताल</td>
+                        </tr>
+                        <tr>
+                            <td>एडिनोसिन ट्राइफॉस्फेट (ATP)</td>
+                            <td>507 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>10</sub>H<sub>16</sub>N<sub>5</sub>O<sub>13</sub>P<sub>3</sub></td>
+                            <td>बायोटेक्नोलॉजी, दवा</td>
+                            <td>रिसर्च लैब, अस्पताल</td>
+                        </tr>
+                        <tr>
+                            <td>एस्कॉर्बिक अम्ल (विटामिन C)</td>
+                            <td>176 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>6</sub>H<sub>8</sub>O<sub>6</sub></td>
+                            <td>दवा, खाद्य पूरक</td>
+                            <td>फार्मास्युटिकल कंपनियां</td>
+                        </tr>
+                        <tr>
+                            <td>ग्लिसरॉल</td>
+                            <td>92 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>3</sub>H<sub>8</sub>O<sub>3</sub></td>
+                            <td>साबुन, कॉस्मेटिक्स</td>
+                            <td>साबुन निर्माता, कॉस्मेटिक कंपनियां</td>
+                        </tr>
+                        <tr>
+                            <td>यूरिया</td>
+                            <td>60 डाल्टन</td>
+                            <td class="chemical-formula">CH<sub>4</sub>N<sub>2</sub>O</td>
+                            <td>उर्वरक, दवा</td>
+                            <td>कृषि उद्योग, अस्पताल</td>
+                        </tr>
+                        <tr>
+                            <td>एसिटाइलकोलीन</td>
+                            <td>146 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>7</sub>H<sub>16</sub>NO<sub>2</sub><sup>+</sup></td>
+                            <td>दवा, न्यूरोसाइंस रिसर्च</td>
+                            <td>फार्मास्युटिकल कंपनियां</td>
+                        </tr>
+                        <tr>
+                            <td>एड्रेनालीन</td>
+                            <td>183 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>9</sub>H<sub>13</sub>NO<sub>3</sub></td>
+                            <td>दवा उद्योग</td>
+                            <td>अस्पताल, आपातकालीन सेवाएं</td>
+                        </tr>
+                        <tr>
+                            <td>ग्लूटाथायोन</td>
+                            <td>307 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>10</sub>H<sub>17</sub>N<sub>3</sub>O<sub>6</sub>S</td>
+                            <td>दवा, कॉस्मेटिक्स</td>
+                            <td>स्किनकेयर कंपनियां</td>
+                        </tr>
+                        <tr>
+                            <td>कैफीन</td>
+                            <td>194 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></td>
+                            <td>खाद्य, पेय उद्योग</td>
+                            <td>कॉफी, चाय, कोला कंपनियां</td>
+                        </tr>
+                        <tr>
+                            <td>स्टेरॉयड हार्मोन (कोर्टिसोल)</td>
+                            <td>362 डाल्टन</td>
+                            <td class="chemical-formula">C<sub>21</sub>H<sub>30</sub>O<sub>5</sub></td>
+                            <td>दवा उद्योग</td>
+                            <td>अस्पताल, फार्मास्युटिकल कंपनियां</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <span class="highlight">विलगन विधियाँ:</span> इन यौगिकों को प्राप्त करने के लिए विभिन्न विलगन विधियों का उपयोग किया जाता है जैसे क्रोमैटोग्राफी, क्रिस्टलीकरण, आसवन, एक्सट्रैक्शन आदि।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>चिकित्सार्थ अभिकर्ता (therapeutic agents) के रूप में प्रयोग में आने वाले प्रोटीन का पता लगाइए व सूचीबद्ध कीजिए। प्रोटीन की अन्य उपयोगिताओं को बताइए (जैसे सौंदर्य प्रसाधन आदि)।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">चिकित्सार्थ अभिकर्ता के रूप में प्रयुक्त प्रोटीन:</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>प्रोटीन</th>
+                            <th>चिकित्सीय उपयोग</th>
+                            <th>उपचारित रोग</th>
+                        </tr>
+                        <tr>
+                            <td>इन्सुलिन</td>
+                            <td>मधुमेह नियंत्रण</td>
+                            <td>मधुमेह (डायबिटीज)</td>
+                        </tr>
+                        <tr>
+                            <td>एंटीबॉडीज (मोनोक्लोनल)</td>
+                            <td>कैंसर, ऑटोइम्यून रोग</td>
+                            <td>कैंसर, रुमेटाइड अर्थराइटिस</td>
+                        </tr>
+                        <tr>
+                            <td>एंजाइम रिप्लेसमेंट</td>
+                            <td>एंजाइम की कमी दूर करना</td>
+                            <td>गॉचर रोग, फेब्री रोग</td>
+                        </tr>
+                        <tr>
+                            <td>वृद्धि हार्मोन</td>
+                            <td>विकास संबंधी विकार</td>
+                            <td>वृद्धि हार्मोन की कमी</td>
+                        </tr>
+                        <tr>
+                            <td>कोगुलेशन फैक्टर</td>
+                            <td>रक्तस्राव रोकना</td>
+                            <td>हीमोफीलिया</td>
+                        </tr>
+                        <tr>
+                            <td>इंटरफेरॉन</td>
+                            <td>वायरल संक्रमण</td>
+                            <td>हेपेटाइटिस, कैंसर</td>
+                        </tr>
+                        <tr>
+                            <td>टीके (वैक्सीन)</td>
+                            <td>रोग प्रतिरोधक क्षमता</td>
+                            <td>विभिन्न संक्रामक रोग</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <span class="highlight">प्रोटीन की अन्य उपयोगिताएं:</span>
+                <ul>
+                    <li><span class="highlight">सौंदर्य प्रसाधन:</span> कोलेजन और इलास्टिन त्वचा की लोच बनाए रखते हैं, केराटिन बालों और नाखूनों के लिए उपयोगी</li>
+                    <li><span class="highlight">खाद्य उद्योग:</span> जिलेटिन, व्हे प्रोटीन, सोया प्रोटीन आदि</li>
+                    <li><span class="highlight">कपड़ा उद्योग:</span> रेशम और ऊन प्रोटीन से बने होते हैं</li>
+                    <li><span class="highlight">चमड़ा उद्योग:</span> कोलेजन का उपयोग</li>
+                    <li><span class="highlight">जैव प्रौद्योगिकी:</span> एंजाइम्स का उपयोग विभिन्न उद्योगों में</li>
+                    <li><span class="highlight">कृषि:</span> बायोपेस्टीसाइड्स और बायोफर्टिलाइजर्स</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>ट्राइग्लिसराइड के संगठन का वर्णन कीजिए।</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">ट्राइग्लिसराइड</span> वसा और तेलों का मुख्य घटक है और यह लिपिड का सबसे सामान्य रूप है।
+                <br><br>
+                <span class="highlight">ट्राइग्लिसराइड का संगठन:</span>
+                <ul>
+                    <li>ट्राइग्लिसराइड एक एस्टर है जो <span class="highlight">एक ग्लिसरॉल अणु</span> और <span class="highlight">तीन वसा अम्ल अणुओं</span> के संयोजन से बनता है</li>
+                    <li>ग्लिसरॉल एक त्रिहाइड्रिक अल्कोहल है जिसमें तीन हाइड्रॉक्सिल समूह (-OH) होते हैं</li>
+                    <li>प्रत्येक वसा अम्ल में एक कार्बोक्सिल समूह (-COOH) होता है</li>
+                    <li>संश्लेषण की प्रक्रिया में, ग्लिसरॉल के तीनों -OH समूह वसा अम्लों के -COOH समूहों के साथ एस्टरीकरण अभिक्रिया करते हैं, जिससे तीन एस्टर बंध बनते हैं और तीन जल के अणु निकलते हैं</li>
+                    <li>इस अभिक्रिया को <span class="highlight">निर्जलीकरण संश्लेषण</span> कहते हैं</li>
+                </ul>
+                
+                <div class="molecule-structure">
+                    <span class="highlight">ट्राइग्लिसराइड का सामान्य संरचना सूत्र:</span><br>
+                    CH<sub>2</sub>-O-CO-R<sub>1</sub><br>
+                    |<br>
+                    CH-O-CO-R<sub>2</sub><br>
+                    |<br>
+                    CH<sub>2</sub>-O-CO-R<sub>3</sub><br>
+                    <br>
+                    जहाँ R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub> वसा अम्लों के हाइड्रोकार्बन श्रृंखला हैं
+                </div>
+                
+                <span class="highlight">ट्राइग्लिसराइड के प्रकार:</span>
+                <ul>
+                    <li><span class="highlight">सरल ट्राइग्लिसराइड:</span> तीनों वसा अम्ल समान होते हैं</li>
+                    <li><span class="highlight">मिश्रित ट्राइग्लिसराइड:</span> तीनों वसा अम्ल भिन्न-भिन्न होते हैं</li>
+                </ul>
+                
+                <span class="highlight">भौतिक गुण:</span>
+                <ul>
+                    <li>कमरे के तापमान पर <span class="highlight">वसा</span> ठोस और <span class="highlight">तेल</span> तरल अवस्था में होते हैं</li>
+                    <li>यह अंतर संतृप्त और असंतृप्त वसा अम्लों की उपस्थिति पर निर्भर करता है</li>
+                    <li>ट्राइग्लिसराइड जल में अविलेय लेकिन कार्बनिक विलायकों में विलेय होते हैं</li>
+                </ul>
+                
+                <span class="highlight">जैविक महत्व:</span> ट्राइग्लिसराइड ऊर्जा का सबसे सघन भंडार हैं (9 किलोकैलोरी/ग्राम) और शरीर में इन्सुलेशन तथा अंगों की सुरक्षा का कार्य करते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>क्या आप व्यापारिक दृष्टि से उपलब्ध परमाणु मॉडल (बल व स्टिक नमूना) का प्रयोग करते हुए जैवअणुओं के उन प्रारूपों को बना सकते हैं?</span>
+            </div>
+            <div class="answer">
+                हाँ, व्यापारिक रूप से उपलब्ध परमाणु मॉडल (बल और स्टिक मॉडल) का उपयोग करके विभिन्न जैवअणुओं के प्रारूप बनाए जा सकते हैं। यह रसायन विज्ञान और जीव विज्ञान की शिक्षा में एक महत्वपूर्ण शिक्षण सहायता है।
+                <br><br>
+                <span class="highlight">बनाए जा सकने वाले जैवअणुओं के प्रारूप:</span>
+                <ul>
+                    <li><span class="highlight">ग्लूकोज अणु:</span> 6 कार्बन, 12 हाइड्रोजन और 6 ऑक्सीजन परमाणुओं से</li>
+                    <li><span class="highlight">अमीनो अम्ल (जैसे ग्लाइसीन):</span> अमीनो समूह, कार्बोक्सिल समूह और R-समूह दिखाते हुए</li>
+                    <li><span class="highlight">वसा अम्ल (जैसे पामिटिक अम्ल):</span> लंबी हाइड्रोकार्बन श्रृंखला के साथ</li>
+                    <li><span class="highlight">न्यूक्लियोटाइड (जैसे एडेनोसीन):</span> नाइट्रोजन क्षार, पेंटोज शर्करा और फॉस्फेट समूह दिखाते हुए</li>
+                    <li><span class="highlight">छोटे पेप्टाइड:</span> 2-3 अमीनो अम्लों को पेप्टाइड बंधों से जोड़कर</li>
+                </ul>
+                
+                <span class="highlight">लाभ:</span>
+                <ul>
+                    <li>अणुओं की त्रि-आयामी संरचना को समझने में सहायता</li>
+                    <li>बंध कोण और आणविक ज्यामिति की समझ विकसित करना</li>
+                    <li>विभिन्न क्रियात्मक समूहों की स्थिति दर्शाना</li>
+                    <li>आणविक अंतःक्रियाओं को समझने में मदद</li>
+                </ul>
+                
+                <span class="highlight">सीमाएं:</span>
+                <ul>
+                    <li>वृहत् अणुओं (जैसे प्रोटीन, DNA) के पूर्ण मॉडल बनाना व्यावहारिक नहीं है</li>
+                    <li>वास्तविक आणविक आकार के अनुपात का पालन करना कठिन</li>
+                    <li>कुछ सूक्ष्म संरचनात्मक विवरण दिखाने में असमर्थ</li>
+                </ul>
+                
+                <span class="highlight">व्यावसायिक रूप से उपलब्ध किट:</span> मॉलिक्यूलर मॉडल किट, ऑर्गेनिक केमिस्ट्री मॉडल किट, बायोकेमिस्ट्री मॉडल किट आदि बाजार में उपलब्ध हैं जिनसे जैवअणुओं के मॉडल बनाए जा सकते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>ऐलेनीन अमीनो अम्ल की संरचना बताइए?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">ऐलेनीन (Alanine)</span> एक सरल, गैर-ध्रुवीय, ऐलिफैटिक अमीनो अम्ल है जो प्रोटीन का एक महत्वपूर्ण घटक है। यह ग्लूकोज-ऐलेनीन चक्र में महत्वपूर्ण भूमिका निभाता है।
+                <br><br>
+                <span class="highlight">ऐलेनीन की संरचना:</span>
+                <div class="molecule-structure">
+                    H<br>
+                    |<br>
+                    H<sub>2</sub>N - C - COOH<br>
+                    |<br>
+                    CH<sub>3</sub><br>
+                    <br>
+                    <span class="chemical-formula">रासायनिक सूत्र: C<sub>3</sub>H<sub>7</sub>NO<sub>2</sub></span>
+                </div>
+                
+                <span class="highlight">संरचनात्मक विवरण:</span>
+                <ul>
+                    <li><span class="highlight">α-कार्बन:</span> केंद्रीय कार्बन परमाणु जो चार भिन्न समूहों से जुड़ा है</li>
+                    <li><span class="highlight">अमीनो समूह (-NH<sub>2</sub>):</span> कार्बोक्सिल समूह के साथ मिलकर अमीनो अम्ल की मूल संरचना बनाता है</li>
+                    <li><span class="highlight">कार्बोक्सिल समूह (-COOH):</span> अम्लीय गुण प्रदान करता है</li>
+                    <li><span class="highlight">R-समूह या पार्श्व श्रृंखला:</span> ऐलेनीन में मिथाइल समूह (-CH<sub>3</sub>) है</li>
+                    <li><span class="highlight">हाइड्रोजन परमाणु:</span> α-कार्बन से जुड़ा हुआ</li>
+                </ul>
+                
+                <span class="highlight">ऐलेनीन के गुण:</span>
+                <ul>
+                    <li><span class="highlight">वर्गीकरण:</span> गैर-आवश्यक अमीनो अम्ल (शरीर में संश्लेषित हो सकता है)</li>
+                    <li><span class="highlight">प्रकृति:</span> गैर-ध्रुवीय, ऐलिफैटिक</li>
+                    <li><span class="highlight">आइसोइलेक्ट्रिक बिंदु:</span> 6.0</li>
+                    <li><span class="highlight">तीन-अक्षर कोड:</span> Ala</li>
+                    <li><span class="highlight">एक-अक्षर कोड:</span> A</li>
+                </ul>
+                
+                <span class="highlight">जैविक महत्व:</span>
+                <ul>
+                    <li>प्रोटीन संश्लेषण में भाग लेता है</li>
+                    <li>ग्लूकोनियोजेनेसिस में अग्रदूत</li>
+                    <li>मांसपेशियों और मस्तिष्क के बीच नाइट्रोजन के संक्रमण में भूमिका</li>
+                    <li>टॉरिन और पैन्टोथेनिक अम्ल के संश्लेषण में सहायक</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>गोंद किससे बने होते हैं? क्या फेविकोल इससे भिन्न है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">गोंद (Gum)</span> प्राकृतिक या सिंथेटिक पदार्थ हैं जो चिपचिपे और चिपकने वाले गुणों वाले होते हैं।
+                <br><br>
+                <span class="highlight">प्राकृतिक गोंद के स्रोत:</span>
+                <ul>
+                    <li><span class="highlight">वनस्पतिजन्य गोंद:</span> पेड़ों से प्राप्त (जैसे - अरबी गोंद, बबूल गोंद)</li>
+                    <li><span class="highlight">समुद्री गोंद:</span> समुद्री शैवाल से प्राप्त (जैसे - एगार, कैरागीनन)</li>
+                    <li><span class="highlight">जंतुजन्य गोंद:</span> जंतुओं से प्राप्त (जैसे - जिलेटिन)</li>
+                    <li><span class="highlight">जीवाणुजन्य गोंद:</span> जीवाणुओं द्वारा उत्पादित (जैसे - जाइलन, डेक्सट्रान)</li>
+                </ul>
+                
+                <span class="highlight">रासायनिक संरचना:</span>
+                <ul>
+                    <li>अधिकांश प्राकृतिक गोंद <span class="highlight">पॉलीसैकेराइड्स</span> होते हैं</li>
+                    <li>ये जल में विलेय या फूलने वाले बहुलक होते हैं</li>
+                    <li>इनमें शर्करा इकाइयाँ ग्लाइकोसिडिक बंधों से जुड़ी होती हैं</li>
+                </ul>
+                
+                <span class="highlight">फेविकोल:</span>
+                <ul>
+                    <li>फेविकोल एक <span class="highlight">सिंथेटिक रेजिन आधारित गोंद</span> है</li>
+                    <li>यह <span class="highlight">पीवीए (पॉलीविनाइल एसीटेट)</span> इमल्शन से बना होता है</li>
+                    <li>इसमें प्लास्टिसाइजर्स, प्रिजर्वेटिव्स और अन्य एडिटिव्स मिले होते हैं</li>
+                    <li>यह जल में विलेय नहीं होता बल्कि जल के वाष्पीकरण के बाद सूखकर एक पारदर्शी फिल्म बनाता है</li>
+                </ul>
+                
+                <span class="highlight">प्राकृतिक गोंद और फेविकोल में अंतर:</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>गुण</th>
+                            <th>प्राकृतिक गोंद</th>
+                            <th>फेविकोल</th>
+                        </tr>
+                        <tr>
+                            <td>उत्पत्ति</td>
+                            <td>प्राकृतिक स्रोत (पेड़, शैवाल)</td>
+                            <td>सिंथेटिक रसायन</td>
+                        </tr>
+                        <tr>
+                            <td>रासायनिक प्रकृति</td>
+                            <td>पॉलीसैकेराइड</td>
+                            <td>पॉलीविनाइल एसीटेट</td>
+                        </tr>
+                        <tr>
+                            <td>जल में विलेयता</td>
+                            <td>विलेय</td>
+                            <td>अविलेय (इमल्शन)</td>
+                        </tr>
+                        <tr>
+                            <td>सूखने का तरीका</td>
+                            <td>जल के वाष्पीकरण से</td>
+                            <td>जल के वाष्पीकरण और पॉलिमर के संकुलन से</td>
+                        </tr>
+                        <tr>
+                            <td>पारदर्शिता</td>
+                            <td>अपारदर्शी या अर्धपारदर्शी</td>
+                            <td>पारदर्शी</td>
+                        </tr>
+                        <tr>
+                            <td>चिपकने की क्षमता</td>
+                            <td>कमजोर से मध्यम</td>
+                            <td>मजबूत</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">निष्कर्ष:</span> फेविकोल प्राकृतिक गोंद से रासायनिक संरचना, गुणों और कार्यप्रणाली में भिन्न है। यह एक सिंथेटिक उत्पाद है जबकि पारंपरिक गोंद प्राकृतिक स्रोतों से प्राप्त होते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>प्रोटीन, वसा व तेल अमीनो अम्लों का विश्लेषणात्मक परीक्षण बताइए एवं किसी भी फल के रस, लार, पसीना तथा मूत्र में इनका परीक्षण करें?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">विश्लेषणात्मक परीक्षण:</span>
+                
+                <span class="highlight">1. प्रोटीन के लिए परीक्षण:</span>
+                <ul>
+                    <li><span class="highlight">बायुरेट परीक्षण:</span> नमूने में सोडियम हाइड्रॉक्साइड और कॉपर सल्फेट मिलाने पर बैंगनी रंग का出现</li>
+                    <li><span class="highlight">निनहाइड्रिन परीक्षण:</span> निनहाइड्रिन विलयन के साथ गर्म करने पर नीला-बैंगनी रंग</li>
+                    <li><span class="highlight">ज़ांथोप्रोटीक परीक्षण:</span> सांद्र नाइट्रिक अम्ल मिलाने पर पीला रंग, क्षार मिलाने पर नारंगी रंग</li>
+                </ul>
+                
+                <span class="highlight">2. वसा और तेल के लिए परीक्षण:</span>
+                <ul>
+                    <li><span class="highlight">दाग परीक्षण:</span> कागज पर दाग छोड़ते हैं</li>
+                    <li><span class="highlight">सूडान III परीक्षण:</span> सूडान III विलयन मिलाने पर लाल रंग</li>
+                    <li><span class="highlight">ऐक्रोलिन परीक्षण:</span> वसा को बिस्मuth आक्साइड के साथ गर्म करने पर तीखी गंध</li>
+                </ul>
+                
+                <span class="highlight">3. अमीनो अम्ल के लिए परीक्षण:</span>
+                <ul>
+                    <li><span class="highlight">निनहाइड्रिन परीक्षण:</span> निनहाइड्रिन विलयन के साथ गर्म करने पर नीला-बैंगनी रंग</li>
+                </ul>
+                
+                <span class="highlight">विभिन्न नमूनों में परीक्षण के परिणाम:</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>नमूना</th>
+                            <th>प्रोटीन</th>
+                            <th>वसा/तेल</th>
+                            <th>अमीनो अम्ल</th>
+                        </tr>
+                        <tr>
+                            <td>फल का रस (संतरा)</td>
+                            <td>नकारात्मक</td>
+                            <td>नकारात्मक</td>
+                            <td>सकारात्मक</td>
+                        </tr>
+                        <tr>
+                            <td>लार</td>
+                            <td>सकारात्मक</td>
+                            <td>नकारात्मक</td>
+                            <td>सकारात्मक</td>
+                        </tr>
+                        <tr>
+                            <td>पसीना</td>
+                            <td>सकारात्मक</td>
+                            <td>नकारात्मक</td>
+                            <td>सकारात्मक</td>
+                        </tr>
+                        <tr>
+                            <td>मूत्र</td>
+                            <td>सकारात्मक</td>
+                            <td>नकारात्मक</td>
+                            <td>सकारात्मक</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">व्याख्या:</span>
+                <ul>
+                    <li><span class="highlight">फल के रस:</span> इसमें अमीनो अम्ल और शर्करा होते हैं, प्रोटीन और वसा नहीं</li>
+                    <li><span class="highlight">लार:</span> इसमें एंजाइम (प्रोटीन) और कुछ अमीनो अम्ल होते हैं</li>
+                    <li><span class="highlight">पसीना:</span> इसमें प्रोटीन, यूरिया और लवण होते हैं</li>
+                    <li><span class="highlight">मूत्र:</span> इसमें यूरिया, अमीनो अम्ल और कभी-कभी प्रोटीन (रोग की स्थिति में) होते हैं</li>
+                </ul>
+                
+                <span class="highlight">नोट:</span> ये परिणाम सामान्य स्वस्थ व्यक्ति के नमूनों के लिए हैं। रोग की स्थिति में ये परिणाम बदल सकते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>पता लगाइए कि जैव मंडल में सभी पादपों द्वारा कितने सेल्यूलोज का निर्माण होता है। इसकी तुलना मनुष्यों द्वारा उत्पादित कागज से करें। मानव द्वारा प्रतिवर्ष पादप पदार्थों की कितनी खपत की जाती है? इसमें वनस्पतियों की कितनी हानि होती है?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">जैव मंडल में सेल्यूलोज उत्पादन:</span>
+                <ul>
+                    <li>पृथ्वी पर पादप प्रतिवर्ष लगभग <span class="highlight">100 बिलियन टन सेल्यूलोज</span> का उत्पादन करते हैं</li>
+                    <li>यह पृथ्वी पर सबसे प्रचुर मात्रा में पाया जाने वाला जैविक यौगिक है</li>
+                    <li>सेल्यूलोज पादप कोशिका भित्ति का मुख्य संरचनात्मक घटक है</li>
+                </ul>
+                
+                <span class="highlight">मानव द्वारा कागज उत्पादन:</span>
+                <ul>
+                    <li>वैश्विक कागज उत्पादन लगभग <span class="highlight">400 मिलियन टन प्रतिवर्ष</span> है</li>
+                    <li>कागज उद्योग द्वारा उपयोग किए जाने वाले सेल्यूलोज का मुख्य स्रोत लकड़ी है</li>
+                    <li>कागज बनाने के लिए लकड़ी को लुगदी में परिवर्तित किया जाता है</li>
+                </ul>
+                
+                <span class="highlight">तुलना:</span>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>पैरामीटर</th>
+                            <th>प्राकृतिक सेल्यूलोज उत्पादन</th>
+                            <th>मानव द्वारा कागज उत्पादन</th>
+                        </tr>
+                        <tr>
+                            <td>मात्रा (प्रतिवर्ष)</td>
+                            <td>100 बिलियन टन</td>
+                            <td>400 मिलियन टन</td>
+                        </tr>
+                        <tr>
+                            <td>स्रोत</td>
+                            <td>सभी पादप</td>
+                            <td>वनों से लकड़ी</td>
+                        </tr>
+                        <tr>
+                            <td>उपयोग</td>
+                            <td>पादप संरचना</td>
+                            <td>कागज, पैकेजिंग आदि</td>
+                        </tr>
+                        <tr>
+                            <td>पर्यावरणीय प्रभाव</td>
+                            <td>सकारात्मक (O<sub>2</sub> उत्पादन)</td>
+                            <td>नकारात्मक (वनों की कटाई)</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <span class="highlight">मानव द्वारा पादप पदार्थों की खपत:</span>
+                <ul>
+                    <li>मानव प्रतिवर्ष लगभग <span class="highlight">15 बिलियन टन</span> पादप पदार्थों की खपत करता है</li>
+                    <li>इसमें शामिल है:
+                        <ul>
+                            <li>खाद्यान्न (लगभग 2.5 बिलियन टन)</li>
+                            <li>ईंधन लकड़ी (लगभग 2 बिलियन टन)</li>
+                            <li>निर्माण सामग्री</li>
+                            <li>कागज और लुगदी</li>
+                            <li>दवाएं और अन्य उत्पाद</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <span class="highlight">वनस्पतियों की हानि:</span>
+                <ul>
+                    <li>प्रतिवर्ष लगभग <span class="highlight">10 मिलियन हेक्टेयर</span> वन क्षेत्र नष्ट हो रहा है</li>
+                    <li>यह हानि मुख्य रूप से निम्न कारणों से होती है:
+                        <ul>
+                            <li>कृषि भूमि विस्तार</li>
+                            <li>शहरीकरण</li>
+                            <li>लकड़ी की कटाई</li>
+                            <li>खनन गतिविधियां</li>
+                            <li>जलवायु परिवर्तन</li>
+                        </ul>
+                    </li>
+                    <li>इस वनों की कटाई के परिणामस्वरूप:
+                        <ul>
+                            <li>जैव विविधता की हानि</li>
+                            <li>मृदा अपरदन</li>
+                            <li>जल चक्र में व्यवधान</li>
+                            <li>वायुमंडल में CO<sub>2</sub> की वृद्धि</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <span class="highlight">संरक्षण के उपाय:</span> वनीकरण, सतत वानिकी, कागज रीसाइक्लिंग, वैकल्पिक सामग्री का उपयोग आदि।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>एंजाइम के महत्वपूर्ण गुणों का वर्णन कीजिए?</span>
+            </div>
+            <div class="answer">
+                <span class="highlight">एंजाइम के महत्वपूर्ण गुण:</span>
+                <ol>
+                    <li><span class="highlight">उत्प्रेरक गुण:</span>
+                        <ul>
+                            <li>एंजाइम जैविक उत्प्रेरक हैं जो रासायनिक अभिक्रियाओं की दर को बढ़ाते हैं</li>
+                            <li>ये अभिक्रिया के लिए आवश्यक सक्रियण ऊर्जा को कम करते हैं</li>
+                            <li>अभिक्रिया के अंत में एंजाइम अपरिवर्तित रहते हैं</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">विशिष्टता (Specificity):</span>
+                        <ul>
+                            <li>एंजाइम अत्यधिक विशिष्ट होते हैं</li>
+                            <li><span class="highlight">सब्सट्रेट विशिष्टता:</span> प्रत्येक एंजाइम केवल एक विशिष्ट सब्सट्रेट पर कार्य करता है</li>
+                            <li><span class="highlight">क्रिया विशिष्टता:</span> प्रत्येक एंजाइम केवल एक विशिष्ट रासायनिक अभिक्रिया को उत्प्रेरित करता है</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">प्रोटीन प्रकृति:</span>
+                        <ul>
+                            <li>अधिकांश एंजाइम प्रोटीन होते हैं (कुछ RNA आधारित राइबोजाइम भी होते हैं)</li>
+                            <li>इनकी तृतीयक संरचना उनके कार्य के लिए महत्वपूर्ण है</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">सक्रिय स्थल (Active Site):</span>
+                        <ul>
+                            <li>एंजाइम में एक विशिष्ट सक्रिय स्थल होता है जहाँ सब्सट्रेट बंधता है</li>
+                            <li>सक्रिय स्थल की संरचना सब्सट्रेट के अनुरूप होती है</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">तापमान और pH संवेदनशीलता:</span>
+                        <ul>
+                            <li>प्रत्येक एंजाइम का एक इष्टतम तापमान और pH होता है</li>
+                            <li>इष्टतम स्थितियों से हटने पर एंजाइम की सक्रियता कम हो जाती है</li>
+                            <li>उच्च तापमान पर एंजाइम विकृत (denature) हो सकते हैं</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">उत्पाद अवरोध (Product Inhibition):</span>
+                        <ul>
+                            <li>कुछ एंजाइम अपने उत्पादों द्वारा अवरुद्ध हो सकते हैं</li>
+                            <li>यह एक प्रतिपुष्टि नियंत्रण (feedback control) तंत्र है</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">सह-कारक आवश्यकता:</span>
+                        <ul>
+                            <li>कुछ एंजाइमों को सक्रिय होने के लिए सह-कारकों (co-factors) की आवश्यकता होती है</li>
+                            <li>सह-कारक धातु आयन (Mg<sup>2+</sup>, Zn<sup>2+</sup>) या सह-एंजाइम (विटामिन व्युत्पन्न) हो सकते हैं</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">नियंत्रणीयता (Regulation):</span>
+                        <ul>
+                            <li>एंजाइमों की सक्रियता विभिन्न तरीकों से नियंत्रित होती है</li>
+                            <li>अवरोधक (inhibitors) एंजाइम की सक्रियता को कम कर सकते हैं</li>
+                            <li>सक्रियक (activators) एंजाइम की सक्रियता को बढ़ा सकते हैं</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">उत्क्रमणीयता (Reversibility):</span>
+                        <ul>
+                            <li>अधिकांश एंजाइम उत्प्रेरित अभिक्रियाएँ उत्क्रमणीय होती हैं</li>
+                            <li>एंजाइम अभिक्रिया की दिशा नहीं बदलते, केवल संतुलन को प्राप्त होने की दर को बढ़ाते हैं</li>
+                        </ul>
+                    </li>
+                    
+                    <li><span class="highlight">अत्यधिक दक्षता:</span>
+                        <ul>
+                            <li>एंजाइम अभिक्रियाओं को लाखों गुना तेज कर सकते हैं</li>
+                            <li>एक एंजाइम अणु प्रति सेकंड हजारों सब्सट्रेट अणुओं को परिवर्तित कर सकता है</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <span class="highlight">निष्कर्ष:</span> एंजाइमों के ये गुण उन्हें जीवन के लिए अत्यंत महत्वपूर्ण बनाते हैं। वे कोशिका में होने वाली लगभग सभी जैवरासायनिक अभिक्रियाओं के लिए जिम्मेदार हैं और जीवों के उपापचय (metabolism) का आधार हैं।
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 9 "जैव अणु" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent dragging images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+            });
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 जीव विज्ञान - अध्याय 8: कोशिका: जीवन की इकाई</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Noto Sans Devanagari', 'Mukta', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            position: relative;
+            min-height: 100vh;
+        }
+        
+        .watermark {
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(0,0,0,0.03);
+            text-align: center;
+        }
+        
+        .watermark-line {
+            margin: 20px 0;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .header-card {
+            background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .header-card h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-card h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .question-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #1a2980;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question-number {
+            background: #1a2980;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #26d0ce;
+            border-radius: 0 8px 8px 0;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .answer ul {
+            padding-left: 20px;
+            margin: 10px 0;
+        }
+        
+        .answer li {
+            margin-bottom: 8px;
+        }
+        
+        .highlight {
+            background: linear-gradient(120deg, #a8edea 0%, #d6fffc 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .mcq-options {
+            padding-left: 40px;
+            margin: 10px 0;
+        }
+        
+        .mcq-option {
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header-card {
+                padding: 20px;
+            }
+            
+            .header-card h1 {
+                font-size: 1.8rem;
+            }
+            
+            .header-card h2 {
+                font-size: 1.3rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+            
+            .question {
+                font-size: 1.1rem;
+            }
+            
+            .watermark {
+                font-size: 14px;
+            }
+            
+            table {
+                font-size: 0.8rem;
+            }
+        }
+        
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            
+            .header-card {
+                background: #1a2980;
+                color: white;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                box-shadow: none;
+                border-radius: 0;
+            }
+            
+            .question-card {
+                box-shadow: none;
+                page-break-inside: avoid;
+            }
+            
+            .watermark {
+                display: flex !important;
+                color: rgba(0,0,0,0.03) !important;
+            }
+        }
+        
+        .no-print {
+            display: none;
+        }
+        
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="watermark">
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+        <div class="watermark-line">studyscript.netlify.app</div>
+    </div>
+    
+    <div class="container">
+        <div class="header-card">
+            <h1>कोशिका: जीवन की इकाई</h1>
+            <h2>कक्षा 11 - जीवविज्ञान अध्याय 8</h2>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>इनमें से कौन सा सही नहीं है?</span>
+            </div>
+            <div class="answer">
+                <div class="mcq-options">
+                    <div class="mcq-option">(क) कोशिका की खोज रॉबर्ट ब्राउन ने की थी।</div>
+                    <div class="mcq-option">(ख) श्लाइडन और श्वान ने कोशिका सिद्धांत प्रतिपादित किया था।</div>
+                    <div class="mcq-option">(ग) विरचो के अनुसार कोशिका पूर्व स्थित कोशिका से बनती है।</div>
+                    <div class="mcq-option">(घ) एक कोशिकीय जीव अपने जीवन के कार्य एक कोशिका के भीतर करते हैं।</div>
+                </div>
+                <br>
+                <strong>उत्तर:</strong> (क) कोशिका की खोज रॉबर्ट ब्राउन ने की थी।<br><br>
+                <strong>स्पष्टीकरण:</strong> कोशिका की खोज रॉबर्ट हुक ने 1665 में की थी, न कि रॉबर्ट ब्राउन ने। रॉबर्ट ब्राउन ने 1831 में कोशिका के केंद्रक की खोज की थी।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>नई कोशिका का निर्माण होता है:</span>
+            </div>
+            <div class="answer">
+                <div class="mcq-options">
+                    <div class="mcq-option">(क) जीवाणु संचयन से</div>
+                    <div class="mcq-option">(ख) पुरानी कोशिकाओं के पुनरुत्पादन से</div>
+                    <div class="mcq-option">(ग) पूर्व स्थित कोशिकाओं से</div>
+                    <div class="mcq-option">(घ) अजैविक पदार्थों से</div>
+                </div>
+                <br>
+                <strong>उत्तर:</strong> (ग) पूर्व स्थित कोशिकाओं से<br><br>
+                <strong>स्पष्टीकरण:</strong> रुडॉल्फ विरचो (1855) ने स्पष्ट किया कि कोशिका विभाजित होती है और नई कोशिकाओं का निर्माण पूर्व स्थित कोशिकाओं के विभाजन से होता है (ओम्निस सेलुला ई सेलुला)।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>निम्नलिखित का जोड़ा बनाइए:</span>
+            </div>
+            <div class="answer">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>स्तंभ I</th>
+                            <th>स्तंभ II</th>
+                        </tr>
+                        <tr>
+                            <td>(क) क्रिस्टी</td>
+                            <td>(i) स्ट्रोमा में पट्टेदार थैली</td>
+                        </tr>
+                        <tr>
+                            <td>(ख) कुंडिका</td>
+                            <td>(ii) माइटोकॉन्ड्रिया में अंतर्वलन</td>
+                        </tr>
+                        <tr>
+                            <td>(ग) थायलाकोइड</td>
+                            <td>(iii) गॉल्जी उपकरण में फलकीय थैली</td>
+                        </tr>
+                    </table>
+                </div>
+                <br>
+                <strong>उत्तर:</strong><br>
+                (क) → (ii) माइटोकॉन्ड्रिया में अंतर्वलन<br>
+                (ख) → (iii) गॉल्जी उपकरण में फलकीय थैली<br>
+                (ग) → (i) स्ट्रोमा में पट्टेदार थैली
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>इनमें से कौन सा सही है?</span>
+            </div>
+            <div class="answer">
+                <div class="mcq-options">
+                    <div class="mcq-option">(क) सभी जीव कोशिकाओं में केंद्रक मिलता है।</div>
+                    <div class="mcq-option">(ख) दोनों प्राणी और पादप कोशिकाओं में स्पष्ट कोशिका भित्ति होती है।</div>
+                    <div class="mcq-option">(ग) प्रोकैरियोटिक की झिल्ली में विकसित अंगक नहीं मिलते हैं।</div>
+                    <div class="mcq-option">(घ) कोशिका का निर्माण अजैविक पदार्थों से नए सिरे से होता है।</div>
+                </div>
+                <br>
+                <strong>उत्तर:</strong> (ग) प्रोकैरियोटिक की झिल्ली में विकसित अंगक नहीं मिलते हैं।<br><br>
+                <strong>स्पष्टीकरण:</strong> प्रोकैरियोटिक कोशिकाओं में झिल्ली-बद्ध विकसित अंगक जैसे माइटोकॉन्ड्रिया, गॉल्जी उपकरण आदि नहीं पाए जाते हैं।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>प्रोकैरियोटिक कोशिका में क्या मीसोसोम होता है? इसके कार्य का वर्णन करें।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>मीसोसोम:</strong> प्रोकैरियोटिक कोशिका की कोशिका झिल्ली में पाया जाने वाला एक विशेष रूप से विभेदित संरचनात्मक अंग है जो प्लाज्मा झिल्ली के अंतर्वलन से बनता है।<br><br>
+                
+                <strong>मीसोसोम के कार्य:</strong>
+                <ul>
+                    <li>कोशिका भित्ति निर्माण में सहायता करना</li>
+                    <li>DNA प्रतिकृति और इसके बाद कोशिका में वितरण में सहायता करना</li>
+                    <li>श्वसन, स्रावी प्रक्रियाओं में भाग लेना</li>
+                    <li>कोशिका झिल्ली के पृष्ठीय क्षेत्र को बढ़ाने में सहायता करना</li>
+                    <li>एंजाइम मात्रा को बढ़ाने में सहायता करना</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>कैसे उदासीन विलेय जीवद्रव्य झिल्ली से होकर गति करते हैं? क्या ध्रुवीय अणु उसी तरह से इससे होकर गति करते हैं? यदि नहीं तो इनका जीवद्रव्य झिल्ली से होकर परिवहन कैसे होता है?</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>उदासीन विलेय का परिवहन:</strong> उदासीन विलेय जैसे ऑक्सीजन, कार्बन डाइऑक्साइड आदि सरल विसरण द्वारा उच्च सांद्रता से निम्न सांद्रता की ओर जीवद्रव्य झिल्ली से होकर गति करते हैं। इन्हें ऊर्जा की आवश्यकता नहीं होती है।<br><br>
+                
+                <strong>ध्रुवीय अणुओं का परिवहन:</strong> ध्रुवीय अणु जो उदासीन लिपिड द्विस्तर से होकर नहीं जा सकते, उनके परिवहन के लिए झिल्ली की वाहक प्रोटीन की आवश्यकता होती है।<br><br>
+                
+                <strong>ध्रुवीय अणुओं के परिवहन के प्रकार:</strong>
+                <ul>
+                    <li><span class="highlight">सुवाह्य विसरण:</span> यह झिल्ली प्रोटीन की सहायता से होता है लेकिन ऊर्जा की आवश्यकता नहीं होती।</li>
+                    <li><span class="highlight">सक्रिय परिवहन:</span> यह सांद्रता प्रवणता के विपरीत होता है और इसमें ATP ऊर्जा का उपयोग होता है। उदाहरण: सोडियम-पोटेशियम पंप।</li>
+                </ul>
+                
+                <strong>विस्तृत स्पष्टीकरण:</strong><br>
+                जीवद्रव्य झिल्ली एक अर्धपारगम्य झिल्ली है जो लिपिड द्विस्तर से बनी होती है। उदासीन विलेय (जैसे O₂, CO₂) इस लिपिड द्विस्तर में आसानी से घुल जाते हैं और विसरण द्वारा झिल्ली पार कर लेते हैं। जबकि ध्रुवीय अणु (जैसे ग्लूकोज, अमीनो अम्ल) और आयन (Na⁺, K⁺) लिपिड द्विस्तर में नहीं घुल पाते, इसलिए इन्हें वाहक प्रोटीन की सहायता से झिल्ली पार करनी पड़ती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>दो कोशिकीय अंगकों के नाम बताइए जो द्विकला से घिरे होते हैं। इन दोनों अंगकों की क्या विशेषताएं हैं? इनके कार्य और रेखांकित चित्र बनाइए।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>द्विकला से घिरे दो कोशिकीय अंगक:</strong>
+                <ol>
+                    <li>माइटोकॉन्ड्रिया</li>
+                    <li>हरित लवक (क्लोरोप्लास्ट)</li>
+                </ol>
+                
+                <strong>1. माइटोकॉन्ड्रिया की विशेषताएं:</strong>
+                <ul>
+                    <li>द्विकला से घिरी संरचना</li>
+                    <li>बाह्य कला चिकनी होती है</li>
+                    <li>आंतरिक कला अंतर्वलित होकर क्रिस्टी बनाती है</li>
+                    <li>मैट्रिक्स में गोलाकार DNA अणु और 70S राइबोसोम पाए जाते हैं</li>
+                    <li>कोशिका की ऊर्जा गृह कहलाता है</li>
+                </ul>
+                
+                <strong>माइटोकॉन्ड्रिया के कार्य:</strong> वायवीय श्वसन द्वारा ATP का निर्माण करना।<br><br>
+                
+                <strong>2. हरित लवक की विशेषताएं:</strong>
+                <ul>
+                    <li>द्विकला से घिरी संरचना</li>
+                    <li>बाह्य कला चिकनी होती है</li>
+                    <li>आंतरिक कला थायलाकोइड बनाती है</li>
+                    <li>स्ट्रोमा में गोलाकार DNA अणु और 70S राइबोसोम पाए जाते हैं</li>
+                    <li>प्रकाश संश्लेषण का स्थान</li>
+                </ul>
+                
+                <strong>हरित लवक के कार्य:</strong> प्रकाश संश्लेषण द्वारा भोजन निर्माण करना।<br><br>
+                
+                <strong>चित्र:</strong> (छात्र अपनी नोटबुक में दोनों अंगकों के रेखाचित्र बनाएं)
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>प्रोकैरियोटिक कोशिका की क्या विशेषताएं हैं?</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>प्रोकैरियोटिक कोशिका की विशेषताएं:</strong>
+                <ul>
+                    <li>झिल्ली-बद्ध केंद्रक का अभाव होता है</li>
+                    <li>आनुवंशिक पदार्थ नग्न DNA के रूप में होता है</li>
+                    <li>झिल्ली-बद्ध अंगकों का अभाव होता है</li>
+                    <li>70S प्रकार के राइबोसोम पाए जाते हैं</li>
+                    <li>कोशिका भित्ति म्यूरिन नामक पदार्थ से बनी होती है</li>
+                    <li>कुछ में मीसोसोम पाया जाता है</li>
+                    <li>आकार में छोटी होती हैं (1-10 माइक्रोमीटर)</li>
+                    <li>प्रजनन द्विखंडन द्वारा होता है</li>
+                    <li>कशाभिका सरल प्रकार की होती है</li>
+                    <li>उदाहरण: जीवाणु, नील-हरित शैवाल, माइकोप्लाज्मा</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>बहुकोशिकीय जीवों में श्रम विभाजन की व्याख्या कीजिए।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>बहुकोशिकीय जीवों में श्रम विभाजन:</strong> बहुकोशिकीय जीवों में विभिन्न प्रकार की कोशिकाएं विशिष्ट कार्यों के लिए विशेषीकृत होती हैं। यह विशेषीकरण श्रम विभाजन कहलाता है।<br><br>
+                
+                <strong>श्रम विभाजन के उदाहरण:</strong>
+                <ul>
+                    <li><span class="highlight">मनुष्य में:</span>
+                        <ul>
+                            <li>लाल रक्त कोशिकाएं - ऑक्सीजन परिवहन</li>
+                            <li>तंत्रिका कोशिकाएं - संदेश संचार</li>
+                            <li>पेशी कोशिकाएं - संकुचन और गति</li>
+                            <li>अग्न्याशय की बीटा कोशिकाएं - इंसुलिन स्राव</li>
+                        </ul>
+                    </li>
+                    <li><span class="highlight">पौधों में:</span>
+                        <ul>
+                            <li>पर्णमध्यकोश कोशिकाएं - प्रकाश संश्लेषण</li>
+                            <li>जाइलम वाहिनिकाएं - जल और खनिज परिवहन</li>
+                            <li>रंध्र कोशिकाएं - वाष्पोत्सर्जन और गैस विनिमय</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <strong>श्रम विभाजन के लाभ:</strong>
+                <ul>
+                    <li>दक्षता में वृद्धि</li>
+                    <li>ऊर्जा की बचत</li>
+                    <li>जीव की जटिल कार्यों को करने की क्षमता में वृद्धि</li>
+                    <li>विशिष्टीकरण से कार्य कुशलता बढ़ती है</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>कोशिका जीवन की मूल इकाई है, इसे संक्षिप्त में वर्णन करें।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>कोशिका जीवन की मूल इकाई है:</strong>
+                <ul>
+                    <li>कोशिका जीवन की संरचनात्मक इकाई है - सभी जीव कोशिकाओं से बने होते हैं</li>
+                    <li>कोशिका जीवन की कार्यात्मक इकाई है - सभी जैविक क्रियाएं कोशिका में होती हैं</li>
+                    <li>कोशिका जीवन की आनुवंशिक इकाई है - आनुवंशिक सूचना कोशिका में संग्रहित रहती है</li>
+                    <li>कोशिका जीवन की विकासात्मक इकाई है - नए जीव का विकास कोशिका से ही प्रारंभ होता है</li>
+                </ul>
+                
+                <strong>कोशिका सिद्धांत के अनुसार:</strong>
+                <ol>
+                    <li>सभी जीव कोशिका और कोशिका उत्पादों से बने होते हैं</li>
+                    <li>सभी कोशिकाएं पूर्व स्थित कोशिकाओं से बनती हैं</li>
+                    <li>सभी जीवों की मौलिक संरचनात्मक और कार्यात्मक इकाई कोशिका है</li>
+                </ol>
+                
+                कोशिका के बिना किसी भी जीव का स्वतंत्र अस्तित्व संभव नहीं है, इसलिए इसे जीवन की मूल इकाई माना जाता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>केंद्रक छिद्र क्या है? इनके कार्यों को बताइए।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>केंद्रक छिद्र:</strong> केंद्रक आवरण में पाए जाने वाले छोटे-छोटे छिद्रों को केंद्रक छिद्र कहते हैं। ये केंद्रक आवरण की दोनों झिल्लियों के संलयन से बनते हैं।<br><br>
+                
+                <strong>केंद्रक छिद्र के कार्य:</strong>
+                <ul>
+                    <li>केंद्रक और कोशिकाद्रव्य के बीच पदार्थों के आदान-प्रदान का मार्ग प्रदान करना</li>
+                    <li>RNA और प्रोटीन अणुओं के केंद्रक से कोशिकाद्रव्य की ओर जाने में सहायता करना</li>
+                    <li>केंद्रक और कोशिकाद्रव्य के बीच संचार स्थापित करना</li>
+                    <li>कुछ विशिष्ट प्रोटीनों के केंद्रक में प्रवेश को नियंत्रित करना</li>
+                    <li>केंद्रक और कोशिकाद्रव्य के बीच आयनों और छोटे अणुओं के आदान-प्रदान में सहायता करना</li>
+                </ul>
+                
+                केंद्रक छिद्र एक जटिल प्रोटीन संरचना से बना होता है जिसे न्यूक्लियर पोर कॉम्प्लेक्स कहते हैं, जो पदार्थों के चयनात्मक परिवहन में सहायता करता है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span> लयनकाय (लाइसोसोम) और रसधानी दोनों अंतर्झिल्ली संरचना है फिर भी कार्य की दृष्टि से ये अलग होते हैं। इस पर टिप्पणी लिखें।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong> लयनकाय (लाइसोसोम) और रसधानी में अंतर:</strong>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>विशेषता</th>
+                            <th> लयनकाय (लाइसोसोम)</th>
+                            <th>रसधानी</th>
+                        </tr>
+                        <tr>
+                            <td>उत्पत्ति</td>
+                            <td>गॉल्जी उपकरण से</td>
+                            <td>अंतर्द्रव्यी जालिका से</td>
+                        </tr>
+                        <tr>
+                            <td>एंजाइम</td>
+                            <td>जल-अपघटनी एंजाइम (हाइड्रोलेजेज)</td>
+                            <td>कोई एंजाइम नहीं</td>
+                        </tr>
+                        <tr>
+                            <td>pH</td>
+                            <td>अम्लीय (लगभग 5)</td>
+                            <td>तटस्थ या हल्का अम्लीय</td>
+                        </tr>
+                        <tr>
+                            <td>मुख्य कार्य</td>
+                            <td>अंत:कोशिकीय पाचन, कोशिका की आत्मघाती थैली</td>
+                            <td>संग्रहण, दाब उत्पन्न करना, उत्सर्जन</td>
+                        </tr>
+                        <tr>
+                            <td>संग्रहीत पदार्थ</td>
+                            <td>पाचक एंजाइम</td>
+                            <td>जल, रस, उत्सर्जी पदार्थ, रंजक</td>
+                        </tr>
+                        <tr>
+                            <td>पादप/प्राणी</td>
+                            <td>मुख्यतः प्राणी कोशिकाओं में</td>
+                            <td>मुख्यतः पादप कोशिकाओं में</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <strong>निष्कर्ष:</strong> हालांकि लाइसोसोम और रसधानी दोनों अंतर्झिल्ली संरचनाएं हैं, लेकिन इनकी उत्पत्ति, संरचना, एंजाइम संरचना और कार्यों में मौलिक अंतर है। लाइसोसोम मुख्यतः पाचन का कार्य करते हैं जबकि रसधानी संग्रहण और दाब उत्पन्न करने का कार्य करती है।
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>रेखांकित चित्र की सहायता से निम्नलिखित की संरचना का वर्णन करें: (i) केंद्रक (ii) तारककाय</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                
+                <strong>(i) केंद्रक की संरचना:</strong>
+                <ul>
+                    <li><span class="highlight">केंद्रक आवरण:</span> द्विकला से बनी संरचना जो केंद्रक को घेरे रहती है</li>
+                    <li><span class="highlight">केंद्रक छिद्र:</span> केंद्रक आवरण में स्थित छिद्र जो केंद्रक और कोशिकाद्रव्य के बीच संचार स्थापित करते हैं</li>
+                    <li><span class="highlight">केंद्रिका:</span> गोलाकार संरचना जो राइबोसोमल RNA संश्लेषण के लिए उत्तरदायी है</li>
+                    <li><span class="highlight">क्रोमेटिन जाल:</span> DNA और हिस्टोन प्रोटीन से बनी जालीदार संरचना</li>
+                    <li><span class="highlight">केंद्रक द्रव्य:</span> केंद्रक के अंदर का अर्धतरल पदार्थ</li>
+                </ul>
+                
+                <strong>केंद्रक के कार्य:</strong> आनुवंशिक सूचना का संग्रहण, कोशिका विभाजन का नियंत्रण, प्रोटीन संश्लेषण का नियंत्रण<br><br>
+                
+                <strong>(ii) तारककाय की संरचना:</strong>
+                <ul>
+                    <li><span class="highlight">तारक केंद्र:</span> दो बेलनाकार संरचनाएं जो एक-दूसरे के लंबवत स्थित होती हैं</li>
+                    <li><span class="highlight">पेरीसेंट्रिओलर पदार्थ:</span> तारक केंद्र के चारों ओर स्थित अक्रिस्टलीय पदार्थ</li>
+                    <li><span class="highlight">तृतीयक नलिकाएं:</span> परिधीय स्थित नौ त्रिक नलिकाएं</li>
+                    <li><span class="highlight">केंद्रीय नलिका:</span> केंद्र में स्थित दो एकल नलिकाएं</li>
+                    <li><span class="highlight">तंतु:</span> तारक केंद्र से निकलने वाले सूक्ष्म तंतु</li>
+                </ul>
+                
+                <strong>तारककाय के कार्य:</strong> कोशिका विभाजन के दौरान तर्कु तंतु निर्माण, कशाभिका और पक्ष्माभ का आधारीय काय निर्माण<br><br>
+                
+                <strong>चित्र:</strong> (छात्र अपनी नोटबुक में केंद्रक और तारककाय के रेखाचित्र बनाएं)
+            </div>
+        </div>
+        
+        <div class="question-card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>गुणसूत्र बिंदु क्या है? कैसे गुणसूत्र बिंदु की स्थिति के आधार पर गुणसूत्र का वर्गीकरण किस रूप में होता है। अपने उत्तर को देने हेतु विभिन्न प्रकार के गुणसूत्रों पर गुणसूत्र बिंदु की स्थिति को दर्शाने हेतु चित्र बनाइए।</span>
+            </div>
+            <div class="answer">
+                <strong>उत्तर:</strong><br><br>
+                <strong>गुणसूत्र बिंदु:</strong> गुणसूत्र पर वह विशिष्ट स्थान जहाँ पर दोनों अर्धगुणसूत्र (क्रोमेटिड) जुड़े रहते हैं, गुणसूत्र बिंदु या सेन्ट्रोमियर कहलाता है। यह गुणसूत्र का प्राथमिक संकीर्णन स्थल है।<br><br>
+                
+                <strong>गुणसूत्र बिंदु की स्थिति के आधार पर गुणसूत्रों का वर्गीकरण:</strong>
+                
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>गुणसूत्र का प्रकार</th>
+                            <th>गुणसूत्र बिंदु की स्थिति</th>
+                            <th>विशेषताएं</th>
+                        </tr>
+                        <tr>
+                            <td>मध्यबिंदुक (Metacentric)</td>
+                            <td>गुणसूत्र के मध्य में</td>
+                            <td>दोनों भुजाएँ लगभग बराबर लंबाई की</td>
+                        </tr>
+                        <tr>
+                            <td>उपमध्यबिंदुक (Submetacentric)</td>
+                            <td>गुणसूत्र के मध्य से हटकर</td>
+                            <td>एक भुजा छोटी और दूसरी लंबी</td>
+                        </tr>
+                        <tr>
+                            <td>अंत्यबिंदुक (Acrocentric)</td>
+                            <td>गुणसूत्र के अंत के निकट</td>
+                            <td>एक भुजा बहुत छोटी और दूसरी बहुत लंबी</td>
+                        </tr>
+                        <tr>
+                            <td>तिलांबिंदुक (Telocentric)</td>
+                            <td>गुणसूत्र के अंत में</td>
+                            <td>गुणसूत्र बिंदु सिरे पर होने के कारण केवल एक भुजा दिखाई देती है</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <strong>चित्र:</strong> (छात्र अपनी नोटबुक में चारों प्रकार के गुणसूत्रों के रेखाचित्र बनाएं जिनमें गुणसूत्र बिंदु की स्थिति स्पष्ट दिखाई दे)
+            </div>
+        </div>
+        
+        <div class="footer-note">
+            यह अभ्यास प्रश्नोत्तर कक्षा 11 जीव विज्ञान के अध्याय 8 "कोशिका: जीवन की इकाई" पर आधारित है।
+        </div>
+    </div>
+
+    <script>
+        // Prevent right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        // Prevent text selection
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        
+        // Ensure watermark is visible even if printed
+        window.addEventListener('beforeprint', function() {
+            document.querySelector('.watermark').style.display = 'flex';
+        });
+    </script>
+</body>
+</html>
