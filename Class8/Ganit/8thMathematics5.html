@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 5: Squares and Square Roots</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            line-height: 1.6;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            border-left: 4px solid #0ea5e9;
+            font-style: italic;
+        }
+        .answer-box {
+            background-color: #d1fae5;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-weight: 600;
+        }
+        .math-expr {
+            font-family: 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 5: Squares and Square Roots</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 5.1 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.1</h2>
+
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">1. What will be the unit digit of the squares of the following numbers?</h3>
+                <p>(i) 81 (ii) 272 (iii) 799 (iv) 3853 (v) 1234 (vi) 26387 (vii) 52698 (viii) 99880 (ix) 12796 (x) 55555</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    <p class="mb-2">We know that the unit digit of a square is the unit digit of the square of its unit digit.</p>
+                    
+                    <p class="mb-2">(i) 81: Unit digit 1, 1² = 1 → Unit digit of square = 1</p>
+                    <p class="mb-2">(ii) 272: Unit digit 2, 2² = 4 → Unit digit of square = 4</p>
+                    <p class="mb-2">(iii) 799: Unit digit 9, 9² = 81 → Unit digit of square = 1</p>
+                    <p class="mb-2">(iv) 3853: Unit digit 3, 3² = 9 → Unit digit of square = 9</p>
+                    <p class="mb-2">(v) 1234: Unit digit 4, 4² = 16 → Unit digit of square = 6</p>
+                    <p class="mb-2">(vi) 26387: Unit digit 7, 7² = 49 → Unit digit of square = 9</p>
+                    <p class="mb-2">(vii) 52698: Unit digit 8, 8² = 64 → Unit digit of square = 4</p>
+                    <p class="mb-2">(viii) 99880: Unit digit 0, 0² = 0 → Unit digit of square = 0</p>
+                    <p class="mb-2">(ix) 12796: Unit digit 6, 6² = 36 → Unit digit of square = 6</p>
+                    <p class="mb-2">(x) 55555: Unit digit 5, 5² = 25 → Unit digit of square = 5</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 1, (ii) 4, (iii) 1, (iv) 9, (v) 6, (vi) 9, (vii) 4, (viii) 0, (ix) 6, (x) 5
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Kisi bhi number ka square ka unit digit sirf uska unit digit dekh kar pata kar sakte hain. Jaise 81 ka unit digit 1 hai, aur 1 square karo toh 1 aata hai. Isi tarah har number ke liye sirf unit digit ka square karo aur uska unit digit hi answer hoga.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">2. The following numbers are obviously not perfect squares. Give reason.</h3>
+                <p>(i) 1057 (ii) 23453 (iii) 7928 (iv) 222222 (v) 64000 (vi) 89722 (vii) 222000 (viii) 505050</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that a perfect square always ends with 0, 1, 4, 5, 6, or 9 at unit's place.</p>
+                    
+                    <p class="mb-2">(i) 1057: Unit digit is 7, which is not in the list of possible unit digits for perfect squares.</p>
+                    <p class="mb-2">(ii) 23453: Unit digit is 3, which is not in the list of possible unit digits for perfect squares.</p>
+                    <p class="mb-2">(iii) 7928: Unit digit is 8, which is not in the list of possible unit digits for perfect squares.</p>
+                    <p class="mb-2">(iv) 222222: Unit digit is 2, which is not in the list of possible unit digits for perfect squares.</p>
+                    <p class="mb-2">(v) 64000: Unit digit is 0, but it doesn't have an even number of zeros. 64000 = 64 × 1000 = 8² × 10 × 10 × 10, which is not a perfect square.</p>
+                    <p class="mb-2">(vi) 89722: Unit digit is 2, which is not in the list of possible unit digits for perfect squares.</p>
+                    <p class="mb-2">(vii) 222000: Unit digit is 0, but it doesn't have an even number of zeros.</p>
+                    <p class="mb-2">(viii) 505050: Unit digit is 0, but it doesn't have an even number of zeros.</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> All these numbers cannot be perfect squares because they either end with digits that perfect squares cannot end with, or they don't have even number of zeros at the end.
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square numbers ka unit digit hamesha 0, 1, 4, 5, 6, ya 9 hi hota hai. Agar kisi number ka unit digit inme se nahi hai, toh wo perfect square nahi ho sakta. Saath hi, agar number zero pe khatam ho raha hai, toh zeros ki count even honi chahiye perfect square ke liye.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">3. The squares of which of the following would be odd numbers?</h3>
+                <p>(i) 431 (ii) 2826 (iii) 7779 (iv) 82004</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that the square of an odd number is odd, and the square of an even number is even.</p>
+                    
+                    <p class="mb-2">(i) 431: Odd number → Square will be odd</p>
+                    <p class="mb-2">(ii) 2826: Even number → Square will be even</p>
+                    <p class="mb-2">(iii) 7779: Odd number → Square will be odd</p>
+                    <p class="mb-2">(iv) 82004: Even number → Square will be even</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 431 and (iii) 7779
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Odd number ka square hamesha odd hota hai aur even number ka square hamesha even hota hai. Isliye sirf odd numbers (431 aur 7779) ka square odd hoga.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">4. Observe the following pattern and find the missing digits:</h3>
+                <p>11² = 121<br>
+                101² = 10201<br>
+                1001² = 1002001<br>
+                100001² = 1 ..... 2 ..... 1<br>
+                10000001² = ..............</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Observing the pattern:</p>
+                    <p class="mb-2">11² = 121 → (2 between two 1's)</p>
+                    <p class="mb-2">101² = 10201 → (0,2,0 between two 1's)</p>
+                    <p class="mb-2">1001² = 1002001 → (00,2,00 between two 1's)</p>
+                    
+                    <p class="mb-2">From this pattern we can observe that:</p>
+                    <p class="mb-2">100001² = 1 0000 2 0000 1</p>
+                    <p class="mb-2">10000001² = 1 000000 2 000000 1</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong><br>
+                        100001² = 1 0000 2 0000 1<br>
+                        10000001² = 1 000000 2 000000 1
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Pattern dekhne se pata chal raha hai ki number ke beech me jitne zero hote hain, unke square me utne hi zero dono taraf aur beech me 2 aata hai. Jaise 101 (1,0,1) me ek zero hai, isliye 10201 (1,0,2,0,1) aaya. Isi pattern ko follow karte hue answer likh sakte hain.
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">5. Observe the following pattern and supply the missing numbers:</h3>
+                <p>11² = 1 2 1<br>
+                101² = 1 0 2 0 1<br>
+                10101² = 102030201<br>
+                1010101² = ...............<br>
+                ...........² = 10203040504030201</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Observing the pattern:</p>
+                    <p class="mb-2">11² = 121 → 1, 2, 1</p>
+                    <p class="mb-2">101² = 10201 → 1, 0, 2, 0, 1</p>
+                    <p class="mb-2">10101² = 102030201 → 1, 0, 2, 0, 3, 0, 2, 0, 1</p>
+                    
+                    <p class="mb-2">From this pattern we can observe that:</p>
+                    <p class="mb-2">1010101² = 1020304030201</p>
+                    <p class="mb-2">101010101² = 10203040504030201</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 1010101² = 1020304030201 and 101010101² = 10203040504030201
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Is pattern me numbers 1 se start hoke increase hote hain aur phir decrease hote hain, aur har number ke beech me zero aata hai. Jaise 10101² me 1,0,2,0,3,0,2,0,1 aaya hai. Isi pattern ko aage continue karte hue answers nikal sakte hain.
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">6. Using the given pattern, find the missing numbers:</h3>
+                <p>1² + 2² + 2² = 3²<br>
+                2² + 3² + 6² = 7²<br>
+                3² + 4² + 12² = 13²<br>
+                4² + 5² + _² = 21²<br>
+                5² + _² + 30² = 31²<br>
+                6² + 7² + _² = __²</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Observing the pattern:</p>
+                    <p class="mb-2">1² + 2² + 2² = 3² → 2 = 1×2</p>
+                    <p class="mb-2">2² + 3² + 6² = 7² → 6 = 2×3</p>
+                    <p class="mb-2">3² + 4² + 12² = 13² → 12 = 3×4</p>
+                    
+                    <p class="mb-2">From this pattern we observe that the third number is the product of the first two numbers, and the right side is the square of (product of first two numbers + 1).</p>
+                    
+                    <p class="mb-2">4² + 5² + _² = 21² → Third number = 4×5 = 20, Right side = (4×5+1)² = 21²</p>
+                    <p class="mb-2">5² + _² + 30² = 31² → Second number = 30÷5 = 6, Right side = (5×6+1)² = 31²</p>
+                    <p class="mb-2">6² + 7² + _² = __² → Third number = 6×7 = 42, Right side = (6×7+1)² = 43²</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong><br>
+                        4² + 5² + 20² = 21²<br>
+                        5² + 6² + 30² = 31²<br>
+                        6² + 7² + 42² = 43²
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Pattern me dekho ki third number hamesha first aur second number ka product hota hai. Aur right side ka number hamesha (first × second + 1) ka square hota hai. Isi formula ko use karke missing numbers find kar sakte hain.
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">7. Without adding, find the sum:</h3>
+                <p>(i) 1 + 3 + 5 + 7 + 9<br>
+                (ii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19<br>
+                (iii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that the sum of first n odd numbers is n².</p>
+                    
+                    <p class="mb-2">(i) 1 + 3 + 5 + 7 + 9: Here are 5 odd numbers → Sum = 5² = 25</p>
+                    <p class="mb-2">(ii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19: Here are 10 odd numbers → Sum = 10² = 100</p>
+                    <p class="mb-2">(iii) 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21 + 23: Here are 12 odd numbers → Sum = 12² = 144</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 25, (ii) 100, (iii) 144
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> First n odd numbers ka sum n² ke equal hota hai. Jaise first 5 odd numbers (1,3,5,7,9) ka sum 5² = 25 hota hai. Isi formula ko use karke bina add kiye direct answer nikal sakte hain.
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">8. (i) Express 49 as the sum of 7 odd numbers.<br>
+                (ii) Express 121 as the sum of 11 odd numbers.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that n² can be expressed as the sum of first n odd numbers.</p>
+                    
+                    <p class="mb-2">(i) 49 = 7² → Sum of 7 odd numbers</p>
+                    <p class="mb-2">First 7 odd numbers: 1, 3, 5, 7, 9, 11, 13</p>
+                    <p class="mb-2">49 = 1 + 3 + 5 + 7 + 9 + 11 + 13</p>
+                    
+                    <p class="mb-2">(ii) 121 = 11² → Sum of 11 odd numbers</p>
+                    <p class="mb-2">First 11 odd numbers: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21</p>
+                    <p class="mb-2">121 = 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong><br>
+                        (i) 49 = 1 + 3 + 5 + 7 + 9 + 11 + 13<br>
+                        (ii) 121 = 1 + 3 + 5 + 7 + 9 + 11 + 13 + 15 + 17 + 19 + 21
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Koi bhi perfect square number ko first n odd numbers ke sum ke form me likh sakte hain, jahan n uska square root hai. Jaise 49 ka square root 7 hai, toh first 7 odd numbers (1,3,5,7,9,11,13) ka sum 49 hoga. Same pattern 121 ke liye bhi follow karenge.
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">9. How many numbers lie between squares of the following numbers?</h3>
+                <p>(i) 12 and 13 (ii) 25 and 26 (iii) 99 and 100</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that there are 2n numbers between n² and (n+1)² that are not perfect squares.</p>
+                    
+                    <p class="mb-2">(i) Between 12² and 13²: n = 12 → 2×12 = 24 numbers</p>
+                    <p class="mb-2">(ii) Between 25² and 26²: n = 25 → 2×25 = 50 numbers</p>
+                    <p class="mb-2">(iii) Between 99² and 100²: n = 99 → 2×99 = 198 numbers</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 24, (ii) 50, (iii) 198
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> n² aur (n+1)² ke beech me 2n numbers hote hain jo perfect squares nahi hote. Jaise 12² aur 13² ke beech me 2×12 = 24 numbers hain. Isi formula ko use karke har case me answer nikal sakte hain.
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 5.2 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.2</h2>
+
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">1. Find the square of the following numbers:</h3>
+                <p>(i) 32 (ii) 35 (iii) 86 (iv) 93 (v) 71 (vi) 46</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 32² = (30 + 2)²<br> 
+                    = 30(30+2) + 2(30+2)<br>
+                    = 30×30 + 30×2 + 2×30 + 2×2<br> 
+                    = 30²+30×2+2×30+2²<br>
+                    = 900+60+60+4<br>
+                    = 1024</p>
+                    
+                    <p class="mb-2">(ii) 35² = (30 + 5)²<br> 
+                    = 30(30+5) + 5(30+5)<br> 
+                    = 30² + 30×5 + 5×30 + 5²<br> 
+                    = 900+150+150+25<br>
+                    = 1225</p>
+                    
+                    <p class="mb-2">(iii) 86² = (80 + 6)²<br> 
+                    = 80(80+6) + 6(80+6)<br> 
+                    = 80² + 80×6 + 6×80 + 6²<br> 
+                    = 6400+480+480+36<br>
+                    = 7396</p>
+                    
+                    <p class="mb-2">(iv) 93² = (90 + 3)²<br> 
+                    = 90(90+3) + 3(90+3)<br> 
+                    = 90² + 90×3 + 3×90 + 3²<br>
+                    = 8100+270+270+9<br>
+                    = 8649</p>
+                    
+                    <p class="mb-2">(v) 71² = (70 + 1)²<br>
+                    = 70(70+1) + 1(70+1)<br>
+                    = 70² + 70×1 + 1×70 + 1²<br> 
+                    = 4900+70+70+1<br> 
+                    = 5041</p>
+                    
+                    <p class="mb-2">(vi) 46² = (40 + 6)²<br> 
+                    = 40(40+6) + 6(40+6)<br> 
+                    = 40² + 40×6 + 6×40 + 6²<br>
+                    = 1600+240+240+36<br>
+                    = 2116</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 1024, (ii) 1225, (iii) 7396, (iv) 8649, (v) 5041, (vi) 2116
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Har number ko (a + b)² ke form me break karke square nikal sakte hain, jahan a nearest 10 ka multiple hai aur b remaining part. Jaise 32 = 30 + 2, toh (30+2)² = 30² + 2×30×2 + 2² = 900 + 120 + 4 = 1024. Same method se sabhi numbers ka square nikal sakte hain.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">2. Write a Pythagorean triplet whose one member is:</h3>
+                <p>(i) 6 (ii) 14 (iii) 16 (iv) 18</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Formula for Pythagorean triplet: 2m, m² - 1, m² + 1</p>
+                    
+                    <p class="mb-2">(i) For 6:<br>
+                    Let 2m = 6 → m = 3<br>
+                    m² - 1 = 9 - 1 = 8<br>
+                    m² + 1 = 9 + 1 = 10<br>
+                    Triplet: 6, 8, 10</p>
+                    
+                    <p class="mb-2">(ii) For 14:<br>
+                    Let 2m = 14 → m = 7<br>
+                    m² - 1 = 49 - 1 = 48<br>
+                    m² + 1 = 49 + 1 = 50<br>
+                    Triplet: 14, 48, 50</p>
+                    
+                    <p class="mb-2">(iii) For 16:<br>
+                    Let 2m = 16 → m = 8<br>
+                    m² - 1 = 64 - 1 = 63<br>
+                    m² + 1 = 64 + 1 = 65<br>
+                    Triplet: 16, 63, 65</p>
+                    
+                    <p class="mb-2">(iv) For 18:<br>
+                    Let 2m = 18 → m = 9<br>
+                    m² - 1 = 81 - 1 = 80<br>
+                    m² + 1 = 81 + 1 = 82<br>
+                    Triplet: 18, 80, 82</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 6, 8, 10; (ii) 14, 48, 50; (iii) 16, 63, 65; (iv) 18, 80, 82
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Pythagorean triplet ke liye formula use kar sakte hain: 2m, m²-1, m²+1. Agar given number even hai, toh usko 2m maankar m find karenge. Phir m²-1 aur m²+1 calculate karke triplet complete karenge. Jaise 6 ke liye 2m=6 se m=3, phir m²-1=8 aur m²+1=10, triplet (6,8,10) hoga.
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 5.3 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.3</h2>
+
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">1. What could be the possible 'one's' digits of the square root of each of the following numbers?</h3>
+                <p>(i) 9801 (ii) 99856 (iii) 998001 (iv) 657666025</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that:</p>
+                    <ul class="list-disc ml-6 mb-4">
+                        <li>If a number ends with 1, then its square root ends with 1 or 9</li>
+                        <li>If a number ends with 6, then its square root ends with 4 or 6</li>
+                        <li>If a number ends with 5, then its square root ends with 5</li>
+                    </ul>
+                    
+                    <p class="mb-2">(i) 9801 ends with 1 → Square root ends with 1 or 9</p>
+                    <p class="mb-2">(ii) 99856 ends with 6 → Square root ends with 4 or 6</p>
+                    <p class="mb-2">(iii) 998001 ends with 1 → Square root ends with 1 or 9</p>
+                    <p class="mb-2">(iv) 657666025 ends with 5 → Square root ends with 5</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 1 or 9, (ii) 4 or 6, (iii) 1 or 9, (iv) 5
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Square root ka unit digit pata karne ke liye number ka unit digit dekhte hain. Agar number 1 pe khatam ho raha hai, toh square root 1 ya 9 pe khatam hoga. Agar 6 pe khatam ho raha hai, toh square root 4 ya 6 pe khatam hoga. Agar 5 pe khatam ho raha hai, toh square root 5 pe khatam hoga.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">2. Without doing any calculation, find the numbers which are surely not perfect squares.</h3>
+                <p>(i) 153 (ii) 257 (iii) 408 (iv) 441</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We know that a perfect square always ends with 0, 1, 4, 5, 6, or 9 at unit's place.</p>
+                    
+                    <p class="mb-2">(i) 153 ends with 3 → Not a perfect square</p>
+                    <p class="mb-2">(ii) 257 ends with 7 → Not a perfect square</p>
+                    <p class="mb-2">(iii) 408 ends with 8 → Not a perfect square</p>
+                    <p class="mb-2">(iv) 441 ends with 1 → Could be a perfect square</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 153, (ii) 257, (iii) 408 are surely not perfect squares.
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square numbers ka unit digit hamesha 0, 1, 4, 5, 6, ya 9 hi hota hai. Agar kisi number ka unit digit inme se nahi hai, toh wo perfect square nahi ho sakta. 153, 257, aur 408 ke unit digits 3, 7, aur 8 hain, jo allowed nahi hain.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">3. Find the square roots of 100 and 169 by the method of repeated subtraction.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2"><strong>For 100:</strong></p>
+                    <p class="mb-2">100 - 1 = 99</p>
+                    <p class="mb-2">99 - 3 = 96</p>
+                    <p class="mb-2">96 - 5 = 91</p>
+                    <p class="mb-2">91 - 7 = 84</p>
+                    <p class="mb-2">84 - 9 = 75</p>
+                    <p class="mb-2">75 - 11 = 64</p>
+                    <p class="mb-2">64 - 13 = 51</p>
+                    <p class="mb-2">51 - 15 = 36</p>
+                    <p class="mb-2">36 - 17 = 19</p>
+                    <p class="mb-2">19 - 19 = 0</p>
+                    <p class="mb-2">We subtracted 10 times → √100 = 10</p>
+                    
+                    <p class="mb-2"><strong>For 169:</strong></p>
+                    <p class="mb-2">169 - 1 = 168</p>
+                    <p class="mb-2">168 - 3 = 165</p>
+                    <p class="mb-2">165 - 5 = 160</p>
+                    <p class="mb-2">160 - 7 = 153</p>
+                    <p class="mb-2">153 - 9 = 144</p>
+                    <p class="mb-2">144 - 11 = 133</p>
+                    <p class="mb-2">133 - 13 = 120</p>
+                    <p class="mb-2">120 - 15 = 105</p>
+                    <p class="mb-2">105 - 17 = 88</p>
+                    <p class="mb-2">88 - 19 = 69</p>
+                    <p class="mb-2">69 - 21 = 48</p>
+                    <p class="mb-2">48 - 23 = 25</p>
+                    <p class="mb-2">25 - 25 = 0</p>
+                    <p class="mb-2">We subtracted 13 times → √169 = 13</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> √100 = 10, √169 = 13
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Repeated subtraction method me hum consecutive odd numbers subtract karte hain jab tak 0 na mil jaye. Jitni baar subtract karte hain, utna hi square root hota hai. 100 ke liye 10 baar subtract kiya, toh √100=10. 169 ke liye 13 baar subtract kiya, toh √169=13.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">4. Find the square roots of the following numbers by the Prime Factorisation Method.</h3>
+                <p>(i) 729 (ii) 400 (iii) 1764 (iv) 4096 (v) 7744 (vi) 9604 (vii) 5929 (viii) 9216 (ix) 529 (x) 8100</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 729 = 3×3×3×3×3×3 = (3×3×3)² → √729 = 27</p>
+                    <p class="mb-2">(ii) 400 = 2×2×2×2×5×5 = (2×2×5)² → √400 = 20</p>
+                    <p class="mb-2">(iii) 1764 = 2×2×3×3×7×7 = (2×3×7)² → √1764 = 42</p>
+                    <p class="mb-2">(iv) 4096 = 2×2×2×2×2×2×2×2×2×2×2×2 = (2×2×2×2×2×2)² → √4096 = 64</p>
+                    <p class="mb-2">(v) 7744 = 2×2×2×2×2×2×11×11 = (2×2×2×11)² → √7744 = 88</p>
+                    <p class="mb-2">(vi) 9604 = 2×2×7×7×7×7 = (2×7×7)² → √9604 = 98</p>
+                    <p class="mb-2">(vii) 5929 = 7×7×11×11 = (7×11)² → √5929 = 77</p>
+                    <p class="mb-2">(viii) 9216 = 2×2×2×2×2×2×2×2×2×2×3×3 = (2×2×2×2×2×3)² → √9216 = 96</p>
+                    <p class="mb-2">(ix) 529 = 23×23 = (23)² → √529 = 23</p>
+                    <p class="mb-2">(x) 8100 = 2×2×3×3×3×3×5×5 = (2×3×3×5)² → √8100 = 90</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 27, (ii) 20, (iii) 42, (iv) 64, (v) 88, (vi) 98, (vii) 77, (viii) 96, (ix) 23, (x) 90
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Prime factorisation method me number ko prime factors me break karte hain. Phir har prime factor ko pairs me arrange karte hain. Ek pair se ek number milta hai, aur sabhi pairs ke numbers ko multiply karke square root mil jata hai.
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">5. For each of the following numbers, find the smallest whole number by which it should be multiplied so as to get a perfect square number. Also find the square root of the square number so obtained.</h3>
+                <p>(i) 252 (ii) 180 (iii) 1008 (iv) 2028 (v) 1458 (vi) 768</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 252 = 2×2×3×3×7 → Need to multiply by 7 to make pairs → 252×7 = 1764 = 42²</p>
+                    <p class="mb-2">(ii) 180 = 2×2×3×3×5 → Need to multiply by 5 to make pairs → 180×5 = 900 = 30²</p>
+                    <p class="mb-2">(iii) 1008 = 2×2×2×2×3×3×7 → Need to multiply by 7 to make pairs → 1008×7 = 7056 = 84²</p>
+                    <p class="mb-2">(iv) 2028 = 2×2×3×13×13 → Need to multiply by 3 to make pairs → 2028×3 = 6084 = 78²</p>
+                    <p class="mb-2">(v) 1458 = 2×3×3×3×3×3×3 → Need to multiply by 2 to make pairs → 1458×2 = 2916 = 54²</p>
+                    <p class="mb-2">(vi) 768 = 2×2×2×2×2×2×2×2×3 → Need to multiply by 3 to make pairs → 768×3 = 2304 = 48²</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong><br>
+                        (i) Multiply by 7, square root = 42<br>
+                        (ii) Multiply by 5, square root = 30<br>
+                        (iii) Multiply by 7, square root = 84<br>
+                        (iv) Multiply by 3, square root = 78<br>
+                        (v) Multiply by 2, square root = 54<br>
+                        (vi) Multiply by 3, square root = 48
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square banane ke liye prime factors ko pairs me arrange karna hota hai. Agar koi factor pair me nahi aa raha hai, toh usko multiply karna padta hai. Jaise 252 me 7 single hai, toh 7 se multiply karenge. Phir naye number ka square root nikal lenge.
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">6. For each of the following numbers, find the smallest whole number by which it should be divided so as to get a perfect square. Also find the square root of the square number so obtained.</h3>
+                <p>(i) 252 (ii) 2925 (iii) 396 (iv) 2645 (v) 2800 (vi) 1620</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 252 = 2×2×3×3×7 → Need to divide by 7 to make pairs → 252÷7 = 36 = 6²</p>
+                    <p class="mb-2">(ii) 2925 = 3×3×5×5×13 → Need to divide by 13 to make pairs → 2925÷13 = 225 = 15²</p>
+                    <p class="mb-2">(iii) 396 = 2×2×3×3×11 → Need to divide by 11 to make pairs → 396÷11 = 36 = 6²</p>
+                    <p class="mb-2">(iv) 2645 = 5×23×23 → Need to divide by 5 to make pairs → 2645÷5 = 529 = 23²</p>
+                    <p class="mb-2">(v) 2800 = 2×2×2×2×5×5×7 → Need to divide by 7 to make pairs → 2800÷7 = 400 = 20²</p>
+                    <p class="mb-2">(vi) 1620 = 2×2×3×3×3×3×5 → Need to divide by 5 to make pairs → 1620÷5 = 324 = 18²</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong><br>
+                        (i) Divide by 7, square root = 6<br>
+                        (ii) Divide by 13, square root = 15<br>
+                        (iii) Divide by 11, square root = 6<br>
+                        (iv) Divide by 5, square root = 23<br>
+                        (v) Divide by 7, square root = 20<br>
+                        (vi) Divide by 5, square root = 18
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square banane ke liye prime factors ko pairs me arrange karna hota hai. Agar koi factor pair me nahi aa raha hai, toh usse divide karna padta hai. Jaise 252 me 7 single hai, toh 7 se divide karenge. Phir naye number ka square root nikal lenge.
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">7. The students of Class VIII of a school donated ₹ 2401 in all, for Prime Minister's National Relief Fund. Each student donated as many rupees as the number of students in the class. Find the number of students in the class.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Let the number of students be x</p>
+                    <p class="mb-2">Each student donated x rupees</p>
+                    <p class="mb-2">Total donation = x × x = x²</p>
+                    <p class="mb-2">x² = 2401</p>
+                    <p class="mb-2">x = √2401 = 49</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 49 students
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Har student ne utne hi rupees diye jitne students hain. Total donation students ki number ka square hai. 2401 ka square root 49 hai, isliye 49 students hain.
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">8. 2025 plants are to be planted in a garden in such a way that each row contains as many plants as the number of rows. Find the number of rows and the number of plants in each row.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Let the number of rows be x</p>
+                    <p class="mb-2">Then plants in each row = x</p>
+                    <p class="mb-2">Total plants = x × x = x²</p>
+                    <p class="mb-2">x² = 2025</p>
+                    <p class="mb-2">x = √2025 = 45</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 45 rows and 45 plants in each row
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Rows aur plants per row equal hone ke liye, total plants perfect square hone chahiye. 2025 perfect square hai, uska square root 45 hai. Isliye 45 rows aur har row me 45 plants honge.
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">9. Find the smallest square number that is divisible by each of the numbers 4, 9 and 10.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">First find LCM of 4, 9, and 10</p>
+                    <p class="mb-2">4 = 2×2</p>
+                    <p class="mb-2">9 = 3×3</p>
+                    <p class="mb-2">10 = 2×5</p>
+                    <p class="mb-2">LCM = 2×2×3×3×5 = 180</p>
+                    <p class="mb-2">To make it a perfect square, we need to make pairs: 180 = 2² × 3² × 5</p>
+                    <p class="mb-2">We need to multiply by 5 to make pairs: 180 × 5 = 900</p>
+                    <p class="mb-2">900 = 30² is a perfect square</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 900
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Pehle 4, 9, aur 10 ka LCM nikalte hain: 180. Phir isko perfect square banane ke liye prime factors ko pairs me arrange karte hain. 180 me 5 single hai, toh 5 se multiply karenge. 180×5=900, jo ki 30² hai.
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">10. Find the smallest square number that is divisible by each of the numbers 8, 15 and 20.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">First find LCM of 8, 15, and 20</p>
+                    <p class="mb-2">8 = 2×2×2</p>
+                    <p class="mb-2">15 = 3×5</p>
+                    <p class="mb-2">20 = 2×2×5</p>
+                    <p class="mb-2">LCM = 2×2×2×3×5 = 120</p>
+                    <p class="mb-2">To make it a perfect square, we need to make pairs: 120 = 2³ × 3 × 5</p>
+                    <p class="mb-2">We need to multiply by 2×3×5 = 30 to make pairs: 120 × 30 = 3600</p>
+                    <p class="mb-2">3600 = 60² is a perfect square</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 3600
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Pehle 8, 15, aur 20 ka LCM nikalte hain: 120. Phir isko perfect square banane ke liye prime factors ko pairs me arrange karte hain. 120 me 2, 3, aur 5 single hain, toh 2×3×5=30 se multiply karenge. 120×30=3600, jo ki 60² hai.
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 5.4 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.4</h2>
+
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">1. Find the square root of each of the following numbers by Division method:</h3>
+                <p>(i) 2304 (ii) 4489 (iii) 3481 (iv) 529 (v) 3249 (vi) 1369 (vii) 5776 (viii) 7921 (ix) 576 (x) 1024 (xi) 3136 (xii) 900</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">By division method:</p>
+                    <p class="mb-2">(i) √2304 = 48</p>
+                    <p class="mb-2">(ii) √4489 = 67</p>
+                    <p class="mb-2">(iii) √3481 = 59</p>
+                    <p class="mb-2">(iv) √529 = 23</p>
+                    <p class="mb-2">(v) √3249 = 57</p>
+                    <p class="mb-2">(vi) √1369 = 37</p>
+                    <p class="mb-2">(vii) √5776 = 76</p>
+                    <p class="mb-2">(viii) √7921 = 89</p>
+                    <p class="mb-2">(ix) √576 = 24</p>
+                    <p class="mb-2">(x) √1024 = 32</p>
+                    <p class="mb-2">(xi) √3136 = 56</p>
+                    <p class="mb-2">(xii) √900 = 30</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 48, (ii) 67, (iii) 59, (iv) 23, (v) 57, (vi) 37, (vii) 76, (viii) 89, (ix) 24, (x) 32, (xi) 56, (xii) 30
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Division method se square root nikalne ke liye number ko right se pairs me divide karte hain. Phir leftmost pair se start karke square root digit by digit find karte hain. Har step me appropriate digit guess karke multiply karte hain aur subtract karte hain. Process tab tak repeat karte hain jab tak pure number ke pairs khatam na ho jayein.
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">2. Find the number of digits in the square root of each of the following numbers (without any calculation):</h3>
+                <p>(i) 64 (ii) 144 (iii) 4489 (iv) 27225 (v) 390625</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    <p class="mb-2">We know that if a number has n digits, then its square root has:</p>
+                    <ul class="list-disc ml-6 mb-4">
+                        <li>n/2 digits if n is even</li>
+                        <li>(n+1)/2 digits if n is odd</li>
+                    </ul>
+                    
+                    <p class="mb-2">(i) 64: 2 digits → Digits in square root = 2/2 = 1</p>
+                    <p class="mb-2">(ii) 144: 3 digits → Digits in square root = (3+1)/2 = 2</p>
+                    <p class="mb-2">(iii) 4489: 4 digits → Digits in square root = 4/2 = 2</p>
+                    <p class="mb-2">(iv) 27225: 5 digits → Digits in square root = (5+1)/2 = 3</p>
+                    <p class="mb-2">(v) 390625: 6 digits → Digits in square root = 6/2 = 3</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 1, (ii) 2, (iii) 2, (iv) 3, (v) 3
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Square root me digits ki number pata karne ka formula simple hai: Agar number me n digits hain, toh square root me n/2 digits honge (agar n even hai) ya (n+1)/2 digits honge (agar n odd hai). Jaise 64 me 2 digits hain (even), toh square root me 2/2=1 digit hoga. Isi tarah 144 me 3 digits hain (odd), toh square root me (3+1)/2=2 digits honge.
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">3. Find the square root of the following decimal numbers:</h3>
+                <p>(i) 2.56 (ii) 7.29 (iii) 51.84 (iv) 42.25 (v) 31.36</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) √2.56 = 1.6 (since 16² = 256)</p>
+                    <p class="mb-2">(ii) √7.29 = 2.7 (since 27² = 729)</p>
+                    <p class="mb-2">(iii) √51.84 = 7.2 (since 72² = 5184)</p>
+                    <p class="mb-2">(iv) √42.25 = 6.5 (since 65² = 4225)</p>
+                    <p class="mb-2">(v) √31.36 = 5.6 (since 56² = 3136)</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) 1.6, (ii) 2.7, (iii) 7.2, (iv) 6.5, (v) 5.6
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Decimal numbers ka square root nikalne ke liye pehle decimal point hata kar perfect square number bana lete hain. Jaise 2.56 ko 256 bana kar uska square root 16 nikalte hain, phir decimal point wapas lagate hain. 256 ka square root 16 hai, toh 2.56 ka square root 1.6 hoga. Same method se sabhi ke liye karenge.
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">4. Find the least number which must be subtracted from each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained:</h3>
+                <p>(i) 402 (ii) 1989 (iii) 3250 (iv) 825 (v) 4000</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 402: Nearest perfect square is 400 (20²), need to subtract: 402 - 400 = 2<br>
+                    Square root = 20</p>
+                    
+                    <p class="mb-2">(ii) 1989: Nearest perfect square is 1936 (44²), need to subtract: 1989 - 1936 = 53<br>
+                    Square root = 44</p>
+                    
+                    <p class="mb-2">(iii) 3250: Nearest perfect square is 3249 (57²), need to subtract: 3250 - 3249 = 1<br>
+                    Square root = 57</p>
+                    
+                    <p class="mb-2">(iv) 825: Nearest perfect square is 784 (28²), need to subtract: 825 - 784 = 41<br>
+                    Square root = 28</p>
+                    
+                    <p class="mb-2">(v) 4000: Nearest perfect square is 3969 (63²), need to subtract: 4000 - 3969 = 31<br>
+                    Square root = 63</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) Subtract 2, square root = 20; (ii) Subtract 53, square root = 44; (iii) Subtract 1, square root = 57; (iv) Subtract 41, square root = 28; (v) Subtract 31, square root = 63
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square banane ke liye number se minimum subtract karne ke liye, us number se chhota nearest perfect square find karte hain. Phir difference nikalte hain. Jaise 402 se chhota nearest perfect square 400 hai (20²), toh 402-400=2 subtract karenge. Perfect square 400 ka square root 20 hoga. Same method se sabhi numbers ke liye karenge.
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">5. Find the least number which must be added to each of the following numbers so as to get a perfect square. Also find the square root of the perfect square so obtained:</h3>
+                <p>(i) 525 (ii) 1750 (iii) 252 (iv) 1825 (v) 6412</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">(i) 525: Nearest perfect square is 529 (23²), need to add: 529 - 525 = 4<br>
+                    Square root = 23</p>
+                    
+                    <p class="mb-2">(ii) 1750: Nearest perfect square is 1764 (42²), need to add: 1764 - 1750 = 14<br>
+                    Square root = 42</p>
+                    
+                    <p class="mb-2">(iii) 252: Nearest perfect square is 256 (16²), need to add: 256 - 252 = 4<br>
+                    Square root = 16</p>
+                    
+                    <p class="mb-2">(iv) 1825: Nearest perfect square is 1849 (43²), need to add: 1849 - 1825 = 24<br>
+                    Square root = 43</p>
+                    
+                    <p class="mb-2">(v) 6412: Nearest perfect square is 6561 (81²), need to add: 6561 - 6412 = 149<br>
+                    Square root = 81</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (i) Add 4, square root = 23; (ii) Add 14, square root = 42; (iii) Add 4, square root = 16; (iv) Add 24, square root = 43; (v) Add 149, square root = 81
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Perfect square banane ke liye number me minimum add karne ke liye, us number se bada nearest perfect square find karte hain. Phir difference nikalte hain. Jaise 525 se bada nearest perfect square 529 hai (23²), toh 529-525=4 add karenge. Perfect square 529 ka square root 23 hoga. Same method se sabhi numbers ke liye karenge.
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">6. Find the length of the side of a square whose area is 441 m².</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">Area of square = side²</p>
+                    <p class="mb-2">side² = 441</p>
+                    <p class="mb-2">side = √441 = 21 m</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 21 m
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Square ka area side × side ya side² hota hai. Agar area 441 m² hai, toh side find karne ke liye 441 ka square root nikalenge. √441 = 21, isliye side 21 m hoga.
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">7. In a right triangle ABC, ∠B = 90°</h3>
+                <p>(a) If AB = 6 cm, BC = 8 cm, find AC</p>
+                <p>(b) If AC = 13 cm, BC = 5 cm, find AB</p>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">By Pythagoras theorem: Hypotenuse² = Perpendicular² + Base²</p>
+                    
+                    <p class="mb-2">(a) AB = 6 cm, BC = 8 cm, AC = ?<br>
+                    AC² = AB² + BC² = 6² + 8² = 36 + 64 = 100<br>
+                    AC = √100 = 10 cm</p>
+                    
+                    <p class="mb-2">(b) AC = 13 cm, BC = 5 cm, AB = ?<br>
+                    AC² = AB² + BC²<br>
+                    13² = AB² + 5²<br>
+                    169 = AB² + 25<br>
+                    AB² = 169 - 25 = 144<br>
+                    AB = √144 = 12 cm</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> (a) 10 cm, (b) 12 cm
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Right triangle me Pythagoras theorem use karte hain: (Hypotenuse)² = (Side1)² + (Side2)². Part (a) me AC hypotenuse hai, toh AC² = AB² + BC² = 6² + 8² = 36+64=100, AC=√100=10 cm. Part (b) me AC=13 cm diya hai, toh AB² = AC² - BC² = 169-25=144, AB=√144=12 cm.
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">8. A gardener has 1000 plants. He wants to plant these in such a way that the number of rows and the number of columns remain same. Find the minimum number of plants he needs more for this.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We need to find the largest perfect square less than or equal to 1000.</p>
+                    <p class="mb-2">31² = 961, 32² = 1024</p>
+                    <p class="mb-2">961 < 1000 < 1024</p>
+                    <p class="mb-2">So 961 plants can be planted.</p>
+                    <p class="mb-2">Minimum number of plants needed more = 1000 - 961 = 39</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 39 plants
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Rows aur columns same hone ke liye, total plants perfect square hone chahiye. 1000 se chhota largest perfect square 961 hai (31²). Isliye 961 plants lag sakte hain. Extra plants needed = 1000 - 961 = 39 plants.
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">9. There are 500 children in a school. For a P.T. drill they have to stand in such a manner that the number of rows is equal to number of columns. How many children would be left out in this arrangement.</h3>
+                
+                <div class="step">
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <p class="mb-2">We need to find the largest perfect square less than or equal to 500.</p>
+                    <p class="mb-2">22² = 484, 23² = 529</p>
+                    <p class="mb-2">484 < 500 < 529</p>
+                    <p class="mb-2">So 484 children can be arranged.</p>
+                    <p class="mb-2">Children left out = 500 - 484 = 16</p>
+                    
+                    <div class="answer-box">
+                        <strong>Answer:</strong> 16 children
+                    </div>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Rows aur columns equal hone ke liye, total children perfect square hone chahiye. 500 se chhota largest perfect square 484 hai (22²). Isliye 484 children arrange ho sakte hain. Left out children = 500 - 484 = 16 children.
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

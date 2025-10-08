@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Chapter 6: Cubes and Cube Roots (Solutions)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #10b981;
+        }
+        .hinglish-explanation {
+            font-style: italic;
+            color: #4b5563;
+            margin-top: 0.5rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 6: Cubes and Cube Roots</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 6.1 Section -->
+        <section id="exercise-6-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Which of the following numbers are not perfect cubes?<br>
+                (i) 216 (ii) 128 (iii) 1000 (iv) 100 (v) 46656</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 216</strong></p>
+                        <p class="mb-2">Prime factorization of 216:</p>
+                        <p class="mb-2">216 = 2 × 2 × 2 × 3 × 3 × 3 = 2³ × 3³</p>
+                        <p class="mb-2">All prime factors are in groups of three.</p>
+                        <p class="mb-2"><strong>Answer:</strong> 216 is a perfect cube.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 216 ko prime factors mein break karo, sabhi factors triple groups mein hain, isliye yeh perfect cube hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 128</strong></p>
+                        <p class="mb-2">Prime factorization of 128:</p>
+                        <p class="mb-2">128 = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁷</p>
+                        <p class="mb-2">2 appears seven times, which is not in groups of three (7 ÷ 3 = 2 remainder 1).</p>
+                        <p class="mb-2"><strong>Answer:</strong> 128 is not a perfect cube.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 128 ke prime factors mein 2 seven times aa raha hai, jo triple groups mein nahi hai, isliye perfect cube nahi hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 1000</strong></p>
+                        <p class="mb-2">Prime factorization of 1000:</p>
+                        <p class="mb-2">1000 = 2 × 2 × 2 × 5 × 5 × 5 = 2³ × 5³</p>
+                        <p class="mb-2">All prime factors are in groups of three.</p>
+                        <p class="mb-2"><strong>Answer:</strong> 1000 is a perfect cube.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 1000 ke prime factors triple groups mein hain, isliye perfect cube hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 100</strong></p>
+                        <p class="mb-2">Prime factorization of 100:</p>
+                        <p class="mb-2">100 = 2 × 2 × 5 × 5 = 2² × 5²</p>
+                        <p class="mb-2">Both 2 and 5 appear twice, which is not in groups of three.</p>
+                        <p class="mb-2"><strong>Answer:</strong> 100 is not a perfect cube.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 100 ke prime factors double groups mein hain, triple groups mein nahi, isliye perfect cube nahi hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 46656</strong></p>
+                        <p class="mb-2">Prime factorization of 46656:</p>
+                        <p class="mb-2">46656 = 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 × 3 × 3 × 3 = 2⁶ × 3⁶</p>
+                        <p class="mb-2">All prime factors are in groups of three (6 ÷ 3 = 2).</p>
+                        <p class="mb-2"><strong>Answer:</strong> 46656 is a perfect cube.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 46656 ke prime factors triple groups mein hain, isliye perfect cube hai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the smallest number by which each of the following numbers must be multiplied to obtain a perfect cube:<br>
+                (i) 243 (ii) 256 (iii) 72 (iv) 675 (v) 100</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 243</strong></p>
+                        <p class="mb-2">Prime factorization of 243:</p>
+                        <p class="mb-2">243 = 3 × 3 × 3 × 3 × 3 = 3⁵</p>
+                        <p class="mb-2">3 appears five times. To make groups of three, we need one more 3 (5 + 1 = 6, 6 ÷ 3 = 2).</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must multiply by 3.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 243 ke prime factors mein 3 five times hai, triple groups banane ke liye ek aur 3 ki jaroorat hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 256</strong></p>
+                        <p class="mb-2">Prime factorization of 256:</p>
+                        <p class="mb-2">256 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁸</p>
+                        <p class="mb-2">2 appears eight times. To make groups of three, we need one more 2 (8 + 1 = 9, 9 ÷ 3 = 3).</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must multiply by 2.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 256 ke prime factors mein 2 eight times hai, triple groups banane ke liye ek aur 2 ki jaroorat hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 72</strong></p>
+                        <p class="mb-2">Prime factorization of 72:</p>
+                        <p class="mb-2">72 = 2 × 2 × 2 × 3 × 3 = 2³ × 3²</p>
+                        <p class="mb-2">2 appears three times (okay), but 3 appears twice. To make groups of three, we need one more 3.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must multiply by 3.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 72 mein 2 triple group mein hai, lekin 3 double group mein hai, triple group banane ke liye ek aur 3 ki jaroorat hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 675</strong></p>
+                        <p class="mb-2">Prime factorization of 675:</p>
+                        <p class="mb-2">675 = 3 × 3 × 3 × 5 × 5 = 3³ × 5²</p>
+                        <p class="mb-2">3 appears three times (okay), but 5 appears twice. To make groups of three, we need one more 5.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must multiply by 5.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 675 mein 3 triple group mein hai, lekin 5 double group mein hai, triple group banane ke liye ek aur 5 ki jaroorat hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 100</strong></p>
+                        <p class="mb-2">Prime factorization of 100:</p>
+                        <p class="mb-2">100 = 2 × 2 × 5 × 5 = 2² × 5²</p>
+                        <p class="mb-2">Both 2 and 5 appear twice. To make groups of three, we need one more 2 and one more 5.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must multiply by 2 × 5 = 10.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 100 ke prime factors mein dono 2 aur 5 double groups mein hain, triple groups banane ke liye ek 2 aur ek 5 ki jaroorat hai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Find the smallest number by which each of the following numbers must be divided to obtain a perfect cube:<br>
+                (i) 81 (ii) 128 (iii) 135 (iv) 192 (v) 704</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 81</strong></p>
+                        <p class="mb-2">Prime factorization of 81:</p>
+                        <p class="mb-2">81 = 3 × 3 × 3 × 3 = 3⁴</p>
+                        <p class="mb-2">3 appears four times. To make groups of three, we need to remove one 3 (4 - 1 = 3, 3 ÷ 3 = 1).</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must divide by 3.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 81 ke prime factors mein 3 four times hai, triple groups banane ke liye ek 3 ko hataana hoga.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 128</strong></p>
+                        <p class="mb-2">Prime factorization of 128:</p>
+                        <p class="mb-2">128 = 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁷</p>
+                        <p class="mb-2">2 appears seven times. To make groups of three, we need to remove one 2 (7 - 1 = 6, 6 ÷ 3 = 2).</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must divide by 2.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 128 ke prime factors mein 2 seven times hai, triple groups banane ke liye ek 2 ko hataana hoga.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 135</strong></p>
+                        <p class="mb-2">Prime factorization of 135:</p>
+                        <p class="mb-2">135 = 3 × 3 × 3 × 5 = 3³ × 5¹</p>
+                        <p class="mb-2">3 appears three times (okay), but 5 appears once. To make groups of three, we need to remove 5.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must divide by 5.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 135 mein 3 triple group mein hai, lekin 5 single group mein hai, triple groups banane ke liye 5 ko hataana hoga.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 192</strong></p>
+                        <p class="mb-2">Prime factorization of 192:</p>
+                        <p class="mb-2">192 = 2 × 2 × 2 × 2 × 2 × 2 × 3 = 2⁶ × 3¹</p>
+                        <p class="mb-2">2 appears six times (okay, 6 ÷ 3 = 2), but 3 appears once. To make groups of three, we need to remove 3.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must divide by 3.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 192 mein 2 triple groups mein hai, lekin 3 single group mein hai, triple groups banane ke liye 3 ko hataana hoga.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 704</strong></p>
+                        <p class="mb-2">Prime factorization of 704:</p>
+                        <p class="mb-2">704 = 2 × 2 × 2 × 2 × 2 × 2 × 11 = 2⁶ × 11¹</p>
+                        <p class="mb-2">2 appears six times (okay, 6 ÷ 3 = 2), but 11 appears once. To make groups of three, we need to remove 11.</p>
+                        <p class="mb-2"><strong>Answer:</strong> Must divide by 11.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 704 mein 2 triple groups mein hai, lekin 11 single group mein hai, triple groups banane ke liye 11 ko hataana hoga.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Parikshit makes a cuboid of plasticine with sides 5 cm, 2 cm, and 5 cm. How many such cuboids will he need to form a cube?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Volume of cuboid = length × width × height</p>
+                        <p class="mb-2">Volume of cuboid = 5 cm × 2 cm × 5 cm = 50 cm³</p>
+                        <p class="mb-2">To form a cube, we need a perfect cube number.</p>
+                        <p class="mb-2">Prime factorization of 50:</p>
+                        <p class="mb-2">50 = 2 × 5 × 5</p>
+                        <p class="mb-2">To make it a perfect cube, we need 2 × 2 × 5 = 20 cuboids.</p>
+                        <p class="mb-2">Total volume = 50 × 20 = 1000 cm³</p>
+                        <p class="mb-2">Side of cube = ∛1000 = 10 cm</p>
+                        <p class="mb-2"><strong>Answer:</strong> 20 cuboids will be needed.</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Ek cuboid ka volume 50 cm³ hai. Perfect cube banane ke liye humein 1000 cm³ volume chahiye (kyunki ∛1000 = 10). Isliye 1000/50 = 20 cuboids ki jaroorat hai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.2 Section -->
+        <section id="exercise-6-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the cube root of each of the following numbers by prime factorization method:<br>
+                (i) 64 (ii) 512 (iii) 10648 (iv) 27000 (v) 15625 (vi) 13824 (vii) 110592 (viii) 46656 (ix) 175616 (x) 91125</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) 64</strong></p>
+                        <p class="mb-2">Prime factorization of 64:</p>
+                        <p class="mb-2">64 = 2 × 2 × 2 × 2 × 2 × 2 = 2⁶</p>
+                        <p class="mb-2">Cube root = 2 × 2 = 4</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛64 = 4</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 64 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) 512</strong></p>
+                        <p class="mb-2">Prime factorization of 512:</p>
+                        <p class="mb-2">512 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 2⁹</p>
+                        <p class="mb-2">Cube root = 2 × 2 × 2 = 8</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛512 = 8</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 512 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) 10648</strong></p>
+                        <p class="mb-2">Prime factorization of 10648:</p>
+                        <p class="mb-2">10648 = 2 × 2 × 2 × 11 × 11 × 11 = 2³ × 11³</p>
+                        <p class="mb-2">Cube root = 2 × 11 = 22</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛10648 = 22</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 10648 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) 27000</strong></p>
+                        <p class="mb-2">Prime factorization of 27000:</p>
+                        <p class="mb-2">27000 = 2 × 2 × 2 × 3 × 3 × 3 × 5 × 5 × 5 = 2³ × 3³ × 5³</p>
+                        <p class="mb-2">Cube root = 2 × 3 × 5 = 30</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛27000 = 30</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 27000 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) 15625</strong></p>
+                        <p class="mb-2">Prime factorization of 15625:</p>
+                        <p class="mb-2">15625 = 5 × 5 × 5 × 5 × 5 × 5 = 5⁶</p>
+                        <p class="mb-2">Cube root = 5 × 5 = 25</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛15625 = 25</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 15625 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vi) 13824</strong></p>
+                        <p class="mb-2">Prime factorization of 13824:</p>
+                        <p class="mb-2">13824 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 = 2⁹ × 3³</p>
+                        <p class="mb-2">Cube root = 2 × 2 × 2 × 3 = 24</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛13824 = 24</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 13824 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vii) 110592</strong></p>
+                        <p class="mb-2">Prime factorization of 110592:</p>
+                        <p class="mb-2">110592 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 = 2¹² × 3³</p>
+                        <p class="mb-2">Cube root = 2 × 2 × 2 × 2 × 3 = 48</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛110592 = 48</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 110592 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(viii) 46656</strong></p>
+                        <p class="mb-2">Prime factorization of 46656:</p>
+                        <p class="mb-2">46656 = 2 × 2 × 2 × 2 × 2 × 2 × 3 × 3 × 3 × 3 × 3 × 3 = 2⁶ × 3⁶</p>
+                        <p class="mb-2">Cube root = 2 × 2 × 3 × 3 = 36</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛46656 = 36</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 46656 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ix) 175616</strong></p>
+                        <p class="mb-2">Prime factorization of 175616:</p>
+                        <p class="mb-2">175616 = 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 7 × 7 × 7 = 2⁹ × 7³</p>
+                        <p class="mb-2">Cube root = 2 × 2 × 2 × 7 = 56</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛175616 = 56</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 175616 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(x) 91125</strong></p>
+                        <p class="mb-2">Prime factorization of 91125:</p>
+                        <p class="mb-2">91125 = 3 × 3 × 3 × 3 × 3 × 3 × 5 × 5 × 5 = 3⁶ × 5³</p>
+                        <p class="mb-2">Cube root = 3 × 3 × 5 = 45</p>
+                        <p class="mb-2"><strong>Answer:</strong> ∛91125 = 45</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> 91125 ke prime factors triple groups mein hain, har group se ek number lekar multiply karo.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: State true or false:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(i) Cube of any odd number is even.</strong></p>
+                        <p class="mb-2">Odd × odd = odd<br>Odd × odd × odd = odd</p>
+                        <p class="mb-2"><strong>Answer:</strong> False</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Odd number ka cube hamesha odd hi hota hai, even nahi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(ii) A perfect cube does not end with two zeros.</strong></p>
+                        <p class="mb-2">For a perfect cube, the number of zeros must be a multiple of 3.</p>
+                        <p class="mb-2"><strong>Answer:</strong> True</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Perfect cube ke end mein zeros ki sankhya 3 ke multiple mein honi chahiye, do zeros nahi ho sakte.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iii) If square of a number ends with 5, then its cube ends with 25.</strong></p>
+                        <p class="mb-2">For example: 5² = 25 (ends with 5), 5³ = 125 (ends with 25)<br>15² = 225 (ends with 5), 15³ = 3375 (ends with 75)</p>
+                        <p class="mb-2"><strong>Answer:</strong> False</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Square 5 par khatam ho toh cube 25 par khatam hona zaroori nahi hai, jaise 15 ka cube 3375 hai jo 75 par khatam hota hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(iv) There is no perfect cube which ends with 8.</strong></p>
+                        <p class="mb-2">2³ = 8, 12³ = 1728, 22³ = 10648 (all end with 8)</p>
+                        <p class="mb-2"><strong>Answer:</strong> False</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Perfect cube 8 par khatam ho sakta hai, jaise 2, 12, 22 ke cubes.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(v) The cube of a two-digit number may be a three-digit number.</strong></p>
+                        <p class="mb-2">4³ = 64 (two digits), 5³ = 125 (three digits)</p>
+                        <p class="mb-2"><strong>Answer:</strong> True</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Do-digit number ka cube teen-digit number ho sakta hai, jaise 5 ka cube 125 hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vi) The cube of a two-digit number may have seven or more digits.</strong></p>
+                        <p class="mb-2">99³ = 970299 (six digits), 100³ = 1000000 (seven digits) but 100 is a three-digit number.</p>
+                        <p class="mb-2"><strong>Answer:</strong> False</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Do-digit number (99) ka cube sirf 6 digits ka hota hai, 7 digits ka nahi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(vii) The cube of a single-digit number may be a single-digit number.</strong></p>
+                        <p class="mb-2">1³ = 1, 2³ = 8 (both are single-digit numbers)</p>
+                        <p class="mb-2"><strong>Answer:</strong> True</p>
+                        <div class="hinglish explanation">
+                            <strong>Hinglish Explanation:</strong> Single-digit number ka cube single-digit number ho sakta hai, jaise 1 aur 2 ke cubes.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

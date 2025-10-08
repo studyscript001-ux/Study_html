@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Maths - Chapter 13: Introduction to Graphs (Solved)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .hinglish-explanation {
+            background-color: #fef3c7;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #f59e0b;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .graph-reference {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin: 0.5rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 13: Introduction to Graphs</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 13.1 Section -->
+        <section id="exercise-13-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 13.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: The following graph shows the temperature of a patient in a hospital, recorded every hour:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) What was the patient's temperature at 1 p.m.?</p>
+                        <p class="mb-2">From the graph: At 1 p.m., the patient's temperature was 36.5°C.</p>
+                        <p><strong>Answer:</strong> 36.5°C</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph se dekh sakte hain ki 1 p.m. par patient ka temperature 36.5°C tha.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) When was the patient's temperature 38.5°C?</p>
+                        <p class="mb-2">From the graph: The patient's temperature was 38.5°C at 12 noon.</p>
+                        <p><strong>Answer:</strong> 12 noon</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph me dekhein to patient ka temperature 38.5°C 12 p.m. (dopahar) par tha.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) The patient's temperature was the same two times during the period shown. What were these two times?</p>
+                        <p class="mb-2">From the graph: The patient's temperature was the same (36.5°C) at 1 p.m. and 2 p.m.</p>
+                        <p><strong>Answer:</strong> 1 p.m. and 2 p.m.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Pure time period mein, patient ka temperature do bar same tha - 1 p.m. aur 2 p.m. par, dono time 36.5°C.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) What was the temperature at 1:30 p.m.? How did you arrive at your answer?</p>
+                        <p class="mb-2">From the graph: At 1:30 p.m., the patient's temperature was 36.5°C.</p>
+                        <p class="mb-2">Reasoning: The time between 1 p.m. and 2 p.m. is 1:30 p.m., and during this time the graph shows a straight line at 36.5°C.</p>
+                        <p><strong>Answer:</strong> 36.5°C</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 1:30 p.m. 1 p.m. aur 2 p.m. ke beech ka time hai, aur graph mein ye straight line dikhata hai 36.5°C par. Isliye temperature 36.5°C hi hoga.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) During which periods did the patient's temperature show an upward trend?</p>
+                        <p class="mb-2">From the graph: The patient's temperature showed an upward trend between 9 a.m. to 10 a.m., 10 a.m. to 11 a.m., and 2 p.m. to 3 p.m.</p>
+                        <p><strong>Answer:</strong> 9-10 a.m., 10-11 a.m. and 2-3 p.m.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Patient ka temperature badhta hua dikhayi deta hai 9-10 a.m., 10-11 a.m., aur 2-3 p.m. ke periods mein.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: The following graph shows the sales of a manufacturing company in various years:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) What were the sales in (i) 2002 (ii) 2006?</p>
+                        <p class="mb-2">From the graph:</p>
+                        <p class="mb-2">(i) Sales in 2002 = 4 crore rupees</p>
+                        <p class="mb-2">(ii) Sales in 2006 = 8 crore rupees</p>
+                        <p><strong>Answer:</strong> (i) 4 crore rupees, (ii) 8 crore rupees</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph se pata chalta hai ki 2002 mein sales 4 crore rupees thi aur 2006 mein 8 crore rupees.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) What were the sales in (i) 2003 (ii) 2005?</p>
+                        <p class="mb-2">From the graph:</p>
+                        <p class="mb-2">(i) Sales in 2003 = 7 crore rupees</p>
+                        <p class="mb-2">(ii) Sales in 2005 = 10 crore rupees</p>
+                        <p><strong>Answer:</strong> (i) 7 crore rupees, (ii) 10 crore rupees</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 2003 ki sales 7 crore rupees thi aur 2005 ki sales 10 crore rupees.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) Find the difference in sales between 2002 and 2006.</p>
+                        <p class="mb-2">Calculation: Sales in 2006 - Sales in 2002 = 8 - 4 = 4 crore rupees</p>
+                        <p><strong>Answer:</strong> 4 crore rupees</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 2006 ki sales (8 crore) mein se 2002 ki sales (4 crore) subtract karenge to difference 4 crore rupees aata hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) In which year was the difference in sales the maximum compared to its previous year?</p>
+                        <p class="mb-2">From the graph: The difference in sales was maximum between 2004 and 2005.</p>
+                        <p class="mb-2">Calculation: Sales in 2004 = 6.5 crore, Sales in 2005 = 10 crore, Difference = 3.5 crore</p>
+                        <p><strong>Answer:</strong> Between 2004 and 2005</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 2004 (6.5 crore) se 2005 (10 crore) mein sales ka difference sabse zyada hai - 3.5 crore rupees.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: For an experiment in Botany, two plants A and B were grown under similar laboratory conditions. Their heights were measured at the end of each week for 3 weeks. The results are shown in the following graph:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) How high was plant A after (i) 2 weeks (ii) 3 weeks?</p>
+                        <p class="mb-2">From the graph:</p>
+                        <p class="mb-2">(i) Height of plant A after 2 weeks = 7 cm</p>
+                        <p class="mb-2">(ii) Height of plant A after 3 weeks = 9 cm</p>
+                        <p><strong>Answer:</strong> (i) 7 cm, (ii) 9 cm</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph se pata chalta hai ki plant A ki height 2 weeks baad 7 cm aur 3 weeks baad 9 cm thi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) How high was plant B after (i) 2 weeks (ii) 3 weeks?</p>
+                        <p class="mb-2">From the graph:</p>
+                        <p class="mb-2">(i) Height of plant B after 2 weeks = 7 cm</p>
+                        <p class="mb-2">(ii) Height of plant B after 3 weeks = 10 cm</p>
+                        <p><strong>Answer:</strong> (i) 7 cm, (ii) 10 cm</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Plant B ki height 2 weeks baad 7 cm aur 3 weeks baad 10 cm thi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) How much did plant A grow during the 3rd week?</p>
+                        <p class="mb-2">Calculation: Height at end of 3rd week - Height at end of 2nd week = 9 - 7 = 2 cm</p>
+                        <p><strong>Answer:</strong> 2 cm</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Plant A 3rd week mein 2 cm badha (9 - 7 = 2 cm).
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) How much did plant B grow from the end of the 2nd week to the end of the 3rd week?</p>
+                        <p class="mb-2">Calculation: Height at end of 3rd week - Height at end of 2nd week = 10 - 7 = 3 cm</p>
+                        <p><strong>Answer:</strong> 3 cm</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Plant B 2nd week ke end se 3rd week ke end tak 3 cm badha (10 - 7 = 3 cm).
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) During which week did plant A grow the most?</p>
+                        <p class="mb-2">From the graph: In the 1st week, plant A grew from 0 cm to 7 cm, i.e., an increase of 7 cm.</p>
+                        <p class="mb-2">In the 2nd week, it grew from 7 cm to 7 cm, i.e., 0 cm increase.</p>
+                        <p class="mb-2">In the 3rd week, it grew from 7 cm to 9 cm, i.e., 2 cm increase.</p>
+                        <p><strong>Answer:</strong> 1st week</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Plant A sabse zyada 1st week mein badha (0 se 7 cm tak - 7 cm growth). 2nd week mein koi growth nahi hui, 3rd week mein 2 cm growth hui.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(f) During which week did plant B grow the least?</p>
+                        <p class="mb-2">From the graph: In the 1st week, plant B grew from 0 cm to 4 cm, i.e., 4 cm increase.</p>
+                        <p class="mb-2">In the 2nd week, it grew from 4 cm to 7 cm, i.e., 3 cm increase.</p>
+                        <p class="mb-2">In the 3rd week, it grew from 7 cm to 10 cm, i.e., 3 cm increase.</p>
+                        <p><strong>Answer:</strong> 2nd and 3rd weeks (3 cm growth each)</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Plant B ki sabse kam growth 2nd aur 3rd week mein hui (dono weeks mein 3-3 cm growth). 1st week mein 4 cm growth thi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(g) Were the heights of both plants the same in any week? Identify.</p>
+                        <p class="mb-2">From the graph: At the end of the 2nd week, both plants had the same height of 7 cm.</p>
+                        <p><strong>Answer:</strong> Yes, at the end of the 2nd week, both plants were 7 cm tall.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Haan, 2nd week ke end par dono plants ki height same thi - 7 cm.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The following graph shows the temperature forecast and actual temperature for each day of a week:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) On which days was the forecast temperature the same as the actual temperature?</p>
+                        <p class="mb-2">From the graph: On Tuesday, Friday and Sunday, the forecast and actual temperatures were the same.</p>
+                        <p><strong>Answer:</strong> Tuesday, Friday and Sunday</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Mangalwar, Shukrawar aur Ravivar ko forecast temperature aur actual temperature same the.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) What was the maximum forecast temperature during the week?</p>
+                        <p class="mb-2">From the graph: The maximum forecast temperature during the week was 35°C (on Thursday).</p>
+                        <p><strong>Answer:</strong> 35°C</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Pure week mein sabse zyada forecast temperature 35°C tha (Guruwar ko).
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) What was the minimum actual temperature during the week?</p>
+                        <p class="mb-2">From the graph: The minimum actual temperature during the week was 15°C (on Monday).</p>
+                        <p><strong>Answer:</strong> 15°C</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Pure week mein sabse kam actual temperature 15°C tha (Somwar ko).
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) On which day did the actual temperature differ the most from the forecast temperature?</p>
+                        <p class="mb-2">From the graph: On Thursday, the difference between actual temperature (22.5°C) and forecast temperature (35°C) was the highest.</p>
+                        <p class="mb-2">Calculation: 35 - 22.5 = 12.5°C</p>
+                        <p><strong>Answer:</strong> Thursday</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Guruwar ko actual temperature (22.5°C) aur forecast temperature (35°C) mein sabse zyada difference tha - 12.5°C.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Draw a linear graph according to the following table:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) Number of days with snowfall in a hill town in different years:</p>
+                        <p class="mb-2">Year: 2003, 2004, 2005, 2006</p>
+                        <p class="mb-2">Days: 8, 10, 5, 12</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark years on the X-axis and number of days on the Y-axis</p>
+                        <p class="mb-2">2. Plot the points: (2003, 8), (2004, 10), (2005, 5), (2006, 12)</p>
+                        <p class="mb-2">3. Join these points with line segments</p>
+                        <p><strong>Answer:</strong> Refer to the graph in the textbook</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph banane ke liye: X-axis par years aur Y-axis par days likhein. Phir diye gaye points ko plot karein aur unhe line segments se connect karein.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) Population (in thousands) of men and women in a village in different years:</p>
+                        <p class="mb-2">Year: 2003, 2004, 2005, 2006, 2007</p>
+                        <p class="mb-2">Men: 12, 12.5, 13, 13.2, 13.5</p>
+                        <p class="mb-2">Women: 11.3, 11.9, 13, 13.6, 12.8</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark years on the X-axis and population (in thousands) on the Y-axis</p>
+                        <p class="mb-2">2. Points for men: (2003, 12), (2004, 12.5), (2005, 13), (2006, 13.2), (2007, 13.5)</p>
+                        <p class="mb-2">3. Points for women: (2003, 11.3), (2004, 11.9), (2005, 13), (2006, 13.6), (2007, 12.8)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <p><strong>Answer:</strong> Refer to the graph in the textbook</p>
+                        <div class="hinglish Explanation">
+                            <strong>Hinglish Explanation:</strong> Is graph mein do lines banegi - ek men ke liye aur ek women ke liye. Dono ke points plot karke unhe alag-alag line segments se connect karein.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: A courier goes on a bicycle to deliver a parcel to a merchant in a nearby museum. His distances from the city at different times are shown by the following graph:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) What is the scale taken for the time axis?</p>
+                        <p class="mb-2">From the graph: On the X-axis, 4 units = 1 hour</p>
+                        <p><strong>Answer:</strong> 4 units = 1 hour</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> X-axis (time axis) par 4 units 1 ghante ke barabar hain.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) How much time did he take to cover the whole journey?</p>
+                        <p class="mb-2">From the graph: He left the city at 8 a.m. and returned at 12:30 p.m.</p>
+                        <p class="mb-2">Calculation: 8:00 to 12:30 = 4.5 hours</p>
+                        <p><strong>Answer:</strong> 4.5 hours</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Courier 8 a.m. se 12:30 p.m. tak journey ki, matlab 4.5 ghante.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) How far is the merchant's place from the city?</p>
+                        <p class="mb-2">From the graph: The merchant's place is 22 km from the city.</p>
+                        <p><strong>Answer:</strong> 22 km</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Merchant ki jagah city se 22 km door hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(d) Did the courier stop anywhere on the way? Give details.</p>
+                        <p class="mb-2">From the graph: Yes, the courier stopped from 10 a.m. to 10:30 a.m.</p>
+                        <p class="mb-2">Reasoning: During this time interval, the distance did not change.</p>
+                        <p><strong>Answer:</strong> Yes, from 10 a.m. to 10:30 a.m.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Haan, courier 10 a.m. se 10:30 a.m. tak ruka. Iska pata chalta hai kyunki is time period mein distance change nahi hua.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(e) During which period did he ride the fastest?</p>
+                        <p class="mb-2">From the graph: He rode the fastest between 1 p.m. and 2 p.m.</p>
+                        <p class="mb-2">Calculation: During this interval, he covered 10 km in 1 hour, speed = 10 km/h</p>
+                        <p><strong>Answer:</strong> Between 1 p.m. and 2 p.m.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Courier sabse tez 1 p.m. se 2 p.m. ke beech cycle chayi. Is time mein usne 1 ghante mein 10 km ki doori tai ki, matlab speed 10 km/h thi.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Which of the following graphs are possible for time and temperature? Give reasons for your answers:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) This graph is possible because temperature can change continuously with time.</p>
+                        <p><strong>Answer:</strong> Possible</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Ye graph possible hai kyunki temperature time ke saath continuously change ho sakta hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) This graph is not possible because there cannot be different temperatures at the same time.</p>
+                        <p><strong>Answer:</strong> Not possible</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Ye graph possible nahi hai kyunki ek hi time par different temperatures nahi ho sakte.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) This graph is possible because temperature can remain constant with time.</p>
+                        <p><strong>Answer:</strong> Possible</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Ye graph possible hai kyunki temperature time ke saath constant bhi reh sakta hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) This graph is possible because temperature can change with time.</p>
+                        <p><strong>Answer:</strong> Possible</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Ye graph possible hai kyunki temperature time ke saath change ho sakta hai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 13.2 Section -->
+        <section id="exercise-13-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 13.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Draw the graphs for the following tables of values, with appropriate scales on the axes:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a) Cost of apples</p>
+                        <p class="mb-2">Number of apples: 1, 2, 3, 4, 5</p>
+                        <p class="mb-2">Cost (in rupees): 5, 10, 15, 20, 25</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark number of apples on the X-axis and cost on the Y-axis</p>
+                        <p class="mb-2">2. Scale: X-axis: 1 unit = 1 apple, Y-axis: 1 unit = 5 rupees</p>
+                        <p class="mb-2">3. Plot the points: (1, 5), (2, 10), (3, 15), (4, 20), (5, 25)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <p class="mb-2">(i) Distance covered by the car between 7:30 a.m. and 8 a.m.:</p>
+                        <p class="mb-2">Distance at 7:30 a.m. = 60 km, Distance at 8 a.m. = 120 km</p>
+                        <p class="mb-2">Distance covered = 120 - 60 = 60 km</p>
+                        <p><strong>Answer:</strong> 60 km</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 7:30 a.m. se 8 a.m. ke beech car ne 60 km ki doori tai ki (120 - 60 = 60 km).
+                        </div>
+                        <p class="mb-2">(ii) At what time had the car covered a distance of 100 km?</p>
+                        <p class="mb-2">From the graph: The car had covered 100 km at 7:30 a.m.</p>
+                        <p><strong>Answer:</strong> 7:30 a.m.</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Car ne 100 km ki doori 7:30 a.m. tak tai kar li thi.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(b) Distance covered by a car</p>
+                        <p class="mb-2">Time (in hours): 6 a.m., 7 a.m., 8 a.m., 9 a.m.</p>
+                        <p class="mb-2">Distance (in km): 40, 80, 120, 160</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark time on the X-axis and distance on the Y-axis</p>
+                        <p class="mb-2">2. Scale: X-axis: 2 units = 1 hour, Y-axis: 1 unit = 20 km</p>
+                        <p class="mb-2">3. Plot the points: (6, 40), (7, 80), (8, 120), (9, 160)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Is graph mein X-axis par time aur Y-axis par distance likhein. Diye gaye points ko plot karke unhe line segments se connect karein.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(c) Interest on deposits for a year</p>
+                        <p class="mb-2">Deposit (in rupees): 1000, 2000, 3000, 4000, 5000</p>
+                        <p class="mb-2">Simple interest (in rupees): 80, 160, 240, 320, 400</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark deposit on the X-axis and interest on the Y-axis</p>
+                        <p class="mb-2">2. Scale: X-axis: 1 unit = 1000 rupees, Y-axis: 1 unit = 80 rupees</p>
+                        <p class="mb-2">3. Plot the points: (1000, 80), (2000, 160), (3000, 240), (4000, 320), (5000, 400)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <p class="mb-2">(i) Does the graph pass through the origin?</p>
+                        <p class="mb-2">Yes, because when deposit is 0, interest will also be 0.</p>
+                        <p><strong>Answer:</strong> Yes</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Haan, graph origin (0,0) se hokar guzarta hai kyunki jab deposit 0 hai to interest bhi 0 hoga.
+                        </div>
+                        <p class="mb-2">(ii) Use the graph to find the interest on ₹2500 for a year.</p>
+                        <p class="mb-2">From the graph: For ₹2500 deposit, interest = ₹200</p>
+                        <p><strong>Answer:</strong> ₹200</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Graph se pata chalta hai ki 2500 rupees ke deposit par interest 200 rupees hai.
+                        </div>
+                        <p class="mb-2">(iii) To get an interest of ₹280 per year, how much money should be deposited?</p>
+                        <p class="mb-2">From the graph: For ₹280 interest, deposit = ₹3500</p>
+                        <p><strong>Answer:</strong> ₹3500</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> 280 rupees interest pane ke liye 3500 rupees deposit karne honge.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Draw graphs for the following tables:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) Side of a square (in cm) and its perimeter (in cm)</p>
+                        <p class="mb-2">Side (in cm): 2, 3, 3.5, 5, 6</p>
+                        <p class="mb-2">Perimeter (in cm): 8, 12, 14, 20, 24</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark side on the X-axis and perimeter on the Y-axis</p>
+                        <p class="mb-2">2. Scale: X-axis: 1 unit = 1 cm, Y-axis: 1 unit = 4 cm</p>
+                        <p class="mb-2">3. Plot the points: (2, 8), (3, 12), (3.5, 14), (5, 20), (6, 24)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <p class="mb-2">Is it a linear graph?</p>
+                        <p class="mb-2">Yes, because perimeter = 4 × side, which is a linear equation.</p>
+                        <p><strong>Answer:</strong> Yes</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Haan, ye ek linear graph hai kyunki perimeter = 4 × side, jo ek linear equation hai.
+                        </div>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) Side of a square (in cm) and its area (in cm²)</p>
+                        <p class="mb-2">Side (in cm): 2, 3, 4, 5, 6</p>
+                        <p class="mb-2">Area (in cm²): 4, 9, 16, 25, 36</p>
+                        <p class="mb-2">Steps to draw the graph:</p>
+                        <p class="mb-2">1. Mark side on the X-axis and area on the Y-axis</p>
+                        <p class="mb-2">2. Scale: X-axis: 1 unit = 1 cm, Y-axis: 1 unit = 5 cm²</p>
+                        <p class="mb-2">3. Plot the points: (2, 4), (3, 9), (4, 16), (5, 25), (6, 36)</p>
+                        <p class="mb-2">4. Join these points with line segments</p>
+                        <p class="mb-2">Is it a linear graph?</p>
+                        <p class="mb-2">No, because area = (side)², which is a quadratic equation.</p>
+                        <p><strong>Answer:</strong> No</p>
+                        <div class="hinglish-explanation">
+                            <strong>Hinglish Explanation:</strong> Nahi, ye linear graph nahi hai kyunki area = (side)², jo ek quadratic equation hai.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Chapter 12: Factorisation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .sub-question {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #e5e7eb;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 12: Factorisation</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 12.1 Section -->
+        <section id="exercise-12-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 12.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the common factors of the given terms:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 12x, 36</p>
+                        <p class="mb-2">12x = 2 × 2 × 3 × x</p>
+                        <p class="mb-2">36 = 2 × 2 × 3 × 3</p>
+                        <p class="mb-2">Common factor = 2 × 2 × 3 = 12</p>
+                        <p><strong>Answer:</strong> 12</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Humne 12x aur 36 ko unke prime factors mein break kiya. Phir common factors ko multiply karke 12 common factor prapt hua.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 2y, 22xy</p>
+                        <p class="mb-2">2y = 2 × y</p>
+                        <p class="mb-2">22xy = 2 × 11 × x × y</p>
+                        <p class="mb-2">Common factor = 2 × y = 2y</p>
+                        <p><strong>Answer:</strong> 2y</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Dono terms ko prime factors mein break karke, common factors 2 aur y ko multiply karke 2y common factor mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 14pq, 28p²q²</p>
+                        <p class="mb-2">14pq = 2 × 7 × p × q</p>
+                        <p class="mb-2">28p²q² = 2 × 2 × 7 × p × p × q × q</p>
+                        <p class="mb-2">Common factor = 2 × 7 × p × q = 14pq</p>
+                        <p><strong>Answer:</strong> 14pq</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Prime factorization karne ke baad, common factors 2, 7, p aur q ko multiply karke 14pq common factor mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 2x, 3x², 4</p>
+                        <p class="mb-2">2x = 2 × x</p>
+                        <p class="mb-2">3x² = 3 × x × x</p>
+                        <p class="mb-2">4 = 2 × 2</p>
+                        <p class="mb-2">Common factor = 1 (only 1 is the common factor)</p>
+                        <p><strong>Answer:</strong> 1</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Teenon terms ke prime factors mein koi common factor nahi hai, isliye 1 hi common factor hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 6abc, 24ab², 12a²b</p>
+                        <p class="mb-2">6abc = 2 × 3 × a × b × c</p>
+                        <p class="mb-2">24ab² = 2 × 2 × 2 × 3 × a × b × b</p>
+                        <p class="mb-2">12a²b = 2 × 2 × 3 × a × a × b</p>
+                        <p class="mb-2">Common factor = 2 × 3 × a × b = 6ab</p>
+                        <p><strong>Answer:</strong> 6ab</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Teen terms ke prime factors nikalne ke baad, common factors 2, 3, a aur b ko multiply karke 6ab common factor mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 16x³, -4x², 32x</p>
+                        <p class="mb-2">16x³ = 2 × 2 × 2 × 2 × x × x × x</p>
+                        <p class="mb-2">-4x² = -1 × 2 × 2 × x × x</p>
+                        <p class="mb-2">32x = 2 × 2 × 2 × 2 × 2 × x</p>
+                        <p class="mb-2">Common factor = 2 × 2 × x = 4x</p>
+                        <p><strong>Answer:</strong> 4x</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Negative sign ko ignore karke prime factors nikalne par, common factors 2, 2 aur x multiply karke 4x mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 10pq, 20qr, 30rp</p>
+                        <p class="mb-2">10pq = 2 × 5 × p × q</p>
+                        <p class="mb-2">20qr = 2 × 2 × 5 × q × r</p>
+                        <p class="mb-2">30rp = 2 × 3 × 5 × r × p</p>
+                        <p class="mb-2">Common factor = 2 × 5 = 10</p>
+                        <p><strong>Answer:</strong> 10</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Teen terms mein sirf 2 aur 5 common factors hain, unko multiply karke 10 common factor mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 3x²y³, 10x³y², 6x²y²z</p>
+                        <p class="mb-2">3x²y³ = 3 × x × x × y × y × y</p>
+                        <p class="mb-2">10x³y² = 2 × 5 × x × x × x × y × y</p>
+                        <p class="mb-2">6x²y²z = 2 × 3 × x × x × y × y × z</p>
+                        <p class="mb-2">Common factor = x × x × y × y = x²y²</p>
+                        <p><strong>Answer:</strong> x²y²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Teen terms mein x² aur y² common hain, isliye common factor x²y² hai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Factorise the following expressions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 7x - 42</p>
+                        <p class="mb-2">7x = 7 × x</p>
+                        <p class="mb-2">42 = 7 × 6</p>
+                        <p class="mb-2">Common factor = 7</p>
+                        <p class="mb-2">7x - 42 = 7(x - 6)</p>
+                        <p><strong>Answer:</strong> 7(x - 6)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 7 common factor nikalne ke baad, bracket mein (x - 6) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 6p - 12q</p>
+                        <p class="mb-2">6p = 2 × 3 × p</p>
+                        <p class="mb-2">12q = 2 × 2 × 3 × q</p>
+                        <p class="mb-2">Common factor = 2 × 3 = 6</p>
+                        <p class="mb-2">6p - 12q = 6(p - 2q)</p>
+                        <p><strong>Answer:</strong> 6(p - 2q)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 6 common factor nikalne ke baad, bracket mein (p - 2q) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 7a² + 14a</p>
+                        <p class="mb-2">7a² = 7 × a × a</p>
+                        <p class="mb-2">14a = 2 × 7 × a</p>
+                        <p class="mb-2">Common factor = 7 × a = 7a</p>
+                        <p class="mb-2">7a² + 14a = 7a(a + 2)</p>
+                        <p><strong>Answer:</strong> 7a(a + 2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 7a common factor nikalne ke baad, bracket mein (a + 2) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) -16z + 20z³</p>
+                        <p class="mb-2">-16z = -1 × 2 × 2 × 2 × 2 × z</p>
+                        <p class="mb-2">20z³ = 2 × 2 × 5 × z × z × z</p>
+                        <p class="mb-2">Common factor = 2 × 2 × z = 4z</p>
+                        <p class="mb-2">-16z + 20z³ = 4z(-4 + 5z²)</p>
+                        <p><strong>Answer:</strong> 4z(5z² - 4)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 4z common factor nikalne ke baad, bracket mein (-4 + 5z²) bacha, jise rearrange karke (5z² - 4) likh sakte hain.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 20l²m + 30alm</p>
+                        <p class="mb-2">20l²m = 2 × 2 × 5 × l × l × m</p>
+                        <p class="mb-2">30alm = 2 × 3 × 5 × a × l × m</p>
+                        <p class="mb-2">Common factor = 2 × 5 × l × m = 10lm</p>
+                        <p class="mb-2">20l²m + 30alm = 10lm(2l + 3a)</p>
+                        <p><strong>Answer:</strong> 10lm(2l + 3a)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 10lm common factor nikalne ke baad, bracket mein (2l + 3a) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 5x²y - 15xy²</p>
+                        <p class="mb-2">5x²y = 5 × x × x × y</p>
+                        <p class="mb-2">15xy² = 3 × 5 × x × y × y</p>
+                        <p class="mb-2">Common factor = 5 × x × y = 5xy</p>
+                        <p class="mb-2">5x²y - 15xy² = 5xy(x - 3y)</p>
+                        <p><strong>Answer:</strong> 5xy(x - 3y)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 5xy common factor nikalne ke baad, bracket mein (x - 3y) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 10a² - 15b² + 20c²</p>
+                        <p class="mb-2">10a² = 2 × 5 × a × a</p>
+                        <p class="mb-2">15b² = 3 × 5 × b × b</p>
+                        <p class="mb-2">20c² = 2 × 2 × 5 × c × c</p>
+                        <p class="mb-2">Common factor = 5</p>
+                        <p class="mb-2">10a² - 15b² + 20c² = 5(2a² - 3b² + 4c²)</p>
+                        <p><strong>Answer:</strong> 5(2a² - 3b² + 4c²)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Sirf 5 hi common factor hai, isliye 5 nikalne ke baad bracket mein (2a² - 3b² + 4c²) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) -4a² + 4ab - 4ca</p>
+                        <p class="mb-2">-4a² = -1 × 2 × 2 × a × a</p>
+                        <p class="mb-2">4ab = 2 × 2 × a × b</p>
+                        <p class="mb-2">4ca = 2 × 2 × c × a</p>
+                        <p class="mb-2">Common factor = 2 × 2 × a = 4a</p>
+                        <p class="mb-2">-4a² + 4ab - 4ca = 4a(-a + b - c)</p>
+                        <p><strong>Answer:</strong> 4a(-a + b - c) or -4a(a - b + c)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 4a common factor nikalne ke baad, bracket mein (-a + b - c) bacha. Negative sign ko bracket ke bahar nikal kar -4a(a - b + c) bhi likh sakte hain.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ix) x²yz + xy²z + xyz²</p>
+                        <p class="mb-2">x²yz = x × x × y × z</p>
+                        <p class="mb-2">xy²z = x × y × y × z</p>
+                        <p class="mb-2">xyz² = x × y × z × z</p>
+                        <p class="mb-2">Common factor = x × y × z = xyz</p>
+                        <p class="mb-2">x²yz + xy²z + xyz² = xyz(x + y + z)</p>
+                        <p><strong>Answer:</strong> xyz(x + y + z)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> xyz common factor nikalne ke baad, bracket mein (x + y + z) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(x) ax²y + bxy² + cxyz</p>
+                        <p class="mb-2">ax²y = a × x × x × y</p>
+                        <p class="mb-2">bxy² = b × x × y × y</p>
+                        <p class="mb-2">cxyz = c × x × y × z</p>
+                        <p class="mb-2">Common factor = x × y = xy</p>
+                        <p class="mb-2">ax²y + bxy² + cxyz = xy(ax + by + cz)</p>
+                        <p><strong>Answer:</strong> xy(ax + by + cz)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> xy common factor nikalne ke baad, bracket mein (ax + by + cz) bacha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Factorise:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) x² + xy + 8x + 8y</p>
+                        <p class="mb-2">Grouping: (x² + xy) + (8x + 8y)</p>
+                        <p class="mb-2">x(x + y) + 8(x + y)</p>
+                        <p class="mb-2">(x + y)(x + 8)</p>
+                        <p><strong>Answer:</strong> (x + y)(x + 8)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Humne terms ko group kiya. Pehle group se x common liya, dusre group se 8 common liya. Dono groups mein (x + y) common tha, isliye final answer (x + y)(x + 8) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 15xy - 6x + 5y - 2</p>
+                        <p class="mb-2">Grouping: (15xy - 6x) + (5y - 2)</p>
+                        <p class="mb-2">3x(5y - 2) + 1(5y - 2)</p>
+                        <p class="mb-2">(5y - 2)(3x + 1)</p>
+                        <p><strong>Answer:</strong> (5y - 2)(3x + 1)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Grouping karne ke baad, pehle group se 3x common liya, dusre group se 1 common liya. Dono groups mein (5y - 2) common tha, isliye final answer (5y - 2)(3x + 1) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) ax + bx - ay - by</p>
+                        <p class="mb-2">Grouping: (ax + bx) - (ay + by)</p>
+                        <p class="mb-2">x(a + b) - y(a + b)</p>
+                        <p class="mb-2">(a + b)(x - y)</p>
+                        <p><strong>Answer:</strong> (a + b)(x - y)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Grouping karne ke baad, pehle group se x common liya, dusre group se y common liya. Dono groups mein (a + b) common tha, isliye final answer (a + b)(x - y) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 15pq + 15 + 9q + 25p</p>
+                        <p class="mb-2">Rearranging: 15pq + 9q + 25p + 15</p>
+                        <p class="mb-2">Grouping: (15pq + 9q) + (25p + 15)</p>
+                        <p class="mb-2">3q(5p + 3) + 5(5p + 3)</p>
+                        <p class="mb-2">(5p + 3)(3q + 5)</p>
+                        <p><strong>Answer:</strong> (5p + 3)(3q + 5)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle terms ko rearrange kiya, phir grouping karke pehle group se 3q common liya, dusre group se 5 common liya. Dono groups mein (5p + 3) common tha, isliye final answer (5p + 3)(3q + 5) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) z - 7 + 7xy - xyz</p>
+                        <p class="mb-2">Rearranging: -xyz + 7xy + z - 7</p>
+                        <p class="mb-2">Grouping: (-xyz + 7xy) + (z - 7)</p>
+                        <p class="mb-2">-xy(z - 7) + 1(z - 7)</p>
+                        <p class="mb-2">(z - 7)(1 - xy)</p>
+                        <p><strong>Answer:</strong> (z - 7)(1 - xy)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle terms ko rearrange kiya, phir grouping karke pehle group se -xy common liya, dusre group se 1 common liya. Dono groups mein (z - 7) common tha, isliye final answer (z - 7)(1 - xy) mila.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 12.2 Section -->
+        <section id="exercise-12-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 12.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Factorise the following squares using identities:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) a² + 8a + 16</p>
+                        <p class="mb-2">This is in the form (a + b)² = a² + 2ab + b²</p>
+                        <p class="mb-2">Here a = a, b = 4</p>
+                        <p class="mb-2">a² + 8a + 16 = (a + 4)²</p>
+                        <p><strong>Answer:</strong> (a + 4)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a + b)² = a² + 2ab + b² identity use karke, a = a aur b = 4 rakhne par (a + 4)² milta hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) p² - 10p + 25</p>
+                        <p class="mb-2">This is in the form (a - b)² = a² - 2ab + b²</p>
+                        <p class="mb-2">Here a = p, b = 5</p>
+                        <p class="mb-2">p² - 10p + 25 = (p - 5)²</p>
+                        <p><strong>Answer:</strong> (p - 5)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a - b)² = a² - 2ab + b² identity use karke, a = p aur b = 5 rakhne par (p - 5)² milta hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 25m² + 30m + 9</p>
+                        <p class="mb-2">This is in the form (a + b)² = a² + 2ab + b²</p>
+                        <p class="mb-2">Here a = 5m, b = 3</p>
+                        <p class="mb-2">25m² + 30m + 9 = (5m + 3)²</p>
+                        <p><strong>Answer:</strong> (5m + 3)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a + b)² = a² + 2ab + b² identity use karke, a = 5m aur b = 3 rakhne par (5m + 3)² milta hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 49y² + 84yz + 36z²</p>
+                        <p class="mb-2">This is in the form (a + b)² = a² + 2ab + b²</p>
+                        <p class="mb-2">Here a = 7y, b = 6z</p>
+                        <p class="mb-2">49y² + 84yz + 36z² = (7y + 6z)²</p>
+                        <p><strong>Answer:</strong> (7y + 6z)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a + b)² = a² + 2ab + b² identity use karke, a = 7y aur b = 6z rakhne par (7y + 6z)² milta hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 4x² - 8x + 4</p>
+                        <p class="mb-2">Taking 4 common: 4(x² - 2x + 1)</p>
+                        <p class="mb-2">x² - 2x + 1 = (x - 1)²</p>
+                        <p class="mb-2">4x² - 8x + 4 = 4(x - 1)²</p>
+                        <p><strong>Answer:</strong> 4(x - 1)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle 4 common liya, phir bracket ke andar perfect square hai. (x - 1)² identity use karke final answer 4(x - 1)² mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 121b² - 88bc + 16c²</p>
+                        <p class="mb-2">This is in the form (a - b)² = a² - 2ab + b²</p>
+                        <p class="mb-2">Here a = 11b, b = 4c</p>
+                        <p class="mb-2">121b² - 88bc + 16c² = (11b - 4c)²</p>
+                        <p><strong>Answer:</strong> (11b - 4c)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a - b)² = a² - 2ab + b² identity use karke, a = 11b aur b = 4c rakhne par (11b - 4c)² milta hai.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) (l + m)² - 4lm</p>
+                        <p class="mb-2">(l + m)² - 4lm = l² + 2lm + m² - 4lm</p>
+                        <p class="mb-2">= l² - 2lm + m²</p>
+                        <p class="mb-2">= (l - m)²</p>
+                        <p><strong>Answer:</strong> (l - m)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> (l + m)² ko expand karke 4lm subtract kiya. Result perfect square (l - m)² ban gaya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) a⁴ + 2a²b² + b⁴</p>
+                        <p class="mb-2">This is in the form (a² + b²)² = a⁴ + 2a²b² + b⁴</p>
+                        <p class="mb-2">a⁴ + 2a²b² + b⁴ = (a² + b²)²</p>
+                        <p><strong>Answer:</strong> (a² + b²)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a² + b²)² identity use karke directly factorise kar diya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Factorise:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 4p² - 9q²</p>
+                        <p class="mb-2">This is in the form a² - b² = (a + b)(a - b)</p>
+                        <p class="mb-2">Here a = 2p, b = 3q</p>
+                        <p class="mb-2">4p² - 9q² = (2p + 3q)(2p - 3q)</p>
+                        <p><strong>Answer:</strong> (2p + 3q)(2p - 3q)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye difference of squares hai. a² - b² = (a + b)(a - b) identity use karke, a = 2p aur b = 3q rakhne par (2p + 3q)(2p - 3q) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 63a² - 112b²</p>
+                        <p class="mb-2">Taking 7 common: 7(9a² - 16b²)</p>
+                        <p class="mb-2">9a² - 16b² = (3a)² - (4b)²</p>
+                        <p class="mb-2">(3a + 4b)(3a - 4b)</p>
+                        <p class="mb-2">63a² - 112b² = 7(3a + 4b)(3a - 4b)</p>
+                        <p><strong>Answer:</strong> 7(3a + 4b)(3a - 4b)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle 7 common liya, phir bracket ke andar difference of squares hai. a² - b² identity use karke final answer 7(3a + 4b)(3a - 4b) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 49x² - 36</p>
+                        <p class="mb-2">This is in the form a² - b² = (a + b)(a - b)</p>
+                        <p class="mb-2">Here a = 7x, b = 6</p>
+                        <p class="mb-2">49x² - 36 = (7x + 6)(7x - 6)</p>
+                        <p><strong>Answer:</strong> (7x + 6)(7x - 6)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye difference of squares hai. a² - b² = (a + b)(a - b) identity use karke, a = 7x aur b = 6 rakhne par (7x + 6)(7x - 6) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 16x⁵ - 144x³</p>
+                        <p class="mb-2">Taking 16x³ common: 16x³(x² - 9)</p>
+                        <p class="mb-2">x² - 9 = (x + 3)(x - 3)</p>
+                        <p class="mb-2">16x⁵ - 144x³ = 16x³(x + 3)(x - 3)</p>
+                        <p><strong>Answer:</strong> 16x³(x + 3)(x - 3)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle 16x³ common liya, phir bracket ke andar difference of squares hai. x² - 9 = (x + 3)(x - 3) identity use karke final answer mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (l + m)² - (l - m)²</p>
+                        <p class="mb-2">This is in the form a² - b² = (a + b)(a - b)</p>
+                        <p class="mb-2">Here a = (l + m), b = (l - m)</p>
+                        <p class="mb-2">(l + m)² - (l - m)² = [(l + m) + (l - m)][(l + m) - (l - m)]</p>
+                        <p class="mb-2">= [l + m + l - m][l + m - l + m]</p>
+                        <p class="mb-2">= [2l][2m] = 4lm</p>
+                        <p><strong>Answer:</strong> 4lm</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye difference of squares hai. a² - b² identity use karke simplify karne par 4lm mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 9x²y² - 16</p>
+                        <p class="mb-2">This is in the form a² - b² = (a + b)(a - b)</p>
+                        <p class="mb-2">Here a = 3xy, b = 4</p>
+                        <p class="mb-2">9x²y² - 16 = (3xy + 4)(3xy - 4)</p>
+                        <p><strong>Answer:</strong> (3xy + 4)(3xy - 4)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye difference of squares hai. a² - b² = (a + b)(a - b) identity use karke, a = 3xy aur b = 4 rakhne par (3xy + 4)(3xy - 4) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) (x² - 2xy + y²) - z²</p>
+                        <p class="mb-2">x² - 2xy + y² = (x - y)²</p>
+                        <p class="mb-2">(x - y)² - z² = [(x - y) + z][(x - y) - z]</p>
+                        <p class="mb-2">= (x - y + z)(x - y - z)</p>
+                        <p><strong>Answer:</strong> (x - y + z)(x - y - z)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle x² - 2xy + y² ko (x - y)² mein convert kiya, phir difference of squares identity use karke final answer mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 25a² - 4b² + 28bc - 49c²</p>
+                        <p class="mb-2">Rearranging: 25a² - (4b² - 28bc + 49c²)</p>
+                        <p class="mb-2">4b² - 28bc + 49c² = (2b)² - 2(2b)(7c) + (7c)² = (2b - 7c)²</p>
+                        <p class="mb-2">25a² - (2b - 7c)² = (5a)² - (2b - 7c)²</p>
+                        <p class="mb-2">= [5a + (2b - 7c)][5a - (2b - 7c)]</p>
+                        <p class="mb-2">= (5a + 2b - 7c)(5a - 2b + 7c)</p>
+                        <p><strong>Answer:</strong> (5a + 2b - 7c)(5a - 2b + 7c)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle terms ko rearrange kiya, phir perfect square aur difference of squares identities use karke final answer mila.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Factorise the following expressions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) ax² + bx</p>
+                        <p class="mb-2">Taking x common: x(ax + b)</p>
+                        <p><strong>Answer:</strong> x(ax + b)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> x common factor nikalne ke baad, bracket mein (ax + b) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 7p² + 21q²</p>
+                        <p class="mb-2">Taking 7 common: 7(p² + 3q²)</p>
+                        <p><strong>Answer:</strong> 7(p² + 3q²)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 7 common factor nikalne ke baad, bracket mein (p² + 3q²) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 2x³ + 2xy² + 2xz²</p>
+                        <p class="mb-2">Taking 2x common: 2x(x² + y² + z²)</p>
+                        <p><strong>Answer:</strong> 2x(x² + y² + z²)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 2x common factor nikalne ke baad, bracket mein (x² + y² + z²) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) am² + bm² + bn² + an²</p>
+                        <p class="mb-2">Grouping: (am² + bm²) + (bn² + an²)</p>
+                        <p class="mb-2">m²(a + b) + n²(a + b)</p>
+                        <p class="mb-2">(a + b)(m² + n²)</p>
+                        <p><strong>Answer:</strong> (a + b)(m² + n²)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Grouping karne ke baad, pehle group se m² common liya, dusre group se n² common liya. Dono groups mein (a + b) common tha, isliye final answer (a + b)(m² + n²) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (lm + l) + m + 1</p>
+                        <p class="mb-2">Grouping: l(m + 1) + 1(m + 1)</p>
+                        <p class="mb-2">(m + 1)(l + 1)</p>
+                        <p><strong>Answer:</strong> (m + 1)(l + 1)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Grouping karne ke baad, pehle group se l common liya, dusre group se 1 common liya. Dono groups mein (m + 1) common tha, isliye final answer (m + 1)(l + 1) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) y(y + z) + 9(y + z)</p>
+                        <p class="mb-2">Taking (y + z) common: (y + z)(y + 9)</p>
+                        <p><strong>Answer:</strong> (y + z)(y + 9)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> (y + z) common factor nikalne ke baad, bracket mein (y + 9) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 5y² - 20y - 8z + 2yz</p>
+                        <p class="mb-2">Rearranging: 5y² - 20y + 2yz - 8z</p>
+                        <p class="mb-2">Grouping: (5y² - 20y) + (2yz - 8z)</p>
+                        <p class="mb-2">5y(y - 4) + 2z(y - 4)</p>
+                        <p class="mb-2">(y - 4)(5y + 2z)</p>
+                        <p><strong>Answer:</strong> (y - 4)(5y + 2z)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle terms ko rearrange kiya, phir grouping karke pehle group se 5y common liya, dusre group se 2z common liya. Dono groups mein (y - 4) common tha, isliye final answer (y - 4)(5y + 2z) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(viii) 10ab + 4a + 5b + 2</p>
+                        <p class="mb-2">Grouping: (10ab + 4a) + (5b + 2)</p>
+                        <p class="mb-2">2a(5b + 2) + 1(5b + 2)</p>
+                        <p class="mb-2">(5b + 2)(2a + 1)</p>
+                        <p><strong>Answer:</strong> (5b + 2)(2a + 1)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Grouping karne ke baad, pehle group se 2a common liya, dusre group se 1 common liya. Dono groups mein (5b + 2) common tha, isliye final answer (5b + 2)(2a + 1) mila.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ix) 6xy - 4y + 6 - 9x</p>
+                        <p class="mb-2">Rearranging: 6xy - 9x - 4y + 6</p>
+                        <p class="mb-2">Grouping: (6xy - 9x) - (4y - 6)</p>
+                        <p class="mb-2">3x(2y - 3) - 2(2y - 3)</p>
+                        <p class="mb-2">(2y - 3)(3x - 2)</p>
+                        <p><strong>Answer:</strong> (2y - 3)(3x - 2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle terms ko rearrange kiya, phir grouping karke pehle group se 3x common liya, dusre group se 2 common liya. Dono groups mein (2y - 3) common tha, isliye final answer (2y - 3)(3x - 2) mila.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Factorise:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) a⁴ - b⁴</p>
+                        <p class="mb-2">(a²)² - (b²)² = (a² + b²)(a² - b²)</p>
+                        <p class="mb-2">= (a² + b²)(a + b)(a - b)</p>
+                        <p><strong>Answer:</strong> (a² + b²)(a + b)(a - b)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle difference of squares identity use karke (a² + b²)(a² - b²) likha, phir a² - b² ko fir se difference of squares identity use karke (a + b)(a - b) likha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) p⁴ - 81</p>
+                        <p class="mb-2">(p²)² - (9)² = (p² + 9)(p² - 9)</p>
+                        <p class="mb-2">= (p² + 9)(p + 3)(p - 3)</p>
+                        <p><strong>Answer:</strong> (p² + 9)(p + 3)(p - 3)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle difference of squares identity use karke (p² + 9)(p² - 9) likha, phir p² - 9 ko fir se difference of squares identity use karke (p + 3)(p - 3) likha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) x⁴ - (y + z)⁴</p>
+                        <p class="mb-2">(x²)² - [(y + z)²]²</p>
+                        <p class="mb-2">= [x² + (y + z)²][x² - (y + z)²]</p>
+                        <p class="mb-2">= [x² + (y + z)²][x + (y + z)][x - (y + z)]</p>
+                        <p class="mb-2">= [x² + (y + z)²][x + y + z][x - y - z]</p>
+                        <p><strong>Answer:</strong> [x² + (y + z)²][x + y + z][x - y - z]</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Difference of squares identity use karke step by step factorise kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) x⁴ - (x - z)⁴</p>
+                        <p class="mb-2">(x²)² - [(x - z)²]²</p>
+                        <p class="mb-2">= [x² + (x - z)²][x² - (x - z)²]</p>
+                        <p class="mb-2">= [x² + (x - z)²][x + (x - z)][x - (x - z)]</p>
+                        <p class="mb-2">= [x² + (x - z)²][2x - z][z]</p>
+                        <p><strong>Answer:</strong> z(2x - z)[x² + (x - z)²]</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Difference of squares identity use karke step by step factorise kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) a⁴ - 2a²b² + b⁴</p>
+                        <p class="mb-2">This is in the form (a²)² - 2(a²)(b²) + (b²)²</p>
+                        <p class="mb-2">= (a² - b²)²</p>
+                        <p class="mb-2">= [(a + b)(a - b)]²</p>
+                        <p class="mb-2">= (a + b)²(a - b)²</p>
+                        <p><strong>Answer:</strong> (a + b)²(a - b)²</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Ye perfect square hai. (a² - b²)² likhne ke baad, a² - b² ko difference of squares identity use karke (a + b)(a - b) likha, phir square kiya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Factorise the following expressions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) p² + 6p + 8</p>
+                        <p class="mb-2">We need two numbers whose sum is 6 and product is 8</p>
+                        <p class="mb-2">4 and 2: 4 + 2 = 6, 4 × 2 = 8</p>
+                        <p class="mb-2">p² + 6p + 8 = p² + 4p + 2p + 8</p>
+                        <p class="mb-2">= p(p + 4) + 2(p + 4)</p>
+                        <p class="mb-2">= (p + 4)(p + 2)</p>
+                        <p><strong>Answer:</strong> (p + 4)(p + 2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Middle term ko split kiya. Aise do numbers dhoonde jinka sum 6 aur product 8 ho. 4 aur 2 numbers the. Phir grouping karke factorise kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) q² - 10q + 21</p>
+                        <p class="mb-2">We need two numbers whose sum is -10 and product is 21</p>
+                        <p class="mb-2">-7 and -3: -7 + (-3) = -10, (-7) × (-3) = 21</p>
+                        <p class="mb-2">q² - 10q + 21 = q² - 7q - 3q + 21</p>
+                        <p class="mb-2">= q(q - 7) - 3(q - 7)</p>
+                        <p class="mb-2">= (q - 7)(q - 3)</p>
+                        <p><strong>Answer:</strong> (q - 7)(q - 3)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Middle term ko split kiya. Aise do numbers dhoonde jinka sum -10 aur product 21 ho. -7 aur -3 numbers the. Phir grouping karke factorise kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) p² + 6p - 16</p>
+                        <p class="mb-2">We need two numbers whose sum is 6 and product is -16</p>
+                        <p class="mb-2">8 and -2: 8 + (-2) = 6, 8 × (-2) = -16</p>
+                        <p class="mb-2">p² + 6p - 16 = p² + 8p - 2p - 16</p>
+                        <p class="mb-2">= p(p + 8) - 2(p + 8)</p>
+                        <p class="mb-2">= (p + 8)(p - 2)</p>
+                        <p><strong>Answer:</strong> (p + 8)(p - 2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Middle term ko split kiya. Aise do numbers dhoonde jinka sum 6 aur product -16 ho. 8 aur -2 numbers the. Phir grouping karke factorise kiya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 12.3 Section -->
+        <section id="exercise-12-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 12.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Carry out the following divisions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 28x⁴ ÷ 56x</p>
+                        <p class="mb-2">= (28/56) × (x⁴/x)</p>
+                        <p class="mb-2">= (1/2) × x³</p>
+                        <p class="mb-2">= x³/2</p>
+                        <p><strong>Answer:</strong> x³/2</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Coefficient ko divide kiya (28/56 = 1/2) aur variables ko divide kiya (x⁴/x = x³).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) -36y³ ÷ 9y²</p>
+                        <p class="mb-2">= (-36/9) × (y³/y²)</p>
+                        <p class="mb-2">= -4 × y</p>
+                        <p class="mb-2">= -4y</p>
+                        <p><strong>Answer:</strong> -4y</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Coefficient ko divide kiya (-36/9 = -4) aur variables ko divide kiya (y³/y² = y).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 66pq²r³ ÷ 11qr²</p>
+                        <p class="mb-2">= (66/11) × (p/p⁰) × (q²/q) × (r³/r²)</p>
+                        <p class="mb-2">= 6 × p × q × r</p>
+                        <p class="mb-2">= 6pqr</p>
+                        <p><strong>Answer:</strong> 6pqr</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Coefficient ko divide kiya (66/11 = 6) aur har variable ko alag-alag divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 34x³y³z³ ÷ 51xy²z³</p>
+                        <p class="mb-2">= (34/51) × (x³/x) × (y³/y²) × (z³/z³)</p>
+                        <p class="mb-2">= (2/3) × x² × y × 1</p>
+                        <p class="mb-2">= (2x²y)/3</p>
+                        <p><strong>Answer:</strong> (2x²y)/3</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Coefficient ko divide kiya (34/51 = 2/3) aur har variable ko alag-alag divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 12a⁸b⁸ ÷ (-6a⁶b⁴)</p>
+                        <p class="mb-2">= (12/-6) × (a⁸/a⁶) × (b⁸/b⁴)</p>
+                        <p class="mb-2">= -2 × a² × b⁴</p>
+                        <p class="mb-2">= -2a²b⁴</p>
+                        <p><strong>Answer:</strong> -2a²b⁴</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Coefficient ko divide kiya (12/-6 = -2) aur har variable ko alag-alag divide kiya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Divide the given polynomial by the given monomial:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (5x² - 6x) ÷ 3x</p>
+                        <p class="mb-2">= (5x²/3x) - (6x/3x)</p>
+                        <p class="mb-2">= (5x/3) - 2</p>
+                        <p><strong>Answer:</strong> (5x/3) - 2</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag 3x se divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (3y⁸ - 4y⁶ + 5y⁴) ÷ y⁴</p>
+                        <p class="mb-2">= (3y⁸/y⁴) - (4y⁶/y⁴) + (5y⁴/y⁴)</p>
+                        <p class="mb-2">= 3y⁴ - 4y² + 5</p>
+                        <p><strong>Answer:</strong> 3y⁴ - 4y² + 5</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag y⁴ se divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 8(x³y²z² + x²y³z² + x²y²z³) ÷ 4x²y²z²</p>
+                        <p class="mb-2">= [8x³y²z²/(4x²y²z²)] + [8x²y³z²/(4x²y²z²)] + [8x²y²z³/(4x²y²z²)]</p>
+                        <p class="mb-2">= 2x + 2y + 2z</p>
+                        <p class="mb-2">= 2(x + y + z)</p>
+                        <p><strong>Answer:</strong> 2(x + y + z)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag 4x²y²z² se divide kiya, phir 2 common liya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) (x³ + 2x² + 3x) ÷ 2x</p>
+                        <p class="mb-2">= (x³/2x) + (2x²/2x) + (3x/2x)</p>
+                        <p class="mb-2">= (x²/2) + x + (3/2)</p>
+                        <p><strong>Answer:</strong> (x²/2) + x + (3/2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag 2x se divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) (p³q⁶ - p⁶q³) ÷ p³q³</p>
+                        <p class="mb-2">= (p³q⁶/p³q³) - (p⁶q³/p³q³)</p>
+                        <p class="mb-2">= q³ - p³</p>
+                        <p><strong>Answer:</strong> q³ - p³</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag p³q³ se divide kiya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Work out the following divisions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (10x - 25) ÷ 5</p>
+                        <p class="mb-2">= (10x/5) - (25/5)</p>
+                        <p class="mb-2">= 2x - 5</p>
+                        <p><strong>Answer:</strong> 2x - 5</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Har term ko alag-alag 5 se divide kiya.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (10x - 25) ÷ (2x - 5)</p>
+                        <p class="mb-2">Taking 5 common: 5(2x - 5)</p>
+                        <p class="mb-2">[5(2x - 5)] ÷ (2x - 5) = 5</p>
+                        <p><strong>Answer:</strong> 5</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Numerator mein 5 common liya, phir (2x - 5) cancel ho gaya, sirf 5 bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 10y(6y + 21) ÷ 5(2y + 7)</p>
+                        <p class="mb-2">10y(6y + 21) = 10y × 3(2y + 7) = 30y(2y + 7)</p>
+                        <p class="mb-2">[30y(2y + 7)] ÷ [5(2y + 7)] = 6y</p>
+                        <p><strong>Answer:</strong> 6y</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Numerator ko simplify kiya, phir (2y + 7) cancel ho gaya, 30y/5 = 6y bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 9x²y²(3z - 24) ÷ 27xy(z - 8)</p>
+                        <p class="mb-2">9x²y²(3z - 24) = 9x²y² × 3(z - 8) = 27x²y²(z - 8)</p>
+                        <p class="mb-2">[27x²y²(z - 8)] ÷ [27xy(z - 8)] = xy</p>
+                        <p><strong>Answer:</strong> xy</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Numerator ko simplify kiya, phir (z - 8) cancel ho gaya, 27x²y²/27xy = xy bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 96abc(3a - 12)(5b - 30) ÷ 144(a - 4)(b - 6)</p>
+                        <p class="mb-2">96abc(3a - 12)(5b - 30) = 96abc × 3(a - 4) × 5(b - 6)</p>
+                        <p class="mb-2">= 1440 abc (a - 4)(b - 6)</p>
+                        <p class="mb-2">[1440 abc (a - 4)(b - 6)] ÷ [144(a - 4)(b - 6)] = 10abc</p>
+                        <p><strong>Answer:</strong> 10abc</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Numerator ko simplify kiya, phir (a - 4) aur (b - 6) cancel ho gaye, 1440abc/144 = 10abc bacha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Divide as directed:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) 5(2x + 1)(3x + 5) ÷ (2x + 1)</p>
+                        <p class="mb-2">= 5(3x + 5)</p>
+                        <p><strong>Answer:</strong> 5(3x + 5)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> (2x + 1) cancel ho gaya, sirf 5(3x + 5) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) 26xy(x + 5)(y - 4) ÷ 13x(y - 4)</p>
+                        <p class="mb-2">= 2y(x + 5)</p>
+                        <p><strong>Answer:</strong> 2y(x + 5)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 26/13 = 2, x cancel ho gaya, (y - 4) cancel ho gaya, sirf 2y(x + 5) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) 52pqr(p + q)(q + r)(r + p) ÷ 104pq(q + r)(r + p)</p>
+                        <p class="mb-2">= [52/104] × r × (p + q)</p>
+                        <p class="mb-2">= (1/2) × r × (p + q)</p>
+                        <p class="mb-2">= r(p + q)/2</p>
+                        <p><strong>Answer:</strong> r(p + q)/2</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 52/104 = 1/2, p aur q cancel ho gaye, (q + r) aur (r + p) cancel ho gaye, sirf r(p + q)/2 bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 20(y + 4)(y² + 5y + 3) ÷ 5(y + 4)</p>
+                        <p class="mb-2">= 4(y² + 5y + 3)</p>
+                        <p><strong>Answer:</strong> 4(y² + 5y + 3)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> 20/5 = 4, (y + 4) cancel ho gaya, sirf 4(y² + 5y + 3) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) x(x + 1)(x + 2)(x + 3) ÷ x(x + 1)</p>
+                        <p class="mb-2">= (x + 2)(x + 3)</p>
+                        <p><strong>Answer:</strong> (x + 2)(x + 3)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> x aur (x + 1) cancel ho gaye, sirf (x + 2)(x + 3) bacha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Factorise the expressions and divide as directed:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(i) (y² + 7y + 10) ÷ (y + 5)</p>
+                        <p class="mb-2">y² + 7y + 10 = y² + 5y + 2y + 10</p>
+                        <p class="mb-2">= y(y + 5) + 2(y + 5)</p>
+                        <p class="mb-2">= (y + 5)(y + 2)</p>
+                        <p class="mb-2">[(y + 5)(y + 2)] ÷ (y + 5) = y + 2</p>
+                        <p><strong>Answer:</strong> y + 2</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir (y + 5) cancel ho gaya, sirf (y + 2) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(ii) (m² - 14m - 32) ÷ (m + 2)</p>
+                        <p class="mb-2">m² - 14m - 32 = m² - 16m + 2m - 32</p>
+                        <p class="mb-2">= m(m - 16) + 2(m - 16)</p>
+                        <p class="mb-2">= (m - 16)(m + 2)</p>
+                        <p class="mb-2">[(m - 16)(m + 2)] ÷ (m + 2) = m - 16</p>
+                        <p><strong>Answer:</strong> m - 16</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir (m + 2) cancel ho gaya, sirf (m - 16) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iii) (5p² - 25p + 20) ÷ (p - 1)</p>
+                        <p class="mb-2">5p² - 25p + 20 = 5(p² - 5p + 4)</p>
+                        <p class="mb-2">p² - 5p + 4 = p² - 4p - p + 4</p>
+                        <p class="mb-2">= p(p - 4) - 1(p - 4)</p>
+                        <p class="mb-2">= (p - 4)(p - 1)</p>
+                        <p class="mb-2">5(p - 4)(p - 1) ÷ (p - 1) = 5(p - 4)</p>
+                        <p><strong>Answer:</strong> 5(p - 4)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir (p - 1) cancel ho gaya, sirf 5(p - 4) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(iv) 4yz(z² + 6z - 16) ÷ 2y(z + 8)</p>
+                        <p class="mb-2">z² + 6z - 16 = z² + 8z - 2z - 16</p>
+                        <p class="mb-2">= z(z + 8) - 2(z + 8)</p>
+                        <p class="mb-2">= (z + 8)(z - 2)</p>
+                        <p class="mb-2">4yz(z + 8)(z - 2) ÷ 2y(z + 8) = 2z(z - 2)</p>
+                        <p><strong>Answer:</strong> 2z(z - 2)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir 4/2 = 2, y cancel ho gaya, (z + 8) cancel ho gaya, sirf 2z(z - 2) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(v) 5pq(p² - q²) ÷ 2p(p + q)</p>
+                        <p class="mb-2">p² - q² = (p + q)(p - q)</p>
+                        <p class="mb-2">5pq(p + q)(p - q) ÷ 2p(p + q) = (5q/2)(p - q)</p>
+                        <p><strong>Answer:</strong> (5q/2)(p - q)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir 5/2, p cancel ho gaya, (p + q) cancel ho gaya, sirf (5q/2)(p - q) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vi) 12xy(9x² - 16y²) ÷ 4xy(3x + 4y)</p>
+                        <p class="mb-2">9x² - 16y² = (3x)² - (4y)² = (3x + 4y)(3x - 4y)</p>
+                        <p class="mb-2">12xy(3x + 4y)(3x - 4y) ÷ 4xy(3x + 4y) = 3(3x - 4y)</p>
+                        <p><strong>Answer:</strong> 3(3x - 4y)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir 12/4 = 3, xy cancel ho gaya, (3x + 4y) cancel ho gaya, sirf 3(3x - 4y) bacha.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="sub-question">
+                        <p class="mb-2">(vii) 39y³(50y² - 98) ÷ 26y²(5y + 7)</p>
+                        <p class="mb-2">50y² - 98 = 2(25y² - 49) = 2[(5y)² - (7)²] = 2(5y + 7)(5y - 7)</p>
+                        <p class="mb-2">39y³ × 2(5y + 7)(5y - 7) = 78y³(5y + 7)(5y - 7)</p>
+                        <p class="mb-2">78y³(5y + 7)(5y - 7) ÷ 26y²(5y + 7) = 3y(5y - 7)</p>
+                        <p><strong>Answer:</strong> 3y(5y - 7)</p>
+                        <div class="explanation">
+                            <p><strong>Hinglish Explanation:</strong> Pehle numerator ko factorise kiya, phir 78/26 = 3, y³/y² = y, (5y + 7) cancel ho gaya, sirf 3y(5y - 7) bacha.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

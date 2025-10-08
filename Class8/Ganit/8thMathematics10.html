@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Chapter 10: Exponents and Powers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .exponent {
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+        .hind-explanation {
+            background-color: #fef3c7;
+            border-left: 4px solid #f59e0b;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 10: Exponents and Powers</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 10.1 Section -->
+        <section id="exercise-10-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 10.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Evaluate: (i) 3<span class="exponent">-2</span> (ii) (-4)<span class="exponent">-2</span> (iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 3<span class="exponent">-2</span></p>
+                        <p class="mb-2">According to exponent rule: a<span class="exponent">-m</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">a<span class="exponent">m</span></span></span></p>
+                        <p class="mb-2">3<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">3²<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Negative exponent ka matlab hai ki hum 1 ko uss number se divide kar rahe hain. Yahan 3<sup>-2</sup> ka matlab hai 1 divided by 3<sup>2</sup> which is 1/9.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (-4)<span class="exponent">-2</span></p>
+                        <p class="mb-2">(-4)<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">(-4)²<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Negative exponent rule apply karte hain. (-4)<sup>-2</sup> = 1/(-4)<sup>2</sup> = 1/16. Even power ke wajah se negative sign nahi raha.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-5</span> = (<span class="fraction"><span class="numerator">2</span><span class="denominator">1</span></span>)<span class="exponent">5</span> = 2<span class="exponent">5</span> = 32</p>
+                        <p><strong>Answer:</strong> 32</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Jab fraction pe negative exponent ho, toh hum fraction ko flip kar dete hain aur exponent positive ho jata hai. (1/2)<sup>-5</sup> = (2/1)<sup>5</sup> = 2<sup>5</sup> = 32.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Simplify and express the result in positive exponent form:</h3>
+                <p class="mb-4">(i) (-4)<span class="exponent">5</span> ÷ (-4)<span class="exponent">8</span> (ii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span> (iii) (-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span></p>
+                <p class="mb-4">(iv) (3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span>) × 3<span class="exponent">-5</span> (v) 2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (-4)<span class="exponent">5</span> ÷ (-4)<span class="exponent">8</span></p>
+                        <p class="mb-2">According to exponent rule: a<span class="exponent">m</span> ÷ a<span class="exponent">n</span> = a<span class="exponent">m-n</span></p>
+                        <p class="mb-2">(-4)<span class="exponent">5-8</span> = (-4)<span class="exponent">-3</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">(-4)³<span class="exponent"></span></span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                        <p><strong>Answer:</strong> -<span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Same base ke saath division mein exponents subtract hote hain. (-4)<sup>5-8</sup> = (-4)<sup>-3</sup> = 1/(-4)<sup>3</sup> = -1/64.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2³<span class="exponent"></span></span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">1²<span class="exponent"></span></span><span class="denominator">(2³)²<span class="exponent"></span><span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2⁶<span class="exponent"></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">64</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Jab hum fraction pe exponent lagate hain, toh numerator aur denominator dono pe exponent apply hota hai. (1/2³)² = 1²/(2³)² = 1/2⁶ = 1/64.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span></p>
+                        <p class="mb-2">(-3)<span class="exponent">4</span> × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)<span class="exponent">4</span> = [(-3) × (<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>)]<span class="exponent">4</span> = (-5)<span class="exponent">4</span> = 625</p>
+                        <p><strong>Answer:</strong> 625</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Same exponent ke saath multiplication mein hum bases ko multiply kar sakte hain. (-3) × (5/3) = -5, then (-5)<sup>4</sup> = 625.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) (3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span>) × 3<span class="exponent">-5</span></p>
+                        <p class="mb-2">3<span class="exponent">-7</span> ÷ 3<span class="exponent">-10</span> = 3<span class="exponent">-7-(-10)</span> = 3<span class="exponent">3</span></p>
+                        <p class="mb-2">3<span class="exponent">3</span> × 3<span class="exponent">-5</span> = 3<span class="exponent">3-5</span> = 3<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Pehle division mein exponents subtract karte hain: -7 - (-10) = 3, so 3³. Phir multiply karte hain: 3³ × 3<sup>-5</sup> = 3<sup>3-5</sup> = 3<sup>-2</sup> = 1/9.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span></p>
+                        <p class="mb-2">2<span class="exponent">-3</span> × (-7)<span class="exponent">-3</span> = [2 × (-7)]<span class="exponent">-3</span> = (-14)<span class="exponent">-3</span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2744</span></span></p>
+                        <p><strong>Answer:</strong> -<span class="fraction"><span class="numerator">1</span><span class="denominator">2744</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Same negative exponent ke saath hum bases ko multiply kar sakte hain. [2 × (-7)]<sup>-3</sup> = (-14)<sup>-3</sup> = -1/14³ = -1/2744.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Find the value of:</h3>
+                <p class="mb-4">(i) (3<span class="exponent">0</span> + 4<span class="exponent">-1</span>) × 2<span class="exponent">2</span> (ii) (2<span class="exponent">-1</span> × 4<span class="exponent">-1</span>) ÷ 2<span class="exponent">-2</span></p>
+                <p class="mb-4">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span> (iv) (3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span></p>
+                <p class="mb-4">(v) {(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span>}<span class="exponent">2</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (3<span class="exponent">0</span> + 4<span class="exponent">-1</span>) × 2<span class="exponent">2</span></p>
+                        <p class="mb-2">3<span class="exponent">0</span> = 1, 4<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 2<span class="exponent">2</span> = 4</p>
+                        <p class="mb-2">(1 + <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) × 4 = (<span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>) × 4 = 5</p>
+                        <p><strong>Answer:</strong> 5</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 3<sup>0</sup> = 1, 4<sup>-1</sup> = 1/4, 2<sup>2</sup> = 4. (1 + 1/4) = 5/4, then (5/4) × 4 = 5.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (2<span class="exponent">-1</span> × 4<span class="exponent">-1</span>) ÷ 2<span class="exponent">-2</span></p>
+                        <p class="mb-2">2<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, 4<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 2<span class="exponent">-2</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>) × 4 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 2<sup>-1</sup> = 1/2, 4<sup>-1</sup> = 1/4, 2<sup>-2</sup> = 1/4. (1/2 × 1/4) = 1/8, then 1/8 ÷ 1/4 = 1/8 × 4 = 1/2.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> + (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<span class="exponent">-2</span> = 2<span class="exponent">2</span> = 4</p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> = 3<span class="exponent">2</span> = 9</p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-2</span> = 4<span class="exponent">2</span> = 16</p>
+                        <p class="mb-2">4 + 9 + 16 = 29</p>
+                        <p><strong>Answer:</strong> 29</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Fraction ka negative exponent means reciprocal ka positive exponent. (1/2)<sup>-2</sup> = 2<sup>2</sup> = 4, (1/3)<sup>-2</sup> = 3<sup>2</sup> = 9, (1/4)<sup>-2</sup> = 4<sup>2</sup> = 16. Total = 4+9+16=29.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) (3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span></p>
+                        <p class="mb-2">Any number to the power 0 is 1</p>
+                        <p class="mb-2">(3<span class="exponent">-1</span> + 4<span class="exponent">-1</span> + 5<span class="exponent">-1</span>)<span class="exponent">0</span> = 1</p>
+                        <p><strong>Answer:</strong> 1</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Kisi bhi number ki 0 power 1 hoti hai, chahe wo kuch bhi ho bracket ke andar. Isliye yahan answer 1 hai.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) {(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span>}<span class="exponent">2</span></p>
+                        <p class="mb-2">(-<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<span class="exponent">-2</span> = (<span class="fraction"><span class="numerator">3</span><span class="denominator">-2</span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">{<span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span>}<span class="exponent">2</span> = <span class="fraction"><span class="numerator">81</span><span class="denominator">16</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">81</span><span class="denominator">16</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> (-2/3)<sup>-2</sup> = (3/-2)<sup>2</sup> = 9/4. Phir (9/4)<sup>2</sup> = 81/16.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Evaluate:</h3>
+                <p class="mb-4">(i) (8<span class="exponent">-1</span> × 5<span class="exponent">3</span>)/ 2<span class="exponent">-4</span> (ii) (5<span class="exponent">-1</span> × 2<span class="exponent">-1</span>) × 6<span class="exponent">-1</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) (8<span class="exponent">-1</span> × 5³</span class="exponent"></span>)/ 2<span class="exponent">-4</span></p>
+                        <p class="mb-2">8<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span>, 2<span class="exponent">-4</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span> × 125) ÷ (<span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span>) = (<span class="fraction"><span class="numerator">125</span><span class="denominator">8</span></span>) × 16 = 125 × 2 = 250</p>
+                        <p><strong>Answer:</strong> 250</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 8<sup>-1</sup> = 1/8, 5<sup>3</sup> = 125, 2<sup>-4</sup> = 1/16. (1/8 × 125) = 125/8, then (125/8) ÷ (1/16) = (125/8) × 16 = 125 × 2 = 250.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (5<span class="exponent">-1</span> × 2<span class="exponent">-1</span>) × 6<span class="exponent">-1</span></p>
+                        <p class="mb-2">5<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span>, 2<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, 6<span class="exponent">-1</span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>) × <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> = (<span class="fraction"><span class="numerator">1</span><span class="denominator">10</span></span>) × <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">60</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">1</span><span class="denominator">60</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 5<sup>-1</sup> = 1/5, 2<sup>-1</sup> = 1/2, 6<sup>-1</sup> = 1/6. (1/5 × 1/2) = 1/10, then 1/10 × 1/6 = 1/60.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Find the value of m for which 5<span class="exponent">m</span> ÷ 5<span class="exponent">-3</span> = 5<span class="exponent">5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5<span class="exponent">m</span> ÷ 5<span class="exponent">-3</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">According to exponent rule: 5<span class="exponent">m-(-3)</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">5<span class="exponent">m+3</span> = 5<span class="exponent">5</span></p>
+                        <p class="mb-2">Since bases are same, exponents must be equal:</p>
+                        <p class="mb-2">m + 3 = 5</p>
+                        <p class="mb-2">m = 5 - 3 = 2</p>
+                        <p><strong>Answer:</strong> m = 2</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Same base ke saath division mein exponents subtract hote hain. 5<sup>m</sup> ÷ 5<sup>-3</sup> = 5<sup>m-(-3)</sup> = 5<sup>m+3</sup>. Yahan 5<sup>m+3</sup> = 5<sup>5</sup>, so m+3=5, m=2.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Evaluate:</h3>
+                <p class="mb-4">(i) {(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> - (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span>}<span class="exponent">-1</span></p>
+                <p class="mb-4">(ii) (<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) {(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> - (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span>}<span class="exponent">-1</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<span class="exponent">-1</span> = 3, (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)<span class="exponent">-1</span> = 4</p>
+                        <p class="mb-2">{(3 - 4)}<span class="exponent">-1</span> = (-1)<span class="exponent">-1</span> = -1</p>
+                        <p><strong>Answer:</strong> -1</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> (1/3)<sup>-1</sup> = 3, (1/4)<sup>-1</sup> = 4. (3-4) = -1, then (-1)<sup>-1</sup> = -1.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) (<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>)<span class="exponent">-7</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7</span></p>
+                        <p class="mb-2">(<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7</span> × (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">-5</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">7-5</span> = (<span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>)<span class="exponent">2</span> = <span class="fraction"><span class="numerator">64</span><span class="denominator">25</span></span></p>
+                        <p><strong>Answer:</strong> <span class="fraction"><span class="numerator">64</span><span class="denominator">25</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> (5/8)<sup>-7</sup> = (8/5)<sup>7</sup>. Same base (8/5) ke saath multiplication mein exponents add hote hain: (8/5)<sup>7</sup> × (8/5)<sup>-5</sup> = (8/5)<sup>7-5</sup> = (8/5)<sup>2</sup> = 64/25.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Simplify:</h3>
+                <p class="mb-4">(i) 25 × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 10 × t<span class="exponent">-8</span></span> (t ≠ 0)</p>
+                <p class="mb-4">(ii) 3<span class="exponent">-5</span> × 10<span class="exponent">-5</span> × 125</span> / 5<span class="exponent">-7</span> × 6<span class="exponent">-5</span></span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 25 × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 10 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">25 = 5<span class="exponent">2</span>, 10 = 2 × 5</p>
+                        <p class="mb-2">5<span class="exponent">2</span> × t<span class="exponent">-4</span> / 5<span class="exponent">-3</span> × 2 × 5 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">2</span> × t<span class="exponent">-4</span> / 5<span class="exponent">-2</span> × 2 × t<span class="exponent">-8</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">2-(-2)</span> × t<span class="exponent">-4-(-8)</span> /2</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">4</span> × t<span class="exponent">4</span> / 2</span></span> = 625t<span class="exponent">4</span>/2</span></p>
+                        <p><strong>Answer:</strong> 625t<span class="exponent">4</span>/2</span></span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 25 = 5², 10 = 2×5. Same base ke saath exponents subtract karte hain: 5<sup>2-(-2)</sup> = 5<sup>4</sup> = 625, t<sup>-4-(-8)</sup> = t<sup>4</sup>. Final answer 625t<sup>4</sup>/2.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 3<span class="exponent">-5</span> × 10<span class="exponent">-5</span> × 125</span> / 5<span class="exponent">-7</span> × 6<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">10 = 2 × 5, 125 = 5<span class="exponent">3</span>, 6 = 2 × 3</p>
+                        <p class="mb-2">3<span class="exponent">-5</span> × (2×5)<span class="exponent">-5</span> × 5<span class="exponent">3</span></span> / 5<span class="exponent">-7</span> × (2×3)<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">= 3<span class="exponent">-5</span> × 2<span class="exponent">-5</span> × 5<span class="exponent">-5</span> × 5<span class="exponent">3</span> / 5<span class="exponent">-7</span> × 2<span class="exponent">-5</span> × 3<span class="exponent">-5</span></span></p>
+                        <p class="mb-2">= 5<span class="exponent">-5+3-(-7)</span> = 5<span class="exponent">5</span> = 3125</p>
+                        <p><strong>Answer:</strong> 3125</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 10 = 2×5, 125 = 5³, 6 = 2×3. Same bases ke exponents cancel ho jate hain. Sirf 5 ka exponent bachta hai: -5+3-(-7) = 5, so 5<sup>5</sup> = 3125.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 10.2 Section -->
+        <section id="exercise-10-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 10.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Express the following numbers in standard form:</h3>
+                <p class="mb-4">(i) 0.0000000000085 (ii) 0.00000000000942</p>
+                <p class="mb-4">(iii) 6020000000000000 (iv) 0.00000000837</p>
+                <p class="mb-4">(v) 31860000000</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 0.0000000000085</p>
+                        <p class="mb-2">Move decimal 12 places to the right</p>
+                        <p class="mb-2">8.5 × 10<span class="exponent">-12</span></p>
+                        <p><strong>Answer:</strong> 8.5 × 10<span class="exponent">-12</span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 12 places right mein move karna hai. Isliye exponent -12 hoga. 8.5 × 10<sup>-12</sup>.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 0.00000000000942</p>
+                        <p class="mb-2">Move decimal 12 places to the right</p>
+                        <p class="mb-2">9.42 × 10<span class="exponent">-12</span></p>
+                        <p><strong>Answer:</strong> 9.42 × 10<span class="exponent">-12</span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Yahan bhi decimal ko 12 places shift karna hai, isliye 9.42 × 10<sup>-12</sup>.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) 6020000000000000</p>
+                        <p class="mb-2">Move decimal 15 places to the left</p>
+                        <p class="mb-2">6.02 × 10<span class="exponent">15</span></p>
+                        <p><strong>Answer:</strong> 6.02 × 10<span class="exponent">15</span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 15 places left mein move karna hai. Isliye exponent +15 hoga. 6.02 × 10<sup>15</sup>.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) 0.00000000837</p>
+                        <p class="mb-2">Move decimal 9 places to the right</p>
+                        <p class="mb-2">8.37 × 10<span class="exponent">-9</span></p>
+                        <p><strong>Answer:</strong> 8.37 × 10<span class="exponent">-9</span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 9 places right mein move karna hai. Isliye exponent -9 hoga. 8.37 × 10<sup>-9</sup>.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 31860000000</p>
+                        <p class="mb-2">Move decimal 10 places to the left</p>
+                        <p class="mb-2">3.186 × 10<span class="exponent">10</span></p>
+                        <p><strong>Answer:</strong> 3.186 × 10<span class="exponent">10</span></p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 10 places left mein move karna hai. Isliye exponent +10 hoga. 3.186 × 10<sup>10</sup>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Express the following numbers in usual form:</h3>
+                <p class="mb-4">(i) 3.02 × 10<span class="exponent">-6</span> (ii) 4.5 × 10<span class="exponent">4</span> (iii) 3 × 10<span class="exponent">-8</span></p>
+                <p class="mb-4">(iv) 1.0001 × 10<span class="exponent">9</span> (v) 5.8 × 10<span class="exponent">12</span> (vi) 3.61492 × 10<span class="exponent">6</span></p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 3.02 × 10<span class="exponent">-6</span></p>
+                        <p class="mb-2">Move decimal 6 places to the left</p>
+                        <p class="mb-2">0.00000302</p>
+                        <p><strong>Answer:</strong> 0.00000302</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Negative exponent hai, isliye decimal point ko 6 places left mein move karna hai. 3.02 × 10<sup>-6</sup> = 0.00000302.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) 4.5 × 10<span class="exponent">4</span></p>
+                        <p class="mb-2">Move decimal 4 places to the right</p>
+                        <p class="mb-2">45000</p>
+                        <p><strong>Answer:</strong> 45000</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Positive exponent hai, isliye decimal point ko 4 places right mein move karna hai. 4.5 × 10<sup>4</sup> = 45000.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) 3 × 10<span class="exponent">-8</span></p>
+                        <p class="mb-2">Move decimal 8 places to the left</p>
+                        <p class="mb-2">0.00000003</p>
+                        <p><strong>Answer:</strong> 0.00000003</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Negative exponent hai, isliye decimal point ko 8 places left mein move karna hai. 3 × 10<sup>-8</sup> = 0.00000003.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) 1.0001 × 10<span class="exponent">9</span></p>
+                        <p class="mb-2">Move decimal 9 places to the right</p>
+                        <p class="mb-2">1000100000</p>
+                        <p><strong>Answer:</strong> 1000100000</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Positive exponent hai, isliye decimal point ko 9 places right mein move karna hai. 1.0001 × 10<sup>9</sup> = 1000100000.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) 5.8 × 10<span class="exponent">12</span></p>
+                        <p class="mb-2">Move decimal 12 places to the right</p>
+                        <p class="mb-2">5800000000000</p>
+                        <p><strong>Answer:</strong> 5800000000000</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Positive exponent hai, isliye decimal point ko 12 places right mein move karna hai. 5.8 × 10<sup>12</sup> = 5800000000000.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(vi) 3.61492 × 10<span class="exponent">6</span></p>
+                        <p class="mb-2">Move decimal 6 places to the right</p>
+                        <p class="mb-2">3614920</p>
+                        <p><strong>Answer:</strong> 3614920</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Positive exponent hai, isliye decimal point ko 6 places right mein move karna hai. 3.61492 × 10<sup>6</sup> = 3614920.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Express the numbers appearing in the following statements in standard form:</h3>
+                <p class="mb-4">(i) 1 micron is equal to <span class="fraction"><span class="numerator">1</span><span class="denominator">1000000</span></span> m.</p>
+                <p class="mb-4">(ii) Charge of an electron is 0.000,000,000,000,000,000,16 coulomb.</p>
+                <p class="mb-4">(iii) Size of a bacteria is 0.0000005 m.</p>
+                <p class="mb-4">(iv) Size of a plant cell is 0.00001275 m.</p>
+                <p class="mb-4">(v) Thickness of a thick paper is 0.07 mm.</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 1 micron = <span class="fraction"><span class="numerator">1</span><span class="denominator">1000000</span></span> m = 1 × 10<span class="exponent">-6</span> m</p>
+                        <p><strong>Answer:</strong> 1 × 10<span class="exponent">-6</span> m</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 1/1000000 = 1/10<sup>6</sup> = 10<sup>-6</sup>. Isliye 1 micron = 1 × 10<sup>-6</sup> m.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) Charge of an electron = 0.000,000,000,000,000,000,16 coulomb</p>
+                        <p class="mb-2">= 1.6 × 10<span class="exponent">-19</span> coulomb</p>
+                        <p><strong>Answer:</strong> 1.6 × 10<span class="exponent">-19</span> coulomb</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 19 places right mein move karna hai. Isliye 1.6 × 10<sup>-19</sup> coulomb.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) Size of a bacteria = 0.0000005 m = 5 × 10<span class="exponent">-7</span> m</p>
+                        <p><strong>Answer:</strong> 5 × 10<span class="exponent">-7</span> m</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 7 places right mein move karna hai. Isliye 5 × 10<sup>-7</sup> m.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) Size of a plant cell = 0.00001275 m = 1.275 × 10<span class="exponent">-5</span> m</p>
+                        <p><strong>Answer:</strong> 1.275 × 10<span class="exponent">-5</span> m</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 5 places right mein move karna hai. Isliye 1.275 × 10<sup>-5</sup> m.
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(v) Thickness of a thick paper = 0.07 mm = 7 × 10<span class="exponent">-2</span> mm</p>
+                        <p><strong>Answer:</strong> 7 × 10<span class="exponent">-2</span> mm</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> Decimal point ko 2 places right mein move karna hai. Isliye 7 × 10<sup>-2</sup> mm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: In a stack there are 5 books each of thickness 20 mm and 5 paper sheets each of thickness 0.016 mm. What is the total thickness of the stack?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total thickness of 5 books = 5 × 20 = 100 mm</p>
+                        <p class="mb-2">Total thickness of 5 paper sheets = 5 × 0.016 = 0.08 mm</p>
+                        <p class="mb-2">Total thickness of stack = 100 + 0.08 = 100.08 mm</p>
+                        <p class="mb-2">In standard form = 1.0008 × 10<span class="exponent">2</span> mm</p>
+                        <p><strong>Answer:</strong> 100.08 mm or 1.0008 × 10<span class="exponent">2</span> mm</p>
+                    </div>
+                    
+                    <div class="explanation hind-explanation">
+                        <strong>Explanation (Hinglish):</strong> 5 books × 20 mm = 100 mm. 5 paper sheets × 0.016 mm = 0.08 mm. Total = 100 + 0.08 = 100.08 mm. Standard form mein = 1.0008 × 10<sup>2</sup> mm.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

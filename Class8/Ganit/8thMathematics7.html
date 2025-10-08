@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 Mathematics - Chapter 7: Comparing Quantities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 7: Comparing Quantities</h1>
+            <p class="mt-2 text-lg">Class 8 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 7.1 Section -->
+        <section id="exercise-7-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the ratio of the following:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) Speed of a cycle 15 km per hour to the speed of a scooter 30 km per hour</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Speed of cycle = 15 km/h</p>
+                        <p class="mb-2">Speed of scooter = 30 km/h</p>
+                        <p class="mb-2">Ratio = 15 : 30</p>
+                        <p class="mb-2">Simplified form = 
+                            <div class="fraction">
+                                <span class="numerator">15</span>
+                                <span class="denominator">30</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> = 1 : 2
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 2</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cycle ki speed 15 km/h hai aur scooter ki 30 km/h. Inka ratio nikalne ke liye 15:30 likhenge. Simplify karne par 1:2 milta hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) 5 m to 10 km</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Convert 5 m and 10 km to the same unit</p>
+                        <p class="mb-2">10 km = 10 × 1000 = 10,000 m</p>
+                        <p class="mb-2">Ratio = 5 : 10,000</p>
+                        <p class="mb-2">Simplified form = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">10000</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2000</span>
+                            </div> = 1 : 2000
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 2000</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 5 meter aur 10 kilometer ko same unit mein convert karna hai. 10 km = 10,000 m. Ratio 5:10,000 = 1:2000.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(c) 50 paise to ₹ 5</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">₹ 5 = 5 × 100 = 500 paise</p>
+                        <p class="mb-2">Ratio = 50 : 500</p>
+                        <p class="mb-2">Simplified form = 
+                            <div class="fraction">
+                                <span class="numerator">50</span>
+                                <span class="denominator">500</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">10</span>
+                            </div> = 1 : 10
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 10</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ₹5 ko paise mein convert karenge. ₹5 = 500 paise. Ratio 50:500 = 1:10.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Convert the following ratios to percentages:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) 3 : 4</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Ratio 3 : 4 as fraction = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Multiply by 100 to convert to percentage</p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div> × 100 = 75%
+                        </p>
+                        <p><strong>Answer:</strong> 75%</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ratio 3:4 ko fraction mein likhenge 3/4. Percentage mein convert karne ke liye 100 se multiply karenge. 3/4 × 100 = 75%.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) 2 : 3</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Ratio 2 : 3 as fraction = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Multiply by 100 to convert to percentage</p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 100 = 
+                            <div class="fraction">
+                                <span class="numerator">200</span>
+                                <span class="denominator">3</span>
+                            </div> = 66.67% (approximately)
+                        </p>
+                        <p><strong>Answer:</strong> 66.67%</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ratio 2:3 ko fraction mein likhenge 2/3. Percentage mein convert karne ke liye 100 se multiply karenge. 2/3 × 100 = 200/3 ≈ 66.67%.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: 72% of 25 students are interested in mathematics. How many are not interested in mathematics?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total students = 100%</p>
+                        <p class="mb-2">Interested in mathematics = 72%</p>
+                        <p class="mb-2">Not interested in mathematics = 100% - 72% = 28%</p>
+                        <p><strong>Answer:</strong> 28%</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Total students 100% hain. 72% mathematics mein interested hain. Toh not interested = 100 - 72 = 28%.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: A football team won 10 matches out of the total number of matches they played. If their win percentage was 40, then how many matches did they play in all?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let total number of matches = x</p>
+                        <p class="mb-2">Matches won = 10</p>
+                        <p class="mb-2">Win percentage = 40%</p>
+                        <p class="mb-2">Therefore, 40% of x = 10</p>
+                        <p class="mb-2">(
+                            <div class="fraction">
+                                <span class="numerator">40</span>
+                                <span class="denominator">100</span>
+                            </div>) × x = 10
+                        </p>
+                        <p class="mb-2">x = 10 × (
+                            <div class="fraction">
+                                <span class="numerator">100</span>
+                                <span class="denominator">40</span>
+                            </div>) = 10 × 2.5 = 25
+                        </p>
+                        <p><strong>Answer:</strong> 25 matches</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain total matches x hain. 40% of x = 10. Is equation ko solve karenge: (40/100) × x = 10, toh x = 10 × (100/40) = 25.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: If Chameli had ₹ 600 left after spending 75% of her money, how much did she have in the beginning?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let initial money = ₹ x</p>
+                        <p class="mb-2">Money spent = 75% of x = 0.75x</p>
+                        <p class="mb-2">Money left = x - 0.75x = 0.25x</p>
+                        <p class="mb-2">According to the question, 0.25x = 600</p>
+                        <p class="mb-2">x = 600 / 0.25 = 600 × 4 = 2400</p>
+                        <p><strong>Answer:</strong> ₹ 2400</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain shuruat mein Chameli ke paas ₹x the. Usne 75% kharch kar diya, toh bache 25%. Question ke hisaab se 25% of x = 600, toh x = 600 ÷ 0.25 = 2400.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: If 60% people in a city like cricket, 30% like football and the remaining like other games, then what percentage of people like other games? If the total number of people are 50 lakh, find the exact number who like each type of game.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">People who like cricket = 60%</p>
+                        <p class="mb-2">People who like football = 30%</p>
+                        <p class="mb-2">People who like other games = 100% - (60% + 30%) = 10%</p>
+                        <p class="mb-2">Total people = 50 lakh</p>
+                        <p class="mb-2">People who like cricket = 60% of 50 lakh = 50,00,000 × 
+                            <div class="fraction">
+                                <span class="numerator">60</span>
+                                <span class="denominator">100</span>
+                            </div> = 30,00,000
+                        </p>
+                        <p class="mb-2">People who like football = 30% of 50 lakh = 50,00,000 × 
+                            <div class="fraction">
+                                <span class="numerator">30</span>
+                                <span class="denominator">100</span>
+                            </div> = 15,00,000
+                        </p>
+                        <p class="mb-2">People who like other games = 10% of 50 lakh = 50,00,000 × 
+                            <div class="fraction">
+                                <span class="numerator">10</span>
+                                <span class="denominator">100</span>
+                            </div> = 5,00,000
+                        </p>
+                        <p><strong>Answer:</strong> People who like other games: 10%. Cricket: 30 lakh, Football: 15 lakh, Other games: 5 lakh</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cricket pasand karne wale 60%, football 30%, toh bache 10% other games pasand karne wale. Total 50 lakh log hain. Cricket: 50 lakh ka 60% = 30 lakh, Football: 50 lakh ka 30% = 15 lakh, Other: 50 lakh ka 10% = 5 lakh.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.2 Section -->
+        <section id="exercise-7-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: A shop gives 20% discount. Find the selling price of each of the following:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(a) A dress marked at ₹ 120</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Marked price = ₹ 120</p>
+                        <p class="mb-2">Discount = 20%</p>
+                        <p class="mb-2">Discount amount = 20% of 120 = 120 × 
+                            <div class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">100</span>
+                            </div> = ₹ 24
+                        </p>
+                        <p class="mb-2">Selling price = Marked price - Discount = 120 - 24 = ₹ 96</p>
+                        <p><strong>Answer:</strong> ₹ 96</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Marked price ₹120, discount 20%. Discount amount = 120 × 20/100 = ₹24. Selling price = 120 - 24 = ₹96.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(b) A pair of shoes marked at ₹ 750</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Marked price = ₹ 750</p>
+                        <p class="mb-2">Discount = 20%</p>
+                        <p class="mb-2">Discount amount = 20% of 750 = 750 × 
+                            <div class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">100</span>
+                            </div> = ₹ 150
+                        </p>
+                        <p class="mb-2">Selling price = Marked price - Discount = 750 - 150 = ₹ 600</p>
+                        <p><strong>Answer:</strong> ₹ 600</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Marked price ₹750, discount 20%. Discount amount = 750 × 20/100 = ₹150. Selling price = 750 - 150 = ₹600.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(c) A bag marked at ₹ 250</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Marked price = ₹ 250</p>
+                        <p class="mb-2">Discount = 20%</p>
+                        <p class="mb-2">Discount amount = 20% of 250 = 250 × 
+                            <div class="fraction">
+                                <span class="numerator">20</span>
+                                <span class="denominator">100</span>
+                            </div> = ₹ 50
+                        </p>
+                        <p class="mb-2">Selling price = Marked price - Discount = 250 - 50 = ₹ 200</p>
+                        <p><strong>Answer:</strong> ₹ 200</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Marked price ₹250, discount 20%. Discount amount = 250 × 20/100 = ₹50. Selling price = 250 - 50 = ₹200.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: A table marked at ₹ 15,000 is available for ₹ 14,400. Find the discount and discount percent.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Marked price = ₹ 15,000</p>
+                        <p class="mb-2">Selling price = ₹ 14,400</p>
+                        <p class="mb-2">Discount = Marked price - Selling price = 15000 - 14400 = ₹ 600</p>
+                        <p class="mb-2">Discount percent = (Discount / Marked price) × 100</p>
+                        <p class="mb-2">Discount percent = (
+                            <div class="fraction">
+                                <span class="numerator">600</span>
+                                <span class="denominator">15000</span>
+                            </div>) × 100 = 4%
+                        </p>
+                        <p><strong>Answer:</strong> Discount = ₹ 600, Discount percent = 4%</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Marked price ₹15,000, selling price ₹14,400. Discount = 15,000 - 14,400 = ₹600. Discount percent = (600/15,000) × 100 = 4%.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: An almirah is sold for ₹ 5225 after allowing a discount of 5%. Find its marked price.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let marked price = ₹ x</p>
+                        <p class="mb-2">Discount = 5%</p>
+                        <p class="mb-2">Selling price = Marked price - Discount = x - 5% of x = x - 0.05x = 0.95x</p>
+                        <p class="mb-2">According to the question, 0.95x = 5225</p>
+                        <p class="mb-2">x = 5225 / 0.95 = 5500</p>
+                        <p><strong>Answer:</strong> ₹ 5500</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain marked price ₹x hai. 5% discount ke baad selling price = x - 0.05x = 0.95x. Question ke hisaab se 0.95x = 5225, toh x = 5225 ÷ 0.95 = 5500.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Estimate a 15% discount on a bill of ₹ 577.80.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Bill amount = ₹ 577.80</p>
+                        <p class="mb-2">Approximate amount = ₹ 580</p>
+                        <p class="mb-2">10% of 580 = 580 × 
+                            <div class="fraction">
+                                <span class="numerator">10</span>
+                                <span class="denominator">100</span>
+                            </div> = ₹ 58
+                        </p>
+                        <p class="mb-2">5% of 580 = half of 58 = ₹ 29</p>
+                        <p class="mb-2">Total discount (10% + 5%) = 58 + 29 = ₹ 87</p>
+                        <p class="mb-2">Approximate payable amount = 580 - 87 = ₹ 493</p>
+                        <p><strong>Answer:</strong> Approximate discount ₹ 87, payable amount ₹ 493</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Bill amount ₹577.80 ko approximate ₹580 lete hain. 10% of 580 = ₹58, 5% of 580 = ₹29. Total discount = 58 + 29 = ₹87. Payable amount = 580 - 87 = ₹493.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Find 15% of ₹ 375.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">10% of ₹ 375 = 375 × 
+                            <div class="fraction">
+                                <span class="numerator">10</span>
+                                <span class="denominator">100</span>
+                            </div> = ₹ 37.5
+                        </p>
+                        <p class="mb-2">5% of ₹ 375 = half of 37.5 = ₹ 18.75</p>
+                        <p class="mb-2">15% of ₹ 375 = 10% + 5% = 37.5 + 18.75 = ₹ 56.25</p>
+                        <p><strong>Answer:</strong> ₹ 56.25</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 15% nikalne ke liye pehle 10% nikalenge: 375 × 10/100 = ₹37.5. Phir 5% = 37.5 ka aadha = ₹18.75. Total 15% = 37.5 + 18.75 = ₹56.25.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.3 Section -->
+        <section id="exercise-7-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: The population of a place increased to 54,000 at the end of the year 2003, at 5% annual rate. Find the following:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Population in the year 2001</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let population in 2001 = P</p>
+                        <p class="mb-2">Growth rate = 5% per annum</p>
+                        <p class="mb-2">Population in 2003 = P(1 + 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">100</span>
+                            </div>)<sup>2</sup> = P(1.05)<sup>2</sup> = P × 1.1025
+                        </p>
+                        <p class="mb-2">According to the question, P × 1.1025 = 54000</p>
+                        <p class="mb-2">P = 54000 / 1.1025 ≈ 48980</p>
+                        <p><strong>Answer:</strong> Approximately 48,980</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain 2001 ki population P thi. 5% growth rate se 2 saal baad population = P × (1.05)<sup>2</sup> = P × 1.1025. Yeh 54,000 ke barabar hai, toh P = 54000 ÷ 1.1025 ≈ 48980.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Population in the year 2005</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Population in 2003 = 54000</p>
+                        <p class="mb-2">Population in 2005 = 54000 × (1 + 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">100</span>
+                            </div>)<sup>2</sup> = 54000 × (1.05)<sup>2</sup>
+                        </p>
+                        <p class="mb-2">= 54000 × 1.1025 = 59535</p>
+                        <p><strong>Answer:</strong> 59,535</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 2003 ki population 54,000 hai. 2005 tak 2 saal baad population = 54000 × (1.05)<sup>2</sup> = 54000 × 1.1025 = 59,535.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: In a laboratory, the count of bacteria in a certain experiment was increasing at the rate of 2.5% per hour. Find the bacteria at the end of 2 hours if the count was initially 5,06,000.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Initial bacteria count = 5,06,000</p>
+                        <p class="mb-2">Growth rate = 2.5% per hour</p>
+                        <p class="mb-2">Bacteria after 2 hours = 506000 × (1 + 
+                            <div class="fraction">
+                                <span class="numerator">2.5</span>
+                                <span class="denominator">100</span>
+                            </div>)<sup>2</sup>
+                        </p>
+                        <p class="mb-2">= 506000 × (1.025)<sup>2</sup> = 506000 × 1.050625</p>
+                        <p class="mb-2">= 531,616.25 ≈ 5,31,616</p>
+                        <p><strong>Answer:</strong> Approximately 5,31,616</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Initial bacteria 5,06,000. 2.5% growth rate se 2 ghante baad bacteria = 506000 × (1.025)<sup>2</sup> = 506000 × 1.050625 ≈ 5,31,616.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: A scooter was bought at ₹ 42,000. Its value depreciated at the rate of 8% per annum. Find its value after one year.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Purchase price of scooter = ₹ 42,000</p>
+                        <p class="mb-2">Depreciation rate = 8% per annum</p>
+                        <p class="mb-2">Value after 1 year = 42000 × (1 - 
+                            <div class="fraction">
+                                <span class="numerator">8</span>
+                                <span class="denominator">100</span>
+                            </div>) = 42000 × (
+                            <div class="fraction">
+                                <span class="numerator">92</span>
+                                <span class="denominator">100</span>
+                            </div>)
+                        </p>
+                        <p class="mb-2">= 42000 × 0.92 = ₹ 38,640</p>
+                        <p><strong>Answer:</strong> ₹ 38,640</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Scooter ka price ₹42,000. 8% depreciation ke baad 1 saal baad value = 42000 × (1 - 8/100) = 42000 × 0.92 = ₹38,640.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
