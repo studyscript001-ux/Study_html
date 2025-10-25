@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Science - Chapter 4: Structure of the Atom</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a4b8c 0%, #2a6ec6 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a4b8c;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #1a4b8c;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #000000;
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.85rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+            text-align: center;
+        }
+        th {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 10px 0;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+            table {
+                font-size: 0.75rem;
+            }
+            th, td {
+                padding: 4px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+            table {
+                font-size: 0.7rem;
+            }
+        }
+        .chemical {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+        sub, sup {
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter : 4<br>Structure of the Atom</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>Compare the properties of electrons, protons and neutrons.</span>
+            </div>
+            <div class="answerr">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Particle</th>
+                            <th>Charge</th>
+                            <th>Mass</th>
+                            <th>Location</th>
+                        </tr>
+                        <tr>
+                            <td>Electron</td>
+                            <td>-1 (negative)</td>
+                            <td>1/1837 u (negligible)</td>
+                            <td>Outside nucleus</td>
+                        </tr>
+                        <tr>
+                            <td>Proton</td>
+                            <td>+1 (positive)</td>
+                            <td>1 u</td>
+                            <td>Inside nucleus</td>
+                        </tr>
+                        <tr>
+                            <td>Neutron</td>
+                            <td>0 (neutral)</td>
+                            <td>1 u</td>
+                            <td>Inside nucleus</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>What are the limitations of J.J. Thomson's model of the atom?</span>
+            </div>
+            <div class="answer">
+                Limitations of Thomson's model:
+                <br>1. It could not explain the results of Rutherford's alpha-particle scattering experiment.
+                <br>2. It did not explain how the positive charge holds the negatively charged electrons in the atom.
+                <br>3. It failed to explain the stability of atoms.
+                <br>4. It could not explain the arrangement of electrons in different energy levels.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>What are the limitations of Rutherford's model of the atom?</span>
+            </div>
+            <div class="answer">
+                Limitations of Rutherford's model:
+                <br>1. According to classical electromagnetic theory, an accelerating charged particle (like an electron revolving around the nucleus) should continuously radiate energy and spiral into the nucleus, making the atom unstable. But atoms are stable.
+                <br>2. It could not explain the discrete line spectrum of atoms.
+                <br>3. It did not explain how electrons are arranged in different energy levels.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>Describe Bohr's model of the atom.</span>
+            </div>
+            <div class="answer">
+                Bohr's model of the atom:
+                <br>1. Electrons revolve around the nucleus in specific, fixed circular paths called orbits or shells.
+                <br>2. These orbits are associated with definite energy levels and are called energy shells (K, L, M, N, etc.).
+                <br>3. While revolving in these discrete orbits, electrons do not radiate energy.
+                <br>4. Energy is emitted or absorbed only when an electron jumps from one energy level to another.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>Compare all the proposed models of an atom given in this chapter.</span>
+            </div>
+            <div class="answerr">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Model</th>
+                            <th>Key Features</th>
+                            <th>Limitations</th>
+                        </tr>
+                        <tr>
+                            <td>Thomson's Model</td>
+                            <td>Atom as a positively charged sphere with embedded electrons</td>
+                            <td>Could not explain alpha-particle scattering or atomic stability</td>
+                        </tr>
+                        <tr>
+                            <td>Rutherford's Model</td>
+                            <td>Small, dense nucleus with electrons revolving around it</td>
+                            <td>Could not explain why electrons don't spiral into nucleus</td>
+                        </tr>
+                        <tr>
+                            <td>Bohr's Model</td>
+                            <td>Electrons in discrete energy levels/orbits that don't radiate energy</td>
+                            <td>Could not explain fine structure of atomic spectra</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>Summarise the rules for writing of distribution of electrons in various shells for the first eighteen elements.</span>
+            </div>
+            <div class="answer">
+                Rules for electron distribution (Bohr-Bury scheme):
+                <br>1. The maximum number of electrons in a shell is given by 2n², where n is the orbit number.
+                <br>2. The maximum number of electrons in the outermost shell is 8.
+                <br>3. Electrons are not accommodated in a given shell unless the inner shells are filled.
+                <br>4. Shells are filled in a step-wise manner.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>Define valency by taking examples of silicon and oxygen.</span>
+            </div>
+            <div class="answer">
+                Valency is the combining capacity of an atom, determined by the number of electrons it can lose, gain, or share to achieve a stable electron configuration (octet).
+                <br><br>
+                Silicon (atomic number 14): Electron configuration - K=2, L=8, M=4
+                <br>It can either lose 4 electrons or gain 4 electrons to complete its octet. Thus, its valency is 4.
+                <br><br>
+                Oxygen (atomic number 8): Electron configuration - K=2, L=6
+                <br>It can gain 2 electrons to complete its octet. Thus, its valency is 2.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>Explain with examples (i) Atomic number, (ii) Mass number, (iii) Isotopes and (iv) Isobars. Give any two uses of isotopes.</span>
+            </div>
+            <div class="answer">
+                (i) Atomic Number (Z): The number of protons in the nucleus of an atom. Example: Carbon has atomic number 6 because it has 6 protons.
+                <br><br>
+                (ii) Mass Number (A): The sum of the number of protons and neutrons in the nucleus of an atom. Example: Carbon-12 has mass number 12 (6 protons + 6 neutrons).
+                <br><br>
+                (iii) Isotopes: Atoms of the same element having the same atomic number but different mass numbers. Example: Carbon-12 and Carbon-14 are isotopes of carbon.
+                <br><br>
+                (iv) Isobars: Atoms of different elements having the same mass number but different atomic numbers. Example: Calcium-40 and Argon-40 are isobars.
+                <br><br>
+                Two uses of isotopes:
+                <br>1. An isotope of uranium is used as a fuel in nuclear reactors.
+                <br>2. An isotope of cobalt is used in the treatment of cancer.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>Na⁺ has completely filled K and L shells. Explain.</span>
+            </div>
+            <div class="answer">
+                Sodium atom (Na) has atomic number 11 with electron distribution: K=2, L=8, M=1.
+                <br>When it loses one electron from its outermost M shell to form Na⁺, the electron distribution becomes: K=2, L=8.
+                <br>This gives Na⁺ the stable electron configuration of neon (completely filled K and L shells).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>If bromine atom is available in the form of, say, two isotopes <span class="chemical"><sup>79</sup><sub>35</sub>Br</span> (49.7%) and <span class="chemical"><sup>81</sup><sub>35</sub>Br</span> (50.3%), calculate the average atomic mass of bromine atom.</span>
+            </div>
+            <div class="answer">
+                Average atomic mass = (Mass of isotope 1 × % abundance + Mass of isotope 2 × % abundance) / 100
+                <br>= (79 × 49.7 + 81 × 50.3) / 100
+                <br>= (3926.3 + 4074.3) / 100
+                <br>= 8000.6 / 100
+                <br>= 80.006 u ≈ 80 u
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>The average atomic mass of a sample of an element X is 16.2 u. What are the percentages of isotopes <span class="chemical"><sup>16</sup><sub>8</sub>X</span> and <span class="chemical"><sup>18</sup><sub>8</sub>X</span> in the sample?</span>
+            </div>
+            <div class="answer">
+                Let the percentage of <span class="chemical"><sup>16</sup><sub>8</sub>X</span> be x%, then percentage of <span class="chemical"><sup>18</sup><sub>8</sub>X</span> is (100-x)%.
+                <br>Average atomic mass = (16 × x + 18 × (100-x)) / 100 = 16.2
+                <br>16x + 1800 - 18x = 1620
+                <br>-2x = 1620 - 1800 = -180
+                <br>x = 90
+                <br>So, percentage of <span class="chemical"><sup>16</sup><sub>8</sub>X</span> = 90%
+                <br>Percentage of <span class="chemical"><sup>18</sup><sub>8</sub>X</span> = 10%
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>If Z = 3, what would be the valency of the element? Also, name the element.</span>
+            </div>
+            <div class="answer">
+                Atomic number Z = 3 corresponds to Lithium (Li).
+                <br>Electron configuration: K=2, L=1
+                <br>It has 1 electron in its outermost shell, so it can lose 1 electron to achieve stable configuration.
+                <br>Therefore, valency = 1
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>Composition of the nuclei of two atomic species X and Y are given as under:
+                <br>X: Protons = 6, Neutrons = 6
+                <br>Y: Protons = 6, Neutrons = 8
+                <br>Give the mass numbers of X and Y. What is the relation between the two species?</span>
+            </div>
+            <div class="answer">
+                Mass number of X = Protons + Neutrons = 6 + 6 = 12
+                <br>Mass number of Y = Protons + Neutrons = 6 + 8 = 14
+                <br>Both have same atomic number (6) but different mass numbers.
+                <br>Therefore, X and Y are isotopes of carbon (Carbon-12 and Carbon-14).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>For the following statements, write T for True and F for False.
+                <br>(a) J.J. Thomson proposed that the nucleus of an atom contains only nucleons.
+                <br>(b) A neutron is formed by an electron and a proton combining together. Therefore, it is neutral.
+                <br>(c) The mass of an electron is about 1/2000 times that of proton.
+                <br>(d) An isotope of iodine is used for making tincture iodine, which is used as a medicine.</span>
+            </div>
+            <div class="answer">
+                (a) F (J.J. Thomson did not propose the nucleus; Rutherford did)
+                <br>(b) F (A neutron is a fundamental particle, not formed by combining electron and proton)
+                <br>(c) T
+                <br>(d) T
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>Rutherford's alpha-particle scattering experiment was responsible for the discovery of
+                <br>(a) Atomic Nucleus (b) Electron (c) Proton (d) Neutron</span>
+            </div>
+            <div class="answer">
+                (a) Atomic Nucleus
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>Isotopes of an element have
+                <br>(a) the same physical properties
+                <br>(b) different chemical properties
+                <br>(c) different number of neutrons
+                <br>(d) different atomic numbers.</span>
+            </div>
+            <div class="answer">
+                (c) different number of neutrons
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">17</span>
+                <span>Number of valence electrons in Cl⁻ ion are:
+                <br>(a) 16 (b) 8 (c) 17 (d) 18</span>
+            </div>
+            <div class="answer">
+                (b) 8
+                <br>Explanation: Chlorine atom (atomic number 17) has electron configuration: K=2, L=8, M=7.
+                <br>When it gains one electron to form Cl⁻, the configuration becomes: K=2, L=8, M=8.
+                <br>So, valence electrons in Cl⁻ = 8
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">18</span>
+                <span>Which one of the following is a correct electronic configuration of sodium?
+                <br>(a) 2,8 (b) 8,2,1 (c) 2,1,8 (d) 2,8,1</span>
+            </div>
+            <div class="answer">
+                (d) 2,8,1
+                <br>Sodium (atomic number 11) has electron configuration: K=2, L=8, M=1
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">19</span>
+                <span>Complete the following table.</span>
+            </div>
+            <div class="answerr">
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>Atomic Number</th>
+                            <th>Mass Number</th>
+                            <th>Number of Neutrons</th>
+                            <th>Number of Protons</th>
+                            <th>Number of Electrons</th>
+                            <th>Name of the Atomic Species</th>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>19</td>
+                            <td>10</td>
+                            <td>9</td>
+                            <td>9</td>
+                            <td>Fluorine</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>32</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>16</td>
+                            <td>Sulphur</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>24</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>12</td>
+                            <td>Magnesium</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>Deuterium</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>1</td>
+                            <td>0</td>
+                            <td>Hydrogen ion (H⁺)</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="note">
+            Note: If you have any doubts about the answers, you can discuss with your teacher or refer to your textbook.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

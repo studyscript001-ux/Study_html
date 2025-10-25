@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Science - Chapter 10: Work and Energy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a4b8c 0%, #2a6ec6 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a4b8c;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #1a4b8c;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #000000;
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter : 10<br>Work and Energy</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>Look at the activities listed below. Reason out whether or not work is done in the light of your understanding of the term 'work'.</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li><strong>Suma is swimming in a pond:</strong> Work is done because she applies force to displace water and move her body.</li>
+                    <li><strong>A donkey is carrying a load on its back:</strong> No work is done in the scientific sense as there is no displacement in the direction of the force (the load is stationary on the donkey's back).</li>
+                    <li><strong>A wind-mill is lifting water from a well:</strong> Work is done as the wind applies force to lift water against gravity.</li>
+                    <li><strong>A green plant is carrying out photosynthesis:</strong> No work is done in the scientific sense as there's no force causing displacement.</li>
+                    <li><strong>An engine is pulling a train:</strong> Work is done as the engine applies force to displace the train.</li>
+                    <li><strong>Food grains are getting dried in the sun:</strong> No work is done as there's no force causing displacement.</li>
+                    <li><strong>A sailboat is moving due to wind energy:</strong> Work is done as wind applies force to displace the sailboat.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>An object thrown at a certain angle to the ground moves in a curved path and falls back to the ground. The initial and the final points of the path of the object lie on the same horizontal line. What is the work done by the force of gravity on the object?</span>
+            </div>
+            <div class="answer">The work done by gravity is zero. This is because the initial and final points are at the same height, so the net displacement in the direction of gravity is zero. Work done = force × displacement in the direction of force. Since displacement in the vertical direction is zero, work done by gravity is zero.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>A battery lights a bulb. Describe the energy changes involved in the process.</span>
+            </div>
+            <div class="answer">The energy changes are: Chemical energy (in the battery) → Electrical energy (in the circuit) → Light energy and Heat energy (from the bulb).</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>Certain force acting on a 20 kg mass changes its velocity from 5 m s⁻¹ to 2 m s⁻¹. Calculate the work done by the force.</span>
+            </div>
+            <div class="answer">
+                Mass, m = 20 kg<br>
+                Initial velocity, u = 5 m/s<br>
+                Final velocity, v = 2 m/s<br>
+                Work done = Change in kinetic energy = ½mv² - ½mu²<br>
+                = ½ × 20 × (2² - 5²) = 10 × (4 - 25) = 10 × (-21) = -210 J<br>
+                The negative sign indicates that work is done against the motion.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>A mass of 10 kg is at a point A on a table. It is moved to a point B. If the line joining A and B is horizontal, what is the work done on the object by the gravitational force? Explain your answer.</span>
+            </div>
+            <div class="answer">The work done by gravity is zero. This is because the gravitational force acts vertically downward, while the displacement is horizontal. Since the angle between force and displacement is 90°, work done = F × s × cos 90° = F × s × 0 = 0.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>The potential energy of a freely falling object decreases progressively. Does this violate the law of conservation of energy? Why?</span>
+            </div>
+            <div class="answer">No, this does not violate the law of conservation of energy. As the potential energy decreases, the kinetic energy increases by the same amount. The total mechanical energy (potential energy + kinetic energy) remains constant throughout the fall, in accordance with the law of conservation of energy.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>What are the various energy transformations that occur when you are riding a bicycle?</span>
+            </div>
+            <div class="answer">
+                <ul>
+                    <li>Chemical energy from food → Mechanical energy in muscles</li>
+                    <li>Mechanical energy from pedaling → Kinetic energy of the bicycle</li>
+                    <li>Some energy is transformed to heat due to friction</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>Does the transfer of energy take place when you push a huge rock with all your might and fail to move it? Where is the energy you spend going?</span>
+            </div>
+            <div class="answer">Yes, energy transfer does occur. The energy you spend is used to:
+                <ul>
+                    <li>Overcome static friction between the rock and ground</li>
+                    <li>Produce heat in your muscles and at the contact surface</li>
+                    <li>Cause minor deformation in the rock and ground</li>
+                </ul>
+                However, since there's no displacement of the rock, no work is done on the rock in the scientific sense.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>A certain household has consumed 250 units of energy during a month. How much energy is this in joules?</span>
+            </div>
+            <div class="answer">
+                1 unit of energy = 1 kilowatt-hour (kWh)<br>
+                250 units = 250 kWh<br>
+                1 kWh = 3.6 × 10⁶ J<br>
+                250 kWh = 250 × 3.6 × 10⁶ J = 9 × 10⁸ J<br>
+                The energy consumed is 9 × 10⁸ joules.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>An object of mass 40 kg is raised to a height of 5 m above the ground. What is its potential energy? If the object is allowed to fall, find its kinetic energy when it is half-way down.</span>
+            </div>
+            <div class="answer">
+                Mass, m = 40 kg<br>
+                Height, h = 5 m<br>
+                g = 9.8 m/s²<br>
+                Potential energy at height = mgh = 40 × 9.8 × 5 = 1960 J<br><br>
+                At half-way down, height = 2.5 m<br>
+                According to conservation of energy:<br>
+                Potential energy lost = Kinetic energy gained<br>
+                Kinetic energy at half-way = mgh (initial) - mgh (half-way)<br>
+                = 1960 - (40 × 9.8 × 2.5) = 1960 - 980 = 980 J
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>What is the work done by the force of gravity on a satellite moving round the earth? Justify your answer.</span>
+            </div>
+            <div class="answer">The work done by gravity on a satellite moving around the Earth is zero. This is because the gravitational force acts radially inward toward the Earth's center, while the satellite's displacement is tangential to its circular path. The angle between the force and displacement is 90°, and work done = F × s × cos 90° = 0.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>Can there be displacement of an object in the absence of any force acting on it? Think. Discuss this question with your friends and teacher.</span>
+            </div>
+            <div class="answer">Yes, according to Newton's first law of motion, an object in motion will continue in motion with constant velocity in the absence of any net external force. So displacement can occur without any force acting on the object if it's already in motion.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>A person holds a bundle of hay over his head for 30 minutes and gets tired. Has he done some work or not? Justify your answer.</span>
+            </div>
+            <div class="answer">No, in the scientific sense, no work is done on the bundle of hay. Although the person gets tired (using chemical energy in muscles), there is no displacement of the bundle in the direction of the applied force. Work = force × displacement, and since displacement is zero, work done is zero.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>An electric heater is rated 1500 W. How much energy does it use in 10 hours?</span>
+            </div>
+            <div class="answer">
+                Power, P = 1500 W = 1.5 kW<br>
+                Time, t = 10 hours<br>
+                Energy consumed = Power × Time = 1.5 kW × 10 h = 15 kWh (or 15 units)
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>Illustrate the law of conservation of energy by discussing the energy changes which occur when we draw a pendulum bob to one side and allow it to oscillate. Why does the bob eventually come to rest? What happens to its energy eventually? Is it a violation of the law of conservation of energy?</span>
+            </div>
+            <div class="answer">
+                <strong>Energy changes in a pendulum:</strong><br>
+                - At extreme position: Maximum potential energy, zero kinetic energy<br>
+                - At mean position: Zero potential energy, maximum kinetic energy<br>
+                - Throughout motion: Total mechanical energy (PE + KE) remains constant (in ideal conditions)<br><br>
+                <strong>Why it comes to rest:</strong> Due to air resistance and friction at the pivot point, some mechanical energy is converted to heat and sound energy.<br><br>
+                <strong>What happens to energy:</strong> The total energy is conserved but transformed from mechanical energy to heat and sound energy.<br><br>
+                <strong>Violation of conservation?</strong> No, it's not a violation. The law of conservation of energy states that energy can neither be created nor destroyed, only transformed from one form to another.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>An object of mass, m is moving with a constant velocity, v. How much work should be done on the object in order to bring the object to rest?</span>
+            </div>
+            <div class="answer">
+                Work done = Change in kinetic energy<br>
+                Initial kinetic energy = ½mv²<br>
+                Final kinetic energy = 0 (since object comes to rest)<br>
+                Work done = 0 - ½mv² = -½mv²<br>
+                The negative sign indicates that work is done against the motion of the object.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">17</span>
+                <span>Calculate the work required to be done to stop a car of 1500 kg moving at a velocity of 60 km/h.</span>
+            </div>
+            <div class="answer">
+                Mass, m = 1500 kg<br>
+                Velocity, v = 60 km/h = 60 × (1000/3600) m/s = 50/3 m/s ≈ 16.67 m/s<br>
+                Work done = Change in kinetic energy = 0 - ½mv²<br>
+                = -½ × 1500 × (50/3)² = -750 × (2500/9) = -750 × 277.78 ≈ -208,333.33 J<br>
+                The work required to stop the car is approximately 208,333 J (or 208.33 kJ).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">18</span>
+                <span>In each of the following a force, F is acting on an object of mass, m. The direction of displacement is from west to east shown by the longer arrow. Observe the diagrams carefully and state whether the work done by the force is negative, positive or zero.</span>
+            </div>
+            <div class="answer">
+                Without the actual diagrams, we can state the general principles:<br>
+                - Work is positive when force and displacement are in the same direction<br>
+                - Work is negative when force and displacement are in opposite directions<br>
+                - Work is zero when force is perpendicular to displacement
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">19</span>
+                <span>Soni says that the acceleration in an object could be zero even when several forces are acting on it. Do you agree with her? Why?</span>
+            </div>
+            <div class="answer">Yes, I agree with Soni. According to Newton's first law, if the net force on an object is zero, the acceleration will be zero, even if multiple forces are acting on it. This happens when all forces balance each other out (equal in magnitude and opposite in direction).</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">20</span>
+                <span>Find the energy in joules consumed in 10 hours by four devices of power 500 W each.</span>
+            </div>
+            <div class="answer">
+                Power of one device = 500 W<br>
+                Total power of four devices = 4 × 500 W = 2000 W = 2 kW<br>
+                Time = 10 hours<br>
+                Energy consumed = Power × Time = 2 kW × 10 h = 20 kWh<br>
+                1 kWh = 3.6 × 10⁶ J<br>
+                20 kWh = 20 × 3.6 × 10⁶ J = 7.2 × 10⁷ J<br>
+                The energy consumed is 7.2 × 10⁷ joules.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">21</span>
+                <span>A freely falling object eventually stops on reaching the ground. What happens to its kinetic energy?</span>
+            </div>
+            <div class="answer">When a freely falling object hits the ground, its kinetic energy is transformed into other forms of energy:
+                <ul>
+                    <li>Sound energy (the sound of impact)</li>
+                    <li>Heat energy (due to friction and deformation)</li>
+                    <li>Potential energy of deformation (if the object or ground deforms)</li>
+                </ul>
+                The total energy is conserved according to the law of conservation of energy.
+            </div>
+        </div>
+
+        <div class="note">
+            Note: If you have any doubts about the answers, you can discuss with your teacher or refer to your textbook.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Science - Chapter 9: Gravitation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a4b8c 0%, #2a6ec6 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a4b8c;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #1a4b8c;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #000000;
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter : 9<br>Gravitation</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>How does the force of gravitation between two objects change when the distance between them is reduced to half?</span>
+            </div>
+            <div class="answer">Answer: According to the universal law of gravitation, the force is inversely proportional to the square of the distance between the objects. So, if the distance is reduced to half, the force becomes 4 times (since F ∝ 1/d², when d becomes d/2, F becomes 4F).</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>Gravitational force acts on all objects in proportion to their masses. Why then, a heavy object does not fall faster than a light object?</span>
+            </div>
+            <div class="answer">Answer: Although gravitational force is proportional to mass, the acceleration due to gravity (g) is independent of mass. From Newton's second law (F = ma) and gravitational force (F = G×M×m/d²), we get mg = G×M×m/d², which simplifies to g = G×M/d². So, all objects fall with the same acceleration regardless of their mass.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>What is the magnitude of the gravitational force between the earth and a 1 kg object on its surface? (Mass of the earth is 6×10²⁴ kg and radius of the earth is 6.4×10⁶ m.)</span>
+            </div>
+            <div class="answer">Answer: Using the formula F = G×M×m/d²:<br>
+            G = 6.7×10⁻¹¹ N m² kg⁻²<br>
+            M = 6×10²⁴ kg<br>
+            m = 1 kg<br>
+            d = 6.4×10⁶ m<br>
+            F = (6.7×10⁻¹¹ × 6×10²⁴ × 1) / (6.4×10⁶)² = (4.02×10¹⁴) / (4.096×10¹³) ≈ 9.8 N<br>
+            The gravitational force is approximately 9.8 N.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>The earth and the moon are attracted to each other by gravitational force. Does the earth attract the moon with a force that is greater or smaller or the same as the force with which the moon attracts the earth? Why?</span>
+            </div>
+            <div class="answer">Answer: The earth attracts the moon with the same force as the moon attracts the earth. According to Newton's third law of motion, forces always occur in equal and opposite pairs. The gravitational force between two objects is mutual and equal in magnitude.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>If the moon attracts the earth, why does the earth not move towards the moon?</span>
+            </div>
+            <div class="answer">Answer: Both the earth and moon move towards each other due to gravitational attraction. However, because the earth has a much larger mass than the moon, its acceleration (a = F/M) is much smaller and not easily noticeable. The moon appears to move more because it has less mass.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>What happens to the force between two objects, if<br>
+                (i) the mass of one object is doubled?<br>
+                (ii) the distance between the objects is doubled and tripled?<br>
+                (iii) the masses of both objects are doubled?</span>
+            </div>
+            <div class="answer">Answer:<br>
+            (i) If mass of one object is doubled, the force becomes double (F ∝ m).<br>
+            (ii) If distance is doubled, force becomes 1/4 (F ∝ 1/d²). If tripled, force becomes 1/9.<br>
+            (iii) If masses of both objects are doubled, force becomes 4 times (F ∝ m₁×m₂).</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>What is the importance of universal law of gravitation?</span>
+            </div>
+            <div class="answer">Answer: The universal law of gravitation successfully explained several phenomena:<br>
+            - The force that binds us to the earth<br>
+            - The motion of the moon around the earth<br>
+            - The motion of planets around the Sun<br>
+            - The tides due to the moon and the Sun<br>
+            - It helps in understanding the motion of celestial bodies in the universe.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>What is the acceleration of free fall?</span>
+            </div>
+            <div class="answer">Answer: The acceleration of free fall is the acceleration experienced by an object when it falls under the influence of gravity alone, without any other forces acting on it (like air resistance). On earth, this acceleration is approximately 9.8 m/s² and is denoted by 'g'.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>What do we call the gravitational force between the earth and an object?</span>
+            </div>
+            <div class="answer">Answer: The gravitational force between the earth and an object is called the weight of the object. It is given by W = m×g, where m is the mass of the object and g is the acceleration due to gravity.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>Amit buys few grams of gold at the poles as per the instruction of one of his friends. He hands over the same when he meets him at the equator. Will the friend agree with the weight of gold bought? If not, why? [Hint: The value of g is greater at the poles than at the equator.]</span>
+            </div>
+            <div class="answer">Answer: No, the friend will not agree with the weight of gold bought. The value of g is greater at the poles than at the equator, so the same mass of gold will weigh less at the equator. Since the friend is measuring weight at the equator, he will find the weight to be less than what was measured at the poles.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>Why will a sheet of paper fall slower than one that is crumpled into a ball?</span>
+            </div>
+            <div class="answer">Answer: A sheet of paper falls slower than a crumpled paper ball because it has a larger surface area, which experiences more air resistance. The crumpled ball has less surface area exposed to air, so it experiences less air resistance and falls faster.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>Gravitational force on the surface of the moon is only 1/6 as strong as gravitational force on the earth. What is the weight in newtons of a 10 kg object on the moon and on the earth?</span>
+            </div>
+            <div class="answer">Answer:<br>
+            On earth: Weight = m×g = 10 kg × 9.8 m/s² = 98 N<br>
+            On moon: Weight = (1/6) × weight on earth = (1/6) × 98 N = 16.33 N</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>A ball is thrown vertically upwards with a velocity of 49 m/s.<br>
+                Calculate<br>
+                (i) the maximum height to which it rises,<br>
+                (ii) the total time it takes to return to the surface of the earth.</span>
+            </div>
+            <div class="answer">Answer:<br>
+            (i) Using v² = u² - 2gh<br>
+            0 = (49)² - 2×9.8×h<br>
+            h = (2401)/(19.6) = 122.5 m<br>
+            Maximum height = 122.5 m<br><br>
+            (ii) Using v = u - gt<br>
+            0 = 49 - 9.8×t<br>
+            t = 49/9.8 = 5 s (time to reach maximum height)<br>
+            Total time = 2×5 = 10 s (time to go up and come back)</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>A stone is released from the top of a tower of height 19.6 m. Calculate its final velocity just before touching the ground.</span>
+            </div>
+            <div class="answer">Answer: Using v² = u² + 2gh<br>
+            v² = 0 + 2×9.8×19.6<br>
+            v² = 19.6×19.6<br>
+            v = 19.6 m/s<br>
+            Final velocity = 19.6 m/s</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>A stone is thrown vertically upward with an initial velocity of 40 m/s. Taking g = 10 m/s², find the maximum height reached by the stone. What is the net displacement and the total distance covered by the stone?</span>
+            </div>
+            <div class="answer">Answer:<br>
+            Maximum height: Using v² = u² - 2gh<br>
+            0 = (40)² - 2×10×h<br>
+            h = 1600/20 = 80 m<br>
+            Maximum height = 80 m<br><br>
+            Net displacement = 0 (since the stone returns to the starting point)<br>
+            Total distance covered = 80 m (up) + 80 m (down) = 160 m</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>Calculate the force of gravitation between the earth and the Sun, given that the mass of the earth = 6×10²⁴ kg and of the Sun = 2×10³⁰ kg. The average distance between the two is 1.5×10¹¹ m.</span>
+            </div>
+            <div class="answer">Answer: Using F = G×M×m/d²<br>
+            G = 6.7×10⁻¹¹ N m² kg⁻²<br>
+            M = 2×10³⁰ kg (mass of Sun)<br>
+            m = 6×10²⁴ kg (mass of Earth)<br>
+            d = 1.5×10¹¹ m<br>
+            F = (6.7×10⁻¹¹ × 2×10³⁰ × 6×10²⁴) / (1.5×10¹¹)²<br>
+            = (8.04×10⁴⁴) / (2.25×10²²)<br>
+            = 3.573×10²² N<br>
+            The gravitational force between Earth and Sun is 3.573×10²² N.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">17</span>
+                <span>A stone is allowed to fall from the top of a tower 100 m high and at the same time another stone is projected vertically upwards from the ground with a velocity of 25 m/s. Calculate when and where the two stones will meet.</span>
+            </div>
+            <div class="answer">Answer:<br>
+            Let the stones meet after time t at height h from ground.<br><br>
+            For falling stone: distance = 100 - h = (1/2)gt² ...(1)<br>
+            For upward thrown stone: h = 25t - (1/2)gt² ...(2)<br><br>
+            Adding equations (1) and (2):<br>
+            100 = 25t<br>
+            t = 4 s<br><br>
+            From equation (2): h = 25×4 - (1/2)×9.8×16<br>
+            h = 100 - 78.4 = 21.6 m<br><br>
+            The stones meet after 4 seconds at a height of 21.6 m from the ground.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">18</span>
+                <span>A ball thrown up vertically returns to the thrower after 6 s. Find<br>
+                (a) the velocity with which it was thrown up,<br>
+                (b) the maximum height it reaches, and<br>
+                (c) its position after 4 s.</span>
+            </div>
+            <div class="answer">Answer:<br>
+            Total time = 6 s, so time to reach maximum height = 3 s<br><br>
+            (a) Using v = u - gt<br>
+            0 = u - 9.8×3<br>
+            u = 29.4 m/s<br>
+            Initial velocity = 29.4 m/s<br><br>
+            (b) Maximum height: h = ut - (1/2)gt²<br>
+            h = 29.4×3 - (1/2)×9.8×9<br>
+            h = 88.2 - 44.1 = 44.1 m<br>
+            Maximum height = 44.1 m<br><br>
+            (c) After 4 s, the ball is on its way down<br>
+            Position: s = ut - (1/2)gt²<br>
+            s = 29.4×4 - (1/2)×9.8×16<br>
+            s = 117.6 - 78.4 = 39.2 m<br>
+            After 4 s, the ball is 39.2 m above the ground.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">19</span>
+                <span>In what direction does the buoyant force on an object immersed in a liquid act?</span>
+            </div>
+            <div class="answer">Answer: The buoyant force on an object immersed in a liquid acts vertically upward, opposite to the direction of gravity.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">20</span>
+                <span>Why does a block of plastic released under water come up to the surface of water?</span>
+            </div>
+            <div class="answer">Answer: A block of plastic released under water comes up to the surface because the buoyant force (upthrust) acting on it is greater than its weight. The density of plastic is less than the density of water, so it experiences a net upward force.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">21</span>
+                <span>The volume of 50 g of a substance is 20 cm³. If the density of water is 1 g cm⁻³, will the substance float or sink?</span>
+            </div>
+            <div class="answer">Answer: Density of substance = mass/volume = 50 g / 20 cm³ = 2.5 g/cm³<br>
+            Density of water = 1 g/cm³<br>
+            Since the density of the substance (2.5 g/cm³) is greater than the density of water (1 g/cm³), the substance will sink in water.</div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">22</span>
+                <span>The volume of a 500 g sealed packet is 350 cm³. Will the packet float or sink in water if the density of water is 1 g cm⁻³? What will be the mass of the water displaced by this packet?</span>
+            </div>
+            <div class="answer">Answer: Density of packet = mass/volume = 500 g / 350 cm³ ≈ 1.43 g/cm³<br>
+            Density of water = 1 g/cm³<br>
+            Since the density of the packet (1.43 g/cm³) is greater than the density of water (1 g/cm³), the packet will sink in water.<br><br>
+            When the packet is fully immersed, it will displace water equal to its own volume (350 cm³).<br>
+            Mass of water displaced = volume × density = 350 cm³ × 1 g/cm³ = 350 g</div>
+        </div>
+
+        <div class="note">
+            Note: If you have any doubts about the answers, you can discuss with your teacher or refer to your textbook.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

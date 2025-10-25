@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Science - Chapter 7: Motion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a4b8c 0%, #2a6ec6 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a4b8c;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #1a4b8c;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #000000;
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter : 7<br>Motion</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>An athlete completes one round of a circular track of diameter 200 m in 40 s. What will be the distance covered and the displacement at the end of 2 minutes 20 s?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Given:</strong></p>
+                <p>Diameter of circular track = 200 m</p>
+                <p>Radius, r = 100 m</p>
+                <p>Time for one round = 40 s</p>
+                <p>Total time = 2 min 20 s = 140 s</p>
+                <br>
+                <p><strong>Solution:</strong></p>
+                <p>Number of rounds completed in 140 s = 140 / 40 = 3.5 rounds</p>
+                <p>Distance covered = 3.5 × circumference = 3.5 × 2πr = 3.5 × 2 × 3.14 × 100 = 2198 m</p>
+                <p>Displacement after 3.5 rounds = Diameter of the track = 200 m (since the athlete is at the opposite end of the starting point)</p>
+                <br>
+                <p><strong>Answer:</strong> Distance covered = 2198 m, Displacement = 200 m</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>Joseph jogs from one end A to the other end B of a straight 300 m road in 2 minutes 30 seconds and then turns around and jogs 100 m back to point C in another 1 minute. What are Joseph's average speeds and velocities in jogging (a) from A to B and (b) from A to C?</span>
+            </div>
+            <div class="answer">
+                <p><strong>(a) From A to B:</strong></p>
+                <p>Distance = 300 m</p>
+                <p>Time = 2 min 30 s = 150 s</p>
+                <p>Average speed = Distance/Time = 300/150 = 2 m/s</p>
+                <p>Displacement = 300 m (from A to B)</p>
+                <p>Average velocity = Displacement/Time = 300/150 = 2 m/s</p>
+                <br>
+                <p><strong>(b) From A to C:</strong></p>
+                <p>Total distance = 300 m + 100 m = 400 m</p>
+                <p>Total time = 150 s + 60 s = 210 s</p>
+                <p>Average speed = Total distance/Total time = 400/210 ≈ 1.90 m/s</p>
+                <p>Displacement from A to C = 300 m - 100 m = 200 m</p>
+                <p>Average velocity = Displacement/Time = 200/210 ≈ 0.95 m/s</p>
+                <br>
+                <p><strong>Answer:</strong> (a) Average speed = 2 m/s, Average velocity = 2 m/s; (b) Average speed ≈ 1.90 m/s, Average velocity ≈ 0.95 m/s</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>Abdul, while driving to school, computes the average speed for his trip to be 20 km/h. On his return trip along the same route, there is less traffic and the average speed is 30 km/h. What is the average speed for Abdul's trip?</span>
+            </div>
+            <div class="answer">
+                <p>Let the distance to school be D km.</p>
+                <p>Time taken for forward journey = D/20 hours</p>
+                <p>Time taken for return journey = D/30 hours</p>
+                <p>Total distance = 2D km</p>
+                <p>Total time = D/20 + D/30 = (3D + 2D)/60 = 5D/60 = D/12 hours</p>
+                <p>Average speed = Total distance/Total time = 2D/(D/12) = 24 km/h</p>
+                <br>
+                <p><strong>Answer:</strong> Average speed for the entire trip = 24 km/h</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>A motorboat starting from rest on a lake accelerates in a straight line at a constant rate of 3.0 m/s² for 8.0 s. How far does the boat travel during this time?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Given:</strong></p>
+                <p>Initial velocity, u = 0 m/s</p>
+                <p>Acceleration, a = 3.0 m/s²</p>
+                <p>Time, t = 8.0 s</p>
+                <br>
+                <p><strong>Solution:</strong></p>
+                <p>Using the equation of motion: s = ut + ½at²</p>
+                <p>s = 0 × 8 + ½ × 3 × (8)²</p>
+                <p>s = 0 + ½ × 3 × 64 = 96 m</p>
+                <br>
+                <p><strong>Answer:</strong> The boat travels 96 m during this time.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>A driver of a car travelling at 52 km/h applies the brakes and accelerates uniformly in the opposite direction. The car stops in 5 s. Another driver going at 3 km/h in another car applies his brakes slowly and stops in 10 s. On the same graph paper, plot the speed versus time graphs for the two cars. Which of the two cars travelled farther after the brakes were applied?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Given:</strong></p>
+                <p>First car: Initial velocity = 52 km/h = 14.44 m/s, Time to stop = 5 s</p>
+                <p>Second car: Initial velocity = 3 km/h = 0.83 m/s, Time to stop = 10 s</p>
+                <br>
+                <p><strong>Solution:</strong></p>
+                <p>Distance travelled = Area under speed-time graph</p>
+                <p>For first car: Distance = ½ × base × height = ½ × 5 × 14.44 = 36.1 m</p>
+                <p>For second car: Distance = ½ × base × height = ½ × 10 × 0.83 = 4.15 m</p>
+                <br>
+                <p><strong>Answer:</strong> The first car travelled farther (36.1 m) after the brakes were applied.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>Fig 7.10 shows the distance-time graph of three objects A, B and C. Study the graph and answer the following questions:<br>
+                (a) Which of the three is travelling the fastest?<br>
+                (b) Are all three ever at the same point on the road?<br>
+                (c) How far has C travelled when B passes A?<br>
+                (d) How far has B travelled by the time it passes C?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Analysis of the distance-time graph:</strong></p>
+                <p>(a) The slope of the distance-time graph gives speed. Object B has the steepest slope, so it is travelling the fastest.</p>
+                <p>(b) No, all three lines never meet at a single point, so they are never all at the same point on the road.</p>
+                <p>(c) When B passes A (at approximately 0.8 hours), C has travelled about 5 km.</p>
+                <p>(d) When B passes C (at approximately 0.5 hours), B has travelled about 5.5 km.</p>
+                <br>
+                <p><strong>Answer:</strong> (a) B is travelling fastest; (b) No; (c) About 5 km; (d) About 5.5 km</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>A ball is gently dropped from a height of 20 m. If its velocity increases uniformly at the rate of 10 m/s², with what velocity will it strike the ground? After what time will it strike the ground?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Given:</strong></p>
+                <p>Initial velocity, u = 0 m/s</p>
+                <p>Height, s = 20 m</p>
+                <p>Acceleration, a = 10 m/s²</p>
+                <br>
+                <p><strong>Solution:</strong></p>
+                <p>Using v² = u² + 2as</p>
+                <p>v² = 0 + 2 × 10 × 20 = 400</p>
+                <p>v = √400 = 20 m/s</p>
+                <br>
+                <p>Using v = u + at</p>
+                <p>20 = 0 + 10 × t</p>
+                <p>t = 20/10 = 2 s</p>
+                <br>
+                <p><strong>Answer:</strong> The ball will strike the ground with a velocity of 20 m/s after 2 seconds.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>The speed-time graph for a car is shown in Fig. 7.11.<br>
+                (a) Find how far does the car travel in the first 4 seconds. Shade the area on the graph that represents the distance travelled by the car during the period.<br>
+                (b) Which part of the graph represents uniform motion of the car?</span>
+            </div>
+            <div class="answer">
+                <p><strong>Analysis of the speed-time graph:</strong></p>
+                <p>(a) Distance travelled in first 4 seconds = Area under the graph from 0 to 4 s</p>
+                <p>This area is a triangle with base = 4 s and height = 6 m/s</p>
+                <p>Distance = ½ × base × height = ½ × 4 × 6 = 12 m</p>
+                <p>The shaded area would be the triangular area under the graph from t=0 to t=4.</p>
+                <br>
+                <p>(b) The part of the graph from t=6 s to t=10 s represents uniform motion, as the speed remains constant at 8 m/s during this period.</p>
+                <br>
+                <p><strong>Answer:</strong> (a) Distance = 12 m; (b) The horizontal part from t=6 s to t=10 s represents uniform motion.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>State which of the following situations are possible and give an example for each of these:<br>
+                (a) an object with a constant acceleration but with zero velocity<br>
+                (b) an object moving with an acceleration but with uniform speed<br>
+                (c) an object moving in a certain direction with an acceleration in the perpendicular direction</span>
+            </div>
+            <div class="answer">
+                <p>(a) Possible. Example: When a ball is thrown vertically upward, at the highest point its velocity is zero but acceleration due to gravity is constant (9.8 m/s² downward).</p>
+                <p>(b) Possible. Example: Uniform circular motion - an object moving in a circle with constant speed has acceleration (centripetal acceleration) directed toward the center.</p>
+                <p>(c) Possible. Example: In projectile motion, the horizontal velocity is constant while acceleration due to gravity acts vertically downward (perpendicular to horizontal motion).</p>
+                <br>
+                <p><strong>Answer:</strong> All three situations are possible with the examples given above.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>An artificial satellite is moving in a circular orbit of radius 42250 km. Calculate its speed if it takes 24 hours to revolve around the earth.</span>
+            </div>
+            <div class="answer">
+                <p><strong>Given:</strong></p>
+                <p>Radius of orbit, r = 42250 km</p>
+                <p>Time for one revolution, t = 24 hours</p>
+                <br>
+                <p><strong>Solution:</strong></p>
+                <p>Distance covered in one revolution = Circumference of orbit = 2πr</p>
+                <p>Distance = 2 × 3.14 × 42250 ≈ 265,330 km</p>
+                <p>Speed = Distance/Time = 265,330 km / 24 h ≈ 11,055 km/h</p>
+                <br>
+                <p>In m/s: 11,055 km/h = 11,055 × 1000 / 3600 ≈ 3070.8 m/s</p>
+                <br>
+                <p><strong>Answer:</strong> The speed of the satellite is approximately 11,055 km/h or 3070.8 m/s.</p>
+            </div>
+        </div>
+
+        <div class="note">
+            Note: If you have any doubts about the answers, you can discuss with your teacher or refer to your textbook.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>

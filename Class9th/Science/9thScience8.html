@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Science - Chapter 8: Force and Laws of Motion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4efe9 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            padding: 15px;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #1a4b8c 0%, #2a6ec6 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin-bottom: 20px;
+            border-left: 5px solid #1a4b8c;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 12px;
+            font-size: 1rem;
+            color: #1a237e;
+            display: flex;
+            align-items: flex-start;
+        }
+        .question-number {
+            background: #1a4b8c;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 12px;
+            flex-shrink: 0;
+            font-size: 0.9rem;
+        }
+        .answer {
+            color: #000000;
+            font-size: 0.95rem;
+            padding: 10px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border-left: 3px solid #78909c;
+        }
+        .chemical-equation {
+            font-style: italic;
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background-color: #e8f5e9;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px dashed #4caf50;
+        }
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            font-style: italic;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 0.9rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #1a4b8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+            .card {
+                padding: 15px;
+            }
+            .question {
+                font-size: 0.95rem;
+            }
+            .answer {
+                font-size: 0.9rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+                padding: 12px;
+            }
+            table {
+                font-size: 0.8rem;
+            }
+            th, td {
+                padding: 6px;
+            }
+        }
+        @media (max-width: 480px) {
+            .question {
+                flex-direction: column;
+            }
+            .question-number {
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter : 8<br> Force and Laws of Motion</h1>
+        
+        <div class="card">
+            <div class="question">
+                <span class="question-number">1</span>
+                <span>An object experiences a net zero external unbalanced force. Is it possible for the object to be travelling with a non-zero velocity? If yes, state the conditions that must be placed on the magnitude and direction of the velocity. If no, provide a reason.</span>
+            </div>
+            <div class="answer">
+                Answer: Yes, it is possible. According to Newton's first law of motion, an object continues to be in a state of rest or of uniform motion along a straight line unless acted upon by an unbalanced force. So, if an object is already moving with a constant velocity (non-zero), and the net external force acting on it is zero, it will continue to move with the same velocity. The conditions are that the object must be moving with a constant velocity (constant speed and direction) in a straight line.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">2</span>
+                <span>When a carpet is beaten with a stick, dust comes out of it. Explain.</span>
+            </div>
+            <div class="answer">
+                Answer: This can be explained by the law of inertia. Initially, the carpet and the dust particles are at rest. When the carpet is beaten with a stick, the carpet moves but the dust particles tend to remain at rest due to inertia. As a result, the dust particles get separated from the carpet and come out.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">3</span>
+                <span>Why is it advised to tie any luggage kept on the roof of a bus with a rope?</span>
+            </div>
+            <div class="answer">
+                Answer: When a bus starts moving suddenly, the luggage tends to remain at rest due to inertia and might fall backward. Similarly, when the moving bus stops suddenly, the luggage tends to continue in motion and might fall forward. Tying the luggage with a rope prevents it from falling due to sudden starts or stops of the bus.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">4</span>
+                <span>A batsman hits a cricket ball which then rolls on a level ground. After covering a short distance, the ball comes to rest. The ball slows to a stop because:<br>
+                (a) the batsman did not hit the ball hard enough.<br>
+                (b) velocity is proportional to the force exerted on the ball.<br>
+                (c) there is a force on the ball opposing the motion.<br>
+                (d) there is no unbalanced force on the ball, so the ball would want to come to rest.</span>
+            </div>
+            <div class="answer">
+                Answer: (c) there is a force on the ball opposing the motion.<br>
+                The ball comes to rest due to the frictional force acting between the ball and the ground, which opposes the motion of the ball.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">5</span>
+                <span>A truck starts from rest and rolls down a hill with a constant acceleration. It travels a distance of 400 m in 20 s. Find its acceleration. Find the force acting on it if its mass is 7 tonnes (Hint: 1 tonne = 1000 kg).</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Given: Initial velocity (u) = 0 m/s, Distance (s) = 400 m, Time (t) = 20 s, Mass (m) = 7 tonnes = 7000 kg<br><br>
+                
+                Using the equation of motion: s = ut + ½at²<br>
+                400 = 0 × 20 + ½ × a × (20)²<br>
+                400 = 0 + ½ × a × 400<br>
+                400 = 200a<br>
+                a = 400/200 = 2 m/s²<br><br>
+                
+                Now, Force (F) = m × a = 7000 × 2 = 14000 N<br><br>
+                
+                Therefore, acceleration = 2 m/s² and force = 14000 N.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">6</span>
+                <span>A stone of 1 kg is thrown with a velocity of 20 m s⁻¹ across the frozen surface of a lake and comes to rest after travelling a distance of 50 m. What is the force of friction between the stone and the ice?</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Given: Mass (m) = 1 kg, Initial velocity (u) = 20 m/s, Final velocity (v) = 0 m/s, Distance (s) = 50 m<br><br>
+                
+                Using the equation: v² = u² + 2as<br>
+                0² = (20)² + 2 × a × 50<br>
+                0 = 400 + 100a<br>
+                100a = -400<br>
+                a = -4 m/s² (negative sign indicates retardation)<br><br>
+                
+                Force of friction (F) = m × a = 1 × (-4) = -4 N<br><br>
+                
+                Therefore, the force of friction between the stone and ice is 4 N (opposing the motion).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">7</span>
+                <span>A 8000 kg engine pulls a train of 5 wagons, each of 2000 kg, along a horizontal track. If the engine exerts a force of 40000 N and the track offers a friction force of 5000 N, then calculate:<br>
+                (a) the net accelerating force and<br>
+                (b) the acceleration of the train.</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass of engine = 8000 kg<br>
+                Mass of each wagon = 2000 kg<br>
+                Number of wagons = 5<br>
+                Total mass of wagons = 5 × 2000 = 10000 kg<br>
+                Total mass of train = mass of engine + mass of wagons = 8000 + 10000 = 18000 kg<br><br>
+                
+                (a) Net accelerating force = Force exerted by engine - Frictional force<br>
+                = 40000 N - 5000 N = 35000 N<br><br>
+                
+                (b) Using F = ma<br>
+                35000 = 18000 × a<br>
+                a = 35000/18000 = 1.944 m/s²<br><br>
+                
+                Therefore, net accelerating force = 35000 N and acceleration = 1.944 m/s².
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">8</span>
+                <span>An automobile vehicle has a mass of 1500 kg. What must be the force between the vehicle and road if the vehicle is to be stopped with a negative acceleration of 1.7 m s⁻²?</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Given: Mass (m) = 1500 kg, Acceleration (a) = -1.7 m/s²<br><br>
+                
+                Force (F) = m × a = 1500 × (-1.7) = -2550 N<br><br>
+                
+                Therefore, the force between the vehicle and road is 2550 N in the direction opposite to the motion of the vehicle.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">9</span>
+                <span>What is the momentum of an object of mass m, moving with a velocity v?<br>
+                (a) (mv)² (b) mv² (c) ½ mv² (d) mv</span>
+            </div>
+            <div class="answer">
+                Answer: (d) mv<br>
+                Momentum is defined as the product of mass and velocity of an object. So, p = mv.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">10</span>
+                <span>Using a horizontal force of 200 N, we intend to move a wooden cabinet across a floor at a constant velocity. What is the friction force that will be exerted on the cabinet?</span>
+            </div>
+            <div class="answer">
+                Answer: When an object moves with constant velocity, the net force acting on it is zero (according to Newton's first law of motion). Therefore, the friction force opposing the motion must be equal in magnitude and opposite in direction to the applied force. So, the friction force will be 200 N.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">11</span>
+                <span>According to the third law of motion when we push on an object, the object pushes back on us with an equal and opposite force. If the object is a massive truck parked along the roadside, it will probably not move. A student justifies this by answering that the two opposite and equal forces cancel each other. Comment on this logic and explain why the truck does not move.</span>
+            </div>
+            <div class="answer">
+                Answer: The student's logic is incorrect because the action and reaction forces act on different objects. When we push the truck, we apply a force on the truck (action). The truck applies an equal and opposite force on us (reaction). These two forces don't cancel each other because they act on different objects. The truck doesn't move because the force we apply is not enough to overcome the static friction between the truck's tires and the road, and possibly because of the truck's large mass which requires a large force to accelerate (according to F = ma).
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">12</span>
+                <span>A hockey ball of mass 200 g travelling at 10 m s⁻¹ is struck by a hockey stick so as to return it along its original path with a velocity at 5 m s⁻¹. Calculate the magnitude of change of momentum occurred in the motion of the hockey ball by the force applied by the hockey stick.</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass of ball (m) = 200 g = 0.2 kg<br>
+                Initial velocity (u) = 10 m/s<br>
+                Final velocity (v) = -5 m/s (negative sign indicates opposite direction)<br><br>
+                
+                Initial momentum (p₁) = m × u = 0.2 × 10 = 2 kg m/s<br>
+                Final momentum (p₂) = m × v = 0.2 × (-5) = -1 kg m/s<br><br>
+                
+                Change in momentum = p₂ - p₁ = -1 - 2 = -3 kg m/s<br><br>
+                
+                Magnitude of change in momentum = 3 kg m/s
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">13</span>
+                <span>A bullet of mass 10 g travelling horizontally with a velocity of 150 m s⁻¹ strikes a stationary wooden block and comes to rest in 0.03 s. Calculate the distance of penatration of the bullet into the block. Also calculate the magnitude of the force exerted by the wooden block on the bullet.</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass of bullet (m) = 10 g = 0.01 kg<br>
+                Initial velocity (u) = 150 m/s<br>
+                Final velocity (v) = 0 m/s<br>
+                Time (t) = 0.03 s<br><br>
+                
+                Acceleration (a) = (v - u)/t = (0 - 150)/0.03 = -5000 m/s²<br><br>
+                
+                Distance of penatration (s):<br>
+                Using v² = u² + 2as<br>
+                0² = (150)² + 2 × (-5000) × s<br>
+                0 = 22500 - 10000s<br>
+                10000s = 22500<br>
+                s = 22500/10000 = 2.25 m<br><br>
+                
+                Force (F) = m × a = 0.01 × (-5000) = -50 N<br><br>
+                
+                Therefore, distance of penatration = 2.25 m and magnitude of force = 50 N.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">14</span>
+                <span>An object of mass 1 kg travelling in a straight line with a velocity of 10 m s⁻¹ collides with, and sticks to, a stationary wooden block of mass 5 kg. Then they both move off together in the same straight line. Calculate the total momentum just before the impact and just after the impact. Also, calculate the velocity of the combined object.</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass of object (m₁) = 1 kg, Initial velocity of object (u₁) = 10 m/s<br>
+                Mass of block (m₂) = 5 kg, Initial velocity of block (u₂) = 0 m/s<br><br>
+                
+                Total momentum before impact = m₁u₁ + m₂u₂ = (1 × 10) + (5 × 0) = 10 kg m/s<br><br>
+                
+                According to the law of conservation of momentum:<br>
+                Total momentum before impact = Total momentum after impact<br>
+                So, total momentum after impact = 10 kg m/s<br><br>
+                
+                After collision, combined mass (M) = m₁ + m₂ = 1 + 5 = 6 kg<br>
+                Let final velocity of combined object = v<br><br>
+                
+                Then, M × v = 10<br>
+                6 × v = 10<br>
+                v = 10/6 = 1.67 m/s<br><br>
+                
+                Therefore, total momentum before impact = 10 kg m/s, after impact = 10 kg m/s, and velocity of combined object = 1.67 m/s.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">15</span>
+                <span>An object of mass 100 kg is accelerated uniformly from a velocity of 5 m s⁻¹ to 8 m s⁻¹ in 6 s. Calculate the initial and final momentum of the object. Also, find the magnitude of the force exerted on the object.</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass (m) = 100 kg<br>
+                Initial velocity (u) = 5 m/s<br>
+                Final velocity (v) = 8 m/s<br>
+                Time (t) = 6 s<br><br>
+                
+                Initial momentum (p₁) = m × u = 100 × 5 = 500 kg m/s<br>
+                Final momentum (p₂) = m × v = 100 × 8 = 800 kg m/s<br><br>
+                
+                Acceleration (a) = (v - u)/t = (8 - 5)/6 = 3/6 = 0.5 m/s²<br><br>
+                
+                Force (F) = m × a = 100 × 0.5 = 50 N<br><br>
+                
+                Therefore, initial momentum = 500 kg m/s, final momentum = 800 kg m/s, and force = 50 N.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">16</span>
+                <span>Akhtar, Kiran and Rahul were riding in a motorcar that was moving with a high velocity on an expressway when an insect hit the windshield and got stuck on the windscreen. Akhtar and Kiran started pondering over the situation. Kiran suggested that the insect suffered a greater change in momentum as compared to the change in momentum of the motorcar (because the change in the velocity of the insect was much more than that of the motorcar). Akhtar said that since the motorcar was moving with a larger velocity, it exerted a larger force on the insect. And as a result the insect died. Rahul while putting an entirely new explanation said that both the motorcar and the insect experienced the same force and a change in their momentum. Comment on these suggestions.</span>
+            </div>
+            <div class="answer">
+                Answer: According to Newton's third law of motion, when the insect hits the windshield, the insect exerts a force on the car and the car exerts an equal and opposite force on the insect. So, both experience the same magnitude of force.<br><br>
+                
+                However, the change in momentum is equal to the force multiplied by the time of impact (F × Δt). Since the time of impact is the same for both, the magnitude of change in momentum is the same for both the insect and the car.<br><br>
+                
+                But the effect of this change in momentum is different because of their different masses. For the car (with large mass), the change in velocity is very small, while for the insect (with small mass), the change in velocity is very large, which causes the death of the insect.<br><br>
+                
+                Therefore, Rahul's explanation is correct: both experienced the same force and the same change in momentum.
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="question">
+                <span class="question-number">17</span>
+                <span>How much momentum will a dumb-bell of mass 10 kg transfer to the floor if it falls from a height of 80 cm? Take its downward acceleration to be 10 m s⁻².</span>
+            </div>
+            <div class="answer">
+                Answer: <br>
+                Mass (m) = 10 kg<br>
+                Height (h) = 80 cm = 0.8 m<br>
+                Acceleration due to gravity (g) = 10 m/s²<br>
+                Initial velocity (u) = 0 m/s<br><br>
+                
+                Using v² = u² + 2gh<br>
+                v² = 0² + 2 × 10 × 0.8<br>
+                v² = 16<br>
+                v = 4 m/s (velocity just before hitting the floor)<br><br>
+                
+                Momentum transferred to the floor = m × v = 10 × 4 = 40 kg m/s<br><br>
+                
+                Therefore, the dumb-bell will transfer 40 kg m/s of momentum to the floor.
+            </div>
+        </div>
+
+        <div class="note">
+            Note: If you have any doubts about the answers, you can discuss with your teacher or refer to your textbook.
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+        });
+        document.addEventListener('cut', function(e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
