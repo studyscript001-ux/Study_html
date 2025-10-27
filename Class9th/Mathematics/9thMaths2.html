@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 2: Polynomials</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .gradient-card {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gradient-card h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .gradient-card .chapter-info {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .exercise-section {
+            margin-bottom: 50px;
+        }
+        
+        .exercise-title {
+            color: #2c3e50;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #4a6ee0;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        .question-card {
+            background: #f8f9fa;
+            border-left: 4px solid #4a6ee0;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .question-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+        
+        .question-title {
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .solution-step {
+            margin-bottom: 15px;
+            padding-left: 15px;
+            border-left: 2px solid #bdc3c7;
+        }
+        
+        .math-expr {
+            font-family: 'Times New Roman', serif;
+            margin: 5px 0;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .numerator {
+            display: block;
+            padding: 0 5px;
+            border-bottom: 1px solid black;
+        }
+        
+        .denominator {
+            display: block;
+            padding: 0 5px;
+        }
+        
+        .exponent {
+            vertical-align: super;
+            font-size: 0.8em;
+        }
+        
+        .base {
+            display: inline-block;
+        }
+        
+        .answer {
+            font-weight: 600;
+            color: #27ae60;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .explanation {
+            background: #e8f4fd;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-top: 12px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .explanation-title {
+            font-weight: 600;
+            color: #2980b9;
+            margin-bottom: 5px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .gradient-card {
+                padding: 20px;
+            }
+            
+            .gradient-card h1 {
+                font-size: 2rem;
+            }
+            
+            .question-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card">
+            <h1>Chapter 2: Polynomials</h1>
+            <div class="chapter-info">Class 9 - Mathematics</div>
+        </div>
+
+        <!-- Exercise 2.1 -->
+        <section class="exercise-section">
+            <h2 class="exercise-title">Exercise 2.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="question-card">
+                <div class="question-title">Question 1: Which of the following expressions are polynomials in one variable and which are not? State reasons for your answer.</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 4x<span class="exponent">2</span> - 3x + 7</div>
+                    <div>This is a polynomial in one variable (x).</div>
+                    <div>Reason: All exponents of x are whole numbers (2, 1, 0).</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) y<span class="exponent">2</span> + √2</div>
+                    <div>This is a polynomial in one variable (y).</div>
+                    <div>Reason: √2 is a constant, and the exponent of y is a whole number (2).</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) 3√t + t√2</div>
+                    <div>This is not a polynomial.</div>
+                    <div>Reason: 3√t = 3t<span class="exponent">1/2</span>, and 1/2 is not a whole number.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) y + <div class="fraction"><span class="numerator">2</span><span class="denominator">y</span></div></div>
+                    <div>This is not a polynomial.</div>
+                    <div>Reason: <div class="fraction"><span class="numerator">2</span><span class="denominator">y</span></div> = 2y<span class="exponent">-1</span>, and -1 is not a whole number.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) x<span class="exponent">10</span> + y<span class="exponent">3</span> + t<span class="exponent">60</span></div>
+                    <div>This is not a polynomial in one variable.</div>
+                    <div>Reason: It has three variables (x, y, t).</div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-title">Question 2: Write the coefficients of x<span class="exponent">2</span> in each of the following:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 2 + x<span class="exponent">2</span> + x</div>
+                    <div>The term with x<span class="exponent">2</span> is x<span class="exponent">2</span>.</div>
+                    <div>Coefficient of x<span class="exponent">2</span> is 1.</div>
+                    <div class="answer">Answer: 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 2 - x<span class="exponent">2</span> + x<span class="exponent">3</span></div>
+                    <div>The term with x<span class="exponent">2</span> is -x<span class="exponent">2</span>.</div>
+                    <div>Coefficient of x<span class="exponent">2</span> is -1.</div>
+                    <div class="answer">Answer: -1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) <div class="fraction"><span class="numerator">π</span><span class="denominator">2</span></div>x<span class="exponent">2</span> + x</div>
+                    <div>The term with x<span class="exponent">2</span> is <div class="fraction"><span class="numerator">π</span><span class="denominator">2</span></div>x<span class="exponent">2</span>.</div>
+                    <div>Coefficient of x<span class="exponent">2</span> is <div class="fraction"><span class="numerator">π</span><span class="denominator">2</span></div>.</div>
+                    <div class="answer">Answer: <div class="fraction"><span class="numerator">π</span><span class="denominator">2</span></div></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) √2x - 1</div>
+                    <div>There is no term with x<span class="exponent">2</span>.</div>
+                    <div>Coefficient of x<span class="exponent">2</span> is 0.</div>
+                    <div class="answer">Answer: 0</div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-title">Question 3: Give one example each of a binomial of degree 35, and of a monomial of degree 100.</div>
+                
+                <div class="solution-step">
+                    <div>Binomial of degree 35: A polynomial with two terms and highest power 35.</div>
+                    <div class="math-expr">Example: x<span class="exponent">35</span> + 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div>Monomial of degree 100: A polynomial with one term and degree 100.</div>
+                    <div class="math-expr">Example: 5x<span class="exponent">100</span></div>
+                    <div class="answer">Answer: Binomial: x<span class="exponent">35</span> + 1, Monomial: 5x<span class="exponent">100</span></div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-title">Question 4: Write the degree of each of the following polynomials:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 5x<span class="exponent">3</span> + 4x<span class="exponent">2</span> + 7x</div>
+                    <div>The highest power of x is 3.</div>
+                    <div class="answer">Answer: 3</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 4 - y<span class="exponent">2</span></div>
+                    <div>The highest power of y is 2.</div>
+                    <div class="answer">Answer: 2</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) 5t - √7</div>
+                    <div>The highest power of t is 1.</div>
+                    <div class="answer">Answer: 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) 3</div>
+                    <div>This is a constant polynomial.</div>
+                    <div>We can write it as 3x<span class="exponent">0</span>.</div>
+                    <div class="answer">Answer: 0</div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card">
+                <div class="question-title">Question 5: Classify the following as linear, quadratic and cubic polynomials:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) x<span class="exponent">2</span> + x</div>
+                    <div>Degree = 2</div>
+                    <div class="answer">Answer: Quadratic</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) x - x<span class="exponent">3</span></div>
+                    <div>Degree = 3</div>
+                    <div class="answer">Answer: Cubic</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) y + y<span class="exponent">2</span> + 4</div>
+                    <div>Degree = 2</div>
+                    <div class="answer">Answer: Quadratic</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) 1 + x</div>
+                    <div>Degree = 1</div>
+                    <div class="answer">Answer: Linear</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) 3t</div>
+                    <div>Degree = 1</div>
+                    <div class="answer">Answer: Linear</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(vi) r<span class="exponent">2</span></div>
+                    <div>Degree = 2</div>
+                    <div class="answer">Answer: Quadratic</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(vii) 7x<span class="exponent">3</span></div>
+                    <div>Degree = 3</div>
+                    <div class="answer">Answer: Cubic</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.2 -->
+        <section class="exercise-section">
+            <h2 class="exercise-title">Exercise 2.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="question-card">
+                <div class="question-title">Question 1: Find the value of the polynomial 5x - 4x<span class="exponent">2</span> + 3 at</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) x = 0</div>
+                    <div>Let p(x) = 5x - 4x<span class="exponent">2</span> + 3</div>
+                    <div>p(0) = 5(0) - 4(0)<span class="exponent">2</span> + 3 = 0 - 0 + 3 = 3</div>
+                    <div class="answer">Answer: 3</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) x = -1</div>
+                    <div>p(-1) = 5(-1) - 4(-1)<span class="exponent">2</span> + 3 = -5 - 4(1) + 3 = -5 - 4 + 3 = -6</div>
+                    <div class="answer">Answer: -6</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) x = 2</div>
+                    <div>p(2) = 5(2) - 4(2)<span class="exponent">2</span> + 3 = 10 - 4(4) + 3 = 10 - 16 + 3 = -3</div>
+                    <div class="answer">Answer: -3</div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-title">Question 2: Find p(0), p(1) and p(2) for each of the following polynomials:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) p(y) = y<span class="exponent">2</span> - y + 1</div>
+                    <div>p(0) = (0)<span class="exponent">2</span> - (0) + 1 = 0 - 0 + 1 = 1</div>
+                    <div>p(1) = (1)<span class="exponent">2</span> - (1) + 1 = 1 - 1 + 1 = 1</div>
+                    <div>p(2) = (2)<span class="exponent">2</span> - (2) + 1 = 4 - 2 + 1 = 3</div>
+                    <div class="answer">Answer: p(0) = 1, p(1) = 1, p(2) = 3</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) p(t) = 2 + t + 2t<span class="exponent">2</span> - t<span class="exponent">3</span></div>
+                    <div>p(0) = 2 + 0 + 2(0)<span class="exponent">2</span> - (0)<span class="exponent">3</span> = 2 + 0 + 0 - 0 = 2</div>
+                    <div>p(1) = 2 + 1 + 2(1)<span class="exponent">2</span> - (1)<span class="exponent">3</span> = 2 + 1 + 2 - 1 = 4</div>
+                    <div>p(2) = 2 + 2 + 2(2)<span class="exponent">2</span> - (2)<span class="exponent">3</span> = 2 + 2 + 8 - 8 = 4</div>
+                    <div class="answer">Answer: p(0) = 2, p(1) = 4, p(2) = 4</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) p(x) = x<span class="exponent">3</span></div>
+                    <div>p(0) = (0)<span class="exponent">3</span> = 0</div>
+                    <div>p(1) = (1)<span class="exponent">3</span> = 1</div>
+                    <div>p(2) = (2)<span class="exponent">3</span> = 8</div>
+                    <div class="answer">Answer: p(0) = 0, p(1) = 1, p(2) = 8</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) p(x) = (x - 1)(x + 1)</div>
+                    <div>First expand: p(x) = x<span class="exponent">2</span> - 1</div>
+                    <div>p(0) = (0)<span class="exponent">2</span> - 1 = 0 - 1 = -1</div>
+                    <div>p(1) = (1)<span class="exponent">2</span> - 1 = 1 - 1 = 0</div>
+                    <div>p(2) = (2)<span class="exponent">2</span> - 1 = 4 - 1 = 3</div>
+                    <div class="answer">Answer: p(0) = -1, p(1) = 0, p(2) = 3</div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-title">Question 3: Verify whether the following are zeroes of the polynomial, indicated against them.</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) p(x) = 3x + 1, x = -<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div></div>
+                    <div>p(-<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div>) = 3(-<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div>) + 1 = -1 + 1 = 0</div>
+                    <div>Since p(-<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div>) = 0, it is a zero.</div>
+                    <div class="answer">Answer: Yes, it is a zero.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) p(x) = 5x - π, x = <div class="fraction"><span class="numerator">4</span><span class="denominator">5</span></div></div>
+                    <div>p(<div class="fraction"><span class="numerator">4</span><span class="denominator">5</span></div>) = 5(<div class="fraction"><span class="numerator">4</span><span class="denominator">5</span></div>) - π = 4 - π ≠ 0</div>
+                    <div>Since p(<div class="fraction"><span class="numerator">4</span><span class="denominator">5</span></div>) ≠ 0, it is not a zero.</div>
+                    <div class="answer">Answer: No, it is not a zero.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) p(x) = x<span class="exponent">2</span> - 1, x = 1, -1</div>
+                    <div>p(1) = (1)<span class="exponent">2</span> - 1 = 1 - 1 = 0</div>
+                    <div>p(-1) = (-1)<span class="exponent">2</span> - 1 = 1 - 1 = 0</div>
+                    <div>Both are zeros.</div>
+                    <div class="answer">Answer: Yes, both are zeros.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) p(x) = (x + 1)(x - 2), x = -1, 2</div>
+                    <div>p(-1) = (-1 + 1)(-1 - 2) = (0)(-3) = 0</div>
+                    <div>p(2) = (2 + 1)(2 - 2) = (3)(0) = 0</div>
+                    <div>Both are zeros.</div>
+                    <div class="answer">Answer: Yes, both are zeros.</div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-title">Question 4: Find the zero of the polynomial in each of the following cases:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) p(x) = x + 5</div>
+                    <div>Set p(x) = 0</div>
+                    <div>x + 5 = 0</div>
+                    <div>x = -5</div>
+                    <div class="answer">Answer: -5</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) p(x) = x - 5</div>
+                    <div>Set p(x) = 0</div>
+                    <div>x - 5 = 0</div>
+                    <div>x = 5</div>
+                    <div class="answer">Answer: 5</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) p(x) = 2x + 5</div>
+                    <div>Set p(x) = 0</div>
+                    <div>2x + 5 = 0</div>
+                    <div>2x = -5</div>
+                    <div>x = -<div class="fraction"><span class="numerator">5</span><span class="denominator">2</span></div></div>
+                    <div class="answer">Answer: -<div class="fraction"><span class="numerator">5</span><span class="denominator">2</span></div></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) p(x) = 3x - 2</div>
+                    <div>Set p(x) = 0</div>
+                    <div>3x - 2 = 0</div>
+                    <div>3x = 2</div>
+                    <div>x = <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div></div>
+                    <div class="answer">Answer: <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) p(x) = 3x</div>
+                    <div>Set p(x) = 0</div>
+                    <div>3x = 0</div>
+                    <div>x = 0</div>
+                    <div class="answer">Answer: 0</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(vi) p(x) = ax, a ≠ 0</div>
+                    <div>Set p(x) = 0</div>
+                    <div>ax = 0</div>
+                    <div>Since a ≠ 0, x = 0</div>
+                    <div class="answer">Answer: 0</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(vii) p(x) = cx + d, c ≠ 0, c, d are real numbers.</div>
+                    <div>Set p(x) = 0</div>
+                    <div>cx + d = 0</div>
+                    <div>cx = -d</div>
+                    <div>x = -<div class="fraction"><span class="numerator">d</span><span class="denominator">c</span></div></div>
+                    <div class="answer">Answer: -<div class="fraction"><span class="numerator">d</span><span class="denominator">c</span></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.3 -->
+        <section class="exercise-section">
+            <h2 class="exercise-title">Exercise 2.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="question-card">
+                <div class="question-title">Question 1: Determine which of the following polynomials has (x+1) a factor:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) x<span class="exponent">3</span> + x<span class="exponent">2</span> + x + 1</div>
+                    <div>Let p(x) = x<span class="exponent">3</span> + x<span class="exponent">2</span> + x + 1</div>
+                    <div>Zero of x+1 is x = -1</div>
+                    <div>p(-1) = (-1)<span class="exponent">3</span> + (-1)<span class="exponent">2</span> + (-1) + 1 = -1 + 1 - 1 + 1 = 0</div>
+                    <div>Since p(-1) = 0, (x+1) is a factor.</div>
+                    <div class="answer">Answer: Yes, it is a factor.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) x<span class="exponent">4</span> + x<span class="exponent">3</span> + x<span class="exponent">2</span> + x + 1</div>
+                    <div>Let p(x) = x<span class="exponent">4</span> + x<span class="exponent">3</span> + x<span class="exponent">2</span> + x + 1</div>
+                    <div>p(-1) = (-1)<span class="exponent">4</span> + (-1)<span class="exponent">3</span> + (-1)<span class="exponent">2</span> + (-1) + 1 = 1 - 1 + 1 - 1 + 1 = 1</div>
+                    <div>Since p(-1) ≠ 0, (x+1) is not a factor.</div>
+                    <div class="answer">Answer: No, it is not a factor.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) x<span class="exponent">4</span> + 3x<span class="exponent">3</span> + 3x<span class="exponent">2</span> + x + 1</div>
+                    <div>Let p(x) = x<span class="exponent">4</span> + 3x<span class="exponent">3</span> + 3x<span class="exponent">2</span> + x + 1</div>
+                    <div>p(-1) = (-1)<span class="exponent">4</span> + 3(-1)<span class="exponent">3</span> + 3(-1)<span class="exponent">2</span> + (-1) + 1 = 1 - 3 + 3 - 1 + 1 = 1</div>
+                    <div>Since p(-1) ≠ 0, (x+1) is not a factor.</div>
+                    <div class="answer">Answer: No, it is not a factor.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) x<span class="exponent">3</span> - x<span class="exponent">2</span> - (2 + √2)x + √2</div>
+                    <div>Let p(x) = x<span class="exponent">3</span> - x<span class="exponent">2</span> - (2 + √2)x + √2</div>
+                    <div>p(-1) = (-1)<span class="exponent">3</span> - (-1)<span class="exponent">2</span> - (2 + √2)(-1) + √2 = -1 - 1 + 2 + √2 + √2 = 0 + 2√2</div>
+                    <div>Since p(-1) ≠ 0, (x+1) is not a factor.</div>
+                    <div class="answer">Answer: No, it is not a factor.</div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-title">Question 2: Use the Factor Theorem to determine whether g(x) is a factor of p(x) in each of the following cases:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) p(x) = 2x<span class="exponent">3</span> + x<span class="exponent">2</span> - 2x - 1, g(x) = x + 1</div>
+                    <div>Zero of g(x) = x+1 is x = -1</div>
+                    <div>p(-1) = 2(-1)<span class="exponent">3</span> + (-1)<span class="exponent">2</span> - 2(-1) - 1 = -2 + 1 + 2 - 1 = 0</div>
+                    <div>Since p(-1) = 0, g(x) is a factor.</div>
+                    <div class="answer">Answer: Yes, it is a factor.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) p(x) = x<span class="exponent">3</span> + 3x<span class="exponent">2</span> + 3x + 1, g(x) = x + 2</div>
+                    <div>Zero of g(x) = x+2 is x = -2</div>
+                    <div>p(-2) = (-2)<span class="exponent">3</span> + 3(-2)<span class="exponent">2</span> + 3(-2) + 1 = -8 + 12 - 6 + 1 = -1</div>
+                    <div>Since p(-2) ≠ 0, g(x) is not a factor.</div>
+                    <div class="answer">Answer: No, it is not a factor.</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) p(x) = x<span class="exponent">3</span> - 4x<span class="exponent">2</span> + x + 6, g(x) = x - 3</div>
+                    <div>Zero of g(x) = x-3 is x = 3</div>
+                    <div>p(3) = (3)<span class="exponent">3</span> - 4(3)<span class="exponent">2</span> + (3) + 6 = 27 - 36 + 3 + 6 = 0</div>
+                    <div>Since p(3) = 0, g(x) is a factor.</div>
+                    <div class="answer">Answer: Yes, it is a factor.</div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-title">Question 3: Find the value of k, if x - 1 is a factor of p(x) in each of the following cases:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) p(x) = x<span class="exponent">2</span> + x + k</div>
+                    <div>If x-1 is a factor, then p(1) = 0</div>
+                    <div>p(1) = (1)<span class="exponent">2</span> + (1) + k = 1 + 1 + k = 2 + k</div>
+                    <div>Set 2 + k = 0</div>
+                    <div>k = -2</div>
+                    <div class="answer">Answer: k = -2</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) p(x) = 2x<span class="exponent">2</span> + kx + √2</div>
+                    <div>If x-1 is a factor, then p(1) = 0</div>
+                    <div>p(1) = 2(1)<span class="exponent">2</span> + k(1) + √2 = 2 + k + √2</div>
+                    <div>Set 2 + k + √2 = 0</div>
+                    <div>k = -2 - √2</div>
+                    <div class="answer">Answer: k = -2 - √2</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) p(x) = kx<span class="exponent">2</span> - √2x + 1</div>
+                    <div>If x-1 is a factor, then p(1) = 0</div>
+                    <div>p(1) = k(1)<span class="exponent">2</span> - √2(1) + 1 = k - √2 + 1</div>
+                    <div>Set k - √2 + 1 = 0</div>
+                    <div>k = √2 - 1</div>
+                    <div class="answer">Answer: k = √2 - 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) p(x) = kx<span class="exponent">2</span> - 3x + k</div>
+                    <div>If x-1 is a factor, then p(1) = 0</div>
+                    <div>p(1) = k(1)<span class="exponent">2</span> - 3(1) + k = k - 3 + k = 2k - 3</div>
+                    <div>Set 2k - 3 = 0</div>
+                    <div>2k = 3</div>
+                    <div>k = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div></div>
+                    <div class="answer">Answer: k = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div></div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-title">Question 4: Factorise:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 12x<span class="exponent">2</span> - 7x + 1</div>
+                    <div>We need to split the middle term: -7x</div>
+                    <div>Find two numbers whose product is 12 × 1 = 12 and sum is -7</div>
+                    <div>The numbers are -3 and -4</div>
+                    <div>12x<span class="exponent">2</span> - 7x + 1 = 12x<span class="exponent">2</span> - 3x - 4x + 1</div>
+                    <div>= 3x(4x - 1) - 1(4x - 1)</div>
+                    <div>= (4x - 1)(3x - 1)</div>
+                    <div class="answer">Answer: (4x - 1)(3x - 1)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 2x<span class="exponent">2</span> + 7x + 3</div>
+                    <div>We need to split the middle term: 7x</div>
+                    <div>Find two numbers whose product is 2 × 3 = 6 and sum is 7</div>
+                    <div>The numbers are 1 and 6</div>
+                    <div>2x<span class="exponent">2</span> + 7x + 3 = 2x<span class="exponent">2</span> + x + 6x + 3</div>
+                    <div>= x(2x + 1) + 3(2x + 1)</div>
+                    <div>= (2x + 1)(x + 3)</div>
+                    <div class="answer">Answer: (2x + 1)(x + 3)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) 6x<span class="exponent">2</span> + 5x - 6</div>
+                    <div>We need to split the middle term: 5x</div>
+                    <div>Find two numbers whose product is 6 × -6 = -36 and sum is 5</div>
+                    <div>The numbers are 9 and -4</div>
+                    <div>6x<span class="exponent">2</span> + 5x - 6 = 6x<span class="exponent">2</span> + 9x - 4x - 6</div>
+                    <div>= 3x(2x + 3) - 2(2x + 3)</div>
+                    <div>= (2x + 3)(3x - 2)</div>
+                    <div class="answer">Answer: (2x + 3)(3x - 2)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) 3x<span class="exponent">2</span> - x - 4</div>
+                    <div>We need to split the middle term: -x</div>
+                    <div>Find two numbers whose product is 3 × -4 = -12 and sum is -1</div>
+                    <div>The numbers are -4 and 3</div>
+                    <div>3x<span class="exponent">2</span> - x - 4 = 3x<span class="exponent">2</span> - 4x + 3x - 4</div>
+                    <div>= x(3x - 4) + 1(3x - 4)</div>
+                    <div>= (3x - 4)(x + 1)</div>
+                    <div class="answer">Answer: (3x - 4)(x + 1)</div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card">
+                <div class="question-title">Question 5: Factorise:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) x<span class="exponent">3</span> - 2x<span class="exponent">2</span> - x + 2</div>
+                    <div>Group the terms: (x<span class="exponent">3</span> - 2x<span class="exponent">2</span>) + (-x + 2)</div>
+                    <div>= x<span class="exponent">2</span>(x - 2) - 1(x - 2)</div>
+                    <div>= (x - 2)(x<span class="exponent">2</span> - 1)</div>
+                    <div>= (x - 2)(x - 1)(x + 1)</div>
+                    <div class="answer">Answer: (x - 2)(x - 1)(x + 1)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) x<span class="exponent">3</span> - 3x<span class="exponent">2</span> - 9x - 5</div>
+                    <div>Try x = -1: (-1)<span class="exponent">3</span> - 3(-1)<span class="exponent">2</span> - 9(-1) - 5 = -1 - 3 + 9 - 5 = 0</div>
+                    <div>So (x + 1) is a factor.</div>
+                    <div>Divide x<span class="exponent">3</span> - 3x<span class="exponent">2</span> - 9x - 5 by x + 1</div>
+                    <div>We get x<span class="exponent">2</span> - 4x - 5</div>
+                    <div>Factorise x<span class="exponent">2</span> - 4x - 5 = (x - 5)(x + 1)</div>
+                    <div>So x<span class="exponent">3</span> - 3x<span class="exponent">2</span> - 9x - 5 = (x + 1)(x - 5)(x + 1) = (x + 1)<span class="exponent">2</span>(x - 5)</div>
+                    <div class="answer">Answer: (x + 1)<span class="exponent">2</span>(x - 5)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) x<span class="exponent">3</span> + 13x<span class="exponent">2</span> + 32x + 20</div>
+                    <div>Try x = -1: (-1)<span class="exponent">3</span> + 13(-1)<span class="exponent">2</span> + 32(-1) + 20 = -1 + 13 - 32 + 20 = 0</div>
+                    <div>So (x + 1) is a factor.</div>
+                    <div>Divide x<span class="exponent">3</span> + 13x<span class="exponent">2</span> + 32x + 20 by x + 1</div>
+                    <div>We get x<span class="exponent">2</span> + 12x + 20</div>
+                    <div>Factorise x<span class="exponent">2</span> + 12x + 20 = (x + 2)(x + 10)</div>
+                    <div>So x<span class="exponent">3</span> + 13x<span class="exponent">2</span> + 32x + 20 = (x + 1)(x + 2)(x + 10)</div>
+                    <div class="answer">Answer: (x + 1)(x + 2)(x + 10)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) 2y<span class="exponent">3</span> + y<span class="exponent">2</span> - 2y - 1</div>
+                    <div>Group the terms: (2y<span class="exponent">3</span> + y<span class="exponent">2</span>) + (-2y - 1)</div>
+                    <div>= y<span class="exponent">2</span>(2y + 1) - 1(2y + 1)</div>
+                    <div>= (2y + 1)(y<span class="exponent">2</span> - 1)</div>
+                    <div>= (2y + 1)(y - 1)(y + 1)</div>
+                    <div class="answer">Answer: (2y + 1)(y - 1)(y + 1)</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.4 -->
+        <section class="exercise-section">
+            <h2 class="exercise-title">Exercise 2.4</h2>
+            
+            <!-- Question 1 -->
+            <div class="question-card">
+                <div class="question-title">Question 1: Use suitable identities to find the following products:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) (x + 4)(x + 10)</div>
+                    <div>Using identity: (x + a)(x + b) = x<span class="exponent">2</span> + (a + b)x + ab</div>
+                    <div>Here, a = 4, b = 10</div>
+                    <div>(x + 4)(x + 10) = x<span class="exponent">2</span> + (4 + 10)x + (4)(10) = x<span class="exponent">2</span> + 14x + 40</div>
+                    <div class="answer">Answer: x<span class="exponent">2</span> + 14x + 40</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) (x + 8)(x - 10)</div>
+                    <div>Using identity: (x + a)(x + b) = x<span class="exponent">2</span> + (a + b)x + ab</div>
+                    <div>Here, a = 8, b = -10</div>
+                    <div>(x + 8)(x - 10) = x<span class="exponent">2</span> + (8 - 10)x + (8)(-10) = x<span class="exponent">2</span> - 2x - 80</div>
+                    <div class="answer">Answer: x<span class="exponent">2</span> - 2x - 80</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) (3x + 4)(3x - 5)</div>
+                    <div>Using identity: (x + a)(x + b) = x<span class="exponent">2</span> + (a + b)x + ab</div>
+                    <div>Here, x = 3x, a = 4, b = -5</div>
+                    <div>(3x + 4)(3x - 5) = (3x)<span class="exponent">2</span> + (4 - 5)(3x) + (4)(-5) = 9x<span class="exponent">2</span> - 3x - 20</div>
+                    <div class="answer">Answer: 9x<span class="exponent">2</span> - 3x - 20</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) (y<span class="exponent">2</span> + <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>)(y<span class="exponent">2</span> - <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>)</div>
+                    <div>Using identity: (a + b)(a - b) = a<span class="exponent">2</span> - b<span class="exponent">2</span></div>
+                    <div>Here, a = y<span class="exponent">2</span>, b = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div></div>
+                    <div>(y<span class="exponent">2</span> + <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>)(y<span class="exponent">2</span> - <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>) = (y<span class="exponent">2</span>)<span class="exponent">2</span> - (<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>)<span class="exponent">2</span> = y<span class="exponent">4</span> - <div class="fraction"><span class="numerator">9</span><span class="denominator">4</span></div></div>
+                    <div class="answer">Answer: y<span class="exponent">4</span> - <div class="fraction"><span class="numerator">9</span><span class="denominator">4</span></div></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) (3 - 2x)(3 + 2x)</div>
+                    <div>Using identity: (a + b)(a - b) = a<span class="exponent">2</span> - b<span class="exponent">2</span></div>
+                    <div>Here, a = 3, b = 2x</div>
+                    <div>(3 - 2x)(3 + 2x) = (3)<span class="exponent">2</span> - (2x)<span class="exponent">2</span> = 9 - 4x<span class="exponent">2</span></div>
+                    <div class="answer">Answer: 9 - 4x<span class="exponent">2</span></div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-title">Question 2: Evaluate the following products without multiplying directly:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 103 × 107</div>
+                    <div>103 × 107 = (100 + 3)(100 + 7)</div>
+                    <div>Using identity: (x + a)(x + b) = x<span class="exponent">2</span> + (a + b)x + ab</div>
+                    <div>Here, x = 100, a = 3, b = 7</div>
+                    <div>103 × 107 = 100<span class="exponent">2</span> + (3 + 7)(100) + (3)(7) = 10000 + 1000 + 21 = 11021</div>
+                    <div class="answer">Answer: 11021</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 95 × 96</div>
+                    <div>95 × 96 = (100 - 5)(100 - 4)</div>
+                    <div>Using identity: (x + a)(x + b) = x<span class="exponent">2</span> + (a + b)x + ab</div>
+                    <div>Here, x = 100, a = -5, b = -4</div>
+                    <div>95 × 96 = 100<span class="exponent">2</span> + (-5 - 4)(100) + (-5)(-4) = 10000 - 900 + 20 = 9120</div>
+                    <div class="answer">Answer: 9120</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) 104 × 96</div>
+                    <div>104 × 96 = (100 + 4)(100 - 4)</div>
+                    <div>Using identity: (a + b)(a - b) = a<span class="exponent">2</span> - b<span class="exponent">2</span></div>
+                    <div>Here, a = 100, b = 4</div>
+                    <div>104 × 96 = 100<span class="exponent">2</span> - 4<span class="exponent">2</span> = 10000 - 16 = 9984</div>
+                    <div class="answer">Answer: 9984</div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-title">Question 3: Factorise the following using appropriate identities:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 9x<span class="exponent">2</span> + 6xy + y<span class="exponent">2</span></div>
+                    <div>This is of the form a<span class="exponent">2</span> + 2ab + b<span class="exponent">2</span> = (a + b)<span class="exponent">2</span></div>
+                    <div>Here, a = 3x, b = y</div>
+                    <div>9x<span class="exponent">2</span> + 6xy + y<span class="exponent">2</span> = (3x)<span class="exponent">2</span> + 2(3x)(y) + (y)<span class="exponent">2</span> = (3x + y)<span class="exponent">2</span></div>
+                    <div class="answer">Answer: (3x + y)<span class="exponent">2</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 4y<span class="exponent">2</span> - 4y + 1</div>
+                    <div>This is of the form a<span class="exponent">2</span> - 2ab + b<span class="exponent">2</span> = (a - b)<span class="exponent">2</span></div>
+                    <div>Here, a = 2y, b = 1</div>
+                    <div>4y<span class="exponent">2</span> - 4y + 1 = (2y)<span class="exponent">2</span> - 2(2y)(1) + (1)<span class="exponent">2</span> = (2y - 1)<span class="exponent">2</span></div>
+                    <div class="answer">Answer: (2y - 1)<span class="exponent">2</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) x<span class="exponent">2</span> - <div class="fraction"><span class="numerator">y<span class="exponent">2</span></span><span class="denominator">100</span></div></div>
+                    <div>This is of the form a<span class="exponent">2</span> - b<span class="exponent">2</span> = (a + b)(a - b)</div>
+                    <div>Here, a = x, b = <div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div></div>
+                    <div>x<span class="exponent">2</span> - <div class="fraction"><span class="numerator">y<span class="exponent">2</span></span><span class="denominator">100</span></div> = x<span class="exponent">2</span> - (<div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div>)<span class="exponent">2</span> = (x + <div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div>)(x - <div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div>)</div>
+                    <div class="answer">Answer: (x + <div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div>)(x - <div class="fraction"><span class="numerator">y</span><span class="denominator">10</span></div>)</div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-title">Question 4: Expand each of the following, using suitable identities:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) (x + 2y + 4z)<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = x, b = 2y, c = 4z</div>
+                    <div>(x + 2y + 4z)<span class="exponent">2</span> = x<span class="exponent">2</span> + (2y)<span class="exponent">2</span> + (4z)<span class="exponent">2</span> + 2(x)(2y) + 2(2y)(4z) + 2(4z)(x)</div>
+                    <div>= x<span class="exponent">2</span> + 4y<span class="exponent">2</span> + 16z<span class="exponent">2</span> + 4xy + 16yz + 8zx</div>
+                    <div class="answer">Answer: x<span class="exponent">2</span> + 4y<span class="exponent">2</span> + 16z<span class="exponent">2</span> + 4xy + 16yz + 8zx</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) (2x - y + z)<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = 2x, b = -y, c = z</div>
+                    <div>(2x - y + z)<span class="exponent">2</span> = (2x)<span class="exponent">2</span> + (-y)<span class="exponent">2</span> + (z)<span class="exponent">2</span> + 2(2x)(-y) + 2(-y)(z) + 2(z)(2x)</div>
+                    <div>= 4x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - 4xy - 2yz + 4zx</div>
+                    <div class="answer">Answer: 4x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - 4xy - 2yz + 4zx</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) (-2x + 3y + 2z)<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = -2x, b = 3y, c = 2z</div>
+                    <div>(-2x + 3y + 2z)<span class="exponent">2</span> = (-2x)<span class="exponent">2</span> + (3y)<span class="exponent">2</span> + (2z)<span class="exponent">2</span> + 2(-2x)(3y) + 2(3y)(2z) + 2(2z)(-2x)</div>
+                    <div>= 4x<span class="exponent">2</span> + 9y<span class="exponent">2</span> + 4z<span class="exponent">2</span> - 12xy + 12yz - 8zx</div>
+                    <div class="answer">Answer: 4x<span class="exponent">2</span> + 9y<span class="exponent">2</span> + 4z<span class="exponent">2</span> - 12xy + 12yz - 8zx</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) (3a - 7b - c)<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = 3a, b = -7b, c = -c</div>
+                    <div>(3a - 7b - c)<span class="exponent">2</span> = (3a)<span class="exponent">2</span> + (-7b)<span class="exponent">2</span> + (-c)<span class="exponent">2</span> + 2(3a)(-7b) + 2(-7b)(-c) + 2(-c)(3a)</div>
+                    <div>= 9a<span class="exponent">2</span> + 49b<span class="exponent">2</span> + c<span class="exponent">2</span> - 42ab + 14bc - 6ca</div>
+                    <div class="answer">Answer: 9a<span class="exponent">2</span> + 49b<span class="exponent">2</span> + c<span class="exponent">2</span> - 42ab + 14bc - 6ca</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) (-2x + 5y - 3z)<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = -2x, b = 5y, c = -3z</div>
+                    <div>(-2x + 5y - 3z)<span class="exponent">2</span> = (-2x)<span class="exponent">2</span> + (5y)<span class="exponent">2</span> + (-3z)<span class="exponent">2</span> + 2(-2x)(5y) + 2(5y)(-3z) + 2(-3z)(-2x)</div>
+                    <div>= 4x<span class="exponent">2</span> + 25y<span class="exponent">2</span> + 9z<span class="exponent">2</span> - 20xy - 30yz + 12zx</div>
+                    <div class="answer">Answer: 4x<span class="exponent">2</span> + 25y<span class="exponent">2</span> + 9z<span class="exponent">2</span> - 20xy - 30yz + 12zx</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(vi) [<div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a - <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b + 1]<span class="exponent">2</span></div>
+                    <div>Using identity: (a + b + c)<span class="exponent">2</span> = a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca</div>
+                    <div>Here, a = <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a, b = -<div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b, c = 1</div>
+                    <div>[<div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a - <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b + 1]<span class="exponent">2</span> = (<div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a)<span class="exponent">2</span> + (-<div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b)<span class="exponent">2</span> + (1)<span class="exponent">2</span> + 2(<div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a)(-<div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b) + 2(-<div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>b)(1) + 2(1)(<div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>a)</div>
+                    <div>= <div class="fraction"><span class="numerator">1</span><span class="denominator">16</span></div>a<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>b<span class="exponent">2</span> + 1 - <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>ab - b + <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>a</div>
+                    <div class="answer">Answer: <div class="fraction"><span class="numerator">1</span><span class="denominator">16</span></div>a<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>b<span class="exponent">2</span> + 1 - <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>ab - b + <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>a</div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card">
+                <div class="question-title">Question 5: Factorise:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 4x<span class="exponent">2</span> + 9y<span class="exponent">2</span> + 16z<span class="exponent">2</span> + 12xy - 24yz - 16xz</div>
+                    <div>This is of the form a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca = (a + b + c)<span class="exponent">2</span></div>
+                    <div>Here, a = 2x, b = 3y, c = -4z</div>
+                    <div>4x<span class="exponent">2</span> + 9y<span class="exponent">2</span> + 16z<span class="exponent">2</span> + 12xy - 24yz - 16xz = (2x)<span class="exponent">2</span> + (3y)<span class="exponent">2</span> + (-4z)<span class="exponent">2</span> + 2(2x)(3y) + 2(3y)(-4z) + 2(-4z)(2x)</div>
+                    <div>= (2x + 3y - 4z)<span class="exponent">2</span></div>
+                    <div class="answer">Answer: (2x + 3y - 4z)<span class="exponent">2</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 2x<span class="exponent">2</span> + y<span class="exponent">2</span> + 8z<span class="exponent">2</span> - 2√2xy + 4√2yz - 8xz</div>
+                    <div>This is of the form a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> + 2ab + 2bc + 2ca = (a + b + c)<span class="exponent">2</span></div>
+                    <div>Here, a = -√2x, b = y, c = 2√2z</div>
+                    <div>2x<span class="exponent">2</span> + y<span class="exponent">2</span> + 8z<span class="exponent">2</span> - 2√2xy + 4√2yz - 8xz = (-√2x)<span class="exponent">2</span> + (y)<span class="exponent">2</span> + (2√2z)<span class="exponent">2</span> + 2(-√2x)(y) + 2(y)(2√2z) + 2(2√2z)(-√2x)</div>
+                    <div>= (-√2x + y + 2√2z)<span class="exponent">2</span></div>
+                    <div class="answer">Answer: (-√2x + y + 2√2z)<span class="exponent">2</span></div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-card">
+                <div class="question-title">Question 6: Write the following cubes in expanded form:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) (2x + 1)<span class="exponent">3</span></div>
+                    <div>Using identity: (a + b)<span class="exponent">3</span> = a<span class="exponent">3</span> + b<span class="exponent">3</span> + 3ab(a + b)</div>
+                    <div>Here, a = 2x, b = 1</div>
+                    <div>(2x + 1)<span class="exponent">3</span> = (2x)<span class="exponent">3</span> + (1)<span class="exponent">3</span> + 3(2x)(1)(2x + 1) = 8x<span class="exponent">3</span> + 1 + 6x(2x + 1)</div>
+                    <div>= 8x<span class="exponent">3</span> + 1 + 12x<span class="exponent">2</span> + 6x</div>
+                    <div>= 8x<span class="exponent">3</span> + 12x<span class="exponent">2</span> + 6x + 1</div>
+                    <div class="answer">Answer: 8x<span class="exponent">3</span> + 12x<span class="exponent">2</span> + 6x + 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) (2a - 3b)<span class="exponent">3</span></div>
+                    <div>Using identity: (a - b)<span class="exponent">3</span> = a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3ab(a - b)</div>
+                    <div>Here, a = 2a, b = 3b</div>
+                    <div>(2a - 3b)<span class="exponent">3</span> = (2a)<span class="exponent">3</span> - (3b)<span class="exponent">3</span> - 3(2a)(3b)(2a - 3b) = 8a<span class="exponent">3</span> - 27b<span class="exponent">3</span> - 18ab(2a - 3b)</div>
+                    <div>= 8a<span class="exponent">3</span> - 27b<span class="exponent">3</span> - 36a<span class="exponent">2</span>b + 54ab<span class="exponent">2</span></div>
+                    <div class="answer">Answer: 8a<span class="exponent">3</span> - 27b<span class="exponent">3</span> - 36a<span class="exponent">2</span>b + 54ab<span class="exponent">2</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) [<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x + 1]<span class="exponent">3</span></div>
+                    <div>Using identity: (a + b)<span class="exponent">3</span> = a<span class="exponent">3</span> + b<span class="exponent">3</span> + 3ab(a + b)</div>
+                    <div>Here, a = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x, b = 1</div>
+                    <div>[<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x + 1]<span class="exponent">3</span> = (<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x)<span class="exponent">3</span> + (1)<span class="exponent">3</span> + 3(<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x)(1)(<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x + 1) = <div class="fraction"><span class="numerator">27</span><span class="denominator">8</span></div>x<span class="exponent">3</span> + 1 + <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>x(<div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div>x + 1)</div>
+                    <div>= <div class="fraction"><span class="numerator">27</span><span class="denominator">8</span></div>x<span class="exponent">3</span> + 1 + <div class="fraction"><span class="numerator">27</span><span class="denominator">4</span></div>x<span class="exponent">2</span> + <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>x</div>
+                    <div class="answer">Answer: <div class="fraction"><span class="numerator">27</span><span class="denominator">8</span></div>x<span class="exponent">3</span> + <div class="fraction"><span class="numerator">27</span><span class="denominator">4</span></div>x<span class="exponent">2</span> + <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>x + 1</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) [x - <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y]<span class="exponent">3</span></div>
+                    <div>Using identity: (a - b)<span class="exponent">3</span> = a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3ab(a - b)</div>
+                    <div>Here, a = x, b = <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y</div>
+                    <div>[x - <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y]<span class="exponent">3</span> = x<span class="exponent">3</span> - (<div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y)<span class="exponent">3</span> - 3(x)(<div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y)(x - <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y) = x<span class="exponent">3</span> - <div class="fraction"><span class="numerator">8</span><span class="denominator">27</span></div>y<span class="exponent">3</span> - 2xy(x - <div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div>y)</div>
+                    <div>= x<span class="exponent">3</span> - <div class="fraction"><span class="numerator">8</span><span class="denominator">27</span></div>y<span class="exponent">3</span> - 2x<span class="exponent">2</span>y + <div class="fraction"><span class="numerator">4</span><span class="denominator">3</span></div>xy<span class="exponent">2</span></div>
+                    <div class="answer">Answer: x<span class="exponent">3</span> - 2x<span class="exponent">2</span>y + <div class="fraction"><span class="numerator">4</span><span class="denominator">3</span></div>xy<span class="exponent">2</span> - <div class="fraction"><span class="numerator">8</span><span class="denominator">27</span></div>y<span class="exponent">3</span></div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-card">
+                <div class="question-title">Question 7: Evaluate the following using suitable identities:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) (99)<span class="exponent">3</span></div>
+                    <div>99 = 100 - 1</div>
+                    <div>Using identity: (a - b)<span class="exponent">3</span> = a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3ab(a - b)</div>
+                    <div>Here, a = 100, b = 1</div>
+                    <div>(99)<span class="exponent">3</span> = (100 - 1)<span class="exponent">3</span> = 100<span class="exponent">3</span> - 1<span class="exponent">3</span> - 3(100)(1)(100 - 1) = 1000000 - 1 - 300(99) = 1000000 - 1 - 29700 = 970299</div>
+                    <div class="answer">Answer: 970299</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) (102)<span class="exponent">3</span></div>
+                    <div>102 = 100 + 2</div>
+                    <div>Using identity: (a + b)<span class="exponent">3</span> = a<span class="exponent">3</span> + b<span class="exponent">3</span> + 3ab(a + b)</div>
+                    <div>Here, a = 100, b = 2</div>
+                    <div>(102)<span class="exponent">3</span> = (100 + 2)<span class="exponent">3</span> = 100<span class="exponent">3</span> + 2<span class="exponent">3</span> + 3(100)(2)(100 + 2) = 1000000 + 8 + 600(102) = 1000000 + 8 + 61200 = 1061208</div>
+                    <div class="answer">Answer: 1061208</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) (998)<span class="exponent">3</span></div>
+                    <div>998 = 1000 - 2</div>
+                    <div>Using identity: (a - b)<span class="exponent">3</span> = a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3ab(a - b)</div>
+                    <div>Here, a = 1000, b = 2</div>
+                    <div>(998)<span class="exponent">3</span> = (1000 - 2)<span class="exponent">3</span> = 1000<span class="exponent">3</span> - 2<span class="exponent">3</span> - 3(1000)(2)(1000 - 2) = 1000000000 - 8 - 6000(998) = 1000000000 - 8 - 5988000 = 994011992</div>
+                    <div class="answer">Answer: 994011992</div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-card">
+                <div class="question-title">Question 8: Factorise each of the following:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 8a<span class="exponent">3</span> + b<span class="exponent">3</span> + 12a<span class="exponent">2</span>b + 6ab<span class="exponent">2</span></div>
+                    <div>This is of the form a<span class="exponent">3</span> + b<span class="exponent">3</span> + 3a<span class="exponent">2</span>b + 3ab<span class="exponent">2</span> = (a + b)<span class="exponent">3</span></div>
+                    <div>Here, a = 2a, b = b</div>
+                    <div>8a<span class="exponent">3</span> + b<span class="exponent">3</span> + 12a<span class="exponent">2</span>b + 6ab<span class="exponent">2</span> = (2a)<span class="exponent">3</span> + (b)<span class="exponent">3</span> + 3(2a)<span class="exponent">2</span>(b) + 3(2a)(b)<span class="exponent">2</span> = (2a + b)<span class="exponent">3</span></div>
+                    <div class="answer">Answer: (2a + b)<span class="exponent">3</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 8a<span class="exponent">3</span> - b<span class="exponent">3</span> - 12a<span class="exponent">2</span>b + 6ab<span class="exponent">2</span></div>
+                    <div>This is of the form a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3a<span class="exponent">2</span>b + 3ab<span class="exponent">2</span> = (a - b)<span class="exponent">3</span></div>
+                    <div>Here, a = 2a, b = b</div>
+                    <div>8a<span class="exponent">3</span> - b<span class="exponent">3</span> - 12a<span class="exponent">2</span>b + 6ab<span class="exponent">2</span> = (2a)<span class="exponent">3</span> - (b)<span class="exponent">3</span> - 3(2a)<span class="exponent">2</span>(b) + 3(2a)(b)<span class="exponent">2</span> = (2a - b)<span class="exponent">3</span></div>
+                    <div class="answer">Answer: (2a - b)<span class="exponent">3</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iii) 27 - 125a<span class="exponent">3</span> - 135a + 225a<span class="exponent">2</span></div>
+                    <div>Rearrange: 27 - 125a<span class="exponent">3</span> - 135a + 225a<span class="exponent">2</span> = 27 - 135a + 225a<span class="exponent">2</span> - 125a<span class="exponent">3</span></div>
+                    <div>This is of the form a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3a<span class="exponent">2</span>b + 3ab<span class="exponent">2</span> = (a - b)<span class="exponent">3</span></div>
+                    <div>Here, a = 3, b = 5a</div>
+                    <div>27 - 125a<span class="exponent">3</span> - 135a + 225a<span class="exponent">2</span> = (3)<span class="exponent">3</span> - (5a)<span class="exponent">3</span> - 3(3)<span class="exponent">2</span>(5a) + 3(3)(5a)<span class="exponent">2</span> = (3 - 5a)<span class="exponent">3</span></div>
+                    <div class="answer">Answer: (3 - 5a)<span class="exponent">3</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(iv) 64a<span class="exponent">3</span> - 27b<span class="exponent">3</span> - 144a<span class="exponent">2</span>b + 108ab<span class="exponent">2</span></div>
+                    <div>This is of the form a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3a<span class="exponent">2</span>b + 3ab<span class="exponent">2</span> = (a - b)<span class="exponent">3</span></div>
+                    <div>Here, a = 4a, b = 3b</div>
+                    <div>64a<span class="exponent">3</span> - 27b<span class="exponent">3</span> - 144a<span class="exponent">2</span>b + 108ab<span class="exponent">2</span> = (4a)<span class="exponent">3</span> - (3b)<span class="exponent">3</span> - 3(4a)<span class="exponent">2</span>(3b) + 3(4a)(3b)<span class="exponent">2</span> = (4a - 3b)<span class="exponent">3</span></div>
+                    <div class="answer">Answer: (4a - 3b)<span class="exponent">3</span></div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(v) 27p<span class="exponent">3</span> - <div class="fraction"><span class="numerator">1</span><span class="denominator">216</span></div> - <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>p<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>p</div>
+                    <div>Rearrange: 27p<span class="exponent">3</span> - <div class="fraction"><span class="numerator">1</span><span class="denominator">216</span></div> - <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>p<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>p = 27p<span class="exponent">3</span> - <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>p<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>p - <div class="fraction"><span class="numerator">1</span><span class="denominator">216</span></div></div>
+                    <div>This is of the form a<span class="exponent">3</span> - b<span class="exponent">3</span> - 3a<span class="exponent">2</span>b + 3ab<span class="exponent">2</span> = (a - b)<span class="exponent">3</span></div>
+                    <div>Here, a = 3p, b = <div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div></div>
+                    <div>27p<span class="exponent">3</span> - <div class="fraction"><span class="numerator">1</span><span class="denominator">216</span></div> - <div class="fraction"><span class="numerator">9</span><span class="denominator">2</span></div>p<span class="exponent">2</span> + <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div>p = (3p)<span class="exponent">3</span> - (<div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div>)<span class="exponent">3</span> - 3(3p)<span class="exponent">2</span>(<div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div>) + 3(3p)(<div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div>)<span class="exponent">2</span> = (3p - <div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div>)<span class="exponent">3</span></div>
+                    <div class="answer">Answer: (3p - <div class="fraction"><span class="numerator">1</span><span class="denominator">6</span></div>)<span class="exponent">3</span></div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-card">
+                <div class="question-title">Question 9: Verify:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) x<span class="exponent">3</span> + y<span class="exponent">3</span> = (x + y)(x<span class="exponent">2</span> - xy + y<span class="exponent">2</span>)</div>
+                    <div>RHS: (x + y)(x<span class="exponent">2</span> - xy + y<span class="exponent">2</span>) = x(x<span class="exponent">2</span> - xy + y<span class="exponent">2</span>) + y(x<span class="exponent">2</span> - xy + y<span class="exponent">2</span>)</div>
+                    <div>= x<span class="exponent">3</span> - x<span class="exponent">2</span>y + xy<span class="exponent">2</span> + x<span class="exponent">2</span>y - xy<span class="exponent">2</span> + y<span class="exponent">3</span> = x<span class="exponent">3</span> + y<span class="exponent">3</span></div>
+                    <div>LHS = RHS, hence verified.</div>
+                    <div class="answer">Answer: Verified</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) x<span class="exponent">3</span> - y<span class="exponent">3</span> = (x - y)(x<span class="exponent">2</span> + xy + y<span class="exponent">2</span>)</div>
+                    <div>RHS: (x - y)(x<span class="exponent">2</span> + xy + y<span class="exponent">2</span>) = x(x<span class="exponent">2</span> + xy + y<span class="exponent">2</span>) - y(x<span class="exponent">2</span> + xy + y<span class="exponent">2</span>)</div>
+                    <div>= x<span class="exponent">3</span> + x<span class="exponent">2</span>y + xy<span class="exponent">2</span> - x<span class="exponent">2</span>y - xy<span class="exponent">2</span> - y<span class="exponent">3</span> = x<span class="exponent">3</span> - y<span class="exponent">3</span></div>
+                    <div>LHS = RHS, hence verified.</div>
+                    <div class="answer">Answer: Verified</div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-card">
+                <div class="question-title">Question 10: Factorise each of the following:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) 27y<span class="exponent">3</span> + 125z<span class="exponent">3</span></div>
+                    <div>Using identity: a<span class="exponent">3</span> + b<span class="exponent">3</span> = (a + b)(a<span class="exponent">2</span> - ab + b<span class="exponent">2</span>)</div>
+                    <div>Here, a = 3y, b = 5z</div>
+                    <div>27y<span class="exponent">3</span> + 125z<span class="exponent">3</span> = (3y)<span class="exponent">3</span> + (5z)<span class="exponent">3</span> = (3y + 5z)[(3y)<span class="exponent">2</span> - (3y)(5z) + (5z)<span class="exponent">2</span>] = (3y + 5z)(9y<span class="exponent">2</span> - 15yz + 25z<span class="exponent">2</span>)</div>
+                    <div class="answer">Answer: (3y + 5z)(9y<span class="exponent">2</span> - 15yz + 25z<span class="exponent">2</span>)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) 64m<span class="exponent">3</span> - 343n<span class="exponent">3</span></div>
+                    <div>Using identity: a<span class="exponent">3</span> - b<span class="exponent">3</span> = (a - b)(a<span class="exponent">2</span> + ab + b<span class="exponent">2</span>)</div>
+                    <div>Here, a = 4m, b = 7n</div>
+                    <div>64m<span class="exponent">3</span> - 343n<span class="exponent">3</span> = (4m)<span class="exponent">3</span> - (7n)<span class="exponent">3</span> = (4m - 7n)[(4m)<span class="exponent">2</span> + (4m)(7n) + (7n)<span class="exponent">2</span>] = (4m - 7n)(16m<span class="exponent">2</span> + 28mn + 49n<span class="exponent">2</span>)</div>
+                    <div class="answer">Answer: (4m - 7n)(16m<span class="exponent">2</span> + 28mn + 49n<span class="exponent">2</span>)</div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question-card">
+                <div class="question-title">Question 11: Factorise: 27x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 9xyz</div>
+                
+                <div class="solution-step">
+                    <div>Using identity: a<span class="exponent">3</span> + b<span class="exponent">3</span> + c<span class="exponent">3</span> - 3abc = (a + b + c)(a<span class="exponent">2</span> + b<span class="exponent">2</span> + c<span class="exponent">2</span> - ab - bc - ca)</div>
+                    <div>Here, a = 3x, b = y, c = z</div>
+                    <div>27x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 9xyz = (3x)<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 3(3x)(y)(z) = (3x + y + z)[(3x)<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - (3x)(y) - (y)(z) - (z)(3x)]</div>
+                    <div>= (3x + y + z)(9x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - 3xy - yz - 3zx)</div>
+                    <div class="answer">Answer: (3x + y + z)(9x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - 3xy - yz - 3zx)</div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question-card">
+                <div class="question-title">Question 12: Verify that x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 3xyz = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>(x + y + z)[(x - y)<span class="exponent">2</span> + (y - z)<span class="exponent">2</span> + (z - x)<span class="exponent">2</span>]</div>
+                
+                <div class="solution-step">
+                    <div>RHS: <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>(x + y + z)[(x - y)<span class="exponent">2</span> + (y - z)<span class="exponent">2</span> + (z - x)<span class="exponent">2</span>]</div>
+                    <div>Expand the squares: (x - y)<span class="exponent">2</span> = x<span class="exponent">2</span> - 2xy + y<span class="exponent">2</span>, (y - z)<span class="exponent">2</span> = y<span class="exponent">2</span> - 2yz + z<span class="exponent">2</span>, (z - x)<span class="exponent">2</span> = z<span class="exponent">2</span> - 2zx + x<span class="exponent">2</span></div>
+                    <div>Sum = 2x<span class="exponent">2</span> + 2y<span class="exponent">2</span> + 2z<span class="exponent">2</span> - 2xy - 2yz - 2zx = 2(x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx)</div>
+                    <div>RHS = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>(x + y + z) × 2(x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx) = (x + y + z)(x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx)</div>
+                    <div>We know x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 3xyz = (x + y + z)(x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx)</div>
+                    <div>LHS = RHS, hence verified.</div>
+                    <div class="answer">Answer: Verified</div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question-card">
+                <div class="question-title">Question 13: If x + y + z = 0, show that x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> = 3xyz</div>
+                
+                <div class="solution-step">
+                    <div>We know the identity: x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 3xyz = (x + y + z)(x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx)</div>
+                    <div>Given x + y + z = 0</div>
+                    <div>So, x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> - 3xyz = 0 × (x<span class="exponent">2</span> + y<span class="exponent">2</span> + z<span class="exponent">2</span> - xy - yz - zx) = 0</div>
+                    <div>Therefore, x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> = 3xyz</div>
+                    <div class="answer">Answer: Proved</div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question-card">
+                <div class="question-title">Question 14: Without actually calculating the cubes, find the value of each of the following:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(i) (-12)<span class="exponent">3</span> + (7)<span class="exponent">3</span> + (5)<span class="exponent">3</span></div>
+                    <div>Check if x + y + z = 0: -12 + 7 + 5 = 0</div>
+                    <div>Since x + y + z = 0, x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> = 3xyz</div>
+                    <div>So, (-12)<span class="exponent">3</span> + (7)<span class="exponent">3</span> + (5)<span class="exponent">3</span> = 3(-12)(7)(5) = -1260</div>
+                    <div class="answer">Answer: -1260</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">(ii) (28)<span class="exponent">3</span> + (-15)<span class="exponent">3</span> + (-13)<span class="exponent">3</span></div>
+                    <div>Check if x + y + z = 0: 28 + (-15) + (-13) = 28 - 15 - 13 = 0</div>
+                    <div>Since x + y + z = 0, x<span class="exponent">3</span> + y<span class="exponent">3</span> + z<span class="exponent">3</span> = 3xyz</div>
+                    <div>So, (28)<span class="exponent">3</span> + (-15)<span class="exponent">3</span> + (-13)<span class="exponent">3</span> = 3(28)(-15)(-13) = 3(28)(195) = 16380</div>
+                    <div class="answer">Answer: 16380</div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question-card">
+                <div class="question-title">Question 15: Give possible expressions for the length and breadth of each of the following rectangles, in which their areas are given:</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">Area: 25a<span class="exponent">2</span> - 35a + 12</div>
+                    <div>Factorise 25a<span class="exponent">2</span> - 35a + 12</div>
+                    <div>Split the middle term: -35a</div>
+                    <div>Find two numbers whose product is 25 × 12 = 300 and sum is -35</div>
+                    <div>The numbers are -20 and -15</div>
+                    <div>25a<span class="exponent">2</span> - 35a + 12 = 25a<span class="exponent">2</span> - 20a - 15a + 12 = 5a(5a - 4) - 3(5a - 4) = (5a - 4)(5a - 3)</div>
+                    <div>So, possible length and breadth are (5a - 4) and (5a - 3)</div>
+                    <div class="answer">Answer: Length = 5a - 4, Breadth = 5a - 3 (or vice versa)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">Area: 35y<span class="exponent">2</span> + 13y - 12</div>
+                    <div>Factorise 35y<span class="exponent">2</span> + 13y - 12</div>
+                    <div>Split the middle term: 13y</div>
+                    <div>Find two numbers whose product is 35 × -12 = -420 and sum is 13</div>
+                    <div>The numbers are 28 and -15</div>
+                    <div>35y<span class="exponent">2</span> + 13y - 12 = 35y<span class="exponent">2</span> + 28y - 15y - 12 = 7y(5y + 4) - 3(5y + 4) = (5y + 4)(7y - 3)</div>
+                    <div>So, possible length and breadth are (5y + 4) and (7y - 3)</div>
+                    <div class="answer">Answer: Length = 5y + 4, Breadth = 7y - 3 (or vice versa)</div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question-card">
+                <div class="question-title">Question 16: What are the possible expressions for the dimensions of the cuboids whose volumes are given below?</div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">Volume: 3x<span class="exponent">2</span> - 12x</div>
+                    <div>Factorise 3x<span class="exponent">2</span> - 12x</div>
+                    <div>3x<span class="exponent">2</span> - 12x = 3x(x - 4)</div>
+                    <div>So, possible dimensions are 3, x, and (x - 4)</div>
+                    <div class="answer">Answer: 3, x, (x - 4)</div>
+                </div>
+                
+                <div class="solution-step">
+                    <div class="math-expr">Volume: 12ky<span class="exponent">2</span> + 8ky - 20k</div>
+                    <div>Factorise 12ky<span class="exponent">2</span> + 8ky - 20k</div>
+                    <div>First take common factor: 4k(3y<span class="exponent">2</span> + 2y - 5)</div>
+                    <div>Now factorise 3y<span class="exponent">2</span> + 2y - 5</div>
+                    <div>Split the middle term: 2y</div>
+                    <div>Find two numbers whose product is 3 × -5 = -15 and sum is 2</div>
+                    <div>The numbers are 5 and -3</div>
+                    <div>3y<span class="exponent">2</span> + 2y - 5 = 3y<span class="exponent">2</span> + 5y - 3y - 5 = y(3y + 5) - 1(3y + 5) = (3y + 5)(y - 1)</div>
+                    <div>So, 12ky<span class="exponent">2</span> + 8ky - 20k = 4k(3y + 5)(y - 1)</div>
+                    <div>Possible dimensions are 4k, (3y + 5), and (y - 1)</div>
+                    <div class="answer">Answer: 4k, (3y + 5), (y - 1)</div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

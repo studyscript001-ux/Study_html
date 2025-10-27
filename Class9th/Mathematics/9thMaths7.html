@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 7: Triangles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .triangle-notation {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 7<br> Triangles</h1>
+            <p class="mt-2 text-lg">Class 9th Mathematics</p>
+        </div>
+
+        <!-- Exercise 7.1 Section -->
+        <section id="exercise-7-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: In quadrilateral ACBD, AC = AD and AB bisects ∠A (see Fig. 7.16). Show that ΔABC ≅ ΔABD. What can you say about BC and BD?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AC = AD and AB bisects ∠A</p>
+                        <p class="mb-2">In ΔABC and ΔABD:</p>
+                        <p class="mb-2">AC = AD (Given)</p>
+                        <p class="mb-2">∠CAB = ∠DAB (AB bisects ∠A)</p>
+                        <p class="mb-2">AB = AB (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔABD (by SAS congruence rule)</p>
+                        <p class="mb-2">Since the triangles are congruent, BC = BD (CPCT)</p>
+                        <p><strong>Answer:</strong> BC = BD</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AC = AD aur AB, ∠A ko bisect karta hai. Dono triangles ABC aur ABD mein, AC = AD, ∠CAB = ∠DAB, aur AB common side hai. Isliye SAS congruence rule se ΔABC ≅ ΔABD. Toh corresponding sides BC aur BD equal hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: ABCD is a quadrilateral in which AD = BC and ∠DAB = ∠CBA (see Fig. 7.17). Prove that (i) ΔABD ≅ ΔBAC (ii) BD = AC (iii) ∠ABD = ∠BAC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AD = BC and ∠DAB = ∠CBA</p>
+                        <p class="mb-2">(i) In ΔABD and ΔBAC:</p>
+                        <p class="mb-2">AD = BC (Given)</p>
+                        <p class="mb-2">∠DAB = ∠CBA (Given)</p>
+                        <p class="mb-2">AB = BA (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABD ≅ ΔBAC (by SAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔABD ≅ ΔBAC, BD = AC (CPCT)</p>
+                        
+                        <p class="mb-2 mt-4">(iii) Since ΔABD ≅ ΔBAC, ∠ABD = ∠BAC (CPCT)</p>
+                        
+                        <p><strong>Answer:</strong> All three parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AD = BC aur ∠DAB = ∠CBA. Dono triangles ABD aur BAC mein, AD = BC, ∠DAB = ∠CBA, aur AB common side hai. Isliye SAS rule se ΔABD ≅ ΔBAC. CPCT se BD = AC aur ∠ABD = ∠BAC.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: AD and BC are equal perpendiculars to a line segment AB (see Fig. 7.18). Show that CD bisects AB.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AD ⊥ AB, BC ⊥ AB, and AD = BC</p>
+                        <p class="mb-2">In ΔAOD and ΔBOC:</p>
+                        <p class="mb-2">∠DAO = ∠CBO = 90° (Both perpendicular to AB)</p>
+                        <p class="mb-2">AD = BC (Given)</p>
+                        <p class="mb-2">∠AOD = ∠BOC (Vertically opposite angles)</p>
+                        <p class="mb-2">Therefore, ΔAOD ≅ ΔBOC (by AAS congruence rule)</p>
+                        <p class="mb-2">Since the triangles are congruent, AO = OB (CPCT)</p>
+                        <p class="mb-2">Hence, CD bisects AB at O</p>
+                        <p><strong>Answer:</strong> CD bisects AB</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AD aur BC dono AB par perpendicular hain aur AD = BC. Triangles AOD aur BOC mein, ∠DAO = ∠CBO = 90°, AD = BC, aur ∠AOD = ∠BOC (vertically opposite). Isliye AAS rule se ΔAOD ≅ ΔBOC. CPCT se AO = OB, matlab CD, AB ko bisect karta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: l and m are two parallel lines intersected by another pair of parallel lines p and q (see Fig. 7.19). Show that ΔABC ≅ ΔCDA.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: l || m and p || q</p>
+                        <p class="mb-2">In ΔABC and ΔCDA:</p>
+                        <p class="mb-2">∠BAC = ∠DCA (Alternate interior angles, p || q)</p>
+                        <p class="mb-2">∠BCA = ∠DAC (Alternate interior angles, l || m)</p>
+                        <p class="mb-2">AC = CA (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔCDA (by ASA congruence rule)</p>
+                        <p><strong>Answer:</strong> ΔABC ≅ ΔCDA</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki l || m aur p || q. Triangles ABC aur CDA mein, ∠BAC = ∠DCA (alternate interior angles, p || q), ∠BCA = ∠DAC (alternate interior angles, l || m), aur AC common side hai. Isliye ASA rule se ΔABC ≅ ΔCDA.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Line l is the bisector of an angle ∠A and B is any point on l. BP and BQ are perpendiculars from B to the arms of ∠A (see Fig. 7.20). Show that: (i) ΔAPB ≅ ΔAQB (ii) BP = BQ or B is equidistant from the arms of ∠A.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: l is the bisector of ∠A, BP ⊥ AP, BQ ⊥ AQ</p>
+                        <p class="mb-2">(i) In ΔAPB and ΔAQB:</p>
+                        <p class="mb-2">∠PAB = ∠QAB (l bisects ∠A)</p>
+                        <p class="mb-2">∠APB = ∠AQB = 90° (Both are perpendiculars)</p>
+                        <p class="mb-2">AB = AB (Common side)</p>
+                        <p class="mb-2">Therefore, ΔAPB ≅ ΔAQB (by AAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔAPB ≅ ΔAQB, BP = BQ (CPCT)</p>
+                        <p class="mb-2">Hence, B is equidistant from the arms of ∠A</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki l, ∠A ka bisector hai, aur BP aur BQ perpendicular hain. Triangles APB aur AQB mein, ∠PAB = ∠QAB (l bisects ∠A), ∠APB = ∠AQB = 90°, aur AB common side hai. Isliye AAS rule se ΔAPB ≅ ΔAQB. CPCT se BP = BQ, matlab B, ∠A ki arms se equidistant hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: In Fig. 7.21, AC = AE, AB = AD and ∠BAD = ∠EAC. Show that BC = DE.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AC = AE, AB = AD, ∠BAD = ∠EAC</p>
+                        <p class="mb-2">From ∠BAD = ∠EAC, we can write:</p>
+                        <p class="mb-2">∠BAD + ∠DAC = ∠EAC + ∠DAC</p>
+                        <p class="mb-2">So, ∠BAC = ∠DAE</p>
+                        <p class="mb-2">In ΔABC and ΔADE:</p>
+                        <p class="mb-2">AB = AD (Given)</p>
+                        <p class="mb-2">AC = AE (Given)</p>
+                        <p class="mb-2">∠BAC = ∠DAE (Proved above)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔADE (by SAS congruence rule)</p>
+                        <p class="mb-2">Since the triangles are congruent, BC = DE (CPCT)</p>
+                        <p><strong>Answer:</strong> BC = DE</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AC = AE, AB = AD, aur ∠BAD = ∠EAC. ∠BAD = ∠EAC se hum likh sakte hain ∠BAD + ∠DAC = ∠EAC + ∠DAC, yaani ∠BAC = ∠DAE. Triangles ABC aur ADE mein, AB = AD, AC = AE, aur ∠BAC = ∠DAE. Isliye SAS rule se ΔABC ≅ ΔADE. CPCT se BC = DE.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: AB is a line segment and P is its mid-point. D and E are points on the same side of AB such that ∠BAD = ∠ABE and ∠EPA = ∠DPB (see Fig. 7.22). Show that (i) ΔDAP ≅ ΔEBP (ii) AD = BE</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: P is mid-point of AB, ∠BAD = ∠ABE, ∠EPA = ∠DPB</p>
+                        <p class="mb-2">From ∠EPA = ∠DPB, we can write:</p>
+                        <p class="mb-2">∠EPA + ∠DPE = ∠DPB + ∠DPE</p>
+                        <p class="mb-2">So, ∠APD = ∠BPE</p>
+                        <p class="mb-2">(i) In ΔDAP and ΔEBP:</p>
+                        <p class="mb-2">AP = BP (P is mid-point of AB)</p>
+                        <p class="mb-2">∠DAP = ∠EBP (Given: ∠BAD = ∠ABE)</p>
+                        <p class="mb-2">∠APD = ∠BPE (Proved above)</p>
+                        <p class="mb-2">Therefore, ΔDAP ≅ ΔEBP (by ASA congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔDAP ≅ ΔEBP, AD = BE (CPCT)</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki P, AB ka mid-point hai, ∠BAD = ∠ABE, aur ∠EPA = ∠DPB. ∠EPA = ∠DPB se hum likh sakte hain ∠EPA + ∠DPE = ∠DPB + ∠DPE, yaani ∠APD = ∠BPE. Triangles DAP aur EBP mein, AP = BP, ∠DAP = ∠EBP, aur ∠APD = ∠BPE. Isliye ASA rule se ΔDAP ≅ ΔEBP. CPCT se AD = BE.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: In right triangle ABC, right angled at C, M is the mid-point of hypotenuse AB. C is joined to M and produced to a point D such that DM = CM. Point D is joined to point B (see Fig. 7.23). Show that: (i) ΔAMC ≅ ΔBMD (ii) ∠DBC is a right angle. (iii) ΔDBC ≅ ΔACB (iv) CM = 1/2 AB</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠C = 90°, M is mid-point of AB, DM = CM</p>
+                        <p class="mb-2">(i) In ΔAMC and ΔBMD:</p>
+                        <p class="mb-2">AM = BM (M is mid-point of AB)</p>
+                        <p class="mb-2">∠AMC = ∠BMD (Vertically opposite angles)</p>
+                        <p class="mb-2">CM = DM (Given)</p>
+                        <p class="mb-2">Therefore, ΔAMC ≅ ΔBMD (by SAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔAMC ≅ ΔBMD, ∠ACM = ∠BDM (CPCT)</p>
+                        <p class="mb-2">But these are alternate interior angles for lines AC and BD with transversal CD</p>
+                        <p class="mb-2">So, AC || BD</p>
+                        <p class="mb-2">Now, AC ⊥ BC (Given: ∠C = 90°)</p>
+                        <p class="mb-2">Since AC || BD and AC ⊥ BC, therefore BD ⊥ BC</p>
+                        <p class="mb-2">So, ∠DBC = 90°</p>
+                        
+                        <p class="mb-2 mt-4">(iii) In ΔDBC and ΔACB:</p>
+                        <p class="mb-2">BC = CB (Common side)</p>
+                        <p class="mb-2">∠DBC = ∠ACB = 90°</p>
+                        <p class="mb-2">DB = AC (Since ΔAMC ≅ ΔBMD, so AC = BD by CPCT)</p>
+                        <p class="mb-2">Therefore, ΔDBC ≅ ΔACB (by SAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(iv) Since ΔDBC ≅ ΔACB, DC = AB (CPCT)</p>
+                        <p class="mb-2">But DC = 2CM (Since DM = CM)</p>
+                        <p class="mb-2">So, 2CM = AB, or CM = 1/2 AB</p>
+                        
+                        <p><strong>Answer:</strong> All four parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki ∠C = 90°, M, AB ka mid-point hai, aur DM = CM. (i) Triangles AMC aur BMD mein, AM = BM, ∠AMC = ∠BMD (vertically opposite), aur CM = DM. Isliye SAS rule se ΔAMC ≅ ΔBMD. (ii) CPCT se ∠ACM = ∠BDM, jo alternate interior angles hain, isliye AC || BD. AC ⊥ BC, toh BD ⊥ BC, yaani ∠DBC = 90°. (iii) Triangles DBC aur ACB mein, BC common, ∠DBC = ∠ACB = 90°, aur DB = AC (CPCT). Isliye SAS rule se ΔDBC ≅ ΔACB. (iv) CPCT se DC = AB, par DC = 2CM, isliye CM = 1/2 AB.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.2 Section -->
+        <section id="exercise-7-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: In an isosceles triangle ABC, with AB = AC, the bisectors of ∠B and ∠C intersect each other at O. Join A to O. Show that: (i) OB = OC (ii) AO bisects ∠A</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = AC, OB and OC are bisectors of ∠B and ∠C respectively</p>
+                        <p class="mb-2">(i) Since AB = AC, ∠B = ∠C (Angles opposite to equal sides)</p>
+                        <p class="mb-2">So, 1/2 ∠B = 1/2 ∠C, i.e., ∠OBC = ∠OCB</p>
+                        <p class="mb-2">Therefore, OB = OC (Sides opposite to equal angles)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) In ΔAOB and ΔAOC:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">OB = OC (Proved above)</p>
+                        <p class="mb-2">AO = AO (Common side)</p>
+                        <p class="mb-2">Therefore, ΔAOB ≅ ΔAOC (by SSS congruence rule)</p>
+                        <p class="mb-2">So, ∠BAO = ∠CAO (CPCT)</p>
+                        <p class="mb-2">Hence, AO bisects ∠A</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = AC, aur OB aur OC, ∠B aur ∠C ke bisectors hain. (i) AB = AC se ∠B = ∠C, isliye 1/2 ∠B = 1/2 ∠C, yaani ∠OBC = ∠OCB. Toh OB = OC. (ii) Triangles AOB aur AOC mein, AB = AC, OB = OC, aur AO common. Isliye SSS rule se ΔAOB ≅ ΔAOC. CPCT se ∠BAO = ∠CAO, matlab AO, ∠A ko bisect karta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: In ΔABC, AD is the perpendicular bisector of BC (see Fig. 7.30). Show that ΔABC is an isosceles triangle in which AB = AC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AD is perpendicular bisector of BC, so BD = DC and ∠ADB = ∠ADC = 90°</p>
+                        <p class="mb-2">In ΔADB and ΔADC:</p>
+                        <p class="mb-2">BD = DC (AD bisects BC)</p>
+                        <p class="mb-2">∠ADB = ∠ADC = 90° (AD ⊥ BC)</p>
+                        <p class="mb-2">AD = AD (Common side)</p>
+                        <p class="mb-2">Therefore, ΔADB ≅ ΔADC (by SAS congruence rule)</p>
+                        <p class="mb-2">So, AB = AC (CPCT)</p>
+                        <p class="mb-2">Hence, ΔABC is isosceles with AB = AC</p>
+                        <p><strong>Answer:</strong> ΔABC is isosceles with AB = AC</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AD, BC ka perpendicular bisector hai, matlab BD = DC aur ∠ADB = ∠ADC = 90°. Triangles ADB aur ADC mein, BD = DC, ∠ADB = ∠ADC = 90°, aur AD common. Isliye SAS rule se ΔADB ≅ ΔADC. CPCT se AB = AC, matlab ΔABC isosceles hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: ABC is an isosceles triangle in which altitudes BE and CF are drawn to equal sides AC and AB respectively (see Fig. 7.31). Show that these altitudes are equal.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = AC, BE ⊥ AC, CF ⊥ AB</p>
+                        <p class="mb-2">In ΔABE and ΔACF:</p>
+                        <p class="mb-2">∠A = ∠A (Common angle)</p>
+                        <p class="mb-2">∠AEB = ∠AFC = 90° (BE and CF are altitudes)</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">Therefore, ΔABE ≅ ΔACF (by AAS congruence rule)</p>
+                        <p class="mb-2">So, BE = CF (CPCT)</p>
+                        <p><strong>Answer:</strong> BE = CF</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = AC, BE ⊥ AC, CF ⊥ AB. Triangles ABE aur ACF mein, ∠A common, ∠AEB = ∠AFC = 90°, aur AB = AC. Isliye AAS rule se ΔABE ≅ ΔACF. CPCT se BE = CF.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: ABC is a triangle in which altitudes BE and CF to sides AC and AB are equal (see Fig. 7.32). Show that (i) ΔABE ≅ ΔACF (ii) AB = AC, i.e., ABC is an isosceles triangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: BE = CF, BE ⊥ AC, CF ⊥ AB</p>
+                        <p class="mb-2">(i) In ΔABE and ΔACF:</p>
+                        <p class="mb-2">∠A = ∠A (Common angle)</p>
+                        <p class="mb-2">∠AEB = ∠AFC = 90° (BE and CF are altitudes)</p>
+                        <p class="mb-2">BE = CF (Given)</p>
+                        <p class="mb-2">Therefore, ΔABE ≅ ΔACF (by AAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔABE ≅ ΔACF, AB = AC (CPCT)</p>
+                        <p class="mb-2">Hence, ΔABC is isosceles with AB = AC</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki BE = CF, BE ⊥ AC, CF ⊥ AB. (i) Triangles ABE aur ACF mein, ∠A common, ∠AEB = ∠AFC = 90°, aur BE = CF. Isliye AAS rule se ΔABE ≅ ΔACF. (ii) CPCT se AB = AC, matlab ΔABC isosceles hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: ABC and DBC are two isosceles triangles on the same base BC (see Fig. 7.33). Show that ∠ABD = ∠ACD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ΔABC and ΔDBC are isosceles on same base BC</p>
+                        <p class="mb-2">So, AB = AC and DB = DC</p>
+                        <p class="mb-2">In ΔABD and ΔACD:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">BD = CD (Given)</p>
+                        <p class="mb-2">AD = AD (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABD ≅ ΔACD (by SSS congruence rule)</p>
+                        <p class="mb-2">So, ∠ABD = ∠ACD (CPCT)</p>
+                        <p><strong>Answer:</strong> ∠ABD = ∠ACD</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki ΔABC aur ΔDBC isosceles hain same base BC par. Isliye AB = AC aur DB = DC. Triangles ABD aur ACD mein, AB = AC, BD = CD, aur AD common. Isliye SSS rule se ΔABD ≅ ΔACD. CPCT se ∠ABD = ∠ACD.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: ΔABC is an isosceles triangle in which AB = AC. Side BA is produced to D such that AD = AB (see Fig. 7.34). Show that ∠BCD is a right angle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = AC, AD = AB</p>
+                        <p class="mb-2">So, AB = AC = AD</p>
+                        <p class="mb-2">In ΔABC: AB = AC, so ∠ABC = ∠ACB (Angles opposite to equal sides)</p>
+                        <p class="mb-2">Let ∠ABC = ∠ACB = x</p>
+                        <p class="mb-2">In ΔADC: AD = AC, so ∠ADC = ∠ACD (Angles opposite to equal sides)</p>
+                        <p class="mb-2">Let ∠ADC = ∠ACD = y</p>
+                        <p class="mb-2">In ΔBCD, sum of angles = 180°</p>
+                        <p class="mb-2">So, ∠BCD + ∠BDC + ∠CBD = 180°</p>
+                        <p class="mb-2">∠BCD = ∠BCA + ∠ACD = x + y</p>
+                        <p class="mb-2">∠BDC = y</p>
+                        <p class="mb-2">∠CBD = x</p>
+                        <p class="mb-2">So, (x + y) + y + x = 180°</p>
+                        <p class="mb-2">2x + 2y = 180°</p>
+                        <p class="mb-2">x + y = 90°</p>
+                        <p class="mb-2">Therefore, ∠BCD = x + y = 90°</p>
+                        <p><strong>Answer:</strong> ∠BCD is a right angle</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = AC aur AD = AB, isliye AB = AC = AD. ΔABC mein AB = AC, isliye ∠ABC = ∠ACB = x. ΔADC mein AD = AC, isliye ∠ADC = ∠ACD = y. ΔBCD ke angles ka sum 180° hai: ∠BCD + ∠BDC + ∠CBD = (x+y) + y + x = 2x+2y = 180°, isliye x+y = 90°. Toh ∠BCD = x+y = 90°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: ABC is a right angled triangle in which ∠A = 90° and AB = AC. Find ∠B and ∠C.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠A = 90°, AB = AC</p>
+                        <p class="mb-2">Since AB = AC, ∠B = ∠C (Angles opposite to equal sides)</p>
+                        <p class="mb-2">Sum of angles in ΔABC = 180°</p>
+                        <p class="mb-2">So, ∠A + ∠B + ∠C = 180°</p>
+                        <p class="mb-2">90° + ∠B + ∠B = 180° (Since ∠B = ∠C)</p>
+                        <p class="mb-2">2∠B = 90°</p>
+                        <p class="mb-2">∠B = 45°</p>
+                        <p class="mb-2">Therefore, ∠C = 45°</p>
+                        <p><strong>Answer:</strong> ∠B = 45°, ∠C = 45°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki ∠A = 90° aur AB = AC. AB = AC se ∠B = ∠C. Triangle ke angles ka sum 180° hai: 90° + ∠B + ∠C = 180°. Par ∠B = ∠C, isliye 90° + 2∠B = 180°, yaani 2∠B = 90°, ∠B = 45°. Toh ∠C = 45°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Show that the angles of an equilateral triangle are 60° each.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ΔABC be an equilateral triangle with AB = BC = CA</p>
+                        <p class="mb-2">Since AB = BC, ∠C = ∠A (Angles opposite to equal sides)</p>
+                        <p class="mb-2">Since BC = CA, ∠A = ∠B (Angles opposite to equal sides)</p>
+                        <p class="mb-2">So, ∠A = ∠B = ∠C</p>
+                        <p class="mb-2">Sum of angles in ΔABC = 180°</p>
+                        <p class="mb-2">So, ∠A + ∠B + ∠C = 180°</p>
+                        <p class="mb-2">3∠A = 180° (Since all angles are equal)</p>
+                        <p class="mb-2">∠A = 60°</p>
+                        <p class="mb-2">Therefore, ∠A = ∠B = ∠C = 60°</p>
+                        <p><strong>Answer:</strong> All angles are 60°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equilateral triangle mein sabhi sides equal hain: AB = BC = CA. AB = BC se ∠C = ∠A. BC = CA se ∠A = ∠B. Toh sabhi angles equal hain: ∠A = ∠B = ∠C. Triangle ke angles ka sum 180° hai, isliye 3∠A = 180°, ∠A = 60°. Toh sabhi angles 60° ke hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.3 Section -->
+        <section id="exercise-7-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: ΔABC and ΔDBC are two isosceles triangles on the same base BC and vertices A and D are on the same side of BC (see Fig. 7.39). If AD is extended to intersect BC at P, show that (i) ΔABD ≅ ΔACD (ii) ΔABP ≅ ΔACP (iii) AP bisects ∠A as well as ∠D. (iv) AP is the perpendicular bisector of BC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ΔABC and ΔDBC are isosceles on same base BC</p>
+                        <p class="mb-2">So, AB = AC and DB = DC</p>
+                        
+                        <p class="mb-2 mt-4">(i) In ΔABD and ΔACD:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">BD = CD (Given)</p>
+                        <p class="mb-2">AD = AD (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABD ≅ ΔACD (by SSS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) In ΔABP and ΔACP:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">∠BAP = ∠CAP (Since ΔABD ≅ ΔACD, so ∠BAD = ∠CAD)</p>
+                        <p class="mb-2">AP = AP (Common side)</p>
+                        <p class="mb-2">Therefore, ΔABP ≅ ΔACP (by SAS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(iii) From (i), ∠BAD = ∠CAD, so AP bisects ∠A</p>
+                        <p class="mb-2">From (i), ∠BDA = ∠CDA, so AP bisects ∠D</p>
+                        
+                        <p class="mb-2 mt-4">(iv) From (ii), BP = CP (CPCT)</p>
+                        <p class="mb-2">And ∠APB = ∠APC (CPCT)</p>
+                        <p class="mb-2">But ∠APB + ∠APC = 180° (Linear pair)</p>
+                        <p class="mb-2">So, 2∠APB = 180°, ∠APB = 90°</p>
+                        <p class="mb-2">Therefore, AP ⊥ BC and BP = CP, so AP is perpendicular bisector of BC</p>
+                        
+                        <p><strong>Answer:</strong> All four parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki ΔABC aur ΔDBC isosceles hain same base BC par. (i) Triangles ABD aur ACD mein, AB = AC, BD = CD, aur AD common. Isliye SSS rule se ΔABD ≅ ΔACD. (ii) Triangles ABP aur ACP mein, AB = AC, ∠BAP = ∠CAP (part i se), aur AP common. Isliye SAS rule se ΔABP ≅ ΔACP. (iii) Part i se ∠BAD = ∠CAD, isliye AP, ∠A ko bisect karta hai. Part i se ∠BDA = ∠CDA, isliye AP, ∠D ko bisect karta hai. (iv) Part ii se BP = CP aur ∠APB = ∠APC. Linear pair se ∠APB + ∠APC = 180°, isliye ∠APB = 90°. Toh AP ⊥ BC aur BP = CP, matlab AP, BC ka perpendicular bisector hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: AD is an altitude of an isosceles triangle ABC in which AB = AC. Show that (i) AD bisects BC (ii) AD bisects ∠A.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = AC, AD is altitude, so AD ⊥ BC</p>
+                        
+                        <p class="mb-2 mt-4">(i) In ΔADB and ΔADC:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">∠ADB = ∠ADC = 90° (AD is altitude)</p>
+                        <p class="mb-2">AD = AD (Common side)</p>
+                        <p class="mb-2">Therefore, ΔADB ≅ ΔADC (by RHS congruence rule)</p>
+                        <p class="mb-2">So, BD = CD (CPCT)</p>
+                        <p class="mb-2">Hence, AD bisects BC</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔADB ≅ ΔADC, ∠BAD = ∠CAD (CPCT)</p>
+                        <p class="mb-2">Hence, AD bisects ∠A</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = AC aur AD altitude hai, matlab AD ⊥ BC. (i) Triangles ADB aur ADC mein, AB = AC, ∠ADB = ∠ADC = 90°, aur AD common. Isliye RHS rule se ΔADB ≅ ΔADC. CPCT se BD = CD, matlab AD, BC ko bisect karta hai. (ii) CPCT se ∠BAD = ∠CAD, matlab AD, ∠A ko bisect karta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Two sides AB and BC and median AM of one triangle ABC are respectively equal to sides PQ and QR and median PN of ΔPQR (see Fig. 7.40). Show that: (i) ΔABM ≅ ΔPQN (ii) ΔABC ≅ ΔPQR</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = PQ, BC = QR, AM = PN, and AM and PN are medians</p>
+                        <p class="mb-2">So, BM = 1/2 BC and QN = 1/2 QR</p>
+                        <p class="mb-2">Since BC = QR, BM = QN</p>
+                        
+                        <p class="mb-2 mt-4">(i) In ΔABM and ΔPQN:</p>
+                        <p class="mb-2">AB = PQ (Given)</p>
+                        <p class="mb-2">BM = QN (Proved above)</p>
+                        <p class="mb-2">AM = PN (Given)</p>
+                        <p class="mb-2">Therefore, ΔABM ≅ ΔPQN (by SSS congruence rule)</p>
+                        
+                        <p class="mb-2 mt-4">(ii) Since ΔABM ≅ ΔPQN, ∠ABM = ∠PQN (CPCT)</p>
+                        <p class="mb-2">So, ∠ABC = ∠PQR</p>
+                        <p class="mb-2">In ΔABC and ΔPQR:</p>
+                        <p class="mb-2">AB = PQ (Given)</p>
+                        <p class="mb-2">BC = QR (Given)</p>
+                        <p class="mb-2">∠ABC = ∠PQR (Proved above)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔPQR (by SAS congruence rule)</p>
+                        
+                        <p><strong>Answer:</strong> Both parts proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = PQ, BC = QR, AM = PN, aur AM aur PN medians hain. Isliye BM = 1/2 BC = 1/2 QR = QN. (i) Triangles ABM aur PQN mein, AB = PQ, BM = QN, aur AM = PN. Isliye SSS rule se ΔABM ≅ ΔPQN. (ii) CPCT se ∠ABM = ∠PQN, yaani ∠ABC = ∠PQR. Triangles ABC aur PQR mein, AB = PQ, BC = QR, aur ∠ABC = ∠PQR. Isliye SAS rule se ΔABC ≅ ΔPQR.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: BE and CF are two equal altitudes of a triangle ABC. Using RHS congruence rule, prove that the triangle ABC is isosceles.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: BE = CF, BE ⊥ AC, CF ⊥ AB</p>
+                        <p class="mb-2">In ΔBEC and ΔCFB:</p>
+                        <p class="mb-2">∠BEC = ∠CFB = 90° (BE and CF are altitudes)</p>
+                        <p class="mb-2">BC = CB (Common side)</p>
+                        <p class="mb-2">BE = CF (Given)</p>
+                        <p class="mb-2">Therefore, ΔBEC ≅ ΔCFB (by RHS congruence rule)</p>
+                        <p class="mb-2">So, ∠BCE = ∠CBF (CPCT)</p>
+                        <p class="mb-2">i.e., ∠ACB = ∠ABC</p>
+                        <p class="mb-2">Therefore, AB = AC (Sides opposite to equal angles)</p>
+                        <p class="mb-2">Hence, ΔABC is isosceles</p>
+                        <p><strong>Answer:</strong> ΔABC is isosceles</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki BE = CF, BE ⊥ AC, CF ⊥ AB. Triangles BEC aur CFB mein, ∠BEC = ∠CFB = 90°, BC common, aur BE = CF. Isliye RHS rule se ΔBEC ≅ ΔCFB. CPCT se ∠BCE = ∠CBF, yaani ∠ACB = ∠ABC. Toh AB = AC (equal angles ke opposite sides), matlab ΔABC isosceles hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: ABC is an isosceles triangle with AB = AC. Draw AP ⊥ BC to show that ∠B = ∠C.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB = AC, AP ⊥ BC</p>
+                        <p class="mb-2">In ΔAPB and ΔAPC:</p>
+                        <p class="mb-2">AB = AC (Given)</p>
+                        <p class="mb-2">AP = AP (Common side)</p>
+                        <p class="mb-2">∠APB = ∠APC = 90° (AP ⊥ BC)</p>
+                        <p class="mb-2">Therefore, ΔAPB ≅ ΔAPC (by RHS congruence rule)</p>
+                        <p class="mb-2">So, ∠ABP = ∠ACP (CPCT)</p>
+                        <p class="mb-2">i.e., ∠B = ∠C</p>
+                        <p><strong>Answer:</strong> ∠B = ∠C</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AB = AC aur AP ⊥ BC. Triangles APB aur APC mein, AB = AC, AP common, aur ∠APB = ∠APC = 90°. Isliye RHS rule se ΔAPB ≅ ΔAPC. CPCT se ∠ABP = ∠ACP, yaani ∠B = ∠C.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

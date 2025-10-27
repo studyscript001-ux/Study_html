@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 4: Linear Equations in Two Variables</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-4 md:p-6 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 4<br> Linear Equations in Two Variables</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 4.1 Section -->
+        <section id="exercise-4-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 4.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: The cost of a notebook is twice the cost of a pen. Write a linear equation in two variables to represent this statement. (Take the cost of a notebook to be ₹ x and that of a pen to be ₹ y).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let cost of a notebook = ₹ x</p>
+                        <p class="mb-2">Let cost of a pen = ₹ y</p>
+                        <p class="mb-2">According to the problem:</p>
+                        <p class="mb-2">Cost of notebook = 2 × Cost of pen</p>
+                        <p class="mb-2">x = 2y</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">x - 2y = 0</p>
+                        <p><strong>Answer:</strong> x - 2y = 0</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain notebook ki cost ₹x aur pen ki cost ₹y hai. Question ke hisaab se, notebook ki cost pen ki cost se do guna hai. Iska matlab x = 2y. Standard form mein likhne par x - 2y = 0 milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Express the following linear equations in the form ax + by + c = 0 and indicate the values of a, b and c in each case:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 2x + 3y = 9.35</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: 2x + 3y = 9.35</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">2x + 3y - 9.35 = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 2, b = 3, c = -9.35</p>
+                        <p><strong>Answer:</strong> a = 2, b = 3, c = -9.35</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation 2x + 3y = 9.35 ko standard form ax + by + c = 0 mein likhne ke liye sabko left side le jayenge: 2x + 3y - 9.35 = 0. Yahan a = 2, b = 3, c = -9.35.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) x - y/5 - 10 = 0</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: x - y/5 - 10 = 0</p>
+                        <p class="mb-2">This is already in the form ax + by + c = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 1, b = -1/5, c = -10</p>
+                        <p><strong>Answer:</strong> a = 1, b = -1/5, c = -10</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation x - y/5 - 10 = 0 already standard form mein hai. Yahan a = 1, b = -1/5, c = -10.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) -2x + 3y = 6</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: -2x + 3y = 6</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">-2x + 3y - 6 = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = -2, b = 3, c = -6</p>
+                        <p><strong>Answer:</strong> a = -2, b = 3, c = -6</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation -2x + 3y = 6 ko standard form mein likhne ke liye sabko left side le jayenge: -2x + 3y - 6 = 0. Yahan a = -2, b = 3, c = -6.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) x = 3y</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: x = 3y</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">x - 3y = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 1, b = -3, c = 0</p>
+                        <p><strong>Answer:</strong> a = 1, b = -3, c = 0</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation x = 3y ko standard form mein likhne ke liye sabko left side le jayenge: x - 3y = 0. Yahan a = 1, b = -3, c = 0.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) 2x = -5y</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: 2x = -5y</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">2x + 5y = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 2, b = 5, c = 0</p>
+                        <p><strong>Answer:</strong> a = 2, b = 5, c = 0</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation 2x = -5y ko standard form mein likhne ke liye sabko left side le jayenge: 2x + 5y = 0. Yahan a = 2, b = 5, c = 0.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vi) 3x + 2 = 0</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: 3x + 2 = 0</p>
+                        <p class="mb-2">This is already in the form ax + by + c = 0</p>
+                        <p class="mb-2">We can write it as: 3x + 0.y + 2 = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 3, b = 0, c = 2</p>
+                        <p><strong>Answer:</strong> a = 3, b = 0, c = 2</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation 3x + 2 = 0 ko standard form ax + by + c = 0 mein likhne ke liye hum ise 3x + 0.y + 2 = 0 likh sakte hain. Yahan a = 3, b = 0, c = 2.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vii) y - 2 = 0</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: y - 2 = 0</p>
+                        <p class="mb-2">This is already in the form ax + by + c = 0</p>
+                        <p class="mb-2">We can write it as: 0.x + 1.y - 2 = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 0, b = 1, c = -2</p>
+                        <p><strong>Answer:</strong> a = 0, b = 1, c = -2</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation y - 2 = 0 ko standard form ax + by + c = 0 mein likhne ke liye hum ise 0.x + 1.y - 2 = 0 likh sakte hain. Yahan a = 0, b = 1, c = -2.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(viii) 5 = 2x</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given equation: 5 = 2x</p>
+                        <p class="mb-2">Rewriting in standard form:</p>
+                        <p class="mb-2">2x - 5 = 0</p>
+                        <p class="mb-2">We can write it as: 2x + 0.y - 5 = 0</p>
+                        <p class="mb-2">Comparing with ax + by + c = 0:</p>
+                        <p class="mb-2">a = 2, b = 0, c = -5</p>
+                        <p><strong>Answer:</strong> a = 2, b = 0, c = -5</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation 5 = 2x ko standard form ax + by + c = 0 mein likhne ke liye hum ise 2x - 5 = 0 ya 2x + 0.y - 5 = 0 likh sakte hain. Yahan a = 2, b = 0, c = -5.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 4.2 Section -->
+        <section id="exercise-4-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 4.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Which one of the following options is true, and why? y = 3x + 5 has</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) a unique solution, (ii) only two solutions, (iii) infinitely many solutions</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">The equation y = 3x + 5 is a linear equation in two variables.</p>
+                        <p class="mb-2">A linear equation in two variables has infinitely many solutions.</p>
+                        <p class="mb-2">We can verify this by substituting different values of x:</p>
+                        <p class="mb-2">When x = 0, y = 5 → (0, 5) is a solution</p>
+                        <p class="mb-2">When x = 1, y = 8 → (1, 8) is a solution</p>
+                        <p class="mb-2">When x = 2, y = 11 → (2, 11) is a solution</p>
+                        <p class="mb-2">And so on...</p>
+                        <p class="mb-2">Since we can find infinite pairs (x, y) that satisfy the equation, it has infinitely many solutions.</p>
+                        <p><strong>Answer:</strong> (iii) infinitely many solutions</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation y = 3x + 5 ek linear equation hai do variables mein. Linear equations in two variables ke infinite solutions hote hain. Hum koi bhi x ki value lekar corresponding y ki value nikal sakte hain. Jaise x = 0 ke liye y = 5, x = 1 ke liye y = 8, x = 2 ke liye y = 11, aur aise hi infinite values mil sakti hain. Isliye iske infinite solutions hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Write four solutions for each of the following equations:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 2x + y = 7</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let's find four solutions for 2x + y = 7:</p>
+                        <p class="mb-2">When x = 0:<br> 2(0) + y = 7<br> → y = 7<br>Solution: (0, 7)</p>
+                        <p class="mb-2">When x = 1:<br> 2(1) + y = 7<br> → 2 + y = 7<br> → y = 5<br>Solution: (1, 5)</p>
+                        <p class="mb-2">When x = 2:<br> 2(2) + y = 7<br> → 4 + y = 7<br> → y = 3<br>Solution: (2, 3)</p>
+                        <p class="mb-2">When x = 3:<br> 2(3) + y = 7<br> → 6 + y = 7<br> → y = 1<br>Solution: (3, 1)</p>
+                        <p><strong>Answer:</strong> (0, 7), (1, 5), (2, 3), (3, 1)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation 2x + y = 7 ke liye char solutions nikalne hain. Hum x ki different values lekar corresponding y ki values nikal sakte hain. Jaise x = 0 ke liye y = 7, x = 1 ke liye y = 5, x = 2 ke liye y = 3, x = 3 ke liye y = 1. Is tarah humein char solutions mil jaate hain: (0, 7), (1, 5), (2, 3), (3, 1).
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) πx + y = 9</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let's find four solutions for πx + y = 9:</p>
+                        <p class="mb-2">When x = 0:<br> π(0) + y = 9<br> → y = 9<br> → Solution: (0, 9)</p>
+                        <p class="mb-2">When x = 1:<br> π(1) + y = 9<br> → π + y = 9<br> → y = 9 - π → Solution: (1, 9 - π)</p>
+                        <p class="mb-2">When x = 2:<br> π(2) + y = 9<br> → 2π + y = 9<br> → y = 9 - 2π → Solution: (2, 9 - 2π)</p>
+                        <p class="mb-2">When x = 3:<br> π(3) + y = 9<br> → 3π + y = 9<br> → y = 9 - 3π → Solution: (3, 9 - 3π)</p>
+                        <p><strong>Answer:</strong> (0, 9), (1, 9 - π), (2, 9 - 2π), (3, 9 - 3π)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation πx + y = 9 ke liye char solutions nikalne hain. Hum x ki different values lekar corresponding y ki values nikal sakte hain. Jaise x = 0 ke liye y = 9, x = 1 ke liye y = 9 - π, x = 2 ke liye y = 9 - 2π, x = 3 ke liye y = 9 - 3π. Is tarah humein char solutions mil jaate hain: (0, 9), (1, 9 - π), (2, 9 - 2π), (3, 9 - 3π).
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) x = 4y</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let's find four solutions for x = 4y:</p>
+                        <p class="mb-2">When y = 0:<br> x = 4(0) = 0<br> → Solution: (0, 0)</p>
+                        <p class="mb-2">When y = 1:<br> x = 4(1) = 4<br> → Solution: (4, 1)</p>
+                        <p class="mb-2">When y = 2:<br> x = 4(2) = 8<br> → Solution: (8, 2)</p>
+                        <p class="mb-2">When y = 3:<br> x = 4(3) = 12<br> → Solution: (12, 3)</p>
+                        <p><strong>Answer:</strong> (0, 0), (4, 1), (8, 2), (12, 3)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation x = 4y ke liye char solutions nikalne hain. Hum y ki different values lekar corresponding x ki values nikal sakte hain. Jaise y = 0 ke liye x = 0, y = 1 ke liye x = 4, y = 2 ke liye x = 8, y = 3 ke liye x = 12. Is tarah humein char solutions mil jaate hain: (0, 0), (4, 1), (8, 2), (12, 3).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Check which of the following are solutions of the equation x - 2y = 4 and which are not:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) (0, 2)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = 0, y = 2 in x - 2y = 4:</p>
+                        <p class="mb-2">0 - 2(2) = 0 - 4 = -4 ≠ 4</p>
+                        <p class="mb-2">-4 is not equal to 4</p>
+                        <p><strong>Answer:</strong> Not a solution</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (0, 2) ko equation x - 2y = 4 mein substitute karenge: 0 - 2(2) = -4, jo 4 ke barabar nahi hai. Isliye yeh solution nahi hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) (2, 0)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = 2, y = 0 in x - 2y = 4:</p>
+                        <p class="mb-2">2 - 2(0) = 2 - 0 = 2 ≠ 4</p>
+                        <p class="mb-2">2 is not equal to 4</p>
+                        <p><strong>Answer:</strong> Not a solution</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (2, 0) ko equation x - 2y = 4 mein substitute karenge: 2 - 2(0) = 2, jo 4 ke barabar nahi hai. Isliye yeh solution nahi hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) (4, 0)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = 4, y = 0 in x - 2y = 4:</p>
+                        <p class="mb-2">4 - 2(0) = 4 - 0 = 4 = 4</p>
+                        <p class="mb-2">4 is equal to 4</p>
+                        <p><strong>Answer:</strong> Is a solution</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (4, 0) ko equation x - 2y = 4 mein substitute karenge: 4 - 2(0) = 4, jo 4 ke barabar hai. Isliye yeh solution hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) (√2, 4√2)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = √2, y = 4√2 in x - 2y = 4:</p>
+                        <p class="mb-2">√2 - 2(4√2) = √2 - 8√2 = -7√2 ≠ 4</p>
+                        <p class="mb-2">-7√2 is not equal to 4</p>
+                        <p><strong>Answer:</strong> Not a solution</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (√2, 4√2) ko equation x - 2y = 4 mein substitute karenge: √2 - 2(4√2) = √2 - 8√2 = -7√2, jo 4 ke barabar nahi hai. Isliye yeh solution nahi hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) (1, 1)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = 1, y = 1 in x - 2y = 4:</p>
+                        <p class="mb-2">1 - 2(1) = 1 - 2 = -1 ≠ 4</p>
+                        <p class="mb-2">-1 is not equal to 4</p>
+                        <p><strong>Answer:</strong> Not a solution</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (1, 1) ko equation x - 2y = 4 mein substitute karenge: 1 - 2(1) = -1, jo 4 ke barabar nahi hai. Isliye yeh solution nahi hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Find the value of k, if x = 2, y = 1 is a solution of the equation 2x + 3y = k.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: x = 2, y = 1 is a solution of 2x + 3y = k</p>
+                        <p class="mb-2">Substitute x = 2, y = 1 in the equation:</p>
+                        <p class="mb-2">2(2) + 3(1) = k</p>
+                        <p class="mb-2">4 + 3 = k</p>
+                        <p class="mb-2">7 = k</p>
+                        <p><strong>Answer:</strong> k = 7</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Kyunki x = 2, y = 1 equation 2x + 3y = k ka solution hai, isliye in values ko equation mein substitute karenge: 2(2) + 3(1) = 4 + 3 = 7. Isliye k ki value 7 hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

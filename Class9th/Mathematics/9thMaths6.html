@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 6: Lines and Angles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .angle-symbol {
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 6<br> Lines and Angles</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 6.1 Section -->
+        <section id="exercise-6-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: In Fig. 6.13, lines AB and CD intersect at O. If <span class="angle-symbol">∠</span>AOC + <span class="angle-symbol">∠</span>BOE = 70° and <span class="angle-symbol">∠</span>BOD = 40°, find <span class="angle-symbol">∠</span>BOE and reflex <span class="angle-symbol">∠</span>COE.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <span class="angle-symbol">∠</span>AOC + <span class="angle-symbol">∠</span>BOE = 70° and <span class="angle-symbol">∠</span>BOD = 40°</p>
+                        <p class="mb-2">From the figure, <span class="angle-symbol">∠</span>AOC = <span class="angle-symbol">∠</span>BOD (vertically opposite angles)</p>
+                        <p class="mb-2">So, <span class="angle-symbol">∠</span>AOC = 40°</p>
+                        <p class="mb-2">Now, <span class="angle-symbol">∠</span>AOC + <span class="angle-symbol">∠</span>BOE = 70°</p>
+                        <p class="mb-2">40° + <span class="angle-symbol">∠</span>BOE = 70°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>BOE = 70° - 40° = 30°</p>
+                        <p class="mb-2">Now, <span class="angle-symbol">∠</span>AOC + <span class="angle-symbol">∠</span>COE + <span class="angle-symbol">∠</span>BOE = 180° (angles on a straight line)</p>
+                        <p class="mb-2">40° + <span class="angle-symbol">∠</span>COE + 30° = 180°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>COE = 180° - 70° = 110°</p>
+                        <p class="mb-2">Reflex <span class="angle-symbol">∠</span>COE = 360° - 110° = 250°</p>
+                        <p><strong>Answer:</strong> <span class="angle-symbol">∠</span>BOE = 30°, Reflex <span class="angle-symbol">∠</span>COE = 250°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai <span class="angle-symbol">∠</span>AOC + <span class="angle-symbol">∠</span>BOE = 70° aur <span class="angle-symbol">∠</span>BOD = 40°. Vertically opposite angles ke karan <span class="angle-symbol">∠</span>AOC = <span class="angle-symbol">∠</span>BOD = 40°. Isse <span class="angle-symbol">∠</span>BOE = 30° milta hai. Straight line par angles 180° hote hain, isliye <span class="angle-symbol">∠</span>COE = 110° aur reflex angle 360° - 110° = 250°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: In Fig. 6.14, lines XY and MN intersect at O. If <span class="angle-symbol">∠</span>POY = 90° and a : b = 2 : 3, find c.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <span class="angle-symbol">∠</span>POY = 90° and a : b = 2 : 3</p>
+                        <p class="mb-2">Let a = 2x and b = 3x</p>
+                        <p class="mb-2">From the figure, <span class="angle-symbol">∠</span>POY + <span class="angle-symbol">∠</span>POX = 180° (linear pair)</p>
+                        <p class="mb-2">90° + a + b = 180°</p>
+                        <p class="mb-2">90° + 2x + 3x = 180°</p>
+                        <p class="mb-2">5x = 90°</p>
+                        <p class="mb-2">x = 18°</p>
+                        <p class="mb-2">So, a = 2 × 18° = 36°, b = 3 × 18° = 54°</p>
+                        <p class="mb-2">Now, <span class="angle-symbol">∠</span>XON = <span class="angle-symbol">∠</span>YOM = c (vertically opposite angles)</p>
+                        <p class="mb-2">Also, <span class="angle-symbol">∠</span>XON + <span class="angle-symbol">∠</span>NOM = 180° (linear pair)</p>
+                        <p class="mb-2">c + b = 180°</p>
+                        <p class="mb-2">c + 54° = 180°</p>
+                        <p class="mb-2">c = 180° - 54° = 126°</p>
+                        <p><strong>Answer:</strong> c = 126°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai <span class="angle-symbol">∠</span>POY = 90° aur a : b = 2 : 3. Linear pair ke karan 90° + a + b = 180°. a = 2x, b = 3x rakhne par x = 18° milta hai. Vertically opposite angles ke karan c = b nahi hai, balki linear pair ke karan c + b = 180°, isliye c = 126°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: In Fig. 6.15, <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRQ, then prove that <span class="angle-symbol">∠</span>PQS = <span class="angle-symbol">∠</span>PRT.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRQ</p>
+                        <p class="mb-2">To prove: <span class="angle-symbol">∠</span>PQS = <span class="angle-symbol">∠</span>PRT</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>PQS + <span class="angle-symbol">∠</span>PQR = 180° (linear pair) ...(1)</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>PRT + <span class="angle-symbol">∠</span>PRQ = 180° (linear pair) ...(2)</p>
+                        <p class="mb-2">From (1) and (2):</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>PQS + <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRT + <span class="angle-symbol">∠</span>PRQ</p>
+                        <p class="mb-2">But <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRQ (given)</p>
+                        <p class="mb-2">So, <span class="angle-symbol">∠</span>PQS = <span class="angle-symbol">∠</span>PRT</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRQ. Linear pair ke karan <span class="angle-symbol">∠</span>PQS + <span class="angle-symbol">∠</span>PQR = 180° aur <span class="angle-symbol">∠</span>PRT + <span class="angle-symbol">∠</span>PRQ = 180°. Dono equations ko barabar rakhne par, aur <span class="angle-symbol">∠</span>PQR = <span class="angle-symbol">∠</span>PRQ substitute karne par, <span class="angle-symbol">∠</span>PQS = <span class="angle-symbol">∠</span>PRT milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: In Fig. 6.16, if x + y = w + z, then prove that AOB is a line.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: x + y = w + z</p>
+                        <p class="mb-2">To prove: AOB is a straight line</p>
+                        <p class="mb-2">We know that the sum of all angles around a point is 360°</p>
+                        <p class="mb-2">So, x + y + w + z = 360°</p>
+                        <p class="mb-2">But x + y = w + z (given)</p>
+                        <p class="mb-2">So, x + y + x + y = 360°</p>
+                        <p class="mb-2">2(x + y) = 360°</p>
+                        <p class="mb-2">x + y = 180°</p>
+                        <p class="mb-2">This means that <span class="angle-symbol">∠</span>AOC and <span class="angle-symbol">∠</span>BOC form a linear pair</p>
+                        <p class="mb-2">Therefore, AOB is a straight line</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai x + y = w + z. Point O par sabhi angles ka sum 360° hota hai, isliye x + y + w + z = 360°. x + y = w + z substitute karne par 2(x + y) = 360°, yaani x + y = 180°. Iska matlab <span class="angle-symbol">∠</span>AOC aur <span class="angle-symbol">∠</span>BOC linear pair banate hain, isliye AOB ek straight line hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In Fig. 6.17, POQ is a line. Ray OR is perpendicular to line PQ. OS is another ray lying between rays OP and OR. Prove that <span class="angle-symbol">∠</span>ROS = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> (<span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: POQ is a straight line, OR ⊥ PQ</p>
+                        <p class="mb-2">To prove: <span class="angle-symbol">∠</span>ROS = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> (<span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS)</p>
+                        <p class="mb-2">Since OR ⊥ PQ, <span class="angle-symbol">∠</span>POR = 90° and <span class="angle-symbol">∠</span>ROQ = 90°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>QOS = <span class="angle-symbol">∠</span>QOR + <span class="angle-symbol">∠</span>ROS ...(1)</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>POS = <span class="angle-symbol">∠</span>POR - <span class="angle-symbol">∠</span>ROS ...(2)</p>
+                        <p class="mb-2">Subtracting (2) from (1):</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS = (<span class="angle-symbol">∠</span>QOR + <span class="angle-symbol">∠</span>ROS) - (<span class="angle-symbol">∠</span>POR - <span class="angle-symbol">∠</span>ROS)</p>
+                        <p class="mb-2">= <span class="angle-symbol">∠</span>QOR + <span class="angle-symbol">∠</span>ROS - <span class="angle-symbol">∠</span>POR + <span class="angle-symbol">∠</span>ROS</p>
+                        <p class="mb-2">= 90° + <span class="angle-symbol">∠</span>ROS - 90° + <span class="angle-symbol">∠</span>ROS</p>
+                        <p class="mb-2">= 2<span class="angle-symbol">∠</span>ROS</p>
+                        <p class="mb-2">Therefore, <span class="angle-symbol">∠</span>ROS = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> (<span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS)</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai POQ straight line hai aur OR ⊥ PQ. Iska matlab <span class="angle-symbol">∠</span>POR = 90° aur <span class="angle-symbol">∠</span>ROQ = 90°. <span class="angle-symbol">∠</span>QOS = <span class="angle-symbol">∠</span>QOR + <span class="angle-symbol">∠</span>ROS aur <span class="angle-symbol">∠</span>POS = <span class="angle-symbol">∠</span>POR - <span class="angle-symbol">∠</span>ROS. Dono equations ko subtract karne par <span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS = 2<span class="angle-symbol">∠</span>ROS milta hai, isliye <span class="angle-symbol">∠</span>ROS = 1/2 (<span class="angle-symbol">∠</span>QOS - <span class="angle-symbol">∠</span>POS).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: It is given that <span class="angle-symbol">∠</span>XYZ = 64° and XY is produced to point P. Draw a figure from the given information. If ray YQ bisects <span class="angle-symbol">∠</span>ZYP, find <span class="angle-symbol">∠</span>XYQ and reflex <span class="angle-symbol">∠</span>QYP.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <span class="angle-symbol">∠</span>XYZ = 64°, XY produced to P, YQ bisects <span class="angle-symbol">∠</span>ZYP</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>XYZ + <span class="angle-symbol">∠</span>ZYP = 180° (linear pair)</p>
+                        <p class="mb-2">64° + <span class="angle-symbol">∠</span>ZYP = 180°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>ZYP = 180° - 64° = 116°</p>
+                        <p class="mb-2">Since YQ bisects <span class="angle-symbol">∠</span>ZYP, <span class="angle-symbol">∠</span>ZYQ = <span class="angle-symbol">∠</span>QYP = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 116° = 58°</p>
+                        <p class="mb-2">Now, <span class="angle-symbol">∠</span>XYQ = <span class="angle-symbol">∠</span>XYZ + <span class="angle-symbol">∠</span>ZYQ = 64° + 58° = 122°</p>
+                        <p class="mb-2">Reflex <span class="angle-symbol">∠</span>QYP = 360° - <span class="angle-symbol">∠</span>QYP = 360° - 58° = 302°</p>
+                        <p><strong>Answer:</strong> <span class="angle-symbol">∠</span>XYQ = 122°, Reflex <span class="angle-symbol">∠</span>QYP = 302°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai <span class="angle-symbol">∠</span>XYZ = 64° aur XY ko P tak extend kiya gaya hai. Linear pair ke karan <span class="angle-symbol">∠</span>XYZ + <span class="angle-symbol">∠</span>ZYP = 180°, isliye <span class="angle-symbol">∠</span>ZYP = 116°. YQ <span class="angle-symbol">∠</span>ZYP ko bisect karta hai, isliye <span class="angle-symbol">∠</span>ZYQ = <span class="angle-symbol">∠</span>QYP = 58°. <span class="angle-symbol">∠</span>XYQ = <span class="angle-symbol">∠</span>XYZ + <span class="angle-symbol">∠</span>ZYQ = 122°. Reflex <span class="angle-symbol">∠</span>QYP = 360° - 58° = 302°.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.2 Section -->
+        <section id="exercise-6-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: In Fig. 6.23, if AB ∥ CD, CD ∥ EF and y : z = 3 : 7, find x.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB||CD, CD ∥ EF, y : z = 3 : 7</p>
+                        <p class="mb-2">Since CD ∥ EF, x + y = 180° (interior angles on same side of transversal)</p>
+                        <p class="mb-2">Since AB ∥ CD, x = z (corresponding angles)</p>
+                        <p class="mb-2">Let y = 3k and z = 7k</p>
+                        <p class="mb-2">Then x = z = 7k</p>
+                        <p class="mb-2">Now, x + y = 180°</p>
+                        <p class="mb-2">7k + 3k = 180°</p>
+                        <p class="mb-2">10k = 180°</p>
+                        <p class="mb-2">k = 18°</p>
+                        <p class="mb-2">So, x = 7k = 7 × 18° = 126°</p>
+                        <p><strong>Answer:</strong> x = 126°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai AB ∥ CD, CD ∥ EF aur y : z = 3 : 7. CD ∥ EF hone ke karan x + y = 180° (same side interior angles). AB ∥ CD hone ke karan x = z (corresponding angles). y = 3k, z = 7k maan kar x = 7k milta hai. Equation 7k + 3k = 180° solve karne par k = 18°, isliye x = 126°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: In Fig. 6.24, if AB ∥ CD, EF ⊥ CD and <span class="angle-symbol">∠</span>GED = 126°, find <span class="angle-symbol">∠</span>AGE, <span class="angle-symbol">∠</span>GEF and <span class="angle-symbol">∠</span>FGE.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB ∥ CD, EF ⊥ CD, <span class="angle-symbol">∠</span>GED = 126°</p>
+                        <p class="mb-2">Since AB ∥ CD, <span class="angle-symbol">∠</span>AGE = <span class="angle-symbol">∠</span>GED = 126° (alternate interior angles)</p>
+                        <p class="mb-2">EF ⊥ CD, so <span class="angle-symbol">∠</span>FED = 90°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>GED = <span class="angle-symbol">∠</span>GEF + <span class="angle-symbol">∠</span>FED</p>
+                        <p class="mb-2">126° = <span class="angle-symbol">∠</span>GEF + 90°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>GEF = 126° - 90° = 36°</p>
+                        <p class="mb-2">In triangle GEF, <span class="angle-symbol">∠</span>GEF + <span class="angle-symbol">∠</span>EGF + <span class="angle-symbol">∠</span>FGE = 180°</p>
+                        <p class="mb-2">But <span class="angle-symbol">∠</span>EGF = 90° (since EF ⊥ CD and AB ∥ CD, so EF ⊥ AB)</p>
+                        <p class="mb-2">36° + 90° + <span class="angle-symbol">∠</span>FGE = 180°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>FGE = 180° - 126° = 54°</p>
+                        <p><strong>Answer:</strong> <span class="angle-symbol">∠</span>AGE = 126°, <span class="angle-symbol">∠</span>GEF = 36°, <span class="angle-symbol">∠</span>FGE = 54°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai AB ∥ CD, EF ⊥ CD aur <span class="angle-symbol">∠</span>GED = 126°. Alternate interior angles ke karan <span class="angle-symbol">∠</span>AGE = <span class="angle-symbol">∠</span>GED = 126°. EF ⊥ CD hone ke karan <span class="angle-symbol">∠</span>FED = 90°, isliye <span class="angle-symbol">∠</span>GEF = 126° - 90° = 36°. Triangle GEF mein angle sum property use karne par <span class="angle-symbol">∠</span>FGE = 54° milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: In Fig. 6.25, if PQ ∥ ST, <span class="angle-symbol">∠</span>PQR = 110° and <span class="angle-symbol">∠</span>RST = 130°, find <span class="angle-symbol">∠</span>QRS.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: PQ ∥ ST, <span class="angle-symbol">∠</span>PQR = 110°, <span class="angle-symbol">∠</span>RST = 130°</p>
+                        <p class="mb-2">Draw a line RU parallel to ST through point R</p>
+                        <p class="mb-2">Since RU ∥ ST and PQ ∥ ST, so RU ∥ PQ</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>PQR + <span class="angle-symbol">∠</span>QRU = 180° (interior angles on same side of transversal)</p>
+                        <p class="mb-2">110° + <span class="angle-symbol">∠</span>QRU = 180°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>QRU = 70°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>RST + <span class="angle-symbol">∠</span>SRU = 180° (interior angles on same side of transversal)</p>
+                        <p class="mb-2">130° + <span class="angle-symbol">∠</span>SRU = 180°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>SRU = 50°</p>
+                        <p class="mb-2"><span class="angle-symbol">∠</span>QRS = <span class="angle-symbol">∠</span>QRU + <span class="angle-symbol">∠</span>SRU = 70° + 50° = 120°</p>
+                        <p><strong>Answer:</strong> <span class="angle-symbol">∠</span>QRS = 120°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai PQ ∥ ST, <span class="angle-symbol">∠</span>PQR = 110° aur <span class="angle-symbol">∠</span>RST = 130°. Point R se ST ke parallel ek line RU draw karte hain. RU ∥ ST aur PQ ∥ ST hone ke karan RU ∥ PQ. Interior angles on same side of transversal ke karan <span class="angle-symbol">∠</span>QRU = 70° aur <span class="angle-symbol">∠</span>SRU = 50°. Isliye <span class="angle-symbol">∠</span>QRS = 70° + 50° = 120°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: In Fig. 6.26, if AB ∥ CD, <span class="angle-symbol">∠</span>APQ = 50° and <span class="angle-symbol">∠</span>PRD = 127°, find x and y.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AB ∥ CD, <span class="angle-symbol">∠</span>APQ = 50°, <span class="angle-symbol">∠</span>PRD = 127°</p>
+                        <p class="mb-2">Since AB ∥ CD, <span class="angle-symbol">∠</span>APQ = <span class="angle-symbol">∠</span>PQR = 50° (alternate interior angles)</p>
+                        <p class="mb-2">So, x = 50°</p>
+                        <p class="mb-2">Also, <span class="angle-symbol">∠</span>PRD = <span class="angle-symbol">∠</span>APR = 127° (alternate interior angles)</p>
+                        <p class="mb-2">Now, <span class="angle-symbol">∠</span>APR = <span class="angle-symbol">∠</span>APQ + <span class="angle-symbol">∠</span>QPR</p>
+                        <p class="mb-2">127° = 50° + y</p>
+                        <p class="mb-2">y = 127° - 50° = 77°</p>
+                        <p><strong>Answer:</strong> x = 50°, y = 77°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai AB ∥ CD, <span class="angle-symbol">∠</span>APQ = 50° aur <span class="angle-symbol">∠</span>PRD = 127°. Alternate interior angles ke karan <span class="angle-symbol">∠</span>APQ = <span class="angle-symbol">∠</span>PQR = 50°, isliye x = 50°. Alternate interior angles ke karan <span class="angle-symbol">∠</span>PRD = <span class="angle-symbol">∠</span>APR = 127°. <span class="angle-symbol">∠</span>APR = <span class="angle-symbol">∠</span>APQ + <span class="angle-symbol">∠</span>QPR, isliye 127° = 50° + y, y = 77°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In Fig. 6.27, PQ and RS are two mirrors placed parallel to each other. An incident ray AB strikes the mirror PQ at B, the reflected ray moves along the path BC and strikes the mirror RS at C and again reflects back along CD. Prove that AB ∥ CD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">To prove: AB ∥ CD</p>
+                        <p class="mb-2">Draw normals at points B and C</p>
+                        <p class="mb-2">According to laws of reflection:</p>
+                        <p class="mb-2">Angle of incidence = Angle of reflection</p>
+                        <p class="mb-2">So, at point B: <span class="angle-symbol">∠</span>ABN = <span class="angle-symbol">∠</span>NBC</p>
+                        <p class="mb-2">At point C: <span class="angle-symbol">∠</span>BCM = <span class="angle-symbol">∠</span>MCD</p>
+                        <p class="mb-2">Since PQ ∥ RS, the normals BN and CM are parallel</p>
+                        <p class="mb-2">So, <span class="angle-symbol">∠</span>NBC = <span class="angle-symbol">∠</span>BCM (alternate interior angles)</p>
+                        <p class="mb-2">Therefore, <span class="angle-symbol">∠</span>ABN = <span class="angle-symbol">∠</span>MCD</p>
+                        <p class="mb-2">But these are alternate interior angles for lines AB and CD with transversal BC</p>
+                        <p class="mb-2">Hence, AB ∥ CD</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> PQ aur RS do parallel mirrors hain. Reflection ke laws ke according angle of incidence = angle of reflection. Point B par <span class="angle-symbol">∠</span>ABN = <span class="angle-symbol">∠</span>NBC aur point C par <span class="angle-symbol">∠</span>BCM = <span class="angle-symbol">∠</span>MCD. PQ ∥ RS hone ke karan normals BN aur CM parallel hain, isliye <span class="angle-symbol">∠</span>NBC = <span class="angle-symbol">∠</span>BCM (alternate interior angles). Isse <span class="angle-symbol">∠</span>ABN = <span class="angle-symbol">∠</span>MCD milta hai, jo ki AB aur CD ke liye alternate interior angles hain, isliye AB ∥ CD.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 9: Circles</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .theorem {
+            background-color: #fef3c7;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #f59e0b;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 9<br> Circles</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 9.1 Section -->
+        <section id="exercise-9-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 9.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Recall that two circles are congruent if they have the same radii. Prove that equal chords of congruent circles subtend equal angles at their centres.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let there be two congruent circles with centers O and O', and equal chords AB and CD in each circle respectively.</p>
+                        <p class="mb-2">Since the circles are congruent, their radii are equal: OA = O'C and OB = O'D.</p>
+                        <p class="mb-2">Given that AB = CD (equal chords).</p>
+                        <p class="mb-2">In triangles AOB and C'O'D':</p>
+                        <p class="mb-2">OA = O'C (radii of congruent circles)</p>
+                        <p class="mb-2">OB = O'D (radii of congruent circles)</p>
+                        <p class="mb-2">AB = CD (given)</p>
+                        <p class="mb-2">Therefore, ΔAOB ≅ ΔC'O'D' (by SSS congruence rule)</p>
+                        <p class="mb-2">Hence, ∠AOB = ∠C'O'D' (corresponding parts of congruent triangles)</p>
+                        <p class="mb-2">Therefore, equal chords of congruent circles subtend equal angles at their centres.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Equal chords of a circle subtend equal angles at the centre (Theorem 9.1).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do congruent circles lete hain jinki radii same hai. Unme equal chords AB aur CD lete hain. Triangles AOB aur C'O'D' congruent hote hain (SSS rule se). Isliye ∠AOB = ∠C'O'D'. Yani equal chords congruent circles ke centres par equal angles subtend karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Prove that if chords of congruent circles subtend equal angles at their centres, then the chords are equal.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let there be two congruent circles with centers O and O', and chords AB and CD in each circle respectively.</p>
+                        <p class="mb-2">Given that ∠AOB = ∠C'O'D' (equal angles at centres)</p>
+                        <p class="mb-2">Since the circles are congruent, their radii are equal: OA = O'C and OB = O'D.</p>
+                        <p class="mb-2">In triangles AOB and C'O'D':</p>
+                        <p class="mb-2">OA = O'C (radii of congruent circles)</p>
+                        <p class="mb-2">OB = O'D (radii of congruent circles)</p>
+                        <p class="mb-2">∠AOB = ∠C'O'D' (given)</p>
+                        <p class="mb-2">Therefore, ΔAOB ≅ ΔC'O'D' (by SAS congruence rule)</p>
+                        <p class="mb-2">Hence, AB = CD (corresponding parts of congruent triangles)</p>
+                        <p class="mb-2">Therefore, if chords of congruent circles subtend equal angles at their centres, then the chords are equal.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> If the angles subtended by the chords of a circle at the centre are equal, then the chords are equal (Theorem 9.2).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do congruent circles lete hain. Maan lete hain chords AB aur CD centres par equal angles subtend karte hain. Triangles AOB aur C'O'D' congruent hote hain (SAS rule se). Isliye AB = CD. Yani agar chords congruent circles ke centres par equal angles subtend karte hain, toh chords equal hote hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 9.2 Section -->
+        <section id="exercise-9-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 9.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Two circles of radii 5 cm and 3 cm intersect at two points and the distance between their centres is 4 cm. Find the length of the common chord.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let O and O' be the centers of the circles with radii 5 cm and 3 cm respectively.</p>
+                        <p class="mb-2">Let AB be the common chord, and M be the midpoint of AB.</p>
+                        <p class="mb-2">Given: OO' = 4 cm, OA = 5 cm, O'A = 3 cm</p>
+                        <p class="mb-2">OM ⊥ AB and O'M ⊥ AB (perpendicular from center to chord bisects the chord)</p>
+                        <p class="mb-2">Let OM = x, then O'M = 4 - x</p>
+                        <p class="mb-2">In right triangle OMA: AM² = OA² - OM² = 25 - x²</p>
+                        <p class="mb-2">In right triangle O'MA: AM² = O'A² - O'M² = 9 - (4 - x)²</p>
+                        <p class="mb-2">Equating both expressions for AM²:</p>
+                        <p class="mb-2">25 - x² = 9 - (16 - 8x + x²)</p>
+                        <p class="mb-2">25 - x² = 9 - 16 + 8x - x²</p>
+                        <p class="mb-2">25 = -7 + 8x</p>
+                        <p class="mb-2">8x = 32</p>
+                        <p class="mb-2">x = 4</p>
+                        <p class="mb-2">Then AM² = 25 - 16 = 9, so AM = 3 cm</p>
+                        <p class="mb-2">Therefore, AB = 2 × AM = 2 × 3 = 6 cm</p>
+                        <p><strong>Answer:</strong> The length of the common chord is 6 cm.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The perpendicular from the centre of a circle to a chord bisects the chord (Theorem 9.3).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do circles hain jinki radii 5 cm aur 3 cm hain. Unke centres ke beech ki distance 4 cm hai. Common chord AB hai. Midpoint M par perpendicular draw karte hain. Pythagoras theorem use karke AM nikalte hain jo 3 cm aata hai. Toh poori chord AB = 2 × 3 = 6 cm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: If two equal chords of a circle intersect within the circle, prove that the segments of one chord are equal to corresponding segments of the other chord.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let AB and CD be two equal chords of a circle with center O, intersecting at point E.</p>
+                        <p class="mb-2">Draw perpendiculars OM and ON from O to AB and CD respectively.</p>
+                        <p class="mb-2">Since AB = CD, and equal chords are equidistant from the center, OM = ON.</p>
+                        <p class="mb-2">In right triangles OME and ONE:</p>
+                        <p class="mb-2">OM = ON (proved above)</p>
+                        <p class="mb-2">OE = OE (common)</p>
+                        <p class="mb-2">∠OME = ∠ONE = 90°</p>
+                        <p class="mb-2">Therefore, ΔOME ≅ ΔONE (by RHS congruence rule)</p>
+                        <p class="mb-2">Hence, ME = NE (CPCT)</p>
+                        <p class="mb-2">Now, since OM and ON are perpendiculars from center to chords, they bisect the chords:</p>
+                        <p class="mb-2">AM = MB and CN = ND</p>
+                        <p class="mb-2">Therefore, AE = AM - ME and CE = CN - NE</p>
+                        <p class="mb-2">Since AM = CN (half of equal chords) and ME = NE, we get AE = CE</p>
+                        <p class="mb-2">Similarly, BE = MB - ME and DE = ND - NE</p>
+                        <p class="mb-2">Since MB = ND and ME = NE, we get BE = DE</p>
+                        <p class="mb-2">Hence, the segments of one chord are equal to corresponding segments of the other chord.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Equal chords of a circle are equidistant from the centre (Theorem 9.5).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do equal chords AB aur CD circle mein intersect karte hain point E par. Centre se perpendiculars draw karte hain. Equal chords centre se equal distance par hote hain, isliye OM = ON. Triangles OME aur ONE congruent hote hain (RHS rule se). Isliye ME = NE. Chords bisected hote hain, isliye AE = CE aur BE = DE. Yani segments equal hote hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: If two equal chords of a circle intersect within the circle, prove that the line joining the point of intersection to the centre makes equal angles with the chords.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let AB and CD be two equal chords of a circle with center O, intersecting at point E.</p>
+                        <p class="mb-2">Join OE.</p>
+                        <p class="mb-2">Draw perpendiculars OM and ON from O to AB and CD respectively.</p>
+                        <p class="mb-2">Since AB = CD, and equal chords are equidistant from the center, OM = ON.</p>
+                        <p class="mb-2">In right triangles OME and ONE:</p>
+                        <p class="mb-2">OM = ON (proved above)</p>
+                        <p class="mb-2">OE = OE (common)</p>
+                        <p class="mb-2">∠OME = ∠ONE = 90°</p>
+                        <p class="mb-2">Therefore, ΔOME ≅ ΔONE (by RHS congruence rule)</p>
+                        <p class="mb-2">Hence, ∠OEM = ∠OEN (CPCT)</p>
+                        <p class="mb-2">But ∠OEM is the angle between OE and AB, and ∠OEN is the angle between OE and CD.</p>
+                        <p class="mb-2">Therefore, the line joining the point of intersection to the centre makes equal angles with the chords.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Equal chords of a circle are equidistant from the centre (Theorem 9.5).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do equal chords AB aur CD circle mein intersect karte hain point E par. Centre O se E ko join karte hain. Centre se perpendiculars draw karte hain. Equal chords centre se equal distance par hote hain, isliye OM = ON. Triangles OME aur ONE congruent hote hain (RHS rule se). Isliye ∠OEM = ∠OEN. Yani line OE chords ke saath equal angles banata hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: If a line intersects two concentric circles (circles with the same centre) with centre O at A, B, C and D, prove that AB = CD (see Fig. 9.12).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let there be two concentric circles with center O.</p>
+                        <p class="mb-2">A line intersects the circles at points A, B, C, D, where A and D are on the outer circle, and B and C are on the inner circle.</p>
+                        <p class="mb-2">Draw perpendicular OM from O to the line.</p>
+                        <p class="mb-2">Since OM is perpendicular to the line, it bisects both chords AD and BC.</p>
+                        <p class="mb-2">Therefore, AM = MD and BM = MC</p>
+                        <p class="mb-2">Now, AB = AM - BM and CD = MD - MC</p>
+                        <p class="mb-2">But since AM = MD and BM = MC, we have AB = CD</p>
+                        <p class="mb-2">Hence, AB = CD</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The perpendicular from the centre of a circle to a chord bisects the chord (Theorem 9.3).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do concentric circles hain jinka centre O hai. Ek line inhe A, B, C, D par intersect karti hai. Centre se line par perpendicular draw karte hain. Yeh perpendicular chords AD aur BC ko bisect karta hai. Isliye AM = MD aur BM = MC. Toh AB = AM - BM = MD - MC = CD. Yani AB = CD.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Three girls Reshma, Salma and Mandip are playing a game by standing on a circle of radius 5m drawn in a park. Reshma throws a ball to Salma, Salma to Mandip, Mandip to Reshma. If the distance between Reshma and Salma and between Salma and Mandip is 6m each, what is the distance between Reshma and Mandip?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let R, S, M be the positions of Reshma, Salma and Mandip on the circle with center O and radius 5m.</p>
+                        <p class="mb-2">Given: RS = SM = 6m</p>
+                        <p class="mb-2">Join OS and draw perpendicular from O to chord RS.</p>
+                        <p class="mb-2">Let the perpendicular meet RS at N.</p>
+                        <p class="mb-2">Then RN = NS = 3m (perpendicular from center bisects the chord)</p>
+                        <p class="mb-2">In right triangle ONS: ON² = OS² - NS² = 25 - 9 = 16, so ON = 4m</p>
+                        <p class="mb-2">Similarly, for chord SM, we get the same perpendicular distance from center.</p>
+                        <p class="mb-2">Since RS = SM and both are chords of the same circle, the perpendicular from O will bisect both chords at the same point.</p>
+                        <p class="mb-2">Therefore, R, S, M form an isosceles triangle with RS = SM = 6m.</p>
+                        <p class="mb-2">The angle RSM is twice the angle at the center subtended by chord RM.</p>
+                        <p class="mb-2">But we can find RM using the chord length formula:</p>
+                        <p class="mb-2">For chord RS: 6 = 2 × 5 × sin(∠ROS/2) ⇒ sin(∠ROS/2) = 6/10 = 0.6</p>
+                        <p class="mb-2">Similarly for chord SM.</p>
+                        <p class="mb-2">The angle between RS and SM is 2 × ∠ROS/2 = ∠ROS</p>
+                        <p class="mb-2">In triangle RSM, using cosine rule:</p>
+                        <p class="mb-2">RM² = RS² + SM² - 2 × RS × SM × cos(∠RSM)</p>
+                        <p class="mb-2">But ∠RSM = 180° - ∠ROM (cyclic quadrilateral property)</p>
+                        <p class="mb-2">Alternatively, we can find the central angle between R and M:</p>
+                        <p class="mb-2">Since R, S, M are equally spaced on the circle (as RS = SM), the arc RM is twice the arc RS.</p>
+                        <p class="mb-2">Chord length RM = 2 × R × sin(∠ROM/2)</p>
+                        <p class="mb-2">We need to find ∠ROM.</p>
+                        <p class="mb-2">From chord RS: 6 = 2 × 5 × sin(∠ROS/2) ⇒ sin(∠ROS/2) = 0.6 ⇒ ∠ROS/2 ≈ 36.87° ⇒ ∠ROS ≈ 73.74°</p>
+                        <p class="mb-2">Similarly, ∠SOM ≈ 73.74°</p>
+                        <p class="mb-2">Therefore, ∠ROM = ∠ROS + ∠SOM ≈ 73.74° + 73.74° = 147.48°</p>
+                        <p class="mb-2">Then RM = 2 × 5 × sin(147.48°/2) = 10 × sin(73.74°) ≈ 10 × 0.9563 = 9.563m</p>
+                        <p><strong>Answer:</strong> The distance between Reshma and Mandip is approximately 9.56m.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The perpendicular from the centre of a circle to a chord bisects the chord (Theorem 9.3).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Teen ladkiyan 5m radius ke circle par khadi hain. Reshma se Salma ki distance 6m hai, Salma se Mandip ki bhi 6m hai. Centre se chords par perpendicular draw karte hain. Pythagoras theorem use karke perpendicular distance nikalte hain. Phir chord length formula use karke Reshma aur Mandip ke beech ki distance nikalte hain jo approximately 9.56m aati hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: A circular park of radius 20m is situated in a colony. Three boys Ankur, Syed and David are sitting at equal distance on its boundary each having a toy telephone in his hands to talk each other. Find the length of the string of each phone.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">The three boys are sitting at equal distances on the boundary of a circle of radius 20m.</p>
+                        <p class="mb-2">This means they form an equilateral triangle inscribed in the circle.</p>
+                        <p class="mb-2">For an equilateral triangle inscribed in a circle, the relationship between side length (a) and radius (R) is:</p>
+                        <p class="mb-2">a = √3 × R</p>
+                        <p class="mb-2">Given R = 20m</p>
+                        <p class="mb-2">Therefore, a = √3 × 20 = 20√3 m</p>
+                        <p class="mb-2">The length of the string of each phone is the side length of this equilateral triangle.</p>
+                        <p><strong>Answer:</strong> The length of the string of each phone is 20√3 m ≈ 34.64m.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Concept Used:</strong> For an equilateral triangle inscribed in a circle, side = √3 × radius.
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Teen ladke circle ke boundary par equal distance par baithe hain, iska matlab woh equilateral triangle banate hain. Equilateral triangle ke liye side = √3 × radius. Radius 20m hai, toh side = 20√3 m ≈ 34.64m. Yani har phone ki string ki length 34.64m hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 9.3 Section -->
+        <section id="exercise-9-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 9.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: In Fig. 9.23, A,B and C are three points on a circle with centre O such that ∠BOC = 30° and ∠AOB = 60°. If D is a point on the circle other than the arc ABC, find ∠ADC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠BOC = 30°, ∠AOB = 60°</p>
+                        <p class="mb-2">The total angle around point O is 360°</p>
+                        <p class="mb-2">Therefore, ∠AOC = 360° - (∠AOB + ∠BOC) = 360° - (60° + 30°) = 270°</p>
+                        <p class="mb-2">Now, ∠ADC is the angle subtended by arc ABC at point D on the remaining part of the circle.</p>
+                        <p class="mb-2">Arc ABC subtends ∠AOC at the center, which is 270° (reflex angle)</p>
+                        <p class="mb-2">According to Theorem 9.7, the angle subtended by an arc at the center is double the angle subtended by it at any point on the remaining part of the circle.</p>
+                        <p class="mb-2">Therefore, ∠ADC = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × ∠AOC = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 270° = 135°
+                        </p>
+                        <p><strong>Answer:</strong> ∠ADC = 135°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle (Theorem 9.7).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ∠BOC = 30° aur ∠AOB = 60° diye hain. Centre O par total angle 360° hota hai, isliye ∠AOC = 360° - (60° + 30°) = 270°. Arc ABC centre par 270° ka angle banata hai. Theorem 9.7 ke according, arc ABC kisi bhi point par 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 270° = 135° ka angle banayega. Yani ∠ADC = 135°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: A chord of a circle is equal to the radius of the circle. Find the angle subtended by the chord at a point on the minor arc and also at a point on the major arc.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the chord be AB and the radius be r.</p>
+                        <p class="mb-2">Given: AB = r</p>
+                        <p class="mb-2">In triangle OAB (where O is the center):</p>
+                        <p class="mb-2">OA = OB = r (radii)</p>
+                        <p class="mb-2">AB = r (given)</p>
+                        <p class="mb-2">Therefore, triangle OAB is equilateral.</p>
+                        <p class="mb-2">So, ∠AOB = 60°</p>
+                        <p class="mb-2">Now, the angle subtended by chord AB at a point on the minor arc:</p>
+                        <p class="mb-2">Let C be a point on the minor arc AB.</p>
+                        <p class="mb-2">Then ∠ACB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × ∠AOB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 60° = 30°
+                        </p>
+                        <p class="mb-2">Now, the angle subtended by chord AB at a point on the major arc:</p>
+                        <p class="mb-2">Let D be a point on the major arc AB.</p>
+                        <p class="mb-2">The reflex angle AOB = 360° - 60° = 300°</p>
+                        <p class="mb-2">Then ∠ADB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × reflex ∠AOB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 300° = 150°
+                        </p>
+                        <p><strong>Answer:</strong> Angle on minor arc = 30°, Angle on major arc = 150°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle (Theorem 9.7).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Chord radius ke equal hai, isliye triangle OAB equilateral hai aur ∠AOB = 60°. Minor arc par koi point C lete hain, toh ∠ACB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 60° = 30°. Major arc par koi point D lete hain, toh ∠ADB = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × (360° - 60°) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> × 300° = 150°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: In Fig. 9.24, ∠PQR = 100°, where P, Q and R are points on a circle with centre O. Find ∠OPR.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠PQR = 100°</p>
+                        <p class="mb-2">∠PQR is the angle subtended by arc PR at point Q on the circle.</p>
+                        <p class="mb-2">According to Theorem 9.7, the angle at the center is double the angle at the circumference.</p>
+                        <p class="mb-2">So, ∠POR = 2 × ∠PQR = 2 × 100° = 200° (reflex angle)</p>
+                        <p class="mb-2">The other angle at center O, i.e., the minor angle POR = 360° - 200° = 160°</p>
+                        <p class="mb-2">Now, in triangle OPR:</p>
+                        <p class="mb-2">OP = OR (radii)</p>
+                        <p class="mb-2">So, triangle OPR is isosceles.</p>
+                        <p class="mb-2">Therefore, ∠OPR = ∠ORP</p>
+                        <p class="mb-2">Sum of angles in triangle OPR = 180°</p>
+                        <p class="mb-2">So, ∠OPR + ∠ORP + ∠POR = 180°</p>
+                        <p class="mb-2">2∠OPR + 160° = 180°</p>
+                        <p class="mb-2">2∠OPR = 20°</p>
+                        <p class="mb-2">∠OPR = 10°</p>
+                        <p><strong>Answer:</strong> ∠OPR = 10°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The angle subtended by an arc at the centre is double the angle subtended by it at any point on the remaining part of the circle (Theorem 9.7).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ∠PQR = 100° diya hai. Arc PR centre par 2 × 100° = 200° ka angle banata hai (reflex angle). Minor angle POR = 360° - 200° = 160°. Triangle OPR isosceles hai kyunki OP = OR. Isliye ∠OPR = ∠ORP. Triangle ke angles ka sum 180° hai, isliye 2∠OPR + 160° = 180° ⇒ 2∠OPR = 20° ⇒ ∠OPR = 10°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: In Fig. 9.25, ∠ABC = 69°, ∠ACB = 31°, find ∠BDC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠ABC = 69°, ∠ACB = 31°</p>
+                        <p class="mb-2">In triangle ABC:</p>
+                        <p class="mb-2">Sum of angles = 180°</p>
+                        <p class="mb-2">So, ∠BAC = 180° - (69° + 31°) = 180° - 100° = 80°</p>
+                        <p class="mb-2">Now, points A, B, C, D are on the circle (cyclic quadrilateral)</p>
+                        <p class="mb-2">In cyclic quadrilateral, the angle subtended by an arc at the circumference is equal.</p>
+                        <p class="mb-2">So, ∠BDC = ∠BAC (angles in the same segment)</p>
+                        <p class="mb-2">Therefore, ∠BDC = 80°</p>
+                        <p><strong>Answer:</strong> ∠BDC = 80°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angles in the same segment of a circle are equal (Theorem 9.8).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ∠ABC = 69° aur ∠ACB = 31° diye hain. Triangle ABC ke angles ka sum 180° hai, isliye ∠BAC = 180° - (69° + 31°) = 80°. Points A, B, C, D circle par hain (cyclic quadrilateral). Same segment ke angles equal hote hain, isliye ∠BDC = ∠BAC = 80°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In Fig. 9.26, A, B, C and D are four points on a circle. AC and BD intersect at a point E such that ∠BEC = 130° and ∠ECD = 20°. Find ∠BAC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠BEC = 130°, ∠ECD = 20°</p>
+                        <p class="mb-2">In triangle CED:</p>
+                        <p class="mb-2">∠CED = 180° - ∠BEC (linear pair) = 180° - 130° = 50°</p>
+                        <p class="mb-2">Sum of angles in triangle CED = 180°</p>
+                        <p class="mb-2">So, ∠CDE = 180° - (∠CED + ∠ECD) = 180° - (50° + 20°) = 110°</p>
+                        <p class="mb-2">Now, ∠CDB = ∠CDE = 110°</p>
+                        <p class="mb-2">In cyclic quadrilateral ABCD:</p>
+                        <p class="mb-2">∠BAC = ∠BDC (angles in the same segment)</p>
+                        <p class="mb-2">But ∠BDC = ∠CDB = 110°</p>
+                        <p class="mb-2">Therefore, ∠BAC = 110°</p>
+                        <p><strong>Answer:</strong> ∠BAC = 110°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angles in the same segment of a circle are equal (Theorem 9.8).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ∠BEC = 130° aur ∠ECD = 20° diye hain. Linear pair se ∠CED = 180° - 130° = 50°. Triangle CED ke angles ka sum 180° hai, isliye ∠CDE = 180° - (50° + 20°) = 110°. Cyclic quadrilateral mein same segment ke angles equal hote hain, isliye ∠BAC = ∠BDC = 110°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: ABCD is a cyclic quadrilateral whose diagonals intersect at a point E. If ∠DBC = 70°, ∠BAC is 30°, find ∠BCD. Further, if AB = BC, find ∠ECD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ∠DBC = 70°, ∠BAC = 30°</p>
+                        <p class="mb-2">In cyclic quadrilateral ABCD:</p>
+                        <p class="mb-2">∠BDC = ∠BAC = 30° (angles in the same segment)</p>
+                        <p class="mb-2">In triangle BCD:</p>
+                        <p class="mb-2">∠BCD = 180° - (∠DBC + ∠BDC) = 180° - (70° + 30°) = 80°</p>
+                        <p class="mb-2">Now, if AB = BC:</p>
+                        <p class="mb-2">In triangle ABC, AB = BC, so it's isosceles</p>
+                        <p class="mb-2">Therefore, ∠BCA = ∠BAC = 30°</p>
+                        <p class="mb-2">Now, ∠BCD = ∠BCA + ∠ACD</p>
+                        <p class="mb-2">80° = 30° + ∠ACD</p>
+                        <p class="mb-2">So, ∠ACD = 50°</p>
+                        <p class="mb-2">But ∠ACD = ∠ECD (same angle)</p>
+                        <p class="mb-2">Therefore, ∠ECD = 50°</p>
+                        <p><strong>Answer:</strong> ∠BCD = 80°, ∠ECD = 50°</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angles in the same segment of a circle are equal (Theorem 9.8).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ∠DBC = 70° aur ∠BAC = 30° diye hain. Same segment ke angles equal hain, isliye ∠BDC = ∠BAC = 30°. Triangle BCD mein ∠BCD = 180° - (70° + 30°) = 80°. Agar AB = BC, toh triangle ABC isosceles hai, isliye ∠BCA = ∠BAC = 30°. ∠BCD = ∠BCA + ∠ACD, so 80° = 30° + ∠ACD ⇒ ∠ACD = 50°. Yani ∠ECD = 50°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: If diagonals of a cyclic quadrilateral are diameters of the circle through the vertices of the quadrilateral, prove that it is a rectangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABCD be a cyclic quadrilateral with diagonals AC and BD as diameters of the circle.</p>
+                        <p class="mb-2">Since AC is a diameter, ∠ABC = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">Similarly, since AC is a diameter, ∠ADC = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">Since BD is a diameter, ∠BAD = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">Similarly, since BD is a diameter, ∠BCD = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">So, all angles of quadrilateral ABCD are 90°.</p>
+                        <p class="mb-2">Therefore, ABCD is a rectangle.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angle in a semicircle is a right angle.
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cyclic quadrilateral ABCD ki diagonals AC aur BD circle ke diameters hain. AC diameter hai, isliye ∠ABC = 90° aur ∠ADC = 90° (semicircle ke angles right hote hain). BD diameter hai, isliye ∠BAD = 90° aur ∠BCD = 90°. Saare angles 90° hain, isliye ABCD rectangle hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: If the non-parallel sides of a trapezium are equal, prove that it is cyclic.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABCD be a trapezium with AB || CD and AD = BC.</p>
+                        <p class="mb-2">Draw perpendiculars from A and B to CD, meeting CD at E and F respectively.</p>
+                        <p class="mb-2">Since AB || CD, AE = BF (distance between parallel lines)</p>
+                        <p class="mb-2">In right triangles AED and BFC:</p>
+                        <p class="mb-2">AD = BC (given)</p>
+                        <p class="mb-2">AE = BF (proved above)</p>
+                        <p class="mb-2">So, ΔAED ≅ ΔBFC (by RHS congruence rule)</p>
+                        <p class="mb-2">Therefore, ∠ADE = ∠BCF (CPCT)</p>
+                        <p class="mb-2">Now, ∠ADC = ∠ADE and ∠BCD = ∠BCF</p>
+                        <p class="mb-2">So, ∠ADC = ∠BCD</p>
+                        <p class="mb-2">In trapezium ABCD, AB || CD</p>
+                        <p class="mb-2">So, ∠BAD + ∠ADC = 180° (co-interior angles)</p>
+                        <p class="mb-2">But ∠ADC = ∠BCD</p>
+                        <p class="mb-2">So, ∠BAD + ∠BCD = 180°</p>
+                        <p class="mb-2">Therefore, the sum of opposite angles is 180°.</p>
+                        <p class="mb-2">Hence, by Theorem 9.11, ABCD is cyclic.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> If the sum of a pair of opposite angles of a quadrilateral is 180°, the quadrilateral is cyclic (Theorem 9.11).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Trapezium ABCD mein AB || CD aur AD = BC. A aur B se CD par perpendiculars draw karte hain. Triangles AED aur BFC congruent hote hain (RHS rule se). Isliye ∠ADC = ∠BCD. AB || CD hai, isliye ∠BAD + ∠ADC = 180° (co-interior angles). Par ∠ADC = ∠BCD, so ∠BAD + ∠BCD = 180°. Opposite angles ka sum 180° hai, isliye quadrilateral cyclic hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Two circles intersect at two points B and C. Through B, two line segments ABD and PBQ are drawn to intersect the circles at A, D and P, Q respectively (see Fig. 9.27). Prove that ∠ACP = ∠QCD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In the first circle, ABCD is a cyclic quadrilateral.</p>
+                        <p class="mb-2">So, ∠ACP = ∠ABP (angles in the same segment) ...(1)</p>
+                        <p class="mb-2">In the second circle, PBCQ is a cyclic quadrilateral.</p>
+                        <p class="mb-2">So, ∠QCD = ∠QBD (angles in the same segment) ...(2)</p>
+                        <p class="mb-2">But ∠ABP and ∠QBD are vertically opposite angles at point B.</p>
+                        <p class="mb-2">So, ∠ABP = ∠QBD ...(3)</p>
+                        <p class="mb-2">From (1), (2) and (3):</p>
+                        <p class="mb-2">∠ACP = ∠ABP = ∠QBD = ∠QCD</p>
+                        <p class="mb-2">Therefore, ∠ACP = ∠QCD</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angles in the same segment of a circle are equal (Theorem 9.8).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do circles B aur C par intersect karte hain. Pehle circle mein ABCD cyclic quadrilateral hai, isliye ∠ACP = ∠ABP (same segment). Doosre circle mein PBCQ cyclic quadrilateral hai, isliye ∠QCD = ∠QBD (same segment). Point B par ∠ABP aur ∠QBD vertically opposite angles hain, isliye equal hain. Toh ∠ACP = ∠ABP = ∠QBD = ∠QCD. Yani ∠ACP = ∠QCD.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: If circles are drawn taking two sides of a triangle as diameters, prove that the point of intersection of these circles lie on the third side.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABC be a triangle.</p>
+                        <p class="mb-2">Draw circles with AB and AC as diameters.</p>
+                        <p class="mb-2">Let these circles intersect at point A and another point D.</p>
+                        <p class="mb-2">Since AB is diameter of first circle, ∠ADB = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">Since AC is diameter of second circle, ∠ADC = 90° (angle in a semicircle)</p>
+                        <p class="mb-2">Now, ∠ADB + ∠ADC = 90° + 90° = 180°</p>
+                        <p class="mb-2">So, points B, D, C are collinear (angles on the same side of AD sum to 180°)</p>
+                        <p class="mb-2">Therefore, D lies on BC.</p>
+                        <p class="mb-2">Hence, the point of intersection of the circles lies on the third side BC.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> Angle in a semicircle is a right angle.
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Triangle ABC ki sides AB aur AC as diameters lekar circles draw karte hain. Ye circles A aur ek aur point D par intersect karte hain. AB diameter hai, isliye ∠ADB = 90°. AC diameter hai, isliye ∠ADC = 90°. ∠ADB + ∠ADC = 180°, iska matlab points B, D, C ek straight line par hain. Yani D third side BC par hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: ABC and ADC are two right triangles with common hypotenuse AC. Prove that ∠CAD = ∠CBD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ABC and ADC are right triangles with common hypotenuse AC.</p>
+                        <p class="mb-2">So, ∠ABC = 90° and ∠ADC = 90°</p>
+                        <p class="mb-2">Since ∠ABC + ∠ADC = 90° + 90° = 180°</p>
+                        <p class="mb-2">Therefore, ABCD is a cyclic quadrilateral (opposite angles sum to 180°)</p>
+                        <p class="mb-2">In cyclic quadrilateral ABCD:</p>
+                        <p class="mb-2">∠CAD = ∠CBD (angles in the same segment CD)</p>
+                        <p class="mb-2">Hence proved.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> If the sum of a pair of opposite angles of a quadrilateral is 180°, the quadrilateral is cyclic (Theorem 9.11).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABC aur ADC right triangles hain jinki common hypotenuse AC hai. ∠ABC = 90° aur ∠ADC = 90°, inka sum 180° hai. Isliye ABCD cyclic quadrilateral hai. Cyclic quadrilateral mein same segment ke angles equal hote hain, isliye ∠CAD = ∠CBD.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: Prove that a cyclic parallelogram is a rectangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABCD be a cyclic parallelogram.</p>
+                        <p class="mb-2">Since ABCD is a parallelogram, opposite angles are equal.</p>
+                        <p class="mb-2">So, ∠A = ∠C and ∠B = ∠D</p>
+                        <p class="mb-2">Since ABCD is cyclic, the sum of opposite angles is 180°.</p>
+                        <p class="mb-2">So, ∠A + ∠C = 180°</p>
+                        <p class="mb-2">But ∠A = ∠C, so 2∠A = 180° ⇒ ∠A = 90°</p>
+                        <p class="mb-2">Similarly, ∠B = 90°</p>
+                        <p class="mb-2">So, all angles of parallelogram ABCD are 90°.</p>
+                        <p class="mb-2">Therefore, ABCD is a rectangle.</p>
+                    </div>
+                    
+                    <div class="theorem">
+                        <strong>Theorem Used:</strong> The sum of either pair of opposite angles of a cyclic quadrilateral is 180° (Theorem 9.10).
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD ek cyclic parallelogram hai. Parallelogram mein opposite angles equal hote hain, so ∠A = ∠C aur ∠B = ∠D. Cyclic quadrilateral mein opposite angles ka sum 180° hota hai, so ∠A + ∠C = 180°. Par ∠A = ∠C, isliye 2∠A = 180° ⇒ ∠A = 90°. Similarly ∠B = 90°. Saare angles 90° hain, isliye ABCD rectangle hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

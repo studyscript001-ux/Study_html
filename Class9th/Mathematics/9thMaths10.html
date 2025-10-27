@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 10: Heron's Formula</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 10<br> Heron's Formula</h1>
+            <p class="mt-2 text-lg">Class 9th Mathematics</p>
+        </div>
+
+        <!-- Exercise 10.1 Section -->
+        <section id="exercise-10-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 10.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: A traffic signal board, indicating 'SCHOOL AHEAD', is an equilateral triangle with side 'a'. Find the area of the signal board, using Heron's formula. If its perimeter is 180 cm, what will be the area of the signal board?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">For an equilateral triangle, all sides are equal: a = a, b = a, c = a</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">a + a + a</span>
+                                <span class="denominator">2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Using Heron's formula:</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)]</p>
+                        <p class="mb-2">= √[ 
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div> × (
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div> - a) × (
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div> - a) × (
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div> - a) ]
+                        </p>
+                        <p class="mb-2">= √[ 
+                            <div class="fraction">
+                                <span class="numerator">3a</span>
+                                <span class="denominator">2</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">a</span>
+                                <span class="denominator">2</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">a</span>
+                                <span class="denominator">2</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">a</span>
+                                <span class="denominator">2</span>
+                            </div> ]
+                        </p>
+                        <p class="mb-2">= √[ 
+                            <div class="fraction">
+                                <span class="numerator">3a⁴</span>
+                                <span class="denominator">16</span>
+                            </div> ] = 
+                            <div class="fraction">
+                                <span class="numerator">a²</span>
+                                <span class="denominator">4</span>
+                            </div> √3
+                        </p>
+                        <p class="mb-2">When perimeter = 180 cm, each side a = 180 ÷ 3 = 60 cm</p>
+                        <p class="mb-2">Area = 
+                            <div class="fraction">
+                                <span class="numerator">(60)²</span>
+                                <span class="denominator">4</span>
+                            </div> √3 = 
+                            <div class="fraction">
+                                <span class="numerator">3600</span>
+                                <span class="denominator">4</span>
+                            </div> √3 = 900√3 cm²
+                        </p>
+                        <p><strong>Answer:</strong> Area = 900√3 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equilateral triangle ke liye sabhi sides equal hain. Semi-perimeter s = 3a/2. Heron's formula lagane par area = (a²/4)√3 milta hai. Jab perimeter 180 cm hai, toh har side 60 cm. Is value ko formula mein daalne par area = 900√3 cm² milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: The triangular side walls of a flyover have been used for advertisements. The sides of the walls are 122 m, 22 m and 120 m. The advertisements yield an earning of ₹ 5000 per m² per year. A company hired one of its walls for 3 months. How much rent did it pay?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sides of triangle: a = 122 m, b = 22 m, c = 120 m</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">122 + 22 + 120</span>
+                                <span class="denominator">2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">264</span>
+                                <span class="denominator">2</span>
+                            </div> = 132 m
+                        </p>
+                        <p class="mb-2">s - a = 132 - 122 = 10 m</p>
+                        <p class="mb-2">s - b = 132 - 22 = 110 m</p>
+                        <p class="mb-2">s - c = 132 - 120 = 12 m</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)] = √[132 × 10 × 110 × 12]</p>
+                        <p class="mb-2">= √[132 × 10 × 110 × 12] = √[1742400] = 1320 m²</p>
+                        <p class="mb-2">Annual earning = Area × Rate = 1320 × 5000 = ₹66,00,000</p>
+                        <p class="mb-2">Rent for 3 months = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">12</span>
+                            </div> × 66,00,000 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> × 66,00,000 = ₹16,50,000
+                        </p>
+                        <p><strong>Answer:</strong> ₹16,50,000</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle triangle ka area Heron's formula se nikalte hain. Sides 122 m, 22 m, 120 m hain. Semi-perimeter 132 m hai. Area = 1320 m². Annual earning = 1320 × 5000 = ₹66,00,000. 3 months ka rent = (3/12) × 66,00,000 = ₹16,50,000.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: There is a slide in a park. One of its side walls has been painted in some colour with a message "KEEP THE PARK GREEN AND CLEAN". If the sides of the wall are 15 m, 11 m and 6 m, find the area painted in colour.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sides of triangle: a = 15 m, b = 11 m, c = 6 m</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">15 + 11 + 6</span>
+                                <span class="denominator">2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">32</span>
+                                <span class="denominator">2</span>
+                            </div> = 16 m
+                        </p>
+                        <p class="mb-2">s - a = 16 - 15 = 1 m</p>
+                        <p class="mb-2">s - b = 16 - 11 = 5 m</p>
+                        <p class="mb-2">s - c = 16 - 6 = 10 m</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)] = √[16 × 1 × 5 × 10]</p>
+                        <p class="mb-2">= √[800] = 20√2 m²</p>
+                        <p><strong>Answer:</strong> 20√2 m²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Triangle ki sides 15 m, 11 m, 6 m hain. Semi-perimeter 16 m hai. Heron's formula lagane par area = √[16 × 1 × 5 × 10] = √800 = 20√2 m². Yeh painted area hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Find the area of a triangle two sides of which are 18cm and 10cm and the perimeter is 42cm.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a = 18 cm, b = 10 cm, Perimeter = 42 cm</p>
+                        <p class="mb-2">Third side c = Perimeter - (a + b) = 42 - (18 + 10) = 42 - 28 = 14 cm</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">42</span>
+                                <span class="denominator">2</span>
+                            </div> = 21 cm
+                        </p>
+                        <p class="mb-2">s - a = 21 - 18 = 3 cm</p>
+                        <p class="mb-2">s - b = 21 - 10 = 11 cm</p>
+                        <p class="mb-2">s - c = 21 - 14 = 7 cm</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)] = √[21 × 3 × 11 × 7]</p>
+                        <p class="mb-2">= √[4851] = 21√11 cm²</p>
+                        <p><strong>Answer:</strong> 21√11 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do sides 18 cm aur 10 cm hain, perimeter 42 cm hai. Toh third side = 42 - (18+10) = 14 cm. Semi-perimeter 21 cm. Heron's formula lagane par area = √[21 × 3 × 11 × 7] = √4851 = 21√11 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Sides of a triangle are in the ratio of 12:17:25 and its perimeter is 540cm. Find its area.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the sides be 12x, 17x, and 25x</p>
+                        <p class="mb-2">Perimeter = 12x + 17x + 25x = 54x</p>
+                        <p class="mb-2">Given perimeter = 540 cm</p>
+                        <p class="mb-2">So, 54x = 540 ⇒ x = 10</p>
+                        <p class="mb-2">Sides: a = 12 × 10 = 120 cm, b = 17 × 10 = 170 cm, c = 25 × 10 = 250 cm</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">540</span>
+                                <span class="denominator">2</span>
+                            </div> = 270 cm
+                        </p>
+                        <p class="mb-2">s - a = 270 - 120 = 150 cm</p>
+                        <p class="mb-2">s - b = 270 - 170 = 100 cm</p>
+                        <p class="mb-2">s - c = 270 - 250 = 20 cm</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)] = √[270 × 150 × 100 × 20]</p>
+                        <p class="mb-2">= √[81000000] = 9000 cm²</p>
+                        <p><strong>Answer:</strong> 9000 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sides ratio 12:17:25 hai, perimeter 540 cm. Pehle x find karte hain: 12x+17x+25x=54x=540, so x=10. Sides: 120 cm, 170 cm, 250 cm. Semi-perimeter 270 cm. Heron's formula lagane par area = √[270×150×100×20] = √81000000 = 9000 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: An isosceles triangle has perimeter 30 cm and each of the equal sides is 12 cm. Find the area of the triangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: Equal sides = 12 cm each, Perimeter = 30 cm</p>
+                        <p class="mb-2">Third side = Perimeter - (12 + 12) = 30 - 24 = 6 cm</p>
+                        <p class="mb-2">Sides: a = 12 cm, b = 12 cm, c = 6 cm</p>
+                        <p class="mb-2">Semi-perimeter s = 
+                            <div class="fraction">
+                                <span class="numerator">30</span>
+                                <span class="denominator">2</span>
+                            </div> = 15 cm
+                        </p>
+                        <p class="mb-2">s - a = 15 - 12 = 3 cm</p>
+                        <p class="mb-2">s - b = 15 - 12 = 3 cm</p>
+                        <p class="mb-2">s - c = 15 - 6 = 9 cm</p>
+                        <p class="mb-2">Area = √[s(s-a)(s-b)(s-c)] = √[15 × 3 × 3 × 9]</p>
+                        <p class="mb-2">= √[1215] = 9√15 cm²</p>
+                        <p><strong>Answer:</strong> 9√15 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Isosceles triangle mein do equal sides 12 cm hain, perimeter 30 cm hai. Toh third side = 30 - (12+12) = 6 cm. Semi-perimeter 15 cm. Heron's formula lagane par area = √[15×3×3×9] = √1215 = 9√15 cm².
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

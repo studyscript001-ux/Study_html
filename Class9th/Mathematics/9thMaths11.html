@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 11: Surface Area and Volume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 11 Surface Area and Volume</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 11.1 Section -->
+        <section id="exercise-11-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 11.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the curved surface area of a cone with base diameter 10.5 cm and slant height 10 cm.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Base diameter = 10.5 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">10.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 5.25 cm
+                        </p>
+                        <p class="mb-2">Slant height (l) = 10 cm</p>
+                        <p class="mb-2">Curved surface area of cone = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 10 cm²
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 52.5 cm² = 165 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 165 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka base diameter 10.5 cm hai, toh radius 5.25 cm hoga. Slant height 10 cm hai. Curved surface area = πrl = (22/7) × 5.25 × 10 = 165 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the total surface area of a cone with slant height 21 m and base diameter 24 m.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Base diameter = 24 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">24</span>
+                                <span class="denominator">2</span>
+                            </div> = 12 m
+                        </p>
+                        <p class="mb-2">Slant height (l) = 21 m</p>
+                        <p class="mb-2">Total surface area of cone = πr(l + r)</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 12 × (21 + 12) m²
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 12 × 33 m² = 
+                            <div class="fraction">
+                                <span class="numerator">8712</span>
+                                <span class="denominator">7</span>
+                            </div> m² = 1244.57 m²
+                        </p>
+                        <p><strong>Answer:</strong> 1244.57 m²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka base diameter 24 m hai, toh radius 12 m hoga. Slant height 21 m hai. Total surface area = πr(l + r) = (22/7) × 12 × 33 = 1244.57 m².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: The curved surface area of a cone is 308 cm² and its slant height is 14 cm. Find:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Radius of the base</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Curved surface area = 308 cm²</p>
+                        <p class="mb-2">Slant height (l) = 14 cm</p>
+                        <p class="mb-2">Curved surface area of cone = πrl</p>
+                        <p class="mb-2">308 = 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × r × 14
+                        </p>
+                        <p class="mb-2">308 = 44r</p>
+                        <p class="mb-2">r = 
+                            <div class="fraction">
+                                <span class="numerator">308</span>
+                                <span class="denominator">44</span>
+                            </div> = 7 cm
+                        </p>
+                        <p><strong>Answer:</strong> 7 cm</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Total surface area of the cone</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 7 cm</p>
+                        <p class="mb-2">Slant height (l) = 14 cm</p>
+                        <p class="mb-2">Total surface area = πr(l + r)</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × (14 + 7) cm²
+                        </p>
+                        <p class="mb-2">= 22 × 21 = 462 cm²</p>
+                        <p><strong>Answer:</strong> 462 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Curved surface area 308 cm² aur slant height 14 cm diya hai. πrl = 308 se radius nikalte hain: (22/7) × r × 14 = 308, toh r = 7 cm. Total surface area = πr(l + r) = (22/7) × 7 × 21 = 462 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: A conical tent is 10 m high and the radius of its base is 24 m. Find:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Slant height of the tent</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 10 m</p>
+                        <p class="mb-2">Radius (r) = 24 m</p>
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 10² + 24² = 100 + 576 = 676</p>
+                        <p class="mb-2">l = √676 = 26 m</p>
+                        <p><strong>Answer:</strong> 26 m</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Cost of canvas required to make the tent, if the cost of 1 m² canvas is ₹70</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Slant height (l) = 26 m</p>
+                        <p class="mb-2">Radius (r) = 24 m</p>
+                        <p class="mb-2">Curved surface area of tent = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 24 × 26 m²
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">13728</span>
+                                <span class="denominator">7</span>
+                            </div> m² = 1961.14 m²
+                        </p>
+                        <p class="mb-2">Cost of canvas = 1961.14 × 70 = ₹137279.80</p>
+                        <p><strong>Answer:</strong> ₹137279.80</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ki height 10 m aur radius 24 m hai. Slant height l² = h² + r² = 100 + 576 = 676, so l = 26 m. Canvas area = πrl = (22/7) × 24 × 26 = 1961.14 m². Cost = 1961.14 × 70 = ₹137279.80.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: What length of tarpaulin 3 m wide will be required to make a conical tent of height 8 m and base radius 6 m? Assume that the extra length of material that will be required for stitching margins and wastage is 20 cm.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 8 m</p>
+                        <p class="mb-2">Radius (r) = 6 m</p>
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 8² + 6² = 64 + 36 = 100</p>
+                        <p class="mb-2">l = √100 = 10 m</p>
+                        <p class="mb-2">Curved surface area of tent = πrl</p>
+                        <p class="mb-2">= 3.14 × 6 × 10 = 188.4 m²</p>
+                        <p class="mb-2">Width of tarpaulin = 3 m</p>
+                        <p class="mb-2">Length required = 
+                            <div class="fraction">
+                                <span class="numerator">188.4</span>
+                                <span class="denominator">3</span>
+                            </div> = 62.8 m
+                        </p>
+                        <p class="mb-2">Extra length for stitching = 20 cm = 0.2 m</p>
+                        <p class="mb-2">Total length required = 62.8 + 0.2 = 63 m</p>
+                        <p><strong>Answer:</strong> 63 m</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ki height 8 m aur radius 6 m hai. Slant height l² = 64 + 36 = 100, so l = 10 m. Curved surface area = πrl = 3.14 × 6 × 10 = 188.4 m². Tarpaulin ki width 3 m hai, toh length = 188.4/3 = 62.8 m. Extra 0.2 m add karenge stitching ke liye, total 63 m.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: The slant height and base diameter of a conical tomb are 25 m and 14 m respectively. Find the cost of white-washing its curved surface at the rate of ₹210 per 100 m².</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Slant height (l) = 25 m</p>
+                        <p class="mb-2">Base diameter = 14 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">2</span>
+                            </div> = 7 m
+                        </p>
+                        <p class="mb-2">Curved surface area = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × 25 = 550 m²
+                        </p>
+                        <p class="mb-2">Cost of white-washing per 100 m² = ₹210</p>
+                        <p class="mb-2">Cost for 550 m² = 
+                            <div class="fraction">
+                                <span class="numerator">550</span>
+                                <span class="denominator">100</span>
+                            </div> × 210 = 5.5 × 210 = ₹1155
+                        </p>
+                        <p><strong>Answer:</strong> ₹1155</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Slant height 25 m aur base diameter 14 m hai, so radius 7 m. Curved surface area = πrl = (22/7) × 7 × 25 = 550 m². White-washing cost ₹210 per 100 m², so total cost = (550/100) × 210 = ₹1155.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: A joker's cap is in the form of a right circular cone of base radius 7 cm and height 24 cm. Find the area of the sheet required to make 10 such caps.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 7 cm</p>
+                        <p class="mb-2">Height (h) = 24 cm</p>
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 24² + 7² = 576 + 49 = 625</p>
+                        <p class="mb-2">l = √625 = 25 cm</p>
+                        <p class="mb-2">Curved surface area of one cap = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × 25 = 550 cm²
+                        </p>
+                        <p class="mb-2">Area for 10 caps = 10 × 550 = 5500 cm²</p>
+                        <p><strong>Answer:</strong> 5500 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka radius 7 cm aur height 24 cm hai. Slant height l² = 576 + 49 = 625, so l = 25 cm. One cap ka curved surface area = πrl = (22/7) × 7 × 25 = 550 cm². 10 caps ke liye 5500 cm² sheet chahiye.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: A bus stop is barricaded from the remaining part of the road by using 50 hollow cones made of recycled cardboard. Each cone has a base diameter of 40 cm and height 1 m. If the outer side of each of the cones is to be painted and the cost of painting is ₹12 per m², what will be the cost of painting all these cones?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Base diameter = 40 cm = 0.4 m</p>
+                        <p class="mb-2">Radius (r) = 0.2 m</p>
+                        <p class="mb-2">Height (h) = 1 m</p>
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 1² + 0.2² = 1 + 0.04 = 1.04</p>
+                        <p class="mb-2">l = √1.04 = 1.02 m</p>
+                        <p class="mb-2">Curved surface area of one cone = πrl</p>
+                        <p class="mb-2">= 3.14 × 0.2 × 1.02 = 0.64056 m²</p>
+                        <p class="mb-2">Area for 50 cones = 50 × 0.64056 = 32.028 m²</p>
+                        <p class="mb-2">Cost of painting = 32.028 × 12 = ₹384.34</p>
+                        <p><strong>Answer:</strong> ₹384.34</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Each cone ka diameter 40 cm = 0.4 m, so radius 0.2 m. Height 1 m. Slant height l² = 1 + 0.04 = 1.04, so l = 1.02 m. One cone ka curved surface area = πrl = 3.14 × 0.2 × 1.02 = 0.64056 m². 50 cones ka area = 32.028 m². Painting cost = 32.028 × 12 = ₹384.34.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 11.2 Section -->
+        <section id="exercise-11-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 11.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the surface area of a sphere with radius:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 10.5 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 10.5 cm</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 10.5 × 10.5 cm²
+                        </p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 110.25 cm² = 1386 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 1386 cm²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 5.6 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 5.6 cm</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.6 × 5.6 cm²
+                        </p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 31.36 cm² = 394.24 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 394.24 cm²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 14 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 14 cm</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 14 × 14 cm²
+                        </p>
+                        <p class="mb-2">= 4 × 22 × 2 × 14 cm² = 2464 cm²</p>
+                        <p><strong>Answer:</strong> 2464 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka surface area = 4πr². (i) r = 10.5 cm: 4 × (22/7) × 10.5 × 10.5 = 1386 cm². (ii) r = 5.6 cm: 4 × (22/7) × 5.6 × 5.6 = 394.24 cm². (iii) r = 14 cm: 4 × (22/7) × 14 × 14 = 2464 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the surface area of a sphere with diameter:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 14 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 14 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">14</span>
+                                <span class="denominator">2</span>
+                            </div> = 7 cm
+                        </p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × 7 cm² = 616 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 616 cm²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 21 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 21 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">21</span>
+                                <span class="denominator">2</span>
+                            </div> = 10.5 cm
+                        </p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 10.5 × 10.5 cm² = 1386 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 1386 cm²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 3.5 m</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 3.5 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">3.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 1.75 m
+                        </p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">= 4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 1.75 × 1.75 m² = 38.5 m²
+                        </p>
+                        <p><strong>Answer:</strong> 38.5 m²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka surface area = 4πr². (i) Diameter 14 cm, r = 7 cm: 4 × (22/7) × 7 × 7 = 616 cm². (ii) Diameter 21 cm, r = 10.5 cm: 4 × (22/7) × 10.5 × 10.5 = 1386 cm². (iii) Diameter 3.5 m, r = 1.75 m: 4 × (22/7) × 1.75 × 1.75 = 38.5 m².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Find the total surface area of a hemisphere of radius 10 cm. (Use π = 3.14)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 10 cm</p>
+                        <p class="mb-2">Total surface area of hemisphere = 3πr²</p>
+                        <p class="mb-2">= 3 × 3.14 × 10 × 10 cm²</p>
+                        <p class="mb-2">= 3 × 3.14 × 100 = 942 cm²</p>
+                        <p><strong>Answer:</strong> 942 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Hemisphere ka total surface area = 3πr². r = 10 cm, π = 3.14: 3 × 3.14 × 10 × 10 = 942 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The radius of a spherical balloon increases from 7 cm to 14 cm as air is being pumped into it. Find the ratio of surface areas of the balloon in the two cases.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Initial radius (r₁) = 7 cm</p>
+                        <p class="mb-2">Final radius (r₂) = 14 cm</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">Ratio = 
+                            <div class="fraction">
+                                <span class="numerator">4πr₁²</span>
+                                <span class="denominator">4πr₂²</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">r₁²</span>
+                                <span class="denominator">r₂²</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">7²</span>
+                                <span class="denominator">14²</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">49</span>
+                                <span class="denominator">196</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 4</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka surface area 4πr² hai. Ratio = (4πr₁²)/(4πr₂²) = (r₁/r₂)² = (7/14)² = (1/2)² = 1/4 = 1:4.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: A hemispherical bowl made of brass has inner diameter 10.5 cm. Find the cost of tin-plating it on the inside at the rate of ₹16 per 100 cm².</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Inner diameter = 10.5 cm</p>
+                        <p class="mb-2">Inner radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">10.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 5.25 cm
+                        </p>
+                        <p class="mb-2">Inner curved surface area of hemisphere = 2πr²</p>
+                        <p class="mb-2">= 2 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 5.25 cm²
+                        </p>
+                        <p class="mb-2">= 2 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 27.5625 cm² = 173.25 cm²
+                        </p>
+                        <p class="mb-2">Cost of tin-plating per 100 cm² = ₹16</p>
+                        <p class="mb-2">Cost for 173.25 cm² = 
+                            <div class="fraction">
+                                <span class="numerator">173.25</span>
+                                <span class="denominator">100</span>
+                            </div> × 16 = ₹27.72
+                        </p>
+                        <p><strong>Answer:</strong> ₹27.72</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Bowl ka inner diameter 10.5 cm, so radius 5.25 cm. Inner curved surface area = 2πr² = 2 × (22/7) × 5.25 × 5.25 = 173.25 cm². Tin-plating cost ₹16 per 100 cm², so total cost = (173.25/100) × 16 = ₹27.72.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Find the radius of a sphere whose surface area is 154 cm².</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Surface area of sphere = 154 cm²</p>
+                        <p class="mb-2">4πr² = 154</p>
+                        <p class="mb-2">4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 154
+                        </p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">88</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 154
+                        </p>
+                        <p class="mb-2">r² = 154 × 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">88</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1078</span>
+                                <span class="denominator">88</span>
+                            </div> = 12.25
+                        </p>
+                        <p class="mb-2">r = √12.25 = 3.5 cm</p>
+                        <p><strong>Answer:</strong> 3.5 cm</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka surface area 154 cm² diya hai. 4πr² = 154, so 4 × (22/7) × r² = 154. Is equation ko solve karenge: (88/7) × r² = 154, r² = 154 × (7/88) = 12.25, r = √12.25 = 3.5 cm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: The diameter of the moon is approximately one-fourth of the diameter of the earth. Find the ratio of their surface areas.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let diameter of earth = D</p>
+                        <p class="mb-2">Diameter of moon = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Radius of earth (R) = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Radius of moon (r) = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">8</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">Ratio = 
+                            <div class="fraction">
+                                <span class="numerator">4πr²</span>
+                                <span class="denominator">4πR²</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">r²</span>
+                                <span class="denominator">R²</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">(D/8)²</span>
+                                <span class="denominator">(D/2)²</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">D²/64</span>
+                                <span class="denominator">D²/4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">16</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 16</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Moon ka diameter earth ke diameter ka 1/4 hai. Radius ka ratio = (1/4)/1 = 1/4. Surface area ratio = (r/R)² = (1/4)² = 1/16 = 1:16.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: A hemispherical bowl is made of steel, 0.25 cm thick. The inner radius of the bowl is 5 cm. Find the outer curved surface area of the bowl.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Inner radius (r) = 5 cm</p>
+                        <p class="mb-2">Thickness = 0.25 cm</p>
+                        <p class="mb-2">Outer radius (R) = 5 + 0.25 = 5.25 cm</p>
+                        <p class="mb-2">Outer curved surface area of hemisphere = 2πR²</p>
+                        <p class="mb-2">= 2 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 5.25 cm²
+                        </p>
+                        <p class="mb-2">= 2 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 27.5625 cm² = 173.25 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 173.25 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Bowl ki inner radius 5 cm hai, thickness 0.25 cm, so outer radius = 5.25 cm. Outer curved surface area = 2πR² = 2 × (22/7) × 5.25 × 5.25 = 173.25 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: A right circular cylinder just encloses a sphere of radius r. Find:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Surface area of the sphere</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius of sphere = r</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p><strong>Answer:</strong> 4πr²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Curved surface area of the cylinder</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius of cylinder = r</p>
+                        <p class="mb-2">Height of cylinder = 2r (since sphere just fits)</p>
+                        <p class="mb-2">Curved surface area of cylinder = 2πrh</p>
+                        <p class="mb-2">= 2πr × 2r = 4πr²</p>
+                        <p><strong>Answer:</strong> 4πr²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Ratio of the areas obtained in (i) and (ii)</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">Curved surface area of cylinder = 4πr²</p>
+                        <p class="mb-2">Ratio = 
+                            <div class="fraction">
+                                <span class="numerator">4πr²</span>
+                                <span class="denominator">4πr²</span>
+                            </div> = 1
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka radius r hai. (i) Sphere ka surface area = 4πr². (ii) Cylinder ka radius r aur height 2r hai (kyunki sphere exactly fit hota hai). Cylinder ka curved surface area = 2πrh = 2πr × 2r = 4πr². (iii) Ratio = (4πr²)/(4πr²) = 1:1.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 11.3 Section -->
+        <section id="exercise-11-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 11.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the volume of the right circular cone with:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Radius 6 cm, height 7 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 6 cm</p>
+                        <p class="mb-2">Height (h) = 7 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 6 × 6 × 7 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 36 cm³ = 264 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 264 cm³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Radius 3.5 cm, height 12 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 3.5 cm</p>
+                        <p class="mb-2">Height (h) = 12 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 3.5 × 3.5 × 12 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.5 × 3.5 × 12 cm³ = 154 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 154 cm³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka volume = (1/3)πr²h. (i) r = 6 cm, h = 7 cm: (1/3) × (22/7) × 6 × 6 × 7 = 264 cm³. (ii) r = 3.5 cm, h = 12 cm: (1/3) × (22/7) × 3.5 × 3.5 × 12 = 154 cm³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the capacity in litres of a conical vessel with:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Radius 7 cm, slant height 25 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 7 cm</p>
+                        <p class="mb-2">Slant height (l) = 25 cm</p>
+                        <p class="mb-2">Using Pythagoras theorem: h² = l² - r²</p>
+                        <p class="mb-2">h² = 25² - 7² = 625 - 49 = 576</p>
+                        <p class="mb-2">h = √576 = 24 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × 7 × 24 cm³ = 1232 cm³
+                        </p>
+                        <p class="mb-2">Capacity in litres = 
+                            <div class="fraction">
+                                <span class="numerator">1232</span>
+                                <span class="denominator">1000</span>
+                            </div> = 1.232 L
+                        </p>
+                        <p><strong>Answer:</strong> 1.232 L</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Height 12 cm, slant height 13 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 12 cm</p>
+                        <p class="mb-2">Slant height (l) = 13 cm</p>
+                        <p class="mb-2">Using Pythagoras theorem: r² = l² - h²</p>
+                        <p class="mb-2">r² = 13² - 12² = 169 - 144 = 25</p>
+                        <p class="mb-2">r = √25 = 5 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5 × 5 × 12 cm³ = 
+                            <div class="fraction">
+                                <span class="numerator">2200</span>
+                                <span class="denominator">7</span>
+                            </div> cm³ = 314.29 cm³
+                        </p>
+                        <p class="mb-2">Capacity in litres = 
+                            <div class="fraction">
+                                <span class="numerator">314.29</span>
+                                <span class="denominator">1000</span>
+                            </div> = 0.31429 L
+                        </p>
+                        <p><strong>Answer:</strong> 0.31429 L</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka volume = (1/3)πr²h. (i) r = 7 cm, l = 25 cm: h² = 625 - 49 = 576, h = 24 cm. Volume = (1/3) × (22/7) × 7 × 7 × 24 = 1232 cm³ = 1.232 L. (ii) h = 12 cm, l = 13 cm: r² = 169 - 144 = 25, r = 5 cm. Volume = (1/3) × (22/7) × 5 × 5 × 12 = 314.29 cm³ = 0.31429 L.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: The height of a cone is 15 cm. If its volume is 1570 cm³, find the radius of the base. (Use π = 3.14)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 15 cm</p>
+                        <p class="mb-2">Volume = 1570 cm³</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">1570 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 3.14 × r² × 15
+                        </p>
+                        <p class="mb-2">1570 = 15.7 × r²</p>
+                        <p class="mb-2">r² = 
+                            <div class="fraction">
+                                <span class="numerator">1570</span>
+                                <span class="denominator">15.7</span>
+                            </div> = 100
+                        </p>
+                        <p class="mb-2">r = √100 = 10 cm</p>
+                        <p><strong>Answer:</strong> 10 cm</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ki height 15 cm aur volume 1570 cm³ hai. Volume = (1/3)πr²h, so 1570 = (1/3) × 3.14 × r² × 15. Is equation ko solve karenge: 1570 = 15.7 × r², r² = 1570/15.7 = 100, r = 10 cm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: If the volume of a right circular cone of height 9 cm is 48π cm³, find the diameter of its base.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 9 cm</p>
+                        <p class="mb-2">Volume = 48π cm³</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">48π = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr² × 9
+                        </p>
+                        <p class="mb-2">48π = 3πr²</p>
+                        <p class="mb-2">r² = 
+                            <div class="fraction">
+                                <span class="numerator">48π</span>
+                                <span class="denominator">3π</span>
+                            </div> = 16
+                        </p>
+                        <p class="mb-2">r = √16 = 4 cm</p>
+                        <p class="mb-2">Diameter = 2r = 8 cm</p>
+                        <p><strong>Answer:</strong> 8 cm</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ki height 9 cm aur volume 48π cm³ hai. Volume = (1/3)πr²h, so 48π = (1/3)πr² × 9. Is equation ko solve karenge: 48π = 3πr², r² = 48π/3π = 16, r = 4 cm. Diameter = 2 × 4 = 8 cm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: A conical pit of top diameter 3.5 m is 12 m deep. What is its capacity in kilolitres?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Top diameter = 3.5 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">3.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 1.75 m
+                        </p>
+                        <p class="mb-2">Height (h) = 12 m</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 1.75 × 1.75 × 12 m³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.25 × 1.75 × 12 m³ = 38.5 m³
+                        </p>
+                        <p class="mb-2">1 m³ = 1 kilolitre</p>
+                        <p class="mb-2">Capacity = 38.5 kilolitres</p>
+                        <p><strong>Answer:</strong> 38.5 kilolitres</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pit ka top diameter 3.5 m, so radius 1.75 m. Height 12 m. Volume = (1/3)πr²h = (1/3) × (22/7) × 1.75 × 1.75 × 12 = 38.5 m³. 1 m³ = 1 kilolitre, so capacity = 38.5 kilolitres.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: The volume of a right circular cone is 9856 cm³. If the diameter of the base is 28 cm, find:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Height of the cone</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Volume = 9856 cm³</p>
+                        <p class="mb-2">Diameter = 28 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">28</span>
+                                <span class="denominator">2</span>
+                            </div> = 14 cm
+                        </p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">9856 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 14 × 14 × h
+                        </p>
+                        <p class="mb-2">9856 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 2 × 14 × h
+                        </p>
+                        <p class="mb-2">9856 = 
+                            <div class="fraction">
+                                <span class="numerator">616</span>
+                                <span class="denominator">3</span>
+                            </div> × h
+                        </p>
+                        <p class="mb-2">h = 9856 × 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">616</span>
+                            </div> = 48 cm
+                        </p>
+                        <p><strong>Answer:</strong> 48 cm</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Slant height of the cone</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Height (h) = 48 cm</p>
+                        <p class="mb-2">Radius (r) = 14 cm</p>
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 48² + 14² = 2304 + 196 = 2500</p>
+                        <p class="mb-2">l = √2500 = 50 cm</p>
+                        <p><strong>Answer:</strong> 50 cm</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Curved surface area of the cone</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 14 cm</p>
+                        <p class="mb-2">Slant height (l) = 50 cm</p>
+                        <p class="mb-2">Curved surface area = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 14 × 50 cm² = 2200 cm²
+                        </p>
+                        <p><strong>Answer:</strong> 2200 cm²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka volume 9856 cm³, diameter 28 cm, so radius 14 cm. (i) Volume = (1/3)πr²h, so 9856 = (1/3) × (22/7) × 14 × 14 × h. Solve karke h = 48 cm. (ii) l² = h² + r² = 2304 + 196 = 2500, l = 50 cm. (iii) Curved surface area = πrl = (22/7) × 14 × 50 = 2200 cm².
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: A right triangle ABC with sides 5 cm, 12 cm and 13 cm is revolved about the side 12 cm. Find the volume of the solid so obtained.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">When revolved about side 12 cm, we get a cone</p>
+                        <p class="mb-2">Height (h) = 12 cm</p>
+                        <p class="mb-2">Radius (r) = 5 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5 × 5 × 12 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 25 × 
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">7</span>
+                            </div> cm³ = 
+                            <div class="fraction">
+                                <span class="numerator">6600</span>
+                                <span class="denominator">21</span>
+                            </div> cm³ = 314.29 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 314.29 cm³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Right triangle ko 12 cm side ke around revolve karne par cone banta hai. Height 12 cm, radius 5 cm. Volume = (1/3)πr²h = (1/3) × (22/7) × 5 × 5 × 12 = 314.29 cm³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: If the triangle ABC in Question 7 above is revolved about the side 5 cm, then find the volume of the solid so obtained. Also, find the ratio of the volumes of the two solids obtained.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">When revolved about side 5 cm, we get a cone</p>
+                        <p class="mb-2">Height (h) = 5 cm</p>
+                        <p class="mb-2">Radius (r) = 12 cm</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 12 × 12 × 5 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 144 × 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">7</span>
+                            </div> cm³ = 
+                            <div class="fraction">
+                                <span class="numerator">15840</span>
+                                <span class="denominator">21</span>
+                            </div> cm³ = 754.29 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 754.29 cm³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">Ratio of volumes</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Volume when revolved about 12 cm = 314.29 cm³</p>
+                        <p class="mb-2">Volume when revolved about 5 cm = 754.29 cm³</p>
+                        <p class="mb-2">Ratio = 
+                            <div class="fraction">
+                                <span class="numerator">314.29</span>
+                                <span class="denominator">754.29</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div> = 5 : 12
+                        </p>
+                        <p><strong>Answer:</strong> 5 : 12</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Triangle ko 5 cm side ke around revolve karne par cone banta hai. Height 5 cm, radius 12 cm. Volume = (1/3)πr²h = (1/3) × (22/7) × 12 × 12 × 5 = 754.29 cm³. Ratio = (volume about 12 cm)/(volume about 5 cm) = 314.29/754.29 = 5/12 = 5:12.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: A heap of wheat is in the form of a cone whose diameter is 10.5 m and height is 3 m. Find its volume. The heap is to be covered by canvas to protect it from rain. Find the area of the canvas required.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 10.5 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">10.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 5.25 m
+                        </p>
+                        <p class="mb-2">Height (h) = 3 m</p>
+                        <p class="mb-2">Volume of cone = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> πr²h
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 5.25 × 3 m³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.75 × 5.25 × 3 m³ = 86.625 m³
+                        </p>
+                        <p><strong>Answer:</strong> 86.625 m³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">Area of canvas required</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using Pythagoras theorem: l² = h² + r²</p>
+                        <p class="mb-2">l² = 3² + 5.25² = 9 + 27.5625 = 36.5625</p>
+                        <p class="mb-2">l = √36.5625 = 6.046 m</p>
+                        <p class="mb-2">Curved surface area = πrl</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 6.046 m² = 99.825 m²
+                        </p>
+                        <p><strong>Answer:</strong> 99.825 m²</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cone ka diameter 10.5 m, so radius 5.25 m. Height 3 m. Volume = (1/3)πr²h = (1/3) × (22/7) × 5.25 × 5.25 × 3 = 86.625 m³. Canvas area ke liye slant height l² = 9 + 27.5625 = 36.5625, l = 6.046 m. Curved surface area = πrl = (22/7) × 5.25 × 6.046 = 99.825 m².
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 11.4 Section -->
+        <section id="exercise-11-4" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 11.4</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the volume of a sphere whose radius is:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 7 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 7 cm</p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 7 × 7 × 7 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 7 × 7 cm³ = 
+                            <div class="fraction">
+                                <span class="numerator">4312</span>
+                                <span class="denominator">3</span>
+                            </div> cm³ = 1437.33 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 1437.33 cm³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 0.63 m</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Radius (r) = 0.63 m</p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 0.63 × 0.63 × 0.63 m³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.09 × 0.63 × 0.63 m³ = 1.0478 m³
+                        </p>
+                        <p><strong>Answer:</strong> 1.0478 m³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka volume = (4/3)πr³. (i) r = 7 cm: (4/3) × (22/7) × 7 × 7 × 7 = 1437.33 cm³. (ii) r = 0.63 m: (4/3) × (22/7) × 0.63 × 0.63 × 0.63 = 1.0478 m³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the amount of water displaced by a solid spherical ball of diameter:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 28 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 28 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">28</span>
+                                <span class="denominator">2</span>
+                            </div> = 14 cm
+                        </p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 14 × 14 × 14 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 2 × 14 × 14 cm³ = 
+                            <div class="fraction">
+                                <span class="numerator">34496</span>
+                                <span class="denominator">3</span>
+                            </div> cm³ = 11498.67 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 11498.67 cm³</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 0.21 m</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 0.21 m</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">0.21</span>
+                                <span class="denominator">2</span>
+                            </div> = 0.105 m
+                        </p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 0.105 × 0.105 × 0.105 m³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.015 × 0.105 × 0.105 m³ = 0.004851 m³
+                        </p>
+                        <p><strong>Answer:</strong> 0.004851 m³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka volume = (4/3)πr³. (i) Diameter 28 cm, r = 14 cm: (4/3) × (22/7) × 14 × 14 × 14 = 11498.67 cm³. (ii) Diameter 0.21 m, r = 0.105 m: (4/3) × (22/7) × 0.105 × 0.105 × 0.105 = 0.004851 m³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: The diameter of a metallic ball is 4.2 cm. What is the mass of the ball, if the density of the metal is 8.9 g per cm³?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 4.2 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">4.2</span>
+                                <span class="denominator">2</span>
+                            </div> = 2.1 cm
+                        </p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 2.1 × 2.1 × 2.1 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.3 × 2.1 × 2.1 cm³ = 38.808 cm³
+                        </p>
+                        <p class="mb-2">Density = 8.9 g/cm³</p>
+                        <p class="mb-2">Mass = Volume × Density = 38.808 × 8.9 = 345.3912 g</p>
+                        <p><strong>Answer:</strong> 345.39 g</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ball ka diameter 4.2 cm, so radius 2.1 cm. Volume = (4/3)πr³ = (4/3) × (22/7) × 2.1 × 2.1 × 2.1 = 38.808 cm³. Density 8.9 g/cm³, so mass = 38.808 × 8.9 = 345.39 g.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The diameter of the moon is approximately one-fourth of the diameter of the earth. What fraction of the volume of the earth is the volume of the moon?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let diameter of earth = D</p>
+                        <p class="mb-2">Diameter of moon = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Radius of earth (R) = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Radius of moon (r) = 
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">8</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">Volume of moon = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π(
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">8</span>
+                            </div>)³ = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π × 
+                            <div class="fraction">
+                                <span class="numerator">D³</span>
+                                <span class="denominator">512</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Volume of earth = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π(
+                            <div class="fraction">
+                                <span class="numerator">D</span>
+                                <span class="denominator">2</span>
+                            </div>)³ = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π × 
+                            <div class="fraction">
+                                <span class="numerator">D³</span>
+                                <span class="denominator">8</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Fraction = 
+                            <div class="fraction">
+                                <span class="numerator">Volume of moon</span>
+                                <span class="denominator">Volume of earth</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">(4/3)π × D³/512</span>
+                                <span class="denominator">(4/3)π × D³/8</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1/512</span>
+                                <span class="denominator">1/8</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">64</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">64</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Moon ka diameter earth ke diameter ka 1/4 hai. Radius ka ratio = 1/4. Volume ratio = (r/R)³ = (1/4)³ = 1/64. So moon ka volume earth ke volume ka 1/64 hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: How many litres of milk can a hemispherical bowl of diameter 10.5 cm hold?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 10.5 cm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">10.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 5.25 cm
+                        </p>
+                        <p class="mb-2">Volume of hemisphere = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 5.25 × 5.25 × 5.25 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.75 × 5.25 × 5.25 cm³ = 303.1875 cm³
+                        </p>
+                        <p class="mb-2">Capacity in litres = 
+                            <div class="fraction">
+                                <span class="numerator">303.1875</span>
+                                <span class="denominator">1000</span>
+                            </div> = 0.3031875 L
+                        </p>
+                        <p><strong>Answer:</strong> 0.303 L (approximately)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Bowl ka diameter 10.5 cm, so radius 5.25 cm. Hemisphere ka volume = (2/3)πr³ = (2/3) × (22/7) × 5.25 × 5.25 × 5.25 = 303.1875 cm³. Litres mein = 303.1875/1000 = 0.303 L.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: A hemispherical tank is made up of an iron sheet 1 cm thick. If the inner radius is 1 m, then find the volume of the iron used to make the tank.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Inner radius (r) = 1 m = 100 cm</p>
+                        <p class="mb-2">Thickness = 1 cm</p>
+                        <p class="mb-2">Outer radius (R) = 100 + 1 = 101 cm</p>
+                        <p class="mb-2">Volume of iron = Volume of outer hemisphere - Volume of inner hemisphere</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> πR³ - 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> πr³ = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> π(R³ - r³)
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × (101³ - 100³) cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × (1030301 - 1000000) cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 30301 cm³ = 63487.81 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 63487.81 cm³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Tank ki inner radius 1 m = 100 cm, thickness 1 cm, so outer radius 101 cm. Iron ka volume = outer hemisphere volume - inner hemisphere volume = (2/3)π(R³ - r³) = (2/3) × (22/7) × (101³ - 100³) = (2/3) × (22/7) × 30301 = 63487.81 cm³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find the volume of a sphere whose surface area is 154 cm².</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Surface area = 154 cm²</p>
+                        <p class="mb-2">Surface area of sphere = 4πr²</p>
+                        <p class="mb-2">4πr² = 154</p>
+                        <p class="mb-2">4 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 154
+                        </p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">88</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 154
+                        </p>
+                        <p class="mb-2">r² = 154 × 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">88</span>
+                            </div> = 12.25
+                        </p>
+                        <p class="mb-2">r = √12.25 = 3.5 cm</p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 3.5 × 3.5 × 3.5 cm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.5 × 3.5 × 3.5 cm³ = 179.67 cm³
+                        </p>
+                        <p><strong>Answer:</strong> 179.67 cm³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sphere ka surface area 154 cm² diya hai. 4πr² = 154, so 4 × (22/7) × r² = 154. Is equation ko solve karenge: (88/7) × r² = 154, r² = 154 × (7/88) = 12.25, r = 3.5 cm. Volume = (4/3)πr³ = (4/3) × (22/7) × 3.5 × 3.5 × 3.5 = 179.67 cm³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: A dome of a building is in the form of a hemisphere. From inside, it was white-washed at the cost of ₹498.96. If the cost of white-washing is ₹2.00 per square metre, find the:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Inside surface area of the dome</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total cost = ₹498.96</p>
+                        <p class="mb-2">Cost per m² = ₹2.00</p>
+                        <p class="mb-2">Inside surface area = 
+                            <div class="fraction">
+                                <span class="numerator">498.96</span>
+                                <span class="denominator">2</span>
+                            </div> = 249.48 m²
+                        </p>
+                        <p><strong>Answer:</strong> 249.48 m²</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Volume of the air inside the dome</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Inside surface area = 249.48 m²</p>
+                        <p class="mb-2">Curved surface area of hemisphere = 2πr²</p>
+                        <p class="mb-2">2πr² = 249.48</p>
+                        <p class="mb-2">2 × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 249.48
+                        </p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">44</span>
+                                <span class="denominator">7</span>
+                            </div> × r² = 249.48
+                        </p>
+                        <p class="mb-2">r² = 249.48 × 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">44</span>
+                            </div> = 39.69
+                        </p>
+                        <p class="mb-2">r = √39.69 = 6.3 m</p>
+                        <p class="mb-2">Volume of hemisphere = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 6.3 × 6.3 × 6.3 m³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.9 × 6.3 × 6.3 m³ = 523.908 m³
+                        </p>
+                        <p><strong>Answer:</strong> 523.908 m³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) Total cost ₹498.96, cost per m² ₹2, so area = 498.96/2 = 249.48 m². (ii) Hemisphere ka curved surface area = 2πr² = 249.48, so 2 × (22/7) × r² = 249.48. Solve karke r = 6.3 m. Volume = (2/3)πr³ = (2/3) × (22/7) × 6.3 × 6.3 × 6.3 = 523.908 m³.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Twenty seven solid iron spheres, each of radius r and surface area S are melted to form a sphere with surface area S'. Find the:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Radius r' of the new sphere</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Volume of 27 small spheres = 27 × 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">Volume of new sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π(r')³
+                        </p>
+                        <p class="mb-2">Since volume is conserved:</p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> π(r')³ = 27 × 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">(r')³ = 27r³</p>
+                        <p class="mb-2">r' = 3r</p>
+                        <p><strong>Answer:</strong> 3r</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Ratio of S and S'</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Surface area of small sphere (S) = 4πr²</p>
+                        <p class="mb-2">Surface area of new sphere (S') = 4π(r')² = 4π(3r)² = 36πr²</p>
+                        <p class="mb-2">Ratio = 
+                            <div class="fraction">
+                                <span class="numerator">S</span>
+                                <span class="denominator">S'</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">4πr²</span>
+                                <span class="denominator">36πr²</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">9</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 1 : 9</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) 27 spheres ko melt karke ek sphere banaya hai. Volume same rahega: (4/3)π(r')³ = 27 × (4/3)πr³, so (r')³ = 27r³, r' = 3r. (ii) Small sphere ka surface area S = 4πr², new sphere ka S' = 4π(3r)² = 36πr². Ratio S/S' = 4πr²/36πr² = 1/9 = 1:9.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: A capsule of medicine is in the shape of a sphere of diameter 3.5 mm. How much medicine (in mm³) is needed to fill this capsule?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 3.5 mm</p>
+                        <p class="mb-2">Radius (r) = 
+                            <div class="fraction">
+                                <span class="numerator">3.5</span>
+                                <span class="denominator">2</span>
+                            </div> = 1.75 mm
+                        </p>
+                        <p class="mb-2">Volume of sphere = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> πr³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">7</span>
+                            </div> × 1.75 × 1.75 × 1.75 mm³
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 22 × 0.25 × 1.75 × 1.75 mm³ = 22.458 mm³
+                        </p>
+                        <p><strong>Answer:</strong> 22.458 mm³</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Capsule ka diameter 3.5 mm, so radius 1.75 mm. Volume = (4/3)πr³ = (4/3) × (22/7) × 1.75 × 1.75 × 1.75 = 22.458 mm³ medicine chahiye.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

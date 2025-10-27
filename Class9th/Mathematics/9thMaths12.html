@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 12: Statistics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 12: Statistics</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 12.1 Section -->
+        <section id="exercise-12-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 12.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: A survey conducted by an organisation for the cause of illness and death among the women between the ages 15 - 44 (in years) worldwide, found the following figures (in %):</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Causes</th>
+                            <th>Female fatality rate (%)</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Reproductive health conditions</td>
+                            <td>31.8</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Neuropsychiatric conditions</td>
+                            <td>25.4</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Injuries</td>
+                            <td>12.4</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Cardiovascular conditions</td>
+                            <td>4.3</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Respiratory conditions</td>
+                            <td>4.1</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Other causes</td>
+                            <td>22.0</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Represent the information given above graphically.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">To represent this data graphically, we can use a bar graph.</p>
+                        <p class="mb-2">Steps to draw the bar graph:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Draw two perpendicular lines (x-axis and y-axis)</li>
+                            <li>On the x-axis, mark the causes of illness and death</li>
+                            <li>On the y-axis, mark the percentage values from 0 to 35</li>
+                            <li>Draw rectangular bars of equal width with heights corresponding to the percentages</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Which condition is the major cause of women's ill health and death worldwide?</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the data, we can see that:</p>
+                        <p class="mb-2">Reproductive health conditions have the highest percentage at 31.8%</p>
+                        <p><strong>Answer:</strong> Reproductive health conditions</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Try to find out, with the help of your teacher, any two factors which play a major role in the cause in (ii) above being the major cause.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Two factors that play a major role in reproductive health conditions being the major cause:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Lack of access to proper healthcare facilities during pregnancy and childbirth</li>
+                            <li>Inadequate nutrition and healthcare for women, especially in developing countries</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Is data ko bar graph mein dikhaya ja sakta hai. Reproductive health conditions (31.8%) women ki illness aur death ka sabse bada karan hai. Iske do mukhya karan hain: pregnancy aur childbirth ke dauran proper healthcare ki kami, aur developing countries mein women ke liye adequate nutrition aur healthcare ki kami.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: The following data on the number of girls (to the nearest ten) per thousand boys in different sections of Indian society is given below.</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Section</th>
+                            <th>Number of girls per thousand boys</th>
+                        </tr>
+                        <tr>
+                            <td>Scheduled Caste (SC)</td>
+                            <td>940</td>
+                        </tr>
+                        <tr>
+                            <td>Scheduled Tribe (ST)</td>
+                            <td>970</td>
+                        </tr>
+                        <tr>
+                            <td>Non SC/ST</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <td>Backward districts</td>
+                            <td>950</td>
+                        </tr>
+                        <tr>
+                            <td>Non-backward districts</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <td>Rural</td>
+                            <td>930</td>
+                        </tr>
+                        <tr>
+                            <td>Urban</td>
+                            <td>910</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Represent the information above by a bar graph.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Steps to draw the bar graph:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Draw two perpendicular lines (x-axis and y-axis)</li>
+                            <li>On the x-axis, mark the different sections of society</li>
+                            <li>On the y-axis, mark the number of girls per thousand boys from 900 to 1000</li>
+                            <li>Draw rectangular bars of equal width with heights corresponding to the values</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) In the classroom discuss what conclusions can be arrived at from the graph.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the graph, we can conclude:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Scheduled Tribe (ST) has the highest number of girls per thousand boys (970)</li>
+                            <li>Urban areas have the lowest number of girls per thousand boys (910)</li>
+                            <li>The ratio of girls to boys is generally lower in urban areas compared to rural areas</li>
+                            <li>Non SC/ST and non-backward districts have the same ratio (920)</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Is data ko bar graph mein dikhaya ja sakta hai. Graph se hum yeh nishkarsh nikal sakte hain ki Scheduled Tribe mein ladkiyon ka ratio sabse jyada hai (970), jabki urban areas mein sabse kam (910). Rural areas mein ladkiyon ka ratio urban areas se behtar hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Given below are the seats won by different political parties in the polling outcome of a state assembly elections:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Political Party</th>
+                            <th>A</th>
+                            <th>B</th>
+                            <th>C</th>
+                            <th>D</th>
+                            <th>E</th>
+                            <th>F</th>
+                        </tr>
+                        <tr>
+                            <td>Seats Won</td>
+                            <td>75</td>
+                            <td>55</td>
+                            <td>37</td>
+                            <td>29</td>
+                            <td>10</td>
+                            <td>37</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Draw a bar graph to represent the polling results.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Steps to draw the bar graph:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Draw two perpendicular lines (x-axis and y-axis)</li>
+                            <li>On the x-axis, mark the political parties A, B, C, D, E, F</li>
+                            <li>On the y-axis, mark the number of seats from 0 to 80</li>
+                            <li>Draw rectangular bars of equal width with heights corresponding to the seats won</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Which political party won the maximum number of seats?</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the data:</p>
+                        <p class="mb-2">Party A won 75 seats</p>
+                        <p class="mb-2">This is the highest number among all parties</p>
+                        <p><strong>Answer:</strong> Political Party A</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Is data ko bar graph mein dikhaya ja sakta hai. Party A ne sabse jyada 75 seats jeeti hain, jo ki maximum hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The length of 40 leaves of a plant are measured correct to one millimetre, and the obtained data is represented in the following table:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Length (in mm)</th>
+                            <th>Number of leaves</th>
+                        </tr>
+                        <tr>
+                            <td>118 - 126</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>127 - 135</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>136 - 144</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>145 - 153</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>154 - 162</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>163 - 171</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>172 - 180</td>
+                            <td>2</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Draw a histogram to represent the given data. [Hint: First make the class intervals continuous]</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First, we need to make the class intervals continuous:</p>
+                        <p class="mb-2">The gap between classes is 1 (e.g., 126 and 127)</p>
+                        <p class="mb-2">To make them continuous, we subtract 0.5 from lower limits and add 0.5 to upper limits</p>
+                        <p class="mb-2">Continuous class intervals:</p>
+                        <table>
+                            <tr>
+                                <th>Length (in mm)</th>
+                                <th>Number of leaves</th>
+                            </tr>
+                            <tr>
+                                <td>117.5 - 126.5</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>126.5 - 135.5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>135.5 - 144.5</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>144.5 - 153.5</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>153.5 - 162.5</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>162.5 - 171.5</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>171.5 - 180.5</td>
+                                <td>2</td>
+                            </tr>
+                        </table>
+                        <p class="mb-2">Now, draw a histogram with these continuous class intervals on the x-axis and frequencies on the y-axis.</p>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Is there any other suitable graphical representation for the same data?</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Yes, we can also represent this data using a frequency polygon.</p>
+                        <p class="mb-2">To draw a frequency polygon:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Find the class marks (midpoints) of each class interval</li>
+                            <li>Plot points with class marks on x-axis and frequencies on y-axis</li>
+                            <li>Join these points with line segments</li>
+                            <li>Extend the line to the x-axis at both ends</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Is it correct to conclude that the maximum number of leaves are 153 mm long? Why?</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">No, it is not correct to conclude that the maximum number of leaves are 153 mm long.</p>
+                        <p class="mb-2">The class 145-153 has the highest frequency (12 leaves), but this means the leaves in this class have lengths between 145 mm and 153 mm.</p>
+                        <p class="mb-2">We cannot say that all these 12 leaves are exactly 153 mm long.</p>
+                        <p><strong>Answer:</strong> No, because the class 145-153 represents leaves with lengths between 145 mm and 153 mm, not exactly 153 mm.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle class intervals ko continuous banayein, phir histogram banayein. Is data ke liye frequency polygon bhi suitable hai. Yeh galat hai ki maximum leaves 153 mm lambi hain, kyunki class 145-153 mein 145 mm se 153 mm tak ki leaves hain, sab exactly 153 mm ki nahi hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: The following table gives the life times of 400 neon lamps:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Life time (in hours)</th>
+                            <th>Number of lamps</th>
+                        </tr>
+                        <tr>
+                            <td>300 - 400</td>
+                            <td>14</td>
+                        </tr>
+                        <tr>
+                            <td>400 - 500</td>
+                            <td>56</td>
+                        </tr>
+                        <tr>
+                            <td>500 - 600</td>
+                            <td>60</td>
+                        </tr>
+                        <tr>
+                            <td>600 - 700</td>
+                            <td>86</td>
+                        </tr>
+                        <tr>
+                            <td>700 - 800</td>
+                            <td>74</td>
+                        </tr>
+                        <tr>
+                            <td>800 - 900</td>
+                            <td>62</td>
+                        </tr>
+                        <tr>
+                            <td>900 - 1000</td>
+                            <td>48</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Represent the given information with the help of a histogram.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Steps to draw the histogram:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Draw two perpendicular lines (x-axis and y-axis)</li>
+                            <li>On the x-axis, mark the life time intervals (300-400, 400-500, etc.)</li>
+                            <li>On the y-axis, mark the number of lamps from 0 to 90</li>
+                            <li>Draw rectangles (bars) with widths equal to class intervals and heights equal to frequencies</li>
+                            <li>Since class intervals are equal, the area of each rectangle is proportional to frequency</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) How many lamps have a life time of more than 700 hours?</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Lamps with life time more than 700 hours:</p>
+                        <p class="mb-2">700-800: 74 lamps</p>
+                        <p class="mb-2">800-900: 62 lamps</p>
+                        <p class="mb-2">900-1000: 48 lamps</p>
+                        <p class="mb-2">Total = 74 + 62 + 48 = 184 lamps</p>
+                        <p><strong>Answer:</strong> 184 lamps</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Is data ko histogram mein dikhaya ja sakta hai. 700 hours se jyada life time wale lamps: 700-800 (74), 800-900 (62), 900-1000 (48). Total = 74 + 62 + 48 = 184 lamps.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: The following table gives the distribution of students of two sections according to the marks obtained by them:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th colspan="2">Section A</th>
+                            <th colspan="2">Section B</th>
+                        </tr>
+                        <tr>
+                            <th>Marks</th>
+                            <th>Frequency</th>
+                            <th>Marks</th>
+                            <th>Frq.</th>
+                        </tr>
+                        <tr>
+                            <td>0 - 10</td>
+                            <td>3</td>
+                            <td>0 - 10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>10 - 20</td>
+                            <td>9</td>
+                            <td>10 - 20</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20 - 30</td>
+                            <td>17</td>
+                            <td>20 - 30</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>30 - 40</td>
+                            <td>12</td>
+                            <td>30 - 40</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>40 - 50</td>
+                            <td>9</td>
+                            <td>40 - 50</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Represent the marks of the students of both the sections on the same graph by two frequency polygons. From the two polygons compare the performance of the two sections.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Steps to draw frequency polygons for both sections:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Find class marks for each class interval:
+                                <div class="fraction">
+                                    <span class="numerator">Upper limit + Lower limit</span>
+                                    <span class="denominator">2</span>
+                                </div>
+                            </li>
+                            <li>For Section A:
+                                <ul class="list-disc pl-5">
+                                    <li>0-10: Class mark = (0+10)/2 = 5</li>
+                                    <li>10-20: Class mark = (10+20)/2 = 15</li>
+                                    <li>20-30: Class mark = (20+30)/2 = 25</li>
+                                    <li>30-40: Class mark = (30+40)/2 = 35</li>
+                                    <li>40-50: Class mark = (40+50)/2 = 45</li>
+                                </ul>
+                            </li>
+                            <li>For Section B:
+                                <ul class="list-disc pl-5">
+                                    <li>0-10: Class mark = (0+10)/2 = 5</li>
+                                    <li>10-20: Class mark = (10+20)/2 = 15</li>
+                                    <li>20-30: Class mark = (20+30)/2 = 25</li>
+                                    <li>30-40: Class mark = (30+40)/2 = 35</li>
+                                    <li>40-50: Class mark = (40+50)/2 = 45</li>
+                                </ul>
+                            </li>
+                            <li>Plot points for both sections using class marks and frequencies</li>
+                            <li>Join the points with line segments to form two frequency polygons</li>
+                            <li>Use different colors for Section A and Section B</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Comparison of performance:</p>
+                        <ul class="list-disc pl-5">
+                            <li>Section A has more students in higher marks ranges (20-30 and 30-40)</li>
+                            <li>Section B has more students in lower marks ranges (0-10 and 10-20)</li>
+                            <li>Section A has better performance overall as more students scored higher marks</li>
+                            <li>Section B needs improvement in the 40-50 marks range as only 1 student is in this category</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono sections ke marks ko ek hi graph par do frequency polygons ke roop mein dikhaya ja sakta hai. Comparison se pata chalta hai ki Section A ka performance behtar hai kyunki usme higher marks range (20-30 aur 30-40) mein jyada students hain. Section B mein lower marks range (0-10 aur 10-20) mein jyada students hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: The runs scored by two teams A and B on the first 60 balls in a cricket match are given below:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Number of balls</th>
+                            <th>Team A</th>
+                            <th>Team B</th>
+                        </tr>
+                        <tr>
+                            <td>1 - 6</td>
+                            <td>2</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>7 - 12</td>
+                            <td>1</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>13 - 18</td>
+                            <td>8</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>19 - 24</td>
+                            <td>9</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 30</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>31 - 36</td>
+                            <td>5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>37 - 42</td>
+                            <td>6</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>43 - 48</td>
+                            <td>10</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>49 - 54</td>
+                            <td>6</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>55 - 60</td>
+                            <td>2</td>
+                            <td>10</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Represent the data of both the teams on the same graph by frequency polygons. [Hint: First make the class intervals continuous.]</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First, make the class intervals continuous:</p>
+                        <p class="mb-2">The gap between classes is 1 (e.g., 6 and 7)</p>
+                        <p class="mb-2">To make them continuous, we subtract 0.5 from lower limits and add 0.5 to upper limits</p>
+                        <p class="mb-2">Continuous class intervals:</p>
+                        <table>
+                            <tr>
+                                <th>Number of balls</th>
+                                <th>Team A</th>
+                                <th>Team B</th>
+                            </tr>
+                            <tr>
+                                <td>0.5 - 6.5</td>
+                                <td>2</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>6.5 - 12.5</td>
+                                <td>1</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>12.5 - 18.5</td>
+                                <td>8</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>18.5 - 24.5</td>
+                                <td>9</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>24.5 - 30.5</td>
+                                <td>4</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>30.5 - 36.5</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>36.5 - 42.5</td>
+                                <td>6</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>42.5 - 48.5</td>
+                                <td>10</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>48.5 - 54.5</td>
+                                <td>6</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>54.5 - 60.5</td>
+                                <td>2</td>
+                                <td>10</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, draw frequency polygons for both teams:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Find class marks for each continuous class interval</li>
+                            <li>Plot points for both teams using class marks and runs scored</li>
+                            <li>Join the points with line segments to form two frequency polygons</li>
+                            <li>Use different colors for Team A and Team B</li>
+                            <li>Add appropriate labels and legend</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle class intervals ko continuous banayein (0.5-6.5, 6.5-12.5, etc.). Phir dono teams ke data ko ek hi graph par do frequency polygons ke roop mein dikhayein. Team A aur Team B ke liye different colors use karein.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: A random survey of the number of children of various age groups playing in a park was found as follows:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Age (in years)</th>
+                            <th>Number of children</th>
+                        </tr>
+                        <tr>
+                            <td>1 - 2</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>2 - 3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <td>3 - 5</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>5 - 7</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>7 - 10</td>
+                            <td>9</td>
+                        </tr>
+                        <tr>
+                            <td>10 - 15</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>15 - 17</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Draw a histogram to represent the data above.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since the class intervals are of varying widths, we need to adjust the heights of the rectangles.</p>
+                        <p class="mb-2">Steps to draw the histogram:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Find the minimum class size: 1 year (for classes 1-2 and 2-3)</li>
+                            <li>Adjust the frequencies for classes with different widths:
+                                <ul class="list-disc pl-5">
+                                    <li>For class 3-5 (width = 2): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">6</span>
+                                            <span class="denominator">2</span>
+                                        </div> × 1 = 3
+                                    </li>
+                                    <li>For class 5-7 (width = 2): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">12</span>
+                                            <span class="denominator">2</span>
+                                        </div> × 1 = 6
+                                    </li>
+                                    <li>For class 7-10 (width = 3): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">9</span>
+                                            <span class="denominator">3</span>
+                                        </div> × 1 = 3
+                                    </li>
+                                    <li>For class 10-15 (width = 5): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">10</span>
+                                            <span class="denominator">5</span>
+                                        </div> × 1 = 2
+                                    </li>
+                                    <li>For class 15-17 (width = 2): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">4</span>
+                                            <span class="denominator">2</span>
+                                        </div> × 1 = 2
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Draw rectangles with widths equal to class intervals and heights equal to adjusted frequencies</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Kyunki class intervals different widths ke hain, humein frequencies ko adjust karna hoga. Minimum class size 1 year hai. Har class ke liye adjusted frequency nikal kar histogram banayein.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: 100 surnames were randomly picked up from a local telephone directory and a frequency distribution of the number of letters in the English alphabet in the surnames was found as follows:</h3>
+                
+                <div>
+                    <table>
+                        <tr>
+                            <th>Number of letters</th>
+                            <th>Number of surnames</th>
+                        </tr>
+                        <tr>
+                            <td>1 - 4</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>4 - 6</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>6 - 8</td>
+                            <td>44</td>
+                        </tr>
+                        <tr>
+                            <td>8 - 12</td>
+                            <td>16</td>
+                        </tr>
+                        <tr>
+                            <td>12 - 20</td>
+                            <td>4</td>
+                        </tr>
+                    </table>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Draw a histogram to depict the given information.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since the class intervals are of varying widths, we need to adjust the heights of the rectangles.</p>
+                        <p class="mb-2">Steps to draw the histogram:</p>
+                        <ol class="list-decimal pl-5">
+                            <li>Find the minimum class size: 2 (for classes 4-6 and 6-8)</li>
+                            <li>Adjust the frequencies for classes with different widths:
+                                <ul class="list-disc pl-5">
+                                    <li>For class 1-4 (width = 3): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">6</span>
+                                            <span class="denominator">3</span>
+                                        </div> × 2 = 4
+                                    </li>
+                                    <li>For class 4-6 (width = 2): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">30</span>
+                                            <span class="denominator">2</span>
+                                        </div> × 2 = 30
+                                    </li>
+                                    <li>For class 6-8 (width = 2): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">44</span>
+                                            <span class="denominator">2</span>
+                                        </div> × 2 = 44
+                                    </li>
+                                    <li>For class 8-12 (width = 4): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">16</span>
+                                            <span class="denominator">4</span>
+                                        </div> × 2 = 8
+                                    </li>
+                                    <li>For class 12-20 (width = 8): Adjusted frequency = 
+                                        <div class="fraction">
+                                            <span class="numerator">4</span>
+                                            <span class="denominator">8</span>
+                                        </div> × 2 = 1
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Draw rectangles with widths equal to class intervals and heights equal to adjusted frequencies</li>
+                            <li>Label the graph appropriately</li>
+                        </ol>
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Write the class interval in which the maximum number of surnames lie.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the original data (not adjusted):</p>
+                        <p class="mb-2">Class 6-8 has the highest frequency of 44 surnames</p>
+                        <p><strong>Answer:</strong> 6 - 8</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Histogram banane ke liye, different widths ke class intervals ke liye frequencies ko adjust karna hoga. Minimum class size 2 hai. Maximum number of surnames class 6-8 mein hain (44 surnames).
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

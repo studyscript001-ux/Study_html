@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 8: Quadrilaterals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .theorem {
+            background-color: #f0f9ff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin: 1rem 0;
+            border-left: 4px solid #3b82f6;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 8<br> Quadrilaterals</h1>
+            <p class="mt-2 text-lg">Class 9th : Mathematics</p>
+        </div>
+
+        <!-- Exercise 8.1 Section -->
+        <section id="exercise-8-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 8.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: If the diagonals of a parallelogram are equal, then show that it is a rectangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABCD be a parallelogram with diagonals AC and BD equal.</p>
+                        <p class="mb-2">In ΔABC and ΔDCB:</p>
+                        <p class="mb-2">AB = DC (Opposite sides of parallelogram)</p>
+                        <p class="mb-2">BC = BC (Common side)</p>
+                        <p class="mb-2">AC = DB (Given)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔDCB (SSS congruence rule)</p>
+                        <p class="mb-2">So, ∠ABC = ∠DCB (CPCT)</p>
+                        <p class="mb-2">But ∠ABC + ∠DCB = 180° (Adjacent angles of parallelogram)</p>
+                        <p class="mb-2">So, 2∠ABC = 180° ⇒ ∠ABC = 90°</p>
+                        <p class="mb-2">Similarly, we can show that all angles are 90°.</p>
+                        <p class="mb-2">Therefore, ABCD is a rectangle.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain ABCD ek parallelogram hai jismein diagonals AC aur BD equal hain. ΔABC aur ΔDCB mein, AB = DC, BC common hai, aur AC = DB. Isliye ΔABC ≅ ΔDCB. Isse ∠ABC = ∠DCB. Par ∠ABC + ∠DCB = 180°, toh 2∠ABC = 180° ⇒ ∠ABC = 90°. Aise hi sab angles 90° dikhaye ja sakte hain. Isliye ABCD ek rectangle hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Show that the diagonals of a square are equal and bisect each other at right angles.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let ABCD be a square with diagonals AC and BD intersecting at O.</p>
+                        <p class="mb-2">In ΔABC and ΔDCB:</p>
+                        <p class="mb-2">AB = DC (Sides of square)</p>
+                        <p class="mb-2">BC = BC (Common side)</p>
+                        <p class="mb-2">∠ABC = ∠DCB = 90° (Angles of square)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔDCB (SAS congruence rule)</p>
+                        <p class="mb-2">So, AC = BD (CPCT)</p>
+                        <p class="mb-2">Hence, diagonals are equal.</p>
+                        <p class="mb-2">Now, in ΔAOB and ΔCOD:</p>
+                        <p class="mb-2">∠OAB = ∠OCD (Alternate angles)</p>
+                        <p class="mb-2">∠OBA = ∠ODC (Alternate angles)</p>
+                        <p class="mb-2">AB = CD (Sides of square)</p>
+                        <p class="mb-2">Therefore, ΔAOB ≅ ΔCOD (AAS congruence rule)</p>
+                        <p class="mb-2">So, AO = OC and BO = OD (CPCT)</p>
+                        <p class="mb-2">Hence, diagonals bisect each other.</p>
+                        <p class="mb-2">In ΔAOB and ΔCOB:</p>
+                        <p class="mb-2">AO = OC (Proved above)</p>
+                        <p class="mb-2">OB = OB (Common side)</p>
+                        <p class="mb-2">AB = CB (Sides of square)</p>
+                        <p class="mb-2">Therefore, ΔAOB ≅ ΔCOB (SSS congruence rule)</p>
+                        <p class="mb-2">So, ∠AOB = ∠COB (CPCT)</p>
+                        <p class="mb-2">But ∠AOB + ∠COB = 180° (Linear pair)</p>
+                        <p class="mb-2">So, 2∠AOB = 180° ⇒ ∠AOB = 90°</p>
+                        <p class="mb-2">Hence, diagonals bisect each other at right angles.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD ek square hai jiske diagonals AC aur BD O par intersect karte hain. ΔABC aur ΔDCB congruent hain, isliye AC = BD. ΔAOB aur ΔCOD congruent hain, isliye AO = OC aur BO = OD. ΔAOB aur ΔCOB congruent hain, isliye ∠AOB = ∠COB. Par ∠AOB + ∠COB = 180°, toh 2∠AOB = 180° ⇒ ∠AOB = 90°. Isliye diagonals equal hain, ek doosre ko bisect karte hain, aur right angles par bisect karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Diagonal AC of a parallelogram ABCD bisects ∠A (see Fig. 8.11). Show that</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) it bisects ∠C also</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ABCD is a parallelogram and AC bisects ∠A.</p>
+                        <p class="mb-2">So, ∠DAC = ∠BAC ...(1)</p>
+                        <p class="mb-2">Now, AB || DC and AC is a transversal</p>
+                        <p class="mb-2">So, ∠BAC = ∠DCA ...(2) (Alternate angles)</p>
+                        <p class="mb-2">Also, AD || BC and AC is a transversal</p>
+                        <p class="mb-2">So, ∠DAC = ∠BCA ...(3) (Alternate angles)</p>
+                        <p class="mb-2">From (1), (2), and (3):</p>
+                        <p class="mb-2">∠DCA = ∠BCA</p>
+                        <p class="mb-2">Hence, AC bisects ∠C.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD ek parallelogram hai jismein AC, ∠A ko bisect karta hai. AB || DC aur AC transversal hai, isliye ∠BAC = ∠DCA. AD || BC aur AC transversal hai, isliye ∠DAC = ∠BCA. Par ∠DAC = ∠BAC, isliye ∠DCA = ∠BCA. Yani AC, ∠C ko bhi bisect karta hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) ABCD is a rhombus</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From above, we have ∠DAC = ∠DCA</p>
+                        <p class="mb-2">In ΔADC, ∠DAC = ∠DCA</p>
+                        <p class="mb-2">So, AD = DC (Sides opposite to equal angles)</p>
+                        <p class="mb-2">But in parallelogram ABCD, AB = DC and AD = BC</p>
+                        <p class="mb-2">So, AB = BC = CD = DA</p>
+                        <p class="mb-2">Hence, ABCD is a rhombus.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔADC mein ∠DAC = ∠DCA, isliye AD = DC. Par parallelogram mein AB = DC aur AD = BC, isliye AB = BC = CD = DA. Yani sab sides equal hain, isliye ABCD ek rhombus hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: ABCD is a rectangle in which diagonal AC bisects ∠A as well as ∠C. Show that:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) ABCD is a square</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: ABCD is a rectangle and AC bisects ∠A and ∠C.</p>
+                        <p class="mb-2">Since AC bisects ∠A, ∠DAC = ∠BAC</p>
+                        <p class="mb-2">But ∠DAC + ∠BAC = ∠A = 90° (Angle of rectangle)</p>
+                        <p class="mb-2">So, 2∠DAC = 90° ⇒ ∠DAC = 45°</p>
+                        <p class="mb-2">Similarly, since AC bisects ∠C, ∠DCA = ∠BCA = 45°</p>
+                        <p class="mb-2">In ΔADC, ∠DAC = 45° and ∠DCA = 45°</p>
+                        <p class="mb-2">So, ∠ADC = 180° - (45° + 45°) = 90°</p>
+                        <p class="mb-2">Similarly, all angles are 90°.</p>
+                        <p class="mb-2">Now, in ΔADC and ΔABC:</p>
+                        <p class="mb-2">AD = BC (Opposite sides of rectangle)</p>
+                        <p class="mb-2">AC = AC (Common side)</p>
+                        <p class="mb-2">∠DAC = ∠BCA = 45°</p>
+                        <p class="mb-2">So, ΔADC ≅ ΔABC (ASA congruence rule)</p>
+                        <p class="mb-2">Therefore, AB = AD (CPCT)</p>
+                        <p class="mb-2">So, adjacent sides are equal.</p>
+                        <p class="mb-2">Hence, ABCD is a square.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD ek rectangle hai jismein AC, ∠A aur ∠C dono ko bisect karta hai. ∠A = 90°, isliye ∠DAC = 45°. Similarly ∠DCA = 45°. ΔADC mein ∠ADC = 90°. ΔADC aur ΔABC congruent hain, isliye AB = AD. Yani adjacent sides equal hain. Isliye ABCD ek square hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) diagonal BD bisects ∠B as well as ∠D</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since ABCD is a square (proved above), and in a square, diagonals bisect the angles.</p>
+                        <p class="mb-2">Therefore, BD bisects ∠B and ∠D.</p>
+                        <p class="mb-2">Alternatively, we can prove similarly as we did for AC.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD square hai, aur square mein diagonals angles ko bisect karte hain. Isliye BD, ∠B aur ∠D ko bisect karega.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In parallelogram ABCD, two points P and Q are taken on diagonal BD such that DP = BQ (see Fig. 8.12). Show that:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) ΔAPD ≅ ΔCQB</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔAPD and ΔCQB:</p>
+                        <p class="mb-2">AD = BC (Opposite sides of parallelogram)</p>
+                        <p class="mb-2">∠ADP = ∠CBQ (Alternate angles as AD || BC)</p>
+                        <p class="mb-2">DP = BQ (Given)</p>
+                        <p class="mb-2">Therefore, ΔAPD ≅ ΔCQB (SAS congruence rule)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAPD aur ΔCQB mein, AD = BC, ∠ADP = ∠CBQ (alternate angles), aur DP = BQ. Isliye ΔAPD ≅ ΔCQB.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) AP = CQ</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since ΔAPD ≅ ΔCQB (proved above)</p>
+                        <p class="mb-2">So, AP = CQ (CPCT)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAPD ≅ ΔCQB, isliye AP = CQ.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) ΔAQB ≅ ΔCPD</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔAQB and ΔCPD:</p>
+                        <p class="mb-2">AB = CD (Opposite sides of parallelogram)</p>
+                        <p class="mb-2">∠ABQ = ∠CDP (Alternate angles as AB || CD)</p>
+                        <p class="mb-2">BQ = DP (Given)</p>
+                        <p class="mb-2">Therefore, ΔAQB ≅ ΔCPD (SAS congruence rule)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAQB aur ΔCPD mein, AB = CD, ∠ABQ = ∠CDP (alternate angles), aur BQ = DP. Isliye ΔAQB ≅ ΔCPD.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) AQ = CP</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since ΔAQB ≅ ΔCPD (proved above)</p>
+                        <p class="mb-2">So, AQ = CP (CPCT)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAQB ≅ ΔCPD, isliye AQ = CP.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) APCQ is a parallelogram</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have AP = CQ (from ii) and AQ = CP (from iv)</p>
+                        <p class="mb-2">In quadrilateral APCQ, opposite sides are equal.</p>
+                        <p class="mb-2">Therefore, APCQ is a parallelogram.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> APCQ mein AP = CQ aur AQ = CP, yani opposite sides equal hain. Isliye APCQ ek parallelogram hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: ABCD is a parallelogram and AP and CQ are perpendiculars from vertices A and C on diagonal BD (see Fig. 8.13). Show that</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) ΔAPB ≅ ΔCQD</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔAPB and ΔCQD:</p>
+                        <p class="mb-2">AB = CD (Opposite sides of parallelogram)</p>
+                        <p class="mb-2">∠ABP = ∠CDQ (Alternate angles as AB || CD)</p>
+                        <p class="mb-2">∠APB = ∠CQD = 90° (Given, AP and CQ are perpendiculars)</p>
+                        <p class="mb-2">Therefore, ΔAPB ≅ ΔCQD (AAS congruence rule)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAPB aur ΔCQD mein, AB = CD, ∠ABP = ∠CDQ (alternate angles), aur ∠APB = ∠CQD = 90°. Isliye ΔAPB ≅ ΔCQD.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) AP = CQ</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since ΔAPB ≅ ΔCQD (proved above)</p>
+                        <p class="mb-2">So, AP = CQ (CPCT)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔAPB ≅ ΔCQD, isliye AP = CQ.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: ABCD is a trapezium in which AB || CD and AD = BC (see Fig. 8.14). Show that</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) ∠A = ∠B</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Extend AB and draw a line through C parallel to DA intersecting AB produced at E.</p>
+                        <p class="mb-2">So, AD || EC (By construction)</p>
+                        <p class="mb-2">Now, AECD is a parallelogram (Opposite sides are parallel)</p>
+                        <p class="mb-2">So, AD = EC (Opposite sides of parallelogram)</p>
+                        <p class="mb-2">But AD = BC (Given)</p>
+                        <p class="mb-2">So, BC = EC</p>
+                        <p class="mb-2">In ΔBCE, BC = EC</p>
+                        <p class="mb-2">So, ∠CBE = ∠CEB (Angles opposite to equal sides)</p>
+                        <p class="mb-2">But ∠CEB = ∠A (Corresponding angles as AD || EC)</p>
+                        <p class="mb-2">And ∠CBE = ∠B</p>
+                        <p class="mb-2">Therefore, ∠A = ∠B</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> AB ko extend karte hain aur C se DA ke parallel ek line draw karte hain jo AB ko E par intersect karti hai. AECD ek parallelogram hai, isliye AD = EC. Par AD = BC, isliye BC = EC. ΔBCE mein BC = EC, isliye ∠CBE = ∠CEB. Par ∠CEB = ∠A (corresponding angles) aur ∠CBE = ∠B. Isliye ∠A = ∠B.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) ∠C = ∠D</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">AB || CD (Given)</p>
+                        <p class="mb-2">So, ∠A + ∠D = 180° and ∠B + ∠C = 180° (Co-interior angles)</p>
+                        <p class="mb-2">But ∠A = ∠B (Proved above)</p>
+                        <p class="mb-2">So, ∠A + ∠D = ∠B + ∠C</p>
+                        <p class="mb-2">Therefore, ∠D = ∠C</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> AB || CD, isliye ∠A + ∠D = 180° aur ∠B + ∠C = 180°. Par ∠A = ∠B, isliye ∠A + ∠D = ∠B + ∠C ⇒ ∠D = ∠C.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) ΔABC ≅ ΔBAD</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔABC and ΔBAD:</p>
+                        <p class="mb-2">AB = BA (Common side)</p>
+                        <p class="mb-2">BC = AD (Given)</p>
+                        <p class="mb-2">∠ABC = ∠BAD (Proved in i)</p>
+                        <p class="mb-2">Therefore, ΔABC ≅ ΔBAD (SAS congruence rule)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔABC aur ΔBAD mein, AB common hai, BC = AD, aur ∠ABC = ∠BAD. Isliye ΔABC ≅ ΔBAD.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) diagonal AC = diagonal BD</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since ΔABC ≅ ΔBAD (proved above)</p>
+                        <p class="mb-2">So, AC = BD (CPCT)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔABC ≅ ΔBAD, isliye AC = BD.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 8.2 Section -->
+        <section id="exercise-8-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 8.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: ABCD is a quadrilateral in which P, Q, R and S are mid-points of the sides AB, BC, CD and DA (see Fig 8.20). AC is a diagonal. Show that :</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) SR || AC and SR = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> AC
+                    </h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔADC, S and R are mid-points of AD and CD respectively.</p>
+                        <p class="mb-2">By mid-point theorem, SR || AC and SR = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔADC mein S aur R mid-points hain AD aur CD ke. Mid-point theorem ke according, SR || AC aur SR = 1/2 AC.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) PQ = SR</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔABC, P and Q are mid-points of AB and BC respectively.</p>
+                        <p class="mb-2">By mid-point theorem, PQ || AC and PQ = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC
+                        </p>
+                        <p class="mb-2">From (i), SR = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC
+                        </p>
+                        <p class="mb-2">Therefore, PQ = SR</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔABC mein P aur Q mid-points hain AB aur BC ke. Mid-point theorem ke according, PQ || AC aur PQ = 1/2 AC. Par SR bhi 1/2 AC hai. Isliye PQ = SR.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) PQRS is a parallelogram</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have PQ || AC and SR || AC</p>
+                        <p class="mb-2">So, PQ || SR</p>
+                        <p class="mb-2">Also, PQ = SR (Proved above)</p>
+                        <p class="mb-2">Therefore, PQRS is a parallelogram (One pair of opposite sides is parallel and equal)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> PQ || AC aur SR || AC, isliye PQ || SR. Aur PQ = SR. Isliye PQRS ek parallelogram hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: ABCD is a rhombus and P, Q, R and S are the mid-points of the sides AB, BC, CD and DA respectively. Show that the quadrilateral PQRS is a rectangle.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Join AC and BD.</p>
+                        <p class="mb-2">In ΔABC, P and Q are mid-points of AB and BC.</p>
+                        <p class="mb-2">So, PQ || AC and PQ = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC ...(1)
+                        </p>
+                        <p class="mb-2">In ΔADC, S and R are mid-points of AD and CD.</p>
+                        <p class="mb-2">So, SR || AC and SR = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC ...(2)
+                        </p>
+                        <p class="mb-2">From (1) and (2), PQ || SR and PQ = SR</p>
+                        <p class="mb-2">So, PQRS is a parallelogram.</p>
+                        <p class="mb-2">Now, in ΔABD, P and S are mid-points of AB and AD.</p>
+                        <p class="mb-2">So, PS || BD</p>
+                        <p class="mb-2">But PQ || AC (from 1)</p>
+                        <p class="mb-2">Since AC ⊥ BD (Diagonals of rhombus are perpendicular)</p>
+                        <p class="mb-2">So, PS ⊥ PQ (If two lines are parallel to two perpendicular lines, then they are perpendicular)</p>
+                        <p class="mb-2">Therefore, ∠P = 90°</p>
+                        <p class="mb-2">Hence, PQRS is a rectangle.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> AC aur BD join karte hain. ΔABC mein PQ || AC aur PQ = 1/2 AC. ΔADC mein SR || AC aur SR = 1/2 AC. Isliye PQ || SR aur PQ = SR, toh PQRS parallelogram hai. ΔABD mein PS || BD. Par PQ || AC aur AC ⊥ BD (rhombus ke diagonals perpendicular hote hain), isliye PS ⊥ PQ. Yani ∠P = 90°. Isliye PQRS ek rectangle hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: ABCD is a rectangle and P, Q, R and S are mid-points of the sides AB, BC, CD and DA respectively. Show that the quadrilateral PQRS is a rhombus.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Join AC and BD.</p>
+                        <p class="mb-2">In ΔABC, P and Q are mid-points of AB and BC.</p>
+                        <p class="mb-2">So, PQ || AC and PQ = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC ...(1)
+                        </p>
+                        <p class="mb-2">In ΔADC, S and R are mid-points of AD and CD.</p>
+                        <p class="mb-2">So, SR || AC and SR = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AC ...(2)
+                        </p>
+                        <p class="mb-2">From (1) and (2), PQ || SR and PQ = SR</p>
+                        <p class="mb-2">Similarly, PS || QR and PS = QR</p>
+                        <p class="mb-2">So, PQRS is a parallelogram.</p>
+                        <p class="mb-2">Now, in ΔPAS and ΔPBQ:</p>
+                        <p class="mb-2">AP = BP (P is mid-point of AB)</p>
+                        <p class="mb-2">AS = BQ (S and Q are mid-points of AD and BC, and AD = BC in rectangle)</p>
+                        <p class="mb-2">∠A = ∠B = 90° (Angles of rectangle)</p>
+                        <p class="mb-2">So, ΔPAS ≅ ΔPBQ (SAS congruence rule)</p>
+                        <p class="mb-2">Therefore, PS = PQ (CPCT)</p>
+                        <p class="mb-2">So, adjacent sides of parallelogram PQRS are equal.</p>
+                        <p class="mb-2">Hence, PQRS is a rhombus.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> AC aur BD join karte hain. ΔABC mein PQ || AC aur PQ = 1/2 AC. ΔADC mein SR || AC aur SR = 1/2 AC. Isliye PQ || SR aur PQ = SR, toh PQRS parallelogram hai. ΔPAS aur ΔPBQ congruent hain, isliye PS = PQ. Yani adjacent sides equal hain. Isliye PQRS ek rhombus hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: ABCD is a trapezium in which AB || DC, BD is a diagonal and E is the mid-point of AD. A line is drawn through E parallel to AB intersecting BC at F (see Fig. 8.21). Show that F is the mid-point of BC.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let EF intersect BD at G.</p>
+                        <p class="mb-2">In ΔABD, E is the mid-point of AD and EG || AB (since EF || AB)</p>
+                        <p class="mb-2">By converse of mid-point theorem, G is the mid-point of BD.</p>
+                        <p class="mb-2">Now, in ΔBCD, G is the mid-point of BD and GF || DC (since AB || DC and EF || AB, so EF || DC)</p>
+                        <p class="mb-2">By converse of mid-point theorem, F is the mid-point of BC.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> EF, BD ko G par intersect karti hai. ΔABD mein E mid-point hai AD ka aur EG || AB, isliye G mid-point hai BD ka. ΔBCD mein G mid-point hai BD ka aur GF || DC, isliye F mid-point hai BC ka.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In a parallelogram ABCD, E and F are the mid-points of sides AB and CD respectively (see Fig. 8.22). Show that the line segments AF and EC trisect the diagonal BD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">ABCD is a parallelogram, so AB = CD and AB || CD.</p>
+                        <p class="mb-2">E and F are mid-points of AB and CD respectively.</p>
+                        <p class="mb-2">So, AE = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AB and CF = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> CD
+                        </p>
+                        <p class="mb-2">But AB = CD, so AE = CF</p>
+                        <p class="mb-2">Also, AE || CF (since AB || CD)</p>
+                        <p class="mb-2">So, AECF is a parallelogram.</p>
+                        <p class="mb-2">Therefore, AF || EC</p>
+                        <p class="mb-2">In ΔABP, E is the mid-point of AB and EQ || AP (since AF || EC)</p>
+                        <p class="mb-2">So, Q is the mid-point of BP (By converse of mid-point theorem)</p>
+                        <p class="mb-2">Therefore, BQ = QP ...(1)</p>
+                        <p class="mb-2">In ΔDQC, F is the mid-point of DC and FP || CQ (since AF || EC)</p>
+                        <p class="mb-2">So, P is the mid-point of DQ (By converse of mid-point theorem)</p>
+                        <p class="mb-2">Therefore, DP = PQ ...(2)</p>
+                        <p class="mb-2">From (1) and (2), BQ = QP = PD</p>
+                        <p class="mb-2">Hence, AF and EC trisect the diagonal BD.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ABCD parallelogram hai, isliye AB = CD aur AB || CD. E aur F mid-points hain AB aur CD ke, isliye AE = CF. Aur AE || CF, isliye AECF parallelogram hai. Isliye AF || EC. ΔABP mein E mid-point hai AB ka aur EQ || AP, isliye Q mid-point hai BP ka. Yani BQ = QP. ΔDQC mein F mid-point hai DC ka aur FP || CQ, isliye P mid-point hai DQ ka. Yani DP = PQ. Isliye BQ = QP = PD. Yani AF aur EC diagonal BD ko trisect karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: ABC is a triangle right angled at C. A line through the mid-point M of hypotenuse AB and parallel to BC intersects AC at D. Show that</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) D is the mid-point of AC</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">In ΔABC, M is the mid-point of AB and MD || BC</p>
+                        <p class="mb-2">By converse of mid-point theorem, D is the mid-point of AC.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> ΔABC mein M mid-point hai AB ka aur MD || BC, isliye converse of mid-point theorem ke according D mid-point hai AC ka.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) MD ⊥ AC</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since MD || BC and AC ⊥ BC (Given, ∠C = 90°)</p>
+                        <p class="mb-2">So, MD ⊥ AC</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> MD || BC aur AC ⊥ BC (∠C = 90°), isliye MD ⊥ AC.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) CM = MA = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> AB
+                    </h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Join MC.</p>
+                        <p class="mb-2">In ΔAMD and ΔCMD:</p>
+                        <p class="mb-2">AD = CD (D is mid-point of AC)</p>
+                        <p class="mb-2">MD = MD (Common side)</p>
+                        <p class="mb-2">∠ADM = ∠CDM = 90° (MD ⊥ AC)</p>
+                        <p class="mb-2">So, ΔAMD ≅ ΔCMD (SAS congruence rule)</p>
+                        <p class="mb-2">Therefore, AM = CM (CPCT)</p>
+                        <p class="mb-2">But AM = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AB (M is mid-point of AB)
+                        </p>
+                        <p class="mb-2">So, CM = MA = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> AB
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> MC join karte hain. ΔAMD aur ΔCMD congruent hain, isliye AM = CM. Par AM = 1/2 AB (M mid-point hai AB ka). Isliye CM = MA = 1/2 AB.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

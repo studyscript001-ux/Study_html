@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 3: Coordinate Geometry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-4 md:p-6 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-2xl md:text-3xl font-bold">Chapter 3<br> Coordinate Geometry</h1>
+            <p class="mt-2 text-lg">Class 9th : Mathematics</p>
+        </div>
+
+        <!-- Exercise 3.1 Section -->
+        <section id="exercise-3-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 3.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: How will you describe the position of a table lamp on your study table to another person?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">To describe the position of a table lamp on a study table, we can use a coordinate system with two perpendicular reference lines:</p>
+                        <p class="mb-2">1. Consider one edge of the table as the x-axis and the adjacent perpendicular edge as the y-axis.</p>
+                        <p class="mb-2">2. Measure the perpendicular distance of the lamp from the y-axis (x-coordinate).</p>
+                        <p class="mb-2">3. Measure the perpendicular distance of the lamp from the x-axis (y-coordinate).</p>
+                        <p class="mb-2">4. The position can be described using these two coordinates (x, y).</p>
+                        <p class="mb-2">For example, if the lamp is 30 cm from the left edge (y-axis) and 40 cm from the bottom edge (x-axis), its position would be (30, 40).</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Table lamp ki position batane ke liye hum do perpendicular lines use kar sakte hain. Ek edge ko x-axis aur adjacent edge ko y-axis maan kar, lamp ki distance dono axes se measure karenge. Jaise agar lamp left edge se 30 cm aur bottom edge se 40 cm hai, toh position (30, 40) hogi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: (Street Plan) A city has two main roads which cross each other at the centre of the city. These two roads are along the North-South direction and East-West direction. All the other streets of the city run parallel to these roads and are 200 m apart. There are 5 streets in each direction. Using 1cm = 200 m, draw a model of the city on your notebook. Represent the roads/streets by single lines.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) How many cross-streets can be referred to as (4, 3)?</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">According to the convention, a cross-street is referred to as (m, n) where:</p>
+                        <p class="mb-2">▪️ m is the number of the street running in the North-South direction</p>
+                        <p class="mb-2">▪️ n is the number of the street running in the East-West direction</p>
+                        <p class="mb-2">The cross-street (4, 3) is formed by the intersection of:</p>
+                        <p class="mb-2">▪️ 4th street in North-South direction</p>
+                        <p class="mb-2">▪️ 3rd street in East-West direction</p>
+                        <p class="mb-2">Since there's only one such intersection, there is exactly 1 cross-street that can be referred to as (4, 3).</p>
+                        <p><strong>Answer:</strong> 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cross-street (4, 3) ka matlab hai 4th street North-South direction mein aur 3rd street East-West direction mein. In dono streets ka intersection ek hi point par hoga, isliye exactly 1 cross-street (4, 3) kehlayega.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) How many cross-streets can be referred to as (3, 4)?</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The cross-street (3, 4) is formed by the intersection of:</p>
+                        <p class="mb-2">▪️ 3rd street in North-South direction</p>
+                        <p class="mb-2">▪️ 4th street in East-West direction</p>
+                        <p class="mb-2">This is a different intersection from (4, 3).</p>
+                        <p class="mb-2">Since there's only one such intersection, there is exactly 1 cross-street that can be referred to as (3, 4).</p>
+                        <p><strong>Answer:</strong> 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cross-street (3, 4) ka matlab hai 3rd street North-South direction mein aur 4th street East-West direction mein. Ye (4, 3) se alag intersection hai, lekin iska bhi exactly 1 cross-street hoga.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.2 Section -->
+        <section id="exercise-3-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 3.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Write the answer of each of the following questions:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) What is the name of horizontal and the vertical lines drawn to determine the position of any point in the Cartesian plane?</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The horizontal line is called the <strong>x-axis</strong>.</p>
+                        <p class="mb-2">The vertical line is called the <strong>y-axis</strong>.</p>
+                        <p><strong>Answer:</strong> x-axis and y-axis</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cartesian plane mein horizontal line ko x-axis aur vertical line ko y-axis kehte hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) What is the name of each part of the plane formed by these two lines?</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The two axes divide the plane into four parts.</p>
+                        <p class="mb-2">Each part is called a <strong>quadrant</strong>.</p>
+                        <p><strong>Answer:</strong> Quadrant</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono axes milkar plane ko char parts mein divide karte hain, jinhe quadrant kehte hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Write the name of the point where these two lines intersect.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The point where the x-axis and y-axis intersect is called the <strong>origin</strong>.</p>
+                        <p><strong>Answer:</strong> Origin</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> x-axis aur y-axis jis point par intersect karte hain, use origin kehte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: See Fig. 3.14, and write the following:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) The coordinates of B.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">From the figure, point B is:</p>
+                        <p class="mb-2">▪️ 5 units from the y-axis (x-coordinate)</p>
+                        <p class="mb-2">▪️ 2 units from the x-axis (y-coordinate)</p>
+                        <p class="mb-2">Therefore, coordinates of B are (5, 2).</p>
+                        <p><strong>Answer:</strong> (5, 2)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Point B y-axis se 5 units aur x-axis se 2 units ki distance par hai, isliye coordinates (5, 2) hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) The coordinates of C.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">From the figure, point C is:</p>
+                        <p class="mb-2">▪️ 5 units from the y-axis (x-coordinate)</p>
+                        <p class="mb-2">▪️ 5 units from the x-axis (y-coordinate)</p>
+                        <p class="mb-2">Therefore, coordinates of C are (5, -5).</p>
+                        <p><strong>Answer:</strong> (5, -5)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Point C y-axis se 5 units aur x-axis se 5 units (negative direction mein) ki distance par hai, isliye coordinates (5, -5) hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) The point identified by the coordinates (-3, -5).</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">Coordinates (-3, -5) means:</p>
+                        <p class="mb-2">▪️ x-coordinate = -3 (3 units left of y-axis)</p>
+                        <p class="mb-2">▪️ y-coordinate = -5 (5 units below x-axis)</p>
+                        <p class="mb-2">From the figure, this corresponds to point E.</p>
+                        <p><strong>Answer:</strong> E</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Coordinates (-3, -5) ka matlab hai y-axis se 3 units left aur x-axis se 5 units neeche. Figure mein ye point E hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) The point identified by the coordinates (2, -4).</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">Coordinates (2, -4) means:</p>
+                        <p class="mb-2">▪️ x-coordinate = 2 (2 units right of y-axis)</p>
+                        <p class="mb-2">▪️ y-coordinate = -4 (4 units below x-axis)</p>
+                        <p class="mb-2">From the figure, this corresponds to point G.</p>
+                        <p><strong>Answer:</strong> G</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Coordinates (2, -4) ka matlab hai y-axis se 2 units right aur x-axis se 4 units neeche. Figure mein ye point G hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) The abscissa of the point D.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The abscissa is the x-coordinate of a point.</p>
+                        <p class="mb-2">From the figure, point D is 6 units from the y-axis.</p>
+                        <p class="mb-2">Since it's to the left of the y-axis, the x-coordinate is negative.</p>
+                        <p class="mb-2">Therefore, the abscissa of point D is -6.</p>
+                        <p><strong>Answer:</strong> -6</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Abscissa y-axis se distance hoti hai. Point D y-axis se 6 units left par hai, isliye iski abscissa -6 hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vi) The ordinate of the point H.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">The ordinate is the y-coordinate of a point.</p>
+                        <p class="mb-2">From the figure, point H is 3 units from the x-axis.</p>
+                        <p class="mb-2">Since it's above the x-axis, the y-coordinate is positive.</p>
+                        <p class="mb-2">Therefore, the ordinate of point H is -3.</p>
+                        <p><strong>Answer:</strong> -3</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ordinate x-axis se distance hoti hai. Point H x-axis se 3 units neeche hai, isliye iski ordinate -3 hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(vii) The coordinates of the point L.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">From the figure, point L is:</p>
+                        <p class="mb-2">▪️ 0 units from the y-axis (on the y-axis)</p>
+                        <p class="mb-2">▪️ 5 units from the x-axis</p>
+                        <p class="mb-2">Therefore, coordinates of L are (0, 5).</p>
+                        <p><strong>Answer:</strong> (0, 5)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Point L y-axis par hai aur x-axis se 5 units upar hai, isliye coordinates (0, 5) hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(viii) The coordinates of the point M.</h4>
+                    
+                    <div class="stepp">
+                        <p class="mb-2">From the figure, point M is:</p>
+                        <p class="mb-2">▪️ 3 units from the y-axis</p>
+                        <p class="mb-2">▪️ 0 units from the x-axis (on the x-axis)</p>
+                        <p class="mb-2">Therefore, coordinates of M are (-3, 0).</p>
+                        <p><strong>Answer:</strong> (-3, 0)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Point M x-axis par hai aur y-axis se 3 units left par hai, isliye coordinates (-3, 0) hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

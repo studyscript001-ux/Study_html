@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Mathematics - Chapter 5: Introduction to Euclid's Geometry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .true-false {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+        .true {
+            background-color: #dcfce7;
+            color: #166534;
+        }
+        .false {
+            background-color: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 5: Introduction to Euclid's Geometry</h1>
+            <p class="mt-2 text-lg">Class 9 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 5.1 Section -->
+        <section id="exercise-5-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Which of the following statements are true and which are false? Give reasons for your answers.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Only one line can pass through a single point.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This statement is <span class="true-false false">False</span>.</p>
+                        <p class="mb-2">According to Euclid's axioms, an infinite number of lines can pass through a single point.</p>
+                        <p class="mb-2">A single point does not determine a unique line.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Yeh statement galat hai. Ek single point se infinite lines pass ho sakti hain. Euclid's axioms ke according, ek point se multiple lines pass ho sakti hain.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) There are an infinite number of lines which pass through two distinct points.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This statement is <span class="true-false false">False</span>.</p>
+                        <p class="mb-2">According to Euclid's Postulate 1 and Axiom 5.1, only one unique line can pass through two distinct points.</p>
+                        <p class="mb-2">If more than one line passed through two points, it would violate the basic definition of a straight line.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Yeh statement bhi galat hai. Euclid's Postulate 1 ke according, do distinct points se sirf ek hi unique line pass ho sakti hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) A terminated line can be produced indefinitely on both the sides.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This statement is <span class="true-false true">True</span>.</p>
+                        <p class="mb-2">According to Euclid's Postulate 2, a terminated line (line segment) can be produced indefinitely on both sides to form a line.</p>
+                        <p class="mb-2">This is a fundamental property of straight lines in Euclidean geometry.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Yeh statement sahi hai. Euclid's Postulate 2 ke according, ek terminated line (line segment) ko dono sides mein indefinitely extend kiya ja sakta hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) If two circles are equal, then their radii are equal.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This statement is <span class="true-false true">True</span>.</p>
+                        <p class="mb-2">According to Euclid's Postulate 3, a circle can be drawn with any center and any radius.</p>
+                        <p class="mb-2">If two circles are equal (congruent), they must have the same size, which means their radii must be equal.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Yeh statement sahi hai. Agar do circles equal (congruent) hain, toh unki radii bhi equal honi chahiye. Euclid's Postulate 3 ke according, circle ko kisi bhi center aur radius se draw kiya ja sakta hai.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) In Fig. 5.9, if AB = PQ and PQ = XY, then AB = XY.</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This statement is <span class="true-false true">True</span>.</p>
+                        <p class="mb-2">According to Euclid's first axiom: "Things which are equal to the same thing are equal to one another."</p>
+                        <p class="mb-2">Since AB = PQ and PQ = XY, therefore AB = XY.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Yeh statement sahi hai. Euclid's first axiom ke according: "Jo cheezein ek hi cheez ke equal hain, woh aapas mein bhi equal hoti hain." Yahan AB = PQ aur PQ = XY, isliye AB = XY.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Give a definition for each of the following terms. Are there other terms that need to be defined first? What are they, and how might you define them?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) Parallel lines</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Definition:</strong> Parallel lines are lines in a plane that do not meet; they are always the same distance apart and never intersect.</p>
+                        <p class="mb-2"><strong>Terms needed first:</strong> To define parallel lines, we need to define "line", "plane", "distance", and "intersect".</p>
+                        <p class="mb-2"><strong>How to define them:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Line:</strong> A line is a straight one-dimensional figure having no thickness and extending infinitely in both directions.</li>
+                            <li><strong>Plane:</strong> A plane is a flat, two-dimensional surface that extends infinitely far.</li>
+                            <li><strong>Distance:</strong> The shortest path between two points.</li>
+                            <li><strong>Intersect:</strong> When two lines cross each other at a point.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Parallel lines woh lines hain jo ek hi plane mein hain aur kabhi nahi milti, hamesha same distance par rehti hain. Is definition ke liye pehle "line", "plane", "distance", aur "intersect" ko define karna padega.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) Perpendicular lines</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Definition:</strong> Perpendicular lines are lines that intersect at right angles (90 degrees).</p>
+                        <p class="mb-2"><strong>Terms needed first:</strong> To define perpendicular lines, we need to define "line", "intersect", and "right angle".</p>
+                        <p class="mb-2"><strong>How to define them:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Line:</strong> As defined above.</li>
+                            <li><strong>Intersect:</strong> As defined above.</li>
+                            <li><strong>Right angle:</strong> An angle that measures exactly 90 degrees.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Perpendicular lines woh lines hain jo right angles (90 degrees) par intersect karti hain. Is definition ke liye pehle "line", "intersect", aur "right angle" ko define karna padega.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) Line segment</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Definition:</strong> A line segment is a part of a line that is bounded by two distinct end points and contains every point on the line between its endpoints.</p>
+                        <p class="mb-2"><strong>Terms needed first:</strong> To define line segment, we need to define "line", "point", and "between".</p>
+                        <p class="mb-2"><strong>How to define them:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Line:</strong> As defined above.</li>
+                            <li><strong>Point:</strong> A point is a location in space that has no dimension (no length, width, or height).</li>
+                            <li><strong>Between:</strong> A point C is between points A and B if all three points are collinear and AC + CB = AB.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Line segment line ka ek hissa hota hai jo do distinct end points ke beech mein hota hai. Is definition ke liye pehle "line", "point", aur "between" ko define karna padega.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) Radius of a circle</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Definition:</strong> The radius of a circle is a straight line from the center of the circle to any point on its circumference.</p>
+                        <p class="mb-2"><strong>Terms needed first:</strong> To define radius, we need to define "circle", "center", "straight line", and "circumference".</p>
+                        <p class="mb-2"><strong>How to define them:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Circle:</strong> A circle is a set of all points in a plane that are equidistant from a fixed point called the center.</li>
+                            <li><strong>Center:</strong> The fixed point from which all points on a circle are equidistant.</li>
+                            <li><strong>Straight line:</strong> As defined in line above.</li>
+                            <li><strong>Circumference:</strong> The boundary line of a circle.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Radius circle ke center se circumference tak ki straight line hoti hai. Is definition ke liye pehle "circle", "center", "straight line", aur "circumference" ko define karna padega.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(v) Square</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Definition:</strong> A square is a quadrilateral with all four sides equal in length and all four angles equal to 90 degrees.</p>
+                        <p class="mb-2"><strong>Terms needed first:</strong> To define square, we need to define "quadrilateral", "side", "length", "angle", and "90 degrees".</p>
+                        <p class="mb-2"><strong>How to define them:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Quadrilateral:</strong> A polygon with four sides and four angles.</li>
+                            <li><strong>Side:</strong> A line segment that forms part of a polygon.</li>
+                            <li><strong>Length:</strong> The measurement of something from end to end.</li>
+                            <li><strong>Angle:</strong> The figure formed by two rays sharing a common endpoint.</li>
+                            <li><strong>90 degrees:</strong> The measure of a right angle.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Square ek quadrilateral hota hai jiske charo sides equal hote hain aur charo angles 90 degrees ke hote hain. Is definition ke liye pehle "quadrilateral", "side", "length", "angle", aur "90 degrees" ko define karna padega.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Consider two 'postulates' given below:</h3>
+                <p class="mb-4">(i) Given any two distinct points A and B, there exists a third point C which is in between A and B.</p>
+                <p class="mb-4">(ii) There exist at least three points that are not on the same line.</p>
+                <p>Do these postulates contain any undefined terms? Are these postulates consistent? Do they follow from Euclid's postulates? Explain.</p>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Undefined terms:</strong> Yes, these postulates contain undefined terms:</p>
+                        <ul class="list-disc ml-6 mb-4">
+                            <li><strong>Point:</strong> This term is undefined in Euclidean geometry.</li>
+                            <li><strong>Line:</strong> This term is also undefined in Euclidean geometry.</li>
+                            <li><strong>Between:</strong> This term is not formally defined in Euclid's elements.</li>
+                        </ul>
+                        
+                        <p class="mb-2"><strong>Consistency:</strong> Yes, these postulates are consistent with each other. They don't lead to any contradictions.</p>
+                        
+                        <p class="mb-2"><strong>Following from Euclid's postulates:</strong> These postulates do not directly follow from Euclid's five postulates. They are additional assumptions about the nature of space.</p>
+                        
+                        <p class="mb-2">Euclid's postulates don't explicitly guarantee that between any two points there exists a third point, or that there exist three non-collinear points.</p>
+                        
+                        <p class="mb-2">These postulates help establish that space is continuous (not discrete) and that we're working in at least two dimensions.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> In postulates mein undefined terms hain jaise "point", "line", aur "between". Yeh postulates consistent hain, matlab woh aapas mein contradict nahi karte. Yeh Euclid's postulates se directly follow nahi karte, balki additional assumptions hain space ki nature ke bare mein.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: If a point C lies between two points A and B such that AC = BC, then prove that AC = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB. Explain by drawing the figure.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: Point C lies between A and B such that AC = BC.</p>
+                        <p class="mb-2">To prove: AC = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB</p>
+                        
+                        <p class="mb-2">From the given information:</p>
+                        <p class="mb-2">Since C lies between A and B, we have:</p>
+                        <p class="mb-2 equation">AB = AC + BC</p>
+                        
+                        <p class="mb-2">But we're given that AC = BC, so we can substitute:</p>
+                        <p class="mb-2 equation">AB = AC + AC = 2AC</p>
+                        
+                        <p class="mb-2">Therefore:</p>
+                        <p class="mb-2 equation">AC = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB</p>
+                        
+                        <p class="mb-2">This proves that AC = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB.</p>
+                        
+                        <p class="mb-2"><strong>Figure:</strong></p>
+                        <div class="bg-gray-100 p-4 rounded-md text-center">
+                            <p class="font-mono">A_____C_____B</p>
+                            <p class="mt-2">Where AC = BC, so C is the midpoint of AB.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki point C, A aur B ke beech mein hai aur AC = BC. Hum jante hain ki AB = AC + BC. AC = BC diya gaya hai, toh AB = AC + AC = 2AC. Isliye AC = 1/2 AB. Figure mein A_____C_____B dikhaya gaya hai, jahan C midpoint hai AB ka.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In Question 4, point C is called a mid-point of line segment AB. Prove that every line segment has one and only one mid-point.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">To prove: Every line segment has one and only one midpoint.</p>
+                        
+                        <p class="mb-2">We'll prove this by contradiction.</p>
+                        
+                        <p class="mb-2">Assume that a line segment AB has two different midpoints, say C and D.</p>
+                        
+                        <p class="mb-2">If C is a midpoint of AB, then:</p>
+                        <p class="mb-2 equation">AC = CB = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB</p>
+                        
+                        <p class="mb-2">If D is also a midpoint of AB, then:</p>
+                        <p class="mb-2 equation">AD = DB = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB</p>
+                        
+                        <p class="mb-2">Now, without loss of generality, assume that D lies between A and C.</p>
+                        
+                        <p class="mb-2">Then:</p>
+                        <p class="mb-2 equation">AC = AD + DC</p>
+                        
+                        <p class="mb-2">But AC = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB and AD = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB</p>
+                        
+                        <p class="mb-2">So:</p>
+                        <p class="mb-2 equation"><div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> AB + DC</p>
+                        
+                        <p class="mb-2">This implies:</p>
+                        <p class="mb-2 equation">DC = 0</p>
+                        
+                        <p class="mb-2">But if DC = 0, then points C and D coincide, which contradicts our assumption that C and D are different points.</p>
+                        
+                        <p class="mb-2">Therefore, our assumption that AB has two different midpoints is false.</p>
+                        
+                        <p class="mb-2">Hence, every line segment has one and only one midpoint.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Humein prove karna hai ki har line segment ka ek hi midpoint hota hai. Maan lete hain ki AB ke do different midpoints hain C aur D. Agar C midpoint hai toh AC = CB = 1/2 AB. Agar D bhi midpoint hai toh AD = DB = 1/2 AB. Maan lete hain D, A aur C ke beech mein hai. Toh AC = AD + DC. Par AC = 1/2 AB aur AD = 1/2 AB, isliye 1/2 AB = 1/2 AB + DC, jo batata hai ki DC = 0. Iska matlab C aur D same point hain, jo hamari assumption ke against hai. Isliye har line segment ka sirf ek hi midpoint hota hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: In Fig. 5.10, if AC = BD, then prove that AB = CD.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: AC = BD</p>
+                        <p class="mb-2">To prove: AB = CD</p>
+                        
+                        <p class="mb-2"><strong>Figure representation:</strong></p>
+                        <div class="bg-gray-100 p-4 rounded-md text-center">
+                            <p class="font-mono">A_____B_____C_____D</p>
+                            <p class="mt-2">Where points A, B, C, D are collinear in that order.</p>
+                        </div>
+                        
+                        <p class="mb-2">From the figure, we can see that:</p>
+                        <p class="mb-2 equation">AC = AB + BC</p>
+                        <p class="mb-2 equation">BD = BC + CD</p>
+                        
+                        <p class="mb-2">Given that AC = BD, so:</p>
+                        <p class="mb-2 equation">AB + BC = BC + CD</p>
+                        
+                        <p class="mb-2">Subtracting BC from both sides:</p>
+                        <p class="mb-2 equation">AB = CD</p>
+                        
+                        <p class="mb-2">Hence, proved that AB = CD.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Diya gaya hai ki AC = BD. Figure mein A, B, C, D collinear hain. Hum jante hain ki AC = AB + BC aur BD = BC + CD. AC = BD diya gaya hai, isliye AB + BC = BC + CD. Dono sides se BC subtract karne par milta hai AB = CD.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Why is Axiom 5, in the list of Euclid's axioms, considered a 'universal truth'? (Note that the question is not about the fifth postulate.)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Euclid's Axiom 5 states: "The whole is greater than the part."</p>
+                        
+                        <p class="mb-2">This axiom is considered a 'universal truth' because:</p>
+                        
+                        <ul class="list-disc ml-6">
+                            <li class="mb-2">It is self-evident and does not require proof.</li>
+                            <li class="mb-2">It applies to all quantities and magnitudes, not just geometric figures.</li>
+                            <li class="mb-2">It is consistent with our everyday experience and intuition.</li>
+                            <li class="mb-2">It forms the basis for many other mathematical concepts and proofs.</li>
+                            <li class="mb-2">It is independent of any specific geometric system or measurement units.</li>
+                        </ul>
+                        
+                        <p class="mb-2">For example:</p>
+                        <ul class="list-disc ml-6">
+                            <li class="mb-2">If we have a quantity A and it contains a part B, then A must be greater than B.</li>
+                            <li class="mb-2">If B is a part of A, then we can write A = B + C for some C > 0, which clearly shows A > B.</li>
+                        </ul>
+                        
+                        <p class="mb-2">This axiom is so fundamental that it's hard to imagine any consistent mathematical system where it wouldn't hold true.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Euclid's Axiom 5 kehta hai: "The whole is greater than the part." Yeh ek 'universal truth' hai kyunki yeh self-evident hai, proof ki zaroorat nahi hai. Yeh har tarah ki quantities par apply hota hai, sirf geometry tak limited nahi hai. Yeh hamari rozmarra ki experience aur intuition ke saath match karta hai. For example, agar kisi quantity A ka ek part B hai, toh A hamesha B se bada hoga.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
