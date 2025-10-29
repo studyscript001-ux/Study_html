@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 7: Binomial Theorem</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .binomial-coefficient {
+            font-family: 'Times New Roman', serif;
+            font-size: 1rem;
+        }
+        .superscript {
+            vertical-align: super;
+            font-size: smaller;
+        }
+        .subscript {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 7<br> Binomial Theorem</h1>
+            <p class="mt-2 text-lg">Class 11th Mathematics</p>
+        </div>
+
+        <!-- Introduction Section -->
+        <section id="introduction" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Introduction</h2>
+            
+            <div class="solution-card">
+                <p class="mb-4">The Binomial Theorem provides a way to expand expressions of the form (a + b)<span class="superscript">n</span> without having to multiply repeatedly. It is especially useful for higher powers where direct multiplication becomes tedious.</p>
+                
+                <div class="step">
+                    <p class="mb-2">The binomial theorem states that for any positive integer n:</p>
+                    <p class="equation">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                </div>
+                
+                <div class="step">
+                    <p class="mb-2">Where <span class="binomial-coefficient"><sup>n</sup>C<sub>r</sub></span> = n! / (r! × (n - r)!)</p>
+                </div>
+                
+                <div class="hinglish-explanation">
+                    <strong>Hinglish Explanation:</strong> Binomial theorem humein (a + b)<span class="superscript">n</span> ko expand karne ka ek aasan tarika batata hai, khaas kar jab n ki value badi ho. Isme hum coefficients ke liye combinations ka use karte hain.
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 7.1 Section -->
+        <section id="exercise-7-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 7.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Expand (1 - 2x)<span class="superscript">5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 1, b = -2x, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(1 - 2x)<span class="superscript">5</span> = <span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> (1)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> (1)<span class="superscript">4</span> (-2x) + <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> (1)<span class="superscript">3</span> (-2x)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> (1)<span class="superscript">2</span> (-2x)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> (1) (-2x)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> (-2x)<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now substitute and simplify:</p>
+                        <p class="mb-2">= 1(1) + 5(1)(-2x) + 10(1)(4x<span class="superscript">2</span>) + 10(1)(-8x<span class="superscript">3</span>) + 5(1)(16x<span class="superscript">4</span>) + 1(-32x<span class="superscript">5</span>)</p>
+                        <p class="mb-2">= 1 - 10x + 40x<span class="superscript">2</span> - 80x<span class="superscript">3</span> + 80x<span class="superscript">4</span> - 32x<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 1 - 10x + 40x<span class="superscript">2</span> - 80x<span class="superscript">3</span> + 80x<span class="superscript">4</span> - 32x<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem use karke (1-2x)<span class="superscript">5</span> ko expand karna hai. Binomial coefficients calculate karke (<span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> se <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> tak), fir har term ko simplify karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Expand 
+                    <span class="inline-math">
+                        (<span class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">x</span>
+                        </span> - <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">2</span>
+                        </span>)<span class="superscript">5</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>, b = -<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (<span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">x</span>
+                                </span> - <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span>)<span class="superscript">5</span> = <span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)<span class="superscript">4</span> (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>) + <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)<span class="superscript">3</span> (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)<span class="superscript">2</span> (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>) (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)<span class="superscript">5</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now simplify each term:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = 1 × <span class="fraction"><span class="numerator">32</span><span class="denominator">x⁵<span class="superscript"></span></span></span> + 5 × <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴<span class="superscript"></span></span></span> × (-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>) + 10 × <span class="fraction"><span class="numerator">8</span><span class="denominator">x³<span class="superscript"></span></span></span> × <span class="fraction"><span class="numerator">x²<span class="superscript"></span></span><span class="denominator">4</span></span> + 10 × <span class="fraction"><span class="numerator">4</span><span class="denominator">x²<span class="superscript"></span></span></span> × (-<span class="fraction"><span class="numerator">x³<span class="superscript"></span></span><span class="denominator">8</span></span>) + 5 × <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span> × <span class="fraction"><span class="numerator">x⁴<span class="superscript"></span></span><span class="denominator">16</span></span> + 1 × (-<span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">32</span></span>)
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = <span class="fraction"><span class="numerator">32</span><span class="denominator">x⁵<span class="superscript"></span></span></span> - <span class="fraction"><span class="numerator">40</span><span class="denominator">x³<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">20</span><span class="denominator">x</span></span> - 5x + <span class="fraction"><span class="numerator">5x³<span class="superscript"></span></span><span class="denominator">8</span></span> - <span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">32</span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 
+                            <span class="inline-math">
+                                <span class="fraction"><span class="numerator">32</span><span class="denominator">x⁵<span class="superscript"></span></span></span> - <span class="fraction"><span class="numerator">40</span><span class="denominator">x³<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">20</span><span class="denominator">x</span></span> - 5x + <span class="fraction"><span class="numerator">5x³<span class="superscript"></span></span><span class="denominator">8</span></span> - <span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">32</span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem use karke (2/x - x/2)<span class="superscript">5</span> ko expand karna hai. Har term ko simplify karte waqt powers of x ko properly handle karna hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Expand (2x - 3)<span class="superscript">6</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 2x, b = -3, n = 6</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(2x - 3)<span class="superscript">6</span> = <span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> (2x)<span class="superscript">6</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> (2x)<span class="superscript">5</span> (-3) + <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> (2x)<span class="superscript">4</span> (-3)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> (2x)<span class="superscript">3</span> (-3)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> (2x)<span class="superscript">2</span> (-3)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> (2x) (-3)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span> (-3)<span class="superscript">6</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> = 6, <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> = 15, <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> = 20, <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> = 15, <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> = 6, <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now simplify each term:</p>
+                        <p class="mb-2">= 1 × 64x<span class="superscript">6</span> + 6 × 32x<span class="superscript">5</span> × (-3) + 15 × 16x<span class="superscript">4</span> × 9 + 20 × 8x<span class="superscript">3</span> × (-27) + 15 × 4x<span class="superscript">2</span> × 81 + 6 × 2x × (-243) + 1 × 729</p>
+                        <p class="mb-2">= 64x<span class="superscript">6</span> - 576x<span class="superscript">5</span> + 2160x<span class="superscript">4</span> - 4320x<span class="superscript">3</span> + 4860x<span class="superscript">2</span> - 2916x + 729</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 64x<span class="superscript">6</span> - 576x<span class="superscript">5</span> + 2160x<span class="superscript">4</span> - 4320x<span class="superscript">3</span> + 4860x<span class="superscript">2</span> - 2916x + 729</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem use karke (2x-3)<span class="superscript">6</span> ko expand karna hai. Har term mein (2x) ki power aur (-3) ki power ko properly calculate karna hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Expand 
+                    <span class="inline-math">
+                        (<span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">3</span>
+                        </span> + <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">x</span>
+                        </span>)<span class="superscript">5</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>, b = <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (<span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">x</span>
+                                </span>)<span class="superscript">5</span> = <span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)<span class="superscript">4</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)<span class="superscript">3</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)<span class="superscript">2</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>) (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">5</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now simplify each term:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = 1 × <span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">243</span></span> + 5 × <span class="fraction"><span class="numerator">x⁴<span class="superscript"></span></span><span class="denominator">81</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> + 10 × <span class="fraction"><span class="numerator">x³<span class="superscript"></span></span><span class="denominator">27</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x²<span class="superscript"></span></span></span> + 10 × <span class="fraction"><span class="numerator">x²<span class="superscript"></span></span><span class="denominator">9</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x³<span class="superscript"></span></span></span> + 5 × <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁴<span class="superscript"></span></span></span> + 1 × <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = <span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">243</span></span> + <span class="fraction"><span class="numerator">5x³<span class="superscript"></span></span><span class="denominator">81</span></span> + <span class="fraction"><span class="numerator">10x</span><span class="denominator">27</span></span> + <span class="fraction"><span class="numerator">10</span><span class="denominator">9x</span></span> + <span class="fraction"><span class="numerator">5</span><span class="denominator">3x³<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 
+                            <span class="inline-math">
+                                <span class="fraction"><span class="numerator">x⁵<span class="superscript"></span></span><span class="denominator">243</span></span> + <span class="fraction"><span class="numerator">5x³<span class="superscript"></span></span><span class="denominator">81</span></span> + <span class="fraction"><span class="numerator">10x</span><span class="denominator">27</span></span> + <span class="fraction"><span class="numerator">10</span><span class="denominator">9x</span></span> + <span class="fraction"><span class="numerator">5</span><span class="denominator">3x³<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem use karke (x/3 + 1/x)<span class="superscript">5</span> ko expand karna hai. Har term ko simplify karte waakt powers of x ko properly handle karna hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Expand 
+                    <span class="inline-math">
+                        (x + <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">x</span>
+                        </span>)<span class="superscript">6</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = x, b = <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>, n = 6</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (x + <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">x</span>
+                                </span>)<span class="superscript">6</span> = <span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> (x)<span class="superscript">6</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> (x)<span class="superscript">5</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> (x)<span class="superscript">4</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> (x)<span class="superscript">3</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> (x)<span class="superscript">2</span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> (x) (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span> (<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)<span class="superscript">6</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> = 6, <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> = 15, <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> = 20, <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> = 15, <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> = 6, <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now simplify each term:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = 1 × x<span class="superscript">6</span> + 6 × x<span class="superscript">5</span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> + 15 × x<span class="superscript">4</span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x²<span class="superscript"></span></span></span> + 20 × x³<span class="superscript"></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x³<span class="superscript"></span></span></span> + 15 × x²<span class="superscript"></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁴<span class="superscript"></span></span></span> + 6 × x × <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵<span class="superscript"></span></span></span> + 1 × <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁶<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = x<span class="superscript">6</span> + 6x<span class="superscript">4</span> + 15x<span class="superscript">2</span> + 20 + <span class="fraction"><span class="numerator">15</span><span class="denominator">x²<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">6</span><span class="denominator">x⁴<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁶<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 
+                            <span class="inline-math">
+                                x<span class="superscript">6</span> + 6x<span class="superscript">4</span> + 15x<span class="superscript">2</span> + 20 + <span class="fraction"><span class="numerator">15</span><span class="denominator">x²<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">6</span><span class="denominator">x⁴<span class="superscript"></span></span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁶<span class="superscript"></span></span></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem use karke (x + 1/x)<span class="superscript">6</span> ko expand karna hai. Har term ko simplify karte waqt powers of x ko properly handle karna hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Using binomial theorem, evaluate (96)<span class="superscript">3</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write 96 as (100 - 4)</p>
+                        <p class="mb-2">So, (96)<span class="superscript">3</span> = (100 - 4)<span class="superscript">3</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 100, b = -4, n = 3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(100 - 4)<span class="superscript">3</span> = <span class="binomial-coefficient"><sup>3</sup>C<sub>0</sub></span> (100)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>3</sup>C<sub>1</sub></span> (100)<span class="superscript">2</span> (-4) + <span class="binomial-coefficient"><sup>3</sup>C<sub>2</sub></span> (100) (-4)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>3</sup>C<sub>3</sub></span> (-4)<span class="superscript">3</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>3</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>3</sup>C<sub>1</sub></span> = 3, <span class="binomial-coefficient"><sup>3</sup>C<sub>2</sub></span> = 3, <span class="binomial-coefficient"><sup>3</sup>C<sub>3</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now substitute and calculate:</p>
+                        <p class="mb-2">= 1 × 1000000 + 3 × 10000 × (-4) + 3 × 100 × 16 + 1 × (-64)</p>
+                        <p class="mb-2">= 1000000 - 120000 + 4800 - 64</p>
+                        <p class="mb-2">= 884736</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 884736</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 96 ko (100-4) likh kar binomial theorem use karte hain. Har term ko calculate karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Using binomial theorem, evaluate (102)<span class="superscript">5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write 102 as (100 + 2)</p>
+                        <p class="mb-2">So, (102)<span class="superscript">5</span> = (100 + 2)<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 100, b = 2, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(100 + 2)<span class="superscript">5</span> = <span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> (100)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> (100)<span class="superscript">4</span> (2) + <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> (100)<span class="superscript">3</span> (2)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> (100)<span class="superscript">2</span> (2)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> (100) (2)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> (2)<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now substitute and calculate:</p>
+                        <p class="mb-2">= 1 × 10000000000 + 5 × 100000000 × 2 + 10 × 1000000 × 4 + 10 × 10000 × 8 + 5 × 100 × 16 + 1 × 32</p>
+                        <p class="mb-2">= 10000000000 + 1000000000 + 40000000 + 800000 + 8000 + 32</p>
+                        <p class="mb-2">= 11040808032</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 11040808032</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 102 ko (100+2) likh kar binomial theorem use karte hain. Har term ko calculate karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Using binomial theorem, evaluate (101)<span class="superscript">4</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write 101 as (100 + 1)</p>
+                        <p class="mb-2">So, (101)<span class="superscript">4</span> = (100 + 1)<span class="superscript">4</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 100, b = 1, n = 4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(100 + 1)<span class="superscript">4</span> = <span class="binomial-coefficient"><sup>4</sup>C<sub>0</sub></span> (100)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>1</sub></span> (100)<span class="superscript">3</span> (1) + <span class="binomial-coefficient"><sup>4</sup>C<sub>2</sub></span> (100)<span class="superscript">2</span> (1)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>3</sub></span> (100) (1)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>4</sub></span> (1)<span class="superscript">4</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>4</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>4</sup>C<sub>1</sub></span> = 4, <span class="binomial-coefficient"><sup>4</sup>C<sub>2</sub></span> = 6, <span class="binomial-coefficient"><sup>4</sup>C<sub>3</sub></span> = 4, <span class="binomial-coefficient"><sup>4</sup>C<sub>4</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now substitute and calculate:</p>
+                        <p class="mb-2">= 1 × 100000000 + 4 × 1000000 × 1 + 6 × 10000 × 1 + 4 × 100 × 1 + 1 × 1</p>
+                        <p class="mb-2">= 100000000 + 4000000 + 60000 + 400 + 1</p>
+                        <p class="mb-2">= 104060401</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 104060401</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 101 ko (100+1) likh kar binomial theorem use karte hain. Har term ko calculate karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Using binomial theorem, evaluate (99)<span class="superscript">5</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write 99 as (100 - 1)</p>
+                        <p class="mb-2">So, (99)<span class="superscript">5</span> = (100 - 1)<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> a<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> a<span class="superscript">n-1</span>b + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> a<span class="superscript">n-2</span>b<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> b<span class="superscript">n</span></p>
+                        <p class="mb-2">Here, a = 100, b = -1, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(100 - 1)<span class="superscript">5</span> = <span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> (100)<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> (100)<span class="superscript">4</span> (-1) + <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> (100)<span class="superscript">3</span> (-1)<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> (100)<span class="superscript">2</span> (-1)<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> (100) (-1)<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> (-1)<span class="superscript">5</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Calculate the binomial coefficients:</p>
+                        <p class="mb-2"><span class="binomial-coefficient"><sup>5</sup>C<sub>0</sub></span> = 1, <span class="binomial-coefficient"><sup>5</sup>C<sub>1</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>2</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>3</sub></span> = 10, <span class="binomial-coefficient"><sup>5</sup>C<sub>4</sub></span> = 5, <span class="binomial-coefficient"><sup>5</sup>C<sub>5</sub></span> = 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now substitute and calculate:</p>
+                        <p class="mb-2">= 1 × 10000000000 + 5 × 100000000 × (-1) + 10 × 1000000 × 1 + 10 × 10000 × (-1) + 5 × 100 × 1 + 1 × (-1)</p>
+                        <p class="mb-2">= 10000000000 - 500000000 + 10000000 - 100000 + 500 - 1</p>
+                        <p class="mb-2">= 9509900499</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 9509900499</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 99 ko (100-1) likh kar binomial theorem use karte hain. Har term ko calculate karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Using Binomial Theorem, indicate which number is larger (1.1)<span class="superscript">10000</span> or 1000</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write (1.1)<span class="superscript">10000</span> as (1 + 0.1)<span class="superscript">10000</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using the binomial theorem:</p>
+                        <p class="mb-2">(1 + 0.1)<span class="superscript">10000</span> = <span class="binomial-coefficient"><sup>10000</sup>C<sub>0</sub></span> + <span class="binomial-coefficient"><sup>10000</sup>C<sub>1</sub></span> (0.1) + <span class="binomial-coefficient"><sup>10000</sup>C<sub>2</sub></span> (0.1)<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>10000</sup>C<sub>10000</sub></span> (0.1)<span class="superscript">10000</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">The first two terms are:</p>
+                        <p class="mb-2">= 1 + 10000 × 0.1 + other positive terms</p>
+                        <p class="mb-2">= 1 + 1000 + other positive terms</p>
+                        <p class="mb-2">= 1001 + other positive terms</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since all terms are positive, (1.1)<span class="superscript">10000</span> > 1001 > 1000</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> (1.1)<span class="superscript">10000</span> is larger than 1000</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (1.1)<span class="superscript">10000</span> ko (1+0.1)<span class="superscript">10000</span> likh kar binomial expansion karte hain. First two terms 1+1000=1001 hain, aur baaki terms positive hain, isliye ye 1000 se bada hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: Find (a + b)<span class="superscript">4</span> - (a - b)<span class="superscript">4</span>. Hence, evaluate 
+                    <span class="inline-math">
+                        (<span class="superscript">√</span>3 + <span class="superscript">√</span>2)<span class="superscript">4</span> - (<span class="superscript">√</span>3 - <span class="superscript">√</span>2)<span class="superscript">4</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First, find (a + b)<span class="superscript">4</span> - (a - b)<span class="superscript">4</span></p>
+                        <p class="mb-2">Using binomial theorem:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">4</span> = <span class="binomial-coefficient"><sup>4</sup>C<sub>0</sub></span> a<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>1</sub></span> a<span class="superscript">3</span>b + <span class="binomial-coefficient"><sup>4</sup>C<sub>2</sub></span> a<span class="superscript">2</span>b<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>3</sub></span> a b<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>4</sub></span> b<span class="superscript">4</span></p>
+                        <p class="mb-2">= a<span class="superscript">4</span> + 4a<span class="superscript">3</span>b + 6a<span class="superscript">2</span>b<span class="superscript">2</span> + 4a b<span class="superscript">3</span> + b<span class="superscript">4</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a - b)<span class="superscript">4</span> = <span class="binomial-coefficient"><sup>4</sup>C<sub>0</sub></span> a<span class="superscript">4</span> - <span class="binomial-coefficient"><sup>4</sup>C<sub>1</sub></span> a<span class="superscript">3</span>b + <span class="binomial-coefficient"><sup>4</sup>C<sub>2</sub></span> a<span class="superscript">2</span>b<span class="superscript">2</span> - <span class="binomial-coefficient"><sup>4</sup>C<sub>3</sub></span> a b<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>4</sup>C<sub>4</sub></span> b<span class="superscript">4</span></p>
+                        <p class="mb-2">= a<span class="superscript">4</span> - 4a<span class="superscript">3</span>b + 6a<span class="superscript">2</span>b<span class="superscript">2</span> - 4a b<span class="superscript">3</span> + b<span class="superscript">4</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now subtract:</p>
+                        <p class="mb-2">(a + b)<span class="superscript">4</span> - (a - b)<span class="superscript">4</span> = (a<span class="superscript">4</span> + 4a<span class="superscript">3</span>b + 6a<span class="superscript">2</span>b<span class="superscript">2</span> + 4a b<span class="superscript">3</span> + b<span class="superscript">4</span>) - (a<span class="superscript">4</span> - 4a<span class="superscript">3</span>b + 6a<span class="superscript">2</span>b<span class="superscript">2</span> - 4a b<span class="superscript">3</span> + b<span class="superscript">4</span>)</p>
+                        <p class="mb-2">= 8a<span class="superscript">3</span>b + 8a b<span class="superscript">3</span></p>
+                        <p class="mb-2">= 8ab(a<span class="superscript">2</span> + b<span class="superscript">2</span>)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now evaluate 
+                            <span class="inline-math">
+                                (<span class="superscript">√</span>3 + <span class="superscript">√</span>2)<span class="superscript">4</span> - (<span class="superscript">√</span>3 - <span class="superscript">√</span>2)<span class="superscript">4</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Here, a = <span class="superscript">√</span>3, b = <span class="superscript">√</span>2</p>
+                        <p class="mb-2">So, the expression = 8 × <span class="superscript">√</span>3 × <span class="superscript">√</span>2 × (3 + 2)</p>
+                        <p class="mb-2">= 8 × <span class="superscript">√</span>6 × 5</p>
+                        <p class="mb-2">= 40<span class="superscript">√</span>6</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 40<span class="superscript">√</span>6</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle (a+b)<span class="superscript">4</span> - (a-b)<span class="superscript">4</span> ko simplify karte hain, jo 8ab(a<span class="superscript">2</span>+b<span class="superscript">2</span>) aata hai. Fir is formula mein a=<span class="superscript">√</span>3 aur b=<span class="superscript">√</span>2 substitute karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: Find (x + 1)<span class="superscript">6</span> + (x - 1)<span class="superscript">6</span>. Hence or otherwise evaluate 
+                    <span class="inline-math">
+                        (<span class="superscript">√</span>2 + 1)<span class="superscript">6</span> + (<span class="superscript">√</span>2 - 1)<span class="superscript">6</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First, find (x + 1)<span class="superscript">6</span> + (x - 1)<span class="superscript">6</span></p>
+                        <p class="mb-2">Using binomial theorem:</p>
+                        <p class="mb-2">(x + 1)<span class="superscript">6</span> = <span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> x<span class="superscript">6</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> x<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> x<span class="superscript">4</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> x<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> x<span class="superscript">2</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> x + <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span></p>
+                        <p class="mb-2">= x<span class="superscript">6</span> + 6x<span class="superscript">5</span> + 15x<span class="superscript">4</span> + 20x<span class="superscript">3</span> + 15x<span class="superscript">2</span> + 6x + 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(x - 1)<span class="superscript">6</span> = <span class="binomial-coefficient"><sup>6</sup>C<sub>0</sub></span> x<span class="superscript">6</span> - <span class="binomial-coefficient"><sup>6</sup>C<sub>1</sub></span> x<span class="superscript">5</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>2</sub></span> x<span class="superscript">4</span> - <span class="binomial-coefficient"><sup>6</sup>C<sub>3</sub></span> x<span class="superscript">3</span> + <span class="binomial-coefficient"><sup>6</sup>C<sub>4</sub></span> x<span class="superscript">2</span> - <span class="binomial-coefficient"><sup>6</sup>C<sub>5</sub></span> x + <span class="binomial-coefficient"><sup>6</sup>C<sub>6</sub></span></p>
+                        <p class="mb-2">= x<span class="superscript">6</span> - 6x<span class="superscript">5</span> + 15x<span class="superscript">4</span> - 20x<span class="superscript">3</span> + 15x<span class="superscript">2</span> - 6x + 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now add:</p>
+                        <p class="mb-2">(x + 1)<span class="superscript">6</span> + (x - 1)<span class="superscript">6</span> = (x<span class="superscript">6</span> + 6x<span class="superscript">5</span> + 15x<span class="superscript">4</span> + 20x<span class="superscript">3</span> + 15x<span class="superscript">2</span> + 6x + 1) + (x<span class="superscript">6</span> - 6x<span class="superscript">5</span> + 15x<span class="superscript">4</span> - 20x<span class="superscript">3</span> + 15x<span class="superscript">2</span> - 6x + 1)</p>
+                        <p class="mb-2">= 2x<span class="superscript">6</span> + 30x<span class="superscript">4</span> + 30x<span class="superscript">2</span> + 2</p>
+                        <p class="mb-2">= 2(x<span class="superscript">6</span> + 15x<span class="superscript">4</span> + 15x<span class="superscript">2</span> + 1)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now evaluate 
+                            <span class="inline-math">
+                                (<span class="superscript">√</span>2 + 1)<span class="superscript">6</span> + (<span class="superscript">√</span>2 - 1)<span class="superscript">6</span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Here, x = <span class="superscript">√</span>2</p>
+                        <p class="mb-2">So, the expression = 2[(<span class="superscript">√</span>2)<span class="superscript">6</span> + 15(<span class="superscript">√</span>2)<span class="superscript">4</span> + 15(<span class="superscript">√</span>2)<span class="superscript">2</span> + 1]</p>
+                        <p class="mb-2">= 2[(2<span class="superscript">3</span>) + 15(2<span class="superscript">2</span>) + 15(2) + 1]</p>
+                        <p class="mb-2">= 2[8 + 15×4 + 30 + 1]</p>
+                        <p class="mb-2">= 2[8 + 60 + 30 + 1]</p>
+                        <p class="mb-2">= 2 × 99 = 198</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> 198</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle (x+1)<span class="superscript">6</span> + (x-1)<span class="superscript">6</span> ko simplify karte hain, jo 2(x<span class="superscript">6</span>+15x<span class="superscript">4</span>+15x<span class="superscript">2</span>+1) aata hai. Fir is formula mein x=<span class="superscript">√</span>2 substitute karke final value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 13: Show that 9<span class="superscript">n+1</span> - 8n - 9 is divisible by 64, whenever n is a positive integer.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We can write 9<span class="superscript">n+1</span> as (8 + 1)<span class="superscript">n+1</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using binomial theorem:</p>
+                        <p class="mb-2">(8 + 1)<span class="superscript">n+1</span> = <span class="binomial-coefficient"><sup>n+1</sup>C<sub>0</sub></span> 8<span class="superscript">n+1</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>1</sub></span> 8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>n</sub></span> 8 + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>n+1</sub></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">So, 9<span class="superscript">n+1</span> = (8 + 1)<span class="superscript">n+1</span> = 8<span class="superscript">n+1</span> + (n+1)8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + (n+1)8 + 1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, 9<span class="superscript">n+1</span> - 8n - 9 = [8<span class="superscript">n+1</span> + (n+1)8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + (n+1)8 + 1] - 8n - 9</p>
+                        <p class="mb-2">= 8<span class="superscript">n+1</span> + (n+1)8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + (n+1)8 + 1 - 8n - 9</p>
+                        <p class="mb-2">= 8<span class="superscript">n+1</span> + (n+1)8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + 8n + 8 + 1 - 8n - 9</p>
+                        <p class="mb-2">= 8<span class="superscript">n+1</span> + (n+1)8<span class="superscript">n</span> + <span class="binomial-coefficient"><sup>n+1</sup>C<sub>2</sub></span> 8<span class="superscript">n-1</span> + ... + 8<span class="superscript">2</span> × k (where k is some integer)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since each term has at least 8<span class="superscript">2</span> = 64 as a factor, the entire expression is divisible by 64.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> Hence proved that 9<span class="superscript">n+1</span> - 8n - 9 is divisible by 64 for all positive integers n.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 9<span class="superscript">n+1</span> ko (8+1)<span class="superscript">n+1</span> likh kar binomial expansion karte hain. Fir 9<span class="superscript">n+1</span> - 8n - 9 ko simplify karte hain. Har term mein 64 ka factor hota hai, isliye pure expression ko 64 divide kar sakte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 14: Prove that 
+                    <span class="inline-math">
+                        <span class="superscript">n</span>Σ<span class="subscript">r=0</span> 3<span class="superscript">r</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>r</sub></span> = 4<span class="superscript">n</span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We know the binomial theorem:</p>
+                        <p class="mb-2">(1 + x)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> x + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> x<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> x<span class="superscript">n</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Substitute x = 3:</p>
+                        <p class="mb-2">(1 + 3)<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> + <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> (3) + <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> (3)<span class="superscript">2</span> + ... + <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span> (3)<span class="superscript">n</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">4<span class="superscript">n</span> = <span class="binomial-coefficient"><sup>n</sup>C<sub>0</sub></span> + 3 <span class="binomial-coefficient"><sup>n</sup>C<sub>1</sub></span> + 3<span class="superscript">2</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>2</sub></span> + ... + 3<span class="superscript">n</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>n</sub></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">This can be written as:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                4<span class="superscript">n</span> = <span class="superscript">n</span>Σ<span class="subscript">r=0</span> 3<span class="superscript">r</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>r</sub></span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p><strong>Answer:</strong> Hence proved that 
+                            <span class="inline-math">
+                                <span class="superscript">n</span>Σ<span class="subscript">r=0</span> 3<span class="superscript">r</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>r</sub></span> = 4<span class="superscript">n</span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Binomial theorem mein (1+x)<span class="superscript">n</span> ki expansion ko use karte hain. x=3 substitute karte hain, toh (1+3)<span class="superscript">n</span> = 4<span class="superscript">n</span> milta hai, jo exactly 
+                        <span class="inline-math">
+                            <span class="superscript">n</span>Σ<span class="subscript">r=0</span> 3<span class="superscript">r</span> <span class="binomial-coefficient"><sup>n</sup>C<sub>r</sub></span>
+                        </span>
+                        ke equal hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

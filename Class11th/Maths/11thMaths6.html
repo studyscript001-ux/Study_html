@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 6: Permutations and Combinations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .permutation {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 6<br> Permutations and Combinations</h1>
+            <p class="mt-2 text-lg">Class 11th Mathematics</p>
+        </div>
+
+        <!-- Exercise 6.1 Section -->
+        <section id="exercise-6-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: How many 3-digit numbers can be formed from the digits 1, 2, 3, 4 and 5 assuming that<br>
+                (i) repetition of the digits is allowed?<br>
+                (ii) repetition of the digits is not allowed?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When repetition is allowed:</p>
+                        <p class="mb-2">For a 3-digit number, we have 3 places: hundreds, tens, and units.</p>
+                        <p class="mb-2">Each place can be filled in 5 ways (any of the digits 1,2,3,4,5).</p>
+                        <p class="mb-2">By multiplication principle, total numbers = 5 × 5 × 5 = 125</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When repetition is not allowed:</p>
+                        <p class="mb-2">Hundreds place can be filled in 5 ways.</p>
+                        <p class="mb-2">Tens place can be filled in 4 ways (remaining digits).</p>
+                        <p class="mb-2">Units place can be filled in 3 ways (remaining digits).</p>
+                        <p class="mb-2">By multiplication principle, total numbers = 5 × 4 × 3 = 60</p>
+                        <p><strong>Answer:</strong> (i) 125, (ii) 60</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) Jab repetition allowed hai, toh har place (hundreds, tens, units) par 5 options hain, isliye 5×5×5=125 numbers. (ii) Jab repetition allowed nahi hai, toh pehle place par 5 options, fir second par 4, fir third par 3, isliye 5×4×3=60 numbers.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: How many 3-digit even numbers can be formed from the digits 1, 2, 3, 4, 5, 6 if the digits can be repeated?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">For a number to be even, the units digit must be even.</p>
+                        <p class="mb-2">From digits 1,2,3,4,5,6, even digits are 2,4,6.</p>
+                        <p class="mb-2">So, units place can be filled in 3 ways.</p>
+                        <p class="mb-2">Since repetition is allowed:</p>
+                        <p class="mb-2">Hundreds place can be filled in 6 ways.</p>
+                        <p class="mb-2">Tens place can be filled in 6 ways.</p>
+                        <p class="mb-2">By multiplication principle, total numbers = 6 × 6 × 3 = 108</p>
+                        <p><strong>Answer:</strong> 108</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Even number ke liye units digit even honi chahiye. Digits 1-6 mein even digits hain 2,4,6 (3 options). Hundreds aur tens place par koi bhi digit (1-6) aa sakti hai (6 options each). Isliye total numbers = 6×6×3=108.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: How many 4-letter code can be formed using the first 10 letters of the English alphabet, if no letter can be repeated?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First 10 letters: A,B,C,D,E,F,G,H,I,J</p>
+                        <p class="mb-2">We need to form 4-letter codes with no repetition.</p>
+                        <p class="mb-2">First letter can be chosen in 10 ways.</p>
+                        <p class="mb-2">Second letter can be chosen in 9 ways (remaining letters).</p>
+                        <p class="mb-2">Third letter can be chosen in 8 ways.</p>
+                        <p class="mb-2">Fourth letter can be chosen in 7 ways.</p>
+                        <p class="mb-2">By multiplication principle, total codes = 10 × 9 × 8 × 7 = 5040</p>
+                        <p><strong>Answer:</strong> 5040</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 4-letter code banane ke liye, pehle letter ke liye 10 options, fir second ke liye 9, third ke liye 8, fourth ke liye 7 options. Isliye total codes = 10×9×8×7=5040.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: How many 5-digit telephone numbers can be constructed using the digits 0 to 9 if each number starts with 67 and no digit appears more than once?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">The number starts with 67, so first two digits are fixed.</p>
+                        <p class="mb-2">We need to fill the remaining 3 places (3rd, 4th, and 5th digits).</p>
+                        <p class="mb-2">Digits available: 0,1,2,3,4,5,8,9 (8 digits, since 6 and 7 are already used).</p>
+                        <p class="mb-2">No repetition is allowed.</p>
+                        <p class="mb-2">3rd digit can be chosen in 8 ways.</p>
+                        <p class="mb-2">4th digit can be chosen in 7 ways.</p>
+                        <p class="mb-2">5th digit can be chosen in 6 ways.</p>
+                        <p class="mb-2">By multiplication principle, total numbers = 8 × 7 × 6 = 336</p>
+                        <p><strong>Answer:</strong> 336</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Number 67 se start hota hai, isliye first two digits fixed hain. Bache hue 3 digits ke liye 8 options available hain (0-9 mein se 6 aur 7 ko chhod kar). No repetition allowed hai, isliye 8×7×6=336 numbers.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: A coin is tossed 3 times and the outcomes are recorded. How many possible outcomes are there?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Each toss of a coin has 2 possible outcomes: Head (H) or Tail (T).</p>
+                        <p class="mb-2">When a coin is tossed 3 times:</p>
+                        <p class="mb-2">First toss: 2 outcomes</p>
+                        <p class="mb-2">Second toss: 2 outcomes</p>
+                        <p class="mb-2">Third toss: 2 outcomes</p>
+                        <p class="mb-2">By multiplication principle, total outcomes = 2 × 2 × 2 = 8</p>
+                        <p><strong>Answer:</strong> 8</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ek coin toss ke 2 outcomes hote hain: Head ya Tail. 3 baar toss karne par total outcomes = 2×2×2=8.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Given 5 flags of different colours, how many different signals can be generated if each signal requires the use of 2 flags, one below the other?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have 5 flags of different colours.</p>
+                        <p class="mb-2">Each signal uses 2 flags, one below the other (order matters).</p>
+                        <p class="mb-2">First flag (top) can be chosen in 5 ways.</p>
+                        <p class="mb-2">Second flag (bottom) can be chosen in 4 ways (remaining flags).</p>
+                        <p class="mb-2">By multiplication principle, total signals = 5 × 4 = 20</p>
+                        <p><strong>Answer:</strong> 20</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 5 different colour ke flags hain. Har signal mein 2 flags hote hain, ek upar ek neeche (order matters). Top flag ke liye 5 options, bottom flag ke liye 4 options. Isliye total signals = 5×4=20.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.2 Section -->
+        <section id="exercise-6-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Evaluate<br>
+                (i) 8!<br>
+                (ii) 4! - 3!</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) 8! = 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 40320</p>
+                        <p class="mb-2">(ii) 4! = 4 × 3 × 2 × 1 = 24</p>
+                        <p class="mb-2">3! = 3 × 2 × 1 = 6</p>
+                        <p class="mb-2">So, 4! - 3! = 24 - 6 = 18</p>
+                        <p><strong>Answer:</strong> (i) 40320, (ii) 18</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) 8 factorial = 8×7×6×5×4×3×2×1=40320. (ii) 4 factorial = 24, 3 factorial = 6, difference = 24-6=18.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Is 3! + 4! = 7!?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">3! = 3 × 2 × 1 = 6</p>
+                        <p class="mb-2">4! = 4 × 3 × 2 × 1 = 24</p>
+                        <p class="mb-2">So, 3! + 4! = 6 + 24 = 30</p>
+                        <p class="mb-2">7! = 7 × 6 × 5 × 4 × 3 × 2 × 1 = 5040</p>
+                        <p class="mb-2">Clearly, 30 ≠ 5040</p>
+                        <p><strong>Answer:</strong> No, 3! + 4! ≠ 7!</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 3! + 4! = 6+24=30, aur 7! = 5040. Dono equal nahi hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Compute 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">8!</span>
+                            <span class="denominator">6! × 2!</span>
+                        </span>
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8!</span>
+                                    <span class="denominator">6! × 2!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">8 × 7 × 6!</span>
+                                    <span class="denominator">6! × 2!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cancelling 6! from numerator and denominator:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                = <span class="fraction">
+                                    <span class="numerator">8 × 7</span>
+                                    <span class="denominator">2!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">56</span>
+                                    <span class="denominator">2</span>
+                                </span> = 28
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> 28</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 8! = 8×7×6!, aur denominator mein 6!×2! hai. 6! cancel ho jata hai, bachta hai (8×7)/2! = 56/2 = 28.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: If 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">6!</span>
+                        </span> + 
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">7!</span>
+                        </span> = 
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">8!</span>
+                        </span>, find x
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">6!</span>
+                                </span> + 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">7!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">8!</span>
+                                </span>
+                        </p>
+                        <p class="mb-2">Note that 7! = 7 × 6! and 8! = 8 × 7 × 6!</p>
+                        <p class="mb-2">So, LHS = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">6!</span>
+                                </span> + 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">7 × 6!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">7 + 1</span>
+                                    <span class="denominator">7 × 6!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">8</span>
+                                    <span class="denominator">7 × 6!</span>
+                                </span>
+                        </p>
+                        <p class="mb-2">RHS = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">8 × 7 × 6!</span>
+                                </span>
+                        </p>
+                        <p class="mb-2">Equating both sides:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8</span>
+                                    <span class="denominator">7 × 6!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">8 × 7 × 6!</span>
+                                </span>
+                        </p>
+                        <p class="mb-2">Cancelling 7 × 6! from both sides:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8</span>
+                                    <span class="denominator">1</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">8</span>
+                                </span>
+                        </p>
+                        <p class="mb-2">So, x = 8 × 8 = 64</p>
+                        <p><strong>Answer:</strong> 64</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Equation ko solve karte hain: 1/6! + 1/7! = x/8!. 7! = 7×6! aur 8! = 8×7×6! likh kar simplify karte hain. Finally x=64 milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Evaluate 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">n!</span>
+                            <span class="denominator">(n - r)!</span>
+                        </span>
+                    </span>, when<br>
+                (i) n = 6, r = 2<br>
+                (ii) n = 9, r = 5</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When n = 6, r = 2:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">n!</span>
+                                    <span class="denominator">(n - r)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">6!</span>
+                                    <span class="denominator">(6 - 2)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">6!</span>
+                                    <span class="denominator">4!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">6 × 5 × 4!</span>
+                                    <span class="denominator">4!</span>
+                                </span> = 6 × 5 = 30
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When n = 9, r = 5:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">n!</span>
+                                    <span class="denominator">(n - r)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">9!</span>
+                                    <span class="denominator">(9 - 5)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">9!</span>
+                                    <span class="denominator">4!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">9 × 8 × 7 × 6 × 5 × 4!</span>
+                                    <span class="denominator">4!</span>
+                                </span> = 9 × 8 × 7 × 6 × 5 = 15120
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> (i) 30, (ii) 15120</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) n=6, r=2: 6!/(4!) = (6×5×4!)/4! = 6×5=30. (ii) n=9, r=5: 9!/(4!) = (9×8×7×6×5×4!)/4! = 9×8×7×6×5=15120.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.3 Section -->
+        <section id="exercise-6-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: How many 3-digit numbers can be formed by using the digits 1 to 9 if no digit is repeated?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to form 3-digit numbers using digits 1 to 9 with no repetition.</p>
+                        <p class="mb-2">This is equivalent to permutations of 9 digits taken 3 at a time.</p>
+                        <p class="mb-2">Number of 3-digit numbers = <sup>9</sup>P<sub>3</sub></p>
+                        <p class="mb-2">
+                            <sup>9</sup>P<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">9!</span>
+                                    <span class="denominator">(9 - 3)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">9!</span>
+                                    <span class="denominator">6!</span>
+                                </span> = 9 × 8 × 7 = 504
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> 504</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Digits 1-9 se 3-digit numbers banane hain, repetition nahi allowed. Ye permutations of 9 objects taken 3 at a time hai: <sup>9</sup>P<sub>3</sub> = 9×8×7=504.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: How many 4-digit numbers are there with no digit repeated?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">For a 4-digit number:</p>
+                        <p class="mb-2">Thousands place cannot be 0 (would make it a 3-digit number).</p>
+                        <p class="mb-2">Thousands place can be filled in 9 ways (digits 1-9).</p>
+                        <p class="mb-2">Hundreds place can be filled in 9 ways (remaining 9 digits, including 0).</p>
+                        <p class="mb-2">Tens place can be filled in 8 ways.</p>
+                        <p class="mb-2">Units place can be filled in 7 ways.</p>
+                        <p class="mb-2">By multiplication principle, total numbers = 9 × 9 × 8 × 7 = 4536</p>
+                        <p><strong>Answer:</strong> 4536</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 4-digit number ke liye thousands place par 0 nahi aa sakta, isliye 9 options (1-9). Fir hundreds place par 9 options (0 aur bache hue digits), tens par 8, units par 7. Total = 9×9×8×7=4536.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: How many 3-digit even numbers can be made using the digits 1, 2, 3, 4, 6, 7, if no digit is repeated?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">For a number to be even, units digit must be even.</p>
+                        <p class="mb-2">From given digits 1,2,3,4,6,7, even digits are 2,4,6.</p>
+                        <p class="mb-2">We have two cases:</p>
+                        <p class="mb-2"><strong>Case 1:</strong> Units digit is 2</p>
+                        <p class="mb-2">Then hundreds digit can be filled in 5 ways (remaining digits except 2)</p>
+                        <p class="mb-2">Tens digit can be filled in 4 ways</p>
+                        <p class="mb-2">Numbers ending with 2: 5 × 4 = 20</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Case 2:</strong> Units digit is 4</p>
+                        <p class="mb-2">Similarly, numbers ending with 4: 5 × 4 = 20</p>
+                        <p class="mb-2"><strong>Case 3:</strong> Units digit is 6</p>
+                        <p class="mb-2">Similarly, numbers ending with 6: 5 × 4 = 20</p>
+                        <p class="mb-2">Total even numbers = 20 + 20 + 20 = 60</p>
+                        <p><strong>Answer:</strong> 60</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Even number ke liye units digit even honi chahiye. Digits 1,2,3,4,6,7 mein even digits hain 2,4,6. Har case mein (units digit 2,4,6) hundreds place ke liye 5 options, tens place ke liye 4 options. Total = 20+20+20=60.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Find the number of 4-digit numbers that can be formed using the digits 1, 2, 3, 4, 5 if no digit is repeated. How many of these will be even?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Part 1:</strong> Total 4-digit numbers with digits 1,2,3,4,5, no repetition</p>
+                        <p class="mb-2">This is permutations of 5 digits taken 4 at a time.</p>
+                        <p class="mb-2">Number of 4-digit numbers = <sup>5</sup>P<sub>4</sub> = 5 × 4 × 3 × 2 = 120</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>Part 2:</strong> Even numbers</p>
+                        <p class="mb-2">For a number to be even, units digit must be even.</p>
+                        <p class="mb-2">From digits 1,2,3,4,5, even digits are 2 and 4.</p>
+                        <p class="mb-2"><strong>Case 1:</strong> Units digit is 2</p>
+                        <p class="mb-2">Then thousands, hundreds, tens places can be filled from remaining 4 digits in 4 × 3 × 2 = 24 ways</p>
+                        <p class="mb-2"><strong>Case 2:</strong> Units digit is 4</p>
+                        <p class="mb-2">Similarly, 24 ways</p>
+                        <p class="mb-2">Total even numbers = 24 + 24 = 48</p>
+                        <p><strong>Answer:</strong> Total numbers: 120, Even numbers: 48</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Total 4-digit numbers: digits 1-5 se banenge, no repetition: <sup>5</sup>P<sub>4</sub> = 5×4×3×2=120. Even numbers ke liye units digit 2 ya 4 hona chahiye. Har case mein bache 4 digits se 3 places fill karne ke 4×3×2=24 ways. Total even numbers = 24+24=48.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: From a committee of 8 persons, in how many ways can we choose a chairman and a vice chairman assuming one person can not hold more than one position?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to select 2 persons from 8, where order matters (chairman and vice chairman are different positions).</p>
+                        <p class="mb-2">This is permutations of 8 persons taken 2 at a time.</p>
+                        <p class="mb-2">Number of ways = <sup>8</sup>P<sub>2</sub> = 8 × 7 = 56</p>
+                        <p><strong>Answer:</strong> 56</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 8 persons mein se chairman aur vice chairman choose karna hai, aur positions different hain (order matters). Isliye permutations: <sup>8</sup>P<sub>2</sub> = 8×7=56.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Find n if <sup>n-1</sup>P<sub>3</sub> : <sup>n</sup>P<sub>4</sub> = 1 : 9</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <sup>n-1</sup>P<sub>3</sub> : <sup>n</sup>P<sub>4</sub> = 1 : 9</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                So, <span class="fraction">
+                                    <span class="numerator"><sup>n-1</sup>P<sub>3</sub></span>
+                                    <span class="denominator"><sup>n</sup>P<sub>4</sub></span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">9</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(n-1)!/(n-1-3)!</span>
+                                    <span class="denominator">n!/(n-4)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">9</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(n-1)!/(n-4)!</span>
+                                    <span class="denominator">n!/(n-4)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">9</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cancelling (n-4)! from numerator and denominator:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(n-1)!</span>
+                                    <span class="denominator">n!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">9</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">n</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">9</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">So, n = 9</p>
+                        <p><strong>Answer:</strong> n = 9</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ratio diya hua hai: <sup>n-1</sup>P<sub>3</sub> : <sup>n</sup>P<sub>4</sub> = 1:9. Permutations ke formulae use karke equation banate hain aur solve karte hain. Finally n=9 milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find r if<br>
+                (i) <sup>5</sup>P<sub>r</sub> = 2 <sup>6</sup>P<sub>r-1</sub><br>
+                (ii) <sup>5</sup>P<sub>r</sub> = <sup>6</sup>P<sub>r-1</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) <sup>5</sup>P<sub>r</sub> = 2 <sup>6</sup>P<sub>r-1</sub></p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5!</span>
+                                    <span class="denominator">(5-r)!</span>
+                                </span> = 2 × 
+                                <span class="fraction">
+                                    <span class="numerator">6!</span>
+                                    <span class="denominator">(6-(r-1))!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5!</span>
+                                    <span class="denominator">(5-r)!</span>
+                                </span> = 2 × 
+                                <span class="fraction">
+                                    <span class="numerator">6!</span>
+                                    <span class="denominator">(7-r)!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">(5-r)!</span>
+                                </span> = 2 × 
+                                <span class="fraction">
+                                    <span class="numerator">6 × 5!</span>
+                                    <span class="denominator">(7-r)(6-r)(5-r)!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cancelling 5! and (5-r)!:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                1 = 2 × 
+                                <span class="fraction">
+                                    <span class="numerator">6</span>
+                                    <span class="denominator">(7-r)(6-r)</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">(7-r)(6-r) = 12</p>
+                        <p class="mb-2">r² - 13r + 42 = 12</p>
+                        <p class="mb-2">r² - 13r + 30 = 0</p>
+                        <p class="mb-2">(r-3)(r-10) = 0</p>
+                        <p class="mb-2">r = 3 or r = 10</p>
+                        <p class="mb-2">But r cannot be 10 (since we're taking 5P<sub>r</sub> and r ≤ 5)</p>
+                        <p class="mb-2">So, r = 3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) <sup>5</sup>P<sub>r</sub> = <sup>6</sup>P<sub>r-1</sub></p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5!</span>
+                                    <span class="denominator">(5-r)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">6!</span>
+                                    <span class="denominator">(7-r)!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">(5-r)!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">6 × 5!</span>
+                                    <span class="denominator">(7-r)(6-r)(5-r)!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cancelling 5! and (5-r)!:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                1 = 
+                                <span class="fraction">
+                                    <span class="numerator">6</span>
+                                    <span class="denominator">(7-r)(6-r)</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">(7-r)(6-r) = 6</p>
+                        <p class="mb-2">r² - 13r + 42 = 6</p>
+                        <p class="mb-2">r² - 13r + 36 = 0</p>
+                        <p class="mb-2">(r-4)(r-9) = 0</p>
+                        <p class="mb-2">r = 4 or r = 9</p>
+                        <p class="mb-2">But r cannot be 9 (since we're taking 5P<sub>r</sub> and r ≤ 5)</p>
+                        <p class="mb-2">So, r = 4</p>
+                        <p><strong>Answer:</strong> (i) r = 3, (ii) r = 4</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono parts mein permutations ke formulae use karke equations banate hain aur solve karte hain. (i) mein r=3 aur (ii) mein r=4 milta hai, kyunki r maximum 5 ho sakta hai (5P<sub>r</sub> ke liye).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: How many words, with or without meaning, can be formed using all the letters of the word EQUATION, using each letter exactly once?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">The word EQUATION has 8 different letters.</p>
+                        <p class="mb-2">We need to arrange all 8 letters.</p>
+                        <p class="mb-2">Number of arrangements = 8! = 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 40320</p>
+                        <p><strong>Answer:</strong> 40320</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> EQUATION mein 8 different letters hain. In sab letters ko arrange karne ke total ways = 8! = 40320.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: How many words, with or without meaning can be made from the letters of the word MONDAY, assuming that no letter is repeated, if.<br>
+                (i) 4 letters are used at a time<br>
+                (ii) all letters are used at a time<br>
+                (iii) all letters are used but first letter is a vowel?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">The word MONDAY has 6 different letters.</p>
+                        <p class="mb-2">(i) 4 letters used at a time:</p>
+                        <p class="mb-2">Number of words = <sup>6</sup>P<sub>4</sub> = 6 × 5 × 4 × 3 = 360</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) All letters used at a time:</p>
+                        <p class="mb-2">Number of words = 6! = 6 × 5 × 4 × 3 × 2 × 1 = 720</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) All letters used but first letter is a vowel:</p>
+                        <p class="mb-2">Vowels in MONDAY: O, A (2 vowels)</p>
+                        <p class="mb-2">First letter can be chosen in 2 ways (O or A)</p>
+                        <p class="mb-2">Remaining 5 letters can be arranged in 5! = 120 ways</p>
+                        <p class="mb-2">Total words = 2 × 120 = 240</p>
+                        <p><strong>Answer:</strong> (i) 360, (ii) 720, (iii) 240</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> MONDAY mein 6 different letters hain. (i) 4 letters use karne par: <sup>6</sup>P<sub>4</sub>=360. (ii) sab letters use karne par: 6!=720. (iii) first letter vowel hona chahiye: vowels O,A (2 options), bache 5 letters arrange karne ke 5!=120 ways, total=2×120=240.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: In how many of the distinct permutations of the letters in MISSISSIPPI do the four I's not come together?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Word: MISSISSIPPI</p>
+                        <p class="mb-2">Total letters: 11</p>
+                        <p class="mb-2">M: 1, I: 4, S: 4, P: 2</p>
+                        <p class="mb-2">Total distinct permutations = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">11!</span>
+                                    <span class="denominator">4! × 4! × 2!</span>
+                                </span> = 34650
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, permutations where all I's are together:</p>
+                        <p class="mb-2">Treat all I's as a single object: IIII</p>
+                        <p class="mb-2">Now we have: M, (IIII), S, S, S, S, P, P (8 objects)</p>
+                        <p class="mb-2">But S appears 4 times, P appears 2 times</p>
+                        <p class="mb-2">Permutations = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8!</span>
+                                    <span class="denominator">4! × 2!</span>
+                                </span> = 840
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Permutations where I's are not together = Total - (I's together)</p>
+                        <p class="mb-2">= 34650 - 840 = 33810</p>
+                        <p><strong>Answer:</strong> 33810</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> MISSISSIPPI ke total distinct permutations 34650 hain. Jab sab I's saath honge, toh unhe ek object maan kar permutations 840 hain. Isliye I's ke saath nahi hone wale permutations = 34650-840=33810.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: In how many ways can the letters of the word PERMUTATIONS be arranged if the<br>
+                (i) words start with P and end with S<br>
+                (ii) vowels are all together<br>
+                (iii) there are always 4 letters between P and S?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Word: PERMUTATIONS</p>
+                        <p class="mb-2">Total letters: 12</p>
+                        <p class="mb-2">Letters: P, E, R, M, U, T, A, T, I, O, N, S</p>
+                        <p class="mb-2">T appears 2 times, rest are unique</p>
+                        <p class="mb-2">Total distinct arrangements = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">12!</span>
+                                    <span class="denominator">2!</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) Words start with P and end with S:</p>
+                        <p class="mb-2">Fix P at start and S at end.</p>
+                        <p class="mb-2">Remaining 10 letters to arrange: E, R, M, U, T, A, T, I, O, N</p>
+                        <p class="mb-2">T appears 2 times</p>
+                        <p class="mb-2">Number of arrangements = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">10!</span>
+                                    <span class="denominator">2!</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) Vowels are all together:</p>
+                        <p class="mb-2">Vowels: E, U, A, I, O (5 vowels)</p>
+                        <p class="mb-2">Treat vowels as a single object</p>
+                        <p class="mb-2">Now we have: (vowels), P, R, M, T, T, N, S (8 objects, with T repeated twice)</p>
+                        <p class="mb-2">Arrangements of these 8 objects = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8!</span>
+                                    <span class="denominator">2!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Vowels can be arranged among themselves in 5! ways</p>
+                        <p class="mb-2">Total arrangements = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">8!</span>
+                                    <span class="denominator">2!</span>
+                                </span> × 5!
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) There are always 4 letters between P and S:</p>
+                        <p class="mb-2">P and S can be arranged in 2 ways: P followed by S or S followed by P</p>
+                        <p class="mb-2">When there are 4 letters between P and S, they occupy positions like (1,6), (2,7), ..., (7,12) - total 7 such pairs</p>
+                        <p class="mb-2">For each such pair, remaining 10 letters can be arranged in 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">10!</span>
+                                    <span class="denominator">2!</span>
+                                </span>
+                            </span> ways (T appears twice)
+                        </p>
+                        <p class="mb-2">Total arrangements = 2 × 7 × 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">10!</span>
+                                    <span class="denominator">2!</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> (i) 10!/2!, (ii) (8!/2!) × 5!, (iii) 2 × 7 × (10!/2!)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) P start aur S end fixed hain, bache 10 letters arrange karne hain (T 2 baar). (ii) Sab vowels ko ek object maan kar arrangements, fir vowels ko apas mein arrange. (iii) P aur S ke beech 4 letters hone chahiye, 7 positions possible, aur P aur S ke order ke 2 ways.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 6.4 Section -->
+        <section id="exercise-6-4" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 6.4</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: If <sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub>, find <sup>n</sup>C<sub>2</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: <sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub></p>
+                        <p class="mb-2">We know that <sup>n</sup>C<sub>r</sub> = <sup>n</sup>C<sub>n-r</sub></p>
+                        <p class="mb-2">So, if <sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub>, then either:</p>
+                        <p class="mb-2">8 = 2 or 8 = n - 2</p>
+                        <p class="mb-2">8 = 2 is not possible, so 8 = n - 2</p>
+                        <p class="mb-2">n = 10</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, <sup>n</sup>C<sub>2</sub> = <sup>10</sup>C<sub>2</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">10!</span>
+                                    <span class="denominator">2! × 8!</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">10 × 9</span>
+                                    <span class="denominator">2</span>
+                                </span> = 45
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> 45</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> <sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub> se ya toh 8=2 (possible nahi) ya 8=n-2, isliye n=10. <sup>10</sup>C<sub>2</sub> = 45.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Determine n if<br>
+                (i) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 12 : 1<br>
+                (ii) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 11 : 1</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 12 : 1</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator"><sup>2n</sup>C<sub>3</sub></span>
+                                    <span class="denominator"><sup>n</sup>C<sub>3</sub></span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">12</span>
+                                    <span class="denominator">1</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(2n)!/(3!(2n-3)!)</span>
+                                    <span class="denominator">n!/(3!(n-3)!)</span>
+                                </span> = 12
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(2n)!/(2n-3)!</span>
+                                    <span class="denominator">n!/(n-3)!</span>
+                                </span> = 12
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">2n(2n-1)(2n-2)</span>
+                                    <span class="denominator">n(n-1)(n-2)</span>
+                                </span> = 12
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">2 × 2n(2n-1)(n-1)</span>
+                                    <span class="denominator">n(n-1)(n-2)</span>
+                                </span> = 12
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">4(2n-1)</span>
+                                    <span class="denominator">(n-2)</span>
+                                </span> = 12
+                            </span>
+                        </p>
+                        <p class="mb-2">4(2n-1) = 12(n-2)</p>
+                        <p class="mb-2">8n - 4 = 12n - 24</p>
+                        <p class="mb-2">4n = 20</p>
+                        <p class="mb-2">n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 11 : 1</p>
+                        <p class="mb-2">Similarly,</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">4(2n-1)</span>
+                                    <span class="denominator">(n-2)</span>
+                                </span> = 11
+                            </span>
+                        </p>
+                        <p class="mb-2">4(2n-1) = 11(n-2)</p>
+                        <p class="mb-2">8n - 4 = 11n - 22</p>
+                        <p class="mb-2">3n = 18</p>
+                        <p class="mb-2">n = 6</p>
+                        <p><strong>Answer:</strong> (i) n = 5, (ii) n = 6</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono parts mein combination ratios diye hain. Combinations ke formulae use karke equations banate hain aur solve karte hain. (i) mein n=5 aur (ii) mein n=6 milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: How many chords can be drawn through 21 points on a circle?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A chord is formed by joining any 2 points on a circle.</p>
+                        <p class="mb-2">We have 21 points on a circle.</p>
+                        <p class="mb-2">Number of chords = <sup>21</sup>C<sub>2</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">21 × 20</span>
+                                    <span class="denominator">2</span>
+                                </span> = 210
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> 210</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Circle par 21 points hain. Har 2 points ko join karne se ek chord banta hai. Isliye chords ki sankhya = <sup>21</sup>C<sub>2</sub> = 210.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: In how many ways can a team of 3 boys and 3 girls be selected from 5 boys and 4 girls?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to select 3 boys from 5 and 3 girls from 4.</p>
+                        <p class="mb-2">Number of ways to select boys = <sup>5</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5 × 4 × 3</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 10
+                            </span>
+                        </p>
+                        <p class="mb-2">Number of ways to select girls = <sup>4</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">4 × 3 × 2</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 4
+                            </span>
+                        </p>
+                        <p class="mb-2">By multiplication principle, total ways = 10 × 4 = 40</p>
+                        <p><strong>Answer:</strong> 40</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 5 boys mein se 3 choose karne ke 10 ways, aur 4 girls mein se 3 choose karne ke 4 ways. Total teams = 10×4=40.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Find the number of ways of selecting 9 balls from 6 red balls, 5 white balls and 5 blue balls if each selection consists of 3 balls of each colour.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to select 3 red balls from 6, 3 white balls from 5, and 3 blue balls from 5.</p>
+                        <p class="mb-2">Number of ways to select red balls = <sup>6</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">6 × 5 × 4</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 20
+                            </span>
+                        </p>
+                        <p class="mb-2">Number of ways to select white balls = <sup>5</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5 × 4 × 3</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 10
+                            </span>
+                        </p>
+                        <p class="mb-2">Number of ways to select blue balls = <sup>5</sup>C<sub>3</sub> = 10</p>
+                        <p class="mb-2">By multiplication principle, total ways = 20 × 10 × 10 = 2000</p>
+                        <p><strong>Answer:</strong> 2000</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 6 red balls mein se 3 choose karne ke 20 ways, 5 white balls mein se 3 choose karne ke 10 ways, aur 5 blue balls mein se 3 choose karne ke 10 ways. Total = 20×10×10=2000.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Determine the number of 5 card combinations out of a deck of 52 cards if there is exactly one ace in each combination.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">There are 4 aces in a deck of 52 cards.</p>
+                        <p class="mb-2">We need to select exactly one ace.</p>
+                        <p class="mb-2">Number of ways to select one ace = <sup>4</sup>C<sub>1</sub> = 4</p>
+                        <p class="mb-2">Remaining 4 cards must be selected from the 48 non-ace cards.</p>
+                        <p class="mb-2">Number of ways to select 4 non-ace cards = <sup>48</sup>C<sub>4</sub></p>
+                        <p class="mb-2">Total combinations = 4 × <sup>48</sup>C<sub>4</sub></p>
+                        <p class="mb-2">
+                            <sup>48</sup>C<sub>4</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">48 × 47 × 46 × 45</span>
+                                    <span class="denominator">4 × 3 × 2 × 1</span>
+                                </span> = 194580
+                            </span>
+                        </p>
+                        <p class="mb-2">Total combinations = 4 × 194580 = 778320</p>
+                        <p><strong>Answer:</strong> 778320</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 52 cards mein se 5 cards choose karne hain, jismein exactly one ace hona chahiye. One ace choose karne ke 4 ways, aur bache 4 cards non-ace cards (48) mein se choose karne ke <sup>48</sup>C<sub>4</sub> ways. Total = 4 × <sup>48</sup>C<sub>4</sub> = 778320.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: In how many ways can one select a cricket team of eleven from 17 players in which only 5 players can bowl if each cricket team of 11 must include exactly 4 bowlers?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total players: 17</p>
+                        <p class="mb-2">Bowlers: 5, Non-bowlers: 12</p>
+                        <p class="mb-2">We need to select exactly 4 bowlers and 7 non-bowlers.</p>
+                        <p class="mb-2">Number of ways to select 4 bowlers from 5 = <sup>5</sup>C<sub>4</sub> = 5</p>
+                        <p class="mb-2">Number of ways to select 7 non-bowlers from 12 = <sup>12</sup>C<sub>7</sub></p>
+                        <p class="mb-2">
+                            <sup>12</sup>C<sub>7</sub> = <sup>12</sup>C<sub>5</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">12 × 11 × 10 × 9 × 8</span>
+                                    <span class="denominator">5 × 4 × 3 × 2 × 1</span>
+                                </span> = 792
+                            </span>
+                        </p>
+                        <p class="mb-2">Total ways = 5 × 792 = 3960</p>
+                        <p><strong>Answer:</strong> 3960</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 17 players mein se 11 ka team banana hai, jismein exactly 4 bowlers hone chahiye. 5 bowlers mein se 4 choose karne ke 5 ways, aur 12 non-bowlers mein se 7 choose karne ke <sup>12</sup>C<sub>7</sub>=792 ways. Total = 5×792=3960.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: A bag contains 5 black and 6 red balls. Determine the number of ways in which 2 black and 3 red balls can be selected.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to select 2 black balls from 5 and 3 red balls from 6.</p>
+                        <p class="mb-2">Number of ways to select 2 black balls = <sup>5</sup>C<sub>2</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">5 × 4</span>
+                                    <span class="denominator">2 × 1</span>
+                                </span> = 10
+                            </span>
+                        </p>
+                        <p class="mb-2">Number of ways to select 3 red balls = <sup>6</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">6 × 5 × 4</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 20
+                            </span>
+                        </p>
+                        <p class="mb-2">Total ways = 10 × 20 = 200</p>
+                        <p><strong>Answer:</strong> 200</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 5 black balls mein se 2 choose karne ke 10 ways, aur 6 red balls mein se 3 choose karne ke 20 ways. Total = 10×20=200.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: In how many ways can a student choose a programme of 5 courses if 9 courses are available and 2 specific courses are compulsory for every student?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total courses available: 9</p>
+                        <p class="mb-2">2 courses are compulsory.</p>
+                        <p class="mb-2">So, the student needs to choose 3 more courses from the remaining 7 courses.</p>
+                        <p class="mb-2">Number of ways = <sup>7</sup>C<sub>3</sub> = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">7 × 6 × 5</span>
+                                    <span class="denominator">3 × 2 × 1</span>
+                                </span> = 35
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> 35</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 9 courses mein se 5 choose karne hain, lekin 2 compulsory hain. Isliye bache 3 courses 7 courses mein se choose karne hain. Ways = <sup>7</sup>C<sub>3</sub> = 35.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

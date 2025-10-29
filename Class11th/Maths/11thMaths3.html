@@ -1,0 +1,2951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 3: Trigonometric Functions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 3: Trigonometric Functions</h1>
+            <p class="mt-2 text-lg">Class 11 : Mathematics</p>
+        </div>
+
+        <!-- Exercise 3.1 Section -->
+        <section id="exercise-3-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 3.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the radian measures corresponding to the following degree measures:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 25°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We know that 180° = π radians</p>
+                        <p class="mb-2">Therefore, 1° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">So, 25° = 25 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">36</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">36</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 180° = π radians, so 1° = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> radians. 25° = 25 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">36</span>
+                        </div> radians.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) -47° 30'</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First, convert 30' to degrees: 30' = 
+                            <div class="fraction">
+                                <span class="numerator">30</span>
+                                <span class="denominator">60</span>
+                            </div> = 0.5°
+                        </p>
+                        <p class="mb-2">So, -47° 30' = -47.5°</p>
+                        <p class="mb-2">Now, -47.5° = -47.5 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">-95π</span>
+                                <span class="denominator">360</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-19π</span>
+                                <span class="denominator">72</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">-19π</span>
+                                <span class="denominator">72</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 30' = 0.5°, so -47° 30' = -47.5°. -47.5 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-95π</span>
+                            <span class="denominator">360</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-19π</span>
+                            <span class="denominator">72</span>
+                        </div> radians.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 240°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">240° = 240 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4π</span>
+                                <span class="denominator">3</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">4π</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 240° = 240 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">4π</span>
+                            <span class="denominator">3</span>
+                        </div> radians.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) 520°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">520° = 520 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">26π</span>
+                                <span class="denominator">9</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">26π</span>
+                                <span class="denominator">9</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 520° = 520 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">26π</span>
+                            <span class="denominator">9</span>
+                        </div> radians.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the degree measures corresponding to the following radian measures (Use π = 22/7):</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 11/16</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We know that π radians = 180°</p>
+                        <p class="mb-2">Therefore, 1 radian = 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">So, 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> radians = 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180 × 7</span>
+                                <span class="denominator">22</span>
+                            </div>° = 
+                            <div class="fraction">
+                                <span class="numerator">11 × 180 × 7</span>
+                                <span class="denominator">16 × 22</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">13860</span>
+                                <span class="denominator">352</span>
+                            </div>° = 39.375° = 39° 22' 30"
+                        </p>
+                        <p><strong>Answer:</strong> 39° 22' 30"</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> π = 180°, so 1 radian = 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div>°. 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> radians = 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div>° = 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = 39.375° = 39° 22' 30".
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) -4</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">-4 radians = -4 × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= -4 × 
+                            <div class="fraction">
+                                <span class="numerator">180 × 7</span>
+                                <span class="denominator">22</span>
+                            </div>° = -4 × 
+                            <div class="fraction">
+                                <span class="numerator">1260</span>
+                                <span class="denominator">22</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= - 
+                            <div class="fraction">
+                                <span class="numerator">5040</span>
+                                <span class="denominator">22</span>
+                            </div>° = -229.09° ≈ -229° 5' 24"
+                        </p>
+                        <p><strong>Answer:</strong> -229° 5' 24"</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> -4 radians = -4 × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div>° = -4 × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = -229.09° ≈ -229° 5' 24".
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 5π/3</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">3</span>
+                            </div> radians = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">5 × 180</span>
+                                <span class="denominator">3</span>
+                            </div>° = 
+                            <div class="fraction">
+                                <span class="numerator">900</span>
+                                <span class="denominator">3</span>
+                            </div>° = 300°
+                        </p>
+                        <p><strong>Answer:</strong> 300°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">3</span>
+                        </div> radians = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">3</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5×180</span>
+                            <span class="denominator">3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">900</span>
+                            <span class="denominator">3</span>
+                        </div> = 300°.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) 7π/6</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">7π</span>
+                                <span class="denominator">6</span>
+                            </div> radians = 
+                            <div class="fraction">
+                                <span class="numerator">7π</span>
+                                <span class="denominator">6</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">7 × 180</span>
+                                <span class="denominator">6</span>
+                            </div>° = 
+                            <div class="fraction">
+                                <span class="numerator">1260</span>
+                                <span class="denominator">6</span>
+                            </div>° = 210°
+                        </p>
+                        <p><strong>Answer:</strong> 210°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 
+                        <div class="fraction">
+                            <span class="numerator">7π</span>
+                            <span class="denominator">6</span>
+                        </div> radians = 
+                        <div class="fraction">
+                            <span class="numerator">7π</span>
+                            <span class="denominator">6</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">7×180</span>
+                            <span class="denominator">6</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1260</span>
+                            <span class="denominator">6</span>
+                        </div> = 210°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: A wheel makes 360 revolutions in one minute. Through how many radians does it turn in one second?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Number of revolutions in 1 minute = 360</p>
+                        <p class="mb-2">Number of revolutions in 1 second = 
+                            <div class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">60</span>
+                            </div> = 6
+                        </p>
+                        <p class="mb-2">1 revolution = 2π radians</p>
+                        <p class="mb-2">6 revolutions = 6 × 2π = 12π radians</p>
+                        <p><strong>Answer:</strong> 12π radians</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 1 minute mein 360 revolutions, toh 1 second mein 
+                        <div class="fraction">
+                            <span class="numerator">360</span>
+                            <span class="denominator">60</span>
+                        </div> = 6 revolutions. 1 revolution = 2π radians, so 6 revolutions = 6 × 2π = 12π radians.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Find the degree measure of the angle subtended at the centre of a circle of radius 100 cm by an arc of length 22 cm (Use π = 22/7).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We know that θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> (in radians)
+                        </p>
+                        <p class="mb-2">Here, l = 22 cm, r = 100 cm</p>
+                        <p class="mb-2">So, θ = 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">100</span>
+                            </div> = 0.22 radians
+                        </p>
+                        <p class="mb-2">Now, 1 radian = 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">So, 0.22 radians = 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>° = 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">180 × 7</span>
+                                <span class="denominator">22</span>
+                            </div>°
+                        </p>
+                        <p class="mb-2">= 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">1260</span>
+                                <span class="denominator">22</span>
+                            </div>° = 
+                            <div class="fraction">
+                                <span class="numerator">277.2</span>
+                                <span class="denominator">22</span>
+                            </div>° = 12.6°
+                        </p>
+                        <p><strong>Answer:</strong> 12.6°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">22</span>
+                            <span class="denominator">100</span>
+                        </div> = 0.22 radians. 0.22 radians = 0.22 × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 0.22 × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = 12.6°.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: In a circle of diameter 40 cm, the length of a chord is 20 cm. Find the length of minor arc of the chord.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Diameter = 40 cm, so radius r = 20 cm</p>
+                        <p class="mb-2">Chord length = 20 cm</p>
+                        <p class="mb-2">In the triangle formed by two radii and the chord:</p>
+                        <p class="mb-2">All sides are 20 cm (equilateral triangle)</p>
+                        <p class="mb-2">So, the central angle θ = 60° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">Arc length l = rθ = 20 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">20π</span>
+                                <span class="denominator">3</span>
+                            </div> cm
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">20π</span>
+                                <span class="denominator">3</span>
+                            </div> cm
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Radius = 20 cm, chord = 20 cm. Triangle equilateral hai, so angle = 60° = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div> radians. Arc length = rθ = 20 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">20π</span>
+                            <span class="denominator">3</span>
+                        </div> cm.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: If in two circles, arcs of the same length subtend angles 60° and 75° at the centre, find the ratio of their radii.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the radii be r₁ and r₂</p>
+                        <p class="mb-2">Arc length l = r₁θ₁ = r₂θ₂</p>
+                        <p class="mb-2">θ₁ = 60° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">θ₂ = 75° = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div> radians
+                        </p>
+                        <p class="mb-2">So, r₁ × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> = r₂ × 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">r₁</span>
+                                <span class="denominator">r₂</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π/12</span>
+                                <span class="denominator">π/3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">π</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> r₁ : r₂ = 5 : 4</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Same arc length ke liye, r₁θ₁ = r₂θ₂. θ₁ = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div>, θ₂ = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">12</span>
+                        </div>. So 
+                        <div class="fraction">
+                            <span class="numerator">r₁</span>
+                            <span class="denominator">r₂</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5π/12</span>
+                            <span class="denominator">π/3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>. Ratio = 5:4.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find the angle in radian through which a pendulum swings if its length is 75 cm and the tip describes an arc of length:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 10 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Length of pendulum r = 75 cm</p>
+                        <p class="mb-2">Arc length l = 10 cm</p>
+                        <p class="mb-2">θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">10</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">15</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">15</span>
+                            </div> radians
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">10</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">15</span>
+                        </div> radians.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 15 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">15</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </div> radians
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">15</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">5</span>
+                        </div> radians.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 21 cm</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">21</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">25</span>
+                            </div> radians
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">25</span>
+                            </div> radians
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">21</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">7</span>
+                            <span class="denominator">25</span>
+                        </div> radians.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.2 Section -->
+        <section id="exercise-3-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 3.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: cos x = -1/2, x lies in third quadrant. Find the values of other five trigonometric functions.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cos x = 
+                            <div class="fraction">
+                                <span class="numerator">-1</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin²x = 1 - cos²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin x = ±√
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div> = ±
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Since x is in third quadrant, sin x is negative</p>
+                        <p class="mb-2">So, sin x = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-√3/2</span>
+                                <span class="denominator">-1/2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-√3</span>
+                                <span class="denominator">2</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-1</span>
+                            </div> = √3
+                        </p>
+                        <p class="mb-2">cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-√3/2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">1</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-√3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-√3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-1/2</span>
+                            </div> = -2
+                        </p>
+                        <p class="mb-2">cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>, tan x = √3, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-√3</span>
+                            </div>, sec x = -2, cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos x = 
+                        <div class="fraction">
+                            <span class="numerator">-1</span>
+                            <span class="denominator">2</span>
+                        </div>, so sin²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div> (third quadrant mein negative). tan x = 
+                        <div class="fraction">
+                            <span class="numerator">sin</span>
+                            <span class="denominator">cos</span>
+                        </div> = √3. cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">-√3</span>
+                        </div>, sec x = -2, cot x = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√3</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: sin x = 3/5, x lies in second quadrant. Find the values of other five trigonometric functions.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin x = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos²x = 1 - sin²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">9</span>
+                                <span class="denominator">25</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">16</span>
+                                <span class="denominator">25</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos x = ±
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Since x is in second quadrant, cos x is negative</p>
+                        <p class="mb-2">So, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3/5</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">-4</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3/5</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-3/4</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> cos x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>, tan x = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin x = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">5</span>
+                        </div>, so cos²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">9</span>
+                            <span class="denominator">25</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">16</span>
+                            <span class="denominator">25</span>
+                        </div>, cos x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">5</span>
+                        </div> (second quadrant mein negative). tan x = -
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>. cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">3</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: cot x = 3/4, x lies in third quadrant. Find the values of other five trigonometric functions.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cot x = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cot x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3/4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec²x = 1 + tan²x = 1 + 
+                            <div class="fraction">
+                                <span class="numerator">16</span>
+                                <span class="denominator">9</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">9</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec x = ±
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Since x is in third quadrant, sec x is negative</p>
+                        <p class="mb-2">So, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-5/3</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin x = tan x × cos x = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">-3</span>
+                                <span class="denominator">5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>, tan x = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>, cosec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cot x = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>, so tan x = 
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">3</span>
+                        </div>. sec²x = 1 + 
+                        <div class="fraction">
+                            <span class="numerator">16</span>
+                            <span class="denominator">9</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">9</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </div> (third quadrant mein negative). cos x = -
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">5</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">5</span>
+                        </div>, cosec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: sec x = 13/5, x lies in fourth quadrant. Find the values of other five trigonometric functions.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sec x = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">13/5</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin²x = 1 - cos²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">169</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">144</span>
+                                <span class="denominator">169</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin x = ±
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Since x is in fourth quadrant, sin x is negative</p>
+                        <p class="mb-2">So, sin x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-12/13</span>
+                                <span class="denominator">5/13</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-12</span>
+                                <span class="denominator">13</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-12/13</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-12/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>, cos x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>, tan x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>, cosec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sec x = 
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">5</span>
+                        </div>, so cos x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">13</span>
+                        </div>. sin²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">169</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">144</span>
+                            <span class="denominator">169</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">13</span>
+                        </div> (fourth quadrant mein negative). tan x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">5</span>
+                        </div>, cosec x = -
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">12</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">12</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: tan x = -5/12, x lies in second quadrant. Find the values of other five trigonometric functions.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">tan x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec²x = 1 + tan²x = 1 + 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">144</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">169</span>
+                                <span class="denominator">144</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sec x = ±
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Since x is in second quadrant, sec x is negative</p>
+                        <p class="mb-2">So, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-13/12</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin x = tan x × cos x = 
+                            <div class="fraction">
+                                <span class="numerator">-5</span>
+                                <span class="denominator">12</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">-12</span>
+                                <span class="denominator">13</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5/13</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-5/12</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> sin x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> tan x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">12</span>
+                        </div>, so sec²x = 1 + 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">144</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">169</span>
+                            <span class="denominator">144</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">12</span>
+                        </div> (second quadrant mein negative). cos x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">13</span>
+                        </div>, sin x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">13</span>
+                        </div>, cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">5</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">5</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Find the value of sin 765°.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin 765° = sin(765° - 2×360°) = sin(765° - 720°) = sin 45°</p>
+                        <p class="mb-2">sin 45° = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin 765° = sin(765° - 720°) = sin 45° = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find the value of cosec(-1410°).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cosec(-1410°) = -cosec(1410°)</p>
+                        <p class="mb-2">1410° = 3×360° + 330° = 1080° + 330°</p>
+                        <p class="mb-2">cosec(1410°) = cosec(330°) = cosec(360° - 30°) = -cosec 30°</p>
+                        <p class="mb-2">cosec 30° = 2</p>
+                        <p class="mb-2">So, cosec(1410°) = -2</p>
+                        <p class="mb-2">cosec(-1410°) = -(-2) = 2</p>
+                        <p><strong>Answer:</strong> 2</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cosec(-1410°) = -cosec(1410°). 1410° = 1080° + 330° = 3×360° + 330°. cosec(330°) = -cosec 30° = -2. So cosec(-1410°) = -(-2) = 2.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Find the value of tan 19π/3.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">19π/3 = 6π + π/3 (since 6π = 18π/3)</p>
+                        <p class="mb-2">tan(19π/3) = tan(6π + π/3) = tan(π/3)</p>
+                        <p class="mb-2">tan(π/3) = √3</p>
+                        <p><strong>Answer:</strong> √3</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 19π/3 = 6π + π/3. tan(6π + π/3) = tan(π/3) = √3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Find the value of sin(-11π/3).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin(-11π/3) = -sin(11π/3)</p>
+                        <p class="mb-2">11π/3 = 4π - π/3 (since 4π = 12π/3)</p>
+                        <p class="mb-2">sin(11π/3) = sin(4π - π/3) = -sin(π/3)</p>
+                        <p class="mb-2">sin(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">So, sin(11π/3) = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">sin(-11π/3) = -(-
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>) = 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin(-11π/3) = -sin(11π/3). 11π/3 = 4π - π/3. sin(4π - π/3) = -sin(π/3) = -
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>. So sin(-11π/3) = -(-
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>) = 
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Find the value of cot(-15π/4).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cot(-15π/4) = -cot(15π/4)</p>
+                        <p class="mb-2">15π/4 = 4π - π/4 (since 4π = 16π/4)</p>
+                        <p class="mb-2">cot(15π/4) = cot(4π - π/4) = -cot(π/4)</p>
+                        <p class="mb-2">cot(π/4) = 1</p>
+                        <p class="mb-2">So, cot(15π/4) = -1</p>
+                        <p class="mb-2">cot(-15π/4) = -(-1) = 1</p>
+                        <p><strong>Answer:</strong> 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cot(-15π/4) = -cot(15π/4). 15π/4 = 4π - π/4. cot(4π - π/4) = -cot(π/4) = -1. So cot(-15π/4) = -(-1) = 1.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 3.3 Section -->
+        <section id="exercise-3-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 3.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Prove that sin²(π/6) + cos²(π/3) - tan²(π/4) = -1/2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, so sin²(π/6) = (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)² = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cos(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, so cos²(π/3) = (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)² = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan(π/4) = 1, so tan²(π/4) = 1</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> + 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> - 1 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> - 1 = -
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin(π/6) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>, cos(π/3) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>, tan(π/4) = 1. So sin² + cos² - tan² = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> + 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> - 1 = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> - 1 = -
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Prove that 2sin²(π/6) + cosec²(7π/6) cos²(π/3) = 3/2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, so 2sin²(π/6) = 2×(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec(7π/6) = cosec(π + π/6) = -cosec(π/6) = -2</p>
+                        <p class="mb-2">So cosec²(7π/6) = 4</p>
+                        <p class="mb-2">cos(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, so cos²(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> + 4 × 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> + 1 = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </div> = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 2sin²(π/6) = 2×
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>. cosec(7π/6) = -cosec(π/6) = -2, so cosec² = 4. cos²(π/3) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div>. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> + 4×
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> + 1 = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">2</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Prove that cot²(π/6) + cosec²(5π/6) + 3tan²(π/6) = 6</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cot(π/6) = √3, so cot²(π/6) = 3</p>
+                        <p class="mb-2">cosec(5π/6) = cosec(π - π/6) = cosec(π/6) = 2</p>
+                        <p class="mb-2">So cosec²(5π/6) = 4</p>
+                        <p class="mb-2">tan(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>, so 3tan²(π/6) = 3×(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">LHS = 3 + 4 + 1 = 8</p>
+                        <p class="mb-2">Wait, there seems to be an error. Let's recalculate:</p>
+                        <p class="mb-2">cot(π/6) = √3, so cot² = 3</p>
+                        <p class="mb-2">cosec(5π/6) = 2, so cosec² = 4</p>
+                        <p class="mb-2">tan(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>, so 3tan² = 3×(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">Total = 3 + 4 + 1 = 8, but RHS is 6</p>
+                        <p class="mb-2">Let me check the question again: cot²(π/6) + cosec²(5π/6) + 3tan²(π/6)</p>
+                        <p class="mb-2">cot(π/6) = √3, cot² = 3</p>
+                        <p class="mb-2">cosec(5π/6) = 2, cosec² = 4</p>
+                        <p class="mb-2">tan(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>, 3tan² = 1
+                        </p>
+                        <p class="mb-2">Sum = 3 + 4 + 1 = 8</p>
+                        <p class="mb-2">But the question says it equals 6. There might be a typo in the question or my calculation.</p>
+                        <p class="mb-2">Let me verify with standard values:</p>
+                        <p class="mb-2">π/6 = 30°, cot 30° = √3, cosec 30° = 2, tan 30° = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">So the calculation seems correct. The sum is 8, not 6.</p>
+                        <p><strong>Note:</strong> There appears to be an inconsistency in the question.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cot(π/6) = √3, cot² = 3. cosec(5π/6) = 2, cosec² = 4. tan(π/6) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√3</span>
+                        </div>, 3tan² = 3×
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">3</span>
+                        </div> = 1. Total = 3 + 4 + 1 = 8, but question mein 6 diya hai. Question mein typo ho sakta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Prove that 2sin²(3π/4) + 2cos²(π/4) + 2sec²(π/3) = 10</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin(3π/4) = sin(π - π/4) = sin(π/4) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">So 2sin²(3π/4) = 2 × (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">cos(π/4) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>, so 2cos²(π/4) = 2 × (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">sec(π/3) = 2, so 2sec²(π/3) = 2 × 4 = 8</p>
+                        <p class="mb-2">LHS = 1 + 1 + 8 = 10 = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin(3π/4) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>, 2sin² = 1. cos(π/4) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>, 2cos² = 1. sec(π/3) = 2, 2sec² = 8. Total = 1 + 1 + 8 = 10.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Find the value of:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) sin 75°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin 75° = sin(45° + 30°)</p>
+                        <p class="mb-2">= sin45°cos30° + cos45°sin30°</p>
+                        <p class="mb-2">= (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>)(
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>) + (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>)(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">√3 + 1</span>
+                                <span class="denominator">2√2</span>
+                            </div>
+                        </p>
+                        <p><strong>Answer:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">√3 + 1</span>
+                                <span class="denominator">2√2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin 75° = sin(45° + 30°) = sin45°cos30° + cos45°sin30° = (
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>)(
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>) + (
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>)(
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>) = 
+                        <div class="fraction">
+                            <span class="numerator">√3 + 1</span>
+                            <span class="denominator">2√2</span>
+                        </div>.
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) tan 15°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">tan 15° = tan(45° - 30°)</p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">tan45° - tan30°</span>
+                                <span class="denominator">1 + tan45°tan30°</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1 - 1/√3</span>
+                                <span class="denominator">1 + 1/√3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">√3 - 1</span>
+                                <span class="denominator">√3 + 1</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">Rationalizing: = 
+                            <div class="fraction">
+                                <span class="numerator">(√3 - 1)²</span>
+                                <span class="denominator">3 - 1</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3 - 2√3 + 1</span>
+                                <span class="denominator">2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">4 - 2√3</span>
+                                <span class="denominator">2</span>
+                            </div> = 2 - √3
+                        </p>
+                        <p><strong>Answer:</strong> 2 - √3</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> tan 15° = tan(45° - 30°) = 
+                        <div class="fraction">
+                            <span class="numerator">1 - 1/√3</span>
+                            <span class="denominator">1 + 1/√3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">√3 - 1</span>
+                            <span class="denominator">√3 + 1</span>
+                        </div>. Rationalize karke = 
+                        <div class="fraction">
+                            <span class="numerator">(√3 - 1)²</span>
+                            <span class="denominator">3 - 1</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">4 - 2√3</span>
+                            <span class="denominator">2</span>
+                        </div> = 2 - √3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Prove that cos(π/4 - x) cos(π/4 - y) - sin(π/4 - x) sin(π/4 - y) = sin(x+y)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">LHS = cos[(π/4 - x) + (π/4 - y)] [Using cos(A+B) formula]</p>
+                        <p class="mb-2">= cos(π/2 - (x+y))</p>
+                        <p class="mb-2">= sin(x+y) = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> LHS cos(A)cos(B) - sin(A)sin(B) = cos(A+B) ke form mein hai. A = π/4 - x, B = π/4 - y. So A+B = π/2 - (x+y). cos(π/2 - (x+y)) = sin(x+y).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Prove that tan(π/4 + x) = (1+tan x)/(1-tan x)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">tan(π/4 + x) = 
+                            <div class="fraction">
+                                <span class="numerator">tan(π/4) + tan x</span>
+                                <span class="denominator">1 - tan(π/4)tan x</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1 + tan x</span>
+                                <span class="denominator">1 - 1×tan x</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">1 + tan x</span>
+                                <span class="denominator">1 - tan x</span>
+                            </div> = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> tan(A+B) formula use karenge: tan(π/4 + x) = 
+                        <div class="fraction">
+                            <span class="numerator">tan(π/4) + tan x</span>
+                            <span class="denominator">1 - tan(π/4)tan x</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1 + tan x</span>
+                            <span class="denominator">1 - tan x</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Prove that [cos(π + x) cos(-x)]/[sin(π - x) cos(π/2 + x)] = cot² x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cos(π + x) = -cos x</p>
+                        <p class="mb-2">cos(-x) = cos x</p>
+                        <p class="mb-2">sin(π - x) = sin x</p>
+                        <p class="mb-2">cos(π/2 + x) = -sin x</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">(-cos x)(cos x)</span>
+                                <span class="denominator">(sin x)(-sin x)</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">-cos² x</span>
+                                <span class="denominator">-sin² x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">cos² x</span>
+                                <span class="denominator">sin² x</span>
+                            </div> = cot² x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos(π + x) = -cos x, cos(-x) = cos x, sin(π - x) = sin x, cos(π/2 + x) = -sin x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">(-cos x)(cos x)</span>
+                            <span class="denominator">(sin x)(-sin x)</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-cos² x</span>
+                            <span class="denominator">-sin² x</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">cos² x</span>
+                            <span class="denominator">sin² x</span>
+                        </div> = cot² x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Prove that cos(3π/2 + x) cos(2π + x)[cot(3π/2 - x) + cot(2π + x)] = 1</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cos(3π/2 + x) = sin x</p>
+                        <p class="mb-2">cos(2π + x) = cos x</p>
+                        <p class="mb-2">cot(3π/2 - x) = tan x</p>
+                        <p class="mb-2">cot(2π + x) = cot x</p>
+                        <p class="mb-2">LHS = (sin x)(cos x)[tan x + cot x]</p>
+                        <p class="mb-2">= (sin x)(cos x)[
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> + 
+                            <div class="fraction">
+                                <span class="numerator">cos x</span>
+                                <span class="denominator">sin x</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= (sin x)(cos x)[
+                            <div class="fraction">
+                                <span class="numerator">sin² x + cos² x</span>
+                                <span class="denominator">sin x cos x</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= (sin x)(cos x)[
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x cos x</span>
+                            </div>] = 1 = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos(3π/2 + x) = sin x, cos(2π + x) = cos x, cot(3π/2 - x) = tan x, cot(2π + x) = cot x. LHS = (sin x)(cos x)[tan x + cot x] = (sin x)(cos x)[
+                        <div class="fraction">
+                            <span class="numerator">sin x</span>
+                            <span class="denominator">cos x</span>
+                        </div> + 
+                        <div class="fraction">
+                            <span class="numerator">cos x</span>
+                            <span class="denominator">sin x</span>
+                        </div>] = (sin x)(cos x)[
+                        <div class="fraction">
+                            <span class="numerator">sin² x + cos² x</span>
+                            <span class="denominator">sin x cos x</span>
+                        </div>] = 1.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Prove that sin(n+1)x sin(n+2)x + cos(n+1)x cos(n+2)x = cos x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">LHS = cos[(n+2)x - (n+1)x] [Using cos(A-B) formula]</p>
+                        <p class="mb-2">= cos(x) = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos(A-B) = cos A cos B + sin A sin B. Yahan A = (n+2)x, B = (n+1)x. So cos[(n+2)x - (n+1)x] = cos x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: Prove that cos(3π/4 + x) - cos(3π/4 - x) = -√2 sin x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using cos C - cos D = -2 sin((C+D)/2) sin((C-D)/2)</p>
+                        <p class="mb-2">C = 3π/4 + x, D = 3π/4 - x</p>
+                        <p class="mb-2">(C+D)/2 = (3π/4 + x + 3π/4 - x)/2 = (3π/2)/2 = 3π/4</p>
+                        <p class="mb-2">(C-D)/2 = (3π/4 + x - 3π/4 + x)/2 = (2x)/2 = x</p>
+                        <p class="mb-2">LHS = -2 sin(3π/4) sin(x)</p>
+                        <p class="mb-2">sin(3π/4) = sin(π - π/4) = sin(π/4) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">So LHS = -2 × 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div> × sin x = -√2 sin x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos C - cos D = -2 sin((C+D)/2) sin((C-D)/2). C = 3π/4 + x, D = 3π/4 - x. (C+D)/2 = 3π/4, (C-D)/2 = x. sin(3π/4) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>. So LHS = -2 × 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div> × sin x = -√2 sin x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: Prove that sin² 6x - sin² 4x = sin 2x sin 10x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using sin² A - sin² B = sin(A+B) sin(A-B)</p>
+                        <p class="mb-2">A = 6x, B = 4x</p>
+                        <p class="mb-2">LHS = sin(6x+4x) sin(6x-4x)</p>
+                        <p class="mb-2">= sin(10x) sin(2x) = sin 2x sin 10x = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin² A - sin² B = sin(A+B) sin(A-B). A = 6x, B = 4x. So LHS = sin(10x) sin(2x) = sin 2x sin 10x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 13: Prove that cos² 2x - cos² 6x = sin 4x sin 8x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Using cos² A - cos² B = -sin(A+B) sin(A-B)</p>
+                        <p class="mb-2">A = 2x, B = 6x</p>
+                        <p class="mb-2">LHS = -sin(2x+6x) sin(2x-6x)</p>
+                        <p class="mb-2">= -sin(8x) sin(-4x) = -sin(8x)(-sin 4x) = sin 4x sin 8x = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos² A - cos² B = -sin(A+B) sin(A-B). A = 2x, B = 6x. LHS = -sin(8x) sin(-4x) = -sin(8x)(-sin 4x) = sin 4x sin 8x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 14: Prove that sin 2x + 2 sin 4x + sin 6x = 4 cos² x sin 4x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">LHS = (sin 2x + sin 6x) + 2 sin 4x</p>
+                        <p class="mb-2">= 2 sin((2x+6x)/2) cos((2x-6x)/2) + 2 sin 4x</p>
+                        <p class="mb-2">= 2 sin 4x cos(-2x) + 2 sin 4x</p>
+                        <p class="mb-2">= 2 sin 4x cos 2x + 2 sin 4x</p>
+                        <p class="mb-2">= 2 sin 4x (cos 2x + 1)</p>
+                        <p class="mb-2">= 2 sin 4x (2 cos² x) [Using 1 + cos 2x = 2 cos² x]</p>
+                        <p class="mb-2">= 4 cos² x sin 4x = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin 2x + sin 6x = 2 sin 4x cos 2x. So LHS = 2 sin 4x cos 2x + 2 sin 4x = 2 sin 4x (cos 2x + 1) = 2 sin 4x (2 cos² x) = 4 cos² x sin 4x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 15: Prove that cot 4x (sin 5x + sin 3x) = cot x (sin 5x - sin 3x)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">LHS = cot 4x (sin 5x + sin 3x)</p>
+                        <p class="mb-2">= (
+                            <div class="fraction">
+                                <span class="numerator">cos 4x</span>
+                                <span class="denominator">sin 4x</span>
+                            </div>) × 2 sin((5x+3x)/2) cos((5x-3x)/2)
+                        </p>
+                        <p class="mb-2">= (
+                            <div class="fraction">
+                                <span class="numerator">cos 4x</span>
+                                <span class="denominator">sin 4x</span>
+                            </div>) × 2 sin 4x cos x
+                        </p>
+                        <p class="mb-2">= 2 cos 4x cos x</p>
+                        <p class="mb-2">RHS = cot x (sin 5x - sin 3x)</p>
+                        <p class="mb-2">= (
+                            <div class="fraction">
+                                <span class="numerator">cos x</span>
+                                <span class="denominator">sin x</span>
+                            </div>) × 2 cos((5x+3x)/2) sin((5x-3x)/2)
+                        </p>
+                        <p class="mb-2">= (
+                            <div class="fraction">
+                                <span class="numerator">cos x</span>
+                                <span class="denominator">sin x</span>
+                            </div>) × 2 cos 4x sin x
+                        </p>
+                        <p class="mb-2">= 2 cos 4x cos x</p>
+                        <p class="mb-2">So LHS = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> LHS: cot 4x (sin 5x + sin 3x) = (
+                        <div class="fraction">
+                            <span class="numerator">cos 4x</span>
+                            <span class="denominator">sin 4x</span>
+                        </div>) × 2 sin 4x cos x = 2 cos 4x cos x. RHS: cot x (sin 5x - sin 3x) = (
+                        <div class="fraction">
+                            <span class="numerator">cos x</span>
+                            <span class="denominator">sin x</span>
+                        </div>) × 2 cos 4x sin x = 2 cos 4x cos x. Dono equal hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 16: Prove that (cos 9x - cos 5x)/(sin 17x - sin 3x) = -sin 2x/cos 10x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: cos 9x - cos 5x = -2 sin((9x+5x)/2) sin((9x-5x)/2)</p>
+                        <p class="mb-2">= -2 sin 7x sin 2x</p>
+                        <p class="mb-2">Denominator: sin 17x - sin 3x = 2 cos((17x+3x)/2) sin((17x-3x)/2)</p>
+                        <p class="mb-2">= 2 cos 10x sin 7x</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">-2 sin 7x sin 2x</span>
+                                <span class="denominator">2 cos 10x sin 7x</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">-sin 2x</span>
+                                <span class="denominator">cos 10x</span>
+                            </div> = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos 9x - cos 5x = -2 sin 7x sin 2x. sin 17x - sin 3x = 2 cos 10x sin 7x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">-2 sin 7x sin 2x</span>
+                            <span class="denominator">2 cos 10x sin 7x</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-sin 2x</span>
+                            <span class="denominator">cos 10x</span>
+                        </div>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 17: Prove that (sin 5x + sin 3x)/(cos 5x + cos 3x) = tan 4x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: sin 5x + sin 3x = 2 sin((5x+3x)/2) cos((5x-3x)/2)</p>
+                        <p class="mb-2">= 2 sin 4x cos x</p>
+                        <p class="mb-2">Denominator: cos 5x + cos 3x = 2 cos((5x+3x)/2) cos((5x-3x)/2)</p>
+                        <p class="mb-2">= 2 cos 4x cos x</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">2 sin 4x cos x</span>
+                                <span class="denominator">2 cos 4x cos x</span>
+                            </div> = tan 4x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin 5x + sin 3x = 2 sin 4x cos x. cos 5x + cos 3x = 2 cos 4x cos x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">2 sin 4x cos x</span>
+                            <span class="denominator">2 cos 4x cos x</span>
+                        </div> = tan 4x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 18: Prove that (sin x - sin y)/(cos x + cos y) = tan((x-y)/2)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: sin x - sin y = 2 cos((x+y)/2) sin((x-y)/2)</p>
+                        <p class="mb-2">Denominator: cos x + cos y = 2 cos((x+y)/2) cos((x-y)/2)</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">2 cos((x+y)/2) sin((x-y)/2)</span>
+                                <span class="denominator">2 cos((x+y)/2) cos((x-y)/2)</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= tan((x-y)/2) = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin x - sin y = 2 cos((x+y)/2) sin((x-y)/2). cos x + cos y = 2 cos((x+y)/2) cos((x-y)/2). LHS = 
+                        <div class="fraction">
+                            <span class="numerator">2 cos((x+y)/2) sin((x-y)/2)</span>
+                            <span class="denominator">2 cos((x+y)/2) cos((x-y)/2)</span>
+                        </div> = tan((x-y)/2).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 19: Prove that (sin x + sin 3x)/(cos x + cos 3x) = tan 2x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: sin x + sin 3x = 2 sin((x+3x)/2) cos((x-3x)/2)</p>
+                        <p class="mb-2">= 2 sin 2x cos(-x) = 2 sin 2x cos x</p>
+                        <p class="mb-2">Denominator: cos x + cos 3x = 2 cos((x+3x)/2) cos((x-3x)/2)</p>
+                        <p class="mb-2">= 2 cos 2x cos(-x) = 2 cos 2x cos x</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">2 sin 2x cos x</span>
+                                <span class="denominator">2 cos 2x cos x</span>
+                            </div> = tan 2x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin x + sin 3x = 2 sin 2x cos x. cos x + cos 3x = 2 cos 2x cos x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">2 sin 2x cos x</span>
+                            <span class="denominator">2 cos 2x cos x</span>
+                        </div> = tan 2x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 20: Prove that (sin x - sin 3x)/(sin² x - cos² x) = 2 sin x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: sin x - sin 3x = 2 cos((x+3x)/2) sin((x-3x)/2)</p>
+                        <p class="mb-2">= 2 cos 2x sin(-x) = -2 cos 2x sin x</p>
+                        <p class="mb-2">Denominator: sin² x - cos² x = -cos 2x</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">-2 cos 2x sin x</span>
+                                <span class="denominator">-cos 2x</span>
+                            </div> = 2 sin x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> sin x - sin 3x = -2 cos 2x sin x. sin² x - cos² x = -cos 2x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">-2 cos 2x sin x</span>
+                            <span class="denominator">-cos 2x</span>
+                        </div> = 2 sin x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 21: Prove that (cos 4x + cos 3x + cos 2x)/(sin 4x + sin 3x + sin 2x) = cot 3x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Numerator: cos 4x + cos 2x + cos 3x = 2 cos((4x+2x)/2) cos((4x-2x)/2) + cos 3x</p>
+                        <p class="mb-2">= 2 cos 3x cos x + cos 3x = cos 3x (2 cos x + 1)</p>
+                        <p class="mb-2">Denominator: sin 4x + sin 2x + sin 3x = 2 sin((4x+2x)/2) cos((4x-2x)/2) + sin 3x</p>
+                        <p class="mb-2">= 2 sin 3x cos x + sin 3x = sin 3x (2 cos x + 1)</p>
+                        <p class="mb-2">LHS = 
+                            <div class="fraction">
+                                <span class="numerator">cos 3x (2 cos x + 1)</span>
+                                <span class="denominator">sin 3x (2 cos x + 1)</span>
+                            </div> = cot 3x = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos 4x + cos 2x = 2 cos 3x cos x. sin 4x + sin 2x = 2 sin 3x cos x. LHS = 
+                        <div class="fraction">
+                            <span class="numerator">cos 3x (2 cos x + 1)</span>
+                            <span class="denominator">sin 3x (2 cos x + 1)</span>
+                        </div> = cot 3x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 22: Prove that cot x cot 2x - cot 2x cot 3x - cot 3x cot x = 1</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We know that cot 3x = 
+                            <div class="fraction">
+                                <span class="numerator">cot 2x cot x - 1</span>
+                                <span class="denominator">cot 2x + cot x</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">So, cot 3x (cot 2x + cot x) = cot 2x cot x - 1</p>
+                        <p class="mb-2">cot 3x cot 2x + cot 3x cot x = cot 2x cot x - 1</p>
+                        <p class="mb-2">Rearranging: cot x cot 2x - cot 2x cot 3x - cot 3x cot x = 1</p>
+                        <p class="mb-2">Which is the required identity</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cot 3x = 
+                        <div class="fraction">
+                            <span class="numerator">cot 2x cot x - 1</span>
+                            <span class="denominator">cot 2x + cot x</span>
+                        </div>. Cross multiply karenge: cot 3x (cot 2x + cot x) = cot 2x cot x - 1. Rearrange karenge: cot x cot 2x - cot 2x cot 3x - cot 3x cot x = 1.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 23: Prove that tan 4x = (4 tan x (1 - tan² x))/(1 - 6 tan² x + tan⁴ x)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">tan 4x = tan(2×2x) = 
+                            <div class="fraction">
+                                <span class="numerator">2 tan 2x</span>
+                                <span class="denominator">1 - tan² 2x</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= [
+                            <div class="fraction">
+                                <span class="numerator">2 × (2 tan x)/(1 - tan² x)</span>
+                                <span class="denominator">1 - (2 tan x/(1 - tan² x))²</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= [
+                            <div class="fraction">
+                                <span class="numerator">4 tan x/(1 - tan² x)</span>
+                                <span class="denominator">1 - (4 tan² x/(1 - tan² x)²)</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= [
+                            <div class="fraction">
+                                <span class="numerator">4 tan x/(1 - tan² x)</span>
+                                <span class="denominator">(1 - tan² x)² - 4 tan² x]/(1 - tan² x)²</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= [
+                            <div class="fraction">
+                                <span class="numerator">4 tan x/(1 - tan² x)</span>
+                                <span class="denominator">1 - 2 tan² x + tan⁴ x - 4 tan² x]/(1 - tan² x)²</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= [
+                            <div class="fraction">
+                                <span class="numerator">4 tan x/(1 - tan² x)</span>
+                                <span class="denominator">1 - 6 tan² x + tan⁴ x]/(1 - tan² x)²</span>
+                            </div>]
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">4 tan x (1 - tan² x)</span>
+                                <span class="denominator">1 - 6 tan² x + tan⁴ x</span>
+                            </div> = RHS
+                        </p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> tan 4x = tan(2×2x) = 
+                        <div class="fraction">
+                            <span class="numerator">2 tan 2x</span>
+                            <span class="denominator">1 - tan² 2x</span>
+                        </div>. tan 2x = 
+                        <div class="fraction">
+                            <span class="numerator">2 tan x</span>
+                            <span class="denominator">1 - tan² x</span>
+                        </div>. Substitute karenge aur simplify karenge toh RHS mil jayega.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 24: Prove that cos 4x = 1 - 8 sin² x cos² x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cos 4x = 1 - 2 sin² 2x</p>
+                        <p class="mb-2">= 1 - 2 (2 sin x cos x)²</p>
+                        <p class="mb-2">= 1 - 2 (4 sin² x cos² x)</p>
+                        <p class="mb-2">= 1 - 8 sin² x cos² x = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos 4x = 1 - 2 sin² 2x. sin 2x = 2 sin x cos x, so sin² 2x = 4 sin² x cos² x. So cos 4x = 1 - 2 × 4 sin² x cos² x = 1 - 8 sin² x cos² x.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 25: Prove that cos 6x = 32 cos⁶ x - 48 cos⁴ x + 18 cos² x - 1</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cos 6x = cos(2×3x) = 2 cos² 3x - 1</p>
+                        <p class="mb-2">cos 3x = 4 cos³ x - 3 cos x</p>
+                        <p class="mb-2">So cos² 3x = (4 cos³ x - 3 cos x)² = 16 cos⁶ x - 24 cos⁴ x + 9 cos² x</p>
+                        <p class="mb-2">cos 6x = 2(16 cos⁶ x - 24 cos⁴ x + 9 cos² x) - 1</p>
+                        <p class="mb-2">= 32 cos⁶ x - 48 cos⁴ x + 18 cos² x - 1 = RHS</p>
+                        <p><strong>Hence proved.</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> cos 6x = cos(2×3x) = 2 cos² 3x - 1. cos 3x = 4 cos³ x - 3 cos x, so cos² 3x = 16 cos⁶ x - 24 cos⁴ x + 9 cos² x. Substitute karenge: cos 6x = 2(16 cos⁶ x - 24 cos⁴ x + 9 cos² x) - 1 = 32 cos⁶ x - 48 cos⁴ x + 18 cos² x - 1.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 5: Linear Inequalities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .number-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border-radius: 0.5rem;
+        }
+        .number-line-item {
+            position: relative;
+            text-align: center;
+            min-width: 40px;
+        }
+        .number-line-line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #374151;
+        }
+        .number-line-point {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #374151;
+        }
+        .number-line-filled {
+            background-color: #3b82f6;
+        }
+        .number-line-empty {
+            background-color: white;
+            border: 2px solid #374151;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 5<br> Linear Inequalities</h1>
+            <p class="mt-2 text-lg">Class 11th Mathematics</p>
+        </div>
+
+        <!-- Exercise 5.1 Section -->
+        <section id="exercise-5-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 5.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Solve 24x < 100, when<br>
+                (i) x is a natural number<br>
+                (ii) x is an integer</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 24x < 100</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Dividing both sides by 24: x < 
+                                <span class="fraction">
+                                    <span class="numerator">100</span>
+                                    <span class="denominator">24</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">25</span>
+                                    <span class="denominator">6</span>
+                                </span> ≈ 4.1667
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When x is a natural number:</p>
+                        <p class="mb-2">Natural numbers less than 4.1667 are: 1, 2, 3, 4</p>
+                        <p class="mb-2">Solution set: {1, 2, 3, 4}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When x is an integer:</p>
+                        <p class="mb-2">Integers less than 4.1667 are: ..., -3, -2, -1, 0, 1, 2, 3, 4</p>
+                        <p class="mb-2">Solution set: {..., -3, -2, -1, 0, 1, 2, 3, 4}</p>
+                        <p><strong>Answer:</strong> (i) {1, 2, 3, 4}; (ii) {..., -3, -2, -1, 0, 1, 2, 3, 4}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle inequality solve karte hain: 24x < 100 ⇒ x < 25/6 ≈ 4.1667. (i) Natural numbers ke liye: 1, 2, 3, 4. (ii) Integers ke liye: ...-3, -2, -1, 0, 1, 2, 3, 4.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Solve -12x > 30, when<br>
+                (i) x is a natural number<br>
+                (ii) x is an integer</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: -12x > 30</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Dividing both sides by -12 (sign reverses): x < 
+                                <span class="fraction">
+                                    <span class="numerator">30</span>
+                                    <span class="denominator">-12</span>
+                                </span> = -
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">2</span>
+                                </span> = -2.5
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When x is a natural number:</p>
+                        <p class="mb-2">No natural number is less than -2.5</p>
+                        <p class="mb-2">Solution set: ∅ (empty set)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When x is an integer:</p>
+                        <p class="mb-2">Integers less than -2.5 are: ..., -6, -5, -4, -3</p>
+                        <p class="mb-2">Solution set: {..., -6, -5, -4, -3}</p>
+                        <p><strong>Answer:</strong> (i) ∅; (ii) {..., -6, -5, -4, -3}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: -12x > 30 ⇒ x < -2.5 (negative se divide karne par sign change). (i) Natural numbers mein koi number -2.5 se chhota nahi hai, isliye empty set. (ii) Integers ke liye: ...-6, -5, -4, -3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Solve 5x - 3 < 7, when<br>
+                (i) x is an integer<br>
+                (ii) x is a real number</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 5x - 3 < 7</p>
+                        <p class="mb-2">Adding 3 to both sides: 5x < 10</p>
+                        <p class="mb-2">Dividing both sides by 5: x < 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When x is an integer:</p>
+                        <p class="mb-2">Integers less than 2 are: ..., -3, -2, -1, 0, 1</p>
+                        <p class="mb-2">Solution set: {..., -3, -2, -1, 0, 1}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When x is a real number:</p>
+                        <p class="mb-2">All real numbers less than 2</p>
+                        <p class="mb-2">Solution set: (-∞, 2)</p>
+                        <p><strong>Answer:</strong> (i) {..., -3, -2, -1, 0, 1}; (ii) (-∞, 2)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 5x - 3 < 7 ⇒ 5x < 10 ⇒ x < 2. (i) Integers ke liye: ...-3, -2, -1, 0, 1. (ii) Real numbers ke liye: (-∞, 2).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Solve 3x + 8 > 2, when<br>
+                (i) x is an integer<br>
+                (ii) x is a real number</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3x + 8 > 2</p>
+                        <p class="mb-2">Subtracting 8 from both sides: 3x > -6</p>
+                        <p class="mb-2">Dividing both sides by 3: x > -2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) When x is an integer:</p>
+                        <p class="mb-2">Integers greater than -2 are: -1, 0, 1, 2, 3, ...</p>
+                        <p class="mb-2">Solution set: {-1, 0, 1, 2, 3, ...}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) When x is a real number:</p>
+                        <p class="mb-2">All real numbers greater than -2</p>
+                        <p class="mb-2">Solution set: (-2, ∞)</p>
+                        <p><strong>Answer:</strong> (i) {-1, 0, 1, 2, 3, ...}; (ii) (-2, ∞)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3x + 8 > 2 ⇒ 3x > -6 ⇒ x > -2. (i) Integers ke liye: -1, 0, 1, 2, 3, ... (ii) Real numbers ke liye: (-2, ∞).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Solve 4x + 3 < 5x + 7 for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 4x + 3 < 5x + 7</p>
+                        <p class="mb-2">Subtracting 4x from both sides: 3 < x + 7</p>
+                        <p class="mb-2">Subtracting 7 from both sides: -4 < x</p>
+                        <p class="mb-2">Or x > -4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-4, ∞)</p>
+                        <p><strong>Answer:</strong> (-4, ∞)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 4x + 3 < 5x + 7 ⇒ 3 < x + 7 ⇒ -4 < x ya x > -4. Solution set: (-4, ∞).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Solve 3x - 7 > 5x - 1 for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3x - 7 > 5x - 1</p>
+                        <p class="mb-2">Subtracting 3x from both sides: -7 > 2x - 1</p>
+                        <p class="mb-2">Adding 1 to both sides: -6 > 2x</p>
+                        <p class="mb-2">Dividing both sides by 2: -3 > x</p>
+                        <p class="mb-2">Or x < -3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, -3)</p>
+                        <p><strong>Answer:</strong> (-∞, -3)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3x - 7 > 5x - 1 ⇒ -7 > 2x - 1 ⇒ -6 > 2x ⇒ -3 > x ya x < -3. Solution set: (-∞, -3).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Solve 3(x - 1) ≤ 2(x - 3) for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3(x - 1) ≤ 2(x - 3)</p>
+                        <p class="mb-2">Expanding both sides: 3x - 3 ≤ 2x - 6</p>
+                        <p class="mb-2">Subtracting 2x from both sides: x - 3 ≤ -6</p>
+                        <p class="mb-2">Adding 3 to both sides: x ≤ -3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, -3]</p>
+                        <p><strong>Answer:</strong> (-∞, -3]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3(x - 1) ≤ 2(x - 3) ⇒ 3x - 3 ≤ 2x - 6 ⇒ x - 3 ≤ -6 ⇒ x ≤ -3. Solution set: (-∞, -3].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Solve 3(2 - x) ≥ 2(1 - x) for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3(2 - x) ≥ 2(1 - x)</p>
+                        <p class="mb-2">Expanding both sides: 6 - 3x ≥ 2 - 2x</p>
+                        <p class="mb-2">Adding 3x to both sides: 6 ≥ 2 + x</p>
+                        <p class="mb-2">Subtracting 2 from both sides: 4 ≥ x</p>
+                        <p class="mb-2">Or x ≤ 4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 4]</p>
+                        <p><strong>Answer:</strong> (-∞, 4]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3(2 - x) ≥ 2(1 - x) ⇒ 6 - 3x ≥ 2 - 2x ⇒ 6 ≥ 2 + x ⇒ 4 ≥ x ya x ≤ 4. Solution set: (-∞, 4].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Solve x + 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">2</span>
+                        </span> + 
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">3</span>
+                        </span> < 11 for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: x + 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> + 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> < 11
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM: 
+                                <span class="fraction">
+                                    <span class="numerator">6x + 3x + 2x</span>
+                                    <span class="denominator">6</span>
+                                </span> < 11
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">11x</span>
+                                    <span class="denominator">6</span>
+                                </span> < 11
+                            </span>
+                        </p>
+                        <p class="mb-2">Multiplying both sides by 6: 11x < 66</p>
+                        <p class="mb-2">Dividing both sides by 11: x < 6</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 6)</p>
+                        <p><strong>Answer:</strong> (-∞, 6)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: x + x/2 + x/3 < 11 ⇒ (6x + 3x + 2x)/6 < 11 ⇒ 11x/6 < 11 ⇒ 11x < 66 ⇒ x < 6. Solution set: (-∞, 6).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">3</span>
+                        </span> > 
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">2</span>
+                        </span> + 1 for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> > 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> + 1
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Subtracting 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> from both sides: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> > 1
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM: 
+                                <span class="fraction">
+                                    <span class="numerator">2x - 3x</span>
+                                    <span class="denominator">6</span>
+                                </span> > 1
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">-x</span>
+                                    <span class="denominator">6</span>
+                                </span> > 1
+                            </span>
+                        </p>
+                        <p class="mb-2">Multiplying both sides by 6: -x > 6</p>
+                        <p class="mb-2">Multiplying both sides by -1 (sign reverses): x < -6</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, -6)</p>
+                        <p><strong>Answer:</strong> (-∞, -6)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: x/3 > x/2 + 1 ⇒ x/3 - x/2 > 1 ⇒ (2x - 3x)/6 > 1 ⇒ -x/6 > 1 ⇒ -x > 6 ⇒ x < -6 (negative se multiply karne par sign change). Solution set: (-∞, -6).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">3(x - 2)</span>
+                            <span class="denominator">5</span>
+                        </span> ≤ 
+                        <span class="fraction">
+                            <span class="numerator">5(2 - x)</span>
+                            <span class="denominator">3</span>
+                        </span> for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">3(x - 2)</span>
+                                    <span class="denominator">5</span>
+                                </span> ≤ 
+                                <span class="fraction">
+                                    <span class="numerator">5(2 - x)</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cross multiplying: 3 × 3(x - 2) ≤ 5 × 5(2 - x)</p>
+                        <p class="mb-2">9(x - 2) ≤ 25(2 - x)</p>
+                        <p class="mb-2">Expanding both sides: 9x - 18 ≤ 50 - 25x</p>
+                        <p class="mb-2">Adding 25x to both sides: 34x - 18 ≤ 50</p>
+                        <p class="mb-2">Adding 18 to both sides: 34x ≤ 68</p>
+                        <p class="mb-2">Dividing both sides by 34: x ≤ 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 2]</p>
+                        <p><strong>Answer:</strong> (-∞, 2]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3(x-2)/5 ≤ 5(2-x)/3 ⇒ cross multiply karte hain: 9(x-2) ≤ 25(2-x) ⇒ 9x - 18 ≤ 50 - 25x ⇒ 34x - 18 ≤ 50 ⇒ 34x ≤ 68 ⇒ x ≤ 2. Solution set: (-∞, 2].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </span>
+                        <span class="inline-math">(</span>
+                        <span class="fraction">
+                            <span class="numerator">3x</span>
+                            <span class="denominator">5</span>
+                        </span> + 4
+                        <span class="inline-math">)</span> ≥ 
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">3</span>
+                        </span>(x - 6) for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">2</span>
+                                </span>
+                                <span class="inline-math">(</span>
+                                <span class="fraction">
+                                    <span class="numerator">3x</span>
+                                    <span class="denominator">5</span>
+                                </span> + 4
+                                <span class="inline-math">)</span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span>(x - 6)
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Expanding both sides: 
+                                <span class="fraction">
+                                    <span class="numerator">3x</span>
+                                    <span class="denominator">10</span>
+                                </span> + 2 ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> - 2
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Subtracting 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> from both sides: 
+                                <span class="fraction">
+                                    <span class="numerator">3x</span>
+                                    <span class="denominator">10</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + 2 ≥ -2
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM: 
+                                <span class="fraction">
+                                    <span class="numerator">9x - 10x</span>
+                                    <span class="denominator">30</span>
+                                </span> + 2 ≥ -2
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">-x</span>
+                                    <span class="denominator">30</span>
+                                </span> + 2 ≥ -2
+                            </span>
+                        </p>
+                        <p class="mb-2">Subtracting 2 from both sides: 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">-x</span>
+                                    <span class="denominator">30</span>
+                                </span> ≥ -4
+                            </span>
+                        </p>
+                        <p class="mb-2">Multiplying both sides by 30: -x ≥ -120</p>
+                        <p class="mb-2">Multiplying both sides by -1 (sign reverses): x ≤ 120</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 120]</p>
+                        <p><strong>Answer:</strong> (-∞, 120]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 1/2(3x/5 + 4) ≥ 1/3(x-6) ⇒ 3x/10 + 2 ≥ x/3 - 2 ⇒ 3x/10 - x/3 + 2 ≥ -2 ⇒ (9x-10x)/30 + 2 ≥ -2 ⇒ -x/30 + 2 ≥ -2 ⇒ -x/30 ≥ -4 ⇒ -x ≥ -120 ⇒ x ≤ 120. Solution set: (-∞, 120].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 13: Solve 2(2x + 3) - 10 < 6(x - 2) for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 2(2x + 3) - 10 < 6(x - 2)</p>
+                        <p class="mb-2">Expanding both sides: 4x + 6 - 10 < 6x - 12</p>
+                        <p class="mb-2">Simplifying: 4x - 4 < 6x - 12</p>
+                        <p class="mb-2">Subtracting 4x from both sides: -4 < 2x - 12</p>
+                        <p class="mb-2">Adding 12 to both sides: 8 < 2x</p>
+                        <p class="mb-2">Dividing both sides by 2: 4 < x</p>
+                        <p class="mb-2">Or x > 4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (4, ∞)</p>
+                        <p><strong>Answer:</strong> (4, ∞)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 2(2x+3)-10 < 6(x-2) ⇒ 4x+6-10 < 6x-12 ⇒ 4x-4 < 6x-12 ⇒ -4 < 2x-12 ⇒ 8 < 2x ⇒ 4 < x ya x > 4. Solution set: (4, ∞).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 14: Solve 37 - (3x + 5) ≥ 9x - 8(x - 3) for real x</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 37 - (3x + 5) ≥ 9x - 8(x - 3)</p>
+                        <p class="mb-2">Simplifying left side: 37 - 3x - 5 ≥ 9x - 8(x - 3)</p>
+                        <p class="mb-2">32 - 3x ≥ 9x - 8(x - 3)</p>
+                        <p class="mb-2">Expanding right side: 32 - 3x ≥ 9x - 8x + 24</p>
+                        <p class="mb-2">32 - 3x ≥ x + 24</p>
+                        <p class="mb-2">Subtracting x from both sides: 32 - 4x ≥ 24</p>
+                        <p class="mb-2">Subtracting 32 from both sides: -4x ≥ -8</p>
+                        <p class="mb-2">Dividing both sides by -4 (sign reverses): x ≤ 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 2]</p>
+                        <p><strong>Answer:</strong> (-∞, 2]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 37-(3x+5) ≥ 9x-8(x-3) ⇒ 37-3x-5 ≥ 9x-8x+24 ⇒ 32-3x ≥ x+24 ⇒ 32-4x ≥ 24 ⇒ -4x ≥ -8 ⇒ x ≤ 2 (negative se divide karne par sign change). Solution set: (-∞, 2].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 15: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">4</span>
+                        </span> < 
+                        <span class="fraction">
+                            <span class="numerator">(5x - 2)</span>
+                            <span class="denominator">3</span>
+                        </span> - 
+                        <span class="fraction">
+                            <span class="numerator">(7x - 3)</span>
+                            <span class="denominator">5</span>
+                        </span> for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">4</span>
+                                </span> < 
+                                <span class="fraction">
+                                    <span class="numerator">(5x - 2)</span>
+                                    <span class="denominator">3</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">(7x - 3)</span>
+                                    <span class="denominator">5</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM on right side: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">4</span>
+                                </span> < 
+                                <span class="fraction">
+                                    <span class="numerator">5(5x - 2) - 3(7x - 3)</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">4</span>
+                                </span> < 
+                                <span class="fraction">
+                                    <span class="numerator">25x - 10 - 21x + 9</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">4</span>
+                                </span> < 
+                                <span class="fraction">
+                                    <span class="numerator">4x - 1</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cross multiplying: 15x < 4(4x - 1)</p>
+                        <p class="mb-2">15x < 16x - 4</p>
+                        <p class="mb-2">Subtracting 16x from both sides: -x < -4</p>
+                        <p class="mb-2">Multiplying both sides by -1 (sign reverses): x > 4</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (4, ∞)</p>
+                        <p><strong>Answer:</strong> (4, ∞)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: x/4 < (5x-2)/3 - (7x-3)/5 ⇒ right side ka LCM lete hain: x/4 < [5(5x-2)-3(7x-3)]/15 ⇒ x/4 < (25x-10-21x+9)/15 ⇒ x/4 < (4x-1)/15 ⇒ cross multiply: 15x < 4(4x-1) ⇒ 15x < 16x-4 ⇒ -x < -4 ⇒ x > 4. Solution set: (4, ∞).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 16: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">(2x - 1)</span>
+                            <span class="denominator">3</span>
+                        </span> ≥ 
+                        <span class="fraction">
+                            <span class="numerator">(3x - 2)</span>
+                            <span class="denominator">4</span>
+                        </span> - 
+                        <span class="fraction">
+                            <span class="numerator">(2 - x)</span>
+                            <span class="denominator">5</span>
+                        </span> for real x
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">(2x - 1)</span>
+                                    <span class="denominator">3</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">(3x - 2)</span>
+                                    <span class="denominator">4</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">(2 - x)</span>
+                                    <span class="denominator">5</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM on right side: 
+                                <span class="fraction">
+                                    <span class="numerator">(2x - 1)</span>
+                                    <span class="denominator">3</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">5(3x - 2) - 4(2 - x)</span>
+                                    <span class="denominator">20</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(2x - 1)</span>
+                                    <span class="denominator">3</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">15x - 10 - 8 + 4x</span>
+                                    <span class="denominator">20</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">(2x - 1)</span>
+                                    <span class="denominator">3</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">19x - 18</span>
+                                    <span class="denominator">20</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cross multiplying: 20(2x - 1) ≥ 3(19x - 18)</p>
+                        <p class="mb-2">40x - 20 ≥ 57x - 54</p>
+                        <p class="mb-2">Subtracting 57x from both sides: -17x - 20 ≥ -54</p>
+                        <p class="mb-2">Adding 20 to both sides: -17x ≥ -34</p>
+                        <p class="mb-2">Dividing both sides by -17 (sign reverses): x ≤ 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 2]</p>
+                        <p><strong>Answer:</strong> (-∞, 2]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: (2x-1)/3 ≥ (3x-2)/4 - (2-x)/5 ⇒ right side ka LCM lete hain: (2x-1)/3 ≥ [5(3x-2)-4(2-x)]/20 ⇒ (2x-1)/3 ≥ (15x-10-8+4x)/20 ⇒ (2x-1)/3 ≥ (19x-18)/20 ⇒ cross multiply: 20(2x-1) ≥ 3(19x-18) ⇒ 40x-20 ≥ 57x-54 ⇒ -17x-20 ≥ -54 ⇒ -17x ≥ -34 ⇒ x ≤ 2. Solution set: (-∞, 2].
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 17: Solve 3x - 2 < 2x + 1 and show the graph of the solution on number line</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3x - 2 < 2x + 1</p>
+                        <p class="mb-2">Subtracting 2x from both sides: x - 2 < 1</p>
+                        <p class="mb-2">Adding 2 to both sides: x < 3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-∞, 3)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Graph on number line:</p>
+                        <div class="number-line">
+                            <div class="number-line-item">
+                                <div>0</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>2</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>3</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>4</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm">The open circle at 3 indicates that 3 is not included in the solution set.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3x-2 < 2x+1 ⇒ x-2 < 1 ⇒ x < 3. Solution set: (-∞, 3). Number line par 3 par open circle hai jo batata hai ki 3 solution set mein nahi hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 18: Solve 5x - 3 ≥ 3x - 5 and show the graph of the solution on number line</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 5x - 3 ≥ 3x - 5</p>
+                        <p class="mb-2">Subtracting 3x from both sides: 2x - 3 ≥ -5</p>
+                        <p class="mb-2">Adding 3 to both sides: 2x ≥ -2</p>
+                        <p class="mb-2">Dividing both sides by 2: x ≥ -1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: [-1, ∞)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Graph on number line:</p>
+                        <div class="number-line">
+                            <div class="number-line-item">
+                                <div>-3</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>-2</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>-1</div>
+                                <div class="number-line-point number-line-filled"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>0</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm">The closed circle at -1 indicates that -1 is included in the solution set.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 5x-3 ≥ 3x-5 ⇒ 2x-3 ≥ -5 ⇒ 2x ≥ -2 ⇒ x ≥ -1. Solution set: [-1, ∞). Number line par -1 par closed circle hai jo batata hai ki -1 solution set mein hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 19: Solve 3(1 - x) < 2(x + 4) and show the graph of the solution on number line</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We have: 3(1 - x) < 2(x + 4)</p>
+                        <p class="mb-2">Expanding both sides: 3 - 3x < 2x + 8</p>
+                        <p class="mb-2">Adding 3x to both sides: 3 < 5x + 8</p>
+                        <p class="mb-2">Subtracting 8 from both sides: -5 < 5x</p>
+                        <p class="mb-2">Dividing both sides by 5: -1 < x</p>
+                        <p class="mb-2">Or x > -1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Solution set: (-1, ∞)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Graph on number line:</p>
+                        <div class="number-line">
+                            <div class="number-line-item">
+                                <div>-3</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>-2</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>-1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>0</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm">The open circle at -1 indicates that -1 is not included in the solution set.</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: 3(1-x) < 2(x+4) ⇒ 3-3x < 2x+8 ⇒ 3 < 5x+8 ⇒ -5 < 5x ⇒ -1 < x ya x > -1. Solution set: (-1, ∞). Number line par -1 par open circle hai jo batata hai ki -1 solution set mein nahi hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 20: Solve 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">2</span>
+                        </span> ≥ 
+                        <span class="fraction">
+                            <span class="numerator">(5x - 2)</span>
+                            <span class="denominator">3</span>
+                        </span> - 
+                        <span class="fraction">
+                            <span class="numerator">(7x - 3)</span>
+                            <span class="denominator">5</span>
+                        </span> and show the graph of the solution on number line
+                    </span>
+                </h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                We have: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">(5x - 2)</span>
+                                    <span class="denominator">3</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">(7x - 3)</span>
+                                    <span class="denominator">5</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Taking LCM on right side: 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">5(5x - 2) - 3(7x - 3)</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">25x - 10 - 21x + 9</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">2</span>
+                                </span> ≥ 
+                                <span class="fraction">
+                                    <span class="numerator">4x - 1</span>
+                                    <span class="denominator">15</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">Cross multiplying: 15x ≥ 2(4x - 1)</p>
+                        <p class="mb-2">15x ≥ 8x - 2</p>
+                        <p class="mb-2">Subtracting 8x from both sides: 7x ≥ -2</p>
+                        <p class="mb-2">Dividing both sides by 7: x ≥ 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">-2</span>
+                                    <span class="denominator">7</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Solution set: [
+                                <span class="fraction">
+                                    <span class="numerator">-2</span>
+                                    <span class="denominator">7</span>
+                                </span>, ∞)
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Graph on number line:</p>
+                        <div class="number-line">
+                            <div class="number-line-item">
+                                <div>-1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line"></div>
+                            <div class="number-line-item">
+                                <div>
+                                    <span class="inline-math">
+                                        <span class="fraction">
+                                            <span class="numerator">-2</span>
+                                            <span class="denominator">7</span>
+                                        </span>
+                                    </span>
+                                </div>
+                                <div class="number-line-point number-line-filled"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>0</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                            <div class="number-line-line number-line-filled"></div>
+                            <div class="number-line-item">
+                                <div>1</div>
+                                <div class="number-line-point number-line-empty"></div>
+                            </div>
+                        </div>
+                        <p class="text-center text-sm">
+                            <span class="inline-math">
+                                The closed circle at 
+                                <span class="fraction">
+                                    <span class="numerator">-2</span>
+                                    <span class="denominator">7</span>
+                                </span> indicates that it is included in the solution set.
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Inequality solve karte hain: x/2 ≥ (5x-2)/3 - (7x-3)/5 ⇒ right side ka LCM lete hain: x/2 ≥ [5(5x-2)-3(7x-3)]/15 ⇒ x/2 ≥ (25x-10-21x+9)/15 ⇒ x/2 ≥ (4x-1)/15 ⇒ cross multiply: 15x ≥ 2(4x-1) ⇒ 15x ≥ 8x-2 ⇒ 7x ≥ -2 ⇒ x ≥ -2/7. Solution set: [-2/7, ∞). Number line par -2/7 par closed circle hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 21: Ravi obtained 70 and 75 marks in first two unit test. Find the minimum marks he should get in the third test to have an average of at least 60 marks.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let x be the marks obtained in the third test.</p>
+                        <p class="mb-2">Average of three tests = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">70 + 75 + x</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">According to the problem:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">70 + 75 + x</span>
+                                    <span class="denominator">3</span>
+                                </span> ≥ 60
+                            </span>
+                        </p>
+                        <p class="mb-2">145 + x ≥ 180</p>
+                        <p class="mb-2">x ≥ 180 - 145</p>
+                        <p class="mb-2">x ≥ 35</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Minimum marks required in third test = 35</p>
+                        <p><strong>Answer:</strong> 35</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain third test mein x marks milte hain. Average = (70+75+x)/3 ≥ 60 ⇒ 145+x ≥ 180 ⇒ x ≥ 35. Isliye third test mein kam se kam 35 marks chahiye.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 22: To receive Grade 'A' in a course, one must obtain an average of 90 marks or more in five examinations (each of 100 marks). If Sunita's marks in first four examinations are 87, 92, 94 and 95, find minimum marks that Sunita must obtain in fifth examination to get grade 'A' in the course.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let x be the marks obtained in the fifth examination.</p>
+                        <p class="mb-2">Average of five examinations = 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">87 + 92 + 94 + 95 + x</span>
+                                    <span class="denominator">5</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">According to the problem:</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">87 + 92 + 94 + 95 + x</span>
+                                    <span class="denominator">5</span>
+                                </span> ≥ 90
+                            </span>
+                        </p>
+                        <p class="mb-2">368 + x ≥ 450</p>
+                        <p class="mb-2">x ≥ 450 - 368</p>
+                        <p class="mb-2">x ≥ 82</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Minimum marks required in fifth examination = 82</p>
+                        <p><strong>Answer:</strong> 82</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain fifth examination mein x marks milte hain. Average = (87+92+94+95+x)/5 ≥ 90 ⇒ 368+x ≥ 450 ⇒ x ≥ 82. Isliye fifth examination mein kam se kam 82 marks chahiye.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 23: Find all pairs of consecutive odd positive integers both of which are smaller than 10 such that their sum is more than 11.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the consecutive odd positive integers be x and x + 2</p>
+                        <p class="mb-2">Given conditions:</p>
+                        <p class="mb-2">x + 2 < 10 ⇒ x < 8 ...(1)</p>
+                        <p class="mb-2">x + (x + 2) > 11 ⇒ 2x + 2 > 11 ⇒ 2x > 9 ⇒ x > 4.5 ...(2)</p>
+                        <p class="mb-2">x is an odd positive integer ...(3)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">From (1), (2) and (3): x = 5, 7</p>
+                        <p class="mb-2">Possible pairs: (5, 7) and (7, 9)</p>
+                        <p class="mb-2">Check: (5, 7): 5 + 7 = 12 > 11 ✓</p>
+                        <p class="mb-2">(7, 9): 7 + 9 = 16 > 11 ✓</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Required pairs: (5, 7) and (7, 9)</p>
+                        <p><strong>Answer:</strong> (5, 7) and (7, 9)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain consecutive odd positive integers x aur x+2 hain. Conditions: x+2 < 10 ⇒ x < 8, aur x+(x+2) > 11 ⇒ 2x+2 > 11 ⇒ x > 4.5. x odd positive integer hai, isliye x = 5, 7. Possible pairs: (5,7) aur (7,9).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 24: Find all pairs of consecutive even positive integers, both of which are larger than 5 such that their sum is less than 23.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the consecutive even positive integers be x and x + 2</p>
+                        <p class="mb-2">Given conditions:</p>
+                        <p class="mb-2">x > 5 ...(1)</p>
+                        <p class="mb-2">x + (x + 2) < 23 ⇒ 2x + 2 < 23 ⇒ 2x < 21 ⇒ x < 10.5 ...(2)</p>
+                        <p class="mb-2">x is an even positive integer ...(3)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">From (1), (2) and (3): x = 6, 8, 10</p>
+                        <p class="mb-2">Possible pairs: (6, 8), (8, 10) and (10, 12)</p>
+                        <p class="mb-2">Check: (6, 8): 6 + 8 = 14 < 23 ✓</p>
+                        <p class="mb-2">(8, 10): 8 + 10 = 18 < 23 ✓</p>
+                        <p class="mb-2">(10, 12): 10 + 12 = 22 < 23 ✓</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Required pairs: (6, 8), (8, 10) and (10, 12)</p>
+                        <p><strong>Answer:</strong> (6, 8), (8, 10) and (10, 12)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain consecutive even positive integers x aur x+2 hain. Conditions: x > 5, aur x+(x+2) < 23 ⇒ 2x+2 < 23 ⇒ x < 10.5. x even positive integer hai, isliye x = 6, 8, 10. Possible pairs: (6,8), (8,10) aur (10,12).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 25: The longest side of a triangle is 3 times the shortest side and the third side is 2 cm shorter than the longest side. If the perimeter of the triangle is at least 61 cm, find the minimum length of the shortest side.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the shortest side be x cm</p>
+                        <p class="mb-2">Then longest side = 3x cm</p>
+                        <p class="mb-2">Third side = 3x - 2 cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Perimeter = x + 3x + (3x - 2) = 7x - 2</p>
+                        <p class="mb-2">Given: Perimeter ≥ 61</p>
+                        <p class="mb-2">7x - 2 ≥ 61</p>
+                        <p class="mb-2">7x ≥ 63</p>
+                        <p class="mb-2">x ≥ 9</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Minimum length of shortest side = 9 cm</p>
+                        <p><strong>Answer:</strong> 9 cm</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain shortest side x cm hai. Longest side = 3x cm, third side = 3x-2 cm. Perimeter = x+3x+(3x-2) = 7x-2. Perimeter ≥ 61 ⇒ 7x-2 ≥ 61 ⇒ 7x ≥ 63 ⇒ x ≥ 9. Isliye shortest side ki minimum length 9 cm hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 26: A man wants to cut three lengths from a single piece of board of length 91cm. The second length is to be 3cm longer than the shortest and the third length is to be twice as long as the shortest. What are the possible lengths of the shortest board if the third piece is to be at least 5cm longer than the second?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the shortest length be x cm</p>
+                        <p class="mb-2">Then second length = x + 3 cm</p>
+                        <p class="mb-2">Third length = 2x cm</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Total length = x + (x + 3) + 2x = 4x + 3</p>
+                        <p class="mb-2">Given: Total length ≤ 91</p>
+                        <p class="mb-2">4x + 3 ≤ 91</p>
+                        <p class="mb-2">4x ≤ 88</p>
+                        <p class="mb-2">x ≤ 22 ...(1)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Also, third piece ≥ second piece + 5</p>
+                        <p class="mb-2">2x ≥ (x + 3) + 5</p>
+                        <p class="mb-2">2x ≥ x + 8</p>
+                        <p class="mb-2">x ≥ 8 ...(2)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">From (1) and (2): 8 ≤ x ≤ 22</p>
+                        <p class="mb-2">Possible lengths of shortest board: from 8 cm to 22 cm</p>
+                        <p><strong>Answer:</strong> 8 cm to 22 cm</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Maan lete hain shortest length x cm hai. Second length = x+3 cm, third length = 2x cm. Total length = x+(x+3)+2x = 4x+3 ≤ 91 ⇒ 4x ≤ 88 ⇒ x ≤ 22. Third piece ≥ second piece+5 ⇒ 2x ≥ (x+3)+5 ⇒ 2x ≥ x+8 ⇒ x ≥ 8. Isliye shortest board ki length 8 cm se 22 cm tak ho sakti hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

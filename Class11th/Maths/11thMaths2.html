@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 2: Relations and Functions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 2<br> Relations and Functions</h1>
+            <p class="mt-2 text-lg">Class 11th Mathematics</p>
+        </div>
+
+        <!-- Exercise 2.1 Section -->
+        <section id="exercise-2-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 2.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: If 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">3</span>
+                        </span> + 1, y - 
+                        <span class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">3</span>
+                        </span> = 
+                        <span class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </span>, 
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">3</span>
+                        </span>
+                    </span>, find the values of x and y.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since the ordered pairs are equal, the corresponding elements are equal.</p>
+                        <p class="mb-2">Therefore, 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">and 
+                            <span class="inline-math">
+                                y - 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Solving 
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span>:
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span> - 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">So, x = 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                Solving y - 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span>:
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                y = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span> + 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">3</span>
+                                </span> = 1
+                            </span>
+                        </p>
+                        <p><strong>Answer:</strong> x = 2, y = 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ordered pairs equal hain, isliye corresponding elements equal honge. Pehle equation: x/3 + 1 = 5/3 solve karte hain, x/3 = 2/3 milta hai, toh x = 2. Dusri equation: y - 2/3 = 1/3 solve karte hain, y = 1 milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: If the set A has 3 elements and the set B = {3, 4, 5}, then find the number of elements in (A × B).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: n(A) = 3, n(B) = 3</p>
+                        <p class="mb-2">Number of elements in A × B = n(A) × n(B) = 3 × 3 = 9</p>
+                        <p><strong>Answer:</strong> 9</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Cartesian product A × B ke elements ki sankhya n(A) × n(B) ke equal hoti hai. Yahan n(A) = 3 aur n(B) = 3, isliye A × B mein 9 elements honge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: If G = {7, 8} and H = {5, 4, 2}, find G × H and H × G.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">G × H = {(g, h) : g ∈ G, h ∈ H}</p>
+                        <p class="mb-2">G × H = {(7, 5), (7, 4), (7, 2), (8, 5), (8, 4), (8, 2)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">H × G = {(h, g) : h ∈ H, g ∈ G}</p>
+                        <p class="mb-2">H × G = {(5, 7), (5, 8), (4, 7), (4, 8), (2, 7), (2, 8)}</p>
+                        <p><strong>Answer:</strong> G × H = {(7,5), (7,4), (7,2), (8,5), (8,4), (8,2)}; H × G = {(5,7), (5,8), (4,7), (4,8), (2,7), (2,8)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G × H ke liye G ke har element ko H ke har element ke saath pair karte hain. Similarly, H × G ke liye H ke har element ko G ke har element ke saath pair karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: State whether each of the following statements are true or false. If the statement is false, rewrite the given statement correctly.<br>
+                (i) If P = {m, n} and Q = {n, m}, then P × Q = {(m, n), (n, m)}.<br>
+                (ii) If A and B are non-empty sets, then A × B is a non-empty set of ordered pairs (x, y) such that x ∈ A and y ∈ B.<br>
+                (iii) If A = {1, 2}, B = {3, 4}, then A × (B ∩ ∅) = ∅.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) False. Correct statement: If P = {m, n} and Q = {n, m}, then P × Q = {(m, n), (m, m), (n, n), (n, m)}</p>
+                        <p class="mb-2">(ii) True</p>
+                        <p class="mb-2">(iii) True. Since B ∩ ∅ = ∅, and A × ∅ = ∅</p>
+                        <p><strong>Answer:</strong> (i) False, (ii) True, (iii) True</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) Galat hai kyunki P × Q mein P ke har element ko Q ke har element ke saath pair karna hai, sirf do pairs nahi. (ii) Sahi hai. (iii) Sahi hai kyunki B ∩ ∅ = ∅, aur A × ∅ = ∅ hota hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: If A = {-1, 1}, find A × A × A.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × A × A = {(a, b, c) : a, b, c ∈ A}</p>
+                        <p class="mb-2">A × A × A = {(-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)}</p>
+                        <p><strong>Answer:</strong> A × A × A = {(-1,-1,-1), (-1,-1,1), (-1,1,-1), (-1,1,1), (1,-1,-1), (1,-1,1), (1,1,-1), (1,1,1)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> A × A × A mein A ke sabhi possible ordered triplets honge. A mein do elements hain (-1 aur 1), isliye total 2 × 2 × 2 = 8 ordered triplets honge.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: If A × B = {(a, x), (a, y), (b, x), (b, y)}. Find A and B.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A = set of first elements = {a, b}</p>
+                        <p class="mb-2">B = set of second elements = {x, y}</p>
+                        <p><strong>Answer:</strong> A = {a, b}, B = {x, y}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> A × B ke ordered pairs ke first elements se set A milta hai, aur second elements se set B milta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Let A = {1, 2}, B = {1, 2, 3, 4}, C = {5, 6} and D = {5, 6, 7, 8}. Verify that:<br>
+                (i) A × (B ∩ C) = (A × B) ∩ (A × C)<br>
+                (ii) A × C is a subset of B × D</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) First, find B ∩ C = {1, 2, 3, 4} ∩ {5, 6} = ∅</p>
+                        <p class="mb-2">So, A × (B ∩ C) = A × ∅ = ∅</p>
+                        <p class="mb-2">Now, A × B = {(1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (2,4)}</p>
+                        <p class="mb-2">A × C = {(1,5), (1,6), (2,5), (2,6)}</p>
+                        <p class="mb-2">(A × B) ∩ (A × C) = ∅</p>
+                        <p class="mb-2">Thus, A × (B ∩ C) = (A × B) ∩ (A × C) = ∅</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) A × C = {(1,5), (1,6), (2,5), (2,6)}</p>
+                        <p class="mb-2">B × D = {(1,5), (1,6), (1,7), (1,8), (2,5), (2,6), (2,7), (2,8), (3,5), (3,6), (3,7), (3,8), (4,5), (4,6), (4,7), (4,8)}</p>
+                        <p class="mb-2">Clearly, every element of A × C is also in B × D</p>
+                        <p class="mb-2">Thus, A × C ⊆ B × D</p>
+                        <p><strong>Answer:</strong> (i) Verified, (ii) Verified</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) B ∩ C = ∅, isliye A × (B ∩ C) = ∅. (A × B) ∩ (A × C) bhi ∅ hai kyunki dono sets mein koi common element nahi hai. (ii) A × C ke sabhi elements B × D mein hain, isliye A × C, B × D ka subset hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Let A = {1, 2} and B = {3, 4}. Write A × B. How many subsets will A × B have? List them.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × B = {(1,3), (1,4), (2,3), (2,4)}</p>
+                        <p class="mb-2">Number of elements in A × B = 4</p>
+                        <p class="mb-2">Number of subsets of a set with n elements = 2<sup>n</sup></p>
+                        <p class="mb-2">So, number of subsets of A × B = 2<sup>4</sup> = 16</p>
+                        <p class="mb-2">Subsets of A × B are: ∅, {(1,3)}, {(1,4)}, {(2,3)}, {(2,4)}, {(1,3), (1,4)}, {(1,3), (2,3)}, {(1,3), (2,4)}, {(1,4), (2,3)}, {(1,4), (2,4)}, {(2,3), (2,4)}, {(1,3), (1,4), (2,3)}, {(1,3), (1,4), (2,4)}, {(1,3), (2,3), (2,4)}, {(1,4), (2,3), (2,4)}, {(1,3), (1,4), (2,3), (2,4)}</p>
+                        <p><strong>Answer:</strong> A × B = {(1,3), (1,4), (2,3), (2,4)}; 16 subsets</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> A × B mein 4 elements hain. Kisi set ke subsets ki sankhya 2<sup>n</sup> hoti hai, jahan n elements ki sankhya hai. Isliye A × B ke 16 subsets honge, including empty set aur khud set.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Let A and B be two sets such that n(A) = 3 and n(B) = 2. If (x, 1), (y, 2), (z, 1) are in A × B, find A and B, where x, y and z are distinct elements.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the given ordered pairs:</p>
+                        <p class="mb-2">First elements: x, y, z ⇒ A = {x, y, z}</p>
+                        <p class="mb-2">Second elements: 1, 2 ⇒ B = {1, 2}</p>
+                        <p class="mb-2">Also, n(A) = 3 and n(B) = 2, which matches with our findings</p>
+                        <p><strong>Answer:</strong> A = {x, y, z}, B = {1, 2}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Ordered pairs ke first elements se set A milta hai: {x, y, z}. Second elements se set B milta hai: {1, 2}. Ye given conditions n(A)=3 aur n(B)=2 ko satisfy karta hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: The Cartesian product A × A has 9 elements among which are found (-1, 0) and (0,1). Find the set A and the remaining elements of A × A.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since A × A has 9 elements, n(A) × n(A) = 9 ⇒ n(A) = 3</p>
+                        <p class="mb-2">From (-1, 0) and (0, 1), we get elements -1, 0, 1 ∈ A</p>
+                        <p class="mb-2">So, A = {-1, 0, 1}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × A = {(-1,-1), (-1,0), (-1,1), (0,-1), (0,0), (0,1), (1,-1), (1,0), (1,1)}</p>
+                        <p class="mb-2">Given elements: (-1,0) and (0,1)</p>
+                        <p class="mb-2">Remaining elements: (-1,-1), (-1,1), (0,-1), (0,0), (1,-1), (1,0), (1,1)</p>
+                        <p><strong>Answer:</strong> A = {-1, 0, 1}; Remaining elements: (-1,-1), (-1,1), (0,-1), (0,0), (1,-1), (1,0), (1,1)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> A × A ke 9 elements hain, isliye n(A) = 3. Given pairs (-1,0) aur (0,1) se pata chalta hai ki -1, 0, 1 set A ke elements hain. Isliye A = {-1, 0, 1}. A × A ke remaining elements nikalne ke liye A ke har element ko A ke har element ke saath pair karte hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.2 Section -->
+        <section id="exercise-2-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 2.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Let A = {1, 2, 3, ..., 14}. Define a relation R from A to A by R = {(x, y) : 3x - y = 0, where x, y ∈ A}. Write down its domain, codomain and range.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(x, y) : 3x - y = 0, where x, y ∈ A}</p>
+                        <p class="mb-2">3x - y = 0 ⇒ y = 3x</p>
+                        <p class="mb-2">Since x, y ∈ A = {1, 2, 3, ..., 14}</p>
+                        <p class="mb-2">Possible values: x = 1 ⇒ y = 3; x = 2 ⇒ y = 6; x = 3 ⇒ y = 9; x = 4 ⇒ y = 12</p>
+                        <p class="mb-2">For x = 5, y = 15 ∉ A</p>
+                        <p class="mb-2">So, R = {(1,3), (2,6), (3,9), (4,12)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Domain of R = set of first elements = {1, 2, 3, 4}</p>
+                        <p class="mb-2">Codomain of R = A = {1, 2, 3, ..., 14}</p>
+                        <p class="mb-2">Range of R = set of second elements = {3, 6, 9, 12}</p>
+                        <p><strong>Answer:</strong> Domain = {1,2,3,4}, Codomain = {1,2,3,...,14}, Range = {3,6,9,12}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Relation R = {(x,y): y=3x} hai. A = {1,2,3,...,14} mein x ke values 1,2,3,4 ke liye y values 3,6,9,12 hain jo A mein hain. Domain first elements ka set hai: {1,2,3,4}. Codomain set A hai. Range second elements ka set hai: {3,6,9,12}.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Define a relation R on the set N of natural numbers by R = {(x, y) : y = x + 5, x is a natural number less than 4; x, y ∈ N}. Depict this relationship using roster form. Write down the domain and the range.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">x is a natural number less than 4 ⇒ x = 1, 2, 3</p>
+                        <p class="mb-2">For x = 1, y = 1 + 5 = 6</p>
+                        <p class="mb-2">For x = 2, y = 2 + 5 = 7</p>
+                        <p class="mb-2">For x = 3, y = 3 + 5 = 8</p>
+                        <p class="mb-2">So, R = {(1,6), (2,7), (3,8)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Domain of R = {1, 2, 3}</p>
+                        <p class="mb-2">Range of R = {6, 7, 8}</p>
+                        <p><strong>Answer:</strong> R = {(1,6), (2,7), (3,8)}; Domain = {1,2,3}; Range = {6,7,8}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> x natural numbers less than 4 hain: 1,2,3. Inke corresponding y values y=x+5 se: 6,7,8. Isliye R = {(1,6), (2,7), (3,8)}. Domain first elements ka set: {1,2,3}. Range second elements ka set: {6,7,8}.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: A = {1, 2, 3, 5} and B = {4, 6, 9}. Define a relation R from A to B by R = {(x, y) : the difference between x and y is odd; x ∈ A, y ∈ B}. Write R in roster form.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">We need to find pairs (x,y) where |x - y| is odd</p>
+                        <p class="mb-2">For x = 1: y = 4 ⇒ |1-4| = 3 (odd), y = 6 ⇒ |1-6| = 5 (odd), y = 9 ⇒ |1-9| = 8 (even) ⇒ (1,4), (1,6)</p>
+                        <p class="mb-2">For x = 2: y = 4 ⇒ |2-4| = 2 (even), y = 6 ⇒ |2-6| = 4 (even), y = 9 ⇒ |2-9| = 7 (odd) ⇒ (2,9)</p>
+                        <p class="mb-2">For x = 3: y = 4 ⇒ |3-4| = 1 (odd), y = 6 ⇒ |3-6| = 3 (odd), y = 9 ⇒ |3-9| = 6 (even) ⇒ (3,4), (3,6)</p>
+                        <p class="mb-2">For x = 5: y = 4 ⇒ |5-4| = 1 (odd), y = 6 ⇒ |5-6| = 1 (odd), y = 9 ⇒ |5-9| = 4 (even) ⇒ (5,4), (5,6)</p>
+                        <p class="mb-2">So, R = {(1,4), (1,6), (2,9), (3,4), (3,6), (5,4), (5,6)}</p>
+                        <p><strong>Answer:</strong> R = {(1,4), (1,6), (2,9), (3,4), (3,6), (5,4), (5,6)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Humein aise pairs chahiye jahan x aur y ka difference odd ho. A ke har element ke liye B ke har element ke saath difference check karte hain, aur jo odd hai unhe R mein include karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The Fig2.7 shows a relationship between the sets P and Q. Write this relation (i) in set-builder form (ii) roster form. What is its domain and range?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">From the figure (not shown here, but described in the textbook):</p>
+                        <p class="mb-2">P = {5, 6, 7}, Q = {3, 4, 5}</p>
+                        <p class="mb-2">The relation is: x is 2 more than y, or y is 2 less than x</p>
+                        <p class="mb-2">(i) Set-builder form: R = {(x, y) : x = y + 2, x ∈ P, y ∈ Q}</p>
+                        <p class="mb-2">(ii) Roster form: For y = 3, x = 5; for y = 4, x = 6; for y = 5, x = 7</p>
+                        <p class="mb-2">So, R = {(5,3), (6,4), (7,5)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Domain of R = {5, 6, 7}</p>
+                        <p class="mb-2">Range of R = {3, 4, 5}</p>
+                        <p><strong>Answer:</strong> (i) R = {(x,y): x=y+2, x∈P, y∈Q}; (ii) R = {(5,3), (6,4), (7,5)}; Domain = {5,6,7}; Range = {3,4,5}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Figure se pata chalta hai ki x, y se 2 jyada hai. Isliye set-builder form: R = {(x,y): x=y+2}. Roster form: y=3 ke liye x=5, y=4 ke liye x=6, y=5 ke liye x=7. Domain first elements ka set: {5,6,7}. Range second elements ka set: {3,4,5}.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Let A = {1, 2, 3, 4, 6}. Let R be the relation on A defined by {(a, b): a, b ∈ A, b is exactly divisible by a}.<br>
+                (i) Write R in roster form<br>
+                (ii) Find the domain of R<br>
+                (iii) Find the range of R.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) R = {(a,b): a,b ∈ A, b is exactly divisible by a}</p>
+                        <p class="mb-2">Possible pairs:</p>
+                        <p class="mb-2">For a = 1: b = 1,2,3,4,6 (all are divisible by 1) ⇒ (1,1), (1,2), (1,3), (1,4), (1,6)</p>
+                        <p class="mb-2">For a = 2: b = 2,4,6 (divisible by 2) ⇒ (2,2), (2,4), (2,6)</p>
+                        <p class="mb-2">For a = 3: b = 3,6 (divisible by 3) ⇒ (3,3), (3,6)</p>
+                        <p class="mb-2">For a = 4: b = 4 (divisible by 4) ⇒ (4,4)</p>
+                        <p class="mb-2">For a = 6: b = 6 (divisible by 6) ⇒ (6,6)</p>
+                        <p class="mb-2">So, R = {(1,1), (1,2), (1,3), (1,4), (1,6), (2,2), (2,4), (2,6), (3,3), (3,6), (4,4), (6,6)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) Domain of R = set of first elements = {1, 2, 3, 4, 6}</p>
+                        <p class="mb-2">(iii) Range of R = set of second elements = {1, 2, 3, 4, 6}</p>
+                        <p><strong>Answer:</strong> (i) R = {(1,1), (1,2), (1,3), (1,4), (1,6), (2,2), (2,4), (2,6), (3,3), (3,6), (4,4), (6,6)}; (ii) Domain = {1,2,3,4,6}; (iii) Range = {1,2,3,4,6}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) Roster form ke liye A ke har element a ke liye A ke un elements b ko dhundhte hain jo a se divisible hain. (ii) Domain first elements ka set hai. (iii) Range second elements ka set hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Determine the domain and range of the relation R defined by R = {(x, x + 5) : x ∈ {0, 1, 2, 3, 4, 5}}.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(x, x + 5) : x ∈ {0, 1, 2, 3, 4, 5}}</p>
+                        <p class="mb-2">For x = 0, (0,5); x = 1, (1,6); x = 2, (2,7); x = 3, (3,8); x = 4, (4,9); x = 5, (5,10)</p>
+                        <p class="mb-2">So, R = {(0,5), (1,6), (2,7), (3,8), (4,9), (5,10)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Domain of R = set of first elements = {0, 1, 2, 3, 4, 5}</p>
+                        <p class="mb-2">Range of R = set of second elements = {5, 6, 7, 8, 9, 10}</p>
+                        <p><strong>Answer:</strong> Domain = {0,1,2,3,4,5}; Range = {5,6,7,8,9,10}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> R ke pairs (x, x+5) hain, jahan x {0,1,2,3,4,5} mein se hai. Isliye R = {(0,5), (1,6), (2,7), (3,8), (4,9), (5,10)}. Domain first elements ka set: {0,1,2,3,4,5}. Range second elements ka set: {5,6,7,8,9,10}.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Write the relation R = {(x, x³) : x is a prime number less than 10} in roster form.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Prime numbers less than 10: 2, 3, 5, 7</p>
+                        <p class="mb-2">For x = 2, x³ = 8 ⇒ (2,8)</p>
+                        <p class="mb-2">For x = 3, x³ = 27 ⇒ (3,27)</p>
+                        <p class="mb-2">For x = 5, x³ = 125 ⇒ (5,125)</p>
+                        <p class="mb-2">For x = 7, x³ = 343 ⇒ (7,343)</p>
+                        <p class="mb-2">So, R = {(2,8), (3,27), (5,125), (7,343)}</p>
+                        <p><strong>Answer:</strong> R = {(2,8), (3,27), (5,125), (7,343)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 10 se chhote prime numbers: 2,3,5,7. Inke cubes: 8,27,125,343. Isliye R = {(2,8), (3,27), (5,125), (7,343)}.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Let A = {x, y, z} and B = {1, 2}. Find the number of relations from A to B.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × B = {(x,1), (x,2), (y,1), (y,2), (z,1), (z,2)}</p>
+                        <p class="mb-2">n(A × B) = 3 × 2 = 6</p>
+                        <p class="mb-2">Number of relations from A to B = number of subsets of A × B = 2<sup>6</sup> = 64</p>
+                        <p><strong>Answer:</strong> 64</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> A × B mein 6 elements hain. A se B tak ke relations A × B ke subsets hote hain. Subsets ki sankhya 2<sup>n</sup> hoti hai, jahan n elements ki sankhya hai. Isliye relations ki sankhya = 2<sup>6</sup> = 64.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Let R be the relation on Z defined by R = {(a, b): a, b ∈ Z, a - b is an integer}. Find the domain and range of R.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(a, b): a, b ∈ Z, a - b is an integer}</p>
+                        <p class="mb-2">Since a and b are integers, a - b is always an integer</p>
+                        <p class="mb-2">So, R includes all possible pairs (a,b) where a,b ∈ Z</p>
+                        <p class="mb-2">This means R = Z × Z</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Domain of R = set of all first elements = Z</p>
+                        <p class="mb-2">Range of R = set of all second elements = Z</p>
+                        <p><strong>Answer:</strong> Domain = Z, Range = Z</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> a aur b integers hain, toh a-b hamesha integer hoga. Isliye R mein Z ke sabhi possible pairs hain, yaani R = Z × Z. Domain aur range dono Z hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2.3 Section -->
+        <section id="exercise-2-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 2.3</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Which of the following relations are functions? Give reasons. If it is a function, determine its domain and range.<br>
+                (i) {(2,1), (5,1), (8,1), (11,1), (14,1), (17,1)}<br>
+                (ii) {(2,1), (4,2), (6,3), (8,4), (10,5), (12,6), (14,7)}<br>
+                (iii) {(1,3), (1,5), (2,5)}</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A relation is a function if every element in the domain has a unique image.</p>
+                        <p class="mb-2">(i) Domain = {2,5,8,11,14,17}, Range = {1}</p>
+                        <p class="mb-2">Each element in domain has unique image 1. So, it is a function.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) Domain = {2,4,6,8,10,12,14}, Range = {1,2,3,4,5,6,7}</p>
+                        <p class="mb-2">Each element in domain has unique image. So, it is a function.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) Domain = {1,2}</p>
+                        <p class="mb-2">Element 1 has two images: 3 and 5. So, it is not a function.</p>
+                        <p><strong>Answer:</strong> (i) Function, Domain = {2,5,8,11,14,17}, Range = {1}; (ii) Function, Domain = {2,4,6,8,10,12,14}, Range = {1,2,3,4,5,6,7}; (iii) Not a function</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Function ke liye domain ke har element ka exactly ek image hona chahiye. (i) aur (ii) mein har domain element ka exactly ek image hai, isliye function hain. (iii) mein element 1 ke do images hain (3 aur 5), isliye function nahi hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the domain and range of the following real functions:<br>
+                (i) f(x) = -|x|<br>
+                (ii) f(x) = √(9 - x²)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) f(x) = -|x|</p>
+                        <p class="mb-2">Domain: x can be any real number, so Domain = R</p>
+                        <p class="mb-2">Range: |x| ≥ 0, so -|x| ≤ 0, so Range = (-∞, 0] or {y: y ≤ 0}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) f(x) = √(9 - x²)</p>
+                        <p class="mb-2">Domain: 9 - x² ≥ 0 ⇒ x² ≤ 9 ⇒ -3 ≤ x ≤ 3, so Domain = [-3, 3]</p>
+                        <p class="mb-2">Range: For x ∈ [-3, 3], 9 - x² ∈ [0, 9], so √(9 - x²) ∈ [0, 3], so Range = [0, 3]</p>
+                        <p><strong>Answer:</strong> (i) Domain = R, Range = (-∞,0]; (ii) Domain = [-3,3], Range = [0,3]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) f(x) = -|x| ke liye x koi bhi real number ho sakta hai (domain = R), lekin output hamesha 0 ya negative hoga (range = (-∞,0]). (ii) f(x) = √(9-x²) ke liye expression under root non-negative hona chahiye: 9-x²≥0 ⇒ -3≤x≤3 (domain). Output 0 se 3 tak hoga (range).
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: A function f is defined by f(x) = 2x - 5. Write down the values of<br>
+                (i) f(0)<br>
+                (ii) f(7)<br>
+                (iii) f(-3)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">f(x) = 2x - 5</p>
+                        <p class="mb-2">(i) f(0) = 2(0) - 5 = -5</p>
+                        <p class="mb-2">(ii) f(7) = 2(7) - 5 = 14 - 5 = 9</p>
+                        <p class="mb-2">(iii) f(-3) = 2(-3) - 5 = -6 - 5 = -11</p>
+                        <p><strong>Answer:</strong> (i) -5, (ii) 9, (iii) -11</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> f(x) = 2x - 5 hai. Isme x ki values substitute karke f(0), f(7), f(-3) nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The function 't' which maps temperature in degree Celsius into temperature in degree Fahrenheit is defined by t(C) = 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">9C</span>
+                            <span class="denominator">5</span>
+                        </span> + 32
+                    </span>.<br>
+                Find (i) t(0) (ii) t(28) (iii) t(-10) (iv) The value of C, when t(C) = 212</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                t(C) = 
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (i) t(0) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×0</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 0 + 32 = 32
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (ii) t(28) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×28</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 
+                                <span class="fraction">
+                                    <span class="numerator">252</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 50.4 + 32 = 82.4
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (iii) t(-10) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×(-10)</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 
+                                <span class="fraction">
+                                    <span class="numerator">-90</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = -18 + 32 = 14
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) t(C) = 212</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 212
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> = 212 - 32 = 180
+                            </span>
+                        </p>
+                        <p class="mb-2">9C = 180 × 5 = 900</p>
+                        <p class="mb-2">C = 900 ÷ 9 = 100</p>
+                        <p><strong>Answer:</strong> (i) 32, (ii) 82.4, (iii) 14, (iv) 100</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> t(C) = (9C/5) + 32 formula use karte hain. (i), (ii), (iii) mein C ki values substitute karte hain. (iv) mein t(C)=212 set karke C nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Find the range of each of the following functions.<br>
+                (i) f(x) = 2 - 3x, x ∈ R, x > 0<br>
+                (ii) f(x) = x² + 2, x is a real number<br>
+                (iii) f(x) = x, x is a real number</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) f(x) = 2 - 3x, x > 0</p>
+                        <p class="mb-2">As x > 0, 3x > 0, so 2 - 3x < 2</p>
+                        <p class="mb-2">Also, as x → ∞, f(x) → -∞</p>
+                        <p class="mb-2">So, Range = (-∞, 2)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) f(x) = x² + 2</p>
+                        <p class="mb-2">x² ≥ 0 for all real x, so x² + 2 ≥ 2</p>
+                        <p class="mb-2">So, Range = [2, ∞)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) f(x) = x</p>
+                        <p class="mb-2">This is the identity function</p>
+                        <p class="mb-2">As x takes all real values, f(x) also takes all real values</p>
+                        <p class="mb-2">So, Range = R</p>
+                        <p><strong>Answer:</strong> (i) (-∞,2), (ii) [2,∞), (iii) R</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> (i) x>0 hai, toh 2-3x<2 aur x→∞ par f(x)→-∞, isliye range (-∞,2). (ii) x²≥0, toh x²+2≥2, isliye range [2,∞). (iii) f(x)=x identity function hai, isliye range R.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
