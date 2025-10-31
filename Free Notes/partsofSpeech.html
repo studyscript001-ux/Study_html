@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parts of Speech | शब्द-भेद</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #6a11cb;
+            --secondary: #2575fc;
+            --accent: #ff6b6b;
+            --light: #f8f9ff;
+            --dark: #2c3e50;
+            --success: #1dd1a1;
+            --warning: #feca57;
+            --info: #48dbfb;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-drag: none;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            border-radius: 0 0 30px 30px;
+            margin-bottom: 1.4rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,192C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .header h1 i {
+            font-size: 2.8rem;
+            color: var(--warning);
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .language-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.0rem;
+            background: white;
+            border-radius: 50px;
+            padding: 8px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .toggle-btn {
+            padding: 12px 30px;
+            border: none;
+            background: transparent;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .toggle-btn.active {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            box-shadow: 0 4px 10px rgba(106, 17, 203, 0.3);
+        }
+
+        .content-section {
+            display: none;
+            margin-bottom: 2.5rem;
+        }
+
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 1.8rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--light);
+            font-size: 2.3rem;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            border-radius: 3px;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin: 2rem 0 1.2rem 0;
+            font-size: 1.7rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 i {
+            color: var(--accent);
+            font-size: 1.5rem;
+        }
+
+        h4 {
+            color: var(--primary);
+            margin: 1.8rem 0 1rem 0;
+            font-size: 1.4rem;
+            padding-left: 10px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .part-of-speech {
+            width: 100%;
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            border-radius: 16px;
+            background: white;
+            border-left: 6px solid var(--primary);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .part-of-speech:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .part-of-speech::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, rgba(106, 17, 203, 0.05) 0%, rgba(37, 117, 252, 0.05) 100%);
+            border-radius: 0 0 0 100%;
+        }
+
+        .definition {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: #444;
+            line-height: 1.7;
+            padding: 15px;
+            background: var(--light);
+            border-radius: 10px;
+            border-left: 4px solid var(--success);
+        }
+
+        .types-container {
+            margin-top: 1.8rem;
+        }
+
+        .type-item {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #e0e0e0;
+            transition: all 0.3s ease;
+        }
+
+        .type-item:hover {
+            transform: translateX(5px);
+        }
+
+        .type-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .type-name {
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 0.7rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .type-name i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .type-definition {
+            margin-bottom: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .example {
+            background: linear-gradient(135deg, #eef4ff 0%, #e6f7ff 100%);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-top: 1.2rem;
+            border-left: 5px solid var(--secondary);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+        }
+
+        .example p {
+            margin-bottom: 0.7rem;
+        }
+
+        .hindi {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .hindi-text {
+            font-size: 1.25rem;
+            color: #d63384;
+            font-weight: 600;
+        }
+
+        .english-text {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 3rem;
+            margin-top: 4rem;
+            background: linear-gradient(135deg, var(--dark) 0%, #1a2530 100%);
+            color: white;
+            border-radius: 30px 30px 0 0;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-logo {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--warning);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.3rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+            
+            .part-of-speech {
+                padding: 1.5rem;
+            }
+            
+            .container {
+                padding: 0 1rem;
+            }
+            
+            h2 {
+                font-size: 1.9rem;
+            }
+            
+            h3 {
+                font-size: 1.5rem;
+            }
+            
+            .toggle-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .header {
+                padding: 2rem 1rem;
+            }
+            
+            .header h1 {
+                font-size: 1.9rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            h3 {
+                font-size: 1.4rem;
+            }
+            
+            .part-of-speech {
+                padding: 1.2rem;
+            }
+            
+            .language-toggle {
+                flex-direction: column;
+                border-radius: 15px;
+            }
+            
+            .toggle-btn {
+                border-radius: 10px;
+                margin: 5px;
+            }
+        }
+
+        /* Scroll to top button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+            z-index: 100;
+            border: none;
+            font-size: 1.2rem;
+        }
+
+        .scroll-to-top:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Copy protection overlay */
+        .protection-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="protection-overlay"></div>
+    
+    <div class="header">
+        <div class="header-content">
+            <h1><i class="fas fa-languagge"></i> Parts of Speech<br>(शब्द-भेद)</h1>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="language-toggle">
+            <button class="toggle-btn active" data-lang="english">
+                <i class="fas fa-globe-americas"></i> English
+            </button>
+            <button class="toggle-btn" data-lang="hindi">
+                <i class="fas fa-book"></i> हिंदी
+            </button>
+        </div>
+
+        <div id="english-content" class="content-section active">
+            <h2><i class="fas fa-pen-nib"></i> Parts of Speech</h2>
+            <p class="definition">हिंदी के लिए ऊपर हिंदी पर क्लिक करें।<br> There are 8 parts of speech which is used in sentances.</p>
+
+            <!-- Noun -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-file-signature"></i> 1. Noun</h3>
+                <p class="definition">A Noun is the name of a person, place, thing, or idea.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Nouns:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Common Noun</div>
+                        <p class="type-definition">Names general people, places, or things.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> city, teacher, book, river</p>
+                            <p><span class="english-text">In sentences:</span> The <strong>city</strong> was busy. My <strong>teacher</strong> is kind. We crossed the <strong>river</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Proper Noun</div>
+                        <p class="type-definition">Names specific people, places, or things (always capitalized).</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> London, Mary, The Bible, India</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Mary</strong> went to <strong>London</strong>. I read <strong>The Bible</strong>. <strong>India</strong> is a diverse country.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Collective Noun</div>
+                        <p class="type-definition">Names a group of people, animals, or things.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> team, family, flock, committee</p>
+                            <p><span class="english-text">In sentences:</span> Our <strong>team</strong> won the match. A <strong>flock</strong> of birds flew by. The <strong>committee</strong> made a decision.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Abstract Noun</div>
+                        <p class="type-definition">Names ideas, qualities, or states that cannot be seen or touched.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> love, happiness, freedom, courage</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Love</strong> is a powerful emotion. Everyone deserves <strong>freedom</strong>. She showed great <strong>courage</strong>.</p>
+                        </div>
+                    </div>
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Material Noun</div>
+                        <p class="type-definition">The name of a substance or material.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Gold, Water, Iron</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Gold</strong> are so expensive. I am drinking <strong>water</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pronoun -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-user-circle"></i> 2. Pronoun</h3>
+                <p class="definition">A pronoun is a word that takes the place of a noun to avoid repetition.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Pronouns:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Personal Pronoun</div>
+                        <p class="type-definition">Refers to specific people or things.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> I, you, he, she, it, we, they</p>
+                            <p><span class="english-text">In sentences:</span> <strong>She</strong> is reading. <strong>They</strong> are coming. <strong>We</strong> will win.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Possessive Pronoun</div>
+                        <p class="type-definition">Shows ownership.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> mine, yours, his, hers, its, ours, theirs</p>
+                            <p><span class="english-text">In sentences:</span> This book is <strong>mine</strong>. That car is <strong>theirs</strong>. The victory is <strong>ours</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Demonstrative Pronoun</div>
+                        <p class="type-definition">Points to something.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> This, That, These</p>
+                            <p><span class="english-text">In sentences:</span> <strong>These</strong> notes are helpful.<strong>That</strong> question was so tricky.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interrogative Pronoun</div>
+                        <p class="type-definition">Used to ask questions.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Who, What, Which</p>
+                            <p><span class="english-text">In sentences:</span> <strong>What</strong> is your dream ?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Relative Pronoun</div>
+                        <p class="type-definition">Connects two clauses.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Who, Whom, Which</p>
+                            <p><span class="english-text">In sentences:</span> The girl <strong>who</strong> won the race is my cousin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Indefinite Pronoun</div>
+                        <p class="type-definition">Refers to an unknown person/things.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Someone, Anybody</p>
+                            <p><span class="english-text">In sentences:</span> <strong>someone</strong> is at the door.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Reflexive Pronoun</div>
+                        <p class="type-definition">Refers back to the subject.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> myself, yourself, himself, herself, itself, ourselves, yourselves, themselves</p>
+                            <p><span class="english-text">In sentences:</span> She hurt <strong>herself</strong>. We enjoyed <strong>ourselves</strong>. He taught <strong>himself</strong> to play guitar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verb -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-running"></i> 3. Verb</h3>
+                <p class="definition">A verb expresses an action, occurrence, or state of being.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Verbs:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Action Verb</div>
+                        <p class="type-definition">Expresses physical or mental action.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> run, think, write, speak, jump</p>
+                            <p><span class="english-text">In sentences:</span> She <strong>runs</strong> every morning. He <strong>thinks</strong> deeply about problems. They <strong>jumped</strong> over the fence.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Linking Verb</div>
+                        <p class="type-definition">Connects the subject to additional information.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> is, am, are, was, were, seem, become</p>
+                            <p><span class="english-text">In sentences:</span> She <strong>is</strong> a doctor. He <strong>seems</strong> tired. They <strong>became</strong> friends.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Helping Verb (Auxiliary Verb)</div>
+                        <p class="type-definition">Helps the main verb express tense, mood, or voice.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> have, has, had, do, does, did, will, shall, may, might, can, could</p>
+                            <p><span class="english-text">In sentences:</span> I <strong>have</strong> finished my work. She <strong>will</strong> come tomorrow. They <strong>can</strong> solve this problem.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adjective -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-adjust"></i> 4. Adjective</h3>
+                <p class="definition">An adjective describes or modifies a noun or pronoun.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Adjectives:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Descriptive Adjective</div>
+                        <p class="type-definition">Describes quality, size, color, etc.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> beautiful, tall, red, intelligent</p>
+                            <p><span class="english-text">In sentences:</span> The <strong>red</strong> car is fast. She is <strong>intelligent</strong>. It's a <strong>beautiful</strong> day.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Quantitative Adjective</div>
+                        <p class="type-definition">Shows quantity or amount.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> some, many, few, several, all</p>
+                            <p><span class="english-text">In sentences:</span> I have <strong>some</strong> money. <strong>Many</strong> people attended the event. <strong>All</strong> students passed.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Demonstrative Adjective</div>
+                        <p class="type-definition">Points out which person or thing is meant.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> this, that, these, those</p>
+                            <p><span class="english-text">In sentences:</span> <strong>This</strong> book is interesting. <strong>Those</strong> flowers are beautiful. <strong>That</strong> car is expensive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Adverb -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-bolt"></i> 5. Adverb</h3>
+                <p class="definition">An adverb modifies a verb, adjective, or other adverb.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Adverbs:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Adverb of Manner</div>
+                        <p class="type-definition">Describes how an action is performed.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> quickly, slowly, carefully, well</p>
+                            <p><span class="english-text">In sentences:</span> He runs <strong>quickly</strong>. She sings <strong>beautifully</strong>. Drive <strong>carefully</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Adverb of Time</div>
+                        <p class="type-definition">Describes when an action happens.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> now, then, today, soon, already</p>
+                            <p><span class="english-text">In sentences:</span> I will call you <strong>later</strong>. She has <strong>already</strong> left. We are leaving <strong>now</strong>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Adverb of Place</div>
+                        <p class="type-definition">Describes where an action happens.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> here, there, everywhere, nowhere</p>
+                            <p><span class="english-text">In sentences:</span> Come <strong>here</strong>. He looked <strong>everywhere</strong> for his keys. She is <strong>nowhere</strong> to be found.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Adverb of Frequency</div>
+                        <p class="type-definition">Describes how often an action happens.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> always, usually, often, sometimes, rarely, never etc.</p>
+                            <p><span class="english-text">In sentences:</span>She <strong>always</strong> drinks coffee in the morning. He <strong>rarely</strong> eats fast food. </p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Adverb of Degree</div>
+                        <p class="type-definition">Express the intensity or extent of an action or description.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> fully, exactly, enough, barely, extremely, almost etc.</p>
+                            <p><span class="english-text">In sentences:</span> We <strong>fully</strong> support this. He <strong>almost</strong> won the race.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Preposition -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-map-marker-alt"></i> 6. Preposition</h3>
+                <p class="definition">A preposition shows the relationship between a noun/pronoun and other words in a sentence.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Prepositions:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Preposition of Time</div>
+                        <p class="type-definition">Shows when something happens.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> at, on, in, before, after, during</p>
+                            <p><span class="english-text">In sentences:</span> I will meet you <strong>at</strong> 5 PM. She was born <strong>in</strong> 1990. We'll talk <strong>after</strong> dinner.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Preposition of Place</div>
+                        <p class="type-definition">Shows where something is located.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> in, on, at, under, over, between</p>
+                            <p><span class="english-text">In sentences:</span> The book is <strong>on</strong> the table. The cat is <strong>under</strong> the chair. Sit <strong>between</strong> them.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Preposition of Direction</div>
+                        <p class="type-definition">Shows movement toward something.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> to, from, into, onto, towards</p>
+                            <p><span class="english-text">In sentences:</span> She went <strong>to</strong> the market. He walked <strong>towards</strong> the park. Jump <strong>into</strong> the pool.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Conjunction -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-link"></i> 7. Conjunction</h3>
+                <p class="definition">A conjunction connects words, phrases, or clauses.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Conjunctions:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Coordinating Conjunction</div>
+                        <p class="type-definition">Connects words, phrases, or independent clauses of equal importance.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> and, but, or, nor, for, yet, so</p>
+                            <p><span class="english-text">In sentences:</span> She likes tea <strong>and</strong> coffee. I wanted to go, <strong>but</strong> it was raining. You can stay <strong>or</strong> leave.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Subordinating Conjunction</div>
+                        <p class="type-definition">Connects a dependent clause to an independent clause.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> because, although, since, unless, while</p>
+                            <p><span class="english-text">In sentences:</span> I stayed home <strong>because</strong> it was raining. <strong>Although</strong> it was cold, we went out. <strong>Since</strong> you're here, let's begin.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Correlative Conjunction</div>
+                        <p class="type-definition">Pairs of conjunctions that work together.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> either...or, neither...nor, both...and, not only...but also</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Either</strong> you come with me <strong>or</strong> stay here. She is <strong>both</strong> intelligent <strong>and</strong> beautiful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interjection -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-exclamation-circle"></i> 8. Interjection</h3>
+                <p class="definition">An interjection expresses strong emotion or surprise.</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> Types of Interjections:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of Joy</div>
+                        <p class="type-definition">Expresses happiness or pleasure.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> hurray, yay, wow</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Hurray!</strong> We won the match. <strong>Wow!</strong> What a beautiful view. <strong>Yay!</strong> It's my birthday.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of Sorrow</div>
+                        <p class="type-definition">Expresses sadness or grief.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> alas, ouch, oh</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Alas!</strong> He is no more. <strong>Ouch!</strong> That hurt. <strong>Oh!</strong> I didn't know that.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of Surprise</div>
+                        <p class="type-definition">Expresses surprise or wonder.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> oh, ah, what</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Oh!</strong> I didn't expect to see you here. <strong>What!</strong> Is that true? <strong>Ah!</strong> Now I understand.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of greeting</div>
+                        <p class="type-definition">Acknowledge or greet someone.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Hello!, hey!</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Hey!</strong> are you going? <strong>Hello!</strong> i am talking to you.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of Attention</div>
+                        <p class="type-definition">Used to get someone's attention.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Listen!, Look!</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Look!</strong> the picture is so nice. <strong>Listen!</strong> be careful the next time.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> Interjection of Approval</div>
+                        <p class="type-definition">Show encouragement or agreement.</p>
+                        <div class="example">
+                            <p><span class="english-text">Examples:</span> Bravo!, Brilliant!, well done! etc.</p>
+                            <p><span class="english-text">In sentences:</span> <strong>Well done!</strong> you have done a good job. <strong>Brilliant!</strong> your notes is so helpful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="hindi-content" class="content-section">
+            <h2><i class="fas fa-pen-nib"></i> हिंदी में शब्द-भेद</h2>
+            <p class="definition">शब्द-भेद समान व्याकरणिक गुणों वाले शब्दों की श्रेणियाँ हैं। हिंदी में मुख्य रूप से आठ शब्द-भेद होते हैं जो वाक्य में शब्दों के कार्य को समझने में मदद करते हैं।</p>
+
+            <!-- संज्ञा -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-file-signature"></i> 1. संज्ञा (Noun)</h3>
+                <p class="definition">संज्ञा वह शब्द है जो किसी व्यक्ति, स्थान, वस्तु या भाव का बोध कराता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> संज्ञा के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> जातिवाचक संज्ञा</div>
+                        <p class="type-definition">जो संज्ञा किसी सामान्य व्यक्ति, वस्तु या स्थान की जाति को दर्शाती है, उसे जातिवाचक संज्ञा कहते हैं।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> शहर, शिक्षक, किताब, नदी</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>शहर</strong> व्यस्त था। मेरे <strong>शिक्षक</strong> दयालु हैं। हमने <strong>नदी</strong> पार की।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> व्यक्तिवाचक संज्ञा</div>
+                        <p class="type-definition">जो संज्ञा किसी विशेष व्यक्ति, स्थान या वस्तु के नाम को दर्शाती है, उसे व्यक्तिवाचक संज्ञा कहते हैं।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> दिल्ली, राम, गीता, भारत</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>राम</strong> स्कूल गया। <strong>दिल्ली</strong> भारत की राजधानी है। <strong>गीता</strong> एक पवित्र ग्रंथ है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> समूहवाचक संज्ञा</div>
+                        <p class="type-definition">वह संज्ञा जो किसी व्यक्तियों, जानवरों या वस्तुओं के समूह के नाम बताती है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> टीम, परिवार, झुंड, समिति</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> हमारी <strong>टीम</strong> ने मैच जीता। पक्षियों का <strong>झुंड</strong> उड़ गया। <strong>समिति</strong> ने निर्णय लिया।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> भाववाचक संज्ञा</div>
+                        <p class="type-definition">वह संज्ञा जो भावों, गुणों या अवस्थाओं के नाम बताती है जिन्हें देखा या छुआ नहीं जा सकता।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> प्रेम, सुख, स्वतंत्रता, साहस</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>प्रेम</strong> एक शक्तिशाली भावना है। सभी <strong>स्वतंत्रता</strong> के पात्र हैं। उसने बड़ा <strong>साहस</strong> दिखाया।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> द्रव्यवाचक संज्ञा (पदार्थवाचक संज्ञा)</div>
+                        <p class="type-definition">द्रव्यवाचक संज्ञा उन शब्दों को कहते हैं जो किसी ठोस, तरल, धातु या पदार्थ का बोध कराते हैं, जिन्हें गिना नहीं जा सकता बल्कि तौला या मापा जा सकता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> सोना, चांदी, दूध, घी, पानी, तेल, चावल इत्यादि।</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>सोना</strong> बहुत महंगा होता जा रहा है। <strong>दूध</strong> मे प्रोटीन पाया जाता है। </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- सर्वनाम -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-user-circle"></i> 2. सर्वनाम (Pronoun)</h3>
+                <p class="definition">सर्वनाम वह शब्द है जो संज्ञा के स्थान पर प्रयोग किया जाता है ताकि संज्ञा की पुनरावृत्ति न हो।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> सर्वनाम के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> पुरुषवाचक सर्वनाम</div>
+                        <p class="type-definition">वक्ता, श्रोता या अन्य व्यक्तियों के लिए प्रयुक्त होता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> मैं, तुम, वह, आप, हम, यह</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>मैं</strong> पढ़ रहा हूँ। <strong>तुम</strong> कहाँ जा रहे हो? <strong>वह</strong> अच्छा लड़का है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> निश्चयवाचक सर्वनाम</div>
+                        <p class="type-definition">निकट या दूर की वस्तु का निश्चय बताता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> यह, वह</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>यह</strong> मेरी किताब है। <strong>वह</strong> तुम्हारा घर है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> अनिश्चयवाचक सर्वनाम</div>
+                        <p class="type-definition">किसी निश्चित व्यक्ति या वस्तु का बोध नहीं कराता।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> कोई, कुछ</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>कोई</strong> आया है। मुझे <strong>कुछ</strong> चाहिए।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> प्रश्नवाचक सर्वनाम</div>
+                        <p class="type-definition">प्रश्न पूछने के लिए प्रयुक्त होता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> कौन, क्या, किसका</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>कौन</strong> आया है? <strong>क्या</strong> तुम जा रहे हो? <strong>किसका</strong> घर है यह?</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> संबंधवाचक सर्वनाम</div>
+                        <p class="type-definition">दो सर्वनामों के बीच संबंध बताने वाले सर्वनाम संबंधवाचक सर्वनाम कहलाते हैं।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span>जो, सो, उसकी, जितना, जिसकी, उतना</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>जिसकी</strong> लाठी <strong>उसकी</strong> भैंस।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> निजवाचक सर्वनाम</div>
+                        <p class="type-definition">निज या अपनेपन का बोध कराने वाले सर्वनाम निजवाचक सर्वनाम कहलाते हैं।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span>आप, अपना, खुद, स्वयं इत्यादि।</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> मैं अपने आप को बेहतर बनाना चाहता हूं। आपको अपना काम स्वयं करना होगा।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- क्रिया -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-running"></i> 3. क्रिया (Verb)</h3>
+                <p class="definition">क्रिया वह शब्द है जिसमें किसी कार्य के करने या होने का बोध होता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> क्रिया के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> सकर्मक क्रिया</div>
+                        <p class="type-definition">जिस क्रिया का फल कर्म पर पड़े।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> पढ़ना, लिखना, खाना, देखना</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> राम <strong>पुस्तक पढ़ता</strong> है। सीता <strong>पत्र लिखती</strong> है। बच्चा <strong>केला खाता</strong> है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> अकर्मक क्रिया</div>
+                        <p class="type-definition">जिस क्रिया का फल कर्ता पर ही पड़े।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> सोना, हँसना, रोना, चलना</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> बच्चा <strong>सोता</strong> है। वह <strong>हँसती</strong> है। मैं <strong>चलता</strong> हूँ।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> सहायक क्रिया</div>
+                        <p class="type-definition">मुख्य क्रिया की सहायता करने वाली क्रिया।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> है, था, होगा, रहा, रही</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> वह पढ़ <strong>रहा है</strong>। मैं खेल <strong>चुका हूँ</strong>। वह आ <strong>जाएगा</strong>।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- विशेषण -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-adjust"></i> 4. विशेषण (Adjective)</h3>
+                <p class="definition">विशेषण वह शब्द है जो संज्ञा या सर्वनाम की विशेषता बताता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> विशेषण के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> गुणवाचक विशेषण</div>
+                        <p class="type-definition">संज्ञा के गुण, दोष, रूप-रंग आदि का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> अच्छा, बुरा, सुन्दर, बड़ा, लंबा</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> यह <strong>अच्छा</strong> लड़का है। वह <strong>सुन्दर</strong> फूल है। यह <strong>लंबा</strong> पेड़ है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> संख्यावाचक विशेषण</div>
+                        <p class="type-definition">संज्ञा की संख्या का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> एक, दो, पहला, दूसरा, कुछ, कई</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>एक</strong> लड़का आया। <strong>दो</strong> किताबें हैं। <strong>पहला</strong> विद्यार्थी पढ़ाई में अव्वल है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> परिमाणवाचक विशेषण</div>
+                        <p class="type-definition">संज्ञा के परिमाण (मात्रा) का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> थोड़ा, बहुत, कम, अधिक, पूरा</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>थोड़ा</strong> दूध दो। <strong>बहुत</strong> लोग आए। <strong>कम</strong> समय बचा है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> संकेतवाचक विशेषण</div>
+                        <p class="type-definition">संज्ञा की ओर संकेत करता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> यह, वह, ऐसा, वैसा</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>यह</strong> घर मेरा है। <strong>वह</strong> लड़की पढ़ रही है। <strong>ऐसा</strong> काम मत करो।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> प्रश्नवाचक विशेषण</div>
+                        <p class="type-definition">प्रश्न पूछने के लिए प्रयुक्त होता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> कौन-सा, कैसा, कितना, कब</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>कौन-सा</strong> फल तुम्हें पसंद है? <strong>कैसा</strong> मौसम है? <strong>कितनी</strong> किताबें हैं?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- क्रिया-विशेषण -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-bolt"></i> 5. क्रिया-विशेषण (Adverb)</h3>
+                <p class="definition">क्रिया-विशेषण वह शब्द है जो क्रिया, विशेषण या दूसरे क्रिया-विशेषण की विशेषता बताता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> क्रिया-विशेषण के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> रीतिवाचक क्रिया-विशेषण</div>
+                        <p class="type-definition">क्रिया के होने का ढंग बताता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> अच्छी तरह, धीरे-धीरे, जल्दी, ठीक</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> वह <strong>अच्छी तरह</strong> पढ़ता है। <strong>धीरे-धीरे</strong> चलो। <strong>जल्दी</strong> आना।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> कालवाचक क्रिया-विशेषण</div>
+                        <p class="type-definition">क्रिया के होने के समय का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> आज, कल, परसों, सदैव, कभी</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>आज</strong> बारिश होगी। वह <strong>कल</strong> आएगा। मैं <strong>सदैव</strong> तुम्हारा साथ दूंगा।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> स्थानवाचक क्रिया-विशेषण</div>
+                        <p class="type-definition">क्रिया के होने के स्थान का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> यहाँ, वहाँ, कहीं, इधर-उधर</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>यहाँ</strong> आओ। <strong>वहाँ</strong> मत जाओ। वह <strong>कहीं</strong> गया है।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- संबंधबोधक -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-map-marker-alt"></i> 6. संबंधबोधक (Preposition)</h3>
+                <p class="definition">संबंधबोधक वह शब्द है जो संज्ञा या सर्वनाम का संबंध वाक्य के दूसरे शब्दों से बताता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> संबंधबोधक के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> स्थानबोधक संबंधबोधक</div>
+                        <p class="type-definition">स्थान का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> में, पर, से, के पास, के ऊपर</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> किताब मेज <strong>पर</strong> है। वह घर <strong>में</strong> है। बच्चा माँ <strong>के पास</strong> है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> कालबोधक संबंधबोधक</div>
+                        <p class="type-definition">समय का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> से, तक, के बाद, के पहले</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> वह सुबह <strong>से</strong> पढ़ रहा है। शाम <strong>तक</strong> आ जाना। खाने <strong>के बाद</strong> टहलने जाएंगे।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> दिशाबोधक संबंधबोधक</div>
+                        <p class="type-definition">दिशा का बोध कराता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> की ओर, तरफ, से</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> वह स्कूल <strong>की ओर</strong> गया। मैं दिल्ली <strong>से</strong> आ रहा हूँ।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- समुच्चयबोधक -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-link"></i> 7. समुच्चयबोधक (Conjunction)</h3>
+                <p class="definition">समुच्चयबोधक वह शब्द है जो शब्दों, वाक्यांशों या उपवाक्यों को जोड़ता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> समुच्चयबोधक के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> समानाधिकरण समुच्चयबोधक</div>
+                        <p class="type-definition">समान स्तर के शब्दों या वाक्यों को जोड़ता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> और, तथा, एवं, या, अथवा</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> राम <strong>और</strong> श्याम पढ़ते हैं। वह चाय <strong>या</strong> कॉफी पीएगा।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> व्यधिकरण समुच्चयबोधक</div>
+                        <p class="type-definition">मुख्य उपवाक्य को आश्रित उपवाक्य से जोड़ता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> क्योंकि, इसलिए, यदि, तो, जब, तब</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>यदि</strong> बारिश होगी <strong>तो</strong> मैं नहीं आऊंगा। <strong>जब</strong> तुम आओगे <strong>तब</strong> पार्टी होगी।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- विस्मयादिबोधक -->
+            <div class="part-of-speech">
+                <h3><i class="fas fa-exclamation-circle"></i> 8. विस्मयादिबोधक (Interjection)</h3>
+                <p class="definition">विस्मयादिबोधक वह शब्द है जो अचानक उठने वाले भावों को व्यक्त करता है।</p>
+                
+                <div class="types-container">
+                    <h4><i class="fas fa-list-ul"></i> विस्मयादिबोधक के प्रकार:</h4>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> हर्षबोधक विस्मयादिबोधक</div>
+                        <p class="type-definition">खुशी के भाव को व्यक्त करता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> वाह!, धन्यवाद!, शाबाश!</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>वाह!</strong> कितना सुंदर दृश्य है। <strong>शाबाश!</strong> तुमने अच्छा काम किया।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> शोकबोधक विस्मयादिबोधक</div>
+                        <p class="type-definition">दुख के भाव को व्यक्त करता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> हाय!, ओह!, उफ़!</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>हाय!</strong> मेरा काम खराब हो गया। <strong>ओह!</strong> दर्द हो रहा है।</p>
+                        </div>
+                    </div>
+                    
+                    <div class="type-item">
+                        <div class="type-name"><i class="fas fa-caret-right"></i> विस्मयबोधक विस्मयादिबोधक</div>
+                        <p class="type-definition">आश्चर्य के भाव को व्यक्त करता है।</p>
+                        <div class="example">
+                            <p><span class="hindi-text">उदाहरण:</span> अरे!, क्या!, सच!</p>
+                            <p><span class="hindi-text">वाक्यों में:</span> <strong>अरे!</strong> तुम यहाँ कब आए? <strong>क्या!</strong> ऐसा हो गया? <strong>सच!</strong> तुम सच कह रहे हो?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="footer">
+        <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <p>© 2023 Parts of Speech Learning Resource | शब्द-भेद शिक्षण संसाधन</p>
+        <p>Designed for comprehensive learning of English and Hindi grammar</p>
+        <p><i class="fas fa-heart" style="color: #ff6b6b;"></i> Made with love for education</p>
+    </div>
+
+    <script>
+        // Language toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const toggleButtons = document.querySelectorAll('.toggle-btn');
+            const contentSections = document.querySelectorAll('.content-section');
+            
+            toggleButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const lang = this.getAttribute('data-lang');
+                    
+                    // Update active button
+                    toggleButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show relevant content
+                    contentSections.forEach(section => {
+                        section.classList.remove('active');
+                        if (section.id === `${lang}-content`) {
+                            section.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Scroll to top functionality
+            const scrollToTopBtn = document.getElementById('scrollToTop');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopBtn.style.display = 'flex';
+                } else {
+                    scrollToTopBtn.style.display = 'none';
+                }
+            });
+            
+            scrollToTopBtn.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+            
+            // Copy protection
+            document.addEventListener('contextmenu', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.addEventListener('selectstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            document.addEventListener('dragstart', function(e) {
+                e.preventDefault();
+                return false;
+            });
+            
+            // Add subtle animation to cards when they come into view
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            document.querySelectorAll('.part-of-speech').forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
