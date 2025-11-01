@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 रसायन विज्ञान - अध्याय 7: ऐल्कोहॉल, फीनॉल एवं ईथर</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #2E8B57, #3CB371);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #2E8B57;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+        
+        .chemical-structure {
+            text-align: center;
+            margin: 15px 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+        }
+        
+        .chemical-reaction {
+            text-align: center;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .sub {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        
+        .sup {
+            vertical-align: super;
+            font-size: smaller;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 रसायन विज्ञान</h1>
+        <p>अध्याय 7: ऐल्कोहॉल, फीनॉल एवं ईथर</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.1</div>
+            <div>निम्नलिखित को प्राथमिक, द्वितीयक और तृतीयक ऐल्कोहॉल में वर्गीकृत कीजिए:</div>
+        </div>
+        <div class="answer">
+            ऐल्कोहॉल का वर्गीकरण उस कार्बन परमाणु की प्रकृति पर निर्भर करता है जिससे -OH समूह जुड़ा होता है।<br><br>
+            <b>(i) प्राथमिक ऐल्कोहॉल:</b> जिसमें -OH समूह प्राथमिक कार्बन से जुड़ा होता है।<br>
+            उदाहरण: CH<sub>3</sub>-CH<sub>2</sub>-OH (एथेनॉल)<br><br>
+            <b>(ii) द्वितीयक ऐल्कोहॉल:</b> जिसमें -OH समूह द्वितीयक कार्बन से जुड़ा होता है।<br>
+            उदाहरण: CH<sub>3</sub>-CH(OH)-CH<sub>3</sub> (प्रोपेन-2-ऑल)<br><br>
+            <b>(iii) तृतीयक ऐल्कोहॉल:</b> जिसमें -OH समूह तृतीयक कार्बन से जुड़ा होता है।<br>
+            उदाहरण: (CH<sub>3</sub>)<sub>3</sub>C-OH (2-मेथिलप्रोपेन-2-ऑल)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.2</div>
+            <div>ऐलिलिक ऐल्कोहॉल को पहचानिए।</div>
+        </div>
+        <div class="answer">
+            ऐलिलिक ऐल्कोहॉल वे ऐल्कोहॉल होते हैं जिनमें -OH समूह कार्बन-कार्बन द्विबंध के साथ सीधे जुड़े कार्बन परमाणु से जुड़ा होता है।<br><br>
+            <div class="chemical-structure">
+                CH<sub>2</sub>=CH-CH<sub>2</sub>-OH (प्रोप-2-ईन-1-ऑल)
+            </div><br>
+            इनकी पहचान:<br>
+            1. इनमें कार्बन-कार्बन द्विबंध और -OH समूह दोनों उपस्थित होते हैं।<br>
+            2. -OH समूह विनाइलिक कार्बन से जुड़ा होता है।<br>
+            3. ये ऑक्सीकरण पर संबंधित ऐल्डिहाइड देते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.3</div>
+            <div>निम्नलिखित यौगिकों के IUPAC नाम लिखिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i)</b> CH<sub>3</sub>-CH(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>2</sub>-OH: 3-मेथिलब्यूटेन-1-ऑल<br>
+            <b>(ii)</b> CH<sub>3</sub>-CH<sub>2</sub>-CH(OH)-CH<sub>3</sub>: ब्यूटेन-2-ऑल<br>
+            <b>(iii)</b> CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH: ब्यूटेन-1-ऑल<br>
+            <b>(iv)</b> (CH<sub>3</sub>)<sub>3</sub>C-CH<sub>2</sub>-OH: 2,2-डाइमेथिलप्रोपेन-1-ऑल<br>
+            <b>(v)</b> CH<sub>3</sub>-CH(OH)-CH<sub>2</sub>-CH<sub>3</sub>: ब्यूटेन-2-ऑल<br>
+            <b>(vi)</b> CH<sub>3</sub>-C(OH)(CH<sub>3</sub>)-CH<sub>3</sub>: 2-मेथिलप्रोपेन-2-ऑल
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.4</div>
+            <div>समझाइए कि प्रोपेनॉल का क्वथनांक, हाइड्रोकार्बन ब्यूटेन से अधिक क्यों होता है?</div>
+        </div>
+        <div class="answer">
+            प्रोपेनॉल का क्वथनांक ब्यूटेन से अधिक होने के निम्नलिखित कारण हैं:<br><br>
+            1. <b>हाइड्रोजन बंधन:</b> प्रोपेनॉल के अणुओं के बीच प्रबल अंतराआण्विक हाइड्रोजन बंधन होते हैं, जबकि ब्यूटेन के अणुओं के बीच केवल दुर्बल वाण्डरवाल्स बल होते हैं।<br><br>
+            2. <b>ध्रुवीयता:</b> प्रोपेनॉल एक ध्रुवीय अणु है क्योंकि इसमें -OH समूह उपस्थित है, जबकि ब्यूटेन एक अध्रुवीय अणु है।<br><br>
+            3. <b>अंतराआण्विक आकर्षण बल:</b> प्रोपेनॉल के अणुओं के बीच द्विध्रुव-द्विध्रुव आकर्षण भी होता है, जो ब्यूटेन में अनुपस्थित होता है।<br><br>
+            इन कारणों से प्रोपेनॉल के अणुओं को अलग करने के लिए अधिक ऊर्जा की आवश्यकता होती है, इसलिए इसका क्वथनांक ब्यूटेन से अधिक होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.5</div>
+            <div>समान आण्विक द्रव्यमान वाले हाइड्रोकार्बनों की तुलना में ऐल्कोहॉल जल में अधिक विलेय होते हैं, इस तथ्य को समझाइए।</div>
+        </div>
+        <div class="answer">
+            ऐल्कोहॉल के जल में अधिक विलेय होने के निम्नलिखित कारण हैं:<br><br>
+            1. <b>हाइड्रोजन बंधन:</b> ऐल्कोहॉल के -OH समूह और जल के अणुओं के बीच हाइड्रोजन बंधन बनते हैं, जो विलेयता को बढ़ाते हैं।<br><br>
+            2. <b>ध्रुवीय प्रकृति:</b> ऐल्कोहॉल ध्रुवीय यौगिक हैं और जल भी एक ध्रुवीय विलायक है। "समान समान को घोलता है" के सिद्धांत के अनुसार, ऐल्कोहॉल जल में विलेय होते हैं।<br><br>
+            3. <b>हाइड्रोफिलिक समूह:</b> -OH समूह एक हाइड्रोफिलिक (जलस्नेही) समूह है, जो जल के साथ अन्योन्यक्रिया करके विलेयता बढ़ाता है।<br><br>
+            हाइड्रोकार्बन अध्रुवीय होते हैं और जल के साथ हाइड्रोजन बंधन नहीं बना सकते, इसलिए वे जल में कम विलेय होते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.6</div>
+            <div>हाइड्रोबोरेशन-ऑक्सीकरण अभिक्रिया से आप क्या समझते हैं? इसे उदाहरण सहित समझाइए।</div>
+        </div>
+        <div class="answer">
+            हाइड्रोबोरेशन-ऑक्सीकरण ऐल्कीन से ऐल्कोहॉल बनाने की एक महत्वपूर्ण विधि है। इसमें दो चरण होते हैं:<br><br>
+            <b>चरण 1: हाइड्रोबोरेशन</b><br>
+            ऐल्कीन डाइबोरेन (BH<sub>3</sub>)<sub>2</sub> के साथ अभिक्रिया कर त्रैल्किलबोरेन बनाती है।<br>
+            <div class="chemical-reaction">
+                3R-CH=CH<sub>2</sub> + (BH<sub>3</sub>)<sub>2</sub> → (R-CH<sub>2</sub>-CH<sub>2</sub>)<sub>3</sub>B
+            </div><br>
+            <b>चरण 2: ऑक्सीकरण</b><br>
+            त्रैल्किलबोरेन का H<sub>2</sub>O<sub>2</sub> और NaOH की उपस्थिति में ऑक्सीकरण करने पर ऐल्कोहॉल प्राप्त होता है।<br>
+            <div class="chemical-reaction">
+                (R-CH<sub>2</sub>-CH<sub>2</sub>)<sub>3</sub>B + 3H<sub>2</sub>O<sub>2</sub> + 3NaOH → 3R-CH<sub>2</sub>-CH<sub>2</sub>-OH + Na<sub>3</sub>BO<sub>3</sub>
+            </div><br>
+            इस अभिक्रिया की विशेषता यह है कि यह ऐल्कीन से एंटी-मार्कोनीकॉफ नियम के अनुसार ऐल्कोहॉल बनाती है, अर्थात -OH समूह कम प्रतिस्थापित कार्बन से जुड़ता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.7</div>
+            <div>अणुसूत्र C<sub>7</sub>H<sub>8</sub>O वाले एकमात्र फीनॉल की संरचनाएँ एवं IUPAC नाम लिखिए।</div>
+        </div>
+        <div class="answer">
+            अणुसूत्र C<sub>7</sub>H<sub>8</sub>O वाले फीनॉल निम्नलिखित हैं:<br><br>
+            <div class="chemical-structure">
+                1. C<sub>6</sub>H<sub>5</sub>OH (फीनॉल) - बेंजीन रिंग पर -OH समूह<br>
+                2. o-मेथिलफीनॉल (2-मेथिलफीनॉल)<br>
+                3. m-मेथिलफीनॉल (3-मेथिलफीनॉल)<br>
+                4. p-मेथिलफीनॉल (4-मेथिलफीनॉल)
+            </div><br>
+            इनमें से प्रत्येक का अणुसूत्र C<sub>7</sub>H<sub>8</sub>O है। ये सभी फीनॉल के समावयवी हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.8</div>
+            <div>ऑर्थो एवं पैरा-नाइट्रोफीनॉल के मिश्रण को भाप आसवन द्वारा पृथक करने में भाप-वाष्पशील समावयवी का नाम बताइए। इसका कारण दीजिए।</div>
+        </div>
+        <div class="answer">
+            भाप आसवन द्वारा ऑर्थो एवं पैरा-नाइट्रोफीनॉल के मिश्रण को पृथक करने में <b>ऑर्थो-नाइट्रोफीनॉल</b> भाप-वाष्पशील समावयवी है।<br><br>
+            <b>कारण:</b><br>
+            ऑर्थो-नाइट्रोफीनॉल में अणु के भीतर हाइड्रोजन बंध बनते हैं, जिसके कारण यह अणु अंतराआण्विक हाइड्रोजन बंध नहीं बना पाता और इसका क्वथनांक कम होता है। इसके विपरीत, पैरा-नाइट्रोफीनॉल अंतराआण्विक हाइड्रोजन बंध बनाता है, जिससे इसका क्वथनांक अधिक होता है। इसलिए ऑर्थो-नाइट्रोफीनॉल भाप के साथ वाष्पशील हो जाता है जबकि पैरा-नाइट्रोफीनॉल नहीं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.9</div>
+            <div>क्युमीन से फीनॉल बनाने की अभिक्रिया का समीकरण दीजिए।</div>
+        </div>
+        <div class="answer">
+            क्युमीन (आइसोप्रोपिलबेंजीन) से फीनॉल बनाने की औद्योगिक विधि में निम्नलिखित अभिक्रियाएँ होती हैं:<br><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-CH(CH<sub>3</sub>)<sub>2</sub> + O<sub>2</sub> → C<sub>6</sub>H<sub>5</sub>-C(CH<sub>3</sub>)<sub>2</sub>-O-OH
+            </div><br>
+            इसके बाद क्युमीन हाइड्रोपरोक्साइड का तनु अम्ल के साथ विघटन होता है:<br><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-C(CH<sub>3</sub>)<sub>2</sub>-O-OH → C<sub>6</sub>H<sub>5</sub>OH + CH<sub>3</sub>COCH<sub>3</sub>
+            </div><br>
+            इस अभिक्रिया में फीनॉल और ऐसीटोन दोनों प्राप्त होते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.10</div>
+            <div>क्लोरोबेंजीन से फीनॉल बनाने की रासायनिक अभिक्रिया लिखिए।</div>
+        </div>
+        <div class="answer">
+            क्लोरोबेंजीन से फीनॉल बनाने की अभिक्रिया निम्नलिखित है:<br><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>Cl + 2NaOH → C<sub>6</sub>H<sub>5</sub>ONa + NaCl + H<sub>2</sub>O
+            </div><br>
+            इसके बाद सोडियम फिनॉक्साइड का अम्लीकरण कर फीनॉल प्राप्त किया जाता है:<br><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>ONa + HCl → C<sub>6</sub>H<sub>5</sub>OH + NaCl
+            </div><br>
+            यह अभिक्रिया 623 K तापमान और 320 वायुमंडलीय दाब पर संपन्न होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.11</div>
+            <div>एथीन के जलयोजन से एथेनॉल प्राप्त करने की क्रियाविधि लिखिए।</div>
+        </div>
+        <div class="answer">
+            एथीन के जलयोजन से एथेनॉल प्राप्त करने की क्रियाविधि निम्नलिखित है:<br><br>
+            <b>चरण 1:</b> H<sub>3</sub>O<sup>+</sup> के इलेक्ट्रॉनरागी आक्रमण द्वारा एथीन का प्रोटोनेशन<br>
+            <div class="chemical-reaction">
+                H<sub>2</sub>O + H<sup>+</sup> → H<sub>3</sub>O<sup>+</sup><br>
+                CH<sub>2</sub>=CH<sub>2</sub> + H<sub>3</sub>O<sup>+</sup> → CH<sub>3</sub>-CH<sub>2</sub><sup>+</sup>
+            </div><br>
+            <b>चरण 2:</b> कार्बोकैटायन पर जल का नाभिकस्नेही आक्रमण<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub><sup>+</sup> + H<sub>2</sub>O → CH<sub>3</sub>-CH<sub>2</sub>-OH<sub>2</sub><sup>+</sup>
+            </div><br>
+            <b>चरण 3:</b> प्रोटोनेशन से एथेनॉल का निर्माण<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-OH<sub>2</sub><sup>+</sup> → CH<sub>3</sub>-CH<sub>2</sub>-OH + H<sup>+</sup>
+            </div><br>
+            यह अभिक्रिया अम्ल उत्प्रेरक की उपस्थिति में होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.12</div>
+            <div>आपको बेंजीन, सांद्र H<sub>2</sub>SO<sub>4</sub> और NaOH दिए गए हैं। इन अभिकर्मकों के उपयोग द्वारा फीनॉल के संश्लेषण की समीकरण लिखिए।</div>
+        </div>
+        <div class="answer">
+            बेंजीन, सांद्र H<sub>2</sub>SO<sub>4</sub> और NaOH का उपयोग करके फीनॉल का संश्लेषण निम्नलिखित चरणों में किया जा सकता है:<br><br>
+            <b>चरण 1:</b> बेंजीन का सल्फोनेशन<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>6</sub> + H<sub>2</sub>SO<sub>4</sub> → C<sub>6</sub>H<sub>5</sub>SO<sub>3</sub>H + H<sub>2</sub>O
+            </div><br>
+            <b>चरण 2:</b> बेंजीन सल्फोनिक अम्ल का सोडियम हाइड्रॉक्साइड के साथ गर्म करना<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>SO<sub>3</sub>H + NaOH → C<sub>6</sub>H<sub>5</sub>SO<sub>3</sub>Na + H<sub>2</sub>O
+            </div><br>
+            <b>चरण 3:</b> सोडियम बेंजीन सल्फोनेट का संगलन<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>SO<sub>3</sub>Na + 2NaOH → C<sub>6</sub>H<sub>5</sub>ONa + Na<sub>2</sub>SO<sub>3</sub> + H<sub>2</sub>O
+            </div><br>
+            <b>चरण 4:</b> सोडियम फिनॉक्साइड का अम्लीकरण<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>ONa + HCl → C<sub>6</sub>H<sub>5</sub>OH + NaCl
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.13</div>
+            <div>आप निम्नलिखित को कैसे संश्लेषित करेंगे? दर्शाइए।<br>
+            (i) एक उपयुक्त ऐल्कीन से 1-फेनिलएथेनॉल<br>
+            (ii) S<sub>N</sub>2 अभिक्रिया द्वारा ऐल्किल हैलाइड के उपयोग से साइक्लोहेक्सिलमेथेनॉल<br>
+            (iii) एक उपयुक्त ऐल्किल हैलाइड के उपयोग से पेन्टेन-1-ऑल</div>
+        </div>
+        <div class="answer">
+            <b>(i) एक उपयुक्त ऐल्कीन से 1-फेनिलएथेनॉल:</b><br>
+            स्टाइरीन (फेनिलएथीन) के जलयोजन द्वारा:<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-CH=CH<sub>2</sub> + H<sub>2</sub>O → C<sub>6</sub>H<sub>5</sub>-CH(OH)-CH<sub>3</sub>
+            </div><br>
+            <b>(ii) S<sub>N</sub>2 अभिक्रिया द्वारा ऐल्किल हैलाइड के उपयोग से साइक्लोहेक्सिलमेथेनॉल:</b><br>
+            सोडियम मेथॉक्साइड और साइक्लोहेक्सिलमेथिल हैलाइड की अभिक्रिया द्वारा:<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>ONa + C<sub>6</sub>H<sub>11</sub>-CH<sub>2</sub>-X → C<sub>6</sub>H<sub>11</sub>-CH<sub>2</sub>-O-CH<sub>3</sub> + NaX
+            </div><br>
+            <b>(iii) एक उपयुक्त ऐल्किल हैलाइड के उपयोग से पेन्टेन-1-ऑल:</b><br>
+            1-ब्रोमोपेन्टेन के जल-अपघटन द्वारा:<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-(CH<sub>2</sub>)<sub>3</sub>-CH<sub>2</sub>Br + NaOH → CH<sub>3</sub>-(CH<sub>2</sub>)<sub>3</sub>-CH<sub>2</sub>OH + NaBr
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.14</div>
+            <div>ऐसी दो अभिक्रियाएँ दीजिए जिनसे फीनॉल की अम्लीय प्रकृति प्रदर्शित होती हो, फीनॉल की अम्लता की तुलना एथेनॉल से कीजिए।</div>
+        </div>
+        <div class="answer">
+            फीनॉल की अम्लीय प्रकृति प्रदर्शित करने वाली दो अभिक्रियाएँ:<br><br>
+            <b>1. सोडियम हाइड्रॉक्साइड के साथ अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + NaOH → C<sub>6</sub>H<sub>5</sub>ONa + H<sub>2</sub>O
+            </div><br>
+            <b>2. सोडियम धातु के साथ अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                2C<sub>6</sub>H<sub>5</sub>OH + 2Na → 2C<sub>6</sub>H<sub>5</sub>ONa + H<sub>2</sub>
+            </div><br>
+            <b>फीनॉल और एथेनॉल की अम्लता की तुलना:</b><br>
+            फीनॉल एथेनॉल से अधिक अम्लीय होता है। इसका कारण फीनॉल के फिनॉक्साइड आयन में ऋणात्मक आवेश का विस्थापन है, जो इसे स्थायित्व प्रदान करता है। एथेनॉल में ऐसा विस्थापन संभव नहीं है। फीनॉल का pK<sub>a</sub> मान 10 है जबकि एथेनॉल का pK<sub>a</sub> मान 15.9 है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.15</div>
+            <div>समझाइए कि ऑर्थो-नाइट्रोफीनॉल, ऑर्थो-मेथॉक्सीफीनॉल से अधिक अम्लीय क्यों होती है?</div>
+        </div>
+        <div class="answer">
+            ऑर्थो-नाइट्रोफीनॉल, ऑर्थो-मेथॉक्सीफीनॉल से अधिक अम्लीय होने के निम्नलिखित कारण हैं:<br><br>
+            1. <b>-NO<sub>2</sub> समूह का इलेक्ट्रॉन-स्वीकारक प्रकृति:</b> नाइट्रो समूह एक प्रबल इलेक्ट्रॉन-स्वीकारक समूह है, जो फिनॉक्साइड आयन के ऋणात्मक आवेश को स्थायित्व प्रदान करता है।<br><br>
+            2. <b>-OCH<sub>3</sub> समूह का इलेक्ट्रॉन-दाता प्रकृति:</b> मेथॉक्सी समूह एक इलेक्ट्रॉन-दाता समूह है, जो फिनॉक्साइड आयन के ऋणात्मक आवेश को अस्थायी बनाता है।<br><br>
+            3. <b>आयन का स्थायित्व:</b> नाइट्रोफीनॉल के फिनॉक्साइड आयन में ऋणात्मक आवेश का प्रभावी विस्थापन होता है, जबकि मेथॉक्सीफीनॉल के फिनॉक्साइड आयन में ऐसा नहीं होता।<br><br>
+            इन कारणों से ऑर्थो-नाइट्रोफीनॉल का pK<sub>a</sub> मान ऑर्थो-मेथॉक्सीफीनॉल से कम होता है, अर्थात यह अधिक अम्लीय होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.16</div>
+            <div>समझाइए कि बेंजीन वलय से जुड़ा -OH समूह उसे इलेक्ट्रॉनरागी प्रतिस्थापन के प्रति कैसे सक्रिय करता है?</div>
+        </div>
+        <div class="answer">
+            बेंजीन वलय से जुड़ा -OH समूह इसे इलेक्ट्रॉनरागी प्रतिस्थापन के प्रति निम्नलिखित तरीके से सक्रिय करता है:<br><br>
+            1. <b>+R प्रभाव:</b> -OH समूह में ऑक्सीजन पर उपस्थित एकाकी इलेक्ट्रॉन युग्म बेंजीन वलय के साथ अनुनाद करता है, जिससे वलय पर इलेक्ट्रॉन घनत्व बढ़ जाता है।<br><br>
+            2. <b>ऑर्थो-पैरा निर्देशक:</b> -OH समूह एक प्रबल ऑर्थो-पैरा निर्देशक समूह है, जो आने वाले इलेक्ट्रॉनरागी को ऑर्थो और पैरा स्थितियों की ओर निर्देशित करता है।<br><br>
+            3. <b>वलय का सक्रियण:</b> -OH समूह के कारण बेंजीन वलय इलेक्ट्रॉनरागी प्रतिस्थापन अभिक्रियाओं के प्रति अत्यधिक सक्रिय हो जाती है।<br><br>
+            इन कारणों से फीनॉल आसानी से हैलोजनीकरण, नाइट्रीकरण, सल्फोनीकरण आदि अभिक्रियाएँ देता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.17</div>
+            <div>निम्नलिखित अभिक्रियाओं के लिए समीकरण दीजिए:<br>
+            (i) प्रोपेन-1-ऑल का क्षारीय KMnO<sub>4</sub> के साथ ऑक्सीकरण<br>
+            (ii) ब्रोमीन की CS<sub>2</sub> में फीनॉल के साथ अभिक्रिया<br>
+            (iii) तनु HNO<sub>3</sub> की फीनॉल से अभिक्रिया<br>
+            (iv) फीनॉल की जलीय NaOH की उपस्थिति में क्लोरोफॉर्म के साथ अभिक्रिया</div>
+        </div>
+        <div class="answer">
+            <b>(i) प्रोपेन-1-ऑल का क्षारीय KMnO<sub>4</sub> के साथ ऑक्सीकरण:</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + 2[O] → CH<sub>3</sub>-CH<sub>2</sub>-COOH + H<sub>2</sub>O
+            </div><br>
+            <b>(ii) ब्रोमीन की CS<sub>2</sub> में फीनॉल के साथ अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + Br<sub>2</sub> → o-Br-C<sub>6</sub>H<sub>4</sub>-OH + p-Br-C<sub>6</sub>H<sub>4</sub>-OH
+            </div><br>
+            <b>(iii) तनु HNO<sub>3</sub> की फीनॉल से अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + HNO<sub>3</sub> → o-NO<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-OH + p-NO<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-OH
+            </div><br>
+            <b>(iv) फीनॉल की जलीय NaOH की उपस्थिति में क्लोरोफॉर्म के साथ अभिक्रिया (राइमर-टीमन अभिक्रिया):</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + CHCl<sub>3</sub> + 3NaOH → o-HO-C<sub>6</sub>H<sub>4</sub>-CHO + 3NaCl + 2H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.18</div>
+            <div>निम्नलिखित को उदाहरण सहित समझाइए:<br>
+            (i) कोल्बे अभिक्रिया<br>
+            (ii) राइमर-टीमन अभिक्रिया<br>
+            (iii) विलियमसन ईथर संश्लेषण<br>
+            (iv) असममित ईथर</div>
+        </div>
+        <div class="answer">
+            <b>(i) कोल्बे अभिक्रिया:</b><br>
+            फीनॉल के सोडियम लवण का कार्बन डाइऑक्साइड के साथ उच्च दाब और ताप पर अभिक्रिया कर ऑर्थो-हाइड्रॉक्सी बेंजोइक अम्ल बनाना।<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>ONa + CO<sub>2</sub> → o-HO-C<sub>6</sub>H<sub>4</sub>-COONa
+            </div><br>
+            <b>(ii) राइमर-टीमन अभिक्रिया:</b><br>
+            फीनॉल का क्लोरोफॉर्म और क्षार के साथ अभिक्रिया कर सैलिसिलैल्डिहाइड बनाना।<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + CHCl<sub>3</sub> + 3NaOH → o-HO-C<sub>6</sub>H<sub>4</sub>-CHO + 3NaCl + 2H<sub>2</sub>O
+            </div><br>
+            <b>(iii) विलियमसन ईथर संश्लेषण:</b><br>
+            ऐल्किल हैलाइड और सोडियम ऐल्कॉक्साइड की अभिक्रिया से ईथर बनाना।<br>
+            <div class="chemical-reaction">
+                R-X + R'-ONa → R-O-R' + NaX
+            </div><br>
+            <b>(iv) असममित ईथर:</b><br>
+            वे ईथर जिनमें ऑक्सीजन परमाणु से जुड़े दोनों ऐल्किल समूह भिन्न-भिन्न होते हैं।<br>
+            उदाहरण: CH<sub>3</sub>-O-C<sub>2</sub>H<sub>5</sub> (मेथिल एथिल ईथर)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.19</div>
+            <div>निम्नलिखित के लिए रासायनिक समीकरण लिखिए:<br>
+            (i) एथेनॉल का सांद्र H<sub>2</sub>SO<sub>4</sub> के साथ 443 K पर अभिक्रिया<br>
+            (ii) एथेनॉल का सांद्र H<sub>2</sub>SO<sub>4</sub> के साथ 413 K पर अभिक्रिया<br>
+            (iii) फीनॉल का ब्रोमीन जल के साथ अभिक्रिया</div>
+        </div>
+        <div class="answer">
+            <b>(i) एथेनॉल का सांद्र H<sub>2</sub>SO<sub>4</sub> के साथ 443 K पर अभिक्रिया (निर्जलीकरण):</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-OH → CH<sub>2</sub>=CH<sub>2</sub> + H<sub>2</sub>O
+            </div><br>
+            <b>(ii) एथेनॉल का सांद्र H<sub>2</sub>SO<sub>4</sub> के साथ 413 K पर अभिक्रिया (अन्तराआण्विक निर्जलीकरण):</b><br>
+            <div class="chemical-reaction">
+                2CH<sub>3</sub>-CH<sub>2</sub>-OH → CH<sub>3</sub>-CH<sub>2</sub>-O-CH<sub>2</sub>-CH<sub>3</sub> + H<sub>2</sub>O
+            </div><br>
+            <b>(iii) फीनॉल का ब्रोमीन जल के साथ अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + 3Br<sub>2</sub> → 2,4,6-ट्राइब्रोमोफीनॉल + 3HBr
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.20</div>
+            <div>निम्नलिखित अभिक्रियाओं के मुख्य उत्पाद लिखिए:<br>
+            (i) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + SOCl<sub>2</sub> →<br>
+            (ii) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + PCl<sub>5</sub> →<br>
+            (iii) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + HBr →<br>
+            (iv) (CH<sub>3</sub>)<sub>3</sub>C-OH + HBr →</div>
+        </div>
+        <div class="answer">
+            <b>(i) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + SOCl<sub>2</sub> →</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + SOCl<sub>2</sub> → CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-Cl + SO<sub>2</sub> + HCl
+            </div><br>
+            <b>(ii) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + PCl<sub>5</sub> →</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + PCl<sub>5</sub> → CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-Cl + POCl<sub>3</sub> + HCl
+            </div><br>
+            <b>(iii) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + HBr →</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH + HBr → CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-Br + H<sub>2</sub>O
+            </div><br>
+            <b>(iv) (CH<sub>3</sub>)<sub>3</sub>C-OH + HBr →</b><br>
+            <div class="chemical-reaction">
+                (CH<sub>3</sub>)<sub>3</sub>C-OH + HBr → (CH<sub>3</sub>)<sub>3</sub>C-Br + H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.21</div>
+            <div>निम्नलिखित में से कौन-सा यौगिक ऑक्सीकरण पर बेंजोइक अम्ल देगा?<br>
+            (i) एथेनॉल<br>
+            (ii) एथेनल<br>
+            (iii) ब्यूटेन-2-ऑल<br>
+            (iv) ब्यूटेन-2-ऑन</div>
+        </div>
+        <div class="answer">
+            ऑक्सीकरण पर बेंजोइक अम्ल देने वाला यौगिक वह होगा जिसमें बेंजीन वलय और एक कार्बोक्सिलिक अम्ल समूह में परिवर्तित होने वाला समूह उपस्थित हो।<br><br>
+            उपरोक्त यौगिकों में से कोई भी सीधे बेंजोइक अम्ल नहीं देगा क्योंकि इनमें बेंजीन वलय उपस्थित नहीं है।<br><br>
+            यदि प्रश्न टॉलूईन (C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub>) के बारे में होता, तो वह ऑक्सीकरण पर बेंजोइक अम्ल देता:<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-CH<sub>3</sub> + 3[O] → C<sub>6</sub>H<sub>5</sub>-COOH + H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.22</div>
+            <div>ऐल्कोहॉल के निर्जलीकरण की क्रियाविधि लिखिए।</div>
+        </div>
+        <div class="answer">
+            ऐल्कोहॉल के निर्जलीकरण की क्रियाविधि निम्नलिखित है:<br><br>
+            <b>चरण 1:</b> प्रोटोनेशन<br>
+            <div class="chemical-reaction">
+                R-CH<sub>2</sub>-CH<sub>2</sub>-OH + H<sup>+</sup> → R-CH<sub>2</sub>-CH<sub>2</sub>-OH<sub>2</sub><sup>+</sup>
+            </div><br>
+            <b>चरण 2:</b> जल के अणु का निष्कासन और कार्बोकैटायन का निर्माण<br>
+            <div class="chemical-reaction">
+                R-CH<sub>2</sub>-CH<sub>2</sub>-OH<sub>2</sub><sup>+</sup> → R-CH<sub>2</sub>-CH<sub>2</sub><sup>+</sup> + H<sub>2</sub>O
+            </div><br>
+            <b>चरण 3:</b> कार्बोकैटायन से प्रोटॉन का निष्कासन और ऐल्कीन का निर्माण<br>
+            <div class="chemical-reaction">
+                R-CH<sub>2</sub>-CH<sub>2</sub><sup>+</sup> → R-CH=CH<sub>2</sub> + H<sup>+</sup>
+            </div><br>
+            यह अभिक्रिया अम्ल उत्प्रेरक की उपस्थिति में होती है और E1 या E2 क्रियाविधि द्वारा संपन्न हो सकती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.23</div>
+            <div>निम्नलिखित के IUPAC नाम लिखिए:<br>
+            (i) CH<sub>3</sub>-CH<sub>2</sub>-O-CH<sub>2</sub>-CH(CH<sub>3</sub>)<sub>2</sub><br>
+            (ii) CH<sub>3</sub>-O-CH<sub>2</sub>-CH<sub>2</sub>-Cl<br>
+            (iii) O<sub>2</sub>N-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub> (p)<br>
+            (iv) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-O-CH<sub>3</sub></div>
+        </div>
+        <div class="answer">
+            <b>(i) CH<sub>3</sub>-CH<sub>2</sub>-O-CH<sub>2</sub>-CH(CH<sub>3</sub>)<sub>2</sub>:</b> 1-एथॉक्सी-2-मेथिलप्रोपेन<br>
+            <b>(ii) CH<sub>3</sub>-O-CH<sub>2</sub>-CH<sub>2</sub>-Cl:</b> 1-क्लोरो-2-मेथॉक्सीएथेन<br>
+            <b>(iii) O<sub>2</sub>N-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub> (p):</b> 4-नाइट्रोएनिसोल<br>
+            <b>(iv) CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-O-CH<sub>3</sub>:</b> 1-मेथॉक्सीप्रोपेन
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.24</div>
+            <div>निम्नलिखित में से कौन-सा यौगिक ऑक्सीकरण पर ऐसीटोन देगा?<br>
+            (i) 1-प्रोपेनॉल<br>
+            (ii) 2-प्रोपेनॉल<br>
+            (iii) 2-मेथिल-2-प्रोपेनॉल<br>
+            (iv) 2-मेथिलप्रोपेनॉल</div>
+        </div>
+        <div class="answer">
+            ऑक्सीकरण पर ऐसीटोन देने वाला यौगिक वह द्वितीयक ऐल्कोहॉल होगा जिसके ऑक्सीकरण पर कीटोन बनेगा और वह कीटोन ऐसीटोन होगा।<br><br>
+            <b>(ii) 2-प्रोपेनॉल</b> ऑक्सीकरण पर ऐसीटोन देगा:<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH(OH)-CH<sub>3</sub> + [O] → CH<sub>3</sub>-CO-CH<sub>3</sub> + H<sub>2</sub>O
+            </div><br>
+            अन्य यौगिक:<br>
+            (i) 1-प्रोपेनॉल ऑक्सीकरण पर प्रोपेनल और फिर प्रोपेनोइक अम्ल देगा।<br>
+            (iii) 2-मेथिल-2-प्रोपेनॉल (तृतीयक ऐल्कोहॉल) ऑक्सीकरण नहीं देता।<br>
+            (iv) 2-मेथिलप्रोपेनॉल ऑक्सीकरण पर 2-मेथिलप्रोपेनल देगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.25</div>
+            <div>प्रोपेन-1-ऑल और 2-मेथिलप्रोपेन-1-ऑल में क्या अंतर है? इनकी संरचनाएँ बनाइए।</div>
+        </div>
+        <div class="answer">
+            प्रोपेन-1-ऑल और 2-मेथिलप्रोपेन-1-ऑल में निम्नलिखित अंतर हैं:<br><br>
+            <b>प्रोपेन-1-ऑल:</b><br>
+            <div class="chemical-structure">
+                CH<sub>3</sub>-CH<sub>2</sub>-CH<sub>2</sub>-OH
+            </div><br>
+            - यह एक प्राथमिक ऐल्कोहॉल है<br>
+            - इसमें तीन कार्बन परमाणुओं की सीधी श्रृंखला है<br>
+            - -OH समूह प्राथमिक कार्बन से जुड़ा है<br><br>
+            <b>2-मेथिलप्रोपेन-1-ऑल:</b><br>
+            <div class="chemical-structure">
+                (CH<sub>3</sub>)<sub>2</sub>CH-CH<sub>2</sub>-OH
+            </div><br>
+            - यह भी एक प्राथमिक ऐल्कोहॉल है<br>
+            - इसमें शाखित श्रृंखला है<br>
+            - -OH समूह प्राथमिक कार्बन से जुड़ा है<br>
+            - इसमें मेथिल समूह द्वारा शाखन है
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.26</div>
+            <div>ऐल्कोहॉल के निर्जलीकरण में कार्बोकैटायन पुनर्विन्यास क्यों होता है?</div>
+        </div>
+        <div class="answer">
+            ऐल्कोहॉल के निर्जलीकरण में कार्बोकैटायन पुनर्विन्यास निम्नलिखित कारणों से होता है:<br><br>
+            1. <b>स्थायित्व:</b> कम स्थायी कार्बोकैटायन अधिक स्थायी कार्बोकैटायन में पुनर्विन्यास कर सकता है। उदाहरण के लिए, प्राथमिक कार्बोकैटायन द्वितीयक या तृतीयक कार्बोकैटायन में पुनर्विन्यास कर सकता है।<br><br>
+            2. <b>हाइड्राइड विस्थापन:</b> 1,2-हाइड्राइड विस्थापन द्वारा कार्बोकैटायन का पुनर्विन्यास हो सकता है।<br><br>
+            3. <b>मेथिल विस्थापन:</b> 1,2-मेथिल विस्थापन द्वारा भी पुनर्विन्यास हो सकता है।<br><br>
+            4. <b>ऊर्जा में कमी:</b> पुनर्विन्यास से कार्बोकैटायन की ऊर्जा कम हो जाती है, जिससे यह अधिक स्थायी हो जाता है।<br><br>
+            उदाहरण: ब्यूटेन-2-ऑल के निर्जलीकरण में, प्रारंभिक रूप से बना द्वितीयक कार्बोकैटायन पुनर्विन्यास करके अधिक स्थायी तृतीयक कार्बोकैटायन बना सकता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.27</div>
+            <div>निम्नलिखित की संरचनाएँ बनाइए:<br>
+            (i) 1-फेनिलप्रोपेन-1-ऑल<br>
+            (ii) 3-मेथिलब्यूटेन-2-ऑल<br>
+            (iii) 2-मेथिलप्रोपेन-2-ऑल</div>
+        </div>
+        <div class="answer">
+            <b>(i) 1-फेनिलप्रोपेन-1-ऑल:</b><br>
+            <div class="chemical-structure">
+                C<sub>6</sub>H<sub>5</sub>-CH(OH)-CH<sub>2</sub>-CH<sub>3</sub>
+            </div><br>
+            <b>(ii) 3-मेथिलब्यूटेन-2-ऑल:</b><br>
+            <div class="chemical-structure">
+                CH<sub>3</sub>-CH(OH)-CH(CH<sub>3</sub>)-CH<sub>3</sub>
+            </div><br>
+            <b>(iii) 2-मेथिलप्रोपेन-2-ऑल:</b><br>
+            <div class="chemical-structure">
+                (CH<sub>3</sub>)<sub>3</sub>C-OH
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.28</div>
+            <div>फीनॉल और ऐल्कोहॉल में क्या अंतर है? उदाहरण सहित समझाइए।</div>
+        </div>
+        <div class="answer">
+            फीनॉल और ऐल्कोहॉल में निम्नलिखित अंतर हैं:<br><br>
+            <b>1. संरचना:</b><br>
+            - फीनॉल: -OH समूह सीधे बेंजीन वलय से जुड़ा होता है (Ar-OH)<br>
+            - ऐल्कोहॉल: -OH समूह ऐल्किल समूह से जुड़ा होता है (R-OH)<br><br>
+            <b>2. अम्लीयता:</b><br>
+            - फीनॉल: अधिक अम्लीय (pK<sub>a</sub> ~10)<br>
+            - ऐल्कोहॉल: कम अम्लीय (pK<sub>a</sub> ~15-16)<br><br>
+            <b>3. ईस्टरीकरण:</b><br>
+            - फीनॉल: ईस्टरीकरण कठिनाई से होता है<br>
+            - ऐल्कोहॉल: आसानी से ईस्टरीकरण होता है<br><br>
+            <b>4. FeCl<sub>3</sub> परीक्षण:</b><br>
+            - फीनॉल: बैंगनी रंग देता है<br>
+            - ऐल्कोहॉल: कोई रंग नहीं देता<br><br>
+            <b>5. इलेक्ट्रॉनरागी प्रतिस्थापन:</b><br>
+            - फीनॉल: आसानी से इलेक्ट्रॉनरागी प्रतिस्थापन देता है<br>
+            - ऐल्कोहॉल: इलेक्ट्रॉनरागी प्रतिस्थापन नहीं देता
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.29</div>
+            <div>फीनॉल की निम्नलिखित के साथ अभिक्रिया लिखिए:<br>
+            (i) ब्रोमीन जल<br>
+            (ii) नाइट्रिक अम्ल</div>
+        </div>
+        <div class="answer">
+            <b>(i) फीनॉल की ब्रोमीन जल के साथ अभिक्रिया:</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + 3Br<sub>2</sub> → 2,4,6-ट्राइब्रोमोफीनॉल + 3HBr
+            </div><br>
+            यह अभिक्रिया फीनॉल की विशेष परीक्षण है और सफेद अवक्षेप बनाती है।<br><br>
+            <b>(ii) फीनॉल की नाइट्रिक अम्ल के साथ अभिक्रिया:</b><br>
+            तनु नाइट्रिक अम्ल के साथ:<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + HNO<sub>3</sub> → o-नाइट्रोफीनॉल + p-नाइट्रोफीनॉल
+            </div><br>
+            सांद्र नाइट्रिक अम्ल के साथ:<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>OH + 3HNO<sub>3</sub> → 2,4,6-ट्राइनाइट्रोफीनॉल (पिक्रिक अम्ल) + 3H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.30</div>
+            <div>ईथर की HI के साथ अभिक्रिया की क्रियाविधि लिखिए।</div>
+        </div>
+        <div class="answer">
+            ईथर की HI के साथ अभिक्रिया की क्रियाविधि निम्नलिखित है:<br><br>
+            <b>चरण 1:</b> प्रोटोनेशन<br>
+            <div class="chemical-reaction">
+                R-O-R' + H<sup>+</sup> → R-O<sup>+</sup>H-R'
+            </div><br>
+            <b>चरण 2:</b> S<sub>N</sub>2 आक्रमण<br>
+            <div class="chemical-reaction">
+                R-O<sup>+</sup>H-R' + I<sup>-</sup> → R-I + R'-OH
+            </div><br>
+            <b>चरण 3:</b> ऐल्कोहॉल का हैलोजन में परिवर्तन<br>
+            <div class="chemical-reaction">
+                R'-OH + HI → R'-I + H<sub>2</sub>O
+            </div><br>
+            यदि एक ऐल्किल समूह तृतीयक है, तो अभिक्रिया S<sub>N</sub>1 क्रियाविधि द्वारा हो सकती है।<br><br>
+            असममित ईथर में, छोटा ऐल्किल समूह आयोडाइड के रूप में प्राप्त होता है क्योंकि S<sub>N</sub>2 आक्रमण कम बाधित कार्बन पर होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.31</div>
+            <div>निम्नलिखित अभिक्रियाओं के उत्पाद लिखिए:<br>
+            (i) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HI →<br>
+            (ii) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HBr →<br>
+            (iii) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> →<br>
+            (iv) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + Br<sub>2</sub>/FeBr<sub>3</sub> →</div>
+        </div>
+        <div class="answer">
+            <b>(i) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HI →</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HI → C<sub>6</sub>H<sub>5</sub>-OH + CH<sub>3</sub>I
+            </div><br>
+            <b>(ii) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HBr →</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HBr → C<sub>6</sub>H<sub>5</sub>-OH + CH<sub>3</sub>Br
+            </div><br>
+            <b>(iii) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HNO<sub>3</sub>/H<sub>2</sub>SO<sub>4</sub> →</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + HNO<sub>3</sub> → o-NO<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub> + p-NO<sub>2</sub>-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub>
+            </div><br>
+            <b>(iv) C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + Br<sub>2</sub>/FeBr<sub>3</sub> →</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>-O-CH<sub>3</sub> + Br<sub>2</sub> → o-Br-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub> + p-Br-C<sub>6</sub>H<sub>4</sub>-O-CH<sub>3</sub>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.32</div>
+            <div>निम्नलिखित में से कौन-सा फीनॉल सबसे अधिक अम्लीय है और क्यों?<br>
+            (i) o-नाइट्रोफीनॉल<br>
+            (ii) m-नाइट्रोफीनॉल<br>
+            (iii) p-नाइट्रोफीनॉल<br>
+            (iv) फीनॉल</div>
+        </div>
+        <div class="answer">
+            <b>o-नाइट्रोफीनॉल</b> सबसे अधिक अम्लीय है।<br><br>
+            <b>कारण:</b><br>
+            1. नाइट्रो समूह एक प्रबल इलेक्ट्रॉन-स्वीकारक समूह है जो फिनॉक्साइड आयन के ऋणात्मक आवेश को स्थायित्व प्रदान करता है।<br><br>
+            2. ऑर्थो स्थिति में नाइट्रो समूज और -OH समूह के बीच अंतरा-आण्विक हाइड्रोजन बंधन बनता है, जो अतिरिक्त स्थायित्व प्रदान करता है।<br><br>
+            3. ऑर्थो स्थिति में नाइट्रो समूज का -I प्रभाव सबसे अधिक प्रभावी होता है।<br><br>
+            अम्लीयता का क्रम: o-नाइट्रोफीनॉल > p-नाइट्रोफीनॉल > m-नाइट्रोफीनॉल > फीनॉल
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.33</div>
+            <div>3-मेथिलब्यूटेन-2-ऑल को HBr से अभिक्रिया कराने पर निम्नलिखित अभिक्रिया होती है:<br>
+            CH<sub>3</sub>-CH(OH)-CH(CH<sub>3</sub>)-CH<sub>3</sub> + HBr → CH<sub>3</sub>-C(Br)-CH<sub>2</sub>-CH<sub>3</sub><br>
+            इस अभिक्रिया की क्रियाविधि दीजिए।<br>
+            (संकेत: चरण II में प्राप्त द्वितीयक कार्बोकैटायन हाइड्राइड विस्थापन के कारण पुनर्विन्यास करके स्थायी तृतीयक कार्बोकैटायन बनाते हैं।)</div>
+        </div>
+        <div class="answer">
+            इस अभिक्रिया की क्रियाविधि निम्नलिखित है:<br><br>
+            <b>चरण 1:</b> प्रोटोनेशन<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH(OH)-CH(CH<sub>3</sub>)-CH<sub>3</sub> + H<sup>+</sup> → CH<sub>3</sub>-CH(OH<sub>2</sub><sup>+</sup>)-CH(CH<sub>3</sub>)-CH<sub>3</sub>
+            </div><br>
+            <b>चरण 2:</b> जल के अणु का निष्कासन और द्वितीयक कार्बोकैटायन का निर्माण<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH(OH<sub>2</sub><sup>+</sup>)-CH(CH<sub>3</sub>)-CH<sub>3</sub> → CH<sub>3</sub>-CH<sup>+</sup>-CH(CH<sub>3</sub>)-CH<sub>3</sub> + H<sub>2</sub>O
+            </div><br>
+            <b>चरण 3:</b> कार्बोकैटायन का पुनर्विन्यास (1,2-हाइड्राइड विस्थापन)<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-CH<sup>+</sup>-CH(CH<sub>3</sub>)-CH<sub>3</sub> → CH<sub>3</sub>-C<sup>+</sup>(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub>
+            </div><br>
+            <b>चरण 4:</b> ब्रोमाइड आयन का आक्रमण<br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>-C<sup>+</sup>(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub> + Br<sup>-</sup> → CH<sub>3</sub>-C(Br)(CH<sub>3</sub>)-CH<sub>2</sub>-CH<sub>3</sub>
+            </div><br>
+            इस प्रकार प्रारंभिक रूप से बना द्वितीयक कार्बोकैटायन पुनर्विन्यास करके अधिक स्थायी तृतीयक कार्बोकैटायन बनाता है, जिससे तृतीयक ब्रोमाइड प्राप्त होता है।
+        </div>
+    </div>
+
+</body>
+</html>

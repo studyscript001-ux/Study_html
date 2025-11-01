@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 रसायन विज्ञान - अध्याय 9: एमीन</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #2E8B57, #3CB371);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #2E8B57;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+        
+        .chemical-structure {
+            text-align: center;
+            margin: 15px 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+        }
+        
+        .chemical-reaction {
+            text-align: center;
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        .sub {
+            vertical-align: sub;
+            font-size: smaller;
+        }
+        
+        .sup {
+            vertical-align: super;
+            font-size: smaller;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 रसायन विज्ञान</h1>
+        <p>अध्याय 9: एमीन</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.1</div>
+            <div>निम्नलिखित एमीनों को प्राथमिक, द्वितीयक और तृतीयक एमीनों में वर्गीकृत कीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) (CH<sub>3</sub>)<sub>2</sub>CHNH<sub>2</sub>:</b> प्राथमिक एमीन (1°)<br>
+            <b>IUPAC नाम:</b> 2-मेथिलप्रोपेन-1-एमीन<br><br>
+            
+            <b>(ii) CH<sub>3</sub>(CH<sub>2</sub>)<sub>2</sub>NH<sub>2</sub>:</b> प्राथमिक एमीन (1°)<br>
+            <b>IUPAC नाम:</b> प्रोपेन-1-एमीन<br><br>
+            
+            <b>(iii) CH<sub>3</sub>NHCH(CH<sub>3</sub>)<sub>2</sub>:</b> द्वितीयक एमीन (2°)<br>
+            <b>IUPAC नाम:</b> N-मेथिलप्रोपेन-2-एमीन<br><br>
+            
+            <b>(iv) (CH<sub>3</sub>)<sub>3</sub>CNH<sub>2</sub>:</b> प्राथमिक एमीन (1°)<br>
+            <b>IUPAC नाम:</b> 2,2-डाइमेथिलप्रोपेन-1-एमीन<br><br>
+            
+            <b>(v) C<sub>6</sub>H<sub>5</sub>NHCH<sub>3</sub>:</b> द्वितीयक एमीन (2°)<br>
+            <b>IUPAC नाम:</b> N-मेथिलबेंजीनएमीन<br><br>
+            
+            <b>(vi) (CH<sub>3</sub>CH<sub>2</sub>)<sub>2</sub>NCH<sub>3</sub>:</b> तृतीयक एमीन (3°)<br>
+            <b>IUPAC नाम:</b> N,N-डाइएथिलमेथेनएमीन<br><br>
+            
+            <b>(vii) m-BrC<sub>6</sub>H<sub>4</sub>NH<sub>2</sub>:</b> प्राथमिक एमीन (1°)<br>
+            <b>IUPAC नाम:</b> 3-ब्रोमोबेंजीनएमीन
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.2</div>
+            <div>निम्नलिखित युग्मों के यौगिकों में भेद के लिए एक रासायनिक परीक्षण दीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) मेथिलएमीन और डाइमेथिलएमीन:</b><br>
+            कार्बिलएमीन अभिक्रिया (आइसोसायनेट परीक्षण):<br>
+            - मेथिलएमीन (प्राथमिक) क्लोरोफॉर्म और क्षार के साथ गर्म करने पर फेनिल आइसोसायनेट की दुर्गंध देता है<br>
+            - डाइमेथिलएमीन (द्वितीयक) इस अभिक्रिया को नहीं देता<br><br>
+            
+            <b>(ii) द्वितीयक और तृतीयक एमीन:</b><br>
+            हिंसबर्ग परीक्षण:<br>
+            - द्वितीयक एमीन बेंजीनसल्फोनिल क्लोराइड से अघुलनशील सल्फोनामाइड बनाता है<br>
+            - तृतीयक एमीन इस अभिक्रिया को नहीं देता<br><br>
+            
+            <b>(iii) एथिलएमीन और एनिलीन:</b><br>
+            आजो कपलिंग परीक्षण:<br>
+            - एनिलीन डाइएजोनियम लवण बनाता है जो फीनॉल से कपलिंग कर रंगीन यौगिक देता है<br>
+            - एथिलएमीन यह अभिक्रिया नहीं देता<br><br>
+            
+            <b>(iv) एनिलीन और बेंजिलएमीन:</b><br>
+            कार्बिलएमीन परीक्षण:<br>
+            - एनिलीन क्लोरोफॉर्म और क्षार के साथ गर्म करने पर फेनिल आइसोसायनेट की दुर्गंध देता है<br>
+            - बेंजिलएमीन यह अभिक्रिया नहीं देता<br><br>
+            
+            <b>(v) एनिलीन और N-मेथिलएनिलीन:</b><br>
+            हिंसबर्ग परीक्षण:<br>
+            - एनिलीन (प्राथमिक) बेंजीनसल्फोनिल क्लोराइड से क्षार में घुलनशील सल्फोनामाइड बनाता है<br>
+            - N-मेथिलएनिलीन (द्वितीयक) अघुलनशील सल्फोनामाइड बनाता है
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.3</div>
+            <div>निम्नलिखित के कारण बताइए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) एनिलीन का pK<sub>b</sub> मान मेथिलएमीन की तुलना में अधिक होता है।</b><br>
+            एनिलीन में नाइट्रोजन पर उपस्थित एकांकी इलेक्ट्रॉन युग्म बेंजीन वलय के साथ संयुग्मित होता है, जिससे यह प्रोटॉन ग्रहण करने की क्षमता कम हो जाती है। मेथिलएमीन में मेथिल समूह का +I प्रभाव नाइट्रोजन पर इलेक्ट्रॉन घनत्व बढ़ाता है, जिससे यह प्रबल क्षारक बनता है।<br><br>
+            
+            <b>(ii) एथिलएमीन जल में विलेय है जबकि एनिलीन नहीं है।</b><br>
+            एथिलएमीन जल के साथ हाइड्रोजन आबंध बना सकता है, जबकि एनिलीन में बेंजीन वलय की उपस्थिति के कारण हाइड्रोफोबिक भाग बड़ा होता है, जो जल में विलेयता को कम करता है।<br><br>
+            
+            <b>(iii) मेथिलएमीन फेरिक क्लोराइड के जलीय विलयन के साथ अभिक्रिया कर जलयोजित फेरिक ऑक्साइड का अवक्षेप देता है।</b><br>
+            मेथिलएमीन क्षारीय प्रकृति का होता है और यह FeCl<sub>3</sub> के जलीय विलयन से OH<sup>-</sup> आयन मुक्त करता है, जो Fe<sup>3+</sup> आयनों के साथ अभिक्रिया कर Fe(OH)<sub>3</sub> का भूरा अवक्षेप देता है।<br><br>
+            
+            <b>(iv) यद्यपि एमीन समूह इलेक्ट्रॉनरागी प्रतिस्थापन अभिक्रियाओं में ऑर्थो और पैरा निर्देशक है, फिर भी एनिलीन नाइट्रीकरण द्वारा पर्याप्त मात्रा में मेटा-नाइट्रोएनिलीन देती है।</b><br>
+            नाइट्रीकरण के दौरान अम्लीय माध्यम में एनिलीन प्रोटोनेट होकर एनिलीनियम आयन बनाती है, जो एक मेटा-निर्देशक है, इसलिए कुछ मात्रा में मेटा-नाइट्रोएनिलीन बनती है।<br><br>
+            
+            <b>(v) एनिलीन फ्राइडल-क्राफ्ट्स अभिक्रिया प्रदर्शित नहीं करती।</b><br>
+            एनिलीन एल्युमिनियम क्लोराइड (उत्प्रेरक) के साथ लवण बनाती है, जिससे उत्प्रेरक निष्क्रिय हो जाता है और अभिक्रिया नहीं हो पाती।<br><br>
+            
+            <b>(vi) ऐरोमैटिक एमीनों के डाइएजोनियम लवण ऐलिफैटिक एमीनों से प्राप्त लवणों की तुलना में अधिक स्थायी होते हैं।</b><br>
+            ऐरोमैटिक डाइएजोनियम आयन में आवेश का बेंजीन वलय के साथ संयुग्मन होता है, जो इसे स्थायित्व प्रदान करता है, जबकि ऐलिफैटिक डाइएजोनियम आयन अस्थायी होते हैं।<br><br>
+            
+            <b>(vii) प्राथमिक एमीन के संश्लेषण में गैबरियल थैलिमाइड संश्लेषण को प्राथमिकता दी जाती है।</b><br>
+            यह विधि शुद्ध प्राथमिक एमीन देती है और इसमें द्वितीयक या तृतीयक एमीनों का मिश्रण नहीं बनता, जबकि ऐल्किल हैलाइड के ऐमोनोलिसिस में मिश्रण बनता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.4</div>
+            <div>निम्नलिखित को क्रम में व्यवस्थित कीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) pK<sub>b</sub> मान के घटते क्रम में:</b><br>
+            C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> > C<sub>6</sub>H<sub>5</sub>NHCH<sub>3</sub> > (C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH > C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub><br><br>
+            
+            <b>(ii) क्षारीय सामर्थ्य के घटते क्रम में:</b><br>
+            C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> < C<sub>6</sub>H<sub>5</sub>N(CH<sub>3</sub>)<sub>2</sub> < (C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH < CH<sub>3</sub>NH<sub>2</sub><br><br>
+            
+            <b>(iii) क्षारीय सामर्थ्य के बढ़ते क्रम में:</b><br>
+            <b>(क)</b> एनिलीन, p-नाइट्रोएनिलीन और p-टॉलुईडीन<br>
+            p-नाइट्रोएनिलीन < एनिलीन < p-टॉलुईडीन<br><br>
+            
+            <b>(ख)</b> C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>, C<sub>6</sub>H<sub>5</sub>NHCH<sub>3</sub>, C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>NH<sub>2</sub><br>
+            C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> < C<sub>6</sub>H<sub>5</sub>NHCH<sub>3</sub> < C<sub>6</sub>H<sub>5</sub>CH<sub>2</sub>NH<sub>2</sub><br><br>
+            
+            <b>(iv) गैसीय अवस्था में क्षारीय सामर्थ्य के घटते क्रम में:</b><br>
+            (C<sub>2</sub>H<sub>5</sub>)<sub>3</sub>N > (C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH > C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub> > NH<sub>3</sub><br><br>
+            
+            <b>(v) क्वथनांक के बढ़ते क्रम में:</b><br>
+            C<sub>2</sub>H<sub>5</sub>OH < (CH<sub>3</sub>)<sub>2</sub>NH < C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub><br><br>
+            
+            <b>(vi) जल में विलेयता के बढ़ते क्रम में:</b><br>
+            C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> < (C<sub>2</sub>H<sub>5</sub>)<sub>2</sub>NH < C<sub>2</sub>H<sub>5</sub>NH<sub>2</sub>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.5</div>
+            <div>आप इन्हें कैसे परिवर्तित करेंगे?</div>
+        </div>
+        <div class="answer">
+            <b>(i) एथेनॉइक अम्ल को मेथेनएमीन में</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>COOH → CH<sub>3</sub>COCl → CH<sub>3</sub>CONH<sub>2</sub> → CH<sub>3</sub>NH<sub>2</sub>
+            </div><br>
+            
+            <b>(ii) हेक्सेननाइट्राइल को 1-एमीनोहेक्सेन में</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CN → CH<sub>3</sub>(CH<sub>2</sub>)<sub>4</sub>CH<sub>2</sub>NH<sub>2</sub>
+            </div>
+            LiAlH<sub>4</sub> द्वारा अपचयन<br><br>
+            
+            <b>(iii) मेथेनॉल को एथेनॉइक अम्ल में</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>OH → HCHO → HCOOH → CH<sub>3</sub>COOH
+            </div><br>
+            
+            <b>(iv) एथेनएमीन को मेथेनएमीन में</b><br>
+            गैबरियल संश्लेषण द्वारा<br><br>
+            
+            <b>(v) एथेनॉइक अम्ल को प्रोपेनॉइक अम्ल में</b><br>
+            अरन्ड-आइकर्ट विस्तार द्वारा<br><br>
+            
+            <b>(vi) मेथेनएमीन को एथेनएमीन में</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>NH<sub>2</sub> → CH<sub>3</sub>CN → CH<sub>3</sub>CH<sub>2</sub>NH<sub>2</sub>
+            </div><br>
+            
+            <b>(vii) नाइट्रोमेथेन को डाइमेथिलएमीन में</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>NO<sub>2</sub> → CH<sub>3</sub>NH<sub>2</sub> → (CH<sub>3</sub>)<sub>2</sub>NH
+            </div><br>
+            
+            <b>(viii) प्रोपेनॉइक अम्ल को एथेनॉइक अम्ल में</b><br>
+            डीकार्बोक्सिलेशन द्वारा
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.6</div>
+            <div>प्राथमिक, द्वितीयक और तृतीयक एमीनों की पहचान की विधि का वर्णन कीजिए। इन अभिक्रियाओं के रासायनिक समीकरण भी लिखिए।</div>
+        </div>
+        <div class="answer">
+            <b>हिंसबर्ग परीक्षण:</b><br>
+            यह परीक्षण प्राथमिक, द्वितीयक और तृतीयक एमीनों में विभेद करने के लिए प्रयुक्त होता है।<br><br>
+            
+            <b>प्रक्रिया:</b><br>
+            एमीन को बेंजीनसल्फोनिल क्लोराइड (C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>Cl) के साथ क्षारीय माध्यम में अभिक्रिया कराई जाती है।<br><br>
+            
+            <b>(i) प्राथमिक एमीन:</b><br>
+            <div class="chemical-reaction">
+                R-NH<sub>2</sub> + C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>Cl → C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>NHR (क्षार में विलेय)
+            </div><br>
+            
+            <b>(ii) द्वितीयक एमीन:</b><br>
+            <div class="chemical-reaction">
+                R<sub>2</sub>NH + C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>Cl → C<sub>6</sub>H<sub>5</sub>SO<sub>2</sub>NR<sub>2</sub> (क्षार में अविलेय)
+            </div><br>
+            
+            <b>(iii) तृतीयक एमीन:</b><br>
+            तृतीयक एमीन बेंजीनसल्फोनिल क्लोराइड के साथ अभिक्रिया नहीं करता।<br><br>
+            
+            <b>कार्बिलएमीन परीक्षण:</b><br>
+            केवल प्राथमिक एमीन क्लोरोफॉर्म और क्षार के साथ गर्म करने पर आइसोसायनेट बनाते हैं जिनकी दुर्गंध होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.7</div>
+            <div>निम्नलिखित पर संक्षिप्त टिप्पणी लिखिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) कार्बिलएमीन अभिक्रिया</b><br>
+            यह प्राथमिक एमीनों की जाँच के लिए प्रयुक्त होती है। प्राथमिक एमीन क्लोरोफॉर्म और क्षार के साथ गर्म करने पर आइसोसायनेट बनाते हैं जिनकी तीक्ष्ण दुर्गंध होती है।<br><br>
+            
+            <b>(ii) डाइएजोटीकरण</b><br>
+            प्राथमिक ऐरोमैटिक एमीन नाइट्रस अम्ल के साथ निम्न तापमान (0-5°C) पर अभिक्रिया कर डाइएजोनियम लवण बनाते हैं।<br><br>
+            
+            <b>(iii) हॉफमैन ब्रोमामाइड अभिक्रिया</b><br>
+            यह अभिक्रिया एमाइड को एमीन में परिवर्तित करती है जिसमें कार्बन परमाणुओं की संख्या एक कम हो जाती है।<br><br>
+            
+            <b>(iv) युग्मन अभिक्रिया</b><br>
+            डाइएजोनियम लवण फीनॉल या एमीन के साथ अभिक्रिया कर अजो यौगिक बनाते हैं जो रंगीन होते हैं।<br><br>
+            
+            <b>(v) ऐमोनोलिसिस</b><br>
+            ऐल्किल हैलाइड का अमोनिया के साथ अभिक्रिया कर एमीन बनाना।<br><br>
+            
+            <b>(vi) ऐसीटिलीकरण</b><br>
+            एमीन का ऐसीटिल क्लोराइड या ऐसीटिक एनहाइड्राइड के साथ अभिक्रिया कर एमाइड बनाना।<br><br>
+            
+            <b>(vii) गैबरियल थैलिमाइड संश्लेषण</b><br>
+            थैलिमाइड से प्राथमिक एमीन बनाने की विधि।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.8</div>
+            <div>निम्नलिखित परिवर्तन संपादित कीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) नाइट्रोबेंजीन से बेंजोइक अम्ल</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> → C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> → C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> → C<sub>6</sub>H<sub>5</sub>CN → C<sub>6</sub>H<sub>5</sub>COOH
+            </div><br>
+            
+            <b>(ii) बेंजीन से m-ब्रोमोफीनॉल</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>6</sub> → C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> → m-BrC<sub>6</sub>H<sub>4</sub>NO<sub>2</sub> → m-BrC<sub>6</sub>H<sub>4</sub>NH<sub>2</sub> → m-BrC<sub>6</sub>H<sub>4</sub>OH
+            </div><br>
+            
+            <b>(iii) बेंजोइक अम्ल से एनिलीन</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>COOH → C<sub>6</sub>H<sub>5</sub>COCl → C<sub>6</sub>H<sub>5</sub>CONH<sub>2</sub> → C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>
+            </div><br>
+            
+            <b>(iv) एनिलीन से 2,4,6-ट्राइब्रोमोफ्लुओरोबेंजीन</b><br>
+            ब्रोमीन जल के साथ अभिक्रिया द्वारा<br><br>
+            
+            <b>(v) बेंजिल क्लोराइड से 2-फेनिलएथेनएमीन</b><br>
+            गैबरियल संश्लेषण द्वारा<br><br>
+            
+            <b>(vi) क्लोरोबेंजीन से p-क्लोरोएनिलीन</b><br>
+            नाइट्रीकरण, अपचयन, डाइएजोटीकरण और संयुग्मन द्वारा<br><br>
+            
+            <b>(vii) एनिलीन से p-ब्रोमोएनिलीन</b><br>
+            ऐसीटिलीकरण, ब्रोमीकरण और जल-अपघटन द्वारा<br><br>
+            
+            <b>(viii) बेंजामाइड से टॉलुईन</b><br>
+            हॉफमैन ब्रोमामाइड अभिक्रिया द्वारा<br><br>
+            
+            <b>(ix) एनिलीन से बेंजिल ऐल्कोहॉल</b><br>
+            डाइएजोटीकरण और जल-अपघटन द्वारा
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.9</div>
+            <div>निम्नलिखित अभिक्रियाओं में A, B और C की संरचनाएँ दीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i)</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>CH<sub>2</sub>I → A → B → C
+            </div>
+            A: CH<sub>3</sub>CH<sub>2</sub>CN<br>
+            B: CH<sub>3</sub>CH<sub>2</sub>COOH<br>
+            C: CH<sub>3</sub>CH<sub>2</sub>COO<sup>-</sup>Na<sup>+</sup><br><br>
+            
+            <b>(ii)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> → A → B → C
+            </div>
+            A: C<sub>6</sub>H<sub>5</sub>CN<br>
+            B: C<sub>6</sub>H<sub>5</sub>COOH<br>
+            C: C<sub>6</sub>H<sub>5</sub>COO<sup>-</sup>Na<sup>+</sup><br><br>
+            
+            <b>(iii)</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>CH<sub>2</sub>Br → A → B → C
+            </div>
+            A: CH<sub>3</sub>CH<sub>2</sub>CN<br>
+            B: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>NH<sub>2</sub><br>
+            C: CH<sub>3</sub>CH<sub>2</sub>CH<sub>2</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup><br><br>
+            
+            <b>(iv)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> → A → B → C
+            </div>
+            A: C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub><br>
+            B: C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup><br>
+            C: C<sub>6</sub>H<sub>5</sub>OH<br><br>
+            
+            <b>(v)</b><br>
+            <div class="chemical-reaction">
+                CH<sub>3</sub>COOH → A → B → C
+            </div>
+            A: CH<sub>3</sub>COCl<br>
+            B: CH<sub>3</sub>CONH<sub>2</sub><br>
+            C: CH<sub>3</sub>NH<sub>2</sub><br><br>
+            
+            <b>(vi)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NO<sub>2</sub> → A → B → C
+            </div>
+            A: C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub><br>
+            B: C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup><br>
+            C: C<sub>6</sub>H<sub>5</sub>Cl
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.10</div>
+            <div>एक ऐरोमैटिक यौगिक 'A' जलीय अमोनिया के साथ गर्म करने पर यौगिक 'B' बनाता है जो Br<sub>2</sub> और KOH के साथ गर्म करने पर अणुसूत्र C<sub>6</sub>H<sub>7</sub>N वाला यौगिक 'C' बनाता है। A, B और C यौगिकों की संरचना एवं इनके IUPAC नाम लिखिए।</div>
+        </div>
+        <div class="answer">
+            <b>A:</b> क्लोरोबेंजीन (C<sub>6</sub>H<sub>5</sub>Cl)<br>
+            <b>B:</b> एनिलीन (C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub>)<br>
+            <b>C:</b> फेनिल आइसोसायनेट (C<sub>6</sub>H<sub>5</sub>NCO)<br><br>
+            
+            अभिक्रिया क्रम:<br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>Cl + NH<sub>3</sub> → C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + HCl<br>
+                C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + CHCl<sub>3</sub> + 3KOH → C<sub>6</sub>H<sub>5</sub>NCO + 3KCl + 2H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.11</div>
+            <div>निम्नलिखित अभिक्रियाओं को पूर्ण कीजिए:</div>
+        </div>
+        <div class="answer">
+            <b>(i)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + CHCl<sub>3</sub> + 3KOH → C<sub>6</sub>H<sub>5</sub>NC + 3KCl + 3H<sub>2</sub>O
+            </div><br>
+            
+            <b>(ii)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> + H<sub>3</sub>PO<sub>2</sub> + H<sub>2</sub>O → C<sub>6</sub>H<sub>6</sub> + N<sub>2</sub> + H<sub>3</sub>PO<sub>3</sub> + HCl
+            </div><br>
+            
+            <b>(iii)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + H<sub>2</sub>SO<sub>4</sub> → C<sub>6</sub>H<sub>5</sub>NH<sub>3</sub><sup>+</sup>HSO<sub>4</sub><sup>-</sup>
+            </div><br>
+            
+            <b>(iv)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> + C<sub>2</sub>H<sub>5</sub>OH → C<sub>6</sub>H<sub>6</sub> + CH<sub>3</sub>CHO + N<sub>2</sub> + HCl
+            </div><br>
+            
+            <b>(v)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + Br<sub>2</sub>(aq) → 2,4,6-Tribromoaniline + 3HBr
+            </div><br>
+            
+            <b>(vi)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>NH<sub>2</sub> + (CH<sub>3</sub>CO)<sub>2</sub>O → C<sub>6</sub>H<sub>5</sub>NHCOCH<sub>3</sub> + CH<sub>3</sub>COOH
+            </div><br>
+            
+            <b>(vii)</b><br>
+            <div class="chemical-reaction">
+                C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> + HBF<sub>4</sub> → C<sub>6</sub>H<sub>5</sub>N<sub>2</sub><sup>+</sup>BF<sub>4</sub><sup>-</sup> → C<sub>6</sub>H<sub>5</sub>F + N<sub>2</sub> + BF<sub>3</sub>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.12</div>
+            <div>ऐरोमैटिक प्राथमिक एमीन को गैबरियल थैलिमाइड संश्लेषण से क्यों नहीं बनाया जा सकता?</div>
+        </div>
+        <div class="answer">
+            गैबरियल थैलिमाइड संश्लेषण में थैलिमाइड का पोटैशियम लवण ऐल्किल हैलाइड के साथ अभिक्रिया कर N-ऐल्किलथैलिमाइड बनाता है, जिसके जल-अपघटन से प्राथमिक एमीन प्राप्त होता है।<br><br>
+            
+            किन्तु ऐरोमैटिक हैलाइड (जैसे क्लोरोबेंजीन) न्यूक्लियोफिलिक प्रतिस्थापन अभिक्रिया नहीं देते क्योंकि बेंजीन वलय में हैलोजन परमाणु C-X आबंध के लिए द्विबंधीय चरित्र के कारण सक्रिय नहीं होता। इसलिए ऐरोमैटिक प्राथमिक एमीन इस विधि से नहीं बनाए जा सकते।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.13</div>
+            <div>ऐलिफैटिक और ऐरोमैटिक प्राथमिक एमीनों की नाइट्रस अम्ल से अभिक्रिया लिखिए।</div>
+        </div>
+        <div class="answer">
+            <b>ऐलिफैटिक प्राथमिक एमीन:</b><br>
+            ऐलिफैटिक प्राथमिक एमीन नाइट्रस अम्ल के साथ अभिक्रिया कर ऐल्कोहॉल बनाते हैं और नाइट्रोजन गैस मुक्त करते हैं।<br>
+            <div class="chemical-reaction">
+                R-NH<sub>2</sub> + HNO<sub>2</sub> → R-OH + N<sub>2</sub> + H<sub>2</sub>O
+            </div><br>
+            
+            <b>ऐरोमैटिक प्राथमिक एमीन:</b><br>
+            ऐरोमैटिक प्राथमिक एमीन नाइट्रस अम्ल के साथ निम्न तापमान (0-5°C) पर अभिक्रिया कर डाइएजोनियम लवण बनाते हैं।<br>
+            <div class="chemical-reaction">
+                Ar-NH<sub>2</sub> + HNO<sub>2</sub> + HCl → Ar-N<sub>2</sub><sup>+</sup>Cl<sup>-</sup> + 2H<sub>2</sub>O
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.14</div>
+            <div>निम्नलिखित में से प्रत्येक का संभावित कारण बताइए:</div>
+        </div>
+        <div class="answer">
+            <b>(i) तुल्य आण्विक द्रव्यमान वाले एमीनों की क्वथनांक ऐल्कोहॉलों से कम होती है।</b><br>
+            ऐल्कोहॉलों में प्रबल अंतराआण्विक हाइड्रोजन आबंध होते हैं, जबकि एमीनों में दुर्बल हाइड्रोजन आबंध होते हैं। इसलिए एमीनों का क्वथनांक ऐल्कोहॉलों से कम होता है।<br><br>
+            
+            <b>(ii) प्राथमिक एमीनों का क्वथनांक तृतीयक एमीनों से अधिक होता है।</b><br>
+            प्राथमिक एमीनों में अंतराआण्विक हाइड्रोजन आबंध होते हैं, जबकि तृतीयक एमीनों में हाइड्रोजन आबंध नहीं बन सकते क्योंकि उनमें H-परमाणु नहीं होते।<br><br>
+            
+            <b>(iii) ऐरोमैटिक एमीनों की तुलना में ऐलिफैटिक एमीन प्रबल क्षारक होते हैं।</b><br>
+            ऐलिफैटिक एमीनों में ऐल्किल समूहों का +I प्रभाव नाइट्रोजन पर इलेक्ट्रॉन घनत्व बढ़ाता है, जबकि ऐरोमैटिक एमीनों में बेंजीन वलय के साथ संयुग्मन के कारण नाइट्रोजन पर इलेक्ट्रॉन घनत्व कम हो जाता है।
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 रसायन विज्ञान - अध्याय 2: विद्युत रसायन</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #2E8B57, #3CB371);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #2E8B57;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 रसायन विज्ञान</h1>
+        <p>अध्याय 2: विद्युत रसायन</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.1</div>
+            <div>Mg<sup>2+</sup> | Mg अर्ध-सेल का मानक इलेक्ट्रोड विभव आप कैसे ज्ञात करेंगे?</div>
+        </div>
+        <div class="answer">
+            Mg<sup>2+</sup> | Mg अर्ध-सेल का मानक इलेक्ट्रोड विभव ज्ञात करने के लिए निम्नलिखित सेल बनाया जाता है:<br><br>
+            Pt(s) | H<sub>2</sub>(g, 1 bar) | H<sup>+</sup>(aq, 1 M) || Mg<sup>2+</sup>(aq, 1 M) | Mg(s)<br><br>
+            इस सेल का EMF मापा जाता है। मानक हाइड्रोजन इलेक्ट्रोड का विभव शून्य माना जाता है, इसलिए मापा गया EMF ही Mg<sup>2+</sup> | Mg इलेक्ट्रोड का मानक इलेक्ट्रोड विभव होगा।<br><br>
+            E°<sub>सेल</sub> = E°<sub>Mg<sup>2+</sup>/Mg</sub> - E°<sub>H<sup>+</sup>/H<sub>2</sub></sub><br>
+            E°<sub>सेल</sub> = E°<sub>Mg<sup>2+</sup>/Mg</sub> - 0<br>
+            E°<sub>Mg<sup>2+</sup>/Mg</sub> = E°<sub>सेल</sub>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.2</div>
+            <div>क्या आप जिंक के बर्तन में कॉपर सल्फेट का विलयन रख सकते हैं?</div>
+        </div>
+        <div class="answer">
+            नहीं, जिंक के बर्तन में कॉपर सल्फेट का विलयन नहीं रखा जा सकता।<br><br>
+            Zn का मानक इलेक्ट्रोड विभव (-0.76 V) Cu (-0.34 V) से कम है, इसलिए Zn, Cu<sup>2+</sup> को अपचयित कर देता है और स्वयं ऑक्सीकृत हो जाता है:<br><br>
+            Zn(s) + Cu<sup>2+</sup>(aq) → Zn<sup>2+</sup>(aq) + Cu(s)<br><br>
+            इस अभिक्रिया के कारण जिंक के बर्तन का क्षरण होगा और कॉपर सल्फेट का विलयन दूषित हो जाएगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.3</div>
+            <div>मानक इलेक्ट्रोड विभवों की सारणी का विश्लेषण करके तीन ऐसे पदार्थ बताइए जो अनुकूल परिस्थितियों में Fe<sup>2+</sup> आयनों को ऑक्सीकृत कर सकते हैं।</div>
+        </div>
+        <div class="answer">
+            मानक इलेक्ट्रोड विभवों की सारणी के अनुसार, निम्नलिखित तीन पदार्थ Fe<sup>2+</sup> आयनों को ऑक्सीकृत कर सकते हैं:<br><br>
+            1. Br<sub>2</sub> (E° = 1.09 V) > Fe<sup>3+</sup>/Fe<sup>2+</sup> (E° = 0.77 V)<br>
+            2. Cl<sub>2</sub> (E° = 1.36 V) > Fe<sup>3+</sup>/Fe<sup>2+</sup> (E° = 0.77 V)<br>
+            3. Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> (E° = 1.33 V) > Fe<sup>3+</sup>/Fe<sup>2+</sup> (E° = 0.77 V)<br><br>
+            इन सभी का मानक इलेक्ट्रोड विभव Fe<sup>3+</sup>/Fe<sup>2+</sup> युगल से अधिक है, इसलिए ये Fe<sup>2+</sup> को Fe<sup>3+</sup> में ऑक्सीकृत कर सकते हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.4</div>
+            <div>pH = 10 के विलयन के संपर्क में रखे हाइड्रोजन इलेक्ट्रोड के विभव का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन इलेक्ट्रोड के लिए अर्ध-सेल अभिक्रिया:<br>
+            H<sup>+</sup>(aq) + e<sup>-</sup> → <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> H<sub>2</sub>(g)<br><br>
+            नर्न्स्ट समीकरण के अनुसार:<br>
+            E = E° - <div class="fraction"><span class="numerator">0.059</span><span class="denominator">1</span></div> log <div class="fraction"><span class="numerator">1</span><span class="denominator">[H<sup>+</sup>]</span></div><br>
+            E = 0 - 0.059 log <div class="fraction"><span class="numerator">1</span><span class="denominator">[H<sup>+</sup>]</span></div><br>
+            E = -0.059 log [H<sup>+</sup>]<sup>-1</sup><br>
+            E = 0.059 log [H<sup>+</sup>]<br>
+            E = -0.059 pH (क्योंकि pH = -log[H<sup>+</sup>])<br><br>
+            pH = 10 के लिए:<br>
+            E = -0.059 × 10 = -0.59 V<br><br>
+            अतः pH = 10 के विलयन के संपर्क में हाइड्रोजन इलेक्ट्रोड का विभव -0.59 V होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.5</div>
+            <div>निम्नलिखित अभिक्रिया वाले सेल का EMF परिकलित कीजिए:<br>
+            Ni(s) + 2Ag<sup>+</sup>(0.002 M) → Ni<sup>2+</sup>(0.160 M) + 2Ag(s)<br>
+            E°<sub>सेल</sub> = 1.05 V दिया गया है।</div>
+        </div>
+        <div class="answer">
+            नर्न्स्ट समीकरण के अनुसार:<br>
+            E<sub>सेल</sub> = E°<sub>सेल</sub> - <div class="fraction"><span class="numerator">0.059</span><span class="denominator">n</span></div> log <div class="fraction"><span class="numerator">[Ni<sup>2+</sup>]</span><span class="denominator">[Ag<sup>+</sup>]<sup>2</sup></span></div><br><br>
+            दिया गया है:<br>
+            E°<sub>सेल</sub> = 1.05 V<br>
+            n = 2 (स्थानांतरित इलेक्ट्रॉनों की संख्या)<br>
+            [Ni<sup>2+</sup>] = 0.160 M<br>
+            [Ag<sup>+</sup>] = 0.002 M<br><br>
+            E<sub>सेल</sub> = 1.05 - <div class="fraction"><span class="numerator">0.059</span><span class="denominator">2</span></div> log <div class="fraction"><span class="numerator">0.160</span><span class="denominator">(0.002)<sup>2</sup></span></div><br>
+            E<sub>सेल</sub> = 1.05 - 0.0295 log <div class="fraction"><span class="numerator">0.160</span><span class="denominator">4 × 10<sup>-6</sup></span></div><br>
+            E<sub>सेल</sub> = 1.05 - 0.0295 log (4 × 10<sup>4</sup>)<br>
+            E<sub>सेल</sub> = 1.05 - 0.0295 (log 4 + log 10<sup>4</sup>)<br>
+            E<sub>सेल</sub> = 1.05 - 0.0295 (0.6021 + 4)<br>
+            E<sub>सेल</sub> = 1.05 - 0.0295 × 4.6021<br>
+            E<sub>सेल</sub> = 1.05 - 0.1358 = 0.9142 V<br><br>
+            अतः सेल का EMF 0.914 V है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.6</div>
+            <div>एक सेल जिसमें निम्नलिखित अभिक्रिया होती है:<br>
+            2Fe<sup>3+</sup><sub>(aq)</sub> + 2I<sup>-</sup><sub>(aq)</sub> → 2Fe<sup>2+</sup><sub>(aq)</sub> + I<sub>2</sub><sub>(s)</sub><br>
+            का 298 K ताप पर E°<sub>सेल</sub> = 0.236 V है। सेल अभिक्रिया की मानक गिब्स ऊर्जा एवं साम्य स्थिरांक का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            ΔG° = -nFE°<sub>सेल</sub><br><br>
+            दिया गया है:<br>
+            n = 2 (स्थानांतरित इलेक्ट्रॉनों की संख्या)<br>
+            F = 96500 C mol<sup>-1</sup><br>
+            E°<sub>सेल</sub> = 0.236 V<br><br>
+            ΔG° = -2 × 96500 × 0.236<br>
+            ΔG° = -45548 J mol<sup>-1</sup> = -45.548 kJ mol<sup>-1</sup><br><br>
+            साम्य स्थिरांक के लिए:<br>
+            ΔG° = -RT ln K<br>
+            -45548 = -8.314 × 298 × ln K<br>
+            ln K = <div class="fraction"><span class="numerator">45548</span><span class="denominator">8.314 × 298</span></div> = <div class="fraction"><span class="numerator">45548</span><span class="denominator">2477.572</span></div> = 18.39<br>
+            K = e<sup>18.39</sup> = 9.75 × 10<sup>7</sup><br><br>
+            अतः मानक गिब्स ऊर्जा -45.548 kJ mol<sup>-1</sup> और साम्य स्थिरांक 9.75 × 10<sup>7</sup> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.7</div>
+            <div>किसी विलयन की चालकता तनुता के साथ क्यों घटती है?</div>
+        </div>
+        <div class="answer">
+            विलयन की चालकता विलयन में उपस्थित आयनों की संख्या पर निर्भर करती है। तनुकरण करने पर:<br><br>
+            1. विलयन की इकाई आयतन में आयनों की संख्या कम हो जाती है।<br>
+            2. आयनों के बीच औसत दूरी बढ़ जाती है, जिससे आयनों की गतिशीलता प्रभावित होती है।<br>
+            3. विद्युत धारा का संचालन करने वाले आयनों की संख्या कम हो जाती है।<br><br>
+            इसलिए, तनुकरण करने पर विलयन की चालकता घटती है, भले ही मोलर चालकता बढ़ती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.8</div>
+            <div>जल की ∧<sub>m</sub><sup>°</sup> ज्ञात करने का एक तरीका बताइए।</div>
+        </div>
+        <div class="answer">
+            जल की मोलर चालकता (∧<sub>m</sub><sup>°</sup>) ज्ञात करने के लिए कोलराउश के नियम का उपयोग किया जाता है:<br><br>
+            ∧<sub>m</sub><sup>°</sup>(H<sub>2</sub>O) = λ<sub>m</sub><sup>°</sup>(H<sup>+</sup>) + λ<sub>m</sub><sup>°</sup>(OH<sup>-</sup>)<br><br>
+            जहाँ:<br>
+            λ<sub>m</sub><sup>°</sup>(H<sup>+</sup>) = 349.6 S cm<sup>2</sup> mol<sup>-1</sup><br>
+            λ<sub>m</sub><sup>°</sup>(OH<sup>-</sup>) = 199.1 S cm<sup>2</sup> mol<sup>-1</sup><br><br>
+            ∧<sub>m</sub><sup>°</sup>(H<sub>2</sub>O) = 349.6 + 199.1 = 548.7 S cm<sup>2</sup> mol<sup>-1</sup><br><br>
+            इस प्रकार, जल की मोलर चालकता 548.7 S cm<sup>2</sup> mol<sup>-1</sup> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.9</div>
+            <div>0.025 mol L<sup>-1</sup> मेथेनॉइक अम्ल की मोलर चालकता 46.1 S cm<sup>2</sup> mol<sup>-1</sup> है। इसके वियोजन की मात्रा और वियोजन स्थिरांक का परिकलन कीजिए। दिया गया है कि λ°(H<sup>+</sup>) = 349.6 S cm<sup>2</sup> mol<sup>-1</sup> और λ°(HCOO<sup>-</sup>) = 54.6 S cm<sup>2</sup> mol<sup>-1</sup>।</div>
+        </div>
+        <div class="answer">
+            मेथेनॉइक अम्ल (HCOOH) एक दुर्बल अम्ल है।<br><br>
+            λ°<sub>m</sub>(HCOOH) = λ°(H<sup>+</sup>) + λ°(HCOO<sup>-</sup>) = 349.6 + 54.6 = 404.2 S cm<sup>2</sup> mol<sup>-1</sup><br><br>
+            वियोजन की मात्रा (α) = <div class="fraction"><span class="numerator">∧<sub>m</sub></span><span class="denominator">∧°<sub>m</sub></span></div> = <div class="fraction"><span class="numerator">46.1</span><span class="denominator">404.2</span></div> = 0.114<br><br>
+            वियोजन स्थिरांक (K) = <div class="fraction"><span class="numerator">Cα<sup>2</sup></span><span class="denominator">1 - α</span></div> = <div class="fraction"><span class="numerator">0.025 × (0.114)<sup>2</sup></span><span class="denominator">1 - 0.114</span></div><br>
+            K = <div class="fraction"><span class="numerator">0.025 × 0.0130</span><span class="denominator">0.886</span></div> = <div class="fraction"><span class="numerator">0.000325</span><span class="denominator">0.886</span></div> = 3.67 × 10<sup>-4</sup> mol L<sup>-1</sup><br><br>
+            अतः वियोजन की मात्रा 0.114 और वियोजन स्थिरांक 3.67 × 10<sup>-4</sup> mol L<sup>-1</sup> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.10</div>
+            <div>यदि एक धात्विक तार में 0.5 ऐम्पियर की धारा 2 घंटे के लिए प्रवाहित होती है तो तार में से कितने इलेक्ट्रॉन प्रवाहित होंगे?</div>
+        </div>
+        <div class="answer">
+            धारा (I) = 0.5 A<br>
+            समय (t) = 2 घंटे = 2 × 3600 = 7200 s<br><br>
+            प्रवाहित आवेश (Q) = I × t = 0.5 × 7200 = 3600 C<br><br>
+            एक इलेक्ट्रॉन पर आवेश = 1.6 × 10<sup>-19</sup> C<br><br>
+            इलेक्ट्रॉनों की संख्या = <div class="fraction"><span class="numerator">Q</span><span class="denominator">e</span></div> = <div class="fraction"><span class="numerator">3600</span><span class="denominator">1.6 × 10<sup>-19</sup></span></div> = 2.25 × 10<sup>22</sup><br><br>
+            अतः तार में से 2.25 × 10<sup>22</sup> इलेक्ट्रॉन प्रवाहित होंगे।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.11</div>
+            <div>उन धातुओं की एक सूची बनाइये जिनका विद्युत-अपघटनी निष्कर्षण होता है।</div>
+        </div>
+        <div class="answer">
+            निम्नलिखित धातुओं का विद्युत-अपघटनी निष्कर्षण होता है:<br><br>
+            1. सोडियम (Na) - संगलित NaCl के विद्युत-अपघटन से<br>
+            2. मैग्नीशियम (Mg) - संगलित MgCl<sub>2</sub> के विद्युत-अपघटन से<br>
+            3. ऐलुमिनियम (Al) - Al<sub>2</sub>O<sub>3</sub> के क्रायोलाइट माध्यम में विद्युत-अपघटन से<br>
+            4. कैल्सियम (Ca) - संगलित CaCl<sub>2</sub> के विद्युत-अपघटन से<br>
+            5. लोहा (Fe) - Fe<sub>2</sub>O<sub>3</sub> के विद्युत-अपघटन से<br>
+            6. ताँबा (Cu) - CuSO<sub>4</sub> विलयन के विद्युत-अपघटन से<br>
+            7. जिंक (Zn) - ZnSO<sub>4</sub> विलयन के विद्युत-अपघटन से
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.12</div>
+            <div>निम्नलिखित अभिक्रिया में Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> आयनों के एक मोल के अपचयन के लिए कूलॉम में विद्युत की कितनी मात्रा की आवश्यकता होगी?<br>
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> + 14H<sup>+</sup> + 6e<sup>-</sup> → 2Cr<sup>3+</sup> + 7H<sub>2</sub>O</div>
+        </div>
+        <div class="answer">
+            दी गई अभिक्रिया में:<br>
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> + 14H<sup>+</sup> + 6e<sup>-</sup> → 2Cr<sup>3+</sup> + 7H<sub>2</sub>O<br><br>
+            Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> के एक मोल के अपचयन के लिए 6 मोल इलेक्ट्रॉनों की आवश्यकता होती है।<br><br>
+            आवश्यक आवेश (Q) = n × F<br>
+            जहाँ n = 6 (इलेक्ट्रॉनों के मोल)<br>
+            F = 96500 C mol<sup>-1</sup> (फैराडे स्थिरांक)<br><br>
+            Q = 6 × 96500 = 579000 C<br><br>
+            अतः Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> आयनों के एक मोल के अपचयन के लिए 579000 C विद्युत की आवश्यकता होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.13</div>
+            <div>चार्जिंग के दौरान प्रयुक्त पदार्थों का विशेष उल्लेख करते हुए लेड संचायक सेल की चार्जिंग प्रक्रिया का वर्णन रासायनिक अभिक्रियाओं की सहायता से कीजिए।</div>
+        </div>
+        <div class="answer">
+            लेड संचायक सेल की चार्जिंग प्रक्रिया में बाह्य विद्युत स्रोत से विद्युत धारा प्रवाहित की जाती है, जिससे विद्युत-अपघटनी अभिक्रियाएँ होती हैं:<br><br>
+            <b>ऐनोड पर (धनात्मक इलेक्ट्रोड):</b><br>
+            PbSO<sub>4</sub>(s) + 2H<sub>2</sub>O(l) → PbO<sub>2</sub>(s) + SO<sub>4</sub><sup>2-</sup>(aq) + 4H<sup>+</sup>(aq) + 2e<sup>-</sup><br><br>
+            <b>कैथोड पर (ऋणात्मक इलेक्ट्रोड):</b><br>
+            PbSO<sub>4</sub>(s) + 2e<sup>-</sup> → Pb(s) + SO<sub>4</sub><sup>2-</sup>(aq)<br><br>
+            <b>संपूर्ण अभिक्रिया:</b><br>
+            2PbSO<sub>4</sub>(s) + 2H<sub>2</sub>O(l) → Pb(s) + PbO<sub>2</sub>(s) + 2H<sub>2</sub>SO<sub>4</sub>(aq)<br><br>
+            चार्जिंग के दौरान:<br>
+            1. ऐनोड पर PbSO<sub>4</sub>, PbO<sub>2</sub> में परिवर्तित होता है।<br>
+            2. कैथोड पर PbSO<sub>4</sub>, Pb में परिवर्तित होता है।<br>
+            3. H<sub>2</sub>SO<sub>4</sub> की सांद्रता बढ़ती है।<br>
+            4. सेल का विभव बढ़ता है (लगभग 2.2 V तक)।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.14</div>
+            <div>हाइड्रोजन को छोड़कर ईंधन सेलों में उपयोग किए जा सकने वाले दो अन्य पदार्थ सुझाइए।</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन के अलावा ईंधन सेलों में निम्नलिखित पदार्थों का उपयोग किया जा सकता है:<br><br>
+            1. <b>मेथेनॉल (CH<sub>3</sub>OH):</b> प्रत्यक्ष मेथेनॉल ईंधन सेल (DMFC) में उपयोग किया जाता है।<br>
+            अभिक्रिया: CH<sub>3</sub>OH + H<sub>2</sub>O → CO<sub>2</sub> + 6H<sup>+</sup> + 6e<sup>-</sup><br><br>
+            2. <b>प्राकृतिक गैस (मुख्यतः CH<sub>4</sub>):</b> प्राकृतिक गैस को सीधे या सुधारित करके ईंधन सेल में उपयोग किया जा सकता है।<br>
+            अभिक्रिया: CH<sub>4</sub> + 2O<sub>2</sub> → CO<sub>2</sub> + 2H<sub>2</sub>O<br><br>
+            इन ईंधनों के उपयोग से ऊर्जा उत्पादन के साथ-साथ पर्यावरण प्रदूषण भी कम होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.15</div>
+            <div>समझाइए कि किस प्रकार लोहे पर जंग लगना एक विद्युत रासायनिक सेल बनना माना जाता है।</div>
+        </div>
+        <div class="answer">
+            लोहे पर जंग लगना एक विद्युत रासायनिक सेल की तरह कार्य करता है, जिसमें:<br><br>
+            <b>ऐनोड (वह स्थान जहाँ ऑक्सीकरण होता है):</b><br>
+            Fe(s) → Fe<sup>2+</sup>(aq) + 2e<sup>-</sup><br>
+            (E° = -0.44 V)<br><br>
+            <b>कैथोड (वह स्थान जहाँ अपचयन होता है):</b><br>
+            O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) + 4e<sup>-</sup> → 2H<sub>2</sub>O(l)<br>
+            (E° = 1.23 V)<br><br>
+            <b>संपूर्ण अभिक्रिया:</b><br>
+            2Fe(s) + O<sub>2</sub>(g) + 4H<sup>+</sup>(aq) → 2Fe<sup>2+</sup>(aq) + 2H<sub>2</sub>O(l)<br>
+            (E°<sub>सेल</sub> = 1.67 V)<br><br>
+            इसके बाद Fe<sup>2+</sup> आयन वायुमंडलीय ऑक्सीजन द्वारा और ऑक्सीकृत होकर Fe<sup>3+</sup> आयन बनाते हैं, जो जलयोजित आयरन ऑक्साइड (Fe<sub>2</sub>O<sub>3</sub>.xH<sub>2</sub>O) के रूप में जंग बनाते हैं।<br><br>
+            इस प्रक्रिया में विद्युत धारा का प्रवाह होता है, इसलिए इसे एक विद्युत रासायनिक सेल माना जाता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.16</div>
+            <div>लोहे को जंग से बचाने के लिए दो विधियाँ सुझाइए।</div>
+        </div>
+        <div class="answer">
+            लोहे को जंग से बचाने के लिए निम्नलिखित विधियाँ उपयोगी हैं:<br><br>
+            1. <b>पेंटिंग या कोटिंग:</b> लोहे की सतह को पेंट, तेल, ग्रीस या प्लास्टिक से ढककर वायु और नमी के संपर्क में आने से रोका जा सकता है।<br><br>
+            2. <b>गैल्वेनीकरण:</b> लोहे पर जिंक की परत चढ़ाना। जिंक लोहे से अधिक क्रियाशील होता है, इसलिए यह पहले ऑक्सीकृत होता है और लोहे की रक्षा करता है।<br><br>
+            3. <b>कैथोडिक संरक्षण:</b> लोहे की वस्तु को एक अधिक क्रियाशील धातु (जैसे मैग्नीशियम या जिंक) से जोड़ा जाता है, जो बलि का एनोड बनकर लोहे की रक्षा करता है।<br><br>
+            4. <b>मिश्र धातु निर्माण:</b> लोहे में क्रोमियम, निकल आदि मिलाकर स्टेनलेस स्टील बनाया जाता है, जो जंगरोधी होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.17</div>
+            <div>सारणी 2.1 में दिए गए मानक इलेक्ट्रोड विभवों की सहायता से अनुमान लगाइए कि क्या निम्नलिखित अभिकर्मकों के बीच अभिक्रिया संभव है?<br>
+            (i) Fe<sup>3+</sup>(aq) और I<sup>-</sup>(aq)<br>
+            (ii) Ag<sup>+</sup>(aq) और Cu(s)<br>
+            (iii) Fe<sup>3+</sup>(aq) और Br<sup>-</sup>(aq)<br>
+            (iv) Ag(s) और Fe<sup>3+</sup>(aq)<br>
+            (v) Br<sub>2</sub>(aq) और Fe<sup>2+</sup>(aq)</div>
+        </div>
+        <div class="answer">
+            सारणी 2.1 के मानक इलेक्ट्रोड विभवों के आधार पर:<br><br>
+            (i) Fe<sup>3+</sup>(aq) और I<sup>-</sup>(aq): <b>संभव</b><br>
+            E°(Fe<sup>3+</sup>/Fe<sup>2+</sup>) = 0.77 V > E°(I<sub>2</sub>/I<sup>-</sup>) = 0.54 V<br>
+            Fe<sup>3+</sup>, I<sup>-</sup> को I<sub>2</sub> में ऑक्सीकृत कर सकता है।<br><br>
+            (ii) Ag<sup>+</sup>(aq) और Cu(s): <b>संभव</b><br>
+            E°(Ag<sup>+</sup>/Ag) = 0.80 V > E°(Cu<sup>2+</sup>/Cu) = 0.34 V<br>
+            Ag<sup>+</sup>, Cu को Cu<sup>2+</sup> में ऑक्सीकृत कर सकता है।<br><br>
+            (iii) Fe<sup>3+</sup>(aq) और Br<sup>-</sup>(aq): <b>असंभव</b><br>
+            E°(Fe<sup>3+</sup>/Fe<sup>2+</sup>) = 0.77 V < E°(Br<sub>2</sub>/Br<sup>-</sup>) = 1.09 V<br>
+            Fe<sup>3+</sup>, Br<sup>-</sup> को Br<sub>2</sub> में ऑक्सीकृत नहीं कर सकता।<br><br>
+            (iv) Ag(s) और Fe<sup>3+</sup>(aq): <b>असंभव</b><br>
+            E°(Fe<sup>3+</sup>/Fe<sup>2+</sup>) = 0.77 V < E°(Ag<sup>+</sup>/Ag) = 0.80 V<br>
+            Fe<sup>3+</sup>, Ag को Ag<sup>+</sup> में ऑक्सीकृत नहीं कर सकता।<br><br>
+            (v) Br<sub>2</sub>(aq) और Fe<sup>2+</sup>(aq): <b>संभव</b><br>
+            E°(Br<sub>2</sub>/Br<sup>-</sup>) = 1.09 V > E°(Fe<sup>3+</sup>/Fe<sup>2+</sup>) = 0.77 V<br>
+            Br<sub>2</sub>, Fe<sup>2+</sup> को Fe<sup>3+</sup> में ऑक्सीकृत कर सकता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.18</div>
+            <div>निम्नलिखित में से प्रत्येक के लिए विद्युत-अपघटन से प्राप्त उत्पाद बताइए:<br>
+            (i) सिल्वर इलेक्ट्रोडों के साथ AgNO<sub>3</sub> का जलीय विलयन<br>
+            (ii) प्लैटिनम इलेक्ट्रोडों के साथ AgNO<sub>3</sub> का जलीय विलयन<br>
+            (iii) प्लैटिनम इलेक्ट्रोडों के साथ H<sub>2</sub>SO<sub>4</sub> का तनु विलयन<br>
+            (iv) प्लैटिनम इलेक्ट्रोडों के साथ CuCl<sub>2</sub> का जलीय विलयन</div>
+        </div>
+        <div class="answer">
+            (i) <b>सिल्वर इलेक्ट्रोडों के साथ AgNO<sub>3</sub> का जलीय विलयन:</b><br>
+            कैथोड पर: Ag<sup>+</sup> का Ag में अपचयन<br>
+            ऐनोड पर: Ag इलेक्ट्रोड का Ag<sup>+</sup> में ऑक्सीकरण<br>
+            शुद्ध परिणाम: ऐनोड से कैथोड पर Ag का स्थानांतरण (सेल का परिष्करण)<br><br>
+            (ii) <b>प्लैटिनम इलेक्ट्रोडों के साथ AgNO<sub>3</sub> का जलीय विलयन:</b><br>
+            कैथोड पर: Ag<sup>+</sup> का Ag में अपचयन<br>
+            ऐनोड पर: जल का ऑक्सीकरण: 2H<sub>2</sub>O → O<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup><br>
+            उत्पाद: कैथोड पर Ag, ऐनोड पर O<sub>2</sub><br><br>
+            (iii) <b>प्लैटिनम इलेक्ट्रोडों के साथ H<sub>2</sub>SO<sub>4</sub> का तनु विलयन:</b><br>
+            कैथोड पर: H<sup>+</sup> का H<sub>2</sub> में अपचयन: 2H<sup>+</sup> + 2e<sup>-</sup> → H<sub>2</sub><br>
+            ऐनोड पर: जल का ऑक्सीकरण: 2H<sub>2</sub>O → O<sub>2</sub> + 4H<sup>+</sup> + 4e<sup>-</sup><br>
+            उत्पाद: कैथोड पर H<sub>2</sub>, ऐनोड पर O<sub>2</sub><br><br>
+            (iv) <b>प्लैटिनम इलेक्ट्रोडों के साथ CuCl<sub>2</sub> का जलीय विलयन:</b><br>
+            कैथोड पर: Cu<sup>2+</sup> का Cu में अपचयन<br>
+            ऐनोड पर: Cl<sup>-</sup> का Cl<sub>2</sub> में ऑक्सीकरण: 2Cl<sup>-</sup> → Cl<sub>2</sub> + 2e<sup>-</sup><br>
+            उत्पाद: कैथोड पर Cu, ऐनोड पर Cl<sub>2</sub>
+        </div>
+    </div>
+
+</body>
+</html>

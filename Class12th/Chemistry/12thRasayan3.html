@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 रसायन विज्ञान - अध्याय 3: रासायनिक बलगतिकी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2E8B57 0%, #3CB371 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #2E8B57, #3CB371);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #2E8B57;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        
+        .nav-btn {
+            background: #2E8B57;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s;
+        }
+        
+        .nav-btn:hover {
+            background: #3CB371;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+            
+            .nav-btn {
+                padding: 8px 12px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 रसायन विज्ञान</h1>
+        <p>अध्याय 3: रासायनिक बलगतिकी</p>
+    </div>
+
+    <!-- Question 3.1 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.1</div>
+            <div>निम्नलिखित अभिक्रियाओं के वेग व्यंजकों से इनकी अभिक्रिया कोटि तथा वेग स्थिरांकों की इकाइयाँ ज्ञात कीजिए:<br>
+            (i) 3NO(g) → N<sub>2</sub>O(g) वेग = k [NO]<sup>2</sup><br>
+            (ii) H<sub>2</sub>O<sub>2</sub>(aq) + 3I<sup>-</sup>(aq) + 2H<sup>+</sup> → 2H<sub>2</sub>O(l) + I<sub>3</sub><sup>-</sup> वेग = k [H<sub>2</sub>O<sub>2</sub>][I<sup>-</sup>]<br>
+            (iii) CH<sub>3</sub>CHO(g) → CH<sub>4</sub>(g) + CO(g) वेग = k [CH<sub>3</sub>CHO]<sup>3/2</sup><br>
+            (iv) C<sub>2</sub>H<sub>5</sub>Cl(g) → C<sub>2</sub>H<sub>4</sub>(g) + HCl(g) वेग = k [C<sub>2</sub>H<sub>5</sub>Cl]</div>
+        </div>
+        <div class="answer">
+            (i) वेग = k [NO]<sup>2</sup><br>
+            कोटि = 2<br>
+            k की इकाई = mol<sup>-1</sup> L s<sup>-1</sup><br><br>
+            
+            (ii) वेग = k [H<sub>2</sub>O<sub>2</sub>][I<sup>-</sup>]<br>
+            कोटि = 1 + 1 = 2<br>
+            k की इकाई = mol<sup>-1</sup> L s<sup>-1</sup><br><br>
+            
+            (iii) वेग = k [CH<sub>3</sub>CHO]<sup>3/2</sup><br>
+            कोटि = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div><br>
+            k की इकाई = mol<sup>-1/2</sup> L<sup>1/2</sup> s<sup>-1</sup><br><br>
+            
+            (iv) वेग = k [C<sub>2</sub>H<sub>5</sub>Cl]<br>
+            कोटि = 1<br>
+            k की इकाई = s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.2 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.2</div>
+            <div>अभिक्रिया 2A + B → A<sub>2</sub>B के लिए वेग = k [A][B]<sup>2</sup> यहाँ k का मान 2.0 × 10<sup>-6</sup> mol<sup>-2</sup> L<sup>2</sup> s<sup>-1</sup> है। प्रारंभिक वेग की गणना कीजिए; जब [A] = 0.1 mol L<sup>-1</sup>, [B] = 0.2 mol L<sup>-1</sup> हो तथा अभिक्रिया वेग की गणना कीजिए; जब [A] घटकर 0.06 mol L<sup>-1</sup> रह जाए।</div>
+        </div>
+        <div class="answer">
+            वेग नियम: वेग = k [A][B]<sup>2</sup><br>
+            k = 2.0 × 10<sup>-6</sup> mol<sup>-2</sup> L<sup>2</sup> s<sup>-1</sup><br><br>
+            
+            (i) प्रारंभिक वेग:<br>
+            [A] = 0.1 mol L<sup>-1</sup>, [B] = 0.2 mol L<sup>-1</sup><br>
+            वेग = 2.0 × 10<sup>-6</sup> × 0.1 × (0.2)<sup>2</sup><br>
+            = 2.0 × 10<sup>-6</sup> × 0.1 × 0.04<br>
+            = 8.0 × 10<sup>-9</sup> mol L<sup>-1</sup> s<sup>-1</sup><br><br>
+            
+            (ii) जब [A] = 0.06 mol L<sup>-1</sup><br>
+            वेग = 2.0 × 10<sup>-6</sup> × 0.06 × (0.2)<sup>2</sup><br>
+            = 2.0 × 10<sup>-6</sup> × 0.06 × 0.04<br>
+            = 4.8 × 10<sup>-9</sup> mol L<sup>-1</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.3 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.3</div>
+            <div>प्लैटिनम सतह पर NH<sub>3</sub> का वियोजन शून्य कोटि की अभिक्रिया है। N<sub>2</sub> एवं H<sub>2</sub> के उत्पादन की दर क्या होगी जब k का मान 2.5 × 10<sup>-4</sup> mol L<sup>-1</sup> s<sup>-1</sup> हो?</div>
+        </div>
+        <div class="answer">
+            अभिक्रिया: 2NH<sub>3</sub>(g) → N<sub>2</sub>(g) + 3H<sub>2</sub>(g)<br><br>
+            शून्य कोटि की अभिक्रिया के लिए वेग = k = 2.5 × 10<sup>-4</sup> mol L<sup>-1</sup> s<sup>-1</sup><br><br>
+            
+            N<sub>2</sub> के उत्पादन की दर = <div class="fraction"><span class="numerator">d[N<sub>2</sub>]</span><span class="denominator">dt</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × <div class="fraction"><span class="numerator">-d[NH<sub>3</sub>]</span><span class="denominator">dt</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 2.5 × 10<sup>-4</sup><br>
+            = 1.25 × 10<sup>-4</sup> mol L<sup>-1</sup> s<sup>-1</sup><br><br>
+            
+            H<sub>2</sub> के उत्पादन की दर = <div class="fraction"><span class="numerator">d[H<sub>2</sub>]</span><span class="denominator">dt</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div> × <div class="fraction"><span class="numerator">-d[NH<sub>3</sub>]</span><span class="denominator">dt</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">2</span></div> × 2.5 × 10<sup>-4</sup><br>
+            = 3.75 × 10<sup>-4</sup> mol L<sup>-1</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.4 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.4</div>
+            <div>डाइमेथिल ईथर के वियोजन से CH<sub>4</sub>, H<sub>2</sub> तथा CO बनते हैं। इस अभिक्रिया का वेग निम्नलिखित समीकरण द्वारा दिया जाता है-<br>
+            वेग = k [CH<sub>3</sub>OCH<sub>3</sub>]<sup>3/2</sup><br>
+            अभिक्रिया के वेग का अनुगमन बंद पात्र में बढ़ते दाब द्वारा किया जाता है, अतः वेग समीकरण को डाइमेथिल ईथर के आंशिक दाब के पदों में भी दिया जा सकता है। अतः<br>
+            वेग = k (p<sub>CH<sub>3</sub>OCH<sub>3</sub></sub>)<sup>3/2</sup><br>
+            यदि दाब को bar में तथा समय को मिनट में मापा जाए तो अभिक्रिया के वेग तथा वेग स्थिरांक की इकाइयाँ क्या होंगी?</div>
+        </div>
+        <div class="answer">
+            वेग = k (p<sub>CH<sub>3</sub>OCH<sub>3</sub></sub>)<sup>3/2</sup><br><br>
+            
+            वेग की इकाई = bar min<sup>-1</sup><br><br>
+            
+            वेग स्थिरांक k की इकाई:<br>
+            k = <div class="fraction"><span class="numerator">वेग</span><span class="denominator">(p<sub>CH<sub>3</sub>OCH<sub>3</sub></sub>)<sup>3/2</sup></span></div> = <div class="fraction"><span class="numerator">bar min<sup>-1</sup></span><span class="denominator">bar<sup>3/2</sup></span></div> = bar<sup>-1/2</sup> min<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.5 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.5</div>
+            <div>रासायनिक अभिक्रिया के वेग को प्रभावित करने वाले कारकों का उल्लेख कीजिए।</div>
+        </div>
+        <div class="answer">
+            रासायनिक अभिक्रिया के वेग को प्रभावित करने वाले कारक निम्नलिखित हैं:<br><br>
+            1. <b>अभिकारकों की सांद्रता:</b> अभिकारकों की सांद्रता बढ़ने पर अभिक्रिया का वेग बढ़ता है।<br>
+            2. <b>ताप:</b> ताप बढ़ने पर अभिक्रिया का वेग बढ़ता है।<br>
+            3. <b>उत्प्रेरक:</b> उत्प्रेरक की उपस्थिति में अभिक्रिया का वेग बढ़ता है।<br>
+            4. <b>अभिकारकों की प्रकृति:</b> आयनिक अभिक्रियाएँ अधिक तेज तथा सहसंयोजक अभिक्रियाएँ धीमी होती हैं।<br>
+            5. <b>पृष्ठ क्षेत्रफल:</b> ठोस अभिकारकों का पृष्ठ क्षेत्रफल बढ़ने पर अभिक्रिया का वेग बढ़ता है।<br>
+            6. <b>विकिरण:</b> कुछ अभिक्रियाएँ प्रकाश की उपस्थिति में तेज होती हैं।
+        </div>
+    </div>
+
+    <!-- Question 3.6 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.6</div>
+            <div>किसी अभिकारक के लिए एक अभिक्रिया द्वितीय कोटि की है। अभिक्रिया का वेग कैसे प्रभावित होगा यदि अभिकारक की सांद्रता-<br>
+            (i) दोगुनी कर दी जाए<br>
+            (ii) आधी कर दी जाए</div>
+        </div>
+        <div class="answer">
+            द्वितीय कोटि की अभिक्रिया के लिए वेग = k [A]<sup>2</sup><br><br>
+            
+            (i) यदि [A] दोगुनी कर दी जाए:<br>
+            नया वेग = k (2[A])<sup>2</sup> = 4k [A]<sup>2</sup><br>
+            अतः वेग चार गुना बढ़ जाएगा।<br><br>
+            
+            (ii) यदि [A] आधी कर दी जाए:<br>
+            नया वेग = k (<div class="fraction"><span class="numerator">[A]</span><span class="denominator">2</span></div>)<sup>2</sup> = <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div> k [A]<sup>2</sup><br>
+            अतः वेग एक-चौथाई रह जाएगा।
+        </div>
+    </div>
+
+    <!-- Question 3.7 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.7</div>
+            <div>वेग स्थिरांक पर ताप का क्या प्रभाव पड़ता है? ताप के इस प्रभाव को मात्रात्मक रूप में कैसे प्रदर्शित कर सकते हैं?</div>
+        </div>
+        <div class="answer">
+            ताप बढ़ने पर वेग स्थिरांक का मान बढ़ता है। आरेनियस समीकरण के अनुसार:<br><br>
+            k = A e<sup>-E<sub>a</sub>/RT</sup><br><br>
+            जहाँ:<br>
+            k = वेग स्थिरांक<br>
+            A = आवृत्ति कारक<br>
+            E<sub>a</sub> = सक्रियण ऊर्जा<br>
+            R = गैस स्थिरांक<br>
+            T = ताप (केल्विन में)<br><br>
+            ताप बढ़ने पर e<sup>-E<sub>a</sub>/RT</sup> का मान बढ़ता है, जिससे k का मान बढ़ता है। सामान्यतः ताप में प्रत्येक 10°C की वृद्धि पर वेग स्थिरांक लगभग दोगुना हो जाता है।
+        </div>
+    </div>
+
+    <!-- Question 3.8 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.8</div>
+            <div>एक प्रथम कोटि की अभिक्रिया के लिए निम्नलिखित आँकड़े प्राप्त हुए-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>t/s</th>
+                        <th>0</th>
+                        <th>30</th>
+                        <th>60</th>
+                        <th>90</th>
+                    </tr>
+                    <tr>
+                        <td>[A]/mol L<sup>-1</sup></td>
+                        <td>0.55</td>
+                        <td>0.31</td>
+                        <td>0.17</td>
+                        <td>0.085</td>
+                    </tr>
+                </table>
+            </div>
+            30 से 60 सेकंड समय अंतराल में औसत वेग की गणना कीजिए।<br><br>
+            
+            औसत वेग = - <div class="fraction"><span class="numerator">Δ[A]</span><span class="denominator">Δt</span></div><br>
+            = - <div class="fraction"><span class="numerator">0.17 - 0.31</span><span class="denominator">60 - 30</span></div><br>
+            = - <div class="fraction"><span class="numerator">-0.14</span><span class="denominator">30</span></div><br>
+            = 4.67 × 10<sup>-3</sup> mol L<sup>-1</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.9 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.9</div>
+            <div>एक अभिक्रिया A के प्रति प्रथम तथा B के प्रति द्वितीय कोटि की है-<br>
+            (i) विभेदक वेग समीकरण लिखिए।<br>
+            (ii) B की सांद्रता तीन गुनी करने से वेग पर क्या प्रभाव पड़ेगा?<br>
+            (iii) A तथा B दोनों की सांद्रता दोगुनी करने से वेग पर क्या प्रभाव पड़ेगा?</div>
+        </div>
+        <div class="answer">
+            (i) विभेदक वेग समीकरण:<br>
+            वेग = k [A]<sup>1</sup> [B]<sup>2</sup><br>
+            या - <div class="fraction"><span class="numerator">d[A]</span><span class="denominator">dt</span></div> = k [A] [B]<sup>2</sup><br><br>
+            
+            (ii) यदि [B] तीन गुनी कर दी जाए:<br>
+            नया वेग = k [A] (3[B])<sup>2</sup> = 9k [A] [B]<sup>2</sup><br>
+            अतः वेग 9 गुना बढ़ जाएगा।<br><br>
+            
+            (iii) यदि [A] और [B] दोनों दोगुनी कर दी जाएं:<br>
+            नया वेग = k (2[A]) (2[B])<sup>2</sup> = k × 2[A] × 4[B]<sup>2</sup> = 8k [A] [B]<sup>2</sup><br>
+            अतः वेग 8 गुना बढ़ जाएगा。
+        </div>
+    </div>
+
+    <!-- Question 3.10 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.10</div>
+            <div>A और B के बीच अभिक्रिया में A और B की विभिन्न प्रारंभिक सांद्रताओं के लिए प्रारंभिक वेग (r<sub>0</sub>) नीचे दिए गए हैं-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>A/mol L<sup>-1</sup></th>
+                        <th>0.20</th>
+                        <th>0.20</th>
+                        <th>0.40</th>
+                    </tr>
+                    <tr>
+                        <th>B/mol L<sup>-1</th>
+                        <th>0.30</th>
+                        <th>0.10</th>
+                        <th>0.05</th>
+                    </tr>
+                    <tr>
+                        <th>r<sub>0</sub>/mol L<sup>-1</sup>s<sup>-1</sup></th>
+                        <th>5.07 × 10<sup>-5</sup></th>
+                        <th>5.07 × 10<sup>-5</sup></th>
+                        <th>1.43 × 10<sup>-4</sup></th>
+                    </tr>
+                </table>
+            </div>
+            A और B के प्रति अभिक्रिया की कोटि क्या है?<br><br>
+            
+            माना वेग = k [A]<sup>x</sup> [B]<sup>y</sup><br><br>
+            
+            प्रयोग I और II से:<br>
+            [A] समान है, [B] बदल रहा है<br>
+            <div class="fraction"><span class="numerator">r<sub>0</sub>(II)</span><span class="denominator">r<sub>0</sub>(I)</span></div> = <div class="fraction"><span class="numerator">[B]<sub>II</sub><sup>y</sup></span><span class="denominator">[B]<sub>I</sub><sup>y</sup></span></div><br>
+            <div class="fraction"><span class="numerator">5.07 × 10<sup>-5</sup></span><span class="denominator">5.07 × 10<sup>-5</sup></span></div> = <div class="fraction"><span class="numerator">0.10<sup>y</sup></span><span class="denominator">0.30<sup>y</sup></span></div><br>
+            1 = (<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div>)<sup>y</sup><br>
+            y = 0<br><br>
+            
+            प्रयोग II और III से:<br>
+            [B] समान नहीं है, लेकिन y=0 है, इसलिए [B] का कोई प्रभाव नहीं<br>
+            <div class="fraction"><span class="numerator">r<sub>0</sub>(III)</span><span class="denominator">r<sub>0</sub>(II)</span></div> = <div class="fraction"><span class="numerator">[A]<sub>III</sub><sup>x</sup></span><span class="denominator">[A]<sub>II</sub><sup>x</sup></span></div><br>
+            <div class="fraction"><span class="numerator">1.43 × 10<sup>-4</sup></span><span class="denominator">5.07 × 10<sup>-5</sup></span></div> = <div class="fraction"><span class="numerator">0.40<sup>x</sup></span><span class="denominator">0.20<sup>x</sup></span></div><br>
+            2.82 = 2<sup>x</sup><br>
+            x ≈ 1.5<br><br>
+            
+            अतः A के प्रति कोटि = 1.5, B के प्रति कोटि = 0
+        </div>
+    </div>
+
+    <!-- Question 3.11 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.11</div>
+            <div>2A + B → C + D अभिक्रिया की बलगतिकी अध्ययन करने पर निम्नलिखित परिणाम प्राप्त हुए। अभिक्रिया के लिए वेग नियम तथा वेग स्थिरांक ज्ञात कीजिए-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>प्रयोग</th>
+                        <th>[A]/mol L<sup>-1</sup></th>
+                        <th>[B]/mol L<sup>-1</sup></th>
+                        <th>D के विघटन का प्रारंभिक वेग/mol L<sup>-1</sup> min<sup>-1</sup></th>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>0.1</td>
+                        <td>0.1</td>
+                        <td>6.0 × 10<sup>-3</sup></td>
+                    </tr>
+                    <tr>
+                        <td>II</td>
+                        <td>0.3</td>
+                        <td>0.2</td>
+                        <td>7.2 × 10<sup>-2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>III</td>
+                        <td>0.3</td>
+                        <td>0.4</td>
+                        <td>2.88 × 10<sup>-1</sup></td>
+                    </tr>
+                    <tr>
+                        <td>IV</td>
+                        <td>0.4</td>
+                        <td>0.1</td>
+                        <td>2.40 × 10<sup>-2</sup></td>
+                    </tr>
+                </table>
+            </div>
+            माना वेग = k [A]<sup>x</sup> [B]<sup>y</sup><br><br>
+            
+            प्रयोग I और IV से (जब [B] समान है):<br>
+            <div class="fraction"><span class="numerator">r<sub>IV</sub></span><span class="denominator">r<sub>I</sub></span></div> = <div class="fraction"><span class="numerator">[A]<sub>IV</sub><sup>x</sup></span><span class="denominator">[A]<sub>I</sub><sup>x</sup></span></div><br>
+            <div class="fraction"><span class="numerator">2.40 × 10<sup>-2</sup></span><span class="denominator">6.0 × 10<sup>-3</sup></span></div> = <div class="fraction"><span class="numerator">0.4<sup>x</sup></span><span class="denominator">0.1<sup>x</sup></span></div><br>
+            4 = 4<sup>x</sup><br>
+            x = 1<br><br>
+            
+            प्रयोग II और III से (जब [A] समान है):<br>
+            <div class="fraction"><span class="numerator">r<sub>III</sub></span><span class="denominator">r<sub>II</sub></span></div> = <div class="fraction"><span class="numerator">[B]<sub>III</sub><sup>y</sup></span><span class="denominator">[B]<sub>II</sub><sup>y</sup></span></div><br>
+            <div class="fraction"><span class="numerator">2.88 × 10<sup>-1</sup></span><span class="denominator">7.2 × 10<sup>-2</sup></span></div> = <div class="fraction"><span class="numerator">0.4<sup>y</sup></span><span class="denominator">0.2<sup>y</sup></span></div><br>
+            4 = 2<sup>y</sup><br>
+            y = 2<br><br>
+            
+            वेग नियम: वेग = k [A] [B]<sup>2</sup><br><br>
+            
+            वेग स्थिरांक की गणना:<br>
+            प्रयोग I से: 6.0 × 10<sup>-3</sup> = k × 0.1 × (0.1)<sup>2</sup><br>
+            6.0 × 10<sup>-3</sup> = k × 0.1 × 0.01<br>
+            6.0 × 10<sup>-3</sup> = k × 1.0 × 10<sup>-3</sup><br>
+            k = 6.0 min<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.12 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.12</div>
+            <div>A तथा B के बीच अभिक्रिया A के प्रति प्रथम तथा B के प्रति शून्य कोटि की है। निम्न सारणी में रिक्त स्थानों की पूर्ति कीजिए-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>प्रयोग</th>
+                        <th>[A]/mol L<sup>-1</sup></th>
+                        <th>[B]/mol L<sup>-1</sup></th>
+                        <th>प्रारंभिक वेग/mol L<sup>-1</sup> min<sup>-1</sup></th>
+                    </tr>
+                    <tr>
+                        <td>I</td>
+                        <td>0.1</td>
+                        <td>0.1</td>
+                        <td>2.0 × 10<sup>-2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>II</td>
+                        <td>?</td>
+                        <td>0.2</td>
+                        <td>4.0 × 10<sup>-2</sup></td>
+                    </tr>
+                    <tr>
+                        <td>III</td>
+                        <td>0.4</td>
+                        <td>0.4</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>IV</td>
+                        <td>?</td>
+                        <td>0.2</td>
+                        <td>2.0 × 10<sup>-2</sup></td>
+                    </tr>
+                </table>
+            </div>
+            वेग नियम: वेग = k [A]<sup>1</sup> [B]<sup>0</sup> = k [A]<br><br>
+            
+            प्रयोग I से: 2.0 × 10<sup>-2</sup> = k × 0.1<br>
+            k = 0.2 min<sup>-1</sup><br><br>
+            
+            प्रयोग II: 4.0 × 10<sup>-2</sup> = 0.2 × [A]<br>
+            [A] = 0.2 mol L<sup>-1</sup><br><br>
+            
+            प्रयोग III: वेग = 0.2 × 0.4 = 0.08 mol L<sup>-1</sup> min<sup>-1</sup><br><br>
+            
+            प्रयोग IV: 2.0 × 10<sup>-2</sup> = 0.2 × [A]<br>
+            [A] = 0.1 mol L<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.13 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.13</div>
+            <div>नीचे दिए गए प्रथम कोटि की अभिक्रियाओं के वेग स्थिरांक से अर्ध-आयु की गणना कीजिए-<br>
+            (i) 200 s<sup>-1</sup><br>
+            (ii) 2 min<sup>-1</sup><br>
+            (iii) 4 year<sup>-1</sup></div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">k</span></div><br><br>
+            
+            (i) k = 200 s<sup>-1</sup><br>
+            t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">200</span></div> = 3.465 × 10<sup>-3</sup> s<br><br>
+            
+            (ii) k = 2 min<sup>-1</sup><br>
+            t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">2</span></div> = 0.3465 min<br><br>
+            
+            (iii) k = 4 year<sup>-1</sup><br>
+            t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">4</span></div> = 0.17325 year
+        </div>
+    </div>
+
+    <!-- Question 3.14 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.14</div>
+            <div><sup>14</sup>C के रेडियोएक्टिव क्षय की अर्ध-आयु 5730 वर्ष है। एक पुरातत्व कलाकार की लकड़ी में, जीवित वृक्ष की लकड़ी की तुलना में 80% <sup>14</sup>C की मात्रा है। नमूने की आयु का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]</span></div><br><br>
+            
+            k = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">t<sub>1/2</sub></span></div> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">5730</span></div> वर्ष<sup>-1</sup><br><br>
+            
+            [R]<sub>0</sub> = 100 (माना), [R] = 80<br><br>
+            
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">0.693/5730</span></div> log <div class="fraction"><span class="numerator">100</span><span class="denominator">80</span></div><br>
+            t = <div class="fraction"><span class="numerator">2.303 × 5730</span><span class="denominator">0.693</span></div> log 1.25<br>
+            t = 19034.7 × 0.09691<br>
+            t ≈ 1845 वर्ष
+        </div>
+    </div>
+
+    <!-- Question 3.15 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.15</div>
+            <div>गैसीय अवस्था में 318 K पर N<sub>2</sub>O<sub>5</sub> के वियोजन [2N<sub>2</sub>O<sub>5</sub> → 4NO<sub>2</sub> + O<sub>2</sub>] की अभिक्रिया के आँकड़े नीचे दिए गए हैं-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>t/s</th>
+                        <th>0</th>
+                        <th>400</th>
+                        <th>800</th>
+                        <th>1200</th>
+                        <th>1600</th>
+                        <th>2000</th>
+                        <th>2400</th>
+                        <th>2800</th>
+                        <th>3200</th>
+                    </tr>
+                    <tr>
+                        <td>10<sup>2</sup> × [N<sub>2</sub>O<sub>5</sub>]/mol L<sup>-1</sup></td>
+                        <td>1.63</td>
+                        <td>1.36</td>
+                        <td>1.14</td>
+                        <td>0.93</td>
+                        <td>0.78</td>
+                        <td>0.64</td>
+                        <td>0.53</td>
+                        <td>0.43</td>
+                        <td>0.35</td>
+                    </tr>
+                </table>
+            </div>
+            (i) [N<sub>2</sub>O<sub>5</sub>] तथा t के बीच आलेख खींचिए।<br>
+            (ii) अभिक्रिया के लिए अर्ध-आयु की गणना कीजिए।<br>
+            (iii) log[N<sub>2</sub>O<sub>5</sub>] तथा t के बीच आलेख खींचिए।<br>
+            (iv) अभिक्रिया के लिए वेग नियम क्या है?<br>
+            (v) वेग स्थिरांक की गणना कीजिए।<br>
+            (vi) k की सहायता से अर्ध-आयु की गणना कीजिए तथा इसकी तुलना (ii) से कीजिए।<br><br>
+            
+            (i) [N<sub>2</sub>O<sub>5</sub>] तथा t के बीच आलेख एक घातांकीय क्षय वक्र होगा।<br>
+            (ii) अर्ध-आयु: प्रारंभिक सांद्रता 1.63×10<sup>-2</sup> mol L<sup>-1</sup> से आधी 0.815×10<sup>-2</sup> mol L<sup>-1</sup> होने में लगभग 1400 s लगते हैं।<br>
+            (iii) log[N<sub>2</sub>O<sub>5</sub>] तथा t के बीच आलेख एक सीधी रेखा होगी।<br>
+            (iv) वेग नियम: प्रथम कोटि की अभिक्रिया<br>
+            (v) k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">t</span></div> log <div class="fraction"><span class="numerator">[N<sub>2</sub>O<sub>5</sub>]<sub>0</sub></span><span class="denominator">[N<sub>2</sub>O<sub>5</sub>]</span></div><br>
+            t=400 s पर: k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">400</span></div> log <div class="fraction"><span class="numerator">1.63</span><span class="denominator">1.36</span></div> = 4.8×10<sup>-4</sup> s<sup>-1</sup><br>
+            (vi) t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">k</span></div> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">4.8×10<sup>-4</sup></span></div> ≈ 1444 s, जो (ii) के समान है।
+        </div>
+    </div>
+
+    <!-- Question 3.16 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.16</div>
+            <div>प्रथम कोटि की अभिक्रिया के लिए वेग स्थिरांक 60 s<sup>-1</sup> है। अभिकारक को अपनी प्रारंभिक सांद्रता से <div class="fraction"><span class="numerator">1</span><span class="denominator">16</span></div> वाँ भाग रह जाने में कितना समय लगेगा?</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]</span></div><br><br>
+            
+            दिया गया है:<br>
+            k = 60 s<sup>-1</sup><br>
+            [R] = <div class="fraction"><span class="numerator">1</span><span class="denominator">16</span></div> [R]<sub>0</sub><br><br>
+            
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">60</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]<sub>0</sub>/16</span></div><br>
+            t = 0.03838 × log 16<br>
+            t = 0.03838 × 1.2041<br>
+            t ≈ 0.0462 s
+        </div>
+    </div>
+
+    <!-- Question 3.17 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.17</div>
+            <div>नाभिकीय विस्फोट का 28.1 वर्ष अर्ध-आयु वाला एक उत्पाद <sup>90</sup>Sr होता है। यदि कैल्सियम के स्थान पर 1μg, <sup>90</sup>Sr नवजात शिशु की अस्थियों में अवशोषित हो जाए और उपापचय से ह्रास न हो तो इसकी 10 वर्ष एवं 60 वर्ष पश्चात् कितनी मात्रा शेष रह जाएगी?</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            [R] = [R]<sub>0</sub> e<sup>-kt</sup><br>
+            या [R] = [R]<sub>0</sub> <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div><sup>n</sup>, जहाँ n = <div class="fraction"><span class="numerator">t</span><span class="denominator">t<sub>1/2</sub></span></div><br><br>
+            
+            [R]<sub>0</sub> = 1μg, t<sub>1/2</sub> = 28.1 वर्ष<br><br>
+            
+            10 वर्ष पश्चात्: n = <div class="fraction"><span class="numerator">10</span><span class="denominator">28.1</span></div> = 0.356<br>
+            [R] = 1 × <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div><sup>0.356</sup> = 1 × 0.782 = 0.782 μg<br><br>
+            
+            60 वर्ष पश्चात्: n = <div class="fraction"><span class="numerator">60</span><span class="denominator">28.1</span></div> = 2.135<br>
+            [R] = 1 × <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div><sup>2.135</sup> = 1 × 0.227 = 0.227 μg
+        </div>
+    </div>
+
+    <!-- Question 3.18 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.18</div>
+            <div>दर्शाइए कि प्रथम कोटि की अभिक्रिया में 99% अभिक्रिया पूर्ण होने में लगा समय 90% अभिक्रिया पूर्ण होने में लगने वाले समय से दोगुना होता है।</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]</span></div><br><br>
+            
+            90% अभिक्रिया पूर्ण होने पर:<br>
+            [R] = [R]<sub>0</sub> - 0.9[R]<sub>0</sub> = 0.1[R]<sub>0</sub><br>
+            t<sub>90%</sub> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">0.1[R]<sub>0</sub></span></div> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log 10 = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div><br><br>
+            
+            99% अभिक्रिया पूर्ण होने पर:<br>
+            [R] = [R]<sub>0</sub> - 0.99[R]<sub>0</sub> = 0.01[R]<sub>0</sub><br>
+            t<sub>99%</sub> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">0.01[R]<sub>0</sub></span></div> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log 100 = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> × 2<br><br>
+            
+            अतः t<sub>99%</sub> = 2 × t<sub>90%</sub>
+        </div>
+    </div>
+
+    <!-- Question 3.19 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.19</div>
+            <div>एक प्रथम कोटि की अभिक्रिया में 30% वियोजन होने में 40 मिनट लगते हैं। t<sub>1/2</sub> की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">t</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]</span></div><br><br>
+            
+            30% वियोजन होने पर:<br>
+            [R] = [R]<sub>0</sub> - 0.3[R]<sub>0</sub> = 0.7[R]<sub>0</sub><br>
+            t = 40 मिनट<br><br>
+            
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">40</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">0.7[R]<sub>0</sub></span></div><br>
+            k = 0.057575 × log 1.4286<br>
+            k = 0.057575 × 0.1549 = 0.008917 min<sup>-1</sup><br><br>
+            
+            t<sub>1/2</sub> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">k</span></div> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">0.008917</span></div> ≈ 77.7 मिनट
+        </div>
+    </div>
+
+    <!-- Question 3.20 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.20</div>
+            <div>543 K ताप पर एजोआइसोप्रोपेन के हेक्सेन तथा नाइट्रोजन में विघटन के निम्न आँकड़े प्राप्त हुए। वेग स्थिरांक की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>t (sec)</th>
+                        <th>0</th>
+                        <th>360</th>
+                        <th>720</th>
+                    </tr>
+                    <tr>
+                        <th>P (mm Hg में)</th>
+                        <th>35.0</th>
+                        <th>54.0</th>
+                        <th>63.0</th>
+                    </tr>
+                </table>
+            </div>
+            अभिक्रिया: (CH<sub>3</sub>)<sub>2</sub>CHN=NCH(CH<sub>3</sub>)<sub>2</sub>(g) → N<sub>2</sub>(g) + C<sub>6</sub>H<sub>14</sub>(g)<br><br>
+            
+            माना प्रारंभिक दाब P<sub>i</sub> = 35.0 mm Hg<br>
+            t समय पर कुल दाब P<sub>t</sub><br>
+            t समय पर एजोआइसोप्रोपेन का दाब = 2P<sub>i</sub> - P<sub>t</sub><br><br>
+            
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">t</span></div> log <div class="fraction"><span class="numerator">P<sub>i</sub></span><span class="denominator">2P<sub>i</sub> - P<sub>t</sub></span></div><br><br>
+            
+            t=360 sec पर:<br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">360</span></div> log <div class="fraction"><span class="numerator">35.0</span><span class="denominator">2×35.0 - 54.0</span></div><br>
+            k = 0.006397 log <div class="fraction"><span class="numerator">35.0</span><span class="denominator">16.0</span></div><br>
+            k = 0.006397 × 0.3385 = 2.165 × 10<sup>-3</sup> s<sup>-1</sup><br><br>
+            
+            t=720 sec पर:<br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">720</span></div> log <div class="fraction"><span class="numerator">35.0</span><span class="denominator">2×35.0 - 63.0</span></div><br>
+            k = 0.003198 log <div class="fraction"><span class="numerator">35.0</span><span class="denominator">7.0</span></div><br>
+            k = 0.003198 × 0.6990 = 2.235 × 10<sup>-3</sup> s<sup>-1</sup><br><br>
+            
+            औसत k = 2.2 × 10<sup>-3</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.21 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.21</div>
+            <div>स्थिर आयतन पर, SO<sub>2</sub>Cl<sub>2</sub> के प्रथम कोटि के तापीय विघटन पर निम्न आँकड़े प्राप्त हुए-<br>
+            SO<sub>2</sub>Cl<sub>2</sub>(g) → SO<sub>2</sub>(g) + Cl<sub>2</sub>(g)<br>
+            अभिक्रिया वेग की गणना कीजिए जब कुल दाब 0.65 atm हो।</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>प्रयोग</th>
+                        <th>समय/s</th>
+                        <th>कुल दाब/atm</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>100</td>
+                        <td>0.6</td>
+                    </tr>
+                </table>
+            </div>
+            SO<sub>2</sub>Cl<sub>2</sub>(g) → SO<sub>2</sub>(g) + Cl<sub>2</sub>(g)<br><br>
+            
+            t=0 पर: P<sub>SO<sub>2</sub>Cl<sub>2</sub></sub> = 0.5 atm, P<sub>SO<sub>2</sub></sub> = 0, P<sub>Cl<sub>2</sub></sub> = 0<br>
+            t समय पर: माना SO<sub>2</sub>Cl<sub>2</sub> का x atm विघटित हुआ<br>
+            तब: P<sub>SO<sub>2</sub>Cl<sub>2</sub></sub> = 0.5 - x<br>
+            P<sub>SO<sub>2</sub></sub> = x, P<sub>Cl<sub>2</sub></sub> = x<br>
+            कुल दाब = (0.5 - x) + x + x = 0.5 + x<br><br>
+            
+            t=100 s पर कुल दाब = 0.6 atm<br>
+            0.5 + x = 0.6 ⇒ x = 0.1 atm<br>
+            P<sub>SO<sub>2</sub>Cl<sub>2</sub></sub> = 0.5 - 0.1 = 0.4 atm<br><br>
+            
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">t</span></div> log <div class="fraction"><span class="numerator">P<sub>0</sub></span><span class="denominator">P<sub>t</sub></span></div><br>
+            k = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">100</span></div> log <div class="fraction"><span class="numerator">0.5</span><span class="denominator">0.4</span></div><br>
+            k = 0.02303 × 0.09691 = 2.232 × 10<sup>-3</sup> s<sup>-1</sup><br><br>
+            
+            जब कुल दाब = 0.65 atm:<br>
+            0.5 + x = 0.65 ⇒ x = 0.15 atm<br>
+            P<sub>SO<sub>2</sub>Cl<sub>2</sub></sub> = 0.5 - 0.15 = 0.35 atm<br><br>
+            
+            वेग = k [SO<sub>2</sub>Cl<sub>2</sub>] = 2.232 × 10<sup>-3</sup> × 0.35 = 7.812 × 10<sup>-4</sup> atm s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.22 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.22</div>
+            <div>विभिन्न तापों पर N<sub>2</sub>O<sub>5</sub> के विघटन के लिए वेग स्थिरांक नीचे दिए गए हैं-</div>
+        </div>
+        <div class="answer">
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>T/°C</th>
+                        <th>0</th>
+                        <th>20</th>
+                        <th>40</th>
+                        <th>60</th>
+                        <th>80</th>
+                    </tr>
+                    <tr>
+                        <td>10<sup>5</sup> × k/s<sup>-1</sup></td>
+                        <td>0.0787</td>
+                        <td>1.70</td>
+                        <td>25.7</td>
+                        <td>178</td>
+                        <td>2140</td>
+                    </tr>
+                </table>
+            </div>
+            ln k तथा 1/T के बीच आलेख खींचिए तथा A तथा E<sub>a</sub> की गणना कीजिए। 30°C तथा 50°C पर वेग स्थिरांक का मान ज्ञात कीजिए।<br><br>
+            
+            आरेनियस समीकरण: ln k = ln A - <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">RT</span></div><br><br>
+            
+            ताप को केल्विन में बदलने पर:<br>
+            T (K): 273, 293, 313, 333, 353<br>
+            1/T (K<sup>-1</sup>): 0.003663, 0.003413, 0.003195, 0.003003, 0.002833<br>
+            ln k: -9.45, -6.68, -3.66, -1.73, 1.36<br><br>
+            
+            आलेख का ढलान = - <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">R</span></div><br>
+            ढलान ≈ -12400 K<br>
+            E<sub>a</sub> = 12400 × 8.314 = 103.1 kJ mol<sup>-1</sup><br><br>
+            
+            अवरोधन = ln A ≈ 35.5<br>
+            A = e<sup>35.5</sup> ≈ 2.9×10<sup>15</sup> s<sup>-1</sup><br><br>
+            
+            30°C (303 K) पर:<br>
+            ln k = 35.5 - <div class="fraction"><span class="numerator">103100</span><span class="denominator">8.314×303</span></div> = 35.5 - 40.9 = -5.4<br>
+            k = e<sup>-5.4</sup> = 4.5×10<sup>-3</sup> s<sup>-1</sup><br><br>
+            
+            50°C (323 K) पर:<br>
+            ln k = 35.5 - <div class="fraction"><span class="numerator">103100</span><span class="denominator">8.314×323</span></div> = 35.5 - 38.3 = -2.8<br>
+            k = e<sup>-2.8</sup> = 0.061 s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.23 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.23</div>
+            <div>546 K ताप पर हाइड्रोकार्बन के विघटन में वेग स्थिरांक 2.418 × 10<sup>-5</sup> s<sup>-1</sup> है। यदि सक्रियण ऊर्जा 179.9 kJ/mol हो तो पूर्व-घातांकीय गुणनखंड का मान क्या होगा?</div>
+        </div>
+        <div class="answer">
+            आरेनियस समीकरण: k = A e<sup>-E<sub>a</sub>/RT</sup><br><br>
+            
+            दिया गया है:<br>
+            k = 2.418 × 10<sup>-5</sup> s<sup>-1</sup><br>
+            E<sub>a</sub> = 179.9 kJ mol<sup>-1</sup> = 179900 J mol<sup>-1</sup><br>
+            T = 546 K<br>
+            R = 8.314 J mol<sup>-1</sup> K<sup>-1</sup><br><br>
+            
+            A = k e<sup>E<sub>a</sub>/RT</sup><br>
+            E<sub>a</sub>/RT = <div class="fraction"><span class="numerator">179900</span><span class="denominator">8.314 × 546</span></div> = <div class="fraction"><span class="numerator">179900</span><span class="denominator">4539.444</span></div> = 39.63<br><br>
+            
+            A = 2.418 × 10<sup>-5</sup> × e<sup>39.63</sup><br>
+            e<sup>39.63</sup> ≈ 1.64 × 10<sup>17</sup><br>
+            A = 2.418 × 10<sup>-5</sup> × 1.64 × 10<sup>17</sup> = 3.96 × 10<sup>12</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.24 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.24</div>
+            <div>किसी अभिक्रिया A → उत्पाद के लिए k = 2.0 × 10<sup>-2</sup> s<sup>-1</sup> है। यदि A की प्रारंभिक सांद्रता 1.0 mol L<sup>-1</sup> हो तो 100 s के पश्चात् इसकी सांद्रता क्या रह जाएगी?</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            [A] = [A]<sub>0</sub> e<sup>-kt</sup><br><br>
+            
+            दिया गया है:<br>
+            [A]<sub>0</sub> = 1.0 mol L<sup>-1</sup><br>
+            k = 2.0 × 10<sup>-2</sup> s<sup>-1</sup><br>
+            t = 100 s<br><br>
+            
+            [A] = 1.0 × e<sup>-(2.0×10<sup>-2</sup>×100)</sup><br>
+            [A] = 1.0 × e<sup>-2.0</sup><br>
+            [A] = 1.0 × 0.1353 = 0.1353 mol L<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.25 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.25</div>
+            <div>अम्लीय माध्यम में सुक्रोज का ग्लूकोज एवं फ्रक्टोज में विघटन प्रथम कोटि की अभिक्रिया है। इस अभिक्रिया की अर्ध-आयु 3.0 घंटे है। 8 घंटे बाद नमूने में सुक्रोज का कितना अंश बचेगा?</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            [R] = [R]<sub>0</sub> <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div><sup>n</sup>, जहाँ n = <div class="fraction"><span class="numerator">t</span><span class="denominator">t<sub>1/2</sub></span></div><br><br>
+            
+            दिया गया है:<br>
+            t<sub>1/2</sub> = 3.0 घंटे<br>
+            t = 8 घंटे<br><br>
+            
+            n = <div class="fraction"><span class="numerator">8</span><span class="denominator">3</span></div> = 2.667<br><br>
+            
+            शेष अंश = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div><sup>2.667</sup> = 0.157<br><br>
+            
+            अतः 8 घंटे बाद सुक्रोज का 15.7% अंश बचेगा।
+        </div>
+    </div>
+
+    <!-- Question 3.26 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.26</div>
+            <div>हाइड्रोकार्बन का विघटन निम्न समीकरण के अनुसार होता है। E<sub>a</sub> की गणना कीजिए-<br>
+            k = (4.5 × 10<sup>11</sup> s<sup>-1</sup>) e<sup>-28000K/T</sup></div>
+        </div>
+        <div class="answer">
+            आरेनियस समीकरण: k = A e<sup>-E<sub>a</sub>/RT</sup><br><br>
+            
+            दिया गया है: k = (4.5 × 10<sup>11</sup> s<sup>-1</sup>) e<sup>-28000K/T</sup><br><br>
+            
+            तुलना करने पर: <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">R</span></div> = 28000 K<br><br>
+            
+            E<sub>a</sub> = 28000 × R = 28000 × 8.314 = 232792 J mol<sup>-1</sup> = 232.8 kJ mol<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.27 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.27</div>
+            <div>H<sub>2</sub>O<sub>2</sub> के प्रथम कोटि के विघटन को निम्न समीकरण द्वारा लिखा जा सकता है-<br>
+            log k = 14.34 - 1.25 × 10<sup>4</sup>K/T<br>
+            इस अभिक्रिया के लिए E<sub>a</sub> की गणना कीजिए। कितने ताप पर इस अभिक्रिया की अर्ध-आयु 256 मिनट होगी?</div>
+        </div>
+        <div class="answer">
+            आरेनियस समीकरण: log k = log A - <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303RT</span></div><br><br>
+            
+            दिया गया है: log k = 14.34 - <div class="fraction"><span class="numerator">1.25 × 10<sup>4</sup></span><span class="denominator">T</span></div><br><br>
+            
+            तुलना करने पर: <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303R</span></div> = 1.25 × 10<sup>4</sup> K<br><br>
+            
+            E<sub>a</sub> = 1.25 × 10<sup>4</sup> × 2.303 × 8.314 = 239.5 kJ mol<sup>-1</sup><br><br>
+            
+            अर्ध-आयु t<sub>1/2</sub> = 256 मिनट = 15360 सेकंड<br>
+            प्रथम कोटि की अभिक्रिया के लिए: k = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">t<sub>1/2</sub></span></div> = <div class="fraction"><span class="numerator">0.693</span><span class="denominator">15360</span></div> = 4.51 × 10<sup>-5</sup> s<sup>-1</sup><br><br>
+            
+            log(4.51 × 10<sup>-5</sup>) = 14.34 - <div class="fraction"><span class="numerator">1.25 × 10<sup>4</sup></span><span class="denominator">T</span></div><br>
+            -4.345 = 14.34 - <div class="fraction"><span class="numerator">12500</span><span class="denominator">T</span></div><br>
+            <div class="fraction"><span class="numerator">12500</span><span class="denominator">T</span></div> = 14.34 + 4.345 = 18.685<br>
+            T = <div class="fraction"><span class="numerator">12500</span><span class="denominator">18.685</span></div> = 669 K
+        </div>
+    </div>
+
+    <!-- Question 3.28 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.28</div>
+            <div>10°C ताप पर A के उत्पाद में विघटन के लिए k का मान 4.5 × 10<sup>3</sup> s<sup>-1</sup> तथा सक्रियण ऊर्जा 60 kJ mol<sup>-1</sup> है। किस ताप पर k का मान 1.5 × 10<sup>4</sup> s<sup>-1</sup> होगा?</div>
+        </div>
+        <div class="answer">
+            आरेनियस समीकरण: log <div class="fraction"><span class="numerator">k<sub>2</sub></span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303R</span></div> <div class="fraction"><span class="numerator">T<sub>2</sub> - T<sub>1</sub></span><span class="denominator">T<sub>1</sub>T<sub>2</sub></span></div><br><br>
+            
+            दिया गया है:<br>
+            k<sub>1</sub> = 4.5 × 10<sup>3</sup> s<sup>-1</sup>, T<sub>1</sub> = 10°C = 283 K<br>
+            k<sub>2</sub> = 1.5 × 10<sup>4</sup> s<sup>-1</sup>, E<sub>a</sub> = 60 kJ mol<sup>-1</sup> = 60000 J mol<sup>-1</sup><br><br>
+            
+            log <div class="fraction"><span class="numerator">1.5 × 10<sup>4</sup></span><span class="denominator">4.5 × 10<sup>3</sup></span></div> = <div class="fraction"><span class="numerator">60000</span><span class="denominator">2.303 × 8.314</span></div> × <div class="fraction"><span class="numerator">T<sub>2</sub> - 283</span><span class="denominator">283 T<sub>2</sub></span></div><br>
+            log 3.333 = 3133.5 × <div class="fraction"><span class="numerator">T<sub>2</sub> - 283</span><span class="denominator">283 T<sub>2</sub></span></div><br>
+            0.5229 = 3133.5 × <div class="fraction"><span class="numerator">T<sub>2</sub> - 283</span><span class="denominator">283 T<sub>2</sub></span></div><br>
+            <div class="fraction"><span class="numerator">T<sub>2</sub> - 283</span><span class="denominator">T<sub>2</sub></span></div> = <div class="fraction"><span class="numerator">0.5229 × 283</span><span class="denominator">3133.5</span></div> = 0.0472<br>
+            1 - <div class="fraction"><span class="numerator">283</span><span class="denominator">T<sub>2</sub></span></div> = 0.0472<br>
+            <div class="fraction"><span class="numerator">283</span><span class="denominator">T<sub>2</sub></span></div> = 0.9528<br>
+            T<sub>2</sub> = <div class="fraction"><span class="numerator">283</span><span class="denominator">0.9528</span></div> = 297 K = 24°C
+        </div>
+    </div>
+
+    <!-- Question 3.29 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.29</div>
+            <div>298 K ताप पर प्रथम कोटि की अभिक्रिया के 10% पूर्ण होने का समय 308 K ताप पर 25% अभिक्रिया पूर्ण होने में लगे समय के बराबर है। यदि A का मान 4 × 10<sup>10</sup> s<sup>-1</sup> हो तो 318 K ताप पर k तथा E<sub>a</sub> की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            प्रथम कोटि की अभिक्रिया के लिए:<br>
+            t = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k</span></div> log <div class="fraction"><span class="numerator">[R]<sub>0</sub></span><span class="denominator">[R]</span></div><br><br>
+            
+            298 K पर 10% पूर्ण होने पर:<br>
+            [R] = 0.9[R]<sub>0</sub><br>
+            t<sub>1</sub> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k<sub>1</sub></span></div> log <div class="fraction"><span class="numerator">1</span><span class="denominator">0.9</span></div> = <div class="fraction"><span class="numerator">0.1054</span><span class="denominator">k<sub>1</sub></span></div><br><br>
+            
+            308 K पर 25% पूर्ण होने पर:<br>
+            [R] = 0.75[R]<sub>0</sub><br>
+            t<sub>2</sub> = <div class="fraction"><span class="numerator">2.303</span><span class="denominator">k<sub>2</sub></span></div> log <div class="fraction"><span class="numerator">1</span><span class="denominator">0.75</span></div> = <div class="fraction"><span class="numerator">0.2877</span><span class="denominator">k<sub>2</sub></span></div><br><br>
+            
+            दिया गया है: t<sub>1</sub> = t<sub>2</sub><br>
+            <div class="fraction"><span class="numerator">0.1054</span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">0.2877</span><span class="denominator">k<sub>2</sub></span></div><br>
+            <div class="fraction"><span class="numerator">k<sub>2</sub></span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">0.2877</span><span class="denominator">0.1054</span></div> = 2.73<br><br>
+            
+            आरेनियस समीकरण: log <div class="fraction"><span class="numerator">k<sub>2</sub></span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303R</span></div> <div class="fraction"><span class="numerator">T<sub>2</sub> - T<sub>1</sub></span><span class="denominator">T<sub>1</sub>T<sub>2</sub></span></div><br>
+            log 2.73 = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303 × 8.314</span></div> × <div class="fraction"><span class="numerator">308 - 298</span><span class="denominator">298 × 308</span></div><br>
+            0.4362 = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">19.147</span></div> × <div class="fraction"><span class="numerator">10</span><span class="denominator">91784</span></div><br>
+            E<sub>a</sub> = <div class="fraction"><span class="numerator">0.4362 × 19.147 × 91784</span><span class="denominator">10</span></div> = 76600 J mol<sup>-1</sup> = 76.6 kJ mol<sup>-1</sup><br><br>
+            
+            318 K पर k की गणना:<br>
+            log <div class="fraction"><span class="numerator">k<sub>3</sub></span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">76600</span><span class="denominator">19.147</span></div> × <div class="fraction"><span class="numerator">318 - 298</span><span class="denominator">298 × 318</span></div><br>
+            = 4000 × <div class="fraction"><span class="numerator">20</span><span class="denominator">94764</span></div> = 0.843<br>
+            <div class="fraction"><span class="numerator">k<sub>3</sub></span><span class="denominator">k<sub>1</sub></span></div> = 6.97<br><br>
+            
+            k<sub>1</sub> की गणना आरेनियस समीकरण से:<br>
+            k<sub>1</sub> = A e<sup>-E<sub>a</sub>/RT<sub>1</sub></sup> = 4 × 10<sup>10</sup> × e<sup>-76600/(8.314×298)</sup><br>
+            = 4 × 10<sup>10</sup> × e<sup>-30.9</sup> = 4 × 10<sup>10</sup> × 4.5 × 10<sup>-14</sup> = 1.8 × 10<sup>-3</sup> s<sup>-1</sup><br><br>
+            
+            k<sub>3</sub> = 6.97 × k<sub>1</sub> = 6.97 × 1.8 × 10<sup>-3</sup> = 1.25 × 10<sup>-2</sup> s<sup>-1</sup>
+        </div>
+    </div>
+
+    <!-- Question 3.30 -->
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.30</div>
+            <div>ताप में 293 K से 313 K तक वृद्धि करने पर किसी अभिक्रिया का वेग चार गुना हो जाता है। इस अभिक्रिया के लिए सक्रियण ऊर्जा की गणना यह मानते हुए कीजिए कि इसका मान ताप के साथ परिवर्तित नहीं होता।</div>
+        </div>
+        <div class="answer">
+            आरेनियस समीकरण: log <div class="fraction"><span class="numerator">k<sub>2</sub></span><span class="denominator">k<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303R</span></div> <div class="fraction"><span class="numerator">T<sub>2</sub> - T<sub>1</sub></span><span class="denominator">T<sub>1</sub>T<sub>2</sub></span></div><br><br>
+            
+            दिया गया है:<br>
+            k<sub>2</sub> = 4k<sub>1</sub><br>
+            T<sub>1</sub> = 293 K, T<sub>2</sub> = 313 K<br>
+            R = 8.314 J mol<sup>-1</sup> K<sup>-1</sup><br><br>
+            
+            log 4 = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">2.303 × 8.314</span></div> × <div class="fraction"><span class="numerator">313 - 293</span><span class="denominator">293 × 313</span></div><br>
+            0.6021 = <div class="fraction"><span class="numerator">E<sub>a</sub></span><span class="denominator">19.147</span></div> × <div class="fraction"><span class="numerator">20</span><span class="denominator">91709</span></div><br>
+            E<sub>a</sub> = <div class="fraction"><span class="numerator">0.6021 × 19.147 × 91709</span><span class="denominator">20</span></div> = 52800 J mol<sup>-1</sup> = 52.8 kJ mol<sup>-1</sup>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" onclick="scrollToTop()">⬆ सबसे ऊपर जाएँ</button>
+        <button class="nav-btn" onclick="scrollToBottom()">⬇ सबसे नीचे जाएँ</button>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+        
+        function scrollToBottom() {
+            window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+        }
+    </script>
+</body>
+</html>
