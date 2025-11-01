@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 14: अर्धचालक इलेक्ट्रॉनिकी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 14: अर्धचालक इलेक्ट्रॉनिकी - पदार्थ, युक्तियाँ तथा सरल परिपथ</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.1</div>
+            <div>किसी n-प्रकार के सिलिकॉन में निम्नलिखित में से कौन सा कथन सत्य है?<br>
+            (a) इलेक्ट्रॉन बहुसंख्यक आवेश वाहक हैं और त्रिसंयोजी परमाणु अशुद्धियाँ हैं।<br>
+            (b) इलेक्ट्रॉन अल्पसंख्यक आवेश वाहक हैं और पंचसंयोजी परमाणु अशुद्धियाँ हैं।<br>
+            (c) होल (रिक्तियाँ) अल्पसंख्यक आवेश वाहक हैं और पंचसंयोजी परमाणु अशुद्धियाँ हैं।<br>
+            (d) होल (रिक्तियाँ) बहुसंख्यक आवेश वाहक हैं और त्रिसंयोजी परमाणु अशुद्धियाँ हैं।</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b> (a) इलेक्ट्रॉन बहुसंख्यक आवेश वाहक हैं और त्रिसंयोजी परमाणु अशुद्धियाँ हैं।<br><br>
+            <b>व्याख्या:</b><br>
+            n-प्रकार के अर्धचालक में:<br>
+            - इलेक्ट्रॉन बहुसंख्यक आवेश वाहक होते हैं<br>
+            - इसमें पंचसंयोजी अशुद्धि (जैसे As, Sb, P) मिलाई जाती है<br>
+            - इन अशुद्धियों को दाता अशुद्धि कहते हैं<br>
+            - इनमें संयोजकता इलेक्ट्रॉनों की संख्या अधिक होती है<br>
+            - इसलिए n-प्रकार के अर्धचालक में इलेक्ट्रॉन बहुसंख्यक आवेश वाहक होते हैं
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.2</div>
+            <div>प्रश्न 14.1 में दिए गए कथनों में से कौन सा p-प्रकार के अर्धचालकों के लिए सत्य है?</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b> (d) होल (रिक्तियाँ) बहुसंख्यक आवेश वाहक हैं और त्रिसंयोजी परमाणु अशुद्धियाँ हैं।<br><br>
+            <b>व्याख्या:</b><br>
+            p-प्रकार के अर्धचालक में:<br>
+            - होल (रिक्तियाँ) बहुसंख्यक आवेश वाहक होते हैं<br>
+            - इसमें त्रिसंयोजी अशुद्धि (जैसे B, Al, In) मिलाई जाती है<br>
+            - इन अशुद्धियों को ग्राही अशुद्धि कहते हैं<br>
+            - इनमें संयोजकता इलेक्ट्रॉनों की संख्या कम होती है<br>
+            - इसलिए p-प्रकार के अर्धचालक में होल बहुसंख्यक आवेश वाहक होते हैं
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.3</div>
+            <div>कार्बन, सिलिकॉन और जर्मेनियम, प्रत्येक में चार संयोजक इलेक्ट्रॉन हैं। इनकी विशेषता ऊर्जा बैंड अंतराल द्वारा दी गई है जो क्रमशः (Eg)C, (Eg)Si और (Eg)Ge के बराबर हैं। निम्नलिखित में से कौन सा कथन सत्य है?<br>
+            (a) (Eg)Si < (Eg)Ge < (Eg)C<br>
+            (b) (Eg)C < (Eg)Ge > (Eg)Si<br>
+            (c) (Eg)C > (Eg)Si > (Eg)Ge<br>
+            (d) (Eg)C = (Eg)Si = (Eg)Ge</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b> (c) (Eg)C > (Eg)Si > (Eg)Ge<br><br>
+            <b>व्याख्या:</b><br>
+            ऊर्जा बैंड अंतराल (Eg) के मान:<br>
+            - कार्बन (C) के लिए: Eg = 5.4 eV<br>
+            - सिलिकॉन (Si) के लिए: Eg = 1.1 eV<br>
+            - जर्मेनियम (Ge) के लिए: Eg = 0.7 eV<br><br>
+            इसलिए सही क्रम है: (Eg)C > (Eg)Si > (Eg)Ge<br><br>
+            यह अंतराल इन पदार्थों की चालकता को निर्धारित करता है। कार्बन में सबसे बड़ा बैंड अंतराल होने के कारण यह विद्युतरोधी है, जबकि जर्मेनियम में सबसे छोटा बैंड अंतराल होने के कारण यह सबसे अच्छा अर्धचालक है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.4</div>
+            <div>बिना बायस p-n संधि से, होल p-क्षेत्र से n-क्षेत्र की ओर विसरित होते हैं, क्योंकि<br>
+            (a) n-क्षेत्र में मुक्त इलेक्ट्रॉन उन्हें आकर्षित करते हैं।<br>
+            (b) ये विभवांतर के कारण संधि के पार गति करते हैं।<br>
+            (c) p-क्षेत्र में होल-सांद्रता, n-क्षेत्र में इनकी सांद्रता से अधिक है।<br>
+            (d) उपरोक्त सभी।</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b> (c) p-क्षेत्र में होल-सांद्रता, n-क्षेत्र में इनकी सांद्रता से अधिक है।<br><br>
+            <b>व्याख्या:</b><br>
+            बिना बायस के p-n संधि में:<br>
+            - p-क्षेत्र में होलों की सांद्रता n-क्षेत्र में होलों की सांद्रता से अधिक होती है<br>
+            - n-क्षेत्र में इलेक्ट्रॉनों की सांद्रता p-क्षेत्र में इलेक्ट्रॉनों की सांद्रता से अधिक होती है<br>
+            - सांद्रता प्रवणता के कारण, होल p-क्षेत्र से n-क्षेत्र की ओर विसरित होते हैं<br>
+            - इसी प्रकार, इलेक्ट्रॉन n-क्षेत्र से p-क्षेत्र की ओर विसरित होते हैं<br>
+            - यह विसरण संधि के दोनों ओर अवक्षय क्षेत्र बनाता है
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.5</div>
+            <div>जब p-n संधि पर अग्र अभिनति लगाया जाता है, तो यह<br>
+            (a) विभव अवरोधक बढ़ाता है।<br>
+            (b) बहुसंख्यक आवेश वाहक धारा को शून्य कर देता है।<br>
+            (c) विभव अवरोधक को कम कर देता है।<br>
+            (d) उपरोक्त में से कोई नहीं।</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b> (c) विभव अवरोधक को कम कर देता है।<br><br>
+            <b>व्याख्या:</b><br>
+            अग्र अभिनति (Forward Bias) में:<br>
+            - p-सिरा बैटरी के धन टर्मिनल से जुड़ा होता है<br>
+            - n-सिरा बैटरी के ऋण टर्मिनल से जुड़ा होता है<br>
+            - लगाया गया विभव अवक्षय क्षेत्र के विभव अवरोधक का विरोध करता है<br>
+            - इससे अवक्षय क्षेत्र की चौड़ाई कम हो जाती है<br>
+            - विभव अवरोधक की ऊँचाई कम हो जाती है<br>
+            - अधिक आवेश वाहक संधि को पार करने में सक्षम होते हैं<br>
+            - परिणामस्वरूप, धारा प्रवाहित होने लगती है
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">14.6</div>
+            <div>अर्ध-तरंग दिष्टकारी में, यदि निवेश आवृत्ति 50 Hz है तो निर्गम आवृत्ति क्या है? समान निवेश आवृत्ति के लिए पूर्ण तरंग दिष्टकारी की निर्गम आवृत्ति क्या है?</div>
+        </div>
+        <div class="answer">
+            <b>उत्तर:</b><br>
+            अर्ध-तरंग दिष्टकारी के लिए: निर्गम आवृत्ति = 50 Hz<br>
+            पूर्ण-तरंग दिष्टकारी के लिए: निर्गम आवृत्ति = 100 Hz<br><br>
+            <b>व्याख्या:</b><br>
+            अर्ध-तरंग दिष्टकारी (Half-wave Rectifier):<br>
+            - इनपुट AC के केवल एक अर्ध-चक्र में धारा प्रवाहित होती है<br>
+            - आउटपुट में इनपुट की आधी तरंगें होती हैं<br>
+            - इसलिए आउटपुट आवृत्ति इनपुट आवृत्ति के बराबर होती है<br>
+            - यदि इनपुट आवृत्ति 50 Hz है, तो आउटपुट आवृत्ति भी 50 Hz होगी<br><br>
+            पूर्ण-तरंग दिष्टकारी (Full-wave Rectifier):<br>
+            - इनपुट AC के दोनों अर्ध-चक्रों में धारा प्रवाहित होती है<br>
+            - आउटपुट में इनपुट की सभी तरंगें होती हैं<br>
+            - आउटपुट आवृत्ति इनपुट आवृत्ति से दोगुनी होती है<br>
+            - यदि इनपुट आवृत्ति 50 Hz है, तो आउटपुट आवृत्ति 100 Hz होगी
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 2: स्थिरवैद्युत विभव तथा धारिता</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 2: स्थिरवैद्युत विभव तथा धारिता</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.1</div>
+            <div>5 × 10⁻⁸ C तथा –3 × 10⁻⁸ C के दो आवेश 16 cm दूरी पर स्थित हैं। दोनों आवेशों को मिलाने वाली रेखा के किस बिंदु पर विद्युत विभव शून्य होगा? अनंत पर विभव शून्य लीजिए।</div>
+        </div>
+        <div class="answer">
+            माना कि आवेश 5 × 10⁻⁸ C, बिंदु A पर स्थित है और आवेश –3 × 10⁻⁸ C, बिंदु B पर स्थित है।<br>
+            AB = 16 cm = 0.16 m<br><br>
+            
+            माना विभव शून्य होने वाला बिंदु P है, जो A से x दूरी पर स्थित है।<br>
+            A पर आवेश के कारण P पर विभव: <code>V₁ = k × (5 × 10⁻⁸) / x</code><br>
+            B पर आवेश के कारण P पर विभव: <code>V₂ = k × (-3 × 10⁻⁸) / (0.16 - x)</code><br><br>
+            
+            P पर कुल विभव शून्य होगा:<br>
+            <code>V₁ + V₂ = 0</code><br>
+            <code>=> k × <div class="fraction"><span class="numerator">(5 × 10⁻⁸)</span><span class="denominator">x</span></div> + k × <div class="fraction"><span class="numerator">(-3 × 10⁻⁸)</span><span class="denominator">(0.16 - x)</span></div> = 0</code><br>
+            <code>=> <div class="fraction"><span class="numerator">(5 × 10⁻⁸)</span><span class="denominator">x</span></div> = <div class="fraction"><span class="numerator">(3 × 10⁻⁸)</span><span class="denominator">(0.16 - x)</span></div></code><br>
+            <code>=> 5(0.16 - x) = 3x</code><br>
+            <code>=> 0.8 - 5x = 3x</code><br>
+            <code>0.8 = 8x</code><br>
+            <code>x = 0.1 m = 10 cm</code><br><br>
+            
+            अतः, आवेश 5 × 10⁻⁸ C से 10 cm की दूरी पर विभव शून्य होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.2</div>
+            <div>10 cm भुजा वाले एक सम-षट्भुज के प्रत्येक शीर्ष पर 5 µC का आवेश है। षट्भुज के केंद्र पर विभव परिकलित कीजिए।</div>
+        </div>
+        <div class="answer">
+            सम-षट्भुज के सभी शीर्षों पर आवेश समान हैं: <code>q = 5 µC = 5 × 10⁻⁶ C</code><br>
+            केंद्र से प्रत्येक शीर्ष की दूरी समान होगी: <code>r = 10 cm = 0.1 m</code><br><br>
+            
+            केंद्र पर कुल विभव सभी आवेशों के कारण विभवों का योग होगा:<br>
+            <code>V = 6 × (kq/r)</code><br>
+            <code>V = 6 × (9 × 10⁹ × 5 × 10⁻⁶) / 0.1</code><br>
+            <code>V = 6 × <div class="fraction"><span class="numerator">45 × 10³</span><span class="denominator">0.1</span></div></code><br>
+            <code>V = 6 × 4.5 × 10⁵</code><br>
+            <code>V = 2.7 × 10⁶ V</code><br><br>
+            
+            अतः, षट्भुज के केंद्र पर विभव <b>2.7 × 10⁶ V</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.3</div>
+            <div>6 cm की दूरी पर अवस्थित दो बिंदुओं A एवं B पर दो आवेश 2 µC तथा –2 µC रखे हैं।<br>
+            (a) निकाय के सम विभव पृष्ठ की पहचान कीजिए।<br>
+            (b) इस पृष्ठ के प्रत्येक बिंदु पर विद्युत क्षेत्र की दिशा क्या है?</div>
+        </div>
+        <div class="answer">
+            <b>(a) सम विभव पृष्ठ:</b><br>
+            दो समान परिमाण परंतु विपरीत चिह्न वाले आवेशों (विद्युत द्विध्रुव) के लिए, सम विभव पृष्ठ वह पृष्ठ होता है जहाँ पर विभव शून्य होता है।<br>
+            यह पृष्ठ दोनों आवेशों को मिलाने वाली रेखा के लंबवत तल में स्थित होता है और द्विध्रुव के केंद्र से गुजरता है।<br><br>
+            
+            <b>(b) विद्युत क्षेत्र की दिशा:</b><br>
+            सम विभव पृष्ठ के प्रत्येक बिंदु पर विद्युत क्षेत्र सदैव पृष्ठ के लंबवत होता है। इस स्थिति में, विद्युत क्षेत्र की दिशा धन आवेश (+2 µC) से ऋण आवेश (-2 µC) की ओर होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.4</div>
+            <div>12 cm त्रिज्या वाले एक गोलीय चालक के पृष्ठ पर 1.6 × 10⁻⁷ C का आवेश एकसमान रूप से वितरित है।<br>
+            (a) गोले के अंदर<br>
+            (b) गोले के ठीक बाहर<br>
+            (c) गोले के केंद्र से 18 cm पर अवस्थित, किसी बिंदु पर विद्युत क्षेत्र क्या होगा?</div>
+        </div>
+        <div class="answer">
+            गोलीय चालक की त्रिज्या, <code>R = 12 cm = 0.12 m</code><br>
+            आवेश, <code>q = 1.6 × 10⁻⁷ C</code><br><br>
+            
+            <b>(a) गोले के अंदर:</b><br>
+            चालक के अंदर विद्युत क्षेत्र शून्य होता है।<br>
+            <code>E = 0</code><br><br>
+            
+            <b>(b) गोले के ठीक बाहर:</b><br>
+            गोलीय चालक के बाहर विद्युत क्षेत्र वैसा ही होता है मानो सारा आवेश केंद्र पर स्थित हो:<br>
+            <code>E = kq/R²</code><br>
+            <code>E = (9 × 10⁹ × 1.6 × 10⁻⁷) / (0.12)²</code><br>
+            <code>E = <div class="fraction"><span class="numerator">1440</span><span class="denominator">0.0144</span></div></code><br>
+            <code>E = 10⁵ N/C</code><br><br>
+            
+            <b>(c) गोले के केंद्र से 18 cm पर:</b><br>
+            दूरी, <code>r = 18 cm = 0.18 m</code><br>
+            <code>E = kq/r²</code><br>
+            <code>E = (9 × 10⁹ × 1.6 × 10⁻⁷) / (0.18)²</code><br>
+            <code>E = <div class="fraction"><span class="numerator">1440</span><span class="denominator">0.0324</span></div></code><br>
+            <code>E ≈ 4.44 × 10⁴ N/C</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.5</div>
+            <div>एक समांतर पट्टिका संधारित्र, जिसकी पट्टिकाओं के बीच वायु है, की धारिता 8 pF (1 pF = 10⁻¹²F) है। यदि पट्टिकाओं के बीच की दूरी को आधा कर दिया जाए और इनके बीच के स्थान में 6 परावैद्युतांक का एक पदार्थ भर दिया जाए, तो इसकी धारिता क्या होगी?</div>
+        </div>
+        <div class="answer">
+            प्रारंभिक धारिता, <code>C₀ = 8 pF</code><br>
+            परावैद्युतांक, <code>K = 6</code><br>
+            दूरी आधी करने पर, <code>d' = d/2</code><br><br>
+            
+            समांतर पट्टिका संधारित्र की धारिता का सूत्र: <code>C = Kε₀A/d</code><br>
+            नई धारिता: <code>C' = Kε₀A/(d/2) = 2Kε₀A/d</code><br>
+            परंतु <code>ε₀A/d = C₀</code><br>
+            अतः <code>C' = 2K × C₀</code><br>
+            <code>C' = 2 × 6 × 8 pF</code><br>
+            <code>C' = 96 pF</code><br><br>
+            
+            अतः, नई धारिता <b>96 pF</b> होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.6</div>
+            <div>9 pF धारिता वाले तीन संधारित्रों को श्रेणीक्रम में जोड़ा गया है।<br>
+            (a) संयोजन की कुल धारिता क्या है?<br>
+            (b) यदि संयोजन को 120 V के संभरण (सप्लाई) से जोड़ दें, तो प्रत्येक संधारित्र पर क्या विभवांतर होगा?</div>
+        </div>
+        <div class="answer">
+            प्रत्येक संधारित्र की धारिता: <code>C₁ = C₂ = C₃ = 9 pF</code><br>
+            कुल आरोपित वोल्टेज: <code>V = 120 V</code><br><br>
+            
+            <b>(a) कुल धारिता:</b><br>
+            श्रेणीक्रम में जुड़े संधारित्रों की कुल धारिता:<br>
+            <code>1/C = 1/C₁ + 1/C₂ + 1/C₃</code><br>
+            <code>1/C = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">9</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div></code><br>
+            <code>C = 3 pF</code><br><br>
+            
+            <b>(b) प्रत्येक संधारित्र पर विभवांतर:</b><br>
+            श्रेणीक्रम में सभी संधारित्रों पर आवेश समान होता है:<br>
+            <code>Q = C × V = 3 × 10⁻¹² × 120 = 360 × 10⁻¹² C</code><br>
+            प्रत्येक संधारित्र पर विभवांतर: <code>V₁ = Q/C₁ = <div class="fraction"><span class="numerator">360 × 10⁻¹²</span><span class="denominator">9 × 10⁻¹²</span></div> = 40 V</code><br>
+            इसी प्रकार, <code>V₂ = 40 V</code>, <code>V₃ = 40 V</code><br><br>
+            
+            अतः, प्रत्येक संधारित्र पर विभवांतर <b>40 V</b> होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.7</div>
+            <div>2 pF, 3 pF और 4 pF धारिता वाले तीन संधारित्र पार्श्वक्रम में जोड़े गए हैं।<br>
+            (a) संयोजन की कुल धारिता क्या है?<br>
+            (b) यदि संयोजन को 100 V के संभरण से जोड़ दें, तो प्रत्येक संधारित्र पर आवेश ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            संधारित्रों की धारिताएँ: <code>C₁ = 2 pF</code>, <code>C₂ = 3 pF</code>, <code>C₃ = 4 pF</code><br>
+            कुल आरोपित वोल्टेज: <code>V = 100 V</code><br><br>
+            
+            <b>(a) कुल धारिता:</b><br>
+            पार्श्वक्रम में जुड़े संधारित्रों की कुल धारिता:<br>
+            <code>C = C₁ + C₂ + C₃</code><br>
+            <code>C = 2 + 3 + 4 = 9 pF</code><br><br>
+            
+            <b>(b) प्रत्येक संधारित्र पर आवेश:</b><br>
+            पार्श्वक्रम में सभी संधारित्रों पर विभवांतर समान होता है:<br>
+            <code>Q₁ = C₁ × V = 2 × 10⁻¹² × 100 = 2 × 10⁻¹⁰ C</code><br>
+            <code>Q₂ = C₂ × V = 3 × 10⁻¹² × 100 = 3 × 10⁻¹⁰ C</code><br>
+            <code>Q₃ = C₃ × V = 4 × 10⁻¹² × 100 = 4 × 10⁻¹⁰ C</code><br><br>
+            
+            अतः, संधारित्रों पर आवेश क्रमशः <b>2 × 10⁻¹⁰ C</b>, <b>3 × 10⁻¹⁰ C</b> और <b>4 × 10⁻¹⁰ C</b> होंगे।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.8</div>
+            <div>पट्टिकाओं के बीच वायु वाले एक समांतर पट्टिका संधारित्र की प्रत्येक पट्टिका का क्षेत्रफल 6 × 10⁻³ m² तथा उनके बीच की दूरी 3 mm है। संधारित्र की धारिता को परिकलित कीजिए। यदि इस संधारित्र को100 V केसंभरण से जोड़ दें तो संधारित्र की प्रत्येक प्लेट पर कितना आवेश होगा?</div>
+        </div>
+        <div class="answer">
+            प्लेट का क्षेत्रफल, <code>A = 6 × 10⁻³ m²</code><br>
+            प्लेटों के बीच दूरी, <code>d = 3 mm = 3 × 10⁻³ m</code><br>
+            वोल्टेज, <code>V = 100 V</code><br>
+            निर्वात की परावैद्युतता, <code>ε₀ = 8.854 × 10⁻¹² C²/Nm²</code><br><br>
+            
+            <b>धारिता:</b><br>
+            <code>C = ε₀A/d</code><br>
+            <code>C = <div class="fraction"><span class="numerator">8.854 × 10⁻¹² × 6 × 10⁻³</span><span class="denominator">3 × 10⁻³</span></div></code><br>
+            <code>C = <div class="fraction"><span class="numerator">5.3124 × 10⁻¹⁴</span><span class="denominator">3 × 10⁻³</span></div></code><br>
+            <code>C = 1.77 × 10⁻¹¹ F = 17.7 pF</code><br><br>
+            
+            <b>आवेश:</b><br>
+            <code>Q = C × V</code><br>
+            <code>Q = 1.77 × 10⁻¹¹ × 100</code><br>
+            <code>Q = 1.77 × 10⁻⁹ C</code><br><br>
+            
+            अतः, संधारित्र की धारिता <b>17.7 pF</b> तथा प्रत्येक पट्टिका पर आवेश <b>1.77 × 10⁻⁹ C</b> होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.9</div>
+            <div>प्रश्न 2.8 में दिए गए संधारित्र की पट्टिकाओं के बीच यदि 3 mm मोटी अभ्रक की एक शीट (पट्टिका) (परावैद्युतांक = 6) रख दी जाए तो स्पष्ट कीजिए कि क्या होगा जब<br>
+            (a) विभव (वोल्टेज) संभरण जुड़ा ही रहेगा।<br>
+            (b) संभरण को हटा लिया जाएगा?</div>
+        </div>
+        <div class="answer">
+            मोटाई, <code>t = 3 mm = d</code> (पूरी दूरी के बराबर)<br>
+            परावैद्युतांक, <code>K = 6</code><br>
+            प्रारंभिक धारिता, <code>C₀ = 17.7 pF</code> (प्रश्न 2.8 से)<br><br>
+            
+            <b>(a) जब विभव संभरण जुड़ा रहेगा:</b><br>
+            वोल्टेज स्थिर रहेगा: <code>V = 100 V</code><br>
+            नई धारिता: <code>C = K × C₀ = 6 × 17.7 pF = 106.2 pF</code><br>
+            नया आवेश: <code>Q = C × V = 106.2 × 10⁻¹² × 100 = 1.062 × 10⁻⁸ C</code><br>
+            आवेश बढ़ जाएगा क्योंकि धारिता बढ़ गई है।<br><br>
+            
+            <b>(b) जब संभरण को हटा लिया जाएगा:</b><br>
+            आवेश स्थिर रहेगा: <code>Q = 1.77 × 10⁻⁹ C</code> (प्रारंभिक आवेश)<br>
+            नई धारिता: <code>C = 106.2 pF</code><br>
+            नया वोल्टेज: <code>V = Q/C = <div class="fraction"><span class="numerator">1.77 × 10⁻⁹</span><span class="denominator">106.2 × 10⁻¹²</span></div> = 16.67 V</code><br>
+            वोल्टेज घट जाएगा क्योंकि धारिता बढ़ गई है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.10</div>
+            <div>12 pF का एक संधारित्र 50 V की बैटरी से जुड़ा है। संधारित्र में कितनी स्थिरवैद्युत ऊर्जा संचित होगी?</div>
+        </div>
+        <div class="answer">
+            धारिता, <code>C = 12 pF = 12 × 10⁻¹² F</code><br>
+            वोल्टेज, <code>V = 50 V</code><br><br>
+            
+            संधारित्र में संचित ऊर्जा:<br>
+            <code>U = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>CV²</code><br>
+            <code>U = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 12 × 10⁻¹² × (50)²</code><br>
+            <code>U = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 12 × 10⁻¹² × 2500</code><br>
+            <code>U = 15000 × 10⁻¹²</code><br>
+            <code>U = 1.5 × 10⁻⁸ J</code><br><br>
+            
+            अतः, संधारित्र में संचित स्थिरवैद्युत ऊर्जा <b>1.5 × 10⁻⁸ J</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">2.11</div>
+            <div>200 V संभरण (सप्लाई) से एक 600 pF के संधारित्र को आवेशित किया जाता है। फिर इसको संभरण से वियोजित कर देते हैं और एक अन्य 600 pF वाले अनावेशित संधारित्र से जोड़ देते हैं। इस प्रक्रिया में कितनी ऊर्जा का ह्रास होता है?</div>
+        </div>
+        <div class="answer">
+            पहले संधारित्र की धारिता, <code>C₁ = 600 pF</code><br>
+            वोल्टेज, <code>V = 200 V</code><br>
+            प्रारंभिक आवेश, <code>Q = C₁V = 600 × 10⁻¹² × 200 = 1.2 × 10⁻⁷ C</code><br>
+            प्रारंभिक ऊर्जा, <code>U₁ = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>C₁V² = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 600 × 10⁻¹² × (200)² = 1.2 × 10⁻⁵ J</code><br><br>
+            
+            जब दूसरा समान धारिता का संधारित्र जोड़ा जाता है, तो कुल धारिता:<br>
+            <code>C = C₁ + C₂ = 600 + 600 = 1200 pF</code><br>
+            कुल आवेश वही रहता है: <code>Q = 1.2 × 10⁻⁷ C</code><br>
+            अंतिम वोल्टेज: <code>V' = Q/C = <div class="fraction"><span class="numerator">1.2 × 10⁻⁷</span><span class="denominator">1200 × 10⁻¹²</span></div> = 100 V</code><br>
+            अंतिम ऊर्जा: <code>U₂ = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>CV'² = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 1200 × 10⁻¹² × (100)² = 0.6 × 10⁻⁵ J</code><br><br>
+            
+            ऊर्जा ह्रास: <code>ΔU = U₁ - U₂ = 1.2 × 10⁻⁵ - 0.6 × 10⁻⁵ = 0.6 × 10⁻⁵ J</code><br><br>
+            
+            अतः, इस प्रक्रिया में <b>0.6 × 10⁻⁵ J</b> ऊर्जा का ह्रास होता है।
+        </div>
+    </div>
+
+</body>
+</html>

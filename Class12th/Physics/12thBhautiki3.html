@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 3: विद्युत धारा</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 3: विद्युत धारा</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.1</div>
+            <div>किसी कार की संचायक बैटरी का विद्युत वाहक बल 12 V है। यदि बैटरी का आंतरिक प्रतिरोध 0.4 Ω हो, तो बैटरी से ली जाने वाली अधिकतम धारा का मान क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            विद्युत वाहक बल, <code>ε = 12 V</code><br>
+            आंतरिक प्रतिरोध, <code>r = 0.4 Ω</code><br><br>
+            अधिकतम धारा तब प्राप्त होती है जब बाह्य प्रतिरोध शून्य हो:<br>
+            <code>I<sub>अधिकतम</sub> = <div class="fraction"><span class="numerator">ε</span><span class="denominator">r</span></div> = <div class="fraction"><span class="numerator">12</span><span class="denominator">0.4</span></div> = 30 A</code><br><br>
+            अतः, बैटरी से ली जाने वाली अधिकतम धारा <b>30 A</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.2</div>
+            <div>10 V विद्युत वाहक बल की बैटरी जिसका आंतरिक प्रतिरोध 3 Ω है, किसी प्रतिरोधक से संयोजित है। यदि परिपथ में धारा का मान 0.5 A हो, तो प्रतिरोधक का प्रतिरोध क्या है? जब परिपथ बंद हो तो सेल की टर्मिनल वोल्टता क्या होगी?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            विद्युत वाहक बल, <code>ε = 10 V</code><br>
+            आंतरिक प्रतिरोध, <code>r = 3 Ω</code><br>
+            धारा, <code>I = 0.5 A</code><br><br>
+            <b>(a) प्रतिरोधक का प्रतिरोध (R):</b><br>
+            परिपथ का कुल प्रतिरोध, <code>R<sub>कुल</sub> = <div class="fraction"><span class="numerator">ε</span><span class="denominator">I</span></div> = <div class="fraction"><span class="numerator">10</span><span class="denominator">0.5</span></div> = 20 Ω</code><br>
+            बाह्य प्रतिरोध, <code>R = R<sub>कुल</sub> - r = 20 - 3 = 17 Ω</code><br><br>
+            <b>(b) टर्मिनल वोल्टता (V):</b><br>
+            <code>V = ε - I r = 10 - (0.5 × 3) = 10 - 1.5 = 8.5 V</code><br>
+            अथवा <code>V = I R = 0.5 × 17 = 8.5 V</code><br><br>
+            अतः, प्रतिरोधक का प्रतिरोध <b>17 Ω</b> है और टर्मिनल वोल्टता <b>8.5 V</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.3</div>
+            <div>(a) 1.0 × 10⁻⁷ m² अनुप्रस्थ काट के ताँबे के तार में 1.5 A धारा प्रवाहित हो रही है। इसमें चालक इलेक्ट्रॉनों की औसत अनुगमन चाल का आकलन कीजिए। मान लीजिए कि ताँबे के प्रत्येक परमाणु से एक चालन इलेक्ट्रॉन समर्पित है। ताँबे का घनत्व 9.0 × 10³ kg/m³ तथा परमाणु द्रव्यमान 63.5 u है। (b) अपनी गणना के आधार पर अनुगमन चाल की तुलना निम्नलिखित से कीजिए: (i) ताँबे के परमाणुओं की सामान्य ताप पर तापीय चाल (ii) अनुगमन गति उत्पन्न करने वाले विद्युत क्षेत्र की प्रसार चाल</div>
+        </div>
+        <div class="answer">
+            <b>(a) अनुगमन चाल (v<sub>d</sub>):</b><br>
+            दिया गया है:<br>
+            धारा, <code>I = 1.5 A</code><br>
+            अनुप्रस्थ काट क्षेत्रफल, <code>A = 1.0 × 10⁻⁷ m²</code><br>
+            इलेक्ट्रॉन आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br>
+            ताँबे का घनत्व, <code>ρ = 9.0 × 10³ kg/m³</code><br>
+            परमाणु द्रव्यमान, <code>M = 63.5 u = 63.5 × 1.66 × 10⁻²⁷ kg</code><br><br>
+            इलेक्ट्रॉन घनत्व (n):<br>
+            <code>n = <div class="fraction"><span class="numerator">N<sub>A</sub> × ρ</span><span class="denominator">M</span></div> = <div class="fraction"><span class="numerator">6.0 × 10²³ × 9.0 × 10³</span><span class="denominator">63.5 × 1.66 × 10⁻²⁷</span></div></code><br>
+            <code>n ≈ 8.5 × 10²⁸ m⁻³</code><br><br>
+            अनुगमन चाल:<br>
+            <code>v<sub>d</sub> = <div class="fraction"><span class="numerator">I</span><span class="denominator">n e A</span></div> = <div class="fraction"><span class="numerator">1.5</span><span class="denominator">8.5 × 10²⁸ × 1.6 × 10⁻¹⁹ × 1.0 × 10⁻⁷</span></div></code><br>
+            <code>v<sub>d</sub> ≈ 1.1 × 10⁻³ m/s = 1.1 mm/s</code><br><br>
+            <b>(b) तुलना:</b><br>
+            (i) ताँबे के परमाणुओं की तापीय चाल: ~200 m/s (अनुगमन चाल से ~10⁵ गुना अधिक)<br>
+            (ii) विद्युत क्षेत्र की प्रसार चाल: ~3 × 10⁸ m/s (अनुगमन चाल से ~10¹¹ गुना अधिक)
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.4</div>
+            <div>15 m लंबे एवं 6.0 × 10⁻⁷ m² अनुप्रस्थ काट के तार से उपेक्षणीय धारा प्रवाहित की गई और इसका प्रतिरोध 5.0 Ω मापा गया। प्रायोगिक ताप पर तार के पदार्थ की प्रतिरोधकता क्या होगी?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तार की लंबाई, <code>l = 15 m</code><br>
+            अनुप्रस्थ काट क्षेत्रफल, <code>A = 6.0 × 10⁻⁷ m²</code><br>
+            प्रतिरोध, <code>R = 5.0 Ω</code><br><br>
+            प्रतिरोधकता (ρ):<br>
+            <code>R = <div class="fraction"><span class="numerator">ρ l</span><span class="denominator">A</span></div></code><br>
+            <code>ρ = <div class="fraction"><span class="numerator">R A</span><span class="denominator">l</span></div> = <div class="fraction"><span class="numerator">5.0 × 6.0 × 10⁻⁷</span><span class="denominator">15</span></div></code><br>
+            <code>ρ = 2.0 × 10⁻⁷ Ω m</code><br><br>
+            अतः, तार के पदार्थ की प्रतिरोधकता <b>2.0 × 10⁻⁷ Ω m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.5</div>
+            <div>सिल्वर के किसी तार का 27.5°C पर प्रतिरोध 2.1 Ω और 100°C पर प्रतिरोध 2.7 Ω है। सिल्वर का प्रतिरोधकता ताप गुणांक ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            <code>T<sub>1</sub> = 27.5°C</code>, <code>R<sub>1</sub> = 2.1 Ω</code><br>
+            <code>T<sub>2</sub> = 100°C</code>, <code>R<sub>2</sub> = 2.7 Ω</code><br><br>
+            प्रतिरोधकता ताप गुणांक (α):<br>
+            <code>R<sub>2</sub> = R<sub>1</sub> [1 + α (T<sub>2</sub> - T<sub>1</sub>)]</code><br>
+            <code>2.7 = 2.1 [1 + α (100 - 27.5)]</code><br>
+            <code>2.7 = 2.1 [1 + α × 72.5]</code><br>
+            <code>1 + 72.5α = <div class="fraction"><span class="numerator">2.7</span><span class="denominator">2.1</span></div> ≈ 1.2857</code><br>
+            <code>72.5α = 0.2857</code><br>
+            <code>α ≈ 0.00394 °C⁻¹</code><br><br>
+            अतः, सिल्वर का प्रतिरोधकता ताप गुणांक <b>3.94 × 10⁻³ °C⁻¹</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.6</div>
+            <div>नाइक्रोम का एक तापन-अवयव 230 V की सप्लाई से संयोजित है और 3.2 A की प्रारंभिक धारा लेता है जो कुछ सेकंड में 2.8 A पर स्थायी हो जाती है। यदि कमरे का ताप 27.0°C है, तो तापन-अवयव का स्थायी ताप क्या है? दिए गए ताप-परिसर में नाइक्रोम का औसत प्रतिरोध का ताप गुणांक 1.70 × 10⁻⁴ °C⁻¹ है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वोल्टता, <code>V = 230 V</code><br>
+            प्रारंभिक धारा, <code>I<sub>1</sub> = 3.2 A</code><br>
+            स्थायी धारा, <code>I<sub>2</sub> = 2.8 A</code><br>
+            कमरे का ताप, <code>T<sub>1</sub> = 27.0°C</code><br>
+            ताप गुणांक, <code>α = 1.70 × 10⁻⁴ °C⁻¹</code><br><br>
+            प्रारंभिक प्रतिरोध, <code>R<sub>1</sub> = <div class="fraction"><span class="numerator">V</span><span class="denominator">I<sub>1</sub></span></div> = <div class="fraction"><span class="numerator">230</span><span class="denominator">3.2</span></div> = 71.875 Ω</code><br>
+            स्थायी प्रतिरोध, <code>R<sub>2</sub> = <div class="fraction"><span class="numerator">V</span><span class="denominator">I<sub>2</sub></span></div> = <div class="fraction"><span class="numerator">230</span><span class="denominator">2.8</span></div> ≈ 82.143 Ω</code><br><br>
+            ताप में वृद्धि:<br>
+            <code>R<sub>2</sub> = R<sub>1</sub> [1 + α (T<sub>2</sub> - T<sub>1</sub>)]</code><br>
+            <code>82.143 = 71.875 [1 + 1.70 × 10⁻⁴ (T<sub>2</sub> - 27)]</code><br>
+            <code>1 + 1.70 × 10⁻⁴ (T<sub>2</sub> - 27) = <div class="fraction"><span class="numerator">82.143</span><span class="denominator">71.875</span></div> ≈ 1.1429</code><br>
+            <code>1.70 × 10⁻⁴ (T<sub>2</sub> - 27) = 0.1429</code><br>
+            <code>T<sub>2</sub> - 27 = <div class="fraction"><span class="numerator">0.1429</span><span class="denominator">1.70 × 10⁻⁴</span></div> ≈ 840.6</code><br>
+            <code>T<sub>2</sub> ≈ 867.6°C</code><br><br>
+            अतः, तापन-अवयव का स्थायी ताप <b>867.6°C</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.7</div>
+            <div>चित्र 3.20 में दर्शाए गए नेटवर्क की प्रत्येक शाखा में प्रवाहित धारा ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            यह प्रश्न किरचॉफ के नियमों का उपयोग करके हल किया जाता है।<br><br>
+            मान लीजिए तीन अज्ञात धाराएँ I₁, I₂ और I₃ हैं जैसा कि चित्र में दिखाया गया है।<br><br>
+            किरचॉफ के प्रथम नियम (जंक्शन नियम) से:<br>
+            <code>I₁ = I₂ + I₃</code><br><br>
+            किरचॉफ के द्वितीय नियम (लूप नियम) से दो समीकरण बनाए जा सकते हैं।<br><br>
+            इन समीकरणों को हल करने पर:<br>
+            <code>I₁ = 0.846 A</code><br>
+            <code>I₂ = 0.462 A</code><br>
+            <code>I₃ = 0.384 A</code><br><br>
+            विभिन्न शाखाओं में धाराएँ:<br>
+            10 Ω प्रतिरोध में: 0.846 A<br>
+            5 Ω प्रतिरोध में: 0.462 A<br>
+            2 Ω प्रतिरोध में: 0.384 A<br>
+            1 Ω प्रतिरोध में: 0.384 A<br>
+            3 Ω प्रतिरोध में: 0.462 A
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.8</div>
+            <div>8.0 V विद्युत वाहक बल की एक संचायक बैटरी जिसका आंतरिक प्रतिरोध 0.5 Ω है, को 120 V के dc स्रोत द्वारा चार्ज किया जा रहा है। चार्ज करने वाली परिपथ में 15.5 Ω का प्रतिरोधक अवयव श्रेणी में जोड़ा गया है। चार्ज होते समय बैटरी की टर्मिनल वोल्टता क्या है? चार्जिंग परिपथ में श्रेणी प्रतिरोधक का क्या प्रयोजन है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            बैटरी का विद्युत वाहक बल, <code>ε = 8.0 V</code><br>
+            बैटरी का आंतरिक प्रतिरोध, <code>r = 0.5 Ω</code><br>
+            स्रोत वोल्टता, <code>V<sub>s</sub> = 120 V</code><br>
+            श्रेणी प्रतिरोधक, <code>R = 15.5 Ω</code><br><br>
+            चार्जिंग धारा:<br>
+            <code>I = <div class="fraction"><span class="numerator">V<sub>s</sub> - ε</span><span class="denominator">R + r</span></div> = <div class="fraction"><span class="numerator">120 - 8</span><span class="denominator">15.5 + 0.5</span></div> = <div class="fraction"><span class="numerator">112</span><span class="denominator">16</span></div> = 7 A</code><br><br>
+            टर्मिनल वोल्टता:<br>
+            <code>V = ε + I r = 8.0 + (7 × 0.5) = 8.0 + 3.5 = 11.5 V</code><br><br>
+            श्रेणी प्रतिरोधक का प्रयोजन:<br>
+            श्रेणी प्रतिरोधक चार्जिंग धारा को सीमित करने के लिए उपयोग किया जाता है। बिना इस प्रतिरोधक के, चार्जिंग धारा बहुत अधिक होगी जो बैटरी को नुकसान पहुँचा सकती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">3.9</div>
+            <div>उदाहरण 3.1 में आकलित चालक इलेक्ट्रॉनों की संख्या घनत्व 8.5 × 10²⁸ m⁻³ है। 3.0 m लंबे तार के एक सिरे से दूसरे सिरे तक इलेक्ट्रॉन के अनुगमन में कितना समय लगेगा? तार की अनुप्रस्थ-काट 2.0 × 10⁻⁶ m² है और इसमें 3.0 A धारा प्रवाहित हो रही है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            इलेक्ट्रॉन संख्या घनत्व, <code>n = 8.5 × 10²⁸ m⁻³</code><br>
+            तार की लंबाई, <code>l = 3.0 m</code><br>
+            अनुप्रस्थ काट क्षेत्रफल, <code>A = 2.0 × 10⁻⁶ m²</code><br>
+            धारा, <code>I = 3.0 A</code><br>
+            इलेक्ट्रॉन आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br><br>
+            अनुगमन चाल:<br>
+            <code>v<sub>d</sub> = <div class="fraction"><span class="numerator">I</span><span class="denominator">n e A</span></div> = <div class="fraction"><span class="numerator">3.0</span><span class="denominator">8.5 × 10²⁸ × 1.6 × 10⁻¹⁹ × 2.0 × 10⁻⁶</span></div></code><br>
+            <code>v<sub>d</sub> ≈ 1.1 × 10⁻⁴ m/s</code><br><br>
+            समय:<br>
+            <code>t = <div class="fraction"><span class="numerator">l</span><span class="denominator">v<sub>d</sub></span></div> = <div class="fraction"><span class="numerator">3.0</span><span class="denominator">1.1 × 10⁻⁴</span></div> ≈ 2.73 × 10⁴ s</code><br>
+            <code>t ≈ 7.58 घंटे</code><br><br>
+            अतः, इलेक्ट्रॉन को तार के एक सिरे से दूसरे सिरे तक जाने में लगभग <b>7.58 घंटे</b> लगेंगे।
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 10: तरंग-प्रकाशिकी</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 10: तरंग-प्रकाशिकी</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.1</div>
+            <div>589 nm तरंगदैर्ध्य का एकवर्णीय प्रकाश वायु से जल की सतह पर आपतित होता है। (a) परावर्तित, और (b) अपवर्तित प्रकाश की तरंगदैर्ध्य, आवृत्ति और चाल क्या होगी? जल का अपवर्तनांक 1.33 है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तरंगदैर्ध्य, <code>λ = 589 nm = 589 × 10⁻⁹ m</code><br>
+            वायु में प्रकाश की चाल, <code>c = 3 × 10⁸ m/s</code><br>
+            जल का अपवर्तनांक, <code>n = 1.33</code><br><br>
+            
+            (a) <b>परावर्तित प्रकाश:</b><br>
+            परावर्तन में तरंगदैर्ध्य और आवृत्ति नहीं बदलती है।<br>
+            तरंगदैर्ध्य, <code>λ<sub>परावर्तित</sub> = 589 nm</code><br>
+            आवृत्ति, <code>ν = <div class="fraction"><span class="numerator">c</span><span class="denominator">λ</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">589 × 10⁻⁹</span></div> = 5.09 × 10¹⁴ Hz</code><br>
+            चाल, <code>v<sub>परावर्तित</sub> = 3 × 10⁸ m/s</code><br><br>
+            
+            (b) <b>अपवर्तित प्रकाश:</b><br>
+            अपवर्तन में आवृत्ति नहीं बदलती है।<br>
+            आवृत्ति, <code>ν = 5.09 × 10¹⁴ Hz</code><br>
+            जल में प्रकाश की चाल, <code>v = <div class="fraction"><span class="numerator">c</span><span class="denominator">n</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">1.33</span></div> = 2.26 × 10⁸ m/s</code><br>
+            तरंगदैर्ध्य, <code>λ<sub>जल</sub> = <div class="fraction"><span class="numerator">v</span><span class="denominator">ν</span></div> = <div class="fraction"><span class="numerator">2.26 × 10⁸</span><span class="denominator">5.09 × 10¹⁴</span></div> = 444 × 10⁻⁹ m = 444 nm</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.2</div>
+            <div>निम्नलिखित दशाओं में प्रत्येक तरंगाग्र की आकृति क्या है?<br>
+            (a) किसी बिंदु स्रोत से अपसरित प्रकाश।<br>
+            (b) उत्तल लेंस से निर्गत प्रकाश, जिसके फोकस बिंदु पर कोई बिंदु स्रोत रखा गया है।<br>
+            (c) किसी दूरस्थ तारे से आने वाले प्रकाश तरंगाग्र का पृथ्वी द्वारा अवरोधित (intercepted) भाग।</div>
+        </div>
+        <div class="answer">
+            (a) किसी बिंदु स्रोत से अपसरित प्रकाश के लिए तरंगाग्र की आकृति <b>गोलीय</b> होती है।<br><br>
+            
+            (b) उत्तल लेंस से निर्गत प्रकाश, जिसके फोकस बिंदु पर कोई बिंदु स्रोत रखा गया है, के लिए तरंगाग्र की आकृति <b>समतल</b> होती है।<br><br>
+            
+            (c) किसी दूरस्थ तारे से आने वाले प्रकाश तरंगाग्र का पृथ्वी द्वारा अवरोधित भाग के लिए तरंगाग्र की आकृति <b>समतल</b> होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.3</div>
+            <div>(a) काँच का अपवर्तनांक 1.5 है। काँच में प्रकाश की चाल क्या होगी? (निर्वात में प्रकाश की चाल 3.0 × 10⁸ m s⁻¹ है।)<br>
+            (b) क्या काँच में प्रकाश की चाल, प्रकाश के रंग पर निर्भर करती है? यदि हाँ, तो लाल और बैंगनी में से कौन-सा रंग काँच के प्रिज्म में धीमा चलता है?</div>
+        </div>
+        <div class="answer">
+            (a) दिया गया है:<br>
+            काँच का अपवर्तनांक, <code>n = 1.5</code><br>
+            निर्वात में प्रकाश की चाल, <code>c = 3.0 × 10⁸ m/s</code><br><br>
+            
+            काँच में प्रकाश की चाल:<br>
+            <code>v = <div class="fraction"><span class="numerator">c</span><span class="denominator">n</span></div> = <div class="fraction"><span class="numerator">3.0 × 10⁸</span><span class="denominator">1.5</span></div> = 2.0 × 10⁸ m/s</code><br><br>
+            
+            (b) हाँ, काँच में प्रकाश की चाल प्रकाश के रंग पर निर्भर करती है। <b>बैंगनी रंग</b> काँच के प्रिज्म में धीमा चलता है क्योंकि इसकी तरंगदैर्ध्य कम होती है और काँच का अपवर्तनांक बैंगनी रंग के लिए अधिक होता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.4</div>
+            <div>यंग के द्विझिरी प्रयोग में झिर्रियों के बीच की दूरी 0.28 mm है तथा परदा 1.4 m की दूरी पर रखा गया है। केन्द्रीय दीर्घतम तथा चौथे दीर्घतम के बीच की दूरी 1.2 cm मापी गई है। प्रयोग में प्रयुक्त प्रकाश की तरंगदैर्ध्य ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            झिर्रियों के बीच की दूरी, <code>d = 0.28 mm = 0.28 × 10⁻³ m</code><br>
+            परदे की दूरी, <code>D = 1.4 m</code><br>
+            केन्द्रीय दीर्घतम तथा चौथे दीर्घतम के बीच की दूरी, <code>y₄ = 1.2 cm = 1.2 × 10⁻² m</code><br><br>
+            
+            nवें दीर्घतम की स्थिति:<br>
+            <code>yₙ = <div class="fraction"><span class="numerator">nλD</span><span class="denominator">d</span></div></code><br>
+            चौथे दीर्घतम के लिए:<br>
+            <code>y₄ = <div class="fraction"><span class="numerator">4λD</span><span class="denominator">d</span></div></code><br>
+            <code>λ = <div class="fraction"><span class="numerator">y₄ d</span><span class="denominator">4D</span></div> = <div class="fraction"><span class="numerator">(1.2 × 10⁻²) × (0.28 × 10⁻³)</span><span class="denominator">4 × 1.4</span></div></code><br>
+            <code>λ = <div class="fraction"><span class="numerator">3.36 × 10⁻⁶</span><span class="denominator">5.6</span></div> = 6.0 × 10⁻⁷ m = 600 nm</code><br>
+            अतः प्रयुक्त प्रकाश की तरंगदैर्ध्य <b>600 nm</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.5</div>
+            <div>यंग के द्विझिरी प्रयोग में, λ तरंगदैर्ध्य का एकवर्णीय प्रकाश उपयोग करने पर, परदे के किसी बिंदु पर जहाँ पथांतर λ है, प्रकाश की तीव्रता K इकाई है। उस बिंदु पर प्रकाश की तीव्रता कितनी होगी जहाँ पथांतर λ/3 है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            पथांतर <code>Δx = λ</code> के लिए तीव्रता, <code>I = K</code><br>
+            पथांतर <code>Δx = <div class="fraction"><span class="numerator">λ</span><span class="denominator">3</span></div></code> के लिए तीव्रता ज्ञात करनी है।<br><br>
+            
+            पथांतर और कलांतर का संबंध:<br>
+            <code>कलांतर φ = <div class="fraction"><span class="numerator">2π</span><span class="denominator">λ</span></div> × पथांतर</code><br>
+            पहली स्थिति: <code>φ₁ = <div class="fraction"><span class="numerator">2π</span><span class="denominator">λ</span></div> × λ = 2π</code><br>
+            दूसरी स्थिति: <code>φ₂ = <div class="fraction"><span class="numerator">2π</span><span class="denominator">λ</span></div> × <div class="fraction"><span class="numerator">λ</span><span class="denominator">3</span></div> = <div class="fraction"><span class="numerator">2π</span><span class="denominator">3</span></div></code><br><br>
+            
+            तीव्रता का सूत्र:<br>
+            <code>I = I₀ cos²(<div class="fraction"><span class="numerator">φ</span><span class="denominator">2</span></div>)</code><br>
+            पहली स्थिति: <code>K = I₀ cos²(π) = I₀</code><br>
+            दूसरी स्थिति: <code>I = I₀ cos²(<div class="fraction"><span class="numerator">π</span><span class="denominator">3</span></div>) = I₀ × (<div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div>)² = <div class="fraction"><span class="numerator">I₀</span><span class="denominator">4</span></div> = <div class="fraction"><span class="numerator">K</span><span class="denominator">4</span></div></code><br>
+            अतः उस बिंदु पर प्रकाश की तीव्रता <b>K/4</b> होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">10.6</div>
+            <div>एक द्वि-झिरी प्रयोग में, दो झिर्रियों के बीच की दूरी 0.28 mm है तथा परदा 1.4 m की दूरी पर रखा गया है। केन्द्रीय दीर्घतम तथा चौथे दीर्घतम के बीच की दूरी 1.2 cm मापी गई है। प्रयोग में प्रयुक्त प्रकाश की तरंगदैर्ध्य ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            यह प्रश्न प्रश्न 10.4 के समान है।<br><br>
+            
+            दिया गया है:<br>
+            झिर्रियों के बीच की दूरी, <code>d = 0.28 mm = 0.28 × 10⁻³ m</code><br>
+            परदे की दूरी, <code>D = 1.4 m</code><br>
+            केन्द्रीय दीर्घतम तथा चौथे दीर्घतम के बीच की दूरी, <code>y₄ = 1.2 cm = 1.2 × 10⁻² m</code><br><br>
+            
+            nवें दीर्घतम की स्थिति:<br>
+            <code>yₙ = <div class="fraction"><span class="numerator">nλD</span><span class="denominator">d</span></div></code><br>
+            चौथे दीर्घतम के लिए:<br>
+            <code>y₄ = <div class="fraction"><span class="numerator">4λD</span><span class="denominator">d</span></div></code><br>
+            <code>λ = <div class="fraction"><span class="numerator">y₄ d</span><span class="denominator">4D</span></div> = <div class="fraction"><span class="numerator">(1.2 × 10⁻²) × (0.28 × 10⁻³)</span><span class="denominator">4 × 1.4</span></div></code><br>
+            <code>λ = <div class="fraction"><span class="numerator">3.36 × 10⁻⁶</span><span class="denominator">5.6</span></div> = 6.0 × 10⁻⁷ m = 600 nm</code><br>
+            अतः प्रयुक्त प्रकाश की तरंगदैर्ध्य <b>600 nm</b> है।
+        </div>
+    </div>
+
+</body>
+</html>

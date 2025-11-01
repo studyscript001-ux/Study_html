@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 11: विकिरण तथा द्रव्य की द्वैत प्रकृति</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 11: विकिरण तथा द्रव्य की द्वैत प्रकृति</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.1</div>
+            <div>30 kV इलेक्ट्रॉनों के द्वारा उत्पन्न X-किरणों की (a) अधिकतम आवृत्ति तथा (b) न्यूनतम तरंगदैर्ध्य प्राप्त कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            त्वरक वोल्टता, <code>V = 30 kV = 30 × 10³ V</code><br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            प्रकाश की चाल, <code>c = 3 × 10⁸ m/s</code><br><br>
+            
+            (a) X-किरणों की अधिकतम आवृत्ति:<br>
+            <code>e V = h ν<sub>max</sub></code><br>
+            <code>ν<sub>max</sub> = <div class="fraction"><span class="numerator">e V</span><span class="denominator">h</span></div></code><br>
+            <code>ν<sub>max</sub> = <div class="fraction"><span class="numerator">1.6 × 10⁻¹⁹ × 30 × 10³</span><span class="denominator">6.63 × 10⁻³⁴</span></div></code><br>
+            <code>ν<sub>max</sub> = 7.24 × 10¹⁸ Hz</code><br><br>
+            
+            (b) X-किरणों की न्यूनतम तरंगदैर्ध्य:<br>
+            <code>λ<sub>min</sub> = <div class="fraction"><span class="numerator">h c</span><span class="denominator">e V</span></div></code><br>
+            <code>λ<sub>min</sub> = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴ × 3 × 10⁸</span><span class="denominator">1.6 × 10⁻¹⁹ × 30 × 10³</span></div></code><br>
+            <code>λ<sub>min</sub> = 4.14 × 10⁻¹¹ m</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.2</div>
+            <div>सीज़ियम धातु का कार्य फलन 2.14 eV है। जब 6 × 10¹⁴ Hz आवृत्ति का प्रकाश धातु-पृष्ठ पर आपतित होता है, इलेक्ट्रॉनों का प्रकाशिक उत्सर्जन होता है।<br>
+            (a) उत्सर्जित इलेक्ट्रॉनों की उच्चतम गतिज ऊर्जा,<br>
+            (b) निरोधी विभव, और<br>
+            (c) उत्सर्जित प्रकाशिक इलेक्ट्रॉनों की उच्चतम चाल कितनी है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            कार्य फलन, <code>φ₀ = 2.14 eV</code><br>
+            आपतित प्रकाश की आवृत्ति, <code>ν = 6 × 10¹⁴ Hz</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            इलेक्ट्रॉन का द्रव्यमान, <code>m = 9.1 × 10⁻³¹ kg</code><br>
+            1 eV = 1.6 × 10⁻¹⁹ J<br><br>
+            
+            (a) उच्चतम गतिज ऊर्जा:<br>
+            आइंस्टीन के प्रकाश-विद्युत समीकरण के अनुसार:<br>
+            <code>K<sub>max</sub> = h ν - φ₀</code><br>
+            <code>φ₀ = 2.14 × 1.6 × 10⁻¹⁹ = 3.424 × 10⁻¹⁹ J</code><br>
+            <code>h ν = 6.63 × 10⁻³⁴ × 6 × 10¹⁴ = 3.978 × 10⁻¹⁹ J</code><br>
+            <code>K<sub>max</sub> = 3.978 × 10⁻¹⁹ - 3.424 × 10⁻¹⁹ = 0.554 × 10⁻¹⁹ J</code><br>
+            <code>K<sub>max</sub> = 0.346 eV</code><br><br>
+            
+            (b) निरोधी विभव:<br>
+            <code>e V₀ = K<sub>max</sub></code><br>
+            <code>V₀ = <div class="fraction"><span class="numerator">K<sub>max</sub></span><span class="denominator">e</span></div> = <div class="fraction"><span class="numerator">0.554 × 10⁻¹⁹</span><span class="denominator">1.6 × 10⁻¹⁹</span></div> = 0.346 V</code><br><br>
+            
+            (c) उच्चतम चाल:<br>
+            <code>K<sub>max</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> m v<sub>max</sub>²</code><br>
+            <code>v<sub>max</sub> = √<div class="fraction"><span class="numerator">2 K<sub>max</sub></span><span class="denominator">m</span></div></code><br>
+            <code>v<sub>max</sub> = √<div class="fraction"><span class="numerator">2 × 0.554 × 10⁻¹⁹</span><span class="denominator">9.1 × 10⁻³¹</span></div></code><br>
+            <code>v<sub>max</sub> = 3.49 × 10⁵ m/s</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.3</div>
+            <div>एक विशिष्ट प्रयोग में प्रकाश-विद्युत प्रभाव की निरोधी वोल्टता 1.5 V है। उत्सर्जित प्रकाशिक इलेक्ट्रॉनों की उच्चतम गतिज ऊर्जा कितनी है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            निरोधी विभव, <code>V₀ = 1.5 V</code><br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br><br>
+            
+            उच्चतम गतिज ऊर्जा:<br>
+            <code>K<sub>max</sub> = e V₀</code><br>
+            <code>K<sub>max</sub> = 1.6 × 10⁻¹⁹ × 1.5</code><br>
+            <code>K<sub>max</sub> = 2.4 × 10⁻¹⁹ J</code><br>
+            <code>K<sub>max</sub> = <div class="fraction"><span class="numerator">2.4 × 10⁻¹⁹</span><span class="denominator">1.6 × 10⁻¹⁹</span></div> = 1.5 eV</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.4</div>
+            <div>632.8 nm तरंगदैर्ध्य का एकवर्णी प्रकाश एक हीलियम-नियॉन लेसर के द्वारा उत्पन्न किया जाता है। उत्सर्जित शक्ति 9.42 mW है।<br>
+            (a) प्रकाश के किरण पुंज में प्रत्येक फोटॉन की ऊर्जा तथा संवेग प्राप्त कीजिए,<br>
+            (b) इस किरण पुंज के द्वारा विकिरित किसी लक्ष्य पर औसतन कितने फोटॉन प्रति सेकंड पहुँचेंगे? (यह मान लीजिए कि किरण पुंज की अनुप्रस्थ काट एकसमान है जो लक्ष्य के क्षेत्रफल से कम है), तथा<br>
+            (c) एक हाइड्रोजन परमाणु को फोटॉन के बराबर संवेग प्राप्त करने के लिए कितनी तेज चाल से चलना होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तरंगदैर्ध्य, <code>λ = 632.8 nm = 632.8 × 10⁻⁹ m</code><br>
+            उत्सर्जित शक्ति, <code>P = 9.42 mW = 9.42 × 10⁻³ W</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            प्रकाश की चाल, <code>c = 3 × 10⁸ m/s</code><br><br>
+            
+            (a) प्रत्येक फोटॉन की ऊर्जा और संवेग:<br>
+            <code>E = <div class="fraction"><span class="numerator">h c</span><span class="denominator">λ</span></div> = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴ × 3 × 10⁸</span><span class="denominator">632.8 × 10⁻⁹</span></div></code><br>
+            <code>E = 3.14 × 10⁻¹⁹ J</code><br>
+            <code>p = <div class="fraction"><span class="numerator">h</span><span class="denominator">λ</span></div> = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴</span><span class="denominator">632.8 × 10⁻⁹</span></div> = 1.05 × 10⁻²⁷ kg m/s</code><br><br>
+            
+            (b) प्रति सेकंड फोटॉनों की संख्या:<br>
+            <code>n = <div class="fraction"><span class="numerator">P</span><span class="denominator">E</span></div> = <div class="fraction"><span class="numerator">9.42 × 10⁻³</span><span class="denominator">3.14 × 10⁻¹⁹</span></div> = 3 × 10¹⁶ प्रति सेकंड</code><br><br>
+            
+            (c) हाइड्रोजन परमाणु की चाल:<br>
+            हाइड्रोजन परमाणु का द्रव्यमान, <code>m = 1.67 × 10⁻²⁷ kg</code><br>
+            <code>p = m v</code><br>
+            <code>v = <div class="fraction"><span class="numerator">p</span><span class="denominator">m</span></div> = <div class="fraction"><span class="numerator">1.05 × 10⁻²⁷</span><span class="denominator">1.67 × 10⁻²⁷</span></div> = 0.63 m/s</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.5</div>
+            <div>प्रकाश-विद्युत प्रभाव के एक प्रयोग में, प्रकाश आवृत्ति के विरुद्ध निरोधी वोल्टता की ढाल 4.12 × 10⁻¹⁵ V s प्राप्त होती है। प्लांक नियतांक का मान परिकलित कीजिए।</div>
+        </div>
+        <div class="answer">
+            आइंस्टीन के प्रकाश-विद्युत समीकरण के अनुसार:<br>
+            <code>e V₀ = h ν - φ₀</code><br>
+            <code>V₀ = <div class="fraction"><span class="numerator">h</span><span class="denominator">e</span></div> ν - <div class="fraction"><span class="numerator">φ₀</span><span class="denominator">e</span></div></code><br>
+            यह एक सरल रेखा का समीकरण है जिसकी ढाल = <code><div class="fraction"><span class="numerator">h</span><span class="denominator">e</span></div></code><br><br>
+            
+            दिया गया है:<br>
+            ढाल = 4.12 × 10⁻¹⁵ V s<br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br><br>
+            
+            प्लांक नियतांक:<br>
+            <code>h = ढाल × e = 4.12 × 10⁻¹⁵ × 1.6 × 10⁻¹⁹</code><br>
+            <code>h = 6.592 × 10⁻³⁴ J s</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.6</div>
+            <div>किसी धातु की देहली आवृत्ति 3.3 × 10¹⁴ Hz है। यदि 8.2 × 10¹⁴ Hz आवृत्ति का प्रकाश धातु पर आपतित हो, तो प्रकाश-विद्युत उत्सर्जन के लिए निरोधी वोल्टता ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            देहली आवृत्ति, <code>ν₀ = 3.3 × 10¹⁴ Hz</code><br>
+            आपतित प्रकाश की आवृत्ति, <code>ν = 8.2 × 10¹⁴ Hz</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br><br>
+            
+            आइंस्टीन के प्रकाश-विद्युत समीकरण के अनुसार:<br>
+            <code>e V₀ = h ν - h ν₀</code><br>
+            <code>V₀ = <div class="fraction"><span class="numerator">h</span><span class="denominator">e</span></div> (ν - ν₀)</code><br>
+            <code>V₀ = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴</span><span class="denominator">1.6 × 10⁻¹⁹</span></div> (8.2 × 10¹⁴ - 3.3 × 10¹⁴)</code><br>
+            <code>V₀ = 4.144 × 10⁻¹⁵ × 4.9 × 10¹⁴</code><br>
+            <code>V₀ = 2.03 V</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.7</div>
+            <div>किसी धातु के लिए कार्य फलन 4.2 eV है। क्या यह धातु 330 nm तरंगदैर्ध्य के आपतित विकिरण के लिए प्रकाश-विद्युत उत्सर्जन देगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            कार्य फलन, <code>φ₀ = 4.2 eV</code><br>
+            आपतित विकिरण की तरंगदैर्ध्य, <code>λ = 330 nm = 330 × 10⁻⁹ m</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            प्रकाश की चाल, <code>c = 3 × 10⁸ m/s</code><br>
+            1 eV = 1.6 × 10⁻¹⁹ J<br><br>
+            
+            आपतित फोटॉन की ऊर्जा:<br>
+            <code>E = <div class="fraction"><span class="numerator">h c</span><span class="denominator">λ</span></div> = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴ × 3 × 10⁸</span><span class="denominator">330 × 10⁻⁹</span></div></code><br>
+            <code>E = 6.03 × 10⁻¹⁹ J</code><br>
+            <code>E = <div class="fraction"><span class="numerator">6.03 × 10⁻¹⁹</span><span class="denominator">1.6 × 10⁻¹⁹</span></div> = 3.77 eV</code><br><br>
+            
+            चूँकि आपतित फोटॉन की ऊर्जा (3.77 eV) धातु के कार्य फलन (4.2 eV) से कम है, इसलिए यह धातु <b>प्रकाश-विद्युत उत्सर्जन नहीं देगा</b>।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.8</div>
+            <div>7.21 × 10¹⁴ Hz आवृत्ति का प्रकाश एक धातु-पृष्ठ पर आपतित है। इस पृष्ठ से 6.0 × 10⁵ m/s की उच्चतम गति से इलेक्ट्रॉन उत्सर्जित हो रहे हैं। इलेक्ट्रॉनों के प्रकाश उत्सर्जन के लिए देहली आवृत्ति क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            आपतित प्रकाश की आवृत्ति, <code>ν = 7.21 × 10¹⁴ Hz</code><br>
+            उत्सर्जित इलेक्ट्रॉनों की अधिकतम चाल, <code>v<sub>max</sub> = 6.0 × 10⁵ m/s</code><br>
+            इलेक्ट्रॉन का द्रव्यमान, <code>m = 9.1 × 10⁻³¹ kg</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br><br>
+            
+            आइंस्टीन के प्रकाश-विद्युत समीकरण के अनुसार:<br>
+            <code>h ν = φ₀ + <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> m v<sub>max</sub>²</code><br>
+            <code>φ₀ = h ν - <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> m v<sub>max</sub>²</code><br>
+            <code>φ₀ = 6.63 × 10⁻³⁴ × 7.21 × 10¹⁴ - <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 9.1 × 10⁻³¹ × (6.0 × 10⁵)²</code><br>
+            <code>φ₀ = 4.78 × 10⁻¹⁹ - 1.638 × 10⁻¹⁹ = 3.142 × 10⁻¹⁹ J</code><br><br>
+            
+            देहली आवृत्ति:<br>
+            <code>ν₀ = <div class="fraction"><span class="numerator">φ₀</span><span class="denominator">h</span></div> = <div class="fraction"><span class="numerator">3.142 × 10⁻¹⁹</span><span class="denominator">6.63 × 10⁻³⁴</span></div> = 4.74 × 10¹⁴ Hz</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.9</div>
+            <div>488 nm तरंगदैर्ध्य का प्रकाश एक आर्गन लेसर से उत्पन्न किया जाता है, जिसे प्रकाश-विद्युत प्रभाव के उपयोग में लाया जाता है। जब इस स्पेक्ट्रमी रेखा के प्रकाश को उत्सर्जक पर आपतित किया जाता है तब प्रकाशिक इलेक्ट्रॉनों का निरोधी (अंतक) विभव 0.38 V है। उत्सर्जक के पदार्थ का कार्य फलन ज्ञात करें।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तरंगदैर्ध्य, <code>λ = 488 nm = 488 × 10⁻⁹ m</code><br>
+            निरोधी विभव, <code>V₀ = 0.38 V</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br>
+            प्रकाश की चाल, <code>c = 3 × 10⁸ m/s</code><br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br><br>
+            
+            आइंस्टीन के प्रकाश-विद्युत समीकरण के अनुसार:<br>
+            <code>h ν = φ₀ + e V₀</code><br>
+            <code>φ₀ = h ν - e V₀</code><br>
+            <code>φ₀ = <div class="fraction"><span class="numerator">h c</span><span class="denominator">λ</span></div> - e V₀</code><br>
+            <code>φ₀ = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴ × 3 × 10⁸</span><span class="denominator">488 × 10⁻⁹</span></div> - 1.6 × 10⁻¹⁹ × 0.38</code><br>
+            <code>φ₀ = 4.075 × 10⁻¹⁹ - 0.608 × 10⁻¹⁹ = 3.467 × 10⁻¹⁹ J</code><br>
+            <code>φ₀ = <div class="fraction"><span class="numerator">3.467 × 10⁻¹⁹</span><span class="denominator">1.6 × 10⁻¹⁹</span></div> = 2.17 eV</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.10</div>
+            <div>(a) एक 0.040 kg द्रव्यमान का बुलेट जो 1.0 km/s की चाल से चल रहा है, (b) एक 0.060 kg द्रव्यमान की गेंद जो 1.0 km/s की चाल से चल रही है, और (c) एक धूल-कण जिसका द्रव्यमान 1.0 × 10⁻⁹ kg और जो 2.2 m/s की चाल से अनुगमित हो रहा है, का डी-ब्रॉग्ली तरंगदैर्ध्य कितना होगा?</div>
+        </div>
+        <div class="answer">
+            डी-ब्रॉग्ली तरंगदैर्ध्य का सूत्र:<br>
+            <code>λ = <div class="fraction"><span class="numerator">h</span><span class="denominator">p</span></div> = <div class="fraction"><span class="numerator">h</span><span class="denominator">m v</span></div></code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br><br>
+            
+            (a) बुलेट के लिए:<br>
+            <code>m = 0.040 kg, v = 1.0 km/s = 1000 m/s</code><br>
+            <code>λ = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴</span><span class="denominator">0.040 × 1000</span></div> = 1.66 × 10⁻³⁵ m</code><br><br>
+            
+            (b) गेंद के लिए:<br>
+            <code>m = 0.060 kg, v = 1.0 km/s = 1000 m/s</code><br>
+            <code>λ = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴</span><span class="denominator">0.060 × 1000</span></div> = 1.105 × 10⁻³⁵ m</code><br><br>
+            
+            (c) धूल-कण के लिए:<br>
+            <code>m = 1.0 × 10⁻⁹ kg, v = 2.2 m/s</code><br>
+            <code>λ = <div class="fraction"><span class="numerator">6.63 × 10⁻³⁴</span><span class="denominator">1.0 × 10⁻⁹ × 2.2</span></div> = 3.014 × 10⁻²⁵ m</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">11.11</div>
+            <div>यह दर्शाइए कि विद्युतचुंबकीय विकिरण का तरंगदैर्ध्य इसके क्वांटम (फोटॉन) के तरंगदैर्ध्य के बराबर होता है।</div>
+        </div>
+        <div class="answer">
+            फोटॉन के लिए डी-ब्रॉग्ली तरंगदैर्ध्य:<br>
+            <code>λ = <div class="fraction"><span class="numerator">h</span><span class="denominator">p</span></div></code><br>
+            फोटॉन का संवेग: <code>p = <div class="fraction"><span class="numerator">E</span><span class="denominator">c</span></div> = <div class="fraction"><span class="numerator">h ν</span><span class="denominator">c</span></div></code><br>
+            तो, <code>λ = <div class="fraction"><span class="numerator">h</span><span class="denominator">h ν / c</span></div> = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div></code><br>
+            यह विद्युतचुंबकीय विकिरण के तरंगदैर्ध्य का सूत्र है।<br><br>
+            
+            अतः सिद्ध हुआ कि विद्युतचुंबकीय विकिरण का तरंगदैर्ध्य इसके क्वांटम (फोटॉन) के तरंगदैर्ध्य के बराबर होता है।
+        </div>
+    </div>
+
+</body>
+</html>

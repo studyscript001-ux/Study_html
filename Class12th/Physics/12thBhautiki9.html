@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 9: किरण प्रकाशिकी एवं प्रकाशिक यंत्र</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 9: किरण प्रकाशिकी एवं प्रकाशिक यंत्र</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.1</div>
+            <div>2.5 cm साइज़ की कोई छोटी मोमबत्ती 36 cm वक्रता त्रिज्या के किसी अवतल दर्पण से 27 cm दूरी पर रखी है। दर्पण से किसी पर्दे को कितनी दूरी पर रखा जाए कि उसका स्पष्ट प्रतिबिम्ब पर्दे पर बने? प्रतिबिम्ब की प्रकृति और साइज़ का वर्णन कीजिए। यदि मोमबत्ती को दर्पण की ओर ले जाएँ, तो पर्दे को किस ओर हटाना पड़ेगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वस्तु की ऊँचाई, <code>h = 2.5 cm</code><br>
+            वक्रता त्रिज्या, <code>R = 36 cm</code><br>
+            फोकस दूरी, <code>f = R/2 = -18 cm</code> (अवतल दर्पण के लिए ऋणात्मक)<br>
+            वस्तु दूरी, <code>u = -27 cm</code><br><br>
+            दर्पण सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-18</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-27</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">18</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">27</span></div> = <div class="fraction"><span class="numerator">-3 + 2</span><span class="denominator">54</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">54</span></div></code><br>
+            <code>v = -54 cm</code><br>
+            पर्दे को दर्पण के सामने 54 cm दूरी पर रखना चाहिए।<br><br>
+            आवर्धन, <code>m = <div class="fraction"><span class="numerator">-v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">-(-54)</span><span class="denominator">-27</span></div> = -2</code><br>
+            प्रतिबिम्ब की ऊँचाई, <code>h' = m × h = -2 × 2.5 = -5 cm</code><br>
+            प्रतिबिम्ब वास्तविक, उल्टा और 5 cm ऊँचा है।<br><br>
+            यदि मोमबत्ती को दर्पण की ओर ले जाएँ, तो प्रतिबिम्ब दर्पण से दूर जाएगा और पर्दे को भी दूर हटाना पड़ेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.2</div>
+            <div>4.5 cm साइज़ की कोई सुई 15 cm फोकस दूरी के किसी उत्तल दर्पण से 12 cm दूर रखी है। प्रतिबिम्ब की स्थिति तथा आवर्धन लिखिए। क्या होता है जब सुई को दर्पण से दूर ले जाते हैं? वर्णन कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वस्तु की ऊँचाई, <code>h = 4.5 cm</code><br>
+            फोकस दूरी, <code>f = +15 cm</code> (उत्तल दर्पण के लिए धनात्मक)<br>
+            वस्तु दूरी, <code>u = -12 cm</code><br><br>
+            दर्पण सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-12</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">12</span></div> = <div class="fraction"><span class="numerator">4 + 5</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">9</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">20</span></div></code><br>
+            <code>v = <div class="fraction"><span class="numerator">20</span><span class="denominator">3</span></div> = 6.67 cm</code><br>
+            प्रतिबिम्ब दर्पण के पीछे 6.67 cm दूरी पर बनता है।<br><br>
+            आवर्धन, <code>m = <div class="fraction"><span class="numerator">-v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">-6.67</span><span class="denominator">-12</span></div> = 0.556</code><br>
+            प्रतिबिम्ब की ऊँचाई, <code>h' = m × h = 0.556 × 4.5 = 2.5 cm</code><br>
+            प्रतिबिम्ब आभासी, सीधा और छोटा है।<br><br>
+            जब सुई को दर्पण से दूर ले जाते हैं, तो प्रतिबिम्ब दर्पण के फोकस की ओर खिसकता है और उसका आकार घटता जाता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.3</div>
+            <div>कोई टैंक 12.5 cm ऊँचाई तक जल से भरा है। किसी सूक्ष्मदर्शी द्वारा बीकर की तली पर पड़ी किसी सुई की आभासी गहराई 9.4 cm मापी जाती है। जल का अपवर्तनांक क्या है? बीकर में उसी ऊँचाई तक जल के स्थान पर किसी 1.63 अपवर्तनांक के अन्य द्रव से प्रतिस्थापन करने पर सुई को पुनः फोकसित करने के लिए सूक्ष्मदर्शी को कितना ऊपर/नीचे ले जाना होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वास्तविक गहराई, <code>h = 12.5 cm</code><br>
+            आभासी गहराई, <code>h' = 9.4 cm</code><br><br>
+            अपवर्तनांक, <code>n = <div class="fraction"><span class="numerator">वास्तविक गहराई</span><span class="denominator">आभासी गहराई</span></div> = <div class="fraction"><span class="numerator">12.5</span><span class="denominator">9.4</span></div> = 1.33</code><br>
+            अतः जल का अपवर्तनांक 1.33 है।<br><br>
+            दूसरे द्रव के लिए:<br>
+            अपवर्तनांक, <code>n₂ = 1.63</code><br>
+            आभासी गहराई, <code>h' = <div class="fraction"><span class="numerator">h</span><span class="denominator">n₂</span></div> = <div class="fraction"><span class="numerator">12.5</span><span class="denominator">1.63</span></div> = 7.67 cm</code><br>
+            सूक्ष्मदर्शी को नीचे ले जाने की आवश्यकता होगी:<br>
+            <code>12.5 - 7.67 = 4.83 cm</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.4</div>
+            <div>चित्र 9.27 (a) और (b) में किसी आपतित किरण का अपवर्तन दर्शाया गया है जो वायु में क्रमशः काँच-वायु तथा जल-वायु अंतरापृष्ठ के अभिलम्ब से 60° का कोण बनाती है। उस आपतित किरण का अपवर्तन कोण ज्ञात कीजिए, जो जल में जल-काँच अंतरापृष्ठ के अभिलम्ब से 45° का कोण बनाती है [चित्र 9.27 (c)]।</div>
+        </div>
+        <div class="answer">
+            (a) काँच-वायु अंतरापृष्ठ के लिए:<br>
+            स्नेल के नियम से: <code>n<sub>काँच</sub> sin i = n<sub>वायु</sub> sin r</code><br>
+            <code>1.5 × sin 60° = 1 × sin r</code><br>
+            <code>1.5 × 0.866 = sin r</code><br>
+            <code>1.299 = sin r</code> → यह संभव नहीं है क्योंकि sin r ≤ 1 होना चाहिए।<br><br>
+            
+            (b) जल-वायु अंतरापृष्ठ के लिए:<br>
+            <code>n<sub>जल</sub> sin i = n<sub>वायु</sub> sin r</code><br>
+            <code>1.33 × sin 60° = 1 × sin r</code><br>
+            <code>1.33 × 0.866 = sin r</code><br>
+            <code>1.152 = sin r</code> → यह भी संभव नहीं है।<br><br>
+            
+            (c) जल-काँच अंतरापृष्ठ के लिए:<br>
+            <code>n<sub>जल</sub> sin i = n<sub>काँच</sub> sin r</code><br>
+            <code>1.33 × sin 45° = 1.5 × sin r</code><br>
+            <code>1.33 × 0.7071 = 1.5 × sin r</code><br>
+            <code>0.940 = 1.5 × sin r</code><br>
+            <code>sin r = <div class="fraction"><span class="numerator">0.940</span><span class="denominator">1.5</span></div> = 0.627</code><br>
+            <code>r = sin⁻¹(0.627) = 38.8°</code><br>
+            अतः अपवर्तन कोण 38.8° है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.5</div>
+            <div>जल से भरे 80 cm गहराई के किसी टैंक की तली पर कोई छोटा बल्ब रखा गया है। जल के पृष्ठ का वह क्षेत्र ज्ञात कीजिए जिससे बल्ब का प्रकाश निर्गत हो सकता है। जल का अपवर्तनांक 1.33 है। (बल्ब को बिन्दु प्रकाश स्रोत मानिए।)</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            गहराई, <code>h = 80 cm = 0.8 m</code><br>
+            अपवर्तनांक, <code>n = 1.33</code><br><br>
+            क्रांतिक कोण, <code>sin i<sub>c</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">n</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">1.33</span></div> = 0.7519</code><br>
+            <code>i<sub>c</sub> = sin⁻¹(0.7519) = 48.75°</code><br><br>
+            प्रकाश निर्गत होने वाले क्षेत्र की त्रिज्या:<br>
+            <code>r = h tan i<sub>c</sub> = 0.8 × tan(48.75°) = 0.8 × 1.14 = 0.912 m</code><br><br>
+            क्षेत्रफल, <code>A = πr² = 3.14 × (0.912)² = 2.61 m²</code><br>
+            अतः जल के पृष्ठ का वह क्षेत्र जिससे बल्ब का प्रकाश निर्गत हो सकता है, 2.61 m² है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.6</div>
+            <div>कोई प्रिज्म अज्ञात अपवर्तनांक के काँच का बना है। कोई समान्तर प्रकाश-पुंज इस प्रिज्म के किसी फलक पर आपतित होता है। प्रिज्म का न्यूनतम विचलन कोण 40° मापा गया। प्रिज्म के पदार्थ का अपवर्तनांक क्या है? प्रिज्म का अपवर्तन कोण 60° है। यदि प्रिज्म को जल (अपवर्तनांक 1.33) में रख दिया जाए तो प्रकाश के समान्तर पुंज के लिए नए न्यूनतम विचलन कोण का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            न्यूनतम विचलन कोण, <code>δ<sub>m</sub> = 40°</code><br>
+            प्रिज्म कोण, <code>A = 60°</code><br><br>
+            प्रिज्म के पदार्थ का अपवर्तनांक:<br>
+            <code>n = <div class="fraction"><span class="numerator">sin[(A + δ<sub>m</sub>)/2]</span><span class="denominator">sin(A/2)</span></div> = <div class="fraction"><span class="numerator">sin[(60° + 40°)/2]</span><span class="denominator">sin(60°/2)</span></div> = <div class="fraction"><span class="numerator">sin(50°)</span><span class="denominator">sin(30°)</span></div> = <div class="fraction"><span class="numerator">0.7660</span><span class="denominator">0.5</span></div> = 1.532</code><br><br>
+            जल में रखने पर:<br>
+            प्रिज्म का जल के सापेक्ष अपवर्तनांक, <code>n<sub>21</sub> = <div class="fraction"><span class="numerator">n<sub>प्रिज्म</sub></span><span class="denominator">n<sub>जल</sub></span></div> = <div class="fraction"><span class="numerator">1.532</span><span class="denominator">1.33</span></div> = 1.152</code><br>
+            <code>n<sub>21</sub> = <div class="fraction"><span class="numerator">sin[(A + δ<sub>m</sub>')/2]</span><span class="denominator">sin(A/2)</span></div></code><br>
+            <code>1.152 = <div class="fraction"><span class="numerator">sin[(60° + δ<sub>m</sub>')/2]</span><span class="denominator">sin(30°)</span></div></code><br>
+            <code>1.152 = <div class="fraction"><span class="numerator">sin[(60° + δ<sub>m</sub>')/2]</span><span class="denominator">0.5</span></div></code><br>
+            <code>sin[(60° + δ<sub>m</sub>')/2] = 1.152 × 0.5 = 0.576</code><br>
+            <code>(60° + δ<sub>m</sub>')/2 = sin⁻¹(0.576) = 35.2°</code><br>
+            <code>60° + δ<sub>m</sub>' = 70.4°</code><br>
+            <code>δ<sub>m</sub>' = 10.4°</code><br>
+            अतः जल में न्यूनतम विचलन कोण 10.4° है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.7</div>
+            <div>अभ्यास 9.6 में वर्णित प्रिज्म के लिए, अपवर्तन कोण 60° है। यदि प्रिज्म को जल (अपवर्तनांक 1.33) में रख दिया जाए तो प्रकाश के समान्तर पुंज के लिए नए न्यूनतम विचलन कोण का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            यह प्रश्न 9.6 का ही भाग है और इसका उत्तर पहले ही दिया जा चुका है।<br>
+            जल में न्यूनतम विचलन कोण 10.4° है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.8</div>
+            <div>चित्र 9.20 में दिए गए लेंसों के संयोजन द्वारा निर्मित प्रतिबिम्ब की स्थिति ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            चित्र 9.20 के अनुसार तीन लेंसों का संयोजन है:<br>
+            पहला लेंस: फोकस दूरी <code>f₁ = 30 cm</code>, वस्तु दूरी <code>u₁ = -30 cm</code><br>
+            दूसरा लेंस: फोकस दूरी <code>f₂ = -10 cm</code><br>
+            तीसरा लेंस: फोकस दूरी <code>f₃ = +30 cm</code><br><br>
+            
+            पहले लेंस के लिए:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₁</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-30</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₁</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> = 0</code><br>
+            <code>v₁ = ∞</code><br><br>
+            
+            दूसरे लेंस के लिए:<br>
+            वस्तु दूरी <code>u₂ = ∞ - 5 = ∞</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">∞</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-10</span></div></code><br>
+            <code>v₂ = -10 cm</code><br><br>
+            
+            तीसरे लेंस के लिए:<br>
+            वस्तु दूरी <code>u₃ = -10 - 15 = -25 cm</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₃</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-25</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₃</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">25</span></div> = <div class="fraction"><span class="numerator">5 - 6</span><span class="denominator">150</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">150</span></div></code><br>
+            <code>v₃ = -150 cm</code><br><br>
+            
+            अंतिम प्रतिबिम्ब तीसरे लेंस के बाईं ओर 150 cm दूरी पर बनेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.9</div>
+            <div>कोई प्रकाश पुंज किसी बिन्दु P पर अभिसरित होता है। कोई लेंस इस अभिसारी पुंज के पथ में बिन्दु P से 15 cm दूर रखा जाता है। यदि यह (a) 30 cm फोकस दूरी का उत्तल लेंस है (b) 30 cm फोकस दूरी का अवतल लेंस है तो प्रकाश पुंज किस बिन्दु पर अभिसरित होगा?</div>
+        </div>
+        <div class="answer">
+            (a) उत्तल लेंस के लिए:<br>
+            फोकस दूरी <code>f = +30 cm</code><br>
+            वस्तु दूरी <code>u = +15 cm</code> (आभासी वस्तु)<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> = <div class="fraction"><span class="numerator">1 + 2</span><span class="denominator">30</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">30</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">10</span></div></code><br>
+            <code>v = +10 cm</code><br>
+            प्रकाश पुंज लेंस के दूसरी ओर 10 cm दूरी पर अभिसरित होगा।<br><br>
+            
+            (b) अवतल लेंस के लिए:<br>
+            फोकस दूरी <code>f = -30 cm</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">30</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div> = <div class="fraction"><span class="numerator">-1 + 2</span><span class="denominator">30</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div></code><br>
+            <code>v = +30 cm</code><br>
+            प्रकाश पुंज लेंस के दूसरी ओर 30 cm दूरी पर अभिसरित होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.10</div>
+            <div>3 cm ऊँचाई की कोई वस्तु 18 cm फोकस दूरी के किसी अवतल दर्पण के सामने 27 cm दूरी पर रखी गई है। दर्पण से कितनी दूरी पर किसी पर्दे को रखें कि उस पर वस्तु का स्पष्ट फोकसित प्रतिबिम्ब प्राप्त किया जा सके। प्रतिबिम्ब की प्रकृति और साइज़ ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वस्तु की ऊँचाई, <code>h = 3 cm</code><br>
+            फोकस दूरी, <code>f = -18 cm</code> (अवतल दर्पण)<br>
+            वस्तु दूरी, <code>u = -27 cm</code><br><br>
+            
+            दर्पण सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-18</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-27</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">18</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">27</span></div> = <div class="fraction"><span class="numerator">-3 + 2</span><span class="denominator">54</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">54</span></div></code><br>
+            <code>v = -54 cm</code><br>
+            पर्दे को दर्पण के सामने 54 cm दूरी पर रखना चाहिए।<br><br>
+            
+            आवर्धन, <code>m = <div class="fraction"><span class="numerator">-v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">-(-54)</span><span class="denominator">-27</span></div> = -2</code><br>
+            प्रतिबिम्ब की ऊँचाई, <code>h' = m × h = -2 × 3 = -6 cm</code><br>
+            प्रतिबिम्ब वास्तविक, उल्टा और 6 cm ऊँचा है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.11</div>
+            <div>18 cm फोकस दूरी के किसी उत्तल लेंस के सामने वस्तु को कहाँ रखें कि उसका प्रतिबिम्ब लेंस से 24 cm दूरी पर बने? इस स्थिति में आवर्धन भी ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फोकस दूरी, <code>f = +18 cm</code> (उत्तल लेंस)<br>
+            प्रतिबिम्ब दूरी, <code>v = +24 cm</code> (वास्तविक प्रतिबिम्ब)<br><br>
+            
+            लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">24</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">18</span></div> = <div class="fraction"><span class="numerator">3 - 4</span><span class="denominator">72</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">72</span></div></code><br>
+            <code>u = -72 cm</code><br>
+            वस्तु को लेंस के सामने 72 cm दूरी पर रखना चाहिए।<br><br>
+            
+            आवर्धन, <code>m = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">24</span><span class="denominator">-72</span></div> = -<div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div></code><br>
+            प्रतिबिम्ब वास्तविक, उल्टा और वस्तु के आकार का एक-तिहाई है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.12</div>
+            <div>10 cm फोकस दूरी के किसी अवतल लेंस की शक्ति कितनी होगी?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फोकस दूरी, <code>f = -10 cm = -0.1 m</code> (अवतल लेंस)<br><br>
+            
+            लेंस की शक्ति, <code>P = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-0.1</span></div> = -10 D</code><br>
+            अतः अवतल लेंस की शक्ति -10 डायोप्टर है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.13</div>
+            <div>कोई व्यक्ति +1.5 D शक्ति का संशोधक लेंस उपयोग कर रहा है। (a) लेंस की फोकस दूरी कितनी है? (b) लेंस की प्रकृति क्या है? (अवतल या उत्तल)</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            लेंस की शक्ति, <code>P = +1.5 D</code><br><br>
+            
+            (a) फोकस दूरी, <code>f = <div class="fraction"><span class="numerator">1</span><span class="denominator">P</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">1.5</span></div> = 0.667 m = 66.7 cm</code><br><br>
+            
+            (b) चूँकि शक्ति धनात्मक है, अतः लेंस उत्तल लेंस है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.14</div>
+            <div>कोई व्यक्ति 50 cm फोकस दूरी के उत्तल लेंस का उपयोग करके किसी पुस्तक को 25 cm दूरी पर पढ़ सकता है। उसके चश्मे की शक्ति क्या होगी?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फोकस दूरी, <code>f = 50 cm = 0.5 m</code><br><br>
+            
+            लेंस की शक्ति, <code>P = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">0.5</span></div> = +2 D</code><br>
+            अतः चश्मे की शक्ति +2 डायोप्टर है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.15</div>
+            <div>एक उत्तल लेंस की फोकस दूरी 20 cm है। इसके द्वारा किसी वस्तु का दोगुना बड़ा वास्तविक प्रतिबिम्ब बनाने के लिए वस्तु को लेंस के सामने कितनी दूरी पर रखना चाहिए?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फोकस दूरी, <code>f = +20 cm</code><br>
+            आवर्धन, <code>m = -2</code> (वास्तविक प्रतिबिम्ब के लिए ऋणात्मक)<br><br>
+            
+            आवर्धन सूत्र से: <code>m = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div></code><br>
+            <code>-2 = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div></code><br>
+            <code>v = -2u</code><br><br>
+            
+            लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">-2u</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">-1</span><span class="denominator">2u</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">-3</span><span class="denominator">2u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div></code><br>
+            <code>u = <div class="fraction"><span class="numerator">-3 × 20</span><span class="denominator">2</span></div> = -30 cm</code><br>
+            वस्तु को लेंस के सामने 30 cm दूरी पर रखना चाहिए।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.16</div>
+            <div>किसी मेज के ऊपरी पृष्ठ पर जड़ी एक छोटी पिन को 50 cm ऊँचाई से देखा जाता है। 15 cm मोटे आयताकार काँच के गुटके को मेज के पृष्ठ के समान्तर पिन व नेत्र के बीच रखकर उसी बिन्दु से देखने पर पिन नेत्र से कितनी दूर दिखाई देगी? काँच का अपवर्तनांक 1.5 है। क्या उत्तर गुटके की अवस्थिति पर निर्भर करता है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            काँच की मोटाई, <code>t = 15 cm</code><br>
+            काँच का अपवर्तनांक, <code>n = 1.5</code><br><br>
+            
+            आभासी गहराई, <code>d' = <div class="fraction"><span class="numerator">t</span><span class="denominator">n</span></div> = <div class="fraction"><span class="numerator">15</span><span class="denominator">1.5</span></div> = 10 cm</code><br><br>
+            
+            पिन की आभासी दूरी = वास्तविक दूरी - (वास्तविक मोटाई - आभासी मोटाई)<br>
+            <code>= 50 - (15 - 10) = 50 - 5 = 45 cm</code><br><br>
+            
+            उत्तर गुटके की अवस्थिति पर निर्भर नहीं करता, बशर्ते गुटका पिन और नेत्र के बीच ही रखा जाए।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.17</div>
+            <div>निम्नलिखित प्रश्नों के उत्तर दीजिए-<br>
+            (a) चित्र 9.28 में 1.68 अपवर्तनांक के रेशे काँच से बनी किसी 'प्रकाश नलिका' (लाइट पाइप) का अनुप्रस्थ परिच्छेद दर्शाया गया है। नलिका का बाह्य आवरण 1.44 अपवर्तनांक के पदार्थ का बना है। नलिका के अक्ष से आपतित किरणों के कोणों का परिसर, जिनके लिए चित्र में दर्शाए अनुसार नलिका के भीतर पूर्ण परावर्तन होते हैं, ज्ञात कीजिए।<br>
+            (b) यदि पाइप पर बाह्य आवरण न हो तो क्या उत्तर होगा?</div>
+        </div>
+        <div class="answer">
+            (a) रेशे काँच का अपवर्तनांक, <code>n₁ = 1.68</code><br>
+            बाह्य आवरण का अपवर्तनांक, <code>n₂ = 1.44</code><br><br>
+            
+            क्रांतिक कोण, <code>sin i<sub>c</sub> = <div class="fraction"><span class="numerator">n₂</span><span class="denominator">n₁</span></div> = <div class="fraction"><span class="numerator">1.44</span><span class="denominator">1.68</span></div> = 0.857</code><br>
+            <code>i<sub>c</sub> = sin⁻¹(0.857) = 59°</code><br><br>
+            
+            नलिका के अक्ष से आपतित किरण के लिए अधिकतम कोण:<br>
+            <code>90° - 59° = 31°</code><br>
+            अतः आपतित किरणों का कोण परिसर 0° से 31° तक है।<br><br>
+            
+            (b) यदि बाह्य आवरण न हो तो <code>n₂ = 1</code> (वायु)<br>
+            <code>sin i<sub>c</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">1.68</span></div> = 0.595</code><br>
+            <code>i<sub>c</sub> = sin⁻¹(0.595) = 36.5°</code><br>
+            अधिकतम कोण: <code>90° - 36.5° = 53.5°</code><br>
+            आपतित किरणों का कोण परिसर 0° से 53.5° तक होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.18</div>
+            <div>किसी कमरे की एक दीवार पर लगे विद्युत बल्ब के किसी बड़े आकार के उत्तल लेंस द्वारा 3 m दूरी पर स्थित सामने की दीवार पर प्रतिबिम्ब प्राप्त करना है। इसके लिए उत्तल लेंस की अधिकतम फोकस दूरी क्या होनी चाहिए?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            वस्तु दूरी, <code>u = -3 m</code><br>
+            प्रतिबिम्ब दूरी, <code>v = +3 m</code> (सामने की दीवार पर)<br><br>
+            
+            लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-3</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">2</span><span class="denominator">3</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code>f = 1.5 m</code><br>
+            अतः उत्तल लेंस की अधिकतम फोकस दूरी 1.5 m होनी चाहिए।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.19</div>
+            <div>किसी पर्दे को वस्तु से 90 cm दूर रखा गया है। पर्दे पर किसी उत्तल लेंस द्वारा उसे एक-दूसरे से 20 cm दूर स्थितियों पर रखकर, दो प्रतिबिम्ब बनाए जाते हैं। लेंस की फोकस दूरी ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            माना वस्तु दूरी = <code>u</code>, प्रतिबिम्ब दूरी = <code>v</code><br>
+            दिया गया है: <code>u + v = 90 cm</code><br>
+            और दो स्थितियों में वस्तु और प्रतिबिम्ब की दूरी में 20 cm का अंतर है।<br><br>
+            
+            पहली स्थिति: <code>u₁ = u, v₁ = 90 - u</code><br>
+            दूसरी स्थिति: <code>u₂ = u + 20, v₂ = 70 - u</code><br><br>
+            
+            लेंस सूत्र दोनों स्थितियों में समान होगा:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₁</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u₁</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u₂</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">90 - u</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">70 - u</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-(u + 20)</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">90 - u</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">70 - u</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u + 20</span></div></code><br><br>
+            
+            इस समीकरण को हल करने पर <code>u = 30 cm</code> या <code>u = 60 cm</code><br>
+            पहली स्थिति: <code>u = 30 cm, v = 60 cm</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">60</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-30</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">60</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> = <div class="fraction"><span class="numerator">1 + 2</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div></code><br>
+            <code>f = 20 cm</code><br><br>
+            
+            दूसरी स्थिति: <code>u = 60 cm, v = 30 cm</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-60</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">2 + 1</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">3</span><span class="denominator">60</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div></code><br>
+            <code>f = 20 cm</code><br><br>
+            
+            दोनों स्थितियों में फोकस दूरी 20 cm ही प्राप्त होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.20</div>
+            <div>(a) प्रश्न 9.10 के दो लेंसों के संयोजन की प्रभावी फोकस दूरी ज्ञात कीजिए जब उनके मुख्य अक्ष संपाती हैं, और ये एक-दूसरे से 8 cm दूरी पर रखे हैं। क्या उत्तर आपतित समान्तर प्रकाश पुंज की दिशा पर निर्भर करेगा? क्या इस तंत्र के लिए प्रभावी फोकस दूरी किसी भी रूप में उपयोगी है?<br>
+            (b) उपरोक्त व्यवस्था (a) में 1.5 cm ऊँचा कोई बिम्ब उत्तल लेंस की ओर रखा है। बिम्ब की उत्तल लेंस से दूरी 40 cm है। दो लेंसों के तंत्र द्वारा उत्पन्न आवर्धन तथा बिम्ब का आकार ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            (a) प्रश्न 9.10 के लेंस:<br>
+            पहला लेंस (उत्तल): <code>f₁ = +30 cm</code><br>
+            दूसरा लेंस (अवतल): <code>f₂ = -20 cm</code><br>
+            दूरी, <code>d = 8 cm</code><br><br>
+            
+            संयोजन की प्रभावी फोकस दूरी:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f₁</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">f₂</span></div> - <div class="fraction"><span class="numerator">d</span><span class="denominator">f₁f₂</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">-20</span></div> - <div class="fraction"><span class="numerator">8</span><span class="denominator">30 × (-20)</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">20</span></div> + <div class="fraction"><span class="numerator">8</span><span class="denominator">600</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">20 - 30 + 8</span><span class="denominator">600</span></div> = <div class="fraction"><span class="numerator">-2</span><span class="denominator">600</span></div> = <div class="fraction"><span class="numerator">-1</span><span class="denominator">300</span></div></code><br>
+            <code>f = -300 cm</code><br><br>
+            
+            उत्तर आपतित प्रकाश की दिशा पर निर्भर करता है क्योंकि लेंसों के बीच दूरी है।<br>
+            यह प्रभावी फोकस दूरी तंत्र के विश्लेषण के लिए उपयोगी है।<br><br>
+            
+            (b) बिम्ब की ऊँचाई, <code>h = 1.5 cm</code><br>
+            वस्तु दूरी, <code>u₁ = -40 cm</code><br><br>
+            
+            पहले लेंस के लिए:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₁</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-40</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₁</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">40</span></div> = <div class="fraction"><span class="numerator">4 - 3</span><span class="denominator">120</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">120</span></div></code><br>
+            <code>v₁ = 120 cm</code><br>
+            आवर्धन, <code>m₁ = <div class="fraction"><span class="numerator">v₁</span><span class="denominator">u₁</span></div> = <div class="fraction"><span class="numerator">120</span><span class="denominator">-40</span></div> = -3</code><br><br>
+            
+            दूसरे लेंस के लिए:<br>
+            वस्तु दूरी, <code>u₂ = 120 - 8 = 112 cm</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">112</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-20</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">-20</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">112</span></div> = <div class="fraction"><span class="numerator">-5.6 + 1</span><span class="denominator">112</span></div> = <div class="fraction"><span class="numerator">-4.6</span><span class="denominator">112</span></div></code><br>
+            <code>v₂ = -24.35 cm</code><br>
+            आवर्धन, <code>m₂ = <div class="fraction"><span class="numerator">v₂</span><span class="denominator">u₂</span></div> = <div class="fraction"><span class="numerator">-24.35</span><span class="denominator">112</span></div> = -0.217</code><br><br>
+            
+            कुल आवर्धन, <code>m = m₁ × m₂ = -3 × -0.217 = 0.651</code><br>
+            प्रतिबिम्ब का आकार, <code>h' = m × h = 0.651 × 1.5 = 0.9765 cm</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.21</div>
+            <div>60° अपवर्तन कोण के प्रिज्म के फलक पर किसी प्रकाश किरण को किस कोण पर आपतित कराएँ कि इसका दूसरे फलक से केवल पूर्ण आंतरिक परावर्तन ही हो? प्रिज्म के पदार्थ का अपवर्तनांक 1.524 है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रिज्म कोण, <code>A = 60°</code><br>
+            अपवर्तनांक, <code>n = 1.524</code><br><br>
+            
+            क्रांतिक कोण, <code>sin i<sub>c</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">n</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">1.524</span></div> = 0.656</code><br>
+            <code>i<sub>c</sub> = sin⁻¹(0.656) = 41°</code><br><br>
+            
+            दूसरे फलक पर पूर्ण आंतरिक परावर्तन के लिए:<br>
+            <code>r₂ = i<sub>c</sub> = 41°</code><br>
+            <code>r₁ = A - r₂ = 60° - 41° = 19°</code><br><br>
+            
+            स्नेल के नियम से पहले फलक पर:<br>
+            <code>sin i = n sin r₁ = 1.524 × sin 19° = 1.524 × 0.3256 = 0.496</code><br>
+            <code>i = sin⁻¹(0.496) = 29.7°</code><br>
+            अतः आपतन कोण 29.7° होना चाहिए।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.22</div>
+            <div>कोई कार्ड शीट जिसे 1 mm² साइज़ के वर्गों में विभाजित किया गया है, को 9 cm दूरी पर रखकर किसी आवर्धक लेंस (9 cm फोकस दूरी का अभिसारी लेंस) द्वारा उसे नेत्र के निकट रखकर देखा जाता है।<br>
+            (a) लेंस द्वारा उत्पन्न आवर्धन (प्रतिबिम्ब-साइज़/वस्तु-साइज़) क्या है? आभासी प्रतिबिम्ब में प्रत्येक वर्ग का क्षेत्रफल क्या है?<br>
+            (b) लेंस का कोणीय आवर्धन (आवर्धन-क्षमता) क्या है?<br>
+            (c) क्या (a) में आवर्धन-क्षमता (b) में आवर्धन के बराबर है? स्पष्ट कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फोकस दूरी, <code>f = 9 cm</code><br>
+            वस्तु दूरी, <code>u = -9 cm</code> (नेत्र के निकट)<br><br>
+            
+            (a) लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-9</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> = 0</code><br>
+            <code>v = ∞</code><br><br>
+            
+            रेखीय आवर्धन, <code>m = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">∞</span><span class="denominator">-9</span></div> = -∞</code> (सैद्धांतिक)<br>
+            व्यवहार में, जब प्रतिबिम्ब अनंत पर बनता है, तो आवर्धन अनंत होता है।<br>
+            प्रत्येक वर्ग का क्षेत्रफल भी अनंत होगा।<br><br>
+            
+            (b) कोणीय आवर्धन, <code>M = <div class="fraction"><span class="numerator">D</span><span class="denominator">f</span></div> = <div class="fraction"><span class="numerator">25</span><span class="denominator">9</span></div> = 2.78</code><br><br>
+            
+            (c) नहीं, (a) में आवर्धन-क्षमता (b) में आवर्धन के बराबर नहीं है।<br>
+            रेखीय आवर्धन प्रतिबिम्ब और वस्तु के साइज़ का अनुपात है, जबकि कोणीय आवर्धन उनके द्वारा बनाए गए कोणों का अनुपात है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.23</div>
+            <div>(a) अभ्यास 9.22 में लेंस को कार्ड शीट से कितनी दूरी पर रखें कि वर्गों को अधिकतम संभव आवर्धन-क्षमता के साथ सुस्पष्ट देखा जा सके?<br>
+            (b) इस उदाहरण में आवर्धन (प्रतिबिम्ब-साइज़/वस्तु-साइज़) क्या है?<br>
+            (c) क्या इस प्रक्रम में आवर्धन, आवर्धन-क्षमता के बराबर है? स्पष्ट कीजिए।</div>
+        </div>
+        <div class="answer">
+            (a) अधिकतम आवर्धन-क्षमता के लिए प्रतिबिम्ब निकट बिंदु (25 cm) पर बनना चाहिए:<br>
+            <code>v = -25 cm</code> (आभासी प्रतिबिम्ब)<br>
+            <code>f = 9 cm</code><br><br>
+            
+            लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">-25</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">-1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">25</span></div> = <div class="fraction"><span class="numerator">25 + 9</span><span class="denominator">225</span></div> = <div class="fraction"><span class="numerator">34</span><span class="denominator">225</span></div></code><br>
+            <code>u = -<div class="fraction"><span class="numerator">225</span><span class="denominator">34</span></div> = -6.62 cm</code><br>
+            लेंस को कार्ड शीट से 6.62 cm दूरी पर रखना चाहिए।<br><br>
+            
+            (b) आवर्धन, <code>m = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">-25</span><span class="denominator">-6.62</span></div> = 3.78</code><br><br>
+            
+            (c) आवर्धन-क्षमता, <code>M = 1 + <div class="fraction"><span class="numerator">D</span><span class="denominator">f</span></div> = 1 + <div class="fraction"><span class="numerator">25</span><span class="denominator">9</span></div> = 3.78</code><br>
+            हाँ, इस स्थिति में आवर्धन और आवर्धन-क्षमता बराबर हैं।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.24</div>
+            <div>अभ्यास 9.23 में वस्तु तथा आवर्धक लेंस के बीच कितनी दूरी होनी चाहिए ताकि आभासी प्रतिबिम्ब में प्रत्येक वर्ग 6.25 mm² क्षेत्रफल का प्रतीत हो? क्या आप आवर्धक लेंस को नेत्र के अत्यधिक निकट रखकर इन वर्गों को सुस्पष्ट देख सकेंगे?</div>
+        </div>
+        <div class="answer">
+            वर्ग का वास्तविक क्षेत्रफल = <code>1 mm²</code><br>
+            आभासी क्षेत्रफल = <code>6.25 mm²</code><br>
+            रेखीय आवर्धन, <code>m = √6.25 = 2.5</code><br><br>
+            
+            आवर्धन सूत्र से: <code>m = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div></code><br>
+            <code>2.5 = <div class="fraction"><span class="numerator">v</span><span class="denominator">u</span></div></code><br>
+            <code>v = 2.5u</code><br><br>
+            
+            लेंस सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">2.5u</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1 - 2.5</span><span class="denominator">2.5u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">-1.5</span><span class="denominator">2.5u</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">9</span></div></code><br>
+            <code>u = <div class="fraction"><span class="numerator">-1.5 × 9</span><span class="denominator">2.5</span></div> = -5.4 cm</code><br>
+            वस्तु और लेंस के बीच दूरी 5.4 cm होनी चाहिए।<br><br>
+            
+            हाँ, लेंस को नेत्र के निकट रखकर वर्गों को सुस्पष्ट देखा जा सकता है क्योंकि प्रतिबिम्ब स्पष्ट दृष्टि की न्यूनतम दूरी (25 cm) पर बन रहा है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.25</div>
+            <div>निम्नलिखित प्रश्नों के उत्तर दीजिए-<br>
+            (a) किसी वस्तु द्वारा नेत्र पर अंतरित कोण आवर्धक लेंस द्वारा उत्पन्न आभासी प्रतिबिम्ब द्वारा नेत्र पर अंतरित कोण के बराबर होता है। तब फिर किस अर्थ में कोई आवर्धक लेंस कोणीय आवर्धन प्रदान करता है?<br>
+            (b) किसी आवर्धक लेंस से देखते समय प्रेक्षक अपने नेत्र को लेंस से अत्यधिक सटाकर रखता है। यदि प्रेक्षक अपने नेत्र को पीछे ले जाए तो क्या कोणीय आवर्धन परिवर्तित हो जाएगा?<br>
+            (c) किसी सरल सूक्ष्मदर्शी की आवर्धन-क्षमता उसकी फोकस दूरी के व्युत्क्रमानुपाती होती है। तब हमें अत्यधिक अधिक आवर्धन-क्षमता प्राप्त करने के लिए ध्</div>
+        </div>
+        <div class="answer">
+            (a) जब हम बिना आवर्धक लेंस के किसी वस्तु को देखते हैं, तो हम उसे स्पष्ट देखने के लिए न्यूनतम दूरी (25 cm) पर रखते हैं। आवर्धक लेंस हमें वस्तु को 25 cm से कम दूरी पर रखकर देखने की सुविधा देता है, जिससे वस्तु द्वारा नेत्र पर बना कोण बढ़ जाता है। इस प्रकार आवर्धक लेंस कोणीय आवर्धन प्रदान करता है।<br><br>
+            
+            (b) हाँ, यदि प्रेक्षक अपने नेत्र को लेंस से पीछे ले जाए तो कोणीय आवर्धन परिवर्तित हो जाएगा। कोणीय आवर्धन प्रतिबिम्ब द्वारा नेत्र पर बने कोण और वस्तु द्वारा न्यूनतम दूरी पर बने कोण का अनुपात होता है। नेत्र की स्थिति बदलने पर यह अनुपात बदल सकता है।<br><br>
+            
+            (c) अत्यधिक आवर्धन-क्षमता प्राप्त करने के लिए हमें कम फोकस दूरी के लेंस की आवश्यकता होती है। परंतु बहुत कम फोकस दूरी के लेंस बनाना तकनीकी रूप से कठिन होता है और ऐसे लेंसों में विपथन (aberration) की समस्या अधिक होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.26</div>
+            <div>1.25 cm फोकस दूरी का अभिदृश्यक तथा 5 cm फोकस दूरी की नेत्रिका का उपयोग करके वांछित कोणीय आवर्धन (आवर्धन-क्षमता) 30 X है। आप सयुंक्त सूक्ष्मदर्शी का समायोजन कैसे करेंगे?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            अभिदृश्यक की फोकस दूरी, <code>f₀ = 1.25 cm</code><br>
+            नेत्रिका की फोकस दूरी, <code>fₑ = 5 cm</code><br>
+            आवर्धन-क्षमता, <code>M = 30</code><br><br>
+            
+            सयुंक्त सूक्ष्मदर्शी की आवर्धन-क्षमता:<br>
+            <code>M = <div class="fraction"><span class="numerator">L</span><span class="denominator">f₀</span></div> × <div class="fraction"><span class="numerator">D</span><span class="denominator">fₑ</span></div></code><br>
+            जहाँ <code>L</code> नली की लंबाई है और <code>D = 25 cm</code> स्पष्ट दृष्टि की न्यूनतम दूरी है।<br><br>
+            
+            <code>30 = <div class="fraction"><span class="numerator">L</span><span class="denominator">1.25</span></div> × <div class="fraction"><span class="numerator">25</span><span class="denominator">5</span></div></code><br>
+            <code>30 = <div class="fraction"><span class="numerator">L</span><span class="denominator">1.25</span></div> × 5</code><br>
+            <code><div class="fraction"><span class="numerator">L</span><span class="denominator">1.25</span></div> = 6</code><br>
+            <code>L = 7.5 cm</code><br><br>
+            
+            सूक्ष्मदर्शी का समायोजन:<br>
+            1. अभिदृश्यक और नेत्रिका के बीच की दूरी <code>L + f₀ + fₑ = 7.5 + 1.25 + 5 = 13.75 cm</code> रखनी चाहिए।<br>
+            2. वस्तु को अभिदृश्यक के सामने उसकी फोकस दूरी से थोड़ा अधिक दूरी पर रखना चाहिए ताकि प्रतिबिम्ब नेत्रिका के फोकस के पास बने।<br>
+            3. अंतिम प्रतिबिम्ब स्पष्ट दृष्टि की न्यूनतम दूरी (25 cm) पर बनेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.27</div>
+            <div>किसी दूरदर्शी के अभिदृश्यक की फोकस दूरी 140 cm तथा नेत्रिका की फोकस दूरी 5.0 cm है। दूर की वस्तुओं को देखने के लिए दूरदर्शी की आवर्धन-क्षमता क्या होगी जब-<br>
+            (a) दूरदर्शी का समायोजन सामान्य है (अर्थात् अंतिम प्रतिबिम्ब अनंत पर बनता है)।<br>
+            (b) अंतिम प्रतिबिम्ब स्पष्ट दृष्टि की न्यूनतम दूरी (25 cm) पर बनता है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            अभिदृश्यक की फोकस दूरी, <code>f₀ = 140 cm</code><br>
+            नेत्रिका की फोकस दूरी, <code>fₑ = 5.0 cm</code><br><br>
+            
+            (a) सामान्य समायोजन के लिए आवर्धन-क्षमता:<br>
+            <code>M = -<div class="fraction"><span class="numerator">f₀</span><span class="denominator">fₑ</span></div> = -<div class="fraction"><span class="numerator">140</span><span class="denominator">5</span></div> = -28</code><br>
+            आवर्धन-क्षमता 28 है (ऋणात्मक चिन्ह प्रतिबिम्ब के उल्टे होने को दर्शाता है)।<br><br>
+            
+            (b) जब अंतिम प्रतिबिम्ब न्यूनतम दूरी पर बनता है:<br>
+            <code>M = -<div class="fraction"><span class="numerator">f₀</span><span class="denominator">fₑ</span></div> (1 + <div class="fraction"><span class="numerator">fₑ</span><span class="denominator">D</span></div>)</code><br>
+            <code>M = -<div class="fraction"><span class="numerator">140</span><span class="denominator">5</span></div> (1 + <div class="fraction"><span class="numerator">5</span><span class="denominator">25</span></div>)</code><br>
+            <code>M = -28 (1 + 0.2) = -28 × 1.2 = -33.6</code><br>
+            आवर्धन-क्षमता 33.6 है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.28</div>
+            <div>(a) अभ्यास 9.27(a) में वर्णित दूरदर्शी के लिए अभिदृश्यक लेंस तथा नेत्रिका के बीच पृथक्कन दूरी क्या है?<br>
+            (b) यदि इस दूरदर्शी का उपयोग 3 km दूर स्थित 100 m ऊँची मीनार को देखने के लिए किया जाता है तो अभिदृश्यक द्वारा निर्मित मीनार के प्रतिबिम्ब की ऊँचाई क्या है?<br>
+            (c) यदि अंतिम प्रतिबिम्ब 25 cm दूरी पर बनता है तो अंतिम प्रतिबिम्ब में मीनार की ऊँचाई क्या है?</div>
+        </div>
+        <div class="answer">
+            (a) सामान्य समायोजन के लिए अभिदृश्यक और नेत्रिका के बीच दूरी:<br>
+            <code>L = f₀ + fₑ = 140 + 5 = 145 cm</code><br><br>
+            
+            (b) मीनार की वास्तविक ऊँचाई, <code>h = 100 m</code><br>
+            दूरी, <code>u = -3 km = -3000 m</code><br>
+            अभिदृश्यक की फोकस दूरी, <code>f₀ = 140 cm = 1.4 m</code><br><br>
+            
+            अभिदृश्यक द्वारा बने प्रतिबिम्ब की ऊँचाई:<br>
+            वस्तु बहुत दूर है, अतः प्रतिबिम्ब अभिदृश्यक के फोकस पर बनेगा:<br>
+            <code>v₀ = f₀ = 1.4 m</code><br>
+            आवर्धन, <code>m₀ = <div class="fraction"><span class="numerator">v₀</span><span class="denominator">u</span></div> = <div class="fraction"><span class="numerator">1.4</span><span class="denominator">-3000</span></div> = -0.000467</code><br>
+            प्रतिबिम्ब की ऊँचाई, <code>h₀ = m₀ × h = -0.000467 × 100 = -0.0467 m = -4.67 cm</code><br>
+            अभिदृश्यक द्वारा निर्मित प्रतिबिम्ब की ऊँचाई 4.67 cm है (ऋणात्मक चिन्ह उल्टे प्रतिबिम्ब को दर्शाता है)।<br><br>
+            
+            (c) अंतिम प्रतिबिम्ब की ऊँचाई:<br>
+            नेत्रिका द्वारा आवर्धन, <code>mₑ = <div class="fraction"><span class="numerator">vₑ</span><span class="denominator">uₑ</span></div></code><br>
+            <code>uₑ = -fₑ = -5 cm</code> (क्योंकि अभिदृश्यक का प्रतिबिम्ब नेत्रिका के फोकस पर है)<br>
+            <code>vₑ = -25 cm</code> (आभासी प्रतिबिम्ब)<br>
+            <code>mₑ = <div class="fraction"><span class="numerator">-25</span><span class="denominator">-5</span></div> = 5</code><br>
+            कुल आवर्धन, <code>m = m₀ × mₑ = -0.000467 × 5 = -0.002335</code><br>
+            अंतिम प्रतिबिम्ब की ऊँचाई, <code>h' = m × h = -0.002335 × 100 = -0.2335 m = -23.35 cm</code><br>
+            अंतिम प्रतिबिम्ब में मीनार की ऊँचाई 23.35 cm है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.29</div>
+            <div>किसी कैसेग्रेन दूरदर्शी में चित्र 9.26 में दर्शाए अनुसार दो दर्पणों का प्रयोग किया गया है। इस दूरदर्शी में दोनों दर्पण एक-दूसरे से 20 mm दूर रखे गए हैं। यदि बड़े दर्पण की वक्रता त्रिज्या 220 mm हो तथा छोटे दर्पण की वक्रता त्रिज्या 140 mm हो तो अनंत पर रखे किसी बिम्ब का अंतिम प्रतिबिम्ब कहाँ बनेगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            दर्पणों के बीच दूरी, <code>d = 20 mm</code><br>
+            बड़े दर्पण (प्राथमिक दर्पण) की वक्रता त्रिज्या, <code>R₁ = 220 mm</code><br>
+            छोटे दर्पण (द्वितीयक दर्पण) की वक्रता त्रिज्या, <code>R₂ = 140 mm</code><br><br>
+            
+            बड़े दर्पण की फोकस दूरी, <code>f₁ = <div class="fraction"><span class="numerator">R₁</span><span class="denominator">2</span></div> = <div class="fraction"><span class="numerator">220</span><span class="denominator">2</span></div> = 110 mm</code><br>
+            छोटे दर्पण की फोकस दूरी, <code>f₂ = <div class="fraction"><span class="numerator">R₂</span><span class="denominator">2</span></div> = <div class="fraction"><span class="numerator">140</span><span class="denominator">2</span></div> = 70 mm</code><br><br>
+            
+            कैसेग्रेन दूरदर्शी में:<br>
+            अनंत पर स्थित वस्तु का प्रतिबिम्ब प्राथमिक दर्पण के फोकस पर बनना चाहिए, लेकिन द्वितीयक दर्पण इस प्रकाश पथ में होता है।<br><br>
+            
+            प्राथमिक दर्पण द्वारा बना प्रतिबिम्ब द्वितीयक दर्पण के लिए आभासी वस्तु का कार्य करता है।<br>
+            द्वितीयक दर्पण के लिए वस्तु दूरी, <code>u₂ = f₁ - d = 110 - 20 = 90 mm</code><br><br>
+            
+            द्वितीयक दर्पण के लिए दर्पण सूत्र:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">u₂</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">f₂</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> + <div class="fraction"><span class="numerator">1</span><span class="denominator">90</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">70</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">v₂</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">70</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">90</span></div> = <div class="fraction"><span class="numerator">9 - 7</span><span class="denominator">630</span></div> = <div class="fraction"><span class="numerator">2</span><span class="denominator">630</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">315</span></div></code><br>
+            <code>v₂ = 315 mm</code><br><br>
+            
+            अंतिम प्रतिबिम्ब प्राथमिक दर्पण के पीछे की ओर बनेगा:<br>
+            प्राथमिक दर्पण से दूरी = <code>v₂ - d = 315 - 20 = 295 mm</code><br>
+            अतः अनंत पर रखे बिम्ब का अंतिम प्रतिबिम्ब प्राथमिक दर्पण के पीछे 295 mm पर बनेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.30</div>
+            <div>किसी गैल्वेनोमीटर की कुण्डली से जुड़े समतल दर्पण पर लंबवत आपतित प्रकाश (चित्र 9.29) दर्पण से टकराकर अपना पथ पुनः अनुरेखित करता है। गैल्वेनोमीटर की कुण्डली में प्रवाहित कोई धारा दर्पण में 3.5° का विक्षेपण उत्पन्न करती है। दर्पण के सामने 1.5 m दूरी पर रखे परदे पर प्रकाश के परावर्ती चिह्न में कितना विस्थापन होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            दर्पण का विक्षेपण कोण, <code>θ = 3.5°</code><br>
+            परदे की दूरी, <code>D = 1.5 m</code><br><br>
+            
+            जब दर्पण θ कोण से घूमता है, तो परावर्तित किरण 2θ कोण से घूमती है।<br>
+            परावर्तित किरण का विस्थापन:<br>
+            <code>d = D × tan(2θ)</code><br>
+            <code>d = 1.5 × tan(7°)</code><br>
+            <code>d = 1.5 × 0.1228 = 0.1842 m = 18.42 cm</code><br>
+            अतः प्रकाश के परावर्ती चिह्न में 18.42 cm का विस्थापन होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">9.31</div>
+            <div>चित्र 9.30 में कोई समोत्तल लेंस (अपवर्तनांक 1.50) किसी समतल दर्पण के फलक पर किसी द्रव की परत के संपर्क में दर्शाया गया है। कोई छोटी सूई जिसकी नोक मुख्य अक्ष पर है, अक्ष के अनुदिश ऊपर-नीचे गति कराकर इस प्रकार समायोजित की जाती है कि सूई की नोक का उल्टा प्रतिबिम्ब सूई की स्थिति पर ही बने। इस स्थिति में सूई की लेंस से दूरी 45.0 cm है। द्रव को हटाकर प्रयोग को दोहराया जाता है। नई दूरी 30.0 cm मापी जाती है। द्रव का अपवर्तनांक क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            लेंस का अपवर्तनांक, <code>n_g = 1.50</code><br>
+            द्रव सहित सूई की दूरी, <code>u₁ = -45.0 cm</code><br>
+            द्रव रहित सूई की दूरी, <code>u₂ = -30.0 cm</code><br><br>
+            
+            जब सूई का प्रतिबिम्ब उसी स्थान पर बनता है, तो यह लेंस-द्रव संयोजन के लिए वस्तु और प्रतिबिम्ब की दूरी समान होने का संकेत है।<br><br>
+            
+            द्रव रहित स्थिति में:<br>
+            लेंस की फोकस दूरी, <code>f = 30.0 cm</code> (क्योंकि वस्तु और प्रतिबिम्ब समान स्थान पर हैं)<br><br>
+            
+            लेंस मेकर सूत्र से:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f</span></div> = (n_g - 1)(<div class="fraction"><span class="numerator">1</span><span class="denominator">R₁</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">R₂</span></div>)</code><br>
+            समोत्तल लेंस के लिए <code>R₁ = R</code>, <code>R₂ = -R</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> = (1.50 - 1)(<div class="fraction"><span class="numerator">1</span><span class="denominator">R</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-R</span></div>)</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> = 0.5 × <div class="fraction"><span class="numerator">2</span><span class="denominator">R</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">R</span></div></code><br>
+            <code>R = 30 cm</code><br><br>
+            
+            द्रव सहित स्थिति में:<br>
+            लेंस-द्रव संयोजन की प्रभावी फोकस दूरी, <code>f' = 45.0 cm</code><br>
+            लेंस-द्रव संयोजन के लिए:<br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">f'</span></div> = <div class="fraction"><span class="numerator">n_g - n_l</span><span class="denominator">n_l</span></div>(<div class="fraction"><span class="numerator">1</span><span class="denominator">R₁</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">R₂</span></div>)</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">45</span></div> = <div class="fraction"><span class="numerator">1.50 - n_l</span><span class="denominator">n_l</span></div>(<div class="fraction"><span class="numerator">1</span><span class="denominator">30</span></div> - <div class="fraction"><span class="numerator">1</span><span class="denominator">-30</span></div>)</code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">45</span></div> = <div class="fraction"><span class="numerator">1.50 - n_l</span><span class="denominator">n_l</span></div> × <div class="fraction"><span class="numerator">2</span><span class="denominator">30</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">45</span></div> = <div class="fraction"><span class="numerator">1.50 - n_l</span><span class="denominator">n_l</span></div> × <div class="fraction"><span class="numerator">1</span><span class="denominator">15</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">15</span><span class="denominator">45</span></div> = <div class="fraction"><span class="numerator">1.50 - n_l</span><span class="denominator">n_l</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">1</span><span class="denominator">3</span></div> = <div class="fraction"><span class="numerator">1.50 - n_l</span><span class="denominator">n_l</span></div></code><br>
+            <code>n_l = 3(1.50 - n_l)</code><br>
+            <code>n_l = 4.50 - 3n_l</code><br>
+            <code>4n_l = 4.50</code><br>
+            <code>n_l = 1.125</code><br>
+            अतः द्रव का अपवर्तनांक 1.125 है।
+        </div>
+    </div>
+
+</body>
+</html>
+    

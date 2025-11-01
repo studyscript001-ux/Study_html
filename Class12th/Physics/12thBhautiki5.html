@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 5: चुंबकत्व एवं द्रव्य</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 5: चुंबकत्व एवं द्रव्य</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.1</div>
+            <div>एक छोटा छड़ चुंबक जो एकसमान बाह्य चुंबकीय क्षेत्र 0.25 T के साथ 30° का कोण बनाता है, पर 4.5 × 10⁻² J का बल आघूर्ण लगता है। चुंबक के चुंबकीय आघूर्ण का परिमाण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            एकसमान चुंबकीय क्षेत्र, <code>B = 0.25 T</code><br>
+            बल आघूर्ण, <code>τ = 4.5 × 10⁻² J</code><br>
+            कोण, <code>θ = 30°</code><br><br>
+            छड़ चुंबक पर लगने वाले बल आघूर्ण का सूत्र:<br>
+            <code>τ = mB sinθ</code><br>
+            जहाँ m चुंबकीय आघूर्ण है।<br><br>
+            <code>m = τ / (B sinθ)</code><br>
+            <code>m = (4.5 × 10⁻²) / (0.25 × sin30°)</code><br>
+            <code>sin30° = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div></code><br>
+            <code>m = (4.5 × 10⁻²) / (0.25 × 0.5)</code><br>
+            <code>m = (4.5 × 10⁻²) / (0.125) = 0.36 J/T</code><br><br>
+            अतः, चुंबक के चुंबकीय आघूर्ण का परिमाण <b>0.36 J/T</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.2</div>
+            <div>चुंबकीय आघूर्ण m = 0.32 J T⁻¹ वाला एक छोटा छड़ चुंबक, 0.15 T के एकसमान बाह्य चुंबकीय क्षेत्र में रखा है। यदि यह छड़ क्षेत्र के तल में घूमने के लिए स्वतंत्र हो, तो क्षेत्र के किस विन्यास में यह (i) स्थायी संतुलन और (ii) अस्थायी संतुलन में होगा? प्रत्येक स्थिति में चुंबक की स्थितिज ऊर्जा का मान बताइए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, <code>m = 0.32 J T⁻¹</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.15 T</code><br><br>
+            चुंबक की स्थितिज ऊर्जा का सूत्र:<br>
+            <code>U = -mB cosθ</code><br><br>
+            <b>(i) स्थायी संतुलन:</b><br>
+            स्थायी संतुलन तब होता है जब θ = 0° होता है।<br>
+            <code>U = -mB cos0° = -mB × 1 = -mB</code><br>
+            <code>U = -(0.32) × (0.15) = -0.048 J</code><br><br>
+            <b>(ii) अस्थायी संतुलन:</b><br>
+            अस्थायी संतुलन तब होता है जब θ = 180° होता है।<br>
+            <code>U = -mB cos180° = -mB × (-1) = mB</code><br>
+            <code>U = (0.32) × (0.15) = 0.048 J</code><br><br>
+            अतः, स्थायी संतुलन में स्थितिज ऊर्जा <b>-0.048 J</b> और अस्थायी संतुलन में <b>0.048 J</b> होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.3</div>
+            <div>एक परिनालिका में पास-पास लपेटे गए 800 फेरे हैं, तथा इसका अनुप्रस्थ काट क्षेत्रफल 2.5 × 10⁻⁴ m² है और इसमें 3.0 A धारा प्रवाहित हो रही है। समझाइए कि किस अर्थ में परिनालिका एक छड़ चुंबक की तरह व्यवहार करती है? इसके साथ जुड़ा हुआ चुंबकीय आघूर्ण कितना है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फेरों की संख्या, <code>N = 800</code><br>
+            अनुप्रस्थ काट क्षेत्रफल, <code>A = 2.5 × 10⁻⁴ m²</code><br>
+            धारा, <code>I = 3.0 A</code><br><br>
+            परिनालिका एक छड़ चुंबक की तरह व्यवहार करती है क्योंकि:<br>
+            1. इसके चुंबकीय क्षेत्र रेखाएँ छड़ चुंबक के समान होती हैं।<br>
+            2. इसके दो ध्रुव (उत्तरी और दक्षिणी) होते हैं।<br>
+            3. इसका चुंबकीय आघूर्ण होता है जो धारा और कुंडली के क्षेत्रफल पर निर्भर करता है।<br><br>
+            परिनालिका का चुंबकीय आघूर्ण:<br>
+            <code>m = N I A</code><br>
+            <code>m = 800 × 3.0 × 2.5 × 10⁻⁴</code><br>
+            <code>m = 2400 × 2.5 × 10⁻⁴ = 6000 × 10⁻⁴ = 0.6 J/T</code><br><br>
+            अतः, परिनालिका का चुंबकीय आघूर्ण <b>0.6 J/T</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.4</div>
+            <div>यदि प्रश्न 5.3 में वर्णित परिनालिका ऊर्ध्वाधर दिशा के परितः घूमने के लिए स्वतंत्र हो और इस पर 0.25 T का एकसमान क्षैतिज चुंबकीय क्षेत्र लगाया जाए, तो इस परिनालिका पर लगने वाले बल आघूर्ण का परिमाण उस समय क्या है, जब इसकी अक्ष आरोपित क्षेत्र की दिशा से 30° का कोण बना रही है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, <code>m = 0.6 J/T</code> (पिछले प्रश्न से)<br>
+            चुंबकीय क्षेत्र, <code>B = 0.25 T</code><br>
+            कोण, <code>θ = 30°</code><br><br>
+            परिनालिका पर लगने वाला बल आघूर्ण:<br>
+            <code>τ = mB sinθ</code><br>
+            <code>τ = 0.6 × 0.25 × sin30°</code><br>
+            <code>sin30° = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div></code><br>
+            <code>τ = 0.6 × 0.25 × 0.5 = 0.075 Nm</code><br><br>
+            अतः, परिनालिका पर लगने वाले बल आघूर्ण का परिमाण <b>0.075 Nm</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.5</div>
+            <div>एक छड़ चुंबक जिसका चुंबकीय आघूर्ण 1.5 J T⁻¹ है, 0.22 T के एक एकसमान चुंबकीय क्षेत्र की दिशा के समांतर रखा है।<br>
+            (a) एक बाह्य बल आघूर्ण कितना कार्य करेगा यदि यह चुंबक को चुंबकीय क्षेत्र के (i) लंबवत्, (ii) विपरीत दिशा में संरेखित करने के लिए घुमा दे।<br>
+            (b) स्थिति (i) एवं (ii) में चुंबक पर कितना बल आघूर्ण होता है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, <code>m = 1.5 J T⁻¹</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.22 T</code><br><br>
+            <b>(a) किया गया कार्य:</b><br>
+            चुंबक को घुमाने में किया गया कार्य:<br>
+            <code>W = mB (cosθ₁ - cosθ₂)</code><br>
+            प्रारंभिक स्थिति: <code>θ₁ = 0°</code> (चुंबकीय क्षेत्र के समांतर)<br><br>
+            <b>(i) लंबवत् संरेखित करने के लिए:</b><br>
+            अंतिम स्थिति: <code>θ₂ = 90°</code><br>
+            <code>W = mB (cos0° - cos90°) = mB (1 - 0) = mB</code><br>
+            <code>W = 1.5 × 0.22 = 0.33 J</code><br><br>
+            <b>(ii) विपरीत दिशा में संरेखित करने के लिए:</b><br>
+            अंतिम स्थिति: <code>θ₂ = 180°</code><br>
+            <code>W = mB (cos0° - cos180°) = mB [1 - (-1)] = 2mB</code><br>
+            <code>W = 2 × 1.5 × 0.22 = 0.66 J</code><br><br>
+            <b>(b) बल आघूर्ण:</b><br>
+            बल आघूर्ण का सूत्र: <code>τ = mB sinθ</code><br><br>
+            <b>(i) लंबवत् स्थिति में:</b><br>
+            <code>θ = 90°</code>, <code>sin90° = 1</code><br>
+            <code>τ = mB = 1.5 × 0.22 = 0.33 Nm</code><br><br>
+            <b>(ii) विपरीत दिशा में:</b><br>
+            <code>θ = 180°</code>, <code>sin180° = 0</code><br>
+            <code>τ = mB × 0 = 0</code><br><br>
+            अतः, स्थिति (i) में बल आघूर्ण <b>0.33 Nm</b> और स्थिति (ii) में <b>0</b> होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.6</div>
+            <div>एक परिनालिका जिसमें पास-पास 2000 फेरे लपेटे गए हैं तथा जिसके अनुप्रस्थ काट का क्षेत्रफल 1.6 × 10⁻⁴ m² है और जिसमें 4.0 A की धारा प्रवाहित हो रही है, इस प्रकार लटकी हुई है कि यह एक क्षैतिज तल में घूम सकती है।<br>
+            (a) परिनालिका का चुंबकीय आघूर्ण क्या है?<br>
+            (b) परिनालिका पर लगने वाला बल एवं बल आघूर्ण क्या है, यदि इस पर, इसकी अक्ष से 30° का कोण बनाते हुए 7.5 × 10⁻² T का एकसमान क्षैतिज चुंबकीय क्षेत्र लगाया जाए?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फेरों की संख्या, <code>N = 2000</code><br>
+            अनुप्रस्थ काट क्षेत्रफल, <code>A = 1.6 × 10⁻⁴ m²</code><br>
+            धारा, <code>I = 4.0 A</code><br>
+            चुंबकीय क्षेत्र, <code>B = 7.5 × 10⁻² T</code><br>
+            कोण, <code>θ = 30°</code><br><br>
+            <b>(a) परिनालिका का चुंबकीय आघूर्ण:</b><br>
+            <code>m = N I A</code><br>
+            <code>m = 2000 × 4.0 × 1.6 × 10⁻⁴</code><br>
+            <code>m = 8000 × 1.6 × 10⁻⁴ = 12800 × 10⁻⁴ = 1.28 J/T</code><br><br>
+            <b>(b) बल एवं बल आघूर्ण:</b><br>
+            एकसमान चुंबकीय क्षेत्र में परिनालिका पर लगने वाला नेट बल शून्य होता है, क्योंकि यह एक द्विध्रुव की तरह व्यवहार करती है और एकसमान क्षेत्र में द्विध्रुव पर नेट बल शून्य होता है।<br><br>
+            बल आघूर्ण:<br>
+            <code>τ = mB sinθ</code><br>
+            <code>τ = 1.28 × 7.5 × 10⁻² × sin30°</code><br>
+            <code>sin30° = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div></code><br>
+            <code>τ = 1.28 × 7.5 × 10⁻² × 0.5 = 4.8 × 10⁻² Nm</code><br><br>
+            अतः, परिनालिका पर लगने वाला बल <b>शून्य</b> और बल आघूर्ण <b>4.8 × 10⁻² Nm</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">5.7</div>
+            <div>एक छोटे छड़ चुंबक का चुंबकीय आघूर्ण 0.48 J T⁻¹ है। चुंबक के केंद्र से 10 cm की दूरी पर स्थित किसी बिंदु पर इसके चुंबकीय क्षेत्र का परिमाण और दिशा बताइए, यदि यह बिंदु (i) चुंबक की अक्ष पर स्थित हो, (ii) चुंबक की निरक्षीय रेखा पर स्थित हो।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय आघूर्ण, <code>m = 0.48 J T⁻¹</code><br>
+            दूरी, <code>r = 10 cm = 0.1 m</code><br>
+            <code>μ₀/4π = 10⁻⁷ T m/A</code><br><br>
+            <b>(i) अक्षीय स्थिति में चुंबकीय क्षेत्र:</b><br>
+            <code>B<sub>axis</sub> = <div class="fraction"><span class="numerator">μ₀</span><span class="denominator">4π</span></div> <div class="fraction"><span class="numerator">2m</span><span class="denominator">r³</span></div></code><br>
+            <code>B<sub>axis</sub> = 10⁻⁷ × <div class="fraction"><span class="numerator">2 × 0.48</span><span class="denominator">(0.1)³</span></div></code><br>
+            <code>B<sub>axis</sub> = 10⁻⁷ × <div class="fraction"><span class="numerator">0.96</span><span class="denominator">0.001</span></div> = 10⁻⁷ × 960 = 9.6 × 10⁻⁵ T</code><br>
+            दिशा: चुंबकीय आघूर्ण की दिशा में (उत्तरी ध्रुव से दक्षिणी ध्रुव की ओर)<br><br>
+            <b>(ii) निरक्षीय स्थिति में चुंबकीय क्षेत्र:</b><br>
+            <code>B<sub>equator</sub> = <div class="fraction"><span class="numerator">μ₀</span><span class="denominator">4π</span></div> <div class="fraction"><span class="numerator">m</span><span class="denominator">r³</span></div></code><br>
+            <code>B<sub>equator</sub> = 10⁻⁷ × <div class="fraction"><span class="numerator">0.48</span><span class="denominator">(0.1)³</span></div></code><br>
+            <code>B<sub>equator</sub> = 10⁻⁷ × <div class="fraction"><span class="numerator">0.48</span><span class="denominator">0.001</span></div> = 10⁻⁷ × 480 = 4.8 × 10⁻⁵ T</code><br>
+            दिशा: चुंबकीय आघूर्ण की दिशा के विपरीत<br><br>
+            अतः, अक्षीय स्थिति में चुंबकीय क्षेत्र <b>9.6 × 10⁻⁵ T</b> और निरक्षीय स्थिति में <b>4.8 × 10⁻⁵ T</b> होगा।
+        </div>
+    </div>
+
+</body>
+</html>

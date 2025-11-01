@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 6: विद्युत चुम्बकीय प्रेरण</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 6: विद्युत चुम्बकीय प्रेरण</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.1</div>
+            <div>चित्र 6.15 (a) से (f) में दर्शाए गए प्रत्येक परिपथ के लिए धारा की दिशा ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            लेंज के नियम के अनुसार, प्रेरित धारा की दिशा हमेशा उस कारण का विरोध करती है जिससे वह उत्पन्न हुई है।<br><br>
+            (a) चुंबक का उत्तरी ध्रुव कुंडली की ओर बढ़ रहा है, इसलिए प्रेरित धारा इस प्रकार होगी कि कुंडली का वह सिरा उत्तरी ध्रुव बने। दाहिने हाथ के नियम से, धारा की दिशा दक्षिणावर्त होगी।<br>
+            (b) चुंबक का दक्षिणी ध्रुव कुंडली से दूर जा रहा है, इसलिए प्रेरित धारा इस प्रकार होगी कि कुंडली का वह सिरा दक्षिणी ध्रुव बने। धारा की दिशा वामावर्त होगी।<br>
+            (c) चुंबक का उत्तरी ध्रुव कुंडली से दूर जा रहा है, इसलिए प्रेरित धारा इस प्रकार होगी कि कुंडली का वह सिरा उत्तरी ध्रुव बने। धारा की दिशा वामावर्त होगी।<br>
+            (d) तार AB दाहिनी ओर खिसक रहा है, जिससे क्षेत्रफल बढ़ रहा है और फ्लक्स बढ़ रहा है। प्रेरित धारा इस फ्लक्स वृद्धि का विरोध करेगी, इसलिए धारा की दिशा B से A की ओर होगी (वामावर्त)।<br>
+            (e) परिपथ में धारा घट रही है, इसलिए फ्लक्स घट रहा है। प्रेरित धारा इस फ्लक्स कमी का विरोध करेगी, इसलिए धारा की दिशा दक्षिणावर्त होगी।<br>
+            (f) परिपथ में धारा बढ़ रही है, इसलिए फ्लक्स बढ़ रहा है। प्रेरित धारा इस फ्लक्स वृद्धि का विरोध करेगी, इसलिए धारा की दिशा वामावर्त होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.2</div>
+            <div>चित्र 6.16 में वर्णित स्थितियों के लिए लेंज के नियम का उपयोग करते हुए प्रेरित विद्युत धारा की दिशा ज्ञात कीजिए।<br>
+            (a) जब अनियमित आकार का तार वृत्ताकार लूप में परिवर्तित हो रहा हो<br>
+            (b) जब एक वृत्ताकार लूप सीधे तार में विरूपित किया जा रहा हो</div>
+        </div>
+        <div class="answer">
+            लेंज के नियम के अनुसार, प्रेरित धारा की दिशा हमेशा उस कारण का विरोध करती है जिससे वह उत्पन्न हुई है।<br><br>
+            (a) जब अनियमित आकार का तार वृत्ताकार लूप में बदलता है, तो लूप से गुजरने वाला चुंबकीय फ्लक्स बढ़ता है। प्रेरित धारा इस फ्लक्स वृद्धि का विरोध करेगी, इसलिए धारा की दिशा वामावर्त होगी।<br>
+            (b) जब वृत्ताकार लूप सीधे तार में विरूपित होता है, तो लूप से गुजरने वाला चुंबकीय फ्लक्स घटता है। प्रेरित धारा इस फ्लक्स कमी का विरोध करेगी, इसलिए धारा की दिशा दक्षिणावर्त होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.3</div>
+            <div>एक लंबी परिनालिका के एकांक लंबाई में 15 फेरे हैं। उसके अंदर 2.0 cm² क्षेत्रफल का एक छोटा-सा लूप परिनालिका की अक्ष के लंबवत रखा गया है। यदि परिनालिका में बहने वाली धारा का मान 2.0 A से 4.0 A कर दिया जाता है, तो 0.1 s में धारा परिवर्तन के समय प्रेरित विद्युत वाहक बल कितना होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रति एकांक लंबाई फेरों की संख्या, <code>n = 15 turns/cm = 1500 turns/m</code><br>
+            लूप का क्षेत्रफल, <code>A = 2.0 cm² = 2.0 × 10⁻⁴ m²</code><br>
+            धारा परिवर्तन, <code>ΔI = 4.0 - 2.0 = 2.0 A</code><br>
+            समय, <code>Δt = 0.1 s</code><br><br>
+            परिनालिका के अंदर चुंबकीय क्षेत्र: <code>B = μ₀ n I</code><br>
+            चुंबकीय फ्लक्स: <code>Φ = B A = μ₀ n I A</code><br>
+            फैराडे के नियम से प्रेरित विद्युत वाहक बल:<br>
+            <code>ε = -<div class="fraction"><span class="numerator">dΦ</span><span class="denominator">dt</span></div> = -μ₀ n A <div class="fraction"><span class="numerator">dI</span><span class="denominator">dt</span></div></code><br>
+            <code>ε = - (4π × 10⁻⁷) × 1500 × (2.0 × 10⁻⁴) × <div class="fraction"><span class="numerator">2.0</span><span class="denominator">0.1</span></div></code><br>
+            <code>ε = - (4π × 10⁻⁷) × 1500 × (2.0 × 10⁻⁴) × 20</code><br>
+            <code>ε = - (4π × 10⁻⁷) × 6000 × 10⁻⁴</code><br>
+            <code>ε = - 7.54 × 10⁻⁶ V</code><br>
+            प्रेरित विद्युत वाहक बल का परिमाण <b>7.54 × 10⁻⁶ V</b> है। ऋणात्मक चिन्ह दिशा को दर्शाता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.4</div>
+            <div>एक आयताकार लूप जिसकी भुजाएँ 8 cm और 2 cm हैं, एक स्थान पर थोड़ा कटा हुआ है। यह लूप अपने तल के लंबवत 0.3 T के एकसमान चुंबकीय क्षेत्र से बाहर की ओर निकल रहा है। यदि लूप के बाहर निकलने का वेग 1 cm s⁻¹ है, तो कटे भाग के सिरों पर उत्पन्न विद्युत वाहक बल कितना होगा, जब लूप की गति लंबवत हो (a) लूप की लंबी भुजा के (b) लूप की छोटी भुजा के। प्रत्येक स्थिति में उत्पन्न प्रेरित वोल्टता कितने समय तक टिकेगी?</div>
+        </div>
+        <div class="answer">
+            गतिक विद्युत वाहक बल: <code>ε = B l v</code><br><br>
+            (a) जब गति लंबी भुजा के लंबवत है:<br>
+            <code>l = 8 cm = 0.08 m</code>, <code>v = 1 cm/s = 0.01 m/s</code><br>
+            <code>ε = 0.3 × 0.08 × 0.01 = 2.4 × 10⁻⁴ V</code><br>
+            प्रेरित वोल्टता तब तक टिकेगी जब तक लूप पूरी तरह से चुंबकीय क्षेत्र से बाहर नहीं निकल जाता।<br>
+            लूप की छोटी भुजा की लंबाई = 2 cm = 0.02 m<br>
+            समय = <code><div class="fraction"><span class="numerator">दूरी</span><span class="denominator">वेग</span></div> = <div class="fraction"><span class="numerator">0.02</span><span class="denominator">0.01</span></div> = 2 s</code><br><br>
+            (b) जब गति छोटी भुजा के लंबवत है:<br>
+            <code>l = 2 cm = 0.02 m</code>, <code>v = 1 cm/s = 0.01 m/s</code><br>
+            <code>ε = 0.3 × 0.02 × 0.01 = 6.0 × 10⁻⁵ V</code><br>
+            लूप की लंबी भुजा की लंबाई = 8 cm = 0.08 m<br>
+            समय = <code><div class="fraction"><span class="numerator">0.08</span><span class="denominator">0.01</span></div> = 8 s</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.5</div>
+            <div>1.0 m लंबी धातु की छड़ उसके एक सिरे से गुजरने वाली लंबवत अक्ष के परितः 400 rad s⁻¹ की कोणीय आवृत्ति से घूर्णन कर रही है। छड़ का दूसरा सिरा एक धात्विक वलय से संपर्कित है। अक्ष के अनुदिश सभी जगह 0.5 T का एकसमान चुंबकीय क्षेत्र उपस्थित है। वलय एवं अक्ष के बीच स्थापित विद्युत वाहक बल की गणना कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            छड़ की लंबाई, <code>l = 1.0 m</code><br>
+            कोणीय वेग, <code>ω = 400 rad/s</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.5 T</code><br><br>
+            छड़ में प्रेरित विद्युत वाहक बल:<br>
+            <code>ε = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> B ω l²</code><br>
+            <code>ε = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 0.5 × 400 × (1.0)²</code><br>
+            <code>ε = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> × 0.5 × 400 × 1</code><br>
+            <code>ε = 100 V</code><br>
+            अतः वलय एवं अक्ष के बीच स्थापित विद्युत वाहक बल <b>100 V</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.6</div>
+            <div>पूर्व से पश्चिम दिशा में फैले 10 m लंबे क्षैतिज सीधे तार को 0.30 × 10⁻⁴ Wb m⁻² तीव्रता वाले पृथ्वी के चुंबकीय क्षेत्र के क्षैतिज घटक से लंबवत 5.0 m s⁻¹ की चाल से गिराया जाता है।<br>
+            (a) तार में प्रेरित विद्युत वाहक बल का तात्क्षणिक मान क्या होगा?<br>
+            (b) विद्युत वाहक बल की दिशा क्या है?<br>
+            (c) तार का कौन-सा सिरा उच्च विद्युत विभव पर है?</div>
+        </div>
+        <div class="answer">
+            (a) प्रेरित विद्युत वाहक बल: <code>ε = B l v</code><br>
+            <code>B = 0.30 × 10⁻⁴ Wb m⁻² = 0.30 × 10⁻⁴ T</code><br>
+            <code>l = 10 m</code>, <code>v = 5.0 m/s</code><br>
+            <code>ε = 0.30 × 10⁻⁴ × 10 × 5.0 = 1.5 × 10⁻³ V</code><br><br>
+            (b) फ्लेमिंग के दाएँ हाथ के नियम के अनुसार, यदि अँगूठा गति की दिशा (नीचे की ओर) में, तर्जनी चुंबकीय क्षेत्र (पूर्व से पश्चिम) में, तो मध्यमा प्रेरित विद्युत वाहक बल (उत्तर से दक्षिण) की दिशा दर्शाती है।<br><br>
+            (c) चूँकि प्रेरित विद्युत वाहक बल उत्तर से दक्षिण की ओर है, इसलिए तार का उत्तरी सिरा उच्च विद्युत विभव पर होगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.7</div>
+            <div>किसी परिपथ में 0.1 s में धारा 5.0 A से 0.0 A तक गिरती है। यदि औसत प्रेरित विद्युत वाहक बल 200 V है, तो परिपथ में स्वप्रेरकत्व का आकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारा परिवर्तन, <code>ΔI = 0 - 5.0 = -5.0 A</code><br>
+            समय, <code>Δt = 0.1 s</code><br>
+            औसत प्रेरित विद्युत वाहक बल, <code>ε = 200 V</code><br><br>
+            स्वप्रेरकत्व के लिए सूत्र: <code>ε = -L <div class="fraction"><span class="numerator">dI</span><span class="denominator">dt</span></div></code><br>
+            <code>200 = -L × <div class="fraction"><span class="numerator">-5.0</span><span class="denominator">0.1</span></div></code><br>
+            <code>200 = L × 50</code><br>
+            <code>L = <div class="fraction"><span class="numerator">200</span><span class="denominator">50</span></div> = 4 H</code><br>
+            अतः परिपथ का स्वप्रेरकत्व <b>4 H</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">6.8</div>
+            <div>पास-पास रखे कुंडलियों के एक युग्म का अन्योन्य प्रेरकत्व 1.5 H है। यदि एक कुंडली में 0.5 s में धारा 0 से 20 A परिवर्तित हो, तो दूसरी कुंडली में फ्लक्स बंधता में कितना परिवर्तन होगा?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            अन्योन्य प्रेरकत्व, <code>M = 1.5 H</code><br>
+            धारा परिवर्तन, <code>ΔI = 20 - 0 = 20 A</code><br>
+            समय, <code>Δt = 0.5 s</code><br><br>
+            अन्योन्य प्रेरण के लिए सूत्र: <code>ε₂ = -M <div class="fraction"><span class="numerator">dI₁</span><span class="denominator">dt</span></div></code><br>
+            फ्लक्स बंधता में परिवर्तन: <code>ΔΦ₂ = M ΔI₁</code><br>
+            <code>ΔΦ₂ = 1.5 × 20 = 30 Wb</code><br>
+            अतः दूसरी कुंडली में फ्लक्स बंधता में परिवर्तन <b>30 Wb</b> है।
+        </div>
+    </div>
+
+</body>
+</html>

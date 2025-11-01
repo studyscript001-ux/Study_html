@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 7: प्रत्यावर्ती धारा</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 7: प्रत्यावर्ती धारा</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.1</div>
+            <div>एक 100 Ω का प्रतिरोध 200 V, 50 Hz आपूर्ति से संयोजित है। (a) परिपथ में धारा का rms मान कितना है? (b) एक पूरे चक्र में कितनी नेट शक्ति व्यय होती है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रतिरोध, <code>R = 100 Ω</code><br>
+            rms वोल्टता, <code>V<sub>rms</sub> = 200 V</code><br>
+            आवृत्ति, <code>ν = 50 Hz</code><br><br>
+            
+            (a) परिपथ में धारा का rms मान:<br>
+            <code>I<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>rms</sub></span><span class="denominator">R</span></div> = <div class="fraction"><span class="numerator">200</span><span class="denominator">100</span></div> = 2 A</code><br><br>
+            
+            (b) एक पूरे चक्र में नेट शक्ति व्यय:<br>
+            <code>P = I<sub>rms</sub><sup>2</sup> R = (2)<sup>2</sup> × 100 = 400 W</code><br>
+            अतः एक पूरे चक्र में नेट शक्ति व्यय <b>400 W</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.2</div>
+            <div>(a) एक ac आपूर्ति का शिखर मान 300 V है। rms वोल्टता कितनी है? (b) एक ac परिपथ में धारा का rms मान 10 A है। शिखर धारा कितनी है?</div>
+        </div>
+        <div class="answer">
+            (a) शिखर वोल्टता, <code>V<sub>m</sub> = 300 V</code><br>
+            rms वोल्टता:<br>
+            <code>V<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>m</sub></span><span class="denominator">√2</span></div> = <div class="fraction"><span class="numerator">300</span><span class="denominator">1.414</span></div> ≈ 212 V</code><br><br>
+            
+            (b) rms धारा, <code>I<sub>rms</sub> = 10 A</code><br>
+            शिखर धारा:<br>
+            <code>I<sub>m</sub> = √2 I<sub>rms</sub> = 1.414 × 10 = 14.14 A</code><br>
+            अतः शिखर धारा <b>14.14 A</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.3</div>
+            <div>एक 44 mH का प्रेरित्र 220 V, 50 Hz आपूर्ति से जोड़ा गया है। परिपथ में धारा के rms मान को ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रेरकत्व, <code>L = 44 mH = 44 × 10<sup>-3</sup> H</code><br>
+            rms वोल्टता, <code>V<sub>rms</sub> = 220 V</code><br>
+            आवृत्ति, <code>ν = 50 Hz</code><br><br>
+            
+            प्रेरणिक प्रतिघात:<br>
+            <code>X<sub>L</sub> = 2πνL = 2 × 3.14 × 50 × 44 × 10<sup>-3</sup></code><br>
+            <code>X<sub>L</sub> = 13.82 Ω</code><br><br>
+            
+            परिपथ में धारा का rms मान:<br>
+            <code>I<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>rms</sub></span><span class="denominator">X<sub>L</sub></span></div> = <div class="fraction"><span class="numerator">220</span><span class="denominator">13.82</span></div> ≈ 15.92 A</code><br>
+            अतः परिपथ में धारा का rms मान <b>15.92 A</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.4</div>
+            <div>एक 60 μF का संधारित्र 110 V, 60 Hz ac आपूर्ति से जोड़ा गया है। परिपथ में धारा के rms मान को ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारिता, <code>C = 60 μF = 60 × 10<sup>-6</sup> F</code><br>
+            rms वोल्टता, <code>V<sub>rms</sub> = 110 V</code><br>
+            आवृत्ति, <code>ν = 60 Hz</code><br><br>
+            
+            धारितीय प्रतिघात:<br>
+            <code>X<sub>C</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">2πνC</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">2 × 3.14 × 60 × 60 × 10<sup>-6</sup></span></div></code><br>
+            <code>X<sub>C</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">0.022608</span></div> ≈ 44.23 Ω</code><br><br>
+            
+            परिपथ में धारा का rms मान:<br>
+            <code>I<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>rms</sub></span><span class="denominator">X<sub>C</sub></span></div> = <div class="fraction"><span class="numerator">110</span><span class="denominator">44.23</span></div> ≈ 2.49 A</code><br>
+            अतः परिपथ में धारा का rms मान <b>2.49 A</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.5</div>
+            <div>अभ्यास 7.3 और 7.4 में, एक पूरे चक्र की अवधि में प्रत्येक परिपथ द्वारा अवशोषित नेट शक्ति की गणना कीजिए। अपने उत्तर की व्याख्या कीजिए।</div>
+        </div>
+        <div class="answer">
+            <b>अभ्यास 7.3 के लिए:</b><br>
+            एक शुद्ध प्रेरक परिपथ में, धारा और वोल्टता के बीच कलान्तर π/2 होता है।<br>
+            औसत शक्ति: <code>P = V<sub>rms</sub> I<sub>rms</sub> cos φ</code><br>
+            जहाँ <code>φ = π/2</code> और <code>cos(π/2) = 0</code><br>
+            अतः <code>P = V<sub>rms</sub> I<sub>rms</sub> × 0 = 0</code><br>
+            एक पूरे चक्र में अवशोषित नेट शक्ति <b>शून्य</b> है।<br><br>
+            
+            <b>अभ्यास 7.4 के लिए:</b><br>
+            एक शुद्ध संधारित्र परिपथ में, धारा और वोल्टता के बीच कलान्तर π/2 होता है, लेकिन संधारित्र में धारा वोल्टता से π/2 आगे होती है।<br>
+            औसत शक्ति: <code>P = V<sub>rms</sub> I<sub>rms</sub> cos φ</code><br>
+            जहाँ <code>φ = -π/2</code> और <code>cos(-π/2) = 0</code><br>
+            अतः <code>P = V<sub>rms</sub> I<sub>rms</sub> × 0 = 0</code><br>
+            एक पूरे चक्र में अवशोषित नेट शक्ति <b>शून्य</b> है।<br><br>
+            
+            दोनों ही मामलों में, शक्ति का औसत मान शून्य है क्योंकि प्रेरक और संधारित्र ऊर्जा को संग्रहीत और मुक्त करते हैं, लेकिन शुद्ध ऊर्जा खपत शून्य होती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.6</div>
+            <div>एक आवेशित 30 μF के संधारित्र को 27 mH के प्रेरित्र से जोड़ा गया है। परिपथ के मुक्त दोलनों की कोणीय आवृत्ति क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारिता, <code>C = 30 μF = 30 × 10<sup>-6</sup> F</code><br>
+            प्रेरकत्व, <code>L = 27 mH = 27 × 10<sup>-3</sup> H</code><br><br>
+            
+            LC परिपथ की कोणीय आवृत्ति:<br>
+            <code>ω = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(LC)</span></div></code><br>
+            <code>ω = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(27 × 10<sup>-3</sup> × 30 × 10<sup>-6</sup>)</span></div></code><br>
+            <code>ω = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(810 × 10<sup>-9</sup>)</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">28.46 × 10<sup>-5</sup></span></div> ≈ 3513.6 rad/s</code><br>
+            अतः परिपथ के मुक्त दोलनों की कोणीय आवृत्ति <b>3513.6 rad/s</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.7</div>
+            <div>किसी श्रेणीबद्ध LCR परिपथ को, जिसमें R = 20 Ω, L = 1.5 H तथा C = 35 μF है, एक परिवर्ती आवृत्ति की 200 V ac आपूर्ति से जोड़ा गया है। जब आपूर्ति की आवृत्ति परिपथ की मूल आवृत्ति के बराबर होती है, तो एक पूरे चक्र में परिपथ को स्थानांतरित औसत शक्ति कितनी होगी?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रतिरोध, <code>R = 20 Ω</code><br>
+            प्रेरकत्व, <code>L = 1.5 H</code><br>
+            धारिता, <code>C = 35 μF = 35 × 10<sup>-6</sup> F</code><br>
+            rms वोल्टता, <code>V<sub>rms</sub> = 200 V</code><br><br>
+            
+            अनुनाद की स्थिति में:<br>
+            प्रतिबाधा, <code>Z = R = 20 Ω</code> (क्योंकि X<sub>L</sub> = X<sub>C</sub>)<br>
+            rms धारा:<br>
+            <code>I<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>rms</sub></span><span class="denominator">Z</span></div> = <div class="fraction"><span class="numerator">200</span><span class="denominator">20</span></div> = 10 A</code><br><br>
+            
+            एक पूरे चक्र में स्थानांतरित औसत शक्ति:<br>
+            <code>P = I<sub>rms</sub><sup>2</sup> R = (10)<sup>2</sup> × 20 = 100 × 20 = 2000 W</code><br>
+            अतः एक पूरे चक्र में परिपथ को स्थानांतरित औसत शक्ति <b>2000 W</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">7.8</div>
+            <div>चित्र 7.17 में एक श्रेणीबद्ध LCR परिपथ दिखाया गया है जिसे परिवर्ती आवृत्ति के 230 V के स्रोत से जोड़ा गया है। L = 5.0 H, C = 80 μF, R = 40 Ω<br>
+            (a) स्रोत की वह आवृत्ति निकालिए जो परिपथ में अनुनाद उत्पन्न करे।<br>
+            (b) अनुनादी आवृत्ति पर परिपथ की प्रतिबाधा और धारा का आयाम निकालिए।<br>
+            (c) परिपथ के तीनों अवयवों के सिरों पर विभवपात के rms मानों को निकालिए। दिखाइए कि अनुनादी आवृत्ति पर LC संयोजन के सिरों पर विभवपात शून्य है।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्रेरकत्व, <code>L = 5.0 H</code><br>
+            धारिता, <code>C = 80 μF = 80 × 10<sup>-6</sup> F</code><br>
+            प्रतिरोध, <code>R = 40 Ω</code><br>
+            rms वोल्टता, <code>V<sub>rms</sub> = 230 V</code><br><br>
+            
+            (a) अनुनादी आवृत्ति:<br>
+            <code>ω<sub>r</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(LC)</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(5.0 × 80 × 10<sup>-6</sup>)</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">√(400 × 10<sup>-6</sup>)</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">0.02</span></div> = 50 rad/s</code><br>
+            <code>ν<sub>r</sub> = <div class="fraction"><span class="numerator">ω<sub>r</sub></span><span class="denominator">2π</span></div> = <div class="fraction"><span class="numerator">50</span><span class="denominator">2 × 3.14</span></div> ≈ 7.96 Hz</code><br><br>
+            
+            (b) अनुनादी आवृत्ति पर:<br>
+            प्रतिबाधा, <code>Z = R = 40 Ω</code><br>
+            rms धारा:<br>
+            <code>I<sub>rms</sub> = <div class="fraction"><span class="numerator">V<sub>rms</sub></span><span class="denominator">Z</span></div> = <div class="fraction"><span class="numerator">230</span><span class="denominator">40</span></div> = 5.75 A</code><br>
+            धारा का आयाम:<br>
+            <code>I<sub>m</sub> = √2 I<sub>rms</sub> = 1.414 × 5.75 ≈ 8.13 A</code><br><br>
+            
+            (c) अनुनादी आवृत्ति पर:<br>
+            प्रेरणिक प्रतिघात:<br>
+            <code>X<sub>L</sub> = ω<sub>r</sub>L = 50 × 5.0 = 250 Ω</code><br>
+            धारितीय प्रतिघात:<br>
+            <code>X<sub>C</sub> = <div class="fraction"><span class="numerator">1</span><span class="denominator">ω<sub>r</sub>C</span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">50 × 80 × 10<sup>-6</sup></span></div> = <div class="fraction"><span class="numerator">1</span><span class="denominator">0.004</span></div> = 250 Ω</code><br><br>
+            
+            प्रेरक के सिरों पर rms विभवपात:<br>
+            <code>V<sub>L</sub> = I<sub>rms</sub> X<sub>L</sub> = 5.75 × 250 = 1437.5 V</code><br>
+            संधारित्र के सिरों पर rms विभवपात:<br>
+            <code>V<sub>C</sub> = I<sub>rms</sub> X<sub>C</sub> = 5.75 × 250 = 1437.5 V</code><br>
+            प्रतिरोधक के सिरों पर rms विभवपात:<br>
+            <code>V<sub>R</sub> = I<sub>rms</sub> R = 5.75 × 40 = 230 V</code><br><br>
+            
+            LC संयोजन के सिरों पर विभवपात:<br>
+            <code>V<sub>LC</sub> = V<sub>L</sub> - V<sub>C</sub> = 1437.5 - 1437.5 = 0 V</code><br>
+            अतः अनुनादी आवृत्ति पर LC संयोजन के सिरों पर विभवपात शून्य है।
+        </div>
+    </div>
+
+</body>
+</html>

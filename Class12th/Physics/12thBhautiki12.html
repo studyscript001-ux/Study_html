@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 12: परमाणु</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "studyscript.netlify.app";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 12: परमाणु</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.1</div>
+            <div>प्रत्येक कथन के अंत में दिए गए संकेतों में से सही विकल्प चुनकर लिखिए :-<br>
+                (a) वीकेलु मॉडल में परमाणु का आकार, रदरफोर्ड मॉडल में परमाणवीय आकार से .......... होता है।<br>
+                (b) .......... में निम्नतम अवस्था में इलेक्ट्रॉन स्थायी संतुलन में होते हैं जबकि .......... में इलेक्ट्रॉन, सदैव नेट बल अनुभव करते हैं।<br>
+                (c) .......... पर आधारित एक शास्त्रीय परमाणु का पतन निश्चित है।<br>
+                (d) किसी परमाणु के द्रव्यमान का .......... में लगभग सतत वितरण होता है लेकिन .......... में अत्यधिक असमान द्रव्यमान वितरण होता है।<br>
+                (e) .......... में परमाणु के धनावेशित भाग का द्रव्यमान अधिकतम होता है।
+            </div>
+        </div>
+        <div class="answer">
+            (a) <b>तुलनात्मक रूप से काफी अधिक</b><br>
+            (b) <b>थॉमसन मॉडल, रदरफोर्ड मॉडल</b><br>
+            (c) <b>रदरफोर्ड मॉडल</b><br>
+            (d) <b>थॉमसन मॉडल, रदरफोर्ड मॉडल</b><br>
+            (e) <b>रदरफोर्ड मॉडल</b>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.2</div>
+            <div>मान लीजिए कि सोने की पन्नी के स्थान पर 14 K से नीचे के ताप पर ठोस हाइड्रोजन की पतली शीट का उपयोग करके आप अल्फा-कण प्रकीर्णन प्रयोग को दोहराने का अवसर प्राप्त करते हैं। आप किस परिणाम की अपेक्षा करते हैं?</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन परमाणु का नाभिक (प्रोटॉन) सोने के नाभिक की तुलना में बहुत हल्का होता है। जब अल्फा-कण हाइड्रोजन नाभिक के पास से गुजरेंगे, तो वे बहुत कम विक्षेपित होंगे क्योंकि हल्के नाभिक अल्फा-कणों को प्रभावी रूप से विक्षेपित नहीं कर पाएंगे। अधिकांश अल्फा-कण बिना विक्षेपित हुए सीधे निकल जाएंगे। इसके अलावा, हाइड्रोजन में केवल एक इलेक्ट्रॉन होता है, इसलिए इलेक्ट्रॉन-अल्फा कण संघट्टन भी नगण्य होंगे। इस प्रकार, हमें बहुत कम विक्षेपण की अपेक्षा करनी चाहिए।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.3</div>
+            <div>2.3 eV ऊर्जा अंतर किसी परमाणु में दो ऊर्जा स्तरों को पृथक कर देता है। उत्सर्जित विकिरण की आवृत्ति क्या है यदि परमाणु में इलेक्ट्रॉन उच्च स्तर से निम्न स्तर में संक्रमण करता है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            ऊर्जा अंतर, <code>ΔE = 2.3 eV = 2.3 × 1.6 × 10⁻¹⁹ J = 3.68 × 10⁻¹⁹ J</code><br>
+            प्लांक नियतांक, <code>h = 6.63 × 10⁻³⁴ J s</code><br><br>
+            बोहर के तीसरे अभिगृहीत के अनुसार:<br>
+            <code>hν = ΔE</code><br>
+            <code>ν = <div class="fraction"><span class="numerator">ΔE</span><span class="denominator">h</span></div></code><br>
+            <code>ν = <div class="fraction"><span class="numerator">3.68 × 10⁻¹⁹</span><span class="denominator">6.63 × 10⁻³⁴</span></div></code><br>
+            <code>ν = 5.55 × 10¹⁴ Hz</code><br>
+            अतः उत्सर्जित विकिरण की आवृत्ति <b>5.55 × 10¹⁴ Hz</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.4</div>
+            <div>हाइड्रोजन परमाणु की निम्नतम अवस्था में ऊर्जा -13.6 eV है। इस अवस्था में इलेक्ट्रॉन की गतिज और स्थितिज ऊर्जाएँ क्या होंगी?</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन परमाणु की निम्नतम अवस्था (n=1) में कुल ऊर्जा:<br>
+            <code>E₁ = -13.6 eV</code><br><br>
+            बोहर मॉडल के अनुसार, कुल ऊर्जा, गतिज ऊर्जा और स्थितिज ऊर्जा के बीच संबंध:<br>
+            <code>E = K + U</code><br>
+            और<br>
+            <code>K = -E</code>, <code>U = 2E</code><br><br>
+            इसलिए:<br>
+            गतिज ऊर्जा, <code>K = -E₁ = -(-13.6) = 13.6 eV</code><br>
+            स्थितिज ऊर्जा, <code>U = 2E₁ = 2 × (-13.6) = -27.2 eV</code><br><br>
+            अतः इलेक्ट्रॉन की गतिज ऊर्जा <b>13.6 eV</b> और स्थितिज ऊर्जा <b>-27.2 eV</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.5</div>
+            <div>निम्नतम अवस्था में विद्यमान एक हाइड्रोजन परमाणु एक फोटॉन को अवशोषित करता है जो इसे n = 4 स्तर तक उत्तेजित कर देता है। फोटॉन की तरंगदैर्ध्य तथा आवृत्ति ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन परमाणु के लिए ऊर्जा स्तर:<br>
+            <code>E<sub>n</sub> = <div class="fraction"><span class="numerator">-13.6</span><span class="denominator">n²</span></div> eV</code><br><br>
+            n=1 के लिए: <code>E₁ = -13.6 eV</code><br>
+            n=4 के लिए: <code>E₄ = <div class="fraction"><span class="numerator">-13.6</span><span class="denominator">16</span></div> = -0.85 eV</code><br><br>
+            अवशोषित फोटॉन की ऊर्जा:<br>
+            <code>ΔE = E₄ - E₁ = -0.85 - (-13.6) = 12.75 eV</code><br>
+            <code>ΔE = 12.75 × 1.6 × 10⁻¹⁹ J = 2.04 × 10⁻¹⁸ J</code><br><br>
+            फोटॉन की आवृत्ति:<br>
+            <code>ν = <div class="fraction"><span class="numerator">ΔE</span><span class="denominator">h</span></div> = <div class="fraction"><span class="numerator">2.04 × 10⁻¹⁸</span><span class="denominator">6.63 × 10⁻³⁴</span></div> = 3.077 × 10¹⁵ Hz</code><br><br>
+            फोटॉन की तरंगदैर्ध्य:<br>
+            <code>λ = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">3.077 × 10¹⁵</span></div> = 9.75 × 10⁻⁸ m = 97.5 nm</code><br><br>
+            अतः फोटॉन की आवृत्ति <b>3.077 × 10¹⁵ Hz</b> और तरंगदैर्ध्य <b>97.5 nm</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.6</div>
+            <div>(a) बोर मॉडल का उपयोग करके किसी हाइड्रोजन परमाणु में n = 1, 2, तथा 3 स्तरों पर इलेक्ट्रॉन की चाल परिकलित कीजिए।<br>
+            (b) इनमें से प्रत्येक स्तर के लिए कक्षीय अवधि परिकलित कीजिए।</div>
+        </div>
+        <div class="answer">
+            <b>(a) इलेक्ट्रॉन की चाल:</b><br>
+            बोर मॉडल के अनुसार, nवीं कक्षा में इलेक्ट्रॉन की चाल:<br>
+            <code>v<sub>n</sub> = <div class="fraction"><span class="numerator">e²</span><span class="denominator">2ε₀hn</span></div></code><br>
+            जहाँ <code>e = 1.6 × 10⁻¹⁹ C</code>, <code>ε₀ = 8.85 × 10⁻¹² C²/Nm²</code>, <code>h = 6.63 × 10⁻³⁴ Js</code><br><br>
+            n=1 के लिए:<br>
+            <code>v₁ = <div class="fraction"><span class="numerator">(1.6 × 10⁻¹⁹)²</span><span class="denominator">2 × 8.85 × 10⁻¹² × 6.63 × 10⁻³⁴ × 1</span></div> = 2.18 × 10⁶ m/s</code><br><br>
+            n=2 के लिए:<br>
+            <code>v₂ = <div class="fraction"><span class="numerator">v₁</span><span class="denominator">2</span></div> = 1.09 × 10⁶ m/s</code><br><br>
+            n=3 के लिए:<br>
+            <code>v₃ = <div class="fraction"><span class="numerator">v₁</span><span class="denominator">3</span></div> = 7.27 × 10⁵ m/s</code><br><br>
+            
+            <b>(b) कक्षीय अवधि:</b><br>
+            nवीं कक्षा की त्रिज्या: <code>r<sub>n</sub> = <div class="fraction"><span class="numerator">ε₀h²n²</span><span class="denominator">πme²</span></div></code><br>
+            कक्षीय अवधि: <code>T<sub>n</sub> = <div class="fraction"><span class="numerator">2πr<sub>n</sub></span><span class="denominator">v<sub>n</sub></span></div></code><br><br>
+            n=1 के लिए:<br>
+            <code>r₁ = 5.3 × 10⁻¹¹ m</code><br>
+            <code>T₁ = <div class="fraction"><span class="numerator">2 × 3.14 × 5.3 × 10⁻¹¹</span><span class="denominator">2.18 × 10⁶</span></div> = 1.52 × 10⁻¹⁶ s</code><br><br>
+            n=2 के लिए:<br>
+            <code>r₂ = 4 × r₁ = 2.12 × 10⁻¹⁰ m</code><br>
+            <code>T₂ = <div class="fraction"><span class="numerator">2 × 3.14 × 2.12 × 10⁻¹⁰</span><span class="denominator">1.09 × 10⁶</span></div> = 1.22 × 10⁻¹⁵ s</code><br><br>
+            n=3 के लिए:<br>
+            <code>r₃ = 9 × r₁ = 4.77 × 10⁻¹⁰ m</code><br>
+            <code>T₃ = <div class="fraction"><span class="numerator">2 × 3.14 × 4.77 × 10⁻¹⁰</span><span class="denominator">7.27 × 10⁵</span></div> = 4.12 × 10⁻¹⁵ s</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.7</div>
+            <div>हाइड्रोजन परमाणु में अंतरतम इलेक्ट्रॉन-कक्षा की त्रिज्या 5.3×10⁻¹¹ m है। कक्षा n=2 और n=3 की त्रिज्याएँ क्या हैं?</div>
+        </div>
+        <div class="answer">
+            बोर मॉडल के अनुसार, हाइड्रोजन परमाणु में nवीं कक्षा की त्रिज्या:<br>
+            <code>r<sub>n</sub> = n² r₁</code><br>
+            जहाँ <code>r₁ = 5.3 × 10⁻¹¹ m</code> (प्रथम कक्षा की त्रिज्या)<br><br>
+            n=2 के लिए:<br>
+            <code>r₂ = 2² × r₁ = 4 × 5.3 × 10⁻¹¹ = 2.12 × 10⁻¹⁰ m</code><br><br>
+            n=3 के लिए:<br>
+            <code>r₃ = 3² × r₁ = 9 × 5.3 × 10⁻¹¹ = 4.77 × 10⁻¹⁰ m</code><br><br>
+            अतः n=2 कक्षा की त्रिज्या <b>2.12 × 10⁻¹⁰ m</b> और n=3 कक्षा की त्रिज्या <b>4.77 × 10⁻¹⁰ m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.8</div>
+            <div>कमरे के ताप पर गैसीय हाइड्रोजन पर किसी 12.5 eV की इलेक्ट्रॉन पुंज की बमबारी की गई। किन तरंगदैर्ध्यों की श्रृंखला उत्सर्जित होगी?</div>
+        </div>
+        <div class="answer">
+            हाइड्रोजन परमाणु की ऊर्जा स्तर:<br>
+            <code>E<sub>n</sub> = <div class="fraction"><span class="numerator">-13.6</span><span class="denominator">n²</span></div> eV</code><br><br>
+            n=1: <code>E₁ = -13.6 eV</code><br>
+            n=2: <code>E₂ = -3.4 eV</code><br>
+            n=3: <code>E₃ = -1.51 eV</code><br>
+            n=4: <code>E₄ = -0.85 eV</code><br>
+            n=5: <code>E₅ = -0.54 eV</code><br>
+            n=∞: <code>E<sub>∞</sub> = 0 eV</code><br><br>
+            12.5 eV की ऊर्जा वाला इलेक्ट्रॉन हाइड्रोजन परमाणु को निम्नतम अवस्था (n=1) से उत्तेजित कर सकता है यदि उत्तेजन ऊर्जा 12.5 eV से कम या बराबर हो।<br><br>
+            n=1 से n=3: <code>ΔE = E₃ - E₁ = -1.51 - (-13.6) = 12.09 eV</code> (संभव)<br>
+            n=1 से n=4: <code>ΔE = E₄ - E₁ = -0.85 - (-13.6) = 12.75 eV</code> (असंभव, क्योंकि 12.75 > 12.5)<br><br>
+            इसलिए, इलेक्ट्रॉन हाइड्रोजन परमाणु को n=3 तक उत्तेजित कर सकता है। उत्तेजित परमाणु निम्न ऊर्जा स्तरों में संक्रमण करेगा और निम्नलिखित श्रृंखलाएँ उत्सर्जित करेगा:<br>
+            1. लाइमन श्रृंखला: n=3→1, n=2→1<br>
+            2. बाल्मर श्रृंखला: n=3→2<br><br>
+            अतः उत्सर्जित तरंगदैर्ध्य लाइमन और बाल्मर श्रृंखला से संबंधित होंगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">12.9</div>
+            <div>बोर मॉडल के अनुसार सूर्य के चारों ओर 1.5 × 10¹¹ m त्रिज्या की कक्षा में, 3×10⁴ m/s के कक्षीय वेग से परिक्रमा करती पृथ्वी की अभिलाक्षणिक क्वांटम संख्या ज्ञात कीजिए। (पृथ्वी का द्रव्यमान = 6.0 × 10²⁴ kg)</div>
+        </div>
+        <div class="answer">
+            बोर के द्वितीय अभिगृहीत के अनुसार:<br>
+            <code>m v r = n <div class="fraction"><span class="numerator">h</span><span class="denominator">2π</span></div></code><br>
+            जहाँ <code>m = 6.0 × 10²⁴ kg</code>, <code>v = 3 × 10⁴ m/s</code>, <code>r = 1.5 × 10¹¹ m</code>, <code>h = 6.63 × 10⁻³⁴ Js</code><br><br>
+            <code>n = <div class="fraction"><span class="numerator">2π m v r</span><span class="denominator">h</span></div></code><br>
+            <code>n = <div class="fraction"><span class="numerator">2 × 3.14 × 6.0 × 10²⁴ × 3 × 10⁴ × 1.5 × 10¹¹</span><span class="denominator">6.63 × 10⁻³⁴</span></div></code><br>
+            <code>n = <div class="fraction"><span class="numerator">1.6956 × 10⁴¹</span><span class="denominator">6.63 × 10⁻³⁴</span></div></code><br>
+            <code>n = 2.56 × 10⁷⁴</code><br><br>
+            अतः पृथ्वी की अभिलाक्षणिक क्वांटम संख्या <b>2.56 × 10⁷⁴</b> है। यह बहुत बड़ी संख्या है, जो यह दर्शाती है कि मैक्रोस्कोपिक वस्तुओं के लिए क्वांटम प्रभाव नगण्य होते हैं।
+        </div>
+    </div>
+
+</body>
+</html>

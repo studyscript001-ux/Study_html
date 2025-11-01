@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 4: गतिमान आवेश और चुंबकत्व</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 4: गतिमान आवेश और चुंबकत्व</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.1</div>
+            <div>तार की एक वृत्ताकार कुंडली में 100 फेरे हैं, प्रत्येक की त्रिज्या 8.0 cm है और इसमें 0.40 A विद्युत धारा प्रवाहित हो रही है। कुंडली के केंद्र पर चुंबकीय क्षेत्र का परिमाण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            फेरों की संख्या, <code>N = 100</code><br>
+            त्रिज्या, <code>R = 8.0 cm = 0.08 m</code><br>
+            धारा, <code>I = 0.40 A</code><br><br>
+            वृत्ताकार धारावाही कुंडली के केंद्र पर चुंबकीय क्षेत्र:<br>
+            <code>B = <div class="fraction"><span class="numerator">μ₀ N I</span><span class="denominator">2R</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 100 × 0.40</span><span class="denominator">2 × 0.08</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">5.0265 × 10⁻⁵</span><span class="denominator">0.16</span></div></code><br>
+            <code>B = 3.14 × 10⁻⁴ T</code><br>
+            अतः कुंडली के केंद्र पर चुंबकीय क्षेत्र का परिमाण <b>3.14 × 10⁻⁴ T</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.2</div>
+            <div>एक लंबे, सीधे तार में 35 A विद्युत धारा प्रवाहित हो रही है। तार से 20 cm दूरी पर स्थित किसी बिंदु पर चुंबकीय क्षेत्र का परिमाण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारा, <code>I = 35 A</code><br>
+            दूरी, <code>r = 20 cm = 0.2 m</code><br><br>
+            लंबे सीधे धारावाही तार से r दूरी पर चुंबकीय क्षेत्र:<br>
+            <code>B = <div class="fraction"><span class="numerator">μ₀ I</span><span class="denominator">2πr</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 35</span><span class="denominator">2π × 0.2</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">1.4 × 10⁻⁵</span><span class="denominator">0.2</span></div></code><br>
+            <code>B = 7.0 × 10⁻⁵ T</code><br>
+            अतः तार से 20 cm दूरी पर चुंबकीय क्षेत्र का परिमाण <b>7.0 × 10⁻⁵ T</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.3</div>
+            <div>क्षैतिज तल में रखे एक लंबे सीधे तार में 50 A विद्युत धारा उत्तर से दक्षिण की ओर प्रवाहित हो रही है। तार के पूर्व में 2.5 m दूरी पर स्थित किसी बिंदु पर चुंबकीय क्षेत्र B का परिमाण और उसकी दिशा ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारा, <code>I = 50 A</code><br>
+            दूरी, <code>r = 2.5 m</code><br><br>
+            लंबे सीधे धारावाही तार से r दूरी पर चुंबकीय क्षेत्र का परिमाण:<br>
+            <code>B = <div class="fraction"><span class="numerator">μ₀ I</span><span class="denominator">2πr</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 50</span><span class="denominator">2π × 2.5</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">2 × 10⁻⁵</span><span class="denominator">2.5</span></div></code><br>
+            <code>B = 8.0 × 10⁻⁶ T</code><br>
+            दक्षिण हस्त नियम के अनुसार, जब धारा उत्तर से दक्षिण की ओर प्रवाहित हो रही है और बिंदु तार के पूर्व में है, तो चुंबकीय क्षेत्र की दिशा <b>ऊर्ध्वाधर नीचे की ओर</b> होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.4</div>
+            <div>ओवरहेड टेलीफोन के क्षैतिज तार में 90 A विद्युत धारा पूर्व से पश्चिम की ओर प्रवाहित हो रही है। तार के 1.5 m नीचे विद्युत धारा के कारण उत्पन्न चुंबकीय क्षेत्र का परिमाण और दिशा क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारा, <code>I = 90 A</code><br>
+            दूरी, <code>r = 1.5 m</code><br><br>
+            लंबे सीधे धारावाही तार से r दूरी पर चुंबकीय क्षेत्र का परिमाण:<br>
+            <code>B = <div class="fraction"><span class="numerator">μ₀ I</span><span class="denominator">2πr</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 90</span><span class="denominator">2π × 1.5</span></div></code><br>
+            <code>B = <div class="fraction"><span class="numerator">3.6 × 10⁻⁵</span><span class="denominator">1.5</span></div></code><br>
+            <code>B = 2.4 × 10⁻⁵ T</code><br>
+            दक्षिण हस्त नियम के अनुसार, जब धारा पूर्व से पश्चिम की ओर प्रवाहित हो रही है और बिंदु तार के नीचे है, तो चुंबकीय क्षेत्र की दिशा <b>उत्तर से दक्षिण की ओर</b> होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.5</div>
+            <div>एक तार जिसमें 8 A विद्युत धारा प्रवाहित हो रही है, 0.15 T के एकसमान चुंबकीय क्षेत्र में, क्षेत्र से 30° का कोण बनाते हुए रखा है। इसकी एकांक लंबाई पर लगने वाले बल का परिमाण और इसकी दिशा क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            धारा, <code>I = 8 A</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.15 T</code><br>
+            कोण, <code>θ = 30°</code><br><br>
+            धारावाही चालक पर लगने वाले बल का सूत्र:<br>
+            <code>F = I l B sinθ</code><br>
+            प्रति एकांक लंबाई बल:<br>
+            <code>f = <div class="fraction"><span class="numerator">F</span><span class="denominator">l</span></div> = I B sinθ</code><br>
+            <code>f = 8 × 0.15 × sin(30°)</code><br>
+            <code>f = 8 × 0.15 × 0.5</code><br>
+            <code>f = 0.6 N/m</code><br>
+            फ्लेमिंग के बाएँ हाथ के नियम के अनुसार, बल की दिशा चुंबकीय क्षेत्र और धारा दोनों के लंबवत होगी।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.6</div>
+            <div>एक 3.0 cm लंबा तार जिसमें 10 A विद्युत धारा प्रवाहित हो रही है, एक परिनालिका के अंदर उसके अक्ष के लंबवत रखा है। परिनालिका के अंदर चुंबकीय क्षेत्र का मान 0.27 T है। तार पर लगने वाला चुंबकीय बल क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तार की लंबाई, <code>l = 3.0 cm = 0.03 m</code><br>
+            धारा, <code>I = 10 A</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.27 T</code><br>
+            तार चुंबकीय क्षेत्र के लंबवत है, अतः <code>θ = 90°</code><br><br>
+            धारावाही चालक पर लगने वाले बल का सूत्र:<br>
+            <code>F = I l B sinθ</code><br>
+            <code>F = 10 × 0.03 × 0.27 × sin(90°)</code><br>
+            <code>F = 10 × 0.03 × 0.27 × 1</code><br>
+            <code>F = 0.081 N</code><br>
+            अतः तार पर लगने वाला चुंबकीय बल <b>0.081 N</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.7</div>
+            <div>एक-दूसरे से 4.0 cm की दूरी पर रखे दो लंबे, सीधे, समांतर तारों A एवं B से क्रमशः 8.0 A एवं 5.0 A की विद्युत धाराएँ एक ही दिशा में प्रवाहित हो रही हैं। तार A के 10 cm खंड पर बल का आकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            तार A में धारा, <code>I₁ = 8.0 A</code><br>
+            तार B में धारा, <code>I₂ = 5.0 A</code><br>
+            तारों के बीच दूरी, <code>d = 4.0 cm = 0.04 m</code><br>
+            तार A के खंड की लंबाई, <code>l = 10 cm = 0.1 m</code><br><br>
+            एक धारावाही तार दूसरे तार के एकांक लंबाई पर बल आरोपित करता है:<br>
+            <code>f = <div class="fraction"><span class="numerator">μ₀ I₁ I₂</span><span class="denominator">2πd</span></div></code><br>
+            <code>f = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 8.0 × 5.0</span><span class="denominator">2π × 0.04</span></div></code><br>
+            <code>f = <div class="fraction"><span class="numerator">1.6 × 10⁻⁵</span><span class="denominator">0.04</span></div></code><br>
+            <code>f = 4.0 × 10⁻⁴ N/m</code><br>
+            तार A के 0.1 m खंड पर बल:<br>
+            <code>F = f × l = 4.0 × 10⁻⁴ × 0.1 = 4.0 × 10⁻⁵ N</code><br>
+            चूँकि धाराएँ एक ही दिशा में हैं, तारों के बीच आकर्षण बल लगेगा।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.8</div>
+            <div>पास-पास फेरों वाली एक परिनालिका 80 cm लंबी है और इसमें 5 परतें हैं जिनमें से प्रत्येक में 400 फेरे हैं। परिनालिका का व्यास 1.8 cm है। यदि इसमें 8.0 A विद्युत धारा प्रवाहित हो रही है तो परिनालिका के अंदर केंद्र के पास चुंबकीय क्षेत्र B के परिमाण का परिकलन कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            परिनालिका की लंबाई, <code>L = 80 cm = 0.8 m</code><br>
+            परतों की संख्या = 5<br>
+            प्रति परत फेरों की संख्या = 400<br>
+            कुल फेरे, <code>N = 5 × 400 = 2000</code><br>
+            धारा, <code>I = 8.0 A</code><br><br>
+            परिनालिका के अंदर चुंबकीय क्षेत्र:<br>
+            <code>B = μ₀ n I</code><br>
+            जहाँ <code>n = <div class="fraction"><span class="numerator">N</span><span class="denominator">L</span></div></code> प्रति एकांक लंबाई में फेरों की संख्या है।<br>
+            <code>n = <div class="fraction"><span class="numerator">2000</span><span class="denominator">0.8</span></div> = 2500 turns/m</code><br>
+            <code>B = 4π × 10⁻⁷ × 2500 × 8.0</code><br>
+            <code>B = 2.513 × 10⁻² T</code><br>
+            अतः परिनालिका के अंदर केंद्र के पास चुंबकीय क्षेत्र का परिमाण <b>2.51 × 10⁻² T</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.9</div>
+            <div>एक वर्गाकार कुंडली जिसकी प्रत्येक भुजा 10 cm है, में 20 फेरे हैं और उसमें 12 A विद्युत धारा प्रवाहित हो रही है। कुंडली ऊर्ध्वाधरतः लटकी हुई है और इसके तल पर खींचा गया अभिलंब 0.80 T के एकसमान चुंबकीय क्षेत्र की दिशा से 30° का एक कोण बनाता है। कुंडली पर लगने वाले बल-युग्म का आघूर्ण क्या है?</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            भुजा, <code>a = 10 cm = 0.1 m</code><br>
+            फेरों की संख्या, <code>N = 20</code><br>
+            धारा, <code>I = 12 A</code><br>
+            चुंबकीय क्षेत्र, <code>B = 0.80 T</code><br>
+            कोण, <code>θ = 30°</code><br><br>
+            कुंडली का क्षेत्रफल, <code>A = a² = (0.1)² = 0.01 m²</code><br>
+            चुंबकीय आघूर्ण, <code>m = N I A = 20 × 12 × 0.01 = 2.4 A m²</code><br>
+            बल-युग्म का आघूर्ण:<br>
+            <code>τ = m B sinθ</code><br>
+            <code>τ = 2.4 × 0.80 × sin(30°)</code><br>
+            <code>τ = 2.4 × 0.80 × 0.5</code><br>
+            <code>τ = 0.96 N m</code><br>
+            अतः कुंडली पर लगने वाले बल-युग्म का आघूर्ण <b>0.96 N m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.10</div>
+            <div>दो चल कुंडली धारामापी मीटरों M₁ एवं M₂ के विवरण नीचे दिए गए हैं:<br>
+            R₁ = 10 Ω, N₁ = 30, A₁ = 3.6 × 10⁻³ m², B₁ = 0.25 T<br>
+            R₂ = 14 Ω, N₂ = 42, A₂ = 1.8 × 10⁻³ m², B₂ = 0.50 T<br>
+            (दोनों मीटरों के लिए स्प्रिंग नियतांक समान हैं)।<br>
+            (a) M₂ एवं M₁ की धारा-सुग्राहिताओं, (b) M₂ एवं M₁ की वोल्टता-सुग्राहिताओं का अनुपात ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            धारामापी के लिए विक्षेपण: <code>φ = <div class="fraction"><span class="numerator">N A B</span><span class="denominator">k</span></div> I</code><br>
+            धारा सुग्राहिता: <code>S₁ = <div class="fraction"><span class="numerator">φ</span><span class="denominator">I</span></div> = <div class="fraction"><span class="numerator">N A B</span><span class="denominator">k</span></div></code><br><br>
+            <b>(a) धारा-सुग्राहिता अनुपात:</b><br>
+            <code><div class="fraction"><span class="numerator">S₂</span><span class="denominator">S₁</span></div> = <div class="fraction"><span class="numerator">N₂ A₂ B₂</span><span class="denominator">N₁ A₁ B₁</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">S₂</span><span class="denominator">S₁</span></div> = <div class="fraction"><span class="numerator">42 × 1.8 × 10⁻³ × 0.50</span><span class="denominator">30 × 3.6 × 10⁻³ × 0.25</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">S₂</span><span class="denominator">S₁</span></div> = <div class="fraction"><span class="numerator">37.8 × 10⁻³</span><span class="denominator">27 × 10⁻³</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">S₂</span><span class="denominator">S₁</span></div> = 1.4</code><br><br>
+            <b>(b) वोल्टता-सुग्राहिता अनुपात:</b><br>
+            वोल्टता सुग्राहिता: <code>Sᵥ = <div class="fraction"><span class="numerator">φ</span><span class="denominator">V</span></div> = <div class="fraction"><span class="numerator">N A B</span><span class="denominator">k R</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">Sᵥ₂</span><span class="denominator">Sᵥ₁</span></div> = <div class="fraction"><span class="numerator">N₂ A₂ B₂ / R₂</span><span class="denominator">N₁ A₁ B₁ / R₁</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">Sᵥ₂</span><span class="denominator">Sᵥ₁</span></div> = <div class="fraction"><span class="numerator">N₂ A₂ B₂ R₁</span><span class="denominator">N₁ A₁ B₁ R₂</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">Sᵥ₂</span><span class="denominator">Sᵥ₁</span></div> = <div class="fraction"><span class="numerator">42 × 1.8 × 10⁻³ × 0.50 × 10</span><span class="denominator">30 × 3.6 × 10⁻³ × 0.25 × 14</span></div></code><br>
+            <code><div class="fraction"><span class="numerator">Sᵥ₂</span><span class="denominator">Sᵥ₁</span></div> = <div class="fraction"><span class="numerator">378 × 10⁻³</span><span class="denominator">378 × 10⁻³</span></div> = 1</code><br>
+            अतः वोल्टता-सुग्राहिता अनुपात <b>1</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.11</div>
+            <div>एक प्रकोष्ठ में 6.5 G (1 G = 10⁻⁴ T) का एकसमान चुंबकीय क्षेत्र बनाए रखा गया है। इस चुंबकीय क्षेत्र में एक इलेक्ट्रॉन 4.8 × 10⁶ m s⁻¹ के वेग से क्षेत्र के लंबवत प्रक्षेपित किया गया है। व्याख्या कीजिए कि इस इलेक्ट्रॉन का पथ वृत्ताकार क्यों होगा? वृत्ताकार कक्षा की त्रिज्या ज्ञात कीजिए। (e = 1.6 × 10⁻¹⁹ C, mₑ = 9.1 × 10⁻³¹ kg)</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            चुंबकीय क्षेत्र, <code>B = 6.5 G = 6.5 × 10⁻⁴ T</code><br>
+            इलेक्ट्रॉन का वेग, <code>v = 4.8 × 10⁶ m/s</code><br>
+            इलेक्ट्रॉन का आवेश, <code>e = 1.6 × 10⁻¹⁹ C</code><br>
+            इलेक्ट्रॉन का द्रव्यमान, <code>mₑ = 9.1 × 10⁻³¹ kg</code><br><br>
+            जब कोई आवेशित कण चुंबकीय क्षेत्र में क्षेत्र के लंबवत प्रवेश करता है, तो लॉरेंज बल इस पर कार्य करता है जो हमेशा वेग के लंबवत होता है। यह बल अभिकेंद्र बल का कार्य करता है और कण को वृत्ताकार पथ पर घुमाता है।<br><br>
+            वृत्ताकार पथ की त्रिज्या:<br>
+            <code>r = <div class="fraction"><span class="numerator">m v</span><span class="denominator">q B</span></div></code><br>
+            <code>r = <div class="fraction"><span class="numerator">9.1 × 10⁻³¹ × 4.8 × 10⁶</span><span class="denominator">1.6 × 10⁻¹⁹ × 6.5 × 10⁻⁴</span></div></code><br>
+            <code>r = <div class="fraction"><span class="numerator">4.368 × 10⁻²⁴</span><span class="denominator">1.04 × 10⁻²²</span></div></code><br>
+            <code>r = 4.2 × 10⁻² m = 4.2 cm</code><br>
+            अतः वृत्ताकार कक्षा की त्रिज्या <b>4.2 cm</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.12</div>
+            <div>प्रश्न 4.11 में, वृत्ताकार कक्षा में इलेक्ट्रॉन की परिक्रमण आवृत्ति प्राप्त कीजिए। क्या यह उत्तर इलेक्ट्रॉन के वेग पर निर्भर करता है? व्याख्या कीजिए।</div>
+        </div>
+        <div class="answer">
+            वृत्ताकार कक्षा में आवेशित कण की परिक्रमण आवृत्ति:<br>
+            <code>ν = <div class="fraction"><span class="numerator">q B</span><span class="denominator">2π m</span></div></code><br>
+            <code>ν = <div class="fraction"><span class="numerator">1.6 × 10⁻¹⁹ × 6.5 × 10⁻⁴</span><span class="denominator">2 × 3.14 × 9.1 × 10⁻³¹</span></div></code><br>
+            <code>ν = <div class="fraction"><span class="numerator">1.04 × 10⁻²²</span><span class="denominator">5.71 × 10⁻³⁰</span></div></code><br>
+            <code>ν = 1.82 × 10⁷ Hz = 18.2 MHz</code><br>
+            यह आवृत्ति इलेक्ट्रॉन के वेग पर निर्भर <b>नहीं</b> करती, क्योंकि सूत्र में वेग (v) शामिल नहीं है। यह केवल आवेश (q), चुंबकीय क्षेत्र (B) और द्रव्यमान (m) पर निर्भर करती है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">4.13</div>
+            <div>(a) 30 फेरों वाली एक वृत्ताकार कुंडली जिसकी त्रिज्या 8.0 cm है और जिसमें 6.0 A विद्युत धारा प्रवाहित हो रही है, 1.0 T के एकसमान क्षैतिज चुंबकीय क्षेत्र में ऊर्ध्वाधरतः लटकी है। क्षेत्र रेखाएँ कुंडली के अभिलंब से 60° का कोण बनाती हैं। कुंडली को घूमने से रोकने के लिए जो प्रति-आघूर्ण लगाया जाना चाहिए उसके परिमाण का परिकलन कीजिए।<br>
+            (b) यदि (a) में बताई गई वृत्ताकार कुंडली को उसी क्षेत्रफल की अनियमित आकृति की समतलीय कुंडली से प्रतिस्थापित कर दिया जाए (शेष सभी विवरण अपरिवर्तित रहें) तो क्या आपका उत्तर परिवर्तित हो जाएगा?</div>
+        </div>
+        <div class="answer">
+            <b>(a) प्रति-आघूर्ण का परिमाण:</b><br>
+            दिया गया है:<br>
+            फेरों की संख्या, <code>N = 30</code><br>
+            त्रिज्या, <code>R = 8.0 cm = 0.08 m</code><br>
+            धारा, <code>I = 6.0 A</code><br>
+            चुंबकीय क्षेत्र, <code>B = 1.0 T</code><br>
+            कोण, <code>θ = 60°</code><br><br>
+            कुंडली का क्षेत्रफल, <code>A = πR² = 3.14 × (0.08)² = 0.0201 m²</code><br>
+            चुंबकीय आघूर्ण, <code>m = N I A = 30 × 6.0 × 0.0201 = 3.618 A m²</code><br>
+            बल आघूर्ण, <code>τ = m B sinθ</code><br>
+            <code>τ = 3.618 × 1.0 × sin(60°)</code><br>
+            <code>τ = 3.618 × 0.866</code><br>
+            <code>τ = 3.13 N m</code><br>
+            कुंडली को घूमने से रोकने के लिए आरोपित किया जाने वाला प्रति-आघूर्ण <b>3.13 N m</b> होना चाहिए।<br><br>
+            <b>(b) उत्तर में परिवर्तन:</b><br>
+            नहीं, उत्तर में कोई परिवर्तन नहीं होगा। बल आघूर्ण केवल चुंबकीय आघूर्ण (m = N I A), चुंबकीय क्षेत्र (B) और उनके बीच के कोण (θ) पर निर्भर करता है, कुंडली की आकृति पर नहीं, बशर्ते क्षेत्रफल समान रहे।
+        </div>
+    </div>
+
+</body>
+</html>

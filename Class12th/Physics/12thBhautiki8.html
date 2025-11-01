@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 12 भौतिकी - अध्याय 8: विद्युत चुम्बकीय तरंगें</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: "NCERT Solutions";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.12);
+            z-index: -1;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, #6a11cb, #2575fc);
+        }
+        
+        .question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 16px;
+            display: flex;
+        }
+        
+        .question-num {
+            background: #6a11cb;
+            color: white;
+            width: 35px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+        
+        .answer {
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        
+        codde {
+            font-family: Consolas, "Courier New", monospace;
+            padding: 0 2px;
+            font-size: 14px;
+        }
+        
+        .fraction {
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 2px;
+        }
+        
+        .fraction span {
+            display: block;
+        }
+        
+        .fraction .numerator {
+            border-bottom: 1px solid #000;
+            padding: 0 4px;
+        }
+        
+        .fraction .denominator {
+            padding: 0 4px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .header h1 {
+                font-size: 20px;
+            }
+            
+            .question {
+                font-size: 14px;
+            }
+            
+            .answer {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>कक्षा 12 भौतिक विज्ञान</h1>
+        <p>अध्याय 8: विद्युत चुम्बकीय तरंगें</p>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.1</div>
+            <div>चित्र 8.5 में, एक समान्तर प्लेट संधारित्र दिखाया गया है जिसकी दो वृत्ताकार प्लेटों की त्रिज्या 12 cm है और उनके बीच की दूरी 5.0 cm है। संधारित्र को एक बाह्य स्रोत (जो चित्र में नहीं दिखाया गया है) द्वारा आवेशित किया जा रहा है। आवेशन धारा नियत है और इसका मान 0.15A है।
+            (a) धारिता और प्लेटों के बीच विभवान्तर परिवर्तन की दर का परिकलन कीजिए।
+            (b) प्लेटों के बीच विस्थापन धारा ज्ञात कीजिए।
+            (c) क्या किरचॉफ का प्रथम नियम संधारित्र की प्रत्येक प्लेट पर लागू होता है? स्पष्ट कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्लेट की त्रिज्या, <code>R = 12 cm = 0.12 m</code><br>
+            प्लेटों के बीच दूरी, <code>d = 5.0 cm = 0.05 m</code><br>
+            आवेशन धारा, <code>I = 0.15 A</code><br><br>
+            
+            (a) समान्तर प्लेट संधारित्र की धारिता:<br>
+            <code>C = <div class="fraction"><span class="numerator">ε₀ A</span><span class="denominator">d</span></div> = <div class="fraction"><span class="numerator">ε₀ π R²</span><span class="denominator">d</span></div></code><br>
+            <code>C = <div class="fraction"><span class="numerator">8.854 × 10⁻¹² × 3.1416 × (0.12)²</span><span class="denominator">0.05</span></div></code><br>
+            <code>C = <div class="fraction"><span class="numerator">8.854 × 10⁻¹² × 3.1416 × 0.0144</span><span class="denominator">0.05</span></div></code><br>
+            <code>C = <div class="fraction"><span class="numerator">4.005 × 10⁻¹³</span><span class="denominator">0.05</span></div> = 8.01 × 10⁻¹² F</code><br><br>
+            
+            विभवान्तर परिवर्तन की दर:<br>
+            <code><div class="fraction"><span class="numerator">dV</span><span class="denominator">dt</span></div> = <div class="fraction"><span class="numerator">I</span><span class="denominator">C</span></div> = <div class="fraction"><span class="numerator">0.15</span><span class="denominator">8.01 × 10⁻¹²</span></div> = 1.87 × 10¹⁰ V/s</code><br><br>
+            
+            (b) विस्थापन धारा:<br>
+            <code>I_d = ε₀ <div class="fraction"><span class="numerator">dΦ_E</span><span class="denominator">dt</span></div> = I = 0.15 A</code><br><br>
+            
+            (c) हाँ, किरचॉफ का प्रथम नियम संधारित्र की प्रत्येक प्लेट पर लागू होता है क्योंकि चालन धारा और विस्थापन धारा का योग नियत रहता है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.2</div>
+            <div>एक समान्तर प्लेट संधारित्र (चित्र 8.6), R = 6.0 cm त्रिज्या की दो वृत्ताकार प्लेटों से बना है और इसकी धारिता C = 100 pF है। संधारित्र को 230 V, 300 rad s⁻¹ की (कोणीय) आवृत्ति के किसी स्रोत से जोड़ा गया है।
+            (a) चालन धारा का rms मान क्या है?
+            (b) क्या चालन धारा विस्थापन धारा के बराबर है?
+            (c) प्लेटों के बीच, अक्ष से 3.0 cm की दूरी पर स्थित बिन्दु पर B का आयाम ज्ञात कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            प्लेट त्रिज्या, <code>R = 6.0 cm = 0.06 m</code><br>
+            धारिता, <code>C = 100 pF = 100 × 10⁻¹² F</code><br>
+            वोल्टता, <code>V = 230 V</code><br>
+            कोणीय आवृत्ति, <code>ω = 300 rad/s</code><br><br>
+            
+            (a) चालन धारा का rms मान:<br>
+            <code>I = <div class="fraction"><span class="numerator">V</span><span class="denominator">X_C</span></div> = V ω C</code><br>
+            <code>I = 230 × 300 × 100 × 10⁻¹² = 6.9 × 10⁻⁶ A</code><br><br>
+            
+            (b) हाँ, चालन धारा विस्थापन धारा के बराबर है क्योंकि परिपथ में धारा संरक्षित रहती है।<br><br>
+            
+            (c) अक्ष से r = 3.0 cm = 0.03 m दूरी पर चुम्बकीय क्षेत्र का आयाम:<br>
+            <code>B_0 = <div class="fraction"><span class="numerator">μ₀ I_d r</span><span class="denominator">2π R²</span></div></code><br>
+            <code>B_0 = <div class="fraction"><span class="numerator">4π × 10⁻⁷ × 6.9 × 10⁻⁶ × 0.03</span><span class="denominator">2π × (0.06)²</span></div></code><br>
+            <code>B_0 = <div class="fraction"><span class="numerator">8.28 × 10⁻¹³</span><span class="denominator">2.16 × 10⁻³</span></div> = 3.83 × 10⁻¹⁰ T</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.3</div>
+            <div>10⁻¹⁰ m तरंगदैर्ध्य की X-किरणों, 6800 Å तरंगदैर्ध्य के प्रकाश, तथा 500 m की रेडियो तरंगों के लिए किस भौतिक राशि का मान समान है?</div>
+        </div>
+        <div class="answer">
+            सभी विद्युतचुम्बकीय तरंगों के लिए निर्वात में चाल समान होती है:<br>
+            <code>c = 3 × 10⁸ m/s</code><br><br>
+            
+            X-किरणों के लिए:<br>
+            तरंगदैर्ध्य, <code>λ₁ = 10⁻¹⁰ m</code><br>
+            आवृत्ति, <code>ν₁ = <div class="fraction"><span class="numerator">c</span><span class="denominator">λ₁</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">10⁻¹⁰</span></div> = 3 × 10¹⁸ Hz</code><br><br>
+            
+            प्रकाश के लिए:<br>
+            तरंगदैर्ध्य, <code>λ₂ = 6800 Å = 6800 × 10⁻¹⁰ m = 6.8 × 10⁻⁷ m</code><br>
+            आवृत्ति, <code>ν₂ = <div class="fraction"><span class="numerator">c</span><span class="denominator">λ₂</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">6.8 × 10⁻⁷</span></div> = 4.41 × 10¹⁴ Hz</code><br><br>
+            
+            रेडियो तरंगों के लिए:<br>
+            तरंगदैर्ध्य, <code>λ₃ = 500 m</code><br>
+            आवृत्ति, <code>ν₃ = <div class="fraction"><span class="numerator">c</span><span class="denominator">λ₃</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">500</span></div> = 6 × 10⁵ Hz</code><br><br>
+            
+            अतः तीनों के लिए समान राशि है - <b>निर्वात में चाल</b> (c = 3 × 10⁸ m/s)।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.4</div>
+            <div>एक समतल विद्युतचुम्बकीय तरंग निर्वात में z-अक्ष के अनुदिश चल रही है। इसके विद्युत और चुम्बकीय क्षेत्रों के सदिश की दिशा के बारे में आप क्या कहेंगे? यदि तरंग की आवृत्ति 30 MHz हो तो उसकी तरंगदैर्ध्य कितनी होगी?</div>
+        </div>
+        <div class="answer">
+            समतल विद्युतचुम्बकीय तरंग में:<br>
+            - विद्युत क्षेत्र (E) और चुम्बकीय क्षेत्र (B) परस्पर लंबवत होते हैं<br>
+            - E और B दोनों तरंग संचरण की दिशा (z-अक्ष) के लंबवत होते हैं<br>
+            - E × B की दिशा तरंग संचरण की दिशा (z-अक्ष) के अनुदिश होती है<br><br>
+            
+            दिया गया है:<br>
+            आवृत्ति, <code>ν = 30 MHz = 30 × 10⁶ Hz</code><br>
+            तरंगदैर्ध्य, <code>λ = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">30 × 10⁶</span></div> = 10 m</code><br><br>
+            
+            अतः तरंगदैर्ध्य <b>10 m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.5</div>
+            <div>एक रेडियो 7.5 MHz से 12 MHz बैंड के किसी स्टेशन से समस्वरित हो सकता है। संगत तरंगदैर्ध्य बैंड क्या होगा?</div>
+        </div>
+        <div class="answer">
+            रेडियो तरंगों के लिए:<br>
+            <code>λ = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div></code><br><br>
+            
+            न्यूनतम आवृत्ति के लिए अधिकतम तरंगदैर्ध्य:<br>
+            <code>ν_min = 7.5 MHz = 7.5 × 10⁶ Hz</code><br>
+            <code>λ_max = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">7.5 × 10⁶</span></div> = 40 m</code><br><br>
+            
+            अधिकतम आवृत्ति के लिए न्यूनतम तरंगदैर्ध्य:<br>
+            <code>ν_max = 12 MHz = 12 × 10⁶ Hz</code><br>
+            <code>λ_min = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">12 × 10⁶</span></div> = 25 m</code><br><br>
+            
+            अतः संगत तरंगदैर्ध्य बैंड <b>25 m से 40 m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.6</div>
+            <div>एक आवेशित कण अपनी माध्य साम्यावस्था के दोनों ओर 10⁹ Hz आवृत्ति से दोलन करता है। दोलक द्वारा उत्पन्न विद्युतचुम्बकीय तरंगों की आवृत्ति कितनी है?</div>
+        </div>
+        <div class="answer">
+            दोलक द्वारा उत्पन्न विद्युतचुम्बकीय तरंगों की आवृत्ति, दोलक की आवृत्ति के बराबर होती है।<br><br>
+            
+            दिया गया है:<br>
+            दोलक की आवृत्ति, <code>ν = 10⁹ Hz</code><br><br>
+            
+            अतः उत्पन्न विद्युतचुम्बकीय तरंगों की आवृत्ति भी <b>10⁹ Hz</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.7</div>
+            <div>निर्वात में एक आवर्ती विद्युतचुम्बकीय तरंग के चुम्बकीय क्षेत्र वाले भाग का आयाम B₀ = 510 nT है। तरंग के विद्युत क्षेत्र वाले भाग का आयाम क्या है?</div>
+        </div>
+        <div class="answer">
+            विद्युतचुम्बकीय तरंग में विद्युत क्षेत्र और चुम्बकीय क्षेत्र के आयामों में सम्बन्ध:<br>
+            <code>E₀ = c B₀</code><br><br>
+            
+            दिया गया है:<br>
+            <code>B₀ = 510 nT = 510 × 10⁻⁹ T</code><br>
+            <code>c = 3 × 10⁸ m/s</code><br><br>
+            
+            <code>E₀ = 3 × 10⁸ × 510 × 10⁻⁹ = 153 V/m</code><br><br>
+            
+            अतः विद्युत क्षेत्र का आयाम <b>153 V/m</b> है।
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.8</div>
+            <div>कल्पना कीजिए कि एक विद्युतचुम्बकीय तरंग के विद्युत क्षेत्र का आयाम E₀ = 120 N/C है और इसकी आवृत्ति ν = 50.0 MHz है। (a) B₀, ω, k तथा λ ज्ञात कीजिए, (b) E तथा B के लिए व्यंजक प्राप्त कीजिए।</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            <code>E₀ = 120 N/C</code><br>
+            <code>ν = 50.0 MHz = 50.0 × 10⁶ Hz</code><br><br>
+            
+            (a) <code>B₀ = <div class="fraction"><span class="numerator">E₀</span><span class="denominator">c</span></div> = <div class="fraction"><span class="numerator">120</span><span class="denominator">3 × 10⁸</span></div> = 4.0 × 10⁻⁷ T</code><br><br>
+            
+            <code>ω = 2πν = 2 × 3.1416 × 50.0 × 10⁶ = 3.14 × 10⁸ rad/s</code><br><br>
+            
+            <code>λ = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">50.0 × 10⁶</span></div> = 6.0 m</code><br><br>
+            
+            <code>k = <div class="fraction"><span class="numerator">2π</span><span class="denominator">λ</span></div> = <div class="fraction"><span class="numerator">2 × 3.1416</span><span class="denominator">6.0</span></div> = 1.047 rad/m</code><br><br>
+            
+            (b) मान लीजिए तरंग z-दिशा में संचरित हो रही है, E x-दिशा में और B y-दिशा में है:<br>
+            <code>E = E₀ sin(kz - ωt) = 120 sin(1.047z - 3.14 × 10⁸ t) N/C</code><br>
+            <code>B = B₀ sin(kz - ωt) = 4.0 × 10⁻⁷ sin(1.047z - 3.14 × 10⁸ t) T</code>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.9</div>
+            <div>विद्युतचुम्बकीय स्पेक्ट्रम के विभिन्न भागों की विशेषताएँ पाठ्यपुस्तक में दी गई हैं। सूत्र E = hν (विकिरण के एक क्वांटम की ऊर्जा के लिए : फोटॉन) का उपयोग कीजिए तथा em वर्णक्रम के विभिन्न भागों के लिए eV के मात्रक में फोटॉन की ऊर्जा निकालिए। फोटॉन ऊर्जा के जो विभिन्न परिमाण आप पाते हैं वे विद्युतचुम्बकीय विकिरण के स्रोतों से किस प्रकार सम्बन्धित हैं?</div>
+        </div>
+        <div class="answer">
+            फोटॉन ऊर्जा: <code>E = hν</code>, जहाँ <code>h = 6.626 × 10⁻³⁴ J s</code><br>
+            <code>1 eV = 1.602 × 10⁻¹⁹ J</code><br><br>
+            
+            विभिन्न विद्युतचुम्बकीय तरंगों के लिए फोटॉन ऊर्जा:<br><br>
+            
+            रेडियो तरंगें (ν ≈ 10⁶ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 10⁶ = 6.626 × 10⁻²⁸ J = 4.14 × 10⁻⁹ eV</code><br><br>
+            
+            सूक्ष्म तरंगें (ν ≈ 10¹⁰ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 10¹⁰ = 6.626 × 10⁻²⁴ J = 4.14 × 10⁻⁵ eV</code><br><br>
+            
+            दृश्य प्रकाश (ν ≈ 6 × 10¹⁴ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 6 × 10¹⁴ = 3.976 × 10⁻¹⁹ J = 2.48 eV</code><br><br>
+            
+            पराबैंगनी किरणें (ν ≈ 10¹⁶ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 10¹⁶ = 6.626 × 10⁻¹⁸ J = 41.4 eV</code><br><br>
+            
+            X-किरणें (ν ≈ 10¹⁸ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 10¹⁸ = 6.626 × 10⁻¹⁶ J = 4140 eV = 4.14 keV</code><br><br>
+            
+            गामा किरणें (ν ≈ 10²⁰ Hz):<br>
+            <code>E = 6.626 × 10⁻³⁴ × 10²⁰ = 6.626 × 10⁻¹⁴ J = 414,000 eV = 414 keV</code><br><br>
+            
+            फोटॉन ऊर्जा विद्युतचुम्बकीय विकिरण के स्रोतों से निम्न प्रकार सम्बन्धित है:<br>
+            - निम्न ऊर्जा वाले फोटॉन (रेडियो तरंगें) दोलित इलेक्ट्रॉनों द्वारा उत्पन्न होते हैं<br>
+            - मध्यम ऊर्जा वाले फोटॉन (दृश्य प्रकाश) परमाणुओं में इलेक्ट्रॉन संक्रमणों द्वारा उत्पन्न होते हैं<br>
+            - उच्च ऊर्जा वाले फोटॉन (X-किरणें, गामा किरणें) नाभिकीय प्रक्रियाओं द्वारा उत्पन्न होते हैं
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="question">
+            <div class="question-num">8.10</div>
+            <div>एक समतल em तरंग में विद्युत क्षेत्र, 2.0 × 10¹⁰ Hz आवृत्ति तथा 48 V m⁻¹ आयाम से साइन आकार से दोलन करता है।
+            (a) तरंग की तरंगदैर्ध्य कितनी है?
+            (b) दोलनशील चुम्बकीय क्षेत्र का आयाम क्या है?
+            (c) यह दर्शाइए कि E क्षेत्र का औसत ऊर्जा घनत्व, B क्षेत्र के औसत ऊर्जा घनत्व के बराबर है। [c = 3 × 10⁸ m s⁻¹]</div>
+        </div>
+        <div class="answer">
+            दिया गया है:<br>
+            आवृत्ति, <code>ν = 2.0 × 10¹⁰ Hz</code><br>
+            विद्युत क्षेत्र आयाम, <code>E₀ = 48 V/m</code><br>
+            <code>c = 3 × 10⁸ m/s</code><br><br>
+            
+            (a) तरंगदैर्ध्य:<br>
+            <code>λ = <div class="fraction"><span class="numerator">c</span><span class="denominator">ν</span></div> = <div class="fraction"><span class="numerator">3 × 10⁸</span><span class="denominator">2.0 × 10¹⁰</span></div> = 0.015 m = 1.5 cm</code><br><br>
+            
+            (b) चुम्बकीय क्षेत्र आयाम:<br>
+            <code>B₀ = <div class="fraction"><span class="numerator">E₀</span><span class="denominator">c</span></div> = <div class="fraction"><span class="numerator">48</span><span class="denominator">3 × 10⁸</span></div> = 1.6 × 10⁻⁷ T</code><br><br>
+            
+            (c) विद्युत क्षेत्र का औसत ऊर्जा घनत्व:<br>
+            <code>u_E = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> ε₀ E²_avg = <div class="fraction"><span class="numerator">1</span><span class="denominator">2</span></div> ε₀ (<div class="fraction"><span class="numerator">E₀²</span><span class="denominator">2</span></div>) = <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div> ε₀ E₀²</code><br><br>
+            
+            चुम्बकीय क्षेत्र का औसत ऊर्जा घनत्व:<br>
+            <code>u_B = <div class="fraction"><span class="numerator">1</span><span class="denominator">2μ₀</span></div> B²_avg = <div class="fraction"><span class="numerator">1</span><span class="denominator">2μ₀</span></div> (<div class="fraction"><span class="numerator">B₀²</span><span class="denominator">2</span></div>) = <div class="fraction"><span class="numerator">1</span><span class="denominator">4μ₀</span></div> B₀²</code><br><br>
+            
+            <code>u_E = <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div> ε₀ E₀²</code><br>
+            <code>u_B = <div class="fraction"><span class="numerator">1</span><span class="denominator">4μ₀</span></div> B₀² = <div class="fraction"><span class="numerator">1</span><span class="denominator">4μ₀</span></div> (<div class="fraction"><span class="numerator">E₀²</span><span class="denominator">c²</span></div>) = <div class="fraction"><span class="numerator">1</span><span class="denominator">4μ₀</span></div> E₀² μ₀ ε₀ = <div class="fraction"><span class="numerator">1</span><span class="denominator">4</span></div> ε₀ E₀²</code><br><br>
+            
+            अतः <code>u_E = u_B</code><br>
+            इस प्रकार विद्युत क्षेत्र का औसत ऊर्जा घनत्व, चुम्बकीय क्षेत्र के औसत ऊर्जा घनत्व के बराबर है।
+        </div>
+    </div>
+
+</body>
+</html>
