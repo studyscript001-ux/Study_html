@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Guide to English Tenses</title>
+    <style>
+        :root {
+            --present-color: #4a86e8;
+            --past-color: #e67c73;
+            --future-color: #2ecc71;
+            --card-bg: #ffffff;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --shadow: 0 4px 6px rgba(0,0,0,0.1);
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f8f9fa;
+            -webkit-user-select: text;
+            -moz-user-select: text;
+            -ms-user-select: text;
+            user-select: text;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--present-color), var(--future-color));
+            color: white;
+            text-align: center;
+            padding: 1rem 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .header h1 {
+            font-size: clamp(1.5rem, 4vw, 2.2rem);
+            font-weight: 700;
+            
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 1rem;
+            padding: 1.5rem 2rem;
+            justify-content: center;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+        }
+
+        .nav-btn {
+            padding: 1rem 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: var(--radius);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 100px;
+            white-space: nowrap;
+        }
+
+        .nav-btn.present { background: var(--present-color); color: white; }
+        .nav-btn.past { background: var(--past-color); color: white; }
+        .nav-btn.future { background: var(--future-color); color: white; }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid;
+        }
+
+        .present-section h2 { border-color: var(--present-color); color: var(--present-color); }
+        .past-section h2 { border-color: var(--past-color); color: var(--past-color); }
+        .future-section h2 { border-color: var(--future-color); color: var(--future-color); }
+
+        .tense-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .tense-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid;
+        }
+
+        .present-section .tense-card { border-left-color: var(--present-color); }
+        .past-section .tense-card { border-left-color: var(--past-color); }
+        .future-section .tense-card { border-left-color: var(--future-color); }
+
+        .tense-header h3 {
+            font-size: 1.4rem;
+            color: inherit;
+            margin-bottom: 1rem;
+        }
+
+        .hindi-meaning {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .uses-list, .signal-words {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+
+        .structure-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.85rem;
+        }
+
+        .structure-table th, .structure-table td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        .structure-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .examples {
+            margin: 1rem 0;
+        }
+
+        .example-form {
+            margin: 1rem 0;
+        }
+
+        .form-heading {
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .example-item {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: #f8f9fa;
+            border-radius: 4px;
+        }
+
+        .hindi-translation {
+            color: var(--text-light);
+            font-style: italic;
+            display: block;
+            margin-top: 0.25rem;
+        }
+
+        .rules-box {
+            background: #e8f4fd;
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.8rem;
+        }
+
+        .summary-table th, .summary-table td {
+            border: 1px solid #ddd;
+            padding: 0.6rem;
+            text-align: left;
+        }
+
+        .summary-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--present-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            display: none;
+            font-size: 1.2rem;
+        }
+
+        .cheat-sheet {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .cheat-sheet h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+
+        .verb-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .verb-item {
+            padding: 0.5rem;
+            background: white;
+            border-radius: 4px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .tense-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-buttons {
+                padding: 1rem;
+            }
+            
+            .nav-btn {
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+                min-width: 80px;
+            }
+            
+            .section {
+                padding: 1rem;
+            }
+            
+            .structure-table {
+                font-size: 0.75rem;
+            }
+            
+            .summary-table {
+                font-size: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Tenses (काल)</h1>
+    </header>
+
+    <div class="nav-buttons">
+        <button class="nav-btn present" onclick="scrollToSection('present')">Present</button>
+        <button class="nav-btn past" onclick="scrollToSection('past')">Past</button>
+        <button class="nav-btn future" onclick="scrollToSection('future')">Future</button>
+    </div>
+
+    <main>
+        <section id="present" class="section present-section">
+            <h2>Present Tenses</h2>
+            <div class="tense-grid">
+                <!-- Present Simple -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Present Simple (साधारण वर्तमान काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो आदतों, सामान्य तथ्यों, या नियमित रूप से होने वाली घटनाओं को दर्शाती हैं। इन वाक्यों के अंत में 'ता है', 'ती है', 'ते हैं' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Habit/Routine</li>
+                            <li>Facts/Timetables</li>
+                            <li>Permanent situations</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>always, usually, every day, sometimes</li>
+                            <li>often, never, normally</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + V1 (s/es for he/she/it) + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + do/does + not + V1 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Do/Does + Subject + V1 + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Don't/Doesn't + Subject + V1 + object + ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He plays cricket.<span class="hindi-translation">वह क्रिकेट खेलता है।</span></div>
+                                <div class="example-item">They study every day.<span class="hindi-translation">वे रोज़ पढ़ते हैं।</span></div>
+                                <div class="example-item">She eats breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता करती है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He does not play cricket.<span class="hindi-translation">वह क्रिकेट नहीं खेलता।</span></div>
+                                <div class="example-item">They do not study every day.<span class="hindi-translation">वे रोज़ नहीं पढ़ते।</span></div>
+                                <div class="example-item">She does not eat breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता नहीं करती।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Does he play cricket?<span class="hindi-translation">क्या वह क्रिकेट खेलता है?</span></div>
+                                <div class="example-item">Do they study every day?<span class="hindi-translation">क्या वे रोज़ पढ़ते हैं?</span></div>
+                                <div class="example-item">Does she eat breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता करती है?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Doesn't he play cricket?<span class="hindi-translation">क्या वह क्रिकेट नहीं खेलता?</span></div>
+                                <div class="example-item">Don't they study every day?<span class="hindi-translation">क्या वे रोज़ नहीं पढ़ते?</span></div>
+                                <div class="example-item">Doesn't she eat breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता नहीं करती?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong><br> 🔹 he/she/it (third person) ke sath s/es lagta hai.<br>🔹 do/does - Negative aur interrogative sentences mein use hota hai. Do ka use you/we/they ke sath Aur Does ka use he/she/it/name ke sath karte hai.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + V1(s/es)</td></tr>
+                            <tr><td>Negative</td><td>Subject + do/does + not + V1</td></tr>
+                            <tr><td>Interrogative</td><td>Do/Does + Subject + V1?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Present Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Present Continuous (अपूर्ण वर्तमान काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो अभी चल रही हैं या अस्थायी स्थितियों को दर्शाती हैं। इन वाक्यों के अंत में 'रहा है', 'रही है', 'रहे हैं' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Actions happening now</li>
+                            <li>Temporary situations</li>
+                            <li>Future arrangements</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>now, at the moment</li>
+                            <li>currently, right now</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + am/is/are + V1 + ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + am/is/are + not + V1 + ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Am/Is/Are + Subject + V1 + ing + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Isn't/Aren't + Subject + V1 + ing + object + ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He is playing cricket.<span class="hindi-translation">वह क्रिकेट खेल रहा है।</span></div>
+                                <div class="example-item">They are studying now.<span class="hindi-translation">वे अभी पढ़ रहे हैं।</span></div>
+                                <div class="example-item">She is eating breakfast.<span class="hindi-translation">वह नाश्ता कर रही है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He is not playing cricket.<span class="hindi-translation">वह क्रिकेट नहीं खेल रहा है।</span></div>
+                                <div class="example-item">They are not studying now.<span class="hindi-translation">वे अभी नहीं पढ़ रहे हैं।</span></div>
+                                <div class="example-item">She is not eating breakfast.<span class="hindi-translation">वह नाश्ता नहीं कर रही है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Is he playing cricket?<span class="hindi-translation">क्या वह क्रिकेट खेल रहा है?</span></div>
+                                <div class="example-item">Are they studying now?<span class="hindi-translation">क्या वे अभी पढ़ रहे हैं?</span></div>
+                                <div class="example-item">Is she eating breakfast?<span class="hindi-translation">क्या वह नाश्ता कर रही है?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Isn't he playing cricket?<span class="hindi-translation">क्या वह क्रिकेट नहीं खेल रहा है?</span></div>
+                                <div class="example-item">Aren't they studying now?<span class="hindi-translation">क्या वे अभी नहीं पढ़ रहे हैं?</span></div>
+                                <div class="example-item">Isn't she eating breakfast?<span class="hindi-translation">क्या वह नाश्ता नहीं कर रही है?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong><br>🔹 <strong>am</strong> : I ke sath use hota hai.<br>🔹 <strong>is</strong> : he/she/it/name ke sath use hota hai.<br>🔹 <strong>are</strong> you/we/they ke sath use hota hai.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + am/is/are + V1+ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + am/is/are + not + V1+ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Am/Is/Are + Subject + V1+ing + object + ?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Present Perfect -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Present Perfect (पूर्ण वर्तमान काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में शुरू हुईं और वर्तमान से संबंध रखती हैं, या जिनका समय निश्चित नहीं है। इन वाक्यों के अंत में 'चुका है', 'चुकी है', 'चुके हैं' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Past actions with present results</li>
+                            <li>Life experiences</li>
+                            <li>Unfinished time periods</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>already, yet, just</li>
+                            <li>ever, never, since, for</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + have/has + V3 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + have/has + not + V3 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Have/Has + Subject + V3 + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Haven't/Hasn't + Subject + V3 + object ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He has played cricket.<span class="hindi-translation">वह क्रिकेट खेल चुका है।</span></div>
+                                <div class="example-item">They have studied English.<span class="hindi-translation">वे अंग्रेज़ी पढ़ चुके हैं।</span></div>
+                                <div class="example-item">She has eaten breakfast.<span class="hindi-translation">वह नाश्ता कर चुकी है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He has not played cricket.<span class="hindi-translation">वह क्रिकेट नहीं खेला है।</span></div>
+                                <div class="example-item">They have not studied English.<span class="hindi-translation">वे अंग्रेज़ी नहीं पढ़े हैं।</span></div>
+                                <div class="example-item">She has not eaten breakfast.<span class="hindi-translation">वह नाश्ता नहीं किया है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Has he played cricket?<span class="hindi-translation">क्या वह क्रिकेट खेल चुका है?</span></div>
+                                <div class="example-item">Have they studied English?<span class="hindi-translation">क्या वे अंग्रेज़ी पढ़ चुके हैं?</span></div>
+                                <div class="example-item">Has she eaten breakfast?<span class="hindi-translation">क्या वह नाश्ता कर चुकी है?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Hasn't he played cricket?<span class="hindi-translation">क्या वह क्रिकेट नहीं खेला है?</span></div>
+                                <div class="example-item">Haven't they studied English?<span class="hindi-translation">क्या वे अंग्रेज़ी नहीं पढ़े हैं?</span></div>
+                                <div class="example-item">Hasn't she eaten breakfast?<span class="hindi-translation">क्या वह नाश्ता नहीं किया है?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Agar third person singular (He/She/It/Name) ho to <strong>has</strong> lagta hai, baaki sab ke saath <strong>have</strong> jaise you/we/they.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + have/has + V3</td></tr>
+                            <tr><td>Negative</td><td>Subject + have/has + not + V3</td></tr>
+                            <tr><td>Interrogative</td><td>Have/Has + Subject + V3?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Present Perfect Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Present Perfect Continuous (पूर्ण अपूर्ण वर्तमान काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में शुरू हुईं, अभी तक जारी हैं और भविष्य में भी जारी रह सकती हैं। इन वाक्यों के अंत में 'रहा है', 'रही है', 'रहे हैं' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Actions started in past and continuing</li>
+                            <li>Emphasizing duration</li>
+                            <li>Recent continuous actions</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>for, since, all day</li>
+                            <li>how long, recently</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + have/has + been + V1 + ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + have/has + not + been + V1 + ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Have/Has + Subject + been + V1 + ing + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Haven't/Hasn't + Subject + been + V1 + ing + object + ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He has been playing cricket for 2 hours.<span class="hindi-translation">वह 2 घंटे से क्रिकेट खेल रहा है।</span></div>
+                                <div class="example-item">They have been studying since morning.<span class="hindi-translation">वे सुबह से पढ़ रहे हैं।</span></div>
+                                <div class="example-item">She has been eating breakfast for 15 minutes.<span class="hindi-translation">वह 15 मिनट से नाश्ता कर रही है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He has not been playing cricket for 2 hours.<span class="hindi-translation">वह 2 घंटे से क्रिकेट नहीं खेल रहा है।</span></div>
+                                <div class="example-item">They have not been studying since morning.<span class="hindi-translation">वे सुबह से नहीं पढ़ रहे हैं।</span></div>
+                                <div class="example-item">She has not been eating breakfast for 15 minutes.<span class="hindi-translation">वह 15 मिनट से नाश्ता नहीं कर रही है।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Has he been playing cricket for 2 hours?<span class="hindi-translation">क्या वह 2 घंटे से क्रिकेट खेल रहा है?</span></div>
+                                <div class="example-item">Have they been studying since morning?<span class="hindi-translation">क्या वे सुबह से पढ़ रहे हैं?</span></div>
+                                <div class="example-item">Has she been eating breakfast for 15 minutes?<span class="hindi-translation">क्या वह 15 मिनट से नाश्ता कर रही है?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Hasn't he been playing cricket for 2 hours?<span class="hindi-translation">क्या वह 2 घंटे से क्रिकेट नहीं खेल रहा है?</span></div>
+                                <div class="example-item">Haven't they been studying since morning?<span class="hindi-translation">क्या वे सुबह से नहीं पढ़ रहे हैं?</span></div>
+                                <div class="example-item">Hasn't she been eating breakfast for 15 minutes?<span class="hindi-translation">क्या वह 15 मिनट से नाश्ता नहीं कर रही है?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use have/has + been + V1+ing; 'for' shows duration, 'since' shows starting point; some verbs (like, love, know) not usually used in continuous form.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + have/has + been + V1+ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + have/has + not + been + V1+ing</td></tr>
+                            <tr><td>Interrogative</td><td>Have/Has + Subject + been + V1+ing?</td></tr>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="past" class="section past-section">
+            <h2>Past Tenses</h2>
+            <div class="tense-grid">
+                <!-- Past Simple -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Past Simple (साधारण भूत काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में पूरी हो चुकी हैं और उनका समय निश्चित होता है। इन वाक्यों के अंत में 'आ', 'ई', 'ए' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Completed actions in past</li>
+                            <li>Past habits</li>
+                            <li>Sequential past actions</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>yesterday, last week</li>
+                            <li>ago, in 2010</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + V2 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + did + not + V1 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Did + Subject + V1 + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Didn't + Subject + V1 + object + ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He played cricket yesterday.<span class="hindi-translation">उसने कल क्रिकेट खेला।</span></div>
+                                <div class="example-item">They studied last night.<span class="hindi-translation">उन्होंने कल रात पढ़ाई की।</span></div>
+                                <div class="example-item">She ate breakfast at 8.<span class="hindi-translation">उसने 8 बजे नाश्ता किया।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He did not play cricket yesterday.<span class="hindi-translation">उसने कल क्रिकेट नहीं खेला।</span></div>
+                                <div class="example-item">They did not study last night.<span class="hindi-translation">उन्होंने कल रात पढ़ाई नहीं की।</span></div>
+                                <div class="example-item">She did not eat breakfast at 8.<span class="hindi-translation">उसने 8 बजे नाश्ता नहीं किया।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Did he play cricket yesterday?<span class="hindi-translation">क्या उसने कल क्रिकेट खेला?</span></div>
+                                <div class="example-item">Did they study last night?<span class="hindi-translation">क्या उन्होंने कल रात पढ़ाई की?</span></div>
+                                <div class="example-item">Did she eat breakfast at 8?<span class="hindi-translation">क्या उसने 8 बजे नाश्ता किया?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Didn't he play cricket yesterday?<span class="hindi-translation">क्या उसने कल क्रिकेट नहीं खेला?</span></div>
+                                <div class="example-item">Didn't they study last night?<span class="hindi-translation">क्या उन्होंने कल रात पढ़ाई नहीं की?</span></div>
+                                <div class="example-item">Didn't she eat breakfast at 8?<span class="hindi-translation">क्या उसने 8 बजे नाश्ता नहीं किया?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use past form (V2) of verb; irregular verbs have special forms (go → went, eat → ate); use 'did' for negatives and  interrogative  with base form (V1).
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + V2 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + did + not + V1 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Did + Subject + V1 + object + ?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Past Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Past Continuous (अपूर्ण भूत काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में किसी特定 समय पर जारी थीं या दो क्रियाएँ एक साथ चल रही थीं। इन वाक्यों के अंत में 'रहा था', 'रही थी', 'रहे थे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Actions in progress at specific past time</li>
+                            <li>Interrupted actions</li>
+                            <li>Two simultaneous actions</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>while, when, as</li>
+                            <li>at 5 PM yesterday</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + was/were + V1 + ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + was/were + not + V1 + ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Was/Were + Subject + V1 + ing + object?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Wasn't/Weren't + Subject + V1 + ing + object ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He was playing cricket at 5 PM.<span class="hindi-translation">वह 5 बजे क्रिकेट खेल रहा था।</span></div>
+                                <div class="example-item">They were studying when I called.<span class="hindi-translation">वे पढ़ रहे थे जब मैंने फोन किया।</span></div>
+                                <div class="example-item">She was eating breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता कर रही थी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He was not playing cricket at 5 PM.<span class="hindi-translation">वह 5 बजे क्रिकेट नहीं खेल रहा था।</span></div>
+                                <div class="example-item">They were not studying when I called.<span class="hindi-translation">वे पढ़ नहीं रहे थे जब मैंने फोन किया।</span></div>
+                                <div class="example-item">She was not eating breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता नहीं कर रही थी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Was he playing cricket at 5 PM?<span class="hindi-translation">क्या वह 5 बजे क्रिकेट खेल रहा था?</span></div>
+                                <div class="example-item">Were they studying when I called?<span class="hindi-translation">क्या वे पढ़ रहे थे जब मैंने फोन किया?</span></div>
+                                <div class="example-item">Was she eating breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता कर रही थी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Wasn't he playing cricket at 5 PM?<span class="hindi-translation">क्या वह 5 बजे क्रिकेट नहीं खेल रहा था?</span></div>
+                                <div class="example-item">Weren't they studying when I called?<span class="hindi-translation">क्या वे पढ़ नहीं रहे थे जब मैंने फोन किया?</span></div>
+                                <div class="example-item">Wasn't she eating breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता नहीं कर रही थी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> was/were (I/he/she/it → was, you/we/they → were); add -ing to main verb; often used with Past Simple for interrupted actions.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + was/were + V1+ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + was/were + not + V1+ing</td></tr>
+                            <tr><td>Interrogative</td><td>Was/Were + Subject + V1+ing?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Past Perfect -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Past Perfect (पूर्ण भूत काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में दूसरी क्रिया से पहले पूरी हो चुकी थीं। इन वाक्यों के अंत में 'चुका था', 'चुकी थी', 'चुके थे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Action completed before another past action</li>
+                            <li>Reported speech</li>
+                            <li>Conditional sentences</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>already, just, never</li>
+                            <li>by the time, before, after</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + had + V3 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + had + not + V3 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Had + Subject + V3 + object ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Hadn't + Subject + V3 + object ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He had played cricket before it rained.<span class="hindi-translation">बारिश होने से पहले वह क्रिकेट खेल चुका था।</span></div>
+                                <div class="example-item">They had studied before the exam.<span class="hindi-translation">परीक्षा से पहले वे पढ़ चुके थे।</span></div>
+                                <div class="example-item">She had eaten breakfast before going.<span class="hindi-translation">जाने से पहले वह नाश्ता कर चुकी थी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He had not played cricket before it rained.<span class="hindi-translation">बारिश होने से पहले वह क्रिकेट नहीं खेला था।</span></div>
+                                <div class="example-item">They had not studied before the exam.<span class="hindi-translation">परीक्षा से पहले वे नहीं पढ़े थे।</span></div>
+                                <div class="example-item">She had not eaten breakfast before going.<span class="hindi-translation">जाने से पहले वह नाश्ता नहीं किया था।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Had he played cricket before it rained?<span class="hindi-translation">क्या बारिश होने से पहले वह क्रिकेट खेल चुका था?</span></div>
+                                <div class="example-item">Had they studied before the exam?<span class="hindi-translation">क्या परीक्षा से पहले वे पढ़ चुके थे?</span></div>
+                                <div class="example-item">Had she eaten breakfast before going?<span class="hindi-translation">क्या जाने से पहले वह नाश्ता कर चुकी थी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Hadn't he played cricket before it rained?<span class="hindi-translation">क्या बारिश होने से पहले वह क्रिकेट नहीं खेला था?</span></div>
+                                <div class="example-item">Hadn't they studied before the exam?<span class="hindi-translation">क्या परीक्षा से पहले वे नहीं पढ़े थे?</span></div>
+                                <div class="example-item">Hadn't she eaten breakfast before going?<span class="hindi-translation">क्या जाने से पहले वह नाश्ता नहीं किया था?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use 'had' for all subjects; use past participle (V3); shows earlier of two past actions; often used with Past Simple.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + had + V3</td></tr>
+                            <tr><td>Negative</td><td>Subject + had + not + V3</td></tr>
+                            <tr><td>Interrogative</td><td>Had + Subject + V3?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Past Perfect Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Past Perfect Continuous (पूर्ण अपूर्ण भूत काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भूतकाल में लंबे समय तक जारी रहीं और दूसरी क्रिया से पहले समाप्त हो गईं। इन वाक्यों के अंत में 'रहा था', 'रही थी', 'रहे थे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Duration before another past action</li>
+                            <li>Cause of past result</li>
+                            <li>Continuous action up to past moment</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>for, since, how long</li>
+                            <li>when, before</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + had + been + V1 + ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + had + not + been + V1 + ing</td></tr>
+                            <tr><td>Interrogative</td><td>Had + Subject + been + V1 + ing ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Hadn't + Subject + been + V1 + ing ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He had been playing cricket for 2 hours when it rained.<span class="hindi-translation">जब बारिश हुई तब वह 2 घंटे से क्रिकेट खेल रहा था।</span></div>
+                                <div class="example-item">They had been studying for 3 hours before the exam.<span class="hindi-translation">परीक्षा से पहले वे 3 घंटे से पढ़ रहे थे।</span></div>
+                                <div class="example-item">She had been eating breakfast for 15 minutes when he arrived.<span class="hindi-translation">जब वह आया तब वह 15 मिनट से नाश्ता कर रही थी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He had not been playing cricket for 2 hours when it rained.<span class="hindi-translation">जब बारिश हुई तब वह 2 घंटे से क्रिकेट नहीं खेल रहा था।</span></div>
+                                <div class="example-item">They had not been studying for 3 hours before the exam.<span class="hindi-translation">परीक्षा से पहले वे 3 घंटे से नहीं पढ़ रहे थे।</span></div>
+                                <div class="example-item">She had not been eating breakfast for 15 minutes when he arrived.<span class="hindi-translation">जब वह आया तब वह 15 मिनट से नाश्ता नहीं कर रही थी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Had he been playing cricket for 2 hours when it rained?<span class="hindi-translation">क्या जब बारिश हुई तब वह 2 घंटे से क्रिकेट खेल रहा था?</span></div>
+                                <div class="example-item">Had they been studying for 3 hours before the exam?<span class="hindi-translation">क्या परीक्षा से पहले वे 3 घंटे से पढ़ रहे थे?</span></div>
+                                <div class="example-item">Had she been eating breakfast for 15 minutes when he arrived?<span class="hindi-translation">क्या जब वह आया तब वह 15 मिनट से नाश्ता कर रही थी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Hadn't he been playing cricket for 2 hours when it rained?<span class="hindi-translation">क्या जब बारिश हुई तब वह 2 घंटे से क्रिकेट नहीं खेल रहा था?</span></div>
+                                <div class="example-item">Hadn't they been studying for 3 hours before the exam?<span class="hindi-translation">क्या परीक्षा से पहले वे 3 घंटे से नहीं पढ़ रहे थे?</span></div>
+                                <div class="example-item">Hadn't she been eating breakfast for 15 minutes when he arrived?<span class="hindi-translation">क्या जब वह आया तब वह 15 मिनट से नाश्ता नहीं कर रही थी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use had + been + V1+ing; emphasizes duration of action; often shows cause of past result; not used with stative verbs.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + had + been + V1+ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + had + not + been + V1+ing</td></tr>
+                            <tr><td>Interrogative</td><td>Had + Subject + been + V1+ing?</td></tr>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="future" class="section future-section">
+            <h2>Future Tenses</h2>
+            <div class="tense-grid">
+                <!-- Future Simple -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Future Simple (साधारण भविष्य काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भविष्य में होने वाली हैं, वादों, भविष्यवाणियों या स्वतः निर्णयों के लिए। इन वाक्यों के अंत में 'गा', 'गी', 'गे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Future predictions</li>
+                            <li>Promises/Instant decisions</li>
+                            <li>Unplanned actions</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>tomorrow, next week</li>
+                            <li>soon, in 2030</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + V1 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + V1 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + V1 + object ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Won't + Subject + V1 + object ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He will play cricket tomorrow.<span class="hindi-translation">वह कल क्रिकेट खेलेगा।</span></div>
+                                <div class="example-item">They will study next week.<span class="hindi-translation">वे अगले सप्ताह पढ़ेंगे।</span></div>
+                                <div class="example-item">She will eat breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता करेगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He will not play cricket tomorrow.<span class="hindi-translation">वह कल क्रिकेट नहीं खेलेगा।</span></div>
+                                <div class="example-item">They will not study next week.<span class="hindi-translation">वे अगले सप्ताह नहीं पढ़ेंगे।</span></div>
+                                <div class="example-item">She will not eat breakfast at 8.<span class="hindi-translation">वह 8 बजे नाश्ता नहीं करेगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Will he play cricket tomorrow?<span class="hindi-translation">क्या वह कल क्रिकेट खेलेगा?</span></div>
+                                <div class="example-item">Will they study next week?<span class="hindi-translation">क्या वे अगले सप्ताह पढ़ेंगे?</span></div>
+                                <div class="example-item">Will she eat breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता करेगी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Won't he play cricket tomorrow?<span class="hindi-translation">क्या वह कल क्रिकेट नहीं खेलेगा?</span></div>
+                                <div class="example-item">Won't they study next week?<span class="hindi-translation">क्या वे अगले सप्ताह नहीं पढ़ेंगे?</span></div>
+                                <div class="example-item">Won't she eat breakfast at 8?<span class="hindi-translation">क्या वह 8 बजे नाश्ता नहीं करेगी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> 'will' ka use sabhi subjects ke sath kar sakte hain. <br>'shall' ka use I/we ke sath offers/suggestions ke liye. <br>contractions: will not → won't.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + V1</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + V1</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + V1?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Future Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Future Continuous (अपूर्ण भविष्य काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भविष्य में किसी समय पर जारी रहेंगी। इन वाक्यों के अंत में 'रहा होगा', 'रही होगी', 'रहे होंगे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Action in progress at future time</li>
+                            <li>Fixed plans/arrangements</li>
+                            <li>Politely asking about plans</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>at this time tomorrow</li>
+                            <li>next week at 5 PM</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + be + V1 + ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + be + V1 + ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + be + V1 + ing + object?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Won't + Subject + be + V1 + ing + object ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He will be playing cricket at 5 PM tomorrow.<span class="hindi-translation">वह कल 5 बजे क्रिकेट खेल रहा होगा।</span></div>
+                                <div class="example-item">They will be studying this time next week.<span class="hindi-translation">वे अगले सप्ताह इस समय पढ़ रहे होंगे।</span></div>
+                                <div class="example-item">She will be eating breakfast at 8 tomorrow.<span class="hindi-translation">वह कल 8 बजे नाश्ता कर रही होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He will not be playing cricket at 5 PM tomorrow.<span class="hindi-translation">वह कल 5 बजे क्रिकेट नहीं खेल रहा होगा।</span></div>
+                                <div class="example-item">They will not be studying this time next week.<span class="hindi-translation">वे अगले सप्ताह इस समय नहीं पढ़ रहे होंगे।</span></div>
+                                <div class="example-item">She will not be eating breakfast at 8 tomorrow.<span class="hindi-translation">वह कल 8 बजे नाश्ता नहीं कर रही होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Will he be playing cricket at 5 PM tomorrow?<span class="hindi-translation">क्या वह कल 5 बजे क्रिकेट खेल रहा होगा?</span></div>
+                                <div class="example-item">Will they be studying this time next week?<span class="hindi-translation">क्या वे अगले सप्ताह इस समय पढ़ रहे होंगे?</span></div>
+                                <div class="example-item">Will she be eating breakfast at 8 tomorrow?<span class="hindi-translation">क्या वह कल 8 बजे नाश्ता कर रही होगी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Won't he be playing cricket at 5 PM tomorrow?<span class="hindi-translation">क्या वह कल 5 बजे क्रिकेट नहीं खेल रहा होगा?</span></div>
+                                <div class="example-item">Won't they be studying this time next week?<span class="hindi-translation">क्या वे अगले सप्ताह इस समय नहीं पढ़ रहे होंगे?</span></div>
+                                <div class="example-item">Won't she be eating breakfast at 8 tomorrow?<span class="hindi-translation">क्या वह कल 8 बजे नाश्ता नहीं कर रही होगी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use will + be + V1+ing; emphasizes action in progress at specific future time; not used with stative verbs.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + be + V1+ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + be + V1+ing</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + be + V1+ing?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Future Perfect -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Future Perfect (पूर्ण भविष्य काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भविष्य में किसी समय तक पूरी हो चुकी होंगी। इन वाक्यों के अंत में 'चुका होगा', 'चुकी होगी', 'चुके होंगे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Action completed before future time</li>
+                            <li>Deadlines/Time limits</li>
+                            <li>Future accomplishments</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>by, by the time</li>
+                            <li>before, until</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + have + V3 + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + have + V3 + object</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + have + V3 + object ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Won't + Subject + have + V3 + object?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He will have played cricket by 5 PM.<span class="hindi-translation">वह 5 बजे तक क्रिकेट खेल चुका होगा।</span></div>
+                                <div class="example-item">They will have studied by next month.<span class="hindi-translation">वे अगले महीने तक पढ़ चुके होंगे।</span></div>
+                                <div class="example-item">She will have eaten breakfast by 9.<span class="hindi-translation">वह 9 बजे तक नाश्ता कर चुकी होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He will not have played cricket by 5 PM.<span class="hindi-translation">वह 5 बजे तक क्रिकेट नहीं खेला होगा।</span></div>
+                                <div class="example-item">They will not have studied by next month.<span class="hindi-translation">वे अगले महीने तक नहीं पढ़े होंगे।</span></div>
+                                <div class="example-item">She will not have eaten breakfast by 9.<span class="hindi-translation">वह 9 बजे तक नाश्ता नहीं किया होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Will he have played cricket by 5 PM?<span class="hindi-translation">क्या वह 5 बजे तक क्रिकेट खेल चुका होगा?</span></div>
+                                <div class="example-item">Will they have studied by next month?<span class="hindi-translation">क्या वे अगले महीने तक पढ़ चुके होंगे?</span></div>
+                                <div class="example-item">Will she have eaten breakfast by 9?<span class="hindi-translation">क्या वह 9 बजे तक नाश्ता कर चुकी होगी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Won't he have played cricket by 5 PM?<span class="hindi-translation">क्या वह 5 बजे तक क्रिकेट नहीं खेला होगा?</span></div>
+                                <div class="example-item">Won't they have studied by next month?<span class="hindi-translation">क्या वे अगले महीने तक नहीं पढ़े होंगे?</span></div>
+                                <div class="example-item">Won't she have eaten breakfast by 9?<span class="hindi-translation">क्या वह 9 बजे तक नाश्ता नहीं किया होगी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use will + have + V3; shows action completed before another future action/time; often used with 'by' or 'by the time'.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + have + V3</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + have + V3</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + have + V3?</td></tr>
+                        </table>
+                    </div>
+                </article>
+
+                <!-- Future Perfect Continuous -->
+                <article class="tense-card">
+                    <div class="tense-header">
+                        <h3>Future Perfect Continuous (पूर्ण अपूर्ण भविष्य काल)</h3>
+                    </div>
+                    <div class="tense-content">
+                        <div class="hindi-meaning">उन क्रियाओं के लिए प्रयोग होता है जो भविष्य में किसी特定 समय तक लंबे समय से जारी रहेंगी और अभी भी चल रही होंगी। इन वाक्यों के अंत में 'रहा होगा', 'रही होगी', 'रहे होंगे' जैसे शब्द आते हैं।</div>
+                        
+                        <div><strong>Uses:</strong></div>
+                        <ul class="uses-list">
+                            <li>Duration up to future time</li>
+                            <li>Emphasizing length of action</li>
+                            <li>Continuous action before future event</li>
+                        </ul>
+                        
+                        <div><strong>Signal words:</strong></div>
+                        <ul class="signal-words">
+                            <li>for, since, by the time</li>
+                            <li>when, before</li>
+                        </ul>
+                        
+                        <table class="structure-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + have + been + V1 + ing + object</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + have + been + V1 + ing + object</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + have + been + V1 + ing + object + ?</td></tr>
+                            <tr><td>Interrogative-Negative</td><td>Won't + Subject + have + been + V1 + ing + object + ?</td></tr>
+                        </table>
+                        
+                        <div class="examples">
+                            <div class="example-form">
+                                <div class="form-heading">Affirmative</div>
+                                <div class="example-item">He will have been playing cricket for 2 hours by 5 PM.<span class="hindi-translation">वह 5 बजे तक 2 घंटे से क्रिकेट खेल रहा होगा।</span></div>
+                                <div class="example-item">They will have been studying for 3 years by next month.<span class="hindi-translation">वे अगले महीने तक 3 साल से पढ़ रहे होंगे।</span></div>
+                                <div class="example-item">She will have been eating breakfast for 15 minutes by 8:15.<span class="hindi-translation">वह 8:15 तक 15 मिनट से नाश्ता कर रही होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Negative</div>
+                                <div class="example-item">He will not have been playing cricket for 2 hours by 5 PM.<span class="hindi-translation">वह 5 बजे तक 2 घंटे से क्रिकेट नहीं खेल रहा होगा।</span></div>
+                                <div class="example-item">They will not have been studying for 3 years by next month.<span class="hindi-translation">वे अगले महीने तक 3 साल से नहीं पढ़ रहे होंगे।</span></div>
+                                <div class="example-item">She will not have been eating breakfast for 15 minutes by 8:15.<span class="hindi-translation">वह 8:15 तक 15 मिनट से नाश्ता नहीं कर रही होगी।</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative</div>
+                                <div class="example-item">Will he have been playing cricket for 2 hours by 5 PM?<span class="hindi-translation">क्या वह 5 बजे तक 2 घंटे से क्रिकेट खेल रहा होगा?</span></div>
+                                <div class="example-item">Will they have been studying for 3 years by next month?<span class="hindi-translation">क्या वे अगले महीने तक 3 साल से पढ़ रहे होंगे?</span></div>
+                                <div class="example-item">Will she have been eating breakfast for 15 minutes by 8:15?<span class="hindi-translation">क्या वह 8:15 तक 15 मिनट से नाश्ता कर रही होगी?</span></div>
+                            </div>
+                            
+                            <div class="example-form">
+                                <div class="form-heading">Interrogative-Negative</div>
+                                <div class="example-item">Won't he have been playing cricket for 2 hours by 5 PM?<span class="hindi-translation">क्या वह 5 बजे तक 2 घंटे से क्रिकेट नहीं खेल रहा होगा?</span></div>
+                                <div class="example-item">Won't they have been studying for 3 years by next month?<span class="hindi-translation">क्या वे अगले महीने तक 3 साल से नहीं पढ़ रहे होंगे?</span></div>
+                                <div class="example-item">Won't she have been eating breakfast for 15 minutes by 8:15?<span class="hindi-translation">क्या वह 8:15 तक 15 मिनट से नाश्ता नहीं कर रही होगी?</span></div>
+                            </div>
+                        </div>
+                        
+                        <div class="rules-box">
+                            <strong>Rules:</strong> Use will + have + been + V1+ing; emphasizes duration of action up to future point; rarely used in everyday conversation.
+                        </div>
+
+                        <h4>Quick Summary</h4>
+                        <table class="summary-table">
+                            <tr><th>Form</th><th>Structure</th></tr>
+                            <tr><td>Affirmative</td><td>Subject + will + have + been + V1+ing</td></tr>
+                            <tr><td>Negative</td><td>Subject + will + not + have + been + V1+ing</td></tr>
+                            <tr><td>Interrogative</td><td>Will + Subject + have + been + V1+ing?</td></tr>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="cheat-sheet">
+            <h3>Quick Cheat Sheet - Helper Verbs</h3>
+            <div class="verb-list">
+                <div class="verb-item"><strong>do</strong> - you/we/they</div>
+                <div class="verb-item"><strong>does</strong> - he/she/it/name (third person)</div>
+                <div class="verb-item"><strong>am</strong> - I</div>
+                <div class="verb-item"><strong>is</strong> - he/she/it/name</div>
+                <div class="verb-item"><strong>are</strong> - you/we/they</div>
+                <div class="verb-item"><strong>has</strong> - he/she/it/name</div>
+                <div class="verb-item"><strong>have</strong> - you/we/they</div>
+                <div class="verb-item"><strong>did</strong> - past simple (negative + interrogative)</div>
+                <div class="verb-item"><strong>was</strong> - he/she/it/name</div>
+                <div class="verb-item"><strong>were</strong> - you/we/they</div>
+                <div class="verb-item"><strong>had</strong> - All subject (past perfect)</div>
+                <div class="verb-item"><strong>will</strong> - All subjects (future tense)</div>
+                <div class="verb-item"><strong>shall</strong> - i</div>
+            </div>
+        </div>
+    </main>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>Download StudyScript App</p>
+        <p>&copy; 2025 Complete Guide to English Tenses</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Back to top button
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Show/hide back to top button
+        window.addEventListener('scroll', function() {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopBtn.style.display = 'block';
+            } else {
+                backToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
