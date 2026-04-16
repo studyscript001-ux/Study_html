@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ailing Planet + Childhood - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.0rem;
+            }
+            .card {
+                padding: 12px;
+            }
+            .vocab-table {
+                font-size: 14px;
+            }
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>The Ailing Planet: the Green Movement's Role</h1>
+            <p>NCERT Class 11 English - Hornbill</p>
+            <p>Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- ==================== THE AILING PLANET SECTION ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Understanding the Text (The Ailing Planet)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Locate the lines in the text that support the title 'The Ailing Planet'.</div>
+                <div class="answer">
+                    The following lines from the text support the title 'The Ailing Planet':<br>
+                    • "The earth's vital signs reveal a patient in declining health."<br>
+                    • "In large areas of the world, human claims on these systems are reaching an unsustainable level, a point where their productivity is being impaired."<br>
+                    • "When this happens, fisheries collapse, forests disappear, grasslands are converted into barren wastelands, and croplands deteriorate."<br>
+                    • "The world's ancient patrimony of tropical forests is now eroding at the rate of forty to fifty million acres a year."<br>
+                    • "A recent report of our Parliament's Estimates Committee has highlighted the near catastrophic depletion of India's forests over the last four decades."
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What does the notice 'The world's most dangerous animal' at a cage in the zoo at Lusaka, Zambia, signify?</div>
+                <div class="answer">
+                    The notice 'The world's most dangerous animal' is placed outside a cage that contains no animal but a mirror. When people look inside, they see their own reflection. This signifies that <strong>human beings are the most dangerous animals on Earth</strong>. It highlights that humans, through their activities like overconsumption, deforestation, pollution, and population growth, are responsible for the degradation of the environment. The mirror forces people to introspect and realise that they themselves are the greatest threat to the planet's survival.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. How are the earth's principal biological systems being depleted?</div>
+                <div class="answer">
+                    The earth's four principal biological systems – fisheries, forests, grasslands, and croplands – are being depleted in the following ways:<br>
+                    • <strong>Fisheries:</strong> Over-fishing is common, leading to collapse of fisheries in many areas.<br>
+                    • <strong>Forests:</strong> Tropical forests are being destroyed at the rate of 40-50 million acres per year. In poor countries, forests are decimated for firewood.<br>
+                    • <strong>Grasslands:</strong> They are being converted into barren wastelands due to overgrazing and unsustainable use.<br>
+                    • <strong>Croplands:</strong> They deteriorate due to loss of fertility, and dung that could be used as natural fertiliser is being burnt as fuel.<br>
+                    Human claims on these systems have reached unsustainable levels, impairing their productivity.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Why does the author aver that the growth of world population is one of the strongest factors distorting the future of human society?</div>
+                <div class="answer">
+                    The author states that population growth is a strong distorting factor because:<br>
+                    • It took over a million years to reach the first billion (around 1800), but the next billion was added by 1900, and the twentieth century added 3.7 billion more.<br>
+                    • The present world population is 5.7 billion, increasing by one million every four days.<br>
+                    • More children in poor families condemn them to remain poor – "the rich get richer, and the poor beget children which condemns them to remain poor."<br>
+                    • Fertility falls with development (education, health, income), so development is the best contraceptive, but development itself is hindered by population growth.<br>
+                    • In India, the population of 920 million (more than Africa and South America combined) means hope would die in "hungry hutments" unless population control is given top priority.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talking about the Text (The Ailing Planet)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Laws are never respected nor enforced in India. (Discuss in groups)</div>
+                <div class="answer">
+                    <strong>Arguments in favour:</strong> The author points out that despite Article 48A of the Constitution directing the State to protect the environment, laws are rarely enforced. He gives examples: casteism, untouchability, and bonded labour are constitutionally abolished yet flourish shamelessly. Forest laws are violated, and the actual loss of forests is eight times the government statistics.<br>
+                    <strong>Arguments against:</strong> Some laws are respected and enforced, e.g., traffic regulations in cities, income tax laws. The judiciary has become active through Public Interest Litigations (PILs) to enforce environmental laws. However, the author's overall concern about weak enforcement remains valid.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. "Are we to leave our successors a scorched planet of advancing deserts, impoverished landscapes and an ailing environment?"</div>
+                <div class="answer">
+                    This question from the Brandt Report highlights the moral responsibility of the current generation towards future generations. If we continue depleting resources unsustainably – cutting forests, over-fishing, degrading croplands – we will leave behind a barren, polluted, and uninhabitable planet. The question challenges us to change our ways and adopt sustainable development so that our children and grandchildren inherit a healthy Earth, not a "scorched planet".
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. "We have not inherited this earth from our forefathers; we have borrowed it from our children."</div>
+                <div class="answer">
+                    This powerful statement by Lester Brown redefines our relationship with the planet. Traditionally, we think we have inherited the Earth from our ancestors. But Brown reverses this: we have borrowed it from future generations. This means we are merely temporary custodians or trustees. We have no right to destroy or deplete resources because they belong to those who will come after us. This perspective encourages sustainable development – using resources today without compromising the ability of future generations to meet their own needs.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. The problems of overpopulation that directly affect our everyday life.</div>
+                <div class="answer">
+                    Overpopulation affects everyday life in many ways:<br>
+                    • <strong>Shortage of resources:</strong> Water scarcity, electricity cuts, fuel shortages.<br>
+                    • <strong>Traffic and overcrowding:</strong> Congestion on roads, crowded public transport, long queues.<br>
+                    • <strong>Housing problems:</strong> Expensive real estate, slums, lack of affordable housing.<br>
+                    • <strong>Unemployment:</strong> More job seekers than available positions.<br>
+                    • <strong>Pressure on education and healthcare:</strong> Overcrowded schools, long waiting lists for hospitals.<br>
+                    • <strong>Pollution:</strong> More vehicles, more waste, degraded air and water quality.<br>
+                    • <strong>Food prices:</strong> Rising demand leads to inflation.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Thinking about Language</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> The phrase 'inter alia' meaning 'among other things' is one of the many Latin expressions commonly used in English. Find out what these Latin phrases mean.</div>
+                <div class="answer">
+                    <strong>1. prima facie:</strong> At first sight; based on first impression; accepted as correct until proved otherwise.<br>
+                    <strong>2. ad hoc:</strong> Created or done for a particular purpose as necessary; makeshift.<br>
+                    <strong>3. in camera:</strong> In private; (of a legal case) heard in secret, not in open court.<br>
+                    <strong>4. ad infinitum:</strong> Endlessly; forever; without limit.<br>
+                    <strong>5. mutatis mutandis:</strong> The necessary changes having been made; with the respective differences considered.<br>
+                    <strong>6. caveat:</strong> A warning or proviso; a legal notice to stop proceedings.<br>
+                    <strong>7. tabula rasa:</strong> Blank slate; the mind before it receives impressions from experience.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-font"></i> Working with Words</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> I. Locate the following phrases in the text and study their connotation.</div>
+                <div class="answer">
+                    <strong>1. gripped the imagination of:</strong> Captured the interest and attention of people completely. (e.g., "the Green Movement gripped the imagination of the entire human race")<br>
+                    <strong>2. dawned upon:</strong> Became gradually understood or realised. (e.g., "a new awareness has now dawned upon the most dangerous animal")<br>
+                    <strong>3. ushered in:</strong> Brought in; marked the beginning of (a new period). (e.g., "The emerging new world vision has ushered in the Era of Responsibility")<br>
+                    <strong>4. passed into current coin:</strong> Became a commonly used phrase or expression. (e.g., Margaret Thatcher's words "passed decisively into the current coin of English usage")<br>
+                    <strong>5. passport of the future:</strong> Something that will enable entry into or guarantee a better future. (e.g., "The environmental problem... is our passport for the future")
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> II. Write pairs of sentences using each word in the literal as well as the figurative sense: grip, dawn, usher, coin, passport.</div>
+                <div class="answer">
+                    <strong>Grip:</strong><br>
+                    • <em>Literal:</em> The child tightened his grip on his mother's hand.<br>
+                    • <em>Figurative:</em> Fear gripped the entire city during the terrorist attack.<br><br>
+                    <strong>Dawn:</strong><br>
+                    • <em>Literal:</em> We woke up at dawn to watch the sunrise.<br>
+                    • <em>Figurative:</em> The truth finally dawned upon him after seeing the evidence.<br><br>
+                    <strong>Usher:</strong><br>
+                    • <em>Literal:</em> The attendant ushered the guests into the hall.<br>
+                    • <em>Figurative:</em> The Industrial Revolution ushered in a new era of technology.<br><br>
+                    <strong>Coin:</strong><br>
+                    • <em>Literal:</em> He tossed a coin into the fountain for good luck.<br>
+                    • <em>Figurative:</em> The phrase 'sustainable development' has now passed into common coin.<br><br>
+                    <strong>Passport:</strong><br>
+                    • <em>Literal:</em> You need a valid passport to travel abroad.<br>
+                    • <em>Figurative:</em> A good education is a passport to a successful career.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Things to Do</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Make posters to highlight the importance of the Green Movement.</div>
+                <div class="answer">
+                    <strong>Poster Ideas:</strong><br>
+                    • "Save Earth – It's the only planet with chocolate!"<br>
+                    • "The Earth is not a gift from our parents; it is a loan from our children."<br>
+                    • "Reduce, Reuse, Recycle – The Three R's for a Green Future."<br>
+                    • "Plant a tree today – it will thank you tomorrow."<br>
+                    • "Don't let our future go up in smoke – stop deforestation."<br>
+                    • "Be the change you wish to see in the environment – Go Green!"
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Maintain a record of the trees cut down and the parks demolished in your area, or any other act that violates the environment. Write to newspapers reporting on any such acts that disturb you.</div>
+                <div class="answer">
+                    [Sample letter to the editor]<br><br>
+                    <strong>To,</strong><br>
+                    The Editor, [Newspaper Name]<br>
+                    [City]<br><br>
+                    <strong>Subject: Illegal tree cutting in [locality name]</strong><br><br>
+                    Sir/Madam,<br>
+                    Through the columns of your esteemed newspaper, I wish to draw attention to the rampant cutting of trees in [locality name]. Over the past month, more than 20 mature trees have been felled by builders without any prior notice or permission from the local authority. This is a clear violation of the Forest Conservation Act and the orders of the Supreme Court. The area has become hotter, dustier, and birds have disappeared. I request the authorities to take immediate action against the offenders and plant double the number of trees in their place.<br><br>
+                    Yours sincerely,<br>
+                    [Your Name]<br>
+                    [Contact details]
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== CHILDHOOD (POEM) SECTION ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-child"></i> Childhood (Poem) - Think It Out</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Identify the stanza that talks of each of the following: individuality, rationalism, hypocrisy.</div>
+                <div class="answer">
+                    • <strong>Individuality:</strong> Third stanza – "Was it when I found my mind was really mine, To use whichever way I choose, Producing thoughts that were not those of other people But my own, and mine alone"<br>
+                    • <strong>Rationalism:</strong> First stanza – "Was it the time I realised that Hell and Heaven, Could not be found in Geography, And therefore could not be" – realising that religious concepts cannot be located on a map, showing logical/scientific thinking.<br>
+                    • <strong>Hypocrisy:</strong> Second stanza – "Was it the time I realised that adults were not all they seemed to be, They talked of love and preached of love, But did not act so lovingly" – adults preach one thing but practise another.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What according to the poem is involved in the process of growing up?</div>
+                <div class="answer">
+                    According to the poem, growing up involves:<br>
+                    • <strong>Loss of innocence and faith in religious concepts:</strong> Realising that Heaven and Hell are not physical places that can be found on a map.<br>
+                    • <strong>Recognition of adult hypocrisy:</strong> Understanding that adults do not practise what they preach; they talk and preach about love but do not act lovingly.<br>
+                    • <strong>Development of individuality:</strong> Discovering that one's mind is one's own and can produce independent thoughts, not just those of others.<br>
+                    • <strong>Rational and logical thinking:</strong> Questioning beliefs and forming one's own understanding based on reason.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. What is the poet's feeling towards childhood?</div>
+                <div class="answer">
+                    The poet feels a sense of <strong>nostalgia and loss</strong> for childhood. He repeatedly asks "When did my childhood go?" suggesting that he misses the innocence and simplicity of that phase. He realises that childhood has disappeared without his noticing. In the final stanza, he says childhood "went to some forgotten place, That's hidden in an infant's face" – implying that childhood can only be seen in the face of a baby now, and he can never get it back. There is a gentle sadness and acceptance.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Which do you think are the most poetic lines? Why?</div>
+                <div class="answer">
+                    [Sample answer] The most poetic lines are: <strong>"Where did my childhood go? It went to some forgotten place, That's hidden in an infant's face, That's all I know."</strong><br>
+                    These lines are beautiful because they use simple yet profound imagery. The idea that childhood is 'hidden in an infant's face' suggests that every new baby carries the potential for childhood, but once you grow up, you can never reclaim it. The vagueness of 'some forgotten place' adds mystery. The short, resigned phrase 'That's all I know' captures the poet's acceptance of this universal truth – we all lose childhood, and we can only see it now in the faces of babies.
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Section -->
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Important Words from the Text</h2>
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead><tr><th>Word/Phrase</th><th>Meaning</th></tr></thead>
+                    <tbody>
+                        <tr><td>Holistic and ecological view</td><td>Seeing the world as an integrated whole, not as separate parts</td></tr>
+                        <tr><td>Sustainable development</td><td>Development that meets present needs without compromising future generations' ability to meet theirs</td></tr>
+                        <tr><td>Languish in ignominious darkness</td><td>Remain undeveloped and unknown in shameful obscurity</td></tr>
+                        <tr><td>Inter alia</td><td>Among other things (Latin)</td></tr>
+                        <tr><td>Decimated</td><td>Destroyed or killed a large part of</td></tr>
+                        <tr><td>Catastrophic depletion</td><td>Disastrous reduction or exhaustion of resources</td></tr>
+                        <tr><td>Transcending concern</td><td>Concern that goes beyond ordinary limits; universal</td></tr>
+                        <tr><td>Preached</td><td>Gave moral advice (often hypocritically)</td></tr>
+                        <tr><td>Rationalism</td><td>Belief in reason and logic rather than religion or emotion</td></tr>
+                        <tr><td>Hypocrisy</td><td>Pretending to have beliefs or virtues that one does not actually practise</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "The Ailing Planet: the Green Movement's Role" by Nani Palkhivala and the poem "Childhood" from NCERT Class 11 English textbook "Hornbill". Students should read the original text carefully and write answers in their own words for better understanding and exam preparation.
+        </div>
+
+        <div class="footer">
+            <p>NCERT Class 11 English Solutions - Hornbill</p>
+            <p>The Ailing Planet: the Green Movement's Role | Childhood</p>
+        </div>
+    </div>
+
+    <script>
+        // Text selection/copy protection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    </script>
+</body>
+</html>

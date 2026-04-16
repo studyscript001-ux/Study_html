@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk Road + Father to Son - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.0rem;
+            }
+            .card {
+                padding: 12px;
+            }
+            .vocab-table {
+                font-size: 14px;
+            }
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>Silk Road</h1>
+            <p>NCERT Class 11 English - Hornbill</p>
+            <p>Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- ==================== SILK ROAD SECTION ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Understanding the Text (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> I. Give reasons for the following statements.</div>
+                <div class="answer">
+                    <strong>1. The article has been titled 'Silk Road'.</strong><br>
+                    The title 'Silk Road' is appropriate because the author's journey follows the ancient trade route that connected Lhasa to Kashmir, passing through the Tibetan plateau. This route was historically part of the Silk Road, along which silk, spices, and other goods were traded, and Buddhism spread from India to China and beyond. The author's journey to Mount Kailash follows this same path, and he even mentions modern exports like plastic bags traveling along the Silk Road today.<br><br>
+                    
+                    <strong>2. Tibetan mastiffs were popular in China's imperial courts.</strong><br>
+                    Tibetan mastiffs were popular in China's imperial courts because they were ferocious, fearless, and loyal dogs. Their massive size, dark coats, and protective nature made them excellent hunting dogs and guardians. They were brought along the Silk Road as tribute from Tibet to Chinese emperors, who valued them for their strength and courage.<br><br>
+                    
+                    <strong>3. The author's experience at Hor was in stark contrast to earlier accounts of the place.</strong><br>
+                    Earlier travellers like Japanese monk Ekai Kawaguchi (1900) and Swede Sven Hedin (1902) were deeply moved by the sanctity of Lake Manasarovar – Kawaguchi burst into tears, and even Hedin (not prone to sentimental outbursts) was affected. However, when the author visited Hor, he found it a "grim, miserable place" with no vegetation, accumulated refuse, badly painted concrete buildings, and a dirty cafe. The stark contrast highlights how the place has deteriorated over time.<br><br>
+                    
+                    <strong>4. The author was disappointed with Darchen.</strong><br>
+                    The author was disappointed with Darchen because it was dusty, partially derelict, and full of rubble and refuse. More importantly, there were no pilgrims despite it being the beginning of the pilgrimage season. He had come to do the kora (circumambulation) of Mount Kailash, but without fellow travellers, he felt uncertain about doing it alone. His sleeping difficulties and altitude sickness added to his disappointment.<br><br>
+                    
+                    <strong>5. The author thought that his positive thinking strategy worked well after all.</strong><br>
+                    The author had been trying to maintain a positive outlook despite his troubles. When he met Norbu in the cafe, his spirits lifted. Norbu was a Tibetan academic from Beijing who also wanted to do the kora. He suggested they form a team – "Two academics who have escaped from the library." This unexpected companionship gave the author hope and made him feel that his positive thinking strategy was finally working.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> II. Briefly comment on the following.</div>
+                <div class="answer">
+                    <strong>1. The purpose of the author's journey to Mount Kailash.</strong><br>
+                    The author travelled to Mount Kailash to complete the kora – the sacred circumambulation of the mountain, which is considered holy by Hindus, Buddhists, Jains, and Bonpos. He wanted to experience the pilgrimage firsthand, possibly for personal spiritual reasons or as part of his travel writing. The journey involved crossing high mountain passes, enduring harsh weather, and dealing with altitude sickness.<br><br>
+                    
+                    <strong>2. The author's physical condition in Darchen.</strong><br>
+                    In Darchen (elevation 4,760 metres), the author suffered from a severe cold, blocked sinuses, and breathing difficulties. He experienced frightening nights where he couldn't lie down to sleep because his chest felt heavy and he was afraid he might not wake up. He consulted a Tibetan doctor who diagnosed a cold and altitude effects, prescribing Tibetan medicine (brown powder and small brown pellets) that eventually helped him sleep soundly.<br><br>
+                    
+                    <strong>3. The author's meeting with Norbu.</strong><br>
+                    The author met Norbu in Darchen's only cafe. Norbu was a Tibetan working at the Chinese Academy of Social Sciences in Beijing. He had written academic papers about the Kailash kora but had never actually done it. He was also alone and ill-equipped (overweight, not a practising Buddhist). They decided to become a team, and Norbu's enthusiasm and sense of humour lifted the author's spirits.<br><br>
+                    
+                    <strong>4. Tsetan's support to the author during the journey.</strong><br>
+                    Tsetan was the author's driver and guide. He provided crucial support by navigating treacherous mountain passes, dealing with snow blockages, fixing punctures, and ensuring the author's safety. He also took the author to the Darchen medical college when he fell ill. Tsetan was knowledgeable about the terrain and culture, and his calm, practical assistance made the difficult journey possible.<br><br>
+                    
+                    <strong>5. "As a Buddhist, he told me, he knew that it didn't really matter if I passed away, but he thought it would be bad for business."</strong><br>
+                    This statement by Tsetan reflects Buddhist philosophy – that death is not the end and that the cycle of rebirth continues. However, Tsetan adds a practical, humorous twist: while the author's death wouldn't matter spiritually, it would be bad for his business (as a driver/guide). This shows Tsetan's wit and his ability to lighten serious moments.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talking about the Text (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The sensitive behaviour of hill-folk.</div>
+                <div class="answer">
+                    The hill-folk (drokbas – Tibetan nomads) displayed sensitive and hospitable behaviour. They lived in splendid isolation in their dark tents, guarded by ferocious mastiffs. When the author's car passed, they would pause and stare, occasionally waving. Their sheep would take evasive action when the vehicle came close. The drokbas gave the author a sheepskin coat (drokba) as a farewell gift. Despite the harsh environment, they showed kindness and curiosity towards strangers. Their sensitivity is also seen in how they respect traditions – for example, walking clockwise around the cairn of rocks at the mountain pass.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. The reasons why people willingly undergo the travails of difficult journeys.</div>
+                <div class="answer">
+                    People willingly undertake difficult journeys like the Kailash kora for several reasons:<br>
+                    • <strong>Religious/spiritual reasons:</strong> For Hindus, Buddhists, Jains, and Bonpos, circumambulating Mount Kailash is believed to bring spiritual merit, cleanse sins, and lead to enlightenment.<br>
+                    • <strong>Adventure and challenge:</strong> Some seek the thrill of testing themselves against nature's harshest conditions.<br>
+                    • <strong>Cultural exploration:</strong> Travellers like the author want to experience and document remote cultures and landscapes.<br>
+                    • <strong>Personal transformation:</strong> Overcoming physical and mental challenges can lead to personal growth and self-discovery.<br>
+                    • <strong>Tradition and duty:</strong> Some pilgrims undertake the journey as part of family or religious tradition.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. The accounts of exotic places in legends and the reality.</div>
+                <div class="answer">
+                    There is often a gap between legendary accounts and reality. For example, Lake Manasarovar was described in ancient Hindu and Buddhist cosmology as a sacred, venerated source of four great rivers. Earlier travellers like Kawaguchi and Hedin were moved to tears by its sanctity. However, when the author visited Hor on its shore, he found a grim, miserable town with dust, rocks, refuse, and a dirty cafe. The reality was disappointing compared to the legendary accounts. Similarly, Darchen was described as bustling with pilgrims, but the author found it empty and derelict. This contrast shows that places change over time and that romanticised legends may not match present-day conditions.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Thinking about Language (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Notice the kind of English Tsetan uses while talking to the author. How do you think he picked it up?</div>
+                <div class="answer">
+                    Tsetan uses a simple, functional form of English, often using phrases like "No problem, sir", "Not good, sir", "Maybe, sir". His English is broken but effective for communication. He likely picked it up through interactions with tourists and travellers over the years. As a driver and guide in a remote area, he would have learned practical English on the job – listening to passengers, picking up common phrases, and gradually building a working vocabulary. He may not have had formal education in English.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. What do the following utterances indicate? (i) "I told her, through Daniel ..." (ii) "It's a cold," he said finally through Tsetan.</div>
+                <div class="answer">
+                    Both utterances indicate that the author and the person he was speaking to did not share a common language, so they needed an interpreter.<br>
+                    (i) "I told her, through Daniel" – The author spoke to Lhamo, but Daniel acted as translator (likely translating English to Tibetan).<br>
+                    (ii) "It's a cold," he said finally through Tsetan – The Tibetan doctor spoke to Tsetan in Tibetan, and Tsetan translated the diagnosis into English for the author. The word 'through' indicates that communication was mediated by a third person.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Guess the meaning of the following words. kora, drokba, kyang. In which language are these words found?</div>
+                <div class="answer">
+                    • <strong>kora:</strong> A sacred circumambulation or pilgrimage around a holy site (especially Mount Kailash) – a ritual walk performed by Buddhists and Hindus.<br>
+                    • <strong>drokba:</strong> A Tibetan nomad or herder (also spelled 'drokpa') – someone who lives in the high-altitude grasslands of Tibet, tending flocks of sheep, goats, or yaks.<br>
+                    • <strong>kyang:</strong> The Tibetan wild ass (Equus kiang) – a large, wild equid native to the Tibetan Plateau.<br>
+                    These words are from the <strong>Tibetan language</strong>.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-font"></i> Working with Words (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The narrative has many phrases to describe the scenic beauty of the mountainside like: "A flawless half-moon floated in a perfect blue sky." Scan the text to locate other such picturesque phrases.</div>
+                <div class="answer">
+                    Other picturesque phrases from the text include:<br>
+                    • "Extended banks of cloud like long French loaves glowed pink as the sun emerged to splash the distant mountain tops with a rose-tinted blush."<br>
+                    • "Plumes of dust billowed into the crisp, clean air."<br>
+                    • "Snow-capped mountains gathering on the horizon."<br>
+                    • "Brilliant white and glinting in the sunshine."<br>
+                    • "Big rocks daubed with patches of bright orange lichen."<br>
+                    • "The sun shone brilliantly in a clear blue sky."<br>
+                    • "A huge, snow-capped mountain, Gurla Mandhata, with just a wisp of cloud suspended over its summit."
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Explain the use of the adjectives in the following phrases.</div>
+                <div class="answer">
+                    <strong>(i) shaggy monsters:</strong> 'Shaggy' describes the Tibetan mastiffs' thick, coarse, and untidy fur; 'monsters' emphasises their huge, intimidating size and fierce appearance.<br>
+                    <strong>(ii) brackish lakes:</strong> 'Brackish' means slightly salty – these lakes are not freshwater nor fully saline, indicating their unique chemical composition.<br>
+                    <strong>(iii) rickety table:</strong> 'Rickety' means poorly made and unstable – the table was shaky and likely to collapse, showing the poor condition of the cafe's furniture.<br>
+                    <strong>(iv) hairpin bend:</strong> 'Hairpin' describes a very sharp bend in the road that resembles the shape of a hairpin (a U-shaped turn).<br>
+                    <strong>(v) rudimentary general stores:</strong> 'Rudimentary' means basic, undeveloped, or primitive – the stores sold only essential items (soap, cigarettes) with no frills.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-shapes"></i> Noticing Form (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The account has only a few passive voice sentences. Locate them. In what way does the use of active voice contribute to the style of the narrative?</div>
+                <div class="answer">
+                    Examples of passive voice in the text:<br>
+                    • "the plateau is pockmarked with salt flats and brackish lakes"<br>
+                    • "the hallowed waters had a similar effect on Sven Hedin" (not passive, but few passives overall)<br><br>
+                    <strong>Contribution of active voice to style:</strong> The narrative predominantly uses active voice, which makes the writing more direct, dynamic, and engaging. It creates a sense of immediacy – the reader experiences events as they happen. Active voice also reflects the author's personal, first-person perspective ("I saw", "we drove", "Tsetan stopped") and conveys the energy and movement of the journey. It suits the travelogue genre, where the writer is an active participant rather than a passive observer.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Notice this construction: Tsetan was eager to have them fixed. Write five sentences with a similar structure.</div>
+                <div class="answer">
+                    The construction is: [subject] + [verb] + [object] + [past participle]. It expresses getting something done by someone else.<br><br>
+                    Five sentences:<br>
+                    1. I need to have my car serviced before the long trip.<br>
+                    2. She wants to have her hair cut before the wedding.<br>
+                    3. They decided to have the house painted blue.<br>
+                    4. He plans to have his watch repaired at the shop.<br>
+                    5. We must have the roof checked for leaks after the storm.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Things to Do (Silk Road)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> "The plateau is pockmarked with salt flats and brackish lakes, vestiges of the Tethys Ocean..." Given below is an extract from an account of the Tethys Ocean. Go online, key in Tethys Ocean in Google search and you will find exhaustive information on this geological event.</div>
+                <div class="answer">
+                    <strong>Summary of the Tethys Ocean (based on the extract and further knowledge):</strong><br>
+                    The Tethys Ocean was an ancient ocean that existed between the continents of Gondwana (south) and Laurasia (north) during the Mesozoic Era (about 250 to 65 million years ago). It covered much of what is now the Mediterranean region, the Middle East, and the Himalayas. When the Indian tectonic plate collided with the Eurasian plate (about 50 million years ago), the Tethys Ocean floor was forced upward, creating the Himalayan mountain range and the Tibetan Plateau. Fossils of marine creatures found in the Himalayas prove that these rocks were once underwater. Remnants of the Tethys Ocean include the Mediterranean Sea, the Black Sea, and the salt flats and brackish lakes of Tibet (like those mentioned in the chapter). The term 'Tethys' was named by geologist Eduard Suess after the Greek goddess of the sea.
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== FATHER TO SON (POEM) SECTION ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-user-friends"></i> Father to Son (Poem) - Think It Out</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Does the poem talk of an exclusively personal experience or is it fairly universal?</div>
+                <div class="answer">
+                    The poem deals with a <strong>universal experience</strong> – the generation gap and the breakdown of communication between parents and children. While the poet (Elizabeth Jennings) draws on her personal feelings, the situation of a father feeling estranged from his son is common across cultures and time periods. Many parents feel that they "know nothing" of their grown children, despite having lived together for years. The poem captures the universal pain of a parent who loves their child but cannot connect with them, and the child's inability to explain their own anger. This theme resonates with families worldwide.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. How is the father's helplessness brought out in the poem?</div>
+                <div class="answer">
+                    The father's helplessness is brought out through several lines and images:<br>
+                    • "I do not understand this child" – admission of complete incomprehension.<br>
+                    • "Though we have lived together now / In the same house for years" – despite physical proximity, there is emotional distance.<br>
+                    • "I know / Nothing of him" – stark confession of ignorance.<br>
+                    • "We speak like strangers, there's no sign / Of understanding in the air" – communication is empty and meaningless.<br>
+                    • "Silence surrounds us" – the failure to connect creates a painful void.<br>
+                    • The father wishes his son would be "prodigal" (like the Biblical prodigal son) and return home, showing he would forgive anything.<br>
+                    • "We each put out an empty hand, / Longing for something to forgive" – both want to reconcile but cannot bridge the gap.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Identify the phrases and lines that indicate distance between father and son.</div>
+                <div class="answer">
+                    Phrases and lines indicating distance:<br>
+                    • "I do not understand this child"<br>
+                    • "I know / Nothing of him"<br>
+                    • "We speak like strangers"<br>
+                    • "There's no sign / Of understanding in the air"<br>
+                    • "Silence surrounds us"<br>
+                    • "What he loves I cannot share"<br>
+                    • "He speaks: I cannot understand / Myself" – the son cannot understand his own feelings<br>
+                    • "We each put out an empty hand" – reaching out but not connecting<br>
+                    • "Longing for something to forgive" – both want reconciliation but don't know how to achieve it
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Does the poem have a consistent rhyme scheme?</div>
+                <div class="answer">
+                    The poem does not have a completely consistent rhyme scheme, but it uses occasional rhymes and near-rhymes. For example:<br>
+                    • In stanza 1: 'years' and 'air' (near rhyme), 'small' and 'all' (full rhyme), 'mine' and 'sign' (full rhyme).<br>
+                    • Stanza 2: 'share' and 'air' (full rhyme), 'would' and 'could' (full rhyme), 'move' and 'too' (near rhyme).<br>
+                    • Stanza 3: 'live' and 'forgive' (near rhyme), 'grief' and 'hand' (no rhyme).<br>
+                    The rhyme scheme is irregular and free-verse-like, which mirrors the unsettled, uncomfortable emotions of the father-son relationship. The lack of strict pattern emphasises the lack of harmony between the two.
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== VOCABULARY ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Important Words from the Text</h2>
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead><tr><th>Word/Phrase</th><th>Meaning</th></tr></thead>
+                    <tbody>
+                        <tr><td>Ducking back</td><td>Quickly returning or going back into a place</td></tr>
+                        <tr><td>Manoeuvres</td><td>Planned movements or exercises, especially military</td></tr>
+                        <tr><td>Billowed</td><td>Swelled out or spread outward like a cloud or sail</td></tr>
+                        <tr><td>Swathe</td><td>A broad strip or area of something</td></tr>
+                        <tr><td>Cairn of rocks</td><td>A pile of stones used as a landmark or memorial</td></tr>
+                        <tr><td>Careered down</td><td>Moved swiftly and uncontrollably downward</td></tr>
+                        <tr><td>Salt flats</td><td>Flat expanses of ground covered with salt</td></tr>
+                        <tr><td>Kora</td><td>Sacred circumambulation around a holy site (Tibetan)</td></tr>
+                        <tr><td>Drokba</td><td>Tibetan nomad or herder</td></tr>
+                        <tr><td>Prodigal</td><td>Spending money or resources freely and recklessly; wasteful; also referring to the Biblical prodigal son who returns home</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "Silk Road" by Nick Middleton and the poem "Father to Son" by Elizabeth Jennings from NCERT Class 11 English textbook "Hornbill". Students should read the original text carefully and write answers in their own words for better understanding and exam preparation.
+        </div>
+
+        <div class="footer">
+            <p>NCERT Class 11 English Solutions - Hornbill</p>
+            <p>Chapter 6: Silk Road | Poem: Father to Son</p>
+        </div>
+    </div>
+
+    <script>
+        // Text selection/copy protection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    </script>
+</body>
+</html>

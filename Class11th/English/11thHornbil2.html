@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We're Not Afraid to Die... - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.0rem;
+            }
+            
+            .card {
+                padding: 12px;
+            }
+            
+            .vocab-table {
+                font-size: 14px;
+            }
+            
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>"We're Not Afraid to Die... if We Can All Be Together"</h1>
+            <p>NCERT Class 11 English - Hornbill</p>
+            <p>Made by studyscript.netlify.app</p>
+        </div>
+        
+        <!-- Understanding the Text -->
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Understanding the Text</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. List the steps taken by the captain (i) to protect the ship when rough weather began. (ii) to check the flooding of the water in the ship.</div>
+                <div class="answer">
+                    <strong>(i) Steps to protect the ship when rough weather began:</strong><br>
+                    • Dropped the storm jib to slow the boat down<br>
+                    • Lashed a heavy mooring rope in a loop across the stern<br>
+                    • Double-lashed everything on deck<br>
+                    • Went through life-raft drill<br>
+                    • Attached lifelines and donned oilskins and life jackets<br>
+                    • Slowed the boat to eight knots by using only a small storm jib<br><br>
+                    <strong>(ii) Steps to check flooding of water:</strong><br>
+                    • Stretched canvas and secured waterproof hatch covers across the gaping holes<br>
+                    • Connected an electric pump from under the chartroom floor<br>
+                    • Used hand pumps continuously (though they got blocked)<br>
+                    • Made repairs with hammer, screws and canvas
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Describe the mental condition of the voyagers on 4 and 5 January.</div>
+                <div class="answer">
+                    On 4 and 5 January, the voyagers experienced extreme stress and desperation:<br>
+                    • After 36 hours of continuous pumping, they had only a few centimetres of water left, but their respite was short-lived.<br>
+                    • By 4 p.m., strong winds returned (40 knots) and seas grew higher.<br>
+                    • The weather deteriorated throughout the night, and by dawn on January 5, their situation was again desperate.<br>
+                    • The captain felt hopeless and dozed off from exhaustion. When he woke at 6 p.m., he thought they had missed the island.<br>
+                    • Mary and the captain sat together holding hands, feeling the end was very near.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Describe the shifts in the narration of the events as indicated in the three sections of the text. Give a subtitle to each section.</div>
+                <div class="answer">
+                    The narration shifts from the initial smooth voyage to the disaster and then to the struggle for survival and rescue.<br><br>
+                    <strong>Section 1 (Paragraphs 1-6): "The Calm Before the Storm"</strong><br>
+                    Describes the preparation for the voyage, the family's dream, and the building of Wavewalker. It sets the context.<br><br>
+                    <strong>Section 2 (Paragraphs 7-17): "The Giant Wave and Its Aftermath"</strong><br>
+                    Narrates the terrifying encounter with the 15-metre wave, the damage to the ship, injuries, and immediate survival efforts.<br><br>
+                    <strong>Section 3 (Paragraphs 18-30): "Hope and Rescue"</strong><br>
+                    Focuses on the continuous pumping, the children's courage, the captain's navigation calculations, and finally sighting Ile Amsterdam.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Talking about the text -->
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talking about the Text</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. What difference did you notice between the reaction of the adults and the children when faced with danger?</div>
+                <div class="answer">
+                    The adults showed fear, exhaustion, and desperation, while the children displayed remarkable courage and maturity. The children (Jonathan and Suzanne) did not panic. Sue hid her injuries, saying "I didn't want to worry you when you were trying to save us all." Jonathan asked for a hug and said they weren't afraid of dying as long as they were all together. The adults, on the other hand, felt the end was near and sat holding hands in despair.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. How does the story suggest that optimism helps to endure "the direst stress"?</div>
+                <div class="answer">
+                    Optimism kept the crew going despite hopeless situations. The captain never gave up – he kept pumping, repairing, and calculating. The children's positive attitude (Sue's handmade card, Jonathan's hug) boosted morale. Even when the captain thought they had missed the island, the children's cheerful announcement "You found the island" restored hope. Optimism helped them endure the direst stress by focusing on solutions rather than despair.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. What lessons do we learn from such hazardous experiences when we are face-to-face with death?</div>
+                <div class="answer">
+                    Such experiences teach us:<br>
+                    • The importance of courage and presence of mind in crises<br>
+                    • That teamwork and mutual support are crucial for survival<br>
+                    • Optimism and a positive attitude can overcome even the darkest moments<br>
+                    • Love and family bonds give strength to face death without fear<br>
+                    • Proper preparation and training are essential before undertaking risky adventures
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Why do you think people undertake such adventurous expeditions in spite of the risks involved?</div>
+                <div class="answer">
+                    People undertake adventurous expeditions because of:<br>
+                    • The human spirit of exploration and discovery<br>
+                    • The desire to challenge oneself and push personal limits<br>
+                    • The thrill of achieving something difficult and memorable<br>
+                    • To follow childhood dreams (like the captain wanted to duplicate Captain Cook's voyage)<br>
+                    • The sense of accomplishment and the joy of overcoming adversity<br>
+                    • To create lasting memories with family
+                </div>
+            </div>
+        </div>
+        
+        <!-- Thinking about language -->
+        <div class="section">
+            <h2><i class="fas fa-language"></i> Thinking about Language</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. We have come across words like 'gale' and 'storm' in the account. Here are two more words for 'storm': typhoon, cyclone. How many words does your language have for 'storm'?</div>
+                <div class="answer">
+                    [This is a personal/language-based question. Sample answer in Hindi context:] In Hindi, words for 'storm' include: आंधी (aandhi), तूफान (toofan), बवंडर (bawandar), चक्रवात (chakravat - cyclone), समुद्री तूफान (samudri toofan - storm at sea). There are several regional variations as well.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Here are the terms for different kinds of vessels: yacht, boat, canoe, ship, steamer, schooner. Think of similar terms in your language.</div>
+                <div class="answer">
+                    [Sample answer in Hindi:] In Hindi, similar terms include: नाव (naav - boat), जहाज (jahaj - ship), किश्ती (kishti - small boat), नौका (nauka - yacht), स्टीमर (steamer), डोंगी (dongi - canoe). There are also specific terms like बजरा (bajra - barge) and पाल-नौका (paal-nauka - sailboat).
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. 'Catamaran' is a kind of a boat. Do you know which Indian language this word is derived from? Check the dictionary.</div>
+                <div class="answer">
+                    The word 'catamaran' is derived from the Tamil language. In Tamil, 'kattumaram' (கட்டுமரம்) means 'tied wood' (kattu = to tie, maram = tree/wood). It refers to a traditional boat made by tying logs together.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Have you heard any boatmen's songs? What kind of emotions do these songs usually express?</div>
+                <div class="answer">
+                    [Sample answer:] Yes, boatmen's songs are common in many cultures, especially in riverine areas like Kerala, Bengal, and Assam. These songs usually express emotions of longing, hope, love for the river, fear of storms, and sometimes sadness of separation from loved ones. They often have a rhythmic beat that matches the rowing motion.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Working with words -->
+        <div class="section">
+            <h2><i class="fas fa-font"></i> Working with Words</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. The following words used in the text as ship terminology are also commonly used in another sense. In what contexts would you use the other meaning?</div>
+                <div class="answer">
+                    <strong>Hull:</strong> Ship's body – also the outer covering of a fruit or seed (e.g., rice hull).<br>
+                    <strong>Mast:</strong> Ship's pole for sails – also a tall pole on land for flags or radio antennas.<br>
+                    <strong>Boom:</strong> Horizontal pole for sail – also a loud sound (boom of thunder) or a period of economic prosperity (boom in business).<br>
+                    <strong>Stern:</strong> Rear of a ship – also strict or serious in manner (stern look).<br>
+                    <strong>Jib:</strong> A triangular sail – also a type of crane in construction.<br>
+                    <strong>Bunk:</strong> Bed on a ship – also nonsense or false talk (that's a load of bunk).
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. The following three compound words end in -ship. What does each of them mean?</div>
+                <div class="answer">
+                    <strong>Friendship:</strong> The state of being friends; mutual affection and trust between people.<br>
+                    <strong>Partnership:</strong> The state of being a partner in business or association; shared responsibility and profit.<br>
+                    <strong>Relationship:</strong> The way two or more people or things are connected; a bond or connection.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. The following are the meanings listed in the dictionary against the phrase 'take on'. In which meaning is it used in the third paragraph of the account?</div>
+                <div class="answer">
+                    In the third paragraph: "There, before heading east, we took on two crewmen – American Larry Vigil and Swiss Herb Seigler – to help us tackle one of the world's roughest seas..."<br>
+                    Here, 'take on' means <strong>"to employ sb; to engage sb"</strong> (meaning 2: take sb on: to employ sb; to engage sb).
+                </div>
+            </div>
+        </div>
+        
+        <!-- Things to do -->
+        <div class="section">
+            <h2><i class="fas fa-tasks"></i> Things to Do</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Given below is a picture of a yacht. Label the parts of the yacht using the terms given in the box: bow, cabin, rudder, cockpit, stern, boom, mainsail, mast.</div>
+                <div class="answer">
+                    <strong>Parts of a Yacht (from front to back):</strong><br>
+                    • <strong>Bow</strong> – The front part of the yacht.<br>
+                    • <strong>Cabin</strong> – The enclosed living/sleeping area below deck.<br>
+                    • <strong>Mast</strong> – The tall vertical pole that supports the sails.<br>
+                    • <strong>Mainsail</strong> – The largest sail attached to the mast and boom.<br>
+                    • <strong>Boom</strong> – The horizontal pole at the bottom of the mainsail.<br>
+                    • <strong>Cockpit</strong> – The open area where the helmsman steers.<br>
+                    • <strong>Rudder</strong> – The underwater blade at the stern used for steering.<br>
+                    • <strong>Stern</strong> – The back/rear part of the yacht.
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Here is some information downloaded from the Internet on Ile Amsterdam. You can view images of the isle if you go online. (Location, sovereignty, population, etc.)</div>
+                <div class="answer">
+                    <strong>Ile Amsterdam (Amsterdam Island) – Key Facts:</strong><br>
+                    • <strong>Location:</strong> South Indian Ocean, between southernmost parts of Australia and South Africa<br>
+                    • <strong>Coordinates:</strong> 37° 92' S, 77° 67' E<br>
+                    • <strong>Sovereignty:</strong> France (part of French Southern and Antarctic Lands)<br>
+                    • <strong>Population:</strong> Approximately 35 (meteorological station staff)<br>
+                    • <strong>Land Area:</strong> 86 square kilometres<br>
+                    • <strong>Terrain:</strong> Volcanic rock with little vegetation<br>
+                    • <strong>Discovered by:</strong> Spanish explorer Juan Sebastián Elcano in 1522
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Locate Ile Amsterdam on the world map.</div>
+                <div class="answer">
+                    Ile Amsterdam is located in the southern Indian Ocean, roughly halfway between Australia, Africa, and Antarctica. Its coordinates are approximately 37°S latitude and 77°E longitude. It lies about 1,500 km north of the Antarctic Circle and is one of the most remote islands in the world. It is part of the French Southern and Antarctic Lands.
+                </div>
+            </div>
+        </div>
+        
+        <!-- Vocabulary / Important Terms -->
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Important Terms with Meanings</h2>
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead>
+                        <tr><th>Word/Phrase</th><th>Meaning</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Honing our seafaring skills</td><td>Sharpening or improving skills related to sailing</td></tr>
+                        <tr><td>Ominous silence</td><td>A silence that suggests something bad is about to happen</td></tr>
+                        <tr><td>Mayday calls</td><td>International distress signal used by ships and aircraft</td></tr>
+                        <tr><td>Pinpricks in the vast ocean</td><td>Very small points (islands) in a huge ocean</td></tr>
+                        <tr><td>A tousled head</td><td>Messy, disheveled hair (referring to Jonathan)</td></tr>
+                        <tr><td>Storm jib</td><td>A small, strong sail used in rough weather</td></tr>
+                        <tr><td>Heave-to</td><td>To stop a ship and keep it steady in heavy seas</td></tr>
+                        <tr><td>Sea anchor</td><td>A drogue used to keep a ship's bow pointing into the waves</td></tr>
+                        <tr><td>Sextant</td><td>A navigation instrument used to measure angles between celestial objects and horizon</td></tr>
+                        <tr><td>Caricatures</td><td>Exaggerated drawings for comic effect</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapter "We're Not Afraid to Die... if We Can All Be Together" from NCERT Class 11 English textbook "Hornbill". Students should read the chapter thoroughly and write answers in their own words for better understanding.
+        </div>
+        
+        <div class="footer">
+            <p>NCERT Class 11 English Solutions - Hornbill</p>
+            <p>Chapter 2: We're Not Afraid to Die... if We Can All Be Together</p>
+            <p>By Gordon Cook and Alan East</p>
+        </div>
+    </div>
+    
+    <script>
+        // Text selection/copy protection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    </script>
+</body>
+</html>

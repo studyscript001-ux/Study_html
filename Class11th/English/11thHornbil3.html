@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovering Tut + Poems - NCERT Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            background: linear-gradient(135deg, #e6f7ff 0%, #fff0e6 100%);
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .chapter-header {
+            background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
+            color: white;
+            text-align: center;
+            margin: -20px -20px 30px;
+            padding: 30px 20px;
+            border-radius: 15px 15px 50% 50% / 0 0 30px 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .chapter-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        h2 {
+            color: #9b59b6;
+            margin: 25px 0 15px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #9b59b6;
+        }
+        
+        h3 {
+            color: #2c3e50;
+            margin: 20px 0 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        .question {
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .question i {
+            color: #9b59b6;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .answer {
+            padding: 10px;
+            background: white;
+            border-radius: 5px;
+            border-left: 3px solid #2ecc71;
+        }
+        
+        .vocab-card {
+            background: #f9f9f9;
+            border-left: 4px solid #9b59b6;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            overflow-x: auto;
+        }
+        
+        .vocab-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            min-width: 200px;
+        }
+        
+        .vocab-table th, .vocab-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        
+        .vocab-table th {
+            background-color: #9b59b6;
+            color: white;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .note {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            .chapter-header h1 {
+                font-size: 2rem;
+            }
+            .chapter-header p {
+                font-size: 1rem;
+            }
+            h2 {
+                font-size: 1.0rem;
+            }
+            .card {
+                padding: 12px;
+            }
+            .vocab-table {
+                font-size: 14px;
+            }
+            .vocab-table th, .vocab-table td {
+                padding: 8px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .chapter-header {
+                padding: 20px 15px;
+            }
+            .chapter-header h1 {
+                font-size: 1.7rem;
+            }
+            .question i {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="chapter-header">
+            <h1>Discovering Tut: The Saga Continues</h1>
+            <p>NCERT Class 11 English - Hornbill</p>
+            <p>Made by studyscript.netlify.app</p>
+        </div>
+
+        <!-- ==================== DISCOVERING TUT SECTION ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-check-circle"></i> Understanding the Text (Discovering Tut)</h2>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Give reasons for the following. (i) King Tut's body has been subjected to repeated scrutiny.</div>
+                <div class="answer">
+                    King Tut's body has been repeatedly scrutinised because of the mysteries surrounding his life and death. He died unexpectedly as a teenager, and the exact cause of his death remained unknown for centuries. Modern science seeks to unravel these mysteries using advanced technology like CT scans to determine his age at death, possible illnesses, and the circumstances of his demise. Additionally, the rich treasures buried with him and the legend of the pharaoh's curse have kept public and scientific interest alive.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (ii) Howard Carter's investigation was resented.</div>
+                <div class="answer">
+                    Howard Carter's investigation was resented because he used unscientific and destructive methods to remove King Tut's mummy from its solid gold coffin. When the ritual resins had hardened and cemented the body to the coffin, Carter resorted to chiselling away the consolidated material from beneath the limbs and trunk. He even separated the head and severed major joints to take the gold treasures. This caused severe damage to the mummy, which is why it is in very bad condition today.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (iii) Carter had to chisel away the solidified resins to raise the king's remains.</div>
+                <div class="answer">
+                    The ritual resins used during the burial had hardened over centuries, cementing Tut's body to the bottom of his solid gold coffin. No amount of legitimate force could move the body. Even placing the mummy in blazing sunshine (heating it to 149°F) did not loosen the resins. Thus, Carter had no choice but to chisel away the hardened material from beneath the limbs and trunk to free the king's remains.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (iv) Tut's body was buried along with gilded treasures.</div>
+                <div class="answer">
+                    In ancient Egypt, royals believed they could take their riches with them to the afterlife. King Tut was lavishly buried with precious collars, inlaid necklaces, bracelets, rings, amulets, a ceremonial apron, sandals, finger and toe sheaths, and the iconic inner coffin and mask — all of pure gold. He also had everyday items like board games, a bronze razor, linen undergarments, and cases of food and wine for his journey to the great beyond.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (v) The boy king changed his name from Tutankhaten to Tutankhamun.</div>
+                <div class="answer">
+                    Tutankhaten changed his name to Tutankhamun ('living image of Amun') after he oversaw the restoration of the old religious ways. His predecessor, Akhenaten, had promoted the worship of Aten (the sun disk) and attacked the major god Amun, closing his temples. When Tut took the throne, he rejected Akhenaten's radical changes and reinstated the traditional polytheistic religion, honouring Amun.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. (i) List the deeds that led Ray Johnson to describe Akhenaten as "wacky".</div>
+                <div class="answer">
+                    Ray Johnson described Akhenaten as "wacky" because of his radical and strange actions:<br>
+                    • He promoted the worship of the Aten (the sun disk) as the only god.<br>
+                    • He changed his own name to Akhenaten ('servant of the Aten').<br>
+                    • He moved the religious capital from Thebes to a new city called Akhetaten (now Amarna).<br>
+                    • He attacked the major god Amun, smashed his images, and closed his temples.<br>
+                    • His actions were so extreme that they threatened the end of a dynasty that had ruled for centuries.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (ii) What were the results of the CT scan?</div>
+                <div class="answer">
+                    The CT scan of King Tut's mummy produced 1,700 digital X-ray images in cross-section, creating a three-dimensional virtual body. The results revealed:<br>
+                    • Detailed images of the skull, neck vertebrae, rib cage, hands, and other body parts.<br>
+                    • Confirmation that his breastbone and front ribs were missing (as previously noted in the 1968 X-ray).<br>
+                    • New clues about his life and death, though the exact cause of death remained inconclusive.<br>
+                    • Precise data for an accurate forensic reconstruction of the boyish pharaoh.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (iii) List the advances in technology that have improved forensic analysis.</div>
+                <div class="answer">
+                    Advances in technology that have improved forensic analysis include:<br>
+                    • <strong>Computed Tomography (CT) scan:</strong> Creates three-dimensional virtual bodies using hundreds of cross-sectional X-rays.<br>
+                    • <strong>Digital X-ray imaging:</strong> Provides detailed internal views without damaging the specimen.<br>
+                    • <strong>Forensic reconstruction:</strong> Uses precise data to recreate faces and bodies of ancient people.<br>
+                    • <strong>Medical imaging tools:</strong> Such as MRI, which can detect soft tissue details.<br>
+                    • <strong>Portable scanning machines:</strong> Allow on-site analysis without moving delicate artifacts.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> (iv) Explain the statement, "King Tut is one of the first mummies to be scanned — in death, as in life..."</div>
+                <div class="answer">
+                    This statement means that King Tut, even after death, continues to lead and be ahead of others just as he did when he was alive. As a pharaoh, he was always at the forefront – ruling Egypt, initiating religious restoration, and being buried with extraordinary wealth. In death, he was one of the first mummies to undergo advanced CT scanning technology, moving regally ahead of his countrymen once again. The scan was part of the Egyptian Mummy Project, and Tut was among the initial mummies to be examined.
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-comments"></i> Talking about the Text (Discovering Tut)</h2>
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 1. Scientific intervention is necessary to unearth buried mysteries. (Take a point of view)</div>
+                <div class="answer">
+                    <strong>For the motion:</strong> Scientific intervention is essential because it allows us to uncover historical truths without destroying artifacts. CT scans and X-rays give us non-invasive ways to study mummies. They help us understand ancient diseases, causes of death, and even reconstruct faces, adding valuable knowledge to history.<br>
+                    <strong>Against the motion:</strong> Scientific intervention can be intrusive and disrespectful. As seen with Carter's methods, it can damage irreplaceable remains. Some believe the dead should rest in peace, and disturbing them may have ethical and even superstitious consequences (like the 'curse').
+                </div>
+            </div>
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 2. Advanced technology gives us conclusive evidence of past events.</div>
+                <div class="answer">
+                    <strong>For the motion:</strong> Yes, technology like CT scans and DNA analysis provides objective data that can confirm or refute theories. For example, the CT scan of Tut gave precise anatomical details, helping scientists form more accurate conclusions about his age and health.<br>
+                    <strong>Against the motion:</strong> Technology alone cannot give complete answers. Interpretation of data can still be subjective. Moreover, some evidence may be missing or degraded over time, so conclusions may remain inconclusive. Technology should be combined with historical and archaeological expertise.
+                </div>
+            </div>
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 3. Traditions, rituals and funerary practices must be respected.</div>
+                <div class="answer">
+                    <strong>For the motion:</strong> Yes, traditions and funerary practices are sacred to the cultures that created them. Disturbing tombs and mummies violates the beliefs of ancient Egyptians, who prepared their dead for the afterlife. Such acts show a lack of respect for their religion and customs.<br>
+                    <strong>Against the motion:</strong> While respect is important, historical knowledge also has value. If we never examine these remains, we lose the opportunity to learn about past civilisations. Modern technology can be used in minimally invasive ways that balance respect with scientific inquiry.
+                </div>
+            </div>
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> 4. Knowledge about the past is useful to complete our knowledge of the world we live in.</div>
+                <div class="answer">
+                    <strong>For the motion:</strong> Absolutely. Understanding past civilisations helps us trace the development of medicine, architecture, governance, and culture. It gives context to present-day beliefs and practices. Studying ancient Egypt, for instance, has advanced our understanding of mummification, engineering, and art.<br>
+                    <strong>Against the motion:</strong> Some argue that focusing too much on the past distracts from solving present-day problems. However, the past informs the future, so a balanced approach is best. Knowledge of the past does not hinder progress; it enriches our perspective.
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== THE LABURNUM TOP (POEM) ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-leaf"></i> The Laburnum Top (Poem)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Find out: 1. What laburnum is called in your language.</div>
+                <div class="answer">
+                    [Sample answer in Hindi] Laburnum is commonly called <strong>"अमलतास" (Amaltas)</strong> in Hindi. It is also known as the 'golden shower tree' because of its beautiful yellow flowers. In other Indian languages: in Bengali it is called "সোনালু" (Sonalu), in Tamil "கொன்றை" (Konrai), in Telugu "కొండచెట్టు" (Kondachettu).
+                </div>
+            </div>
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Find out: 2. Which local bird is like the goldfinch.</div>
+                <div class="answer">
+                    In India, the bird most similar to the goldfinch is the <strong>Indian Goldfinch</strong> (also known as the 'Black-headed Goldfinch'). In Hindi, it is called <strong>"सोने की चिड़िया"</strong> or <strong>"तिलिया"</strong>. Other similar small yellow birds include the <strong>Oriole (पीतक)</strong> and the <strong>Yellow Wagtail</strong>. These birds share the goldfinch's bright yellow plumage and melodious chirping.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 1. What do you notice about the beginning and the ending of the poem?</div>
+                <div class="answer">
+                    The poem begins and ends with silence and stillness. In the beginning, the laburnum top is described as "silent, quite still" in the afternoon sunlight, with yellowing leaves and fallen seeds. At the end, after the goldfinch flies away, the laburnum "subsides to empty" – returning to its original state of silence. This circular structure emphasises that the goldfinch's arrival brings temporary life and activity, while its departure brings back emptiness.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 2. To what is the bird's movement compared? What is the basis for the comparison?</div>
+                <div class="answer">
+                    The bird's movement is compared to a <strong>lizard</strong> – "sleek as a lizard, and alert, and abrupt." The basis for this comparison is the goldfinch's quick, smooth, and sudden movements. Like a lizard that moves swiftly and stealthily, the goldfinch enters the tree suddenly, with alertness and precision. The comparison captures the bird's agility, speed, and the way it darts through the branches without warning.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 3. Why is the image of the engine evoked by the poet?</div>
+                <div class="answer">
+                    The poet evokes the image of an <strong>engine</strong> to describe the goldfinch's family and the sounds it creates. When the bird enters the tree, "a machine starts up of chitterings, and a tremor of wings, and trillings." The tree trembles and thrills, becoming "the engine of her family." The goldfinch is like the engine that 'stokes' (fuels) the tree with energy, sound, and movement. This mechanical imagery contrasts with the natural setting and emphasises the organised, energetic, and continuous activity of the baby birds waiting to be fed.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 4. What do you like most about the poem?</div>
+                <div class="answer">
+                    [Sample answer] The most appealing aspect of the poem is its vivid imagery and the perfect contrast between stillness and sudden movement. The poet's use of sound words like "chitterings", "trillings", and "whistle-chirrup whisperings" brings the scene to life. The comparison of the goldfinch to a lizard and the tree to an engine is unique and creative. The poem also beautifully captures a momentary event in nature – a mother bird feeding her young – and shows how one small creature can bring an entire tree to life.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 5. What does the phrase "her barred face identity mask" mean?</div>
+                <div class="answer">
+                    The phrase refers to the <strong>distinctive pattern on the goldfinch's face</strong>. The goldfinch has a black-and-yellow striped (barred) pattern on its face, which acts like an 'identity mask' – similar to a unique identification card. This mask helps the bird's family recognise her and also helps her blend into the dappled light and shadow of the tree. The word "mask" also suggests that the bird is briefly revealing herself before launching away, almost like a superhero revealing their identity.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Note down: 1. the sound words</div>
+                <div class="answer">
+                    The sound words in the poem are: <strong>twitching chirrup, chitterings, trillings, whistle-chirrup whisperings</strong>. These onomatopoeic words imitate the actual sounds made by the goldfinch and her young ones, making the poem auditory and lively.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Note down: 2. the movement words</div>
+                <div class="answer">
+                    The movement words are: <strong>twitching, sleek, alert, abrupt, enters, stokes, flirts out, launches away, subsides</strong>. These words convey the suddenness, swiftness, and precision of the goldfinch's actions, contrasting with the initial stillness of the tree.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Note down: 3. the dominant colour in the poem.</div>
+                <div class="answer">
+                    The dominant colour is <strong>yellow</strong> – "yellow September sunlight", "yellowing leaves", and the goldfinch itself (gold refers to yellow). This yellow colour creates a warm, autumnal atmosphere and connects the tree and the bird visually.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> List the following: 1. Words which describe 'sleek', 'alert' and 'abrupt'.</div>
+                <div class="answer">
+                    Words that describe these qualities: <strong>sleek</strong> – smooth, glossy, agile; <strong>alert</strong> – watchful, quick, responsive; <strong>abrupt</strong> – sudden, unexpected, sharp. The poet uses these words to characterise the goldfinch's movement as swift, careful, and sudden.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> List the following: 2. Words with the sound 'ch' as in 'chart' and 'tr' as in 'trembles' in the poem.</div>
+                <div class="answer">
+                    Words with 'ch' sound: <strong>chirrup, chitterings</strong>.<br>
+                    Words with 'tr' sound: <strong>trembles, trillings, tree</strong>.<br>
+                    These consonant sounds add to the musical quality and mimic the bird's calls.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> List the following: 3. Other sounds that occur frequently in the poem.</div>
+                <div class="answer">
+                    Other frequent sounds include:<br>
+                    • <strong>'s' sounds</strong> (sibilance): silent, still, sunlight, subsides, sleek<br>
+                    • <strong>'st' sounds</strong>: still, startlement, stokes<br>
+                    • <strong>'wh' sounds</strong>: whistle, whisperings<br>
+                    These sounds create a soft, hushed atmosphere that is suddenly broken by the bird's arrival.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Thinking about language: Look for some other poem on a bird or a tree in English or any other language.</div>
+                <div class="answer">
+                    [Sample answer] In English, a famous poem about a bird is <strong>"The Nightingale" by John Keats</strong> (Ode to a Nightingale) and <strong>"The Raven" by Edgar Allan Poe</strong>. About trees, <strong>"The Trees" by Adrienne Rich</strong> and <strong>"Loveliest of Trees" by A.E. Housman</strong> are well-known. In Hindi, a beautiful poem about a tree is <strong>"पेड़ की बात" by Harivansh Rai Bachchan</strong> and about a bird (papiha) is <strong>"पपीहा" by Sohan Lal Dwivedi</strong>.
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================== THE VOICE OF THE RAIN (POEM) ==================== -->
+        <div class="section">
+            <h2><i class="fas fa-cloud-rain"></i> The Voice of the Rain (Poem)</h2>
+            
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 1. There are two voices in the poem. Who do they belong to? Which lines indicate this?</div>
+                <div class="answer">
+                    The two voices belong to <strong>the poet and the rain</strong>. The first voice is the poet asking a question: "And who art thou? said I to the soft-falling shower,". The second voice is the rain answering: "I am the Poem of Earth, said the voice of the rain,". The dialogue format makes this clear, with the rain's response continuing through the poem.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 2. What does the phrase "strange to tell" mean?</div>
+                <div class="answer">
+                    The phrase "strange to tell" means <strong>it is strange or unusual to say/report</strong>. The poet uses this phrase because it is indeed unusual for rain to speak and answer a human. It indicates the poet's surprise that the rain actually responds to his question, making the poem slightly mystical and imaginative.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 3. There is a parallel drawn between rain and music. Which words indicate this? Explain the similarity between the two.</div>
+                <div class="answer">
+                    The words that indicate the parallel are: <strong>"song"</strong> and <strong>"Poem of Earth"</strong>. The rain calls itself the 'Poem of Earth', and the poet compares the rain's cycle to a song that "issuing from its birthplace, after fulfilment, wandering, reck'd or unreck'd, duly with love returns."<br>
+                    The similarity is that both rain and music (or song) originate from a source, fulfil their purpose, and return to their origin. Just as rain rises from the earth and sea, forms clouds, falls back to nourish the earth, and completes a cycle – similarly, a song comes from the heart of the poet, spreads in the world (whether heard or ignored), and eventually returns to the poet with love.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 4. How is the cyclic movement of rain brought out in the poem? Compare it with what you have learnt in science.</div>
+                <div class="answer">
+                    The cyclic movement of rain is brought out through the lines: "Eternal I rise impalpable out of the land and the bottomless sea, Upward to heaven, whence, vaguely form'd, altogether changed, and yet the same, I descend to lave the droughts... and forever... I give back life to my own origin."<br>
+                    <strong>Scientifically</strong>, this matches the water cycle: evaporation (water rises as vapor from land and sea), condensation (forms clouds in the sky), precipitation (falls back as rain), and collection (water returns to earth, nourishing it, and eventually evaporates again). The poem poetically captures this exact cycle – rising, changing form, descending, and returning to the origin.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 5. Why are the last two lines put within brackets?</div>
+                <div class="answer">
+                    The last two lines are put within brackets because they are an <strong>explanatory or reflective comment by the poet</strong>, not spoken by the rain. After the rain finishes its speech, the poet adds his own observation, comparing the rain's cycle to that of a song. The brackets indicate a shift in speaker – from the rain (unbracketed lines) to the poet's voice (bracketed lines). It also gives the feeling of an aside or an afterthought.
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="question"><i class="fas fa-question-circle"></i> Think it out: 6. List the pairs of opposites found in the poem.</div>
+                <div class="answer">
+                    The pairs of opposites in the poem are:<br>
+                    • <strong>land – sea</strong> (sources from which rain rises)<br>
+                    • <strong>upward – descend</strong> (direction of movement)<br>
+                    • <strong>vaguely form'd – altogether changed</strong> (state of clouds)<br>
+                    • <strong>changed – yet the same</strong> (identity of water)<br>
+                    • <strong>day – night</strong> (time)<br>
+                    • <strong>reck'd – unreck'd</strong> (cared for or ignored – referring to the song)<br>
+                    These opposites highlight the dual nature of rain – it changes form but remains essentially the same water.
+                </div>
+            </div>
+        </div>
+
+        <!-- Vocabulary Section -->
+        <div class="section">
+            <h2><i class="fas fa-book"></i> Vocabulary - Important Words from the Text</h2>
+            <div class="vocab-card">
+                <table class="vocab-table">
+                    <thead><tr><th>Word/Phrase</th><th>Meaning</th></tr></thead>
+                    <tbody>
+                        <tr><td>Forensic reconstruction</td><td>Scientific recreation of a person's appearance from skeletal remains</td></tr>
+                        <tr><td>Scudded across</td><td>Moved quickly across the sky (clouds)</td></tr>
+                        <tr><td>Casket grey</td><td>Grey colour like that of a coffin</td></tr>
+                        <tr><td>Resurrection</td><td>Revival from death; rebirth</td></tr>
+                        <tr><td>Funerary treasures</td><td>Valuable items buried with a dead person</td></tr>
+                        <tr><td>Laburnum</td><td>Short tree with hanging yellow flowers (Amaltas)</td></tr>
+                        <tr><td>Goldfinch</td><td>Small singing bird with yellow feathers</td></tr>
+                        <tr><td>Impalpable</td><td>Something that cannot be touched</td></tr>
+                        <tr><td>Lave</td><td>Wash; bathe</td></tr>
+                        <tr><td>Atomies</td><td>Tiny particles</td></tr>
+                        <tr><td>Latent</td><td>Hidden, not yet developed</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> These answers are based on the chapters "Discovering Tut: The Saga Continues", the poem "The Laburnum Top", and the poem "The Voice of the Rain" from NCERT Class 11 English textbook "Hornbill". Students should read the original text carefully and write answers in their own words for better understanding and exam preparation.
+        </div>
+
+        <div class="footer">
+            <p>NCERT Class 11 English Solutions - Hornbill</p>
+            <p>Discovering Tut: The Saga Continues | The Laburnum Top | The Voice of the Rain</p>
+        </div>
+    </div>
+
+    <script>
+        // Text selection/copy protection
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('selectstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+        document.addEventListener('copy', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    </script>
+</body>
+</html>
