@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Mathematics - Chapter 8: Sequences and Series</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .table-container {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">Chapter 8<br> Sequences and Series</h1>
+            <p class="mt-2 text-lg">Class 11th Mathematics</p>
+        </div>
+
+        <!-- Exercise 8.1 Section -->
+        <section id="exercise-8-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 8.1</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = n(n + 2)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = n(n + 2)</p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = 1(1 + 2) = 1 × 3 = 3</p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = 2(2 + 2) = 2 × 4 = 8</p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = 3(3 + 2) = 3 × 5 = 15</p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = 4(4 + 2) = 4 × 6 = 24</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = 5(5 + 2) = 5 × 7 = 35</p>
+                        <p><strong>Answer:</strong> The first five terms are 3, 8, 15, 24, 35</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = <span class="fraction"><span class="numerator">n</span><span class="denominator">n + 1</span></span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = <span class="fraction"><span class="numerator">n</span><span class="denominator">n + 1</span></span></p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = <span class="fraction"><span class="numerator">1</span><span class="denominator">1 + 1</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">2</span><span class="denominator">2 + 1</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">3</span><span class="denominator">3 + 1</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">4</span><span class="denominator">4 + 1</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span></p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">5</span><span class="denominator">5 + 1</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></p>
+                        <p><strong>Answer:</strong> The first five terms are <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>, <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = 2<sup>n</sup></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = 2<sup>n</sup></p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = 2<sup>1</sup> = 2</p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = 2<sup>2</sup> = 4</p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = 2<sup>3</sup> = 8</p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = 2<sup>4</sup> = 16</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = 2<sup>5</sup> = 32</p>
+                        <p><strong>Answer:</strong> The first five terms are 2, 4, 8, 16, 32</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = <span class="fraction"><span class="numerator">2n - 3</span><span class="denominator">6</span></span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = <span class="fraction"><span class="numerator">2n - 3</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = <span class="fraction"><span class="numerator">2(1) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">2(2) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">2(3) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">2(4) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">2(5) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">7</span><span class="denominator">6</span></span></p>
+                        <p><strong>Answer:</strong> The first five terms are <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span>, <span class="fraction"><span class="numerator">7</span><span class="denominator">6</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = (-1)<sup>n-1</sup> 5<sup>n+1</sup></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = (-1)<sup>n-1</sup> 5<sup>n+1</sup></p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = (-1)<sup>0</sup> 5<sup>2</sup> = 1 × 25 = 25</p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = (-1)<sup>1</sup> 5<sup>3</sup> = -1 × 125 = -125</p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = (-1)<sup>2</sup> 5<sup>4</sup> = 1 × 625 = 625</p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = (-1)<sup>3</sup> 5<sup>5</sup> = -1 × 3125 = -3125</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = (-1)<sup>4</sup> 5<sup>6</sup> = 1 × 15625 = 15625</p>
+                        <p><strong>Answer:</strong> The first five terms are 25, -125, 625, -3125, 15625</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: Write the first five terms of the sequence whose nth term is a<sub>n</sub> = n <span class="fraction"><span class="numerator">n<sup>2</sup> + 5</span><span class="denominator">4</span></span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = n <span class="fraction"><span class="numerator">n<sup>2</sup> + 5</span><span class="denominator">4</span></span></p>
+                        <p class="mb-2">For n = 1: a<sub>1</sub> = 1 × <span class="fraction"><span class="numerator">1<sup>2</sup> + 5</span><span class="denominator">4</span></span> = 1 × <span class="fraction"><span class="numerator">6</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">6</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = 2 × <span class="fraction"><span class="numerator">2<sup>2</sup> + 5</span><span class="denominator">4</span></span> = 2 × <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">18</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = 3 × <span class="fraction"><span class="numerator">3<sup>2</sup> + 5</span><span class="denominator">4</span></span> = 3 × <span class="fraction"><span class="numerator">14</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">42</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">21</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = 4 × <span class="fraction"><span class="numerator">4<sup>2</sup> + 5</span><span class="denominator">4</span></span> = 4 × <span class="fraction"><span class="numerator">21</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">84</span><span class="denominator">4</span></span> = 21</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = 5 × <span class="fraction"><span class="numerator">5<sup>2</sup> + 5</span><span class="denominator">4</span></span> = 5 × <span class="fraction"><span class="numerator">30</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">150</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">75</span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> The first five terms are <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">21</span><span class="denominator">2</span></span>, 21, <span class="fraction"><span class="numerator">75</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 1 se 5 tak substitute karke first five terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find the indicated terms in the sequence whose nth term is a<sub>n</sub> = 4n - 3; a<sub>17</sub>, a<sub>24</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = 4n - 3</p>
+                        <p class="mb-2">For n = 17: a<sub>17</sub> = 4(17) - 3 = 68 - 3 = 65</p>
+                        <p class="mb-2">For n = 24: a<sub>24</sub> = 4(24) - 3 = 96 - 3 = 93</p>
+                        <p><strong>Answer:</strong> a<sub>17</sub> = 65, a<sub>24</sub> = 93</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n ki values 17 aur 24 substitute karke terms nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Find the indicated term in the sequence whose nth term is a<sub>n</sub> = <span class="fraction"><span class="numerator">n<sup>2</sup></span><span class="denominator">2<sup>n</sup></span></span>; a<sub>7</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = <span class="fraction"><span class="numerator">n<sup>2</sup></span><span class="denominator">2<sup>n</sup></span></span></p>
+                        <p class="mb-2">For n = 7: a<sub>7</sub> = <span class="fraction"><span class="numerator">7<sup>2</sup></span><span class="denominator">2<sup>7</sup></span></span> = <span class="fraction"><span class="numerator">49</span><span class="denominator">128</span></span></p>
+                        <p><strong>Answer:</strong> a<sub>7</sub> = <span class="fraction"><span class="numerator">49</span><span class="denominator">128</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n = 7 substitute karke term nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Find the indicated term in the sequence whose nth term is a<sub>n</sub> = (-1)<sup>n-1</sup> n<sup>3</sup>; a<sub>9</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = (-1)<sup>n-1</sup> n<sup>3</sup></p>
+                        <p class="mb-2">For n = 9: a<sub>9</sub> = (-1)<sup>9-1</sup> × 9<sup>3</sup> = (-1)<sup>8</sup> × 729 = 1 × 729 = 729</p>
+                        <p><strong>Answer:</strong> a<sub>9</sub> = 729</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n = 9 substitute karke term nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Find the indicated term in the sequence whose nth term is a<sub>n</sub> = <span class="fraction"><span class="numerator">n(n - 2)</span><span class="denominator">n + 3</span></span>; a<sub>20</sub></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>n</sub> = <span class="fraction"><span class="numerator">n(n - 2)</span><span class="denominator">n + 3</span></span></p>
+                        <p class="mb-2">For n = 20: a<sub>20</sub> = <span class="fraction"><span class="numerator">20(20 - 2)</span><span class="denominator">20 + 3</span></span> = <span class="fraction"><span class="numerator">20 × 18</span><span class="denominator">23</span></span> = <span class="fraction"><span class="numerator">360</span><span class="denominator">23</span></span></p>
+                        <p><strong>Answer:</strong> a<sub>20</sub> = <span class="fraction"><span class="numerator">360</span><span class="denominator">23</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> nth term formula mein n = 20 substitute karke term nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: Write the first five terms of the sequence and obtain the corresponding series: a<sub>1</sub> = 3, a<sub>n</sub> = 3a<sub>n-1</sub> + 2 for all n > 1</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>1</sub> = 3, a<sub>n</sub> = 3a<sub>n-1</sub> + 2 for n > 1</p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = 3a<sub>1</sub> + 2 = 3 × 3 + 2 = 9 + 2 = 11</p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = 3a<sub>2</sub> + 2 = 3 × 11 + 2 = 33 + 2 = 35</p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = 3a<sub>3</sub> + 2 = 3 × 35 + 2 = 105 + 2 = 107</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = 3a<sub>4</sub> + 2 = 3 × 107 + 2 = 321 + 2 = 323</p>
+                        <p class="mb-2">First five terms: 3, 11, 35, 107, 323</p>
+                        <p class="mb-2">Corresponding series: 3 + 11 + 35 + 107 + 323 + ...</p>
+                        <p><strong>Answer:</strong> First five terms: 3, 11, 35, 107, 323; Series: 3 + 11 + 35 + 107 + 323 + ...</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle term given hai, fir recurrence relation use karke next terms nikalte hain, fir unka sum series banate hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: Write the first five terms of the sequence and obtain the corresponding series: a<sub>1</sub> = -1, a<sub>n</sub> = <span class="fraction"><span class="numerator">a<sub>n-1</sub></span><span class="denominator">n</span></span>, n ≥ 2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>1</sub> = -1, a<sub>n</sub> = <span class="fraction"><span class="numerator">a<sub>n-1</sub></span><span class="denominator">n</span></span> for n ≥ 2</p>
+                        <p class="mb-2">For n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">a<sub>1</sub></span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">a<sub>2</sub></span><span class="denominator">3</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span></p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">a<sub>3</sub></span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span></p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">a<sub>4</sub></span><span class="denominator">5</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span></p>
+                        <p class="mb-2">First five terms: -1, <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span></p>
+                        <p class="mb-2">Corresponding series: -1 + <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span> + ...</p>
+                        <p><strong>Answer:</strong> First five terms: -1, <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span>, <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span>; Series: -1 + <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span> + <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span> + ...</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle term given hai, fir recurrence relation use karke next terms nikalte hain, fir unka sum series banate hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 13: Write the first five terms of the sequence and obtain the corresponding series: a<sub>1</sub> = a<sub>2</sub> = 2, a<sub>n</sub> = a<sub>n-1</sub> - 1, n > 2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>1</sub> = 2, a<sub>2</sub> = 2, a<sub>n</sub> = a<sub>n-1</sub> - 1 for n > 2</p>
+                        <p class="mb-2">For n = 3: a<sub>3</sub> = a<sub>2</sub> - 1 = 2 - 1 = 1</p>
+                        <p class="mb-2">For n = 4: a<sub>4</sub> = a<sub>3</sub> - 1 = 1 - 1 = 0</p>
+                        <p class="mb-2">For n = 5: a<sub>5</sub> = a<sub>4</sub> - 1 = 0 - 1 = -1</p>
+                        <p class="mb-2">First five terms: 2, 2, 1, 0, -1</p>
+                        <p class="mb-2">Corresponding series: 2 + 2 + 1 + 0 + (-1) + ...</p>
+                        <p><strong>Answer:</strong> First five terms: 2, 2, 1, 0, -1; Series: 2 + 2 + 1 + 0 + (-1) + ...</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle do terms given hain, fir recurrence relation use karke next terms nikalte hain, fir unka sum series banate hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 14: The Fibonacci sequence is defined by 1 = a<sub>1</sub> = a<sub>2</sub> and a<sub>n</sub> = a<sub>n-1</sub> + a<sub>n-2</sub>, n > 2. Find <span class="fraction"><span class="numerator">a<sub>n+1</sub></span><span class="denominator">a<sub>n</sub></span></span>, for n = 1, 2, 3, 4, 5</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: Fibonacci sequence with a<sub>1</sub> = 1, a<sub>2</sub> = 1, and a<sub>n</sub> = a<sub>n-1</sub> + a<sub>n-2</sub> for n > 2</p>
+                        <p class="mb-2">First, let's find the first few terms:</p>
+                        <p class="mb-2">a<sub>1</sub> = 1, a<sub>2</sub> = 1, a<sub>3</sub> = a<sub>2</sub> + a<sub>1</sub> = 1 + 1 = 2</p>
+                        <p class="mb-2">a<sub>4</sub> = a<sub>3</sub> + a<sub>2</sub> = 2 + 1 = 3, a<sub>5</sub> = a<sub>4</sub> + a<sub>3</sub> = 3 + 2 = 5</p>
+                        <p class="mb-2">a<sub>6</sub> = a<sub>5</sub> + a<sub>4</sub> = 5 + 3 = 8</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, let's find the required ratios:</p>
+                        <p class="mb-2">For n = 1: <span class="fraction"><span class="numerator">a<sub>2</sub></span><span class="denominator">a<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">1</span></span> = 1</p>
+                        <p class="mb-2">For n = 2: <span class="fraction"><span class="numerator">a<sub>3</sub></span><span class="denominator">a<sub>2</sub></span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">1</span></span> = 2</p>
+                        <p class="mb-2">For n = 3: <span class="fraction"><span class="numerator">a<sub>4</sub></span><span class="denominator">a<sub>3</sub></span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span> = 1.5</p>
+                        <p class="mb-2">For n = 4: <span class="fraction"><span class="numerator">a<sub>5</sub></span><span class="denominator">a<sub>4</sub></span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span> ≈ 1.6667</p>
+                        <p class="mb-2">For n = 5: <span class="fraction"><span class="numerator">a<sub>6</sub></span><span class="denominator">a<sub>5</sub></span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span> = 1.6</p>
+                        <p><strong>Answer:</strong> The ratios are 1, 2, 1.5, <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle Fibonacci sequence ke terms nikalte hain, fir unke consecutive terms ke ratios nikalte hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 8.2 Section -->
+        <section id="exercise-8-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">Exercise 8.2</h2>
+            
+            <!-- Question 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 1: Find the 20<sup>th</sup> and n<sup>th</sup> terms of the G.P. <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>, ...</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>, ...</p>
+                        <p class="mb-2">First term a = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">Common ratio r = <span class="fraction"><span class="numerator">a<sub>2</sub></span><span class="denominator">a<sub>1</sub></span></span> = <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span></span><span class="denominator"><span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">n<sup>th</sup> term of G.P. is a<sub>n</sub> = ar<sup>n-1</sup></p>
+                        <p class="mb-2">So, a<sub>n</sub> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span> × <span class="inline-math">(<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)</span><sup>n-1</sup> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2<sup>n</sup></span></span></p>
+                        <p class="mb-2">For n = 20: a<sub>20</sub> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2<sup>20</sup></span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">1048576</span></span></p>
+                        <p><strong>Answer:</strong> 20<sup>th</sup> term = <span class="fraction"><span class="numerator">5</span><span class="denominator">1048576</span></span>, n<sup>th</sup> term = <span class="fraction"><span class="numerator">5</span><span class="denominator">2<sup>n</sup></span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first term aur common ratio nikalte hain. Fir G.P. ke nth term formula a<sub>n</sub> = ar<sup>n-1</sup> use karke 20th term aur general term nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 2: Find the 12<sup>th</sup> term of a G.P. whose 8<sup>th</sup> term is 192 and the common ratio is 2.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a<sub>8</sub> = 192, r = 2</p>
+                        <p class="mb-2">n<sup>th</sup> term of G.P. is a<sub>n</sub> = ar<sup>n-1</sup></p>
+                        <p class="mb-2">So, a<sub>8</sub> = ar<sup>7</sup> = 192</p>
+                        <p class="mb-2">ar<sup>7</sup> = 192</p>
+                        <p class="mb-2">a × 2<sup>7</sup> = 192</p>
+                        <p class="mb-2">a × 128 = 192</p>
+                        <p class="mb-2">a = <span class="fraction"><span class="numerator">192</span><span class="denominator">128</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, 12<sup>th</sup> term a<sub>12</sub> = ar<sup>11</sup></p>
+                        <p class="mb-2">a<sub>12</sub> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span> × 2<sup>11</sup> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span> × 2048 = 3 × 1024 = 3072</p>
+                        <p><strong>Answer:</strong> 12<sup>th</sup> term = 3072</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle 8th term se first term nikalte hain, fir 12th term nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 3: The 5<sup>th</sup>, 8<sup>th</sup> and 11<sup>th</sup> terms of a G.P. are p, q and s, respectively. Show that q<sup>2</sup> = ps.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the first term be a and common ratio be r</p>
+                        <p class="mb-2">Then, a<sub>5</sub> = ar<sup>4</sup> = p</p>
+                        <p class="mb-2">a<sub>8</sub> = ar<sup>7</sup> = q</p>
+                        <p class="mb-2">a<sub>11</sub> = ar<sup>10</sup> = s</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, q<sup>2</sup> = (ar<sup>7</sup>)<sup>2</sup> = a<sup>2</sup>r<sup>14</sup></p>
+                        <p class="mb-2">And ps = (ar<sup>4</sup>)(ar<sup>10</sup>) = a<sup>2</sup>r<sup>14</sup></p>
+                        <p class="mb-2">So, q<sup>2</sup> = ps</p>
+                        <p><strong>Answer:</strong> Hence proved that q<sup>2</sup> = ps</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke terms ko a aur r ke terms mein likhkar q<sup>2</sup> aur ps calculate karte hain aur dekhte hain ki dono equal hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 4: The 4<sup>th</sup> term of a G.P. is square of its second term, and the first term is -3. Determine its 7<sup>th</sup> term.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a = -3</p>
+                        <p class="mb-2">4<sup>th</sup> term = (2<sup>nd</sup> term)<sup>2</sup></p>
+                        <p class="mb-2">a<sub>4</sub> = (a<sub>2</sub>)<sup>2</sup></p>
+                        <p class="mb-2">ar<sup>3</sup> = (ar)<sup>2</sup></p>
+                        <p class="mb-2">ar<sup>3</sup> = a<sup>2</sup>r<sup>2</sup></p>
+                        <p class="mb-2">r<sup>3</sup> = ar<sup>2</sup> (dividing both sides by r<sup>2</sup>)</p>
+                        <p class="mb-2">r = a = -3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, 7<sup>th</sup> term a<sub>7</sub> = ar<sup>6</sup></p>
+                        <p class="mb-2">a<sub>7</sub> = (-3)(-3)<sup>6</sup> = (-3)(729) = -2187</p>
+                        <p><strong>Answer:</strong> 7<sup>th</sup> term = -2187</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle given condition use karke common ratio nikalte hain, fir 7th term calculate karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 5: Which term of the following sequences:<br>
+                (a) 2, 2√2, 4, ... is 128?<br>
+                (b) √3, 3, 3√3, ... is 729?<br>
+                (c) <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>, ... is <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span>?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(a)</strong> Sequence: 2, 2√2, 4, ...</p>
+                        <p class="mb-2">a = 2, r = <span class="fraction"><span class="numerator">2√2</span><span class="denominator">2</span></span> = √2</p>
+                        <p class="mb-2">Let a<sub>n</sub> = 128</p>
+                        <p class="mb-2">ar<sup>n-1</sup> = 128</p>
+                        <p class="mb-2">2(√2)<sup>n-1</sup> = 128</p>
+                        <p class="mb-2">(√2)<sup>n-1</sup> = 64</p>
+                        <p class="mb-2">2<sup>(n-1)/2</sup> = 2<sup>6</sup></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">n-1</span><span class="denominator">2</span></span> = 6 ⇒ n-1 = 12 ⇒ n = 13</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(b)</strong> Sequence: √3, 3, 3√3, ...</p>
+                        <p class="mb-2">a = √3, r = <span class="fraction"><span class="numerator">3</span><span class="denominator">√3</span></span> = √3</p>
+                        <p class="mb-2">Let a<sub>n</sub> = 729</p>
+                        <p class="mb-2">ar<sup>n-1</sup> = 729</p>
+                        <p class="mb-2">√3(√3)<sup>n-1</sup> = 729</p>
+                        <p class="mb-2">(√3)<sup>n</sup> = 729</p>
+                        <p class="mb-2">3<sup>n/2</sup> = 3<sup>6</sup></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">n</span><span class="denominator">2</span></span> = 6 ⇒ n = 12</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2"><strong>(c)</strong> Sequence: <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>, ...</p>
+                        <p class="mb-2">a = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>, r = <span class="fraction"><span class="numerator">1/9</span><span class="denominator">1/3</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span></p>
+                        <p class="mb-2">Let a<sub>n</sub> = <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span></p>
+                        <p class="mb-2">ar<sup>n-1</sup> = <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> × <span class="inline-math">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)</span><sup>n-1</sup> = <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span></p>
+                        <p class="mb-2"><span class="inline-math">(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)</span><sup>n</sup> = <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span></p>
+                        <p class="mb-2">3<sup>-n</sup> = 3<sup>-9</sup> (since 19683 = 3<sup>9</sup>)</p>
+                        <p class="mb-2">-n = -9 ⇒ n = 9</p>
+                        <p><strong>Answer:</strong> (a) 13<sup>th</sup> term, (b) 12<sup>th</sup> term, (c) 9<sup>th</sup> term</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Har sequence ke liye pehle first term aur common ratio nikalte hain, fir nth term formula use karke n ki value nikalte hain.
+                    </div>
+                </div>
+            </div>
+<!-- Question 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 6: For what values of x, the numbers <span class="fraction"><span class="numerator">-2</span><span class="denominator">7</span></span>, x, <span class="fraction"><span class="numerator">-7</span><span class="denominator">2</span></span> are in G.P.?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">For three numbers to be in G.P., the middle term must be the geometric mean of the other two</p>
+                        <p class="mb-2">So, x² = <span class="inline-math">(<span class="fraction"><span class="numerator">-2</span><span class="denominator">7</span></span>) × (<span class="fraction"><span class="numerator">-7</span><span class="denominator">2</span></span>)</span></p>
+                        <p class="mb-2">x² = <span class="fraction"><span class="numerator">14</span><span class="denominator">14</span></span> = 1</p>
+                        <p class="mb-2">So, x = ±1</p>
+                        <p><strong>Answer:</strong> x = 1 or x = -1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Teen numbers G.P. mein honge agar middle term ka square = first term × third term ho. Isliye x² = (-2/7) × (-7/2) = 1, toh x = ±1.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 7: Find the sum to 20 terms of the G.P.: 0.15, 0.015, 0.0015, ...</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: 0.15, 0.015, 0.0015, ...</p>
+                        <p class="mb-2">First term a = 0.15</p>
+                        <p class="mb-2">Common ratio r = <span class="fraction"><span class="numerator">0.015</span><span class="denominator">0.15</span></span> = 0.1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of n terms of G.P. when |r| &lt; 1 is S<sub>n</sub> = <span class="fraction"><span class="numerator">a(1 - r<sup>n</sup>)</span><span class="denominator">1 - r</span></span></p>
+                        <p class="mb-2">S<sub>20</sub> = <span class="fraction"><span class="numerator">0.15(1 - (0.1)<sup>20</sup>)</span><span class="denominator">1 - 0.1</span></span></p>
+                        <p class="mb-2">Since (0.1)<sup>20</sup> is very small, approximately S<sub>20</sub> = <span class="fraction"><span class="numerator">0.15</span><span class="denominator">0.9</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> ≈ 0.1667</p>
+                        <p><strong>Answer:</strong> S<sub>20</sub> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> ≈ 0.1667</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first term aur common ratio nikalte hain. Fir G.P. ke sum formula use karke 20 terms ka sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 8: Find the sum to n terms of the G.P.: √7, √21, 3√7, ...</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: √7, √21, 3√7, ...</p>
+                        <p class="mb-2">First term a = √7</p>
+                        <p class="mb-2">Common ratio r = <span class="fraction"><span class="numerator">√21</span><span class="denominator">√7</span></span> = √3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> since r &gt; 1</p>
+                        <p class="mb-2">S<sub>n</sub> = <span class="fraction"><span class="numerator">√7((√3)<sup>n</sup> - 1)</span><span class="denominator">√3 - 1</span></span></p>
+                        <p class="mb-2">Rationalizing the denominator: S<sub>n</sub> = <span class="fraction"><span class="numerator">√7((√3)<sup>n</sup> - 1)(√3 + 1)</span><span class="denominator">(√3 - 1)(√3 + 1)</span></span> = <span class="fraction"><span class="numerator">√7((√3)<sup>n</sup> - 1)(√3 + 1)</span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> S<sub>n</sub> = <span class="fraction"><span class="numerator">√7((√3)<sup>n</sup> - 1)(√3 + 1)</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first term aur common ratio nikalte hain. Fir G.P. ke sum formula use karke n terms ka sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 9: Find the sum to n terms of the G.P.: 1, -a, a², -a³, ... (a ≠ -1)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: 1, -a, a², -a³, ...</p>
+                        <p class="mb-2">First term a = 1</p>
+                        <p class="mb-2">Common ratio r = -a</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(1 - r<sup>n</sup>)</span><span class="denominator">1 - r</span></span> when r ≠ 1</p>
+                        <p class="mb-2">S<sub>n</sub> = <span class="fraction"><span class="numerator">1(1 - (-a)<sup>n</sup>)</span><span class="denominator">1 - (-a)</span></span> = <span class="fraction"><span class="numerator">1 - (-a)<sup>n</sup></span><span class="denominator">1 + a</span></span></p>
+                        <p><strong>Answer:</strong> S<sub>n</sub> = <span class="fraction"><span class="numerator">1 - (-a)<sup>n</sup></span><span class="denominator">1 + a</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first term aur common ratio nikalte hain. Fir G.P. ke sum formula use karke n terms ka sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 10: Find the sum to n terms of the G.P.: x³, x⁵, x⁷, ... (x ≠ ±1)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: x³, x⁵, x⁷, ...</p>
+                        <p class="mb-2">First term a = x³</p>
+                        <p class="mb-2">Common ratio r = <span class="fraction"><span class="numerator">x⁵</span><span class="denominator">x³</span></span> = x²</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> when r ≠ 1</p>
+                        <p class="mb-2">S<sub>n</sub> = <span class="fraction"><span class="numerator">x³((x²)<sup>n</sup> - 1)</span><span class="denominator">x² - 1</span></span> = <span class="fraction"><span class="numerator">x³(x<sup>2n</sup> - 1)</span><span class="denominator">x² - 1</span></span></p>
+                        <p><strong>Answer:</strong> S<sub>n</sub> = <span class="fraction"><span class="numerator">x³(x<sup>2n</sup> - 1)</span><span class="denominator">x² - 1</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first term aur common ratio nikalte hain. Fir G.P. ke sum formula use karke n terms ka sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 11: Evaluate <span class="inline-math">∑<sub>k=1</sub><sup>11</sup> (2 + 3<sup>k</sup>)</span></h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2"><span class="inline-math">∑<sub>k=1</sub><sup>11</sup> (2 + 3<sup>k</sup>) = ∑<sub>k=1</sub><sup>11</sup> 2 + ∑<sub>k=1</sub><sup>11</sup> 3<sup>k</sup></span></p>
+                        <p class="mb-2"><span class="inline-math">∑<sub>k=1</sub><sup>11</sup> 2 = 2 × 11 = 22</span></p>
+                        <p class="mb-2"><span class="inline-math">∑<sub>k=1</sub><sup>11</sup> 3<sup>k</sup> = 3 + 3² + 3³ + ... + 3<sup>11</sup></span></p>
+                        <p class="mb-2">This is a G.P. with a = 3, r = 3, n = 11</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of G.P. = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> = <span class="fraction"><span class="numerator">3(3<sup>11</sup> - 1)</span><span class="denominator">3 - 1</span></span> = <span class="fraction"><span class="numerator">3(3<sup>11</sup> - 1)</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">Total sum = 22 + <span class="fraction"><span class="numerator">3(3<sup>11</sup> - 1)</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">44 + 3(3<sup>11</sup> - 1)</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">44 + 3<sup>12</sup> - 3</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">41 + 3<sup>12</sup></span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> <span class="inline-math">∑<sub>k=1</sub><sup>11</sup> (2 + 3<sup>k</sup>) = <span class="fraction"><span class="numerator">41 + 3<sup>12</sup></span><span class="denominator">2</span></span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sum ko do parts mein break karte hain: constant term ka sum aur G.P. ka sum. Fir dono ko add karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 12: The sum of first three terms of a G.P. is <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span> and their product is 1. Find the common ratio and the terms.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the three terms be <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span>, a, ar</p>
+                        <p class="mb-2">Product: <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span> × a × ar = a³ = 1 ⇒ a = 1</p>
+                        <p class="mb-2">Sum: <span class="fraction"><span class="numerator">1</span><span class="denominator">r</span></span> + 1 + r = <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">1</span><span class="denominator">r</span></span> + r = <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span> - 1 = <span class="fraction"><span class="numerator">29</span><span class="denominator">10</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Multiply both sides by 10r: 10 + 10r² = 29r</p>
+                        <p class="mb-2">10r² - 29r + 10 = 0</p>
+                        <p class="mb-2">Solving: (5r - 2)(2r - 5) = 0</p>
+                        <p class="mb-2">So, r = <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span> or r = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">For r = <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span>, terms: <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, 1, <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span></p>
+                        <p class="mb-2">For r = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, terms: <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span>, 1, <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> Common ratio = <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span> or <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>; Terms = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, 1, <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span> or <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span>, 1, <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Three terms ko a/r, a, ar form mein lete hain. Product se a nikalte hain, fir sum se equation banakar r nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 13: How many terms of the G.P. 3, 3², 3³, ... are needed to give the sum 120?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given G.P.: 3, 3², 3³, ...</p>
+                        <p class="mb-2">First term a = 3</p>
+                        <p class="mb-2">Common ratio r = 3</p>
+                        <p class="mb-2">Sum of n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> = <span class="fraction"><span class="numerator">3(3<sup>n</sup> - 1)</span><span class="denominator">3 - 1</span></span> = <span class="fraction"><span class="numerator">3(3<sup>n</sup> - 1)</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given S<sub>n</sub> = 120</p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">3(3<sup>n</sup> - 1)</span><span class="denominator">2</span></span> = 120</p>
+                        <p class="mb-2">3(3<sup>n</sup> - 1) = 240</p>
+                        <p class="mb-2">3<sup>n</sup> - 1 = 80</p>
+                        <p class="mb-2">3<sup>n</sup> = 81 = 3<sup>4</sup></p>
+                        <p class="mb-2">So, n = 4</p>
+                        <p><strong>Answer:</strong> 4 terms are needed</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke sum formula use karke equation banate hain aur n ki value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 14: The sum of first three terms of a G.P. is 16 and the sum of the next three terms is 128. Determine the first term, the common ratio and the sum to n terms of the G.P.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let first term = a, common ratio = r</p>
+                        <p class="mb-2">First three terms: a + ar + ar² = 16 ...(1)</p>
+                        <p class="mb-2">Next three terms: ar³ + ar⁴ + ar⁵ = 128 ...(2)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Dividing (2) by (1): <span class="fraction"><span class="numerator">ar³(1 + r + r²)</span><span class="denominator">a(1 + r + r²)</span></span> = <span class="fraction"><span class="numerator">128</span><span class="denominator">16</span></span></p>
+                        <p class="mb-2">r³ = 8 ⇒ r = 2</p>
+                        <p class="mb-2">From (1): a(1 + 2 + 4) = 16 ⇒ 7a = 16 ⇒ a = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum to n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> = <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span>(2<sup>n</sup> - 1)</span><span class="denominator">2 - 1</span></span> = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span>(2<sup>n</sup> - 1)</p>
+                        <p><strong>Answer:</strong> First term = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span>, Common ratio = 2, S<sub>n</sub> = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span>(2<sup>n</sup> - 1)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Pehle first three terms ka sum aur next three terms ka sum likhkar ratio nikalte hain jisse r milta hai. Fir a nikalte hain, aur akhir mein sum formula use karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 15: Given a G.P. with a = 729 and 7<sup>th</sup> term 64, determine S<sub>7</sub>.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Given: a = 729, a<sub>7</sub> = 64</p>
+                        <p class="mb-2">a<sub>7</sub> = ar⁶ = 729 × r⁶ = 64</p>
+                        <p class="mb-2">r⁶ = <span class="fraction"><span class="numerator">64</span><span class="denominator">729</span></span> = (<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)⁶</p>
+                        <p class="mb-2">So, r = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">S<sub>7</sub> = <span class="fraction"><span class="numerator">a(1 - r⁷)</span><span class="denominator">1 - r</span></span> = <span class="fraction"><span class="numerator">729{1 - (2/3)⁷}</span><span class="numerator">1 - 2/3</span></span></p>
+                        <p class="mb-2">S<sub>7</sub> = <span class="fraction"><span class="numerator">729(1 - 128/2187)</span><span class="denominator">1/3</span></span> = <span class="fraction"><span class="numerator">729(2059/2187)</span><span class="denominator">3</span></span> = 729 × <span class="fraction"><span class="numerator">2059</span><span class="denominator">2187</span></span> × 3</p>
+                        <p class="mb-2">S<sub>7</sub> = <span class="fraction"><span class="numerator">2059</span><span class="denominator">3</span></span> × 3 = 2059</p>
+                        <p><strong>Answer:</strong> S<sub>7</sub> = 2059</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> 7th term se common ratio nikalte hain, fir sum formula use karke S<sub>7</sub> nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 16: Find a G.P. for which sum of the first two terms is -4 and the fifth term is 4 times the third term.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let first term = a, common ratio = r</p>
+                        <p class="mb-2">First two terms sum: a + ar = -4 ⇒ a(1 + r) = -4 ...(1)</p>
+                        <p class="mb-2">Fifth term = 4 × third term: ar⁴ = 4 × ar² ⇒ r² = 4 ⇒ r = ±2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Case 1: r = 2</p>
+                        <p class="mb-2">From (1): a(1 + 2) = -4 ⇒ 3a = -4 ⇒ a = <span class="fraction"><span class="numerator">-4</span><span class="denominator">3</span></span></p>
+                        <p class="mb-2">G.P.: <span class="fraction"><span class="numerator">-4</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">-8</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">-16</span><span class="denominator">3</span></span>, ...</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Case 2: r = -2</p>
+                        <p class="mb-2">From (1): a(1 - 2) = -4 ⇒ -a = -4 ⇒ a = 4</p>
+                        <p class="mb-2">G.P.: 4, -8, 16, -32, ...</p>
+                        <p><strong>Answer:</strong> G.P. is either <span class="fraction"><span class="numerator">-4</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">-8</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">-16</span><span class="denominator">3</span></span>, ... or 4, -8, 16, -32, ...</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do conditions di gayi hain: first two terms ka sum aur fifth term = 4 × third term. Inse a aur r nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 17: If the 4<sup>th</sup>, 10<sup>th</sup> and 16<sup>th</sup> terms of a G.P. are x, y and z, respectively. Prove that x, y, z are in G.P.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let first term = a, common ratio = r</p>
+                        <p class="mb-2">Then, x = a<sub>4</sub> = ar³</p>
+                        <p class="mb-2">y = a<sub>10</sub> = ar⁹</p>
+                        <p class="mb-2">z = a<sub>16</sub> = ar¹⁵</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">To prove x, y, z are in G.P., we need to show y² = xz</p>
+                        <p class="mb-2">y² = (ar⁹)² = a²r¹⁸</p>
+                        <p class="mb-2">xz = (ar³)(ar¹⁵) = a²r¹⁸</p>
+                        <p class="mb-2">So, y² = xz</p>
+                        <p class="mb-2">Hence, x, y, z are in G.P.</p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke terms ko a aur r ke terms mein likhkar check karte hain ki y² = xz hai ya nahi.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 18: Find the sum to n terms of the sequence: 8, 88, 888, 8888, ...</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">S<sub>n</sub> = 8 + 88 + 888 + 8888 + ... to n terms</p>
+                        <p class="mb-2">= 8(1 + 11 + 111 + 1111 + ...)</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span>(9 + 99 + 999 + 9999 + ...)</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span>[(10 - 1) + (10² - 1) + (10³ - 1) + (10⁴ - 1) + ...]</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span>[(10 + 10² + 10³ + ... + 10<sup>n</sup>) - (1 + 1 + 1 + ... n times)]</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span>[<span class="fraction"><span class="numerator">10(10<sup>n</sup> - 1)</span><span class="denominator">10 - 1</span></span> - n]</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span>[<span class="fraction"><span class="numerator">10(10<sup>n</sup> - 1)</span><span class="denominator">9</span></span> - n]</p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">80</span><span class="denominator">81</span></span>(10<sup>n</sup> - 1) - <span class="fraction"><span class="numerator">8n</span><span class="denominator">9</span></span></p>
+                        <p><strong>Answer:</strong> S<sub>n</sub> = <span class="fraction"><span class="numerator">80</span><span class="denominator">81</span></span>(10<sup>n</sup> - 1) - <span class="fraction"><span class="numerator">8n</span><span class="denominator">9</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Sequence ko 8 common leke, fir terms ko (10-1), (100-1), (1000-1), ... form mein likhkar sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 19: Find the sum of the products of the corresponding terms of the sequences 2, 4, 8, 16, 32 and 128, 32, 8, 2, <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First sequence: 2, 4, 8, 16, 32 (G.P. with a = 2, r = 2)</p>
+                        <p class="mb-2">Second sequence: 128, 32, 8, 2, <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> (G.P. with a = 128, r = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Products: 2×128, 4×32, 8×8, 16×2, 32×<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">= 256, 128, 64, 32, 16</p>
+                        <p class="mb-2">This is a G.P. with a = 256, r = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, n = 5</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum = <span class="fraction"><span class="numerator">a(1 - r<sup>n</sup>)</span><span class="denominator">1 - r</span></span> = <span class="fraction"><span class="numerator">256{1 - (1/2)⁵</span><span class="denominator">1 - 1/2 </span></span></p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">256(1 - 1/32)</span><span class="denominator">1/2</span></span> = <span class="fraction"><span class="numerator">256 × (31/32)</span><span class="denominator">1/2</span></span> = 256 × <span class="fraction"><span class="numerator">31</span><span class="denominator">32</span></span> × 2 = 496</p>
+                        <p><strong>Answer:</strong> Sum = 496</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono sequences ke corresponding terms ka product nikalte hain, jo ek G.P. banata hai. Fir uska sum nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 20: Show that the products of the corresponding terms of the sequences a, ar, ar², ... ar<sup>n-1</sup> and A, AR, AR², ... AR<sup>n-1</sup> form a G.P, and find the common ratio.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">First sequence: a, ar, ar², ..., ar<sup>n-1</sup> (G.P. with common ratio r)</p>
+                        <p class="mb-2">Second sequence: A, AR, AR², ..., AR<sup>n-1</sup> (G.P. with common ratio R)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Products: aA, (ar)(AR), (ar²)(AR²), ..., (ar<sup>n-1</sup>)(AR<sup>n-1</sup>)</p>
+                        <p class="mb-2">= aA, aArR, aAr²R², ..., aAr<sup>n-1</sup>R<sup>n-1</sup></p>
+                        <p class="mb-2">= aA, aA(rR), aA(rR)², ..., aA(rR)<sup>n-1</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">This is a G.P. with first term = aA and common ratio = rR</p>
+                        <p><strong>Answer:</strong> The products form a G.P. with common ratio rR</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Dono sequences ke corresponding terms ka product nikalte hain, jo ek naya G.P. banata hai jiska common ratio dono G.P.s ke common ratios ka product hota hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 21: Find four numbers forming a geometric progression in which the third term is greater than the first term by 9, and the second term is greater than the 4<sup>th</sup> by 18.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the four terms be <span class="fraction"><span class="numerator">a</span><span class="denominator">r³</span></span>, <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span>, ar, ar³</p>
+                        <p class="mb-2">Third term - first term = 9: ar - <span class="fraction"><span class="numerator">a</span><span class="denominator">r³</span></span> = 9 ...(1)</p>
+                        <p class="mb-2">Second term - fourth term = 18: <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span> - ar³ = 18 ...(2)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Dividing (1) by (2): <span class="fraction"><span class="numerator">ar - a/r³</span><span class="denominator">a/r - ar³</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">18</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">r - 1/r³</span><span class="denominator">1/r - r³</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></p>
+                        <p class="mb-2">Cross-multiplying: 2(r - 1/r³) = 1/r - r³</p>
+                        <p class="mb-2">2r - 2/r³ = 1/r - r³</p>
+                        <p class="mb-2">Multiply by r³: 2r⁴ - 2 = r² - r⁶</p>
+                        <p class="mb-2">r⁶ + 2r⁴ - r² - 2 = 0</p>
+                        <p class="mb-2">(r² + 2)(r⁴ - 1) = 0 ⇒ r⁴ = 1 ⇒ r = ±1</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">But r = 1 gives all terms equal, which doesn't satisfy the conditions</p>
+                        <p class="mb-2">So, r = -1</p>
+                        <p class="mb-2">From (1): a(-1) - a/(-1) = 9 ⇒ -a + a = 9 ⇒ 0 = 9 (contradiction)</p>
+                        <p class="mb-2">Let's try the standard form: a, ar, ar², ar³</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Third term - first term = 9: ar² - a = 9 ⇒ a(r² - 1) = 9 ...(1)</p>
+                        <p class="mb-2">Second term - fourth term = 18: ar - ar³ = 18 ⇒ ar(1 - r²) = 18 ...(2)</p>
+                        <p class="mb-2">Dividing (2) by (1): <span class="fraction"><span class="numerator">ar(1 - r²)</span><span class="denominator">a(r² - 1)</span></span> = <span class="fraction"><span class="numerator">18</span><span class="denominator">9</span></span></p>
+                        <p class="mb-2"><span class="fraction"><span class="numerator">-r</span><span class="denominator">1</span></span> = 2 ⇒ r = -2</p>
+                        <p class="mb-2">From (1): a(4 - 1) = 9 ⇒ 3a = 9 ⇒ a = 3</p>
+                        <p class="mb-2">The four numbers: 3, -6, 12, -24</p>
+                        <p><strong>Answer:</strong> The four numbers are 3, -6, 12, -24</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Four terms ko standard form mein lete hain aur given conditions use karke equations banate hain. Unhe solve karke a aur r nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 22: If the p<sup>th</sup>, q<sup>th</sup> and r<sup>th</sup> terms of a G.P. are a, b and c, respectively. Prove that a<sup>q-r</sup> b<sup>r-p</sup> c<sup>p-q</sup> = 1.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let first term = A, common ratio = R</p>
+                        <p class="mb-2">Then, a = AR<sup>p-1</sup>, b = AR<sup>q-1</sup>, c = AR<sup>r-1</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">LHS = a<sup>q-r</sup> b<sup>r-p</sup> c<sup>p-q</sup></p>
+                        <p class="mb-2">= (AR<sup>p-1</sup>)<sup>q-r</sup> (AR<sup>q-1</sup>)<sup>r-p</sup> (AR<sup>r-1</sup>)<sup>p-q</sup></p>
+                        <p class="mb-2">= A<sup>q-r+r-p+p-q</sup> R<sup>(p-1)(q-r)+(q-1)(r-p)+(r-1)(p-q)</sup></p>
+                        <p class="mb-2">= A⁰ R<sup>p(q-r)+q(r-p)+r(p-q) - (q-r+r-p+p-q)</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Now, p(q-r) + q(r-p) + r(p-q) = pq - pr + qr - pq + pr - qr = 0</p>
+                        <p class="mb-2">And (q-r+r-p+p-q) = 0</p>
+                        <p class="mb-2">So, LHS = A⁰ R⁰ = 1</p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke terms ko A aur R ke terms mein likhkar LHS calculate karte hain. Exponent simplify karte hain aur dekhte hain ki 1 aata hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 23: If the first and the n<sup>th</sup> term of a G.P. are a and b, respectively, and if P is the product of n terms, prove that P² = (ab)<sup>n</sup>.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the G.P. be a, ar, ar², ..., ar<sup>n-1</sup> = b</p>
+                        <p class="mb-2">So, b = ar<sup>n-1</sup> ⇒ r<sup>n-1</sup> = <span class="fraction"><span class="numerator">b</span><span class="denominator">a</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Product of n terms P = a × ar × ar² × ... × ar<sup>n-1</sup></p>
+                        <p class="mb-2">= a<sup>n</sup> r<sup>0+1+2+...+(n-1)</sup></p>
+                        <p class="mb-2">= a<sup>n</sup> r<sup>n(n-1)/2</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">P² = a<sup>2n</sup> r<sup>n(n-1)</sup></p>
+                        <p class="mb-2">Now, (ab)<sup>n</sup> = (a × ar<sup>n-1</sup>)<sup>n</sup> = (a²r<sup>n-1</sup>)<sup>n</sup> = a<sup>2n</sup> r<sup>n(n-1)</sup></p>
+                        <p class="mb-2">So, P² = (ab)<sup>n</sup></p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke terms ka product nikalte hain, fir uska square calculate karte hain aur dekhte hain ki (ab)<sup>n</sup> ke equal hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 24: Show that the ratio of the sum of first n terms of a G.P. to the sum of terms from (n+1)<sup>th</sup> to (2n)<sup>th</sup> term is <span class="fraction"><span class="numerator">1</span><span class="denominator">r<sup>n</sup></span></span>.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Sum of first n terms S<sub>n</sub> = <span class="fraction"><span class="numerator">a(1 - r<sup>n</sup>)</span><span class="denominator">1 - r</span></span></p>
+                        <p class="mb-2">Sum of terms from (n+1)<sup>th</sup> to (2n)<sup>th</sup> = ar<sup>n</sup> + ar<sup>n+1</sup> + ... + ar<sup>2n-1</sup></p>
+                        <p class="mb-2">= ar<sup>n</sup>(1 + r + r² + ... + r<sup>n-1</sup>)</p>
+                        <p class="mb-2">= ar<sup>n</sup> × <span class="fraction"><span class="numerator">1 - r<sup>n</sup></span><span class="denominator">1 - r</span></span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Required ratio = <span class="fraction"><span class="numerator">S<sub>n</sub></span><span class="denominator">Sum from (n+1) to (2n)</span></span></p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">a(1 - r<sup>n</sup>)</span><span class="denominator">1 - r</span></span></span><span class="denominator">ar<sup>n</sup> × <span class="fraction"><span class="numerator">1 - r<sup>n</sup></span><span class="denominator">1 - r</span></span></span></span></p>
+                        <p class="mb-2">= <span class="fraction"><span class="numerator">1</span><span class="denominator">r<sup>n</sup></span></span></p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> First n terms ka sum aur next n terms ka sum calculate karte hain, fir unka ratio nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 25: If a, b, c and d are in G.P. show that (a² + b² + c²)(b² + c² + d²) = (ab + bc + cd)².</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Since a, b, c, d are in G.P., let b = ar, c = ar², d = ar³</p>
+                        <p class="mb-2">LHS = (a² + b² + c²)(b² + c² + d²)</p>
+                        <p class="mb-2">= (a² + a²r² + a²r⁴)(a²r² + a²r⁴ + a²r⁶)</p>
+                        <p class="mb-2">= a²(1 + r² + r⁴) × a²r²(1 + r² + r⁴)</p>
+                        <p class="mb-2">= a⁴r²(1 + r² + r⁴)²</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">RHS = (ab + bc + cd)²</p>
+                        <p class="mb-2">= (a(ar) + (ar)(ar²) + (ar²)(ar³))²</p>
+                        <p class="mb-2">= (a²r + a²r³ + a²r⁵)²</p>
+                        <p class="mb-2">= [a²r(1 + r² + r⁴)]²</p>
+                        <p class="mb-2">= a⁴r²(1 + r² + r⁴)²</p>
+                        <p class="mb-2">So, LHS = RHS</p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> G.P. ke terms ko a aur r ke terms mein likhkar LHS aur RHS calculate karte hain aur dekhte hain ki dono equal hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 26: Insert two numbers between 3 and 81 so that the resulting sequence is G.P.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the two numbers be G<sub>1</sub> and G<sub>2</sub></p>
+                        <p class="mb-2">Then 3, G<sub>1</sub>, G<sub>2</sub>, 81 are in G.P.</p>
+                        <p class="mb-2">Let common ratio = r</p>
+                        <p class="mb-2">Then, 3 × r³ = 81 ⇒ r³ = 27 ⇒ r = 3</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">G<sub>1</sub> = 3 × r = 3 × 3 = 9</p>
+                        <p class="mb-2">G<sub>2</sub> = 3 × r² = 3 × 9 = 27</p>
+                        <p><strong>Answer:</strong> The two numbers are 9 and 27</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Do numbers insert karne ke liye common ratio nikalte hain, fir G<sub>1</sub> aur G<sub>2</sub> calculate karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 27: Find the value of n so that <span class="fraction"><span class="numerator">a<sup>n+1</sup> + b<sup>n+1</sup></span><span class="denominator">a<sup>n</sup> + b<sup>n</sup></span></span> may be the geometric mean between a and b.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Geometric mean between a and b = √(ab)</p>
+                        <p class="mb-2">Given: <span class="fraction"><span class="numerator">a<sup>n+1</sup> + b<sup>n+1</sup></span><span class="denominator">a<sup>n</sup> + b<sup>n</sup></span></span> = √(ab)</p>
+                        <p class="mb-2">Square both sides: <span class="inline-math">(<span class="fraction"><span class="numerator">a<sup>n+1</sup> + b<sup>n+1</sup></span><span class="denominator">a<sup>n</sup> + b<sup>n</sup></span></span>)² = ab</span></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(a<sup>n+1</sup> + b<sup>n+1</sup>)² = ab(a<sup>n</sup> + b<sup>n</sup>)²</p>
+                        <p class="mb-2">a<sup>2n+2</sup> + 2a<sup>n+1</sup>b<sup>n+1</sup> + b<sup>2n+2</sup> = ab(a<sup>2n</sup> + 2a<sup>n</sup>b<sup>n</sup> + b<sup>2n</sup>)</p>
+                        <p class="mb-2">a<sup>2n+2</sup> + 2a<sup>n+1</sup>b<sup>n+1</sup> + b<sup>2n+2</sup> = a<sup>2n+1</sup>b + 2a<sup>n+1</sup>b<sup>n+1</sup> + ab<sup>2n+1</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Cancel 2a<sup>n+1</sup>b<sup>n+1</sup> from both sides:</p>
+                        <p class="mb-2">a<sup>2n+2</sup> + b<sup>2n+2</sup> = a<sup>2n+1</sup>b + ab<sup>2n+1</sup></p>
+                        <p class="mb-2">a<sup>2n+2</sup> - a<sup>2n+1</sup>b = ab<sup>2n+1</sup> - b<sup>2n+2</sup></p>
+                        <p class="mb-2">a<sup>2n+1</sup>(a - b) = b<sup>2n+1</sup>(a - b)</p>
+                        <p class="mb-2">If a ≠ b, then a<sup>2n+1</sup> = b<sup>2n+1</sup> ⇒ <span class="inline-math">(<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>)<sup>2n+1</sup> = 1</span></p>
+                        <p class="mb-2">So, 2n+1 = 0 ⇒ n = <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span></p>
+                        <p><strong>Answer:</strong> n = <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Given expression ko geometric mean ke equal set karke equation banate hain, fir solve karke n ki value nikalte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 28: The sum of two numbers is 6 times their geometric mean, show that numbers are in the ratio (3+2√2):(3-2√2).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the two numbers be a and b</p>
+                        <p class="mb-2">Given: a + b = 6√(ab)</p>
+                        <p class="mb-2">Divide both sides by b: <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span> + 1 = 6√(<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>)</p>
+                        <p class="mb-2">Let t = √(<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>)</p>
+                        <p class="mb-2">Then t² + 1 = 6t</p>
+                        <p class="mb-2">t² - 6t + 1 = 0</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">t = <span class="fraction"><span class="numerator">6 ± √(36 - 4)</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">6 ± √32</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">6 ± 4√2</span><span class="denominator">2</span></span> = 3 ± 2√2</p>
+                        <p class="mb-2">So, √(<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>) = 3 + 2√2 or 3 - 2√2</p>
+                        <p class="mb-2">Thus, <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span> = (3 + 2√2)² or (3 - 2√2)²</p>
+                        <p class="mb-2">But (3 + 2√2)² = 9 + 12√2 + 8 = 17 + 12√2</p>
+                        <p class="mb-2">And (3 - 2√2)² = 9 - 12√2 + 8 = 17 - 12√2</p>
+                        <p class="mb-2">So the ratio is (3+2√2):(3-2√2)</p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Given condition use karke equation banate hain, fir a/b ki value nikalte hain jo required ratio deti hai.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 29: If A and G be A.M. and G.M., respectively between two positive numbers, prove that the numbers are A ± √((A+G)(A-G)).</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the two numbers be x and y</p>
+                        <p class="mb-2">Then A = <span class="fraction"><span class="numerator">x + y</span><span class="denominator">2</span></span> ⇒ x + y = 2A</p>
+                        <p class="mb-2">G = √(xy) ⇒ xy = G²</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">The quadratic equation with roots x and y is:</p>
+                        <p class="mb-2">t² - (x+y)t + xy = 0</p>
+                        <p class="mb-2">t² - 2At + G² = 0</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">t = <span class="fraction"><span class="numerator">2A ± √(4A² - 4G²)</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">2A ± 2√(A² - G²)</span><span class="denominator">2</span></span> = A ± √(A² - G²)</p>
+                        <p class="mb-2">= A ± √((A+G)(A-G))</p>
+                        <p><strong>Answer:</strong> Hence proved</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Two numbers ke sum aur product se quadratic equation banate hain, fir uske roots nikalte hain jo required form mein aate hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 30: The number of bacteria in a certain culture doubles every hour. If there were 30 bacteria present in the culture originally, how many bacteria will be present at the end of 2<sup>nd</sup> hour, 4<sup>th</sup> hour and n<sup>th</sup> hour?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">This forms a G.P. with first term a = 30, common ratio r = 2</p>
+                        <p class="mb-2">Number of bacteria after n hours = a × r<sup>n</sup> = 30 × 2<sup>n</sup></p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">After 2nd hour: 30 × 2² = 30 × 4 = 120</p>
+                        <p class="mb-2">After 4th hour: 30 × 2⁴ = 30 × 16 = 480</p>
+                        <p class="mb-2">After nth hour: 30 × 2<sup>n</sup></p>
+                        <p><strong>Answer:</strong> 2nd hour: 120, 4th hour: 480, nth hour: 30 × 2<sup>n</sup></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Bacteria double hone se G.P. ban raha hai. Isliye G.P. ke nth term formula use karte hain.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 31 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 31: What will Rs 500 amounts to in 10 years after its deposit in a bank which pays annual interest rate of 10% compounded annually?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Principal P = Rs 500</p>
+                        <p class="mb-2">Rate r = 10% = 0.1</p>
+                        <p class="mb-2">Time n = 10 years</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">Amount A = P(1 + r)<sup>n</sup></p>
+                        <p class="mb-2">A = 500(1 + 0.1)<sup>10</sup> = 500(1.1)<sup>10</sup></p>
+                        <p class="mb-2">Using (1.1)<sup>10</sup> ≈ 2.59374</p>
+                        <p class="mb-2">A ≈ 500 × 2.59374 = Rs 1296.87</p>
+                        <p><strong>Answer:</strong> Approximately Rs 1296.87</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Compound interest formula use karte hain: A = P(1+r)<sup>n</sup>.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Continue with Questions 6-32 following the same pattern -->
+
+            <!-- Question 32 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">Question 32: If A.M. and G.M. of roots of a quadratic equation are 8 and 5, respectively, then obtain the quadratic equation.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">Solution:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">Let the roots be α and β</p>
+                        <p class="mb-2">Given: A.M. = <span class="fraction"><span class="numerator">α + β</span><span class="denominator">2</span></span> = 8 ⇒ α + β = 16</p>
+                        <p class="mb-2">G.M. = √(αβ) = 5 ⇒ αβ = 25</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">The quadratic equation with roots α and β is:</p>
+                        <p class="mb-2">x<sup>2</sup> - (sum of roots)x + (product of roots) = 0</p>
+                        <p class="mb-2">x<sup>2</sup> - (α + β)x + αβ = 0</p>
+                        <p class="mb-2">x<sup>2</sup> - 16x + 25 = 0</p>
+                        <p><strong>Answer:</strong> The quadratic equation is x<sup>2</sup> - 16x + 25 = 0</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>Hinglish Explanation:</strong> Quadratic equation ke roots ka sum aur product nikalte hain, fir quadratic equation ka standard form use karte hain.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>
