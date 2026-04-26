@@ -1,0 +1,483 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 14: प्रायिकता | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 14<br>प्रायिकता (Probability)</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 14.1 -->
+    <section id="ex-14-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 14.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. एक पासा फेंका जाता है। मान लीजिए घटना E 'पासे पर संख्या 4 दर्शाता है' और घटना F 'पासे पर सम संख्या दर्शाता है'। क्या E और F परस्पर अपवर्जी (Mutually Exclusive) हैं?</div>
+            <div class="step">प्रतिदर्श समष्टि (Sample Space) S = {1, 2, 3, 4, 5, 6}</div>
+            <div class="step">घटना E = {4}</div>
+            <div class="step">घटना F = {2, 4, 6}</div>
+            <div class="step">E &cap; F = {4} &cap; {2, 4, 6} = {4}</div>
+            <div class="step">चूँकि E &cap; F &ne; &phi; (रिक्त समुच्चय नहीं है), इसलिए घटनाएँ E और F परस्पर अपवर्जी नहीं हैं।</div>
+            <div class="hinglish-explanation">दो घटनाएँ परस्पर अपवर्जी तब होती हैं जब उनमें कोई भी अवयव (element) कॉमन न हो (अर्थात उनका प्रतिच्छेदन रिक्त हो)।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. एक पासा फेंका जाता है। निम्नलिखित घटनाओं का वर्णन कीजिए:<br>A: संख्या 7 से कम है, B: संख्या 7 से बड़ी है, C: संख्या 3 का गुणज है, D: संख्या 4 से कम है, E: 4 से बड़ी सम संख्या है, F: संख्या 3 से कम नहीं है।<br>A&cup;B, A&cap;B, B&cup;C, E&cap;F, D&cap;E, A-C, D-E, E&cap;F', F' भी ज्ञात कीजिए।</div>
+            <div class="step">S = {1, 2, 3, 4, 5, 6}</div>
+            <div class="step">A = {1, 2, 3, 4, 5, 6}, B = &phi;, C = {3, 6}, D = {1, 2, 3}, E = {6}, F = {3, 4, 5, 6}</div>
+            <div class="step">A &cup; B = {1, 2, 3, 4, 5, 6} &cup; &phi; = {1, 2, 3, 4, 5, 6} = S</div>
+            <div class="step">A &cap; B = {1, 2, 3, 4, 5, 6} &cap; &phi; = &phi;</div>
+            <div class="step">B &cup; C = &phi; &cup; {3, 6} = {3, 6}</div>
+            <div class="step">E &cap; F = {6} &cap; {3, 4, 5, 6} = {6}</div>
+            <div class="step">D &cap; E = {1, 2, 3} &cap; {6} = &phi;</div>
+            <div class="step">A - C = {1, 2, 3, 4, 5, 6} - {3, 6} = {1, 2, 4, 5}</div>
+            <div class="step">D - E = {1, 2, 3} - {6} = {1, 2, 3}</div>
+            <div class="step">F' = S - F = {1, 2}</div>
+            <div class="step">E &cap; F' = {6} &cap; {1, 2} = &phi;</div>
+            <div class="hinglish-explanation">समुच्चयों के बुनियादी संक्रियाओं (Union, Intersection, Difference, Complement) का प्रयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. एक परीक्षण में पासों के एक जोड़े को फेंका जाता है और उन पर प्रकट संख्याओं को लिखा जाता है। निम्नलिखित घटनाओं का वर्णन कीजिए:<br>A: प्राप्त संख्याओं का योग 8 से अधिक है, B: दोनों पासों पर संख्या 2 प्रकट होती है, C: प्राप्त संख्याओं का योग कम से कम 7 है और 3 का गुणज है।<br>इन घटनाओं के कौन से युग्म परस्पर अपवर्जी हैं?</div>
+            <div class="step">प्रतिदर्श समष्टि S में 36 परिणाम हैं: (1,1) से (6,6) तक।</div>
+            <div class="step">A (योग > 8) = {(3,6), (4,5), (4,6), (5,4), (5,5), (5,6), (6,3), (6,4), (6,5), (6,6)}</div>
+            <div class="step">B (दोनों पर 2) = {(2,2)}</div>
+            <div class="step">C (योग &ge; 7 और 3 का गुणज) = योग 9 या 12 होना चाहिए = {(3,6), (4,5), (5,4), (6,3), (6,6)}</div>
+            <div class="step">जाँच: A &cap; B = &phi;, B &cap; C = &phi;, A &cap; C = {(3,6), (4,5), (5,4), (6,3), (6,6)} &ne; &phi;</div>
+            <div class="step">अतः युग्म <strong>(A और B)</strong> तथा <strong>(B और C)</strong> परस्पर अपवर्जी हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. तीन सिक्के उछाले जाते हैं। मान लीजिए घटना A 'तीन चित (Heads) प्रकट होते हैं', B 'दो चित और एक पट (Tail) प्रकट होता है', C 'तीन पट प्रकट होते हैं' और D 'पहले सिक्के पर चित प्रकट होता है' को निरूपित करते हैं। बताइए कौन सी घटनाएँ हैं:<br>(i) परस्पर अपवर्जी (ii) सरल (Simple) (iii) मिश्र (Compound)</div>
+            <div class="step">S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}</div>
+            <div class="step">A = {HHH}, B = {HHT, HTH, THH}, C = {TTT}, D = {HHH, HHT, HTH, HTT}</div>
+            <div class="step">(i) परस्पर अपवर्जी: (A और B), (A और C), (B और C), (C और D) क्योंकि इनके बीच कुछ भी कॉमन नहीं है।</div>
+            <div class="step">(ii) सरल घटनाएँ: A और C (क्योंकि इनमें केवल एक ही अवयव है)।</div>
+            <div class="step">(iii) मिश्र घटनाएँ: B और D (क्योंकि इनमें एक से अधिक अवयव हैं)।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. तीन सिक्के उछाले जाते हैं। वर्णन कीजिए:<br>(i) दो घटनाएँ जो परस्पर अपवर्जी हैं (ii) तीन घटनाएँ जो परस्पर अपवर्जी और निःशेषी (Exhaustive) हैं (iii) दो घटनाएँ जो परस्पर अपवर्जी नहीं हैं (iv) दो घटनाएँ जो परस्पर अपवर्जी हैं किंतु निःशेषी नहीं (v) तीन घटनाएँ जो परस्पर अपवर्जी हैं किंतु निःशेषी नहीं।</div>
+            <div class="step">S = {HHH, HHT, HTH, HTT, THH, THT, TTH, TTT}</div>
+            <div class="step">(i) A = 'कम से कम दो चित', B = 'तीनों पट'। A &cap; B = &phi;</div>
+            <div class="step">(ii) A = 'ठीक 2 चित', B = 'ठीक 1 चित', C = 'तीनों चित या तीनों पट'। A &cup; B &cup; C = S और आपस में अपवर्जी हैं।</div>
+            <div class="step">(iii) A = 'कम से कम 1 चित', B = 'कम से कम 1 पट'। (HHT दोनों में है)।</div>
+            <div class="step">(iv) A = 'तीनों चित', B = 'तीनों पट'। अपवर्जी हैं पर S नहीं बनाते।</div>
+            <div class="step">(v) A = 'तीनों चित', B = 'तीनों पट', C = 'ठीक 2 चित'। अपवर्जी हैं पर S नहीं बनाते।</div>
+            <div class="hinglish-explanation">निःशेषी (Exhaustive) का अर्थ है कि घटनाओं का सम्मिलन (Union) पूरी प्रतिदर्श समष्टि (S) के बराबर होना चाहिए।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. दो पासे फेंके जाते हैं। घटनाएँ A, B और C इस प्रकार हैं: A: पहले पासे पर सम संख्या प्राप्त होना, B: पहले पासे पर विषम संख्या प्राप्त होना, C: पासों पर प्राप्त संख्याओं का योग &le; 5 होना। निम्नलिखित ज्ञात कीजिए:<br>(i) A' (ii) B नहीं (iii) A या B (iv) A और B (v) A किंतु C नहीं (vi) B या C (vii) B और C (viii) A &cap; B' &cap; C'</div>
+            <div class="step">S में 36 परिणाम हैं।</div>
+            <div class="step">A = {(2,1)...(2,6), (4,1)...(4,6), (6,1)...(6,6)} (कुल 18)</div>
+            <div class="step">B = {(1,1)...(1,6), (3,1)...(3,6), (5,1)...(5,6)} (कुल 18)</div>
+            <div class="step">C = {(1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (3,1), (3,2), (4,1)}</div>
+            <div class="step">(i) A' = S - A = B</div>
+            <div class="step">(ii) B नहीं = B' = A</div>
+            <div class="step">(iii) A या B = A &cup; B = S</div>
+            <div class="step">(iv) A और B = A &cap; B = &phi;</div>
+            <div class="step">(v) A किंतु C नहीं = A - C = A में से {(2,1), (2,2), (2,3), (4,1)} हटा दें। (14 परिणाम बचेंगे)।</div>
+            <div class="step">(vi) B या C = B &cup; C = B के सभी 18 परिणाम + {(2,1), (2,2), (2,3), (4,1)} = 22 परिणाम।</div>
+            <div class="step">(vii) B और C = B &cap; C = {(1,1), (1,2), (1,3), (1,4), (3,1), (3,2)}</div>
+            <div class="step">(viii) A &cap; B' &cap; C' = A &cap; A &cap; C' = A &cap; C' = A - C (परिणाम भाग v के समान)।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. उपर्युक्त प्रश्न 6 के संदर्भ में बताइए कि क्या निम्नलिखित कथन सत्य हैं या असत्य: (i) A और B परस्पर अपवर्जी हैं (ii) A और B परस्पर अपवर्जी और निःशेषी हैं (iii) A = B' (iv) A और C परस्पर अपवर्जी हैं...</div>
+            <div class="step">(i) सत्य (A &cap; B = &phi;)</div>
+            <div class="step">(ii) सत्य (A &cap; B = &phi; और A &cup; B = S)</div>
+            <div class="step">(iii) सत्य (S में से सम संख्याएँ घटाने पर विषम बचती हैं)</div>
+            <div class="step">(iv) असत्य (A &cap; C = {(2,1), (2,2), (2,3), (4,1)} &ne; &phi;)</div>
+            <div class="step">(v) A और B' परस्पर अपवर्जी हैं: असत्य (A = B', अतः A &cap; B' = A &cap; A = A &ne; &phi;)</div>
+            <div class="step">(vi) A', B', C परस्पर अपवर्जी और निःशेषी हैं: असत्य (A' = B, B' = A. B &cap; A = &phi;, लेकिन A &cup; B &cup; C = S है, परंतु A और C परस्पर अपवर्जी नहीं हैं)।</div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 14.2 -->
+    <section id="ex-14-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 14.2</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. एक प्रतिदर्श समष्टि S = {&omega;<sub>1</sub>, &omega;<sub>2</sub>, ..., &omega;<sub>7</sub>} के परिणामों के लिए निम्नलिखित में से कौन सा प्रायिकता निर्धारण वैध नहीं है?</div>
+            <div class="step">वैधता की शर्तें: 1) सभी प्रायिकताओं का योग 1 होना चाहिए। 2) कोई भी प्रायिकता 0 से कम या 1 से अधिक नहीं हो सकती (0 &le; P(&omega;) &le; 1)।</div>
+            <div class="step">(a) 0.1, 0.01, 0.05, 0.03, 0.01, 0.2, 0.6: योग = 1.0 (वैध है)</div>
+            <div class="step">(b) <span class="fraction"><span class="numerator">1</span><span class="denominator">7</span></span> प्रत्येक के लिए: योग = <span class="fraction"><span class="numerator">7</span><span class="denominator">7</span></span> = 1 (वैध है)</div>
+            <div class="step">(c) 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7: योग = 2.8 > 1 (अवैध है)</div>
+            <div class="step">(d) -0.1, 0.2...: प्रायिकता ऋणात्मक नहीं हो सकती (अवैध है)</div>
+            <div class="step">(e) <span class="fraction"><span class="numerator">1</span><span class="denominator">14</span></span>, <span class="fraction"><span class="numerator">2</span><span class="denominator">14</span></span>, ... <span class="fraction"><span class="numerator">15</span><span class="denominator">14</span></span>: प्रायिकता 1 से अधिक (15/14) नहीं हो सकती (अवैध है)</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. एक सिक्का दो बार उछाला जाता है। कम से कम एक पट (Tail) प्राप्त होने की प्रायिकता क्या है?</div>
+            <div class="step">S = {HH, HT, TH, TT}, n(S) = 4</div>
+            <div class="step">घटना A (कम से कम एक पट) = {HT, TH, TT}, n(A) = 3</div>
+            <div class="step">P(A) = <span class="fraction"><span class="numerator">n(A)</span><span class="denominator">n(S)</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. एक पासा फेंका जाता है। निम्नलिखित घटनाओं की प्रायिकता ज्ञात कीजिए:<br>(i) एक अभाज्य संख्या प्रकट होना (ii) 3 या 3 से बड़ी संख्या प्रकट होना (iii) 1 या 1 से छोटी संख्या प्रकट होना (iv) 6 से बड़ी संख्या प्रकट होना (v) 6 से छोटी संख्या प्रकट होना।</div>
+            <div class="step">S = {1, 2, 3, 4, 5, 6}, n(S) = 6</div>
+            <div class="step">(i) अभाज्य संख्या {2, 3, 5} &rarr; P = <span class="fraction"><span class="numerator">3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">(ii) 3 या 3 से बड़ी {3, 4, 5, 6} &rarr; P = <span class="fraction"><span class="numerator">4</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></div>
+            <div class="step">(iii) 1 या 1 से छोटी {1} &rarr; P = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></div>
+            <div class="step">(iv) 6 से बड़ी &phi; &rarr; P = <span class="fraction"><span class="numerator">0</span><span class="denominator">6</span></span> = 0</div>
+            <div class="step">(v) 6 से छोटी {1, 2, 3, 4, 5} &rarr; P = <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. ताश की गड्डी के 52 पत्तों में से एक पत्ता यादृच्छया निकाला जाता है।<br>(a) प्रतिदर्श समष्टि में कितने बिंदु हैं? (b) पत्ते के हुकुम (Spade) का होने की प्रायिकता क्या है? (c) पत्ते के (i) इक्का (ii) काले रंग का इक्का होने की प्रायिकता क्या है?</div>
+            <div class="step">(a) प्रतिदर्श समष्टि में बिंदु n(S) = 52</div>
+            <div class="step">(b) हुकुम के पत्ते = 13. P(हुकुम) = <span class="fraction"><span class="numerator">13</span><span class="denominator">52</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></div>
+            <div class="step">(c) (i) कुल इक्के = 4. P(इक्का) = <span class="fraction"><span class="numerator">4</span><span class="denominator">52</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">13</span></span></div>
+            <div class="step">(ii) काले रंग के इक्के = 2. P(काला इक्का) = <span class="fraction"><span class="numerator">2</span><span class="denominator">52</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">26</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. एक अनभिनत (fair) सिक्का जिसके एक तल पर 1 और दूसरे तल पर 6 अंकित है, तथा एक अनभिनत पासा दोनों उछाले जाते हैं। प्राप्त संख्याओं का योग (i) 3 (ii) 12 होने की प्रायिकता ज्ञात कीजिए।</div>
+            <div class="step">सिक्के के परिणाम = {1, 6}, पासे के परिणाम = {1, 2, 3, 4, 5, 6}</div>
+            <div class="step">प्रतिदर्श समष्टि S = {(1,1), (1,2)...(1,6), (6,1)...(6,6)}. n(S) = 2 &times; 6 = 12</div>
+            <div class="step">(i) योग 3: {(1,2)}. n(A) = 1. P(योग 3) = <span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span></div>
+            <div class="step">(ii) योग 12: {(6,6)}. n(B) = 1. P(योग 12) = <span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. एक नगर परिषद में 4 पुरुष और 6 स्त्रियाँ हैं। यदि एक समिति के लिए यादृच्छया एक सदस्य चुना गया है, तो एक स्त्री के चुने जाने की प्रायिकता कितनी है?</div>
+            <div class="step">कुल सदस्य n(S) = 4 + 6 = 10</div>
+            <div class="step">स्त्रियों की संख्या n(W) = 6</div>
+            <div class="step">P(स्त्री चुनी जाए) = <span class="fraction"><span class="numerator">6</span><span class="denominator">10</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">5</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. एक अनभिनत सिक्का 4 बार उछाला जाता है, और एक व्यक्ति प्रत्येक चित (Head) पर 1 रु जीतता है और प्रत्येक पट (Tail) पर 1.50 रु हारता है। इस परीक्षण से प्राप्त होने वाली विभिन्न राशियाँ और उनकी प्रायिकताएँ ज्ञात कीजिए।</div>
+            <div class="step">सिक्का 4 बार उछालने पर कुल परिणाम n(S) = 2<sup>4</sup> = 16.</div>
+            <div class="step">1. <strong>4 चित, 0 पट:</strong> राशि = 4(1) - 0(1.5) = +4 रु. तरीके = 1. प्रायिकता = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></div>
+            <div class="step">2. <strong>3 चित, 1 पट:</strong> राशि = 3(1) - 1(1.5) = +1.50 रु. तरीके = 4. प्रायिकता = <span class="fraction"><span class="numerator">4</span><span class="denominator">16</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></div>
+            <div class="step">3. <strong>2 चित, 2 पट:</strong> राशि = 2(1) - 2(1.5) = -1.00 रु (हार). तरीके = 6. प्रायिकता = <span class="fraction"><span class="numerator">6</span><span class="denominator">16</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">8</span></span></div>
+            <div class="step">4. <strong>1 चित, 3 पट:</strong> राशि = 1(1) - 3(1.5) = -3.50 रु (हार). तरीके = 4. प्रायिकता = <span class="fraction"><span class="numerator">4</span><span class="denominator">16</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></div>
+            <div class="step">5. <strong>0 चित, 4 पट:</strong> राशि = 0(1) - 4(1.5) = -6.00 रु (हार). तरीके = 1. प्रायिकता = <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. तीन सिक्के एक बार उछाले जाते हैं। प्रायिकता ज्ञात कीजिए:<br>(i) 3 चित (ii) 2 चित (iii) कम से कम 2 चित (iv) अधिकतम 2 चित (v) कोई चित नहीं (vi) 3 पट (vii) तथ्यतः 2 पट (viii) कोई पट नहीं (ix) अधिकतम 2 पट।</div>
+            <div class="step">n(S) = 8.</div>
+            <div class="step">(i) 3 चित = {HHH} &rarr; P = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span></div>
+            <div class="step">(ii) 2 चित = {HHT, HTH, THH} &rarr; P = <span class="fraction"><span class="numerator">3</span><span class="denominator">8</span></span></div>
+            <div class="step">(iii) कम से कम 2 चित (2 या 3) = 3+1 = 4 &rarr; P = <span class="fraction"><span class="numerator">4</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">(iv) अधिकतम 2 चित (0, 1 या 2) = 8 - 1(HHH) = 7 &rarr; P = <span class="fraction"><span class="numerator">7</span><span class="denominator">8</span></span></div>
+            <div class="step">(v) कोई चित नहीं = {TTT} &rarr; P = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span></div>
+            <div class="step">(vi) 3 पट = {TTT} &rarr; P = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span></div>
+            <div class="step">(vii) तथ्यतः 2 पट = {TTH, THT, HTT} &rarr; P = <span class="fraction"><span class="numerator">3</span><span class="denominator">8</span></span></div>
+            <div class="step">(viii) कोई पट नहीं = {HHH} &rarr; P = <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span></div>
+            <div class="step">(ix) अधिकतम 2 पट (0, 1, 2) = 7 &rarr; P = <span class="fraction"><span class="numerator">7</span><span class="denominator">8</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. यदि P(A) = 2/11, तो 'A नहीं' की प्रायिकता ज्ञात कीजिए।</div>
+            <div class="step">हम जानते हैं कि P(A') = 1 - P(A)</div>
+            <div class="step">P(A') = 1 - <span class="fraction"><span class="numerator">2</span><span class="denominator">11</span></span> = <span class="fraction"><span class="numerator">11 - 2</span><span class="denominator">11</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">11</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. शब्द 'ASSASSINATION' से एक अक्षर यादृच्छया चुना जाता है। प्रायिकता ज्ञात कीजिए कि चुना गया अक्षर (i) एक स्वर (Vowel) है (ii) एक व्यंजन (Consonant) है।</div>
+            <div class="step">कुल अक्षर n(S) = 13</div>
+            <div class="step">स्वर (A, E, I, O, U): A(3), I(2), O(1) &rarr; कुल स्वर = 6</div>
+            <div class="step">व्यंजन (S, N, T): S(4), N(2), T(1) &rarr; कुल व्यंजन = 7</div>
+            <div class="step">(i) P(स्वर) = <span class="fraction"><span class="numerator">6</span><span class="denominator">13</span></span></div>
+            <div class="step">(ii) P(व्यंजन) = <span class="fraction"><span class="numerator">7</span><span class="denominator">13</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. एक लॉटरी में 10000 टिकट बेचे गए हैं जिनमें 10 समान इनाम दिए जाने हैं। कोई भी इनाम न मिलने की प्रायिकता क्या है यदि आप (a) 1 टिकट खरीदते हैं (b) 2 टिकट खरीदते हैं (c) 10 टिकट खरीदते हैं?</div>
+            <div class="step">कुल टिकट = 10000, इनाम वाले टिकट = 10, बिना इनाम वाले टिकट = 9990.</div>
+            <div class="step">(a) 1 टिकट खरीदने पर कोई इनाम न मिलना: P = <span class="fraction"><span class="numerator"><sup>9990</sup>C<sub>1</sub></span><span class="denominator"><sup>10000</sup>C<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">9990</span><span class="denominator">10000</span></span> = <span class="fraction"><span class="numerator">999</span><span class="denominator">1000</span></span></div>
+            <div class="step">(b) 2 टिकट खरीदने पर कोई इनाम न मिलना: P = <span class="fraction"><span class="numerator"><sup>9990</sup>C<sub>2</sub></span><span class="denominator"><sup>10000</sup>C<sub>2</sub></span></span></div>
+            <div class="step">(c) 10 टिकट खरीदने पर कोई इनाम न मिलना: P = <span class="fraction"><span class="numerator"><sup>9990</sup>C<sub>10</sub></span><span class="denominator"><sup>10000</sup>C<sub>10</sub></span></span></div>
+            <div class="hinglish-explanation">यहाँ संचय (Combinations) का प्रयोग किया गया है। <sup>n</sup>C<sub>r</sub> का मतलब n में से r को चुनना है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. 100 विद्यार्थियों में से 40 और 60 विद्यार्थियों के दो वर्ग बनाए गए हैं। यदि आप और आपका मित्र 100 विद्यार्थियों में से हैं, तो प्रायिकता क्या है कि (a) आप दोनों एक ही वर्ग में हों (b) आप दोनों अलग-अलग वर्गों में हों?</div>
+            <div class="step">100 में से 2 विद्यार्थियों को चुनने के कुल तरीके n(S) = <sup>100</sup>C<sub>2</sub> = <span class="fraction"><span class="numerator">100 &times; 99</span><span class="denominator">2</span></span> = 4950</div>
+            <div class="step">(a) दोनों एक ही वर्ग में हों: या तो दोनों 40 वाले वर्ग में हों (<sup>40</sup>C<sub>2</sub>) या दोनों 60 वाले वर्ग में हों (<sup>60</sup>C<sub>2</sub>)।</div>
+            <div class="step">अनुकूल तरीके = <sup>40</sup>C<sub>2</sub> + <sup>60</sup>C<sub>2</sub> = <span class="fraction"><span class="numerator">40 &times; 39</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">60 &times; 59</span><span class="denominator">2</span></span> = 780 + 1770 = 2550</div>
+            <div class="step">P(एक ही वर्ग) = <span class="fraction"><span class="numerator">2550</span><span class="denominator">4950</span></span> = <span class="fraction"><span class="numerator">17</span><span class="denominator">33</span></span></div>
+            <div class="step">(b) अलग-अलग वर्ग में हों: P(अलग-अलग) = 1 - P(एक ही वर्ग) = 1 - <span class="fraction"><span class="numerator">17</span><span class="denominator">33</span></span> = <span class="fraction"><span class="numerator">16</span><span class="denominator">33</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. तीन पत्र 3 लिफाफों में रखे जाते हैं और यादृच्छया प्रत्येक लिफाफे में एक पत्र डाला जाता है। प्रायिकता ज्ञात कीजिए कि सभी पत्र सही लिफाफों में रखे गए हैं।</div>
+            <div class="step">3 पत्रों को 3 लिफाफों में रखने के कुल तरीके n(S) = 3! = 3 &times; 2 &times; 1 = 6</div>
+            <div class="step">सभी पत्र सही लिफाफे में जाने का केवल 1 ही तरीका है।</div>
+            <div class="step">P(सभी सही) = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. A और B दो परस्पर अपवर्जी (Mutually Exclusive) घटनाएँ हैं जहाँ P(A) = 0.5 और P(B) = 0.3। ज्ञात कीजिए: (i) P(A या B) (ii) P(A और B) (iii) P(A किंतु B नहीं) (iv) P(A नहीं)</div>
+            <div class="step">चूँकि A और B परस्पर अपवर्जी हैं, P(A &cap; B) = 0</div>
+            <div class="step">(i) P(A या B) = P(A &cup; B) = P(A) + P(B) - P(A &cap; B) = 0.5 + 0.3 - 0 = 0.8</div>
+            <div class="step">(ii) P(A और B) = P(A &cap; B) = 0</div>
+            <div class="step">(iii) P(A किंतु B नहीं) = P(A) - P(A &cap; B) = 0.5 - 0 = 0.5</div>
+            <div class="step">(iv) P(A नहीं) = P(A') = 1 - P(A) = 1 - 0.5 = 0.5</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. यदि P(E) = 1/4, P(F) = 1/2 और P(E और F) = 1/8, तो ज्ञात कीजिए: (i) P(E या F) (ii) P(E नहीं और F नहीं)</div>
+            <div class="step">(i) P(E या F) = P(E &cup; F) = P(E) + P(F) - P(E &cap; F)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">1</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">2 + 4 - 1</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span></div>
+            <div class="step">(ii) P(E नहीं और F नहीं) = P(E' &cap; F') = P((E &cup; F)') [डी मॉर्गन नियम से]</div>
+            <div class="step">= 1 - P(E &cup; F) = 1 - <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">8</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">16. घटनाएँ E और F इस प्रकार हैं कि P(E नहीं या F नहीं) = 0.25। बताइए कि क्या E और F परस्पर अपवर्जी हैं?</div>
+            <div class="step">P(E' &cup; F') = 0.25</div>
+            <div class="step">डी मॉर्गन नियम से: P(E' &cup; F') = P((E &cap; F)')</div>
+            <div class="step">1 - P(E &cap; F) = 0.25 &rArr; P(E &cap; F) = 1 - 0.25 = 0.75</div>
+            <div class="step">चूँकि P(E &cap; F) &ne; 0, इसलिए E और F परस्पर अपवर्जी नहीं हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">17. घटनाएँ A और B इस प्रकार हैं कि P(A) = 0.42, P(B) = 0.48 और P(A और B) = 0.16। ज्ञात कीजिए: (i) P(A नहीं) (ii) P(B नहीं) (iii) P(A या B)</div>
+            <div class="step">(i) P(A नहीं) = 1 - P(A) = 1 - 0.42 = 0.58</div>
+            <div class="step">(ii) P(B नहीं) = 1 - P(B) = 1 - 0.48 = 0.52</div>
+            <div class="step">(iii) P(A या B) = P(A) + P(B) - P(A &cap; B) = 0.42 + 0.48 - 0.16 = 0.90 - 0.16 = 0.74</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">18. एक विद्यालय की कक्षा XI के 40% विद्यार्थी गणित पढ़ते हैं और 30% जीव विज्ञान पढ़ते हैं। 10% दोनों पढ़ते हैं। यदि एक विद्यार्थी यादृच्छया चुना जाता है, तो प्रायिकता ज्ञात कीजिए कि वह गणित या जीव विज्ञान पढ़ता है।</div>
+            <div class="step">P(M) = 40% = 0.4, P(B) = 30% = 0.3, P(M &cap; B) = 10% = 0.1</div>
+            <div class="step">P(M &cup; B) = P(M) + P(B) - P(M &cap; B)</div>
+            <div class="step">= 0.4 + 0.3 - 0.1 = 0.6 या 60%</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">19. एक प्रवेश परीक्षा में दो परीक्षणों के आधार पर श्रेणी दी जाती है। पहले परीक्षण में पास होने की प्रायिकता 0.81 और दूसरे में 0.53 है। कम से कम एक में पास होने की प्रायिकता 0.89 है। दोनों में पास होने की प्रायिकता क्या है?</div>
+            <div class="step">P(A) = 0.81, P(B) = 0.53, P(A &cup; B) = 0.89</div>
+            <div class="step">P(A &cup; B) = P(A) + P(B) - P(A &cap; B)</div>
+            <div class="step">0.89 = 0.81 + 0.53 - P(A &cap; B)</div>
+            <div class="step">0.89 = 1.34 - P(A &cap; B) &rArr; P(A &cap; B) = 1.34 - 0.89 = 0.45</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">20. एक विद्यालय के 100 विद्यार्थियों में से 30 ने NCC, 32 ने NSS और 24 ने दोनों को चुना है। एक विद्यार्थी चुना जाता है। प्रायिकता ज्ञात कीजिए: (i) NCC या NSS (ii) न NCC न NSS (iii) NSS किंतु NCC नहीं।</div>
+            <div class="step">P(A) = <span class="fraction"><span class="numerator">30</span><span class="denominator">100</span></span>, P(B) = <span class="fraction"><span class="numerator">32</span><span class="denominator">100</span></span>, P(A &cap; B) = <span class="fraction"><span class="numerator">24</span><span class="denominator">100</span></span></div>
+            <div class="step">(i) P(A &cup; B) = P(A) + P(B) - P(A &cap; B) = <span class="fraction"><span class="numerator">30 + 32 - 24</span><span class="denominator">100</span></span> = <span class="fraction"><span class="numerator">38</span><span class="denominator">100</span></span> = 0.38</div>
+            <div class="step">(ii) P(A' &cap; B') = 1 - P(A &cup; B) = 1 - 0.38 = 0.62</div>
+            <div class="step">(iii) P(B किंतु A नहीं) = P(B) - P(A &cap; B) = <span class="fraction"><span class="numerator">32 - 24</span><span class="denominator">100</span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">100</span></span> = 0.08</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">21. 200 विद्यार्थियों में से 40 सेब का रस, 160 संतरे का रस और 20 दोनों पीते हैं। एक विद्यार्थी चुना जाता है। प्रायिकता ज्ञात कीजिए कि वह न तो सेब का रस पीता है न ही संतरे का।</div>
+            <div class="step">कुल विद्यार्थी n(S) = 200. n(A) = 40, n(B) = 160, n(A &cap; B) = 20.</div>
+            <div class="step">n(A &cup; B) = n(A) + n(B) - n(A &cap; B) = 40 + 160 - 20 = 180</div>
+            <div class="step">न तो सेब न ही संतरा n(A' &cap; B') = n(S) - n(A &cup; B) = 200 - 180 = 20</div>
+            <div class="step">P(न A न B) = <span class="fraction"><span class="numerator">20</span><span class="denominator">200</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">10</span></span> = 0.1</div>
+        </div>
+    </section>
+
+    <!-- विविध प्रश्नावली -->
+    <section id="misc-ex" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-red-100 text-red-800 px-4 py-2 rounded-full">📕 विविध प्रश्नावली</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. एक बक्से में 10 लाल, 20 नीले और 30 हरे कंचे हैं। बक्से से 5 कंचे यादृच्छया निकाले जाते हैं। प्रायिकता क्या है कि (i) सभी कंचे नीले हैं? (ii) कम से कम एक कंचा हरा है?</div>
+            <div class="step">कुल कंचे = 10 + 20 + 30 = 60. 5 कंचे निकालने के कुल तरीके n(S) = <sup>60</sup>C<sub>5</sub></div>
+            <div class="step">(i) सभी नीले (20 में से 5): P = <span class="fraction"><span class="numerator"><sup>20</sup>C<sub>5</sub></span><span class="denominator"><sup>60</sup>C<sub>5</sub></span></span></div>
+            <div class="step">(ii) कम से कम 1 हरा = 1 - P(कोई हरा नहीं)। कोई हरा नहीं मतलब (60-30=30) लाल/नीले में से 5 निकालना।</div>
+            <div class="step">P(कम से कम 1 हरा) = 1 - <span class="fraction"><span class="numerator"><sup>30</sup>C<sub>5</sub></span><span class="denominator"><sup>60</sup>C<sub>5</sub></span></span></div>
+            <div class="hinglish-explanation">इस प्रकार के प्रश्नों में प्रायिकता को <sup>n</sup>C<sub>r</sub> के रूप में ही छोड़ा जा सकता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. ताश की गड्डी से 4 पत्ते निकाले जाते हैं। प्रायिकता क्या है कि 3 ईंट (Diamond) और 1 हुकुम (Spade) का पत्ता हो?</div>
+            <div class="step">कुल पत्ते = 52. 4 पत्ते निकालने के तरीके n(S) = <sup>52</sup>C<sub>4</sub></div>
+            <div class="step">ईंट के 13 पत्ते होते हैं, हुकुम के 13 पत्ते होते हैं।</div>
+            <div class="step">3 ईंट और 1 हुकुम चुनने के तरीके = <sup>13</sup>C<sub>3</sub> &times; <sup>13</sup>C<sub>1</sub></div>
+            <div class="step">P = <span class="fraction"><span class="numerator"><sup>13</sup>C<sub>3</sub> &times; <sup>13</sup>C<sub>1</sub></span><span class="denominator"><sup>52</sup>C<sub>4</sub></span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. एक पासे के दो फलक (faces) खाली हैं, दो पर 1 और दो पर 2 लिखा है। इसे दो बार उछाला जाता है। प्रायिकता ज्ञात कीजिए कि योगफल 0 हो।</div>
+            <div class="step">फलक: {0, 0, 1, 1, 2, 2}. कुल परिणाम n(S) = 6 &times; 6 = 36.</div>
+            <div class="step">योगफल 0 तभी हो सकता है जब दोनों बार 0 (खाली) आए।</div>
+            <div class="step">पहले पासे पर 0 आने के तरीके = 2. दूसरे पर 0 आने के तरीके = 2.</div>
+            <div class="step">योग 0 के कुल तरीके = 2 &times; 2 = 4.</div>
+            <div class="step">P(योग 0) = <span class="fraction"><span class="numerator">4</span><span class="denominator">36</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. एक नंबर लॉक में 3 रिंग हैं, प्रत्येक पर 0 से 9 तक के 10 अंक हैं। यदि लॉक केवल एक ही संयोजन से खुलता है, तो असफल प्रयासों की अधिकतम संख्या क्या है?</div>
+            <div class="step">कुल संयोजनों की संख्या (Total combinations) = 10 &times; 10 &times; 10 = 1000</div>
+            <div class="step">सफल संयोजन = 1</div>
+            <div class="step">असफल प्रयासों की अधिकतम संख्या = 1000 - 1 = 999</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. 6 लड़कों और 4 लड़कियों में से 5 सदस्यों की एक समिति बनाई जानी है। प्रायिकता क्या है कि समिति में (i) 2 लड़कियाँ हों (ii) कम से कम 2 लड़कियाँ हों?</div>
+            <div class="step">कुल 10 में से 5 चुनने के तरीके n(S) = <sup>10</sup>C<sub>5</sub> = 252</div>
+            <div class="step">(i) 2 लड़कियाँ और 3 लड़के: <sup>4</sup>C<sub>2</sub> &times; <sup>6</sup>C<sub>3</sub> = 6 &times; 20 = 120. P = <span class="fraction"><span class="numerator">120</span><span class="denominator">252</span></span> = <span class="fraction"><span class="numerator">10</span><span class="denominator">21</span></span></div>
+            <div class="step">(ii) कम से कम 2 लड़कियाँ (2G,3B या 3G,2B या 4G,1B):</div>
+            <div class="step">= (<sup>4</sup>C<sub>2</sub> &times; <sup>6</sup>C<sub>3</sub>) + (<sup>4</sup>C<sub>3</sub> &times; <sup>6</sup>C<sub>2</sub>) + (<sup>4</sup>C<sub>4</sub> &times; <sup>6</sup>C<sub>1</sub>)</div>
+            <div class="step">= 120 + (4 &times; 15) + (1 &times; 6) = 120 + 60 + 6 = 186</div>
+            <div class="step">P = <span class="fraction"><span class="numerator">186</span><span class="denominator">252</span></span> = <span class="fraction"><span class="numerator">31</span><span class="denominator">42</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. शब्द 'ASSASSINATION' के अक्षरों को यादृच्छया एक पंक्ति में रखा जाता है। प्रायिकता क्या है कि सभी 'S' एक साथ हों?</div>
+            <div class="step">कुल अक्षर 13. A(3), S(4), I(2), N(2), T(1), O(1).</div>
+            <div class="step">कुल क्रमचय n(S) = <span class="fraction"><span class="numerator">13!</span><span class="denominator">3! 4! 2! 2!</span></span></div>
+            <div class="step">सभी 'S' को एक साथ रखने पर, उन्हें 1 इकाई (unit) मान लें। अब हमारे पास 9 अन्य अक्षर + 1 (SSSS का बंडल) = 10 इकाइयाँ हैं।</div>
+            <div class="step">इन 10 इकाइयों को व्यवस्थित करने के तरीके = <span class="fraction"><span class="numerator">10!</span><span class="denominator">3! 2! 2!</span></span> (चूँकि S बंडल के अंदर खुद 4!/4! = 1 तरीका है)।</div>
+            <div class="step">P = <span class="fraction"><span class="numerator">अनुकूल तरीके</span><span class="denominator">कुल तरीके</span></span> = <span class="fraction"><span class="numerator">(10! / (3! 2! 2!))</span><span class="denominator">(13! / (3! 4! 2! 2!))</span></span> = <span class="fraction"><span class="numerator">10! &times; 4!</span><span class="denominator">13!</span></span> = <span class="fraction"><span class="numerator">24</span><span class="denominator">13 &times; 12 &times; 11</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">143</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. दो घटनाएँ A और B इस प्रकार हैं कि P(A) = 0.54, P(B) = 0.69 और P(A &cap; B) = 0.35. ज्ञात कीजिए: (i) P(A &cup; B) (ii) P(A' &cap; B') (iii) P(A &cap; B') (iv) P(B &cap; A')</div>
+            <div class="step">(i) P(A &cup; B) = 0.54 + 0.69 - 0.35 = 1.23 - 0.35 = 0.88</div>
+            <div class="step">(ii) P(A' &cap; B') = P((A &cup; B)') = 1 - P(A &cup; B) = 1 - 0.88 = 0.12</div>
+            <div class="step">(iii) P(A &cap; B') = P(A) - P(A &cap; B) = 0.54 - 0.35 = 0.19</div>
+            <div class="step">(iv) P(B &cap; A') = P(B) - P(A &cap; B) = 0.69 - 0.35 = 0.34</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. एक कक्षा के 50 विद्यार्थियों में से 30 ने गणित, 20 ने जीव विज्ञान और 10 ने दोनों विषय लिए हैं। एक विद्यार्थी चुना जाता है। प्रायिकता क्या है कि उसने न तो गणित न ही जीव विज्ञान लिया हो?</div>
+            <div class="step">n(S) = 50, n(M) = 30, n(B) = 20, n(M &cap; B) = 10</div>
+            <div class="step">n(M &cup; B) = n(M) + n(B) - n(M &cap; B) = 30 + 20 - 10 = 40</div>
+            <div class="step">न तो गणित न ही जीव विज्ञान (M' &cap; B') = n(S) - n(M &cup; B) = 50 - 40 = 10</div>
+            <div class="step">P(M' &cap; B') = <span class="fraction"><span class="numerator">10</span><span class="denominator">50</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. एक थैले में 9 डिस्क हैं: 4 लाल, 3 नीली और 2 पीली। एक डिस्क यादृच्छया निकाली जाती है। प्रायिकता क्या है कि वह (i) लाल हो (ii) पीली हो (iii) नीली न हो (iv) या तो लाल या नीली हो?</div>
+            <div class="step">कुल डिस्क = 4 + 3 + 2 = 9</div>
+            <div class="step">(i) P(लाल) = <span class="fraction"><span class="numerator">4</span><span class="denominator">9</span></span></div>
+            <div class="step">(ii) P(पीली) = <span class="fraction"><span class="numerator">2</span><span class="denominator">9</span></span></div>
+            <div class="step">(iii) नीली न हो = लाल या पीली = 4 + 2 = 6. P(नीली नहीं) = <span class="fraction"><span class="numerator">6</span><span class="denominator">9</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></div>
+            <div class="step">(iv) लाल या नीली = 4 + 3 = 7. P(लाल या नीली) = <span class="fraction"><span class="numerator">7</span><span class="denominator">9</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. एक ताश की गड्डी में से एक पत्ता यादृच्छया निकाला जाता है। प्रायिकता ज्ञात कीजिए कि वह (i) न तो हुकुम (Spade) का हो न ही इक्का हो (ii) लाल रंग का हो लेकिन राजा (King) न हो।</div>
+            <div class="step">(i) हुकुम के पत्ते = 13 (जिसमें 1 इक्का शामिल है)। बाकी इक्के = 3। कुल (हुकुम या इक्का) = 13 + 3 = 16.</div>
+            <div class="step">न तो हुकुम न इक्का = 52 - 16 = 36 पत्ते। P = <span class="fraction"><span class="numerator">36</span><span class="denominator">52</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">13</span></span></div>
+            <div class="step">(ii) लाल रंग के पत्ते = 26. इनमें लाल रंग के राजा (King) = 2 (ईंट और पान के)।</div>
+            <div class="step">लाल रंग का हो लेकिन राजा न हो = 26 - 2 = 24 पत्ते। P = <span class="fraction"><span class="numerator">24</span><span class="denominator">52</span></span> = <span class="fraction"><span class="numerator">6</span><span class="denominator">13</span></span></div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 14) प्रायिकता ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

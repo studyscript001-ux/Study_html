@@ -1,0 +1,338 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 11: त्रिविमीय ज्यामिति का परिचय | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 11<br>त्रिविमीय ज्यामिति का परिचय</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 11.1 -->
+    <section id="ex-11-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 11.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. एक बिंदु x-अक्ष पर स्थित है। इसके y-निर्देशांक तथा z-निर्देशांक क्या हैं?</div>
+            <div class="step">हम जानते हैं कि x-अक्ष पर स्थित किसी भी बिंदु के लिए y और z निर्देशांक हमेशा शून्य (0) होते हैं।</div>
+            <div class="step">अतः बिंदु के निर्देशांक (x, 0, 0) के रूप में होंगे।</div>
+            <div class="step">इसलिए, y-निर्देशांक = 0 और z-निर्देशांक = 0</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> x-अक्ष पर बिंदु केवल x दिशा में आगे बढ़ता है, ऊपर-नीचे (y) या आगे-पीछे (z) नहीं। इसलिए y और z दोनों 0 होते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. एक बिंदु XZ-तल में है। इसके y-निर्देशांक के बारे में आप क्या कह सकते हैं?</div>
+            <div class="step">XZ-तल वह तल है जो x-अक्ष और z-अक्ष से मिलकर बनता है।</div>
+            <div class="step">इस तल पर स्थित किसी भी बिंदु के लिए y-अक्ष की दिशा में कोई विस्थापन नहीं होता है।</div>
+            <div class="step">अतः XZ-तल पर स्थित किसी भी बिंदु का y-निर्देशांक हमेशा शून्य (0) होता है।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> जिस तल का नाम दिया होता है (जैसे XZ), उसे छोड़कर तीसरा निर्देशांक (यहाँ y) हमेशा 0 होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. उन अष्टांशों (octants) के नाम बताइए जिनमें निम्नलिखित बिंदु स्थित हैं: (1, 2, 3), (4, -2, 3), (4, -2, -5), (4, 2, -5), (-4, 2, 5), (-4, 2, -5), (-4, -2, 5), (-4, -2, -5).</div>
+            <div class="step">बिंदुओं के चिह्नों (+, -, +, आदि) के आधार पर अष्टांश निर्धारित किए जाते हैं:</div>
+            <div class="step">1. (1, 2, 3) &rarr; (+, +, +) &rarr; <strong>प्रथम (I) अष्टांश</strong></div>
+            <div class="step">2. (4, -2, 3) &rarr; (+, -, +) &rarr; <strong>चतुर्थ (IV) अष्टांश</strong></div>
+            <div class="step">3. (4, -2, -5) &rarr; (+, -, -) &rarr; <strong>अष्टम (VIII) अष्टांश</strong></div>
+            <div class="step">4. (4, 2, -5) &rarr; (+, +, -) &rarr; <strong>पंचम (V) अष्टांश</strong></div>
+            <div class="step">5. (-4, 2, 5) &rarr; (-, +, +) &rarr; <strong>द्वितीय (II) अष्टांश</strong></div>
+            <div class="step">6. (-4, 2, -5) &rarr; (-, +, -) &rarr; <strong>षष्ठ (VI) अष्टांश</strong></div>
+            <div class="step">7. (-4, -2, 5) &rarr; (-, -, +) &rarr; <strong>तृतीय (III) अष्टांश</strong></div>
+            <div class="step">8. (-4, -2, -5) &rarr; (-, -, -) &rarr; <strong>सप्तम (VII) अष्टांश</strong></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> अष्टांश (Octants) त्रिविमीय ज्यामिति में 8 भाग होते हैं। इनके चिह्न तालिका के अनुसार याद रखे जा सकते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. रिक्त स्थानों की पूर्ति कीजिए:</div>
+            <div class="step">(i) x-अक्ष और y-अक्ष दोनों एक साथ मिल कर एक तल बनाते हैं, उस तल को <strong>XY-तल</strong> कहते हैं।</div>
+            <div class="step">(ii) XY-तल में एक बिंदु के निर्देशांक <strong>(x, y, 0)</strong> रूप के होते हैं।</div>
+            <div class="step">(iii) निर्देशांक तल अंतरिक्ष को <strong>आठ (8)</strong> अष्टांशों में विभाजित करते हैं।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> यह त्रिविमीय ज्यामिति की बुनियादी परिभाषाएँ हैं।</div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 11.2 -->
+    <section id="ex-11-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 11.2</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. निम्नलिखित बिंदु-युग्मों के बीच की दूरी ज्ञात कीजिए:</div>
+            <div class="step"><strong>सूत्र:</strong> दूरी d = &radic;((x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup> + (z<sub>2</sub> - z<sub>1</sub>)<sup>2</sup>)</div>
+            
+            <div class="step mt-3 font-semibold">(i) (2, 3, 5) और (4, 3, 1)</div>
+            <div class="step">d = &radic;((4 - 2)<sup>2</sup> + (3 - 3)<sup>2</sup> + (1 - 5)<sup>2</sup>)</div>
+            <div class="step">d = &radic;((2)<sup>2</sup> + (0)<sup>2</sup> + (-4)<sup>2</sup>) = &radic;(4 + 0 + 16)</div>
+            <div class="step">d = &radic;20 = 2&radic;5 इकाई</div>
+
+            <div class="step mt-3 font-semibold">(ii) (-3, 7, 2) और (2, 4, -1)</div>
+            <div class="step">d = &radic;((2 - (-3))<sup>2</sup> + (4 - 7)<sup>2</sup> + (-1 - 2)<sup>2</sup>)</div>
+            <div class="step">d = &radic;((5)<sup>2</sup> + (-3)<sup>2</sup> + (-3)<sup>2</sup>) = &radic;(25 + 9 + 9)</div>
+            <div class="step">d = &radic;43 इकाई</div>
+
+            <div class="step mt-3 font-semibold">(iii) (-1, 3, -4) और (1, -3, 4)</div>
+            <div class="step">d = &radic;((1 - (-1))<sup>2</sup> + (-3 - 3)<sup>2</sup> + (4 - (-4))<sup>2</sup>)</div>
+            <div class="step">d = &radic;((2)<sup>2</sup> + (-6)<sup>2</sup> + (8)<sup>2</sup>) = &radic;(4 + 36 + 64)</div>
+            <div class="step">d = &radic;104 = 2&radic;26 इकाई</div>
+
+            <div class="step mt-3 font-semibold">(iv) (2, -1, 3) और (-2, 1, 3)</div>
+            <div class="step">d = &radic;((-2 - 2)<sup>2</sup> + (1 - (-1))<sup>2</sup> + (3 - 3)<sup>2</sup>)</div>
+            <div class="step">d = &radic;((-4)<sup>2</sup> + (2)<sup>2</sup> + (0)<sup>2</sup>) = &radic;(16 + 4 + 0)</div>
+            <div class="step">d = &radic;20 = 2&radic;5 इकाई</div>
+
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> त्रिविमीय दूरी सूत्र 2D दूरी सूत्र का ही विस्तार है जिसमें z-निर्देशांक का अंतर भी जुड़ जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. दर्शाइए कि बिंदु (-2, 3, 5), (1, 2, 3) और (7, 0, -1) सरेख (collinear) हैं।</div>
+            <div class="step">माना बिंदु A(-2, 3, 5), B(1, 2, 3) और C(7, 0, -1) हैं।</div>
+            <div class="step">AB के बीच की दूरी = &radic;((1 - (-2))<sup>2</sup> + (2 - 3)<sup>2</sup> + (3 - 5)<sup>2</sup>) = &radic;(3<sup>2</sup> + (-1)<sup>2</sup> + (-2)<sup>2</sup>) = &radic;(9 + 1 + 4) = <strong>&radic;14</strong></div>
+            <div class="step">BC के बीच की दूरी = &radic;((7 - 1)<sup>2</sup> + (0 - 2)<sup>2</sup> + (-1 - 3)<sup>2</sup>) = &radic;(6<sup>2</sup> + (-2)<sup>2</sup> + (-4)<sup>2</sup>) = &radic;(36 + 4 + 16) = &radic;56 = <strong>2&radic;14</strong></div>
+            <div class="step">AC के बीच की दूरी = &radic;((7 - (-2))<sup>2</sup> + (0 - 3)<sup>2</sup> + (-1 - 5)<sup>2</sup>) = &radic;(9<sup>2</sup> + (-3)<sup>2</sup> + (-6)<sup>2</sup>) = &radic;(81 + 9 + 36) = &radic;126 = <strong>3&radic;14</strong></div>
+            <div class="step">यहाँ हम देखते हैं कि AB + BC = &radic;14 + 2&radic;14 = 3&radic;14 = AC</div>
+            <div class="step">चूँकि दो दूरियों का योग तीसरी दूरी के बराबर है, अतः दिए गए बिंदु A, B और C सरेख (Collinear) हैं।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> तीन बिंदु एक ही रेखा (collinear) पर तब होते हैं जब किन्हीं दो दूरियों का योग सबसे बड़ी दूरी के बराबर होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. निम्नलिखित को सत्यापित कीजिए:</div>
+            
+            <div class="step mt-3 font-semibold">(i) (0, 7, -10), (1, 6, -6) और (4, 9, -6) एक समद्विबाहु त्रिभुज के शीर्ष हैं।</div>
+            <div class="step">माना A(0, 7, -10), B(1, 6, -6) और C(4, 9, -6) हैं।</div>
+            <div class="step">AB = &radic;((1-0)<sup>2</sup> + (6-7)<sup>2</sup> + (-6 - (-10))<sup>2</sup>) = &radic;(1 + 1 + 16) = &radic;18 = 3&radic;2</div>
+            <div class="step">BC = &radic;((4-1)<sup>2</sup> + (9-6)<sup>2</sup> + (-6 - (-6))<sup>2</sup>) = &radic;(9 + 9 + 0) = &radic;18 = 3&radic;2</div>
+            <div class="step">AC = &radic;((4-0)<sup>2</sup> + (9-7)<sup>2</sup> + (-6 - (-10))<sup>2</sup>) = &radic;(16 + 4 + 16) = &radic;36 = 6</div>
+            <div class="step">चूँकि AB = BC (&radic;18 = &radic;18), अतः यह एक समद्विबाहु (Isosceles) त्रिभुज है।</div>
+
+            <div class="step mt-5 font-semibold">(ii) (0, 7, 10), (-1, 6, 6) और (-4, 9, 6) एक समकोण त्रिभुज के शीर्ष हैं।</div>
+            <div class="step">माना P(0, 7, 10), Q(-1, 6, 6) और R(-4, 9, 6) हैं।</div>
+            <div class="step">PQ<sup>2</sup> = (-1-0)<sup>2</sup> + (6-7)<sup>2</sup> + (6-10)<sup>2</sup> = 1 + 1 + 16 = 18</div>
+            <div class="step">QR<sup>2</sup> = (-4 - (-1))<sup>2</sup> + (9-6)<sup>2</sup> + (6-6)<sup>2</sup> = (-3)<sup>2</sup> + 3<sup>2</sup> + 0 = 9 + 9 = 18</div>
+            <div class="step">PR<sup>2</sup> = (-4-0)<sup>2</sup> + (9-7)<sup>2</sup> + (6-10)<sup>2</sup> = 16 + 4 + 16 = 36</div>
+            <div class="step">चूँकि PQ<sup>2</sup> + QR<sup>2</sup> = 18 + 18 = 36 = PR<sup>2</sup>, अतः पाइथागोरस प्रमेय से यह एक समकोण (Right-angled) त्रिभुज है।</div>
+
+            <div class="step mt-5 font-semibold">(iii) (-1, 2, 1), (1, -2, 5), (4, -7, 8) और (2, -3, 4) एक समांतर चतुर्भुज के शीर्ष हैं।</div>
+            <div class="step">माना A(-1, 2, 1), B(1, -2, 5), C(4, -7, 8) और D(2, -3, 4) हैं।</div>
+            <div class="step">AB = &radic;((1 - (-1))<sup>2</sup> + (-2-2)<sup>2</sup> + (5-1)<sup>2</sup>) = &radic;(4 + 16 + 16) = &radic;36 = 6</div>
+            <div class="step">BC = &radic;((4-1)<sup>2</sup> + (-7 - (-2))<sup>2</sup> + (8-5)<sup>2</sup>) = &radic;(9 + 25 + 9) = &radic;43</div>
+            <div class="step">CD = &radic;((2-4)<sup>2</sup> + (-3 - (-7))<sup>2</sup> + (4-8)<sup>2</sup>) = &radic;(4 + 16 + 16) = &radic;36 = 6</div>
+            <div class="step">DA = &radic;((-1-2)<sup>2</sup> + (2 - (-3))<sup>2</sup> + (1-4)<sup>2</sup>) = &radic;(9 + 25 + 9) = &radic;43</div>
+            <div class="step">चूँकि विपरीत भुजाएँ बराबर हैं (AB = CD और BC = DA), अतः यह एक समांतर चतुर्भुज (Parallelogram) है।</div>
+            
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> दूरी सूत्र की मदद से भुजाओं की लंबाइयाँ निकाली गई हैं। समद्विबाहु के लिए 2 भुजाएँ बराबर, समकोण के लिए पाइथागोरस प्रमेय और समांतर चतुर्भुज के लिए आमने-सामने की भुजाएँ बराबर दिखाई गई हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. ऐसे बिंदुओं के समुच्चय का समीकरण ज्ञात कीजिए जो बिंदु (1, 2, 3) और (3, 2, -1) से समदूरस्थ (equidistant) हैं।</div>
+            <div class="step">माना ऐसा कोई बिंदु P(x, y, z) है। दिए गए बिंदु A(1, 2, 3) और B(3, 2, -1) हैं।</div>
+            <div class="step">प्रश्नानुसार, PA = PB</div>
+            <div class="step">दोनों पक्षों का वर्ग करने पर: PA<sup>2</sup> = PB<sup>2</sup></div>
+            <div class="step">(x - 1)<sup>2</sup> + (y - 2)<sup>2</sup> + (z - 3)<sup>2</sup> = (x - 3)<sup>2</sup> + (y - 2)<sup>2</sup> + (z - (-1))<sup>2</sup></div>
+            <div class="step">समीकरण को खोलने पर:</div>
+            <div class="step">(x<sup>2</sup> - 2x + 1) + (y<sup>2</sup> - 4y + 4) + (z<sup>2</sup> - 6z + 9) = (x<sup>2</sup> - 6x + 9) + (y<sup>2</sup> - 4y + 4) + (z<sup>2</sup> + 2z + 1)</div>
+            <div class="step">दोनों तरफ से x<sup>2</sup>, y<sup>2</sup>, z<sup>2</sup> और (y<sup>2</sup> - 4y + 4) को काटने पर:</div>
+            <div class="step">-2x - 6z + 10 = -6x + 2z + 10</div>
+            <div class="step">-2x + 6x - 6z - 2z = 10 - 10</div>
+            <div class="step">4x - 8z = 0</div>
+            <div class="step">4 से भाग देने पर: x - 2z = 0</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> बिंदु P की A और B से दूरियों को बराबर रखकर (PA=PB) समीकरण बनाया गया। वर्ग करने से अंडररूट हट गया और x, y, z में एक सरल रैखिक (linear) समीकरण प्राप्त हुआ।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. बिंदुओं P से बने समुच्चय का समीकरण ज्ञात कीजिए जिनकी A (4, 0, 0) और B (-4, 0, 0) से दूरियों का योगफल 10 है।</div>
+            <div class="step">माना बिंदु P के निर्देशांक (x, y, z) हैं। प्रश्नानुसार, PA + PB = 10</div>
+            <div class="step">&radic;((x - 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) + &radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) = 10</div>
+            <div class="step">&radic;((x - 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) = 10 - &radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">दोनों पक्षों का वर्ग करने पर:</div>
+            <div class="step">(x - 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 100 + (x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - 20&radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">x<sup>2</sup> - 8x + 16 + y<sup>2</sup> + z<sup>2</sup> = 100 + x<sup>2</sup> + 8x + 16 + y<sup>2</sup> + z<sup>2</sup> - 20&radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">समान पदों को काटने पर: -8x = 100 + 8x - 20&radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">-16x - 100 = -20&radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">-4 से भाग देने पर: 4x + 25 = 5&radic;((x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">पुनः वर्ग करने पर: (4x + 25)<sup>2</sup> = 25[(x + 4)<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>]</div>
+            <div class="step">16x<sup>2</sup> + 200x + 625 = 25(x<sup>2</sup> + 8x + 16 + y<sup>2</sup> + z<sup>2</sup>)</div>
+            <div class="step">16x<sup>2</sup> + 200x + 625 = 25x<sup>2</sup> + 200x + 400 + 25y<sup>2</sup> + 25z<sup>2</sup></div>
+            <div class="step">सभी पदों को एक तरफ लाने पर: 25x<sup>2</sup> - 16x<sup>2</sup> + 25y<sup>2</sup> + 25z<sup>2</sup> - 625 + 400 = 0</div>
+            <div class="step"><strong>9x<sup>2</sup> + 25y<sup>2</sup> + 25z<sup>2</sup> - 225 = 0</strong></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> इस प्रश्न में अंडररूट (square root) को हटाने के लिए दो बार वर्ग (squaring both sides) करना पड़ा। यह एक दीर्घवृत्त (Ellipsoid) का समीकरण है।</div>
+        </div>
+    </section>
+
+    <!-- विविध प्रश्नावली -->
+    <section id="misc-ex" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-red-100 text-red-800 px-4 py-2 rounded-full">📕 विविध प्रश्नावली</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. एक समांतर चतुर्भुज ABCD के तीन शीर्ष A (3, -1, 2), B (1, 2, -4) और C (-1, 1, 2) हैं। चौथे शीर्ष D के निर्देशांक ज्ञात कीजिए।</div>
+            <div class="step">माना चौथे शीर्ष D के निर्देशांक (x, y, z) हैं।</div>
+            <div class="step">हम जानते हैं कि समांतर चतुर्भुज के विकर्ण (diagonals) AC और BD एक-दूसरे को समद्विभाजित (bisect) करते हैं।</div>
+            <div class="step">अतः विकर्ण AC का मध्य-बिंदु = विकर्ण BD का मध्य-बिंदु</div>
+            <div class="step">AC का मध्य-बिंदु = (<span class="fraction"><span class="numerator">3 + (-1)</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">-1 + 1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">2 + 2</span><span class="denominator">2</span></span>) = (<span class="fraction"><span class="numerator">2</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">0</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">4</span><span class="denominator">2</span></span>) = (1, 0, 2)</div>
+            <div class="step">BD का मध्य-बिंदु = (<span class="fraction"><span class="numerator">1 + x</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">2 + y</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">-4 + z</span><span class="denominator">2</span></span>)</div>
+            <div class="step">दोनों की तुलना करने पर:</div>
+            <div class="step"><span class="fraction"><span class="numerator">1 + x</span><span class="denominator">2</span></span> = 1 &rArr; 1 + x = 2 &rArr; x = 1</div>
+            <div class="step"><span class="fraction"><span class="numerator">2 + y</span><span class="denominator">2</span></span> = 0 &rArr; 2 + y = 0 &rArr; y = -2</div>
+            <div class="step"><span class="fraction"><span class="numerator">-4 + z</span><span class="denominator">2</span></span> = 2 &rArr; -4 + z = 4 &rArr; z = 8</div>
+            <div class="step">अतः चौथे शीर्ष D के निर्देशांक <strong>(1, -2, 8)</strong> हैं।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> मध्य-बिंदु सूत्र (Midpoint formula) का प्रयोग करके अज्ञात निर्देशांक (x,y,z) बहुत आसानी से निकाले जा सकते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. एक त्रिभुज ABC के शीर्ष A (0, 0, 6), B (0, 4, 0) और C (6, 0, 0) हैं। इसकी माध्यिकाओं (medians) की लंबाइयाँ ज्ञात कीजिए।</div>
+            <div class="step">माध्यिका वह रेखा है जो शीर्ष को सामने वाली भुजा के मध्य-बिंदु से मिलाती है।</div>
+            <div class="step"><strong>1. माध्यिका AD की लंबाई:</strong> बिंदु D, भुजा BC का मध्य-बिंदु है।</div>
+            <div class="step">D के निर्देशांक = (<span class="fraction"><span class="numerator">0 + 6</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">4 + 0</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">0 + 0</span><span class="denominator">2</span></span>) = (3, 2, 0)</div>
+            <div class="step">AD = &radic;((3 - 0)<sup>2</sup> + (2 - 0)<sup>2</sup> + (0 - 6)<sup>2</sup>) = &radic;(9 + 4 + 36) = &radic;49 = <strong>7</strong></div>
+            
+            <div class="step mt-3"><strong>2. माध्यिका BE की लंबाई:</strong> बिंदु E, भुजा AC का मध्य-बिंदु है।</div>
+            <div class="step">E के निर्देशांक = (<span class="fraction"><span class="numerator">0 + 6</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">0 + 0</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">6 + 0</span><span class="denominator">2</span></span>) = (3, 0, 3)</div>
+            <div class="step">BE = &radic;((3 - 0)<sup>2</sup> + (0 - 4)<sup>2</sup> + (3 - 0)<sup>2</sup>) = &radic;(9 + 16 + 9) = <strong>&radic;34</strong></div>
+
+            <div class="step mt-3"><strong>3. माध्यिका CF की लंबाई:</strong> बिंदु F, भुजा AB का मध्य-बिंदु है।</div>
+            <div class="step">F के निर्देशांक = (<span class="fraction"><span class="numerator">0 + 0</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">0 + 4</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">6 + 0</span><span class="denominator">2</span></span>) = (0, 2, 3)</div>
+            <div class="step">CF = &radic;((0 - 6)<sup>2</sup> + (2 - 0)<sup>2</sup> + (3 - 0)<sup>2</sup>) = &radic;(36 + 4 + 9) = &radic;49 = <strong>7</strong></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> त्रिभुज की माध्यिकाएँ निकालने के लिए पहले प्रत्येक भुजा का मध्य बिंदु (Midpoint) निकाला गया, फिर शीर्ष से उस मध्य-बिंदु तक की दूरी निकाली गई।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. यदि त्रिभुज PQR का केंद्रक (centroid) मूल बिंदु (0, 0, 0) है और शीर्ष P (2a, 2, 6), Q (-4, 3b, -10) और R (8, 14, 2c) हैं, तो a, b और c के मान ज्ञात कीजिए।</div>
+            <div class="step">त्रिभुज के केंद्रक के निर्देशांक का सूत्र: (<span class="fraction"><span class="numerator">x<sub>1</sub> + x<sub>2</sub> + x<sub>3</sub></span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">y<sub>1</sub> + y<sub>2</sub> + y<sub>3</sub></span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">z<sub>1</sub> + z<sub>2</sub> + z<sub>3</sub></span><span class="denominator">3</span></span>)</div>
+            <div class="step">प्रश्नानुसार, केंद्रक (0, 0, 0) है।</div>
+            <div class="step">x-निर्देशांक की तुलना: <span class="fraction"><span class="numerator">2a - 4 + 8</span><span class="denominator">3</span></span> = 0 &rArr; 2a + 4 = 0 &rArr; 2a = -4 &rArr; <strong>a = -2</strong></div>
+            <div class="step">y-निर्देशांक की तुलना: <span class="fraction"><span class="numerator">2 + 3b + 14</span><span class="denominator">3</span></span> = 0 &rArr; 3b + 16 = 0 &rArr; 3b = -16 &rArr; <strong>b = -<span class="fraction"><span class="numerator">16</span><span class="denominator">3</span></span></strong></div>
+            <div class="step">z-निर्देशांक की तुलना: <span class="fraction"><span class="numerator">6 - 10 + 2c</span><span class="denominator">3</span></span> = 0 &rArr; 2c - 4 = 0 &rArr; 2c = 4 &rArr; <strong>c = 2</strong></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> केंद्रक (Centroid) निकालने के सूत्र को मूल बिंदु (0,0,0) के बराबर रख कर सीधे a, b और c का मान प्राप्त कर लिया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. y-अक्ष पर उस बिंदु के निर्देशांक ज्ञात कीजिए जिसकी बिंदु P (3, -2, 5) से दूरी 5&radic;2 है।</div>
+            <div class="step">चूँकि बिंदु y-अक्ष पर स्थित है, अतः इसके निर्देशांक (0, y, 0) होंगे। माना यह बिंदु A है।</div>
+            <div class="step">दिया गया है कि AP = 5&radic;2</div>
+            <div class="step">दोनों पक्षों का वर्ग करने पर: AP<sup>2</sup> = (5&radic;2)<sup>2</sup> = 25 &times; 2 = 50</div>
+            <div class="step">दूरी सूत्र का प्रयोग करने पर: (3 - 0)<sup>2</sup> + (-2 - y)<sup>2</sup> + (5 - 0)<sup>2</sup> = 50</div>
+            <div class="step">9 + (y + 2)<sup>2</sup> + 25 = 50</div>
+            <div class="step">34 + y<sup>2</sup> + 4y + 4 = 50</div>
+            <div class="step">y<sup>2</sup> + 4y + 38 = 50</div>
+            <div class="step">y<sup>2</sup> + 4y - 12 = 0</div>
+            <div class="step">गुणनखंड करने पर: y<sup>2</sup> + 6y - 2y - 12 = 0</div>
+            <div class="step">y(y + 6) - 2(y + 6) = 0</div>
+            <div class="step">(y + 6)(y - 2) = 0</div>
+            <div class="step">अतः y = -6 या y = 2</div>
+            <div class="step">अतः y-अक्ष पर ऐसे दो बिंदु संभव हैं: <strong>(0, 2, 0)</strong> और <strong>(0, -6, 0)</strong></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> y-अक्ष पर x और z हमेशा 0 होते हैं। दूरी का सूत्र लगाकर y में एक द्विघात समीकरण (Quadratic Equation) बनाया और हल कर लिया।</div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 11) त्रिविमीय ज्यामिति का परिचय ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

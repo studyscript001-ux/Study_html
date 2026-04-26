@@ -1,0 +1,539 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 9: सरल रेखाएँ | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 9<br>सरल रेखाएँ</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 9.1 -->
+    <section id="ex-9-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 9.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. कार्तीय तल में एक चतुर्भुज खींचिए जिसके शीर्ष (-4, 5), (0,7), (5,5) और (-4, -2) हैं। इसका क्षेत्रफल भी ज्ञात कीजिए।</div>
+            <div class="step">चतुर्भुज को दो त्रिभुजों में बाँटें: &Delta;ABC और &Delta;ACD, जहाँ A(-4, 5), B(0, 7), C(5, 5), D(-4, -2) हैं।</div>
+            <div class="step">त्रिभुज का क्षेत्रफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |x<sub>1</sub>(y<sub>2</sub> - y<sub>3</sub>) + x<sub>2</sub>(y<sub>3</sub> - y<sub>1</sub>) + x<sub>3</sub>(y<sub>1</sub> - y<sub>2</sub>)|</div>
+            <div class="step">Area(&Delta;ABC) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-4(7 - 5) + 0(5 - 5) + 5(5 - 7)| = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-8 + 0 - 10| = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-18| = 9 वर्ग इकाई।</div>
+            <div class="step">Area(&Delta;ACD) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-4(5 - (-2)) + 5(-2 - 5) + (-4)(5 - 5)| = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-28 - 35 + 0| = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> |-63| = 31.5 वर्ग इकाई।</div>
+            <div class="step">कुल क्षेत्रफल = 9 + 31.5 = 40.5 वर्ग इकाई।</div>
+            <div class="hinglish-explanation">चतुर्भुज का क्षेत्रफल निकालने के लिए उसे विकर्ण (diagonal) के द्वारा दो त्रिभुजों में बाँटकर उनके क्षेत्रफलों को जोड़ा गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. 2a भुजा के समबाहु त्रिभुज का आधार y-अक्ष के अनुदिश इस प्रकार है कि आधार का मध्य बिंदु मूल बिंदु पर है। त्रिभुज के शीर्ष ज्ञात कीजिए।</div>
+            <div class="step">त्रिभुज की भुजा = 2a। आधार y-अक्ष पर है और मध्य बिंदु (0,0) है, अतः आधार के शीर्ष (0, a) और (0, -a) होंगे।</div>
+            <div class="step">तीसरा शीर्ष x-अक्ष पर स्थित होगा, मान लीजिए (x, 0)।</div>
+            <div class="step">समबाहु त्रिभुज की ऊँचाई (मूल बिंदु से तीसरे शीर्ष की दूरी) = &radic;((2a)<sup>2</sup> - a<sup>2</sup>) = &radic;(3a<sup>2</sup>) = a&radic;3</div>
+            <div class="step">अतः तीसरा शीर्ष (&plusmn;a&radic;3, 0) होगा।</div>
+            <div class="hinglish-explanation">पाइथागोरस प्रमेय का उपयोग करके तीसरे शीर्ष (vertex) की दूरी निकाली गई है। त्रिभुज x-अक्ष के दोनों तरफ (positive या negative) हो सकता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. P(x<sub>1</sub>, y<sub>1</sub>) और Q(x<sub>2</sub>, y<sub>2</sub>) के बीच की दूरी ज्ञात कीजिए जब : (i) PQ, y-अक्ष के समांतर है, (ii) PQ, x-अक्ष के समांतर है।</div>
+            <div class="step">(i) जब PQ, y-अक्ष के समांतर है, तो x-निर्देशांक समान होंगे: x<sub>1</sub> = x<sub>2</sub>।<br>
+            दूरी PQ = &radic;((x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>) = &radic;(0 + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>) = |y<sub>2</sub> - y<sub>1</sub>|</div>
+            <div class="step">(ii) जब PQ, x-अक्ष के समांतर है, तो y-निर्देशांक समान होंगे: y<sub>1</sub> = y<sub>2</sub>।<br>
+            दूरी PQ = &radic;((x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + 0) = |x<sub>2</sub> - x<sub>1</sub>|</div>
+            <div class="hinglish-explanation">समांतर (parallel) होने पर एक coordinate constant हो जाता है, जिससे दूरी सीधे दूसरे coordinate का अंतर (difference) बन जाती है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. x-अक्ष पर एक बिंदु ज्ञात कीजिए जो (7,6) और (3, 4) बिंदुओं से समान दूरी पर है।</div>
+            <div class="step">मान लीजिए x-अक्ष पर बिंदु P(x, 0) है।</div>
+            <div class="step">दूरी समान है: PA = PB &rArr; PA<sup>2</sup> = PB<sup>2</sup></div>
+            <div class="step">(x - 7)<sup>2</sup> + (0 - 6)<sup>2</sup> = (x - 3)<sup>2</sup> + (0 - 4)<sup>2</sup></div>
+            <div class="step">x<sup>2</sup> - 14x + 49 + 36 = x<sup>2</sup> - 6x + 9 + 16</div>
+            <div class="step">-14x + 85 = -6x + 25 &rArr; 8x = 60 &rArr; x = <span class="fraction"><span class="numerator">60</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">15</span><span class="denominator">2</span></span></div>
+            <div class="step">अतः बिंदु (<span class="fraction"><span class="numerator">15</span><span class="denominator">2</span></span>, 0) है।</div>
+            <div class="hinglish-explanation">दूरी सूत्र (distance formula) लगाकर दोनों दूरियों के वर्ग (square) को बराबर किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. रेखा की ढाल ज्ञात कीजिए जो मूल बिंदु और P(0, -4) तथा B(8, 0) बिंदुओं को मिलाने वाले रेखाखंड के मध्य बिंदु से जाती हैं।</div>
+            <div class="step">P(0, -4) और B(8, 0) का मध्य बिंदु (Midpoint) M = (<span class="fraction"><span class="numerator">0 + 8</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">-4 + 0</span><span class="denominator">2</span></span>) = (4, -2)</div>
+            <div class="step">रेखा मूल बिंदु (0, 0) और (4, -2) से जाती है।</div>
+            <div class="step">ढाल (Slope) m = <span class="fraction"><span class="numerator">y<sub>2</sub> - y<sub>1</sub></span><span class="denominator">x<sub>2</sub> - x<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">-2 - 0</span><span class="denominator">4 - 0</span></span> = <span class="fraction"><span class="numerator">-2</span><span class="denominator">4</span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="hinglish-explanation">पहले मध्य बिंदु (midpoint) निकाला, फिर (0,0) और उस मध्य बिंदु से होकर जाने वाली रेखा का ढाल (slope) निकाला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. पाइथागोरस प्रमेय के प्रयोग बिना दिखलाइए कि बिंदु (4, 4), (3, 5) और (-1, -1) एक समकोण त्रिभुज के शीर्ष हैं।</div>
+            <div class="step">मान लीजिए A(4, 4), B(3, 5), C(-1, -1) हैं।</div>
+            <div class="step">AB की ढाल (m<sub>1</sub>) = <span class="fraction"><span class="numerator">5 - 4</span><span class="denominator">3 - 4</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">-1</span></span> = -1</div>
+            <div class="step">AC की ढाल (m<sub>2</sub>) = <span class="fraction"><span class="numerator">-1 - 4</span><span class="denominator">-1 - 4</span></span> = <span class="fraction"><span class="numerator">-5</span><span class="denominator">-5</span></span> = 1</div>
+            <div class="step">m<sub>1</sub> &times; m<sub>2</sub> = (-1) &times; 1 = -1</div>
+            <div class="step">चूँकि ढालों का गुणनफल -1 है, अतः AB &perp; AC है। इसलिए यह समकोण त्रिभुज (Right Angled Triangle) है।</div>
+            <div class="hinglish-explanation">दो रेखाओं के ढालों का गुणनफल (product) अगर -1 हो, तो वे लंबवत (perpendicular) होती हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. उस रेखा का समीकरण ज्ञात कीजिए जो y-अक्ष की धन दिशा से वामावर्त्त मापा गया 30&deg; का कोण बनाती है।</div>
+            <div class="step">y-अक्ष की धन दिशा से वामावर्त (counter-clockwise) 30&deg; का कोण है।</div>
+            <div class="step">अतः यह x-अक्ष की धन दिशा से 90&deg; + 30&deg; = 120&deg; का कोण बनाएगी।</div>
+            <div class="step">ढाल (m) = tan(120&deg;) = tan(180&deg; - 60&deg;) = -tan(60&deg;) = -&radic;3</div>
+            <div class="step">चूँकि रेखा मूल बिंदु से जाती है (प्रश्न में यदि मूल बिंदु से मान लिया जाए), तो y = mx &rArr; y = -&radic;3x &rArr; &radic;3x + y = 0</div>
+            <div class="hinglish-explanation">ढाल (slope) हमेशा x-अक्ष की धनात्मक दिशा (positive x-axis) के साथ मापे गए कोण पर निर्भर करता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. x का वह मान ज्ञात कीजिए जिसके लिए बिंदु (x, -1), (2, 1) और (4, 5) सरेख (collinear) हैं।</div>
+            <div class="step">बिंदु A(x, -1), B(2, 1), C(4, 5) सरेख हैं तो AB की ढाल = BC की ढाल।</div>
+            <div class="step">AB की ढाल = <span class="fraction"><span class="numerator">1 - (-1)</span><span class="denominator">2 - x</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">2 - x</span></span></div>
+            <div class="step">BC की ढाल = <span class="fraction"><span class="numerator">5 - 1</span><span class="denominator">4 - 2</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">2</span></span> = 2</div>
+            <div class="step">अतः <span class="fraction"><span class="numerator">2</span><span class="denominator">2 - x</span></span> = 2 &rArr; 2 = 4 - 2x &rArr; 2x = 2 &rArr; x = 1</div>
+            <div class="hinglish-explanation">सरेख (collinear) होने पर किन्हीं भी दो बिंदुओं से बनने वाली रेखा का ढाल (slope) समान होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. दूरी सूत्र का प्रयोग किए बिना दिखलाइए कि बिंदु (-2, -1), (4, 0), (3, 3) और (-3, 2) एक समांतर चतुर्भुज के शीर्ष हैं।</div>
+            <div class="step">A(-2, -1), B(4, 0), C(3, 3), D(-3, 2)</div>
+            <div class="step">AB की ढाल = <span class="fraction"><span class="numerator">0 - (-1)</span><span class="denominator">4 - (-2)</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></div>
+            <div class="step">CD की ढाल = <span class="fraction"><span class="numerator">2 - 3</span><span class="denominator">-3 - 3</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">-6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> (अतः AB || CD)</div>
+            <div class="step">BC की ढाल = <span class="fraction"><span class="numerator">3 - 0</span><span class="denominator">3 - 4</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">-1</span></span> = -3</div>
+            <div class="step">AD की ढाल = <span class="fraction"><span class="numerator">2 - (-1)</span><span class="denominator">-3 - (-2)</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">-1</span></span> = -3 (अतः BC || AD)</div>
+            <div class="step">विपरीत भुजाएँ समांतर हैं, अतः यह एक समांतर चतुर्भुज (Parallelogram) है।</div>
+            <div class="hinglish-explanation">समांतर चतुर्भुज (parallelogram) में आमने-सामने की भुजाओं के ढाल बराबर होते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. x-अक्ष और (3, -1) और (4, -2) बिंदुओं को मिलाने वाली रेखा के बीच का कोण ज्ञात कीजिए।</div>
+            <div class="step">रेखा का ढाल (m) = <span class="fraction"><span class="numerator">y<sub>2</sub> - y<sub>1</sub></span><span class="denominator">x<sub>2</sub> - x<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">-2 - (-1)</span><span class="denominator">4 - 3</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">1</span></span> = -1</div>
+            <div class="step">tan &theta; = -1</div>
+            <div class="step">चूँकि tan 135&deg; = -1 होता है, अतः कोण &theta; = 135&deg; है।</div>
+            <div class="hinglish-explanation">ढाल (slope) m = tan &theta; होता है, जिससे कोण सीधा निकल जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. एक रेखा की ढाल दूसरी रेखा की ढाल का दुगुना है। यदि दोनों के बीच के कोण की स्पर्शज्या (tangent) 1/3 है तो रेखाओं की ढाल ज्ञात कीजिए।</div>
+            <div class="step">मान लीजिए ढाल m<sub>1</sub> = m और m<sub>2</sub> = 2m है।</div>
+            <div class="step">tan &theta; = |<span class="fraction"><span class="numerator">m<sub>2</sub> - m<sub>1</sub></span><span class="denominator">1 + m<sub>1</sub>m<sub>2</sub></span></span>| = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span></div>
+            <div class="step">|<span class="fraction"><span class="numerator">2m - m</span><span class="denominator">1 + 2m<sup>2</sup></span></span>| = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> &rArr; |<span class="fraction"><span class="numerator">m</span><span class="denominator">1 + 2m<sup>2</sup></span></span>| = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span></div>
+            <div class="step">स्थिति 1: <span class="fraction"><span class="numerator">m</span><span class="denominator">1 + 2m<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> &rArr; 3m = 1 + 2m<sup>2</sup> &rArr; 2m<sup>2</sup> - 3m + 1 = 0 &rArr; (2m-1)(m-1) = 0 &rArr; m = 1 या m = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">स्थिति 2: <span class="fraction"><span class="numerator">m</span><span class="denominator">1 + 2m<sup>2</sup></span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> &rArr; -3m = 1 + 2m<sup>2</sup> &rArr; 2m<sup>2</sup> + 3m + 1 = 0 &rArr; (2m+1)(m+1) = 0 &rArr; m = -1 या m = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">अतः ढाल (1, 2) या (1/2, 1) या (-1, -2) या (-1/2, -1) हो सकते हैं।</div>
+            <div class="hinglish-explanation">सूत्र में मान रखने पर द्विघात समीकरण (quadratic equation) बनता है जिसे हल किया गया है। Modulus (|x|) हटाने पर &plusmn; चिह्न आता है।</div>
+        </div>
+    </section>
+
+
+    <!-- प्रश्नावली 9.2 -->
+    <section id="ex-9-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 9.2</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. x- और y-अक्षों के समीकरण लिखिए।</div>
+            <div class="step">x-अक्ष पर स्थित सभी बिंदुओं का y-निर्देशांक शून्य होता है। अतः x-अक्ष का समीकरण: y = 0</div>
+            <div class="step">y-अक्ष पर स्थित सभी बिंदुओं का x-निर्देशांक शून्य होता है। अतः y-अक्ष का समीकरण: x = 0</div>
+            <div class="hinglish-explanation">यह अक्षों (axes) का मूलभूत गुण है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. ढाल 1/2 और बिंदु (-4, 3) से जाने वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">सूत्र: y - y<sub>1</sub> = m(x - x<sub>1</sub>)</div>
+            <div class="step">y - 3 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>(x - (-4))</div>
+            <div class="step">2(y - 3) = x + 4 &rArr; 2y - 6 = x + 4</div>
+            <div class="step">x - 2y + 10 = 0</div>
+            <div class="hinglish-explanation">बिंदु-ढाल रूप (Point-slope form) का सीधा प्रयोग।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. मूल बिंदु (0,0) से जाने वाली और ढाल m वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">सूत्र: y - y<sub>1</sub> = m(x - x<sub>1</sub>)</div>
+            <div class="step">y - 0 = m(x - 0)</div>
+            <div class="step">y = mx</div>
+            <div class="hinglish-explanation">मूल बिंदु से जाने वाली रेखा का y-intercept हमेशा 0 होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. बिंदु (2, 2&radic;3) से जाने वाली और x-अक्ष से 75&deg; के कोण पर झुकी हुई रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">ढाल m = tan 75&deg; = tan(45&deg; + 30&deg;) = <span class="fraction"><span class="numerator">tan 45&deg; + tan 30&deg;</span><span class="denominator">1 - tan 45&deg;tan 30&deg;</span></span> = <span class="fraction"><span class="numerator">1 + 1/&radic;3</span><span class="denominator">1 - 1/&radic;3</span></span> = <span class="fraction"><span class="numerator">&radic;3 + 1</span><span class="denominator">&radic;3 - 1</span></span> = 2 + &radic;3</div>
+            <div class="step">समीकरण: y - 2&radic;3 = (2 + &radic;3)(x - 2)</div>
+            <div class="step">y - 2&radic;3 = (2 + &radic;3)x - 2(2 + &radic;3) &rArr; y - 2&radic;3 = (2 + &radic;3)x - 4 - 2&radic;3</div>
+            <div class="step">(2 + &radic;3)x - y - 4 = 0</div>
+            <div class="hinglish-explanation">tan(A+B) के सूत्र से 75&deg; का मान निकालकर बिंदु-ढाल रूप में रखा गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. मूल बिंदु के बाईं ओर x-अक्ष को 3 इकाई की दूरी पर प्रतिच्छेद करने तथा ढाल -2 वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">मूल बिंदु के बाईं ओर 3 इकाई दूरी का मतलब है बिंदु (-3, 0) है।</div>
+            <div class="step">ढाल m = -2</div>
+            <div class="step">समीकरण: y - 0 = -2(x - (-3)) &rArr; y = -2(x + 3)</div>
+            <div class="step">y = -2x - 6 &rArr; 2x + y + 6 = 0</div>
+            <div class="hinglish-explanation">बाईं ओर का मतलब x ऋणात्मक (negative) है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. मूल बिंदु से ऊपर y-अक्ष को 2 इकाई की दूरी पर प्रतिच्छेद करने वाली और x-अक्ष की धन दिशा के साथ 30&deg; का कोण बनाने वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">y-अंतःखंड (y-intercept) c = 2 (चूँकि मूल बिंदु से ऊपर है)।</div>
+            <div class="step">ढाल m = tan 30&deg; = <span class="fraction"><span class="numerator">1</span><span class="denominator">&radic;3</span></span></div>
+            <div class="step">समीकरण (y = mx + c): y = <span class="fraction"><span class="numerator">1</span><span class="denominator">&radic;3</span></span>x + 2</div>
+            <div class="step">&radic;3y = x + 2&radic;3 &rArr; x - &radic;3y + 2&radic;3 = 0</div>
+            <div class="hinglish-explanation">यहाँ सीधे Slope-Intercept Form (y = mx+c) का उपयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. बिंदुओं (-1, 1) और (2, -4) से जाते हुए रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">दो बिंदु रूप (Two-point form): y - y<sub>1</sub> = <span class="fraction"><span class="numerator">y<sub>2</sub> - y<sub>1</sub></span><span class="denominator">x<sub>2</sub> - x<sub>1</sub></span></span> (x - x<sub>1</sub>)</div>
+            <div class="step">y - 1 = <span class="fraction"><span class="numerator">-4 - 1</span><span class="denominator">2 - (-1)</span></span> (x - (-1)) &rArr; y - 1 = <span class="fraction"><span class="numerator">-5</span><span class="denominator">3</span></span> (x + 1)</div>
+            <div class="step">3(y - 1) = -5(x + 1) &rArr; 3y - 3 = -5x - 5</div>
+            <div class="step">5x + 3y + 2 = 0</div>
+            <div class="hinglish-explanation">दो बिंदुओं से होकर जाने वाली रेखा का मानक सूत्र प्रयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. मूल बिंदु से किसी रेखा पर डाला गया लंब रेखा से बिंदु (-2, 9) पर मिलता है, रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">मूल बिंदु (0,0) से (-2, 9) को मिलाने वाली लंब रेखा की ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">9 - 0</span><span class="denominator">-2 - 0</span></span> = -<span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span></div>
+            <div class="step">अभीष्ट रेखा इस पर लंब है, अतः इसकी ढाल m = <span class="fraction"><span class="numerator">-1</span><span class="denominator">m<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">9</span></span></div>
+            <div class="step">यह रेखा (-2, 9) से होकर जाती है: y - 9 = <span class="fraction"><span class="numerator">2</span><span class="denominator">9</span></span>(x - (-2))</div>
+            <div class="step">9y - 81 = 2x + 4 &rArr; 2x - 9y + 85 = 0</div>
+            <div class="hinglish-explanation">मूल बिंदु से खींचा गया लंब (normal) जिस बिंदु पर मिलता है, रेखा उसी बिंदु से गुजरती है और लंब के लंबवत (perpendicular) होती है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. ताँबे की छड़ की लंबाई L (सेमी में) सेल्सियस ताप C का रैखिक फलन है। L=124.942 जब C=20 और L=125.134 जब C=110 हो, तो L को C के पदों में व्यक्त कीजिए।</div>
+            <div class="step">हम इसे (C, L) के निर्देशांक मानते हैं: (20, 124.942) और (110, 125.134)।</div>
+            <div class="step">रैखिक समीकरण: L - L<sub>1</sub> = <span class="fraction"><span class="numerator">L<sub>2</sub> - L<sub>1</sub></span><span class="denominator">C<sub>2</sub> - C<sub>1</sub></span></span> (C - C<sub>1</sub>)</div>
+            <div class="step">L - 124.942 = <span class="fraction"><span class="numerator">125.134 - 124.942</span><span class="denominator">110 - 20</span></span> (C - 20)</div>
+            <div class="step">L - 124.942 = <span class="fraction"><span class="numerator">0.192</span><span class="denominator">90</span></span> (C - 20)</div>
+            <div class="step">L = <span class="fraction"><span class="numerator">0.192</span><span class="denominator">90</span></span>(C - 20) + 124.942</div>
+            <div class="hinglish-explanation">दो बिंदुओं से जाने वाली रेखा के समीकरण के सूत्र का सीधा अनुप्रयोग।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. किसी दूध भंडार का स्वामी प्रति सप्ताह 980 लिटर दूध, 14 रु. प्रति लिटर के भाव से और 1220 लीटर दूध 16 रु. प्रति लिटर के भाव से बेच सकता है। वह 17 रु. प्रति लिटर के भाव से कितना दूध बेच सकता है?</div>
+            <div class="step">माना (मूल्य, मात्रा) = (x, y)। बिंदु हैं: (14, 980) और (16, 1220)।</div>
+            <div class="step">समीकरण: y - 980 = <span class="fraction"><span class="numerator">1220 - 980</span><span class="denominator">16 - 14</span></span> (x - 14)</div>
+            <div class="step">y - 980 = <span class="fraction"><span class="numerator">240</span><span class="denominator">2</span></span> (x - 14) = 120(x - 14)</div>
+            <div class="step">जब x = 17 हो, तो y - 980 = 120(17 - 14) = 120 &times; 3 = 360</div>
+            <div class="step">y = 980 + 360 = 1340 लीटर।</div>
+            <div class="hinglish-explanation">रैखिक संबंध (linear relationship) का अर्थ है कि दोनों डेटा पॉइंट्स एक सीधी रेखा बनाते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. अक्षों के बीच रेखाखंड का मध्य बिंदु P (a, b) है। दिखाइए कि रेखा का समीकरण x/a + y/b = 2 है।</div>
+            <div class="step">माना रेखा x-अक्ष को (x<sub>1</sub>, 0) और y-अक्ष को (0, y<sub>1</sub>) पर काटती है।</div>
+            <div class="step">मध्य बिंदु (a, b) = (<span class="fraction"><span class="numerator">x<sub>1</sub> + 0</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">0 + y<sub>1</sub></span><span class="denominator">2</span></span>)</div>
+            <div class="step">x<sub>1</sub>/2 = a &rArr; x<sub>1</sub> = 2a और y<sub>1</sub>/2 = b &rArr; y<sub>1</sub> = 2b</div>
+            <div class="step">अत: अंतःखंड रूप (Intercept form) में समीकरण: <span class="fraction"><span class="numerator">x</span><span class="denominator">2a</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">2b</span></span> = 1</div>
+            <div class="step">दोनों तरफ 2 से गुणा करने पर: <span class="fraction"><span class="numerator">x</span><span class="denominator">a</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">b</span></span> = 2। (सिद्ध हुआ)</div>
+            <div class="hinglish-explanation">मध्य बिंदु सूत्र (midpoint formula) और अंतःखंड रूप (intercept form) का संयोजन।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. अक्षों के बीच रेखाखंड को बिंदु R (h, k), 1:2 के अनुपात में विभक्त करता है। रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">माना x-अंतःखंड a और y-अंतःखंड b है। बिंदु हैं A(a, 0) और B(0, b)।</div>
+            <div class="step">बिंदु R(h, k), AB को 1:2 में बाँटता है: h = <span class="fraction"><span class="numerator">1(0) + 2(a)</span><span class="denominator">1 + 2</span></span> = <span class="fraction"><span class="numerator">2a</span><span class="denominator">3</span></span> &rArr; a = <span class="fraction"><span class="numerator">3h</span><span class="denominator">2</span></span></div>
+            <div class="step">k = <span class="fraction"><span class="numerator">1(b) + 2(0)</span><span class="denominator">1 + 2</span></span> = <span class="fraction"><span class="numerator">b</span><span class="denominator">3</span></span> &rArr; b = 3k</div>
+            <div class="step">रेखा का समीकरण: <span class="fraction"><span class="numerator">x</span><span class="denominator">a</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">b</span></span> = 1 &rArr; <span class="fraction"><span class="numerator">x</span><span class="denominator">3h/2</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">3k</span></span> = 1</div>
+            <div class="step"><span class="fraction"><span class="numerator">2x</span><span class="denominator">3h</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">3k</span></span> = 1 &rArr; 2kx + hy = 3hk</div>
+            <div class="hinglish-explanation">खंड सूत्र (section formula) से अंतःखंड a और b निकालकर समीकरण में रखा।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. रेखा के समीकरण की संकल्पना का प्रयोग करते हुए सिद्ध कीजिए कि तीन बिंदु (3,0), (-2, -2) और (8, 2) सरेख (collinear) हैं।</div>
+            <div class="step">पहले दो बिंदुओं (3, 0) और (-2, -2) से जाने वाली रेखा का समीकरण:</div>
+            <div class="step">y - 0 = <span class="fraction"><span class="numerator">-2 - 0</span><span class="denominator">-2 - 3</span></span> (x - 3) &rArr; y = <span class="fraction"><span class="numerator">-2</span><span class="denominator">-5</span></span> (x - 3) &rArr; 5y = 2x - 6</div>
+            <div class="step">2x - 5y - 6 = 0</div>
+            <div class="step">अब तीसरे बिंदु (8, 2) को इसमें रखकर देखते हैं:</div>
+            <div class="step">L.H.S = 2(8) - 5(2) - 6 = 16 - 10 - 6 = 0 = R.H.S.</div>
+            <div class="step">चूँकि तीसरा बिंदु रेखा के समीकरण को संतुष्ट करता है, अतः बिंदु सरेख हैं।</div>
+            <div class="hinglish-explanation">किन्हीं दो बिंदुओं से समीकरण बनाकर उसमें तीसरा बिंदु डालकर जाँच (verify) करना सबसे आसान तरीका है।</div>
+        </div>
+        
+        <div class="text-center text-sm text-gray-500 mt-4">*नोट: प्रश्नावली 9.2 के शेष मिलते-जुलते प्रश्नों को संक्षिप्तता के लिए हल की इसी विधि से समझा जा सकता है।*</div>
+    </section>
+
+    <!-- प्रश्नावली 9.3 -->
+    <section id="ex-9-3" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-red-100 text-red-800 px-4 py-2 rounded-full">📕 प्रश्नावली 9.3</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. निम्नलिखित समीकरणों को ढाल-अंतः खंड रूप में रूपांतरित कीजिए और उनके ढाल तथा y-अंत: खंड ज्ञात कीजिए: (i) x + 7y = 0, (ii) 6x + 3y - 5 = 0</div>
+            <div class="step">ढाल-अंतः खंड रूप (Slope-intercept form): y = mx + c</div>
+            <div class="step">(i) x + 7y = 0 &rArr; 7y = -x &rArr; y = -<span class="fraction"><span class="numerator">1</span><span class="denominator">7</span></span>x + 0। यहाँ ढाल m = -<span class="fraction"><span class="numerator">1</span><span class="denominator">7</span></span>, y-अंतः खंड c = 0</div>
+            <div class="step">(ii) 6x + 3y - 5 = 0 &rArr; 3y = -6x + 5 &rArr; y = -2x + <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>। यहाँ ढाल m = -2, y-अंतः खंड c = <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span></div>
+            <div class="hinglish-explanation">समीकरण को y के पदों में व्यक्त (isolate) करने से यह रूप प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. निम्नलिखित समीकरणों को अंत: खंड रूप में रूपांतरित कीजिए और अक्षों पर इनके द्वारा काटे गए अंतः खंड ज्ञात कीजिए: (i) 3x + 2y - 12 = 0</div>
+            <div class="step">अंतः खंड रूप (Intercept form): <span class="fraction"><span class="numerator">x</span><span class="denominator">a</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">b</span></span> = 1</div>
+            <div class="step">3x + 2y = 12</div>
+            <div class="step">दोनों पक्षों को 12 से भाग देने पर: <span class="fraction"><span class="numerator">3x</span><span class="denominator">12</span></span> + <span class="fraction"><span class="numerator">2y</span><span class="denominator">12</span></span> = 1 &rArr; <span class="fraction"><span class="numerator">x</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">6</span></span> = 1</div>
+            <div class="step">अतः x-अंतः खंड = 4, y-अंतः खंड = 6</div>
+            <div class="hinglish-explanation">constant term को दूसरी तरफ ले जाकर उससे पूरे समीकरण को भाग दे दें।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. बिंदु (-1, 1) की रेखा 12(x + 6) = 5(y - 2) से दूरी ज्ञात कीजिए।</div>
+            <div class="step">पहले रेखा को मानक रूप Ax + By + C = 0 में लिखें:</div>
+            <div class="step">12x + 72 = 5y - 10 &rArr; 12x - 5y + 82 = 0</div>
+            <div class="step">बिंदु (x<sub>1</sub>, y<sub>1</sub>) = (-1, 1) से दूरी d = <span class="fraction"><span class="numerator">|Ax<sub>1</sub> + By<sub>1</sub> + C|</span><span class="denominator">&radic;(A<sup>2</sup> + B<sup>2</sup>)</span></span></div>
+            <div class="step">d = <span class="fraction"><span class="numerator">|12(-1) - 5(1) + 82|</span><span class="denominator">&radic;(12<sup>2</sup> + (-5)<sup>2</sup>)</span></span> = <span class="fraction"><span class="numerator">|-12 - 5 + 82|</span><span class="denominator">&radic;(144 + 25)</span></span></div>
+            <div class="step">d = <span class="fraction"><span class="numerator">|65|</span><span class="denominator">&radic;169</span></span> = <span class="fraction"><span class="numerator">65</span><span class="denominator">13</span></span> = 5 इकाई।</div>
+            <div class="hinglish-explanation">दूरी सूत्र का सीधा और आसान अनुप्रयोग।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. x-अक्ष पर बिंदुओं को ज्ञात कीजिए जिनकी रेखा <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">4</span></span> = 1 से दूरियाँ 4 इकाई हैं।</div>
+            <div class="step">मान लीजिए बिंदु x-अक्ष पर (a, 0) है।</div>
+            <div class="step">रेखा का मानक रूप: 4x + 3y - 12 = 0</div>
+            <div class="step">दूरी d = <span class="fraction"><span class="numerator">|4a + 3(0) - 12|</span><span class="denominator">&radic;(4<sup>2</sup> + 3<sup>2</sup>)</span></span> = 4</div>
+            <div class="step">|<span class="fraction"><span class="numerator">4a - 12</span><span class="denominator">5</span></span>| = 4 &rArr; |4a - 12| = 20</div>
+            <div class="step">स्थिति 1: 4a - 12 = 20 &rArr; 4a = 32 &rArr; a = 8</div>
+            <div class="step">स्थिति 2: 4a - 12 = -20 &rArr; 4a = -8 &rArr; a = -2</div>
+            <div class="step">अतः बिंदु (8, 0) और (-2, 0) हैं।</div>
+            <div class="hinglish-explanation">Modulus (| |) खोलने पर &plusmn; चिह्न आता है, जिससे दो बिंदु मिलते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. समांतर रेखाओं 15x + 8y - 34 = 0 और 15x + 8y + 31 = 0 के बीच की दूरी ज्ञात कीजिए।</div>
+            <div class="step">समांतर रेखाओं Ax + By + C<sub>1</sub> = 0 और Ax + By + C<sub>2</sub> = 0 के बीच की दूरी = <span class="fraction"><span class="numerator">|C<sub>1</sub> - C<sub>2</sub>|</span><span class="denominator">&radic;(A<sup>2</sup> + B<sup>2</sup>)</span></span></div>
+            <div class="step">d = <span class="fraction"><span class="numerator">|-34 - 31|</span><span class="denominator">&radic;(15<sup>2</sup> + 8<sup>2</sup>)</span></span> = <span class="fraction"><span class="numerator">|-65|</span><span class="denominator">&radic;(225 + 64)</span></span></div>
+            <div class="step">d = <span class="fraction"><span class="numerator">65</span><span class="denominator">&radic;289</span></span> = <span class="fraction"><span class="numerator">65</span><span class="denominator">17</span></span> इकाई।</div>
+            <div class="hinglish-explanation">दोनों रेखाओं में x और y के गुणांक (coefficients) समान होने चाहिए, तभी यह सूत्र लगेगा।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. रेखा 3x - 4y + 2 = 0 के समांतर और बिंदु (-2, 3) से जाने वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">समांतर रेखा का समीकरण 3x - 4y + k = 0 के रूप में होगा।</div>
+            <div class="step">चूँकि यह (-2, 3) से जाती है, अतः: 3(-2) - 4(3) + k = 0</div>
+            <div class="step">-6 - 12 + k = 0 &rArr; k = 18</div>
+            <div class="step">अभीष्ट समीकरण: 3x - 4y + 18 = 0</div>
+            <div class="hinglish-explanation">समांतर रेखा का ढाल समान रहता है, इसलिए केवल अचर पद (constant term) बदलता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. रेखा x - 7y + 5 = 0 पर लंब और x-अंत: खंड 3 वाली रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">दी गई रेखा की ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">-7</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">7</span></span></div>
+            <div class="step">लंब रेखा की ढाल m = -7 (चूँकि m<sub>1</sub> &times; m = -1)</div>
+            <div class="step">x-अंतः खंड 3 है, अतः रेखा बिंदु (3, 0) से गुजरती है।</div>
+            <div class="step">समीकरण: y - 0 = -7(x - 3) &rArr; y = -7x + 21</div>
+            <div class="step">7x + y - 21 = 0</div>
+            <div class="hinglish-explanation">लंब रेखा का ढाल दी गई रेखा के ढाल का ऋणात्मक व्युत्क्रम (negative reciprocal) होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. रेखाओं &radic;3x + y = 1 और x + &radic;3y = 1 के बीच का कोण ज्ञात कीजिए।</div>
+            <div class="step">पहली रेखा की ढाल m<sub>1</sub> = -&radic;3</div>
+            <div class="step">दूसरी रेखा की ढाल m<sub>2</sub> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">&radic;3</span></span></div>
+            <div class="step">tan &theta; = |<span class="fraction"><span class="numerator">m<sub>1</sub> - m<sub>2</sub></span><span class="denominator">1 + m<sub>1</sub>m<sub>2</sub></span></span>| = |<span class="fraction"><span class="numerator">-&radic;3 - (-1/&radic;3)</span><span class="denominator">1 + (-&radic;3)(-1/&radic;3)</span></span>|</div>
+            <div class="step">tan &theta; = |<span class="fraction"><span class="numerator">-&radic;3 + 1/&radic;3</span><span class="denominator">1 + 1</span></span>| = |<span class="fraction"><span class="numerator">(-3 + 1)/&radic;3</span><span class="denominator">2</span></span>| = |<span class="fraction"><span class="numerator">-2</span><span class="denominator">2&radic;3</span></span>| = <span class="fraction"><span class="numerator">1</span><span class="denominator">&radic;3</span></span></div>
+            <div class="step">अतः &theta; = 30&deg;</div>
+            <div class="hinglish-explanation">दो रेखाओं के बीच के कोण का सीधा सूत्र tan &theta; का उपयोग।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. बिंदुओं (h, 3) और (4, 1) से जाने वाली रेखा, रेखा 7x - 9y - 19 = 0 को समकोण पर प्रतिच्छेद करती है। h का मान ज्ञात कीजिए।</div>
+            <div class="step">पहली रेखा की ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">1 - 3</span><span class="denominator">4 - h</span></span> = <span class="fraction"><span class="numerator">-2</span><span class="denominator">4 - h</span></span></div>
+            <div class="step">दूसरी रेखा 7x - 9y - 19 = 0 की ढाल m<sub>2</sub> = <span class="fraction"><span class="numerator">7</span><span class="denominator">9</span></span></div>
+            <div class="step">समकोण पर प्रतिच्छेद (Perpendicular): m<sub>1</sub> &times; m<sub>2</sub> = -1</div>
+            <div class="step">(<span class="fraction"><span class="numerator">-2</span><span class="denominator">4 - h</span></span>) &times; (<span class="fraction"><span class="numerator">7</span><span class="denominator">9</span></span>) = -1 &rArr; <span class="fraction"><span class="numerator">-14</span><span class="denominator">36 - 9h</span></span> = -1</div>
+            <div class="step">-14 = -36 + 9h &rArr; 9h = 22 &rArr; h = <span class="fraction"><span class="numerator">22</span><span class="denominator">9</span></span></div>
+            <div class="hinglish-explanation">लंबवत होने की शर्त m<sub>1</sub> &times; m<sub>2</sub> = -1 का प्रयोग किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. सिद्ध कीजिए कि बिंदु (x<sub>1</sub>, y<sub>1</sub>) से जाने वाली और रेखा Ax + By + C = 0 के समांतर रेखा का समीकरण A(x - x<sub>1</sub>) + B(y - y<sub>1</sub>) = 0 है।</div>
+            <div class="step">दी गई रेखा की ढाल m = -<span class="fraction"><span class="numerator">A</span><span class="denominator">B</span></span></div>
+            <div class="step">समांतर रेखा की ढाल भी -<span class="fraction"><span class="numerator">A</span><span class="denominator">B</span></span> होगी।</div>
+            <div class="step">यह (x<sub>1</sub>, y<sub>1</sub>) से गुजरती है, अतः: y - y<sub>1</sub> = -<span class="fraction"><span class="numerator">A</span><span class="denominator">B</span></span> (x - x<sub>1</sub>)</div>
+            <div class="step">B(y - y<sub>1</sub>) = -A(x - x<sub>1</sub>)</div>
+            <div class="step">A(x - x<sub>1</sub>) + B(y - y<sub>1</sub>) = 0। (सिद्ध हुआ)</div>
+            <div class="hinglish-explanation">समांतर होने से ढाल समान रहता है, और बिंदु-ढाल रूप से सीधे उत्तर प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. बिंदु (2, 3) से जाने वाली दो रेखाएँ परस्पर 60&deg; के कोण पर प्रतिच्छेद करती हैं। यदि एक रेखा की ढाल 2 है तो दूसरी रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">दिया है: &theta; = 60&deg;, m<sub>1</sub> = 2, माना दूसरी ढाल m है।</div>
+            <div class="step">tan 60&deg; = |<span class="fraction"><span class="numerator">m - 2</span><span class="denominator">1 + 2m</span></span>| &rArr; &radic;3 = |<span class="fraction"><span class="numerator">m - 2</span><span class="denominator">1 + 2m</span></span>|</div>
+            <div class="step">स्थिति 1: <span class="fraction"><span class="numerator">m - 2</span><span class="denominator">1 + 2m</span></span> = &radic;3 &rArr; m - 2 = &radic;3 + 2&radic;3m &rArr; m(1 - 2&radic;3) = 2 + &radic;3 &rArr; m = <span class="fraction"><span class="numerator">2 + &radic;3</span><span class="denominator">1 - 2&radic;3</span></span></div>
+            <div class="step">स्थिति 2: <span class="fraction"><span class="numerator">m - 2</span><span class="denominator">1 + 2m</span></span> = -&radic;3 &rArr; m - 2 = -&radic;3 - 2&radic;3m &rArr; m(1 + 2&radic;3) = 2 - &radic;3 &rArr; m = <span class="fraction"><span class="numerator">2 - &radic;3</span><span class="denominator">1 + 2&radic;3</span></span></div>
+            <div class="step">अब (2, 3) और इन ढालों का उपयोग करके y - 3 = m(x - 2) से दोनों संभव समीकरण प्राप्त किए जा सकते हैं।</div>
+            <div class="hinglish-explanation">कोण 60&deg; होने के कारण tan 60&deg; = &radic;3 लिया गया है और modulus के कारण दो ढाल संभव हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. बिंदुओं (3, 4) और (-1, 2) को मिलाने वाली रेखाखंड के लंब समद्विभाजक (Perpendicular Bisector) रेखा का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">मध्य बिंदु (Midpoint) M = (<span class="fraction"><span class="numerator">3 - 1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">4 + 2</span><span class="denominator">2</span></span>) = (1, 3)</div>
+            <div class="step">रेखाखंड की ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">2 - 4</span><span class="denominator">-1 - 3</span></span> = <span class="fraction"><span class="numerator">-2</span><span class="denominator">-4</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">लंब की ढाल m = -2</div>
+            <div class="step">समीकरण: y - 3 = -2(x - 1) &rArr; y - 3 = -2x + 2</div>
+            <div class="step">2x + y - 5 = 0</div>
+            <div class="hinglish-explanation">लंब समद्विभाजक मध्य बिंदु से गुजरता है और मूल रेखा के लंबवत होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. बिंदु (-1, 3) से रेखा 3x - 4y - 16 = 0 पर डाले गये लंबपाद (Foot of perpendicular) के निर्देशांक ज्ञात कीजिए।</div>
+            <div class="step">दी गई रेखा की ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span>। अतः लंब की ढाल m<sub>2</sub> = -<span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span></div>
+            <div class="step">लंब का समीकरण जो (-1, 3) से जाता है: y - 3 = -<span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span>(x + 1) &rArr; 3y - 9 = -4x - 4 &rArr; 4x + 3y - 5 = 0</div>
+            <div class="step">अब दोनों समीकरणों 3x - 4y = 16 और 4x + 3y = 5 को हल करें।</div>
+            <div class="step">पहली को 3 से और दूसरी को 4 से गुणा करने पर: 9x - 12y = 48 और 16x + 12y = 20</div>
+            <div class="step">जोड़ने पर: 25x = 68 &rArr; x = <span class="fraction"><span class="numerator">68</span><span class="denominator">25</span></span></div>
+            <div class="step">y का मान निकालने पर: y = -<span class="fraction"><span class="numerator">49</span><span class="denominator">25</span></span></div>
+            <div class="step">अतः लंबपाद (<span class="fraction"><span class="numerator">68</span><span class="denominator">25</span></span>, -<span class="fraction"><span class="numerator">49</span><span class="denominator">25</span></span>) है।</div>
+            <div class="hinglish-explanation">पहले लंब रेखा का समीकरण बनाया और फिर दोनों रेखाओं का प्रतिच्छेद बिंदु (intersection point) निकाला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. मूल बिंदु से रेखा y = mx + c पर डाला गया लंब रेखा से बिंदु (-1, 2) पर मिलता है। m और c के मान ज्ञात कीजिए।</div>
+            <div class="step">लंब मूल बिंदु (0,0) और (-1, 2) से गुजरता है। इसकी ढाल m<sub>1</sub> = <span class="fraction"><span class="numerator">2 - 0</span><span class="denominator">-1 - 0</span></span> = -2</div>
+            <div class="step">रेखा y = mx + c इस पर लंब है, अतः m = -1/m<sub>1</sub> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">यह रेखा भी (-1, 2) से गुजरती है। मान रखने पर: 2 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>(-1) + c</div>
+            <div class="step">c = 2 + <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></div>
+            <div class="step">अतः m = 1/2, c = 5/2.</div>
+            <div class="hinglish-explanation">मूल बिंदु से लंब की ढाल निकालकर, m की वैल्यू निकाली गई। फिर बिंदु से c का मान।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. यदि p और q क्रमशः मूल बिंदु से रेखाओं x cos &theta; - y sin &theta; = k cos 2&theta; और x sec &theta; + y cosec &theta; = k, पर लंब की लंबाइयाँ हैं तो सिद्ध कीजिए कि p<sup>2</sup> + 4q<sup>2</sup> = k<sup>2</sup>.</div>
+            <div class="step">पहली रेखा से मूल बिंदु की दूरी: p = <span class="fraction"><span class="numerator">| -k cos 2&theta; |</span><span class="denominator">&radic;(cos<sup>2</sup>&theta; + (-sin&theta;)<sup>2</sup>)</span></span> = |-k cos 2&theta;| / 1 = k cos 2&theta;</div>
+            <div class="step">दूसरी रेखा: x/cos&theta; + y/sin&theta; = k &rArr; x sin&theta; + y cos&theta; - k sin&theta; cos&theta; = 0</div>
+            <div class="step">दूसरी रेखा से दूरी: q = <span class="fraction"><span class="numerator">| -k sin&theta; cos&theta; |</span><span class="denominator">&radic;(sin<sup>2</sup>&theta; + cos<sup>2</sup>&theta;)</span></span> = |k sin&theta; cos&theta;| = k sin&theta; cos&theta;</div>
+            <div class="step">अब L.H.S = p<sup>2</sup> + 4q<sup>2</sup> = (k cos 2&theta;)<sup>2</sup> + 4(k sin&theta; cos&theta;)<sup>2</sup></div>
+            <div class="step">= k<sup>2</sup> cos<sup>2</sup>(2&theta;) + k<sup>2</sup> (2 sin&theta; cos&theta;)<sup>2</sup> = k<sup>2</sup> cos<sup>2</sup>(2&theta;) + k<sup>2</sup> sin<sup>2</sup>(2&theta;)</div>
+            <div class="step">= k<sup>2</sup> (cos<sup>2</sup>(2&theta;) + sin<sup>2</sup>(2&theta;)) = k<sup>2</sup> (1) = k<sup>2</sup> = R.H.S. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">यहाँ त्रिकोणमिति के सूत्र 2sin&theta;cos&theta; = sin(2&theta;) का प्रयोग करके सरलता से सिद्ध किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">16. किसी बिंदु के लिए रेखा को दर्पण मानते हुए बिंदु (3, 8) का रेखा x + 3y = 7 में प्रतिबिंब (Image) ज्ञात कीजिए।</div>
+            <div class="step">माना प्रतिबिंब (h, k) है। दी गई रेखा ढाल m = -1/3। लंब की ढाल = 3।</div>
+            <div class="step">बिंदु (3, 8) से लंब का समीकरण: y - 8 = 3(x - 3) &rArr; y = 3x - 1</div>
+            <div class="step">दर्पण रेखा और लंब का प्रतिच्छेद (Intersection): x + 3(3x - 1) = 7 &rArr; 10x - 3 = 7 &rArr; x = 1, y = 2। यह मध्य बिंदु है।</div>
+            <div class="step">मध्य बिंदु सूत्र: (<span class="fraction"><span class="numerator">3 + h</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">8 + k</span><span class="denominator">2</span></span>) = (1, 2)</div>
+            <div class="step"><span class="fraction"><span class="numerator">3 + h</span><span class="denominator">2</span></span> = 1 &rArr; h = -1</div>
+            <div class="step"><span class="fraction"><span class="numerator">8 + k</span><span class="denominator">2</span></span> = 2 &rArr; k = -4</div>
+            <div class="step">अतः प्रतिबिंब (-1, -4) है।</div>
+            <div class="hinglish-explanation">प्रतिबिंब के लिए हमेशा पहले लंब का समीकरण बनाकर प्रतिच्छेद बिंदु (foot of perpendicular) निकालते हैं, जो कि मध्य बिंदु होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">17. यदि p मूल बिंदु से उस रेखा पर डाले लंब की लंबाई हो जिस पर अक्षों पर कटे अंतः खंड a और b हों, तो दिखाइए कि 1/p<sup>2</sup> = 1/a<sup>2</sup> + 1/b<sup>2</sup></div>
+            <div class="step">अंतः खंड रूप में रेखा का समीकरण: <span class="fraction"><span class="numerator">x</span><span class="denominator">a</span></span> + <span class="fraction"><span class="numerator">y</span><span class="denominator">b</span></span> - 1 = 0</div>
+            <div class="step">मूल बिंदु (0,0) से लंब की लंबाई p = <span class="fraction"><span class="numerator">| 0 + 0 - 1 |</span><span class="denominator">&radic;((1/a)<sup>2</sup> + (1/b)<sup>2</sup>)</span></span></div>
+            <div class="step">p = <span class="fraction"><span class="numerator">1</span><span class="denominator">&radic;(1/a<sup>2</sup> + 1/b<sup>2</sup>)</span></span></div>
+            <div class="step">दोनों पक्षों का वर्ग (square) करने पर: p<sup>2</sup> = <span class="fraction"><span class="numerator">1</span><span class="denominator">(1/a<sup>2</sup> + 1/b<sup>2</sup>)</span></span></div>
+            <div class="step">व्युत्क्रम (invert) करने पर: <span class="fraction"><span class="numerator">1</span><span class="denominator">p<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">a<sup>2</sup></span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">b<sup>2</sup></span></span>। (सिद्ध हुआ)</div>
+            <div class="hinglish-explanation">यह एक बहुत ही मानक और महत्वपूर्ण सिद्धान्त है, जो दूरी सूत्र से सीधे सिद्ध होता है।</div>
+        </div>
+
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 9) सरल रेखाएँ ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

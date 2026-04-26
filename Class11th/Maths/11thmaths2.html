@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 गणित - अध्याय 2: संबंध एवं फलन</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- ग्रेडिएंट टाइटल कार्ड -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 2<br> संबंध एवं फलन</h1>
+            <p class="mt-2 text-lg">कक्षा 11वीं गणित | StudyScript</p>
+        </div>
+
+        <!-- अभ्यास 2.1 अनुभाग -->
+        <section id="exercise-2-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 2.1</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: यदि 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">x</span>
+                            <span class="denominator">3</span>
+                        </span> + 1, y - 
+                        <span class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">3</span>
+                        </span> = 
+                        <span class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </span>, 
+                        <span class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">3</span>
+                        </span>
+                    </span>, तो x और y के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">चूँकि क्रमित युग्म बराबर हैं, अतः संगत अवयव बराबर होंगे।</p>
+                        <p class="mb-2">अतः, 
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">तथा 
+                            <span class="inline-math">
+                                y - 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> + 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span> को हल करने पर:
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">x</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span> - 1 = 
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">3</span>
+                                </span> - 
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span>
+                            </span>
+                        </p>
+                        <p class="mb-2">अतः, x = 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                y - 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span> को हल करने पर:
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                y = 
+                                <span class="fraction">
+                                    <span class="numerator">1</span>
+                                    <span class="denominator">3</span>
+                                </span> + 
+                                <span class="fraction">
+                                    <span class="numerator">2</span>
+                                    <span class="denominator">3</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">3</span>
+                                    <span class="denominator">3</span>
+                                </span> = 1
+                            </span>
+                        </p>
+                        <p><strong>उत्तर:</strong> x = 2, y = 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> क्रमित युग्म बराबर हैं, इसलिए संगत अवयव बराबर होंगे। पहला समीकरण: x/3 + 1 = 5/3 हल करने पर, x/3 = 2/3 मिलता है, अतः x = 2। दूसरा समीकरण: y - 2/3 = 1/3 हल करने पर, y = 1 मिलता है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: यदि समुच्चय A में 3 अवयव हैं और समुच्चय B = {3, 4, 5} है, तो (A × B) में अवयवों की संख्या ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">दिया गया है: n(A) = 3, n(B) = 3</p>
+                        <p class="mb-2">A × B में अवयवों की संख्या = n(A) × n(B) = 3 × 3 = 9</p>
+                        <p><strong>उत्तर:</strong> 9</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> कार्तीय गुणन A × B के अवयवों की संख्या n(A) × n(B) के बराबर होती है। यहाँ n(A) = 3 और n(B) = 3, इसलिए A × B में 9 अवयव होंगे।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: यदि G = {7, 8} और H = {5, 4, 2}, तो G × H और H × G ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">G × H = {(g, h) : g ∈ G, h ∈ H}</p>
+                        <p class="mb-2">G × H = {(7, 5), (7, 4), (7, 2), (8, 5), (8, 4), (8, 2)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">H × G = {(h, g) : h ∈ H, g ∈ G}</p>
+                        <p class="mb-2">H × G = {(5, 7), (5, 8), (4, 7), (4, 8), (2, 7), (2, 8)}</p>
+                        <p><strong>उत्तर:</strong> G × H = {(7,5), (7,4), (7,2), (8,5), (8,4), (8,2)}; H × G = {(5,7), (5,8), (4,7), (4,8), (2,7), (2,8)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> G × H के लिए G के प्रत्येक अवयव को H के प्रत्येक अवयव के साथ युग्म बनाते हैं। इसी प्रकार, H × G के लिए H के प्रत्येक अवयव को G के प्रत्येक अवयव के साथ युग्म बनाते हैं।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: बताइए कि निम्नलिखित कथनों में से प्रत्येक सत्य है या असत्य। यदि कथन असत्य है, तो दिए गए कथन को सही रूप में लिखिए।<br>
+                (i) यदि P = {m, n} और Q = {n, m}, तो P × Q = {(m, n), (n, m)}।<br>
+                (ii) यदि A और B अरिक्त समुच्चय हैं, तो A × B क्रमित युग्मों (x, y) का एक अरिक्त समुच्चय है जहाँ x ∈ A और y ∈ B।<br>
+                (iii) यदि A = {1, 2}, B = {3, 4}, तो A × (B ∩ ∅) = ∅.</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) असत्य। सही कथन: यदि P = {m, n} और Q = {n, m}, तो P × Q = {(m, n), (m, m), (n, n), (n, m)}</p>
+                        <p class="mb-2">(ii) सत्य</p>
+                        <p class="mb-2">(iii) सत्य। चूँकि B ∩ ∅ = ∅, और A × ∅ = ∅</p>
+                        <p><strong>उत्तर:</strong> (i) असत्य, (ii) सत्य, (iii) सत्य</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> (i) गलत है क्योंकि P × Q में P के प्रत्येक अवयव को Q के प्रत्येक अवयव के साथ युग्म करना है, सिर्फ दो युग्म नहीं। (ii) सही है। (iii) सही है क्योंकि B ∩ ∅ = ∅, और A × ∅ = ∅ होता है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: यदि A = {-1, 1}, तो A × A × A ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × A × A = {(a, b, c) : a, b, c ∈ A}</p>
+                        <p class="mb-2">A × A × A = {(-1, -1, -1), (-1, -1, 1), (-1, 1, -1), (-1, 1, 1), (1, -1, -1), (1, -1, 1), (1, 1, -1), (1, 1, 1)}</p>
+                        <p><strong>उत्तर:</strong> A × A × A = {(-1,-1,-1), (-1,-1,1), (-1,1,-1), (-1,1,1), (1,-1,-1), (1,-1,1), (1,1,-1), (1,1,1)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> A × A × A में A के सभी संभावित क्रमित त्रिक (ordered triplets) होंगे। A में दो अवयव हैं (-1 और 1), इसलिए कुल 2 × 2 × 2 = 8 क्रमित त्रिक होंगे।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: यदि A × B = {(a, x), (a, y), (b, x), (b, y)} है, तो A और B ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A = प्रथम अवयवों का समुच्चय = {a, b}</p>
+                        <p class="mb-2">B = द्वितीय अवयवों का समुच्चय = {x, y}</p>
+                        <p><strong>उत्तर:</strong> A = {a, b}, B = {x, y}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> A × B के क्रमित युग्मों के प्रथम अवयवों से समुच्चय A प्राप्त होता है, तथा द्वितीय अवयवों से समुच्चय B प्राप्त होता है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: मान लीजिए A = {1, 2}, B = {1, 2, 3, 4}, C = {5, 6} और D = {5, 6, 7, 8}। सत्यापित कीजिए कि:<br>
+                (i) A × (B ∩ C) = (A × B) ∩ (A × C)<br>
+                (ii) A × C, B × D का एक उपसमुच्चय है।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) सर्वप्रथम, B ∩ C = {1, 2, 3, 4} ∩ {5, 6} = ∅</p>
+                        <p class="mb-2">अतः, A × (B ∩ C) = A × ∅ = ∅</p>
+                        <p class="mb-2">अब, A × B = {(1,1), (1,2), (1,3), (1,4), (2,1), (2,2), (2,3), (2,4)}</p>
+                        <p class="mb-2">A × C = {(1,5), (1,6), (2,5), (2,6)}</p>
+                        <p class="mb-2">(A × B) ∩ (A × C) = ∅</p>
+                        <p class="mb-2">इस प्रकार, A × (B ∩ C) = (A × B) ∩ (A × C) = ∅</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) A × C = {(1,5), (1,6), (2,5), (2,6)}</p>
+                        <p class="mb-2">B × D = {(1,5), (1,6), (1,7), (1,8), (2,5), (2,6), (2,7), (2,8), (3,5), (3,6), (3,7), (3,8), (4,5), (4,6), (4,7), (4,8)}</p>
+                        <p class="mb-2">स्पष्टतः, A × C का प्रत्येक अवयव B × D में भी स्थित है।</p>
+                        <p class="mb-2">अतः, A × C ⊆ B × D</p>
+                        <p><strong>उत्तर:</strong> (i) सत्यापित, (ii) सत्यापित</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> (i) B ∩ C = ∅, इसलिए A × (B ∩ C) = ∅। (A × B) ∩ (A × C) भी ∅ है क्योंकि दोनों समुच्चयों में कोई उभयनिष्ठ अवयव नहीं है। (ii) A × C के सभी अवयव B × D में हैं, अतः A × C, B × D का उपसमुच्चय है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: मान लीजिए A = {1, 2} और B = {3, 4}। A × B लिखिए। A × B के कितने उपसमुच्चय होंगे? उनकी सूची बनाइए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × B = {(1,3), (1,4), (2,3), (2,4)}</p>
+                        <p class="mb-2">A × B में अवयवों की संख्या = 4</p>
+                        <p class="mb-2">n अवयवों वाले समुच्चय के उपसमुच्चयों की संख्या = 2<sup>n</sup></p>
+                        <p class="mb-2">अतः, A × B के उपसमुच्चयों की संख्या = 2<sup>4</sup> = 16</p>
+                        <p class="mb-2">A × B के उपसमुच्चय हैं: ∅, {(1,3)}, {(1,4)}, {(2,3)}, {(2,4)}, {(1,3), (1,4)}, {(1,3), (2,3)}, {(1,3), (2,4)}, {(1,4), (2,3)}, {(1,4), (2,4)}, {(2,3), (2,4)}, {(1,3), (1,4), (2,3)}, {(1,3), (1,4), (2,4)}, {(1,3), (2,3), (2,4)}, {(1,4), (2,3), (2,4)}, {(1,3), (1,4), (2,3), (2,4)}</p>
+                        <p><strong>उत्तर:</strong> A × B = {(1,3), (1,4), (2,3), (2,4)}; 16 उपसमुच्चय</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> A × B में 4 अवयव हैं। किसी समुच्चय के उपसमुच्चयों की संख्या 2<sup>n</sup> होती है, जहाँ n अवयवों की संख्या है। अतः A × B के 16 उपसमुच्चय होंगे, जिनमें रिक्त समुच्चय और स्वयं समुच्चय शामिल हैं।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: मान लीजिए A और B दो समुच्चय हैं जहाँ n(A) = 3 और n(B) = 2। यदि (x, 1), (y, 2), (z, 1) , A × B में हैं, तो A और B ज्ञात कीजिए, जहाँ x, y और z भिन्न अवयव हैं।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">दिए गए क्रमित युग्मों से:</p>
+                        <p class="mb-2">प्रथम अवयव: x, y, z ⇒ A = {x, y, z}</p>
+                        <p class="mb-2">द्वितीय अवयव: 1, 2 ⇒ B = {1, 2}</p>
+                        <p class="mb-2">साथ ही, n(A) = 3 और n(B) = 2, जो हमारे निष्कर्षों से मेल खाता है।</p>
+                        <p><strong>उत्तर:</strong> A = {x, y, z}, B = {1, 2}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> क्रमित युग्मों के प्रथम अवयवों से समुच्चय A प्राप्त होता है: {x, y, z}। द्वितीय अवयवों से समुच्चय B प्राप्त होता है: {1, 2}। यह दी गई शर्तों n(A)=3 और n(B)=2 को संतुष्ट करता है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: कार्तीय गुणन A × A में 9 अवयव हैं जिनमें (-1, 0) और (0,1) भी उपस्थित हैं। समुच्चय A और A × A के शेष अवयव ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">चूँकि A × A में 9 अवयव हैं, n(A) × n(A) = 9 ⇒ n(A) = 3</p>
+                        <p class="mb-2">(-1, 0) और (0,1) से, हमें अवयव -1, 0, 1 ∈ A प्राप्त होते हैं।</p>
+                        <p class="mb-2">अतः, A = {-1, 0, 1}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × A = {(-1,-1), (-1,0), (-1,1), (0,-1), (0,0), (0,1), (1,-1), (1,0), (1,1)}</p>
+                        <p class="mb-2">दिए गए अवयव: (-1,0) और (0,1)</p>
+                        <p class="mb-2">शेष अवयव: (-1,-1), (-1,1), (0,-1), (0,0), (1,-1), (1,0), (1,1)</p>
+                        <p><strong>उत्तर:</strong> A = {-1, 0, 1}; शेष अवयव: (-1,-1), (-1,1), (0,-1), (0,0), (1,-1), (1,0), (1,1)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> A × A के 9 अवयव हैं, इसलिए n(A) = 3। दिए गए युग्मों (-1,0) और (0,1) से पता चलता है कि -1, 0, 1 समुच्चय A के अवयव हैं। अतः A = {-1, 0, 1}। A × A के शेष अवयव निकालने के लिए A के प्रत्येक अवयव को A के प्रत्येक अवयव के साथ युग्म करते हैं।
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- अभ्यास 2.2 अनुभाग -->
+        <section id="exercise-2-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 2.2</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: मान लीजिए A = {1, 2, 3, ..., 14} है। A से A पर एक संबंध R, R = {(x, y) : 3x - y = 0, जहाँ x, y ∈ A} द्वारा परिभाषित कीजिए। इसका प्रांत, सहप्रांत और परिसर लिखिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(x, y) : 3x - y = 0, जहाँ x, y ∈ A}</p>
+                        <p class="mb-2">3x - y = 0 ⇒ y = 3x</p>
+                        <p class="mb-2">चूँकि x, y ∈ A = {1, 2, 3, ..., 14}</p>
+                        <p class="mb-2">संभावित मान: x = 1 ⇒ y = 3; x = 2 ⇒ y = 6; x = 3 ⇒ y = 9; x = 4 ⇒ y = 12</p>
+                        <p class="mb-2">x = 5 के लिए, y = 15 ∉ A</p>
+                        <p class="mb-2">अतः, R = {(1,3), (2,6), (3,9), (4,12)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">R का प्रांत = प्रथम अवयवों का समुच्चय = {1, 2, 3, 4}</p>
+                        <p class="mb-2">R का सहप्रांत = A = {1, 2, 3, ..., 14}</p>
+                        <p class="mb-2">R का परिसर = द्वितीय अवयवों का समुच्चय = {3, 6, 9, 12}</p>
+                        <p><strong>उत्तर:</strong> प्रांत = {1,2,3,4}, सहप्रांत = {1,2,3,...,14}, परिसर = {3,6,9,12}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> संबंध R = {(x,y): y=3x} है। A = {1,2,3,...,14} में x के मान 1,2,3,4 के लिए y के मान 3,6,9,12 हैं जो A में हैं। प्रांत प्रथम अवयवों का समुच्चय: {1,2,3,4}। सहप्रांत समुच्चय A है। परिसर द्वितीय अवयवों का समुच्चय: {3,6,9,12}।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: प्राकृत संख्याओं के समुच्चय N पर एक संबंध R, R = {(x, y) : y = x + 5, x एक प्राकृत संख्या है जो 4 से छोटी है; x, y ∈ N} द्वारा परिभाषित कीजिए। इस संबंध को रोस्टर रूप में लिखिए। प्रांत और परिसर भी लिखिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">x एक प्राकृत संख्या है जो 4 से छोटी है ⇒ x = 1, 2, 3</p>
+                        <p class="mb-2">x = 1 के लिए, y = 1 + 5 = 6</p>
+                        <p class="mb-2">x = 2 के लिए, y = 2 + 5 = 7</p>
+                        <p class="mb-2">x = 3 के लिए, y = 3 + 5 = 8</p>
+                        <p class="mb-2">अतः, R = {(1,6), (2,7), (3,8)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">R का प्रांत = {1, 2, 3}</p>
+                        <p class="mb-2">R का परिसर = {6, 7, 8}</p>
+                        <p><strong>उत्तर:</strong> R = {(1,6), (2,7), (3,8)}; प्रांत = {1,2,3}; परिसर = {6,7,8}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> x प्राकृत संख्याएँ 1,2,3 हैं। इनके संगत y = x+5 से 6,7,8 प्राप्त होते हैं। अतः R = {(1,6), (2,7), (3,8)}। प्रांत प्रथम अवयवों का समुच्चय: {1,2,3}। परिसर द्वितीय अवयवों का समुच्चय: {6,7,8}।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: A = {1, 2, 3, 5} और B = {4, 6, 9}। A से B में एक संबंध R, R = {(x, y) : x और y का अंतर विषम है; x ∈ A, y ∈ B} द्वारा परिभाषित कीजिए। R को रोस्टर रूप में लिखिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हमें ऐसे युग्म (x,y) चाहिए जहाँ |x - y| विषम हो</p>
+                        <p class="mb-2">x = 1 के लिए: y = 4 ⇒ |1-4| = 3 (विषम), y = 6 ⇒ |1-6| = 5 (विषम), y = 9 ⇒ |1-9| = 8 (सम) ⇒ (1,4), (1,6)</p>
+                        <p class="mb-2">x = 2 के लिए: y = 4 ⇒ |2-4| = 2 (सम), y = 6 ⇒ |2-6| = 4 (सम), y = 9 ⇒ |2-9| = 7 (विषम) ⇒ (2,9)</p>
+                        <p class="mb-2">x = 3 के लिए: y = 4 ⇒ |3-4| = 1 (विषम), y = 6 ⇒ |3-6| = 3 (विषम), y = 9 ⇒ |3-9| = 6 (सम) ⇒ (3,4), (3,6)</p>
+                        <p class="mb-2">x = 5 के लिए: y = 4 ⇒ |5-4| = 1 (विषम), y = 6 ⇒ |5-6| = 1 (विषम), y = 9 ⇒ |5-9| = 4 (सम) ⇒ (5,4), (5,6)</p>
+                        <p class="mb-2">अतः, R = {(1,4), (1,6), (2,9), (3,4), (3,6), (5,4), (5,6)}</p>
+                        <p><strong>उत्तर:</strong> R = {(1,4), (1,6), (2,9), (3,4), (3,6), (5,4), (5,6)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> हमें ऐसे युग्म चाहिए जहाँ x और y का अंतर विषम हो। A के प्रत्येक अवयव के लिए B के प्रत्येक अवयव के साथ अंतर जाँचते हैं, और जो विषम होता है उसे R में शामिल करते हैं।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: आकृति 2.7 समुच्चय P और Q के बीच संबंध दर्शाती है। इस संबंध को (i) समुच्चय निर्माण रूप में (ii) रोस्टर रूप में लिखिए। इसके प्रांत और परिसर क्या हैं?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">आकृति से (पाठ्यपुस्तक में वर्णित):</p>
+                        <p class="mb-2">P = {5, 6, 7}, Q = {3, 4, 5}</p>
+                        <p class="mb-2">संबंध यह है: x, y से 2 अधिक है, अर्थात y, x से 2 कम है।</p>
+                        <p class="mb-2">(i) समुच्चय निर्माण रूप: R = {(x, y) : x = y + 2, x ∈ P, y ∈ Q}</p>
+                        <p class="mb-2">(ii) रोस्टर रूप: y = 3 के लिए, x = 5; y = 4 के लिए, x = 6; y = 5 के लिए, x = 7</p>
+                        <p class="mb-2">अतः, R = {(5,3), (6,4), (7,5)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">R का प्रांत = {5, 6, 7}</p>
+                        <p class="mb-2">R का परिसर = {3, 4, 5}</p>
+                        <p><strong>उत्तर:</strong> (i) R = {(x,y): x=y+2, x∈P, y∈Q}; (ii) R = {(5,3), (6,4), (7,5)}; प्रांत = {5,6,7}; परिसर = {3,4,5}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> आकृति से पता चलता है कि x, y से 2 अधिक है। समुच्चय निर्माण रूप: R = {(x,y): x=y+2}। रोस्टर रूप: y=3 के लिए x=5, y=4 के लिए x=6, y=5 के लिए x=7। प्रांत प्रथम अवयवों का समुच्चय: {5,6,7}। परिसर द्वितीय अवयवों का समुच्चय: {3,4,5}।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: मान लीजिए A = {1, 2, 3, 4, 6}। मान लीजिए A पर R संबंध, R = {(a, b) : a, b ∈ A, b, a से पूर्णतः विभाजित होता है} द्वारा परिभाषित है।<br>
+                (i) R को रोस्टर रूप में लिखिए<br>
+                (ii) R का प्रांत ज्ञात कीजिए<br>
+                (iii) R का परिसर ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) R = {(a,b): a,b ∈ A, b, a से पूर्णतः विभाजित होता है}</p>
+                        <p class="mb-2">संभावित युग्म:</p>
+                        <p class="mb-2">a = 1 के लिए: b = 1,2,3,4,6 (सभी 1 से विभाजित) ⇒ (1,1), (1,2), (1,3), (1,4), (1,6)</p>
+                        <p class="mb-2">a = 2 के लिए: b = 2,4,6 (2 से विभाजित) ⇒ (2,2), (2,4), (2,6)</p>
+                        <p class="mb-2">a = 3 के लिए: b = 3,6 (3 से विभाजित) ⇒ (3,3), (3,6)</p>
+                        <p class="mb-2">a = 4 के लिए: b = 4 (4 से विभाजित) ⇒ (4,4)</p>
+                        <p class="mb-2">a = 6 के लिए: b = 6 (6 से विभाजित) ⇒ (6,6)</p>
+                        <p class="mb-2">अतः, R = {(1,1), (1,2), (1,3), (1,4), (1,6), (2,2), (2,4), (2,6), (3,3), (3,6), (4,4), (6,6)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) R का प्रांत = प्रथम अवयवों का समुच्चय = {1, 2, 3, 4, 6}</p>
+                        <p class="mb-2">(iii) R का परिसर = द्वितीय अवयवों का समुच्चय = {1, 2, 3, 4, 6}</p>
+                        <p><strong>उत्तर:</strong> (i) R = {(1,1), (1,2), (1,3), (1,4), (1,6), (2,2), (2,4), (2,6), (3,3), (3,6), (4,4), (6,6)}; (ii) प्रांत = {1,2,3,4,6}; (iii) परिसर = {1,2,3,4,6}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> (i) रोस्टर रूप के लिए A के प्रत्येक अवयव a के लिए A के उन अवयवों b को ढूँढते हैं जो a से विभाजित हों। (ii) प्रांत प्रथम अवयवों का समुच्चय है। (iii) परिसर द्वितीय अवयवों का समुच्चय है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: संबंध R, R = {(x, x + 5) : x ∈ {0, 1, 2, 3, 4, 5}} द्वारा परिभाषित है। R का प्रांत और परिसर ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(x, x + 5) : x ∈ {0, 1, 2, 3, 4, 5}}</p>
+                        <p class="mb-2">x = 0 के लिए, (0,5); x = 1, (1,6); x = 2, (2,7); x = 3, (3,8); x = 4, (4,9); x = 5, (5,10)</p>
+                        <p class="mb-2">अतः, R = {(0,5), (1,6), (2,7), (3,8), (4,9), (5,10)}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">R का प्रांत = प्रथम अवयवों का समुच्चय = {0, 1, 2, 3, 4, 5}</p>
+                        <p class="mb-2">R का परिसर = द्वितीय अवयवों का समुच्चय = {5, 6, 7, 8, 9, 10}</p>
+                        <p><strong>उत्तर:</strong> प्रांत = {0,1,2,3,4,5}; परिसर = {5,6,7,8,9,10}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> R के युग्म (x, x+5) हैं, जहाँ x ∈ {0,1,2,3,4,5}। अतः R = {(0,5), (1,6), (2,7), (3,8), (4,9), (5,10)}। प्रांत प्रथम अवयवों का समुच्चय: {0,1,2,3,4,5}। परिसर द्वितीय अवयवों का समुच्चय: {5,6,7,8,9,10}।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: संबंध R = {(x, x³) : x एक अभाज्य संख्या है जो 10 से कम है} को रोस्टर रूप में लिखिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">10 से कम अभाज्य संख्याएँ: 2, 3, 5, 7</p>
+                        <p class="mb-2">x = 2 के लिए, x³ = 8 ⇒ (2,8)</p>
+                        <p class="mb-2">x = 3 के लिए, x³ = 27 ⇒ (3,27)</p>
+                        <p class="mb-2">x = 5 के लिए, x³ = 125 ⇒ (5,125)</p>
+                        <p class="mb-2">x = 7 के लिए, x³ = 343 ⇒ (7,343)</p>
+                        <p class="mb-2">अतः, R = {(2,8), (3,27), (5,125), (7,343)}</p>
+                        <p><strong>उत्तर:</strong> R = {(2,8), (3,27), (5,125), (7,343)}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 10 से छोटी अभाज्य संख्याएँ: 2,3,5,7। इनके घन: 8,27,125,343। अतः R = {(2,8), (3,27), (5,125), (7,343)}।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: मान लीजिए A = {x, y, z} और B = {1, 2} है। A से B में संबंधों की संख्या ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">A × B = {(x,1), (x,2), (y,1), (y,2), (z,1), (z,2)}</p>
+                        <p class="mb-2">n(A × B) = 3 × 2 = 6</p>
+                        <p class="mb-2">A से B में संबंधों की संख्या = A × B के उपसमुच्चयों की संख्या = 2<sup>6</sup> = 64</p>
+                        <p><strong>उत्तर:</strong> 64</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> A × B में 6 अवयव हैं। A से B के संबंध, A × B के उपसमुच्चय होते हैं। उपसमुच्चयों की संख्या 2<sup>n</sup> होती है, जहाँ n अवयवों की संख्या है। अतः संबंधों की संख्या = 2<sup>6</sup> = 64।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: मान लीजिए Z पर R संबंध, R = {(a, b) : a, b ∈ Z, a - b एक पूर्णांक है} द्वारा परिभाषित है। R का प्रांत और परिसर ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">R = {(a, b): a, b ∈ Z, a - b एक पूर्णांक है}</p>
+                        <p class="mb-2">चूँकि a और b पूर्णांक हैं, a - b सदैव एक पूर्णांक होता है।</p>
+                        <p class="mb-2">अतः, R में सभी संभावित युग्म (a,b) सम्मिलित हैं, जहाँ a,b ∈ Z</p>
+                        <p class="mb-2">इसका अर्थ है R = Z × Z</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">R का प्रांत = सभी प्रथम अवयवों का समुच्चय = Z</p>
+                        <p class="mb-2">R का परिसर = सभी द्वितीय अवयवों का समुच्चय = Z</p>
+                        <p><strong>उत्तर:</strong> प्रांत = Z, परिसर = Z</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> a और b पूर्णांक हैं, तो a-b हमेशा पूर्णांक होगा। इसलिए R में Z के सभी संभावित युग्म हैं, अर्थात R = Z × Z। प्रांत और परिसर दोनों Z हैं।
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- अभ्यास 2.3 अनुभाग -->
+        <section id="exercise-2-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 2.3</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित में कौन से संबंध फलन हैं? कारण दीजिए। यदि यह फलन है, तो इसका प्रांत और परिसर ज्ञात कीजिए।<br>
+                (i) {(2,1), (5,1), (8,1), (11,1), (14,1), (17,1)}<br>
+                (ii) {(2,1), (4,2), (6,3), (8,4), (10,5), (12,6), (14,7)}<br>
+                (iii) {(1,3), (1,5), (2,5)}</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक संबंध फलन होता है यदि प्रांत का प्रत्येक अवयव अद्वितीय प्रतिबिंब रखता है।</p>
+                        <p class="mb-2">(i) प्रांत = {2,5,8,11,14,17}, परिसर = {1}</p>
+                        <p class="mb-2">प्रांत का प्रत्येक अवयव अद्वितीय प्रतिबिंब 1 रखता है। अतः यह एक फलन है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) प्रांत = {2,4,6,8,10,12,14}, परिसर = {1,2,3,4,5,6,7}</p>
+                        <p class="mb-2">प्रांत का प्रत्येक अवयव अद्वितीय प्रतिबिंब रखता है। अतः यह एक फलन है।</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) प्रांत = {1,2}</p>
+                        <p class="mb-2">अवयव 1 के दो प्रतिबिंब हैं: 3 और 5। अतः यह फलन नहीं है।</p>
+                        <p><strong>उत्तर:</strong> (i) फलन, प्रांत = {2,5,8,11,14,17}, परिसर = {1}; (ii) फलन, प्रांत = {2,4,6,8,10,12,14}, परिसर = {1,2,3,4,5,6,7}; (iii) फलन नहीं है।</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> फलन के लिए प्रांत के प्रत्येक अवयव का ठीक एक प्रतिबिंब होना चाहिए। (i) और (ii) में प्रत्येक प्रांत अवयव का ठीक एक प्रतिबिंब है, अतः फलन हैं। (iii) में अवयव 1 के दो प्रतिबिंब (3 और 5) हैं, अतः फलन नहीं है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित वास्तविक फलनों के प्रांत और परिसर ज्ञात कीजिए:<br>
+                (i) f(x) = -|x|<br>
+                (ii) f(x) = √(9 - x²)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) f(x) = -|x|</p>
+                        <p class="mb-2">प्रांत: x कोई भी वास्तविक संख्या हो सकता है, अतः प्रांत = R</p>
+                        <p class="mb-2">परिसर: |x| ≥ 0, इसलिए -|x| ≤ 0, अतः परिसर = (-∞, 0] या {y: y ≤ 0}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) f(x) = √(9 - x²)</p>
+                        <p class="mb-2">प्रांत: 9 - x² ≥ 0 ⇒ x² ≤ 9 ⇒ -3 ≤ x ≤ 3, अतः प्रांत = [-3, 3]</p>
+                        <p class="mb-2">परिसर: x ∈ [-3, 3] के लिए, 9 - x² ∈ [0, 9], इसलिए √(9 - x²) ∈ [0, 3], अतः परिसर = [0, 3]</p>
+                        <p><strong>उत्तर:</strong> (i) प्रांत = R, परिसर = (-∞,0]; (ii) प्रांत = [-3,3], परिसर = [0,3]</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> (i) f(x) = -|x| के लिए x कोई भी वास्तविक संख्या हो सकती है (प्रांत = R), लेकिन निर्गत हमेशा 0 या ऋणात्मक होता है (परिसर = (-∞,0])। (ii) f(x) = √(9-x²) के लिए वर्गमूल के अंदर का व्यंजक ऋणात्मक नहीं होना चाहिए: 9-x²≥0 ⇒ -3≤x≤3 (प्रांत)। निर्गत 0 से 3 तक होगा (परिसर)।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक फलन f, f(x) = 2x - 5 द्वारा परिभाषित है। निम्नलिखित के मान लिखिए:<br>
+                (i) f(0)<br>
+                (ii) f(7)<br>
+                (iii) f(-3)</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">f(x) = 2x - 5</p>
+                        <p class="mb-2">(i) f(0) = 2(0) - 5 = -5</p>
+                        <p class="mb-2">(ii) f(7) = 2(7) - 5 = 14 - 5 = 9</p>
+                        <p class="mb-2">(iii) f(-3) = 2(-3) - 5 = -6 - 5 = -11</p>
+                        <p><strong>उत्तर:</strong> (i) -5, (ii) 9, (iii) -11</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> f(x) = 2x - 5 है। इसमें x के मान प्रतिस्थापित करके f(0), f(7), f(-3) निकालते हैं।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: फलन 't' जो डिग्री सेल्सियस में तापमान को डिग्री फारेनहाइट में परिवर्तित करता है, t(C) = 
+                    <span class="inline-math">
+                        <span class="fraction">
+                            <span class="numerator">9C</span>
+                            <span class="denominator">5</span>
+                        </span> + 32
+                    </span> द्वारा परिभाषित है।<br>
+                ज्ञात कीजिए: (i) t(0) (ii) t(28) (iii) t(-10) (iv) C का मान जब t(C) = 212</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                t(C) = 
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (i) t(0) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×0</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 0 + 32 = 32
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (ii) t(28) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×28</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 
+                                <span class="fraction">
+                                    <span class="numerator">252</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 50.4 + 32 = 82.4
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                (iii) t(-10) = 
+                                <span class="fraction">
+                                    <span class="numerator">9×(-10)</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 
+                                <span class="fraction">
+                                    <span class="numerator">-90</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = -18 + 32 = 14
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iv) t(C) = 212</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> + 32 = 212
+                            </span>
+                        </p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                <span class="fraction">
+                                    <span class="numerator">9C</span>
+                                    <span class="denominator">5</span>
+                                </span> = 212 - 32 = 180
+                            </span>
+                        </p>
+                        <p class="mb-2">9C = 180 × 5 = 900</p>
+                        <p class="mb-2">C = 900 ÷ 9 = 100</p>
+                        <p><strong>उत्तर:</strong> (i) 32, (ii) 82.4, (iii) 14, (iv) 100</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> t(C) = (9C/5) + 32 सूत्र का उपयोग करते हैं। (i), (ii), (iii) में C के मान प्रतिस्थापित करते हैं। (iv) में t(C)=212 रखकर C निकालते हैं।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: निम्नलिखित फलनों में से प्रत्येक का परिसर ज्ञात कीजिए:<br>
+                (i) f(x) = 2 - 3x, x ∈ R, x > 0<br>
+                (ii) f(x) = x² + 2, x एक वास्तविक संख्या है<br>
+                (iii) f(x) = x, x एक वास्तविक संख्या है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) f(x) = 2 - 3x, x > 0</p>
+                        <p class="mb-2">चूँकि x > 0, 3x > 0, इसलिए 2 - 3x < 2</p>
+                        <p class="mb-2">साथ ही, x → ∞ के रूप में, f(x) → -∞</p>
+                        <p class="mb-2">अतः परिसर = (-∞, 2)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) f(x) = x² + 2</p>
+                        <p class="mb-2">सभी वास्तविक x के लिए x² ≥ 0, इसलिए x² + 2 ≥ 2</p>
+                        <p class="mb-2">अतः परिसर = [2, ∞)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(iii) f(x) = x</p>
+                        <p class="mb-2">यह तत्समक फलन है</p>
+                        <p class="mb-2">चूँकि x सभी वास्तविक मान ग्रहण करता है, f(x) भी सभी वास्तविक मान ग्रहण करता है</p>
+                        <p class="mb-2">अतः परिसर = R</p>
+                        <p><strong>उत्तर:</strong> (i) (-∞,2), (ii) [2,∞), (iii) R</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> (i) x>0 है, तो 2-3x<2 और x→∞ पर f(x)→-∞, इसलिए परिसर (-∞,2)। (ii) x²≥0, तो x²+2≥2, इसलिए परिसर [2,∞)। (iii) f(x)=x तत्समक फलन है, इसलिए परिसर R।
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // राइट-क्लिक और कॉपी-पेस्ट निष्क्रिय करें
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

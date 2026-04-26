@@ -1,0 +1,439 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 13: सांख्यिकी | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 13<br>सांख्यिकी (Statistics)</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 13.1 -->
+    <section id="ex-13-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 13.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+        
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 और 2 में दिए गए आँकड़ों के लिए माध्य के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. आँकड़े: 4, 7, 8, 9, 10, 12, 13, 17</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub></span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">4 + 7 + 8 + 9 + 10 + 12 + 13 + 17</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">80</span><span class="denominator">8</span></span> = 10</div>
+            <div class="step">विचलनों का निरपेक्ष मान |x<sub>i</sub> - x̄|: |4-10|, |7-10|, |8-10|, |9-10|, |10-10|, |12-10|, |13-10|, |17-10|</div>
+            <div class="step">अर्थात्: 6, 3, 2, 1, 0, 2, 3, 7</div>
+            <div class="step">माध्य विचलन M.D.(x̄) = <span class="fraction"><span class="numerator">&Sigma;|x<sub>i</sub> - x̄|</span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">6 + 3 + 2 + 1 + 0 + 2 + 3 + 7</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">24</span><span class="denominator">8</span></span> = 3</div>
+            <div class="hinglish-explanation">पहले माध्य (Mean) निकाला गया, फिर प्रत्येक पद से माध्य के अंतर का धनात्मक मान (Absolute difference) लेकर उनका औसत निकाला गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. आँकड़े: 38, 70, 48, 40, 42, 55, 63, 46, 54, 44</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">500</span><span class="denominator">10</span></span> = 50</div>
+            <div class="step">|x<sub>i</sub> - 50| के मान: 12, 20, 2, 10, 8, 5, 13, 4, 4, 6</div>
+            <div class="step">&Sigma;|x<sub>i</sub> - x̄| = 12 + 20 + 2 + 10 + 8 + 5 + 13 + 4 + 4 + 6 = 84</div>
+            <div class="step">M.D.(x̄) = <span class="fraction"><span class="numerator">84</span><span class="denominator">10</span></span> = 8.4</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 3 और 4 में दिए गए आँकड़ों के लिए माध्यिका के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">3. आँकड़े: 13, 17, 16, 14, 11, 13, 10, 16, 11, 18, 12, 17</div>
+            <div class="step">आँकड़ों को आरोही (Ascending) क्रम में रखने पर: 10, 11, 11, 12, 13, 13, 14, 16, 16, 17, 17, 18</div>
+            <div class="step">पदों की संख्या n = 12 (सम), अतः माध्यिका (M) = <span class="fraction"><span class="numerator">6वाँ पद + 7वाँ पद</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">13 + 14</span><span class="denominator">2</span></span> = 13.5</div>
+            <div class="step">|x<sub>i</sub> - 13.5| के मान: 3.5, 2.5, 2.5, 1.5, 0.5, 0.5, 0.5, 2.5, 2.5, 3.5, 3.5, 4.5</div>
+            <div class="step">&Sigma;|x<sub>i</sub> - M| = 28</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">28</span><span class="denominator">12</span></span> = 2.33</div>
+            <div class="hinglish-explanation">माध्यिका (Median) निकालने के लिए पहले डेटा को बढ़ते क्रम में लगाना अनिवार्य है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. आँकड़े: 36, 72, 46, 42, 60, 45, 53, 46, 51, 49</div>
+            <div class="step">आरोही क्रम: 36, 42, 45, 46, 46, 49, 51, 53, 60, 72</div>
+            <div class="step">n = 10, माध्यिका (M) = <span class="fraction"><span class="numerator">5वाँ पद + 6वाँ पद</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">46 + 49</span><span class="denominator">2</span></span> = 47.5</div>
+            <div class="step">|x<sub>i</sub> - 47.5| के मान: 11.5, 5.5, 2.5, 1.5, 1.5, 1.5, 3.5, 5.5, 12.5, 24.5</div>
+            <div class="step">&Sigma;|x<sub>i</sub> - M| = 70</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">70</span><span class="denominator">10</span></span> = 7</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 5 और 6 में दिए गए आँकड़ों के लिए माध्य के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">5. x<sub>i</sub>: 5, 10, 15, 20, 25 | f<sub>i</sub>: 7, 4, 6, 3, 5</div>
+            <div class="step">&Sigma;f<sub>i</sub> = N = 25</div>
+            <div class="step">f<sub>i</sub>x<sub>i</sub> का योग: (5&times;7) + (10&times;4) + (15&times;6) + (20&times;3) + (25&times;5) = 35 + 40 + 90 + 60 + 125 = 350</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">350</span><span class="denominator">25</span></span> = 14</div>
+            <div class="step">|x<sub>i</sub> - 14| के मान: 9, 4, 1, 6, 11</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 14| के मान: 63, 16, 6, 18, 55</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - x̄| = 63 + 16 + 6 + 18 + 55 = 158</div>
+            <div class="step">M.D.(x̄) = <span class="fraction"><span class="numerator">158</span><span class="denominator">25</span></span> = 6.32</div>
+            <div class="hinglish-explanation">अवर्गीकृत बारंबारता (Discrete frequency) के लिए M.D. = &Sigma;f<sub>i</sub>|x<sub>i</sub> - x̄| / N होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. x<sub>i</sub>: 10, 30, 50, 70, 90 | f<sub>i</sub>: 4, 24, 28, 16, 8</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 80</div>
+            <div class="step">&Sigma;f<sub>i</sub>x<sub>i</sub> = 40 + 720 + 1400 + 1120 + 720 = 4000</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">4000</span><span class="denominator">80</span></span> = 50</div>
+            <div class="step">|x<sub>i</sub> - 50| के मान: 40, 20, 0, 20, 40</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 50| के मान: 160, 480, 0, 320, 320</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - x̄| = 1280</div>
+            <div class="step">M.D.(x̄) = <span class="fraction"><span class="numerator">1280</span><span class="denominator">80</span></span> = 16</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 7 और 8 में दिए गए आँकड़ों के लिए माध्यिका के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">7. x<sub>i</sub>: 5, 7, 9, 10, 12, 15 | f<sub>i</sub>: 8, 6, 2, 2, 2, 6</div>
+            <div class="step">संचयी बारंबारता (c.f.): 8, 14, 16, 18, 20, 26. N = 26.</div>
+            <div class="step">N/2 = 13. संचयी बारंबारता 13, पद x<sub>i</sub> = 7 के अंतर्गत आती है। अतः माध्यिका (M) = 7.</div>
+            <div class="step">|x<sub>i</sub> - 7| के मान: 2, 0, 2, 3, 5, 8</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 7| के मान: 16, 0, 4, 6, 10, 48</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - M| = 84</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">84</span><span class="denominator">26</span></span> &approx; 3.23</div>
+            <div class="hinglish-explanation">माध्यिका (Median) के लिए संचयी बारंबारता (Cumulative Frequency, c.f.) का उपयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. x<sub>i</sub>: 15, 21, 27, 30, 35 | f<sub>i</sub>: 3, 5, 6, 7, 8</div>
+            <div class="step">संचयी बारंबारता (c.f.): 3, 8, 14, 21, 29. N = 29.</div>
+            <div class="step">N/2 = 14.5. यह c.f. = 21 के अंतर्गत आता है, जिसका पद 30 है। अतः माध्यिका (M) = 30.</div>
+            <div class="step">|x<sub>i</sub> - 30| के मान: 15, 9, 3, 0, 5</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 30| के मान: 45, 45, 18, 0, 40</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - M| = 148</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">148</span><span class="denominator">29</span></span> &approx; 5.1</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 9 और 10 में दिए गए आँकड़ों के लिए माध्य के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">9. वर्ग: 0-100, 100-200, 200-300, 300-400, 400-500, 500-600, 600-700, 700-800<br>f<sub>i</sub>: 4, 8, 9, 10, 7, 5, 4, 3</div>
+            <div class="step">मध्य बिंदु (x<sub>i</sub>): 50, 150, 250, 350, 450, 550, 650, 750</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 50. कल्पित माध्य (a) = 350 मान लें। d<sub>i</sub> = (x<sub>i</sub> - 350)/100 = -3, -2, -1, 0, 1, 2, 3, 4</div>
+            <div class="step">&Sigma;f<sub>i</sub>d<sub>i</sub> = -12 - 16 - 9 + 0 + 7 + 10 + 12 + 12 = 4</div>
+            <div class="step">माध्य (x̄) = a + <span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>d<sub>i</sub></span><span class="denominator">N</span></span> &times; h = 350 + <span class="fraction"><span class="numerator">4</span><span class="denominator">50</span></span> &times; 100 = 358</div>
+            <div class="step">|x<sub>i</sub> - 358| के मान: 308, 208, 108, 8, 92, 192, 292, 392</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 358| के मान: 1232, 1664, 972, 80, 644, 960, 1168, 1176</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - x̄| = 7896</div>
+            <div class="step">M.D.(x̄) = <span class="fraction"><span class="numerator">7896</span><span class="denominator">50</span></span> = 157.92</div>
+            <div class="hinglish-explanation">सतत (Continuous) डेटा के लिए पहले मध्य बिंदु (Mid-point) x<sub>i</sub> निकाला गया और फिर लघु विधि (Step-deviation) से माध्य ज्ञात किया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. ऊँचाई (सेमी): 95-105, 105-115, 115-125, 125-135, 135-145, 145-155<br>लड़कों की संख्या f<sub>i</sub>: 9, 13, 26, 30, 12, 10</div>
+            <div class="step">x<sub>i</sub> (मध्य बिंदु): 100, 110, 120, 130, 140, 150</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 100. a = 120, h = 10. d<sub>i</sub> = -2, -1, 0, 1, 2, 3</div>
+            <div class="step">&Sigma;f<sub>i</sub>d<sub>i</sub> = -18 - 13 + 0 + 30 + 24 + 30 = 53</div>
+            <div class="step">माध्य (x̄) = 120 + <span class="fraction"><span class="numerator">53</span><span class="denominator">100</span></span> &times; 10 = 120 + 5.3 = 125.3</div>
+            <div class="step">|x<sub>i</sub> - 125.3| के मान: 25.3, 15.3, 5.3, 4.7, 14.7, 24.7</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 125.3| = 227.7, 198.9, 137.8, 141.0, 176.4, 247.0</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - x̄| = 1128.8</div>
+            <div class="step">M.D.(x̄) = <span class="fraction"><span class="numerator">1128.8</span><span class="denominator">100</span></span> = 11.28</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 11 और 12 में दिए गए आँकड़ों के लिए माध्यिका के सापेक्ष माध्य विचलन ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">11. अंक: 0-10, 10-20, 20-30, 30-40, 40-50, 50-60<br>छात्राओं की संख्या f<sub>i</sub>: 6, 8, 14, 16, 4, 2</div>
+            <div class="step">संचयी बारंबारता (c.f.): 6, 14, 28, 44, 48, 50. N = 50. N/2 = 25.</div>
+            <div class="step">माध्यिका वर्ग: 20-30. l = 20, f = 14, c.f. = 14, h = 10</div>
+            <div class="step">माध्यिका (M) = l + <span class="fraction"><span class="numerator">N/2 - c.f.</span><span class="denominator">f</span></span> &times; h = 20 + <span class="fraction"><span class="numerator">25 - 14</span><span class="denominator">14</span></span> &times; 10 = 20 + <span class="fraction"><span class="numerator">110</span><span class="denominator">14</span></span> = 27.86</div>
+            <div class="step">x<sub>i</sub>: 5, 15, 25, 35, 45, 55. |x<sub>i</sub> - 27.86|: 22.86, 12.86, 2.86, 7.14, 17.14, 27.14</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - M|: 137.16, 102.88, 40.04, 114.24, 68.56, 54.28</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - M| = 517.16</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">517.16</span><span class="denominator">50</span></span> &approx; 10.34</div>
+            <div class="hinglish-explanation">वर्गीकृत आँकड़ों में माध्यिका M = l + [(N/2 - cf)/f]&times;h सूत्र से निकाली गई है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. आयु: 16-20, 21-25, 26-30, 31-35, 36-40, 41-45, 46-50, 51-55<br>व्यक्तियों की संख्या f<sub>i</sub>: 5, 6, 12, 14, 26, 12, 16, 9</div>
+            <div class="step">वर्ग सतत नहीं हैं, अतः 0.5 घटाकर और जोड़कर सीमाएँ बनाएँ: 15.5-20.5, 20.5-25.5...</div>
+            <div class="step">x<sub>i</sub>: 18, 23, 28, 33, 38, 43, 48, 53</div>
+            <div class="step">c.f.: 5, 11, 23, 37, 63, 75, 91, 100. N = 100. N/2 = 50.</div>
+            <div class="step">माध्यिका वर्ग: 35.5 - 40.5. l = 35.5, f = 26, c.f. = 37, h = 5</div>
+            <div class="step">माध्यिका (M) = 35.5 + <span class="fraction"><span class="numerator">50 - 37</span><span class="denominator">26</span></span> &times; 5 = 35.5 + 2.5 = 38</div>
+            <div class="step">|x<sub>i</sub> - 38|: 20, 15, 10, 5, 0, 5, 10, 15</div>
+            <div class="step">f<sub>i</sub>|x<sub>i</sub> - 38|: 100, 90, 120, 70, 0, 60, 160, 135</div>
+            <div class="step">&Sigma;f<sub>i</sub>|x<sub>i</sub> - M| = 735</div>
+            <div class="step">M.D.(M) = <span class="fraction"><span class="numerator">735</span><span class="denominator">100</span></span> = 7.35</div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 13.2 -->
+    <section id="ex-13-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 13.2</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. आँकड़ों 6, 7, 10, 12, 13, 4, 8, 12 का माध्य और प्रसरण (Variance) ज्ञात कीजिए।</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">6 + 7 + 10 + 12 + 13 + 4 + 8 + 12</span><span class="denominator">8</span></span> = <span class="fraction"><span class="numerator">72</span><span class="denominator">8</span></span> = 9</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">&Sigma;(x<sub>i</sub> - x̄)²</span><span class="denominator">n</span></span></div>
+            <div class="step">(x<sub>i</sub> - 9)² के मान: 9, 4, 1, 9, 16, 25, 1, 9</div>
+            <div class="step">&Sigma;(x<sub>i</sub> - x̄)² = 74</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">74</span><span class="denominator">8</span></span> = 9.25</div>
+            <div class="hinglish-explanation">प्रसरण (&sigma;²) निकालने के लिए माध्य से विचलन के वर्गों के योग को कुल पदों की संख्या (n) से भाग दिया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. प्रथम n प्राकृत संख्याओं का माध्य और प्रसरण ज्ञात कीजिए।</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">&Sigma;n</span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">n(n+1)/2</span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">n+1</span><span class="denominator">2</span></span></div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub>²</span><span class="denominator">n</span></span> - (x̄)² = <span class="fraction"><span class="numerator">n(n+1)(2n+1)/6</span><span class="denominator">n</span></span> - (<span class="fraction"><span class="numerator">n+1</span><span class="denominator">2</span></span>)²</div>
+            <div class="step">= <span class="fraction"><span class="numerator">(n+1)(2n+1)</span><span class="denominator">6</span></span> - <span class="fraction"><span class="numerator">(n+1)²</span><span class="denominator">4</span></span> = (n+1) [ <span class="fraction"><span class="numerator">2(2n+1) - 3(n+1)</span><span class="denominator">12</span></span> ]</div>
+            <div class="step">= (n+1) [ <span class="fraction"><span class="numerator">4n + 2 - 3n - 3</span><span class="denominator">12</span></span> ] = <span class="fraction"><span class="numerator">(n+1)(n-1)</span><span class="denominator">12</span></span> = <span class="fraction"><span class="numerator">n² - 1</span><span class="denominator">12</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. 3 के प्रथम 10 गुणजों का माध्य और प्रसरण ज्ञात कीजिए।</div>
+            <div class="step">आँकड़े: 3, 6, 9, 12, 15, 18, 21, 24, 27, 30</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">165</span><span class="denominator">10</span></span> = 16.5</div>
+            <div class="step">(x<sub>i</sub> - 16.5)² के मान: 182.25, 110.25, 56.25, 20.25, 2.25, 2.25, 20.25, 56.25, 110.25, 182.25</div>
+            <div class="step">&Sigma;(x<sub>i</sub> - x̄)² = 742.5</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">742.5</span><span class="denominator">10</span></span> = 74.25</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 4 से 8 तक माध्य और प्रसरण ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">4. x<sub>i</sub>: 6, 10, 14, 18, 24, 28, 30 | f<sub>i</sub>: 2, 4, 7, 12, 8, 4, 3</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 40</div>
+            <div class="step">&Sigma;f<sub>i</sub>x<sub>i</sub> = 12 + 40 + 98 + 216 + 192 + 112 + 90 = 760</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">760</span><span class="denominator">40</span></span> = 19</div>
+            <div class="step">f<sub>i</sub>(x<sub>i</sub> - 19)² : 2(169) + 4(81) + 7(25) + 12(1) + 8(25) + 4(81) + 3(121) = 338 + 324 + 175 + 12 + 200 + 324 + 363 = 1736</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">1736</span><span class="denominator">40</span></span> = 43.4</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. x<sub>i</sub>: 92, 93, 97, 98, 102, 104, 109 | f<sub>i</sub>: 3, 2, 3, 2, 6, 3, 3</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 22</div>
+            <div class="step">&Sigma;f<sub>i</sub>x<sub>i</sub> = 276 + 186 + 291 + 196 + 612 + 312 + 327 = 2200</div>
+            <div class="step">माध्य (x̄) = <span class="fraction"><span class="numerator">2200</span><span class="denominator">22</span></span> = 100</div>
+            <div class="step">f<sub>i</sub>(x<sub>i</sub> - 100)² : 3(64) + 2(49) + 3(9) + 2(4) + 6(4) + 3(16) + 3(81) = 192 + 98 + 27 + 8 + 24 + 48 + 243 = 640</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">640</span><span class="denominator">22</span></span> = 29.09</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. लघु विधि (Short-cut method) द्वारा माध्य व मानक विचलन (Standard Deviation) ज्ञात कीजिए।<br>x<sub>i</sub>: 60, 61, 62, 63, 64, 65, 66, 67, 68 | f<sub>i</sub>: 2, 1, 12, 29, 25, 12, 10, 4, 5</div>
+            <div class="step">N = &Sigma;f<sub>i</sub> = 100. a = 64 मान लें। y<sub>i</sub> = x<sub>i</sub> - 64</div>
+            <div class="step">y<sub>i</sub>: -4, -3, -2, -1, 0, 1, 2, 3, 4</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub> = -8 - 3 - 24 - 29 + 0 + 12 + 20 + 12 + 20 = 0</div>
+            <div class="step">माध्य (x̄) = a + <span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>y<sub>i</sub></span><span class="denominator">N</span></span> = 64 + 0 = 64</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub>² = 32 + 9 + 48 + 29 + 0 + 12 + 40 + 36 + 80 = 286</div>
+            <div class="step">प्रसरण (&sigma;²) = <span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>y<sub>i</sub>²</span><span class="denominator">N</span></span> - (<span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>y<sub>i</sub></span><span class="denominator">N</span></span>)² = <span class="fraction"><span class="numerator">286</span><span class="denominator">100</span></span> - 0 = 2.86</div>
+            <div class="step">मानक विचलन (&sigma;) = &radic;2.86 &approx; 1.69</div>
+            <div class="hinglish-explanation">मानक विचलन (&sigma;) प्रसरण का वर्गमूल (square root) होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. वर्ग: 0-30, 30-60, 60-90, 90-120, 120-150, 150-180, 180-210<br>f<sub>i</sub>: 2, 3, 5, 10, 3, 5, 2</div>
+            <div class="step">x<sub>i</sub> (मध्य बिंदु): 15, 45, 75, 105, 135, 165, 195</div>
+            <div class="step">N = 30. a = 105, h = 30. y<sub>i</sub> = (x<sub>i</sub> - 105)/30 = -3, -2, -1, 0, 1, 2, 3</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub> = -6 - 6 - 5 + 0 + 3 + 10 + 6 = 2</div>
+            <div class="step">माध्य (x̄) = 105 + (<span class="fraction"><span class="numerator">2</span><span class="denominator">30</span></span>) &times; 30 = 107</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub>² = 18 + 12 + 5 + 0 + 3 + 20 + 18 = 76</div>
+            <div class="step">प्रसरण (&sigma;²) = h² [ <span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>y<sub>i</sub>²</span><span class="denominator">N</span></span> - (<span class="fraction"><span class="numerator">&Sigma;f<sub>i</sub>y<sub>i</sub></span><span class="denominator">N</span></span>)² ] = 900 [ <span class="fraction"><span class="numerator">76</span><span class="denominator">30</span></span> - (<span class="fraction"><span class="numerator">2</span><span class="denominator">30</span></span>)² ]</div>
+            <div class="step">= 900 [ <span class="fraction"><span class="numerator">2280 - 4</span><span class="denominator">900</span></span> ] = 2276</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. वर्ग: 0-10, 10-20, 20-30, 30-40, 40-50<br>f<sub>i</sub>: 5, 8, 15, 16, 6</div>
+            <div class="step">x<sub>i</sub>: 5, 15, 25, 35, 45. N = 50.</div>
+            <div class="step">a = 25, h = 10. y<sub>i</sub> = -2, -1, 0, 1, 2</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub> = -10 - 8 + 0 + 16 + 12 = 10</div>
+            <div class="step">माध्य (x̄) = 25 + (<span class="fraction"><span class="numerator">10</span><span class="denominator">50</span></span>) &times; 10 = 27</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub>² = 20 + 8 + 0 + 16 + 24 = 68</div>
+            <div class="step">प्रसरण (&sigma;²) = 100 [ <span class="fraction"><span class="numerator">68</span><span class="denominator">50</span></span> - (<span class="fraction"><span class="numerator">10</span><span class="denominator">50</span></span>)² ] = 100 [ 1.36 - 0.04 ] = 100 &times; 1.32 = 132</div>
+            <div class="step">मानक विचलन (&sigma;) = &radic;132 &approx; 11.49</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. लघु विधि द्वारा माध्य, प्रसरण व मानक विचलन ज्ञात कीजिए:<br>ऊँचाई: 70-75, 75-80, 80-85, 85-90, 90-95, 95-100, 100-105, 105-110, 110-115<br>f<sub>i</sub>: 3, 4, 7, 7, 15, 9, 6, 6, 3</div>
+            <div class="step">x<sub>i</sub>: 72.5, 77.5, 82.5, 87.5, 92.5, 97.5, 102.5, 107.5, 112.5</div>
+            <div class="step">N = 60. a = 92.5, h = 5. y<sub>i</sub> = -4, -3, -2, -1, 0, 1, 2, 3, 4</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub> = -12 - 12 - 14 - 7 + 0 + 9 + 12 + 18 + 12 = 6</div>
+            <div class="step">माध्य (x̄) = 92.5 + (<span class="fraction"><span class="numerator">6</span><span class="denominator">60</span></span>) &times; 5 = 92.5 + 0.5 = 93</div>
+            <div class="step">&Sigma;f<sub>i</sub>y<sub>i</sub>² = 48 + 36 + 28 + 7 + 0 + 9 + 24 + 54 + 48 = 254</div>
+            <div class="step">प्रसरण (&sigma;²) = 25 [ <span class="fraction"><span class="numerator">254</span><span class="denominator">60</span></span> - (<span class="fraction"><span class="numerator">6</span><span class="denominator">60</span></span>)² ] = 25 [ 4.233 - 0.01 ] = 25 &times; 4.223 = 105.58</div>
+            <div class="step">मानक विचलन (&sigma;) = &radic;105.58 &approx; 10.27</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. दो वृत्तों के व्यास नीचे दिए गए हैं। ज्ञात कीजिए कि कौन सा समूह अधिक स्थिर (stable) है?</div>
+            <div class="step">स्थिरता जाँचने के लिए हम विचरण गुणांक (Coefficient of Variation, C.V.) निकालते हैं। C.V. = (&sigma; / x̄) &times; 100.</div>
+            <div class="step">जिसका C.V. कम होता है, वह अधिक स्थिर होता है। दोनों समूहों के लिए माध्य और मानक विचलन निकालकर तुलना की जाती है। (डेटा के अभाव में यह सामान्य प्रक्रिया है)।</div>
+        </div>
+
+    </section>
+
+    <!-- विविध प्रश्नावली -->
+    <section id="misc-ex" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-red-100 text-red-800 px-4 py-2 rounded-full">📕 विविध प्रश्नावली</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. 8 प्रेक्षणों का माध्य 9 और प्रसरण 9.25 है। यदि 6 प्रेक्षण 6, 7, 10, 12, 12 और 13 हैं, तो शेष दो प्रेक्षण ज्ञात कीजिए।</div>
+            <div class="step">माना शेष दो प्रेक्षण x और y हैं। n = 8.</div>
+            <div class="step">माध्य = 9 &rArr; <span class="fraction"><span class="numerator">6+7+10+12+12+13+x+y</span><span class="denominator">8</span></span> = 9 &rArr; 60 + x + y = 72 &rArr; x + y = 12 ... (i)</div>
+            <div class="step">प्रसरण = 9.25 &rArr; <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub>²</span><span class="denominator">8</span></span> - (9)² = 9.25 &rArr; <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub>²</span><span class="denominator">8</span></span> = 81 + 9.25 = 90.25</div>
+            <div class="step">&Sigma;x<sub>i</sub>² = 90.25 &times; 8 = 722</div>
+            <div class="step">36 + 49 + 100 + 144 + 144 + 169 + x² + y² = 722</div>
+            <div class="step">642 + x² + y² = 722 &rArr; x² + y² = 80 ... (ii)</div>
+            <div class="step">(i) से y = 12 - x, इसे (ii) में रखने पर: x² + (12 - x)² = 80</div>
+            <div class="step">2x² - 24x + 144 = 80 &rArr; 2x² - 24x + 64 = 0 &rArr; x² - 12x + 32 = 0</div>
+            <div class="step">(x - 4)(x - 8) = 0 &rArr; x = 4 या x = 8. अतः प्रेक्षण 4 और 8 हैं।</div>
+            <div class="hinglish-explanation">माध्य और प्रसरण के सूत्र से दो समीकरण (x+y और x²+y²) बनाये और उन्हें हल किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. 7 प्रेक्षणों का माध्य 8 और प्रसरण 16 है। यदि इनमें से पाँच प्रेक्षण 2, 4, 10, 12, 14 हैं, तो शेष दो प्रेक्षण ज्ञात कीजिए।</div>
+            <div class="step">माना शेष प्रेक्षण x और y हैं।</div>
+            <div class="step">माध्य = 8 &rArr; 42 + x + y = 56 &rArr; x + y = 14 ... (i)</div>
+            <div class="step">प्रसरण = 16 &rArr; <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub>²</span><span class="denominator">7</span></span> - 64 = 16 &rArr; <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub>²</span><span class="denominator">7</span></span> = 80 &rArr; &Sigma;x<sub>i</sub>² = 560</div>
+            <div class="step">4 + 16 + 100 + 144 + 196 + x² + y² = 560 &rArr; 460 + x² + y² = 560 &rArr; x² + y² = 100 ... (ii)</div>
+            <div class="step">x² + (14 - x)² = 100 &rArr; 2x² - 28x + 196 = 100 &rArr; 2x² - 28x + 96 = 0</div>
+            <div class="step">x² - 14x + 48 = 0 &rArr; (x - 6)(x - 8) = 0 &rArr; x = 6 या 8. अतः प्रेक्षण 6 और 8 हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. 6 प्रेक्षणों का माध्य 8 और मानक विचलन 4 है। यदि प्रत्येक प्रेक्षण को 3 से गुणा कर दिया जाए, तो नया माध्य और नया मानक विचलन ज्ञात कीजिए।</div>
+            <div class="step">यदि प्रत्येक प्रेक्षण को k से गुणा किया जाए, तो नया माध्य k &times; (पुराना माध्य) और नया मानक विचलन |k| &times; (पुराना मानक विचलन) हो जाता है।</div>
+            <div class="step">नया माध्य = 3 &times; 8 = 24</div>
+            <div class="step">नया मानक विचलन = 3 &times; 4 = 12</div>
+            <div class="hinglish-explanation">यह सांख्यिकी का एक महत्वपूर्ण गुणधर्म (Property) है जिसे सीधे लागू किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. यदि n प्रेक्षणों x<sub>1</sub>, x<sub>2</sub>, ... x<sub>n</sub> का माध्य x̄ और प्रसरण &sigma;² है, तो सिद्ध कीजिए कि ax<sub>1</sub>, ax<sub>2</sub>, ... ax<sub>n</sub> का माध्य ax̄ और प्रसरण a²&sigma;² होगा।</div>
+            <div class="step">नया माध्य (X̄) = <span class="fraction"><span class="numerator">&Sigma;(ax<sub>i</sub>)</span><span class="denominator">n</span></span> = a &times; <span class="fraction"><span class="numerator">&Sigma;x<sub>i</sub></span><span class="denominator">n</span></span> = ax̄</div>
+            <div class="step">नया प्रसरण = <span class="fraction"><span class="numerator">&Sigma;(ax<sub>i</sub> - a x̄)²</span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">&Sigma;a²(x<sub>i</sub> - x̄)²</span><span class="denominator">n</span></span> = a² [ <span class="fraction"><span class="numerator">&Sigma;(x<sub>i</sub> - x̄)²</span><span class="denominator">n</span></span> ] = a²&sigma;². सिद्ध हुआ।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. 20 प्रेक्षणों का माध्य 10 और मानक विचलन 2 है। यदि गलती से 8 लिखा गया था, जिसे 12 से बदल दिया जाए, तो सही माध्य व सही मानक विचलन ज्ञात कीजिए।</div>
+            <div class="step">n = 20, गलत माध्य = 10 &rArr; गलत &Sigma;x = 200</div>
+            <div class="step">सही &Sigma;x = 200 - 8 + 12 = 204 &rArr; सही माध्य = <span class="fraction"><span class="numerator">204</span><span class="denominator">20</span></span> = 10.2</div>
+            <div class="step">गलत &sigma; = 2 &rArr; गलत &sigma;² = 4. 4 = <span class="fraction"><span class="numerator">गलत &Sigma;x²</span><span class="denominator">20</span></span> - 100 &rArr; गलत &Sigma;x² = 2080</div>
+            <div class="step">सही &Sigma;x² = 2080 - 8² + 12² = 2080 - 64 + 144 = 2160</div>
+            <div class="step">सही प्रसरण = <span class="fraction"><span class="numerator">2160</span><span class="denominator">20</span></span> - (10.2)² = 108 - 104.04 = 3.96</div>
+            <div class="step">सही मानक विचलन = &radic;3.96 &approx; 1.99</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. 100 प्रेक्षणों का माध्य 40 और मानक विचलन 5.1 था। बाद में पता चला कि 40 के स्थान पर गलती से 50 ले लिया गया था। सही माध्य और सही मानक विचलन ज्ञात कीजिए।</div>
+            <div class="step">n = 100, गलत माध्य = 40 &rArr; गलत &Sigma;x = 4000</div>
+            <div class="step">सही &Sigma;x = 4000 - 50 + 40 = 3990 &rArr; सही माध्य = 39.9</div>
+            <div class="step">गलत &sigma; = 5.1 &rArr; गलत &sigma;² = 26.01. 26.01 = <span class="fraction"><span class="numerator">गलत &Sigma;x²</span><span class="denominator">100</span></span> - 1600 &rArr; गलत &Sigma;x² = 162601</div>
+            <div class="step">सही &Sigma;x² = 162601 - 50² + 40² = 162601 - 2500 + 1600 = 161701</div>
+            <div class="step">सही प्रसरण = <span class="fraction"><span class="numerator">161701</span><span class="denominator">100</span></span> - (39.9)² = 1617.01 - 1592.01 = 25</div>
+            <div class="step">सही मानक विचलन = &radic;25 = 5</div>
+            <div class="hinglish-explanation">त्रुटि सुधार के लिए हमेशा योग (&Sigma;x) और वर्गों का योग (&Sigma;x²) निकाला जाता है, फिर उसमें से गलत मान हटाकर सही मान जोड़ा जाता है।</div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 13) सांख्यिकी ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

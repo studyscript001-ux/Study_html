@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 8: अनुक्रम तथा श्रेणी | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 8<br>अनुक्रम तथा श्रेणी</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 8.1 -->
+    <section id="ex-8-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 8.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 से 6 तक के अनुक्रमों में प्रत्येक के प्रथम पाँच पद लिखिये, जिनका nवाँ पद दिया गया है:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. a<sub>n</sub> = n(n+2)</div>
+            <div class="step">n = 1 रखने पर: a<sub>1</sub> = 1(1+2) = 1(3) = 3</div>
+            <div class="step">n = 2 रखने पर: a<sub>2</sub> = 2(2+2) = 2(4) = 8</div>
+            <div class="step">n = 3 रखने पर: a<sub>3</sub> = 3(3+2) = 3(5) = 15</div>
+            <div class="step">n = 4 रखने पर: a<sub>4</sub> = 4(4+2) = 4(6) = 24</div>
+            <div class="step">n = 5 रखने पर: a<sub>5</sub> = 5(5+2) = 5(7) = 35</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> अनुक्रम के प्रथम 5 पद हैं: 3, 8, 15, 24, 35.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. a<sub>n</sub> = <span class="fraction"><span class="numerator">n</span><span class="denominator">n+1</span></span></div>
+            <div class="step">n = 1: a<sub>1</sub> = <span class="fraction"><span class="numerator">1</span><span class="denominator">1+1</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">2</span><span class="denominator">2+1</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></div>
+            <div class="step">n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">3</span><span class="denominator">3+1</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span></div>
+            <div class="step">n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">4</span><span class="denominator">4+1</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">5</span></span></div>
+            <div class="step">n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">5</span><span class="denominator">5+1</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> प्रथम 5 पद हैं: 1/2, 2/3, 3/4, 4/5, 5/6.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. a<sub>n</sub> = 2<sup>n</sup></div>
+            <div class="step">n = 1: a<sub>1</sub> = 2<sup>1</sup> = 2</div>
+            <div class="step">n = 2: a<sub>2</sub> = 2<sup>2</sup> = 4</div>
+            <div class="step">n = 3: a<sub>3</sub> = 2<sup>3</sup> = 8</div>
+            <div class="step">n = 4: a<sub>4</sub> = 2<sup>4</sup> = 16</div>
+            <div class="step">n = 5: a<sub>5</sub> = 2<sup>5</sup> = 32</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> प्रथम 5 पद हैं: 2, 4, 8, 16, 32.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. a<sub>n</sub> = <span class="fraction"><span class="numerator">2n - 3</span><span class="denominator">6</span></span></div>
+            <div class="step">n = 1: a<sub>1</sub> = <span class="fraction"><span class="numerator">2(1) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span></div>
+            <div class="step">n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">2(2) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span></div>
+            <div class="step">n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">2(3) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">2(4) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">6</span></span></div>
+            <div class="step">n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">2(5) - 3</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">7</span><span class="denominator">6</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> प्रथम 5 पद हैं: -1/6, 1/6, 1/2, 5/6, 7/6.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. a<sub>n</sub> = (-1)<sup>n-1</sup> 5<sup>n+1</sup></div>
+            <div class="step">n = 1: a<sub>1</sub> = (-1)<sup>0</sup> 5<sup>2</sup> = 1 &times; 25 = 25</div>
+            <div class="step">n = 2: a<sub>2</sub> = (-1)<sup>1</sup> 5<sup>3</sup> = -1 &times; 125 = -125</div>
+            <div class="step">n = 3: a<sub>3</sub> = (-1)<sup>2</sup> 5<sup>4</sup> = 1 &times; 625 = 625</div>
+            <div class="step">n = 4: a<sub>4</sub> = (-1)<sup>3</sup> 5<sup>5</sup> = -1 &times; 3125 = -3125</div>
+            <div class="step">n = 5: a<sub>5</sub> = (-1)<sup>4</sup> 5<sup>6</sup> = 1 &times; 15625 = 15625</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> प्रथम 5 पद हैं: 25, -125, 625, -3125, 15625.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. a<sub>n</sub> = n <span class="fraction"><span class="numerator">n<sup>2</sup> + 5</span><span class="denominator">4</span></span></div>
+            <div class="step">n = 1: a<sub>1</sub> = 1 &times; <span class="fraction"><span class="numerator">1+5</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">6</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 2: a<sub>2</sub> = 2 &times; <span class="fraction"><span class="numerator">4+5</span><span class="denominator">4</span></span> = 2 &times; <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 3: a<sub>3</sub> = 3 &times; <span class="fraction"><span class="numerator">9+5</span><span class="denominator">4</span></span> = 3 &times; <span class="fraction"><span class="numerator">14</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">21</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 4: a<sub>4</sub> = 4 &times; <span class="fraction"><span class="numerator">16+5</span><span class="denominator">4</span></span> = 4 &times; <span class="fraction"><span class="numerator">21</span><span class="denominator">4</span></span> = 21</div>
+            <div class="step">n = 5: a<sub>5</sub> = 5 &times; <span class="fraction"><span class="numerator">25+5</span><span class="denominator">4</span></span> = 5 &times; <span class="fraction"><span class="numerator">30</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">75</span><span class="denominator">2</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> प्रथम 5 पद हैं: 3/2, 9/2, 21/2, 21, 75/2.</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 7 से 10 तक के अनुक्रमों में प्रत्येक का वांछित पद ज्ञात कीजिए, जिनका nवाँ पद दिया गया है:</p>
+
+        <div class="solution-card">
+            <div class="question-title">7. a<sub>n</sub> = 4n - 3; a<sub>17</sub>, a<sub>24</sub></div>
+            <div class="step">n = 17 रखने पर: a<sub>17</sub> = 4(17) - 3 = 68 - 3 = 65</div>
+            <div class="step">n = 24 रखने पर: a<sub>24</sub> = 4(24) - 3 = 96 - 3 = 93</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> a<sub>17</sub> = 65 तथा a<sub>24</sub> = 93.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. a<sub>n</sub> = <span class="fraction"><span class="numerator">n<sup>2</sup></span><span class="denominator">2<sup>n</sup></span></span>; a<sub>7</sub></div>
+            <div class="step">n = 7 रखने पर: a<sub>7</sub> = <span class="fraction"><span class="numerator">7<sup>2</sup></span><span class="denominator">2<sup>7</sup></span></span></div>
+            <div class="step">a<sub>7</sub> = <span class="fraction"><span class="numerator">49</span><span class="denominator">128</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> a<sub>7</sub> = 49 / 128.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. a<sub>n</sub> = (-1)<sup>n-1</sup> n<sup>3</sup>; a<sub>9</sub></div>
+            <div class="step">n = 9 रखने पर: a<sub>9</sub> = (-1)<sup>9-1</sup> &times; 9<sup>3</sup></div>
+            <div class="step">= (-1)<sup>8</sup> &times; 729 = 1 &times; 729 = 729</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> a<sub>9</sub> = 729.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. a<sub>n</sub> = <span class="fraction"><span class="numerator">n(n - 2)</span><span class="denominator">n + 3</span></span>; a<sub>20</sub></div>
+            <div class="step">n = 20 रखने पर: a<sub>20</sub> = <span class="fraction"><span class="numerator">20(20 - 2)</span><span class="denominator">20 + 3</span></span></div>
+            <div class="step">a<sub>20</sub> = <span class="fraction"><span class="numerator">20 &times; 18</span><span class="denominator">23</span></span> = <span class="fraction"><span class="numerator">360</span><span class="denominator">23</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> a<sub>20</sub> = 360 / 23.</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 11 से 13 तक प्रत्येक अनुक्रम के पाँच पद लिखिए तथा संगत श्रेणी ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">11. a<sub>1</sub> = 3, a<sub>n</sub> = 3a<sub>n-1</sub> + 2 सभी n > 1 के लिए</div>
+            <div class="step">दिया है: a<sub>1</sub> = 3</div>
+            <div class="step">n = 2: a<sub>2</sub> = 3a<sub>1</sub> + 2 = 3(3) + 2 = 9 + 2 = 11</div>
+            <div class="step">n = 3: a<sub>3</sub> = 3a<sub>2</sub> + 2 = 3(11) + 2 = 33 + 2 = 35</div>
+            <div class="step">n = 4: a<sub>4</sub> = 3a<sub>3</sub> + 2 = 3(35) + 2 = 105 + 2 = 107</div>
+            <div class="step">n = 5: a<sub>5</sub> = 3a<sub>4</sub> + 2 = 3(107) + 2 = 321 + 2 = 323</div>
+            <div class="step">संगत श्रेणी: a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + a<sub>4</sub> + a<sub>5</sub> + ...</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> 5 पद हैं: 3, 11, 35, 107, 323। श्रेणी है: 3 + 11 + 35 + 107 + 323 + ...</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. a<sub>1</sub> = -1, a<sub>n</sub> = <span class="fraction"><span class="numerator">a<sub>n-1</sub></span><span class="denominator">n</span></span>, जहाँ n &ge; 2</div>
+            <div class="step">दिया है: a<sub>1</sub> = -1</div>
+            <div class="step">n = 2: a<sub>2</sub> = <span class="fraction"><span class="numerator">a<sub>1</sub></span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">2</span></span></div>
+            <div class="step">n = 3: a<sub>3</sub> = <span class="fraction"><span class="numerator">a<sub>2</sub></span><span class="denominator">3</span></span> = <span class="fraction"><span class="numerator">-1/2</span><span class="denominator">3</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">6</span></span></div>
+            <div class="step">n = 4: a<sub>4</sub> = <span class="fraction"><span class="numerator">a<sub>3</sub></span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">-1/6</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">24</span></span></div>
+            <div class="step">n = 5: a<sub>5</sub> = <span class="fraction"><span class="numerator">a<sub>4</sub></span><span class="denominator">5</span></span> = <span class="fraction"><span class="numerator">-1/24</span><span class="denominator">5</span></span> = <span class="fraction"><span class="numerator">-1</span><span class="denominator">120</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> पद: -1, -1/2, -1/6, -1/24, -1/120. श्रेणी: (-1) + (-1/2) + (-1/6) + (-1/24) + (-1/120) + ...</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. a<sub>1</sub> = a<sub>2</sub> = 2, a<sub>n</sub> = a<sub>n-1</sub> - 1, जहाँ n > 2</div>
+            <div class="step">दिया है: a<sub>1</sub> = 2, a<sub>2</sub> = 2</div>
+            <div class="step">n = 3: a<sub>3</sub> = a<sub>2</sub> - 1 = 2 - 1 = 1</div>
+            <div class="step">n = 4: a<sub>4</sub> = a<sub>3</sub> - 1 = 1 - 1 = 0</div>
+            <div class="step">n = 5: a<sub>5</sub> = a<sub>4</sub> - 1 = 0 - 1 = -1</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> पद: 2, 2, 1, 0, -1. श्रेणी: 2 + 2 + 1 + 0 + (-1) + ...</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. Fibonacci अनुक्रम: 1 = a<sub>1</sub> = a<sub>2</sub> तथा a<sub>n</sub> = a<sub>n-1</sub> + a<sub>n-2</sub>, n > 2। तो <span class="fraction"><span class="numerator">a<sub>n+1</sub></span><span class="denominator">a<sub>n</sub></span></span> ज्ञात कीजिए, जबकि n = 1, 2, 3, 4, 5</div>
+            <div class="step">पहले पद निकाल लेते हैं: a<sub>1</sub> = 1, a<sub>2</sub> = 1</div>
+            <div class="step">a<sub>3</sub> = a<sub>2</sub> + a<sub>1</sub> = 1 + 1 = 2</div>
+            <div class="step">a<sub>4</sub> = a<sub>3</sub> + a<sub>2</sub> = 2 + 1 = 3</div>
+            <div class="step">a<sub>5</sub> = a<sub>4</sub> + a<sub>3</sub> = 3 + 2 = 5</div>
+            <div class="step">a<sub>6</sub> = a<sub>5</sub> + a<sub>4</sub> = 5 + 3 = 8</div>
+            <div class="step">n=1: <span class="fraction"><span class="numerator">a<sub>2</sub></span><span class="denominator">a<sub>1</sub></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">1</span></span> = 1</div>
+            <div class="step">n=2: <span class="fraction"><span class="numerator">a<sub>3</sub></span><span class="denominator">a<sub>2</sub></span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">1</span></span> = 2</div>
+            <div class="step">n=3: <span class="fraction"><span class="numerator">a<sub>4</sub></span><span class="denominator">a<sub>3</sub></span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></div>
+            <div class="step">n=4: <span class="fraction"><span class="numerator">a<sub>5</sub></span><span class="denominator">a<sub>4</sub></span></span> = <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span></div>
+            <div class="step">n=5: <span class="fraction"><span class="numerator">a<sub>6</sub></span><span class="denominator">a<sub>5</sub></span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span></div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> अनुपात क्रमशः 1, 2, 3/2, 5/3, 8/5 हैं।</div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 8.2 -->
+    <section id="ex-8-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 8.2</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. गुणोत्तर श्रेणी <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>, <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>... का 20वाँ तथा nवाँ पद ज्ञात कीजिए।</div>
+            <div class="step">प्रथम पद a = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, सार्व अनुपात r = <span class="fraction"><span class="numerator">5/4</span><span class="denominator">5/2</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+            <div class="step">20वाँ पद a<sub>20</sub> = ar<sup>19</sup> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span> &times; (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<sup>19</sup> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2<sup>20</sup></span></span></div>
+            <div class="step">nवाँ पद a<sub>n</sub> = ar<sup>n-1</sup> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span> &times; (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)<sup>n-1</sup> = <span class="fraction"><span class="numerator">5</span><span class="denominator">2<sup>n</sup></span></span></div>
+            <div class="hinglish-explanation">सूत्र a<sub>n</sub> = a&times;r<sup>n-1</sup> का प्रयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. उस गुणोत्तर श्रेणी का 12वाँ पद ज्ञात कीजिए, जिसका 8वाँ पद 192 तथा सार्व अनुपात 2 है।</div>
+            <div class="step">दिया है: a<sub>8</sub> = 192, r = 2</div>
+            <div class="step">a<sub>8</sub> = ar<sup>7</sup> &rArr; a(2)<sup>7</sup> = 192 &rArr; a &times; 128 = 192 &rArr; a = <span class="fraction"><span class="numerator">192</span><span class="denominator">128</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></div>
+            <div class="step">12वाँ पद a<sub>12</sub> = ar<sup>11</sup> = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span> &times; (2)<sup>11</sup> = 3 &times; 2<sup>10</sup></div>
+            <div class="step">a<sub>12</sub> = 3 &times; 1024 = 3072</div>
+            <div class="hinglish-explanation">पहले a का मान ज्ञात किया, फिर a<sub>12</sub> निकाला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. किसी गुणोत्तर श्रेणी का 5वाँ, 8वाँ तथा 11वाँ पद क्रमशः p, q तथा s हैं तो दिखाइए कि q<sup>2</sup> = ps.</div>
+            <div class="step">a<sub>5</sub> = p &rArr; ar<sup>4</sup> = p</div>
+            <div class="step">a<sub>8</sub> = q &rArr; ar<sup>7</sup> = q</div>
+            <div class="step">a<sub>11</sub> = s &rArr; ar<sup>10</sup> = s</div>
+            <div class="step">LHS = q<sup>2</sup> = (ar<sup>7</sup>)<sup>2</sup> = a<sup>2</sup>r<sup>14</sup></div>
+            <div class="step">RHS = p &times; s = (ar<sup>4</sup>)(ar<sup>10</sup>) = a<sup>2</sup>r<sup>14</sup></div>
+            <div class="step">अतः LHS = RHS. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">पदों को a और r के रूप में लिखकर दोनों पक्षों को बराबर सिद्ध किया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. किसी गुणोत्तर श्रेणी का चौथा पद उसके दूसरे पद का वर्ग है तथा प्रथम पद -3 है तो 7वाँ पद ज्ञात कीजिए।</div>
+            <div class="step">दिया है: a = -3 तथा a<sub>4</sub> = (a<sub>2</sub>)<sup>2</sup></div>
+            <div class="step">ar<sup>3</sup> = (ar)<sup>2</sup> &rArr; ar<sup>3</sup> = a<sup>2</sup>r<sup>2</sup></div>
+            <div class="step">r = a = -3</div>
+            <div class="step">a<sub>7</sub> = ar<sup>6</sup> = (-3)(-3)<sup>6</sup> = (-3)<sup>7</sup> = -2187</div>
+            <div class="hinglish-explanation">समीकरण से r का मान -3 प्राप्त हुआ।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. अनुक्रम का कौन सा पद: (a) 2, 2&radic;2, 4...; 128 है?</div>
+            <div class="step">यहाँ a = 2, r = <span class="fraction"><span class="numerator">2&radic;2</span><span class="denominator">2</span></span> = &radic;2</div>
+            <div class="step">a<sub>n</sub> = 128 &rArr; 2(&radic;2)<sup>n-1</sup> = 128 &rArr; (&radic;2)<sup>n-1</sup> = 64</div>
+            <div class="step">चूँकि 64 = 2<sup>6</sup> = ((&radic;2)<sup>2</sup>)<sup>6</sup> = (&radic;2)<sup>12</sup></div>
+            <div class="step">अतः n - 1 = 12 &rArr; n = 13. (13वाँ पद)</div>
+            <div class="hinglish-explanation">आधार (&radic;2) को समान कर घातांकों की तुलना की गई।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. (b) &radic;3, 3, 3&radic;3...; 729 है?</div>
+            <div class="step">यहाँ a = &radic;3, r = <span class="fraction"><span class="numerator">3</span><span class="denominator">&radic;3</span></span> = &radic;3</div>
+            <div class="step">a<sub>n</sub> = 729 &rArr; (&radic;3)(&radic;3)<sup>n-1</sup> = 729 &rArr; (&radic;3)<sup>n</sup> = 729</div>
+            <div class="step">चूँकि 729 = 3<sup>6</sup> = (&radic;3)<sup>12</sup></div>
+            <div class="step">अतः n = 12. (12वाँ पद)</div>
+            <div class="hinglish-explanation">समान विधि से आधार &radic;3 पर घातांक निकाला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. (c) <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>...; <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span> है?</div>
+            <div class="step">a = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>, r = <span class="fraction"><span class="numerator">1/9</span><span class="denominator">1/3</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span></div>
+            <div class="step">a<sub>n</sub> = a r<sup>n-1</sup> = (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)<sup>n</sup> = <span class="fraction"><span class="numerator">1</span><span class="denominator">19683</span></span></div>
+            <div class="step">3<sup>n</sup> = 19683. चूँकि 3<sup>9</sup> = 19683</div>
+            <div class="step">अतः n = 9. (9वाँ पद)</div>
+            <div class="hinglish-explanation">3 की घात की तुलना की गई।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. x के किस मान के लिए संख्याएँ -<span class="fraction"><span class="numerator">2</span><span class="denominator">7</span></span>, x, -<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span> गुणोत्तर श्रेणी में हैं?</div>
+            <div class="step">गुणोत्तर श्रेणी के लिए: <span class="fraction"><span class="numerator">x</span><span class="denominator">-2/7</span></span> = <span class="fraction"><span class="numerator">-7/2</span><span class="denominator">x</span></span></div>
+            <div class="step">x<sup>2</sup> = (-<span class="fraction"><span class="numerator">2</span><span class="denominator">7</span></span>) &times; (-<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>) = 1</div>
+            <div class="step">x = &plusmn;1</div>
+            <div class="hinglish-explanation">यदि a, b, c G.P. में हों, तो b<sup>2</sup> = ac होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. 0.15, 0.015, 0.0015... 20 पदों तक योगफल ज्ञात कीजिए।</div>
+            <div class="step">यहाँ a = 0.15, r = 0.1. पदों की संख्या n = 20.</div>
+            <div class="step">S<sub>20</sub> = <span class="fraction"><span class="numerator">a(1 - r<sup>20</sup>)</span><span class="denominator">1 - r</span></span> = <span class="fraction"><span class="numerator">0.15 (1 - (0.1)<sup>20</sup>)</span><span class="denominator">1 - 0.1</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">0.15</span><span class="denominator">0.90</span></span> (1 - (0.1)<sup>20</sup>) = <span class="fraction"><span class="numerator">1</span><span class="denominator">6</span></span> [1 - (0.1)<sup>20</sup>]</div>
+            <div class="hinglish-explanation">गुणोत्तर श्रेणी के योगफल का सूत्र लगाया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. &radic;7, &radic;21, 3&radic;7... n पदों तक योगफल ज्ञात कीजिए।</div>
+            <div class="step">a = &radic;7, r = <span class="fraction"><span class="numerator">&radic;21</span><span class="denominator">&radic;7</span></span> = &radic;3</div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">&radic;7 [(&radic;3)<sup>n</sup> - 1]</span><span class="denominator">&radic;3 - 1</span></span></div>
+            <div class="step">हर का परिमेयकरण करने पर: = <span class="fraction"><span class="numerator">&radic;7 [(&radic;3)<sup>n</sup> - 1] (&radic;3 + 1)</span><span class="denominator">(&radic;3 - 1)(&radic;3 + 1)</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">&radic;7 (&radic;3 + 1) [3<sup>n/2</sup> - 1]</span><span class="denominator">2</span></span></div>
+            <div class="hinglish-explanation">योगफल के सूत्र में मान रखकर हर का परिमेयकरण (Rationalization) किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. 1, -a, a<sup>2</sup>, -a<sup>3</sup>... n पदों तक (a &ne; -1)</div>
+            <div class="step">यहाँ प्रथम पद = 1, सार्व अनुपात (r) = -a</div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">1 &times; [1 - (-a)<sup>n</sup>]</span><span class="denominator">1 - (-a)</span></span></div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">1 - (-a)<sup>n</sup></span><span class="denominator">1 + a</span></span></div>
+            <div class="hinglish-explanation">सूत्र का सीधा प्रयोग, r के स्थान पर -a रखा।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. x<sup>3</sup>, x<sup>5</sup>, x<sup>7</sup>... n पदों तक (x &ne; &plusmn;1)</div>
+            <div class="step">a = x<sup>3</sup>, r = x<sup>2</sup></div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">x<sup>3</sup> [1 - (x<sup>2</sup>)<sup>n</sup>]</span><span class="denominator">1 - x<sup>2</sup></span></span></div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">x<sup>3</sup> [1 - x<sup>2n</sup>]</span><span class="denominator">1 - x<sup>2</sup></span></span></div>
+            <div class="hinglish-explanation">r = x<sup>2</sup> मान कर योग का सूत्र लगाया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. मान ज्ञात कीजिए: &sum;<sub>(k=1 से 11)</sub> (2 + 3<sup>k</sup>)</div>
+            <div class="step">= &sum; (2) + &sum; (3<sup>k</sup>)</div>
+            <div class="step">= (2 &times; 11) + (3<sup>1</sup> + 3<sup>2</sup> + ... + 3<sup>11</sup>)</div>
+            <div class="step">द्वितीय भाग एक G.P. है जहाँ a = 3, r = 3, n = 11</div>
+            <div class="step">= 22 + <span class="fraction"><span class="numerator">3(3<sup>11</sup> - 1)</span><span class="denominator">3 - 1</span></span> = 22 + <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span>(3<sup>11</sup> - 1)</div>
+            <div class="hinglish-explanation">सिग्मा (&sum;) को अलग-अलग करके G.P. का सूत्र लगाया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. एक गुणोत्तर श्रेणी के तीन पदों का योगफल <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span> है तथा उनका गुणनफल 1 है। सार्व अनुपात तथा पदों को ज्ञात कीजिए।</div>
+            <div class="step">माना पद <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span>, a, ar हैं।</div>
+            <div class="step">गुणनफल = <span class="fraction"><span class="numerator">a</span><span class="denominator">r</span></span> &times; a &times; ar = a<sup>3</sup> = 1 &rArr; a = 1</div>
+            <div class="step">योगफल = <span class="fraction"><span class="numerator">1</span><span class="denominator">r</span></span> + 1 + r = <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span> &rArr; <span class="fraction"><span class="numerator">1+r+r<sup>2</sup></span><span class="denominator">r</span></span> = <span class="fraction"><span class="numerator">39</span><span class="denominator">10</span></span></div>
+            <div class="step">10 + 10r + 10r<sup>2</sup> = 39r &rArr; 10r<sup>2</sup> - 29r + 10 = 0</div>
+            <div class="step">गुणनखंड करने पर: (5r - 2)(2r - 5) = 0 &rArr; r = <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span> या r = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span></div>
+            <div class="step">अतः पद होंगे: <span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span>, 1, <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span> (या उल्टे क्रम में)।</div>
+            <div class="hinglish-explanation">तीन पदों को a/r, a, ar मानने से a सरलता से निकल आता है। फिर द्विघात समीकरण से r निकाला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. गुणोत्तर श्रेणी 3, 3<sup>2</sup>, 3<sup>3</sup>... के कितने पद आवश्यक हैं ताकि उनका योगफल 120 हो जाए?</div>
+            <div class="step">a = 3, r = 3, S<sub>n</sub> = 120</div>
+            <div class="step"><span class="fraction"><span class="numerator">3(3<sup>n</sup> - 1)</span><span class="denominator">3 - 1</span></span> = 120 &rArr; <span class="fraction"><span class="numerator">3(3<sup>n</sup> - 1)</span><span class="denominator">2</span></span> = 120</div>
+            <div class="step">3(3<sup>n</sup> - 1) = 240 &rArr; 3<sup>n</sup> - 1 = 80</div>
+            <div class="step">3<sup>n</sup> = 81 &rArr; 3<sup>n</sup> = 3<sup>4</sup> &rArr; n = 4</div>
+            <div class="hinglish-explanation">योगफल का सूत्र लगाकर 3<sup>n</sup> का मान ज्ञात किया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. किसी गुणोत्तर श्रेणी के प्रथम तीन पदों का योगफल 16 है तथा अगले तीन पदों का योग 128 है। प्रथम पद, सार्व अनुपात तथा n पदों का योगफल ज्ञात कीजिए।</div>
+            <div class="step">a + ar + ar<sup>2</sup> = 16 &rArr; a(1 + r + r<sup>2</sup>) = 16 ... (1)</div>
+            <div class="step">ar<sup>3</sup> + ar<sup>4</sup> + ar<sup>5</sup> = 128 &rArr; ar<sup>3</sup>(1 + r + r<sup>2</sup>) = 128 ... (2)</div>
+            <div class="step">समीकरण (2) को (1) से भाग देने पर: r<sup>3</sup> = <span class="fraction"><span class="numerator">128</span><span class="denominator">16</span></span> = 8 &rArr; r = 2</div>
+            <div class="step">(1) में r का मान रखने पर: a(1 + 2 + 4) = 16 &rArr; 7a = 16 &rArr; a = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span></div>
+            <div class="step">S<sub>n</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span> = <span class="fraction"><span class="numerator">(16/7)(2<sup>n</sup> - 1)</span><span class="denominator">2 - 1</span></span> = <span class="fraction"><span class="numerator">16</span><span class="denominator">7</span></span>(2<sup>n</sup> - 1)</div>
+            <div class="hinglish-explanation">दोनों समीकरणों का भाग देने से ब्रैकेट वाला हिस्सा कट जाता है और r मिल जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. एक गुणोत्तर श्रेणी का प्रथम पद a = 729 तथा 7वाँ पद 64 है तो S<sub>7</sub> ज्ञात कीजिए।</div>
+            <div class="step">a<sub>7</sub> = ar<sup>6</sup> = 64 &rArr; 729 r<sup>6</sup> = 64 &rArr; r<sup>6</sup> = <span class="fraction"><span class="numerator">64</span><span class="denominator">729</span></span> = (<span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>)<sup>6</sup> &rArr; r = <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span></div>
+            <div class="step">S<sub>7</sub> = <span class="fraction"><span class="numerator">a(1 - r<sup>7</sup>)</span><span class="denominator">1 - r</span></span> = <span class="fraction"><span class="numerator">729 [1 - (2/3)<sup>7</sup>]</span><span class="denominator">1 - 2/3</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">729 [1 - <span class="fraction"><span class="numerator">128</span><span class="denominator">2187</span></span>]</span><span class="denominator">1/3</span></span> = 3 &times; 729 [<span class="fraction"><span class="numerator">2187 - 128</span><span class="denominator">2187</span></span>]</div>
+            <div class="step">= 2187 &times; <span class="fraction"><span class="numerator">2059</span><span class="denominator">2187</span></span> = 2059</div>
+            <div class="hinglish-explanation">r प्राप्त करने के बाद S<sub>7</sub> के सूत्र में मान रखा। गणना में 3 &times; 729 = 2187 होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">16. एक गुणोत्तर श्रेणी को ज्ञात कीजिए, जिसके प्रथम दो पदों का योगफल 4 है तथा 5वाँ पद तृतीय पद का 4 गुना है।</div>
+            <div class="step">a<sub>1</sub> + a<sub>2</sub> = 4 &rArr; a + ar = 4 &rArr; a(1 + r) = 4 ... (1)</div>
+            <div class="step">a<sub>5</sub> = 4 a<sub>3</sub> &rArr; ar<sup>4</sup> = 4ar<sup>2</sup> &rArr; r<sup>2</sup> = 4 &rArr; r = &plusmn;2</div>
+            <div class="step">यदि r = 2: a(1 + 2) = 4 &rArr; 3a = 4 &rArr; a = 4/3. श्रेणी: 4/3, 8/3, 16/3...</div>
+            <div class="step">यदि r = -2: a(1 - 2) = 4 &rArr; -a = 4 &rArr; a = -4. श्रेणी: -4, 8, -16, 32...</div>
+            <div class="hinglish-explanation">समीकरण से r के दो मान मिलते हैं, जिससे दो अलग-अलग श्रेणियां प्राप्त होती हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">17. यदि किसी गुणोत्तर श्रेणी का 4वाँ, 10वाँ तथा 16वाँ पद क्रमशः x, y तथा z हैं, तो सिद्ध कीजिए कि x, y, z गुणोत्तर श्रेणी में हैं।</div>
+            <div class="step">x = ar<sup>3</sup></div>
+            <div class="step">y = ar<sup>9</sup></div>
+            <div class="step">z = ar<sup>15</sup></div>
+            <div class="step">y<sup>2</sup> = (ar<sup>9</sup>)<sup>2</sup> = a<sup>2</sup>r<sup>18</sup></div>
+            <div class="step">x &times; z = (ar<sup>3</sup>)(ar<sup>15</sup>) = a<sup>2</sup>r<sup>18</sup></div>
+            <div class="step">चूँकि y<sup>2</sup> = xz है, अतः x, y, z गुणोत्तर श्रेणी (G.P.) में हैं। सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">मध्य पद का वर्ग बाहरी पदों के गुणनफल के बराबर सिद्ध किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">18. अनुक्रम 8, 88, 888, 8888... के n पदों का योग ज्ञात कीजिए।</div>
+            <div class="step">S<sub>n</sub> = 8(1 + 11 + 111 + ... n पदों तक)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span> (9 + 99 + 999 + ... n पदों तक)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span> [(10 - 1) + (10<sup>2</sup> - 1) + (10<sup>3</sup> - 1) + ... + (10<sup>n</sup> - 1)]</div>
+            <div class="step">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span> [(10 + 10<sup>2</sup> + ... + 10<sup>n</sup>) - (1 + 1 + ... n बार)]</div>
+            <div class="step">= <span class="fraction"><span class="numerator">8</span><span class="denominator">9</span></span> [ <span class="fraction"><span class="numerator">10(10<sup>n</sup> - 1)</span><span class="denominator">9</span></span> - n ]</div>
+            <div class="step">= <span class="fraction"><span class="numerator">80</span><span class="denominator">81</span></span> (10<sup>n</sup> - 1) - <span class="fraction"><span class="numerator">8n</span><span class="denominator">9</span></span></div>
+            <div class="hinglish-explanation">यह एक मानक प्रश्न है जहाँ 9 से गुणा और भाग करके व्यंजक को 10 की घातों में बदला जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">19. अनुक्रम 2, 4, 8, 16, 32 तथा 128, 32, 8, 2, 1/2 के संगत पदों के गुणनफल से बने अनुक्रम का योगफल ज्ञात कीजिए।</div>
+            <div class="step">संगत पदों का गुणनफल: (2&times;128), (4&times;32), (8&times;8), (16&times;2), (32&times;1/2)</div>
+            <div class="step">अर्थात अनुक्रम: 256, 128, 64, 32, 16</div>
+            <div class="step">यह एक G.P. है जहाँ a = 256, r = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, n = 5</div>
+            <div class="step">S<sub>5</sub> = <span class="fraction"><span class="numerator">256 (1 - (1/2)<sup>5</sup>)</span><span class="denominator">1 - 1/2</span></span> = <span class="fraction"><span class="numerator">256 (1 - 1/32)</span><span class="denominator">1/2</span></span></div>
+            <div class="step">= 512 &times; <span class="fraction"><span class="numerator">31</span><span class="denominator">32</span></span> = 16 &times; 31 = 496</div>
+            <div class="hinglish-explanation">दो G.P. के संगत पदों का गुणनफल भी एक G.P. होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">20. दिखाइए कि अनुक्रम a, ar, ar<sup>2</sup>...ar<sup>n-1</sup> तथा A, AR, AR<sup>2</sup>...AR<sup>n-1</sup> के संगत पदों के गुणनफल से बना अनुक्रम गुणोत्तर श्रेणी होती है तथा सार्व अनुपात ज्ञात कीजिए।</div>
+            <div class="step">संगत गुणनफल: (aA), (ar)(AR), (ar<sup>2</sup>)(AR<sup>2</sup>) ... (ar<sup>n-1</sup>)(AR<sup>n-1</sup>)</div>
+            <div class="step">= aA, aA(rR), aA(rR)<sup>2</sup> ... aA(rR)<sup>n-1</sup></div>
+            <div class="step">यह स्पष्ट रूप से एक गुणोत्तर श्रेणी है जिसका प्रथम पद aA है।</div>
+            <div class="step">सार्व अनुपात = <span class="fraction"><span class="numerator">द्वितीय पद</span><span class="denominator">प्रथम पद</span></span> = <span class="fraction"><span class="numerator">aA(rR)</span><span class="denominator">aA</span></span> = rR</div>
+            <div class="hinglish-explanation">अनुक्रमों का गुणन करने पर नया सार्व अनुपात दोनों अनुपातों का गुणनफल (rR) हो जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">21. ऐसे चार पद ज्ञात कीजिए जो गुणोत्तर श्रेणी में हों, जिसका तीसरा पद प्रथम पद से 9 अधिक हो तथा दूसरा पद चौथे पद से 18 अधिक हो।</div>
+            <div class="step">पद: a, ar, ar<sup>2</sup>, ar<sup>3</sup></div>
+            <div class="step">दिया है: a<sub>3</sub> = a<sub>1</sub> + 9 &rArr; ar<sup>2</sup> = a + 9 &rArr; a(r<sup>2</sup> - 1) = 9 ... (1)</div>
+            <div class="step">तथा a<sub>2</sub> = a<sub>4</sub> + 18 &rArr; ar = ar<sup>3</sup> + 18 &rArr; ar(1 - r<sup>2</sup>) = 18 ... (2)</div>
+            <div class="step">समीकरण (2) को (1) से भाग देने पर: <span class="fraction"><span class="numerator">-ar(r<sup>2</sup> - 1)</span><span class="denominator">a(r<sup>2</sup> - 1)</span></span> = <span class="fraction"><span class="numerator">18</span><span class="denominator">9</span></span> &rArr; -r = 2 &rArr; r = -2</div>
+            <div class="step">r का मान (1) में रखने पर: a((-2)<sup>2</sup> - 1) = 9 &rArr; a(4 - 1) = 9 &rArr; 3a = 9 &rArr; a = 3</div>
+            <div class="step">पद होंगे: 3, 3(-2), 3(4), 3(-8) अर्थात 3, -6, 12, -24</div>
+            <div class="hinglish-explanation">(1-r<sup>2</sup>) को -(r<sup>2</sup>-1) लिखकर भाग देने से सरलता से r=-2 प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">22. यदि किसी गुणोत्तर श्रेणी का pवाँ, qवाँ तथा rवाँ पद क्रमशः a, b तथा c हो, तो सिद्ध कीजिए कि a<sup>q-r</sup> b<sup>r-p</sup> c<sup>p-q</sup> = 1</div>
+            <div class="step">माना प्रथम पद A और सार्व अनुपात R है।</div>
+            <div class="step">a = AR<sup>p-1</sup>,  b = AR<sup>q-1</sup>,  c = AR<sup>r-1</sup></div>
+            <div class="step">a<sup>q-r</sup> = A<sup>q-r</sup> R<sup>(p-1)(q-r)</sup></div>
+            <div class="step">b<sup>r-p</sup> = A<sup>r-p</sup> R<sup>(q-1)(r-p)</sup></div>
+            <div class="step">c<sup>p-q</sup> = A<sup>p-q</sup> R<sup>(r-1)(p-q)</sup></div>
+            <div class="step">तीनों का गुणा करने पर: A की घातों का योग = (q-r) + (r-p) + (p-q) = 0</div>
+            <div class="step">R की घातों का योग = (p-1)(q-r) + (q-1)(r-p) + (r-1)(p-q) = 0</div>
+            <div class="step">= A<sup>0</sup> R<sup>0</sup> = 1. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">घातांकों के नियम से घातें जुड़ जाती हैं और चक्रीय क्रम में होने के कारण योग शून्य हो जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">23. यदि किसी गुणोत्तर श्रेणी का प्रथम तथा nवाँ पद क्रमशः a तथा b हैं, एवं P, n पदों का गुणनफल हो, तो सिद्ध कीजिए कि P<sup>2</sup> = (ab)<sup>n</sup></div>
+            <div class="step">दिया है: a<sub>1</sub> = a, a<sub>n</sub> = b &rArr; b = ar<sup>n-1</sup></div>
+            <div class="step">गुणनफल P = a &times; ar &times; ar<sup>2</sup> &times; ... &times; ar<sup>n-1</sup></div>
+            <div class="step">P = a<sup>n</sup> r<sup>(1+2+...+(n-1))</sup> = a<sup>n</sup> r<sup>n(n-1)/2</sup></div>
+            <div class="step">P<sup>2</sup> = (a<sup>n</sup> r<sup>n(n-1)/2</sup>)<sup>2</sup> = a<sup>2n</sup> r<sup>n(n-1)</sup></div>
+            <div class="step">(ab)<sup>n</sup> = (a &times; ar<sup>n-1</sup>)<sup>n</sup> = (a<sup>2</sup> r<sup>n-1</sup>)<sup>n</sup> = a<sup>2n</sup> r<sup>n(n-1)</sup></div>
+            <div class="step">अतः P<sup>2</sup> = (ab)<sup>n</sup>. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">r की घातों का योग समांतर श्रेणी (A.P.) के योगफल n(n-1)/2 के सूत्र से निकाला गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">24. दिखाइए कि एक गुणोत्तर श्रेणी के प्रथम n पदों के योगफल तथा (n+1)वें पद से (2n)वें पद तक के पदों के योगफल का अनुपात 1 / r<sup>n</sup> है।</div>
+            <div class="step">प्रथम n पदों का योग S<sub>1</sub> = <span class="fraction"><span class="numerator">a(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span></div>
+            <div class="step">अगले n पदों का योग S<sub>2</sub> (जहाँ प्रथम पद a<sub>n+1</sub> = ar<sup>n</sup> है) = <span class="fraction"><span class="numerator">ar<sup>n</sup>(r<sup>n</sup> - 1)</span><span class="denominator">r - 1</span></span></div>
+            <div class="step">अनुपात = <span class="fraction"><span class="numerator">S<sub>1</sub></span><span class="denominator">S<sub>2</sub></span></span> = <span class="fraction"><span class="numerator">[a(r<sup>n</sup> - 1) / (r - 1)]</span><span class="denominator">[ar<sup>n</sup>(r<sup>n</sup> - 1) / (r - 1)]</span></span></div>
+            <div class="step">सभी समान पद कटने पर = <span class="fraction"><span class="numerator">1</span><span class="denominator">r<sup>n</sup></span></span>. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">अगले n पदों के लिए नई गुणोत्तर श्रेणी का पहला पद ar<sup>n</sup> मानकर हल किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">25. यदि a, b, c तथा d गुणोत्तर श्रेणी में हैं तो दिखाइए कि (a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>)(b<sup>2</sup>+c<sup>2</sup>+d<sup>2</sup>) = (ab+bc+cd)<sup>2</sup></div>
+            <div class="step">चूँकि पद G.P. में हैं: b = ar, c = ar<sup>2</sup>, d = ar<sup>3</sup></div>
+            <div class="step">LHS: [a<sup>2</sup> + a<sup>2</sup>r<sup>2</sup> + a<sup>2</sup>r<sup>4</sup>] &times; [a<sup>2</sup>r<sup>2</sup> + a<sup>2</sup>r<sup>4</sup> + a<sup>2</sup>r<sup>6</sup>]</div>
+            <div class="step">= a<sup>2</sup>(1+r<sup>2</sup>+r<sup>4</sup>) &times; a<sup>2</sup>r<sup>2</sup>(1+r<sup>2</sup>+r<sup>4</sup>) = a<sup>4</sup>r<sup>2</sup>(1+r<sup>2</sup>+r<sup>4</sup>)<sup>2</sup></div>
+            <div class="step">RHS: (a(ar) + (ar)(ar<sup>2</sup>) + (ar<sup>2</sup>)(ar<sup>3</sup>))<sup>2</sup></div>
+            <div class="step">= (a<sup>2</sup>r + a<sup>2</sup>r<sup>3</sup> + a<sup>2</sup>r<sup>5</sup>)<sup>2</sup> = [a<sup>2</sup>r(1+r<sup>2</sup>+r<sup>4</sup>)]<sup>2</sup> = a<sup>4</sup>r<sup>2</sup>(1+r<sup>2</sup>+r<sup>4</sup>)<sup>2</sup></div>
+            <div class="step">LHS = RHS. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">सबको a और r के रूप में बदलकर बीजगणितीय रूप से दोनों पक्षों को समान दिखाया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">26. ऐसी दो संख्याएँ ज्ञात कीजिए जिनको 3 तथा 81 के बीच रखने पर प्राप्त अनुक्रम एक गुणोत्तर श्रेणी बन जाय।</div>
+            <div class="step">माना संख्याएँ G<sub>1</sub> और G<sub>2</sub> हैं। अनुक्रम 3, G<sub>1</sub>, G<sub>2</sub>, 81 G.P. में है।</div>
+            <div class="step">यहाँ a = 3, चौथा पद a<sub>4</sub> = 81</div>
+            <div class="step">ar<sup>3</sup> = 81 &rArr; 3r<sup>3</sup> = 81 &rArr; r<sup>3</sup> = 27 &rArr; r = 3</div>
+            <div class="step">G<sub>1</sub> = ar = 3 &times; 3 = 9</div>
+            <div class="step">G<sub>2</sub> = ar<sup>2</sup> = 3 &times; 9 = 27</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> संख्याएँ 9 और 27 हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">27. n का मान ज्ञात कीजिए ताकि <span class="fraction"><span class="numerator">a<sup>n+1</sup> + b<sup>n+1</sup></span><span class="denominator">a<sup>n</sup> + b<sup>n</sup></span></span>, a तथा b के बीच गुणोत्तर माध्य हो।</div>
+            <div class="step">गुणोत्तर माध्य (G.M.) = &radic;ab = a<sup>1/2</sup> b<sup>1/2</sup></div>
+            <div class="step">अतः <span class="fraction"><span class="numerator">a<sup>n+1</sup> + b<sup>n+1</sup></span><span class="denominator">a<sup>n</sup> + b<sup>n</sup></span></span> = a<sup>1/2</sup> b<sup>1/2</sup></div>
+            <div class="step">तिर्यक गुणा (Cross multiply): a<sup>n+1</sup> + b<sup>n+1</sup> = a<sup>n+1/2</sup>b<sup>1/2</sup> + a<sup>1/2</sup>b<sup>n+1/2</sup></div>
+            <div class="step">a<sup>n+1</sup> - a<sup>n+1/2</sup>b<sup>1/2</sup> = a<sup>1/2</sup>b<sup>n+1/2</sup> - b<sup>n+1</sup></div>
+            <div class="step">a<sup>n+1/2</sup> (a<sup>1/2</sup> - b<sup>1/2</sup>) = b<sup>n+1/2</sup> (a<sup>1/2</sup> - b<sup>1/2</sup>)</div>
+            <div class="step">a<sup>n+1/2</sup> = b<sup>n+1/2</sup> &rArr; (<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>)<sup>n+1/2</sup> = 1 = (<span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span>)<sup>0</sup></div>
+            <div class="step">n + 1/2 = 0 &rArr; n = -1/2</div>
+            <div class="hinglish-explanation">घातांकों को व्यवस्थित करके दोनों ओर (a<sup>1/2</sup> - b<sup>1/2</sup>) को कॉमन (Common) निकाल कर काट दिया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">28. दो संख्याओं का योगफल उनके गुणोत्तर माध्य का 6 गुना है तो दिखाइए कि संख्याएँ (3+2&radic;2) : (3-2&radic;2) के अनुपात में हैं।</div>
+            <div class="step">माना संख्याएँ a तथा b हैं। दिया है: a + b = 6&radic;ab</div>
+            <div class="step">अतः <span class="fraction"><span class="numerator">a + b</span><span class="denominator">2&radic;ab</span></span> = <span class="fraction"><span class="numerator">3</span><span class="denominator">1</span></span></div>
+            <div class="step">योगांतरातुपात (Componendo & Dividendo) नियम से: <span class="fraction"><span class="numerator">a + b + 2&radic;ab</span><span class="denominator">a + b - 2&radic;ab</span></span> = <span class="fraction"><span class="numerator">3 + 1</span><span class="denominator">3 - 1</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">2</span><span class="denominator">1</span></span></div>
+            <div class="step"><span class="fraction"><span class="numerator">(&radic;a + &radic;b)<sup>2</sup></span><span class="denominator">(&radic;a - &radic;b)<sup>2</sup></span></span> = 2 &rArr; <span class="fraction"><span class="numerator">&radic;a + &radic;b</span><span class="denominator">&radic;a - &radic;b</span></span> = <span class="fraction"><span class="numerator">&radic;2</span><span class="denominator">1</span></span></div>
+            <div class="step">पुनः योगांतरातुपात नियम से: <span class="fraction"><span class="numerator">2&radic;a</span><span class="denominator">2&radic;b</span></span> = <span class="fraction"><span class="numerator">&radic;2 + 1</span><span class="denominator">&radic;2 - 1</span></span></div>
+            <div class="step">वर्ग करने पर: <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span> = <span class="fraction"><span class="numerator">(&radic;2 + 1)<sup>2</sup></span><span class="denominator">(&radic;2 - 1)<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">2 + 1 + 2&radic;2</span><span class="denominator">2 + 1 - 2&radic;2</span></span> = <span class="fraction"><span class="numerator">3 + 2&radic;2</span><span class="denominator">3 - 2&radic;2</span></span>. सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">योगांतरातुपात (Componendo & Dividendo) का दो बार प्रयोग करके प्रश्न को बहुत सरलता से हल किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">29. यदि A तथा G दो धनात्मक संख्याओं के बीच क्रमशः समांतर माध्य तथा गुणोत्तर माध्य हों, तो सिद्ध कीजिए कि संख्याएँ A &plusmn; &radic;(A+G)(A-G) हैं।</div>
+            <div class="step">माना संख्याएँ a और b हैं।</div>
+            <div class="step">A = <span class="fraction"><span class="numerator">a + b</span><span class="denominator">2</span></span> &rArr; a + b = 2A</div>
+            <div class="step">G = &radic;ab &rArr; ab = G<sup>2</sup></div>
+            <div class="step">द्विघात समीकरण जिसके मूल a और b हों: x<sup>2</sup> - (a+b)x + ab = 0</div>
+            <div class="step">x<sup>2</sup> - 2Ax + G<sup>2</sup> = 0</div>
+            <div class="step">श्रीधराचार्य सूत्र से: x = <span class="fraction"><span class="numerator">2A &plusmn; &radic;(4A<sup>2</sup> - 4G<sup>2</sup>)</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">2A &plusmn; 2&radic;(A<sup>2</sup> - G<sup>2</sup>)</span><span class="denominator">2</span></span></div>
+            <div class="step">x = A &plusmn; &radic;(A<sup>2</sup> - G<sup>2</sup>) = A &plusmn; &radic;((A+G)(A-G)). सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">मूलों के योग और गुणनफल की मदद से द्विघात समीकरण (Quadratic Equation) बनाकर हल किया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">30. किसी कल्चर में बैक्टीरिया की संख्या प्रत्येक घंटे पश्चात् दुगुनी हो जाती है। यदि प्रारंभ में 30 बैक्टीरिया थे, तो दूसरे, चौथे तथा nवें घंटों बाद बैक्टीरिया की संख्या क्या होगी?</div>
+            <div class="step">यहाँ यह एक गुणोत्तर श्रेणी है जिसका प्रथम पद (प्रारंभिक) a = 30 और सार्व अनुपात r = 2 है।</div>
+            <div class="step">t घंटे बाद संख्या = a r<sup>t</sup></div>
+            <div class="step">दूसरे घंटे बाद (t=2) = 30 &times; 2<sup>2</sup> = 30 &times; 4 = 120</div>
+            <div class="step">चौथे घंटे बाद (t=4) = 30 &times; 2<sup>4</sup> = 30 &times; 16 = 480</div>
+            <div class="step">nवें घंटे बाद (t=n) = 30 &times; 2<sup>n</sup></div>
+            <div class="hinglish-explanation">nवें घंटे "बाद" का अर्थ है कि (n+1)वाँ पद निकालना है, इसलिए सूत्र ar<sup>n</sup> उपयोग होगा।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">31. 500 रुपये धनराशि 10% वार्षिक चक्रवृद्धि ब्याज पर 10 वर्षों बाद क्या हो जाएगी, ज्ञात कीजिए?</div>
+            <div class="step">मूलधन (P) = 500 रुपये, दर (R) = 10% वार्षिक, समय (n) = 10 वर्ष</div>
+            <div class="step">मिश्रधन (A) = P(1 + <span class="fraction"><span class="numerator">R</span><span class="denominator">100</span></span>)<sup>n</sup></div>
+            <div class="step">A = 500 (1 + <span class="fraction"><span class="numerator">10</span><span class="denominator">100</span></span>)<sup>10</sup> = 500 (1 + 0.1)<sup>10</sup></div>
+            <div class="step">A = 500(1.1)<sup>10</sup> रुपये</div>
+            <div class="hinglish-explanation">यह भी एक प्रकार से गुणोत्तर श्रेणी का ही अनुप्रयोग है जहाँ सार्व अनुपात 1.1 है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">32. यदि किसी द्विघात समीकरण के मूलों के समांतर माध्य एवं गुणोत्तर माध्य क्रमशः 8 तथा 5 हैं, तो द्विघात समीकरण ज्ञात कीजिए।</div>
+            <div class="step">माना मूल a तथा b हैं।</div>
+            <div class="step">समांतर माध्य (A.M.) = <span class="fraction"><span class="numerator">a + b</span><span class="denominator">2</span></span> = 8 &rArr; a + b = 16</div>
+            <div class="step">गुणोत्तर माध्य (G.M.) = &radic;ab = 5 &rArr; ab = 25</div>
+            <div class="step">द्विघात समीकरण का रूप: x<sup>2</sup> - (मूलों का योग)x + (मूलों का गुणनफल) = 0</div>
+            <div class="step">x<sup>2</sup> - (16)x + 25 = 0</div>
+            <div class="hinglish-explanation"><strong>उत्तर:</strong> अभीष्ट द्विघात समीकरण x<sup>2</sup> - 16x + 25 = 0 है।</div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        Search on Google "StudyScript" & Download StudyScript App 
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+

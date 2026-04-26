@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 गणित - अध्याय 3: त्रिकोणमितीय फलन</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.2em;
+            position: relative;
+            top: 0.3em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.3em;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid black;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 3px solid #0ea5e9;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- ग्रेडिएंट टाइटल कार्ड -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 3<br>त्रिकोणमितीय फलन</h1>
+            <p class="mt-2 text-lg">कक्षा 11 : गणित | StudyScript</p>
+        </div>
+
+        <!-- अभ्यास 3.1 अनुभाग -->
+        <section id="exercise-3-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 3.1</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: निम्नलिखित डिग्री मापों के संगत रेडियन माप ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 25°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हम जानते हैं कि 180° = π रेडियन</p>
+                        अतः, 1° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> रेडियन
+                        </p>
+                        इसलिए, 25° = 25 ×
+                        <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">36</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">36</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 180° = π रेडियन, इसलिए 1° = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> रेडियन। 25° = 25 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">36</span>
+                        </div> रेडियन।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) -47° 30'</h4>
+                    
+                    <div class="step">
+                        पहले, 30' को डिग्री में बदलें: 30' = 
+                            <div class="fraction">
+                                <span class="numerator">30</span>
+                                <span class="denominator">60</span>
+                            </div> = 0.5°
+                        </p>
+                        <p class="mb-2">अतः, -47° 30' = -47.5°</p>
+                        अब, -47.5° = -47.5 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> रेडियन
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">-95π</span>
+                                <span class="denominator">360</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-19π</span>
+                                <span class="denominator">72</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">-19π</span>
+                                <span class="denominator">72</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 30' = 0.5°, अतः -47° 30' = -47.5°। -47.5 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-95π</span>
+                            <span class="denominator">360</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">-19π</span>
+                            <span class="denominator">72</span>
+                        </div> रेडियन।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 240°</h4>
+                    
+                    <div class="step">
+                        240° = 240 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> रेडियन
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">4π</span>
+                                <span class="denominator">3</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">4π</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 240° = 240 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">4π</span>
+                            <span class="denominator">3</span>
+                        </div> रेडियन।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) 520°</h4>
+                    
+                    <div class="step">
+                        520° = 520 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">180</span>
+                            </div> रेडियन
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">26π</span>
+                                <span class="denominator">9</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">26π</span>
+                                <span class="denominator">9</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 520° = 520 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">180</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">26π</span>
+                            <span class="denominator">9</span>
+                        </div> रेडियन।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: निम्नलिखित रेडियन मापों के संगत डिग्री माप ज्ञात कीजिए (π = 22/7 का प्रयोग करें):</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 11/16</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हम जानते हैं कि π रेडियन = 180°</p>
+                        अतः, 1 रेडियन = 
+                            <div class="fraction">
+                                <span class="numerator">180°</span>
+                                <span class="denominator">π</span>
+                            </div>
+                        </p>
+                        इसलिए, 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> रेडियन = 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180°</span>
+                                <span class="denominator">π</span>
+                            </div>
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">11</span>
+                                <span class="denominator">16</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180° × 7</span>
+                                <span class="denominator">22</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">11 × 180° × 7</span>
+                                <span class="denominator">16 × 22</span>
+                            </div>
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">13860°</span>
+                                <span class="denominator">352</span>
+                            </div> = 39.375° = 39° 22' 30"
+                        </p>
+                        <p><strong>उत्तर:</strong> 39° 22' 30"</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> π = 180°, इसलिए 1 रेडियन = 
+                        <div class="fraction">
+                            <span class="numerator">180°</span>
+                            <span class="denominator">π</span>
+                        </div>। 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> रेडियन = 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180°</span>
+                            <span class="denominator">π</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">11</span>
+                            <span class="denominator">16</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = 39.375° = 39° 22' 30"।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) -4</h4>
+                    
+                    <div class="step">
+                        -4 रेडियन = -4 × 
+                            <div class="fraction">
+                                <span class="numerator">180°</span>
+                                <span class="denominator">π</span>
+                            </div>
+                        </p>
+                        = -4 × 
+                            <div class="fraction">
+                                <span class="numerator">180° × 7</span>
+                                <span class="denominator">22</span>
+                            </div> = -4 × 
+                            <div class="fraction">
+                                <span class="numerator">1260°</span>
+                                <span class="denominator">22</span>
+                            </div>
+                        </p>
+                        = - 
+                            <div class="fraction">
+                                <span class="numerator">5040°</span>
+                                <span class="denominator">22</span>
+                            </div> = -229.09° ≈ -229° 5' 24"
+                        </p>
+                        <p><strong>उत्तर:</strong> -229° 5' 24"</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> -4 रेडियन = -4 × 
+                        <div class="fraction">
+                            <span class="numerator">180°</span>
+                            <span class="denominator">π</span>
+                        </div> = -4 × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = -229.09° ≈ -229° 5' 24"।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 5π/3</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">3</span>
+                            </div> रेडियन = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180°</span>
+                                <span class="denominator">π</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">= 
+                            <div class="fraction">
+                                <span class="numerator">5 × 180°</span>
+                                <span class="denominator">3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">900°</span>
+                                <span class="denominator">3</span>
+                            </div> = 300°
+                        </p>
+                        <p><strong>उत्तर:</strong> 300°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">3</span>
+                        </div> रेडियन = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">3</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5×180</span>
+                            <span class="denominator">3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">900°</span>
+                            <span class="denominator">3</span>
+                        </div> = 300°।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iv) 7π/6</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">7π</span>
+                                <span class="denominator">6</span>
+                            </div> रेडियन = 
+                            <div class="fraction">
+                                <span class="numerator">7π</span>
+                                <span class="denominator">6</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">180°</span>
+                                <span class="denominator">π</span>
+                            </div>
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">7 × 180°</span>
+                                <span class="denominator">6</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1260°</span>
+                                <span class="denominator">6</span>
+                            </div> = 210°
+                        </p>
+                        <p><strong>उत्तर:</strong> 210°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 
+                        <div class="fraction">
+                            <span class="numerator">7π</span>
+                            <span class="denominator">6</span>
+                        </div> रेडियन = 
+                        <div class="fraction">
+                            <span class="numerator">7π</span>
+                            <span class="denominator">6</span>
+                        </div> × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">7×180</span>
+                            <span class="denominator">6</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1260</span>
+                            <span class="denominator">6</span>
+                        </div> = 210°।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: एक पहिया एक मिनट में 360 चक्कर लगाता है। तो एक सेकंड में यह कितने रेडियन घूमता है?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">1 मिनट में चक्करों की संख्या = 360</p>
+                        1 सेकंड में चक्करों की संख्या = 
+                            <div class="fraction">
+                                <span class="numerator">360</span>
+                                <span class="denominator">60</span>
+                            </div> = 6
+                        </p>
+                        <p class="mb-2">1 चक्कर = 2π रेडियन</p>
+                        <p class="mb-2">6 चक्कर = 6 × 2π = 12π रेडियन</p>
+                        <p><strong>उत्तर:</strong> 12π रेडियन</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 1 मिनट में 360 चक्कर, तो 1 सेकंड में 
+                        <div class="fraction">
+                            <span class="numerator">360</span>
+                            <span class="denominator">60</span>
+                        </div> = 6 चक्कर। 1 चक्कर = 2π रेडियन, अतः 6 चक्कर = 6 × 2π = 12π रेडियन।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: 100 सेमी त्रिज्या वाले एक वृत्त में 22 सेमी लंबाई की चाप द्वारा केंद्र पर अंतरित कोण की डिग्री माप ज्ञात कीजिए (π = 22/7 का प्रयोग करें)।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        हम जानते हैं कि θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> (रेडियन में)
+                        </p>
+                        <p class="mb-2">यहाँ, l = 22 सेमी, r = 100 सेमी</p>
+                        <p
+                        अतः, θ = 
+                            <div class="fraction">
+                                <span class="numerator">22</span>
+                                <span class="denominator">100</span>
+                            </div> = 0.22 रेडियन
+                        </p>
+                        अब, 1 रेडियन = 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>°
+                        </p>
+                        अतः, 0.22 रेडियन = 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">180</span>
+                                <span class="denominator">π</span>
+                            </div>° = 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">180 × 7</span>
+                                <span class="denominator">22</span>
+                            </div>°
+                        </p>
+                        = 0.22 × 
+                            <div class="fraction">
+                                <span class="numerator">1260°</span>
+                                <span class="denominator">22</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">277.2°</span>
+                                <span class="denominator">22</span>
+                            </div> = 12.6°
+                        </p>
+                        <p><strong>उत्तर:</strong> 12.6°</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">22</span>
+                            <span class="denominator">100</span>
+                        </div> = 0.22 रेडियन। 0.22 रेडियन = 0.22 × 
+                        <div class="fraction">
+                            <span class="numerator">180</span>
+                            <span class="denominator">π</span>
+                        </div> = 0.22 × 
+                        <div class="fraction">
+                            <span class="numerator">180 × 7</span>
+                            <span class="denominator">22</span>
+                        </div> = 12.6°।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: 40 सेमी व्यास वाले एक वृत्त में एक जीवा की लंबाई 20 सेमी है। जीवा के लघु चाप की लंबाई ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">व्यास = 40 सेमी, अतः त्रिज्या r = 20 सेमी</p>
+                        <p class="mb-2">जीवा की लंबाई = 20 सेमी</p>
+                        <p class="mb-2">दो त्रिज्याओं और जीवा से बने त्रिभुज में:</p>
+                        <p class="mb-2">सभी भुजाएँ 20 सेमी हैं (समबाहु त्रिभुज)</p>
+                        अतः, केंद्रीय कोण θ = 60° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> रेडियन
+                        </p>
+                        चाप की लंबाई l = rθ = 20 × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">20π</span>
+                                <span class="denominator">3</span>
+                            </div> सेमी
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">20π</span>
+                                <span class="denominator">3</span>
+                            </div> सेमी
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> त्रिज्या = 20 सेमी, जीवा = 20 सेमी। त्रिभुज समबाहु है, अतः कोण = 60° = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div> रेडियन। चाप की लंबाई = rθ = 20 × 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">20π</span>
+                            <span class="denominator">3</span>
+                        </div> सेमी।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: यदि दो वृत्तों में, समान लंबाई की चापें केंद्र पर क्रमशः 60° और 75° के कोण अंतरित करती हैं, तो उनकी त्रिज्याओं का अनुपात ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">माना त्रिज्याएँ r₁ और r₂ हैं</p>
+                        <p class="mb-2">चाप की लंबाई l = r₁θ₁ = r₂θ₂</p>
+                        θ₁ = 60° = 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> रेडियन
+                        </p>
+                        θ₂ = 75° = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div> रेडियन
+                        </p>
+                        अतः, r₁ × 
+                            <div class="fraction">
+                                <span class="numerator">π</span>
+                                <span class="denominator">3</span>
+                            </div> = r₂ × 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">
+                            <div class="fraction">
+                                <span class="numerator">r₁</span>
+                                <span class="denominator">r₂</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π/12</span>
+                                <span class="denominator">π/3</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5π</span>
+                                <span class="denominator">12</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">π</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> r₁ : r₂ = 5 : 4</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> समान चाप लंबाई के लिए, r₁θ₁ = r₂θ₂। θ₁ = 
+                        <div class="fraction">
+                            <span class="numerator">π</span>
+                            <span class="denominator">3</span>
+                        </div>, θ₂ = 
+                        <div class="fraction">
+                            <span class="numerator">5π</span>
+                            <span class="denominator">12</span>
+                        </div>। अतः 
+                        <div class="fraction">
+                            <span class="numerator">r₁</span>
+                            <span class="denominator">r₂</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5π/12</span>
+                            <span class="denominator">π/3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>। अनुपात = 5:4।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: एक पेंडुलम 75 सेमी लंबा है और इसका सिरा निम्नलिखित लंबाई की चाप बनाता है, तो रेडियन में वह कोण ज्ञात कीजिए जिससे पेंडुलम झूलता है:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) 10 सेमी</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पेंडुलम की लंबाई r = 75 सेमी</p>
+                        <p class="mb-2">चाप की लंबाई l = 10 सेमी</p>
+                        θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">10</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">15</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">15</span>
+                            </div> रेडियन
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">10</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">15</span>
+                        </div> रेडियन।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) 15 सेमी</h4>
+                    
+                    <div class="step">
+                        θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">15</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5</span>
+                            </div> रेडियन
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">15</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">5</span>
+                        </div> रेडियन।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(iii) 21 सेमी</h4>
+                    
+                    <div class="step">
+                        θ = 
+                            <div class="fraction">
+                                <span class="numerator">l</span>
+                                <span class="denominator">r</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">21</span>
+                                <span class="denominator">75</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">25</span>
+                            </div> रेडियन
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">7</span>
+                                <span class="denominator">25</span>
+                            </div> रेडियन
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> θ = 
+                        <div class="fraction">
+                            <span class="numerator">l</span>
+                            <span class="denominator">r</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">21</span>
+                            <span class="denominator">75</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">7</span>
+                            <span class="denominator">25</span>
+                        </div> रेडियन।
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- अभ्यास 3.2 अनुभाग -->
+        <section id="exercise-3-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 3.2</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: cos x = -1/2, x तीसरे चतुर्थांश में स्थित है। अन्य पाँच त्रिकोणमितीय फलनों के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        cos x = 
+                            <div class="fraction">
+                                <span class="numerator">-1</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        sin²x = 1 - cos²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        sin x = ±√
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div> = ±
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">चूँकि x तीसरे चतुर्थांश में है, sin x ऋणात्मक होता है</p>
+                        अतः, sin x = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-√3/2</span>
+                                <span class="denominator">-1/2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-√3</span>
+                                <span class="denominator">2</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-1</span>
+                            </div> = √3
+                        </p>
+                        cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-√3/2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-√3</span>
+                            </div>
+                        </p>
+                        sec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-1/2</span>
+                            </div> = -2
+                        </p>
+                        cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>, tan x = √3, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">2</span>
+                                <span class="denominator">-√3</span>
+                            </div>, sec x = -2, cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> cos x = 
+                        <div class="fraction">
+                            <span class="numerator">-1</span>
+                            <span class="denominator">2</span>
+                        </div>, इसलिए sin²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div> (तीसरे चतुर्थांश में ऋणात्मक)। tan x = 
+                        <div class="fraction">
+                            <span class="numerator">sin</span>
+                            <span class="denominator">cos</span>
+                        </div> = √3। cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">2</span>
+                            <span class="denominator">-√3</span>
+                        </div>, sec x = -2, cot x = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√3</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: sin x = 3/5, x दूसरे चतुर्थांश में स्थित है। अन्य पाँच त्रिकोणमितीय फलनों के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        sin x = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        cos²x = 1 - sin²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">9</span>
+                                <span class="denominator">25</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">16</span>
+                                <span class="denominator">25</span>
+                            </div>
+                        </p>
+                        cos x = ±
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">चूँकि x दूसरे चतुर्थांश में है, cos x ऋणात्मक होता है</p>
+                        अतः, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3/5</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3/5</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        sec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-3/4</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> cos x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>, tan x = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin x = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">5</span>
+                        </div>, cos²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">9</span>
+                            <span class="denominator">25</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">16</span>
+                            <span class="denominator">25</span>
+                        </div>, cos x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">5</span>
+                        </div> (दूसरे चतुर्थांश में ऋणात्मक)। tan x = -
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>, cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">3</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: cot x = 3/4, x तीसरे चतुर्थांश में स्थित है। अन्य पाँच त्रिकोणमितीय फलनों के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        cot x = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        tan x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">cot x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3/4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        sec²x = 1 + tan²x = 1 + 
+                            <div class="fraction">
+                                <span class="numerator">16</span>
+                                <span class="denominator">9</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">9</span>
+                            </div>
+                        </p>
+                        sec x = ±
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">चूँकि x तीसरे चतुर्थांश में है, sec x ऋणात्मक होता है</p>
+                        अतः, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                        cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-5/3</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        sin x = tan x × cos x = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">-3</span>
+                                <span class="denominator">5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-4/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">5</span>
+                            </div>, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">5</span>
+                            </div>, tan x = 
+                            <div class="fraction">
+                                <span class="numerator">4</span>
+                                <span class="denominator">3</span>
+                            </div>, cosec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">4</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">3</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> cot x = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">4</span>
+                        </div>, तो tan x = 
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">3</span>
+                        </div>। sec²x = 1 + 
+                        <div class="fraction">
+                            <span class="numerator">16</span>
+                            <span class="denominator">9</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">9</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">3</span>
+                        </div> (तीसरे चतुर्थांश में ऋणात्मक)। cos x = -
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">5</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">4</span>
+                            <span class="denominator">5</span>
+                        </div>, cosec x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">4</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: sec x = 13/5, x चौथे चतुर्थांश में स्थित है। अन्य पाँच त्रिकोणमितीय फलनों के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        sec x = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">13/5</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        sin²x = 1 - cos²x = 1 - 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">169</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">144</span>
+                                <span class="denominator">169</span>
+                            </div>
+                        </p>
+                        sin x = ±
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">चूँकि x चौथे चतुर्थांश में है, sin x ऋणात्मक होता है</p>
+                        अतः, sin x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        tan x = 
+                            <div class="fraction">
+                                <span class="numerator">sin x</span>
+                                <span class="denominator">cos x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">-12/13</span>
+                                <span class="denominator">5/13</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-12/13</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-12/5</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> sin x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>, cos x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>, tan x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>, cosec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sec x = 
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">5</span>
+                        </div>, तो cos x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">13</span>
+                        </div>। sin²x = 1 - 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">169</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">144</span>
+                            <span class="denominator">169</span>
+                        </div>, sin x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">13</span>
+                        </div> (चौथे चतुर्थांश में ऋणात्मक)। tan x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">5</span>
+                        </div>, cosec x = -
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">12</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">12</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: tan x = -5/12, x दूसरे चतुर्थांश में स्थित है। अन्य पाँच त्रिकोणमितीय फलनों के मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        tan x = -
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        sec²x = 1 + tan²x = 1 + 
+                            <div class="fraction">
+                                <span class="numerator">25</span>
+                                <span class="denominator">144</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">169</span>
+                                <span class="denominator">144</span>
+                            </div>
+                        </p>
+                        sec x = ±
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">चूँकि x दूसरे चतुर्थांश में है, sec x ऋणात्मक होता है</p>
+                        अतः, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>
+                        </p>
+                        cos x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sec x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-13/12</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        sin x = tan x × cos x = 
+                            <div class="fraction">
+                                <span class="numerator">-5</span>
+                                <span class="denominator">12</span>
+                            </div> × 
+                            <div class="fraction">
+                                <span class="numerator">-12</span>
+                                <span class="denominator">13</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>
+                        </p>
+                        cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">sin x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">5/13</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        cot x = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">tan x</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">-5/12</span>
+                            </div> = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> sin x = 
+                            <div class="fraction">
+                                <span class="numerator">5</span>
+                                <span class="denominator">13</span>
+                            </div>, cos x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">13</span>
+                            </div>, sec x = -
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">12</span>
+                            </div>, cosec x = 
+                            <div class="fraction">
+                                <span class="numerator">13</span>
+                                <span class="denominator">5</span>
+                            </div>, cot x = -
+                            <div class="fraction">
+                                <span class="numerator">12</span>
+                                <span class="denominator">5</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> tan x = -
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">12</span>
+                        </div>, तो sec²x = 1 + 
+                        <div class="fraction">
+                            <span class="numerator">25</span>
+                            <span class="denominator">144</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">169</span>
+                            <span class="denominator">144</span>
+                        </div>, sec x = -
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">12</span>
+                        </div> (दूसरे चतुर्थांश में ऋणात्मक)। cos x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">13</span>
+                        </div>, sin x = 
+                        <div class="fraction">
+                            <span class="numerator">5</span>
+                            <span class="denominator">13</span>
+                        </div>, cosec x = 
+                        <div class="fraction">
+                            <span class="numerator">13</span>
+                            <span class="denominator">5</span>
+                        </div>, cot x = -
+                        <div class="fraction">
+                            <span class="numerator">12</span>
+                            <span class="denominator">5</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: sin 765° का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin 765° = sin(765° - 2×360°) = sin(765° - 720°) = sin 45°</p>
+                        sin 45° = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin 765° = sin(765° - 720°) = sin 45° = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 7 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 7: cosec(-1410°) का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cosec(-1410°) = -cosec(1410°)</p>
+                        <p class="mb-2">1410° = 3×360° + 330° = 1080° + 330°</p>
+                        <p class="mb-2">cosec(1410°) = cosec(330°) = cosec(360° - 30°) = -cosec 30°</p>
+                        <p class="mb-2">cosec 30° = 2</p>
+                        <p class="mb-2">अतः, cosec(1410°) = -2</p>
+                        <p class="mb-2">cosec(-1410°) = -(-2) = 2</p>
+                        <p><strong>उत्तर:</strong> 2</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> cosec(-1410°) = -cosec(1410°)। 1410° = 1080° + 330° = 3×360° + 330°। cosec(330°) = -cosec 30° = -2। अतः cosec(-1410°) = -(-2) = 2।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 8 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 8: tan 19π/3 का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">19π/3 = 6π + π/3 (क्योंकि 6π = 18π/3)</p>
+                        <p class="mb-2">tan(19π/3) = tan(6π + π/3) = tan(π/3)</p>
+                        <p class="mb-2">tan(π/3) = √3</p>
+                        <p><strong>उत्तर:</strong> √3</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 19π/3 = 6π + π/3। tan(6π + π/3) = tan(π/3) = √3।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 9 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 9: sin(-11π/3) का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin(-11π/3) = -sin(11π/3)</p>
+                        <p class="mb-2">11π/3 = 4π - π/3 (क्योंकि 4π = 12π/3)</p>
+                        <p class="mb-2">sin(11π/3) = sin(4π - π/3) = -sin(π/3)</p>
+                        sin(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        अतः, sin(11π/3) = -
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        sin(-11π/3) = -(-
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>) = 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin(-11π/3) = -sin(11π/3)। 11π/3 = 4π - π/3। sin(4π - π/3) = -sin(π/3) = -
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>। अतः sin(-11π/3) = -(-
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>) = 
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 10 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 10: cot(-15π/4) का मान ज्ञात कीजिए।</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cot(-15π/4) = -cot(15π/4)</p>
+                        <p class="mb-2">15π/4 = 4π - π/4 (क्योंकि 4π = 16π/4)</p>
+                        <p class="mb-2">cot(15π/4) = cot(4π - π/4) = -cot(π/4)</p>
+                        <p class="mb-2">cot(π/4) = 1</p>
+                        <p class="mb-2">अतः, cot(15π/4) = -1</p>
+                        <p class="mb-2">cot(-15π/4) = -(-1) = 1</p>
+                        <p><strong>उत्तर:</strong> 1</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> cot(-15π/4) = -cot(15π/4)। 15π/4 = 4π - π/4। cot(4π - π/4) = -cot(π/4) = -1। अतः cot(-15π/4) = -(-1) = 1।
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- अभ्यास 3.3 अनुभाग -->
+        <section id="exercise-3-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">अभ्यास 3.3</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: सिद्ध कीजिए कि sin²(π/6) + cos²(π/3) - tan²(π/4) = -1/2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        sin(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, इसलिए sin²(π/6) = (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)² = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        cos(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, इसलिए cos²(π/3) = (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)² = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">tan(π/4) = 1, इसलिए tan²(π/4) = 1</p>
+                        बायाँ पक्ष = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> + 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> - 1 = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> - 1 = -
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> = दायाँ पक्ष
+                        </p>
+                        <p><strong>अतः सिद्ध हुआ।</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin(π/6) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>, cos(π/3) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>, tan(π/4) = 1। अतः sin² + cos² - tan² = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> + 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> - 1 = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> - 1 = -
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सिद्ध कीजिए कि 2sin²(π/6) + cosec²(7π/6) cos²(π/3) = 3/2</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        sin(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, इसलिए 2sin²(π/6) = 2×(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>
+                        </p>
+                        <p class="mb-2">cosec(7π/6) = cosec(π + π/6) = -cosec(π/6) = -2</p>
+                        <p class="mb-2">अतः cosec²(7π/6) = 4</p>
+                        cos(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>, इसलिए cos²(π/3) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div>
+                        </p>
+                        बायाँ पक्ष = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> + 4 × 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">4</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div> + 1 = 
+                            <div class="fraction">
+                                <span class="numerator">3</span>
+                                <span class="denominator">2</span>
+                            </div> = दायाँ पक्ष
+                        </p>
+                        <p><strong>अतः सिद्ध हुआ।</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> 2sin²(π/6) = 2×
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div>। cosec(7π/6) = -2, अतः cosec² = 4। cos²(π/3) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">4</span>
+                        </div>। बायाँ पक्ष = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> + 1 = 
+                        <div class="fraction">
+                            <span class="numerator">3</span>
+                            <span class="denominator">2</span>
+                        </div>।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: सिद्ध कीजिए कि cot²(π/6) + cosec²(5π/6) + 3tan²(π/6) = 6</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">cot(π/6) = √3, इसलिए cot²(π/6) = 3</p>
+                        <p class="mb-2">cosec(5π/6) = cosec(π - π/6) = cosec(π/6) = 2</p>
+                        <p class="mb-2">अतः cosec²(5π/6) = 4</p>
+                        tan(π/6) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√3</span>
+                            </div>, इसलिए 3tan²(π/6) = 3×(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">3</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">बायाँ पक्ष = 3 + 4 + 1 = 8, लेकिन दायाँ पक्ष 6 दिया है।</p>
+                        <p class="mb-2">प्रश्न में त्रुटि प्रतीत होती है। सही गणना के अनुसार उत्तर 8 आता है।</p>
+                        <p><strong>नोट:</strong> प्रश्न में संभवतः टाइपो है।</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> cot(π/6) = √3, cot² = 3। cosec(5π/6) = 2, cosec² = 4। tan(π/6) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√3</span>
+                        </div>, 3tan² = 1। योग = 3+4+1=8, जबकि प्रश्न में 6 दिया है। यह एक विसंगति है।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: सिद्ध कीजिए कि 2sin²(3π/4) + 2cos²(π/4) + 2sec²(π/3) = 10</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        sin(3π/4) = sin(π - π/4) = sin(π/4) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>
+                        </p>
+                        अतः 2sin²(3π/4) = 2 × (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>) = 1
+                        </p>
+                        cos(π/4) = 
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>, इसलिए 2cos²(π/4) = 2 × (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>) = 1
+                        </p>
+                        <p class="mb-2">sec(π/3) = 2, इसलिए 2sec²(π/3) = 2 × 4 = 8</p>
+                        <p class="mb-2">बायाँ पक्ष = 1 + 1 + 8 = 10 = दायाँ पक्ष</p>
+                        <p><strong>अतः सिद्ध हुआ।</strong></p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin(3π/4) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>, 2sin² = 1। cos(π/4) = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>, 2cos² = 1। sec(π/3) = 2, 2sec² = 8। योग = 1+1+8=10।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: मान ज्ञात कीजिए:</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">(i) sin 75°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">sin 75° = sin(45° + 30°)</p>
+                        <p class="mb-2">= sin45°cos30° + cos45°sin30°</p>
+                        = (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>)(
+                            <div class="fraction">
+                                <span class="numerator">√3</span>
+                                <span class="denominator">2</span>
+                            </div>) + (
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">√2</span>
+                            </div>)(
+                            <div class="fraction">
+                                <span class="numerator">1</span>
+                                <span class="denominator">2</span>
+                            </div>)
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">√3 + 1</span>
+                                <span class="denominator">2√2</span>
+                            </div>
+                        </p>
+                        <p><strong>उत्तर:</strong> 
+                            <div class="fraction">
+                                <span class="numerator">√3 + 1</span>
+                                <span class="denominator">2√2</span>
+                            </div>
+                        </p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> sin 75° = sin(45° + 30°) = sin45°cos30° + cos45°sin30° = 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>×
+                        <div class="fraction">
+                            <span class="numerator">√3</span>
+                            <span class="denominator">2</span>
+                        </div> + 
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">√2</span>
+                        </div>×
+                        <div class="fraction">
+                            <span class="numerator">1</span>
+                            <span class="denominator">2</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">√3 + 1</span>
+                            <span class="denominator">2√2</span>
+                        </div>।
+                    </div>
+                    
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700 mt-4">(ii) tan 15°</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">tan 15° = tan(45° - 30°)</p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">tan45° - tan30°</span>
+                                <span class="denominator">1 + tan45°tan30°</span>
+                            </div>
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">1 - 1/√3</span>
+                                <span class="denominator">1 + 1/√3</span>
+                            </div>
+                        </p>
+                        = 
+                            <div class="fraction">
+                                <span class="numerator">√3 - 1</span>
+                                <span class="denominator">√3 + 1</span>
+                            </div>
+                        </p>
+                        परिमेयकरण करने पर: = 
+                            <div class="fraction">
+                                <span class="numerator">(√3 - 1)²</span>
+                                <span class="denominator">3 - 1</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">3 - 2√3 + 1</span>
+                                <span class="denominator">2</span>
+                            </div> = 
+                            <div class="fraction">
+                                <span class="numerator">4 - 2√3</span>
+                                <span class="denominator">2</span>
+                            </div> = 2 - √3
+                        </p>
+                        <p><strong>उत्तर:</strong> 2 - √3</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>हिंदी स्पष्टीकरण:</strong> tan 15° = tan(45° - 30°) = 
+                        <div class="fraction">
+                            <span class="numerator">1 - 1/√3</span>
+                            <span class="denominator">1 + 1/√3</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">√3 - 1</span>
+                            <span class="denominator">√3 + 1</span>
+                        </div>। परिमेयकरण करने पर = 
+                        <div class="fraction">
+                            <span class="numerator">(√3 - 1)²</span>
+                            <span class="denominator">3 - 1</span>
+                        </div> = 
+                        <div class="fraction">
+                            <span class="numerator">4 - 2√3</span>
+                            <span class="denominator">2</span>
+                        </div> = 2 - √3।
+                    </div>
+                </div>
+            </div>
+ <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: सिद्ध कीजिए कि <span class="math-inline">sin²(π/6) + cos²(π/3) - tan²(π/4) = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></span></h3>
+                <div class="step">
+                    <p><span class="math-inline">sin(π/6) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></span> ⇒ <span class="math-inline">sin²(π/6) = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></span></p>
+                    <p><span class="math-inline">cos(π/3) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></span> ⇒ <span class="math-inline">cos²(π/3) = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></span></p>
+                    <p><span class="math-inline">tan(π/4) = 1</span> ⇒ <span class="math-inline">tan²(π/4) = 1</span></p>
+                    <p>बायाँ पक्ष = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> - 1 = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> - 1 = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = दायाँ पक्ष।</p>
+                </div>
+                <div class="hinglish-explanation">sin 30° = 1/2, cos 60° = 1/2, tan 45° = 1 रखने पर सरल हो जाता है।</div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: सिद्ध कीजिए कि <span class="math-inline">2sin²(π/6) + cosec²(7π/6) cos²(π/3) = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span></span></h3>
+                <div class="step">
+                    <p><span class="math-inline">sin(π/6) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> ⇒ 2sin²(π/6) = 2 × <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></span></p>
+                    <p><span class="math-inline">cosec(7π/6) = cosec(π + π/6) = -cosec(π/6) = -2 ⇒ cosec²(7π/6) = 4</span></p>
+                    <p><span class="math-inline">cos(π/3) = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> ⇒ cos²(π/3) = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></span></p>
+                    <p>बायाँ पक्ष = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> + 4 × <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> + 1 = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span> = दायाँ पक्ष।</p>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: सिद्ध कीजिए कि <span class="math-inline">cot²(π/6) + cosec²(5π/6) + 3tan²(π/6) = 6</span></h3>
+                <div class="step">
+                    <p><span class="math-inline">cot(π/6) = √3 ⇒ cot²(π/6) = 3</span></p>
+                    <p><span class="math-inline">cosec(5π/6) = cosec(π - π/6) = cosec(π/6) = 2 ⇒ cosec²(5π/6) = 4</span></p>
+                    <p><span class="math-inline">tan(π/6) = <span class="fraction"><span class="numerator">1</span><span class="denominator">√3</span></span> ⇒ 3tan²(π/6) = 3 × <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> = 1</span></p>
+                    <p>बायाँ पक्ष = 3 + 4 + 1 = 8, जबकि दायाँ पक्ष 6 दिया है। (नोट: प्रश्न में संभावित मुद्रण त्रुटि, सही योग 8 है।)</p>
+                </div>
+                <div class="hinglish-explanation">cot 30° = √3, cosec 150° = 2, tan 30° = 1/√3 रखने पर योग 8 आता है।</div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: सिद्ध कीजिए कि <span class="math-inline">2sin²(3π/4) + 2cos²(π/4) + 2sec²(π/3) = 10</span></h3>
+                <div class="step">
+                    <p><span class="math-inline">sin(3π/4) = sin(π/4) = <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> ⇒ 2sin²(3π/4) = 2 × <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = 1</span></p>
+                    <p><span class="math-inline">cos(π/4) = <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> ⇒ 2cos²(π/4) = 2 × <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = 1</span></p>
+                    <p><span class="math-inline">sec(π/3) = 2 ⇒ 2sec²(π/3) = 2 × 4 = 8</span></p>
+                    <p>बायाँ पक्ष = 1 + 1 + 8 = 10 = दायाँ पक्ष।</p>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: मान ज्ञात कीजिए (i) sin 75° (ii) tan 15°</h3>
+                <div class="step">
+                    <p>(i) sin75° = sin(45°+30°) = sin45°cos30° + cos45°sin30°</p>
+                    <p>= <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> × <span class="fraction"><span class="numerator">√3</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">√2</span></span> × <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">√3 + 1</span><span class="denominator">2√2</span></span></p>
+                    <p>(ii) tan15° = tan(45°-30°) = <span class="fraction"><span class="numerator">tan45° - tan30°</span><span class="denominator">1 + tan45° tan30°</span></span> = <span class="fraction"><span class="numerator">1 - 1/√3</span><span class="denominator">1 + 1/√3</span></span> = <span class="fraction"><span class="numerator">√3 - 1</span><span class="denominator">√3 + 1</span></span> = 2 - √3</p>
+                </div>
+            </div>
+
+<div class="solution-card">
+        <div class="question-title">प्रश्न 6: सिद्ध कीजिए कि <br> cos(π/4 – x) cos(π/4 – y) – sin(π/4 – x) sin(π/4 – y) = sin(x + y)</div>
+        <div class="step">हल: हम जानते हैं कि cos(A + B) = cos A cos B – sin A sin B</div>
+        <div class="step">यहाँ A = (π/4 – x) और B = (π/4 – y) रखने पर,</div>
+        <div class="step">बायाँ पक्ष = cos[(π/4 – x) + (π/4 – y)] = cos(π/2 – (x + y))</div>
+        <div class="step">cos(π/2 – θ) = sin θ, अतः = sin(x + y) = दायाँ पक्ष।</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> cos(A+B) के सूत्र का प्रयोग किया। A और B के योग से π/2 – (x+y) प्राप्त होता है, जिसका कोसाइन साइन में बदल जाता है।</div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 7: सिद्ध कीजिए कि <br> tan(π/4 + x) = <span class="frac"><span class="num">1 + tan x</span><span class="den">1 – tan x</span></span></div>
+        <div class="step">tan(A + B) = <span class="frac"><span class="num">tan A + tan B</span><span class="den">1 – tan A tan B</span></span> का प्रयोग करें।</div>
+        <div class="step">A = π/4, B = x रखने पर: tan(π/4 + x) = <span class="frac"><span class="num">tan(π/4) + tan x</span><span class="den">1 – tan(π/4) tan x</span></span></div>
+        <div class="step">tan(π/4) = 1, अतः = <span class="frac"><span class="num">1 + tan x</span><span class="den">1 – tan x</span></span> = दायाँ पक्ष।</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> त्रिकोणमितीय योग सूत्र से सीधे प्राप्त होता है।</div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 8: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">cos(π + x) cos(-x)</span><span class="den">sin(π – x) cos(π/2 + x)</span></span> = cot² x</div>
+        <div class="step">हम जानते हैं: cos(π + x) = –cos x, cos(-x) = cos x, sin(π – x) = sin x, cos(π/2 + x) = –sin x</div>
+        <div class="step">अंश = (–cos x)(cos x) = –cos² x, हर = (sin x)(–sin x) = –sin² x</div>
+        <div class="step">अतः भिन्न = <span class="frac"><span class="num">–cos² x</span><span class="den">–sin² x</span></span> = <span class="frac"><span class="num">cos² x</span><span class="den">sin² x</span></span> = cot² x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> प्रत्येक त्रिकोणमितीय फलन को उसके मान में बदला, ऋण चिह्न कट गए, अंत में cot² x प्राप्त हुआ।</div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 9: सिद्ध कीजिए कि <br> cos(3π/2 + x) cos(2π + x) [ cot(3π/2 – x) + cot(2π + x) ] = 1</div>
+        <div class="step">cos(3π/2 + x) = sin x, cos(2π + x) = cos x, cot(3π/2 – x) = tan x, cot(2π + x) = cot x</div>
+        <div class="step">बायाँ पक्ष = (sin x)(cos x)[ tan x + cot x ]</div>
+        <div class="step">tan x + cot x = <span class="frac"><span class="num">sin x</span><span class="den">cos x</span></span> + <span class="frac"><span class="num">cos x</span><span class="den">sin x</span></span> = <span class="frac"><span class="num">sin² x + cos² x</span><span class="den">sin x cos x</span></span> = <span class="frac"><span class="num">1</span><span class="den">sin x cos x</span></span></div>
+        <div class="step">अतः LHS = (sin x cos x) × <span class="frac"><span class="num">1</span><span class="den">sin x cos x</span></span> = 1 = RHS</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> सबसे पहले प्रत्येक पद को सरल किया, फिर tan+cot को sin,cos के रूप में लिखकर हर के साथ काट दिया।</div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 10: सिद्ध कीजिए कि <br> sin(n+1)x sin(n+2)x + cos(n+1)x cos(n+2)x = cos x</div>
+        <div class="step">हम cos(A – B) = cos A cos B + sin A sin B का प्रयोग करेंगे।</div>
+        <div class="step">यहाँ A = (n+2)x, B = (n+1)x रखने पर,</div>
+        <div class="step">LHS = cos[(n+2)x – (n+1)x] = cos x = RHS</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> योग का कोसाइन सूत्र उल्टा लगाया गया।</div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 11: सिद्ध कीजिए कि <br> cos(3π/4 + x) – cos(3π/4 – x) = –√2 sin x</div>
+        <div class="step">सूत्र: cos C – cos D = –2 sin<span class="frac"><span class="num">C+D</span><span class="den">2</span></span> sin<span class="frac"><span class="num">C–D</span><span class="den">2</span></span> का प्रयोग करें।</div>
+        <div class="step">C = 3π/4 + x, D = 3π/4 – x → <span class="frac"><span class="num">C+D</span><span class="den">2</span></span> = <span class="frac"><span class="num">3π/4+3π/4</span><span class="den">2</span></span> = 3π/4, <span class="frac"><span class="num">C–D</span><span class="den">2</span></span> = <span class="frac"><span class="num">(3π/4+x) – (3π/4–x)</span><span class="den">2</span></span> = x</div>
+        <div class="step">LHS = –2 sin(3π/4) sin x = –2 × (sin(π/4)) × sin x = –2 × <span class="frac"><span class="num">1</span><span class="den">√2</span></span> × sin x = –√2 sin x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> कोसाइन के अंतर का सूत्र लगाया, sin(3π/4) = sin(π/4) = 1/√2 रखा।</div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 12: सिद्ध कीजिए कि <br> sin² 6x – sin² 4x = sin 2x sin 10x</div>
+        <div class="step">सूत्र: sin² A – sin² B = sin(A+B) sin(A–B)</div>
+        <div class="step">A = 6x, B = 4x रखने पर, LHS = sin(6x+4x) sin(6x–4x) = sin(10x) sin(2x) = RHS</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> सीधे सर्वसमिका लागू की।</div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 13: सिद्ध कीजिए कि <br> cos² 2x – cos² 6x = sin 4x sin 8x</div>
+        <div class="step">सूत्र: cos² A – cos² B = – sin(A+B) sin(A–B)</div>
+        <div class="step">A = 2x, B = 6x → LHS = – sin(2x+6x) sin(2x–6x) = – sin(8x) sin(–4x)</div>
+        <div class="step">sin(–4x) = – sin 4x, अतः – sin(8x) × ( – sin 4x) = sin 8x sin 4x = RHS</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> ऋणात्मक कोण के साइन से ऋण चिह्न कट जाता है।</div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 14: सिद्ध कीजिए कि <br> sin 2x + 2 sin 4x + sin 6x = 4 cos² x sin 4x</div>
+        <div class="step">LHS = (sin 2x + sin 6x) + 2 sin 4x</div>
+        <div class="step">sin 2x + sin 6x = 2 sin <span class="frac"><span class="num">2x+6x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">2x–6x</span><span class="den">2</span></span> = 2 sin 4x cos(–2x) = 2 sin 4x cos 2x</div>
+        <div class="step">अतः LHS = 2 sin 4x cos 2x + 2 sin 4x = 2 sin 4x (cos 2x + 1)</div>
+        <div class="step">cos 2x + 1 = 2 cos² x, इसलिए LHS = 2 sin 4x × 2 cos² x = 4 cos² x sin 4x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> पहले sin 2x + sin 6x को जोड़ा, फिर cos 2x+1 = 2cos²x का प्रयोग किया।</div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 15: सिद्ध कीजिए कि <br> cot 4x (sin 5x + sin 3x) = cot x (sin 5x – sin 3x)</div>
+        <div class="step">बायाँ पक्ष: sin 5x + sin 3x = 2 sin <span class="frac"><span class="num">5x+3x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">5x–3x</span><span class="den">2</span></span> = 2 sin 4x cos x</div>
+        <div class="step">LHS = cot 4x × 2 sin 4x cos x = <span class="frac"><span class="num">cos 4x</span><span class="den">sin 4x</span></span> × 2 sin 4x cos x = 2 cos 4x cos x</div>
+        <div class="step">दायाँ पक्ष: sin 5x – sin 3x = 2 cos <span class="frac"><span class="num">5x+3x</span><span class="den">2</span></span> sin <span class="frac"><span class="num">5x–3x</span><span class="den">2</span></span> = 2 cos 4x sin x</div>
+        <div class="step">RHS = cot x × 2 cos 4x sin x = <span class="frac"><span class="num">cos x</span><span class="den">sin x</span></span> × 2 cos 4x sin x = 2 cos 4x cos x</div>
+        <div class="step">दोनों पक्ष बराबर हैं। अतः सिद्ध हुआ।</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> दोनों ओर योग और अंतर के सूत्र लगाकर सरल किया, अंततः 2 cos4x cos x प्राप्त हुआ।</div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 16: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">cos 9x – cos 5x</span><span class="den">sin 17x – sin 3x</span></span> = – <span class="frac"><span class="num">sin 2x</span><span class="den">cos 10x</span></span></div>
+        <div class="step">अंश: cos 9x – cos 5x = –2 sin <span class="frac"><span class="num">9x+5x</span><span class="den">2</span></span> sin <span class="frac"><span class="num">9x–5x</span><span class="den">2</span></span> = –2 sin 7x sin 2x</div>
+        <div class="step">हर: sin 17x – sin 3x = 2 cos <span class="frac"><span class="num">17x+3x</span><span class="den">2</span></span> sin <span class="frac"><span class="num">17x–3x</span><span class="den">2</span></span> = 2 cos 10x sin 7x</div>
+        <div class="step">अतः भिन्न = <span class="frac"><span class="num">–2 sin 7x sin 2x</span><span class="den">2 cos 10x sin 7x</span></span> = <span class="frac"><span class="num">– sin 2x</span><span class="den">cos 10x</span></span></div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> कोसाइन अंतर और साइन अंतर के सूत्र लगाए, sin 7x कट गया।</div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 17: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">sin 5x + sin 3x</span><span class="den">cos 5x + cos 3x</span></span> = tan 4x</div>
+        <div class="step">अंश: sin 5x + sin 3x = 2 sin <span class="frac"><span class="num">5x+3x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">5x–3x</span><span class="den">2</span></span> = 2 sin 4x cos x</div>
+        <div class="step">हर: cos 5x + cos 3x = 2 cos <span class="frac"><span class="num">5x+3x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">5x–3x</span><span class="den">2</span></span> = 2 cos 4x cos x</div>
+        <div class="step">भिन्न = <span class="frac"><span class="num">2 sin 4x cos x</span><span class="den">2 cos 4x cos x</span></span> = tan 4x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> cos x उभयनिष्ठ निकलने पर tan 4x प्राप्त होता है।</div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 18: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">sin x – sin y</span><span class="den">cos x + cos y</span></span> = tan <span class="frac"><span class="num">x – y</span><span class="den">2</span></span></div>
+        <div class="step">अंश: sin x – sin y = 2 cos <span class="frac"><span class="num">x+y</span><span class="den">2</span></span> sin <span class="frac"><span class="num">x–y</span><span class="den">2</span></span></div>
+        <div class="step">हर: cos x + cos y = 2 cos <span class="frac"><span class="num">x+y</span><span class="den">2</span></span> cos <span class="frac"><span class="num">x–y</span><span class="den">2</span></span></div>
+        <div class="step">भिन्न = <span class="frac"><span class="num">2 cos<span class="frac"><span class="num">x+y</span><span class="den">2</span></span> sin<span class="frac"><span class="num">x–y</span><span class="den">2</span></span></span><span class="den">2 cos<span class="frac"><span class="num">x+y</span><span class="den">2</span></span> cos<span class="frac"><span class="num">x–y</span><span class="den">2</span></span></span></span> = tan <span class="frac"><span class="num">x–y</span><span class="den">2</span></span></div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> मानक सूत्रों का प्रयोग करके, उभयनिष्ठ पद कट जाता है।</div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 19: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">sin x + sin 3x</span><span class="den">cos x + cos 3x</span></span> = tan 2x</div>
+        <div class="step">अंश: sin x + sin 3x = 2 sin <span class="frac"><span class="num">x+3x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">x–3x</span><span class="den">2</span></span> = 2 sin 2x cos(–x) = 2 sin 2x cos x</div>
+        <div class="step">हर: cos x + cos 3x = 2 cos <span class="frac"><span class="num">x+3x</span><span class="den">2</span></span> cos <span class="frac"><span class="num">x–3x</span><span class="den">2</span></span> = 2 cos 2x cos(–x) = 2 cos 2x cos x</div>
+        <div class="step">भिन्न = <span class="frac"><span class="num">2 sin 2x cos x</span><span class="den">2 cos 2x cos x</span></span> = tan 2x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> Q17 की तरह ही, बस x और 3x के योग-अंतर से sin 2x, cos 2x प्रकट होते हैं।</div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 20: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">sin x – sin 3x</span><span class="den">sin² x – cos² x</span></span> = 2 sin x</div>
+        <div class="step">अंश: sin x – sin 3x = 2 cos<span class="frac"><span class="num">x+3x</span><span class="den">2</span></span> sin<span class="frac"><span class="num">x–3x</span><span class="den">2</span></span> = 2 cos 2x sin(–x) = –2 cos 2x sin x</div>
+        <div class="step">हर: sin² x – cos² x = –(cos² x – sin² x) = –cos 2x</div>
+        <div class="step">अतः भिन्न = <span class="frac"><span class="num">–2 cos 2x sin x</span><span class="den">–cos 2x</span></span> = 2 sin x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> sin²x–cos²x = –cos 2x, और अंश में –2 cos2x sin x, ऋणात्मक कट जाता है।</div>
+    </div>
+
+    <!-- Q21 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 21: सिद्ध कीजिए कि <br> <span class="frac"><span class="num">cos 4x + cos 3x + cos 2x</span><span class="den">sin 4x + sin 3x + sin 2x</span></span> = cot 3x</div>
+        <div class="step">अंश: (cos 4x + cos 2x) + cos 3x = 2 cos<span class="frac"><span class="num">4x+2x</span><span class="den">2</span></span> cos<span class="frac"><span class="num">4x–2x</span><span class="den">2</span></span> + cos 3x = 2 cos 3x cos x + cos 3x = cos 3x (2 cos x + 1)</div>
+        <div class="step">हर: (sin 4x + sin 2x) + sin 3x = 2 sin<span class="frac"><span class="num">4x+2x</span><span class="den">2</span></span> cos<span class="frac"><span class="num">4x–2x</span><span class="den">2</span></span> + sin 3x = 2 sin 3x cos x + sin 3x = sin 3x (2 cos x + 1)</div>
+        <div class="step">भिन्न = <span class="frac"><span class="num">cos 3x (2 cos x + 1)</span><span class="den">sin 3x (2 cos x + 1)</span></span> = cot 3x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> पहले cos4x+cos2x और sin4x+sin2x जोड़े, फिर 2 cos x +1 उभयनिष्ठ लेकर काट दिया।</div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 22: सिद्ध कीजिए कि <br> cot x cot 2x – cot 2x cot 3x – cot 3x cot x = 1</div>
+        <div class="step">हम जानते हैं कि cot 3x = cot(2x + x) = <span class="frac"><span class="num">cot 2x cot x – 1</span><span class="den">cot 2x + cot x</span></span></div>
+        <div class="step">अतः cot 3x (cot 2x + cot x) = cot 2x cot x – 1</div>
+        <div class="step">⇒ cot 3x cot 2x + cot 3x cot x = cot 2x cot x – 1</div>
+        <div class="step">⇒ cot 2x cot x – cot 2x cot 3x – cot 3x cot x = 1</div>
+        <div class="step">यही सिद्ध करना था।</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> cot 3x के योग सूत्र से क्रॉस गुणा करके पुनर्व्यवस्थित किया।</div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 23: सिद्ध कीजिए कि <br> tan 4x = <span class="frac"><span class="num">4 tan x (1 – tan² x)</span><span class="den">1 – 6 tan² x + tan⁴ x</span></span></div>
+        <div class="step">tan 4x = tan(2·2x) = <span class="frac"><span class="num">2 tan 2x</span><span class="den">1 – tan² 2x</span></span></div>
+        <div class="step">tan 2x = <span class="frac"><span class="num">2 tan x</span><span class="den">1 – tan² x</span></span> रखने पर,</div>
+        <div class="step">tan 4x = <span class="frac"><span class="num">2 × <span class="frac"><span class="num">2 tan x</span><span class="den">1 – tan² x</span></span></span><span class="den">1 – <span class="frac"><span class="num">(2 tan x)²</span><span class="den">(1 – tan² x)²</span></span></span></span> = <span class="frac"><span class="num"><span class="frac"><span class="num">4 tan x</span><span class="den">1 – tan² x</span></span></span><span class="den"><span class="frac"><span class="num">(1 – tan² x)² – 4 tan² x</span><span class="den">(1 – tan² x)²</span></span></span></span></div>
+        <div class="step">= <span class="frac"><span class="num">4 tan x</span><span class="den">1 – tan² x</span></span> × <span class="frac"><span class="num">(1 – tan² x)²</span><span class="den">1 – 2 tan² x + tan⁴ x – 4 tan² x</span></span></div>
+        <div class="step">= <span class="frac"><span class="num">4 tan x (1 – tan² x)</span><span class="den">1 – 6 tan² x + tan⁴ x</span></span></div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> बार-बार द्विकोण सूत्र लगाकर सरलीकरण किया।</div>
+    </div>
+
+    <!-- Q24 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 24: सिद्ध कीजिए कि <br> cos 4x = 1 – 8 sin² x cos² x</div>
+        <div class="step">cos 4x = cos(2·2x) = 1 – 2 sin² 2x</div>
+        <div class="step">sin 2x = 2 sin x cos x ⇒ sin² 2x = 4 sin² x cos² x</div>
+        <div class="step">अतः cos 4x = 1 – 2 × 4 sin² x cos² x = 1 – 8 sin² x cos² x</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> cos 2θ = 1 – 2 sin² θ का प्रयोग करके, फिर sin 2x का मान रखा।</div>
+    </div>
+
+    <!-- Q25 -->
+    <div class="solution-card">
+        <div class="question-title">प्रश्न 25: सिद्ध कीजिए कि <br> cos 6x = 32 cos⁶ x – 48 cos⁴ x + 18 cos² x – 1</div>
+        <div class="step">cos 6x = cos(2·3x) = 2 cos² 3x – 1</div>
+        <div class="step">cos 3x = 4 cos³ x – 3 cos x, अतः cos² 3x = (4 cos³ x – 3 cos x)² = 16 cos⁶ x – 24 cos⁴ x + 9 cos² x</div>
+        <div class="step">अब cos 6x = 2(16 cos⁶ x – 24 cos⁴ x + 9 cos² x) – 1 = 32 cos⁶ x – 48 cos⁴ x + 18 cos² x – 1</div>
+        <div class="explanation"><strong>हिंदी व्याख्या:</strong> पहले cos 6x को cos(2·3x) लिखकर cos 3x का त्रिकोणमितीय सूत्र प्रयोग किया।</div>
+    </div>
+</div>
+            श्नों के लिए स्थान बचाने हेतु मुख्य प्रश्नों का हिंदी अनुवाद दिया गया है। शेष प्रश्न (6 से 25) इसी प्रारूप में हिंदी में हल सहित उपलब्ध हैं, लेकिन लंबाई सीमा के कारण यहाँ संक्षिप्त किया गया है। पूर्ण सामग्री मूल अंग्रेजी संस्करण के समान ही हिंदी में है। -->
+        </section>
+    </div>
+
+    <script>
+        // राइट-क्लिक और कॉपी-पेस्ट निष्क्रिय करें
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

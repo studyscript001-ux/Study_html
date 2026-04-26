@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 4: सम्मिश्र संख्याएँ और द्विघातीय समीकरण | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .conj {
+            text-decoration: overline;
+            display: inline-block;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 4<br>सम्मिश्र संख्याएँ और द्विघातीय समीकरण</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+        <p class="text-sm mt-2"> </p>
+    </div>
+
+    <section id="ex-4-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 4.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. (5i)(–<span class="fraction"><span class="numerator">3</span><span class="denominator">5</span></span>i) को a + ib के रूप में व्यक्त कीजिए।</div>
+            <div class="step">(5i)(–<span class="fraction"><span class="numerator">3</span><span class="denominator">5</span></span>i) = –3 i²</div>
+            <div class="step">i² = -1 ⇒ –3 × (–1) = 3</div>
+            <div class="step">अतः 3 = 3 + 0·i</div>
+            <div class="hinglish-explanation"><strong>हिंदी स्पष्टीकरण:</strong> i² = -1 का प्रयोग करें। गुणा करने पर 3 प्राप्त होता है, काल्पनिक भाग शून्य।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. i⁹ + i¹⁹ का मान ज्ञात कीजिए।</div>
+            <div class="step">i⁹ = i⁸·i = (i⁴)²·i = (1)²·i = i</div>
+            <div class="step">i¹⁹ = i¹⁶·i³ = (i⁴)⁴·i³ = 1·(-i) = -i</div>
+            <div class="step">i⁹ + i¹⁹ = i + (-i) = 0</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> i की घातें 4 से विभाजित करें: i⁴=1, i³=-i ⇒ योग शून्य।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. i⁻³⁹ को a+ib में बदलिए।</div>
+            <div class="step">i⁻³⁹ = 1 / i³⁹</div>
+            <div class="step">i³⁹ = i³⁶·i³ = (i⁴)⁹·i³ = 1·(-i) = -i</div>
+            <div class="step">अतः i⁻³⁹ = 1/(-i) = -1/i = -1/i × i/i = -i/(-1) = i</div>
+            <div class="step">i = 0 + 1·i</div>
+            <div class="hinglish-explanation"><strong>हिंदी:</strong> i³⁹ = -i, व्युत्क्रम लेने पर i प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. 3(7 + i7) + i(7 + i7) को a+ib रूप में लिखिए।</div>
+            <div class="step">3(7+7i) = 21 + 21i</div>
+            <div class="step">i(7+7i) = 7i + 7i² = 7i + 7(-1) = -7 + 7i</div>
+            <div class="step">योग = (21 - 7) + (21i + 7i) = 14 + 28i</div>
+            <div class="hinglish-explanation">वितरण नियम + i² = -1 रखने पर 14 + 28i प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. (1 – i) – (–1 + i6) को सरल कीजिए।</div>
+            <div class="step">(1 – i) – (–1 + 6i) = 1 – i + 1 – 6i</div>
+            <div class="step">= (1+1) + (–i – 6i) = 2 – 7i</div>
+            <div class="hinglish-explanation">ऋण चिह्न वितरित करें, वास्तविक एवं काल्पनिक भाग अलग करें।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. (<span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span> + i<span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span>) – (4 + i<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>) को a+ib रूप में लिखिए।</div>
+            <div class="step">वास्तविक और काल्पनिक भागों को अलग करने पर:</div>
+            <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">5</span></span> – 4) + i(<span class="fraction"><span class="numerator">2</span><span class="denominator">5</span></span> – <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">1 - 20</span><span class="denominator">5</span></span> + i<span class="fraction"><span class="numerator">4 - 25</span><span class="denominator">10</span></span></div>
+            <div class="step">= –<span class="fraction"><span class="numerator">19</span><span class="denominator">5</span></span> – i<span class="fraction"><span class="numerator">21</span><span class="denominator">10</span></span></div>
+            <div class="hinglish-explanation">वास्तविक और काल्पनिक भागों को अलग करके घटाने पर यह उत्तर प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. [(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> + i<span class="fraction"><span class="numerator">7</span><span class="denominator">3</span></span>) + (4 + i<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)] – (–<span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span> + i) का मान ज्ञात कीजिए।</div>
+            <div class="step">पहले बड़े कोष्ठक को हल करें:</div>
+            <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> + 4) + i(<span class="fraction"><span class="numerator">7</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>) = <span class="fraction"><span class="numerator">13</span><span class="denominator">3</span></span> + i<span class="fraction"><span class="numerator">8</span><span class="denominator">3</span></span></div>
+            <div class="step">अब शेष पद को घटाएं: (<span class="fraction"><span class="numerator">13</span><span class="denominator">3</span></span> + i<span class="fraction"><span class="numerator">8</span><span class="denominator">3</span></span>) – (–<span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span> + i)</div>
+            <div class="step">= (<span class="fraction"><span class="numerator">13</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span>) + i(<span class="fraction"><span class="numerator">8</span><span class="denominator">3</span></span> – 1) = <span class="fraction"><span class="numerator">17</span><span class="denominator">3</span></span> + i<span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span></div>
+            <div class="hinglish-explanation">वास्तविक तथा काल्पनिक पदों को एक साथ लेकर सरल किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. (1 – i)⁴ का a+ib रूप ज्ञात कीजिए।</div>
+            <div class="step">(1 – i)² = 1 – 2i + i² = 1 – 2i – 1 = –2i</div>
+            <div class="step">(1 – i)⁴ = [(1 – i)²]² = (–2i)² = 4i² = 4(-1) = –4</div>
+            <div class="step">अतः –4 = –4 + 0·i</div>
+            <div class="hinglish-explanation">पहले वर्ग करके फिर पुनः वर्ग, i² = -1 से मात्र वास्तविक संख्या प्राप्त होती है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span> + 3i)³ को a+ib रूप में व्यक्त कीजिए।</div>
+            <div class="step">(a+b)³ = a³ + b³ + 3a²b + 3ab² सूत्र का प्रयोग करने पर:</div>
+            <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)³ + (3i)³ + 3(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)²(3i) + 3(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>)(3i)²</div>
+            <div class="step">= <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span> + 27i³ + 3(<span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span>)(3i) + (9i²)</div>
+            <div class="step">i² = -1 , i³ = -i रखने पर: = <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span> – 27i + i – 9</div>
+            <div class="step">= (<span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span> – 9) + (i – 27i) = –<span class="fraction"><span class="numerator">242</span><span class="denominator">27</span></span> – 26i</div>
+            <div class="hinglish-explanation">द्विपद प्रसार (A+B)³ के सूत्र का उपयोग कर i की घातों को सरल किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. (–2 – <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i)³ को a+ib रूप में लिखिए।</div>
+            <div class="step">(–2 – <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i)³ = –(2 + <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i)³</div>
+            <div class="step">प्रसार: –[2³ + (<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i)³ + 3·(2)²(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i) + 3·(2)(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i)²]</div>
+            <div class="step">= –[8 + <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>i³ + 12(<span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>i) + 6(<span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span>i²)]</div>
+            <div class="step">i² = –1, i³ = –i रखने पर: = –[8 – <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>i + 4i – <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>]</div>
+            <div class="step">= –[(8 – <span class="fraction"><span class="numerator">2</span><span class="denominator">3</span></span>) + (4i – <span class="fraction"><span class="numerator">1</span><span class="denominator">27</span></span>i)] = –[<span class="fraction"><span class="numerator">22</span><span class="denominator">3</span></span> + i<span class="fraction"><span class="numerator">107</span><span class="denominator">27</span></span>] = –<span class="fraction"><span class="numerator">22</span><span class="denominator">3</span></span> – i<span class="fraction"><span class="numerator">107</span><span class="denominator">27</span></span></div>
+            <div class="hinglish-explanation">ऋण चिह्न को बाहर निकालकर (a+b)³ का प्रसार किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. 4 – 3i का गुणात्मक प्रतिलोम ज्ञात कीजिए।</div>
+            <div class="step">माना z = 4 – 3i, तो z⁻¹ = <span class="conj">z</span> / |z|²</div>
+            <div class="step"><span class="conj">z</span> = 4 + 3i, |z|² = 4² + (–3)² = 16+9 = 25</div>
+            <div class="step">अतः z⁻¹ = <span class="fraction"><span class="numerator">4+3i</span><span class="denominator">25</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">25</span></span> + i<span class="fraction"><span class="numerator">3</span><span class="denominator">25</span></span></div>
+            <div class="hinglish-explanation">संयुग्मी / मापांक का वर्ग से प्रतिलोम सूत्र।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. √5 + 3i का गुणात्मक प्रतिलोम ज्ञात कीजिए।</div>
+            <div class="step">√5 + 3i, संयुग्मी = √5 – 3i</div>
+            <div class="step">|z|² = (√5)² + 3² = 5 + 9 = 14</div>
+            <div class="step">z⁻¹ = <span class="fraction"><span class="numerator">√5 – 3i</span><span class="denominator">14</span></span> = <span class="fraction"><span class="numerator">√5</span><span class="denominator">14</span></span> – i<span class="fraction"><span class="numerator">3</span><span class="denominator">14</span></span></div>
+            <div class="hinglish-explanation">प्रतिलोम = संयुग्म / (वास्तविक भाग वर्ग + काल्पनिक वर्ग)</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. – i का गुणात्मक प्रतिलोम ज्ञात कीजिए।</div>
+            <div class="step">z = –i = 0 – i ⇒ <span class="conj">z</span> = 0 + i = i</div>
+            <div class="step">|z|² = 0² + (–1)² = 1</div>
+            <div class="step">z⁻¹ = i / 1 = i = 0 + 1·i</div>
+            <div class="hinglish-explanation">–i का व्युत्क्रम i होता है, क्योंकि (–i)·(i) = –i² = 1</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. <span class="fraction"><span class="numerator">(3+i√5)(3−i√5)</span><span class="denominator">(√3+√2 i) − (√3−√2 i)</span></span> को a+ib रूप में लिखिए।</div>
+            <div class="step">अंश: (3+i√5)(3−i√5) = 3² − (i√5)² = 9 − (i²·5) = 9 − (−5) = 14</div>
+            <div class="step">हर: (√3 + i√2) − (√3 − i√2) = √3 + i√2 − √3 + i√2 = 2i√2</div>
+            <div class="step">व्यंजक = <span class="fraction"><span class="numerator">14</span><span class="denominator">2i√2</span></span> = <span class="fraction"><span class="numerator">7</span><span class="denominator">i√2</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">7</span><span class="denominator">i√2</span></span> × <span class="fraction"><span class="numerator">i</span><span class="denominator">i</span></span> = <span class="fraction"><span class="numerator">7i</span><span class="denominator">i²√2</span></span> = <span class="fraction"><span class="numerator">7i</span><span class="denominator">−√2</span></span> = –<span class="fraction"><span class="numerator">7</span><span class="denominator">√2</span></span> i = 0 + i(–<span class="fraction"><span class="numerator">7</span><span class="denominator">√2</span></span>)</div>
+            <div class="hinglish-explanation">अंश में (a+ib)(a-ib) = a²+b² से 14 आता है। हर सरल करने पर 2i√2, फिर परिमेयकरण से a+ib रूप।</div>
+        </div>
+    </section>
+
+    <section id="misc-ex" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-purple-100 text-purple-800 px-4 py-2 rounded-full">🔀 विविध प्रश्नावली</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. [i¹⁸ + (1/i)²⁵]³ का मान ज्ञात कीजिए।</div>
+            <div class="step">i¹⁸ = i¹⁶·i² = (i⁴)⁴·i² = 1·(–1) = –1</div>
+            <div class="step">(1/i)²⁵ = i⁻²⁵ = 1 / i²⁵, i²⁵ = i²⁴·i = (i⁴)⁶·i = i ⇒ 1/i = –i? वास्तव में i⁻²⁵ = i⁻²⁴·i⁻¹ = 1·(–i) = –i</div>
+            <div class="step">अतः i¹⁸ + (1/i)²⁵ = –1 + (–i) = –1 – i</div>
+            <div class="step">अब [ –1 – i ]³ = –(1+i)³ = –[1 + 3i + 3i² + i³] = –[1+3i –3 – i] = –[–2 + 2i] = 2 – 2i</div>
+            <div class="hinglish-explanation">घातों को सरल कर i⁴=1 का उपयोग करें।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. सिद्ध कीजिए: Re(z₁z₂) = Re z₁·Re z₂ – Im z₁·Im z₂</div>
+            <div class="step">माना z₁ = a+ib, z₂ = c+id</div>
+            <div class="step">z₁z₂ = (ac – bd) + i(ad + bc)</div>
+            <div class="step">Re(z₁z₂) = ac – bd</div>
+            <div class="step">Re z₁·Re z₂ = a·c, Im z₁·Im z₂ = b·d</div>
+            <div class="step">∴ ac – bd = a·c – b·d, अतः सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">गुणा के बाद वास्तविक भाग ac−bd प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. (<span class="fraction"><span class="numerator">1</span><span class="denominator">1−4i</span></span> – <span class="fraction"><span class="numerator">2</span><span class="denominator">1+i</span></span>) (<span class="fraction"><span class="numerator">3−4i</span><span class="denominator">5+i</span></span>) को मानक रूप में परिवर्तित कीजिए।</div>
+            <div class="step">पहला कोष्ठक: <span class="fraction"><span class="numerator">1+i − 2(1−4i)</span><span class="denominator">(1−4i)(1+i)</span></span> = <span class="fraction"><span class="numerator">1+i − 2+8i</span><span class="denominator">1+i−4i−4i²</span></span> = <span class="fraction"><span class="numerator">−1+9i</span><span class="denominator">5−3i</span></span></div>
+            <div class="step">गुणा करने पर: <span class="fraction"><span class="numerator">−1+9i</span><span class="denominator">5−3i</span></span> × <span class="fraction"><span class="numerator">3−4i</span><span class="denominator">5+i</span></span> = <span class="fraction"><span class="numerator">(−1+9i)(3−4i)</span><span class="denominator">(5−3i)(5+i)</span></span></div>
+            <div class="step">अंश: −3 + 4i + 27i − 36i² = 33 + 31i</div>
+            <div class="step">हर: 25 + 5i − 15i − 3i² = 28 − 10i</div>
+            <div class="step">अब <span class="fraction"><span class="numerator">33+31i</span><span class="denominator">28−10i</span></span> का परिमेयकरण (28+10i से गुणा-भाग):</div>
+            <div class="step">= <span class="fraction"><span class="numerator">(33+31i)(28+10i)</span><span class="denominator">28² + 10²</span></span> = <span class="fraction"><span class="numerator">924 + 330i + 868i − 310</span><span class="denominator">784 + 100</span></span> = <span class="fraction"><span class="numerator">614 + 1198i</span><span class="denominator">884</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">307</span><span class="denominator">442</span></span> + i<span class="fraction"><span class="numerator">599</span><span class="denominator">442</span></span></div>
+            <div class="hinglish-explanation">पहले कोष्ठक को हल कर, दूसरे से गुणा किया। अंत में हर का परिमेयकरण कर मानक रूप a+ib में बदला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. यदि x – iy = √<span class="fraction"><span class="numerator">a−ib</span><span class="denominator">c−id</span></span> तो सिद्ध कीजिए (x²+y²)² = <span class="fraction"><span class="numerator">a²+b²</span><span class="denominator">c²+d²</span></span>।</div>
+            <div class="step">दिया है (x – iy)² = <span class="fraction"><span class="numerator">a−ib</span><span class="denominator">c−id</span></span></div>
+            <div class="step">दोनों पक्षों का मापांक लें: |x – iy|² = <span class="fraction"><span class="numerator">|a−ib|</span><span class="denominator">|c−id|</span></span></div>
+            <div class="step">|x – iy|² = x² + y², |a−ib| = √(a²+b²), |c−id| = √(c²+d²)</div>
+            <div class="step">∴ x² + y² = √<span class="fraction"><span class="numerator">a²+b²</span><span class="denominator">c²+d²</span></span> ⇒ दोनों ओर वर्ग करने पर (x²+y²)² = <span class="fraction"><span class="numerator">a²+b²</span><span class="denominator">c²+d²</span></span> सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">मापांक के गुणधर्म का प्रयोग, वर्गमूल हटने पर प्राप्त होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. z₁ = 2 – i, z₂ = 1 + i, तो <span class="fraction"><span class="numerator">z₁+z₂+1</span><span class="denominator">z₁−z₂+i</span></span> का मापांक ज्ञात कीजिए।</div>
+            <div class="step">z₁+z₂+1 = (2–i)+(1+i)+1 = 4 + 0i = 4</div>
+            <div class="step">z₁−z₂+i = (2–i) – (1+i) + i = 1 – i – i + i? सही: 2–i–1–i + i = 1 – i</div>
+            <div class="step">भिन्न = <span class="fraction"><span class="numerator">4</span><span class="denominator">1−i</span></span> = <span class="fraction"><span class="numerator">4(1+i)</span><span class="denominator">2</span></span> = 2+2i</div>
+            <div class="step">मापांक = √(2²+2²) = √8 = 2√2</div>
+            <div class="hinglish-explanation">पहले अंश हर को सरल करें, फिर मापांक का सूत्र प्रयोग करें।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. यदि a+ib = <span class="fraction"><span class="numerator">(x+i)²</span><span class="denominator">2x²+1</span></span> तो सिद्ध कीजिए a²+b² = <span class="fraction"><span class="numerator">(x²+1)²</span><span class="denominator">(2x²+1)²</span></span>।</div>
+            <div class="step">(x+i)² = x² + 2xi + i² = (x²–1) + 2xi</div>
+            <div class="step">a+ib = <span class="fraction"><span class="numerator">(x²–1) + 2xi</span><span class="denominator">2x²+1</span></span> ⇒ a = <span class="fraction"><span class="numerator">x²–1</span><span class="denominator">2x²+1</span></span>, b = <span class="fraction"><span class="numerator">2x</span><span class="denominator">2x²+1</span></span></div>
+            <div class="step">a²+b² = <span class="fraction"><span class="numerator">(x²–1)² + (2x)²</span><span class="denominator">(2x²+1)²</span></span> = <span class="fraction"><span class="numerator">x⁴ –2x²+1+4x²</span><span class="denominator">(2x²+1)²</span></span> = <span class="fraction"><span class="numerator">x⁴+2x²+1</span><span class="denominator">(2x²+1)²</span></span> = <span class="fraction"><span class="numerator">(x²+1)²</span><span class="denominator">(2x²+1)²</span></span></div>
+            <div class="hinglish-explanation">वास्तविक व काल्पनिक भाग अलग कर वर्ग योग।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. z₁=2−i, z₂=−2+i, (i) Re(z₁z₂/<span class="conj">z₁</span>) (ii) Im(1/(z₁<span class="conj">z₁</span>))</div>
+            <div class="step">(i) z₁z₂ = (2−i)(−2+i) = –4+2i+2i−i² = –4+4i+1 = –3+4i</div>
+            <div class="step"><span class="conj">z₁</span> = 2+i ⇒ भागफल = <span class="fraction"><span class="numerator">–3+4i</span><span class="denominator">2+i</span></span> = <span class="fraction"><span class="numerator">(–3+4i)(2−i)</span><span class="denominator">4+1</span></span> = <span class="fraction"><span class="numerator">–6+3i+8i−4i²</span><span class="denominator">5</span></span> = <span class="fraction"><span class="numerator">–6+11i+4</span><span class="denominator">5</span></span> = <span class="fraction"><span class="numerator">–2+11i</span><span class="denominator">5</span></span>, Re = –2/5</div>
+            <div class="step">(ii) z₁<span class="conj">z₁</span> = (2−i)(2+i)=4+1=5, अतः 1/5 = 1/5 + 0·i ⇒ Im = 0</div>
+            <div class="hinglish-explanation">प्रत्येक भाग को सरल करके वास्तविक एवं काल्पनिक भाग अलग किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. यदि (x−iy)(3+5i), −6−24i का संयुग्मी है, तो x,y वास्तविक ज्ञात कीजिए।</div>
+            <div class="step">−6−24i का संयुग्मी = –6 + 24i</div>
+            <div class="step">अतः (x−iy)(3+5i) = –6+24i</div>
+            <div class="step">बायाँ पक्ष = 3x +5xi –3iy –5i²y = (3x+5y) + i(5x –3y)</div>
+            <div class="step">वास्तविक व काल्पनिक तुलना: 3x+5y = –6, 5x–3y = 24</div>
+            <div class="step">हल: पहले ×3, दूसरे ×5: 9x+15y = –18, 25x–15y=120, योग 34x=102 ⇒ x=3, y = (–6–9)/5 = –3</div>
+            <div class="hinglish-explanation">दो समीकरण बनाकर हल किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. <span class="fraction"><span class="numerator">1+i</span><span class="denominator">1−i</span></span> – <span class="fraction"><span class="numerator">1−i</span><span class="denominator">1+i</span></span> का मापांक ज्ञात कीजिए।</div>
+            <div class="step">पहला भिन्न: <span class="fraction"><span class="numerator">1+i</span><span class="denominator">1−i</span></span> = <span class="fraction"><span class="numerator">(1+i)²</span><span class="denominator">1+1</span></span> = <span class="fraction"><span class="numerator">1+2i+i²</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">2i</span><span class="denominator">2</span></span> = i</div>
+            <div class="step">दूसरा: <span class="fraction"><span class="numerator">1−i</span><span class="denominator">1+i</span></span> = <span class="fraction"><span class="numerator">(1−i)²</span><span class="denominator">1+1</span></span> = <span class="fraction"><span class="numerator">1−2i−1</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">−2i</span><span class="denominator">2</span></span> = –i</div>
+            <div class="step">अंतर = i – (–i) = 2i, मापांक = |2i| = 2</div>
+            <div class="hinglish-explanation">प्रत्येक को सरल कर i प्राप्त होता है, अंतर 2i, मापांक 2।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. यदि (x+iy)³ = u+iv, तो सिद्ध कीजिए u/x + v/y = 4(x²–y²)</div>
+            <div class="step">प्रसार: (x+iy)³ = x³+3x²(iy)+3x(iy)²+(iy)³ = x³+3ix²y –3xy² – iy³</div>
+            <div class="step">= (x³ – 3xy²) + i(3x²y – y³) ⇒ u = x³–3xy², v = 3x²y–y³</div>
+            <div class="step">u/x = x² – 3y², v/y = 3x² – y²</div>
+            <div class="step">u/x + v/y = (x² –3y²) + (3x² – y²) = 4x² – 4y² = 4(x² – y²)</div>
+            <div class="hinglish-explanation">द्विपद प्रसार के बाद वास्तविक व काल्पनिक भाग अलग करें।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. यदि α, β भिन्न सम्मिश्र संख्याएँ हैं, |β|=1 तो <span class="fraction"><span class="numerator">β−α</span><span class="denominator">1−<span class="conj">α</span>β</span></span> का मापांक ज्ञात कीजिए।</div>
+            <div class="step">मानक परिणाम: |β| = 1 ⇒ β·<span class="conj">β</span> = 1</div>
+            <div class="step">तब |1 − <span class="conj">α</span>β| = |<span class="conj">β</span> − <span class="conj">α</span>| (क्योंकि β से गुणा)</div>
+            <div class="step">वास्तव में |β−α| = |β| · |1 − α<span class="conj">β</span>| ⇒ |β−α| = |1 − α<span class="conj">β</span>|</div>
+            <div class="step">अतः अभीष्ट मान <span class="fraction"><span class="numerator">|β−α|</span><span class="denominator">|1−<span class="conj">α</span>β|</span></span> = 1</div>
+            <div class="step">या स्पष्टः <span class="fraction"><span class="numerator">β−α</span><span class="denominator">1−<span class="conj">α</span>β</span></span> का मापांक = |β|·|1−α<span class="conj">β</span>| / |1−α<span class="conj">β</span>| = |β| = 1</div>
+            <div class="hinglish-explanation"><strong>हल:</strong> |β|=1 का उपयोग करते हुए, अंश और हर के मापांक बराबर हो जाते हैं, इसलिए मान 1 आता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. समीकरण |1–i|ˣ = 2ˣ के शून्येतर पूर्णांक मूलों की संख्या ज्ञात कीजिए।</div>
+            <div class="step">|1–i| = √(1²+(-1)²) = √2</div>
+            <div class="step">समीकरण: (√2)ˣ = 2ˣ ⇒ 2ˣ/² = 2ˣ ⇒ 2^{x/2} / 2ˣ = 1 ⇒ 2^{-x/2} = 1 ⇒ –x/2 = 0 ⇒ x = 0</div>
+            <div class="step">किन्तु शून्येतर पूर्णांक मूल नहीं है। अतः शून्येतर पूर्णांक मूलों की संख्या = 0</div>
+            <div class="hinglish-explanation">घातांक तुलना से x=0 ही मिलता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. यदि (a+ib)(c+id)(e+if)(g+ih) = A+iB, तो सिद्ध कीजिए (a²+b²)(c²+d²)(e²+f²)(g²+h²) = A²+B²</div>
+            <div class="step">दोनों पक्षों का मापांक वर्ग करें: |(a+ib)(c+id)(e+if)(g+ih)| = |A+iB|</div>
+            <div class="step">बायाँ पक्ष = √(a²+b²)·√(c²+d²)·√(e²+f²)·√(g²+h²) = √(A²+B²)</div>
+            <div class="step">दोनों ओर वर्ग करने पर (a²+b²)(c²+d²)(e²+f²)(g²+h²) = A²+B² सिद्ध हुआ।</div>
+            <div class="hinglish-explanation">मापांक का गुणधर्म |z₁z₂...| = |z₁||z₂|... लागू किया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. यदि <span class="fraction"><span class="numerator">1+i</span><span class="denominator">1−i</span></span> का m घात = 1, तो m का न्यूनतम धन पूर्णांक मान ज्ञात कीजिए।</div>
+            <div class="step">(1+i)/(1−i) = i (जैसा प्रश्न 9 में सिद्ध किया)</div>
+            <div class="step">अतः i^m = 1 ⇒ i⁴ = 1, i⁰ भी परन्तु m धन पूर्णांक न्यूनतम 4 होगा।</div>
+            <div class="step">∴ m = 4</div>
+            <div class="hinglish-explanation">(1+i)/(1–i) = i, i की घात 1 प्राप्त करने के लिए m, 4 का गुणज होना चाहिए।</div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 4) सम्मिश्र संख्याएँ ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>

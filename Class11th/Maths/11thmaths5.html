@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 गणित - अध्याय 5: रैखिक असमिकाएँ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            border-left: 3px solid #0ea5e9;
+            line-height: 1.5;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .number-line {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #f8fafc;
+            border-radius: 0.5rem;
+        }
+        .number-line-item {
+            position: relative;
+            text-align: center;
+            min-width: 40px;
+        }
+        .number-line-line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #374151;
+        }
+        .number-line-point {
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #374151;
+        }
+        .number-line-filled {
+            background-color: #3b82f6;
+        }
+        .number-line-empty {
+            background-color: white;
+            border: 2px solid #374151;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 5<br> रैखिक असमिकाएँ</h1>
+            <p class="mt-2 text-lg">कक्षा 11वीं गणित | StudyScript</p>
+        </div>
+
+        <!-- Exercise 5.1 Section -->
+        <section id="exercise-5-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 5.1</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: हल कीजिए 24x < 100, जब<br>
+                (i) x एक प्राकृतिक संख्या है<br>
+                (ii) x एक पूर्णांक है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हमारे पास है: 24x < 100</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                दोनों पक्षों को 24 से विभाजित करने पर: x < 
+                                <span class="fraction">
+                                    <span class="numerator">100</span>
+                                    <span class="denominator">24</span>
+                                </span> = 
+                                <span class="fraction">
+                                    <span class="numerator">25</span>
+                                    <span class="denominator">6</span>
+                                </span> ≈ 4.1667
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) जब x एक प्राकृतिक संख्या है:</p>
+                        <p class="mb-2">4.1667 से छोटी प्राकृतिक संख्याएँ हैं: 1, 2, 3, 4</p>
+                        <p class="mb-2">हल समुच्चय: {1, 2, 3, 4}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) जब x एक पूर्णांक है:</p>
+                        <p class="mb-2">4.1667 से छोटे पूर्णांक हैं: ..., -3, -2, -1, 0, 1, 2, 3, 4</p>
+                        <p class="mb-2">हल समुच्चय: {..., -3, -2, -1, 0, 1, 2, 3, 4}</p>
+                        <p><strong>उत्तर:</strong> (i) {1, 2, 3, 4}; (ii) {..., -3, -2, -1, 0, 1, 2, 3, 4}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> पहले असमिका हल करते हैं: 24x < 100 ⇒ x < 25/6 ≈ 4.1667। (i) प्राकृतिक संख्याओं के लिए: 1, 2, 3, 4। (ii) पूर्णांकों के लिए: ...-3, -2, -1, 0, 1, 2, 3, 4.
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: हल कीजिए -12x > 30, जब<br>
+                (i) x एक प्राकृतिक संख्या है<br>
+                (ii) x एक पूर्णांक है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हमारे पास है: -12x > 30</p>
+                        <p class="mb-2">
+                            <span class="inline-math">
+                                दोनों पक्षों को -12 से विभाजित करने पर (चिह्न बदल जाएगा): x < 
+                                <span class="fraction">
+                                    <span class="numerator">30</span>
+                                    <span class="denominator">-12</span>
+                                </span> = -
+                                <span class="fraction">
+                                    <span class="numerator">5</span>
+                                    <span class="denominator">2</span>
+                                </span> = -2.5
+                            </span>
+                        </p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) जब x एक प्राकृतिक संख्या है:</p>
+                        <p class="mb-2">-2.5 से छोटी कोई प्राकृतिक संख्या नहीं है।</p>
+                        <p class="mb-2">हल समुच्चय: ∅ (रिक्त समुच्चय)</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) जब x एक पूर्णांक है:</p>
+                        <p class="mb-2">-2.5 से छोटे पूर्णांक हैं: ..., -6, -5, -4, -3</p>
+                        <p class="mb-2">हल समुच्चय: {..., -6, -5, -4, -3}</p>
+                        <p><strong>उत्तर:</strong> (i) ∅; (ii) {..., -6, -5, -4, -3}</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> असमिका हल करते हैं: -12x > 30 ⇒ x < -2.5 (ऋणात्मक से भाग देने पर चिह्न बदलता है)। (i) प्राकृतिक संख्याओं में -2.5 से छोटी कोई संख्या नहीं, इसलिए रिक्त समुच्चय। (ii) पूर्णांकों के लिए: ...-6, -5, -4, -3.
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: हल कीजिए 5x - 3 < 7, जब<br>
+                (i) x एक पूर्णांक है<br>
+                (ii) x एक वास्तविक संख्या है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हमारे पास है: 5x - 3 < 7</p>
+                        <p class="mb-2">दोनों पक्षों में 3 जोड़ने पर: 5x < 10</p>
+                        <p class="mb-2">दोनों पक्षों को 5 से विभाजित करने पर: x < 2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) जब x एक पूर्णांक है:</p>
+                        <p class="mb-2">2 से छोटे पूर्णांक हैं: ..., -3, -2, -1, 0, 1</p>
+                        <p class="mb-2">हल समुच्चय: {..., -3, -2, -1, 0, 1}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) जब x एक वास्तविक संख्या है:</p>
+                        <p class="mb-2">2 से छोटी सभी वास्तविक संख्याएँ</p>
+                        <p class="mb-2">हल समुच्चय: (-∞, 2)</p>
+                        <p><strong>उत्तर:</strong> (i) {..., -3, -2, -1, 0, 1}; (ii) (-∞, 2)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> असमिका हल करते हैं: 5x - 3 < 7 ⇒ 5x < 10 ⇒ x < 2। (i) पूर्णांकों के लिए: ...-3, -2, -1, 0, 1। (ii) वास्तविक संख्याओं के लिए: (-∞, 2).
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: हल कीजिए 3x + 8 > 2, जब<br>
+                (i) x एक पूर्णांक है<br>
+                (ii) x एक वास्तविक संख्या है</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">हमारे पास है: 3x + 8 > 2</p>
+                        <p class="mb-2">दोनों पक्षों में से 8 घटाने पर: 3x > -6</p>
+                        <p class="mb-2">दोनों पक्षों को 3 से विभाजित करने पर: x > -2</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) जब x एक पूर्णांक है:</p>
+                        <p class="mb-2">-2 से बड़े पूर्णांक हैं: -1, 0, 1, 2, 3, ...</p>
+                        <p class="mb-2">हल समुच्चय: {-1, 0, 1, 2, 3, ...}</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) जब x एक वास्तविक संख्या है:</p>
+                        <p class="mb-2">-2 से बड़ी सभी वास्तविक संख्याएँ</p>
+                        <p class="mb-2">हल समुच्चय: (-2, ∞)</p>
+                        <p><strong>उत्तर:</strong> (i) {-1, 0, 1, 2, 3, ...}; (ii) (-2, ∞)</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> असमिका हल करते हैं: 3x + 8 > 2 ⇒ 3x > -6 ⇒ x > -2। (i) पूर्णांकों के लिए: -1, 0, 1, 2, 3, ... (ii) वास्तविक संख्याओं के लिए: (-2, ∞).
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 से 26 इसी प्रकार हिंदी में अनुवादित, संक्षिप्तता हेतु मुख्य प्रश्नों का पूर्ण अनुवाद -->
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: वास्तविक x के लिए हल कीजिए: 4x + 3 < 5x + 7</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step"><p class="mb-2">हमारे पास है: 4x + 3 < 5x + 7</p><p class="mb-2">दोनों पक्षों में से 4x घटाने पर: 3 < x + 7</p><p class="mb-2">दोनों पक्षों में से 7 घटाने पर: -4 < x ⇒ x > -4</p></div>
+                    <div class="step"><p class="mb-2">हल समुच्चय: (-4, ∞)</p><p><strong>उत्तर:</strong> (-4, ∞)</p></div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 4x + 3 < 5x + 7 ⇒ 3 < x + 7 ⇒ -4 < x या x > -4। हल समुच्चय: (-4, ∞).</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: वास्तविक x के लिए हल कीजिए: 3x - 7 > 5x - 1</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step"><p class="mb-2">3x - 7 > 5x - 1 ⇒ -7 > 2x - 1 ⇒ -6 > 2x ⇒ -3 > x ⇒ x < -3</p></div>
+                    <div class="step"><p class="mb-2">हल समुच्चय: (-∞, -3)</p><p><strong>उत्तर:</strong> (-∞, -3)</p></div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 3x - 7 > 5x - 1 ⇒ -6 > 2x ⇒ x < -3। हल समुच्चय: (-∞, -3).</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 7-20 संक्षिप्त रूप से, लेकिन पूर्णता के लिए सभी आवश्यक हैं। यहाँ पूर्ण अनुवाद जारी रखते हैं। -->
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 7: वास्तविक x के लिए हल कीजिए: 3(x - 1) ≤ 2(x - 3)</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>3x - 3 ≤ 2x - 6 ⇒ x - 3 ≤ -6 ⇒ x ≤ -3</p></div><div class="step"><p>हल समुच्चय: (-∞, -3]</p><p><strong>उत्तर:</strong> (-∞, -3]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 3(x-1) ≤ 2(x-3) ⇒ 3x-3 ≤ 2x-6 ⇒ x ≤ -3। हल समुच्चय: (-∞, -3].</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 8: वास्तविक x के लिए हल कीजिए: 3(2 - x) ≥ 2(1 - x)</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>6 - 3x ≥ 2 - 2x ⇒ 6 ≥ 2 + x ⇒ 4 ≥ x ⇒ x ≤ 4</p></div><div class="step"><p>हल समुच्चय: (-∞, 4]</p><p><strong>उत्तर:</strong> (-∞, 4]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 3(2-x) ≥ 2(1-x) ⇒ 6-3x ≥ 2-2x ⇒ 4 ≥ x ⇒ x ≤ 4। हल: (-∞, 4].</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 9: वास्तविक x के लिए हल कीजिए: x + <span class="inline-math"><span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span></span> + <span class="inline-math"><span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span></span> < 11</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><span class="inline-math">x + x/2 + x/3 < 11 ⇒ (6x+3x+2x)/6 < 11 ⇒ 11x/6 < 11 ⇒ 11x < 66 ⇒ x < 6</span></p></div><div class="step"><p>हल समुच्चय: (-∞, 6)</p><p><strong>उत्तर:</strong> (-∞, 6)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x + x/2 + x/3 < 11 ⇒ 11x/6 < 11 ⇒ x < 6। हल: (-∞, 6).</div></div></div>
+
+            <!-- प्रश्न 10 से 16 तक के मुख्य हल -->
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 10: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> > <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> + 1</span></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>x/3 - x/2 > 1 ⇒ (2x-3x)/6 > 1 ⇒ -x/6 > 1 ⇒ -x > 6 ⇒ x < -6</p></div><div class="step"><p>हल समुच्चय: (-∞, -6)</p><p><strong>उत्तर:</strong> (-∞, -6)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x/3 > x/2 + 1 ⇒ -x/6 > 1 ⇒ x < -6। हल: (-∞, -6).</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 11: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">3(x-2)</span><span class="denominator">5</span></span> ≤ <span class="fraction"><span class="numerator">5(2-x)</span><span class="denominator">3</span></span></span></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>तिर्यक गुणा: 9(x-2) ≤ 25(2-x) ⇒ 9x-18 ≤ 50-25x ⇒ 34x ≤ 68 ⇒ x ≤ 2</p></div><div class="step"><p>हल समुच्चय: (-∞, 2]</p><p><strong>उत्तर:</strong> (-∞, 2]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> क्रॉस मल्टिप्लाई करने पर x ≤ 2। हल: (-∞, 2].</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 12: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>(<span class="fraction"><span class="numerator">3x</span><span class="denominator">5</span></span>+4) ≥ <span class="fraction"><span class="numerator">1</span><span class="denominator">3</span></span>(x-6)</span></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>3x/10 + 2 ≥ x/3 - 2 ⇒ 3x/10 - x/3 ≥ -4 ⇒ (9x-10x)/30 ≥ -4 ⇒ -x/30 ≥ -4 ⇒ -x ≥ -120 ⇒ x ≤ 120</p></div><div class="step"><p>हल समुच्चय: (-∞, 120]</p><p><strong>उत्तर:</strong> (-∞, 120]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> असमिका को हल करने पर x ≤ 120 प्राप्त होता है।</div></div></div>
+
+            <!-- अन्य प्रश्नों को इसी प्रकार संक्षिप्त रूप से जोड़ा जा सकता है लेकिन पूर्णता हेतु प्रश्न 13 से 20 तक की मुख्य पंक्तियाँ -->
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 13: वास्तविक x के लिए हल कीजिए: 2(2x+3)-10 < 6(x-2)</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>4x+6-10 < 6x-12 ⇒ 4x-4 < 6x-12 ⇒ -4 < 2x-12 ⇒ 8 < 2x ⇒ x > 4</p></div><div class="step"><p>हल समुच्चय: (4, ∞)</p><p><strong>उत्तर:</strong> (4, ∞)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> सरल करने पर x > 4, हल: (4, ∞).</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 14: हल कीजिए: 37 - (3x+5) ≥ 9x - 8(x-3)</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>32-3x ≥ 9x-8x+24 ⇒ 32-3x ≥ x+24 ⇒ 32-4x ≥ 24 ⇒ -4x ≥ -8 ⇒ x ≤ 2</p></div><div class="step"><p>हल समुच्चय: (-∞, 2]</p><p><strong>उत्तर:</strong> (-∞, 2]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> हल करने पर x ≤ 2, हल: (-∞, 2].</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 15: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">x</span><span class="denominator">4</span></span> < <span class="fraction"><span class="numerator">5x-2</span><span class="denominator">3</span></span> - <span class="fraction"><span class="numerator">7x-3</span><span class="denominator">5</span></span></span></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>दाएँ पक्ष का LCM: x/4 < (25x-10-21x+9)/15 ⇒ x/4 < (4x-1)/15 ⇒ 15x < 16x-4 ⇒ -x < -4 ⇒ x > 4</p></div><div class="step"><p>हल समुच्चय: (4, ∞)</p><p><strong>उत्तर:</strong> (4, ∞)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> सरल करने पर x > 4, हल: (4, ∞).</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 16: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">2x-1</span><span class="denominator">3</span></span> ≥ <span class="fraction"><span class="numerator">3x-2</span><span class="denominator">4</span></span> - <span class="fraction"><span class="numerator">2-x</span><span class="denominator">5</span></span></span></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>बायाँ पक्ष: (2x-1)/3 ≥ [5(3x-2)-4(2-x)]/20 ⇒ (2x-1)/3 ≥ (19x-18)/20 ⇒ 20(2x-1) ≥ 3(19x-18) ⇒ 40x-20 ≥ 57x-54 ⇒ -17x ≥ -34 ⇒ x ≤ 2</p></div><div class="step"><p>हल समुच्चय: (-∞, 2]</p><p><strong>उत्तर:</strong> (-∞, 2]</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> हल करने पर x ≤ 2, हल: (-∞, 2].</div></div></div>
+
+            <!-- प्रश्न 17 से 20 संख्या रेखा सहित -->
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 17: हल कीजिए: 3x-2 < 2x+1 तथा संख्या रेखा पर हल का आलेख दर्शाइए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>3x-2 < 2x+1 ⇒ x-2 < 1 ⇒ x < 3</p><p>हल समुच्चय: (-∞, 3)</p></div><div class="step"><div class="number-line"><div class="number-line-item"><div>0</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>1</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>2</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>3</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>4</div><div class="number-line-point number-line-empty"></div></div></div><p class="text-center text-sm">3 पर खुला वृत्त (open circle) दर्शाता है कि 3 हल समुच्चय में शामिल नहीं है।</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x < 3, संख्या रेखा पर 3 पर खुला वृत्त।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 18: हल कीजिए: 5x-3 ≥ 3x-5 तथा संख्या रेखा पर आलेख दीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>5x-3 ≥ 3x-5 ⇒ 2x ≥ -2 ⇒ x ≥ -1</p><p>हल समुच्चय: [-1, ∞)</p></div><div class="step"><div class="number-line"><div class="number-line-item"><div>-3</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>-2</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>-1</div><div class="number-line-point number-line-filled"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>0</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>1</div><div class="number-line-point number-line-empty"></div></div></div><p class="text-center text-sm">-1 पर बंद वृत्त (closed circle) दर्शाता है कि -1 समुच्चय में शामिल है।</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x ≥ -1, संख्या रेखा पर -1 पर बंद वृत्त।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 19: हल कीजिए: 3(1-x) < 2(x+4) तथा संख्या रेखा पर आलेख दीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>3-3x < 2x+8 ⇒ 3 < 5x+8 ⇒ -5 < 5x ⇒ x > -1</p><p>हल समुच्चय: (-1, ∞)</p></div><div class="step"><div class="number-line"><div class="number-line-item"><div>-3</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>-2</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>-1</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>0</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>1</div><div class="number-line-point number-line-empty"></div></div></div><p class="text-center text-sm">-1 पर खुला वृत्त, -1 शामिल नहीं।</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x > -1, हल: (-1, ∞).</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 20: हल कीजिए: <span class="inline-math"><span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> ≥ <span class="fraction"><span class="numerator">5x-2</span><span class="denominator">3</span></span> - <span class="fraction"><span class="numerator">7x-3</span><span class="denominator">5</span></span></span> तथा संख्या रेखा पर आलेख दीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>x/2 ≥ (4x-1)/15 ⇒ 15x ≥ 8x-2 ⇒ 7x ≥ -2 ⇒ x ≥ -2/7</p><p>हल समुच्चय: [-2/7, ∞)</p></div><div class="step"><div class="number-line"><div class="number-line-item"><div>-1</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line"></div><div class="number-line-item"><div>-2/7</div><div class="number-line-point number-line-filled"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>0</div><div class="number-line-point number-line-empty"></div></div><div class="number-line-line number-line-filled"></div><div class="number-line-item"><div>1</div><div class="number-line-point number-line-empty"></div></div></div><p class="text-center text-sm">-2/7 पर बंद वृत्त, यह हल में शामिल है।</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x ≥ -2/7, हल [-2/7, ∞).</div></div></div>
+
+            <!-- प्रश्न 21 से 26 (शब्दीय प्रश्न) हिंदी में -->
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 21: रवि ने पहली दो इकाई परीक्षाओं में 70 और 75 अंक प्राप्त किए। तीसरी परीक्षा में उसे कम से कम कितने अंक प्राप्त करने चाहिए ताकि उसका औसत कम से कम 60 अंक हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना तीसरी परीक्षा में x अंक मिले। औसत = (70+75+x)/3 ≥ 60 ⇒ 145+x ≥ 180 ⇒ x ≥ 35</p></div><div class="step"><p>तीसरी परीक्षा में न्यूनतम अंक = 35</p><p><strong>उत्तर:</strong> 35</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> (70+75+x)/3 ≥ 60 ⇒ x ≥ 35. अतः कम से कम 35 अंक चाहिए।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 22: एक पाठ्यक्रम में 'A' ग्रेड पाने के लिए पांच परीक्षाओं (प्रत्येक 100 अंकों की) में कम से कम 90 अंकों का औसत आवश्यक है। यदि सुनिता के पहली चार परीक्षाओं के अंक 87, 92, 94, 95 हैं तो पाँचवीं परीक्षा में न्यूनतम कितने अंक लाने होंगे?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना पाँचवीं में x अंक। औसत = (87+92+94+95+x)/5 ≥ 90 ⇒ 368+x ≥ 450 ⇒ x ≥ 82</p></div><div class="step"><p>न्यूनतम अंक = 82</p><p><strong>उत्तर:</strong> 82</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> (368+x)/5 ≥ 90 ⇒ x ≥ 82.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 23: क्रमागत विषम धनात्मक पूर्णांकों के सभी युग्म ज्ञात कीजिए जिनमें प्रत्येक 10 से छोटा है और जिनका योग 11 से अधिक है।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना क्रमागत विषम पूर्णांक x तथा x+2 हैं। शर्तें: x+2 < 10 ⇒ x < 8, तथा x+(x+2) > 11 ⇒ 2x+2 > 11 ⇒ x > 4.5, तथा x विषम धनात्मक ⇒ x = 5, 7</p></div><div class="step"><p>युग्म: (5,7) और (7,9)</p><p><strong>उत्तर:</strong> (5,7) और (7,9)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> शर्तों के अनुसार x = 5, 7 अतः युग्म (5,7) व (7,9).</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 24: क्रमागत सम धनात्मक पूर्णांकों के सभी युग्म ज्ञात कीजिए जिनमें प्रत्येक 5 से बड़ा है तथा योग 23 से कम है।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना x तथा x+2 सम पूर्णांक हैं। x > 5 तथा 2x+2 < 23 ⇒ x < 10.5, x सम धनात्मक ⇒ x = 6, 8, 10</p></div><div class="step"><p>युग्म: (6,8), (8,10), (10,12)</p><p><strong>उत्तर:</strong> (6,8), (8,10), (10,12)</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> शर्तों से x = 6,8,10 अतः उपरोक्त युग्म।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 25: एक त्रिभुज की सबसे बड़ी भुजा सबसे छोटी भुजा की तीन गुनी है तथा तीसरी भुजा सबसे बड़ी भुजा से 2 सेमी कम है। यदि त्रिभुज का परिमाप कम से कम 61 सेमी है तो सबसे छोटी भुजा की न्यूनतम लंबाई ज्ञात कीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना सबसे छोटी भुजा x सेमी। तब सबसे बड़ी भुजा = 3x, तीसरी = 3x-2। परिमाप = x+3x+(3x-2)=7x-2। प्रतिबंध: 7x-2 ≥ 61 ⇒ 7x ≥ 63 ⇒ x ≥ 9</p></div><div class="step"><p>न्यूनतम लंबाई = 9 सेमी</p><p><strong>उत्तर:</strong> 9 सेमी</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 7x-2 ≥ 61 ⇒ x ≥ 9, अतः न्यूनतम 9 सेमी।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 26: एक व्यक्ति 91 सेमी लंबे बोर्ड से तीन टुकड़े काटना चाहता है। दूसरा टुकड़ा सबसे छोटे टुकड़े से 3 सेमी अधिक लंबा है तथा तीसरा टुकड़ा सबसे छोटे का दोगुना है। यदि तीसरा टुकड़ा दूसरे टुकड़े से कम से कम 5 सेमी अधिक लंबा हो तो सबसे छोटे टुकड़े की संभावित लंबाइयाँ क्या हैं?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>माना सबसे छोटा टुकड़ा x सेमी। दूसरा = x+3, तीसरा = 2x। कुल लंबाई ≤ 91 ⇒ 4x+3 ≤ 91 ⇒ x ≤ 22। तीसरा ≥ दूसरा + 5 ⇒ 2x ≥ x+8 ⇒ x ≥ 8।</p></div><div class="step"><p>इसलिए 8 ≤ x ≤ 22</p><p><strong>उत्तर:</strong> 8 सेमी से 22 सेमी तक</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> x ≥ 8 और x ≤ 22, अतः सबसे छोटे टुकड़े की लंबाई 8 से 22 सेमी के बीच।</div></div></div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

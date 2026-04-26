@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 7: द्विपद प्रमेय | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 7<br>द्विपद प्रमेय</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <section id="ex-7-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 7.1</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. (1 - 2x)⁵ का प्रसार कीजिए।</div>
+            <div class="step">द्विपद प्रमेय: (a + b)ⁿ = ⁿC₀ aⁿ + ⁿC₁ aⁿ⁻¹b + ... + ⁿCₙ bⁿ</div>
+            <div class="step">यहाँ a = 1, b = -2x और n = 5 है।</div>
+            <div class="step">(1 - 2x)⁵ = ⁵C₀(1)⁵ + ⁵C₁(1)⁴(-2x) + ⁵C₂(1)³(-2x)² + ⁵C₃(1)²(-2x)³ + ⁵C₄(1)(-2x)⁴ + ⁵C₅(-2x)⁵</div>
+            <div class="step">= 1(1) + 5(-2x) + 10(4x²) + 10(-8x³) + 5(16x⁴) + 1(-32x⁵)</div>
+            <div class="step">= 1 - 10x + 40x² - 80x³ + 80x⁴ - 32x⁵</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> द्विपद प्रमेय (Binomial Theorem) के सूत्र का सीधा उपयोग किया गया है। ⁵C₀=1, ⁵C₁=5, ⁵C₂=10 का प्रयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. (<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span> - <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)⁵ का प्रसार कीजिए।</div>
+            <div class="step">यहाँ a = <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>, b = -<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> और n = 5 है।</div>
+            <div class="step">= ⁵C₀(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)⁵ + ⁵C₁(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)⁴(-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>) + ⁵C₂(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)³(-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)² + ⁵C₃(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)²(-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)³ + ⁵C₄(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)(-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)⁴ + ⁵C₅(-<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>)⁵</div>
+            <div class="step">= 1(<span class="fraction"><span class="numerator">32</span><span class="denominator">x⁵</span></span>) - 5(<span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span>)(<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span>) + 10(<span class="fraction"><span class="numerator">8</span><span class="denominator">x³</span></span>)(<span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span>) - 10(<span class="fraction"><span class="numerator">4</span><span class="denominator">x²</span></span>)(<span class="fraction"><span class="numerator">x³</span><span class="denominator">8</span></span>) + 5(<span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)(<span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span>) - 1(<span class="fraction"><span class="numerator">x⁵</span><span class="denominator">32</span></span>)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">32</span><span class="denominator">x⁵</span></span> - <span class="fraction"><span class="numerator">40</span><span class="denominator">x³</span></span> + <span class="fraction"><span class="numerator">20</span><span class="denominator">x</span></span> - 5x + <span class="fraction"><span class="numerator">5</span><span class="denominator">8</span></span>x³ - <span class="fraction"><span class="numerator">x⁵</span><span class="denominator">32</span></span></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> x की घातों (powers) को सरल करते समय अंश (numerator) और हर (denominator) को ध्यान से काटा गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. (2x - 3)⁶ का प्रसार कीजिए।</div>
+            <div class="step">यहाँ a = 2x, b = -3 और n = 6 है।</div>
+            <div class="step">= ⁶C₀(2x)⁶ + ⁶C₁(2x)⁵(-3) + ⁶C₂(2x)⁴(-3)² + ⁶C₃(2x)³(-3)³ + ⁶C₄(2x)²(-3)⁴ + ⁶C₅(2x)(-3)⁵ + ⁶C₆(-3)⁶</div>
+            <div class="step">= 1(64x⁶) - 6(32x⁵)(3) + 15(16x⁴)(9) - 20(8x³)(27) + 15(4x²)(81) - 6(2x)(243) + 1(729)</div>
+            <div class="step">= 64x⁶ - 576x⁵ + 2160x⁴ - 4320x³ + 4860x² - 2916x + 729</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> गुणांक ⁶C₀=1, ⁶C₁=6, ⁶C₂=15, ⁶C₃=20, ⁶C₄=15, ⁶C₅=6, ⁶C₆=1 का उपयोग किया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. (<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁵ का प्रसार कीजिए।</div>
+            <div class="step">यहाँ a = <span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>, b = <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> और n = 5 है।</div>
+            <div class="step">= ⁵C₀(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)⁵ + ⁵C₁(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)⁴(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + ⁵C₂(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)³(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)² + ⁵C₃(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)²(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)³ + ⁵C₄(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁴ + ⁵C₅(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁵</div>
+            <div class="step">= 1(<span class="fraction"><span class="numerator">x⁵</span><span class="denominator">243</span></span>) + 5(<span class="fraction"><span class="numerator">x⁴</span><span class="denominator">81</span></span>)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + 10(<span class="fraction"><span class="numerator">x³</span><span class="denominator">27</span></span>)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x²</span></span>) + 10(<span class="fraction"><span class="numerator">x²</span><span class="denominator">9</span></span>)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x³</span></span>) + 5(<span class="fraction"><span class="numerator">x</span><span class="denominator">3</span></span>)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x⁴</span></span>) + 1(<span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵</span></span>)</div>
+            <div class="step">= <span class="fraction"><span class="numerator">x⁵</span><span class="denominator">243</span></span> + <span class="fraction"><span class="numerator">5x³</span><span class="denominator">81</span></span> + <span class="fraction"><span class="numerator">10x</span><span class="denominator">27</span></span> + <span class="fraction"><span class="numerator">10</span><span class="denominator">9x</span></span> + <span class="fraction"><span class="numerator">5</span><span class="denominator">3x³</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵</span></span></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> पदों को काट कर (जैसे x⁴ / x = x³) सरलतम रूप में लिखा गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. (x + <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁶ का प्रसार कीजिए।</div>
+            <div class="step">यहाँ a = x, b = <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> और n = 6 है।</div>
+            <div class="step">= ⁶C₀(x)⁶ + ⁶C₁(x)⁵(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + ⁶C₂(x)⁴(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)² + ⁶C₃(x)³(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)³ + ⁶C₄(x)²(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁴ + ⁶C₅(x)(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁵ + ⁶C₆(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>)⁶</div>
+            <div class="step">= x⁶ + 6x⁵(<span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span>) + 15x⁴(<span class="fraction"><span class="numerator">1</span><span class="denominator">x²</span></span>) + 20x³(<span class="fraction"><span class="numerator">1</span><span class="denominator">x³</span></span>) + 15x²(<span class="fraction"><span class="numerator">1</span><span class="denominator">x⁴</span></span>) + 6x(<span class="fraction"><span class="numerator">1</span><span class="denominator">x⁵</span></span>) + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁶</span></span></div>
+            <div class="step">= x⁶ + 6x⁴ + 15x² + 20 + <span class="fraction"><span class="numerator">15</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">6</span><span class="denominator">x⁴</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">x⁶</span></span></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> मध्य पद में x³ और 1/x³ कट जाते हैं, इसलिए यह 20 बचता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. (96)³ का मान ज्ञात कीजिए।</div>
+            <div class="step">96 को (100 - 4) के रूप में लिख सकते हैं।</div>
+            <div class="step">(100 - 4)³ = ³C₀(100)³ - ³C₁(100)²(4) + ³C₂(100)(4)² - ³C₃(4)³</div>
+            <div class="step">= 1(1000000) - 3(10000)(4) + 3(100)(16) - 1(64)</div>
+            <div class="step">= 1000000 - 120000 + 4800 - 64</div>
+            <div class="step">= 884736</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> बड़ी संख्या को (100 - 4) में तोड़कर (a - b)³ का सूत्र लगाया गया है जिससे गणना आसान हो जाती है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. (102)⁵ का मान ज्ञात कीजिए।</div>
+            <div class="step">102 को (100 + 2) के रूप में लिख सकते हैं।</div>
+            <div class="step">(100 + 2)⁵ = ⁵C₀(100)⁵ + ⁵C₁(100)⁴(2) + ⁵C₂(100)³(2)² + ⁵C₃(100)²(2)³ + ⁵C₄(100)(2)⁴ + ⁵C₅(2)⁵</div>
+            <div class="step">= 10000000000 + 5(100000000)(2) + 10(1000000)(4) + 10(10000)(8) + 5(100)(16) + 32</div>
+            <div class="step">= 10000000000 + 1000000000 + 40000000 + 800000 + 8000 + 32</div>
+            <div class="step">= 11040808032</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> (100 + 2) में तोड़ने से 100 की घातों को हल करना बहुत सरल हो जाता है। सभी पदों को जोड़ दिया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. (101)⁴ का मान ज्ञात कीजिए।</div>
+            <div class="step">101 को (100 + 1) के रूप में लिख सकते हैं।</div>
+            <div class="step">(100 + 1)⁴ = ⁴C₀(100)⁴ + ⁴C₁(100)³(1) + ⁴C₂(100)²(1)² + ⁴C₃(100)(1)³ + ⁴C₄(1)⁴</div>
+            <div class="step">= 100000000 + 4(1000000) + 6(10000) + 4(100) + 1</div>
+            <div class="step">= 100000000 + 4000000 + 60000 + 400 + 1</div>
+            <div class="step">= 104060401</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> 100 की घातों के अनुसार पदों को व्यवस्थित कर योगफल निकाला गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. (99)⁵ का मान ज्ञात कीजिए।</div>
+            <div class="step">99 को (100 - 1) के रूप में लिख सकते हैं।</div>
+            <div class="step">(100 - 1)⁵ = ⁵C₀(100)⁵ - ⁵C₁(100)⁴(1) + ⁵C₂(100)³(1)² - ⁵C₃(100)²(1)³ + ⁵C₄(100)(1)⁴ - ⁵C₅(1)⁵</div>
+            <div class="step">= 10000000000 - 5(100000000) + 10(1000000) - 10(10000) + 5(100) - 1</div>
+            <div class="step">= 10000000000 - 500000000 + 10000000 - 100000 + 500 - 1</div>
+            <div class="step">= (10000000000 + 10000000 + 500) - (500000000 + 100000 + 1)</div>
+            <div class="step">= 10010000500 - 500100001 = 9509900499</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> धनात्मक और ऋणात्मक पदों को अलग-अलग जोड़कर अंत में घटाया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. द्विपद प्रमेय का प्रयोग करते हुए बताइए कौन-सी संख्या बड़ी है (1.1)<sup>10000</sup> या 1000।</div>
+            <div class="step">(1.1)<sup>10000</sup> = (1 + 0.1)<sup>10000</sup></div>
+            <div class="step">द्विपद प्रमेय से: (1 + 0.1)<sup>10000</sup> = <sup>10000</sup>C₀(1)<sup>10000</sup> + <sup>10000</sup>C₁(1)<sup>9999</sup>(0.1) + अन्य धनात्मक पद</div>
+            <div class="step">= 1 + 10000(0.1) + अन्य धनात्मक पद</div>
+            <div class="step">= 1 + 1000 + अन्य धनात्मक पद = 1001 + अन्य धनात्मक पद</div>
+            <div class="step">स्पष्ट रूप से, (1001 + कुछ धनात्मक संख्या) हमेशा 1000 से बड़ी होगी।</div>
+            <div class="step">अतः (1.1)<sup>10000</sup> > 1000</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> केवल पहले दो पदों को हल करने पर ही हमें 1001 मिल जाता है, जो 1000 से बड़ा है। इसलिए आगे के पदों को हल करने की आवश्यकता नहीं है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. (a+b)⁴ - (a-b)⁴ का विस्तार कीजिए। इसका प्रयोग करके (√3+√2)⁴ - (√3-√2)⁴ का मान ज्ञात कीजिए।</div>
+            <div class="step">(a+b)⁴ = a⁴ + 4a³b + 6a²b² + 4ab³ + b⁴</div>
+            <div class="step">(a-b)⁴ = a⁴ - 4a³b + 6a²b² - 4ab³ + b⁴</div>
+            <div class="step">घटाने पर: (a+b)⁴ - (a-b)⁴ = 2(4a³b + 4ab³) = 8ab(a² + b²)</div>
+            <div class="step">अब, a = √3 और b = √2 रखने पर:</div>
+            <div class="step">= 8(√3)(√2) [ (√3)² + (√2)² ]</div>
+            <div class="step">= 8(√6) [ 3 + 2 ]</div>
+            <div class="step">= 8√6 × 5 = 40√6</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> दोनों विस्तारों को घटाने पर a⁴, 6a²b² और b⁴ कट जाते हैं। फिर सूत्र में √3 और √2 रख कर सीधा मान प्राप्त हो जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. (x+1)⁶ + (x-1)⁶ का मान ज्ञात कीजिए। इसका प्रयोग करके (√2+1)⁶ + (√2-1)⁶ का मान ज्ञात कीजिए।</div>
+            <div class="step">(x+1)⁶ = x⁶ + ⁶C₁x⁵ + ⁶C₂x⁴ + ⁶C₃x³ + ⁶C₄x² + ⁶C₅x + 1</div>
+            <div class="step">(x-1)⁶ = x⁶ - ⁶C₁x⁵ + ⁶C₂x⁴ - ⁶C₃x³ + ⁶C₄x² - ⁶C₅x + 1</div>
+            <div class="step">जोड़ने पर: (x+1)⁶ + (x-1)⁶ = 2(x⁶ + ⁶C₂x⁴ + ⁶C₄x² + 1)</div>
+            <div class="step">= 2(x⁶ + 15x⁴ + 15x² + 1)</div>
+            <div class="step">अब, x = √2 रखने पर:</div>
+            <div class="step">= 2[ (√2)⁶ + 15(√2)⁴ + 15(√2)² + 1 ]</div>
+            <div class="step">= 2[ 8 + 15(4) + 15(2) + 1 ]</div>
+            <div class="step">= 2[ 8 + 60 + 30 + 1 ] = 2[ 99 ] = 198</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> योग करने पर सभी विषम घात वाले पद (जैसे x⁵, x³) कट जाते हैं। x=√2 रखने से (√2)⁶ = 8, (√2)⁴ = 4 होता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. दिखाइए कि 9ⁿ⁺¹ - 8n - 9, 64 से विभाज्य है जहाँ n एक धन पूर्णांक है।</div>
+            <div class="step">9ⁿ⁺¹ को हम (1 + 8)ⁿ⁺¹ लिख सकते हैं।</div>
+            <div class="step">द्विपद प्रमेय से: (1 + 8)ⁿ⁺¹ = ⁿ⁺¹C₀ + ⁿ⁺¹C₁(8) + ⁿ⁺¹C₂(8)² + ... + ⁿ⁺¹Cₙ₊₁(8)ⁿ⁺¹</div>
+            <div class="step">= 1 + (n + 1)8 + ⁿ⁺¹C₂(64) + ... + 8ⁿ⁺¹</div>
+            <div class="step">= 1 + 8n + 8 + 64[ ⁿ⁺¹C₂ + ... + 8ⁿ⁻¹ ]</div>
+            <div class="step">= 9 + 8n + 64k  (जहाँ k = ⁿ⁺¹C₂ + ... + 8ⁿ⁻¹)</div>
+            <div class="step">अब, व्यंजक 9ⁿ⁺¹ - 8n - 9 में मान रखने पर:</div>
+            <div class="step">(9 + 8n + 64k) - 8n - 9 = 64k</div>
+            <div class="step">चूंकि 64k, 64 से पूर्णतः विभाज्य है, अतः सिद्ध हुआ।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> 9 को 1+8 लिखकर द्विपद प्रसार किया गया। शुरुआती पद 1+8n+8 बनते हैं, जो दिए गए -8n-9 से कट जाते हैं। बचे हुए सभी पदों में 64 कॉमन है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. सिद्ध कीजिए कि ∑(r=0 से n) 3ʳ·ⁿCᵣ = 4ⁿ</div>
+            <div class="step">द्विपद प्रमेय के अनुसार: (1 + x)ⁿ = ⁿC₀ + ⁿC₁x + ⁿC₂x² + ... + ⁿCₙxⁿ</div>
+            <div class="step">इसे सिग्मा (∑) रूप में इस प्रकार लिख सकते हैं: (1 + x)ⁿ = ∑(r=0 से n) ⁿCᵣ xʳ</div>
+            <div class="step">अब x = 3 रखने पर:</div>
+            <div class="step">(1 + 3)ⁿ = ∑(r=0 से n) ⁿCᵣ (3)ʳ</div>
+            <div class="step">4ⁿ = ∑(r=0 से n) 3ʳ·ⁿCᵣ</div>
+            <div class="step">अतः सिद्ध हुआ: बायाँ पक्ष (LHS) = दायाँ पक्ष (RHS)</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> यह द्विपद प्रसार के मानक रूप (1+x)ⁿ का एक सीधा अनुप्रयोग है, जहाँ x का मान 3 रखा गया है।</div>
+        </div>
+    </section>
+
+    <section id="misc-ex" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-purple-100 text-purple-800 px-4 py-2 rounded-full">🔀 विविध प्रश्नावली</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. यदि a और b भिन्न-भिन्न पूर्णांक हों, तो सिद्ध कीजिए कि (aⁿ - bⁿ) का एक गुणनखंड (a-b) है, जबकि n एक धन पूर्णांक है।</div>
+            <div class="step">हम aⁿ को इस प्रकार लिख सकते हैं: aⁿ = ((a - b) + b)ⁿ</div>
+            <div class="step">द्विपद प्रमेय से विस्तार करने पर:</div>
+            <div class="step">((a - b) + b)ⁿ = ⁿC₀(a - b)ⁿ + ⁿC₁(a - b)ⁿ⁻¹b + ... + ⁿCₙ₋₁(a - b)bⁿ⁻¹ + ⁿCₙbⁿ</div>
+            <div class="step">यहाँ ⁿCₙbⁿ = bⁿ होता है।</div>
+            <div class="step">aⁿ = (a - b) [ ⁿC₀(a - b)ⁿ⁻¹ + ⁿC₁(a - b)ⁿ⁻²b + ... + ⁿCₙ₋₁bⁿ⁻¹ ] + bⁿ</div>
+            <div class="step">aⁿ - bⁿ = (a - b) × (कोई पूर्णांक k)</div>
+            <div class="step">इससे सिद्ध होता है कि (a - b), (aⁿ - bⁿ) का एक गुणनखंड है।</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> a को चालाकी से (a-b+b) लिखकर द्विपद प्रसार किया गया। अंतिम पद bⁿ को बाईं ओर ले जाने पर, बाकी सभी पदों में (a-b) कॉमन आ जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. (√3 + √2)⁶ - (√3 - √2)⁶ का मान ज्ञात कीजिए।</div>
+            <div class="step">माना x = √3 और y = √2</div>
+            <div class="step">(x + y)⁶ - (x - y)⁶ = 2 [ ⁶C₁x⁵y + ⁶C₃x³y³ + ⁶C₅xy⁵ ]</div>
+            <div class="step">= 2 [ 6x⁵y + 20x³y³ + 6xy⁵ ]</div>
+            <div class="step">= 4xy [ 3x⁴ + 10x²y² + 3y⁴ ]  (2xy कॉमन लेने पर)</div>
+            <div class="step">x = √3 और y = √2 रखने पर:</div>
+            <div class="step">x² = 3, x⁴ = 9 और y² = 2, y⁴ = 4</div>
+            <div class="step">= 4(√3)(√2) [ 3(9) + 10(3)(2) + 3(4) ]</div>
+            <div class="step">= 4√6 [ 27 + 60 + 12 ]</div>
+            <div class="step">= 4√6 [ 99 ] = 396√6</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> दोनों विस्तारों को घटाने पर केवल सम संख्या वाले पद (जैसे y, y³, y⁵) बचते हैं। मान रखने पर सरलता से उत्तर आ जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. (a² + √(a²-1))⁴ + (a² - √(a²-1))⁴ का मान ज्ञात कीजिए।</div>
+            <div class="step">माना x = a² और y = √(a²-1) ⇒ y² = a²-1</div>
+            <div class="step">(x + y)⁴ + (x - y)⁴ = 2 [ ⁴C₀x⁴ + ⁴C₂x²y² + ⁴C₄y⁴ ]</div>
+            <div class="step">= 2 [ x⁴ + 6x²y² + y⁴ ]</div>
+            <div class="step">x और y² का मान रखने पर:</div>
+            <div class="step">= 2 [ (a²)⁴ + 6(a²)²(a²-1) + (a²-1)² ]</div>
+            <div class="step">= 2 [ a⁸ + 6a⁴(a²-1) + (a⁴ - 2a² + 1) ]</div>
+            <div class="step">= 2 [ a⁸ + 6a⁶ - 6a⁴ + a⁴ - 2a² + 1 ]</div>
+            <div class="step">= 2 [ a⁸ + 6a⁶ - 5a⁴ - 2a² + 1 ]</div>
+            <div class="step">= 2a⁸ + 12a⁶ - 10a⁴ - 4a² + 2</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> प्लस करने पर सम पद (x⁴, x²y², y⁴) जुड़ जाते हैं। y² का मान (a²-1) सीधे रखने से रूट (√) हट जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. (0.99)⁵ के प्रसार के पहले तीन पदों का प्रयोग करते हुए इसका निकटतम मान ज्ञात कीजिए।</div>
+            <div class="step">0.99 को (1 - 0.01) के रूप में लिख सकते हैं।</div>
+            <div class="step">(1 - 0.01)⁵ = ⁵C₀(1)⁵ - ⁵C₁(1)⁴(0.01) + ⁵C₂(1)³(0.01)² - ...</div>
+            <div class="step">केवल पहले तीन पद लेने पर:</div>
+            <div class="step">≈ 1 - 5(0.01) + 10(0.0001)</div>
+            <div class="step">≈ 1 - 0.05 + 0.001</div>
+            <div class="step">≈ 0.95 + 0.001 = 0.951</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> छोटे मान (0.01) की उच्च घातें बहुत छोटी हो जाती हैं, इसलिए केवल 3 पदों से ही हमें लगभग सटीक (निकटतम) मान मिल जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. (1 + <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)⁴, x ≠ 0 का द्विपद प्रमेय द्वारा प्रसार ज्ञात कीजिए।</div>
+            <div class="step">माना y = (<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>), तो व्यंजक (1 + y)⁴ बन जाएगा।</div>
+            <div class="step">(1 + y)⁴ = 1 + 4y + 6y² + 4y³ + y⁴</div>
+            <div class="step">अब y की घातों का मान निकालते हैं:</div>
+            <div class="step">y = <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span></div>
+            <div class="step">y² = (<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>)² = <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - 2 + <span class="fraction"><span class="numerator">4</span><span class="denominator">x²</span></span></div>
+            <div class="step">y³ = y² × y = (<span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - 2 + <span class="fraction"><span class="numerator">4</span><span class="denominator">x²</span></span>)(<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>) = <span class="fraction"><span class="numerator">x³</span><span class="denominator">8</span></span> - <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - x + <span class="fraction"><span class="numerator">4</span><span class="denominator">x</span></span> + <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span> - <span class="fraction"><span class="numerator">8</span><span class="denominator">x³</span></span> = <span class="fraction"><span class="numerator">x³</span><span class="denominator">8</span></span> - <span class="fraction"><span class="numerator">3x</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">6</span><span class="denominator">x</span></span> - <span class="fraction"><span class="numerator">8</span><span class="denominator">x³</span></span></div>
+            <div class="step">y⁴ = (y²)² = (<span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - 2 + <span class="fraction"><span class="numerator">4</span><span class="denominator">x²</span></span>)² = <span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span> + 4 + <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span> - x² - <span class="fraction"><span class="numerator">16</span><span class="denominator">x²</span></span> + 2 = <span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span> - x² + 6 - <span class="fraction"><span class="numerator">16</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span></div>
+            <div class="step">सभी मान (1 + y)⁴ में रखने पर:</div>
+            <div class="step">= 1 + 4(<span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> - <span class="fraction"><span class="numerator">2</span><span class="denominator">x</span></span>) + 6(<span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - 2 + <span class="fraction"><span class="numerator">4</span><span class="denominator">x²</span></span>) + 4(<span class="fraction"><span class="numerator">x³</span><span class="denominator">8</span></span> - <span class="fraction"><span class="numerator">3x</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">6</span><span class="denominator">x</span></span> - <span class="fraction"><span class="numerator">8</span><span class="denominator">x³</span></span>) + (<span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span> - x² + 6 - <span class="fraction"><span class="numerator">16</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span>)</div>
+            <div class="step">= 1 + 2x - <span class="fraction"><span class="numerator">8</span><span class="denominator">x</span></span> + <span class="fraction"><span class="numerator">3x²</span><span class="denominator">2</span></span> - 12 + <span class="fraction"><span class="numerator">24</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">x³</span><span class="denominator">2</span></span> - 6x + <span class="fraction"><span class="numerator">24</span><span class="denominator">x</span></span> - <span class="fraction"><span class="numerator">32</span><span class="denominator">x³</span></span> + <span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span> - x² + 6 - <span class="fraction"><span class="numerator">16</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span></div>
+            <div class="step">समान घातों वाले पदों को एक साथ जोड़ने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">16</span><span class="denominator">x⁴</span></span> - <span class="fraction"><span class="numerator">32</span><span class="denominator">x³</span></span> + <span class="fraction"><span class="numerator">8</span><span class="denominator">x²</span></span> + <span class="fraction"><span class="numerator">16</span><span class="denominator">x</span></span> - 5 - 4x + <span class="fraction"><span class="numerator">x²</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">x³</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">x⁴</span><span class="denominator">16</span></span></div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> त्रिपद (3 terms) को द्विपद (1+y) में बदलकर हल किया गया। सभी घातों का अलग-अलग विस्तार करके अंत में समान घात वाले पद जोड़ दिए गए।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. (3x² - 2ax + 3a²)³ का द्विपद प्रमेय से प्रसार ज्ञात कीजिए।</div>
+            <div class="step">माना A = 3x² + 3a² और B = -2ax</div>
+            <div class="step">व्यंजक (A + B)³ = A³ + 3A²B + 3AB² + B³ बन जाता है।</div>
+            <div class="step">A³ = [3(x² + a²)]³ = 27(x⁶ + 3x⁴a² + 3x²a⁴ + a⁶) = 27x⁶ + 81a²x⁴ + 81a⁴x² + 27a⁶</div>
+            <div class="step">3A²B = 3[3(x² + a²)]²(-2ax) = -54ax(x⁴ + 2a²x² + a⁴) = -54ax⁵ - 108a³x³ - 54a⁵x</div>
+            <div class="step">3AB² = 3(3x² + 3a²)(-2ax)² = 9(x² + a²)(4a²x²) = 36a²x⁴ + 36a⁴x²</div>
+            <div class="step">B³ = (-2ax)³ = -8a³x³</div>
+            <div class="step">अब सभी मानों को एक साथ रखने पर:</div>
+            <div class="step">= (27x⁶ + 81a²x⁴ + 81a⁴x² + 27a⁶) + (-54ax⁵ - 108a³x³ - 54a⁵x) + (36a²x⁴ + 36a⁴x²) - 8a³x³</div>
+            <div class="step">समान घात वाले पदों को जोड़ने पर:</div>
+            <div class="step">= 27x⁶ - 54ax⁵ + (81a²x⁴ + 36a²x⁴) - (108a³x³ + 8a³x³) + (81a⁴x² + 36a⁴x²) - 54a⁵x + 27a⁶</div>
+            <div class="step">= 27x⁶ - 54ax⁵ + 117a²x⁴ - 116a³x³ + 117a⁴x² - 54a⁵x + 27a⁶</div>
+            <div class="hinglish-explanation"><strong>स्पष्टीकरण:</strong> इसे (A+B)³ के रूप में हल किया गया है जहाँ A में 3x² और 3a² को साथ रखा गया ताकि गणना आसान हो। अंत में x की घटती घातों में व्यवस्थित कर दिया गया।</div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 7) द्विपद प्रमेय ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

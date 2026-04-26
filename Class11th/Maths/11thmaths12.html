@@ -1,0 +1,542 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 12: सीमा और अवकलज | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 12<br>सीमा और अवकलज</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 12.1 -->
+    <section id="ex-12-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 12.1 (सीमाएँ)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 से 22 तक निम्नलिखित सीमाओं के मान प्राप्त कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. lim<sub>x &rarr; 3</sub> (x + 3)</div>
+            <div class="step">x का मान सीधे 3 रखने पर:</div>
+            <div class="step">= 3 + 3 = 6</div>
+            <div class="hinglish-explanation">सीमा का सीधा प्रतिस्थापन (Direct substitution)।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. lim<sub>x &rarr; &pi;</sub> (x - <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span>)</div>
+            <div class="step">x का मान &pi; रखने पर:</div>
+            <div class="step">= &pi; - <span class="fraction"><span class="numerator">22</span><span class="denominator">7</span></span></div>
+            <div class="hinglish-explanation">&pi; एक अपरिमेय संख्या है, अतः इसे ऐसे ही छोड़ देते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. lim<sub>r &rarr; 1</sub> &pi;r<sup>2</sup></div>
+            <div class="step">r का मान 1 रखने पर:</div>
+            <div class="step">= &pi;(1)<sup>2</sup> = &pi;</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. lim<sub>x &rarr; 4</sub> <span class="fraction"><span class="numerator">4x + 3</span><span class="denominator">x - 2</span></span></div>
+            <div class="step">x का मान 4 रखने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">4(4) + 3</span><span class="denominator">4 - 2</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">16 + 3</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">19</span><span class="denominator">2</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. lim<sub>x &rarr; -1</sub> <span class="fraction"><span class="numerator">x<sup>10</sup> + x<sup>5</sup> + 1</span><span class="denominator">x - 1</span></span></div>
+            <div class="step">x का मान -1 रखने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">(-1)<sup>10</sup> + (-1)<sup>5</sup> + 1</span><span class="denominator">-1 - 1</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">1 - 1 + 1</span><span class="denominator">-2</span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">(x + 1)<sup>5</sup> - 1</span><span class="denominator">x</span></span></div>
+            <div class="step">माना y = x + 1. जब x &rarr; 0, तो y &rarr; 1. और x = y - 1</div>
+            <div class="step">सीमा बनती है: lim<sub>y &rarr; 1</sub> <span class="fraction"><span class="numerator">y<sup>5</sup> - 1<sup>5</sup></span><span class="denominator">y - 1</span></span></div>
+            <div class="step">सूत्र lim<sub>x &rarr; a</sub> <span class="fraction"><span class="numerator">x<sup>n</sup> - a<sup>n</sup></span><span class="denominator">x - a</span></span> = n a<sup>n-1</sup> से:</div>
+            <div class="step">= 5(1)<sup>5-1</sup> = 5 &times; 1 = 5</div>
+            <div class="hinglish-explanation">मानक सूत्र का प्रयोग करने के लिए प्रतिस्थापन (Substitution) किया गया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. lim<sub>x &rarr; 2</sub> <span class="fraction"><span class="numerator">3x<sup>2</sup> - x - 10</span><span class="denominator">x<sup>2</sup> - 4</span></span></div>
+            <div class="step">x = 2 रखने पर 0/0 रूप बनता है। अतः गुणनखंड (Factorize) करें।</div>
+            <div class="step">अंश: 3x<sup>2</sup> - 6x + 5x - 10 = 3x(x - 2) + 5(x - 2) = (3x + 5)(x - 2)</div>
+            <div class="step">हर: x<sup>2</sup> - 2<sup>2</sup> = (x + 2)(x - 2)</div>
+            <div class="step">lim<sub>x &rarr; 2</sub> <span class="fraction"><span class="numerator">(3x + 5)(x - 2)</span><span class="denominator">(x + 2)(x - 2)</span></span> = lim<sub>x &rarr; 2</sub> <span class="fraction"><span class="numerator">3x + 5</span><span class="denominator">x + 2</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">3(2) + 5</span><span class="denominator">2 + 2</span></span> = <span class="fraction"><span class="numerator">11</span><span class="denominator">4</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. lim<sub>x &rarr; 3</sub> <span class="fraction"><span class="numerator">x<sup>4</sup> - 81</span><span class="denominator">2x<sup>2</sup> - 5x - 3</span></span></div>
+            <div class="step">0/0 रूप है। गुणनखंड करें।</div>
+            <div class="step">अंश: x<sup>4</sup> - 3<sup>4</sup> = (x<sup>2</sup> - 9)(x<sup>2</sup> + 9) = (x - 3)(x + 3)(x<sup>2</sup> + 9)</div>
+            <div class="step">हर: 2x<sup>2</sup> - 6x + x - 3 = 2x(x - 3) + 1(x - 3) = (2x + 1)(x - 3)</div>
+            <div class="step">lim<sub>x &rarr; 3</sub> <span class="fraction"><span class="numerator">(x - 3)(x + 3)(x<sup>2</sup> + 9)</span><span class="denominator">(2x + 1)(x - 3)</span></span> = lim<sub>x &rarr; 3</sub> <span class="fraction"><span class="numerator">(x + 3)(x<sup>2</sup> + 9)</span><span class="denominator">2x + 1</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">(3 + 3)(3<sup>2</sup> + 9)</span><span class="denominator">2(3) + 1</span></span> = <span class="fraction"><span class="numerator">6 &times; 18</span><span class="denominator">7</span></span> = <span class="fraction"><span class="numerator">108</span><span class="denominator">7</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">ax + b</span><span class="denominator">cx + 1</span></span></div>
+            <div class="step">x का मान 0 रखने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">a(0) + b</span><span class="denominator">c(0) + 1</span></span> = <span class="fraction"><span class="numerator">b</span><span class="denominator">1</span></span> = b</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. lim<sub>z &rarr; 1</sub> <span class="fraction"><span class="numerator">z<sup>1/3</sup> - 1</span><span class="denominator">z<sup>1/6</sup> - 1</span></span></div>
+            <div class="step">माना z<sup>1/6</sup> = t. अतः z<sup>1/3</sup> = (z<sup>1/6</sup>)<sup>2</sup> = t<sup>2</sup>. जब z &rarr; 1, तो t &rarr; 1.</div>
+            <div class="step">lim<sub>t &rarr; 1</sub> <span class="fraction"><span class="numerator">t<sup>2</sup> - 1</span><span class="denominator">t - 1</span></span></div>
+            <div class="step">= lim<sub>t &rarr; 1</sub> <span class="fraction"><span class="numerator">(t - 1)(t + 1)</span><span class="denominator">t - 1</span></span> = lim<sub>t &rarr; 1</sub> (t + 1)</div>
+            <div class="step">= 1 + 1 = 2</div>
+            <div class="hinglish-explanation">घात (power) को सरल बनाने के लिए z<sup>1/6</sup> को t मान लिया।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. lim<sub>x &rarr; 1</sub> <span class="fraction"><span class="numerator">ax<sup>2</sup> + bx + c</span><span class="denominator">cx<sup>2</sup> + bx + a</span></span>, a+b+c &ne; 0</div>
+            <div class="step">x का मान 1 रखने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">a(1)<sup>2</sup> + b(1) + c</span><span class="denominator">c(1)<sup>2</sup> + b(1) + a</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">a + b + c</span><span class="denominator">c + b + a</span></span> = 1</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. lim<sub>x &rarr; -2</sub> <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span></span><span class="denominator">x + 2</span></span></div>
+            <div class="step">अंश को हल करने पर: <span class="fraction"><span class="numerator">1</span><span class="denominator">x</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> = <span class="fraction"><span class="numerator">2 + x</span><span class="denominator">2x</span></span></div>
+            <div class="step">lim<sub>x &rarr; -2</sub> <span class="fraction"><span class="numerator">x + 2</span><span class="denominator">2x(x + 2)</span></span></div>
+            <div class="step">(x + 2) को काटने पर: lim<sub>x &rarr; -2</sub> <span class="fraction"><span class="numerator">1</span><span class="denominator">2x</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">1</span><span class="denominator">2(-2)</span></span> = -<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin ax</span><span class="denominator">bx</span></span></div>
+            <div class="step">हम जानते हैं कि lim<sub>y &rarr; 0</sub> <span class="fraction"><span class="numerator">sin y</span><span class="denominator">y</span></span> = 1</div>
+            <div class="step">अंश और हर में a से गुणा करने पर:</div>
+            <div class="step">= lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span> &times; <span class="fraction"><span class="numerator">sin ax</span><span class="denominator">ax</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span> &times; 1 = <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin ax</span><span class="denominator">sin bx</span></span>, a, b &ne; 0</div>
+            <div class="step">अंश और हर दोनों को x से भाग देने पर:</div>
+            <div class="step">lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">sin ax</span><span class="denominator">x</span></span></span><span class="denominator"><span class="fraction"><span class="numerator">sin bx</span><span class="denominator">x</span></span></span></span></div>
+            <div class="step">अंश में a और हर में b से गुणा-भाग करने पर:</div>
+            <div class="step">= <span class="fraction"><span class="numerator">lim<sub>x &rarr; 0</sub> a &times; <span class="fraction"><span class="numerator">sin ax</span><span class="denominator">ax</span></span></span><span class="denominator">lim<sub>x &rarr; 0</sub> b &times; <span class="fraction"><span class="numerator">sin bx</span><span class="denominator">bx</span></span></span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">a &times; 1</span><span class="denominator">b &times; 1</span></span> = <span class="fraction"><span class="numerator">a</span><span class="denominator">b</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. lim<sub>x &rarr; &pi;</sub> <span class="fraction"><span class="numerator">sin(&pi; - x)</span><span class="denominator">&pi;(&pi; - x)</span></span></div>
+            <div class="step">माना y = &pi; - x. जब x &rarr; &pi;, तो y &rarr; 0.</div>
+            <div class="step">lim<sub>y &rarr; 0</sub> <span class="fraction"><span class="numerator">sin y</span><span class="denominator">&pi;y</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">1</span><span class="denominator">&pi;</span></span> lim<sub>y &rarr; 0</sub> <span class="fraction"><span class="numerator">sin y</span><span class="denominator">y</span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">1</span><span class="denominator">&pi;</span></span> &times; 1 = <span class="fraction"><span class="numerator">1</span><span class="denominator">&pi;</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">16. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">cos x</span><span class="denominator">&pi; - x</span></span></div>
+            <div class="step">सीधे मान रखने पर 0/0 रूप नहीं बनता है।</div>
+            <div class="step">= <span class="fraction"><span class="numerator">cos(0)</span><span class="denominator">&pi; - 0</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">&pi;</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">17. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">cos 2x - 1</span><span class="denominator">cos x - 1</span></span></div>
+            <div class="step">सूत्र: 1 - cos &theta; = 2sin<sup>2</sup>(&theta;/2). अतः cos &theta; - 1 = -2sin<sup>2</sup>(&theta;/2)</div>
+            <div class="step">lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">-2sin<sup>2</sup>(x)</span><span class="denominator">-2sin<sup>2</sup>(x/2)</span></span> = lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin<sup>2</sup> x</span><span class="denominator">sin<sup>2</sup>(x/2)</span></span></div>
+            <div class="step">अंश और हर को x<sup>2</sup> से विभाजित करें:</div>
+            <div class="step">= lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">(<span class="fraction"><span class="numerator">sin x</span><span class="denominator">x</span></span>)<sup>2</sup></span><span class="denominator"><span class="fraction"><span class="numerator">sin<sup>2</sup>(x/2)</span><span class="denominator">x<sup>2</sup></span></span></span></span></div>
+            <div class="step">हर को व्यवस्थित करें: <span class="fraction"><span class="numerator">sin<sup>2</sup>(x/2)</span><span class="denominator">x<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> &times; (<span class="fraction"><span class="numerator">sin(x/2)</span><span class="denominator">x/2</span></span>)<sup>2</sup></div>
+            <div class="step">= <span class="fraction"><span class="numerator">1<sup>2</sup></span><span class="denominator">(1/4) &times; 1<sup>2</sup></span></span> = 4</div>
+            <div class="hinglish-explanation">त्रिकोणमिति सर्वसमिका (Trigonometric Identity) लगाकर सीमा के मानक रूप (Standard Form) में बदला।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">18. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">ax + x cos x</span><span class="denominator">b sin x</span></span></div>
+            <div class="step">अंश से x कॉमन लेने पर: lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">x(a + cos x)</span><span class="denominator">b sin x</span></span></div>
+            <div class="step">= lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">a + cos x</span><span class="denominator">b (<span class="fraction"><span class="numerator">sin x</span><span class="denominator">x</span></span>)</span></span></div>
+            <div class="step">चूँकि lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin x</span><span class="denominator">x</span></span> = 1 और cos(0) = 1</div>
+            <div class="step">= <span class="fraction"><span class="numerator">a + 1</span><span class="denominator">b(1)</span></span> = <span class="fraction"><span class="numerator">a + 1</span><span class="denominator">b</span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">19. lim<sub>x &rarr; 0</sub> x sec x</div>
+            <div class="step">x sec x = x &times; <span class="fraction"><span class="numerator">1</span><span class="denominator">cos x</span></span></div>
+            <div class="step">x = 0 रखने पर: 0 &times; <span class="fraction"><span class="numerator">1</span><span class="denominator">cos(0)</span></span> = 0 &times; <span class="fraction"><span class="numerator">1</span><span class="denominator">1</span></span> = 0</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">20. lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin ax + bx</span><span class="denominator">ax + sin bx</span></span> a, b, a+b &ne; 0</div>
+            <div class="step">अंश और हर दोनों को x से भाग देने पर:</div>
+            <div class="step">lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">sin ax</span><span class="denominator">x</span></span> + b</span><span class="denominator">a + <span class="fraction"><span class="numerator">sin bx</span><span class="denominator">x</span></span></span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">a(<span class="fraction"><span class="numerator">sin ax</span><span class="denominator">ax</span></span>) + b</span><span class="denominator">a + b(<span class="fraction"><span class="numerator">sin bx</span><span class="denominator">bx</span></span>)</span></span></div>
+            <div class="step">सीमा लागू करने पर: = <span class="fraction"><span class="numerator">a(1) + b</span><span class="denominator">a + b(1)</span></span> = <span class="fraction"><span class="numerator">a + b</span><span class="denominator">a + b</span></span> = 1</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">21. lim<sub>x &rarr; 0</sub> (cosec x - cot x)</div>
+            <div class="step">lim<sub>x &rarr; 0</sub> (<span class="fraction"><span class="numerator">1</span><span class="denominator">sin x</span></span> - <span class="fraction"><span class="numerator">cos x</span><span class="denominator">sin x</span></span>) = lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">1 - cos x</span><span class="denominator">sin x</span></span></div>
+            <div class="step">त्रिकोणमिति सूत्र से: 1 - cos x = 2sin<sup>2</sup>(x/2) और sin x = 2sin(x/2)cos(x/2)</div>
+            <div class="step">= lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">2sin<sup>2</sup>(x/2)</span><span class="denominator">2sin(x/2)cos(x/2)</span></span></div>
+            <div class="step">= lim<sub>x &rarr; 0</sub> <span class="fraction"><span class="numerator">sin(x/2)</span><span class="denominator">cos(x/2)</span></span> = lim<sub>x &rarr; 0</sub> tan(x/2)</div>
+            <div class="step">= tan(0) = 0</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">22. lim<sub>x &rarr; &pi;/2</sub> <span class="fraction"><span class="numerator">tan 2x</span><span class="denominator">x - &pi;/2</span></span></div>
+            <div class="step">माना x - &pi;/2 = h. जब x &rarr; &pi;/2, तो h &rarr; 0. और x = &pi;/2 + h</div>
+            <div class="step">lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">tan 2(&pi;/2 + h)</span><span class="denominator">h</span></span> = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">tan(&pi; + 2h)</span><span class="denominator">h</span></span></div>
+            <div class="step">tan(&pi; + &theta;) = tan &theta; होता है। अतः = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">tan 2h</span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> 2 &times; <span class="fraction"><span class="numerator">tan 2h</span><span class="denominator">2h</span></span> = 2 &times; 1 = 2</div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 23 से 32 तक फलनों की सीमाएँ ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">23. lim<sub>x &rarr; 0</sub> f(x) और lim<sub>x &rarr; 1</sub> f(x) ज्ञात कीजिए, जहाँ f(x) = { 2x+3 (x&le;0), 3(x+1) (x>0) }</div>
+            <div class="step"><b>x &rarr; 0 के लिए:</b></div>
+            <div class="step">वाम पक्ष सीमा (LHL) = lim<sub>x &rarr; 0-</sub> (2x + 3) = 2(0) + 3 = 3</div>
+            <div class="step">दक्षिण पक्ष सीमा (RHL) = lim<sub>x &rarr; 0+</sub> 3(x + 1) = 3(0 + 1) = 3</div>
+            <div class="step">चूँकि LHL = RHL, अतः lim<sub>x &rarr; 0</sub> f(x) = 3</div>
+            <div class="step mt-3"><b>x &rarr; 1 के लिए:</b> x=1 > 0 है, अतः केवल नीचे वाला फलन प्रयोग होगा।</div>
+            <div class="step">lim<sub>x &rarr; 1</sub> 3(x + 1) = 3(1 + 1) = 6</div>
+            <div class="hinglish-explanation">खंडशः फलन (Piecewise function) के लिए उस बिंदु पर बाएँ (LHL) और दाएँ (RHL) सीमा की जाँच करनी होती है जहाँ फलन बदलता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">24. lim<sub>x &rarr; 1</sub> f(x) ज्ञात कीजिए, जहाँ f(x) = { x<sup>2</sup>-1 (x&le;1), -x<sup>2</sup>-1 (x>1) }</div>
+            <div class="step">वाम पक्ष सीमा (LHL) = lim<sub>x &rarr; 1-</sub> (x<sup>2</sup> - 1) = (1)<sup>2</sup> - 1 = 0</div>
+            <div class="step">दक्षिण पक्ष सीमा (RHL) = lim<sub>x &rarr; 1+</sub> (-x<sup>2</sup> - 1) = -(1)<sup>2</sup> - 1 = -2</div>
+            <div class="step">चूँकि LHL &ne; RHL (0 &ne; -2), अतः lim<sub>x &rarr; 1</sub> f(x) का अस्तित्व नहीं है (Does not exist)।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">25. lim<sub>x &rarr; 0</sub> f(x) ज्ञात कीजिए, जहाँ f(x) = { |x|/x (x&ne;0), 0 (x=0) }</div>
+            <div class="step">LHL: जब x &rarr; 0-, x ऋणात्मक है, तो |x| = -x. अतः f(x) = -x/x = -1. lim<sub>x &rarr; 0-</sub> f(x) = -1</div>
+            <div class="step">RHL: जब x &rarr; 0+, x धनात्मक है, तो |x| = x. अतः f(x) = x/x = 1. lim<sub>x &rarr; 0+</sub> f(x) = 1</div>
+            <div class="step">चूँकि LHL &ne; RHL (-1 &ne; 1), अतः सीमा का अस्तित्व नहीं है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">26. lim<sub>x &rarr; 0</sub> f(x) ज्ञात कीजिए, जहाँ f(x) = { x/|x| (x&ne;0), 0 (x=0) }</div>
+            <div class="step">प्रश्न 25 के समान: LHL = lim<sub>x &rarr; 0-</sub> x/(-x) = -1</div>
+            <div class="step">RHL = lim<sub>x &rarr; 0+</sub> x/x = 1</div>
+            <div class="step">LHL &ne; RHL, अतः सीमा का अस्तित्व नहीं है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">27. lim<sub>x &rarr; 5</sub> f(x) ज्ञात कीजिए, जहाँ f(x) = |x| - 5</div>
+            <div class="step">x &rarr; 5 पर x धनात्मक है, अतः |x| = x.</div>
+            <div class="step">lim<sub>x &rarr; 5</sub> (x - 5) = 5 - 5 = 0</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">28. माना f(x) = { a+bx (x<1), 4 (x=1), b-ax (x>1) }. यदि lim<sub>x &rarr; 1</sub> f(x) = f(1), तो a और b के मान ज्ञात कीजिए।</div>
+            <div class="step">दिया है f(1) = 4, और सीमा का अस्तित्व है तथा वह 4 के बराबर है।</div>
+            <div class="step">LHL = lim<sub>x &rarr; 1-</sub> (a + bx) = a + b(1) = a + b</div>
+            <div class="step">RHL = lim<sub>x &rarr; 1+</sub> (b - ax) = b - a(1) = b - a</div>
+            <div class="step">चूँकि LHL = RHL = f(1), तो: a + b = 4 और b - a = 4</div>
+            <div class="step">दोनों समीकरणों को जोड़ने पर: 2b = 8 &rarr; b = 4</div>
+            <div class="step">b का मान रखने पर: a + 4 = 4 &rarr; a = 0</div>
+            <div class="step">अतः a = 0 और b = 4.</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">29. मान लीजिए a<sub>1</sub>, a<sub>2</sub>, ... a<sub>n</sub> अचर वास्तविक संख्याएँ हैं। f(x) = (x-a<sub>1</sub>)(x-a<sub>2</sub>)...(x-a<sub>n</sub>). lim<sub>x &rarr; a<sub>1</sub></sub> f(x) क्या है? किसी a &ne; a<sub>1</sub>...a<sub>n</sub> के लिए lim<sub>x &rarr; a</sub> f(x) क्या है?</div>
+            <div class="step">lim<sub>x &rarr; a<sub>1</sub></sub> f(x) = (a<sub>1</sub> - a<sub>1</sub>)(a<sub>1</sub> - a<sub>2</sub>)...(a<sub>1</sub> - a<sub>n</sub>) = 0 &times; (अन्य पद) = 0</div>
+            <div class="step">किसी a के लिए (जो इनमें से कोई नहीं है): lim<sub>x &rarr; a</sub> f(x) = (a - a<sub>1</sub>)(a - a<sub>2</sub>)...(a - a<sub>n</sub>)</div>
+            <div class="hinglish-explanation">यह एक बहुपद (Polynomial) है, अतः सीमा निकालने के लिए सीधे x का मान रख दिया गया है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">30. f(x) = { |x|+1 (x<0), 0 (x=0), |x|-1 (x>0) }. a के किन मानों के लिए lim<sub>x &rarr; a</sub> f(x) का अस्तित्व है?</div>
+            <div class="step">a = 0 पर जाँच: LHL = lim<sub>x &rarr; 0-</sub> (|x| + 1) = 0 + 1 = 1. RHL = lim<sub>x &rarr; 0+</sub> (|x| - 1) = 0 - 1 = -1.</div>
+            <div class="step">a = 0 पर LHL &ne; RHL, अतः a = 0 पर सीमा का अस्तित्व नहीं है।</div>
+            <div class="step">a < 0 के लिए: f(x) = -x + 1 (बहुपद), सीमा का अस्तित्व है।</div>
+            <div class="step">a > 0 के लिए: f(x) = x - 1 (बहुपद), सीमा का अस्तित्व है।</div>
+            <div class="step">अतः a के सभी वास्तविक मानों के लिए (a &ne; 0 को छोड़कर) सीमा का अस्तित्व है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">31. यदि फलन f(x) सीमा lim<sub>x &rarr; 1</sub> <span class="fraction"><span class="numerator">f(x) - 2</span><span class="denominator">x<sup>2</sup> - 1</span></span> = &pi; को संतुष्ट करता है, तो lim<sub>x &rarr; 1</sub> f(x) ज्ञात कीजिए।</div>
+            <div class="step">सीमा के गुणधर्म से: lim<sub>x &rarr; 1</sub> (f(x) - 2) = lim<sub>x &rarr; 1</sub> &pi; &times; (x<sup>2</sup> - 1)</div>
+            <div class="step">lim<sub>x &rarr; 1</sub> (f(x) - 2) = &pi; &times; (1<sup>2</sup> - 1) = &pi; &times; 0 = 0</div>
+            <div class="step">अतः lim<sub>x &rarr; 1</sub> f(x) - 2 = 0 &rarr; lim<sub>x &rarr; 1</sub> f(x) = 2</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">32. यदि f(x) = { mx<sup>2</sup>+n (x<0), nx+m (0&le;x&le;1), nx<sup>3</sup>+m (x>1) }. m और n के किन पूर्णांक मानों के लिए lim<sub>x &rarr; 0</sub> f(x) और lim<sub>x &rarr; 1</sub> f(x) दोनों का अस्तित्व है?</div>
+            <div class="step"><b>x = 0 पर:</b> LHL = lim<sub>x &rarr; 0-</sub> (mx<sup>2</sup> + n) = n. RHL = lim<sub>x &rarr; 0+</sub> (nx + m) = m.</div>
+            <div class="step">सीमा के अस्तित्व के लिए: LHL = RHL &rarr; <b>n = m</b></div>
+            <div class="step"><b>x = 1 पर:</b> LHL = lim<sub>x &rarr; 1-</sub> (nx + m) = n + m. RHL = lim<sub>x &rarr; 1+</sub> (nx<sup>3</sup> + m) = n(1) + m = n + m.</div>
+            <div class="step">यहाँ हमेशा LHL = RHL (n+m = n+m) रहता है।</div>
+            <div class="step">अतः दोनों सीमाओं के अस्तित्व के लिए केवल एक शर्त है: m और n बराबर होने चाहिए (m = n)।</div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 12.2 -->
+    <section id="ex-12-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 12.2 (अवकलज)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. x = 10 पर x<sup>2</sup> - 2 का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">f(x) = x<sup>2</sup> - 2</div>
+            <div class="step">सूत्र <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x<sup>n</sup>) = nx<sup>n-1</sup> से: f'(x) = 2x - 0 = 2x</div>
+            <div class="step">x = 10 पर: f'(10) = 2(10) = 20</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. x = 100 पर 99x का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">f(x) = 99x</div>
+            <div class="step">f'(x) = 99 &times; 1 = 99</div>
+            <div class="step">चूँकि अवकलज अचर (constant) है, x = 100 पर भी f'(100) = 99 होगा।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. x = 1 पर x का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">f(x) = x</div>
+            <div class="step">f'(x) = 1 &times; x<sup>1-1</sup> = x<sup>0</sup> = 1</div>
+            <div class="step">x = 1 पर: f'(1) = 1</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. प्रथम सिद्धांत (First Principles) से निम्नलिखित फलनों के अवकलज ज्ञात कीजिए:</div>
+            
+            <div class="step mt-3 font-semibold">(i) x<sup>3</sup> - 27</div>
+            <div class="step">f'(x) = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">f(x+h) - f(x)</span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">((x+h)<sup>3</sup> - 27) - (x<sup>3</sup> - 27)</span><span class="denominator">h</span></span> = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">x<sup>3</sup> + 3x<sup>2</sup>h + 3xh<sup>2</sup> + h<sup>3</sup> - x<sup>3</sup></span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">h(3x<sup>2</sup> + 3xh + h<sup>2</sup>)</span><span class="denominator">h</span></span> = lim<sub>h &rarr; 0</sub> (3x<sup>2</sup> + 3xh + h<sup>2</sup>) = 3x<sup>2</sup></div>
+
+            <div class="step mt-4 font-semibold">(ii) (x - 1)(x - 2)</div>
+            <div class="step">f(x) = x<sup>2</sup> - 3x + 2</div>
+            <div class="step">f'(x) = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">((x+h)<sup>2</sup> - 3(x+h) + 2) - (x<sup>2</sup> - 3x + 2)</span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">x<sup>2</sup> + 2xh + h<sup>2</sup> - 3x - 3h + 2 - x<sup>2</sup> + 3x - 2</span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">2xh + h<sup>2</sup> - 3h</span><span class="denominator">h</span></span> = lim<sub>h &rarr; 0</sub> (2x + h - 3) = 2x - 3</div>
+
+            <div class="step mt-4 font-semibold">(iii) <span class="fraction"><span class="numerator">1</span><span class="denominator">x<sup>2</sup></span></span></div>
+            <div class="step">f'(x) = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">1</span><span class="denominator">(x+h)<sup>2</sup></span></span> - <span class="fraction"><span class="numerator">1</span><span class="denominator">x<sup>2</sup></span></span></span><span class="denominator">h</span></span> = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">x<sup>2</sup> - (x+h)<sup>2</sup></span><span class="denominator">h x<sup>2</sup> (x+h)<sup>2</sup></span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">x<sup>2</sup> - (x<sup>2</sup> + 2xh + h<sup>2</sup>)</span><span class="denominator">h x<sup>2</sup> (x+h)<sup>2</sup></span></span> = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">-h(2x + h)</span><span class="denominator">h x<sup>2</sup> (x+h)<sup>2</sup></span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">-(2x + h)</span><span class="denominator">x<sup>2</sup> (x+h)<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">-2x</span><span class="denominator">x<sup>4</sup></span></span> = -<span class="fraction"><span class="numerator">2</span><span class="denominator">x<sup>3</sup></span></span></div>
+
+            <div class="step mt-4 font-semibold">(iv) <span class="fraction"><span class="numerator">x + 1</span><span class="denominator">x - 1</span></span></div>
+            <div class="step">f'(x) = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator"><span class="fraction"><span class="numerator">x+h+1</span><span class="denominator">x+h-1</span></span> - <span class="fraction"><span class="numerator">x+1</span><span class="denominator">x-1</span></span></span><span class="denominator">h</span></span></div>
+            <div class="step">LCM लेकर हल करने पर: = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">(x+h+1)(x-1) - (x+1)(x+h-1)</span><span class="denominator">h (x+h-1)(x-1)</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">(x<sup>2</sup> - x + hx - h + x - 1) - (x<sup>2</sup> + hx - x + x + h - 1)</span><span class="denominator">h (x+h-1)(x-1)</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">-2h</span><span class="denominator">h (x+h-1)(x-1)</span></span> = <span class="fraction"><span class="numerator">-2</span><span class="denominator">(x-1)<sup>2</sup></span></span></div>
+            <div class="hinglish-explanation">प्रथम सिद्धांत (First Principles) में h &rarr; 0 सीमा लगाकर अवकलज निकाला जाता है।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. फलन f(x) = <span class="fraction"><span class="numerator">x<sup>100</sup></span><span class="denominator">100</span></span> + <span class="fraction"><span class="numerator">x<sup>99</sup></span><span class="denominator">99</span></span> + ... + <span class="fraction"><span class="numerator">x<sup>2</sup></span><span class="denominator">2</span></span> + x + 1 के लिए सिद्ध कीजिए कि f'(1) = 100 f'(0).</div>
+            <div class="step">अवकलन करने पर: f'(x) = <span class="fraction"><span class="numerator">100x<sup>99</sup></span><span class="denominator">100</span></span> + <span class="fraction"><span class="numerator">99x<sup>98</sup></span><span class="denominator">99</span></span> + ... + <span class="fraction"><span class="numerator">2x</span><span class="denominator">2</span></span> + 1 + 0</div>
+            <div class="step">f'(x) = x<sup>99</sup> + x<sup>98</sup> + ... + x + 1</div>
+            <div class="step">f'(1) = 1<sup>99</sup> + 1<sup>98</sup> + ... + 1 + 1 (यह 1 कुल 100 बार है) = 100</div>
+            <div class="step">f'(0) = 0<sup>99</sup> + 0<sup>98</sup> + ... + 0 + 1 = 1</div>
+            <div class="step">अतः 100 &times; f'(0) = 100 &times; 1 = 100 = f'(1). सिद्ध हुआ।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. किसी अचर वास्तविक संख्या a के लिए x<sup>n</sup> + ax<sup>n-1</sup> + a<sup>2</sup>x<sup>n-2</sup> + ... + a<sup>n-1</sup>x + a<sup>n</sup> का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">f(x) का x के सापेक्ष अवकलन:</div>
+            <div class="step">f'(x) = <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x<sup>n</sup>) + a <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x<sup>n-1</sup>) + a<sup>2</sup> <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x<sup>n-2</sup>) + ... + a<sup>n-1</sup> <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x) + <span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(a<sup>n</sup>)</div>
+            <div class="step">f'(x) = nx<sup>n-1</sup> + a(n-1)x<sup>n-2</sup> + a<sup>2</sup>(n-2)x<sup>n-3</sup> + ... + a<sup>n-1</sup>(1) + 0</div>
+            <div class="step">= nx<sup>n-1</sup> + a(n-1)x<sup>n-2</sup> + a<sup>2</sup>(n-2)x<sup>n-3</sup> + ... + a<sup>n-1</sup></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. किन्हीं अचरों a और b के लिए, निम्नलिखित के अवकलज ज्ञात कीजिए:</div>
+            
+            <div class="step mt-3 font-semibold">(i) (x - a)(x - b)</div>
+            <div class="step">f(x) = x<sup>2</sup> - (a + b)x + ab</div>
+            <div class="step">f'(x) = 2x - (a + b) + 0 = 2x - a - b</div>
+
+            <div class="step mt-4 font-semibold">(ii) (ax<sup>2</sup> + b)<sup>2</sup></div>
+            <div class="step">f(x) = a<sup>2</sup>x<sup>4</sup> + 2abx<sup>2</sup> + b<sup>2</sup></div>
+            <div class="step">f'(x) = 4a<sup>2</sup>x<sup>3</sup> + 4abx + 0 = 4ax(ax<sup>2</sup> + b)</div>
+
+            <div class="step mt-4 font-semibold">(iii) <span class="fraction"><span class="numerator">x - a</span><span class="denominator">x - b</span></span></div>
+            <div class="step">भागफल नियम (Quotient Rule) से: f'(x) = <span class="fraction"><span class="numerator">(x-b)&middot;1 - (x-a)&middot;1</span><span class="denominator">(x-b)<sup>2</sup></span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">x - b - x + a</span><span class="denominator">(x-b)<sup>2</sup></span></span> = <span class="fraction"><span class="numerator">a - b</span><span class="denominator">(x - b)<sup>2</sup></span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. किसी अचर a के लिए <span class="fraction"><span class="numerator">x<sup>n</sup> - a<sup>n</sup></span><span class="denominator">x - a</span></span> का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">भागफल नियम से: f'(x) = <span class="fraction"><span class="numerator">(x-a)&middot;<span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x<sup>n</sup>-a<sup>n</sup>) - (x<sup>n</sup>-a<sup>n</sup>)&middot;<span class="fraction"><span class="numerator">d</span><span class="denominator">dx</span></span>(x-a)</span><span class="denominator">(x-a)<sup>2</sup></span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">(x-a)(nx<sup>n-1</sup>) - (x<sup>n</sup>-a<sup>n</sup>)(1)</span><span class="denominator">(x-a)<sup>2</sup></span></span></div>
+            <div class="step">= <span class="fraction"><span class="numerator">nx<sup>n</sup> - anx<sup>n-1</sup> - x<sup>n</sup> + a<sup>n</sup></span><span class="denominator">(x-a)<sup>2</sup></span></span></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. निम्नलिखित के अवकलज ज्ञात कीजिए:</div>
+            
+            <div class="step mt-3 font-semibold">(i) 2x - <span class="fraction"><span class="numerator">3</span><span class="denominator">4</span></span></div>
+            <div class="step">f'(x) = 2(1) - 0 = 2</div>
+
+            <div class="step mt-4 font-semibold">(ii) (5x<sup>3</sup> + 3x - 1)(x - 1)</div>
+            <div class="step">गुणनफल नियम (Product Rule): f'(x) = (5x<sup>3</sup> + 3x - 1)&middot;1 + (x - 1)&middot;(15x<sup>2</sup> + 3)</div>
+            <div class="step">= 5x<sup>3</sup> + 3x - 1 + 15x<sup>3</sup> + 3x - 15x<sup>2</sup> - 3 = 20x<sup>3</sup> - 15x<sup>2</sup> + 6x - 4</div>
+
+            <div class="step mt-4 font-semibold">(iii) x<sup>-3</sup>(5 + 3x)</div>
+            <div class="step">f(x) = 5x<sup>-3</sup> + 3x<sup>-2</sup></div>
+            <div class="step">f'(x) = 5(-3)x<sup>-4</sup> + 3(-2)x<sup>-3</sup> = -15x<sup>-4</sup> - 6x<sup>-3</sup></div>
+
+            <div class="step mt-4 font-semibold">(iv) x<sup>5</sup>(3 - 6x<sup>-9</sup>)</div>
+            <div class="step">f(x) = 3x<sup>5</sup> - 6x<sup>-4</sup></div>
+            <div class="step">f'(x) = 15x<sup>4</sup> - 6(-4)x<sup>-5</sup> = 15x<sup>4</sup> + 24x<sup>-5</sup></div>
+
+            <div class="step mt-4 font-semibold">(v) x<sup>-4</sup>(3 - 4x<sup>-5</sup>)</div>
+            <div class="step">f(x) = 3x<sup>-4</sup> - 4x<sup>-9</sup></div>
+            <div class="step">f'(x) = -12x<sup>-5</sup> - 4(-9)x<sup>-10</sup> = -12x<sup>-5</sup> + 36x<sup>-10</sup></div>
+
+            <div class="step mt-4 font-semibold">(vi) <span class="fraction"><span class="numerator">2</span><span class="denominator">x + 1</span></span> - <span class="fraction"><span class="numerator">x<sup>2</sup></span><span class="denominator">3x - 1</span></span></div>
+            <div class="step">f'(x) = <span class="fraction"><span class="numerator">-2</span><span class="denominator">(x + 1)<sup>2</sup></span></span> - <span class="fraction"><span class="numerator">(3x-1)(2x) - x<sup>2</sup>(3)</span><span class="denominator">(3x - 1)<sup>2</sup></span></span></div>
+            <div class="step">= -<span class="fraction"><span class="numerator">2</span><span class="denominator">(x + 1)<sup>2</sup></span></span> - <span class="fraction"><span class="numerator">6x<sup>2</sup> - 2x - 3x<sup>2</sup></span><span class="denominator">(3x - 1)<sup>2</sup></span></span> = -<span class="fraction"><span class="numerator">2</span><span class="denominator">(x + 1)<sup>2</sup></span></span> - <span class="fraction"><span class="numerator">3x<sup>2</sup> - 2x</span><span class="denominator">(3x - 1)<sup>2</sup></span></span></div>
+            <div class="hinglish-explanation">कोष्ठकों को खोलकर बहुपदों में बदलने से (ii) से (v) तक के अवकलन सरल हो जाते हैं।</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. प्रथम सिद्धांत (First Principle) से cos x का अवकलज ज्ञात कीजिए।</div>
+            <div class="step">f'(x) = lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">cos(x + h) - cos x</span><span class="denominator">h</span></span></div>
+            <div class="step">सूत्र cos C - cos D = -2 sin<span class="fraction"><span class="numerator">C+D</span><span class="denominator">2</span></span> sin<span class="fraction"><span class="numerator">C-D</span><span class="denominator">2</span></span> से:</div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> <span class="fraction"><span class="numerator">-2 sin(x + h/2) sin(h/2)</span><span class="denominator">h</span></span></div>
+            <div class="step">= lim<sub>h &rarr; 0</sub> -sin(x + h/2) &times; <span class="fraction"><span class="numerator">sin(h/2)</span><span class="denominator">h/2</span></span></div>
+            <div class="step">चूँकि lim<sub>&theta; &rarr; 0</sub> <span class="fraction"><span class="numerator">sin &theta;</span><span class="denominator">&theta;</span></span> = 1, h = 0 रखने पर:</div>
+            <div class="step">= -sin(x + 0) &times; 1 = -sin x</div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. निम्नलिखित फलनों के अवकलज ज्ञात कीजिए:</div>
+            
+            <div class="step mt-3 font-semibold">(i) sin x cos x</div>
+            <div class="step">गुणनफल नियम से: sin x(-sin x) + cos x(cos x) = cos<sup>2</sup> x - sin<sup>2</sup> x = cos 2x</div>
+
+            <div class="step mt-4 font-semibold">(ii) sec x</div>
+            <div class="step">sec x = (cos x)<sup>-1</sup> &rarr; -1(cos x)<sup>-2</sup>(-sin x) = <span class="fraction"><span class="numerator">sin x</span><span class="denominator">cos<sup>2</sup> x</span></span> = sec x tan x</div>
+
+            <div class="step mt-4 font-semibold">(iii) 5 sec x + 4 cos x</div>
+            <div class="step">f'(x) = 5(sec x tan x) + 4(-sin x) = 5 sec x tan x - 4 sin x</div>
+
+            <div class="step mt-4 font-semibold">(iv) cosec x</div>
+            <div class="step">cosec x = (sin x)<sup>-1</sup> &rarr; -1(sin x)<sup>-2</sup>(cos x) = -<span class="fraction"><span class="numerator">cos x</span><span class="denominator">sin<sup>2</sup> x</span></span> = -cosec x cot x</div>
+
+            <div class="step mt-4 font-semibold">(v) 3 cot x + 5 cosec x</div>
+            <div class="step">f'(x) = 3(-cosec<sup>2</sup> x) + 5(-cosec x cot x) = -3 cosec<sup>2</sup> x - 5 cosec x cot x</div>
+
+            <div class="step mt-4 font-semibold">(vi) 5 sin x - 6 cos x + 7</div>
+            <div class="step">f'(x) = 5(cos x) - 6(-sin x) + 0 = 5 cos x + 6 sin x</div>
+
+            <div class="step mt-4 font-semibold">(vii) 2 tan x - 7 sec x</div>
+            <div class="step">f'(x) = 2(sec<sup>2</sup> x) - 7(sec x tan x) = 2 sec<sup>2</sup> x - 7 sec x tan x</div>
+            
+            <div class="hinglish-explanation">यहाँ सीधे मानक त्रिकोणमिति अवकलज (Standard Trigonometric Derivatives) के सूत्रों का उपयोग किया गया है।</div>
+        </div>
+
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 12) सीमा और अवकलज ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```

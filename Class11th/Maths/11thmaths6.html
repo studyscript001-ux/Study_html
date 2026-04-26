@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>कक्षा 11 गणित - अध्याय 6: क्रमचय और संचय</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f0f2f5;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            border-left: 5px solid #667eea;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+        }
+        .question-title {
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .step {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 2px solid #ddd6fe;
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.1em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.1em;
+            font-family: 'Times New Roman', serif;
+            line-height: 1;
+        }
+        .fraction .numerator {
+            border-bottom: 1px solid black;
+            padding-bottom: 1px;
+        }
+        .fraction .denominator {
+            padding-top: 1px;
+        }
+        .math-expr {
+             font-family: 'Times New Roman', serif;
+        }
+        .explanation {
+            background-color: #f3f4f6;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+        }
+        .equation {
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+        .hinglish-explanation {
+            background-color: #e0f2fe;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            border-left: 3px solid #0ea5e9;
+            line-height: 1.5;
+        }
+        .inline-math {
+            display: inline;
+            font-family: 'Times New Roman', serif;
+        }
+        .permutation {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Gradient Title Card -->
+        <div class="gradient-card text-white p-6 md:p-8 rounded-xl mb-8 text-center shadow-lg">
+            <h1 class="text-3xl md:text-4xl font-bold">अध्याय 6<br> क्रमचय और संचय</h1>
+            <p class="mt-2 text-lg">कक्षा 11वीं गणित | StudyScript</p>
+        </div>
+
+        <!-- प्रश्नावली 6.1 -->
+        <section id="exercise-6-1" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.1</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: अंकों 1, 2, 3, 4, 5 से कितनी 3-अंकीय संख्याएँ बनाई जा सकती हैं, यदि<br>
+                (i) अंकों की पुनरावृत्ति की अनुमति हो<br>
+                (ii) अंकों की पुनरावृत्ति की अनुमति न हो</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">(i) जब पुनरावृत्ति की अनुमति है:</p>
+                        <p class="mb-2">3-अंकीय संख्या के लिए तीन स्थान हैं: सैकड़ा, दहाई, इकाई।</p>
+                        <p class="mb-2">प्रत्येक स्थान को 5 तरीकों से भरा जा सकता है (अंक 1,2,3,4,5 में से कोई)।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल संख्याएँ = 5 × 5 × 5 = 125</p>
+                    </div>
+                    
+                    <div class="step">
+                        <p class="mb-2">(ii) जब पुनरावृत्ति की अनुमति नहीं है:</p>
+                        <p class="mb-2">सैकड़े का स्थान 5 तरीकों से भरा जा सकता है।</p>
+                        <p class="mb-2">दहाई का स्थान 4 तरीकों से (शेष अंक)।</p>
+                        <p class="mb-2">इकाई का स्थान 3 तरीकों से (शेष अंक)।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल संख्याएँ = 5 × 4 × 3 = 60</p>
+                        <p><strong>उत्तर:</strong> (i) 125, (ii) 60</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> (i) पुनरावृत्ति हो तो हर स्थान पर 5 विकल्प, इसलिए 5×5×5=125 संख्याएँ। (ii) पुनरावृत्ति न हो तो पहले स्थान पर 5, फिर 4, फिर 3 विकल्प, कुल 5×4×3=60 संख्याएँ।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: अंकों 1, 2, 3, 4, 5, 6 से कितनी 3-अंकीय सम संख्याएँ बनाई जा सकती हैं, यदि अंकों की पुनरावृत्ति की अनुमति हो?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">संख्या के सम (even) होने के लिए इकाई का अंक सम होना चाहिए।</p>
+                        <p class="mb-2">अंक 1 से 6 में सम अंक हैं: 2, 4, 6 (3 विकल्प)।</p>
+                        <p class="mb-2">पुनरावृत्ति की अनुमति है, अतः:</p>
+                        <p class="mb-2">सैकड़े का स्थान 6 तरीकों से भरा जा सकता है।</p>
+                        <p class="mb-2">दहाई का स्थान 6 तरीकों से भरा जा सकता है।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल संख्याएँ = 6 × 6 × 3 = 108</p>
+                        <p><strong>उत्तर:</strong> 108</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> सम संख्या के लिए इकाई अंक सम (2,4,6) होना चाहिए – 3 विकल्प। सैकड़ा और दहाई पर कोई भी 6 अंक आ सकते हैं। कुल = 6×6×3 = 108।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: अंग्रेजी वर्णमाला के पहले 10 अक्षरों का उपयोग करके कितने 4-अक्षर वाले कोड बनाए जा सकते हैं, यदि किसी अक्षर की पुनरावृत्ति नहीं की जा सकती?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">पहले 10 अक्षर: A,B,C,D,E,F,G,H,I,J</p>
+                        <p class="mb-2">बिना पुनरावृत्ति के 4-अक्षर के कोड बनाने हैं।</p>
+                        <p class="mb-2">पहला अक्षर 10 तरीकों से चुना जा सकता है।</p>
+                        <p class="mb-2">दूसरा अक्षर 9 तरीकों से (शेष अक्षरों में से)।</p>
+                        <p class="mb-2">तीसरा अक्षर 8 तरीकों से।</p>
+                        <p class="mb-2">चौथा अक्षर 7 तरीकों से।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल कोड = 10 × 9 × 8 × 7 = 5040</p>
+                        <p><strong>उत्तर:</strong> 5040</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> 4 अक्षर वाले कोड बनाने के लिए क्रमशः 10, 9, 8, 7 विकल्प। कुल = 10×9×8×7 = 5040।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: अंक 0 से 9 तक का उपयोग करते हुए कितनी 5-अंकीय टेलीफोन संख्याएँ बनाई जा सकती हैं, यदि प्रत्येक संख्या 67 से प्रारंभ होती है और कोई अंक एक से अधिक बार प्रयोग नहीं किया गया हो?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">संख्या 67 से प्रारंभ होती है, अतः पहले दो अंक निश्चित हैं।</p>
+                        <p class="mb-2">शेष तीन स्थान (तीसरा, चौथा, पाँचवाँ अंक) भरने हैं।</p>
+                        <p class="mb-2">उपलब्ध अंक: 0,1,2,3,4,5,8,9 (8 अंक, क्योंकि 6 और 7 प्रयोग हो चुके हैं।)</p>
+                        <p class="mb-2">पुनरावृत्ति नहीं होनी चाहिए।</p>
+                        <p class="mb-2">तीसरा अंक 8 तरीकों से, चौथा अंक 7 तरीकों से, पाँचवाँ अंक 6 तरीकों से।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल संख्याएँ = 8 × 7 × 6 = 336</p>
+                        <p><strong>उत्तर:</strong> 336</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> पहले दो अंक 67 तय हैं। बचे तीन अंकों के लिए 0-9 में से 6 और 7 को छोड़कर 8 अंक उपलब्ध हैं। बिना पुनरावृत्ति के तीनों स्थान भरने के 8×7×6 = 336 तरीके।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: एक सिक्का 3 बार उछाला जाता है और परिणाम अभिलिखित किए जाते हैं। कितने संभावित परिणाम होंगे?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">एक सिक्के की प्रत्येक उछाल के 2 संभावित परिणाम: चित (H) या पट (T)।</p>
+                        <p class="mb-2">सिक्के को 3 बार उछालने पर:</p>
+                        <p class="mb-2">पहली उछाल: 2 परिणाम</p>
+                        <p class="mb-2">दूसरी उछाल: 2 परिणाम</p>
+                        <p class="mb-2">तीसरी उछाल: 2 परिणाम</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल परिणाम = 2 × 2 × 2 = 8</p>
+                        <p><strong>उत्तर:</strong> 8</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> एक उछाल में 2 संभावनाएँ (H/T)। 3 उछालों में कुल = 2×2×2 = 8।
+                    </div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 6 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 6: भिन्न-भिन्न रंगों के 5 झंडे दिए गए हैं। कितने विभिन्न संकेत बनाए जा सकते हैं, यदि प्रत्येक संकेत के लिए 2 झंडों की आवश्यकता हो, एक के नीचे एक?</h3>
+                
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    
+                    <div class="step">
+                        <p class="mb-2">5 भिन्न रंगों के झंडे हैं।</p>
+                        <p class="mb-2">प्रत्येक संकेत में 2 झंडे उपयोग होते हैं, एक ऊपर एक नीचे (क्रम मायने रखता है)।</p>
+                        <p class="mb-2">पहला (ऊपर) झंडा 5 तरीकों से चुना जा सकता है।</p>
+                        <p class="mb-2">दूसरा (नीचे) झंडा 4 तरीकों से (शेष झंडों में से)।</p>
+                        <p class="mb-2">गुणन सिद्धांत से, कुल संकेत = 5 × 4 = 20</p>
+                        <p><strong>उत्तर:</strong> 20</p>
+                    </div>
+                    
+                    <div class="hinglish-explanation">
+                        <strong>सरल हिंदी व्याख्या:</strong> 5 झंडों में से पहले स्थान के लिए 5, दूसरे के लिए 4 विकल्प। कुल संकेत = 5×4 = 20.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- प्रश्नावली 6.2 -->
+        <section id="exercise-6-2" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.2</h2>
+            
+            <!-- प्रश्न 1 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 1: मान ज्ञात कीजिए:<br> (i) 8! <br> (ii) 4! - 3!</h3>
+                <div>
+                    <h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>(i) 8! = 8 × 7 × 6 × 5 × 4 × 3 × 2 × 1 = 40320</p>
+                        <p>(ii) 4! = 24, 3! = 6, अतः 4! - 3! = 24 - 6 = 18</p>
+                        <p><strong>उत्तर:</strong> (i) 40320, (ii) 18</p>
+                    </div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> (i) 8 फैक्टोरियल = 40320. (ii) 4! = 24, 3! = 6, अंतर = 18.</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 2 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 2: क्या 3! + 4! = 7! है?</h3>
+                <div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>3! = 6, 4! = 24, योग = 30, जबकि 7! = 5040. 30 ≠ 5040, अतः नहीं।</p>
+                        <p><strong>उत्तर:</strong> नहीं, 3! + 4! ≠ 7!</p>
+                    </div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 3!+4! = 30 और 7! = 5040, दोनों बराबर नहीं हैं।</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 3 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 3: <span class="inline-math"><span class="fraction"><span class="numerator">8!</span><span class="denominator">6! × 2!</span></span></span> का मान परिकलित कीजिए।</h3>
+                <div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p><span class="inline-math"><span class="fraction"><span class="numerator">8!</span><span class="denominator">6! × 2!</span></span> = <span class="fraction"><span class="numerator">8 × 7 × 6!</span><span class="denominator">6! × 2</span></span> = <span class="fraction"><span class="numerator">56</span><span class="denominator">2</span></span> = 28</span></p>
+                        <p><strong>उत्तर:</strong> 28</p>
+                    </div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 8! = 8×7×6!, 6! कैंसिल होने पर (8×7)/2! = 56/2 = 28.</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 4 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 4: यदि <span class="inline-math"><span class="fraction"><span class="numerator">1</span><span class="denominator">6!</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">7!</span></span> = <span class="fraction"><span class="numerator">x</span><span class="denominator">8!</span></span></span>, तो x ज्ञात कीजिए।</h3>
+                <div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>7! = 7×6!, 8! = 8×7×6!<br> ⇒ LHS = <span class="fraction"><span class="numerator">1</span><span class="denominator">6!</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">7×6!</span></span> = <span class="fraction"><span class="numerator">7+1</span><span class="denominator">7×6!</span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">7×6!</span></span>। RHS = <span class="fraction"><span class="numerator">x</span><span class="denominator">8×7×6!</span></span>। बराबर रखने पर x = 8×8 = 64.</p>
+                        <p><strong>उत्तर:</strong> 64</p>
+                    </div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 1/6! + 1/7! = (7+1)/(7×6!) = 8/(7×6!) = x/(8×7×6!) ⇒ x = 64.</div>
+                </div>
+            </div>
+
+            <!-- प्रश्न 5 -->
+            <div class="solution-card">
+                <h3 class="text-xl question-title">प्रश्न 5: <span class="inline-math"><span class="fraction"><span class="numerator">n!</span><span class="denominator">(n-r)!</span></span></span> का मान ज्ञात कीजिए, जब (i) n = 6, r = 2 (ii) n = 9, r = 5</h3>
+                <div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4>
+                    <div class="step">
+                        <p>(i) <span class="inline-math"><span class="fraction"><span class="numerator">6!</span><span class="denominator">(6-2)!</span></span> = <span class="fraction"><span class="numerator">6!</span><span class="denominator">4!</span></span> = 6×5 = 30</span></p>
+                        <p>(ii) <span class="inline-math"><span class="fraction"><span class="numerator">9!</span><span class="denominator">(9-5)!</span></span> = <span class="fraction"><span class="numerator">9!</span><span class="denominator">4!</span></span> = 9×8×7×6×5 = 15120</span></p>
+                        <p><strong>उत्तर:</strong> (i) 30, (ii) 15120</p>
+                    </div>
+                    <div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> (i) 6!/(6-2)! = 6×5 = 30. (ii) 9!/(9-5)! = 9×8×7×6×5 = 15120.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- प्रश्नावली 6.3 (क्रमचय) -->
+        <section id="exercise-6-3" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.3</h2>
+            
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 1: अंक 1 से 9 तक का उपयोग करके कितनी 3-अंकीय संख्याएँ बनाई जा सकती हैं, यदि किसी अंक की पुनरावृत्ति नहीं की गई हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>9</sup>P<sub>3</sub> = 9×8×7 = 504</p><p><strong>उत्तर:</strong> 504</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> बिना पुनरावृत्ति के 3 अंक चुनने के लिए <sup>9</sup>P<sub>3</sub> = 9×8×7 = 504.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 2: कितनी 4-अंकीय संख्याएँ ऐसी हैं जिनमें कोई अंक दोहराया न गया हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>हज़ारवाँ स्थान 0 नहीं हो सकता, अतः 9 विकल्प (1-9)। फिर शेष तीन स्थान: 9,8,7 विकल्प। कुल = 9×9×8×7 = 4536</p><p><strong>उत्तर:</strong> 4536</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> 4-अंकीय संख्या के लिए हजारवें स्थान पर 9 विकल्प (1-9), फिर क्रमशः 9,8,7 → 4536.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 3: अंकों 1,2,3,4,6,7 से कितनी 3-अंकीय सम संख्याएँ बनाई जा सकती हैं, यदि किसी अंक की पुनरावृत्ति नहीं की गई हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>सम अंक: 2,4,6। प्रत्येक स्थिति में इकाई अंक निश्चित, शेष दो स्थान 5×4 = 20 तरीके। तीनों स्थितियों का योग = 20+20+20 = 60</p><p><strong>उत्तर:</strong> 60</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> इकाई पर 2,4,6 में से एक तय करके शेष दो स्थान 5×4 = 20, तीनों स्थितियों में कुल 60.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 4: अंक 1,2,3,4,5 से कितनी 4-अंकीय संख्याएँ बनाई जा सकती हैं (बिना पुनरावृत्ति)? इनमें से कितनी सम होंगी?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>कुल = <sup>5</sup>P<sub>4</sub> = 5×4×3×2 = 120। सम संख्या के लिए इकाई पर 2 या 4। प्रत्येक स्थिति में शेष 3 स्थान 4×3×2 = 24, अतः 24+24=48 सम संख्याएँ।</p><p><strong>उत्तर:</strong> कुल 120, सम 48</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> कुल 120, सम के लिए इकाई 2 या 4 → 48.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 5: 8 व्यक्तियों की समिति में से एक अध्यक्ष और एक उपाध्यक्ष कितने प्रकार से चुने जा सकते हैं (एक व्यक्ति एक से अधिक पद नहीं रख सकता)?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>8</sup>P<sub>2</sub> = 8×7 = 56</p><p><strong>उत्तर:</strong> 56</p></div><div class="hinglish-explanation"><strong>सरल हिंदी व्याख्या:</strong> अध्यक्ष और उपाध्यक्ष के क्रम मायने रखता है, अतः 8×7=56.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 6: n ज्ञात कीजिए यदि <sup>n-1</sup>P<sub>3</sub> : <sup>n</sup>P<sub>4</sub> = 1 : 9</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><span class="inline-math"><span class="fraction"><span class="numerator"><sup>n-1</sup>P<sub>3</sub></span><span class="denominator"><sup>n</sup>P<sub>4</sub></span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span> ⇒ <span class="fraction"><span class="numerator">(n-1)!/(n-4)!</span><span class="denominator">n!/(n-4)!</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span> ⇒ <span class="fraction"><span class="numerator">(n-1)!</span><span class="denominator">n!</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">n</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">9</span></span> ⇒ n=9</span></p><p><strong>उत्तर:</strong> n = 9</p></div><div class="hinglish-explanation">सरलीकरण के बाद n = 9 प्राप्त होता है।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 7: r ज्ञात कीजिए (i) <sup>5</sup>P<sub>r</sub> = 2 <sup>6</sup>P<sub>r-1</sub> (ii) <sup>5</sup>P<sub>r</sub> = <sup>6</sup>P<sub>r-1</sub></h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>(i) <span class="inline-math"><span class="fraction"><span class="numerator">5!</span><span class="denominator">(5-r)!</span></span> = 2 × <span class="fraction"><span class="numerator">6!</span><span class="denominator">(7-r)!</span></span> ⇒ (7-r)(6-r)=12 ⇒ r=3 (r=10 अमान्य)।</span> (ii) <span class="inline-math"><span class="fraction"><span class="numerator">5!</span><span class="denominator">(5-r)!</span></span> = <span class="fraction"><span class="numerator">6!</span><span class="denominator">(7-r)!</span></span> ⇒ (7-r)(6-r)=6 ⇒ r=4 (r=9 अमान्य)।</span></p><p><strong>उत्तर:</strong> (i) r=3, (ii) r=4</p></div><div class="hinglish-explanation">समीकरणों को हल करने पर क्रमशः r=3 और r=4 प्राप्त होते हैं।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 8: EQUATION शब्द के सभी अक्षरों का प्रयोग करके कितने शब्द (सार्थक या निरर्थक) बनाए जा सकते हैं?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>8 अलग-अलग अक्षर, अतः 8! = 40320</p><p><strong>उत्तर:</strong> 40320</p></div><div class="hinglish-explanation">EQUATION में 8 भिन्न अक्षर, कुल क्रमचय = 8! = 40320.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 9: MONDAY शब्द के अक्षरों से कितने शब्द बनाए जा सकते हैं (बिना पुनरावृत्ति) यदि (i) 4 अक्षर एक साथ लिए जाएँ (ii) सभी अक्षर एक साथ लिए जाएँ (iii) सभी अक्षर लिए जाएँ किन्तु पहला अक्षर स्वर हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>(i) <sup>6</sup>P<sub>4</sub> = 6×5×4×3 = 360 (ii) 6! = 720 (iii) स्वर O, A (2 विकल्प), शेष 5! = 120 ⇒ 2×120 = 240</p><p><strong>उत्तर:</strong> (i)360, (ii)720, (iii)240</p></div><div class="hinglish-explanation">(i) 6P4 = 360, (ii) 6! = 720, (iii) 2×5! = 240.</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 10: MISSISSIPPI शब्द के अक्षरों के विभिन्न क्रमचयों में से कितने ऐसे हैं जिनमें चारों I एक साथ नहीं आते?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>कुल क्रमचय = <span class="inline-math"><span class="fraction"><span class="numerator">11!</span><span class="denominator">4! × 4! × 2!</span></span> = 34650</span>। सभी I एक साथ: (IIII) को एक मानें, तो <span class="inline-math"><span class="fraction"><span class="numerator">8!</span><span class="denominator">4! × 2!</span></span> = 840</span>। अतः I एक साथ न होने वाले = 34650 - 840 = 33810</p><p><strong>उत्तर:</strong> 33810</p></div><div class="hinglish-explanation">कुल क्रमचयों में से जब सभी I साथ हों उन्हें घटा दिया।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 11: PERMUTATIONS शब्द के अक्षरों को कितने प्रकार से व्यवस्थित किया जा सकता है यदि (i) P से प्रारंभ तथा S पर अंत हो (ii) सभी स्वर एक साथ हों (iii) P और S के बीच सदैव 4 अक्षर हों?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>शब्द में 12 अक्षर, T दो बार। (i) P और S fixed, शेष <span class="inline-math"><span class="fraction"><span class="numerator">10!</span><span class="denominator">2!</span></span></span> (ii) स्वर (E,U,A,I,O) एक साथ: 5! × <span class="inline-math"><span class="fraction"><span class="numerator">8!</span><span class="denominator">2!</span></span></span> (iii) P और S के बीच 4 अक्षर: कुल 7 स्थान युग्म, 2 क्रम (P...S या S...P), शेष <span class="inline-math"><span class="fraction"><span class="numerator">10!</span><span class="denominator">2!</span></span></span> ⇒ 2×7×<span class="inline-math"><span class="fraction"><span class="numerator">10!</span><span class="denominator">2!</span></span></span></p><p><strong>उत्तर:</strong> (i) 10!/2!, (ii) 5!×8!/2!, (iii) 14×10!/2!</p></div><div class="hinglish-explanation">प्रत्येक स्थिति में क्रमचय सूत्रों का प्रयोग किया गया।</div></div></div>
+        </section>
+
+        <!-- प्रश्नावली 6.4 (संचय) -->
+        <section id="exercise-6-4" class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6 pb-2 border-b-2 border-indigo-500">प्रश्नावली 6.4</h2>
+            
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 1: यदि <sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub>, तो <sup>n</sup>C<sub>2</sub> ज्ञात कीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>n</sup>C<sub>8</sub> = <sup>n</sup>C<sub>2</sub> ⇒ n-8 = 2 ⇒ n=10, तब <sup>10</sup>C<sub>2</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">10×9</span><span class="denominator">2</span></span> = 45</span></p><p><strong>उत्तर:</strong> 45</p></div><div class="hinglish-explanation">n=10, <sup>10</sup>C<sub>2</sub> = 45</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 2: n निर्धारित कीजिए यदि (i) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 12:1 (ii) <sup>2n</sup>C<sub>3</sub> : <sup>n</sup>C<sub>3</sub> = 11:1</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>(i) <span class="inline-math"><span class="fraction"><span class="numerator"><sup>2n</sup>C<sub>3</sub></span><span class="denominator"><sup>n</sup>C<sub>3</sub></span></span> = <span class="fraction"><span class="numerator">12</span><span class="denominator">1</span></span> ⇒ <span class="fraction"><span class="numerator">4(2n-1)</span><span class="denominator">(n-2)</span></span> = 12 ⇒ n=5</span>। (ii) <span class="inline-math"><span class="fraction"><span class="numerator">4(2n-1)</span><span class="denominator">(n-2)</span></span> = 11 ⇒ n=6</span></p><p><strong>उत्तर:</strong> (i) n=5, (ii) n=6</p></div><div class="hinglish-explanation">सरल करने पर क्रमशः n=5 और n=6 प्राप्त होते हैं।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 3: वृत्त पर स्थित 21 बिंदुओं से होकर कितनी जीवाएँ खींची जा सकती हैं?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>21</sup>C<sub>2</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">21×20</span><span class="denominator">2</span></span> = 210</span></p><p><strong>उत्तर:</strong> 210</p></div><div class="hinglish-explanation">21 बिंदुओं में से कोई दो मिलाने पर जीवा बनती है।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 4: 5 लड़कों और 4 लड़कियों में से 3 लड़कों और 3 लड़कियों की एक टीम कितने प्रकार से चुनी जा सकती है?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>5</sup>C<sub>3</sub> × <sup>4</sup>C<sub>3</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">5×4×3</span><span class="denominator">3×2×1</span></span> × <span class="fraction"><span class="numerator">4×3×2</span><span class="denominator">3×2×1</span></span> = 10 × 4 = 40</span></p><p><strong>उत्तर:</strong> 40</p></div><div class="hinglish-explanation">लड़कों के चुनाव के 10 तरीके, लड़कियों के 4, कुल 40।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 5: 6 लाल, 5 सफेद और 5 नीली गेंदों में से 9 गेंदों के चुनाव के तरीकों की संख्या ज्ञात कीजिए, यदि प्रत्येक चुनाव में प्रत्येक रंग की 3 गेंदें हों।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>6</sup>C<sub>3</sub> × <sup>5</sup>C<sub>3</sub> × <sup>5</sup>C<sub>3</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">6×5×4</span><span class="denominator">3×2×1</span></span> × <span class="fraction"><span class="numerator">5×4×3</span><span class="denominator">3×2×1</span></span> × <span class="fraction"><span class="numerator">5×4×3</span><span class="denominator">3×2×1</span></span> = 20 × 10 × 10 = 2000</span></p><p><strong>उत्तर:</strong> 2000</p></div><div class="hinglish-explanation">लाल के 20, सफेद के 10, नीले के 10 तरीके, गुणा करने पर 2000।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 6: 52 पत्तों की एक गड्डी में से 5 पत्तों के कितने संचय बनाए जा सकते हैं, यदि प्रत्येक संचय में तथ्यतः एक इक्का हो?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>4</sup>C<sub>1</sub> × <sup>48</sup>C<sub>4</sub> = 4 × <span class="inline-math"><span class="fraction"><span class="numerator">48×47×46×45</span><span class="denominator">4×3×2×1</span></span> = 4 × 194580 = 778320</span></p><p><strong>उत्तर:</strong> 778320</p></div><div class="hinglish-explanation">एक इक्का चुनने के 4 तरीके, शेष 4 पत्ते 48 गैर-इक्के में से।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 7: 17 खिलाड़ियों में से, जिनमें केवल 5 गेंदबाजी कर सकते हैं, एक क्रिकेट टीम के 11 सदस्यों का चयन कितने प्रकार से किया जा सकता है यदि टीम में तथ्यतः 4 गेंदबाज शामिल हों?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>5</sup>C<sub>4</sub> × <sup>12</sup>C<sub>7</sub> = 5 × <span class="inline-math"><span class="fraction"><span class="numerator">12×11×10×9×8</span><span class="denominator">5×4×3×2×1</span></span> = 5 × 792 = 3960</span></p><p><strong>उत्तर:</strong> 3960</p></div><div class="hinglish-explanation">5 में से 4 गेंदबाज = 5, शेष 7 खिलाड़ी 12 गैर-गेंदबाजों में से = 792, गुणा 3960।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 8: एक थैले में 5 काली और 6 लाल गेंदें हैं। 2 काली और 3 लाल गेंदों के चयन के तरीकों की संख्या ज्ञात कीजिए।</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p><sup>5</sup>C<sub>2</sub> × <sup>6</sup>C<sub>3</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">5×4</span><span class="denominator">2×1</span></span> × <span class="fraction"><span class="numerator">6×5×4</span><span class="denominator">3×2×1</span></span> = 10 × 20 = 200</span></p><p><strong>उत्तर:</strong> 200</p></div><div class="hinglish-explanation">5 में से 2 काली के 10, 6 में से 3 लाल के 20, कुल 200।</div></div></div>
+
+            <div class="solution-card"><h3 class="text-xl question-title">प्रश्न 9: एक विद्यार्थी को 9 पाठ्यक्रमों में से 5 पाठ्यक्रम चुनने हैं। यदि 2 पाठ्यक्रम अनिवार्य हैं, तो वह कितने प्रकार से चुनाव कर सकता है?</h3><div><h4 class="font-semibold text-lg mb-3 text-indigo-700">हल:</h4><div class="step"><p>अनिवार्य 2 को छोड़कर, शेष 7 में से 3 चुनने हैं ⇒ <sup>7</sup>C<sub>3</sub> = <span class="inline-math"><span class="fraction"><span class="numerator">7×6×5</span><span class="denominator">3×2×1</span></span> = 35</span></p><p><strong>उत्तर:</strong> 35</p></div><div class="hinglish-explanation">2 अनिवार्य, बचे 3 पाठ्यक्रम 7 में से चुनने हैं, <sup>7</sup>C<sub>3</sub> = 35.</div></div></div>
+        </section>
+    </div>
+
+    <script>
+        // Disable right-click and copy-paste
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+        });
+        
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X' || e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+            }
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,812 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>कक्षा 11 गणित - अध्याय 10: शंकु परिच्छेद | हल सहित</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans Devanagari', sans-serif;
+            background-color: #f8fafc;
+            user-select: none;
+        }
+        .gradient-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .solution-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.8rem;
+            padding: 1.5rem;
+            border-left: 6px solid #3b82f6;
+            transition: all 0.2s ease;
+        }
+        .solution-card:hover {
+            box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .question-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: #0f172a;
+            margin-bottom: 1rem;
+            border-bottom: 2px dashed #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .step {
+            margin-bottom: 0.85rem;
+            padding-left: 0.75rem;
+            border-left: 3px solid #bfdbfe;
+            font-size: 1rem;
+            line-height: 1.5;
+            
+        }
+        .fraction {
+            display: inline-flex;
+            flex-direction: column;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 0.15rem;
+            position: relative;
+            top: 0.25em;
+        }
+        .fraction span {
+            display: block;
+            padding: 0 0.2rem;
+            font-family: 'Times New Roman', serif;
+        }
+        .fraction .numerator {
+            border-bottom: 1.5px solid #1e293b;
+        }
+        .hinglish-explanation {
+            background-color: #eef2ff;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            border-left: 4px solid #3b82f6;
+            color: #1e293b;
+        }
+        .exercise-head {
+            background: #f1f5f9;
+            padding: 0.5rem 1rem;
+            border-radius: 1rem;
+            display: inline-block;
+            font-weight: 700;
+        }
+        sup {
+            font-size: 0.75em;
+            vertical-align: super;
+        }
+        sub {
+            font-size: 0.75em;
+            vertical-align: sub;
+        }
+    </style>
+</head>
+<body class="p-4 md:p-7">
+
+<div class="max-w-5xl mx-auto">
+    <div class="gradient-card text-white p-6 md:p-10 rounded-2xl mb-10 text-center shadow-2xl">
+        <h1 class="text-3xl md:text-5xl font-bold">अध्याय 10<br>शंकु परिच्छेद</h1>
+        <p class="mt-3 text-lg opacity-90">कक्षा 11 गणित (NCERT) | StudyScript</p>
+    </div>
+
+    <!-- प्रश्नावली 10.1 -->
+    <section id="ex-10-1" class="mb-14">
+        <div class="flex items-center gap-3 mb-6">
+            <div class="exercise-head text-lg bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full">📘 प्रश्नावली 10.1 (वृत्त)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">1. केंद्र (0, 2) और त्रिज्या 2 वाले वृत्त का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">
+                वृत्त का मानक समीकरण: (x - h)² + (y - k)² = r²<br>
+                यहाँ (h, k) = (0, 2) और r = 2 है।<br>
+                (x - 0)² + (y - 2)² = 2²<br>
+                x² + y² - 4y + 4 = 4 &rArr; x² + y² - 4y = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. केंद्र (-2, 3) और त्रिज्या 4 वाले वृत्त का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">
+                (h, k) = (-2, 3) और r = 4<br>
+                (x - (-2))² + (y - 3)² = 4² &rArr; (x + 2)² + (y - 3)² = 16<br>
+                x² + 4x + 4 + y² - 6y + 9 = 16<br>
+                x² + y² + 4x - 6y - 3 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. केंद्र (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>) और त्रिज्या <span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span> वाले वृत्त का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">
+                (h, k) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>, <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>), r = <span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span><br>
+                (x - <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>)² + (y - <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>)² = (<span class="fraction"><span class="numerator">1</span><span class="denominator">12</span></span>)²<br>
+                x² - x + <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span> + y² - <span class="fraction"><span class="numerator">y</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">1</span><span class="denominator">16</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">144</span></span><br>
+                x² + y² - x - <span class="fraction"><span class="numerator">y</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">5</span><span class="denominator">16</span></span> - <span class="fraction"><span class="numerator">1</span><span class="denominator">144</span></span> = 0<br>
+                x² + y² - x - <span class="fraction"><span class="numerator">y</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">44</span><span class="denominator">144</span></span> = 0 &rArr; x² + y² - x - <span class="fraction"><span class="numerator">y</span><span class="denominator">2</span></span> + <span class="fraction"><span class="numerator">11</span><span class="denominator">36</span></span> = 0<br>
+                36x² + 36y² - 36x - 18y + 11 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. केंद्र (1, 1) और त्रिज्या &radic;2 वाले वृत्त का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">
+                (h, k) = (1, 1), r = &radic;2<br>
+                (x - 1)² + (y - 1)² = (&radic;2)²<br>
+                x² - 2x + 1 + y² - 2y + 1 = 2<br>
+                x² + y² - 2x - 2y = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. केंद्र (-a, -b) और त्रिज्या &radic;(a² - b²) वाले वृत्त का समीकरण ज्ञात कीजिए।</div>
+            <div class="step">
+                (h, k) = (-a, -b), r = &radic;(a² - b²)<br>
+                (x - (-a))² + (y - (-b))² = (&radic;(a² - b²))²<br>
+                (x + a)² + (y + b)² = a² - b²<br>
+                x² + 2ax + a² + y² + 2by + b² = a² - b²<br>
+                x² + y² + 2ax + 2by + 2b² = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. (x + 5)² + (y - 3)² = 36 का केंद्र और त्रिज्या ज्ञात कीजिए।</div>
+            <div class="step">
+                समीकरण की तुलना (x - h)² + (y - k)² = r² से करने पर:<br>
+                h = -5, k = 3, r² = 36 &rArr; r = 6<br>
+                <b>केंद्र:</b> (-5, 3), <b>त्रिज्या:</b> 6
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. x² + y² - 4x - 8y - 45 = 0 का केंद्र और त्रिज्या ज्ञात कीजिए।</div>
+            <div class="step">
+                व्यापक रूप x² + y² + 2gx + 2fy + c = 0 से तुलना करने पर:<br>
+                2g = -4 &rArr; g = -2<br>
+                2f = -8 &rArr; f = -4<br>
+                c = -45<br>
+                केंद्र = (-g, -f) = (2, 4)<br>
+                त्रिज्या r = &radic;(g² + f² - c) = &radic;((-2)² + (-4)² - (-45)) = &radic;(4 + 16 + 45) = &radic;65
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. x² + y² - 8x + 10y - 12 = 0 का केंद्र और त्रिज्या ज्ञात कीजिए।</div>
+            <div class="step">
+                2g = -8 &rArr; g = -4<br>
+                2f = 10 &rArr; f = 5<br>
+                c = -12<br>
+                केंद्र = (-g, -f) = (4, -5)<br>
+                त्रिज्या r = &radic;(g² + f² - c) = &radic;(16 + 25 - (-12)) = &radic;53
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. 2x² + 2y² - x = 0 का केंद्र और त्रिज्या ज्ञात कीजिए।</div>
+            <div class="step">
+                पूरे समीकरण को 2 से भाग देने पर:<br>
+                x² + y² - <span class="fraction"><span class="numerator">x</span><span class="denominator">2</span></span> = 0<br>
+                2g = -<span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span> &rArr; g = -<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 2f = 0 &rArr; f = 0, c = 0<br>
+                केंद्र = (-g, -f) = (<span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>, 0)<br>
+                त्रिज्या r = &radic;(g² + f² - c) = &radic;((1/4)² + 0 - 0) = <span class="fraction"><span class="numerator">1</span><span class="denominator">4</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. बिंदुओं (4, 1) और (6, 5) से जाने वाले वृत्त का समीकरण ज्ञात कीजिए जिसका केंद्र रेखा 4x + y = 16 पर स्थित है।</div>
+            <div class="step">
+                माना केंद्र (h, k) और त्रिज्या r है।<br>
+                (4 - h)² + (1 - k)² = r² ... (i)<br>
+                (6 - h)² + (5 - k)² = r² ... (ii)<br>
+                (i) और (ii) को बराबर करने पर: 16 - 8h + h² + 1 - 2k + k² = 36 - 12h + h² + 25 - 10k + k²<br>
+                &rArr; 4h + 8k = 44 &rArr; h + 2k = 11 ... (iii)<br>
+                केंद्र रेखा 4x + y = 16 पर है, अतः 4h + k = 16 &rArr; k = 16 - 4h ... (iv)<br>
+                (iv) को (iii) में रखने पर: h + 2(16 - 4h) = 11 &rArr; h + 32 - 8h = 11 &rArr; 7h = 21 &rArr; h = 3<br>
+                k = 16 - 4(3) = 4. अतः केंद्र (3, 4) है।<br>
+                त्रिज्या r² = (4 - 3)² + (1 - 4)² = 1 + 9 = 10<br>
+                समीकरण: (x - 3)² + (y - 4)² = 10 &rArr; x² + y² - 6x - 8y + 15 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. बिंदुओं (2, 3) और (-1, 1) से जाने वाले वृत्त का समीकरण ज्ञात कीजिए जिसका केंद्र रेखा x - 3y - 11 = 0 पर स्थित है।</div>
+            <div class="step">
+                माना केंद्र (h, k) है।<br>
+                (2 - h)² + (3 - k)² = (-1 - h)² + (1 - k)²<br>
+                4 - 4h + h² + 9 - 6k + k² = 1 + 2h + h² + 1 - 2k + k²<br>
+                -6h - 4k = -11 &rArr; 6h + 4k = 11 ... (i)<br>
+                केंद्र रेखा पर है: h - 3k = 11 &rArr; h = 3k + 11 ... (ii)<br>
+                (ii) को (i) में रखने पर: 6(3k + 11) + 4k = 11 &rArr; 18k + 66 + 4k = 11 &rArr; 22k = -55 &rArr; k = -<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span><br>
+                h = 3(-<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>) + 11 = <span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>. केंद्र (<span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>, -<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>)<br>
+                r² = (2 - <span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>)² + (3 + <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>)² = <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">121</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">130</span><span class="denominator">4</span></span><br>
+                समीकरण: (x - <span class="fraction"><span class="numerator">7</span><span class="denominator">2</span></span>)² + (y + <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>)² = <span class="fraction"><span class="numerator">130</span><span class="denominator">4</span></span> &rArr; x² + y² - 7x + 5y - 14 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. त्रिज्या 5 के उस वृत्त का समीकरण ज्ञात कीजिए जिसका केंद्र x-अक्ष पर हो और जो बिंदु (2, 3) से जाता हो।</div>
+            <div class="step">
+                x-अक्ष पर केंद्र (h, 0) होगा और r = 5.<br>
+                वृत्त (2, 3) से जाता है: (2 - h)² + (3 - 0)² = 5²<br>
+                (2 - h)² + 9 = 25 &rArr; (2 - h)² = 16 &rArr; 2 - h = &plusmn;4<br>
+                स्थिति 1: 2 - h = 4 &rArr; h = -2. समीकरण: (x + 2)² + y² = 25 &rArr; x² + y² + 4x - 21 = 0<br>
+                स्थिति 2: 2 - h = -4 &rArr; h = 6. समीकरण: (x - 6)² + y² = 25 &rArr; x² + y² - 12x + 11 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. (0,0) से होकर जाने वाले वृत्त का समीकरण ज्ञात कीजिए जो निर्देशांक अक्षों पर a और b अंतः खंड काटता है।</div>
+            <div class="step">
+                माना वृत्त का समीकरण x² + y² + 2gx + 2fy + c = 0 है।<br>
+                यह (0,0) से जाता है: c = 0<br>
+                x-अक्ष पर a अंतः खंड काटता है, अतः यह (a,0) से जाता है: a² + 2ga = 0 &rArr; 2g = -a<br>
+                y-अक्ष पर b अंतः खंड काटता है, अतः यह (0,b) से जाता है: b² + 2fb = 0 &rArr; 2f = -b<br>
+                मान रखने पर समीकरण: x² + y² - ax - by = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. उस वृत्त का समीकरण ज्ञात कीजिए जिसका केंद्र (2, 2) हो तथा बिंदु (4, 5) से जाता हो।</div>
+            <div class="step">
+                त्रिज्या r² = केंद्र और बिंदु के बीच की दूरी का वर्ग<br>
+                r² = (4 - 2)² + (5 - 2)² = 2² + 3² = 4 + 9 = 13<br>
+                समीकरण: (x - 2)² + (y - 2)² = 13<br>
+                x² - 4x + 4 + y² - 4y + 4 = 13 &rArr; x² + y² - 4x - 4y - 5 = 0
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. क्या बिंदु (-2.5, 3.5) वृत्त x² + y² = 25 के अंदर, बाहर या वृत्त पर स्थित है?</div>
+            <div class="step">
+                वृत्त का केंद्र (0,0) है और त्रिज्या r = 5 (चूँकि r² = 25)।<br>
+                बिंदु (-2.5, 3.5) की केंद्र से दूरी d = &radic;((-2.5 - 0)² + (3.5 - 0)²) = &radic;(6.25 + 12.25) = &radic;18.5<br>
+                चूँकि d = &radic;18.5 < &radic;25 = 5 है, अर्थात् दूरी त्रिज्या से कम है।<br>
+                अतः बिंदु वृत्त के <b>अंदर</b> स्थित है।
+            </div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 10.2 -->
+    <section id="ex-10-2" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-green-100 text-green-800 px-4 py-2 rounded-full">📗 प्रश्नावली 10.2 (परवलय)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+        
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 से 6 तक प्रत्येक में नाभि के निर्देशांक, परवलय का अक्ष, नियता का समीकरण और नाभिलंब जीवा की लंबाई ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. y² = 12x</div>
+            <div class="step">
+                समीकरण की तुलना y² = 4ax से करने पर: 4a = 12 &rArr; a = 3<br>
+                <b>नाभि (Focus):</b> (a, 0) = (3, 0)<br>
+                <b>अक्ष (Axis):</b> y = 0 (x-अक्ष)<br>
+                <b>नियता (Directrix):</b> x = -a &rArr; x = -3<br>
+                <b>नाभिलंब जीवा (Latus Rectum):</b> 4a = 12
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. x² = 6y</div>
+            <div class="step">
+                तुलना x² = 4ay से करने पर: 4a = 6 &rArr; a = <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span><br>
+                <b>नाभि:</b> (0, a) = (0, <span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span>)<br>
+                <b>अक्ष:</b> x = 0 (y-अक्ष)<br>
+                <b>नियता:</b> y = -a &rArr; y = -<span class="fraction"><span class="numerator">3</span><span class="denominator">2</span></span><br>
+                <b>नाभिलंब जीवा:</b> 4a = 6
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. y² = -8x</div>
+            <div class="step">
+                तुलना y² = -4ax से करने पर: 4a = 8 &rArr; a = 2<br>
+                <b>नाभि:</b> (-a, 0) = (-2, 0)<br>
+                <b>अक्ष:</b> y = 0<br>
+                <b>नियता:</b> x = a &rArr; x = 2<br>
+                <b>नाभिलंब जीवा:</b> 4a = 8
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. x² = -16y</div>
+            <div class="step">
+                तुलना x² = -4ay से करने पर: 4a = 16 &rArr; a = 4<br>
+                <b>नाभि:</b> (0, -a) = (0, -4)<br>
+                <b>अक्ष:</b> x = 0<br>
+                <b>नियता:</b> y = a &rArr; y = 4<br>
+                <b>नाभिलंब जीवा:</b> 4a = 16
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. y² = 10x</div>
+            <div class="step">
+                तुलना y² = 4ax से करने पर: 4a = 10 &rArr; a = <span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span><br>
+                <b>नाभि:</b> (a, 0) = (<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span>, 0)<br>
+                <b>अक्ष:</b> y = 0<br>
+                <b>नियता:</b> x = -a &rArr; x = -<span class="fraction"><span class="numerator">5</span><span class="denominator">2</span></span><br>
+                <b>नाभिलंब जीवा:</b> 4a = 10
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. x² = -9y</div>
+            <div class="step">
+                तुलना x² = -4ay से करने पर: 4a = 9 &rArr; a = <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span><br>
+                <b>नाभि:</b> (0, -a) = (0, -<span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span>)<br>
+                <b>अक्ष:</b> x = 0<br>
+                <b>नियता:</b> y = a &rArr; y = <span class="fraction"><span class="numerator">9</span><span class="denominator">4</span></span><br>
+                <b>नाभिलंब जीवा:</b> 4a = 9
+            </div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 7 से 12 तक परवलय का समीकरण ज्ञात कीजिए जो दिए गए प्रतिबंधों को संतुष्ट करता है:</p>
+
+        <div class="solution-card">
+            <div class="question-title">7. नाभि (6, 0), नियता x = -6</div>
+            <div class="step">
+                नाभि x-अक्ष पर धनात्मक दिशा में है, अतः परवलय y² = 4ax के रूप का है।<br>
+                यहाँ a = 6 है।<br>
+                समीकरण: y² = 4(6)x &rArr; y² = 24x
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. नाभि (0, -3), नियता y = 3</div>
+            <div class="step">
+                नाभि y-अक्ष पर ऋणात्मक दिशा में है, अतः परवलय x² = -4ay के रूप का है।<br>
+                यहाँ a = 3 है।<br>
+                समीकरण: x² = -4(3)y &rArr; x² = -12y
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. शीर्ष (0, 0), नाभि (3, 0)</div>
+            <div class="step">
+                नाभि x-अक्ष की धनात्मक दिशा में है, अतः रूप y² = 4ax है।<br>
+                a = 3<br>
+                समीकरण: y² = 4(3)x &rArr; y² = 12x
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. शीर्ष (0, 0), नाभि (-2, 0)</div>
+            <div class="step">
+                नाभि x-अक्ष की ऋणात्मक दिशा में है, अतः रूप y² = -4ax है।<br>
+                a = 2<br>
+                समीकरण: y² = -4(2)x &rArr; y² = -8x
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. शीर्ष (0, 0), (2, 3) से जाता है और अक्ष x-अक्ष के अनुदिश है</div>
+            <div class="step">
+                चूँकि परवलय का अक्ष x-अक्ष है और बिंदु (2,3) प्रथम चतुर्थांश में है, समीकरण y² = 4ax होगा।<br>
+                बिंदु (2, 3) इस पर है: (3)² = 4a(2) &rArr; 9 = 8a &rArr; a = <span class="fraction"><span class="numerator">9</span><span class="denominator">8</span></span><br>
+                समीकरण: y² = 4(<span class="fraction"><span class="numerator">9</span><span class="denominator">8</span></span>)x &rArr; y² = <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span>x &rArr; 2y² = 9x
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. शीर्ष (0, 0), (5, 2) से जाता है और y-अक्ष के सापेक्ष सममित (symmetric) है</div>
+            <div class="step">
+                y-अक्ष के सापेक्ष सममित होने के कारण समीकरण x² = 4ay या x² = -4ay होगा।<br>
+                बिंदु (5, 2) प्रथम चतुर्थांश में है, अतः x² = 4ay होगा।<br>
+                बिंदु (5, 2) रखने पर: 5² = 4a(2) &rArr; 25 = 8a &rArr; a = <span class="fraction"><span class="numerator">25</span><span class="denominator">8</span></span><br>
+                समीकरण: x² = 4(<span class="fraction"><span class="numerator">25</span><span class="denominator">8</span></span>)y &rArr; x² = <span class="fraction"><span class="numerator">25</span><span class="denominator">2</span></span>y &rArr; 2x² = 25y
+            </div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 10.3 -->
+    <section id="ex-10-3" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-orange-100 text-orange-800 px-4 py-2 rounded-full">📙 प्रश्नावली 10.3 (दीर्घवृत्त)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 से 9 तक प्रत्येक में नाभियों और शीर्षों के निर्देशांक, दीर्घ और लघु अक्ष की लंबाइयाँ, उत्केंद्रता तथा नाभिलंब जीवा की लंबाई ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. <span class="fraction"><span class="numerator">x²</span><span class="denominator">36</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">16</span></span> = 1</div>
+            <div class="step">
+                यहाँ a² = 36 &rArr; a = 6 और b² = 16 &rArr; b = 4. चूँकि a > b, दीर्घ अक्ष x-अक्ष पर है।<br>
+                c = &radic;(a² - b²) = &radic;(36 - 16) = &radic;20 = 2&radic;5<br>
+                <b>नाभियाँ:</b> (&plusmn;c, 0) = (&plusmn;2&radic;5, 0), <b>शीर्ष:</b> (&plusmn;a, 0) = (&plusmn;6, 0)<br>
+                <b>दीर्घ अक्ष:</b> 2a = 12, <b>लघु अक्ष:</b> 2b = 8<br>
+                <b>उत्केंद्रता (e):</b> <span class="fraction"><span class="numerator">c</span><span class="denominator">a</span></span> = <span class="fraction"><span class="numerator">2&radic;5</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">&radic;5</span><span class="denominator">3</span></span><br>
+                <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2b²</span><span class="denominator">a</span></span> = <span class="fraction"><span class="numerator">2(16)</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">16</span><span class="denominator">3</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">25</span></span> = 1</div>
+            <div class="step">
+                यहाँ y² का हर बड़ा है, अतः a² = 25 &rArr; a = 5 और b² = 4 &rArr; b = 2. दीर्घ अक्ष y-अक्ष पर है।<br>
+                c = &radic;(25 - 4) = &radic;21<br>
+                <b>नाभियाँ:</b> (0, &plusmn;c) = (0, &plusmn;&radic;21), <b>शीर्ष:</b> (0, &plusmn;a) = (0, &plusmn;5)<br>
+                <b>दीर्घ अक्ष:</b> 2a = 10, <b>लघु अक्ष:</b> 2b = 4<br>
+                <b>उत्केंद्रता:</b> e = <span class="fraction"><span class="numerator">&radic;21</span><span class="denominator">5</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2b²</span><span class="denominator">a</span></span> = <span class="fraction"><span class="numerator">8</span><span class="denominator">5</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. <span class="fraction"><span class="numerator">x²</span><span class="denominator">16</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> = 1</div>
+            <div class="step">
+                a² = 16 &rArr; a = 4, b² = 9 &rArr; b = 3. दीर्घ अक्ष x-अक्ष पर है।<br>
+                c = &radic;(16 - 9) = &radic;7<br>
+                <b>नाभियाँ:</b> (&plusmn;&radic;7, 0), <b>शीर्ष:</b> (&plusmn;4, 0)<br>
+                <b>दीर्घ अक्ष:</b> 8, <b>लघु अक्ष:</b> 6<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;7</span><span class="denominator">4</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">18</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. <span class="fraction"><span class="numerator">x²</span><span class="denominator">25</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">100</span></span> = 1</div>
+            <div class="step">
+                a² = 100 &rArr; a = 10, b² = 25 &rArr; b = 5. दीर्घ अक्ष y-अक्ष पर है।<br>
+                c = &radic;(100 - 25) = &radic;75 = 5&radic;3<br>
+                <b>नाभियाँ:</b> (0, &plusmn;5&radic;3), <b>शीर्ष:</b> (0, &plusmn;10)<br>
+                <b>दीर्घ अक्ष:</b> 20, <b>लघु अक्ष:</b> 10<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">5&radic;3</span><span class="denominator">10</span></span> = <span class="fraction"><span class="numerator">&radic;3</span><span class="denominator">2</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(25)</span><span class="denominator">10</span></span> = 5
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. <span class="fraction"><span class="numerator">x²</span><span class="denominator">49</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">36</span></span> = 1</div>
+            <div class="step">
+                a² = 49 &rArr; a = 7, b² = 36 &rArr; b = 6. दीर्घ अक्ष x-अक्ष पर है।<br>
+                c = &radic;(49 - 36) = &radic;13<br>
+                <b>नाभियाँ:</b> (&plusmn;&radic;13, 0), <b>शीर्ष:</b> (&plusmn;7, 0)<br>
+                <b>दीर्घ अक्ष:</b> 14, <b>लघु अक्ष:</b> 12<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;13</span><span class="denominator">7</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(36)</span><span class="denominator">7</span></span> = <span class="fraction"><span class="numerator">72</span><span class="denominator">7</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. <span class="fraction"><span class="numerator">x²</span><span class="denominator">100</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">400</span></span> = 1</div>
+            <div class="step">
+                a² = 400 &rArr; a = 20, b² = 100 &rArr; b = 10. दीर्घ अक्ष y-अक्ष पर है।<br>
+                c = &radic;(400 - 100) = &radic;300 = 10&radic;3<br>
+                <b>नाभियाँ:</b> (0, &plusmn;10&radic;3), <b>शीर्ष:</b> (0, &plusmn;20)<br>
+                <b>दीर्घ अक्ष:</b> 40, <b>लघु अक्ष:</b> 20<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">10&radic;3</span><span class="denominator">20</span></span> = <span class="fraction"><span class="numerator">&radic;3</span><span class="denominator">2</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(100)</span><span class="denominator">20</span></span> = 10
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">7. 36x² + 4y² = 144</div>
+            <div class="step">
+                144 से भाग देने पर: <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">36</span></span> = 1<br>
+                a² = 36 &rArr; a = 6, b² = 4 &rArr; b = 2. दीर्घ अक्ष y-अक्ष पर है।<br>
+                c = &radic;(36 - 4) = &radic;32 = 4&radic;2<br>
+                <b>नाभियाँ:</b> (0, &plusmn;4&radic;2), <b>शीर्ष:</b> (0, &plusmn;6)<br>
+                <b>दीर्घ अक्ष:</b> 12, <b>लघु अक्ष:</b> 4<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">4&radic;2</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">2&radic;2</span><span class="denominator">3</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(4)</span><span class="denominator">6</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. 16x² + y² = 16</div>
+            <div class="step">
+                16 से भाग देने पर: <span class="fraction"><span class="numerator">x²</span><span class="denominator">1</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">16</span></span> = 1<br>
+                a² = 16 &rArr; a = 4, b² = 1 &rArr; b = 1. दीर्घ अक्ष y-अक्ष पर है।<br>
+                c = &radic;(16 - 1) = &radic;15<br>
+                <b>नाभियाँ:</b> (0, &plusmn;&radic;15), <b>शीर्ष:</b> (0, &plusmn;4)<br>
+                <b>दीर्घ अक्ष:</b> 8, <b>लघु अक्ष:</b> 2<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;15</span><span class="denominator">4</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(1)</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">2</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. 4x² + 9y² = 36</div>
+            <div class="step">
+                36 से भाग देने पर: <span class="fraction"><span class="numerator">x²</span><span class="denominator">9</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">4</span></span> = 1<br>
+                a² = 9 &rArr; a = 3, b² = 4 &rArr; b = 2. दीर्घ अक्ष x-अक्ष पर है।<br>
+                c = &radic;(9 - 4) = &radic;5<br>
+                <b>नाभियाँ:</b> (&plusmn;&radic;5, 0), <b>शीर्ष:</b> (&plusmn;3, 0)<br>
+                <b>दीर्घ अक्ष:</b> 6, <b>लघु अक्ष:</b> 4<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;5</span><span class="denominator">3</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">8</span><span class="denominator">3</span></span>
+            </div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 10 से 20 तक दीर्घवृत्त का समीकरण ज्ञात कीजिए जो दिए गए प्रतिबंधों को संतुष्ट करता है:</p>
+
+        <div class="solution-card">
+            <div class="question-title">10. शीर्ष (&plusmn;5, 0), नाभियाँ (&plusmn;4, 0)</div>
+            <div class="step">
+                शीर्ष x-अक्ष पर हैं, अतः समीकरण <span class="fraction"><span class="numerator">x²</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">b²</span></span> = 1 होगा।<br>
+                a = 5, c = 4. हम जानते हैं c² = a² - b²<br>
+                16 = 25 - b² &rArr; b² = 9<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">25</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. शीर्ष (0, &plusmn;13), नाभियाँ (0, &plusmn;5)</div>
+            <div class="step">
+                शीर्ष y-अक्ष पर हैं, अतः a = 13, c = 5<br>
+                b² = a² - c² = 169 - 25 = 144<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">144</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">169</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. शीर्ष (&plusmn;6, 0), नाभियाँ (&plusmn;4, 0)</div>
+            <div class="step">
+                शीर्ष x-अक्ष पर हैं, अतः a = 6, c = 4<br>
+                b² = 36 - 16 = 20<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">36</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">20</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. दीर्घ अक्ष के अंत्य बिंदु (&plusmn;3, 0), लघु अक्ष के अंत्य बिंदु (0, &plusmn;2)</div>
+            <div class="step">
+                दीर्घ अक्ष x-अक्ष पर है &rArr; a = 3, और लघु अक्ष y-अक्ष पर है &rArr; b = 2<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">9</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">4</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. दीर्घ अक्ष के अंत्य बिंदु (0, &plusmn;&radic;5), लघु अक्ष के अंत्य बिंदु (&plusmn;1, 0)</div>
+            <div class="step">
+                दीर्घ अक्ष y-अक्ष पर है &rArr; a = &radic;5, और लघु अक्ष x-अक्ष पर है &rArr; b = 1<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">1</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">5</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. दीर्घ अक्ष की लंबाई 26, नाभियाँ (&plusmn;5, 0)</div>
+            <div class="step">
+                नाभियाँ x-अक्ष पर हैं। 2a = 26 &rArr; a = 13<br>
+                c = 5 &rArr; b² = 169 - 25 = 144<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">169</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">144</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">16. लघु अक्ष की लंबाई 16, नाभियाँ (0, &plusmn;6)</div>
+            <div class="step">
+                नाभियाँ y-अक्ष पर हैं। 2b = 16 &rArr; b = 8<br>
+                c = 6 &rArr; a² = b² + c² = 64 + 36 = 100<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">64</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">100</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">17. नाभियाँ (&plusmn;3, 0), a = 4</div>
+            <div class="step">
+                नाभियाँ x-अक्ष पर हैं। c = 3, a = 4<br>
+                b² = a² - c² = 16 - 9 = 7<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">16</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">7</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">18. b = 3, c = 4, केंद्र मूल बिंदु पर, नाभियाँ x-अक्ष पर</div>
+            <div class="step">
+                b = 3, c = 4 &rArr; a² = b² + c² = 9 + 16 = 25<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">25</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">19. केंद्र (0, 0), दीर्घ अक्ष y-अक्ष पर और बिंदुओं (3, 2) तथा (1, 6) से जाता है।</div>
+            <div class="step">
+                दीर्घ अक्ष y-अक्ष पर है, अतः समीकरण <span class="fraction"><span class="numerator">x²</span><span class="denominator">b²</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">a²</span></span> = 1 होगा।<br>
+                (3, 2) से: <span class="fraction"><span class="numerator">9</span><span class="denominator">b²</span></span> + <span class="fraction"><span class="numerator">4</span><span class="denominator">a²</span></span> = 1 ... (i)<br>
+                (1, 6) से: <span class="fraction"><span class="numerator">1</span><span class="denominator">b²</span></span> + <span class="fraction"><span class="numerator">36</span><span class="denominator">a²</span></span> = 1 ... (ii)<br>
+                माना <span class="fraction"><span class="numerator">1</span><span class="denominator">b²</span></span> = u, <span class="fraction"><span class="numerator">1</span><span class="denominator">a²</span></span> = v &rArr; 9u + 4v = 1 और u + 36v = 1 &rArr; u = 1 - 36v<br>
+                (i) में रखने पर: 9(1 - 36v) + 4v = 1 &rArr; 9 - 324v + 4v = 1 &rArr; 320v = 8 &rArr; v = <span class="fraction"><span class="numerator">1</span><span class="denominator">40</span></span> &rArr; a² = 40<br>
+                u = 1 - 36(<span class="fraction"><span class="numerator">1</span><span class="denominator">40</span></span>) = 1 - <span class="fraction"><span class="numerator">9</span><span class="denominator">10</span></span> = <span class="fraction"><span class="numerator">1</span><span class="denominator">10</span></span> &rArr; b² = 10<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">10</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">40</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">20. दीर्घ अक्ष x-अक्ष पर और बिंदुओं (4, 3) तथा (6, 2) से जाता है।</div>
+            <div class="step">
+                समीकरण <span class="fraction"><span class="numerator">x²</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">b²</span></span> = 1 होगा।<br>
+                (4, 3) से: <span class="fraction"><span class="numerator">16</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">9</span><span class="denominator">b²</span></span> = 1 ... (i)<br>
+                (6, 2) से: <span class="fraction"><span class="numerator">36</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">4</span><span class="denominator">b²</span></span> = 1 ... (ii)<br>
+                (i) को 4 से और (ii) को 9 से गुणा करने पर:<br>
+                <span class="fraction"><span class="numerator">64</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">36</span><span class="denominator">b²</span></span> = 4 और <span class="fraction"><span class="numerator">324</span><span class="denominator">a²</span></span> + <span class="fraction"><span class="numerator">36</span><span class="denominator">b²</span></span> = 9<br>
+                घटाने पर: -<span class="fraction"><span class="numerator">260</span><span class="denominator">a²</span></span> = -5 &rArr; a² = <span class="fraction"><span class="numerator">260</span><span class="denominator">5</span></span> = 52<br>
+                a² का मान (ii) में रखने पर: <span class="fraction"><span class="numerator">36</span><span class="denominator">52</span></span> + <span class="fraction"><span class="numerator">4</span><span class="denominator">b²</span></span> = 1 &rArr; <span class="fraction"><span class="numerator">4</span><span class="denominator">b²</span></span> = 1 - <span class="fraction"><span class="numerator">9</span><span class="denominator">13</span></span> = <span class="fraction"><span class="numerator">4</span><span class="denominator">13</span></span> &rArr; b² = 13<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">52</span></span> + <span class="fraction"><span class="numerator">y²</span><span class="denominator">13</span></span> = 1
+            </div>
+        </div>
+    </section>
+
+    <!-- प्रश्नावली 10.4 -->
+    <section id="ex-10-4" class="mb-14">
+        <div class="flex items-center gap-3 mb-6 mt-8">
+            <div class="exercise-head text-lg bg-teal-100 text-teal-800 px-4 py-2 rounded-full">🍵 प्रश्नावली 10.4 (अतिपरवलय)</div>
+            <div class="h-px flex-1 bg-gray-300"></div>
+        </div>
+
+        <p class="mb-6 text-gray-700 font-semibold">प्रश्न 1 से 6 तक प्रत्येक में नाभियों और शीर्षों के निर्देशांक, उत्केंद्रता तथा नाभिलंब जीवा की लंबाई ज्ञात कीजिए:</p>
+
+        <div class="solution-card">
+            <div class="question-title">1. <span class="fraction"><span class="numerator">x²</span><span class="denominator">16</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> = 1</div>
+            <div class="step">
+                यहाँ a² = 16 &rArr; a = 4 और b² = 9 &rArr; b = 3. अनुप्रस्थ अक्ष x-अक्ष पर है।<br>
+                c = &radic;(a² + b²) = &radic;(16 + 9) = &radic;25 = 5<br>
+                <b>नाभियाँ:</b> (&plusmn;5, 0), <b>शीर्ष:</b> (&plusmn;4, 0)<br>
+                <b>उत्केंद्रता:</b> e = <span class="fraction"><span class="numerator">5</span><span class="denominator">4</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(9)</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">9</span><span class="denominator">2</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">2. <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">27</span></span> = 1</div>
+            <div class="step">
+                यहाँ अनुप्रस्थ अक्ष y-अक्ष पर है। a² = 9 &rArr; a = 3, b² = 27 &rArr; b = 3&radic;3<br>
+                c = &radic;(9 + 27) = &radic;36 = 6<br>
+                <b>नाभियाँ:</b> (0, &plusmn;6), <b>शीर्ष:</b> (0, &plusmn;3)<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">6</span><span class="denominator">3</span></span> = 2, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(27)</span><span class="denominator">3</span></span> = 18
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">3. 9y² - 4x² = 36</div>
+            <div class="step">
+                36 से भाग देने पर: <span class="fraction"><span class="numerator">y²</span><span class="denominator">4</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">9</span></span> = 1<br>
+                a² = 4 &rArr; a = 2, b² = 9 &rArr; b = 3<br>
+                c = &radic;(4 + 9) = &radic;13<br>
+                <b>नाभियाँ:</b> (0, &plusmn;&radic;13), <b>शीर्ष:</b> (0, &plusmn;2)<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;13</span><span class="denominator">2</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">18</span><span class="denominator">2</span></span> = 9
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">4. 16x² - 9y² = 144</div>
+            <div class="step">
+                144 से भाग देने पर: <span class="fraction"><span class="numerator">x²</span><span class="denominator">9</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">16</span></span> = 1<br>
+                a² = 9 &rArr; a = 3, b² = 16 &rArr; b = 4<br>
+                c = &radic;(9 + 16) = 5<br>
+                <b>नाभियाँ:</b> (&plusmn;5, 0), <b>शीर्ष:</b> (&plusmn;3, 0)<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">5</span><span class="denominator">3</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">32</span><span class="denominator">3</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">5. 5y² - 9x² = 36</div>
+            <div class="step">
+                36 से भाग देने पर: <span class="fraction"><span class="numerator">y²</span><span class="denominator">36/5</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> = 1<br>
+                a² = <span class="fraction"><span class="numerator">36</span><span class="denominator">5</span></span> &rArr; a = <span class="fraction"><span class="numerator">6</span><span class="denominator">&radic;5</span></span>, b² = 4 &rArr; b = 2<br>
+                c = &radic;(<span class="fraction"><span class="numerator">36</span><span class="denominator">5</span></span> + 4) = &radic;(<span class="fraction"><span class="numerator">56</span><span class="denominator">5</span></span>) = <span class="fraction"><span class="numerator">2&radic;14</span><span class="denominator">&radic;5</span></span><br>
+                <b>नाभियाँ:</b> (0, &plusmn;<span class="fraction"><span class="numerator">2&radic;14</span><span class="denominator">&radic;5</span></span>), <b>शीर्ष:</b> (0, &plusmn;<span class="fraction"><span class="numerator">6</span><span class="denominator">&radic;5</span></span>)<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">2&radic;14/&radic;5</span><span class="denominator">6/&radic;5</span></span> = <span class="fraction"><span class="numerator">&radic;14</span><span class="denominator">3</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(4)</span><span class="denominator">6/&radic;5</span></span> = <span class="fraction"><span class="numerator">4&radic;5</span><span class="denominator">3</span></span>
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">6. 49y² - 16x² = 784</div>
+            <div class="step">
+                784 से भाग देने पर: <span class="fraction"><span class="numerator">y²</span><span class="denominator">16</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">49</span></span> = 1<br>
+                a² = 16 &rArr; a = 4, b² = 49 &rArr; b = 7<br>
+                c = &radic;(16 + 49) = &radic;65<br>
+                <b>नाभियाँ:</b> (0, &plusmn;&radic;65), <b>शीर्ष:</b> (0, &plusmn;4)<br>
+                <b>e:</b> <span class="fraction"><span class="numerator">&radic;65</span><span class="denominator">4</span></span>, <b>नाभिलंब जीवा:</b> <span class="fraction"><span class="numerator">2(49)</span><span class="denominator">4</span></span> = <span class="fraction"><span class="numerator">49</span><span class="denominator">2</span></span>
+            </div>
+        </div>
+
+        <p class="mb-6 mt-8 text-gray-700 font-semibold">प्रश्न 7 से 15 तक अतिपरवलय का समीकरण ज्ञात कीजिए जो दिए गए प्रतिबंधों को संतुष्ट करता है:</p>
+
+        <div class="solution-card">
+            <div class="question-title">7. शीर्ष (&plusmn;2, 0), नाभियाँ (&plusmn;3, 0)</div>
+            <div class="step">
+                a = 2, c = 3. अनुप्रस्थ अक्ष x-अक्ष पर है।<br>
+                b² = c² - a² = 9 - 4 = 5<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">5</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">8. शीर्ष (0, &plusmn;5), नाभियाँ (0, &plusmn;8)</div>
+            <div class="step">
+                a = 5, c = 8. अनुप्रस्थ अक्ष y-अक्ष पर है।<br>
+                b² = 64 - 25 = 39<br>
+                समीकरण: <span class="fraction"><span class="numerator">y²</span><span class="denominator">25</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">39</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">9. शीर्ष (0, &plusmn;3), नाभियाँ (0, &plusmn;5)</div>
+            <div class="step">
+                a = 3, c = 5. अनुप्रस्थ अक्ष y-अक्ष पर है।<br>
+                b² = 25 - 9 = 16<br>
+                समीकरण: <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">16</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">10. नाभियाँ (&plusmn;5, 0), अनुप्रस्थ अक्ष की लंबाई 8</div>
+            <div class="step">
+                c = 5, 2a = 8 &rArr; a = 4<br>
+                b² = 25 - 16 = 9<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">16</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">9</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">11. नाभियाँ (0, &plusmn;13), संयुग्मी अक्ष की लंबाई 24</div>
+            <div class="step">
+                नाभियाँ y-अक्ष पर हैं। c = 13<br>
+                संयुग्मी अक्ष 2b = 24 &rArr; b = 12<br>
+                a² = c² - b² = 169 - 144 = 25<br>
+                समीकरण: <span class="fraction"><span class="numerator">y²</span><span class="denominator">25</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">144</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">12. नाभियाँ (&plusmn;3&radic;5, 0), नाभिलंब जीवा की लंबाई 8</div>
+            <div class="step">
+                c = 3&radic;5 &rArr; c² = 45<br>
+                <span class="fraction"><span class="numerator">2b²</span><span class="denominator">a</span></span> = 8 &rArr; b² = 4a<br>
+                c² = a² + b² &rArr; 45 = a² + 4a &rArr; a² + 4a - 45 = 0 &rArr; (a + 9)(a - 5) = 0<br>
+                चूँकि a > 0, अतः a = 5. तब b² = 20<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">25</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">20</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">13. नाभियाँ (&plusmn;4, 0), नाभिलंब जीवा की लंबाई 12</div>
+            <div class="step">
+                c = 4 &rArr; c² = 16<br>
+                <span class="fraction"><span class="numerator">2b²</span><span class="denominator">a</span></span> = 12 &rArr; b² = 6a<br>
+                c² = a² + b² &rArr; 16 = a² + 6a &rArr; a² + 6a - 16 = 0 &rArr; (a + 8)(a - 2) = 0<br>
+                a = 2 (a > 0 होने के कारण). b² = 12<br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">4</span></span> - <span class="fraction"><span class="numerator">y²</span><span class="denominator">12</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">14. शीर्ष (&plusmn;7, 0), e = 4/3</div>
+            <div class="step">
+                a = 7. e = <span class="fraction"><span class="numerator">c</span><span class="denominator">a</span></span> &rArr; c = ae = 7 &times; <span class="fraction"><span class="numerator">4</span><span class="denominator">3</span></span> = <span class="fraction"><span class="numerator">28</span><span class="denominator">3</span></span><br>
+                b² = c² - a² = (<span class="fraction"><span class="numerator">28</span><span class="denominator">3</span></span>)² - 7² = <span class="fraction"><span class="numerator">784</span><span class="denominator">9</span></span> - 49 = <span class="fraction"><span class="numerator">784 - 441</span><span class="denominator">9</span></span> = <span class="fraction"><span class="numerator">343</span><span class="denominator">9</span></span><br>
+                समीकरण: <span class="fraction"><span class="numerator">x²</span><span class="denominator">49</span></span> - <span class="fraction"><span class="numerator">9y²</span><span class="denominator">343</span></span> = 1
+            </div>
+        </div>
+
+        <div class="solution-card">
+            <div class="question-title">15. नाभियाँ (0, &plusmn;&radic;10) और जो बिंदु (2, 3) से होकर जाता है</div>
+            <div class="step">
+                नाभियाँ y-अक्ष पर हैं, अतः समीकरण <span class="fraction"><span class="numerator">y²</span><span class="denominator">a²</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">b²</span></span> = 1 होगा।<br>
+                यहाँ c = &radic;10, अतः c² = a² + b² = 10 &rArr; b² = 10 - a²<br>
+                बिंदु (2, 3) से गुजरता है: <span class="fraction"><span class="numerator">9</span><span class="denominator">a²</span></span> - <span class="fraction"><span class="numerator">4</span><span class="denominator">10 - a²</span></span> = 1<br>
+                9(10 - a²) - 4a² = a²(10 - a²) &rArr; 90 - 9a² - 4a² = 10a² - a⁴<br>
+                a⁴ - 23a² + 90 = 0 &rArr; (a² - 18)(a² - 5) = 0<br>
+                चूँकि b² = 10 - a² धनात्मक होना चाहिए, a² = 18 संभव नहीं है। अतः a² = 5 और b² = 10 - 5 = 5<br>
+                अतिपरवलय का समीकरण: <span class="fraction"><span class="numerator">y²</span><span class="denominator">5</span></span> - <span class="fraction"><span class="numerator">x²</span><span class="denominator">5</span></span> = 1
+            </div>
+        </div>
+    </section>
+
+    <div class="text-center text-gray-500 text-sm border-t pt-8 mt-6">
+        ✨ सभी प्रश्न हल स्टेप-बाय-स्टेप | NCERT कक्षा 11 गणित (अध्याय 10) शंकु परिच्छेद ✨
+    </div>
+</div>
+
+<script>
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    document.addEventListener('keydown', e => {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'C' || e.key === 'x' || e.key === 'X')) {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
+
+```
